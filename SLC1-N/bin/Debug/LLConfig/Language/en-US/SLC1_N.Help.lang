@@ -1,0 +1,203 @@
+LL28使用说明=Instructions for use
+欢迎使用深圳市凌龙科技有限公司研发的LL28上位机控制系统！(*^▽^*)=Welcome to use the LL28 upper computer control system developed by Shenzhen Linglong Technology Co., Ltd! (* ^ ▽ ^ *)
+功能目录=Functional Catalog
+1.串口设置功能=1. Serial port setting function
+2.登录、修改密码=2. Login and password modification
+3.存储设置功能=3. Storage setting function
+4.基本使用步骤=4. Basic usage steps
+5.导出SQL文件=5. Export SQL file
+6.基本设置功能=6. Basic Settings Function
+7.测试参数功能=7. Test parameter function
+深圳市凌龙科技有限公司=Shenzhen Linglong Technology Co., Ltd
+
+1.若需要改变仪器参数，则在各个参数框中输入需要的参数并点击上传参数，
+上传参数按钮会变成红色字样“上传成功”。待上传参数按钮恢复原样，即上传
+完成。上传之后可以点击读取参数按钮，检验是否将参数都上传。上传参数
+时，参数格式必须符合仪器要求，否则可能导致软件异常。
+2.点击读取参数按钮可以读取仪器参数。
+3.若需要将参数保存在本地，则在参数输入框中输入参数，然后点击保存参数
+按钮保存。最多可保存十五参数。参数组号处可以切换保存在本地的参数。
+
+If you need to change the instrument parameters, enter the required parameters in each parameter box and click on Upload Parameters,
+
+The upload parameter button will turn into the red text "Upload successful". The parameter button to be uploaded will be restored to its original state, i.e. uploaded
+
+Complete. After uploading, you can click the Read Parameters button to verify whether all parameters have been uploaded. Upload parameters
+
+The parameter format must meet the requirements of the instrument, otherwise it may cause software abnormalities.
+
+2. Click the Read Parameters button to read the instrument parameters.
+
+3. If you need to save the parameters locally, enter the parameters in the parameter input box and click Save Parameters
+
+Button to save. Up to fifteen parameters can be saved. You can switch between locally saved parameters at the parameter group number.
+
+导出SqlServer文件功能：
+（1）点击连接SQL按钮，填入SqlServer的服务器名称或IP地址，填入用户名和
+密码。输入登录信息后，点击保存，则下次打开本系统也可以读取到输入的登录数据。
+若不点击保存，则下次登录读取不到输入的登录数据。
+（2）测试完成后即可新建一个名为“LeakTest”的数据库文件，并且连接上了数据
+库，在SSMS中可以操作该数据库。在该数据库文件中有一个名为
+“leaktest+当天日期”的表格，用以存放测试记录。测试产品时每天均可自动在该数
+据库中新建一个名为“leaktest+当天日期”的表格用以存放当天的测试记录。
+（3）若连接安装本软件的计算机上的数据库，可以通过输入服务器名称进行本地
+SqlServer的连接。服务器名称为SqlServer对象资源管理器中显示的实例名，也
+可以登录后用语句查询“select @@SERVERNAME”即可获得。
+（4）若连接局域网中的计算机上的数据库，可以通过输入IP地址进行SqlServer的连接。
+
+
+Export SqlServer file function:
+
+(1) Click the Connect SQL button, fill in the server name or IP address of SqlServer, and fill in the username and
+
+Password. After entering the login information, click Save, and the next time you open this system, you can also read the entered login data.
+
+If you do not click Save, the input login data will not be read in the next login.
+
+(2) After the test is completed, a new database file named "LeakTest" can be created and connected to the data
+
+Library, which can be operated in SSMS. There is a database file named
+
+A table with "leaktest+date of the day" is used to store test records. During product testing, this number can be automatically updated every day
+
+Create a new table called "leaktest+date of the day" in the database to store the test records of the day.
+
+(3) If connecting to the database on the computer where this software is installed, you can enter the server name locally
+
+Connection to SqlServer. The server name is the instance name displayed in the SqlServer Object Explorer, also known as
+
+You can query 'select @ @ SERVERNAME' with a statement after logging in to obtain.
+
+(4) If connecting to a database on a computer in the local area network, you can connect to SqlServer by entering the IP address.
+
+
+1.设置站号：站号需要和仪器从站号一致。比如，若仪器站号为1，则选择01；
+若仪器站号为2，则选择02，以此类推。若不选择，则默认仪器站号为01.
+2.条形码长度：条形码长度可以设置需要输入的条形码的长度，扫码后做一次扫码验
+证，判断长度是否正确。条形码长度处若不输入，则默认13位。
+1. Set station number: The station number needs to be consistent with the instrument's slave station number. For example, if the instrument station number is 1, select 01;
+
+If the instrument station number is 2, select 02, and so on. If not selected, the default instrument station number is 01
+
+2. Barcode length: The barcode length can be set to the length of the barcode that needs to be entered. After scanning, perform a scanning verification
+
+Verify whether the length is correct. If the barcode length is not entered, it defaults to 13 digits.
+
+基本使用步骤如下：
+1.进入串口设置功能，选择正确的波特率，默认为9600。
+2.选择正确的端口，点击连接串口，若连接成功，串口状态处显示串口已连接。
+3.串口连接上之后，进入存储设置功能，进行存储文件的设置。
+4.点击启动仪器，即可启动仪器进行产品测试。
+5.若要使用条形码来启动仪器，先在基本设置中的条形码长度处输入条形码的
+长度，然后扫描条形码即可。条形码长度处若不输入，则默认13位。
+6.若需要复位仪器，则点击复位仪器。若测试过程中点击复位仪器按钮，则
+中断测试过程。
+注意事项：
+1.请遵照使用说明进行操作，否则可能导致软件异常。
+2.请遵照功能目录里面的详细功能说明进行操作，否则可能导致软件异常。
+3.若软件异常，重启即可。
+
+The basic usage steps are as follows:
+
+1. Enter the serial port setting function and select the correct Baud, which is 9600 by default.
+
+2. Select the correct port and click Connect to Serial Port. If the connection is successful, the serial port status will display as Connected.
+
+After connecting to the serial port, enter the storage settings function to set the storage files.
+
+4. Click on Start Instrument to start the instrument for product testing.
+
+5. To use a barcode to start the instrument, first enter the barcode length in the basic settings
+
+Length, then scan the barcode. If the barcode length is not entered, it defaults to 13 digits.
+
+If you need to reset the instrument, click Reset Instrument. If the reset instrument button is clicked during the testing process, then
+
+Interrupt the testing process.
+
+Precautions:
+
+1. Please follow the instructions for operation, otherwise it may cause software abnormalities.
+
+2. Please follow the detailed functional instructions in the functional directory for operation, otherwise it may cause software abnormalities.
+
+3. If the software is abnormal, restart it.
+
+1.勾选想要的导出文件类型，都不勾选则不导出文件。
+2.导出TXT功能：点击选择文件路径按钮，选择一个TXT文件，测试完成后即
+可将结果导入到选择的TXT文件中。若没有选择文件路径，则默认在桌面新建
+一个名为当天日期的txt文件。如果选择的路径下TXT文件不存在，那么将按照路
+径新建一个txt文件。
+3.导出Excel功能：点击选择文件路径按钮，选择一个Excel文件，测试完成后
+即可将结果导入到选择的Excel文件中。若没有选择文件路径，则默认在桌面新
+建一个名为当天日期的Excel文件。如果选择的路径下Excel文件不存在，那么将按
+照路径新建一个Excel文件。
+4.导出CSV功能：点击选择文件路径按钮，选择一个CSV文件，测试完成后
+即可将结果导入到选择的CSV文件中。若没有选择文件路径，则默认在桌面新
+建一个名为当天日期的CSV文件。如果选择的路径下CSV文件不存在，那么将按
+照路径新建一个CSV文件。
+5.导出SqlServer文件功能详情请查看目录五“导出SQL文件”
+6.选择好路径和需要导出的文件格式后，点击应用设置，即可应用设置，并将设置保存
+在本地。下次打开软件无需再次设置。
+
+1. Check the desired export file type, and if none of them are checked, the file will not be exported.
+
+2. Export TXT function: Click the Select File Path button, select a TXT file, and after the test is completed
+
+The results can be imported into the selected TXT file. If no file path is selected, default to creating a new one on the desktop
+
+A txt file called the current day's date. If the TXT file does not exist in the selected path, then it will follow the path
+
+Create a new txt file.
+
+3. Export Excel function: Click the Select File Path button, select an Excel file, and after the test is completed
+
+You can import the results into the selected Excel file. If no file path is selected, it defaults to a new one on the desktop
+
+Create an Excel file called the current day's date. If the Excel file does not exist in the selected path, it will be pressed
+
+Create a new Excel file according to the path.
+
+4. Export CSV function: Click the Select File Path button, select a CSV file, and after the test is completed
+
+You can import the results into the selected CSV file. If no file path is selected, it defaults to a new one on the desktop
+
+Create a CSV file called the current day's date. If the CSV file in the selected path does not exist, then the
+
+Create a new CSV file according to the path.
+
+5. For more information on the function of exporting SqlServer files, please refer to directory 5 "Exporting SQL Files"
+
+6. After selecting the path and the file format to be exported, click Apply Settings to apply the settings and save them
+
+Locally. There is no need to set it again when opening the software next time.
+1.点击登录，输入密码，可以解锁菜单栏权限，也可以修改密码。
+2.点击修改密码，两次输入新密码，点击修改，即可将密码修改为新密码。
+下次登录需要用新密码登录。
+1. Click on Login and enter your password to unlock menu bar permissions or modify your password.
+2. Click to modify the password, enter the new password twice, and then click Modify to change the password to a new one.
+Next login requires a new password.
+
+连接局域网数据库的配置方法
+Configuration Method for Connecting to LAN Database
+
+
+1.在波特率下拉列表中选择正确的波特率，默认为9600。
+2.在端口号下拉列表中选择正确的端口，点击连接串口，
+若连接上，串口状态处会显示串口已连接，如果和仪器成
+功通讯上，通讯状态会显示已连接。若端口下拉项没有设
+备所对应的端口，则点击刷新串口。若要断开和串口的连
+接，则点击断开连接。
+1. Select the correct Baud from the Baud drop-down list. The default is 9600.
+
+2. Select the correct port from the port number drop-down list and click on Connect Serial Port,
+
+If connected, the serial port status will display that the serial port is connected. If connected to the instrument
+
+On communication, the communication status will display as connected. If the port dropdown item is not set
+
+Click to refresh the serial port for the corresponding port. To disconnect from the serial port
+
+Connect, then click to disconnect.
+
+

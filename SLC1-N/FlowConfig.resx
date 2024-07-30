@@ -1,0 +1,3047 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="label27.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="&gt;&gt;label26.ZOrder" xml:space="preserve">
+    <value>26</value>
+  </data>
+  <data name="&gt;&gt;label15.Name" xml:space="preserve">
+    <value>label15</value>
+  </data>
+  <data name="&gt;&gt;label33.Parent" xml:space="preserve">
+    <value>groupBox3</value>
+  </data>
+  <data name="&gt;&gt;label41.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="label39.Size" type="System.Drawing.Size, System.Drawing">
+    <value>125, 18</value>
+  </data>
+  <data name="CH1_2PreMin.Location" type="System.Drawing.Point, System.Drawing">
+    <value>637, 231</value>
+  </data>
+  <data name="label40.Location" type="System.Drawing.Point, System.Drawing">
+    <value>773, 22</value>
+  </data>
+  <data name="label22.TabIndex" type="System.Int32, mscorlib">
+    <value>419</value>
+  </data>
+  <data name="CH1RWDOverTime.Size" type="System.Drawing.Size, System.Drawing">
+    <value>70, 27</value>
+  </data>
+  <data name="&gt;&gt;label21.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="label15.Font" type="System.Drawing.Font, System.Drawing">
+    <value>SimSun, 13pt</value>
+  </data>
+  <data name="label36.Font" type="System.Drawing.Font, System.Drawing">
+    <value>SimSun, 13pt</value>
+  </data>
+  <data name="&gt;&gt;label1.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="label22.Font" type="System.Drawing.Font, System.Drawing">
+    <value>SimSun, 13pt</value>
+  </data>
+  <data name="&gt;&gt;label13.ZOrder" xml:space="preserve">
+    <value>63</value>
+  </data>
+  <data name="label37.Font" type="System.Drawing.Font, System.Drawing">
+    <value>SimSun, 13pt</value>
+  </data>
+  <data name="CH1Cont_PressMin.Location" type="System.Drawing.Point, System.Drawing">
+    <value>27, 366</value>
+  </data>
+  <data name="&gt;&gt;CH2_1FlowMin.Name" xml:space="preserve">
+    <value>CH2_1FlowMin</value>
+  </data>
+  <data name="label28.TabIndex" type="System.Int32, mscorlib">
+    <value>426</value>
+  </data>
+  <data name="CH4OverTime.Size" type="System.Drawing.Size, System.Drawing">
+    <value>70, 27</value>
+  </data>
+  <data name="CH1Cont_PressMin.Size" type="System.Drawing.Size, System.Drawing">
+    <value>70, 27</value>
+  </data>
+  <data name="label1.Font" type="System.Drawing.Font, System.Drawing">
+    <value>SimSun, 13pt</value>
+  </data>
+  <data name="label37.TabIndex" type="System.Int32, mscorlib">
+    <value>454</value>
+  </data>
+  <data name="label36.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="Save.TabIndex" type="System.Int32, mscorlib">
+    <value>424</value>
+  </data>
+  <data name="&gt;&gt;label8.Name" xml:space="preserve">
+    <value>label8</value>
+  </data>
+  <data name="CH3OverTime.Location" type="System.Drawing.Point, System.Drawing">
+    <value>27, 170</value>
+  </data>
+  <data name="CH2Cont_PressMax.Font" type="System.Drawing.Font, System.Drawing">
+    <value>SimSun, 13pt</value>
+  </data>
+  <data name="&gt;&gt;label14.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="label3.Text" xml:space="preserve">
+    <value>CH1_2流量上限</value>
+  </data>
+  <data name="label26.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="CH1_2PreMin.Font" type="System.Drawing.Font, System.Drawing">
+    <value>SimSun, 13pt</value>
+  </data>
+  <data name="&gt;&gt;CH1_1PreMin.Name" xml:space="preserve">
+    <value>CH1_1PreMin</value>
+  </data>
+  <data name="&gt;&gt;CH2OverTime.ZOrder" xml:space="preserve">
+    <value>72</value>
+  </data>
+  <data name="&gt;&gt;label19.ZOrder" xml:space="preserve">
+    <value>41</value>
+  </data>
+  <data name="&gt;&gt;CH1Cont_Elec_Compen.Name" xml:space="preserve">
+    <value>CH1Cont_Elec_Compen</value>
+  </data>
+  <data name="CH1RWDPressMax.Font" type="System.Drawing.Font, System.Drawing">
+    <value>SimSun, 13pt</value>
+  </data>
+  <data name="label34.Text" xml:space="preserve">
+    <value>CH2压力上限</value>
+  </data>
+  <data name="&gt;&gt;CH2Cont_Pre_Compen.Name" xml:space="preserve">
+    <value>CH2Cont_Pre_Compen</value>
+  </data>
+  <data name="&gt;&gt;CH1Cont_Pre_Compen.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;CH2_2FlowMin.Name" xml:space="preserve">
+    <value>CH2_2FlowMin</value>
+  </data>
+  <data name="label41.Text" xml:space="preserve">
+    <value>CH1_2压力下限</value>
+  </data>
+  <data name="&gt;&gt;CH2Cont_ElecMax.Name" xml:space="preserve">
+    <value>CH2Cont_ElecMax</value>
+  </data>
+  <data name="label21.TabIndex" type="System.Int32, mscorlib">
+    <value>421</value>
+  </data>
+  <data name="&gt;&gt;groupBox2.Name" xml:space="preserve">
+    <value>groupBox2</value>
+  </data>
+  <data name="&gt;&gt;label7.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="label32.TabIndex" type="System.Int32, mscorlib">
+    <value>419</value>
+  </data>
+  <data name="&gt;&gt;label24.ZOrder" xml:space="preserve">
+    <value>22</value>
+  </data>
+  <data name="&gt;&gt;label30.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="label42.Font" type="System.Drawing.Font, System.Drawing">
+    <value>SimSun, 13pt</value>
+  </data>
+  <data name="textBox6.Font" type="System.Drawing.Font, System.Drawing">
+    <value>SimSun, 13pt</value>
+  </data>
+  <data name="&gt;&gt;CH1RWDOverTime.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="label43.Location" type="System.Drawing.Point, System.Drawing">
+    <value>635, 86</value>
+  </data>
+  <data name="label14.Location" type="System.Drawing.Point, System.Drawing">
+    <value>160, 86</value>
+  </data>
+  <data name="&gt;&gt;CH1Cont_ElecMin.Name" xml:space="preserve">
+    <value>CH1Cont_ElecMin</value>
+  </data>
+  <data name="label36.Size" type="System.Drawing.Size, System.Drawing">
+    <value>107, 18</value>
+  </data>
+  <data name="&gt;&gt;CH1_2PreMax.Name" xml:space="preserve">
+    <value>CH1_2PreMax</value>
+  </data>
+  <data name="&gt;&gt;label2.Name" xml:space="preserve">
+    <value>label2</value>
+  </data>
+  <data name="label17.Text" xml:space="preserve">
+    <value>CH2压力比值补偿</value>
+  </data>
+  <data name="&gt;&gt;textBox1.Name" xml:space="preserve">
+    <value>textBox1</value>
+  </data>
+  <data name="&gt;&gt;CH1Cont_Pre_Compen.ZOrder" xml:space="preserve">
+    <value>38</value>
+  </data>
+  <data name="textBox3.Size" type="System.Drawing.Size, System.Drawing">
+    <value>70, 27</value>
+  </data>
+  <data name="label7.Size" type="System.Drawing.Size, System.Drawing">
+    <value>125, 18</value>
+  </data>
+  <data name="&gt;&gt;groupBox3.Type" xml:space="preserve">
+    <value>System.Windows.Forms.GroupBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="label30.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="&gt;&gt;label10.Name" xml:space="preserve">
+    <value>label10</value>
+  </data>
+  <data name="CH2Cont_PressMax.Size" type="System.Drawing.Size, System.Drawing">
+    <value>70, 27</value>
+  </data>
+  <data name="&gt;&gt;label31.Name" xml:space="preserve">
+    <value>label31</value>
+  </data>
+  <data name="&gt;&gt;label36.Name" xml:space="preserve">
+    <value>label36</value>
+  </data>
+  <data name="CH1Press_OverTime.Location" type="System.Drawing.Point, System.Drawing">
+    <value>162, 44</value>
+  </data>
+  <data name="label21.Size" type="System.Drawing.Size, System.Drawing">
+    <value>143, 18</value>
+  </data>
+  <data name="label2.Font" type="System.Drawing.Font, System.Drawing">
+    <value>SimSun, 13pt</value>
+  </data>
+  <data name="CH1Cont_PressMax.Font" type="System.Drawing.Font, System.Drawing">
+    <value>SimSun, 13pt</value>
+  </data>
+  <data name="textBox5.TabIndex" type="System.Int32, mscorlib">
+    <value>449</value>
+  </data>
+  <data name="CH1Cont_Pre_Compen.Location" type="System.Drawing.Point, System.Drawing">
+    <value>27, 425</value>
+  </data>
+  <data name="label8.Text" xml:space="preserve">
+    <value>CH2_2流量上限</value>
+  </data>
+  <data name="label31.Size" type="System.Drawing.Size, System.Drawing">
+    <value>107, 18</value>
+  </data>
+  <data name="CH1RWDPressMax.TabIndex" type="System.Int32, mscorlib">
+    <value>418</value>
+  </data>
+  <data name="label29.Size" type="System.Drawing.Size, System.Drawing">
+    <value>143, 18</value>
+  </data>
+  <data name="CH1RWDPressMin.Font" type="System.Drawing.Font, System.Drawing">
+    <value>SimSun, 13pt</value>
+  </data>
+  <data name="CH1Cont_Elec_Compen.Size" type="System.Drawing.Size, System.Drawing">
+    <value>70, 27</value>
+  </data>
+  <data name="Save.Size" type="System.Drawing.Size, System.Drawing">
+    <value>107, 58</value>
+  </data>
+  <data name="label2.Size" type="System.Drawing.Size, System.Drawing">
+    <value>125, 18</value>
+  </data>
+  <data name="CH2Cont_PressMin.TabIndex" type="System.Int32, mscorlib">
+    <value>420</value>
+  </data>
+  <data name="&gt;&gt;CH2Cont_PressMin.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="label27.Size" type="System.Drawing.Size, System.Drawing">
+    <value>143, 18</value>
+  </data>
+  <data name="&gt;&gt;$this.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Form, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="label31.TabIndex" type="System.Int32, mscorlib">
+    <value>421</value>
+  </data>
+  <data name="&gt;&gt;label36.Parent" xml:space="preserve">
+    <value>groupBox3</value>
+  </data>
+  <data name="&gt;&gt;label44.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;label22.Name" xml:space="preserve">
+    <value>label22</value>
+  </data>
+  <data name="&gt;&gt;textBox6.Name" xml:space="preserve">
+    <value>textBox6</value>
+  </data>
+  <data name="&gt;&gt;CH1Cont_ElecMin.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="groupBox2.TabIndex" type="System.Int32, mscorlib">
+    <value>437</value>
+  </data>
+  <data name="label23.Text" xml:space="preserve">
+    <value>CH2电流比值补偿</value>
+  </data>
+  <data name="&gt;&gt;label24.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="CH1Cont_Pre_Compen.Size" type="System.Drawing.Size, System.Drawing">
+    <value>70, 27</value>
+  </data>
+  <data name="&gt;&gt;label8.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="CH1Cont_ElecMax.Font" type="System.Drawing.Font, System.Drawing">
+    <value>SimSun, 13pt</value>
+  </data>
+  <data name="&gt;&gt;textBox3.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;label11.Name" xml:space="preserve">
+    <value>label11</value>
+  </data>
+  <data name="&gt;&gt;label16.Name" xml:space="preserve">
+    <value>label16</value>
+  </data>
+  <data name="&gt;&gt;label43.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="label17.Location" type="System.Drawing.Point, System.Drawing">
+    <value>182, 403</value>
+  </data>
+  <data name="&gt;&gt;CH1Press_OverTime.ZOrder" xml:space="preserve">
+    <value>66</value>
+  </data>
+  <data name="&gt;&gt;textBox6.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="CH2Cont_ElecMin.Font" type="System.Drawing.Font, System.Drawing">
+    <value>SimSun, 13pt</value>
+  </data>
+  <data name="label24.Location" type="System.Drawing.Point, System.Drawing">
+    <value>499, 344</value>
+  </data>
+  <data name="Save.Text" xml:space="preserve">
+    <value>设置</value>
+  </data>
+  <data name="label19.Text" xml:space="preserve">
+    <value>CH1压力比值下限</value>
+  </data>
+  <data name="label1.TabIndex" type="System.Int32, mscorlib">
+    <value>395</value>
+  </data>
+  <data name="&gt;&gt;CH3OverTime.Name" xml:space="preserve">
+    <value>CH3OverTime</value>
+  </data>
+  <data name="label35.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="&gt;&gt;CH3OverTime.ZOrder" xml:space="preserve">
+    <value>70</value>
+  </data>
+  <data name="label13.Font" type="System.Drawing.Font, System.Drawing">
+    <value>SimSun, 13pt</value>
+  </data>
+  <data name="label38.Font" type="System.Drawing.Font, System.Drawing">
+    <value>SimSun, 13pt</value>
+  </data>
+  <data name="&gt;&gt;label19.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="label26.Font" type="System.Drawing.Font, System.Drawing">
+    <value>SimSun, 13pt</value>
+  </data>
+  <data name="textBox1.TabIndex" type="System.Int32, mscorlib">
+    <value>420</value>
+  </data>
+  <data name="label4.Text" xml:space="preserve">
+    <value>CH1_1流量下限</value>
+  </data>
+  <data name="CH4Press_OverTime.Location" type="System.Drawing.Point, System.Drawing">
+    <value>162, 231</value>
+  </data>
+  <data name="groupBox3.Size" type="System.Drawing.Size, System.Drawing">
+    <value>267, 147</value>
+  </data>
+  <data name="&gt;&gt;groupBox3.ZOrder" xml:space="preserve">
+    <value>16</value>
+  </data>
+  <data name="&gt;&gt;CH2RWDOverTime.Name" xml:space="preserve">
+    <value>CH2RWDOverTime</value>
+  </data>
+  <data name="&gt;&gt;label5.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;CH4Press_OverTime.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;CH2RWDPressMax.Name" xml:space="preserve">
+    <value>CH2RWDPressMax</value>
+  </data>
+  <data name="&gt;&gt;label39.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="label39.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="CH1_2FlowMax.Font" type="System.Drawing.Font, System.Drawing">
+    <value>SimSun, 13pt</value>
+  </data>
+  <data name="&gt;&gt;CH1Cont_PressMin.ZOrder" xml:space="preserve">
+    <value>40</value>
+  </data>
+  <data name="Save.Font" type="System.Drawing.Font, System.Drawing">
+    <value>SimSun, 12pt</value>
+  </data>
+  <data name="label43.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="label29.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="&gt;&gt;groupBox2.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="label5.TabIndex" type="System.Int32, mscorlib">
+    <value>397</value>
+  </data>
+  <data name="&gt;&gt;CH2Cont_Elec_Compen.Name" xml:space="preserve">
+    <value>CH2Cont_Elec_Compen</value>
+  </data>
+  <data name="label5.Size" type="System.Drawing.Size, System.Drawing">
+    <value>125, 18</value>
+  </data>
+  <data name="&gt;&gt;textBox5.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="label4.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="&gt;&gt;label24.Name" xml:space="preserve">
+    <value>label24</value>
+  </data>
+  <data name="label36.Location" type="System.Drawing.Point, System.Drawing">
+    <value>155, 23</value>
+  </data>
+  <data name="CH1_2PreMin.Size" type="System.Drawing.Size, System.Drawing">
+    <value>70, 27</value>
+  </data>
+  <data name="CH2Cont_ElecMax.Font" type="System.Drawing.Font, System.Drawing">
+    <value>SimSun, 13pt</value>
+  </data>
+  <data name="CH2_1FlowMin.Location" type="System.Drawing.Point, System.Drawing">
+    <value>483, 108</value>
+  </data>
+  <data name="label10.Size" type="System.Drawing.Size, System.Drawing">
+    <value>125, 18</value>
+  </data>
+  <data name="&gt;&gt;CH1_1FlowMax.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;CH1Cont_Elec_Compen.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="label9.Text" xml:space="preserve">
+    <value>CH1_1流量超时</value>
+  </data>
+  <data name="CH1RWDOverTime.Location" type="System.Drawing.Point, System.Drawing">
+    <value>157, 45</value>
+  </data>
+  <data name="label8.Font" type="System.Drawing.Font, System.Drawing">
+    <value>SimSun, 13pt</value>
+  </data>
+  <data name="&gt;&gt;CH1_2FlowMax.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;$this.Name" xml:space="preserve">
+    <value>FlowConfig</value>
+  </data>
+  <data name="label33.TabIndex" type="System.Int32, mscorlib">
+    <value>421</value>
+  </data>
+  <data name="CH2RWDPressMax.TabIndex" type="System.Int32, mscorlib">
+    <value>418</value>
+  </data>
+  <data name="label8.Size" type="System.Drawing.Size, System.Drawing">
+    <value>125, 18</value>
+  </data>
+  <data name="&gt;&gt;label12.ZOrder" xml:space="preserve">
+    <value>71</value>
+  </data>
+  <data name="&gt;&gt;label34.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="label3.Size" type="System.Drawing.Size, System.Drawing">
+    <value>125, 18</value>
+  </data>
+  <data name="label27.Location" type="System.Drawing.Point, System.Drawing">
+    <value>342, 344</value>
+  </data>
+  <data name="label39.Location" type="System.Drawing.Point, System.Drawing">
+    <value>773, 86</value>
+  </data>
+  <data name="label39.TabIndex" type="System.Int32, mscorlib">
+    <value>450</value>
+  </data>
+  <data name="label38.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="label40.Size" type="System.Drawing.Size, System.Drawing">
+    <value>125, 18</value>
+  </data>
+  <data name="&gt;&gt;CH4Press_OverTime.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="label42.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="label24.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="&gt;&gt;label35.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;label12.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;CH1Press_OverTime.Name" xml:space="preserve">
+    <value>CH1Press_OverTime</value>
+  </data>
+  <data name="label11.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="&gt;&gt;CH3Press_OverTime.Name" xml:space="preserve">
+    <value>CH3Press_OverTime</value>
+  </data>
+  <data name="&gt;&gt;label18.ZOrder" xml:space="preserve">
+    <value>39</value>
+  </data>
+  <data name="label28.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="&gt;&gt;label21.Name" xml:space="preserve">
+    <value>label21</value>
+  </data>
+  <data name="&gt;&gt;CH2RWDOverTime.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;CH2RWDPressMax.Parent" xml:space="preserve">
+    <value>groupBox3</value>
+  </data>
+  <data name="&gt;&gt;label30.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="CH2RWDPressMax.Location" type="System.Drawing.Point, System.Drawing">
+    <value>21, 46</value>
+  </data>
+  <data name="label7.Location" type="System.Drawing.Point, System.Drawing">
+    <value>25, 89</value>
+  </data>
+  <data name="&gt;&gt;label21.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label32.Name" xml:space="preserve">
+    <value>label32</value>
+  </data>
+  <data name="CH2_2FlowMax.TabIndex" type="System.Int32, mscorlib">
+    <value>408</value>
+  </data>
+  <data name="textBox2.Size" type="System.Drawing.Size, System.Drawing">
+    <value>70, 27</value>
+  </data>
+  <data name="&gt;&gt;label39.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label17.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;label41.Name" xml:space="preserve">
+    <value>label41</value>
+  </data>
+  <data name="&gt;&gt;CH1_2PreMax.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;CH2_1FlowMin.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;label28.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="label10.Location" type="System.Drawing.Point, System.Drawing">
+    <value>25, 212</value>
+  </data>
+  <data name="&gt;&gt;label6.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="CH2_1FlowMin.TabIndex" type="System.Int32, mscorlib">
+    <value>406</value>
+  </data>
+  <data name="&gt;&gt;CH1Cont_PressMax.ZOrder" xml:space="preserve">
+    <value>42</value>
+  </data>
+  <data name="&gt;&gt;label5.Name" xml:space="preserve">
+    <value>label5</value>
+  </data>
+  <data name="&gt;&gt;label29.Name" xml:space="preserve">
+    <value>label29</value>
+  </data>
+  <data name="&gt;&gt;CH1_2FlowMin.Name" xml:space="preserve">
+    <value>CH1_2FlowMin</value>
+  </data>
+  <data name="&gt;&gt;CH1Cont_PressMax.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="label27.Text" xml:space="preserve">
+    <value>CH1电流比值下限</value>
+  </data>
+  <data name="CH4OverTime.Location" type="System.Drawing.Point, System.Drawing">
+    <value>27, 234</value>
+  </data>
+  <data name="&gt;&gt;CH1RWDPressMax.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="CH1RWDPressMin.Size" type="System.Drawing.Size, System.Drawing">
+    <value>70, 27</value>
+  </data>
+  <data name="CH2_2FlowMax.Location" type="System.Drawing.Point, System.Drawing">
+    <value>483, 167</value>
+  </data>
+  <data name="&gt;&gt;CH2_2FlowMax.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="label6.Text" xml:space="preserve">
+    <value>CH2_2流量下限</value>
+  </data>
+  <data name="label32.Text" xml:space="preserve">
+    <value>CH1压力上限</value>
+  </data>
+  <data name="&gt;&gt;label10.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;CH2RWDPressMin.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="&gt;&gt;CH2_1FlowMax.Name" xml:space="preserve">
+    <value>CH2_1FlowMax</value>
+  </data>
+  <data name="&gt;&gt;label12.Name" xml:space="preserve">
+    <value>label12</value>
+  </data>
+  <data name="CH2RWDPressMax.Size" type="System.Drawing.Size, System.Drawing">
+    <value>70, 27</value>
+  </data>
+  <data name="label1.Text" xml:space="preserve">
+    <value>CH2_2压力超时</value>
+  </data>
+  <data name="&gt;&gt;CH3OverTime.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="CH1Cont_ElecMax.Location" type="System.Drawing.Point, System.Drawing">
+    <value>344, 302</value>
+  </data>
+  <data name="CH2RWDOverTime.Size" type="System.Drawing.Size, System.Drawing">
+    <value>70, 27</value>
+  </data>
+  <data name="textBox4.TabIndex" type="System.Int32, mscorlib">
+    <value>451</value>
+  </data>
+  <data name="label13.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="label3.Location" type="System.Drawing.Point, System.Drawing">
+    <value>343, 145</value>
+  </data>
+  <data name="&gt;&gt;CH2RWDPressMin.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;CH1OverTime.Name" xml:space="preserve">
+    <value>CH1OverTime</value>
+  </data>
+  <data name="label10.Font" type="System.Drawing.Font, System.Drawing">
+    <value>SimSun, 13pt</value>
+  </data>
+  <data name="label43.Text" xml:space="preserve">
+    <value>CH1_1压力下限</value>
+  </data>
+  <data name="label17.Font" type="System.Drawing.Font, System.Drawing">
+    <value>SimSun, 13pt</value>
+  </data>
+  <data name="label28.Font" type="System.Drawing.Font, System.Drawing">
+    <value>SimSun, 13pt</value>
+  </data>
+  <data name="&gt;&gt;CH2_1FlowMax.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="label9.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="&gt;&gt;CH2Cont_Pre_Compen.ZOrder" xml:space="preserve">
+    <value>32</value>
+  </data>
+  <data name="CH1_1PreMax.Location" type="System.Drawing.Point, System.Drawing">
+    <value>637, 44</value>
+  </data>
+  <data name="&gt;&gt;label23.ZOrder" xml:space="preserve">
+    <value>20</value>
+  </data>
+  <data name="textBox5.Size" type="System.Drawing.Size, System.Drawing">
+    <value>70, 27</value>
+  </data>
+  <data name="groupBox1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>267, 147</value>
+  </data>
+  <data name="label31.Font" type="System.Drawing.Font, System.Drawing">
+    <value>SimSun, 13pt</value>
+  </data>
+  <data name="&gt;&gt;label42.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="CH2Cont_PressMin.Size" type="System.Drawing.Size, System.Drawing">
+    <value>70, 27</value>
+  </data>
+  <data name="label9.Location" type="System.Drawing.Point, System.Drawing">
+    <value>25, 25</value>
+  </data>
+  <data name="&gt;&gt;CH1_1PreMax.ZOrder" xml:space="preserve">
+    <value>14</value>
+  </data>
+  <data name="&gt;&gt;label26.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;CH3OverTime.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;label31.Parent" xml:space="preserve">
+    <value>groupBox2</value>
+  </data>
+  <data name="&gt;&gt;CH1Cont_PressMax.Name" xml:space="preserve">
+    <value>CH1Cont_PressMax</value>
+  </data>
+  <data name="&gt;&gt;CH2_2FlowMax.Name" xml:space="preserve">
+    <value>CH2_2FlowMax</value>
+  </data>
+  <data name="&gt;&gt;label22.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;label42.ZOrder" xml:space="preserve">
+    <value>11</value>
+  </data>
+  <data name="&gt;&gt;label29.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="label13.Location" type="System.Drawing.Point, System.Drawing">
+    <value>160, 145</value>
+  </data>
+  <data name="&gt;&gt;label4.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;CH2_2FlowMax.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;CH2_2FlowMin.ZOrder" xml:space="preserve">
+    <value>44</value>
+  </data>
+  <data name="label20.Location" type="System.Drawing.Point, System.Drawing">
+    <value>25, 280</value>
+  </data>
+  <data name="&gt;&gt;CH2Cont_Pre_Compen.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;CH1RWDOverTime.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="CH2_1FlowMax.Size" type="System.Drawing.Size, System.Drawing">
+    <value>70, 27</value>
+  </data>
+  <data name="label12.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="&gt;&gt;Save.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="CH3Press_OverTime.Size" type="System.Drawing.Size, System.Drawing">
+    <value>70, 27</value>
+  </data>
+  <data name="label29.Text" xml:space="preserve">
+    <value>CH1压力比值补偿</value>
+  </data>
+  <data name="&gt;&gt;label27.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="CH1_1FlowMax.Size" type="System.Drawing.Size, System.Drawing">
+    <value>70, 27</value>
+  </data>
+  <data name="&gt;&gt;groupBox1.ZOrder" xml:space="preserve">
+    <value>18</value>
+  </data>
+  <data name="&gt;&gt;label37.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="label20.Text" xml:space="preserve">
+    <value>CH1压力比值上限</value>
+  </data>
+  <data name="CH2Cont_Elec_Compen.Font" type="System.Drawing.Font, System.Drawing">
+    <value>SimSun, 13pt</value>
+  </data>
+  <data name="&gt;&gt;label2.ZOrder" xml:space="preserve">
+    <value>53</value>
+  </data>
+  <data name="CH2Cont_ElecMin.Size" type="System.Drawing.Size, System.Drawing">
+    <value>70, 27</value>
+  </data>
+  <data name="&gt;&gt;label17.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="CH1_2FlowMax.TabIndex" type="System.Int32, mscorlib">
+    <value>400</value>
+  </data>
+  <data name="CH1Cont_ElecMin.Size" type="System.Drawing.Size, System.Drawing">
+    <value>70, 27</value>
+  </data>
+  <data name="textBox2.Location" type="System.Drawing.Point, System.Drawing">
+    <value>21, 46</value>
+  </data>
+  <data name="&gt;&gt;CH1_2FlowMin.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="label41.TabIndex" type="System.Int32, mscorlib">
+    <value>446</value>
+  </data>
+  <data name="CH1_2PreMax.TabIndex" type="System.Int32, mscorlib">
+    <value>443</value>
+  </data>
+  <data name="label22.Size" type="System.Drawing.Size, System.Drawing">
+    <value>143, 18</value>
+  </data>
+  <data name="&gt;&gt;CH1RWDPressMin.Name" xml:space="preserve">
+    <value>CH1RWDPressMin</value>
+  </data>
+  <data name="$this.AutoScaleDimensions" type="System.Drawing.SizeF, System.Drawing">
+    <value>6, 12</value>
+  </data>
+  <data name="&gt;&gt;textBox3.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;CH1_1FlowMin.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="label24.Size" type="System.Drawing.Size, System.Drawing">
+    <value>143, 18</value>
+  </data>
+  <data name="label1.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="label32.Location" type="System.Drawing.Point, System.Drawing">
+    <value>19, 24</value>
+  </data>
+  <data name="&gt;&gt;CH1Cont_PressMax.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="label29.Font" type="System.Drawing.Font, System.Drawing">
+    <value>SimSun, 13pt</value>
+  </data>
+  <data name="CH2Cont_Elec_Compen.TabIndex" type="System.Int32, mscorlib">
+    <value>435</value>
+  </data>
+  <data name="&gt;&gt;label39.Name" xml:space="preserve">
+    <value>label39</value>
+  </data>
+  <data name="&gt;&gt;label34.Name" xml:space="preserve">
+    <value>label34</value>
+  </data>
+  <data name="label31.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="label9.Font" type="System.Drawing.Font, System.Drawing">
+    <value>SimSun, 13pt</value>
+  </data>
+  <data name="&gt;&gt;CH1_2PreMin.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="label17.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="CH2Press_OverTime.TabIndex" type="System.Int32, mscorlib">
+    <value>390</value>
+  </data>
+  <data name="&gt;&gt;label10.ZOrder" xml:space="preserve">
+    <value>69</value>
+  </data>
+  <data name="&gt;&gt;label42.Name" xml:space="preserve">
+    <value>label42</value>
+  </data>
+  <data name="textBox5.Font" type="System.Drawing.Font, System.Drawing">
+    <value>SimSun, 13pt</value>
+  </data>
+  <data name="label33.Size" type="System.Drawing.Size, System.Drawing">
+    <value>107, 18</value>
+  </data>
+  <data name="&gt;&gt;CH1Cont_Elec_Compen.ZOrder" xml:space="preserve">
+    <value>25</value>
+  </data>
+  <data name="label21.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="CH2Cont_Pre_Compen.Location" type="System.Drawing.Point, System.Drawing">
+    <value>184, 425</value>
+  </data>
+  <data name="label6.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="label23.Location" type="System.Drawing.Point, System.Drawing">
+    <value>499, 403</value>
+  </data>
+  <data name="&gt;&gt;label18.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="label35.Size" type="System.Drawing.Size, System.Drawing">
+    <value>107, 18</value>
+  </data>
+  <data name="&gt;&gt;CH1_2FlowMax.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;textBox4.Name" xml:space="preserve">
+    <value>textBox4</value>
+  </data>
+  <data name="textBox5.Location" type="System.Drawing.Point, System.Drawing">
+    <value>775, 108</value>
+  </data>
+  <data name="label36.Text" xml:space="preserve">
+    <value>CH2泄气时间</value>
+  </data>
+  <data name="label9.TabIndex" type="System.Int32, mscorlib">
+    <value>381</value>
+  </data>
+  <data name="CH2Press_OverTime.Size" type="System.Drawing.Size, System.Drawing">
+    <value>70, 27</value>
+  </data>
+  <data name="CH1_1FlowMin.Size" type="System.Drawing.Size, System.Drawing">
+    <value>70, 27</value>
+  </data>
+  <data name="label29.TabIndex" type="System.Int32, mscorlib">
+    <value>421</value>
+  </data>
+  <data name="&gt;&gt;CH1_1FlowMin.Name" xml:space="preserve">
+    <value>CH1_1FlowMin</value>
+  </data>
+  <data name="&gt;&gt;CH1Cont_PressMin.Name" xml:space="preserve">
+    <value>CH1Cont_PressMin</value>
+  </data>
+  <data name="&gt;&gt;label19.Name" xml:space="preserve">
+    <value>label19</value>
+  </data>
+  <data name="&gt;&gt;label14.Name" xml:space="preserve">
+    <value>label14</value>
+  </data>
+  <data name="CH1Press_OverTime.TabIndex" type="System.Int32, mscorlib">
+    <value>388</value>
+  </data>
+  <data name="label16.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="label8.Location" type="System.Drawing.Point, System.Drawing">
+    <value>481, 145</value>
+  </data>
+  <data name="&gt;&gt;textBox2.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="label6.Size" type="System.Drawing.Size, System.Drawing">
+    <value>125, 18</value>
+  </data>
+  <data name="label14.Font" type="System.Drawing.Font, System.Drawing">
+    <value>SimSun, 13pt</value>
+  </data>
+  <data name="&gt;&gt;CH1Cont_PressMin.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="textBox1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>70, 27</value>
+  </data>
+  <data name="&gt;&gt;label34.Parent" xml:space="preserve">
+    <value>groupBox3</value>
+  </data>
+  <data name="&gt;&gt;CH4Press_OverTime.Name" xml:space="preserve">
+    <value>CH4Press_OverTime</value>
+  </data>
+  <data name="label19.Font" type="System.Drawing.Font, System.Drawing">
+    <value>SimSun, 13pt</value>
+  </data>
+  <data name="&gt;&gt;label20.ZOrder" xml:space="preserve">
+    <value>43</value>
+  </data>
+  <data name="&gt;&gt;label33.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;groupBox1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.GroupBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="label42.Location" type="System.Drawing.Point, System.Drawing">
+    <value>635, 145</value>
+  </data>
+  <data name="label35.Font" type="System.Drawing.Font, System.Drawing">
+    <value>SimSun, 13pt</value>
+  </data>
+  <data name="&gt;&gt;label22.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="label4.Font" type="System.Drawing.Font, System.Drawing">
+    <value>SimSun, 13pt</value>
+  </data>
+  <data name="&gt;&gt;CH2RWDPressMin.Parent" xml:space="preserve">
+    <value>groupBox3</value>
+  </data>
+  <data name="CH1Cont_PressMax.Size" type="System.Drawing.Size, System.Drawing">
+    <value>70, 27</value>
+  </data>
+  <data name="&gt;&gt;CH1_1PreMin.ZOrder" xml:space="preserve">
+    <value>12</value>
+  </data>
+  <data name="CH1Press_OverTime.Font" type="System.Drawing.Font, System.Drawing">
+    <value>SimSun, 13pt</value>
+  </data>
+  <data name="&gt;&gt;label3.Name" xml:space="preserve">
+    <value>label3</value>
+  </data>
+  <data name="&gt;&gt;CH1_1FlowMax.ZOrder" xml:space="preserve">
+    <value>58</value>
+  </data>
+  <data name="&gt;&gt;CH1Cont_ElecMax.ZOrder" xml:space="preserve">
+    <value>29</value>
+  </data>
+  <data name="textBox1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>21, 105</value>
+  </data>
+  <data name="label5.Location" type="System.Drawing.Point, System.Drawing">
+    <value>343, 22</value>
+  </data>
+  <data name="label34.Location" type="System.Drawing.Point, System.Drawing">
+    <value>19, 24</value>
+  </data>
+  <data name="label20.Font" type="System.Drawing.Font, System.Drawing">
+    <value>SimSun, 13pt</value>
+  </data>
+  <data name="CH1Cont_ElecMin.TabIndex" type="System.Int32, mscorlib">
+    <value>427</value>
+  </data>
+  <data name="groupBox3.Location" type="System.Drawing.Point, System.Drawing">
+    <value>344, 469</value>
+  </data>
+  <data name="label15.Size" type="System.Drawing.Size, System.Drawing">
+    <value>125, 18</value>
+  </data>
+  <data name="label7.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="label12.Size" type="System.Drawing.Size, System.Drawing">
+    <value>125, 18</value>
+  </data>
+  <data name="label24.Text" xml:space="preserve">
+    <value>CH2电流比值下限</value>
+  </data>
+  <data name="&gt;&gt;CH2Cont_Elec_Compen.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;Save.ZOrder" xml:space="preserve">
+    <value>31</value>
+  </data>
+  <data name="&gt;&gt;CH2Cont_ElecMin.Name" xml:space="preserve">
+    <value>CH2Cont_ElecMin</value>
+  </data>
+  <data name="label38.Text" xml:space="preserve">
+    <value>CH2_2压力上限</value>
+  </data>
+  <data name="label20.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="label31.Text" xml:space="preserve">
+    <value>CH1压力下限</value>
+  </data>
+  <data name="&gt;&gt;label13.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="label14.Size" type="System.Drawing.Size, System.Drawing">
+    <value>125, 18</value>
+  </data>
+  <data name="CH1RWDOverTime.TabIndex" type="System.Int32, mscorlib">
+    <value>422</value>
+  </data>
+  <data name="&gt;&gt;groupBox3.Name" xml:space="preserve">
+    <value>groupBox3</value>
+  </data>
+  <data name="CH1Cont_ElecMin.Location" type="System.Drawing.Point, System.Drawing">
+    <value>344, 366</value>
+  </data>
+  <data name="&gt;&gt;label28.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;textBox3.Name" xml:space="preserve">
+    <value>textBox3</value>
+  </data>
+  <data name="CH1OverTime.Font" type="System.Drawing.Font, System.Drawing">
+    <value>SimSun, 13pt</value>
+  </data>
+  <data name="CH2Cont_Elec_Compen.Size" type="System.Drawing.Size, System.Drawing">
+    <value>70, 27</value>
+  </data>
+  <data name="&gt;&gt;CH2RWDOverTime.Parent" xml:space="preserve">
+    <value>groupBox3</value>
+  </data>
+  <data name="CH1Cont_Pre_Compen.Font" type="System.Drawing.Font, System.Drawing">
+    <value>SimSun, 13pt</value>
+  </data>
+  <data name="&gt;&gt;label20.Name" xml:space="preserve">
+    <value>label20</value>
+  </data>
+  <data name="CH2Cont_ElecMax.TabIndex" type="System.Int32, mscorlib">
+    <value>431</value>
+  </data>
+  <data name="&gt;&gt;label22.ZOrder" xml:space="preserve">
+    <value>37</value>
+  </data>
+  <data name="label12.Text" xml:space="preserve">
+    <value>CH2_1流量超时</value>
+  </data>
+  <data name="label2.Text" xml:space="preserve">
+    <value>CH1_2流量下限</value>
+  </data>
+  <data name="&gt;&gt;label41.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="label42.Size" type="System.Drawing.Size, System.Drawing">
+    <value>125, 18</value>
+  </data>
+  <data name="label41.Font" type="System.Drawing.Font, System.Drawing">
+    <value>SimSun, 13pt</value>
+  </data>
+  <data name="&gt;&gt;CH2Press_OverTime.ZOrder" xml:space="preserve">
+    <value>64</value>
+  </data>
+  <data name="label40.Text" xml:space="preserve">
+    <value>CH2_1压力上限</value>
+  </data>
+  <data name="groupBox1.TabIndex" type="System.Int32, mscorlib">
+    <value>437</value>
+  </data>
+  <data name="CH2_2FlowMax.Font" type="System.Drawing.Font, System.Drawing">
+    <value>SimSun, 13pt</value>
+  </data>
+  <data name="CH1_2FlowMin.Location" type="System.Drawing.Point, System.Drawing">
+    <value>345, 231</value>
+  </data>
+  <data name="label44.Size" type="System.Drawing.Size, System.Drawing">
+    <value>125, 18</value>
+  </data>
+  <data name="CH1Press_OverTime.Size" type="System.Drawing.Size, System.Drawing">
+    <value>70, 27</value>
+  </data>
+  <data name="label16.Location" type="System.Drawing.Point, System.Drawing">
+    <value>481, 22</value>
+  </data>
+  <data name="&gt;&gt;label28.ZOrder" xml:space="preserve">
+    <value>30</value>
+  </data>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="$this.StartPosition" type="System.Windows.Forms.FormStartPosition, System.Windows.Forms">
+    <value>CenterScreen</value>
+  </data>
+  <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
+    <value>900, 704</value>
+  </data>
+  <data name="&gt;&gt;CH1_1PreMax.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="CH1_1FlowMin.Font" type="System.Drawing.Font, System.Drawing">
+    <value>SimSun, 13pt</value>
+  </data>
+  <data name="label34.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="CH1_1PreMax.Size" type="System.Drawing.Size, System.Drawing">
+    <value>70, 27</value>
+  </data>
+  <data name="&gt;&gt;label30.Name" xml:space="preserve">
+    <value>label30</value>
+  </data>
+  <data name="&gt;&gt;CH1_2FlowMax.Name" xml:space="preserve">
+    <value>CH1_2FlowMax</value>
+  </data>
+  <data name="&gt;&gt;CH2Press_OverTime.Name" xml:space="preserve">
+    <value>CH2Press_OverTime</value>
+  </data>
+  <data name="&gt;&gt;CH1_2PreMax.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="label35.Location" type="System.Drawing.Point, System.Drawing">
+    <value>155, 23</value>
+  </data>
+  <data name="&gt;&gt;CH1_2PreMin.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label44.Name" xml:space="preserve">
+    <value>label44</value>
+  </data>
+  <data name="CH1_1PreMax.TabIndex" type="System.Int32, mscorlib">
+    <value>439</value>
+  </data>
+  <data name="&gt;&gt;CH2Cont_ElecMax.ZOrder" xml:space="preserve">
+    <value>23</value>
+  </data>
+  <data name="CH4OverTime.TabIndex" type="System.Int32, mscorlib">
+    <value>386</value>
+  </data>
+  <data name="&gt;&gt;label36.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="textBox4.Location" type="System.Drawing.Point, System.Drawing">
+    <value>775, 167</value>
+  </data>
+  <data name="CH2_2FlowMin.Location" type="System.Drawing.Point, System.Drawing">
+    <value>483, 231</value>
+  </data>
+  <data name="&gt;&gt;label10.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="CH1_1PreMin.TabIndex" type="System.Int32, mscorlib">
+    <value>441</value>
+  </data>
+  <data name="&gt;&gt;CH4OverTime.Name" xml:space="preserve">
+    <value>CH4OverTime</value>
+  </data>
+  <data name="&gt;&gt;CH2Cont_PressMin.Name" xml:space="preserve">
+    <value>CH2Cont_PressMin</value>
+  </data>
+  <data name="&gt;&gt;label25.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="label25.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="&gt;&gt;label7.ZOrder" xml:space="preserve">
+    <value>73</value>
+  </data>
+  <data name="&gt;&gt;CH1_2PreMin.Name" xml:space="preserve">
+    <value>CH1_2PreMin</value>
+  </data>
+  <data name="&gt;&gt;CH1OverTime.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="CH1_2FlowMax.Location" type="System.Drawing.Point, System.Drawing">
+    <value>345, 167</value>
+  </data>
+  <data name="&gt;&gt;label21.ZOrder" xml:space="preserve">
+    <value>35</value>
+  </data>
+  <data name="&gt;&gt;label15.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="textBox6.Size" type="System.Drawing.Size, System.Drawing">
+    <value>70, 27</value>
+  </data>
+  <data name="groupBox2.Text" xml:space="preserve">
+    <value>左工位泄气</value>
+  </data>
+  <data name="&gt;&gt;CH2Cont_Pre_Compen.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="label19.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="label12.Font" type="System.Drawing.Font, System.Drawing">
+    <value>SimSun, 13pt</value>
+  </data>
+  <data name="&gt;&gt;CH1_1PreMax.Name" xml:space="preserve">
+    <value>CH1_1PreMax</value>
+  </data>
+  <data name="&gt;&gt;CH1Press_OverTime.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;CH1Cont_ElecMax.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="CH2_1FlowMin.Font" type="System.Drawing.Font, System.Drawing">
+    <value>SimSun, 13pt</value>
+  </data>
+  <data name="label26.Location" type="System.Drawing.Point, System.Drawing">
+    <value>342, 403</value>
+  </data>
+  <data name="label38.Location" type="System.Drawing.Point, System.Drawing">
+    <value>773, 145</value>
+  </data>
+  <data name="&gt;&gt;textBox2.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="label30.Size" type="System.Drawing.Size, System.Drawing">
+    <value>143, 18</value>
+  </data>
+  <data name="CH1Cont_ElecMax.Size" type="System.Drawing.Size, System.Drawing">
+    <value>70, 27</value>
+  </data>
+  <data name="label25.Font" type="System.Drawing.Font, System.Drawing">
+    <value>SimSun, 13pt</value>
+  </data>
+  <data name="label33.Font" type="System.Drawing.Font, System.Drawing">
+    <value>SimSun, 13pt</value>
+  </data>
+  <data name="&gt;&gt;label3.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="CH1RWDPressMax.Location" type="System.Drawing.Point, System.Drawing">
+    <value>21, 46</value>
+  </data>
+  <data name="&gt;&gt;CH2_1FlowMin.ZOrder" xml:space="preserve">
+    <value>48</value>
+  </data>
+  <data name="CH1RWDPressMin.Location" type="System.Drawing.Point, System.Drawing">
+    <value>21, 105</value>
+  </data>
+  <data name="&gt;&gt;label3.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="label16.TabIndex" type="System.Int32, mscorlib">
+    <value>405</value>
+  </data>
+  <data name="CH1RWDOverTime.Font" type="System.Drawing.Font, System.Drawing">
+    <value>SimSun, 13pt</value>
+  </data>
+  <data name="label29.Location" type="System.Drawing.Point, System.Drawing">
+    <value>19, 83</value>
+  </data>
+  <data name="CH2RWDOverTime.TabIndex" type="System.Int32, mscorlib">
+    <value>424</value>
+  </data>
+  <data name="&gt;&gt;label8.ZOrder" xml:space="preserve">
+    <value>47</value>
+  </data>
+  <data name="&gt;&gt;label6.Name" xml:space="preserve">
+    <value>label6</value>
+  </data>
+  <data name="label18.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="&gt;&gt;textBox5.Name" xml:space="preserve">
+    <value>textBox5</value>
+  </data>
+  <data name="textBox2.Font" type="System.Drawing.Font, System.Drawing">
+    <value>SimSun, 13pt</value>
+  </data>
+  <data name="&gt;&gt;CH1RWDPressMin.Parent" xml:space="preserve">
+    <value>groupBox2</value>
+  </data>
+  <data name="&gt;&gt;label44.ZOrder" xml:space="preserve">
+    <value>15</value>
+  </data>
+  <data name="&gt;&gt;label27.Name" xml:space="preserve">
+    <value>label27</value>
+  </data>
+  <data name="&gt;&gt;label32.Parent" xml:space="preserve">
+    <value>groupBox2</value>
+  </data>
+  <data name="&gt;&gt;CH4Press_OverTime.ZOrder" xml:space="preserve">
+    <value>60</value>
+  </data>
+  <data name="&gt;&gt;CH2RWDOverTime.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="CH3Press_OverTime.Font" type="System.Drawing.Font, System.Drawing">
+    <value>SimSun, 13pt</value>
+  </data>
+  <data name="&gt;&gt;label20.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="label5.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="label2.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="label4.Location" type="System.Drawing.Point, System.Drawing">
+    <value>343, 86</value>
+  </data>
+  <data name="&gt;&gt;CH2Cont_Elec_Compen.ZOrder" xml:space="preserve">
+    <value>19</value>
+  </data>
+  <data name="&gt;&gt;CH1Cont_Elec_Compen.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="textBox6.TabIndex" type="System.Int32, mscorlib">
+    <value>447</value>
+  </data>
+  <data name="label44.Text" xml:space="preserve">
+    <value>CH1_1压力上限</value>
+  </data>
+  <data name="&gt;&gt;CH2RWDPressMax.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="label28.Size" type="System.Drawing.Size, System.Drawing">
+    <value>143, 18</value>
+  </data>
+  <data name="&gt;&gt;CH1_2FlowMax.ZOrder" xml:space="preserve">
+    <value>54</value>
+  </data>
+  <data name="&gt;&gt;CH4OverTime.ZOrder" xml:space="preserve">
+    <value>68</value>
+  </data>
+  <data name="Save.Location" type="System.Drawing.Point, System.Drawing">
+    <value>277, 634</value>
+  </data>
+  <data name="CH2Cont_ElecMin.Location" type="System.Drawing.Point, System.Drawing">
+    <value>501, 366</value>
+  </data>
+  <data name="&gt;&gt;label25.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="CH1Cont_ElecMin.Font" type="System.Drawing.Font, System.Drawing">
+    <value>SimSun, 13pt</value>
+  </data>
+  <data name="&gt;&gt;groupBox2.Type" xml:space="preserve">
+    <value>System.Windows.Forms.GroupBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="label16.Text" xml:space="preserve">
+    <value>CH2_1流量上限</value>
+  </data>
+  <data name="label26.Size" type="System.Drawing.Size, System.Drawing">
+    <value>143, 18</value>
+  </data>
+  <data name="CH2Cont_PressMin.Font" type="System.Drawing.Font, System.Drawing">
+    <value>SimSun, 13pt</value>
+  </data>
+  <data name="&gt;&gt;label17.ZOrder" xml:space="preserve">
+    <value>33</value>
+  </data>
+  <data name="label15.TabIndex" type="System.Int32, mscorlib">
+    <value>389</value>
+  </data>
+  <data name="&gt;&gt;CH2Cont_ElecMax.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;CH2Cont_ElecMin.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="CH1Cont_ElecMax.TabIndex" type="System.Int32, mscorlib">
+    <value>425</value>
+  </data>
+  <data name="CH1OverTime.Location" type="System.Drawing.Point, System.Drawing">
+    <value>27, 47</value>
+  </data>
+  <data name="CH1_2PreMax.Location" type="System.Drawing.Point, System.Drawing">
+    <value>637, 167</value>
+  </data>
+  <data name="&gt;&gt;label12.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label35.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="textBox3.Font" type="System.Drawing.Font, System.Drawing">
+    <value>SimSun, 13pt</value>
+  </data>
+  <data name="label41.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="&gt;&gt;label40.Name" xml:space="preserve">
+    <value>label40</value>
+  </data>
+  <data name="label9.Size" type="System.Drawing.Size, System.Drawing">
+    <value>125, 18</value>
+  </data>
+  <data name="&gt;&gt;CH2Cont_ElecMin.ZOrder" xml:space="preserve">
+    <value>21</value>
+  </data>
+  <data name="$this.Icon" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        AAABAAkAMDAQAAEABABoBgAAlgAAACAgEAABAAQA6AIAAP4GAAAQEBAAAQAEACgBAADmCQAAMDAAAAEA
+        CACoDgAADgsAACAgAAABAAgAqAgAALYZAAAQEAAAAQAIAGgFAABeIgAAMDAAAAEAIACoJQAAxicAACAg
+        AAABACAAqBAAAG5NAAAQEAAAAQAgAGgEAAAWXgAAKAAAADAAAABgAAAAAQAEAAAAAACABAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAIAAAIAAAACAgACAAAAAgACAAICAAACAgIAAwMDAAAAA/wAA/wAAAP//AP8A
+        AAD/AP8A//8AAP///wAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACKAAAAAAAAAAAAAAAAAAAAAAAAAACq
+        qnqHeoqqgAAAAAAAAAAAAAAAAAAACqiAAAAAAAAAeqgAAAAAAAAAAAAAAAAKqAAAAAAAAAAAAAqoAAAA
+        AAAAAAAAAAegAAAAAAAAAAAAAAAIoAAAAAAAAAAAAKcAAAAAAAAAAAAAAAAACqAAAAAAAAAACgAIenqq
+        qqqqqqqqqqAAAIoAAAAAAAAAoAAAAKqqqqqqqqqqqqgAAAigAAAAAAAKAAAAiqqqqqqqqqqqqqoAAACK
+        AAAAAAB3AAAAeHiqqqqqqqqqqqoAAAAKAAAAAACgAAAAAAqqqqqqqqqqqqoAAAAAoAAAAAqAAAAAAKqq
+        qqqqoAAAAAAAAAAAgAAAAAoAAAAAAAAIqqqqpwAAAAAAAAAACgAAAAoAAAAAAAAKqqqqqgAAAAAAAAAA
+        CgAAAAgAAAAAAAiqqqqqqqAAAAAAAAAABwAAAAoAAAAAAAAACKqqqqAAAAAAAAAACgAAAAgAAAAAAAAA
+        qqqqqqgAAAAAAAAACgAAAAoAAAAAAAAKqqqqqqoAAAAAAAAACgAAAAoAAAAAAAAAAAqqqqpwAAAAAAAA
+        CgAAAAoAAAAAAAAAAKqqqqqgAAAAAAAAiAAAAACAAAAAAAAAB6iqqqqoAAAAAAAAoAAAAACgAAAAAAAA
+        AACKqqqqAAAAAAAIoAAAAAAKAAAAAAAAAAqqqqqqgAAAAAAKAAAAAAAAoAAAAAAAAIqKiqqqoAAAAACg
+        AAAAAAAAigAAAAAAAAAAqqqqqAAAAAoAAAAAAAAACKAAAAAAAAAKqqqqqgAAAKAAAAAAAAAAAAqAAAAA
+        AAAAAAAAAAAAqgAAAAAAAAAAAACqgAAAAAAAAAAAAAB6gAAAAAAAAAAAAAAAeqAAAAAAAAAAAKqAAAAA
+        AAAAAAAAAAAAAAenoAAAAAB6qAAAAAAAAAAAAAAAAAAAAAAAinqqqqhwAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAD///////8AAP///////wAA////////AAD///////8AAP//
+        /////wAA////////AAD///////8AAP///////wAA////P///AAD//8AAf/8AAP/+H/8P/wAA//j//+P/
+        AAD/5///+f8AAP/P///+fwAA/7gAAB8/AAD/fwAAD58AAP78AAAPzwAA/PwAAA/vAAD9/4AAD/cAAPn/
+        AB//9wAA+//gD//7AAD7/+AP//sAAPv/gAf/+wAA+//4B//7AAD7//AD//sAAPv/4AP/+wAA+//+Af/7
+        AAD7//wB//MAAP3/+AD/9wAA/f//AP/nAAD+//4Af+8AAP9//AB/3wAA/z//wD+/AAD/n/+AP38AAP/n
+        ///8/wAA//H///H/AAD//H//x/8AAP//h/w//wAA///wAf//AAD///////8AAP///////wAA////////
+        AAD///////8AAP///////wAA////////AAD///////8AAP///////wAA////////AAAoAAAAIAAAAEAA
+        AAABAAQAAAAAAAACAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAgAAAgAAAAICAAIAAAACAAIAAgIAAAICA
+        gADAwMAAAAD/AAD/AAAA//8A/wAAAP8A/wD//wAA////AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAACKqAAAenAAAAAAAAAAAACoAAAAAAAAegAAAAAAAAB3AAAAAAAAAACKAAAAAA
+        AKAAqqqqqqqqoAAIAAAAAAoAAIqqqqqqqqoAAKAAAACAAAinqqqqqqqqAAAIAAAAoAAACqqqqqeqigAA
+        CgAACAAAAAiKqqoAAAAAAAAAAAoAAAAAqqqqoAAAAAAAgAAKAAAAAACqqqAAAAAAAKAACAAAAAAIqqqq
+        AAAAAABwAAoAAAAAAAqqqgAAAAAAcAAAAAAAAACqqqqgAAAAAAAAAHAAAAAAAKqqoAAAAAoAAAAIAAAA
+        AAqqqqgAAACAAAAACgAAAAAACKqqAAAIAAAAAACHAAAAAKqqqqAAoAAAAAAAAKAAAAAAAAAACAAAAAAA
+        AAAAdwAAAAAAigAAAAAAAAAAAAAHqKeooAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAA/////////////////////////////////+Hj//+f/n/+f/+f/cAB7/vAAPf3gAD79+AA++/g
+        P//v8B/97/wf/e/4D/3v/g/9//wH//f/B/v7/gP3+/+D7/z/Ad//f/+//8/8///4B///////////////
+        //////////////////8oAAAAEAAAACAAAAABAAQAAAAAAIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        gAAAgAAAAICAAIAAAACAAIAAgIAAAICAgADAwMAAAAD/AAD/AAAA//8A/wAAAP8A/wD//wAA////AAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAqqqqoAAAAAAKqoAAAAAAAAiqoA
+        AAAAAAAKqgAAAAAAAAiqgAAAAAAAAHqgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAA//8AAP//AAD//wAA//8AAP//AAD4DwAA/D8AAPw/AAD+PwAA/h8AAP8fAAD//wAA//8AAP//
+        AAD//wAA//8AACgAAAAwAAAAYAAAAAEACAAAAAAAAAkAAAAAAAAAAAAAAAEAAAABAAAAAAAAAP4AAAX+
+        BQAJ/wkADf4NABH/EQAW/hYAGf8ZAB3+HQAh/iEAJv4mACr+KgAt/i0AMf4xADX+NQA5/jkAPf49AEH+
+        QQBF/kUAS/9LAE3+TQBR/lEAVf5VAFn+WQBe/14AYf5hAGX+ZQBp/mkAbv9uAHD/cAB1/nUAef55AH7+
+        fgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAD///8AAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAICAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAFggIDhMXFxsXFxIOBgobAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAFgwSIAAAAAAAAAAAAAAAAAAdEQwbAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABIMHQAA
+        AAAAAAAAAAAAAAAAAAAAAAAbDBYAAAAAAAAAAAAAAAAAAAAAAAAAAAAbCAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAB0IAAAAAAAAAAAAAAAAAAAAAAAAAAwWAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAEREA
+        AAAAAAAAAAAAAAAAAAAACgAAACAbFgwBAQEBAQEBAQEBAQEBAQEBAQEAAAAAABsOAAAAAAAAAAAAAAAA
+        AAAKAAAAAAAAAAwBAQEBAQEBAQEBAQEBAQEBAQEbAAAAAAAgDgAAAAAAAAAAAAAAAA4AAAAAAAAdBAEB
+        AQEBAQEBAQEBAQEBAQEBAQEOAAAAAAAAGxIAAAAAAAAAAAAAGxYAAAAAAAAgICAgCgEBAQEBAQEBAQEB
+        AQEBAQEBAAAAAAAAAA4AAAAAAAAAAAAADAAAAAAAAAAAAAAWAQEBAQEBAQEBAQEBAQEBAQEBAAAAAAAA
+        AAAKAAAAAAAAAAAWHQAAAAAAAAAAAAwBAQEBAQEBAQEBAAAAAAAAAAAAAAAAAAAAAAASAAAAAAAAAAAK
+        AAAAAAAAAAAAAAAAACAGAQEBAQEBFgAAAAAAAAAAAAAAAAAAAAAAEgAAAAAAAAAOAAAAAAAAAAAAAAAA
+        AAgBAQEBAQEBBAAAAAAAAAAAAAAAAAAAAAAADgAAAAAAAAATAAAAAAAAAAAAAAAXAQEBAQEBAQEBARYA
+        AAAAAAAAAAAAAAAAAAAADAAAAAAAAAAXAAAAAAAAAAAAAAAAAAAAFwEBAQEBAQYAAAAAAAAAAAAAAAAA
+        AAAADAAAAAAAAAAWAAAAAAAAAAAAAAAAAAAWAQEBAQEBAQEXAAAAAAAAAAAAAAAAAAAADAAAAAAAAAAS
+        AAAAAAAAAAAAAAAAAAoBBAQBAQEBAQEEAAAAAAAAAAAAAAAAAAAADgAAAAAAAAAKAAAAAAAAAAAAAAAA
+        AAAAAAAOAQEBAQEBGwAAAAAAAAAAAAAAAAAAEQAAAAAAAAAOAAAAAAAAAAAAAAAAAAAAAAYBAQEBAQEB
+        BAAAAAAAAAAAAAAAAAAbFwAAAAAAAAAAEgAAAAAAAAAAAAAAAAAAEQwODAQBAQEBAR0AAAAAAAAAAAAA
+        AAAKAAAAAAAAAAAADgAAAAAAAAAAAAAAAAAAAAAAIAQBAQEBAQgAAAAAAAAAAAAAAB0WAAAAAAAAAAAA
+        AAoAAAAAAAAAAAAAAAAAAAARAQEBAQEBAQEdAAAAAAAAAAAAAAYAAAAAAAAAAAAAAAAMAAAAAAAAAAAA
+        AAAAABsbFxsRAQEBAQEKAAAAAAAAAAAACgAAAAAAAAAAAAAAAAAbEQAAAAAAAAAAAAAAAAAAAAAMAQEB
+        AQEBIAAAAAAAAAAOAAAAAAAAAAAAAAAAAAAAGw4AAAAAAAAAAAAAAAAAAAYBAQEBAQEBCAAAAAAAAAoA
+        AAAAAAAAAAAAAAAAAAAAAAAIGwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAWCgAAAAAAAAAAAAAAAAAA
+        AAAAAAAAFwgdAAAAAAAAAAAAAAAAAAAAAAAAAAAAGwgbAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAXDBMA
+        AAAAAAAAAAAAAAAAAAAAABIMGwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAODhIXAAAAAAAAAAAA
+        FxEMEgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAgEw4IBAQECA4WIAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAA////////AAD///////8AAP///////wAA////////AAD///////8AAP//
+        /////wAA////////AAD///////8AAP///z///wAA///AAH//AAD//h//D/8AAP/4///j/wAA/+f///n/
+        AAD/z////n8AAP+4AAAfPwAA/38AAA+fAAD+/AAAD88AAPz8AAAP7wAA/f+AAA/3AAD5/wAf//cAAPv/
+        4A//+wAA+//gD//7AAD7/4AH//sAAPv/+Af/+wAA+//wA//7AAD7/+AD//sAAPv//gH/+wAA+//8Af/z
+        AAD9//gA//cAAP3//wD/5wAA/v/+AH/vAAD/f/wAf98AAP8//8A/vwAA/5//gD9/AAD/5////P8AAP/x
+        ///x/wAA//x//8f/AAD//4f8P/8AAP//8AH//wAA////////AAD///////8AAP///////wAA////////
+        AAD///////8AAP///////wAA////////AAD///////8AAP///////wAAKAAAACAAAABAAAAAAQAIAAAA
+        AAAABAAAAAAAAAAAAAAAAQAAAAEAAAAAAAAA/gAABf4FAAn+CQAP/g8AHv4eACv+KwAs/ywAM/8zADT/
+        NAA+/j4AQv5CAEX+RQBJ/kkATP5MAFD+UABV/lUAWf9ZAF7+XgBh/mEAZf5lAGj+aABt/m0Acv5yAHX+
+        dQB5/nkAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAP///wAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABkODhcAAAAAFg4O
+        AAAAAAAAAAAAAAAAAAAAAAAAAA8WAAAAAAAAAAAAAAAAExEAAAAAAAAAAAAAAAAAABMWAAAAAAAAAAAA
+        AAAAAAAAABEXAAAAAAAAAAAAAAANAAAADQQEAgQCBAIEAgQCBAAAAAAPAAAAAAAAAAAADQAAAAARAgIC
+        AgICAgICAgICCgAAAAAPAAAAAAAAABMAAAAAGREPBAICAgICAgICAgICAAAAAAAZAAAAAAAAFgAAAAAA
+        ABECAgICAgIGBwgICAgAAAAAAA8AAAAAABMAAAAAAAAAFxYFAgICAgAAAAAAAAAAAAAAAAAAAAAADgAA
+        AAAAAAAADwICAgICBwAAAAAAAAAAAAAADwAAAAANAAAAAAAAAAAAAAcCAgICAAAAAAAAAAAAAAANAAAA
+        AA0AAAAAAAAAAAAOAgICAgIHAAAAAAAAAAAAAA0AAAAADgAAAAAAAAAAAAAACgICAgIAAAAAAAAAAAAA
+        EwAAAAAAAAAAAAAAAAAAAA0CAgICAggAAAAAAAAAAAAAAAAAAAAOAAAAAAAAAAAAAAAPAgICAgAAAAAA
+        AAAADQAAAAAAAAAXAAAAAAAAAAAADQICAgICCgAAAAAAABEAAAAAAAAAABcAAAAAAAAAAAAAABMCAgIC
+        AAAAAAAXAAAAAAAAAAAAABkTAAAAAAAAAAAOBAICAgQOAAAADwAAAAAAAAAAAAAAAAAOAAAAAAAAAAAA
+        AAAAAAAAAA4AAAAAAAAAAAAAAAAAAAAADhMAAAAAAAAAAAAAEw8AAAAAAAAAAAAAAAAAAAAAAAAAAAAT
+        Dg0KCg0OEwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/////////////////////////////////+Hj//+f
+        /n/+f/+f/cAB7/vAAPf3gAD79+AA++/gP//v8B/97/wf/e/4D/3v/g/9//wH//f/B/v7/gP3+/+D7/z/
+        Ad//f/+//8/8///4B/////////////////////////////////8oAAAAEAAAACAAAAABAAgAAAAAAAAB
+        AAAAAAAAAAAAAAABAAAAAQAAAAAAAAD+AAAE/wQAC/4LAAz/DAAR/hEAFf8VACP/IwA6/zoAQ/5DAFL/
+        UgBb/1sAb/5vAHb+dgB5/3kAfv9+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAA////AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAJAgICAgIFAAAAAAAA
+        AAAAAAcCAg4AAAAAAAAAAAAAAAALAwIMAAAAAAAAAAAAAAAAAAgCAwAAAAAAAAAAAAAAAAANBQIOAAAA
+        AAAAAAAAAAAAAAoCAwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAD//wAA//8AAP//AAD//wAA//8AAPgP
+        AAD8PwAA/D8AAP4/AAD+HwAA/x8AAP//AAD//wAA//8AAP//AAD//wAAKAAAADAAAABgAAAAAQAgAAAA
+        AACAJQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAA/wADAP8AHwD/AEUA/wBjAP8AdgD+AIMA/wCGAP8AfAD/AHIA/wBeAP8AQAD+
+        ABkAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAD/AAIA/wAnAP4AZgD/AKkA/wDiAP8A5QD/AMkA/wC0AP8ApQD+AJ4A/wCZAP8AnwD/
+        AKgA/wC4AP8AzAD+AOkA/wDaAP8AmwD/AFwA/wAeAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAA/wAQAP8ATgD/AKwA/wDRAP4AuwD/AIAA/wBCAP8AIgD/ABUA/wAMAP8ABQD+
+        AAIAAAAAAP8AAwD/AAYA/wANAP8AFwD+ACQA/wBMAP8AjQD/AMAA/wDTAP8AnAD+AD8A/wAKAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAP4ACAD+AEQA/gC5AP4A0QD+AIcA/gA3AP4ACgAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAD+ABEA/gA+AP4AmwD+
+        ANQA/gCmAP4AOAD+AAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/wAZAP4AlgD/AOcA/wB2AP8AGQAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAD+ACcA/wCQAP8A5gD/AH4A/wALAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAD/AD8A/wDTAP4AqwD/ACEA/wAGAP8AMAD/
+        AF8A/wByAP4AcgD/AHIA/wByAP8AcgD/AHIA/wByAP8AcgD+AHIA/wByAP8AcgD/AHIA/wByAP8AcgD+
+        AHIA/wByAP8AcgD/AHIA/wByAP8ACwAAAAAAAAAAAP8AMQD/AMYA/wDBAP8AKwAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/wACAP8ATAD/ANsA/wB3AP4AHwD/
+        AEsA/wCHAP8AnAD/AKoA/wDSAP4A/gD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD+AP4A/wD/AP8A/wD/
+        AP8A/wD/AP8A/wD+AP4A/wD/AP8A/wD/AP8A/wD/AP8ATAAAAAAAAAAAAAAAAAD/ABMA/wCYAP8AywD+
+        ADkAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAD/AAEA/wA/AP8A3AD/
+        AGMA/wAGAAAAAAAAAAAAAAAAAP8ACAD/AFQA/wDVAP4A/gD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD+
+        AP4A/wD/AP8A/wD/AP8A/wD/AP8A/wD+AP4A/wD/AP8A/wD/AP8A/wD/AP8AlAD+AAMAAAAAAAAAAAAA
+        AAAA/wAMAP8AhgD+AMwA/wAmAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAD/
+        ACIA/wDKAP8AfAD/AAIAAAAAAAAAAAAAAAAA/wARAP8AjgD/APIA/wD/AP4A/gD/AP8A/wD/AP8A/wD/
+        AP8A/wD/AP8A/wD+AP4A/wD/AP8A/wD/AP8A/wD/AP8A/wD+AP4A/wD/AP8A/wD/AP8A/wD/AP8AzgD+
+        ABQAAAAAAAAAAAAAAAAAAAAAAP8ADAD+AJkA/wC8AP8ACgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAP4ABQD+AJ8A/gCpAP4AAwAAAAAAAAAAAAAAAAAAAAAA/gBPAP4AgAD+AIAA/gCAAP4AhAD+
+        AN0A/gD+AP4A/gD+AP4A/gD+AP4A/gD+AP4A/gD+AP4A/gD+AP4A/gD+AP4A/gD+AP4A/gD+AP4A/gD+
+        AP4A/gD+AP4A+wD+ADYAAAAAAAAAAAAAAAAAAAAAAAAAAAD+ABAA/gDJAP4AdQD+AAIAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAP4ASAD/ANEA/wAsAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAA/wAiAP4AqwD/APkA/wD/AP8A/wD/AP8A/wD/AP8A/wD+AP4A/wD/AP8A/wD/AP8A/wD/AP8A/wD+
+        AP4A/wD/AP8A/wD/AP8A/wD/AP8A/wD+AH8AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/wBCAP8A3AD/
+        ACcAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAP4AqAD/AI4A/wACAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAP8ABgD/AFAA/wDRAP4A/gD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD+AP4A/wD/AP8A/wD/
+        AHQA/wAyAP8AMgD+ADIA/wAyAP8AMgD/ADIA/wAyAP8AMgD+AB8AAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAA/wADAP8AuAD/AHsAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/wAWAP4A3wD/ADsAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAP8ACQD/AEQA/wBTAP4AUwD/AFYA/wCDAP8A7gD/AP8A/wD/AP8A/wD+
+        AP4A/wD/AP8A/wD/AK0A/wALAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAP8AYAD/AL4A/wANAAAAAAAAAAAAAAAAAAAAAAAAAAAA/wBIAP4AxwD/
+        ABoAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAP4AAQD/AGIA/wDkAP8A/wD/
+        AP8A/wD/AP8A/wD+AP4A/wD/AP8A/wD/APIA/wBAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAP8ALwD/AMwA/wAtAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAA/wBoAP4AsAD/AAgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/wAcAP4ApgD/
+        APoA/wD/AP8A/wD/AP8A/wD/AP8A/wD+AP4A/wD/AP8A/wD/AP8A/wCuAP8ABQAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAP8ADgD/ANAA/wBDAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAA/wB1AP4AqAD/AAIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAA/wAKAP4AJQD/ACYA/wAmAP8ANwD/AKEA/wD9AP8A/wD+AP4A/wD/AP8A/wD/AP8A/wDsAP8AQAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAP8AAgD/
+        ANIA/wBMAAAAAAAAAAAAAAAAAAAAAAAAAAAA/gBvAP4AqwD+AAUAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAD+AAEA/gAtAP4ArgD+APoA/gD+AP4A/gD+AP4A/gD+AP4A/gD+
+        AP4A/gD+AP4ApQD+AAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAP4ABwD+ANEA/gBIAAAAAAAAAAAAAAAAAAAAAAAAAAAA/wBYAP4AuwD/ABAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAD/AFMA/wDXAP8A+QD/APkA/wD5AP8A/QD+
+        AP4A/wD/AP8A/wD/AP8A/wD/AP8A8QD+AC4AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAP8AHgD/AM0A/wA4AAAAAAAAAAAAAAAAAAAAAAAAAAAA/wApAP4A2AD/
+        ACcAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAA/wA8AP8AzQD+AP4A/wD/AP8A/wD/AP8A/wD/AP8A/gD+AJ0A/wAEAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAP8ARwD/AMYA/wAaAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAA/wADAP4AzAD/AGcAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAP8ADQD/AHMA/wDuAP8A/gD+AP4A/wD/AP8A/wD/AP8A/wD/AP8A/wD+APMA/wAnAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAP8AkAD/AKAA/wACAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAP4AbwD/AL8A/wASAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAA/wAMAP8AdgD/AMUA/wDLAP8AywD+ANIA/wD3AP8A/wD/AP8A/wD/AP8A/wD+
+        AP4A/wCPAP8ABQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/wAbAP8A3wD/
+        AEYAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAP4AGwD/AMgA/wBrAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAP8AEwD+AIQA/wDxAP8A/wD/
+        AP8A/wD/AP8A/wD+AP4A/wDkAP8AKAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAD+
+        AAUA/wCOAP8ArgD/AA0AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAD+AFEA/gDeAP4AMQAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/gAzAP4AwwD+
+        AP4A/gD+AP4A/gD+AP4A/gD+AP4A/gD+AP4A/gD+AP4AigAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAD+AE4A/gDoAP4AKgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAD/
+        AAYA/wB9AP8A1AD/ACIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAD/
+        ABsA/wCPAP8AngD+AJ4A/wCfAP8AvgD/APsA/wD/AP8A/wD+AP4A/wD/AP8A3wD/ACkAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAP8AQgD+ANgA/wBdAP8AAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAA/wAOAP8AmAD/AMMA/wAyAP4AAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAD+AAUA/wBHAP8A1QD/AP0A/wD/AP8A/wD+AP4A/wD/AP8A/QD/
+        AIQAAAAAAAAAAAAAAAAAAAAAAAAAAAD/AAEA/wBMAP8AzgD+AHwA/wAEAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAP8ADQD/AJYA/wDNAP4AUgD/AAcAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAP8AEwD+AH4A/wDtAP8A/wD/AP8A/wD/AP8A/wD+
+        AP4A/wD/AP8A/wD/AN8A/wAcAAAAAAAAAAAAAAAAAP8ACwD/AGoA/wDYAP8AdQD+AAgAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAD/AAQA/wBqAP4A4QD/
+        AJwA/wAWAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAP8ANQD+AHAA/wBxAP8AcQD/
+        AHEA/wBxAP8AcQD+AHEA/wBxAP8AcQD/AG4A/wAmAAAAAAAAAAAA/wAqAP8ArAD/AN0A/wBMAP8AAwAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAP4AJAD/AKEA/wDnAP8AhwD/AC0A/wABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/wABAP8APQD+AJ4A/wDjAP8AkgD/
+        ABIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAD+AAgA/gBCAP4AqQD+ANMA/gCzAP4AXQD+AC0A/gANAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/gASAP4ANAD+AGsA/gC+AP4A0QD+
+        AJcA/gA0AP4ABQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAP8ACAD/ADUA/wB7AP4AyAD/
+        AMwA/wC/AP8AoAD/AHQA/wBVAP8APgD+ADMA/wArAP8ANAD/AEEA/wBaAP8AegD+AKcA/wDCAP8AzwD/
+        AL4A/wBwAP8AKQD+AAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAP4ABQD/AC8A/wBbAP8AhwD/AK8A/wDPAP8A5AD+APEA/wD1AP8A8AD/AOAA/wDJAP8AqgD+
+        AIAA/wBTAP8AJQD/AAMAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAP//
+        /////wAA////////AAD///////8AAP///////wAA////////AAD///////8AAP///////wAA////////
+        AAD//+AB//8AAP/+AAAf/wAA//gAQAP/AAD/4D//gP8AAP/B///wfwAA/4AAAAw/AAD+AAAADh8AAPwc
+        AAAHDwAA/DgAAAeHAAD4eAAAB8MAAPj/AAAH4wAA+PwAAAfjAADx/AAH//EAAPH/gAf/8QAA8f8AA//x
+        AADx/wAD//EAAPH/wAH/8QAA8f/AAf/xAADx//wA//EAAPH/8AD/8QAA+P/gAH/jAAD4//4Af8MAAPx/
+        /AB/xwAA/D/4AD+HAAD+D/8APg8AAP8H/gAcHwAA/4P+ABg/AAD/4H//wP8AAP/wD/4B/wAA//wAAAf/
+        AAD//4AAP/8AAP///////wAA////////AAD///////8AAP///////wAA////////AAD///////8AAP//
+        /////wAA////////AAD///////8AACgAAAAgAAAAQAAAAAEAIAAAAAAAgBAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAD+AA8A/gAzAP4ASwD/AFgA/gBVAP4ASQD+
+        ADAA/wALAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/gAEAP4ANwD+AIcA/wCzAP4AtAD+AI8A/gB1AP8AaQD+
+        AGoA/gB4AP4AkgD/ALcA/gCvAP4AfwD+AC4A/wACAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/gADAP8ARAD+AK4A/gCWAP4AQQD/ABMA/gABAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAP8AAQD+ABYA/gBKAP4AnwD/AKYA/gA5AP4AAQAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAP8AEwD/AJsA/wCVAP8AHgAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAP8AKgD/AKEA/wCMAP8ADAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAD+ACMA/gC5AP4AUQD/AD8A/gB+AP4AuQD+
+        APAA/wD2AP4A9gD+APYA/gD2AP8A9gD+APYA/gD2AP4A9gD/APYA/gD2AP4A9gD+AHkAAAAAAP4AAgD+
+        AF0A/gCvAP8AGQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/wAXAP4AuAD+AC8AAAAAAAAAAAD+
+        ABYA/gCfAP4A+gD/AP8A/gD+AP4A/gD+AP4A/wD/AP4A/gD+AP4A/gD+AP8A/wD+AP4A/gD+AP4AwQD/
+        AAUAAAAAAAAAAAD+AEYA/wCvAP4ACQAAAAAAAAAAAAAAAAAAAAAAAAAAAP4AAgD/AJwA/gBHAAAAAAAA
+        AAAA/wALAP4AhQD+AKoA/gCsAP8A8AD+AP4A/gD+AP4A/gD/AP8A/gD+AP4A/gD+AP4A/wD/AP4A/gD+
+        AP4A/gD1AP8AHQAAAAAAAAAAAAAAAAD/AF0A/gCHAP4AAQAAAAAAAAAAAAAAAAAAAAAA/wBAAP8AlgAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAP8AGgD/AKgA/wD8AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wDUAP8AywD/
+        AMwA/wDLAP8AywD/AMsA/wBGAAAAAAAAAAAAAAAAAP8AAgD/AK0A/wAnAAAAAAAAAAAAAAAAAAAAAAD+
+        AJcA/wA0AAAAAAAAAAAAAAAAAAAAAAD+AAcA/gBmAP4AjAD/AJIA/gDhAP4A/gD+AP4A/wD/AP4A/gD+
+        AGcAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAP4ATgD+AHsAAAAAAAAAAAAA
+        AAAAAAAAAP4AtwD/AA4AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/gAZAP8ArQD+AP0A/gD+AP4A/gD/
+        AP8A/gD+AP4A1AD+AA0AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/gAZAP4AqwAA
+        AAAAAAAAAAAAAAAAAAAA/gC9AP8AAgAAAAAAAAAAAAAAAAAAAAAAAAAAAP4AAgD+AFAA/wBuAP4AdgD+
+        ANQA/gD+AP8A/wD+AP4A/gD9AP4AYAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAD+
+        AAMA/gC9AAAAAAAAAAAAAAAAAAAAAAD/ALsA/wAFAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAD/
+        AB4A/wCvAP8A/QD/AP8A/wD/AP8A/wD/AP8A/wDTAP8ABQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAP8ACAD/ALkAAAAAAAAAAAAAAAAAAAAAAP4ArwD/ABYAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAP8ANwD+AFAA/gBWAP4AwwD/AP8A/gD+AP4A/gD+AP0A/wBXAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAA/gAoAP4AnAAAAAAAAAAAAAAAAAAAAAAA/gB6AP8AVgAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAP4AIwD+ALgA/gD9AP8A/wD+AP4A/gD+AP4A/gD/AMgA/gAIAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAD+AHIA/gBcAAAAAAAAAAAAAAAAAAAAAAD+AB8A/wCzAP4ACgAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/gAcAP4AMgD+ADsA/wCrAP4A/gD+AP4A/gD+AP8A/QD+
+        AEsAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/wAQAP4AuwD+ABAAAAAAAAAAAAAAAAAAAAAAAAAAAAD/
+        AGUA/wCJAP8AAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/wAkAP8AvQD/AP4A/wD/AP8A/wD/
+        AP8A/wD/AP8AwQD/AAUAAAAAAAAAAAAAAAAAAAAAAP8ABgD/AJ8A/wBKAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAP8ABQD+AIsA/gB2AP4ABQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAD+AAkA/gAUAP8AIAD+
+        AJcA/gD8AP4A/gD/AP8A/gD6AP4ARwAAAAAAAAAAAAAAAAD+AAkA/gCMAP8AdgAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAP4ABQD+AIQA/gCaAP8AFgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAD+
+        ACAA/wC0AP4A9QD+APUA/gD1AP8A9gD+APUA/gCyAAAAAAAAAAAA/gAeAP4AqgD+AG8A/wADAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAD+AEkA/wC5AP4AbgD+ABQAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/gAbAP8AfQD+ALUA/gA3AAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAD/AAwA/wBkAP8AswD/
+        AJgA/wBVAP8AJQD/ABEA/wAGAP8AAQD/AAIA/wAIAP8AEwD/ACgA/wBeAP8AngD/AK8A/wBVAP8ACQAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAA/gAFAP4AMAD/AHAA/gCgAP4AsAD+ALoA/wDAAP4AwAD+ALkA/gCvAP8AnAD+AGcA/gArAP4AAgAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAA////////////////////////////+Af//4AAf/4D8B/8P/8P+AAAh/GA
+        AGPjAABx58AAceeAH/nn4A/558AP+efwB/nn8Af55/gD+eP4A/Hx/AHj8PwBx/h+AYf+H/4f/wAAP//A
+        AP////////////////////////////////8oAAAAEAAAACAAAAABACAAAAAAAEAEAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/wADAP8AHwD/ACsA/wAeAP8AAgAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAD/AD4A/gBlAP8AXgD+AEEA/wA1AP4AQgD/
+        AF8A/gBmAP8AOAAAAAAAAAAAAAAAAAAAAAAAAAAAAP8ACAD/AG4A/wBcAP8AagD/AHsA/wB7AP8AewD/
+        AHsA/wB7AP8AWwD/ADMA/wBpAP8ABgAAAAAAAAAAAAAAAAD/AGwA/gAMAP8AKQD+ALwA/wD7AP4A/gD/
+        AP8A/gD+AP8A/wD+AO0A/wAIAP4AEQD/AGcAAAAAAAAAAAD/ADYA/wAzAAAAAAD/AAEA/wBtAP8A3AD/
+        AP8A/wD/AP8AgQD/AGYA/wBlAP8AEQAAAAAA/wA/AP8AKAAAAAAA/gBdAP8ABAAAAAAAAAAAAP4AGwD/
+        AKQA/gD0AP8A/wD+AJAAAAAAAAAAAAAAAAAAAAAAAP8ABwD+AFoAAAAAAP8AWgD/AAYAAAAAAAAAAAAA
+        AAAA/wBVAP8AxQD/AP8A/wDzAP8AFwAAAAAAAAAAAAAAAAD/AAwA/wBVAAAAAAD+ACYA/wBFAAAAAAAA
+        AAAAAAAAAP8ADwD+AIkA/wDqAP4A/gD/AIYAAAAAAAAAAAAAAAAA/wBPAP4AGwAAAAAAAAAAAP8AXwD/
+        AB8AAAAAAAAAAAAAAAAA/wBAAP8ArQD/AP4A/wDuAP8AEwAAAAAA/wAnAP8AWAAAAAAAAAAAAAAAAAD/
+        AAEA/gBaAP8ATwD+AAUAAAAAAP4ACAD/AGoA/gB6AP8AegD+ADMA/wBUAP4AVAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAD/ABwA/wBgAP8AYgD/AGEA/wBhAP8AYQD/AGIA/wBfAP8AFwAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAP//AAD//wAA/B8AAPAHAADAAQAAwAEAAJAEAACYPAAAnBwAAJwcAADOCQAAwgMAAPAH
+        AAD//wAA//8AAP//AAA=
+</value>
+  </data>
+  <data name="groupBox3.TabIndex" type="System.Int32, mscorlib">
+    <value>438</value>
+  </data>
+  <data name="&gt;&gt;label24.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;CH1_1FlowMax.Name" xml:space="preserve">
+    <value>CH1_1FlowMax</value>
+  </data>
+  <data name="CH1_1FlowMax.TabIndex" type="System.Int32, mscorlib">
+    <value>396</value>
+  </data>
+  <data name="CH2OverTime.Size" type="System.Drawing.Size, System.Drawing">
+    <value>70, 27</value>
+  </data>
+  <data name="label7.TabIndex" type="System.Int32, mscorlib">
+    <value>383</value>
+  </data>
+  <data name="label4.TabIndex" type="System.Int32, mscorlib">
+    <value>399</value>
+  </data>
+  <data name="groupBox2.Location" type="System.Drawing.Point, System.Drawing">
+    <value>27, 469</value>
+  </data>
+  <data name="label35.Text" xml:space="preserve">
+    <value>CH1泄气时间</value>
+  </data>
+  <data name="CH1OverTime.Size" type="System.Drawing.Size, System.Drawing">
+    <value>70, 27</value>
+  </data>
+  <data name="label37.Size" type="System.Drawing.Size, System.Drawing">
+    <value>125, 18</value>
+  </data>
+  <data name="&gt;&gt;textBox2.Parent" xml:space="preserve">
+    <value>groupBox1</value>
+  </data>
+  <data name="label10.Text" xml:space="preserve">
+    <value>CH2_2流量超时</value>
+  </data>
+  <data name="CH2_1FlowMax.TabIndex" type="System.Int32, mscorlib">
+    <value>404</value>
+  </data>
+  <data name="CH4Press_OverTime.TabIndex" type="System.Int32, mscorlib">
+    <value>394</value>
+  </data>
+  <data name="CH2OverTime.Location" type="System.Drawing.Point, System.Drawing">
+    <value>27, 111</value>
+  </data>
+  <data name="label12.Location" type="System.Drawing.Point, System.Drawing">
+    <value>25, 148</value>
+  </data>
+  <data name="textBox2.TabIndex" type="System.Int32, mscorlib">
+    <value>418</value>
+  </data>
+  <data name="&gt;&gt;CH1OverTime.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label41.ZOrder" xml:space="preserve">
+    <value>9</value>
+  </data>
+  <data name="label10.TabIndex" type="System.Int32, mscorlib">
+    <value>387</value>
+  </data>
+  <data name="CH1_2PreMax.Size" type="System.Drawing.Size, System.Drawing">
+    <value>70, 27</value>
+  </data>
+  <data name="&gt;&gt;textBox4.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="label22.Text" xml:space="preserve">
+    <value>CH2压力比值上限</value>
+  </data>
+  <data name="&gt;&gt;CH1OverTime.ZOrder" xml:space="preserve">
+    <value>74</value>
+  </data>
+  <data name="label31.Location" type="System.Drawing.Point, System.Drawing">
+    <value>19, 83</value>
+  </data>
+  <data name="label6.Font" type="System.Drawing.Font, System.Drawing">
+    <value>SimSun, 13pt</value>
+  </data>
+  <data name="label1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>160, 209</value>
+  </data>
+  <data name="&gt;&gt;label15.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label34.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="label11.TabIndex" type="System.Int32, mscorlib">
+    <value>407</value>
+  </data>
+  <data name="label19.Size" type="System.Drawing.Size, System.Drawing">
+    <value>143, 18</value>
+  </data>
+  <data name="label40.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="&gt;&gt;CH2_2FlowMax.ZOrder" xml:space="preserve">
+    <value>46</value>
+  </data>
+  <data name="&gt;&gt;label42.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="CH2RWDOverTime.Location" type="System.Drawing.Point, System.Drawing">
+    <value>157, 45</value>
+  </data>
+  <data name="label44.TabIndex" type="System.Int32, mscorlib">
+    <value>440</value>
+  </data>
+  <data name="label16.Font" type="System.Drawing.Font, System.Drawing">
+    <value>SimSun, 13pt</value>
+  </data>
+  <data name="&gt;&gt;label37.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="label18.Text" xml:space="preserve">
+    <value>CH1压力比值补偿</value>
+  </data>
+  <data name="&gt;&gt;label16.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="label11.Text" xml:space="preserve">
+    <value>CH2_1流量下限</value>
+  </data>
+  <data name="&gt;&gt;textBox1.Parent" xml:space="preserve">
+    <value>groupBox1</value>
+  </data>
+  <data name="label30.Font" type="System.Drawing.Font, System.Drawing">
+    <value>SimSun, 13pt</value>
+  </data>
+  <data name="&gt;&gt;textBox2.Name" xml:space="preserve">
+    <value>textBox2</value>
+  </data>
+  <data name="&gt;&gt;CH1_1PreMax.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="label3.TabIndex" type="System.Int32, mscorlib">
+    <value>401</value>
+  </data>
+  <data name="label23.Font" type="System.Drawing.Font, System.Drawing">
+    <value>SimSun, 13pt</value>
+  </data>
+  <data name="&gt;&gt;textBox4.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="CH1_2PreMax.Font" type="System.Drawing.Font, System.Drawing">
+    <value>SimSun, 13pt</value>
+  </data>
+  <data name="&gt;&gt;CH2RWDPressMin.Name" xml:space="preserve">
+    <value>CH2RWDPressMin</value>
+  </data>
+  <data name="&gt;&gt;CH1Cont_ElecMin.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="label15.Text" xml:space="preserve">
+    <value>CH1_1压力超时</value>
+  </data>
+  <data name="label17.TabIndex" type="System.Int32, mscorlib">
+    <value>423</value>
+  </data>
+  <data name="&gt;&gt;label13.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="label14.TabIndex" type="System.Int32, mscorlib">
+    <value>391</value>
+  </data>
+  <data name="&gt;&gt;CH2Press_OverTime.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label43.ZOrder" xml:space="preserve">
+    <value>13</value>
+  </data>
+  <data name="&gt;&gt;label40.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;label9.Name" xml:space="preserve">
+    <value>label9</value>
+  </data>
+  <data name="CH1RWDPressMin.TabIndex" type="System.Int32, mscorlib">
+    <value>420</value>
+  </data>
+  <data name="&gt;&gt;label4.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label14.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="CH3OverTime.TabIndex" type="System.Int32, mscorlib">
+    <value>384</value>
+  </data>
+  <data name="&gt;&gt;CH1Cont_ElecMin.ZOrder" xml:space="preserve">
+    <value>27</value>
+  </data>
+  <data name="CH2RWDOverTime.Font" type="System.Drawing.Font, System.Drawing">
+    <value>SimSun, 13pt</value>
+  </data>
+  <data name="label18.Size" type="System.Drawing.Size, System.Drawing">
+    <value>143, 18</value>
+  </data>
+  <data name="CH2Cont_Pre_Compen.TabIndex" type="System.Int32, mscorlib">
+    <value>422</value>
+  </data>
+  <data name="&gt;&gt;CH1_1FlowMin.ZOrder" xml:space="preserve">
+    <value>56</value>
+  </data>
+  <data name="label22.Location" type="System.Drawing.Point, System.Drawing">
+    <value>182, 280</value>
+  </data>
+  <data name="groupBox2.Size" type="System.Drawing.Size, System.Drawing">
+    <value>267, 147</value>
+  </data>
+  <data name="&gt;&gt;label9.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;label38.Name" xml:space="preserve">
+    <value>label38</value>
+  </data>
+  <data name="&gt;&gt;groupBox1.Name" xml:space="preserve">
+    <value>groupBox1</value>
+  </data>
+  <data name="label16.Size" type="System.Drawing.Size, System.Drawing">
+    <value>125, 18</value>
+  </data>
+  <data name="&gt;&gt;label2.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;CH2Cont_ElecMax.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="textBox4.Font" type="System.Drawing.Font, System.Drawing">
+    <value>SimSun, 13pt</value>
+  </data>
+  <data name="label41.Location" type="System.Drawing.Point, System.Drawing">
+    <value>635, 209</value>
+  </data>
+  <data name="&gt;&gt;CH2Cont_PressMin.ZOrder" xml:space="preserve">
+    <value>34</value>
+  </data>
+  <data name="label22.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="CH2_2FlowMin.Font" type="System.Drawing.Font, System.Drawing">
+    <value>SimSun, 13pt</value>
+  </data>
+  <data name="CH1Cont_Elec_Compen.TabIndex" type="System.Int32, mscorlib">
+    <value>429</value>
+  </data>
+  <data name="label33.Location" type="System.Drawing.Point, System.Drawing">
+    <value>19, 83</value>
+  </data>
+  <data name="label12.TabIndex" type="System.Int32, mscorlib">
+    <value>385</value>
+  </data>
+  <data name="&gt;&gt;label8.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="CH3OverTime.Size" type="System.Drawing.Size, System.Drawing">
+    <value>70, 27</value>
+  </data>
+  <data name="label43.Font" type="System.Drawing.Font, System.Drawing">
+    <value>SimSun, 13pt</value>
+  </data>
+  <data name="&gt;&gt;CH2RWDPressMax.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="&gt;&gt;textBox5.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="&gt;&gt;label38.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="CH1_2FlowMax.Size" type="System.Drawing.Size, System.Drawing">
+    <value>70, 27</value>
+  </data>
+  <data name="&gt;&gt;label2.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;CH1_1PreMin.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="label18.TabIndex" type="System.Int32, mscorlib">
+    <value>417</value>
+  </data>
+  <data name="label11.Size" type="System.Drawing.Size, System.Drawing">
+    <value>125, 18</value>
+  </data>
+  <data name="&gt;&gt;groupBox3.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;label31.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="label38.TabIndex" type="System.Int32, mscorlib">
+    <value>452</value>
+  </data>
+  <data name="&gt;&gt;CH1Cont_ElecMax.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="label44.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="&gt;&gt;label35.Parent" xml:space="preserve">
+    <value>groupBox2</value>
+  </data>
+  <data name="&gt;&gt;label20.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="CH1_2FlowMin.TabIndex" type="System.Int32, mscorlib">
+    <value>402</value>
+  </data>
+  <data name="groupBox1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>27, 469</value>
+  </data>
+  <data name="&gt;&gt;label11.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="CH3Press_OverTime.Location" type="System.Drawing.Point, System.Drawing">
+    <value>162, 167</value>
+  </data>
+  <data name="CH2Cont_ElecMax.Location" type="System.Drawing.Point, System.Drawing">
+    <value>501, 302</value>
+  </data>
+  <data name="&gt;&gt;label37.Name" xml:space="preserve">
+    <value>label37</value>
+  </data>
+  <data name="&gt;&gt;textBox6.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label38.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;CH1_1FlowMin.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="textBox4.Size" type="System.Drawing.Size, System.Drawing">
+    <value>70, 27</value>
+  </data>
+  <data name="&gt;&gt;label29.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;textBox1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label7.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;CH2Cont_Elec_Compen.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;CH2Cont_PressMax.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;CH1_2PreMax.ZOrder" xml:space="preserve">
+    <value>10</value>
+  </data>
+  <data name="CH2Cont_PressMax.Location" type="System.Drawing.Point, System.Drawing">
+    <value>184, 302</value>
+  </data>
+  <data name="&gt;&gt;label43.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="CH2_2FlowMin.TabIndex" type="System.Int32, mscorlib">
+    <value>410</value>
+  </data>
+  <data name="CH2RWDPressMin.Size" type="System.Drawing.Size, System.Drawing">
+    <value>70, 27</value>
+  </data>
+  <data name="&gt;&gt;label15.ZOrder" xml:space="preserve">
+    <value>67</value>
+  </data>
+  <data name="&gt;&gt;label23.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="label32.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="label26.Text" xml:space="preserve">
+    <value>CH1电流比值补偿</value>
+  </data>
+  <data name="&gt;&gt;label33.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="&gt;&gt;label23.Name" xml:space="preserve">
+    <value>label23</value>
+  </data>
+  <data name="CH2RWDPressMax.Font" type="System.Drawing.Font, System.Drawing">
+    <value>SimSun, 13pt</value>
+  </data>
+  <data name="label33.Text" xml:space="preserve">
+    <value>CH2压力下限</value>
+  </data>
+  <data name="&gt;&gt;label18.Name" xml:space="preserve">
+    <value>label18</value>
+  </data>
+  <data name="label15.Location" type="System.Drawing.Point, System.Drawing">
+    <value>160, 22</value>
+  </data>
+  <data name="CH1_1PreMin.Location" type="System.Drawing.Point, System.Drawing">
+    <value>637, 108</value>
+  </data>
+  <data name="&gt;&gt;CH1RWDPressMax.Parent" xml:space="preserve">
+    <value>groupBox2</value>
+  </data>
+  <data name="&gt;&gt;label16.ZOrder" xml:space="preserve">
+    <value>51</value>
+  </data>
+  <data name="&gt;&gt;label28.Name" xml:space="preserve">
+    <value>label28</value>
+  </data>
+  <data name="CH2RWDPressMin.TabIndex" type="System.Int32, mscorlib">
+    <value>420</value>
+  </data>
+  <data name="CH2_1FlowMin.Size" type="System.Drawing.Size, System.Drawing">
+    <value>70, 27</value>
+  </data>
+  <data name="&gt;&gt;CH3Press_OverTime.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;label39.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="&gt;&gt;label17.Name" xml:space="preserve">
+    <value>label17</value>
+  </data>
+  <data name="label18.Font" type="System.Drawing.Font, System.Drawing">
+    <value>SimSun, 13pt</value>
+  </data>
+  <data name="&gt;&gt;label18.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="CH1_1PreMax.Font" type="System.Drawing.Font, System.Drawing">
+    <value>SimSun, 13pt</value>
+  </data>
+  <data name="CH4OverTime.Font" type="System.Drawing.Font, System.Drawing">
+    <value>SimSun, 13pt</value>
+  </data>
+  <data name="label19.TabIndex" type="System.Int32, mscorlib">
+    <value>415</value>
+  </data>
+  <data name="&gt;&gt;CH2Cont_PressMax.ZOrder" xml:space="preserve">
+    <value>36</value>
+  </data>
+  <data name="label39.Text" xml:space="preserve">
+    <value>CH2_1压力下限</value>
+  </data>
+  <data name="label4.Size" type="System.Drawing.Size, System.Drawing">
+    <value>125, 18</value>
+  </data>
+  <data name="label42.Text" xml:space="preserve">
+    <value>CH1_2压力上限</value>
+  </data>
+  <data name="&gt;&gt;CH1_1FlowMax.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="CH1_2FlowMin.Size" type="System.Drawing.Size, System.Drawing">
+    <value>70, 27</value>
+  </data>
+  <data name="label34.Font" type="System.Drawing.Font, System.Drawing">
+    <value>SimSun, 13pt</value>
+  </data>
+  <data name="&gt;&gt;Save.Name" xml:space="preserve">
+    <value>Save</value>
+  </data>
+  <data name="CH2Cont_ElecMax.Size" type="System.Drawing.Size, System.Drawing">
+    <value>70, 27</value>
+  </data>
+  <data name="label15.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="CH1Cont_PressMin.Font" type="System.Drawing.Font, System.Drawing">
+    <value>SimSun, 13pt</value>
+  </data>
+  <data name="&gt;&gt;CH2Cont_PressMax.Name" xml:space="preserve">
+    <value>CH2Cont_PressMax</value>
+  </data>
+  <data name="label27.Font" type="System.Drawing.Font, System.Drawing">
+    <value>SimSun, 13pt</value>
+  </data>
+  <data name="textBox3.Location" type="System.Drawing.Point, System.Drawing">
+    <value>775, 231</value>
+  </data>
+  <data name="&gt;&gt;label36.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label1.ZOrder" xml:space="preserve">
+    <value>61</value>
+  </data>
+  <data name="&gt;&gt;label27.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;CH3Press_OverTime.ZOrder" xml:space="preserve">
+    <value>62</value>
+  </data>
+  <data name="label24.TabIndex" type="System.Int32, mscorlib">
+    <value>434</value>
+  </data>
+  <data name="&gt;&gt;textBox6.ZOrder" xml:space="preserve">
+    <value>6</value>
+  </data>
+  <data name="&gt;&gt;CH1_2PreMin.ZOrder" xml:space="preserve">
+    <value>8</value>
+  </data>
+  <data name="&gt;&gt;CH3Press_OverTime.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="CH1_1FlowMin.Location" type="System.Drawing.Point, System.Drawing">
+    <value>345, 108</value>
+  </data>
+  <data name="label40.TabIndex" type="System.Int32, mscorlib">
+    <value>448</value>
+  </data>
+  <data name="&gt;&gt;CH1Cont_Pre_Compen.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="CH1_2FlowMin.Font" type="System.Drawing.Font, System.Drawing">
+    <value>SimSun, 13pt</value>
+  </data>
+  <data name="CH1_1PreMin.Font" type="System.Drawing.Font, System.Drawing">
+    <value>SimSun, 13pt</value>
+  </data>
+  <data name="&gt;&gt;CH2OverTime.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="CH2RWDPressMin.Font" type="System.Drawing.Font, System.Drawing">
+    <value>SimSun, 13pt</value>
+  </data>
+  <data name="CH2OverTime.Font" type="System.Drawing.Font, System.Drawing">
+    <value>SimSun, 13pt</value>
+  </data>
+  <data name="CH2_2FlowMax.Size" type="System.Drawing.Size, System.Drawing">
+    <value>70, 27</value>
+  </data>
+  <data name="label5.Font" type="System.Drawing.Font, System.Drawing">
+    <value>SimSun, 13pt</value>
+  </data>
+  <data name="label3.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="CH2Cont_PressMax.TabIndex" type="System.Int32, mscorlib">
+    <value>418</value>
+  </data>
+  <data name="CH1Cont_Elec_Compen.Location" type="System.Drawing.Point, System.Drawing">
+    <value>344, 425</value>
+  </data>
+  <data name="&gt;&gt;CH1_2FlowMin.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="label18.Location" type="System.Drawing.Point, System.Drawing">
+    <value>25, 403</value>
+  </data>
+  <data name="label6.TabIndex" type="System.Int32, mscorlib">
+    <value>411</value>
+  </data>
+  <data name="label28.Text" xml:space="preserve">
+    <value>CH1电流比值上限</value>
+  </data>
+  <data name="CH3Press_OverTime.TabIndex" type="System.Int32, mscorlib">
+    <value>392</value>
+  </data>
+  <data name="label21.Text" xml:space="preserve">
+    <value>CH2压力比值下限</value>
+  </data>
+  <data name="label14.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="&gt;&gt;label19.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="$this.Text" xml:space="preserve">
+    <value>流量设置</value>
+  </data>
+  <data name="CH2Press_OverTime.Location" type="System.Drawing.Point, System.Drawing">
+    <value>162, 108</value>
+  </data>
+  <data name="label25.Location" type="System.Drawing.Point, System.Drawing">
+    <value>499, 280</value>
+  </data>
+  <data name="&gt;&gt;label16.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="label13.TabIndex" type="System.Int32, mscorlib">
+    <value>393</value>
+  </data>
+  <data name="textBox1.Font" type="System.Drawing.Font, System.Drawing">
+    <value>SimSun, 13pt</value>
+  </data>
+  <data name="&gt;&gt;CH1Press_OverTime.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="label40.Font" type="System.Drawing.Font, System.Drawing">
+    <value>SimSun, 13pt</value>
+  </data>
+  <data name="label32.Size" type="System.Drawing.Size, System.Drawing">
+    <value>107, 18</value>
+  </data>
+  <data name="CH2Cont_Elec_Compen.Location" type="System.Drawing.Point, System.Drawing">
+    <value>501, 425</value>
+  </data>
+  <data name="label6.Location" type="System.Drawing.Point, System.Drawing">
+    <value>481, 209</value>
+  </data>
+  <data name="CH3OverTime.Font" type="System.Drawing.Font, System.Drawing">
+    <value>SimSun, 13pt</value>
+  </data>
+  <data name="label34.Size" type="System.Drawing.Size, System.Drawing">
+    <value>107, 18</value>
+  </data>
+  <data name="&gt;&gt;label30.Parent" xml:space="preserve">
+    <value>groupBox1</value>
+  </data>
+  <data name="&gt;&gt;textBox3.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="CH1_1FlowMax.Font" type="System.Drawing.Font, System.Drawing">
+    <value>SimSun, 13pt</value>
+  </data>
+  <data name="&gt;&gt;CH1RWDPressMax.Name" xml:space="preserve">
+    <value>CH1RWDPressMax</value>
+  </data>
+  <data name="&gt;&gt;label44.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;CH2OverTime.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="label34.TabIndex" type="System.Int32, mscorlib">
+    <value>419</value>
+  </data>
+  <data name="&gt;&gt;label27.ZOrder" xml:space="preserve">
+    <value>28</value>
+  </data>
+  <data name="textBox6.Location" type="System.Drawing.Point, System.Drawing">
+    <value>775, 44</value>
+  </data>
+  <data name="&gt;&gt;CH4OverTime.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;label6.ZOrder" xml:space="preserve">
+    <value>45</value>
+  </data>
+  <data name="label7.Font" type="System.Drawing.Font, System.Drawing">
+    <value>SimSun, 13pt</value>
+  </data>
+  <data name="&gt;&gt;CH1RWDPressMin.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;CH1_2FlowMin.ZOrder" xml:space="preserve">
+    <value>52</value>
+  </data>
+  <data name="label7.Text" xml:space="preserve">
+    <value>CH1_2流量超时</value>
+  </data>
+  <data name="label42.TabIndex" type="System.Int32, mscorlib">
+    <value>444</value>
+  </data>
+  <data name="CH1RWDPressMax.Size" type="System.Drawing.Size, System.Drawing">
+    <value>70, 27</value>
+  </data>
+  <data name="&gt;&gt;label33.Name" xml:space="preserve">
+    <value>label33</value>
+  </data>
+  <data name="&gt;&gt;label26.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;CH2OverTime.Name" xml:space="preserve">
+    <value>CH2OverTime</value>
+  </data>
+  <data name="label37.Location" type="System.Drawing.Point, System.Drawing">
+    <value>773, 209</value>
+  </data>
+  <data name="label2.TabIndex" type="System.Int32, mscorlib">
+    <value>403</value>
+  </data>
+  <data name="&gt;&gt;CH2Cont_PressMin.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="label23.Size" type="System.Drawing.Size, System.Drawing">
+    <value>143, 18</value>
+  </data>
+  <data name="&gt;&gt;label9.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label40.ZOrder" xml:space="preserve">
+    <value>7</value>
+  </data>
+  <data name="label44.Location" type="System.Drawing.Point, System.Drawing">
+    <value>635, 22</value>
+  </data>
+  <data name="label26.TabIndex" type="System.Int32, mscorlib">
+    <value>430</value>
+  </data>
+  <data name="label25.Size" type="System.Drawing.Size, System.Drawing">
+    <value>143, 18</value>
+  </data>
+  <data name="CH2_2FlowMin.Size" type="System.Drawing.Size, System.Drawing">
+    <value>70, 27</value>
+  </data>
+  <data name="label37.Text" xml:space="preserve">
+    <value>CH2_2压力下限</value>
+  </data>
+  <data name="CH2Cont_Pre_Compen.Font" type="System.Drawing.Font, System.Drawing">
+    <value>SimSun, 13pt</value>
+  </data>
+  <data name="label28.Location" type="System.Drawing.Point, System.Drawing">
+    <value>342, 280</value>
+  </data>
+  <data name="&gt;&gt;label25.Name" xml:space="preserve">
+    <value>label25</value>
+  </data>
+  <data name="&gt;&gt;label1.Name" xml:space="preserve">
+    <value>label1</value>
+  </data>
+  <data name="CH2Cont_PressMin.Location" type="System.Drawing.Point, System.Drawing">
+    <value>184, 366</value>
+  </data>
+  <data name="label14.Text" xml:space="preserve">
+    <value>CH1_2压力超时</value>
+  </data>
+  <data name="&gt;&gt;CH2_1FlowMax.ZOrder" xml:space="preserve">
+    <value>50</value>
+  </data>
+  <data name="groupBox3.Text" xml:space="preserve">
+    <value>右工位泄气</value>
+  </data>
+  <data name="CH4Press_OverTime.Size" type="System.Drawing.Size, System.Drawing">
+    <value>70, 27</value>
+  </data>
+  <data name="&gt;&gt;label7.Name" xml:space="preserve">
+    <value>label7</value>
+  </data>
+  <data name="label8.TabIndex" type="System.Int32, mscorlib">
+    <value>409</value>
+  </data>
+  <data name="CH1_1FlowMax.Location" type="System.Drawing.Point, System.Drawing">
+    <value>345, 44</value>
+  </data>
+  <data name="label5.Text" xml:space="preserve">
+    <value>CH1_1流量上限</value>
+  </data>
+  <data name="label41.Size" type="System.Drawing.Size, System.Drawing">
+    <value>125, 18</value>
+  </data>
+  <data name="CH2RWDPressMin.Location" type="System.Drawing.Point, System.Drawing">
+    <value>21, 105</value>
+  </data>
+  <data name="CH1Cont_PressMin.TabIndex" type="System.Int32, mscorlib">
+    <value>414</value>
+  </data>
+  <data name="label8.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="&gt;&gt;label13.Name" xml:space="preserve">
+    <value>label13</value>
+  </data>
+  <data name="&gt;&gt;label6.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;CH2Cont_PressMax.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;label11.ZOrder" xml:space="preserve">
+    <value>49</value>
+  </data>
+  <data name="CH2_1FlowMax.Font" type="System.Drawing.Font, System.Drawing">
+    <value>SimSun, 13pt</value>
+  </data>
+  <data name="CH1Cont_PressMax.Location" type="System.Drawing.Point, System.Drawing">
+    <value>27, 302</value>
+  </data>
+  <data name="label1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>125, 18</value>
+  </data>
+  <data name="CH1_1PreMin.Size" type="System.Drawing.Size, System.Drawing">
+    <value>70, 27</value>
+  </data>
+  <data name="label2.Location" type="System.Drawing.Point, System.Drawing">
+    <value>343, 209</value>
+  </data>
+  <data name="&gt;&gt;label29.Parent" xml:space="preserve">
+    <value>groupBox1</value>
+  </data>
+  <data name="label11.Font" type="System.Drawing.Font, System.Drawing">
+    <value>SimSun, 13pt</value>
+  </data>
+  <data name="label24.Font" type="System.Drawing.Font, System.Drawing">
+    <value>SimSun, 13pt</value>
+  </data>
+  <data name="label32.Font" type="System.Drawing.Font, System.Drawing">
+    <value>SimSun, 13pt</value>
+  </data>
+  <data name="&gt;&gt;label32.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label31.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="CH1OverTime.TabIndex" type="System.Int32, mscorlib">
+    <value>380</value>
+  </data>
+  <data name="&gt;&gt;label23.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;textBox1.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="label25.TabIndex" type="System.Int32, mscorlib">
+    <value>432</value>
+  </data>
+  <data name="&gt;&gt;CH1RWDOverTime.Parent" xml:space="preserve">
+    <value>groupBox2</value>
+  </data>
+  <data name="label11.Location" type="System.Drawing.Point, System.Drawing">
+    <value>481, 86</value>
+  </data>
+  <data name="&gt;&gt;CH2_2FlowMin.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label14.ZOrder" xml:space="preserve">
+    <value>65</value>
+  </data>
+  <data name="label36.TabIndex" type="System.Int32, mscorlib">
+    <value>425</value>
+  </data>
+  <data name="CH2Cont_Pre_Compen.Size" type="System.Drawing.Size, System.Drawing">
+    <value>70, 27</value>
+  </data>
+  <data name="&gt;&gt;label5.ZOrder" xml:space="preserve">
+    <value>59</value>
+  </data>
+  <data name="label33.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="CH2OverTime.TabIndex" type="System.Int32, mscorlib">
+    <value>382</value>
+  </data>
+  <data name="&gt;&gt;label32.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="label21.Font" type="System.Drawing.Font, System.Drawing">
+    <value>SimSun, 13pt</value>
+  </data>
+  <data name="&gt;&gt;label9.ZOrder" xml:space="preserve">
+    <value>75</value>
+  </data>
+  <data name="label23.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="label10.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="&gt;&gt;CH2Cont_ElecMin.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="label25.Text" xml:space="preserve">
+    <value>CH2电流比值上限</value>
+  </data>
+  <data name="label23.TabIndex" type="System.Int32, mscorlib">
+    <value>436</value>
+  </data>
+  <data name="&gt;&gt;textBox5.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label38.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="&gt;&gt;Save.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;label4.ZOrder" xml:space="preserve">
+    <value>57</value>
+  </data>
+  <data name="label30.Text" xml:space="preserve">
+    <value>CH1压力比值下限</value>
+  </data>
+  <data name="groupBox1.Text" xml:space="preserve">
+    <value>左工位泄气</value>
+  </data>
+  <data name="CH2_1FlowMax.Location" type="System.Drawing.Point, System.Drawing">
+    <value>483, 44</value>
+  </data>
+  <data name="&gt;&gt;label11.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;CH4OverTime.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;CH2_1FlowMax.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="label3.Font" type="System.Drawing.Font, System.Drawing">
+    <value>SimSun, 13pt</value>
+  </data>
+  <data name="CH1Cont_Elec_Compen.Font" type="System.Drawing.Font, System.Drawing">
+    <value>SimSun, 13pt</value>
+  </data>
+  <data name="label44.Font" type="System.Drawing.Font, System.Drawing">
+    <value>SimSun, 13pt</value>
+  </data>
+  <data name="textBox3.TabIndex" type="System.Int32, mscorlib">
+    <value>453</value>
+  </data>
+  <data name="label38.Size" type="System.Drawing.Size, System.Drawing">
+    <value>125, 18</value>
+  </data>
+  <data name="&gt;&gt;CH1Cont_Pre_Compen.Name" xml:space="preserve">
+    <value>CH1Cont_Pre_Compen</value>
+  </data>
+  <data name="&gt;&gt;label40.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label37.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="label30.Location" type="System.Drawing.Point, System.Drawing">
+    <value>19, 24</value>
+  </data>
+  <data name="label19.Location" type="System.Drawing.Point, System.Drawing">
+    <value>25, 344</value>
+  </data>
+  <data name="&gt;&gt;CH2Press_OverTime.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="CH2Press_OverTime.Font" type="System.Drawing.Font, System.Drawing">
+    <value>SimSun, 13pt</value>
+  </data>
+  <data name="label35.TabIndex" type="System.Int32, mscorlib">
+    <value>423</value>
+  </data>
+  <data name="label13.Size" type="System.Drawing.Size, System.Drawing">
+    <value>125, 18</value>
+  </data>
+  <data name="label13.Text" xml:space="preserve">
+    <value>CH2_1压力超时</value>
+  </data>
+  <data name="&gt;&gt;textBox4.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="&gt;&gt;CH1_1PreMin.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="CH2Cont_ElecMin.TabIndex" type="System.Int32, mscorlib">
+    <value>433</value>
+  </data>
+  <data name="&gt;&gt;label3.ZOrder" xml:space="preserve">
+    <value>55</value>
+  </data>
+  <data name="&gt;&gt;CH1Cont_ElecMax.Name" xml:space="preserve">
+    <value>CH1Cont_ElecMax</value>
+  </data>
+  <data name="CH1Cont_Pre_Compen.TabIndex" type="System.Int32, mscorlib">
+    <value>416</value>
+  </data>
+  <data name="label20.TabIndex" type="System.Int32, mscorlib">
+    <value>413</value>
+  </data>
+  <data name="&gt;&gt;CH1RWDPressMax.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="&gt;&gt;CH1Cont_PressMin.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="CH1Cont_PressMax.TabIndex" type="System.Int32, mscorlib">
+    <value>412</value>
+  </data>
+  <data name="&gt;&gt;label35.Name" xml:space="preserve">
+    <value>label35</value>
+  </data>
+  <data name="CH1_2PreMin.TabIndex" type="System.Int32, mscorlib">
+    <value>445</value>
+  </data>
+  <data name="label21.Location" type="System.Drawing.Point, System.Drawing">
+    <value>182, 344</value>
+  </data>
+  <data name="&gt;&gt;label43.Name" xml:space="preserve">
+    <value>label43</value>
+  </data>
+  <data name="&gt;&gt;CH1RWDOverTime.Name" xml:space="preserve">
+    <value>CH1RWDOverTime</value>
+  </data>
+  <data name="label43.Size" type="System.Drawing.Size, System.Drawing">
+    <value>125, 18</value>
+  </data>
+  <data name="label27.TabIndex" type="System.Int32, mscorlib">
+    <value>428</value>
+  </data>
+  <data name="&gt;&gt;groupBox2.ZOrder" xml:space="preserve">
+    <value>17</value>
+  </data>
+  <data name="&gt;&gt;CH2_1FlowMin.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;groupBox1.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="label20.Size" type="System.Drawing.Size, System.Drawing">
+    <value>143, 18</value>
+  </data>
+  <data name="&gt;&gt;CH1RWDPressMin.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="CH4Press_OverTime.Font" type="System.Drawing.Font, System.Drawing">
+    <value>SimSun, 13pt</value>
+  </data>
+  <data name="&gt;&gt;label4.Name" xml:space="preserve">
+    <value>label4</value>
+  </data>
+  <data name="label43.TabIndex" type="System.Int32, mscorlib">
+    <value>442</value>
+  </data>
+  <data name="&gt;&gt;label25.ZOrder" xml:space="preserve">
+    <value>24</value>
+  </data>
+  <data name="label30.TabIndex" type="System.Int32, mscorlib">
+    <value>419</value>
+  </data>
+  <data name="&gt;&gt;label26.Name" xml:space="preserve">
+    <value>label26</value>
+  </data>
+  <data name="&gt;&gt;CH2_2FlowMin.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="label37.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="label39.Font" type="System.Drawing.Font, System.Drawing">
+    <value>SimSun, 13pt</value>
+  </data>
+  <data name="label17.Size" type="System.Drawing.Size, System.Drawing">
+    <value>143, 18</value>
+  </data>
+  <data name="&gt;&gt;label5.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="CH1_1FlowMin.TabIndex" type="System.Int32, mscorlib">
+    <value>398</value>
+  </data>
+  <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="$this.Language" type="System.Globalization.CultureInfo, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>en</value>
+  </metadata>
+</root>

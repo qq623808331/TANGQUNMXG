@@ -1,0 +1,562 @@
+D:\SVN\TianShu\03.其它研究\04.Socket通讯组件\NetWorkHelper\bin\Debug\NetWorkHelper.dll
+D:\SVN\TianShu\03.其它研究\04.Socket通讯组件\NetWorkHelper\bin\Debug\NetWorkHelper.pdb
+D:\SVN\TianShu\03.其它研究\04.Socket通讯组件\NetWorkHelper\obj\Debug\NetWorkHelper.csprojAssemblyReference.cache
+D:\SVN\TianShu\03.其它研究\04.Socket通讯组件\NetWorkHelper\obj\Debug\NetWorkHelper.AxUdpClient.resources
+D:\SVN\TianShu\03.其它研究\04.Socket通讯组件\NetWorkHelper\obj\Debug\NetWorkHelper.csproj.GenerateResource.cache
+D:\SVN\TianShu\03.其它研究\04.Socket通讯组件\NetWorkHelper\obj\Debug\NetWorkHelper.csproj.CoreCompileInputs.cache
+D:\SVN\TianShu\03.其它研究\04.Socket通讯组件\NetWorkHelper\obj\Debug\NetWorkHelper.dll
+D:\SVN\TianShu\03.其它研究\04.Socket通讯组件\NetWorkHelper\obj\Debug\NetWorkHelper.pdb
+D:\04.Socket通讯组件\NetWorkHelper\bin\Debug\NetWorkHelper.dll
+D:\04.Socket通讯组件\NetWorkHelper\bin\Debug\NetWorkHelper.pdb
+D:\04.Socket通讯组件\NetWorkHelper\obj\Debug\NetWorkHelper.csprojAssemblyReference.cache
+D:\04.Socket通讯组件\NetWorkHelper\obj\Debug\NetWorkHelper.AxUdpClient.resources
+D:\04.Socket通讯组件\NetWorkHelper\obj\Debug\NetWorkHelper.csproj.GenerateResource.cache
+D:\04.Socket通讯组件\NetWorkHelper\obj\Debug\NetWorkHelper.dll
+D:\04.Socket通讯组件\NetWorkHelper\obj\Debug\NetWorkHelper.pdb
+C:\Users\T\Desktop\代码开发\C#开发\C-SLZ\C2-SLZ双通道 -微测实业2\tongxin\NetWorkHelper\bin\Debug\NetWorkHelper.dll
+C:\Users\T\Desktop\代码开发\C#开发\C-SLZ\C2-SLZ双通道 -微测实业2\tongxin\NetWorkHelper\bin\Debug\NetWorkHelper.pdb
+C:\Users\T\Desktop\代码开发\C#开发\C-SLZ\C2-SLZ双通道 -微测实业2\tongxin\NetWorkHelper\obj\Debug\NetWorkHelper.csprojAssemblyReference.cache
+C:\Users\T\Desktop\代码开发\C#开发\C-SLZ\C2-SLZ双通道 -微测实业2\tongxin\NetWorkHelper\obj\Debug\NetWorkHelper.AxUdpClient.resources
+C:\Users\T\Desktop\代码开发\C#开发\C-SLZ\C2-SLZ双通道 -微测实业2\tongxin\NetWorkHelper\obj\Debug\NetWorkHelper.csproj.GenerateResource.cache
+C:\Users\T\Desktop\代码开发\C#开发\C-SLZ\C2-SLZ双通道 -微测实业2\tongxin\NetWorkHelper\obj\Debug\NetWorkHelper.dll
+C:\Users\T\Desktop\代码开发\C#开发\C-SLZ\C2-SLZ双通道 -微测实业2\tongxin\NetWorkHelper\obj\Debug\NetWorkHelper.pdb
+C:\Users\T\Desktop\代码开发\C#开发\C-SLZ\C2-SLZ双通道 -微测实业3\tongxin\NetWorkHelper\bin\Debug\NetWorkHelper.dll
+C:\Users\T\Desktop\代码开发\C#开发\C-SLZ\C2-SLZ双通道 -微测实业3\tongxin\NetWorkHelper\bin\Debug\NetWorkHelper.pdb
+C:\Users\T\Desktop\代码开发\C#开发\C-SLZ\C2-SLZ双通道 -微测实业3\tongxin\NetWorkHelper\obj\Debug\NetWorkHelper.AxUdpClient.resources
+C:\Users\T\Desktop\代码开发\C#开发\C-SLZ\C2-SLZ双通道 -微测实业3\tongxin\NetWorkHelper\obj\Debug\NetWorkHelper.csproj.GenerateResource.cache
+C:\Users\T\Desktop\代码开发\C#开发\C-SLZ\C2-SLZ双通道 -微测实业3\tongxin\NetWorkHelper\obj\Debug\NetWorkHelper.dll
+C:\Users\T\Desktop\代码开发\C#开发\C-SLZ\C2-SLZ双通道 -微测实业3\tongxin\NetWorkHelper\obj\Debug\NetWorkHelper.pdb
+C:\Users\T\Desktop\代码开发\C#开发\C-SLZ\C2-SLZ双通道 -微测实业3\tongxin\NetWorkHelper\obj\Debug\NetWorkHelper.csprojAssemblyReference.cache
+C:\Users\T\Desktop\代码开发\C#开发\C-SLZ\C2-SLZ双通道 -微测实业4\tongxin\NetWorkHelper\bin\Debug\NetWorkHelper.dll
+C:\Users\T\Desktop\代码开发\C#开发\C-SLZ\C2-SLZ双通道 -微测实业4\tongxin\NetWorkHelper\bin\Debug\NetWorkHelper.pdb
+C:\Users\T\Desktop\代码开发\C#开发\C-SLZ\C2-SLZ双通道 -微测实业4\tongxin\NetWorkHelper\obj\Debug\NetWorkHelper.AxUdpClient.resources
+C:\Users\T\Desktop\代码开发\C#开发\C-SLZ\C2-SLZ双通道 -微测实业4\tongxin\NetWorkHelper\obj\Debug\NetWorkHelper.csproj.GenerateResource.cache
+C:\Users\T\Desktop\代码开发\C#开发\C-SLZ\C2-SLZ双通道 -微测实业4\tongxin\NetWorkHelper\obj\Debug\NetWorkHelper.dll
+C:\Users\T\Desktop\代码开发\C#开发\C-SLZ\C2-SLZ双通道 -微测实业4\tongxin\NetWorkHelper\obj\Debug\NetWorkHelper.pdb
+C:\Users\T\Desktop\代码开发\C#开发\C-SLZ\C2-SLZ双通道 -微测实业5\tongxin\NetWorkHelper\bin\Debug\NetWorkHelper.dll
+C:\Users\T\Desktop\代码开发\C#开发\C-SLZ\C2-SLZ双通道 -微测实业5\tongxin\NetWorkHelper\bin\Debug\NetWorkHelper.pdb
+C:\Users\T\Desktop\代码开发\C#开发\C-SLZ\C2-SLZ双通道 -微测实业5\tongxin\NetWorkHelper\obj\Debug\NetWorkHelper.AxUdpClient.resources
+C:\Users\T\Desktop\代码开发\C#开发\C-SLZ\C2-SLZ双通道 -微测实业5\tongxin\NetWorkHelper\obj\Debug\NetWorkHelper.csproj.GenerateResource.cache
+C:\Users\T\Desktop\代码开发\C#开发\C-SLZ\C2-SLZ双通道 -微测实业5\tongxin\NetWorkHelper\obj\Debug\NetWorkHelper.dll
+C:\Users\T\Desktop\代码开发\C#开发\C-SLZ\C2-SLZ双通道 -微测实业5\tongxin\NetWorkHelper\obj\Debug\NetWorkHelper.pdb
+C:\Users\T\Desktop\代码开发\C#开发\C-SLZ\C2-SLZ双通道 -微测实业6\tongxin\NetWorkHelper\bin\Debug\NetWorkHelper.dll
+C:\Users\T\Desktop\代码开发\C#开发\C-SLZ\C2-SLZ双通道 -微测实业6\tongxin\NetWorkHelper\bin\Debug\NetWorkHelper.pdb
+C:\Users\T\Desktop\代码开发\C#开发\C-SLZ\C2-SLZ双通道 -微测实业6\tongxin\NetWorkHelper\obj\Debug\NetWorkHelper.csprojAssemblyReference.cache
+C:\Users\T\Desktop\代码开发\C#开发\C-SLZ\C2-SLZ双通道 -微测实业6\tongxin\NetWorkHelper\obj\Debug\NetWorkHelper.AxUdpClient.resources
+C:\Users\T\Desktop\代码开发\C#开发\C-SLZ\C2-SLZ双通道 -微测实业6\tongxin\NetWorkHelper\obj\Debug\NetWorkHelper.csproj.GenerateResource.cache
+C:\Users\T\Desktop\代码开发\C#开发\C-SLZ\C2-SLZ双通道 -微测实业6\tongxin\NetWorkHelper\obj\Debug\NetWorkHelper.dll
+C:\Users\T\Desktop\代码开发\C#开发\C-SLZ\C2-SLZ双通道 -微测实业6\tongxin\NetWorkHelper\obj\Debug\NetWorkHelper.pdb
+C:\Users\T\Desktop\代码开发\C#开发\C-SLZ\C2-SLZ双通道 -微测实业7\tongxin\NetWorkHelper\bin\Debug\NetWorkHelper.dll
+C:\Users\T\Desktop\代码开发\C#开发\C-SLZ\C2-SLZ双通道 -微测实业7\tongxin\NetWorkHelper\bin\Debug\NetWorkHelper.pdb
+C:\Users\T\Desktop\代码开发\C#开发\C-SLZ\C2-SLZ双通道 -微测实业7\tongxin\NetWorkHelper\obj\Debug\NetWorkHelper.csprojAssemblyReference.cache
+C:\Users\T\Desktop\代码开发\C#开发\C-SLZ\C2-SLZ双通道 -微测实业7\tongxin\NetWorkHelper\obj\Debug\NetWorkHelper.AxUdpClient.resources
+C:\Users\T\Desktop\代码开发\C#开发\C-SLZ\C2-SLZ双通道 -微测实业7\tongxin\NetWorkHelper\obj\Debug\NetWorkHelper.csproj.GenerateResource.cache
+C:\Users\T\Desktop\代码开发\C#开发\C-SLZ\C2-SLZ双通道 -微测实业7\tongxin\NetWorkHelper\obj\Debug\NetWorkHelper.dll
+C:\Users\T\Desktop\代码开发\C#开发\C-SLZ\C2-SLZ双通道 -微测实业7\tongxin\NetWorkHelper\obj\Debug\NetWorkHelper.pdb
+C:\Users\T\Desktop\代码开发\C#开发\C-SLZ\C2-SLZ双通道 -微测实业8\tongxin\NetWorkHelper\bin\Debug\NetWorkHelper.dll
+C:\Users\T\Desktop\代码开发\C#开发\C-SLZ\C2-SLZ双通道 -微测实业8\tongxin\NetWorkHelper\bin\Debug\NetWorkHelper.pdb
+C:\Users\T\Desktop\代码开发\C#开发\C-SLZ\C2-SLZ双通道 -微测实业8\tongxin\NetWorkHelper\obj\Debug\NetWorkHelper.csprojAssemblyReference.cache
+C:\Users\T\Desktop\代码开发\C#开发\C-SLZ\C2-SLZ双通道 -微测实业8\tongxin\NetWorkHelper\obj\Debug\NetWorkHelper.AxUdpClient.resources
+C:\Users\T\Desktop\代码开发\C#开发\C-SLZ\C2-SLZ双通道 -微测实业8\tongxin\NetWorkHelper\obj\Debug\NetWorkHelper.csproj.GenerateResource.cache
+C:\Users\T\Desktop\代码开发\C#开发\C-SLZ\C2-SLZ双通道 -微测实业8\tongxin\NetWorkHelper\obj\Debug\NetWorkHelper.dll
+C:\Users\T\Desktop\代码开发\C#开发\C-SLZ\C2-SLZ双通道 -微测实业8\tongxin\NetWorkHelper\obj\Debug\NetWorkHelper.pdb
+C:\Users\T\Desktop\代码开发\C#开发\C-SLZ\C2-SLZ双通道 -微测实业10\tongxin\NetWorkHelper\bin\Debug\NetWorkHelper.dll
+C:\Users\T\Desktop\代码开发\C#开发\C-SLZ\C2-SLZ双通道 -微测实业10\tongxin\NetWorkHelper\bin\Debug\NetWorkHelper.pdb
+C:\Users\T\Desktop\代码开发\C#开发\C-SLZ\C2-SLZ双通道 -微测实业10\tongxin\NetWorkHelper\obj\Debug\NetWorkHelper.AxUdpClient.resources
+C:\Users\T\Desktop\代码开发\C#开发\C-SLZ\C2-SLZ双通道 -微测实业10\tongxin\NetWorkHelper\obj\Debug\NetWorkHelper.csproj.GenerateResource.cache
+C:\Users\T\Desktop\代码开发\C#开发\C-SLZ\C2-SLZ双通道 -微测实业10\tongxin\NetWorkHelper\obj\Debug\NetWorkHelper.dll
+C:\Users\T\Desktop\代码开发\C#开发\C-SLZ\C2-SLZ双通道 -微测实业10\tongxin\NetWorkHelper\obj\Debug\NetWorkHelper.pdb
+C:\Users\T\Desktop\代码开发\C#开发\C-SLZ\C2-SLZ双通道 -微测实业10\tongxin\NetWorkHelper\bin\Debug\TCP\ITcpClient.cs
+C:\Users\T\Desktop\代码开发\C#开发\C-SLZ\C2-SLZ双通道 -微测实业10\tongxin\NetWorkHelper\bin\Debug\TCP\ITcpClient.Designer.cs
+C:\Users\T\Desktop\代码开发\C#开发\C-SLZ\C2-SLZ双通道 -微测实业10\tongxin\NetWorkHelper\obj\Debug\NetWorkHelper.csprojAssemblyReference.cache
+C:\Users\T\Desktop\代码开发\C#开发\C-SLZ\C2-SLZ双通道 -微测实业11\tongxin\NetWorkHelper\bin\Debug\TCP\ITcpClient.cs
+C:\Users\T\Desktop\代码开发\C#开发\C-SLZ\C2-SLZ双通道 -微测实业11\tongxin\NetWorkHelper\bin\Debug\TCP\ITcpClient.Designer.cs
+C:\Users\T\Desktop\代码开发\C#开发\C-SLZ\C2-SLZ双通道 -微测实业11\tongxin\NetWorkHelper\bin\Debug\NetWorkHelper.dll
+C:\Users\T\Desktop\代码开发\C#开发\C-SLZ\C2-SLZ双通道 -微测实业11\tongxin\NetWorkHelper\bin\Debug\NetWorkHelper.pdb
+C:\Users\T\Desktop\代码开发\C#开发\C-SLZ\C2-SLZ双通道 -微测实业11\tongxin\NetWorkHelper\obj\Debug\NetWorkHelper.AxUdpClient.resources
+C:\Users\T\Desktop\代码开发\C#开发\C-SLZ\C2-SLZ双通道 -微测实业11\tongxin\NetWorkHelper\obj\Debug\NetWorkHelper.csproj.GenerateResource.cache
+C:\Users\T\Desktop\代码开发\C#开发\C-SLZ\C2-SLZ双通道 -微测实业11\tongxin\NetWorkHelper\obj\Debug\NetWorkHelper.dll
+C:\Users\T\Desktop\代码开发\C#开发\C-SLZ\C2-SLZ双通道 -微测实业11\tongxin\NetWorkHelper\obj\Debug\NetWorkHelper.pdb
+F:\代码开发\C#开发\C-SLZ\SLZ-2\C2-SLZ双通道 -微测实业12\tongxin\NetWorkHelper\bin\Debug\TCP\ITcpClient.cs
+F:\代码开发\C#开发\C-SLZ\SLZ-2\C2-SLZ双通道 -微测实业12\tongxin\NetWorkHelper\bin\Debug\TCP\ITcpClient.Designer.cs
+F:\代码开发\C#开发\C-SLZ\SLZ-2\C2-SLZ双通道 -微测实业12\tongxin\NetWorkHelper\bin\Debug\NetWorkHelper.dll
+F:\代码开发\C#开发\C-SLZ\SLZ-2\C2-SLZ双通道 -微测实业12\tongxin\NetWorkHelper\bin\Debug\NetWorkHelper.pdb
+F:\代码开发\C#开发\C-SLZ\SLZ-2\C2-SLZ双通道 -微测实业12\tongxin\NetWorkHelper\obj\Debug\NetWorkHelper.AxUdpClient.resources
+F:\代码开发\C#开发\C-SLZ\SLZ-2\C2-SLZ双通道 -微测实业12\tongxin\NetWorkHelper\obj\Debug\NetWorkHelper.csproj.GenerateResource.cache
+F:\代码开发\C#开发\C-SLZ\SLZ-2\C2-SLZ双通道 -微测实业12\tongxin\NetWorkHelper\obj\Debug\NetWorkHelper.dll
+F:\代码开发\C#开发\C-SLZ\SLZ-2\C2-SLZ双通道 -微测实业12\tongxin\NetWorkHelper\obj\Debug\NetWorkHelper.pdb
+F:\代码开发\C#开发\C-SLZ\SLZ-2\C2-SLZ双通道 -微测实业12\tongxin\NetWorkHelper\obj\Debug\NetWorkHelper.csprojAssemblyReference.cache
+F:\代码开发\C#开发\C-SLZ\SLZ-2\C2-SLZ双通道 -微测实业13\tongxin\NetWorkHelper\bin\Debug\TCP\ITcpClient.cs
+F:\代码开发\C#开发\C-SLZ\SLZ-2\C2-SLZ双通道 -微测实业13\tongxin\NetWorkHelper\bin\Debug\TCP\ITcpClient.Designer.cs
+F:\代码开发\C#开发\C-SLZ\SLZ-2\C2-SLZ双通道 -微测实业13\tongxin\NetWorkHelper\bin\Debug\NetWorkHelper.dll
+F:\代码开发\C#开发\C-SLZ\SLZ-2\C2-SLZ双通道 -微测实业13\tongxin\NetWorkHelper\bin\Debug\NetWorkHelper.pdb
+F:\代码开发\C#开发\C-SLZ\SLZ-2\C2-SLZ双通道 -微测实业13\tongxin\NetWorkHelper\obj\Debug\NetWorkHelper.AxUdpClient.resources
+F:\代码开发\C#开发\C-SLZ\SLZ-2\C2-SLZ双通道 -微测实业13\tongxin\NetWorkHelper\obj\Debug\NetWorkHelper.csproj.GenerateResource.cache
+F:\代码开发\C#开发\C-SLZ\SLZ-2\C2-SLZ双通道 -微测实业13\tongxin\NetWorkHelper\obj\Debug\NetWorkHelper.dll
+F:\代码开发\C#开发\C-SLZ\SLZ-2\C2-SLZ双通道 -微测实业13\tongxin\NetWorkHelper\obj\Debug\NetWorkHelper.pdb
+F:\代码开发\C#开发\C-SLZ\SLZ-2\C2-SLZ双通道 -微测实业14\tongxin\NetWorkHelper\bin\Debug\TCP\ITcpClient.cs
+F:\代码开发\C#开发\C-SLZ\SLZ-2\C2-SLZ双通道 -微测实业14\tongxin\NetWorkHelper\bin\Debug\TCP\ITcpClient.Designer.cs
+F:\代码开发\C#开发\C-SLZ\SLZ-2\C2-SLZ双通道 -微测实业14\tongxin\NetWorkHelper\bin\Debug\NetWorkHelper.dll
+F:\代码开发\C#开发\C-SLZ\SLZ-2\C2-SLZ双通道 -微测实业14\tongxin\NetWorkHelper\bin\Debug\NetWorkHelper.pdb
+F:\代码开发\C#开发\C-SLZ\SLZ-2\C2-SLZ双通道 -微测实业14\tongxin\NetWorkHelper\obj\Debug\NetWorkHelper.AxUdpClient.resources
+F:\代码开发\C#开发\C-SLZ\SLZ-2\C2-SLZ双通道 -微测实业14\tongxin\NetWorkHelper\obj\Debug\NetWorkHelper.csproj.GenerateResource.cache
+F:\代码开发\C#开发\C-SLZ\SLZ-2\C2-SLZ双通道 -微测实业14\tongxin\NetWorkHelper\obj\Debug\NetWorkHelper.dll
+F:\代码开发\C#开发\C-SLZ\SLZ-2\C2-SLZ双通道 -微测实业14\tongxin\NetWorkHelper\obj\Debug\NetWorkHelper.pdb
+F:\代码开发\C#开发\C-SLZ\SLZ-2\C2-SLZ双通道 -微测实业15\tongxin\NetWorkHelper\bin\Debug\TCP\ITcpClient.cs
+F:\代码开发\C#开发\C-SLZ\SLZ-2\C2-SLZ双通道 -微测实业15\tongxin\NetWorkHelper\bin\Debug\TCP\ITcpClient.Designer.cs
+F:\代码开发\C#开发\C-SLZ\SLZ-2\C2-SLZ双通道 -微测实业15\tongxin\NetWorkHelper\bin\Debug\NetWorkHelper.dll
+F:\代码开发\C#开发\C-SLZ\SLZ-2\C2-SLZ双通道 -微测实业15\tongxin\NetWorkHelper\bin\Debug\NetWorkHelper.pdb
+F:\代码开发\C#开发\C-SLZ\SLZ-2\C2-SLZ双通道 -微测实业15\tongxin\NetWorkHelper\obj\Debug\NetWorkHelper.AxUdpClient.resources
+F:\代码开发\C#开发\C-SLZ\SLZ-2\C2-SLZ双通道 -微测实业15\tongxin\NetWorkHelper\obj\Debug\NetWorkHelper.csproj.GenerateResource.cache
+F:\代码开发\C#开发\C-SLZ\SLZ-2\C2-SLZ双通道 -微测实业15\tongxin\NetWorkHelper\obj\Debug\NetWorkHelper.dll
+F:\代码开发\C#开发\C-SLZ\SLZ-2\C2-SLZ双通道 -微测实业15\tongxin\NetWorkHelper\obj\Debug\NetWorkHelper.pdb
+F:\代码开发\C#开发\C-SLZ\SLZ-2\C2-SLZ双通道 -微测实业16\tongxin\NetWorkHelper\bin\Debug\TCP\ITcpClient.cs
+F:\代码开发\C#开发\C-SLZ\SLZ-2\C2-SLZ双通道 -微测实业16\tongxin\NetWorkHelper\bin\Debug\TCP\ITcpClient.Designer.cs
+F:\代码开发\C#开发\C-SLZ\SLZ-2\C2-SLZ双通道 -微测实业16\tongxin\NetWorkHelper\bin\Debug\NetWorkHelper.dll
+F:\代码开发\C#开发\C-SLZ\SLZ-2\C2-SLZ双通道 -微测实业16\tongxin\NetWorkHelper\bin\Debug\NetWorkHelper.pdb
+F:\代码开发\C#开发\C-SLZ\SLZ-2\C2-SLZ双通道 -微测实业16\tongxin\NetWorkHelper\obj\Debug\NetWorkHelper.AxUdpClient.resources
+F:\代码开发\C#开发\C-SLZ\SLZ-2\C2-SLZ双通道 -微测实业16\tongxin\NetWorkHelper\obj\Debug\NetWorkHelper.csproj.GenerateResource.cache
+F:\代码开发\C#开发\C-SLZ\SLZ-2\C2-SLZ双通道 -微测实业16\tongxin\NetWorkHelper\obj\Debug\NetWorkHelper.dll
+F:\代码开发\C#开发\C-SLZ\SLZ-2\C2-SLZ双通道 -微测实业16\tongxin\NetWorkHelper\obj\Debug\NetWorkHelper.pdb
+F:\代码开发\C#开发\C-SLZ\SLZ-2\C2-SLZ双通道 -微测实业16\tongxin\NetWorkHelper\obj\Debug\NetWorkHelper.csprojAssemblyReference.cache
+F:\代码开发\C#开发\C-SLZ\SLZ-2\C2-SLZ双通道 -微测实业17\tongxin\NetWorkHelper\bin\Debug\TCP\ITcpClient.cs
+F:\代码开发\C#开发\C-SLZ\SLZ-2\C2-SLZ双通道 -微测实业17\tongxin\NetWorkHelper\bin\Debug\TCP\ITcpClient.Designer.cs
+F:\代码开发\C#开发\C-SLZ\SLZ-2\C2-SLZ双通道 -微测实业17\tongxin\NetWorkHelper\bin\Debug\NetWorkHelper.dll
+F:\代码开发\C#开发\C-SLZ\SLZ-2\C2-SLZ双通道 -微测实业17\tongxin\NetWorkHelper\bin\Debug\NetWorkHelper.pdb
+F:\代码开发\C#开发\C-SLZ\SLZ-2\C2-SLZ双通道 -微测实业17\tongxin\NetWorkHelper\obj\Debug\NetWorkHelper.AxUdpClient.resources
+F:\代码开发\C#开发\C-SLZ\SLZ-2\C2-SLZ双通道 -微测实业17\tongxin\NetWorkHelper\obj\Debug\NetWorkHelper.csproj.GenerateResource.cache
+F:\代码开发\C#开发\C-SLZ\SLZ-2\C2-SLZ双通道 -微测实业17\tongxin\NetWorkHelper\obj\Debug\NetWorkHelper.dll
+F:\代码开发\C#开发\C-SLZ\SLZ-2\C2-SLZ双通道 -微测实业17\tongxin\NetWorkHelper\obj\Debug\NetWorkHelper.pdb
+F:\代码开发\C#开发\C-SLZ\SLZ-2\C2-SLZ双通道 -微测实业17\tongxin\NetWorkHelper\obj\Debug\NetWorkHelper.csprojAssemblyReference.cache
+F:\代码开发\C#开发\C-SLZ\SLZ-2\C2-SLZ双通道 -微测实业17.5\tongxin\NetWorkHelper\bin\Debug\TCP\ITcpClient.cs
+F:\代码开发\C#开发\C-SLZ\SLZ-2\C2-SLZ双通道 -微测实业17.5\tongxin\NetWorkHelper\bin\Debug\TCP\ITcpClient.Designer.cs
+F:\代码开发\C#开发\C-SLZ\SLZ-2\C2-SLZ双通道 -微测实业17.5\tongxin\NetWorkHelper\bin\Debug\NetWorkHelper.dll
+F:\代码开发\C#开发\C-SLZ\SLZ-2\C2-SLZ双通道 -微测实业17.5\tongxin\NetWorkHelper\bin\Debug\NetWorkHelper.pdb
+F:\代码开发\C#开发\C-SLZ\SLZ-2\C2-SLZ双通道 -微测实业17.5\tongxin\NetWorkHelper\obj\Debug\NetWorkHelper.AxUdpClient.resources
+F:\代码开发\C#开发\C-SLZ\SLZ-2\C2-SLZ双通道 -微测实业17.5\tongxin\NetWorkHelper\obj\Debug\NetWorkHelper.csproj.GenerateResource.cache
+F:\代码开发\C#开发\C-SLZ\SLZ-2\C2-SLZ双通道 -微测实业17.5\tongxin\NetWorkHelper\obj\Debug\NetWorkHelper.dll
+F:\代码开发\C#开发\C-SLZ\SLZ-2\C2-SLZ双通道 -微测实业17.5\tongxin\NetWorkHelper\obj\Debug\NetWorkHelper.pdb
+F:\代码开发\C#开发\C-SLZ\SLZ-2\C2-SLZ双通道 -微测实业18\tongxin\NetWorkHelper\bin\Debug\TCP\ITcpClient.cs
+F:\代码开发\C#开发\C-SLZ\SLZ-2\C2-SLZ双通道 -微测实业18\tongxin\NetWorkHelper\bin\Debug\TCP\ITcpClient.Designer.cs
+F:\代码开发\C#开发\C-SLZ\SLZ-2\C2-SLZ双通道 -微测实业18\tongxin\NetWorkHelper\bin\Debug\NetWorkHelper.dll
+F:\代码开发\C#开发\C-SLZ\SLZ-2\C2-SLZ双通道 -微测实业18\tongxin\NetWorkHelper\bin\Debug\NetWorkHelper.pdb
+F:\代码开发\C#开发\C-SLZ\SLZ-2\C2-SLZ双通道 -微测实业18\tongxin\NetWorkHelper\obj\Debug\NetWorkHelper.AxUdpClient.resources
+F:\代码开发\C#开发\C-SLZ\SLZ-2\C2-SLZ双通道 -微测实业18\tongxin\NetWorkHelper\obj\Debug\NetWorkHelper.csproj.GenerateResource.cache
+F:\代码开发\C#开发\C-SLZ\SLZ-2\C2-SLZ双通道 -微测实业18\tongxin\NetWorkHelper\obj\Debug\NetWorkHelper.dll
+F:\代码开发\C#开发\C-SLZ\SLZ-2\C2-SLZ双通道 -微测实业18\tongxin\NetWorkHelper\obj\Debug\NetWorkHelper.pdb
+F:\代码开发\C#开发\C-SLZ\SLZ-2\C2-SLZ双通道 -微测实业18\tongxin\NetWorkHelper\obj\Debug\NetWorkHelper.csprojAssemblyReference.cache
+F:\代码开发\C#开发\C-SLZ\SLZ-2\C2-SLZ双通道 -微测实业19\tongxin\NetWorkHelper\bin\Debug\TCP\ITcpClient.cs
+F:\代码开发\C#开发\C-SLZ\SLZ-2\C2-SLZ双通道 -微测实业19\tongxin\NetWorkHelper\bin\Debug\TCP\ITcpClient.Designer.cs
+F:\代码开发\C#开发\C-SLZ\SLZ-2\C2-SLZ双通道 -微测实业19\tongxin\NetWorkHelper\bin\Debug\NetWorkHelper.dll
+F:\代码开发\C#开发\C-SLZ\SLZ-2\C2-SLZ双通道 -微测实业19\tongxin\NetWorkHelper\bin\Debug\NetWorkHelper.pdb
+F:\代码开发\C#开发\C-SLZ\SLZ-2\C2-SLZ双通道 -微测实业19\tongxin\NetWorkHelper\obj\Debug\NetWorkHelper.AxUdpClient.resources
+F:\代码开发\C#开发\C-SLZ\SLZ-2\C2-SLZ双通道 -微测实业19\tongxin\NetWorkHelper\obj\Debug\NetWorkHelper.csproj.GenerateResource.cache
+F:\代码开发\C#开发\C-SLZ\SLZ-2\C2-SLZ双通道 -微测实业19\tongxin\NetWorkHelper\obj\Debug\NetWorkHelper.dll
+F:\代码开发\C#开发\C-SLZ\SLZ-2\C2-SLZ双通道 -微测实业19\tongxin\NetWorkHelper\obj\Debug\NetWorkHelper.pdb
+F:\代码开发\C#开发\C-SLZ\SLZ-2\C2-SLZ双通道 -微测实业20\tongxin\NetWorkHelper\bin\Debug\TCP\ITcpClient.cs
+F:\代码开发\C#开发\C-SLZ\SLZ-2\C2-SLZ双通道 -微测实业20\tongxin\NetWorkHelper\bin\Debug\TCP\ITcpClient.Designer.cs
+F:\代码开发\C#开发\C-SLZ\SLZ-2\C2-SLZ双通道 -微测实业20\tongxin\NetWorkHelper\bin\Debug\NetWorkHelper.dll
+F:\代码开发\C#开发\C-SLZ\SLZ-2\C2-SLZ双通道 -微测实业20\tongxin\NetWorkHelper\bin\Debug\NetWorkHelper.pdb
+F:\代码开发\C#开发\C-SLZ\SLZ-2\C2-SLZ双通道 -微测实业20\tongxin\NetWorkHelper\obj\Debug\NetWorkHelper.AxUdpClient.resources
+F:\代码开发\C#开发\C-SLZ\SLZ-2\C2-SLZ双通道 -微测实业20\tongxin\NetWorkHelper\obj\Debug\NetWorkHelper.csproj.GenerateResource.cache
+F:\代码开发\C#开发\C-SLZ\SLZ-2\C2-SLZ双通道 -微测实业20\tongxin\NetWorkHelper\obj\Debug\NetWorkHelper.dll
+F:\代码开发\C#开发\C-SLZ\SLZ-2\C2-SLZ双通道 -微测实业20\tongxin\NetWorkHelper\obj\Debug\NetWorkHelper.pdb
+F:\代码开发\C#开发\C-SLZ\SLZ-2\C2-SLZ双通道 -微测实业20\tongxin\NetWorkHelper\obj\Debug\NetWorkHelper.csprojAssemblyReference.cache
+F:\代码开发\C#开发\C-SLZ\SLZ-2\C2-SLZ双通道 -微测实业21\tongxin\NetWorkHelper\bin\Debug\TCP\ITcpClient.cs
+F:\代码开发\C#开发\C-SLZ\SLZ-2\C2-SLZ双通道 -微测实业21\tongxin\NetWorkHelper\bin\Debug\TCP\ITcpClient.Designer.cs
+F:\代码开发\C#开发\C-SLZ\SLZ-2\C2-SLZ双通道 -微测实业21\tongxin\NetWorkHelper\bin\Debug\NetWorkHelper.dll
+F:\代码开发\C#开发\C-SLZ\SLZ-2\C2-SLZ双通道 -微测实业21\tongxin\NetWorkHelper\bin\Debug\NetWorkHelper.pdb
+F:\代码开发\C#开发\C-SLZ\SLZ-2\C2-SLZ双通道 -微测实业21\tongxin\NetWorkHelper\obj\Debug\NetWorkHelper.AxUdpClient.resources
+F:\代码开发\C#开发\C-SLZ\SLZ-2\C2-SLZ双通道 -微测实业21\tongxin\NetWorkHelper\obj\Debug\NetWorkHelper.csproj.GenerateResource.cache
+F:\代码开发\C#开发\C-SLZ\SLZ-2\C2-SLZ双通道 -微测实业21\tongxin\NetWorkHelper\obj\Debug\NetWorkHelper.dll
+F:\代码开发\C#开发\C-SLZ\SLZ-2\C2-SLZ双通道 -微测实业21\tongxin\NetWorkHelper\obj\Debug\NetWorkHelper.pdb
+F:\代码开发\C#开发\LL28\唐群LL28-N-3\tongxin\NetWorkHelper\bin\Debug\TCP\ITcpClient.cs
+F:\代码开发\C#开发\LL28\唐群LL28-N-3\tongxin\NetWorkHelper\bin\Debug\TCP\ITcpClient.Designer.cs
+F:\代码开发\C#开发\LL28\唐群LL28-N-3\tongxin\NetWorkHelper\bin\Debug\NetWorkHelper.dll
+F:\代码开发\C#开发\LL28\唐群LL28-N-3\tongxin\NetWorkHelper\bin\Debug\NetWorkHelper.pdb
+F:\代码开发\C#开发\LL28\唐群LL28-N-3\tongxin\NetWorkHelper\obj\Debug\NetWorkHelper.csprojAssemblyReference.cache
+F:\代码开发\C#开发\LL28\唐群LL28-N-3\tongxin\NetWorkHelper\obj\Debug\NetWorkHelper.AxUdpClient.resources
+F:\代码开发\C#开发\LL28\唐群LL28-N-3\tongxin\NetWorkHelper\obj\Debug\NetWorkHelper.csproj.GenerateResource.cache
+F:\代码开发\C#开发\LL28\唐群LL28-N-3\tongxin\NetWorkHelper\obj\Debug\NetWorkHelper.dll
+F:\代码开发\C#开发\LL28\唐群LL28-N-3\tongxin\NetWorkHelper\obj\Debug\NetWorkHelper.pdb
+F:\代码开发\C#开发\LL28\唐群LL28-N-4\tongxin\NetWorkHelper\bin\Debug\TCP\ITcpClient.cs
+F:\代码开发\C#开发\LL28\唐群LL28-N-4\tongxin\NetWorkHelper\bin\Debug\TCP\ITcpClient.Designer.cs
+F:\代码开发\C#开发\LL28\唐群LL28-N-4\tongxin\NetWorkHelper\bin\Debug\NetWorkHelper.dll
+F:\代码开发\C#开发\LL28\唐群LL28-N-4\tongxin\NetWorkHelper\bin\Debug\NetWorkHelper.pdb
+F:\代码开发\C#开发\LL28\唐群LL28-N-4\tongxin\NetWorkHelper\obj\Debug\NetWorkHelper.AxUdpClient.resources
+F:\代码开发\C#开发\LL28\唐群LL28-N-4\tongxin\NetWorkHelper\obj\Debug\NetWorkHelper.csproj.GenerateResource.cache
+F:\代码开发\C#开发\LL28\唐群LL28-N-4\tongxin\NetWorkHelper\obj\Debug\NetWorkHelper.dll
+F:\代码开发\C#开发\LL28\唐群LL28-N-4\tongxin\NetWorkHelper\obj\Debug\NetWorkHelper.pdb
+F:\代码开发\C#开发\LL28\唐群LL28-N-4\tongxin\NetWorkHelper\obj\Debug\NetWorkHelper.csprojAssemblyReference.cache
+F:\代码开发\C#开发\LL28\唐群LL28-N-5\tongxin\NetWorkHelper\bin\Debug\TCP\ITcpClient.cs
+F:\代码开发\C#开发\LL28\唐群LL28-N-5\tongxin\NetWorkHelper\bin\Debug\TCP\ITcpClient.Designer.cs
+F:\代码开发\C#开发\LL28\唐群LL28-N-5\tongxin\NetWorkHelper\bin\Debug\NetWorkHelper.dll
+F:\代码开发\C#开发\LL28\唐群LL28-N-5\tongxin\NetWorkHelper\bin\Debug\NetWorkHelper.pdb
+F:\代码开发\C#开发\LL28\唐群LL28-N-5\tongxin\NetWorkHelper\obj\Debug\NetWorkHelper.AxUdpClient.resources
+F:\代码开发\C#开发\LL28\唐群LL28-N-5\tongxin\NetWorkHelper\obj\Debug\NetWorkHelper.csproj.GenerateResource.cache
+F:\代码开发\C#开发\LL28\唐群LL28-N-5\tongxin\NetWorkHelper\obj\Debug\NetWorkHelper.dll
+F:\代码开发\C#开发\LL28\唐群LL28-N-5\tongxin\NetWorkHelper\obj\Debug\NetWorkHelper.pdb
+F:\代码开发\C#开发\LL28\唐群LL28-N-5\tongxin\NetWorkHelper\obj\Debug\NetWorkHelper.csprojAssemblyReference.cache
+F:\代码开发\C#开发\LL28\唐群LL28-N-6\tongxin\NetWorkHelper\bin\Debug\TCP\ITcpClient.cs
+F:\代码开发\C#开发\LL28\唐群LL28-N-6\tongxin\NetWorkHelper\bin\Debug\TCP\ITcpClient.Designer.cs
+F:\代码开发\C#开发\LL28\唐群LL28-N-6\tongxin\NetWorkHelper\bin\Debug\NetWorkHelper.dll
+F:\代码开发\C#开发\LL28\唐群LL28-N-6\tongxin\NetWorkHelper\bin\Debug\NetWorkHelper.pdb
+F:\代码开发\C#开发\LL28\唐群LL28-N-6\tongxin\NetWorkHelper\obj\Debug\NetWorkHelper.AxUdpClient.resources
+F:\代码开发\C#开发\LL28\唐群LL28-N-6\tongxin\NetWorkHelper\obj\Debug\NetWorkHelper.csproj.GenerateResource.cache
+F:\代码开发\C#开发\LL28\唐群LL28-N-6\tongxin\NetWorkHelper\obj\Debug\NetWorkHelper.dll
+F:\代码开发\C#开发\LL28\唐群LL28-N-6\tongxin\NetWorkHelper\obj\Debug\NetWorkHelper.pdb
+F:\代码开发\C#开发\LL28\唐群LL28-N-6\tongxin\NetWorkHelper\obj\Debug\NetWorkHelper.csprojAssemblyReference.cache
+C:\Users\Administrator\Desktop\唐群LL28-N-6\tongxin\NetWorkHelper\bin\Debug\TCP\ITcpClient.cs
+C:\Users\Administrator\Desktop\唐群LL28-N-6\tongxin\NetWorkHelper\bin\Debug\TCP\ITcpClient.Designer.cs
+C:\Users\Administrator\Desktop\唐群LL28-N-6\tongxin\NetWorkHelper\bin\Debug\NetWorkHelper.dll
+C:\Users\Administrator\Desktop\唐群LL28-N-6\tongxin\NetWorkHelper\bin\Debug\NetWorkHelper.pdb
+C:\Users\Administrator\Desktop\唐群LL28-N-6\tongxin\NetWorkHelper\obj\Debug\NetWorkHelper.csproj.AssemblyReference.cache
+C:\Users\Administrator\Desktop\唐群LL28-N-6\tongxin\NetWorkHelper\obj\Debug\NetWorkHelper.AxUdpClient.resources
+C:\Users\Administrator\Desktop\唐群LL28-N-6\tongxin\NetWorkHelper\obj\Debug\NetWorkHelper.csproj.GenerateResource.cache
+C:\Users\Administrator\Desktop\唐群LL28-N-6\tongxin\NetWorkHelper\obj\Debug\NetWorkHelper.csproj.CoreCompileInputs.cache
+C:\Users\Administrator\Desktop\唐群LL28-N-6\tongxin\NetWorkHelper\obj\Debug\NetWorkHelper.dll
+C:\Users\Administrator\Desktop\唐群LL28-N-6\tongxin\NetWorkHelper\obj\Debug\NetWorkHelper.pdb
+C:\Users\T\Desktop\唐群LL28-N-6\tongxin\NetWorkHelper\bin\Debug\TCP\ITcpClient.cs
+C:\Users\T\Desktop\唐群LL28-N-6\tongxin\NetWorkHelper\bin\Debug\TCP\ITcpClient.Designer.cs
+C:\Users\T\Desktop\唐群LL28-N-6\tongxin\NetWorkHelper\bin\Debug\NetWorkHelper.dll
+C:\Users\T\Desktop\唐群LL28-N-6\tongxin\NetWorkHelper\bin\Debug\NetWorkHelper.pdb
+C:\Users\T\Desktop\唐群LL28-N-6\tongxin\NetWorkHelper\obj\Debug\NetWorkHelper.AxUdpClient.resources
+C:\Users\T\Desktop\唐群LL28-N-6\tongxin\NetWorkHelper\obj\Debug\NetWorkHelper.csproj.GenerateResource.cache
+C:\Users\T\Desktop\唐群LL28-N-6\tongxin\NetWorkHelper\obj\Debug\NetWorkHelper.dll
+C:\Users\T\Desktop\唐群LL28-N-6\tongxin\NetWorkHelper\obj\Debug\NetWorkHelper.pdb
+C:\Users\T\Desktop\唐群LL28-N-6\tongxin\NetWorkHelper\obj\Debug\NetWorkHelper.csprojAssemblyReference.cache
+C:\Users\Administrator\Desktop\唐群LL28-N-6_1\tongxin\NetWorkHelper\bin\Debug\TCP\ITcpClient.cs
+C:\Users\Administrator\Desktop\唐群LL28-N-6_1\tongxin\NetWorkHelper\bin\Debug\TCP\ITcpClient.Designer.cs
+C:\Users\Administrator\Desktop\唐群LL28-N-6_1\tongxin\NetWorkHelper\bin\Debug\NetWorkHelper.dll
+C:\Users\Administrator\Desktop\唐群LL28-N-6_1\tongxin\NetWorkHelper\bin\Debug\NetWorkHelper.pdb
+C:\Users\Administrator\Desktop\唐群LL28-N-6_1\tongxin\NetWorkHelper\obj\Debug\NetWorkHelper.csproj.AssemblyReference.cache
+C:\Users\Administrator\Desktop\唐群LL28-N-6_1\tongxin\NetWorkHelper\obj\Debug\NetWorkHelper.AxUdpClient.resources
+C:\Users\Administrator\Desktop\唐群LL28-N-6_1\tongxin\NetWorkHelper\obj\Debug\NetWorkHelper.csproj.GenerateResource.cache
+C:\Users\Administrator\Desktop\唐群LL28-N-6_1\tongxin\NetWorkHelper\obj\Debug\NetWorkHelper.csproj.CoreCompileInputs.cache
+C:\Users\Administrator\Desktop\唐群LL28-N-6_1\tongxin\NetWorkHelper\obj\Debug\NetWorkHelper.dll
+C:\Users\Administrator\Desktop\唐群LL28-N-6_1\tongxin\NetWorkHelper\obj\Debug\NetWorkHelper.pdb
+C:\Users\T\Desktop\唐群LL28-N-6_1\tongxin\NetWorkHelper\bin\Debug\TCP\ITcpClient.cs
+C:\Users\T\Desktop\唐群LL28-N-6_1\tongxin\NetWorkHelper\bin\Debug\TCP\ITcpClient.Designer.cs
+C:\Users\T\Desktop\唐群LL28-N-6_1\tongxin\NetWorkHelper\bin\Debug\NetWorkHelper.dll
+C:\Users\T\Desktop\唐群LL28-N-6_1\tongxin\NetWorkHelper\bin\Debug\NetWorkHelper.pdb
+C:\Users\T\Desktop\唐群LL28-N-6_1\tongxin\NetWorkHelper\obj\Debug\NetWorkHelper.AxUdpClient.resources
+C:\Users\T\Desktop\唐群LL28-N-6_1\tongxin\NetWorkHelper\obj\Debug\NetWorkHelper.csproj.GenerateResource.cache
+C:\Users\T\Desktop\唐群LL28-N-6_1\tongxin\NetWorkHelper\obj\Debug\NetWorkHelper.dll
+C:\Users\T\Desktop\唐群LL28-N-6_1\tongxin\NetWorkHelper\obj\Debug\NetWorkHelper.pdb
+C:\Users\T\Desktop\唐群LL28-N-6_1\tongxin\NetWorkHelper\obj\Debug\NetWorkHelper.csprojAssemblyReference.cache
+C:\Users\qiyu0\Desktop\唐群LL28-N\唐群LL28-N-6_1_1\tongxin\NetWorkHelper\bin\Debug\TCP\ITcpClient.cs
+C:\Users\qiyu0\Desktop\唐群LL28-N\唐群LL28-N-6_1_1\tongxin\NetWorkHelper\bin\Debug\TCP\ITcpClient.Designer.cs
+C:\Users\qiyu0\Desktop\唐群LL28-N\唐群LL28-N-6_1_1\tongxin\NetWorkHelper\bin\Debug\NetWorkHelper.dll
+C:\Users\qiyu0\Desktop\唐群LL28-N\唐群LL28-N-6_1_1\tongxin\NetWorkHelper\bin\Debug\NetWorkHelper.pdb
+C:\Users\qiyu0\Desktop\唐群LL28-N\唐群LL28-N-6_1_1\tongxin\NetWorkHelper\obj\Debug\NetWorkHelper.csproj.AssemblyReference.cache
+C:\Users\qiyu0\Desktop\唐群LL28-N\唐群LL28-N-6_1_1\tongxin\NetWorkHelper\obj\Debug\NetWorkHelper.AxUdpClient.resources
+C:\Users\qiyu0\Desktop\唐群LL28-N\唐群LL28-N-6_1_1\tongxin\NetWorkHelper\obj\Debug\NetWorkHelper.csproj.GenerateResource.cache
+C:\Users\qiyu0\Desktop\唐群LL28-N\唐群LL28-N-6_1_1\tongxin\NetWorkHelper\obj\Debug\NetWorkHelper.csproj.CoreCompileInputs.cache
+C:\Users\qiyu0\Desktop\唐群LL28-N\唐群LL28-N-6_1_1\tongxin\NetWorkHelper\obj\Debug\NetWorkHelper.dll
+C:\Users\qiyu0\Desktop\唐群LL28-N\唐群LL28-N-6_1_1\tongxin\NetWorkHelper\obj\Debug\NetWorkHelper.pdb
+C:\Users\qiyu0\Desktop\唐群LL28-N-HHH\唐群LL28-N-6_1_1\tongxin\NetWorkHelper\bin\Debug\TCP\ITcpClient.cs
+C:\Users\qiyu0\Desktop\唐群LL28-N-HHH\唐群LL28-N-6_1_1\tongxin\NetWorkHelper\bin\Debug\TCP\ITcpClient.Designer.cs
+C:\Users\qiyu0\Desktop\唐群LL28-N-HHH\唐群LL28-N-6_1_1\tongxin\NetWorkHelper\bin\Debug\NetWorkHelper.dll
+C:\Users\qiyu0\Desktop\唐群LL28-N-HHH\唐群LL28-N-6_1_1\tongxin\NetWorkHelper\bin\Debug\NetWorkHelper.pdb
+C:\Users\qiyu0\Desktop\唐群LL28-N-HHH\唐群LL28-N-6_1_1\tongxin\NetWorkHelper\obj\Debug\NetWorkHelper.csproj.AssemblyReference.cache
+C:\Users\qiyu0\Desktop\唐群LL28-N-HHH\唐群LL28-N-6_1_1\tongxin\NetWorkHelper\obj\Debug\NetWorkHelper.AxUdpClient.resources
+C:\Users\qiyu0\Desktop\唐群LL28-N-HHH\唐群LL28-N-6_1_1\tongxin\NetWorkHelper\obj\Debug\NetWorkHelper.csproj.GenerateResource.cache
+C:\Users\qiyu0\Desktop\唐群LL28-N-HHH\唐群LL28-N-6_1_1\tongxin\NetWorkHelper\obj\Debug\NetWorkHelper.csproj.CoreCompileInputs.cache
+C:\Users\qiyu0\Desktop\唐群LL28-N-HHH\唐群LL28-N-6_1_1\tongxin\NetWorkHelper\obj\Debug\NetWorkHelper.dll
+C:\Users\qiyu0\Desktop\唐群LL28-N-HHH\唐群LL28-N-6_1_1\tongxin\NetWorkHelper\obj\Debug\NetWorkHelper.pdb
+C:\Users\qiyu0\Desktop\唐群LL28-N-HHHH\唐群LL28-N-6_1_1\tongxin\NetWorkHelper\bin\Debug\TCP\ITcpClient.cs
+C:\Users\qiyu0\Desktop\唐群LL28-N-HHHH\唐群LL28-N-6_1_1\tongxin\NetWorkHelper\bin\Debug\TCP\ITcpClient.Designer.cs
+C:\Users\qiyu0\Desktop\唐群LL28-N-HHHH\唐群LL28-N-6_1_1\tongxin\NetWorkHelper\bin\Debug\NetWorkHelper.dll
+C:\Users\qiyu0\Desktop\唐群LL28-N-HHHH\唐群LL28-N-6_1_1\tongxin\NetWorkHelper\bin\Debug\NetWorkHelper.pdb
+C:\Users\qiyu0\Desktop\唐群LL28-N-HHHH\唐群LL28-N-6_1_1\tongxin\NetWorkHelper\obj\Debug\NetWorkHelper.csproj.AssemblyReference.cache
+C:\Users\qiyu0\Desktop\唐群LL28-N-HHHH\唐群LL28-N-6_1_1\tongxin\NetWorkHelper\obj\Debug\NetWorkHelper.AxUdpClient.resources
+C:\Users\qiyu0\Desktop\唐群LL28-N-HHHH\唐群LL28-N-6_1_1\tongxin\NetWorkHelper\obj\Debug\NetWorkHelper.csproj.GenerateResource.cache
+C:\Users\qiyu0\Desktop\唐群LL28-N-HHHH\唐群LL28-N-6_1_1\tongxin\NetWorkHelper\obj\Debug\NetWorkHelper.csproj.CoreCompileInputs.cache
+C:\Users\qiyu0\Desktop\唐群LL28-N-HHHH\唐群LL28-N-6_1_1\tongxin\NetWorkHelper\obj\Debug\NetWorkHelper.dll
+C:\Users\qiyu0\Desktop\唐群LL28-N-HHHH\唐群LL28-N-6_1_1\tongxin\NetWorkHelper\obj\Debug\NetWorkHelper.pdb
+C:\Users\T\Desktop\唐群LL28-N-HHHH\唐群LL28-N-HHHH\唐群LL28-N-6_1_1\tongxin\NetWorkHelper\bin\Debug\TCP\ITcpClient.cs
+C:\Users\T\Desktop\唐群LL28-N-HHHH\唐群LL28-N-HHHH\唐群LL28-N-6_1_1\tongxin\NetWorkHelper\bin\Debug\TCP\ITcpClient.Designer.cs
+C:\Users\T\Desktop\唐群LL28-N-HHHH\唐群LL28-N-HHHH\唐群LL28-N-6_1_1\tongxin\NetWorkHelper\bin\Debug\NetWorkHelper.dll
+C:\Users\T\Desktop\唐群LL28-N-HHHH\唐群LL28-N-HHHH\唐群LL28-N-6_1_1\tongxin\NetWorkHelper\bin\Debug\NetWorkHelper.pdb
+C:\Users\T\Desktop\唐群LL28-N-HHHH\唐群LL28-N-HHHH\唐群LL28-N-6_1_1\tongxin\NetWorkHelper\obj\Debug\NetWorkHelper.AxUdpClient.resources
+C:\Users\T\Desktop\唐群LL28-N-HHHH\唐群LL28-N-HHHH\唐群LL28-N-6_1_1\tongxin\NetWorkHelper\obj\Debug\NetWorkHelper.csproj.GenerateResource.cache
+C:\Users\T\Desktop\唐群LL28-N-HHHH\唐群LL28-N-HHHH\唐群LL28-N-6_1_1\tongxin\NetWorkHelper\obj\Debug\NetWorkHelper.dll
+C:\Users\T\Desktop\唐群LL28-N-HHHH\唐群LL28-N-HHHH\唐群LL28-N-6_1_1\tongxin\NetWorkHelper\obj\Debug\NetWorkHelper.pdb
+C:\Users\T\Desktop\唐群LL28-N-HHHH\唐群LL28-N-HHHH\唐群LL28-N-6_1_1\tongxin\NetWorkHelper\obj\Debug\NetWorkHelper.csprojAssemblyReference.cache
+C:\Users\Administrator\Desktop\唐群LL28-N-HHHH\唐群LL28-N-HHHH\唐群LL28-N-HHHH\唐群LL28-N-6_1_1\tongxin\NetWorkHelper\bin\Debug\TCP\ITcpClient.cs
+C:\Users\Administrator\Desktop\唐群LL28-N-HHHH\唐群LL28-N-HHHH\唐群LL28-N-HHHH\唐群LL28-N-6_1_1\tongxin\NetWorkHelper\bin\Debug\TCP\ITcpClient.Designer.cs
+C:\Users\Administrator\Desktop\唐群LL28-N-HHHH\唐群LL28-N-HHHH\唐群LL28-N-HHHH\唐群LL28-N-6_1_1\tongxin\NetWorkHelper\bin\Debug\NetWorkHelper.dll
+C:\Users\Administrator\Desktop\唐群LL28-N-HHHH\唐群LL28-N-HHHH\唐群LL28-N-HHHH\唐群LL28-N-6_1_1\tongxin\NetWorkHelper\bin\Debug\NetWorkHelper.pdb
+C:\Users\Administrator\Desktop\唐群LL28-N-HHHH\唐群LL28-N-HHHH\唐群LL28-N-HHHH\唐群LL28-N-6_1_1\tongxin\NetWorkHelper\obj\Debug\NetWorkHelper.csproj.AssemblyReference.cache
+C:\Users\Administrator\Desktop\唐群LL28-N-HHHH\唐群LL28-N-HHHH\唐群LL28-N-HHHH\唐群LL28-N-6_1_1\tongxin\NetWorkHelper\obj\Debug\NetWorkHelper.AxUdpClient.resources
+C:\Users\Administrator\Desktop\唐群LL28-N-HHHH\唐群LL28-N-HHHH\唐群LL28-N-HHHH\唐群LL28-N-6_1_1\tongxin\NetWorkHelper\obj\Debug\NetWorkHelper.csproj.GenerateResource.cache
+C:\Users\Administrator\Desktop\唐群LL28-N-HHHH\唐群LL28-N-HHHH\唐群LL28-N-HHHH\唐群LL28-N-6_1_1\tongxin\NetWorkHelper\obj\Debug\NetWorkHelper.csproj.CoreCompileInputs.cache
+C:\Users\Administrator\Desktop\唐群LL28-N-HHHH\唐群LL28-N-HHHH\唐群LL28-N-HHHH\唐群LL28-N-6_1_1\tongxin\NetWorkHelper\obj\Debug\NetWorkHelper.dll
+C:\Users\Administrator\Desktop\唐群LL28-N-HHHH\唐群LL28-N-HHHH\唐群LL28-N-HHHH\唐群LL28-N-6_1_1\tongxin\NetWorkHelper\obj\Debug\NetWorkHelper.pdb
+E:\Desktop\唐群LL28-N-HHHH\唐群LL28-N-HHHH\唐群LL28-N-HHHH\唐群LL28-N-6_1_1\tongxin\NetWorkHelper\bin\Debug\TCP\ITcpClient.cs
+E:\Desktop\唐群LL28-N-HHHH\唐群LL28-N-HHHH\唐群LL28-N-HHHH\唐群LL28-N-6_1_1\tongxin\NetWorkHelper\bin\Debug\TCP\ITcpClient.Designer.cs
+E:\Desktop\唐群LL28-N-HHHH\唐群LL28-N-HHHH\唐群LL28-N-HHHH\唐群LL28-N-6_1_1\tongxin\NetWorkHelper\bin\Debug\NetWorkHelper.dll
+E:\Desktop\唐群LL28-N-HHHH\唐群LL28-N-HHHH\唐群LL28-N-HHHH\唐群LL28-N-6_1_1\tongxin\NetWorkHelper\bin\Debug\NetWorkHelper.pdb
+E:\Desktop\唐群LL28-N-HHHH\唐群LL28-N-HHHH\唐群LL28-N-HHHH\唐群LL28-N-6_1_1\tongxin\NetWorkHelper\obj\Debug\NetWorkHelper.AxUdpClient.resources
+E:\Desktop\唐群LL28-N-HHHH\唐群LL28-N-HHHH\唐群LL28-N-HHHH\唐群LL28-N-6_1_1\tongxin\NetWorkHelper\obj\Debug\NetWorkHelper.csproj.GenerateResource.cache
+E:\Desktop\唐群LL28-N-HHHH\唐群LL28-N-HHHH\唐群LL28-N-HHHH\唐群LL28-N-6_1_1\tongxin\NetWorkHelper\obj\Debug\NetWorkHelper.csproj.CoreCompileInputs.cache
+E:\Desktop\唐群LL28-N-HHHH\唐群LL28-N-HHHH\唐群LL28-N-HHHH\唐群LL28-N-6_1_1\tongxin\NetWorkHelper\obj\Debug\NetWorkHelper.dll
+E:\Desktop\唐群LL28-N-HHHH\唐群LL28-N-HHHH\唐群LL28-N-HHHH\唐群LL28-N-6_1_1\tongxin\NetWorkHelper\obj\Debug\NetWorkHelper.pdb
+E:\Desktop\气泵敲定一版 - 待改2222\气泵敲定一版 - 待改\tongxin\NetWorkHelper\bin\Debug\TCP\ITcpClient.cs
+E:\Desktop\气泵敲定一版 - 待改2222\气泵敲定一版 - 待改\tongxin\NetWorkHelper\bin\Debug\TCP\ITcpClient.Designer.cs
+E:\Desktop\气泵敲定一版 - 待改2222\气泵敲定一版 - 待改\tongxin\NetWorkHelper\bin\Debug\NetWorkHelper.dll
+E:\Desktop\气泵敲定一版 - 待改2222\气泵敲定一版 - 待改\tongxin\NetWorkHelper\bin\Debug\NetWorkHelper.pdb
+E:\Desktop\气泵敲定一版 - 待改2222\气泵敲定一版 - 待改\tongxin\NetWorkHelper\obj\Debug\NetWorkHelper.AxUdpClient.resources
+E:\Desktop\气泵敲定一版 - 待改2222\气泵敲定一版 - 待改\tongxin\NetWorkHelper\obj\Debug\NetWorkHelper.csproj.GenerateResource.cache
+E:\Desktop\气泵敲定一版 - 待改2222\气泵敲定一版 - 待改\tongxin\NetWorkHelper\obj\Debug\NetWorkHelper.csproj.CoreCompileInputs.cache
+E:\Desktop\气泵敲定一版 - 待改2222\气泵敲定一版 - 待改\tongxin\NetWorkHelper\obj\Debug\NetWorkHelper.dll
+E:\Desktop\气泵敲定一版 - 待改2222\气泵敲定一版 - 待改\tongxin\NetWorkHelper\obj\Debug\NetWorkHelper.pdb
+C:\Users\Administrator\Desktop\气泵敲定一版 - 待改2222\气泵敲定一版 - 待改\tongxin\NetWorkHelper\bin\Debug\TCP\ITcpClient.cs
+C:\Users\Administrator\Desktop\气泵敲定一版 - 待改2222\气泵敲定一版 - 待改\tongxin\NetWorkHelper\bin\Debug\TCP\ITcpClient.Designer.cs
+C:\Users\Administrator\Desktop\气泵敲定一版 - 待改2222\气泵敲定一版 - 待改\tongxin\NetWorkHelper\bin\Debug\NetWorkHelper.dll
+C:\Users\Administrator\Desktop\气泵敲定一版 - 待改2222\气泵敲定一版 - 待改\tongxin\NetWorkHelper\bin\Debug\NetWorkHelper.pdb
+C:\Users\Administrator\Desktop\气泵敲定一版 - 待改2222\气泵敲定一版 - 待改\tongxin\NetWorkHelper\obj\Debug\NetWorkHelper.csproj.AssemblyReference.cache
+C:\Users\Administrator\Desktop\气泵敲定一版 - 待改2222\气泵敲定一版 - 待改\tongxin\NetWorkHelper\obj\Debug\NetWorkHelper.AxUdpClient.resources
+C:\Users\Administrator\Desktop\气泵敲定一版 - 待改2222\气泵敲定一版 - 待改\tongxin\NetWorkHelper\obj\Debug\NetWorkHelper.csproj.GenerateResource.cache
+C:\Users\Administrator\Desktop\气泵敲定一版 - 待改2222\气泵敲定一版 - 待改\tongxin\NetWorkHelper\obj\Debug\NetWorkHelper.csproj.CoreCompileInputs.cache
+C:\Users\Administrator\Desktop\气泵敲定一版 - 待改2222\气泵敲定一版 - 待改\tongxin\NetWorkHelper\obj\Debug\NetWorkHelper.dll
+C:\Users\Administrator\Desktop\气泵敲定一版 - 待改2222\气泵敲定一版 - 待改\tongxin\NetWorkHelper\obj\Debug\NetWorkHelper.pdb
+C:\Users\Administrator\Desktop\气泵敲定一版 - 待改2版\气泵敲定一版 - 待改\tongxin\NetWorkHelper\bin\Debug\TCP\ITcpClient.cs
+C:\Users\Administrator\Desktop\气泵敲定一版 - 待改2版\气泵敲定一版 - 待改\tongxin\NetWorkHelper\bin\Debug\TCP\ITcpClient.Designer.cs
+C:\Users\Administrator\Desktop\气泵敲定一版 - 待改2版\气泵敲定一版 - 待改\tongxin\NetWorkHelper\bin\Debug\NetWorkHelper.dll
+C:\Users\Administrator\Desktop\气泵敲定一版 - 待改2版\气泵敲定一版 - 待改\tongxin\NetWorkHelper\bin\Debug\NetWorkHelper.pdb
+C:\Users\Administrator\Desktop\气泵敲定一版 - 待改2版\气泵敲定一版 - 待改\tongxin\NetWorkHelper\obj\Debug\NetWorkHelper.csproj.AssemblyReference.cache
+C:\Users\Administrator\Desktop\气泵敲定一版 - 待改2版\气泵敲定一版 - 待改\tongxin\NetWorkHelper\obj\Debug\NetWorkHelper.AxUdpClient.resources
+C:\Users\Administrator\Desktop\气泵敲定一版 - 待改2版\气泵敲定一版 - 待改\tongxin\NetWorkHelper\obj\Debug\NetWorkHelper.csproj.GenerateResource.cache
+C:\Users\Administrator\Desktop\气泵敲定一版 - 待改2版\气泵敲定一版 - 待改\tongxin\NetWorkHelper\obj\Debug\NetWorkHelper.csproj.CoreCompileInputs.cache
+C:\Users\Administrator\Desktop\气泵敲定一版 - 待改2版\气泵敲定一版 - 待改\tongxin\NetWorkHelper\obj\Debug\NetWorkHelper.dll
+C:\Users\Administrator\Desktop\气泵敲定一版 - 待改2版\气泵敲定一版 - 待改\tongxin\NetWorkHelper\obj\Debug\NetWorkHelper.pdb
+E:\Desktop\气泵敲定一版 - 待改3版\气泵敲定一版 - 待改\tongxin\NetWorkHelper\bin\Debug\TCP\ITcpClient.cs
+E:\Desktop\气泵敲定一版 - 待改3版\气泵敲定一版 - 待改\tongxin\NetWorkHelper\bin\Debug\TCP\ITcpClient.Designer.cs
+E:\Desktop\气泵敲定一版 - 待改3版\气泵敲定一版 - 待改\tongxin\NetWorkHelper\bin\Debug\NetWorkHelper.dll
+E:\Desktop\气泵敲定一版 - 待改3版\气泵敲定一版 - 待改\tongxin\NetWorkHelper\bin\Debug\NetWorkHelper.pdb
+E:\Desktop\气泵敲定一版 - 待改3版\气泵敲定一版 - 待改\tongxin\NetWorkHelper\obj\Debug\NetWorkHelper.AxUdpClient.resources
+E:\Desktop\气泵敲定一版 - 待改3版\气泵敲定一版 - 待改\tongxin\NetWorkHelper\obj\Debug\NetWorkHelper.csproj.GenerateResource.cache
+E:\Desktop\气泵敲定一版 - 待改3版\气泵敲定一版 - 待改\tongxin\NetWorkHelper\obj\Debug\NetWorkHelper.csproj.CoreCompileInputs.cache
+E:\Desktop\气泵敲定一版 - 待改3版\气泵敲定一版 - 待改\tongxin\NetWorkHelper\obj\Debug\NetWorkHelper.dll
+E:\Desktop\气泵敲定一版 - 待改3版\气泵敲定一版 - 待改\tongxin\NetWorkHelper\obj\Debug\NetWorkHelper.pdb
+C:\Users\Administrator\Desktop\气泵敲定一版 - 待改3版\气泵敲定一版 - 待改\tongxin\NetWorkHelper\bin\Debug\TCP\ITcpClient.cs
+C:\Users\Administrator\Desktop\气泵敲定一版 - 待改3版\气泵敲定一版 - 待改\tongxin\NetWorkHelper\bin\Debug\TCP\ITcpClient.Designer.cs
+C:\Users\Administrator\Desktop\气泵敲定一版 - 待改3版\气泵敲定一版 - 待改\tongxin\NetWorkHelper\bin\Debug\NetWorkHelper.dll
+C:\Users\Administrator\Desktop\气泵敲定一版 - 待改3版\气泵敲定一版 - 待改\tongxin\NetWorkHelper\bin\Debug\NetWorkHelper.pdb
+C:\Users\Administrator\Desktop\气泵敲定一版 - 待改3版\气泵敲定一版 - 待改\tongxin\NetWorkHelper\obj\Debug\NetWorkHelper.csproj.AssemblyReference.cache
+C:\Users\Administrator\Desktop\气泵敲定一版 - 待改3版\气泵敲定一版 - 待改\tongxin\NetWorkHelper\obj\Debug\NetWorkHelper.AxUdpClient.resources
+C:\Users\Administrator\Desktop\气泵敲定一版 - 待改3版\气泵敲定一版 - 待改\tongxin\NetWorkHelper\obj\Debug\NetWorkHelper.csproj.GenerateResource.cache
+C:\Users\Administrator\Desktop\气泵敲定一版 - 待改3版\气泵敲定一版 - 待改\tongxin\NetWorkHelper\obj\Debug\NetWorkHelper.csproj.CoreCompileInputs.cache
+C:\Users\Administrator\Desktop\气泵敲定一版 - 待改3版\气泵敲定一版 - 待改\tongxin\NetWorkHelper\obj\Debug\NetWorkHelper.dll
+C:\Users\Administrator\Desktop\气泵敲定一版 - 待改3版\气泵敲定一版 - 待改\tongxin\NetWorkHelper\obj\Debug\NetWorkHelper.pdb
+C:\Users\Administrator\Desktop\气泵敲定一版 - 待改4版\气泵敲定一版 - 待改\tongxin\NetWorkHelper\bin\Debug\TCP\ITcpClient.cs
+C:\Users\Administrator\Desktop\气泵敲定一版 - 待改4版\气泵敲定一版 - 待改\tongxin\NetWorkHelper\bin\Debug\TCP\ITcpClient.Designer.cs
+C:\Users\Administrator\Desktop\气泵敲定一版 - 待改4版\气泵敲定一版 - 待改\tongxin\NetWorkHelper\bin\Debug\NetWorkHelper.dll
+C:\Users\Administrator\Desktop\气泵敲定一版 - 待改4版\气泵敲定一版 - 待改\tongxin\NetWorkHelper\bin\Debug\NetWorkHelper.pdb
+C:\Users\Administrator\Desktop\气泵敲定一版 - 待改4版\气泵敲定一版 - 待改\tongxin\NetWorkHelper\obj\Debug\NetWorkHelper.csproj.AssemblyReference.cache
+C:\Users\Administrator\Desktop\气泵敲定一版 - 待改4版\气泵敲定一版 - 待改\tongxin\NetWorkHelper\obj\Debug\NetWorkHelper.AxUdpClient.resources
+C:\Users\Administrator\Desktop\气泵敲定一版 - 待改4版\气泵敲定一版 - 待改\tongxin\NetWorkHelper\obj\Debug\NetWorkHelper.csproj.GenerateResource.cache
+C:\Users\Administrator\Desktop\气泵敲定一版 - 待改4版\气泵敲定一版 - 待改\tongxin\NetWorkHelper\obj\Debug\NetWorkHelper.csproj.CoreCompileInputs.cache
+C:\Users\Administrator\Desktop\气泵敲定一版 - 待改4版\气泵敲定一版 - 待改\tongxin\NetWorkHelper\obj\Debug\NetWorkHelper.dll
+C:\Users\Administrator\Desktop\气泵敲定一版 - 待改4版\气泵敲定一版 - 待改\tongxin\NetWorkHelper\obj\Debug\NetWorkHelper.pdb
+C:\Users\Administrator\Desktop\气泵敲定一版 - 待改6版\气泵敲定一版 - 待改\tongxin\NetWorkHelper\bin\Debug\TCP\ITcpClient.cs
+C:\Users\Administrator\Desktop\气泵敲定一版 - 待改6版\气泵敲定一版 - 待改\tongxin\NetWorkHelper\bin\Debug\TCP\ITcpClient.Designer.cs
+C:\Users\Administrator\Desktop\气泵敲定一版 - 待改6版\气泵敲定一版 - 待改\tongxin\NetWorkHelper\bin\Debug\NetWorkHelper.dll
+C:\Users\Administrator\Desktop\气泵敲定一版 - 待改6版\气泵敲定一版 - 待改\tongxin\NetWorkHelper\bin\Debug\NetWorkHelper.pdb
+C:\Users\Administrator\Desktop\气泵敲定一版 - 待改6版\气泵敲定一版 - 待改\tongxin\NetWorkHelper\obj\Debug\NetWorkHelper.csproj.AssemblyReference.cache
+C:\Users\Administrator\Desktop\气泵敲定一版 - 待改6版\气泵敲定一版 - 待改\tongxin\NetWorkHelper\obj\Debug\NetWorkHelper.AxUdpClient.resources
+C:\Users\Administrator\Desktop\气泵敲定一版 - 待改6版\气泵敲定一版 - 待改\tongxin\NetWorkHelper\obj\Debug\NetWorkHelper.csproj.GenerateResource.cache
+C:\Users\Administrator\Desktop\气泵敲定一版 - 待改6版\气泵敲定一版 - 待改\tongxin\NetWorkHelper\obj\Debug\NetWorkHelper.csproj.CoreCompileInputs.cache
+C:\Users\Administrator\Desktop\气泵敲定一版 - 待改6版\气泵敲定一版 - 待改\tongxin\NetWorkHelper\obj\Debug\NetWorkHelper.dll
+C:\Users\Administrator\Desktop\气泵敲定一版 - 待改6版\气泵敲定一版 - 待改\tongxin\NetWorkHelper\obj\Debug\NetWorkHelper.pdb
+C:\Users\Administrator\Desktop\气泵敲定一版 - 待改6版 - 副本\气泵敲定一版 - 待改\tongxin\NetWorkHelper\bin\Debug\TCP\ITcpClient.cs
+C:\Users\Administrator\Desktop\气泵敲定一版 - 待改6版 - 副本\气泵敲定一版 - 待改\tongxin\NetWorkHelper\bin\Debug\TCP\ITcpClient.Designer.cs
+C:\Users\Administrator\Desktop\气泵敲定一版 - 待改6版 - 副本\气泵敲定一版 - 待改\tongxin\NetWorkHelper\bin\Debug\NetWorkHelper.dll
+C:\Users\Administrator\Desktop\气泵敲定一版 - 待改6版 - 副本\气泵敲定一版 - 待改\tongxin\NetWorkHelper\bin\Debug\NetWorkHelper.pdb
+C:\Users\Administrator\Desktop\气泵敲定一版 - 待改6版 - 副本\气泵敲定一版 - 待改\tongxin\NetWorkHelper\obj\Debug\NetWorkHelper.csproj.AssemblyReference.cache
+C:\Users\Administrator\Desktop\气泵敲定一版 - 待改6版 - 副本\气泵敲定一版 - 待改\tongxin\NetWorkHelper\obj\Debug\NetWorkHelper.AxUdpClient.resources
+C:\Users\Administrator\Desktop\气泵敲定一版 - 待改6版 - 副本\气泵敲定一版 - 待改\tongxin\NetWorkHelper\obj\Debug\NetWorkHelper.csproj.GenerateResource.cache
+C:\Users\Administrator\Desktop\气泵敲定一版 - 待改6版 - 副本\气泵敲定一版 - 待改\tongxin\NetWorkHelper\obj\Debug\NetWorkHelper.csproj.CoreCompileInputs.cache
+C:\Users\Administrator\Desktop\气泵敲定一版 - 待改6版 - 副本\气泵敲定一版 - 待改\tongxin\NetWorkHelper\obj\Debug\NetWorkHelper.dll
+C:\Users\Administrator\Desktop\气泵敲定一版 - 待改6版 - 副本\气泵敲定一版 - 待改\tongxin\NetWorkHelper\obj\Debug\NetWorkHelper.pdb
+C:\Users\Administrator\Desktop\气泵敲定一版 - 待改7版\气泵敲定一版 - 待改\tongxin\NetWorkHelper\bin\Debug\TCP\ITcpClient.cs
+C:\Users\Administrator\Desktop\气泵敲定一版 - 待改7版\气泵敲定一版 - 待改\tongxin\NetWorkHelper\bin\Debug\TCP\ITcpClient.Designer.cs
+C:\Users\Administrator\Desktop\气泵敲定一版 - 待改7版\气泵敲定一版 - 待改\tongxin\NetWorkHelper\bin\Debug\NetWorkHelper.dll
+C:\Users\Administrator\Desktop\气泵敲定一版 - 待改7版\气泵敲定一版 - 待改\tongxin\NetWorkHelper\bin\Debug\NetWorkHelper.pdb
+C:\Users\Administrator\Desktop\气泵敲定一版 - 待改7版\气泵敲定一版 - 待改\tongxin\NetWorkHelper\obj\Debug\NetWorkHelper.csproj.AssemblyReference.cache
+C:\Users\Administrator\Desktop\气泵敲定一版 - 待改7版\气泵敲定一版 - 待改\tongxin\NetWorkHelper\obj\Debug\NetWorkHelper.AxUdpClient.resources
+C:\Users\Administrator\Desktop\气泵敲定一版 - 待改7版\气泵敲定一版 - 待改\tongxin\NetWorkHelper\obj\Debug\NetWorkHelper.csproj.GenerateResource.cache
+C:\Users\Administrator\Desktop\气泵敲定一版 - 待改7版\气泵敲定一版 - 待改\tongxin\NetWorkHelper\obj\Debug\NetWorkHelper.csproj.CoreCompileInputs.cache
+C:\Users\Administrator\Desktop\气泵敲定一版 - 待改7版\气泵敲定一版 - 待改\tongxin\NetWorkHelper\obj\Debug\NetWorkHelper.dll
+C:\Users\Administrator\Desktop\气泵敲定一版 - 待改7版\气泵敲定一版 - 待改\tongxin\NetWorkHelper\obj\Debug\NetWorkHelper.pdb
+C:\Users\Administrator\Desktop\气泵敲定一版 - 待改8版\气泵敲定一版 - 待改\tongxin\NetWorkHelper\bin\Debug\TCP\ITcpClient.cs
+C:\Users\Administrator\Desktop\气泵敲定一版 - 待改8版\气泵敲定一版 - 待改\tongxin\NetWorkHelper\bin\Debug\TCP\ITcpClient.Designer.cs
+C:\Users\Administrator\Desktop\气泵敲定一版 - 待改8版\气泵敲定一版 - 待改\tongxin\NetWorkHelper\bin\Debug\NetWorkHelper.dll
+C:\Users\Administrator\Desktop\气泵敲定一版 - 待改8版\气泵敲定一版 - 待改\tongxin\NetWorkHelper\bin\Debug\NetWorkHelper.pdb
+C:\Users\Administrator\Desktop\气泵敲定一版 - 待改8版\气泵敲定一版 - 待改\tongxin\NetWorkHelper\obj\Debug\NetWorkHelper.csproj.AssemblyReference.cache
+C:\Users\Administrator\Desktop\气泵敲定一版 - 待改8版\气泵敲定一版 - 待改\tongxin\NetWorkHelper\obj\Debug\NetWorkHelper.AxUdpClient.resources
+C:\Users\Administrator\Desktop\气泵敲定一版 - 待改8版\气泵敲定一版 - 待改\tongxin\NetWorkHelper\obj\Debug\NetWorkHelper.csproj.GenerateResource.cache
+C:\Users\Administrator\Desktop\气泵敲定一版 - 待改8版\气泵敲定一版 - 待改\tongxin\NetWorkHelper\obj\Debug\NetWorkHelper.csproj.CoreCompileInputs.cache
+C:\Users\Administrator\Desktop\气泵敲定一版 - 待改8版\气泵敲定一版 - 待改\tongxin\NetWorkHelper\obj\Debug\NetWorkHelper.dll
+C:\Users\Administrator\Desktop\气泵敲定一版 - 待改8版\气泵敲定一版 - 待改\tongxin\NetWorkHelper\obj\Debug\NetWorkHelper.pdb
+C:\Users\Administrator\Desktop\气泵敲定一版 - 待改10版\气泵敲定一版 - 待改\tongxin\NetWorkHelper\bin\Debug\TCP\ITcpClient.cs
+C:\Users\Administrator\Desktop\气泵敲定一版 - 待改10版\气泵敲定一版 - 待改\tongxin\NetWorkHelper\bin\Debug\TCP\ITcpClient.Designer.cs
+C:\Users\Administrator\Desktop\气泵敲定一版 - 待改10版\气泵敲定一版 - 待改\tongxin\NetWorkHelper\bin\Debug\NetWorkHelper.dll
+C:\Users\Administrator\Desktop\气泵敲定一版 - 待改10版\气泵敲定一版 - 待改\tongxin\NetWorkHelper\bin\Debug\NetWorkHelper.pdb
+C:\Users\Administrator\Desktop\气泵敲定一版 - 待改10版\气泵敲定一版 - 待改\tongxin\NetWorkHelper\obj\Debug\NetWorkHelper.csproj.AssemblyReference.cache
+C:\Users\Administrator\Desktop\气泵敲定一版 - 待改10版\气泵敲定一版 - 待改\tongxin\NetWorkHelper\obj\Debug\NetWorkHelper.AxUdpClient.resources
+C:\Users\Administrator\Desktop\气泵敲定一版 - 待改10版\气泵敲定一版 - 待改\tongxin\NetWorkHelper\obj\Debug\NetWorkHelper.csproj.GenerateResource.cache
+C:\Users\Administrator\Desktop\气泵敲定一版 - 待改10版\气泵敲定一版 - 待改\tongxin\NetWorkHelper\obj\Debug\NetWorkHelper.csproj.CoreCompileInputs.cache
+C:\Users\Administrator\Desktop\气泵敲定一版 - 待改10版\气泵敲定一版 - 待改\tongxin\NetWorkHelper\obj\Debug\NetWorkHelper.dll
+C:\Users\Administrator\Desktop\气泵敲定一版 - 待改10版\气泵敲定一版 - 待改\tongxin\NetWorkHelper\obj\Debug\NetWorkHelper.pdb
+C:\Users\Administrator\Desktop\气泵敲定一版 - 待改11版(uA修改版）\气泵敲定一版 - 待改\tongxin\NetWorkHelper\bin\Debug\TCP\ITcpClient.cs
+C:\Users\Administrator\Desktop\气泵敲定一版 - 待改11版(uA修改版）\气泵敲定一版 - 待改\tongxin\NetWorkHelper\bin\Debug\TCP\ITcpClient.Designer.cs
+C:\Users\Administrator\Desktop\气泵敲定一版 - 待改11版(uA修改版）\气泵敲定一版 - 待改\tongxin\NetWorkHelper\bin\Debug\NetWorkHelper.dll
+C:\Users\Administrator\Desktop\气泵敲定一版 - 待改11版(uA修改版）\气泵敲定一版 - 待改\tongxin\NetWorkHelper\bin\Debug\NetWorkHelper.pdb
+C:\Users\Administrator\Desktop\气泵敲定一版 - 待改11版(uA修改版）\气泵敲定一版 - 待改\tongxin\NetWorkHelper\obj\Debug\NetWorkHelper.csproj.AssemblyReference.cache
+C:\Users\Administrator\Desktop\气泵敲定一版 - 待改11版(uA修改版）\气泵敲定一版 - 待改\tongxin\NetWorkHelper\obj\Debug\NetWorkHelper.AxUdpClient.resources
+C:\Users\Administrator\Desktop\气泵敲定一版 - 待改11版(uA修改版）\气泵敲定一版 - 待改\tongxin\NetWorkHelper\obj\Debug\NetWorkHelper.csproj.GenerateResource.cache
+C:\Users\Administrator\Desktop\气泵敲定一版 - 待改11版(uA修改版）\气泵敲定一版 - 待改\tongxin\NetWorkHelper\obj\Debug\NetWorkHelper.csproj.CoreCompileInputs.cache
+C:\Users\Administrator\Desktop\气泵敲定一版 - 待改11版(uA修改版）\气泵敲定一版 - 待改\tongxin\NetWorkHelper\obj\Debug\NetWorkHelper.dll
+C:\Users\Administrator\Desktop\气泵敲定一版 - 待改11版(uA修改版）\气泵敲定一版 - 待改\tongxin\NetWorkHelper\obj\Debug\NetWorkHelper.pdb
+C:\Users\Administrator\Desktop\气泵敲定二版 电流表\气泵敲定一版 - 待改\tongxin\NetWorkHelper\bin\Debug\TCP\ITcpClient.cs
+C:\Users\Administrator\Desktop\气泵敲定二版 电流表\气泵敲定一版 - 待改\tongxin\NetWorkHelper\bin\Debug\TCP\ITcpClient.Designer.cs
+C:\Users\Administrator\Desktop\气泵敲定二版 电流表\气泵敲定一版 - 待改\tongxin\NetWorkHelper\bin\Debug\NetWorkHelper.dll
+C:\Users\Administrator\Desktop\气泵敲定二版 电流表\气泵敲定一版 - 待改\tongxin\NetWorkHelper\bin\Debug\NetWorkHelper.pdb
+C:\Users\Administrator\Desktop\气泵敲定二版 电流表\气泵敲定一版 - 待改\tongxin\NetWorkHelper\obj\Debug\NetWorkHelper.csproj.AssemblyReference.cache
+C:\Users\Administrator\Desktop\气泵敲定二版 电流表\气泵敲定一版 - 待改\tongxin\NetWorkHelper\obj\Debug\NetWorkHelper.AxUdpClient.resources
+C:\Users\Administrator\Desktop\气泵敲定二版 电流表\气泵敲定一版 - 待改\tongxin\NetWorkHelper\obj\Debug\NetWorkHelper.csproj.GenerateResource.cache
+C:\Users\Administrator\Desktop\气泵敲定二版 电流表\气泵敲定一版 - 待改\tongxin\NetWorkHelper\obj\Debug\NetWorkHelper.csproj.CoreCompileInputs.cache
+C:\Users\Administrator\Desktop\气泵敲定二版 电流表\气泵敲定一版 - 待改\tongxin\NetWorkHelper\obj\Debug\NetWorkHelper.dll
+C:\Users\Administrator\Desktop\气泵敲定二版 电流表\气泵敲定一版 - 待改\tongxin\NetWorkHelper\obj\Debug\NetWorkHelper.pdb
+C:\Users\qiyu0\Desktop\气泵敲定\气泵敲定二版 电流表 -2\气泵敲定一版 - 待改\tongxin\NetWorkHelper\bin\Debug\TCP\ITcpClient.cs
+C:\Users\qiyu0\Desktop\气泵敲定\气泵敲定二版 电流表 -2\气泵敲定一版 - 待改\tongxin\NetWorkHelper\bin\Debug\TCP\ITcpClient.Designer.cs
+C:\Users\qiyu0\Desktop\气泵敲定\气泵敲定二版 电流表 -2\气泵敲定一版 - 待改\tongxin\NetWorkHelper\bin\Debug\NetWorkHelper.dll
+C:\Users\qiyu0\Desktop\气泵敲定\气泵敲定二版 电流表 -2\气泵敲定一版 - 待改\tongxin\NetWorkHelper\bin\Debug\NetWorkHelper.pdb
+C:\Users\qiyu0\Desktop\气泵敲定\气泵敲定二版 电流表 -2\气泵敲定一版 - 待改\tongxin\NetWorkHelper\obj\Debug\NetWorkHelper.csproj.AssemblyReference.cache
+C:\Users\qiyu0\Desktop\气泵敲定\气泵敲定二版 电流表 -2\气泵敲定一版 - 待改\tongxin\NetWorkHelper\obj\Debug\NetWorkHelper.AxUdpClient.resources
+C:\Users\qiyu0\Desktop\气泵敲定\气泵敲定二版 电流表 -2\气泵敲定一版 - 待改\tongxin\NetWorkHelper\obj\Debug\NetWorkHelper.csproj.GenerateResource.cache
+C:\Users\qiyu0\Desktop\气泵敲定\气泵敲定二版 电流表 -2\气泵敲定一版 - 待改\tongxin\NetWorkHelper\obj\Debug\NetWorkHelper.csproj.CoreCompileInputs.cache
+C:\Users\qiyu0\Desktop\气泵敲定\气泵敲定二版 电流表 -2\气泵敲定一版 - 待改\tongxin\NetWorkHelper\obj\Debug\NetWorkHelper.dll
+C:\Users\qiyu0\Desktop\气泵敲定\气泵敲定二版 电流表 -2\气泵敲定一版 - 待改\tongxin\NetWorkHelper\obj\Debug\NetWorkHelper.pdb
+E:\研发部\对接项目\唐群\2023-3-15\气泵敲定二版\tongxin\NetWorkHelper\bin\Debug\TCP\ITcpClient.cs
+E:\研发部\对接项目\唐群\2023-3-15\气泵敲定二版\tongxin\NetWorkHelper\bin\Debug\TCP\ITcpClient.Designer.cs
+E:\研发部\对接项目\唐群\2023-3-15\气泵敲定二版\tongxin\NetWorkHelper\bin\Debug\NetWorkHelper.dll
+E:\研发部\对接项目\唐群\2023-3-15\气泵敲定二版\tongxin\NetWorkHelper\bin\Debug\NetWorkHelper.pdb
+E:\研发部\对接项目\唐群\2023-3-15\气泵敲定二版\tongxin\NetWorkHelper\obj\Debug\NetWorkHelper.csproj.AssemblyReference.cache
+E:\研发部\对接项目\唐群\2023-3-15\气泵敲定二版\tongxin\NetWorkHelper\obj\Debug\NetWorkHelper.AxUdpClient.resources
+E:\研发部\对接项目\唐群\2023-3-15\气泵敲定二版\tongxin\NetWorkHelper\obj\Debug\NetWorkHelper.csproj.GenerateResource.cache
+E:\研发部\对接项目\唐群\2023-3-15\气泵敲定二版\tongxin\NetWorkHelper\obj\Debug\NetWorkHelper.csproj.CoreCompileInputs.cache
+E:\研发部\对接项目\唐群\2023-3-15\气泵敲定二版\tongxin\NetWorkHelper\obj\Debug\NetWorkHelper.dll
+E:\研发部\对接项目\唐群\2023-3-15\气泵敲定二版\tongxin\NetWorkHelper\obj\Debug\NetWorkHelper.pdb
+C:\Users\马凯\Documents\WeChat Files\wxid_6brgamxrh8xb12\FileStorage\File\2023-03\气泵敲定二版1\气泵敲定二版\tongxin\NetWorkHelper\bin\Debug\TCP\ITcpClient.cs
+C:\Users\马凯\Documents\WeChat Files\wxid_6brgamxrh8xb12\FileStorage\File\2023-03\气泵敲定二版1\气泵敲定二版\tongxin\NetWorkHelper\bin\Debug\TCP\ITcpClient.Designer.cs
+C:\Users\马凯\Documents\WeChat Files\wxid_6brgamxrh8xb12\FileStorage\File\2023-03\气泵敲定二版1\气泵敲定二版\tongxin\NetWorkHelper\bin\Debug\NetWorkHelper.dll
+C:\Users\马凯\Documents\WeChat Files\wxid_6brgamxrh8xb12\FileStorage\File\2023-03\气泵敲定二版1\气泵敲定二版\tongxin\NetWorkHelper\bin\Debug\NetWorkHelper.pdb
+C:\Users\马凯\Documents\WeChat Files\wxid_6brgamxrh8xb12\FileStorage\File\2023-03\气泵敲定二版1\气泵敲定二版\tongxin\NetWorkHelper\obj\Debug\NetWorkHelper.csproj.AssemblyReference.cache
+C:\Users\马凯\Documents\WeChat Files\wxid_6brgamxrh8xb12\FileStorage\File\2023-03\气泵敲定二版1\气泵敲定二版\tongxin\NetWorkHelper\obj\Debug\NetWorkHelper.AxUdpClient.resources
+C:\Users\马凯\Documents\WeChat Files\wxid_6brgamxrh8xb12\FileStorage\File\2023-03\气泵敲定二版1\气泵敲定二版\tongxin\NetWorkHelper\obj\Debug\NetWorkHelper.csproj.GenerateResource.cache
+C:\Users\马凯\Documents\WeChat Files\wxid_6brgamxrh8xb12\FileStorage\File\2023-03\气泵敲定二版1\气泵敲定二版\tongxin\NetWorkHelper\obj\Debug\NetWorkHelper.csproj.CoreCompileInputs.cache
+C:\Users\马凯\Documents\WeChat Files\wxid_6brgamxrh8xb12\FileStorage\File\2023-03\气泵敲定二版1\气泵敲定二版\tongxin\NetWorkHelper\obj\Debug\NetWorkHelper.dll
+C:\Users\马凯\Documents\WeChat Files\wxid_6brgamxrh8xb12\FileStorage\File\2023-03\气泵敲定二版1\气泵敲定二版\tongxin\NetWorkHelper\obj\Debug\NetWorkHelper.pdb
+C:\Users\马凯\Desktop\XXXXXX\最新\气泵敲定二版\tongxin\NetWorkHelper\bin\Debug\TCP\ITcpClient.cs
+C:\Users\马凯\Desktop\XXXXXX\最新\气泵敲定二版\tongxin\NetWorkHelper\bin\Debug\TCP\ITcpClient.Designer.cs
+C:\Users\马凯\Desktop\XXXXXX\最新\气泵敲定二版\tongxin\NetWorkHelper\bin\Debug\NetWorkHelper.dll
+C:\Users\马凯\Desktop\XXXXXX\最新\气泵敲定二版\tongxin\NetWorkHelper\bin\Debug\NetWorkHelper.pdb
+C:\Users\马凯\Desktop\XXXXXX\最新\气泵敲定二版\tongxin\NetWorkHelper\obj\Debug\NetWorkHelper.csproj.AssemblyReference.cache
+C:\Users\马凯\Desktop\XXXXXX\最新\气泵敲定二版\tongxin\NetWorkHelper\obj\Debug\NetWorkHelper.AxUdpClient.resources
+C:\Users\马凯\Desktop\XXXXXX\最新\气泵敲定二版\tongxin\NetWorkHelper\obj\Debug\NetWorkHelper.csproj.GenerateResource.cache
+C:\Users\马凯\Desktop\XXXXXX\最新\气泵敲定二版\tongxin\NetWorkHelper\obj\Debug\NetWorkHelper.csproj.CoreCompileInputs.cache
+C:\Users\马凯\Desktop\XXXXXX\最新\气泵敲定二版\tongxin\NetWorkHelper\obj\Debug\NetWorkHelper.dll
+C:\Users\马凯\Desktop\XXXXXX\最新\气泵敲定二版\tongxin\NetWorkHelper\obj\Debug\NetWorkHelper.pdb
+F:\凌龙项目\项目2023\气泵敲定二版_唐群_0505\tongxin\NetWorkHelper\bin\Debug\TCP\ITcpClient.cs
+F:\凌龙项目\项目2023\气泵敲定二版_唐群_0505\tongxin\NetWorkHelper\bin\Debug\TCP\ITcpClient.Designer.cs
+F:\凌龙项目\项目2023\气泵敲定二版_唐群_0505\tongxin\NetWorkHelper\bin\Debug\NetWorkHelper.dll
+F:\凌龙项目\项目2023\气泵敲定二版_唐群_0505\tongxin\NetWorkHelper\bin\Debug\NetWorkHelper.pdb
+F:\凌龙项目\项目2023\气泵敲定二版_唐群_0505\tongxin\NetWorkHelper\obj\Debug\NetWorkHelper.AxUdpClient.resources
+F:\凌龙项目\项目2023\气泵敲定二版_唐群_0505\tongxin\NetWorkHelper\obj\Debug\NetWorkHelper.csproj.GenerateResource.cache
+F:\凌龙项目\项目2023\气泵敲定二版_唐群_0505\tongxin\NetWorkHelper\obj\Debug\NetWorkHelper.csproj.CoreCompileInputs.cache
+F:\凌龙项目\项目2023\气泵敲定二版_唐群_0505\tongxin\NetWorkHelper\obj\Debug\NetWorkHelper.dll
+F:\凌龙项目\项目2023\气泵敲定二版_唐群_0505\tongxin\NetWorkHelper\obj\Debug\NetWorkHelper.pdb
+F:\凌龙项目\项目2023\气泵敲定二版_唐群_0505\tongxin\NetWorkHelper\obj\Debug\NetWorkHelper.csproj.AssemblyReference.cache
+D:\上位机\0513\tongxin\NetWorkHelper\bin\Debug\TCP\ITcpClient.cs
+D:\上位机\0513\tongxin\NetWorkHelper\bin\Debug\TCP\ITcpClient.Designer.cs
+D:\上位机\0513\tongxin\NetWorkHelper\bin\Debug\NetWorkHelper.dll
+D:\上位机\0513\tongxin\NetWorkHelper\bin\Debug\NetWorkHelper.pdb
+D:\上位机\0513\tongxin\NetWorkHelper\obj\Debug\NetWorkHelper.csproj.AssemblyReference.cache
+D:\上位机\0513\tongxin\NetWorkHelper\obj\Debug\NetWorkHelper.AxUdpClient.resources
+D:\上位机\0513\tongxin\NetWorkHelper\obj\Debug\NetWorkHelper.csproj.GenerateResource.cache
+D:\上位机\0513\tongxin\NetWorkHelper\obj\Debug\NetWorkHelper.csproj.CoreCompileInputs.cache
+D:\上位机\0513\tongxin\NetWorkHelper\obj\Debug\NetWorkHelper.dll
+D:\上位机\0513\tongxin\NetWorkHelper\obj\Debug\NetWorkHelper.pdb
+D:\PC\0513\tongxin\NetWorkHelper\bin\Debug\TCP\ITcpClient.cs
+D:\PC\0513\tongxin\NetWorkHelper\bin\Debug\TCP\ITcpClient.Designer.cs
+D:\PC\0513\tongxin\NetWorkHelper\bin\Debug\NetWorkHelper.dll
+D:\PC\0513\tongxin\NetWorkHelper\bin\Debug\NetWorkHelper.pdb
+D:\PC\0513\tongxin\NetWorkHelper\obj\Debug\NetWorkHelper.csproj.AssemblyReference.cache
+D:\PC\0513\tongxin\NetWorkHelper\obj\Debug\NetWorkHelper.AxUdpClient.resources
+D:\PC\0513\tongxin\NetWorkHelper\obj\Debug\NetWorkHelper.csproj.GenerateResource.cache
+D:\PC\0513\tongxin\NetWorkHelper\obj\Debug\NetWorkHelper.csproj.CoreCompileInputs.cache
+D:\PC\0513\tongxin\NetWorkHelper\obj\Debug\NetWorkHelper.dll
+D:\PC\0513\tongxin\NetWorkHelper\obj\Debug\NetWorkHelper.pdb
+D:\项目2023\TQ\0528\tongxin\NetWorkHelper\bin\Debug\TCP\ITcpClient.cs
+D:\项目2023\TQ\0528\tongxin\NetWorkHelper\bin\Debug\TCP\ITcpClient.Designer.cs
+D:\项目2023\TQ\0528\tongxin\NetWorkHelper\bin\Debug\NetWorkHelper.dll
+D:\项目2023\TQ\0528\tongxin\NetWorkHelper\bin\Debug\NetWorkHelper.pdb
+D:\项目2023\TQ\0528\tongxin\NetWorkHelper\obj\Debug\NetWorkHelper.AxUdpClient.resources
+D:\项目2023\TQ\0528\tongxin\NetWorkHelper\obj\Debug\NetWorkHelper.csproj.GenerateResource.cache
+D:\项目2023\TQ\0528\tongxin\NetWorkHelper\obj\Debug\NetWorkHelper.csproj.CoreCompileInputs.cache
+D:\项目2023\TQ\0528\tongxin\NetWorkHelper\obj\Debug\NetWorkHelper.dll
+D:\项目2023\TQ\0528\tongxin\NetWorkHelper\obj\Debug\NetWorkHelper.pdb
+D:\项目2023\TQ\0528\tongxin\NetWorkHelper\obj\Debug\NetWorkHelper.csprojAssemblyReference.cache
+D:\上位机\0608\tongxin\NetWorkHelper\bin\Debug\TCP\ITcpClient.cs
+D:\上位机\0608\tongxin\NetWorkHelper\bin\Debug\TCP\ITcpClient.Designer.cs
+D:\上位机\0608\tongxin\NetWorkHelper\bin\Debug\NetWorkHelper.dll
+D:\上位机\0608\tongxin\NetWorkHelper\bin\Debug\NetWorkHelper.pdb
+D:\上位机\0608\tongxin\NetWorkHelper\obj\Debug\NetWorkHelper.csproj.AssemblyReference.cache
+D:\上位机\0608\tongxin\NetWorkHelper\obj\Debug\NetWorkHelper.AxUdpClient.resources
+D:\上位机\0608\tongxin\NetWorkHelper\obj\Debug\NetWorkHelper.csproj.GenerateResource.cache
+D:\上位机\0608\tongxin\NetWorkHelper\obj\Debug\NetWorkHelper.csproj.CoreCompileInputs.cache
+D:\上位机\0608\tongxin\NetWorkHelper\obj\Debug\NetWorkHelper.dll
+D:\上位机\0608\tongxin\NetWorkHelper\obj\Debug\NetWorkHelper.pdb
+D:\上位机\0608\0702\tongxin\NetWorkHelper\bin\Debug\TCP\ITcpClient.cs
+D:\上位机\0608\0702\tongxin\NetWorkHelper\bin\Debug\TCP\ITcpClient.Designer.cs
+D:\上位机\0608\0702\tongxin\NetWorkHelper\bin\Debug\NetWorkHelper.dll
+D:\上位机\0608\0702\tongxin\NetWorkHelper\bin\Debug\NetWorkHelper.pdb
+D:\上位机\0608\0702\tongxin\NetWorkHelper\obj\Debug\NetWorkHelper.csproj.AssemblyReference.cache
+D:\上位机\0608\0702\tongxin\NetWorkHelper\obj\Debug\NetWorkHelper.AxUdpClient.resources
+D:\上位机\0608\0702\tongxin\NetWorkHelper\obj\Debug\NetWorkHelper.csproj.GenerateResource.cache
+D:\上位机\0608\0702\tongxin\NetWorkHelper\obj\Debug\NetWorkHelper.csproj.CoreCompileInputs.cache
+D:\上位机\0608\0702\tongxin\NetWorkHelper\obj\Debug\NetWorkHelper.dll
+D:\上位机\0608\0702\tongxin\NetWorkHelper\obj\Debug\NetWorkHelper.pdb
+D:\上位机\0702\tongxin\NetWorkHelper\bin\Debug\TCP\ITcpClient.cs
+D:\上位机\0702\tongxin\NetWorkHelper\bin\Debug\TCP\ITcpClient.Designer.cs
+D:\上位机\0702\tongxin\NetWorkHelper\bin\Debug\NetWorkHelper.dll
+D:\上位机\0702\tongxin\NetWorkHelper\bin\Debug\NetWorkHelper.pdb
+D:\上位机\0702\tongxin\NetWorkHelper\obj\Debug\NetWorkHelper.csproj.AssemblyReference.cache
+D:\上位机\0702\tongxin\NetWorkHelper\obj\Debug\NetWorkHelper.AxUdpClient.resources
+D:\上位机\0702\tongxin\NetWorkHelper\obj\Debug\NetWorkHelper.csproj.GenerateResource.cache
+D:\上位机\0702\tongxin\NetWorkHelper\obj\Debug\NetWorkHelper.csproj.CoreCompileInputs.cache
+D:\上位机\0702\tongxin\NetWorkHelper\obj\Debug\NetWorkHelper.dll
+D:\上位机\0702\tongxin\NetWorkHelper\obj\Debug\NetWorkHelper.pdb
+\\192.168.1.17\研发部\上位机\唐群\24072801\tongxin\NetWorkHelper\bin\Debug\TCP\ITcpClient.cs
+\\192.168.1.17\研发部\上位机\唐群\24072801\tongxin\NetWorkHelper\bin\Debug\TCP\ITcpClient.Designer.cs
+\\192.168.1.17\研发部\上位机\唐群\24072801\tongxin\NetWorkHelper\bin\Debug\NetWorkHelper.dll
+\\192.168.1.17\研发部\上位机\唐群\24072801\tongxin\NetWorkHelper\bin\Debug\NetWorkHelper.pdb
+\\192.168.1.17\研发部\上位机\唐群\24072801\tongxin\NetWorkHelper\obj\Debug\NetWorkHelper.csproj.AssemblyReference.cache
+\\192.168.1.17\研发部\上位机\唐群\24072801\tongxin\NetWorkHelper\obj\Debug\NetWorkHelper.AxUdpClient.resources
+\\192.168.1.17\研发部\上位机\唐群\24072801\tongxin\NetWorkHelper\obj\Debug\NetWorkHelper.csproj.GenerateResource.cache
+\\192.168.1.17\研发部\上位机\唐群\24072801\tongxin\NetWorkHelper\obj\Debug\NetWorkHelper.csproj.CoreCompileInputs.cache
+\\192.168.1.17\研发部\上位机\唐群\24072801\tongxin\NetWorkHelper\obj\Debug\NetWorkHelper.dll
+\\192.168.1.17\研发部\上位机\唐群\24072801\tongxin\NetWorkHelper\obj\Debug\NetWorkHelper.pdb
+C:\Users\Administrator\Desktop\24072801\tongxin\NetWorkHelper\bin\Debug\TCP\ITcpClient.cs
+C:\Users\Administrator\Desktop\24072801\tongxin\NetWorkHelper\bin\Debug\TCP\ITcpClient.Designer.cs
+C:\Users\Administrator\Desktop\24072801\tongxin\NetWorkHelper\bin\Debug\NetWorkHelper.dll
+C:\Users\Administrator\Desktop\24072801\tongxin\NetWorkHelper\bin\Debug\NetWorkHelper.pdb
+C:\Users\Administrator\Desktop\24072801\tongxin\NetWorkHelper\obj\Debug\NetWorkHelper.csproj.AssemblyReference.cache
+C:\Users\Administrator\Desktop\24072801\tongxin\NetWorkHelper\obj\Debug\NetWorkHelper.AxUdpClient.resources
+C:\Users\Administrator\Desktop\24072801\tongxin\NetWorkHelper\obj\Debug\NetWorkHelper.csproj.GenerateResource.cache
+C:\Users\Administrator\Desktop\24072801\tongxin\NetWorkHelper\obj\Debug\NetWorkHelper.csproj.CoreCompileInputs.cache
+C:\Users\Administrator\Desktop\24072801\tongxin\NetWorkHelper\obj\Debug\NetWorkHelper.dll
+C:\Users\Administrator\Desktop\24072801\tongxin\NetWorkHelper\obj\Debug\NetWorkHelper.pdb

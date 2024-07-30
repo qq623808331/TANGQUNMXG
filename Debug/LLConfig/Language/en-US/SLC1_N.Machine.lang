@@ -1,0 +1,9 @@
+请先新建机种=Please create a new model first
+机种不存在=Model does not exist
+机种名称已存在=Model name already exists
+机种名称输入非法=Illegal input of model name
+确认删除此机种？所有配置会一起删除=Are you sure to delete this model? All configurations will be deleted together
+删除机种=Delete model
+请先新建用户=Please create a new user first
+删除机种名称成功=Successfully deleted the model name
+请选择需要被删除的机种名称=Please select the model name that needs to be deleted

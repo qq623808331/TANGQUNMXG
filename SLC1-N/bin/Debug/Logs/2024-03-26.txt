@@ -1,0 +1,84 @@
+全局异常捕捉
+****************************异常文本****************************
+【出现时间】：3/26/2024 2:57:51 AM
+【异常类型】：FormatException
+【异常信息】：输入字符串的格式不正确。
+【堆栈调用】：   在 System.Number.StringToNumber(String str, NumberStyles options, NumberBuffer& number, NumberFormatInfo info, Boolean parseDecimal)
+   在 System.Number.ParseInt32(String s, NumberStyles style, NumberFormatInfo info)
+   在 System.Int16.Parse(String s, NumberStyles style, NumberFormatInfo info)
+   在 System.Convert.ToInt16(String value)
+   在 SLC1_N.Electricity.CH1ValveWrite_Click(Object sender, EventArgs e) 位置 D:\上位机\0702\SLC1-N\Electricity.cs:行号 85
+   在 System.Windows.Forms.Control.OnClick(EventArgs e)
+   在 Sunny.UI.UIButton.OnClick(EventArgs e)
+   在 System.Windows.Forms.Control.WmMouseUp(Message& m, MouseButtons button, Int32 clicks)
+   在 System.Windows.Forms.Control.WndProc(Message& m)
+   在 System.Windows.Forms.Control.ControlNativeWindow.OnMessage(Message& m)
+   在 System.Windows.Forms.Control.ControlNativeWindow.WndProc(Message& m)
+   在 System.Windows.Forms.NativeWindow.Callback(IntPtr hWnd, Int32 msg, IntPtr wparam, IntPtr lparam)
+***************************************************************
+
+3/26/2024 2:57:51 AM
+=======================================================
+全局异常捕捉
+****************************异常文本****************************
+【出现时间】：3/26/2024 2:57:58 AM
+【异常类型】：FormatException
+【异常信息】：输入字符串的格式不正确。
+【堆栈调用】：   在 System.Number.StringToNumber(String str, NumberStyles options, NumberBuffer& number, NumberFormatInfo info, Boolean parseDecimal)
+   在 System.Number.ParseInt32(String s, NumberStyles style, NumberFormatInfo info)
+   在 System.Int16.Parse(String s, NumberStyles style, NumberFormatInfo info)
+   在 System.Convert.ToInt16(String value)
+   在 SLC1_N.Electricity.CH2ValveWrite_Click(Object sender, EventArgs e) 位置 D:\上位机\0702\SLC1-N\Electricity.cs:行号 121
+   在 System.Windows.Forms.Control.OnClick(EventArgs e)
+   在 Sunny.UI.UIButton.OnClick(EventArgs e)
+   在 System.Windows.Forms.Control.WmMouseUp(Message& m, MouseButtons button, Int32 clicks)
+   在 System.Windows.Forms.Control.WndProc(Message& m)
+   在 System.Windows.Forms.Control.ControlNativeWindow.OnMessage(Message& m)
+   在 System.Windows.Forms.Control.ControlNativeWindow.WndProc(Message& m)
+   在 System.Windows.Forms.NativeWindow.Callback(IntPtr hWnd, Int32 msg, IntPtr wparam, IntPtr lparam)
+***************************************************************
+
+3/26/2024 2:57:58 AM
+=======================================================
+全局异常捕捉
+****************************异常文本****************************
+【出现时间】：3/26/2024 2:58:04 AM
+【异常类型】：FormatException
+【异常信息】：输入字符串的格式不正确。
+【堆栈调用】：   在 System.Number.StringToNumber(String str, NumberStyles options, NumberBuffer& number, NumberFormatInfo info, Boolean parseDecimal)
+   在 System.Number.ParseInt32(String s, NumberStyles style, NumberFormatInfo info)
+   在 System.Int16.Parse(String s, NumberStyles style, NumberFormatInfo info)
+   在 System.Convert.ToInt16(String value)
+   在 SLC1_N.Electricity.CH3ValveWrite_Click(Object sender, EventArgs e) 位置 D:\上位机\0702\SLC1-N\Electricity.cs:行号 173
+   在 System.Windows.Forms.Control.OnClick(EventArgs e)
+   在 Sunny.UI.UIButton.OnClick(EventArgs e)
+   在 System.Windows.Forms.Control.WmMouseUp(Message& m, MouseButtons button, Int32 clicks)
+   在 System.Windows.Forms.Control.WndProc(Message& m)
+   在 System.Windows.Forms.Control.ControlNativeWindow.OnMessage(Message& m)
+   在 System.Windows.Forms.Control.ControlNativeWindow.WndProc(Message& m)
+   在 System.Windows.Forms.NativeWindow.Callback(IntPtr hWnd, Int32 msg, IntPtr wparam, IntPtr lparam)
+***************************************************************
+
+3/26/2024 2:58:04 AM
+=======================================================
+全局异常捕捉
+****************************异常文本****************************
+【出现时间】：3/26/2024 2:58:12 AM
+【异常类型】：FormatException
+【异常信息】：输入字符串的格式不正确。
+【堆栈调用】：   在 System.Number.StringToNumber(String str, NumberStyles options, NumberBuffer& number, NumberFormatInfo info, Boolean parseDecimal)
+   在 System.Number.ParseInt32(String s, NumberStyles style, NumberFormatInfo info)
+   在 System.Int16.Parse(String s, NumberStyles style, NumberFormatInfo info)
+   在 System.Convert.ToInt16(String value)
+   在 SLC1_N.Electricity.CH4ValveWrite_Click(Object sender, EventArgs e) 位置 D:\上位机\0702\SLC1-N\Electricity.cs:行号 217
+   在 System.Windows.Forms.Control.OnClick(EventArgs e)
+   在 Sunny.UI.UIButton.OnClick(EventArgs e)
+   在 System.Windows.Forms.Control.WmMouseUp(Message& m, MouseButtons button, Int32 clicks)
+   在 System.Windows.Forms.Control.WndProc(Message& m)
+   在 System.Windows.Forms.Control.ControlNativeWindow.OnMessage(Message& m)
+   在 System.Windows.Forms.Control.ControlNativeWindow.WndProc(Message& m)
+   在 System.Windows.Forms.NativeWindow.Callback(IntPtr hWnd, Int32 msg, IntPtr wparam, IntPtr lparam)
+***************************************************************
+
+3/26/2024 2:58:12 AM
+=======================================================

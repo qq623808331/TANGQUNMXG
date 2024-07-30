@@ -1,0 +1,4379 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="label27.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="label21.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 0, 4, 0</value>
+  </data>
+  <data name="&gt;&gt;label26.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="&gt;&gt;label15.Name" xml:space="preserve">
+    <value>label15</value>
+  </data>
+  <data name="&gt;&gt;CH4FlowRefresh.Name" xml:space="preserve">
+    <value>CH4FlowRefresh</value>
+  </data>
+  <data name="CH2FlowIsComm.TabIndex" type="System.Int32, mscorlib">
+    <value>69</value>
+  </data>
+  <data name="&gt;&gt;label33.Parent" xml:space="preserve">
+    <value>uiGroupBox11</value>
+  </data>
+  <data name="button2.Text" xml:space="preserve">
+    <value>串口锁定</value>
+  </data>
+  <data name="CH2CodeBaud.Items" xml:space="preserve">
+    <value>115200</value>
+  </data>
+  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="uiGroupBox3.Font" type="System.Drawing.Font, System.Drawing">
+    <value>SimSun, 12pt</value>
+  </data>
+  <data name="&gt;&gt;CH2ADCRefresh.ZOrder" xml:space="preserve">
+    <value>8</value>
+  </data>
+  <data name="labCKCH2.Size" type="System.Drawing.Size, System.Drawing">
+    <value>55, 16</value>
+  </data>
+  <data name="CH1ADCIsComm.Size" type="System.Drawing.Size, System.Drawing">
+    <value>55, 16</value>
+  </data>
+  <data name="&gt;&gt;CH2FlowBreak.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="CH2ADCPort.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 4, 4, 4</value>
+  </data>
+  <data name="CH1VDCPort.Size" type="System.Drawing.Size, System.Drawing">
+    <value>137, 24</value>
+  </data>
+  <data name="label22.TabIndex" type="System.Int32, mscorlib">
+    <value>66</value>
+  </data>
+  <data name="&gt;&gt;label21.Parent" xml:space="preserve">
+    <value>uiGroupBox7</value>
+  </data>
+  <data name="label37.TabIndex" type="System.Int32, mscorlib">
+    <value>66</value>
+  </data>
+  <data name="&gt;&gt;CH2FlowPort.Parent" xml:space="preserve">
+    <value>uiGroupBox6</value>
+  </data>
+  <data name="CH2VDCPort.Size" type="System.Drawing.Size, System.Drawing">
+    <value>137, 24</value>
+  </data>
+  <data name="CH1ADCPort.Location" type="System.Drawing.Point, System.Drawing">
+    <value>46, 89</value>
+  </data>
+  <data name="&gt;&gt;label1.Parent" xml:space="preserve">
+    <value>uiGroupBox1</value>
+  </data>
+  <data name="uiGroupBox3.Size" type="System.Drawing.Size, System.Drawing">
+    <value>221, 531</value>
+  </data>
+  <data name="&gt;&gt;label13.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="&gt;&gt;CodeRefresh.Name" xml:space="preserve">
+    <value>CodeRefresh</value>
+  </data>
+  <data name="&gt;&gt;CH1FlowCon.ZOrder" xml:space="preserve">
+    <value>6</value>
+  </data>
+  <data name="uiGroupBox5.Text" xml:space="preserve">
+    <value>CH1_1流量计串口设置</value>
+  </data>
+  <data name="uiGroupBox11.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>0, 35, 0, 0</value>
+  </data>
+  <data name="CH2ADCBaud.Items1" xml:space="preserve">
+    <value>9600</value>
+  </data>
+  <data name="&gt;&gt;tabPage1.Parent" xml:space="preserve">
+    <value>uiTabControlMenu1</value>
+  </data>
+  <data name="CH3FlowRefresh.Text" xml:space="preserve">
+    <value>刷新串口</value>
+  </data>
+  <data name="&gt;&gt;CH2FlowPort.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="uiGroupBox2.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 5, 4, 5</value>
+  </data>
+  <data name="&gt;&gt;CH2ADCBaud.Parent" xml:space="preserve">
+    <value>uiGroupBox3</value>
+  </data>
+  <data name="label20.Size" type="System.Drawing.Size, System.Drawing">
+    <value>87, 16</value>
+  </data>
+  <data name="&gt;&gt;CKCH2Baud.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="uiGroupBox12.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>0, 35, 0, 0</value>
+  </data>
+  <data name="label36.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="&gt;&gt;CH2VDCRefresh.ZOrder" xml:space="preserve">
+    <value>8</value>
+  </data>
+  <data name="&gt;&gt;labCKCH1.Parent" xml:space="preserve">
+    <value>uiGroupBox12</value>
+  </data>
+  <data name="&gt;&gt;uiGroupBox9.Type" xml:space="preserve">
+    <value>Sunny.UI.UIGroupBox, SunnyUI, Version=3.1.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="CKCH1Baud.Location" type="System.Drawing.Point, System.Drawing">
+    <value>43, 156</value>
+  </data>
+  <data name="CH4FlowPort.Size" type="System.Drawing.Size, System.Drawing">
+    <value>137, 24</value>
+  </data>
+  <data name="tabPage4.TabIndex" type="System.Int32, mscorlib">
+    <value>3</value>
+  </data>
+  <data name="&gt;&gt;label19.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;CH1ADCBreak.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;CH2VDCRefresh.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="CKCH1Port.Location" type="System.Drawing.Point, System.Drawing">
+    <value>43, 89</value>
+  </data>
+  <data name="label3.Text" xml:space="preserve">
+    <value>串口状态：</value>
+  </data>
+  <data name="label26.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="CH1FlowRefresh.Text" xml:space="preserve">
+    <value>刷新串口</value>
+  </data>
+  <data name="uiGroupBox8.Location" type="System.Drawing.Point, System.Drawing">
+    <value>691, 5</value>
+  </data>
+  <data name="CH2VDCCon.Text" xml:space="preserve">
+    <value>连接串口</value>
+  </data>
+  <data name="uiGroupBox5.Size" type="System.Drawing.Size, System.Drawing">
+    <value>221, 531</value>
+  </data>
+  <data name="&gt;&gt;button1.Name" xml:space="preserve">
+    <value>button1</value>
+  </data>
+  <data name="&gt;&gt;label27.Parent" xml:space="preserve">
+    <value>uiGroupBox10</value>
+  </data>
+  <data name="CH1FlowBaud.Size" type="System.Drawing.Size, System.Drawing">
+    <value>137, 24</value>
+  </data>
+  <data name="CH1FlowBreak.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 4, 4, 4</value>
+  </data>
+  <data name="tabPage2.Size" type="System.Drawing.Size, System.Drawing">
+    <value>1002, 650</value>
+  </data>
+  <data name="&gt;&gt;CH2ADCBreak.Name" xml:space="preserve">
+    <value>CH2ADCBreak</value>
+  </data>
+  <data name="label17.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 0, 4, 0</value>
+  </data>
+  <data name="CH4FlowIsComm.Font" type="System.Drawing.Font, System.Drawing">
+    <value>SimSun, 12pt</value>
+  </data>
+  <data name="btnCKCh2Connect.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 4, 4, 4</value>
+  </data>
+  <data name="&gt;&gt;uiGroupBox3.Name" xml:space="preserve">
+    <value>uiGroupBox3</value>
+  </data>
+  <data name="&gt;&gt;CH2CodeRefresh.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="CH4FlowIsComm.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="CH2FlowBaud.Items" xml:space="preserve">
+    <value>115200</value>
+  </data>
+  <data name="uiGroupBox10.Font" type="System.Drawing.Font, System.Drawing">
+    <value>SimSun, 12pt</value>
+  </data>
+  <data name="tabPage4.Location" type="System.Drawing.Point, System.Drawing">
+    <value>201, 0</value>
+  </data>
+  <data name="uiGroupBox1.MinimumSize" type="System.Drawing.Size, System.Drawing">
+    <value>1, 1</value>
+  </data>
+  <data name="&gt;&gt;CodeRefresh.Parent" xml:space="preserve">
+    <value>uiGroupBox9</value>
+  </data>
+  <data name="&gt;&gt;CH2CodeBaud.Name" xml:space="preserve">
+    <value>CH2CodeBaud</value>
+  </data>
+  <data name="CH3FlowBaud.Size" type="System.Drawing.Size, System.Drawing">
+    <value>137, 24</value>
+  </data>
+  <data name="uiGroupBox5.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 5, 4, 5</value>
+  </data>
+  <data name="&gt;&gt;uiGroupBox1.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="label21.TabIndex" type="System.Int32, mscorlib">
+    <value>65</value>
+  </data>
+  <data name="CH1VDCBaud.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 4, 4, 4</value>
+  </data>
+  <data name="&gt;&gt;uiGroupBox6.Parent" xml:space="preserve">
+    <value>tabPage2</value>
+  </data>
+  <data name="&gt;&gt;label7.Parent" xml:space="preserve">
+    <value>uiGroupBox9</value>
+  </data>
+  <data name="&gt;&gt;CodeCon.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="label32.TabIndex" type="System.Int32, mscorlib">
+    <value>65</value>
+  </data>
+  <data name="&gt;&gt;label30.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="&gt;&gt;btnCKCh1Connect.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;labCKCH2.Parent" xml:space="preserve">
+    <value>uiGroupBox11</value>
+  </data>
+  <data name="tabPage1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>1002, 650</value>
+  </data>
+  <data name="&gt;&gt;CH3FlowIsComm.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="label14.Location" type="System.Drawing.Point, System.Drawing">
+    <value>40, 132</value>
+  </data>
+  <data name="uiGroupBox2.Location" type="System.Drawing.Point, System.Drawing">
+    <value>233, 4</value>
+  </data>
+  <data name="&gt;&gt;CH1ADCBaud.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="&gt;&gt;uiGroupBox2.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="label17.Text" xml:space="preserve">
+    <value>端口号</value>
+  </data>
+  <data name="CH2ADCCon.Size" type="System.Drawing.Size, System.Drawing">
+    <value>125, 45</value>
+  </data>
+  <data name="CH3FlowIsComm.Location" type="System.Drawing.Point, System.Drawing">
+    <value>64, 237</value>
+  </data>
+  <data name="CH2ADCPort.Location" type="System.Drawing.Point, System.Drawing">
+    <value>43, 89</value>
+  </data>
+  <data name="&gt;&gt;CH2VDCPort.Name" xml:space="preserve">
+    <value>CH2VDCPort</value>
+  </data>
+  <data name="label7.Size" type="System.Drawing.Size, System.Drawing">
+    <value>87, 16</value>
+  </data>
+  <data name="&gt;&gt;CH4FlowIsComm.Name" xml:space="preserve">
+    <value>CH4FlowIsComm</value>
+  </data>
+  <data name="uiGroupBox9.MinimumSize" type="System.Drawing.Size, System.Drawing">
+    <value>1, 1</value>
+  </data>
+  <data name="uiGroupBox1.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>0, 35, 0, 0</value>
+  </data>
+  <data name="CH1ADCBreak.Location" type="System.Drawing.Point, System.Drawing">
+    <value>52, 379</value>
+  </data>
+  <data name="&gt;&gt;uiGroupBox7.Type" xml:space="preserve">
+    <value>Sunny.UI.UIGroupBox, SunnyUI, Version=3.1.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="CodeBreak.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 4, 4, 4</value>
+  </data>
+  <data name="&gt;&gt;uiTabControlMenu1.Name" xml:space="preserve">
+    <value>uiTabControlMenu1</value>
+  </data>
+  <data name="CH1FlowRefresh.Location" type="System.Drawing.Point, System.Drawing">
+    <value>48, 327</value>
+  </data>
+  <data name="CKCH2Baud.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 4, 4, 4</value>
+  </data>
+  <data name="CH2FlowBaud.Location" type="System.Drawing.Point, System.Drawing">
+    <value>43, 156</value>
+  </data>
+  <data name="&gt;&gt;label36.Name" xml:space="preserve">
+    <value>label36</value>
+  </data>
+  <data name="CodeCon.Text" xml:space="preserve">
+    <value>连接串口</value>
+  </data>
+  <data name="&gt;&gt;CKCH2Port.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ComboBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label25.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="CH2CodeBreak.Size" type="System.Drawing.Size, System.Drawing">
+    <value>125, 45</value>
+  </data>
+  <data name="CH1VDCPort.TabIndex" type="System.Int32, mscorlib">
+    <value>67</value>
+  </data>
+  <data name="&gt;&gt;btnSerialPortLock.Name" xml:space="preserve">
+    <value>btnSerialPortLock</value>
+  </data>
+  <data name="label8.Text" xml:space="preserve">
+    <value>串口状态：</value>
+  </data>
+  <data name="CH4FlowRefresh.Size" type="System.Drawing.Size, System.Drawing">
+    <value>125, 45</value>
+  </data>
+  <data name="label31.Size" type="System.Drawing.Size, System.Drawing">
+    <value>87, 16</value>
+  </data>
+  <data name="CH4FlowCon.TabIndex" type="System.Int32, mscorlib">
+    <value>62</value>
+  </data>
+  <data name="label29.Size" type="System.Drawing.Size, System.Drawing">
+    <value>55, 16</value>
+  </data>
+  <data name="CodeRefresh.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 4, 4, 4</value>
+  </data>
+  <data name="label33.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 0, 4, 0</value>
+  </data>
+  <data name="label4.Location" type="System.Drawing.Point, System.Drawing">
+    <value>52, 208</value>
+  </data>
+  <data name="label2.Size" type="System.Drawing.Size, System.Drawing">
+    <value>55, 16</value>
+  </data>
+  <data name="button2.TabIndex" type="System.Int32, mscorlib">
+    <value>72</value>
+  </data>
+  <data name="CH1FlowIsComm.Text" xml:space="preserve">
+    <value>label6</value>
+  </data>
+  <data name="&gt;&gt;label24.Name" xml:space="preserve">
+    <value>label24</value>
+  </data>
+  <data name="btnCKCh1Refresh.Location" type="System.Drawing.Point, System.Drawing">
+    <value>48, 327</value>
+  </data>
+  <data name="CH2CodePort.Location" type="System.Drawing.Point, System.Drawing">
+    <value>48, 89</value>
+  </data>
+  <data name="CodeCon.Size" type="System.Drawing.Size, System.Drawing">
+    <value>125, 45</value>
+  </data>
+  <data name="CH1FlowPort.TabIndex" type="System.Int32, mscorlib">
+    <value>67</value>
+  </data>
+  <data name="CH4FlowRefresh.Text" xml:space="preserve">
+    <value>刷新串口</value>
+  </data>
+  <data name="CH1ADCCon.Location" type="System.Drawing.Point, System.Drawing">
+    <value>52, 275</value>
+  </data>
+  <data name="&gt;&gt;CH1ADCPort.Name" xml:space="preserve">
+    <value>CH1ADCPort</value>
+  </data>
+  <data name="&gt;&gt;$this.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Form, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;CH1ADCCon.ZOrder" xml:space="preserve">
+    <value>6</value>
+  </data>
+  <data name="uiGroupBox7.MinimumSize" type="System.Drawing.Size, System.Drawing">
+    <value>1, 1</value>
+  </data>
+  <data name="CH4FlowRefresh.TabIndex" type="System.Int32, mscorlib">
+    <value>64</value>
+  </data>
+  <data name="label31.TabIndex" type="System.Int32, mscorlib">
+    <value>70</value>
+  </data>
+  <data name="&gt;&gt;label36.Parent" xml:space="preserve">
+    <value>uiGroupBox12</value>
+  </data>
+  <data name="CH2VDCCon.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 4, 4, 4</value>
+  </data>
+  <data name="&gt;&gt;label22.Name" xml:space="preserve">
+    <value>label22</value>
+  </data>
+  <data name="label10.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="CH2ADCCon.TabIndex" type="System.Int32, mscorlib">
+    <value>62</value>
+  </data>
+  <data name="CodeBaud.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 4, 4, 4</value>
+  </data>
+  <data name="&gt;&gt;CodeIsComm.Name" xml:space="preserve">
+    <value>CodeIsComm</value>
+  </data>
+  <data name="&gt;&gt;CH3FlowIsComm.Name" xml:space="preserve">
+    <value>CH3FlowIsComm</value>
+  </data>
+  <data name="label9.Location" type="System.Drawing.Point, System.Drawing">
+    <value>40, 66</value>
+  </data>
+  <data name="label13.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 0, 4, 0</value>
+  </data>
+  <data name="CH2VDCCon.Size" type="System.Drawing.Size, System.Drawing">
+    <value>125, 45</value>
+  </data>
+  <data name="label23.Text" xml:space="preserve">
+    <value>端口号</value>
+  </data>
+  <data name="&gt;&gt;label24.Parent" xml:space="preserve">
+    <value>uiGroupBox6</value>
+  </data>
+  <data name="CH4FlowIsComm.Text" xml:space="preserve">
+    <value>label6</value>
+  </data>
+  <data name="uiTabControlMenu1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>1203, 650</value>
+  </data>
+  <data name="uiGroupBox8.MinimumSize" type="System.Drawing.Size, System.Drawing">
+    <value>1, 1</value>
+  </data>
+  <data name="&gt;&gt;label8.Parent" xml:space="preserve">
+    <value>uiGroupBox4</value>
+  </data>
+  <data name="CH3FlowPort.TabIndex" type="System.Int32, mscorlib">
+    <value>67</value>
+  </data>
+  <data name="&gt;&gt;CH1FlowPort.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="CodeIsComm.TabIndex" type="System.Int32, mscorlib">
+    <value>69</value>
+  </data>
+  <data name="uiGroupBox1.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 5, 4, 5</value>
+  </data>
+  <data name="&gt;&gt;label14.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;CH4FlowBaud.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ComboBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="CH4FlowRefresh.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 4, 4, 4</value>
+  </data>
+  <data name="&gt;&gt;tabPage2.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;CH1ADCBreak.Parent" xml:space="preserve">
+    <value>uiGroupBox1</value>
+  </data>
+  <data name="btnCKCh2Disconnect.Size" type="System.Drawing.Size, System.Drawing">
+    <value>125, 45</value>
+  </data>
+  <data name="uiGroupBox7.Font" type="System.Drawing.Font, System.Drawing">
+    <value>SimSun, 12pt</value>
+  </data>
+  <data name="label1.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 0, 4, 0</value>
+  </data>
+  <data name="label29.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 0, 4, 0</value>
+  </data>
+  <data name="label23.TabIndex" type="System.Int32, mscorlib">
+    <value>65</value>
+  </data>
+  <data name="CodeBreak.Location" type="System.Drawing.Point, System.Drawing">
+    <value>48, 379</value>
+  </data>
+  <data name="label24.Location" type="System.Drawing.Point, System.Drawing">
+    <value>52, 208</value>
+  </data>
+  <data name="&gt;&gt;CH1ADCCon.Parent" xml:space="preserve">
+    <value>uiGroupBox1</value>
+  </data>
+  <data name="label1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>46, 66</value>
+  </data>
+  <data name="label19.Text" xml:space="preserve">
+    <value>串口状态：</value>
+  </data>
+  <data name="&gt;&gt;CH4FlowBreak.Parent" xml:space="preserve">
+    <value>uiGroupBox8</value>
+  </data>
+  <data name="label35.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="&gt;&gt;btnCKCh2Disconnect.Parent" xml:space="preserve">
+    <value>uiGroupBox11</value>
+  </data>
+  <data name="CH3FlowCon.Text" xml:space="preserve">
+    <value>连接串口</value>
+  </data>
+  <data name="CH2CodeIsComm.TabIndex" type="System.Int32, mscorlib">
+    <value>69</value>
+  </data>
+  <data name="label36.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 0, 4, 0</value>
+  </data>
+  <data name="&gt;&gt;label19.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="label2.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 0, 4, 0</value>
+  </data>
+  <data name="label10.Text" xml:space="preserve">
+    <value>波特率</value>
+  </data>
+  <data name="label4.Text" xml:space="preserve">
+    <value>串口状态：</value>
+  </data>
+  <data name="tabPage3.Text" xml:space="preserve">
+    <value>扫码枪串口设置</value>
+  </data>
+  <data name="uiGroupBox8.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>0, 35, 0, 0</value>
+  </data>
+  <data name="&gt;&gt;CH1VDCRefresh.Name" xml:space="preserve">
+    <value>CH1VDCRefresh</value>
+  </data>
+  <data name="CH1VDCPort.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 4, 4, 4</value>
+  </data>
+  <data name="CodePort.TabIndex" type="System.Int32, mscorlib">
+    <value>67</value>
+  </data>
+  <data name="CH2ADCIsComm.Text" xml:space="preserve">
+    <value>label6</value>
+  </data>
+  <data name="uiGroupBox4.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>0, 35, 0, 0</value>
+  </data>
+  <data name="CH2FlowBaud.Size" type="System.Drawing.Size, System.Drawing">
+    <value>137, 24</value>
+  </data>
+  <data name="label37.Size" type="System.Drawing.Size, System.Drawing">
+    <value>55, 16</value>
+  </data>
+  <data name="CH4FlowCon.Size" type="System.Drawing.Size, System.Drawing">
+    <value>125, 45</value>
+  </data>
+  <data name="&gt;&gt;label5.Parent" xml:space="preserve">
+    <value>uiGroupBox2</value>
+  </data>
+  <data name="&gt;&gt;CKCH1Port.Name" xml:space="preserve">
+    <value>CKCH1Port</value>
+  </data>
+  <data name="CH2VDCCon.TabIndex" type="System.Int32, mscorlib">
+    <value>63</value>
+  </data>
+  <data name="CKCH2Port.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 4, 4, 4</value>
+  </data>
+  <data name="&gt;&gt;uiGroupBox10.Parent" xml:space="preserve">
+    <value>tabPage3</value>
+  </data>
+  <data name="&gt;&gt;label13.Name" xml:space="preserve">
+    <value>label13</value>
+  </data>
+  <data name="CH2ADCIsComm.TabIndex" type="System.Int32, mscorlib">
+    <value>69</value>
+  </data>
+  <data name="CH3FlowCon.TabIndex" type="System.Int32, mscorlib">
+    <value>62</value>
+  </data>
+  <data name="btnCKCh1Disconnect.Size" type="System.Drawing.Size, System.Drawing">
+    <value>125, 45</value>
+  </data>
+  <data name="tabPage3.Size" type="System.Drawing.Size, System.Drawing">
+    <value>1002, 650</value>
+  </data>
+  <data name="&gt;&gt;label24.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;CH2VDCIsComm.Parent" xml:space="preserve">
+    <value>uiGroupBox4</value>
+  </data>
+  <data name="CH1FlowIsComm.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 0, 4, 0</value>
+  </data>
+  <data name="&gt;&gt;CH2FlowRefresh.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="CH3FlowBreak.TabIndex" type="System.Int32, mscorlib">
+    <value>63</value>
+  </data>
+  <data name="CH1ADCBaud.Size" type="System.Drawing.Size, System.Drawing">
+    <value>137, 24</value>
+  </data>
+  <data name="label29.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="&gt;&gt;CH3FlowIsComm.Parent" xml:space="preserve">
+    <value>uiGroupBox7</value>
+  </data>
+  <data name="CH1ADCIsComm.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 0, 4, 0</value>
+  </data>
+  <data name="&gt;&gt;CH1FlowIsComm.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="&gt;&gt;CH1FlowCon.Parent" xml:space="preserve">
+    <value>uiGroupBox5</value>
+  </data>
+  <data name="CH4FlowBreak.Location" type="System.Drawing.Point, System.Drawing">
+    <value>48, 379</value>
+  </data>
+  <data name="CodeCon.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 4, 4, 4</value>
+  </data>
+  <data name="label5.Size" type="System.Drawing.Size, System.Drawing">
+    <value>55, 16</value>
+  </data>
+  <data name="uiGroupBox9.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>0, 35, 0, 0</value>
+  </data>
+  <data name="label4.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="CH1VDCBaud.TabIndex" type="System.Int32, mscorlib">
+    <value>68</value>
+  </data>
+  <data name="uiGroupBox5.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>0, 35, 0, 0</value>
+  </data>
+  <data name="&gt;&gt;CodeBaud.Parent" xml:space="preserve">
+    <value>uiGroupBox9</value>
+  </data>
+  <data name="&gt;&gt;tabPage3.Parent" xml:space="preserve">
+    <value>uiTabControlMenu1</value>
+  </data>
+  <data name="label36.Location" type="System.Drawing.Point, System.Drawing">
+    <value>40, 66</value>
+  </data>
+  <data name="&gt;&gt;label11.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="&gt;&gt;uiGroupBox5.Name" xml:space="preserve">
+    <value>uiGroupBox5</value>
+  </data>
+  <data name="label10.Size" type="System.Drawing.Size, System.Drawing">
+    <value>55, 16</value>
+  </data>
+  <data name="label11.TabIndex" type="System.Int32, mscorlib">
+    <value>65</value>
+  </data>
+  <data name="&gt;&gt;CKCH2Baud.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ComboBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;CH2VDCBreak.Parent" xml:space="preserve">
+    <value>uiGroupBox4</value>
+  </data>
+  <data name="CodeIsComm.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="CH2FlowBaud.Items1" xml:space="preserve">
+    <value>9600</value>
+  </data>
+  <data name="label8.Font" type="System.Drawing.Font, System.Drawing">
+    <value>SimSun, 12pt</value>
+  </data>
+  <data name="&gt;&gt;CodeCon.Name" xml:space="preserve">
+    <value>CodeCon</value>
+  </data>
+  <data name="CH1VDCIsComm.Text" xml:space="preserve">
+    <value>label6</value>
+  </data>
+  <data name="&gt;&gt;btnCKCh2Disconnect.ZOrder" xml:space="preserve">
+    <value>7</value>
+  </data>
+  <data name="&gt;&gt;$this.Name" xml:space="preserve">
+    <value>Port</value>
+  </data>
+  <data name="CH2FlowBaud.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 4, 4, 4</value>
+  </data>
+  <data name="&gt;&gt;CH2CodePort.Name" xml:space="preserve">
+    <value>CH2CodePort</value>
+  </data>
+  <data name="CH1ADCCon.Text" xml:space="preserve">
+    <value>连接串口</value>
+  </data>
+  <data name="$this.Text" xml:space="preserve">
+    <value>串口设置</value>
+  </data>
+  <data name="label8.Size" type="System.Drawing.Size, System.Drawing">
+    <value>87, 16</value>
+  </data>
+  <data name="button2.Size" type="System.Drawing.Size, System.Drawing">
+    <value>125, 45</value>
+  </data>
+  <data name="&gt;&gt;label12.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="btnCKCh2Connect.Size" type="System.Drawing.Size, System.Drawing">
+    <value>125, 45</value>
+  </data>
+  <data name="&gt;&gt;CKCH1Port.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ComboBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label23.Name" xml:space="preserve">
+    <value>label23</value>
+  </data>
+  <data name="label3.Size" type="System.Drawing.Size, System.Drawing">
+    <value>87, 16</value>
+  </data>
+  <data name="&gt;&gt;CH1FlowBreak.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="CH1FlowPort.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 4, 4, 4</value>
+  </data>
+  <data name="&gt;&gt;CodeBaud.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ComboBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;tabPage4.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TabPage, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;CH1FlowRefresh.ZOrder" xml:space="preserve">
+    <value>8</value>
+  </data>
+  <data name="label25.Size" type="System.Drawing.Size, System.Drawing">
+    <value>55, 16</value>
+  </data>
+  <data name="&gt;&gt;CH3FlowBreak.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="uiGroupBox9.Size" type="System.Drawing.Size, System.Drawing">
+    <value>221, 531</value>
+  </data>
+  <data name="CH3FlowIsComm.TabIndex" type="System.Int32, mscorlib">
+    <value>69</value>
+  </data>
+  <data name="&gt;&gt;label12.Parent" xml:space="preserve">
+    <value>uiGroupBox3</value>
+  </data>
+  <data name="&gt;&gt;CH1VDCBreak.Parent" xml:space="preserve">
+    <value>uiGroupBox2</value>
+  </data>
+  <data name="&gt;&gt;CH4FlowCon.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;CodeRefresh.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label18.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="&gt;&gt;uiGroupBox3.Type" xml:space="preserve">
+    <value>Sunny.UI.UIGroupBox, SunnyUI, Version=3.1.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="uiGroupBox7.Location" type="System.Drawing.Point, System.Drawing">
+    <value>462, 5</value>
+  </data>
+  <data name="label27.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 0, 4, 0</value>
+  </data>
+  <data name="CKCH1Baud.Items1" xml:space="preserve">
+    <value>9600</value>
+  </data>
+  <data name="CH2ADCIsComm.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 0, 4, 0</value>
+  </data>
+  <data name="&gt;&gt;label30.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="label17.Size" type="System.Drawing.Size, System.Drawing">
+    <value>55, 16</value>
+  </data>
+  <data name="label7.Location" type="System.Drawing.Point, System.Drawing">
+    <value>52, 208</value>
+  </data>
+  <data name="CH3FlowPort.Size" type="System.Drawing.Size, System.Drawing">
+    <value>137, 24</value>
+  </data>
+  <data name="&gt;&gt;CH2ADCCon.ZOrder" xml:space="preserve">
+    <value>6</value>
+  </data>
+  <data name="&gt;&gt;label21.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="uiGroupBox4.TabIndex" type="System.Int32, mscorlib">
+    <value>3</value>
+  </data>
+  <data name="CH2ADCBreak.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 4, 4, 4</value>
+  </data>
+  <data name="&gt;&gt;CH2ADCBaud.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="CH1VDCBaud.Items1" xml:space="preserve">
+    <value>9600</value>
+  </data>
+  <data name="label26.Location" type="System.Drawing.Point, System.Drawing">
+    <value>40, 132</value>
+  </data>
+  <data name="CH1ADCPort.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 4, 4, 4</value>
+  </data>
+  <data name="CH1ADCRefresh.TabIndex" type="System.Int32, mscorlib">
+    <value>64</value>
+  </data>
+  <data name="CH2FlowPort.Location" type="System.Drawing.Point, System.Drawing">
+    <value>43, 89</value>
+  </data>
+  <data name="CH1VDCIsComm.Location" type="System.Drawing.Point, System.Drawing">
+    <value>64, 237</value>
+  </data>
+  <data name="button1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>125, 45</value>
+  </data>
+  <data name="&gt;&gt;label17.Parent" xml:space="preserve">
+    <value>uiGroupBox8</value>
+  </data>
+  <data name="&gt;&gt;button2.Name" xml:space="preserve">
+    <value>button2</value>
+  </data>
+  <data name="&gt;&gt;btnCKCh1Disconnect.ZOrder" xml:space="preserve">
+    <value>7</value>
+  </data>
+  <data name="btnCKCh1Refresh.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 4, 4, 4</value>
+  </data>
+  <data name="&gt;&gt;btnCKCh2Connect.Name" xml:space="preserve">
+    <value>btnCKCh2Connect</value>
+  </data>
+  <data name="&gt;&gt;CH1FlowBreak.ZOrder" xml:space="preserve">
+    <value>7</value>
+  </data>
+  <data name="&gt;&gt;label28.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;btnCKCh2Refresh.Name" xml:space="preserve">
+    <value>btnCKCh2Refresh</value>
+  </data>
+  <data name="&gt;&gt;CH3FlowRefresh.Name" xml:space="preserve">
+    <value>CH3FlowRefresh</value>
+  </data>
+  <data name="CH1FlowIsComm.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="CH1VDCBreak.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 4, 4, 4</value>
+  </data>
+  <data name="label10.Location" type="System.Drawing.Point, System.Drawing">
+    <value>40, 132</value>
+  </data>
+  <data name="&gt;&gt;label6.Parent" xml:space="preserve">
+    <value>uiGroupBox2</value>
+  </data>
+  <data name="CH2FlowIsComm.Size" type="System.Drawing.Size, System.Drawing">
+    <value>55, 16</value>
+  </data>
+  <data name="&gt;&gt;CH3FlowPort.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="uiGroupBox7.Size" type="System.Drawing.Size, System.Drawing">
+    <value>221, 531</value>
+  </data>
+  <data name="&gt;&gt;uiGroupBox1.Parent" xml:space="preserve">
+    <value>tabPage1</value>
+  </data>
+  <data name="CH1FlowBaud.TabIndex" type="System.Int32, mscorlib">
+    <value>68</value>
+  </data>
+  <data name="&gt;&gt;label37.Name" xml:space="preserve">
+    <value>label37</value>
+  </data>
+  <data name="&gt;&gt;CH2ADCCon.Parent" xml:space="preserve">
+    <value>uiGroupBox3</value>
+  </data>
+  <data name="&gt;&gt;CKCH2Port.Parent" xml:space="preserve">
+    <value>uiGroupBox11</value>
+  </data>
+  <data name="&gt;&gt;label5.Name" xml:space="preserve">
+    <value>label5</value>
+  </data>
+  <data name="&gt;&gt;CodeIsComm.Parent" xml:space="preserve">
+    <value>uiGroupBox9</value>
+  </data>
+  <data name="CH2FlowRefresh.Location" type="System.Drawing.Point, System.Drawing">
+    <value>48, 327</value>
+  </data>
+  <data name="&gt;&gt;label29.Name" xml:space="preserve">
+    <value>label29</value>
+  </data>
+  <data name="&gt;&gt;CH1FlowPort.Parent" xml:space="preserve">
+    <value>uiGroupBox5</value>
+  </data>
+  <data name="CH1ADCCon.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 4, 4, 4</value>
+  </data>
+  <data name="label27.Text" xml:space="preserve">
+    <value>波特率</value>
+  </data>
+  <data name="label17.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="&gt;&gt;tabPage2.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TabPage, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label12.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="label8.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 0, 4, 0</value>
+  </data>
+  <data name="label6.Text" xml:space="preserve">
+    <value>波特率</value>
+  </data>
+  <data name="label7.TabIndex" type="System.Int32, mscorlib">
+    <value>70</value>
+  </data>
+  <data name="&gt;&gt;CH2VDCBaud.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ComboBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="label32.Text" xml:space="preserve">
+    <value>端口号</value>
+  </data>
+  <data name="&gt;&gt;label10.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="CodeBaud.Items" xml:space="preserve">
+    <value>115200</value>
+  </data>
+  <data name="CH2CodeBaud.Size" type="System.Drawing.Size, System.Drawing">
+    <value>137, 24</value>
+  </data>
+  <data name="&gt;&gt;label12.Name" xml:space="preserve">
+    <value>label12</value>
+  </data>
+  <data name="uiGroupBox4.Font" type="System.Drawing.Font, System.Drawing">
+    <value>SimSun, 12pt</value>
+  </data>
+  <data name="label1.Text" xml:space="preserve">
+    <value>端口号</value>
+  </data>
+  <data name="label2.TabIndex" type="System.Int32, mscorlib">
+    <value>66</value>
+  </data>
+  <data name="&gt;&gt;CH2CodePort.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;CodeIsComm.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="uiGroupBox9.Font" type="System.Drawing.Font, System.Drawing">
+    <value>SimSun, 12pt</value>
+  </data>
+  <data name="label29.TabIndex" type="System.Int32, mscorlib">
+    <value>65</value>
+  </data>
+  <data name="labCKCH2.Location" type="System.Drawing.Point, System.Drawing">
+    <value>64, 237</value>
+  </data>
+  <data name="uiGroupBox9.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 5, 4, 5</value>
+  </data>
+  <data name="tabPage4.Size" type="System.Drawing.Size, System.Drawing">
+    <value>1002, 650</value>
+  </data>
+  <data name="label14.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 0, 4, 0</value>
+  </data>
+  <data name="&gt;&gt;CH2CodeBaud.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ComboBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;labCKCH1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;CodePort.Name" xml:space="preserve">
+    <value>CodePort</value>
+  </data>
+  <data name="&gt;&gt;CH2VDCCon.Name" xml:space="preserve">
+    <value>CH2VDCCon</value>
+  </data>
+  <data name="label14.Text" xml:space="preserve">
+    <value>波特率</value>
+  </data>
+  <data name="&gt;&gt;CH1VDCBaud.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ComboBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="CH4FlowBreak.Text" xml:space="preserve">
+    <value>断开连接</value>
+  </data>
+  <data name="label28.Font" type="System.Drawing.Font, System.Drawing">
+    <value>SimSun, 12pt</value>
+  </data>
+  <data name="&gt;&gt;CH2ADCRefresh.Name" xml:space="preserve">
+    <value>CH2ADCRefresh</value>
+  </data>
+  <data name="CKCH1Port.Size" type="System.Drawing.Size, System.Drawing">
+    <value>137, 24</value>
+  </data>
+  <data name="&gt;&gt;button1.Parent" xml:space="preserve">
+    <value>tabPage1</value>
+  </data>
+  <data name="&gt;&gt;label23.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="CH2CodeCon.Text" xml:space="preserve">
+    <value>连接串口</value>
+  </data>
+  <data name="&gt;&gt;label37.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;tabPage1.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;CH4FlowPort.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ComboBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="label31.Font" type="System.Drawing.Font, System.Drawing">
+    <value>SimSun, 12pt</value>
+  </data>
+  <data name="CH4FlowCon.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 4, 4, 4</value>
+  </data>
+  <data name="label24.Font" type="System.Drawing.Font, System.Drawing">
+    <value>SimSun, 12pt</value>
+  </data>
+  <data name="button1.TabIndex" type="System.Int32, mscorlib">
+    <value>65</value>
+  </data>
+  <data name="CH2CodeRefresh.Size" type="System.Drawing.Size, System.Drawing">
+    <value>125, 45</value>
+  </data>
+  <data name="&gt;&gt;label26.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label31.Parent" xml:space="preserve">
+    <value>uiGroupBox11</value>
+  </data>
+  <data name="label11.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 0, 4, 0</value>
+  </data>
+  <data name="&gt;&gt;label22.Parent" xml:space="preserve">
+    <value>uiGroupBox7</value>
+  </data>
+  <data name="CH1FlowBaud.Items" xml:space="preserve">
+    <value>115200</value>
+  </data>
+  <data name="&gt;&gt;CH1ADCBreak.ZOrder" xml:space="preserve">
+    <value>7</value>
+  </data>
+  <data name="btnCKCh1Disconnect.Location" type="System.Drawing.Point, System.Drawing">
+    <value>48, 379</value>
+  </data>
+  <data name="&gt;&gt;label29.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="uiGroupBox6.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="CH4FlowPort.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 4, 4, 4</value>
+  </data>
+  <data name="uiGroupBox8.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="label20.Location" type="System.Drawing.Point, System.Drawing">
+    <value>52, 208</value>
+  </data>
+  <data name="&gt;&gt;CH2ADCPort.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="CH3FlowBreak.Size" type="System.Drawing.Size, System.Drawing">
+    <value>125, 45</value>
+  </data>
+  <data name="label12.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="&gt;&gt;CH2FlowPort.Name" xml:space="preserve">
+    <value>CH2FlowPort</value>
+  </data>
+  <data name="&gt;&gt;CH2VDCBaud.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="&gt;&gt;tabPage3.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TabPage, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;uiGroupBox1.Name" xml:space="preserve">
+    <value>uiGroupBox1</value>
+  </data>
+  <data name="&gt;&gt;uiGroupBox6.Name" xml:space="preserve">
+    <value>uiGroupBox6</value>
+  </data>
+  <data name="label29.Text" xml:space="preserve">
+    <value>端口号</value>
+  </data>
+  <data name="CH2FlowRefresh.TabIndex" type="System.Int32, mscorlib">
+    <value>64</value>
+  </data>
+  <data name="CH1FlowBaud.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 4, 4, 4</value>
+  </data>
+  <data name="&gt;&gt;label37.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="&gt;&gt;labCKCH2.Name" xml:space="preserve">
+    <value>labCKCH2</value>
+  </data>
+  <data name="&gt;&gt;button3.Parent" xml:space="preserve">
+    <value>tabPage4</value>
+  </data>
+  <data name="label20.Text" xml:space="preserve">
+    <value>串口状态：</value>
+  </data>
+  <data name="CH1FlowRefresh.TabIndex" type="System.Int32, mscorlib">
+    <value>64</value>
+  </data>
+  <data name="&gt;&gt;label2.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="CKCH1Port.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 4, 4, 4</value>
+  </data>
+  <data name="CH2CodeBaud.Location" type="System.Drawing.Point, System.Drawing">
+    <value>43, 156</value>
+  </data>
+  <data name="&gt;&gt;label17.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="btnCKCh2Refresh.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 4, 4, 4</value>
+  </data>
+  <data name="&gt;&gt;btnCKCh2Connect.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="CH1ADCBreak.Size" type="System.Drawing.Size, System.Drawing">
+    <value>125, 45</value>
+  </data>
+  <data name="CH2CodeIsComm.Font" type="System.Drawing.Font, System.Drawing">
+    <value>SimSun, 12pt</value>
+  </data>
+  <data name="CH2FlowBreak.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 4, 4, 4</value>
+  </data>
+  <data name="btnCKCh1Connect.Text" xml:space="preserve">
+    <value>连接串口</value>
+  </data>
+  <data name="label22.Size" type="System.Drawing.Size, System.Drawing">
+    <value>55, 16</value>
+  </data>
+  <data name="&gt;&gt;CH1ADCPort.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="uiGroupBox3.MinimumSize" type="System.Drawing.Size, System.Drawing">
+    <value>1, 1</value>
+  </data>
+  <data name="button1.Text" xml:space="preserve">
+    <value>串口锁定</value>
+  </data>
+  <data name="$this.AutoScaleDimensions" type="System.Drawing.SizeF, System.Drawing">
+    <value>6, 13</value>
+  </data>
+  <data name="uiGroupBox11.MinimumSize" type="System.Drawing.Size, System.Drawing">
+    <value>1, 1</value>
+  </data>
+  <data name="label10.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 0, 4, 0</value>
+  </data>
+  <data name="&gt;&gt;CH2VDCCon.ZOrder" xml:space="preserve">
+    <value>6</value>
+  </data>
+  <data name="label24.Size" type="System.Drawing.Size, System.Drawing">
+    <value>87, 16</value>
+  </data>
+  <data name="label1.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="uiGroupBox7.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 5, 4, 5</value>
+  </data>
+  <data name="btnCKCh2Disconnect.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 4, 4, 4</value>
+  </data>
+  <data name="&gt;&gt;CH1VDCPort.Name" xml:space="preserve">
+    <value>CH1VDCPort</value>
+  </data>
+  <data name="CH2VDCPort.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 4, 4, 4</value>
+  </data>
+  <data name="uiTabControlMenu1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>-1, -2</value>
+  </data>
+  <data name="uiGroupBox7.Text" xml:space="preserve">
+    <value>CH2_1流量计串口设置</value>
+  </data>
+  <data name="CH4FlowBaud.Items" xml:space="preserve">
+    <value>115200</value>
+  </data>
+  <data name="label31.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="label27.Location" type="System.Drawing.Point, System.Drawing">
+    <value>40, 132</value>
+  </data>
+  <data name="&gt;&gt;CH2FlowCon.Parent" xml:space="preserve">
+    <value>uiGroupBox6</value>
+  </data>
+  <data name="uiTabControlMenu1.Alignment" type="System.Windows.Forms.TabAlignment, System.Windows.Forms">
+    <value>Left</value>
+  </data>
+  <data name="CKCH2Baud.Items" xml:space="preserve">
+    <value>115200</value>
+  </data>
+  <data name="CH1FlowCon.Location" type="System.Drawing.Point, System.Drawing">
+    <value>48, 275</value>
+  </data>
+  <data name="label31.Text" xml:space="preserve">
+    <value>串口状态：</value>
+  </data>
+  <data name="label22.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 0, 4, 0</value>
+  </data>
+  <data name="&gt;&gt;label10.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="CH2FlowIsComm.Font" type="System.Drawing.Font, System.Drawing">
+    <value>SimSun, 12pt</value>
+  </data>
+  <data name="CH1ADCBreak.TabIndex" type="System.Int32, mscorlib">
+    <value>63</value>
+  </data>
+  <data name="label33.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="label33.Size" type="System.Drawing.Size, System.Drawing">
+    <value>55, 16</value>
+  </data>
+  <data name="label21.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="CodeBaud.TabIndex" type="System.Int32, mscorlib">
+    <value>68</value>
+  </data>
+  <data name="btnCKCh1Refresh.TabIndex" type="System.Int32, mscorlib">
+    <value>64</value>
+  </data>
+  <data name="CH1FlowCon.Size" type="System.Drawing.Size, System.Drawing">
+    <value>125, 45</value>
+  </data>
+  <data name="label6.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="label4.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 0, 4, 0</value>
+  </data>
+  <data name="label23.Location" type="System.Drawing.Point, System.Drawing">
+    <value>40, 66</value>
+  </data>
+  <data name="&gt;&gt;label18.Parent" xml:space="preserve">
+    <value>uiGroupBox8</value>
+  </data>
+  <data name="label35.Size" type="System.Drawing.Size, System.Drawing">
+    <value>87, 16</value>
+  </data>
+  <data name="CH3FlowBaud.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 4, 4, 4</value>
+  </data>
+  <data name="label14.Size" type="System.Drawing.Size, System.Drawing">
+    <value>55, 16</value>
+  </data>
+  <data name="CH2VDCIsComm.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 0, 4, 0</value>
+  </data>
+  <data name="CH1ADCPort.Size" type="System.Drawing.Size, System.Drawing">
+    <value>137, 24</value>
+  </data>
+  <data name="labCKCH1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>55, 16</value>
+  </data>
+  <data name="&gt;&gt;CodeBreak.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="uiGroupBox10.Size" type="System.Drawing.Size, System.Drawing">
+    <value>221, 531</value>
+  </data>
+  <data name="CH2FlowPort.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 4, 4, 4</value>
+  </data>
+  <data name="&gt;&gt;label20.Name" xml:space="preserve">
+    <value>label20</value>
+  </data>
+  <data name="&gt;&gt;btnCKCh2Connect.ZOrder" xml:space="preserve">
+    <value>6</value>
+  </data>
+  <data name="labCKCH2.Font" type="System.Drawing.Font, System.Drawing">
+    <value>SimSun, 12pt</value>
+  </data>
+  <data name="&gt;&gt;CH3FlowBaud.Name" xml:space="preserve">
+    <value>CH3FlowBaud</value>
+  </data>
+  <data name="uiGroupBox12.TabIndex" type="System.Int32, mscorlib">
+    <value>72</value>
+  </data>
+  <data name="label36.Text" xml:space="preserve">
+    <value>端口号</value>
+  </data>
+  <data name="label9.TabIndex" type="System.Int32, mscorlib">
+    <value>66</value>
+  </data>
+  <data name="CKCH1Baud.Size" type="System.Drawing.Size, System.Drawing">
+    <value>137, 24</value>
+  </data>
+  <data name="&gt;&gt;CH1FlowCon.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;CKCH1Baud.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ComboBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="CH2ADCIsComm.Size" type="System.Drawing.Size, System.Drawing">
+    <value>55, 16</value>
+  </data>
+  <data name="&gt;&gt;labCKCH1.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="CH2ADCRefresh.TabIndex" type="System.Int32, mscorlib">
+    <value>64</value>
+  </data>
+  <data name="&gt;&gt;btnCKCh1Connect.ZOrder" xml:space="preserve">
+    <value>6</value>
+  </data>
+  <data name="&gt;&gt;label19.Name" xml:space="preserve">
+    <value>label19</value>
+  </data>
+  <data name="&gt;&gt;label14.Name" xml:space="preserve">
+    <value>label14</value>
+  </data>
+  <data name="uiGroupBox6.Font" type="System.Drawing.Font, System.Drawing">
+    <value>SimSun, 12pt</value>
+  </data>
+  <data name="label30.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="uiGroupBox2.Font" type="System.Drawing.Font, System.Drawing">
+    <value>SimSun, 12pt</value>
+  </data>
+  <data name="label16.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="btnCKCh1Connect.TabIndex" type="System.Int32, mscorlib">
+    <value>62</value>
+  </data>
+  <data name="tabPage2.Location" type="System.Drawing.Point, System.Drawing">
+    <value>201, 0</value>
+  </data>
+  <data name="label6.Size" type="System.Drawing.Size, System.Drawing">
+    <value>55, 16</value>
+  </data>
+  <data name="CKCH1Baud.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 4, 4, 4</value>
+  </data>
+  <data name="labCKCH1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>64, 237</value>
+  </data>
+  <data name="CH1VDCBreak.Text" xml:space="preserve">
+    <value>断开连接</value>
+  </data>
+  <data name="label20.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="uiGroupBox11.Text" xml:space="preserve">
+    <value>CH2程控电源串口设置</value>
+  </data>
+  <data name="label19.Font" type="System.Drawing.Font, System.Drawing">
+    <value>SimSun, 12pt</value>
+  </data>
+  <data name="&gt;&gt;label11.Parent" xml:space="preserve">
+    <value>uiGroupBox9</value>
+  </data>
+  <data name="&gt;&gt;CH1ADCIsComm.Name" xml:space="preserve">
+    <value>CH1ADCIsComm</value>
+  </data>
+  <data name="&gt;&gt;CH2FlowIsComm.Name" xml:space="preserve">
+    <value>CH2FlowIsComm</value>
+  </data>
+  <data name="CH1ADCIsComm.Text" xml:space="preserve">
+    <value>label6</value>
+  </data>
+  <data name="&gt;&gt;CH1ADCRefresh.ZOrder" xml:space="preserve">
+    <value>8</value>
+  </data>
+  <data name="CH2FlowRefresh.Size" type="System.Drawing.Size, System.Drawing">
+    <value>125, 45</value>
+  </data>
+  <data name="CH2VDCIsComm.Location" type="System.Drawing.Point, System.Drawing">
+    <value>64, 237</value>
+  </data>
+  <data name="CH4FlowBaud.Location" type="System.Drawing.Point, System.Drawing">
+    <value>43, 156</value>
+  </data>
+  <data name="&gt;&gt;label16.Parent" xml:space="preserve">
+    <value>uiGroupBox8</value>
+  </data>
+  <data name="CH2ADCIsComm.Font" type="System.Drawing.Font, System.Drawing">
+    <value>SimSun, 12pt</value>
+  </data>
+  <data name="&gt;&gt;label31.Name" xml:space="preserve">
+    <value>label31</value>
+  </data>
+  <data name="label35.Font" type="System.Drawing.Font, System.Drawing">
+    <value>SimSun, 12pt</value>
+  </data>
+  <data name="CH1ADCBreak.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 4, 4, 4</value>
+  </data>
+  <data name="&gt;&gt;label22.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="uiGroupBox9.Text" xml:space="preserve">
+    <value>CH1条码枪串口设置</value>
+  </data>
+  <data name="CH4FlowIsComm.Location" type="System.Drawing.Point, System.Drawing">
+    <value>64, 237</value>
+  </data>
+  <data name="uiGroupBox11.Size" type="System.Drawing.Size, System.Drawing">
+    <value>221, 531</value>
+  </data>
+  <data name="&gt;&gt;uiGroupBox11.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;uiGroupBox5.Type" xml:space="preserve">
+    <value>Sunny.UI.UIGroupBox, SunnyUI, Version=3.1.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="label7.Text" xml:space="preserve">
+    <value>串口状态：</value>
+  </data>
+  <data name="CH2VDCRefresh.Location" type="System.Drawing.Point, System.Drawing">
+    <value>48, 327</value>
+  </data>
+  <data name="&gt;&gt;CH2CodeCon.ZOrder" xml:space="preserve">
+    <value>6</value>
+  </data>
+  <data name="&gt;&gt;label3.Name" xml:space="preserve">
+    <value>label3</value>
+  </data>
+  <data name="uiGroupBox3.Location" type="System.Drawing.Point, System.Drawing">
+    <value>462, 5</value>
+  </data>
+  <data name="&gt;&gt;CH2VDCIsComm.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="uiGroupBox7.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="CH1VDCCon.Text" xml:space="preserve">
+    <value>连接串口</value>
+  </data>
+  <data name="CH1FlowBaud.Items1" xml:space="preserve">
+    <value>9600</value>
+  </data>
+  <data name="btnSerialPortLock.Size" type="System.Drawing.Size, System.Drawing">
+    <value>125, 45</value>
+  </data>
+  <data name="CH2FlowCon.Location" type="System.Drawing.Point, System.Drawing">
+    <value>48, 275</value>
+  </data>
+  <data name="&gt;&gt;CH1VDCRefresh.ZOrder" xml:space="preserve">
+    <value>8</value>
+  </data>
+  <data name="CH2FlowCon.Size" type="System.Drawing.Size, System.Drawing">
+    <value>125, 45</value>
+  </data>
+  <data name="label33.TabIndex" type="System.Int32, mscorlib">
+    <value>66</value>
+  </data>
+  <data name="label24.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 0, 4, 0</value>
+  </data>
+  <data name="label20.Font" type="System.Drawing.Font, System.Drawing">
+    <value>SimSun, 12pt</value>
+  </data>
+  <data name="CKCH1Baud.TabIndex" type="System.Int32, mscorlib">
+    <value>68</value>
+  </data>
+  <data name="CH2ADCIsComm.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="button3.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 4, 4, 4</value>
+  </data>
+  <data name="label7.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="uiGroupBox2.Size" type="System.Drawing.Size, System.Drawing">
+    <value>221, 531</value>
+  </data>
+  <data name="CH1VDCIsComm.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 0, 4, 0</value>
+  </data>
+  <data name="&gt;&gt;CH1VDCPort.Parent" xml:space="preserve">
+    <value>uiGroupBox2</value>
+  </data>
+  <data name="label12.Size" type="System.Drawing.Size, System.Drawing">
+    <value>87, 16</value>
+  </data>
+  <data name="label24.Text" xml:space="preserve">
+    <value>串口状态：</value>
+  </data>
+  <data name="&gt;&gt;CH4FlowRefresh.ZOrder" xml:space="preserve">
+    <value>8</value>
+  </data>
+  <data name="CH2ADCIsComm.Location" type="System.Drawing.Point, System.Drawing">
+    <value>64, 237</value>
+  </data>
+  <data name="CH2FlowBreak.TabIndex" type="System.Int32, mscorlib">
+    <value>63</value>
+  </data>
+  <data name="&gt;&gt;uiTabControlMenu1.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="CH2ADCCon.Text" xml:space="preserve">
+    <value>连接串口</value>
+  </data>
+  <data name="&gt;&gt;label13.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;button2.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="CH1VDCIsComm.Font" type="System.Drawing.Font, System.Drawing">
+    <value>SimSun, 12pt</value>
+  </data>
+  <data name="label25.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="label27.Size" type="System.Drawing.Size, System.Drawing">
+    <value>55, 16</value>
+  </data>
+  <data name="&gt;&gt;uiGroupBox12.Parent" xml:space="preserve">
+    <value>tabPage4</value>
+  </data>
+  <data name="&gt;&gt;label28.Parent" xml:space="preserve">
+    <value>uiGroupBox5</value>
+  </data>
+  <data name="&gt;&gt;CH3FlowBreak.Parent" xml:space="preserve">
+    <value>uiGroupBox7</value>
+  </data>
+  <data name="&gt;&gt;CH1FlowBaud.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="&gt;&gt;CH4FlowBaud.Parent" xml:space="preserve">
+    <value>uiGroupBox8</value>
+  </data>
+  <data name="CH1VDCIsComm.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="label30.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 0, 4, 0</value>
+  </data>
+  <data name="&gt;&gt;CH2ADCIsComm.Name" xml:space="preserve">
+    <value>CH2ADCIsComm</value>
+  </data>
+  <data name="&gt;&gt;CH1VDCIsComm.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="&gt;&gt;label22.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="CH2CodePort.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 4, 4, 4</value>
+  </data>
+  <data name="label2.Text" xml:space="preserve">
+    <value>波特率</value>
+  </data>
+  <data name="&gt;&gt;ReadStatus.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Timer, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="uiGroupBox2.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;tabPage3.Name" xml:space="preserve">
+    <value>tabPage3</value>
+  </data>
+  <data name="&gt;&gt;CH1ADCPort.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ComboBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="label13.Size" type="System.Drawing.Size, System.Drawing">
+    <value>55, 16</value>
+  </data>
+  <data name="CH4FlowIsComm.TabIndex" type="System.Int32, mscorlib">
+    <value>69</value>
+  </data>
+  <data name="CH4FlowPort.Location" type="System.Drawing.Point, System.Drawing">
+    <value>43, 89</value>
+  </data>
+  <data name="button1.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 4, 4, 4</value>
+  </data>
+  <data name="&gt;&gt;label8.Name" xml:space="preserve">
+    <value>label8</value>
+  </data>
+  <data name="label16.Location" type="System.Drawing.Point, System.Drawing">
+    <value>52, 208</value>
+  </data>
+  <data name="CH2ADCBaud.Items" xml:space="preserve">
+    <value>115200</value>
+  </data>
+  <data name="CH2VDCIsComm.Size" type="System.Drawing.Size, System.Drawing">
+    <value>55, 16</value>
+  </data>
+  <data name="&gt;&gt;label28.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="CH2ADCPort.TabIndex" type="System.Int32, mscorlib">
+    <value>67</value>
+  </data>
+  <data name="label7.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 0, 4, 0</value>
+  </data>
+  <data name="label12.Text" xml:space="preserve">
+    <value>串口状态：</value>
+  </data>
+  <data name="&gt;&gt;CodePort.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ComboBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label30.Name" xml:space="preserve">
+    <value>label30</value>
+  </data>
+  <data name="label14.TabIndex" type="System.Int32, mscorlib">
+    <value>66</value>
+  </data>
+  <data name="CH1ADCBaud.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 4, 4, 4</value>
+  </data>
+  <data name="&gt;&gt;CH3FlowRefresh.ZOrder" xml:space="preserve">
+    <value>8</value>
+  </data>
+  <data name="CH2CodeBreak.TabIndex" type="System.Int32, mscorlib">
+    <value>63</value>
+  </data>
+  <data name="CH4FlowBaud.Items1" xml:space="preserve">
+    <value>9600</value>
+  </data>
+  <data name="&gt;&gt;labCKCH2.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="label35.Location" type="System.Drawing.Point, System.Drawing">
+    <value>52, 208</value>
+  </data>
+  <data name="label13.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="&gt;&gt;CH1ADCCon.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;uiGroupBox7.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="CH2CodeBreak.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 4, 4, 4</value>
+  </data>
+  <data name="&gt;&gt;CH3FlowCon.Name" xml:space="preserve">
+    <value>CH3FlowCon</value>
+  </data>
+  <data name="label24.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="CH2ADCBaud.Size" type="System.Drawing.Size, System.Drawing">
+    <value>137, 24</value>
+  </data>
+  <data name="&gt;&gt;tabPage2.Name" xml:space="preserve">
+    <value>tabPage2</value>
+  </data>
+  <data name="uiGroupBox12.MinimumSize" type="System.Drawing.Size, System.Drawing">
+    <value>1, 1</value>
+  </data>
+  <data name="&gt;&gt;label36.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="label25.Text" xml:space="preserve">
+    <value>端口号</value>
+  </data>
+  <data name="uiGroupBox6.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>0, 35, 0, 0</value>
+  </data>
+  <data name="CH4FlowBaud.Size" type="System.Drawing.Size, System.Drawing">
+    <value>137, 24</value>
+  </data>
+  <data name="label19.Location" type="System.Drawing.Point, System.Drawing">
+    <value>52, 208</value>
+  </data>
+  <data name="CH2ADCCon.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 4, 4, 4</value>
+  </data>
+  <data name="&gt;&gt;label10.Parent" xml:space="preserve">
+    <value>uiGroupBox4</value>
+  </data>
+  <data name="uiGroupBox10.TabIndex" type="System.Int32, mscorlib">
+    <value>71</value>
+  </data>
+  <data name="uiGroupBox10.Text" xml:space="preserve">
+    <value>CH2条码枪串口设置</value>
+  </data>
+  <data name="&gt;&gt;CodePort.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="CH1VDCCon.Location" type="System.Drawing.Point, System.Drawing">
+    <value>48, 275</value>
+  </data>
+  <data name="&gt;&gt;uiGroupBox8.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="CH2CodeBreak.Text" xml:space="preserve">
+    <value>断开连接</value>
+  </data>
+  <data name="btnSerialPortLock.Location" type="System.Drawing.Point, System.Drawing">
+    <value>758, 578</value>
+  </data>
+  <data name="CH1VDCRefresh.TabIndex" type="System.Int32, mscorlib">
+    <value>64</value>
+  </data>
+  <data name="&gt;&gt;label7.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="CH1FlowIsComm.Size" type="System.Drawing.Size, System.Drawing">
+    <value>55, 16</value>
+  </data>
+  <data name="&gt;&gt;CH2CodeBaud.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="CH2ADCBaud.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 4, 4, 4</value>
+  </data>
+  <data name="&gt;&gt;CH1FlowIsComm.Name" xml:space="preserve">
+    <value>CH1FlowIsComm</value>
+  </data>
+  <data name="uiGroupBox1.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="tabPage2.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;label15.Parent" xml:space="preserve">
+    <value>uiGroupBox9</value>
+  </data>
+  <data name="&gt;&gt;btnCKCh1Disconnect.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;CH2FlowIsComm.Parent" xml:space="preserve">
+    <value>uiGroupBox6</value>
+  </data>
+  <data name="CH2CodePort.Size" type="System.Drawing.Size, System.Drawing">
+    <value>137, 24</value>
+  </data>
+  <data name="CH2CodeCon.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 4, 4, 4</value>
+  </data>
+  <data name="labCKCH1.TabIndex" type="System.Int32, mscorlib">
+    <value>69</value>
+  </data>
+  <data name="&gt;&gt;label10.Name" xml:space="preserve">
+    <value>label10</value>
+  </data>
+  <data name="&gt;&gt;CH2CodeBreak.ZOrder" xml:space="preserve">
+    <value>7</value>
+  </data>
+  <data name="&gt;&gt;CH2CodeIsComm.Name" xml:space="preserve">
+    <value>CH2CodeIsComm</value>
+  </data>
+  <data name="CH1FlowIsComm.Font" type="System.Drawing.Font, System.Drawing">
+    <value>SimSun, 12pt</value>
+  </data>
+  <data name="&gt;&gt;CH1ADCRefresh.Name" xml:space="preserve">
+    <value>CH1ADCRefresh</value>
+  </data>
+  <data name="&gt;&gt;CH4FlowIsComm.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;CH2FlowBaud.Name" xml:space="preserve">
+    <value>CH2FlowBaud</value>
+  </data>
+  <data name="&gt;&gt;btnCKCh2Refresh.Parent" xml:space="preserve">
+    <value>uiGroupBox11</value>
+  </data>
+  <data name="CH1ADCRefresh.Location" type="System.Drawing.Point, System.Drawing">
+    <value>52, 327</value>
+  </data>
+  <data name="label19.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="&gt;&gt;CH2FlowBreak.Parent" xml:space="preserve">
+    <value>uiGroupBox6</value>
+  </data>
+  <data name="&gt;&gt;btnCKCh1Disconnect.Name" xml:space="preserve">
+    <value>btnCKCh1Disconnect</value>
+  </data>
+  <data name="&gt;&gt;CH2VDCIsComm.Name" xml:space="preserve">
+    <value>CH2VDCIsComm</value>
+  </data>
+  <data name="&gt;&gt;CodeIsComm.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="CH1VDCRefresh.Location" type="System.Drawing.Point, System.Drawing">
+    <value>48, 327</value>
+  </data>
+  <data name="&gt;&gt;tabPage2.Parent" xml:space="preserve">
+    <value>uiTabControlMenu1</value>
+  </data>
+  <data name="label12.Font" type="System.Drawing.Font, System.Drawing">
+    <value>SimSun, 12pt</value>
+  </data>
+  <data name="CKCH2Port.TabIndex" type="System.Int32, mscorlib">
+    <value>67</value>
+  </data>
+  <data name="&gt;&gt;CodeRefresh.ZOrder" xml:space="preserve">
+    <value>8</value>
+  </data>
+  <data name="&gt;&gt;CodeBreak.Name" xml:space="preserve">
+    <value>CodeBreak</value>
+  </data>
+  <data name="CodePort.Location" type="System.Drawing.Point, System.Drawing">
+    <value>43, 89</value>
+  </data>
+  <data name="label32.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 0, 4, 0</value>
+  </data>
+  <data name="CodeRefresh.TabIndex" type="System.Int32, mscorlib">
+    <value>64</value>
+  </data>
+  <data name="&gt;&gt;btnCKCh2Disconnect.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="CH1ADCBreak.Text" xml:space="preserve">
+    <value>断开连接</value>
+  </data>
+  <data name="&gt;&gt;label6.Name" xml:space="preserve">
+    <value>label6</value>
+  </data>
+  <data name="CH1ADCIsComm.Location" type="System.Drawing.Point, System.Drawing">
+    <value>87, 237</value>
+  </data>
+  <data name="&gt;&gt;CH1VDCCon.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;uiGroupBox1.Type" xml:space="preserve">
+    <value>Sunny.UI.UIGroupBox, SunnyUI, Version=3.1.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="CH3FlowBreak.Location" type="System.Drawing.Point, System.Drawing">
+    <value>48, 379</value>
+  </data>
+  <data name="CH2CodeIsComm.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="uiGroupBox4.Text" xml:space="preserve">
+    <value>CH2工作电压串口设置</value>
+  </data>
+  <data name="tabPage3.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="&gt;&gt;CH2FlowBaud.Parent" xml:space="preserve">
+    <value>uiGroupBox6</value>
+  </data>
+  <data name="&gt;&gt;label3.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="btnCKCh2Disconnect.TabIndex" type="System.Int32, mscorlib">
+    <value>63</value>
+  </data>
+  <data name="CH2VDCIsComm.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="tabPage4.Text" xml:space="preserve">
+    <value>程控电源串口设置</value>
+  </data>
+  <data name="uiGroupBox6.Location" type="System.Drawing.Point, System.Drawing">
+    <value>233, 5</value>
+  </data>
+  <data name="&gt;&gt;CH4FlowCon.Name" xml:space="preserve">
+    <value>CH4FlowCon</value>
+  </data>
+  <data name="label16.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 0, 4, 0</value>
+  </data>
+  <data name="CH1FlowBaud.Location" type="System.Drawing.Point, System.Drawing">
+    <value>43, 156</value>
+  </data>
+  <data name="&gt;&gt;CH2ADCPort.Name" xml:space="preserve">
+    <value>CH2ADCPort</value>
+  </data>
+  <data name="CH2VDCBaud.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 4, 4, 4</value>
+  </data>
+  <data name="&gt;&gt;CH1VDCIsComm.Parent" xml:space="preserve">
+    <value>uiGroupBox2</value>
+  </data>
+  <data name="CH2CodeCon.TabIndex" type="System.Int32, mscorlib">
+    <value>62</value>
+  </data>
+  <data name="CH1ADCRefresh.Text" xml:space="preserve">
+    <value>刷新串口</value>
+  </data>
+  <data name="CH2FlowCon.TabIndex" type="System.Int32, mscorlib">
+    <value>62</value>
+  </data>
+  <data name="label29.Location" type="System.Drawing.Point, System.Drawing">
+    <value>40, 66</value>
+  </data>
+  <data name="CH4FlowIsComm.Size" type="System.Drawing.Size, System.Drawing">
+    <value>55, 16</value>
+  </data>
+  <data name="CH1ADCIsComm.TabIndex" type="System.Int32, mscorlib">
+    <value>69</value>
+  </data>
+  <data name="CH2ADCCon.Location" type="System.Drawing.Point, System.Drawing">
+    <value>48, 275</value>
+  </data>
+  <data name="CH2FlowIsComm.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 0, 4, 0</value>
+  </data>
+  <data name="&gt;&gt;label8.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="CH1FlowCon.TabIndex" type="System.Int32, mscorlib">
+    <value>62</value>
+  </data>
+  <data name="label18.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="&gt;&gt;btnCKCh2Disconnect.Name" xml:space="preserve">
+    <value>btnCKCh2Disconnect</value>
+  </data>
+  <data name="&gt;&gt;uiGroupBox4.Name" xml:space="preserve">
+    <value>uiGroupBox4</value>
+  </data>
+  <data name="&gt;&gt;CodeBaud.Name" xml:space="preserve">
+    <value>CodeBaud</value>
+  </data>
+  <data name="CH1VDCIsComm.TabIndex" type="System.Int32, mscorlib">
+    <value>69</value>
+  </data>
+  <data name="btnSerialPortLock.TabIndex" type="System.Int32, mscorlib">
+    <value>64</value>
+  </data>
+  <data name="&gt;&gt;label27.Name" xml:space="preserve">
+    <value>label27</value>
+  </data>
+  <data name="&gt;&gt;label32.Parent" xml:space="preserve">
+    <value>uiGroupBox11</value>
+  </data>
+  <data name="CH3FlowPort.Location" type="System.Drawing.Point, System.Drawing">
+    <value>43, 89</value>
+  </data>
+  <data name="uiGroupBox9.Location" type="System.Drawing.Point, System.Drawing">
+    <value>4, 5</value>
+  </data>
+  <data name="&gt;&gt;tabPage4.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="CH1VDCRefresh.Size" type="System.Drawing.Size, System.Drawing">
+    <value>125, 45</value>
+  </data>
+  <data name="CH3FlowIsComm.Text" xml:space="preserve">
+    <value>label6</value>
+  </data>
+  <data name="&gt;&gt;label1.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="&gt;&gt;tabPage4.Parent" xml:space="preserve">
+    <value>uiTabControlMenu1</value>
+  </data>
+  <data name="&gt;&gt;CH2FlowCon.Name" xml:space="preserve">
+    <value>CH2FlowCon</value>
+  </data>
+  <data name="CH2CodeBaud.Items1" xml:space="preserve">
+    <value>9600</value>
+  </data>
+  <data name="&gt;&gt;label21.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="CH2VDCRefresh.Size" type="System.Drawing.Size, System.Drawing">
+    <value>125, 45</value>
+  </data>
+  <data name="&gt;&gt;label20.Parent" xml:space="preserve">
+    <value>uiGroupBox7</value>
+  </data>
+  <data name="label5.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="label2.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="CH2ADCPort.Size" type="System.Drawing.Size, System.Drawing">
+    <value>137, 24</value>
+  </data>
+  <data name="label16.TabIndex" type="System.Int32, mscorlib">
+    <value>70</value>
+  </data>
+  <data name="&gt;&gt;CH1FlowIsComm.Parent" xml:space="preserve">
+    <value>uiGroupBox5</value>
+  </data>
+  <data name="label5.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 0, 4, 0</value>
+  </data>
+  <data name="uiGroupBox10.Location" type="System.Drawing.Point, System.Drawing">
+    <value>250, 5</value>
+  </data>
+  <data name="label9.Text" xml:space="preserve">
+    <value>端口号</value>
+  </data>
+  <data name="uiGroupBox3.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="CH2FlowRefresh.Text" xml:space="preserve">
+    <value>刷新串口</value>
+  </data>
+  <data name="&gt;&gt;CH2FlowRefresh.ZOrder" xml:space="preserve">
+    <value>8</value>
+  </data>
+  <data name="&gt;&gt;label37.Parent" xml:space="preserve">
+    <value>uiGroupBox12</value>
+  </data>
+  <data name="label30.Size" type="System.Drawing.Size, System.Drawing">
+    <value>55, 16</value>
+  </data>
+  <data name="&gt;&gt;CH2ADCBaud.Name" xml:space="preserve">
+    <value>CH2ADCBaud</value>
+  </data>
+  <data name="&gt;&gt;CH2VDCPort.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ComboBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="label28.Size" type="System.Drawing.Size, System.Drawing">
+    <value>87, 16</value>
+  </data>
+  <data name="&gt;&gt;CH3FlowRefresh.Parent" xml:space="preserve">
+    <value>uiGroupBox7</value>
+  </data>
+  <data name="&gt;&gt;label18.Name" xml:space="preserve">
+    <value>label18</value>
+  </data>
+  <data name="&gt;&gt;CH2ADCBreak.ZOrder" xml:space="preserve">
+    <value>7</value>
+  </data>
+  <data name="label6.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 0, 4, 0</value>
+  </data>
+  <data name="&gt;&gt;CH2VDCBaud.Name" xml:space="preserve">
+    <value>CH2VDCBaud</value>
+  </data>
+  <data name="CH2VDCCon.Location" type="System.Drawing.Point, System.Drawing">
+    <value>48, 275</value>
+  </data>
+  <data name="uiGroupBox9.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="&gt;&gt;label25.Parent" xml:space="preserve">
+    <value>uiGroupBox6</value>
+  </data>
+  <data name="label5.Location" type="System.Drawing.Point, System.Drawing">
+    <value>40, 66</value>
+  </data>
+  <data name="CH2CodeRefresh.Text" xml:space="preserve">
+    <value>刷新串口</value>
+  </data>
+  <data name="label16.Text" xml:space="preserve">
+    <value>串口状态：</value>
+  </data>
+  <data name="label26.Size" type="System.Drawing.Size, System.Drawing">
+    <value>55, 16</value>
+  </data>
+  <data name="&gt;&gt;btnCKCh1Connect.Parent" xml:space="preserve">
+    <value>uiGroupBox12</value>
+  </data>
+  <data name="&gt;&gt;label11.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;CH2CodeCon.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="CH3FlowRefresh.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 4, 4, 4</value>
+  </data>
+  <data name="&gt;&gt;CH2FlowBreak.ZOrder" xml:space="preserve">
+    <value>7</value>
+  </data>
+  <data name="&gt;&gt;label17.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="label15.TabIndex" type="System.Int32, mscorlib">
+    <value>66</value>
+  </data>
+  <data name="&gt;&gt;label35.Parent" xml:space="preserve">
+    <value>uiGroupBox12</value>
+  </data>
+  <data name="&gt;&gt;btnSerialPortLock.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;CH3FlowBaud.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="&gt;&gt;uiGroupBox12.Name" xml:space="preserve">
+    <value>uiGroupBox12</value>
+  </data>
+  <data name="CH3FlowIsComm.Size" type="System.Drawing.Size, System.Drawing">
+    <value>55, 16</value>
+  </data>
+  <data name="&gt;&gt;uiGroupBox6.Type" xml:space="preserve">
+    <value>Sunny.UI.UIGroupBox, SunnyUI, Version=3.1.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;CH2FlowRefresh.Name" xml:space="preserve">
+    <value>CH2FlowRefresh</value>
+  </data>
+  <data name="CH1ADCRefresh.Size" type="System.Drawing.Size, System.Drawing">
+    <value>125, 45</value>
+  </data>
+  <data name="label1.TabIndex" type="System.Int32, mscorlib">
+    <value>65</value>
+  </data>
+  <data name="CH2ADCBreak.Location" type="System.Drawing.Point, System.Drawing">
+    <value>48, 379</value>
+  </data>
+  <data name="label9.Size" type="System.Drawing.Size, System.Drawing">
+    <value>55, 16</value>
+  </data>
+  <data name="CH3FlowRefresh.Size" type="System.Drawing.Size, System.Drawing">
+    <value>125, 45</value>
+  </data>
+  <data name="CH2CodeBreak.Location" type="System.Drawing.Point, System.Drawing">
+    <value>48, 379</value>
+  </data>
+  <data name="&gt;&gt;uiGroupBox12.Type" xml:space="preserve">
+    <value>Sunny.UI.UIGroupBox, SunnyUI, Version=3.1.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;label20.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="btnCKCh1Connect.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 4, 4, 4</value>
+  </data>
+  <data name="CodeCon.TabIndex" type="System.Int32, mscorlib">
+    <value>62</value>
+  </data>
+  <data name="&gt;&gt;label21.Name" xml:space="preserve">
+    <value>label21</value>
+  </data>
+  <data name="CH1FlowPort.Location" type="System.Drawing.Point, System.Drawing">
+    <value>43, 89</value>
+  </data>
+  <data name="label4.TabIndex" type="System.Int32, mscorlib">
+    <value>70</value>
+  </data>
+  <data name="&gt;&gt;CH3FlowCon.ZOrder" xml:space="preserve">
+    <value>6</value>
+  </data>
+  <data name="&gt;&gt;uiTabControlMenu1.Type" xml:space="preserve">
+    <value>Sunny.UI.UITabControlMenu, SunnyUI, Version=3.1.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="label12.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 0, 4, 0</value>
+  </data>
+  <data name="label35.Text" xml:space="preserve">
+    <value>串口状态：</value>
+  </data>
+  <data name="label21.Size" type="System.Drawing.Size, System.Drawing">
+    <value>55, 16</value>
+  </data>
+  <data name="&gt;&gt;btnCKCh1Refresh.Parent" xml:space="preserve">
+    <value>uiGroupBox12</value>
+  </data>
+  <data name="&gt;&gt;btnCKCh2Refresh.ZOrder" xml:space="preserve">
+    <value>8</value>
+  </data>
+  <data name="&gt;&gt;label28.Name" xml:space="preserve">
+    <value>label28</value>
+  </data>
+  <data name="&gt;&gt;CH1VDCBreak.Name" xml:space="preserve">
+    <value>CH1VDCBreak</value>
+  </data>
+  <data name="uiGroupBox4.MinimumSize" type="System.Drawing.Size, System.Drawing">
+    <value>1, 1</value>
+  </data>
+  <data name="&gt;&gt;CH2CodeCon.Name" xml:space="preserve">
+    <value>CH2CodeCon</value>
+  </data>
+  <data name="CH1VDCCon.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 4, 4, 4</value>
+  </data>
+  <data name="CH3FlowBaud.TabIndex" type="System.Int32, mscorlib">
+    <value>68</value>
+  </data>
+  <data name="label12.Location" type="System.Drawing.Point, System.Drawing">
+    <value>52, 208</value>
+  </data>
+  <data name="uiGroupBox12.Text" xml:space="preserve">
+    <value>CH1程控电源串口设置</value>
+  </data>
+  <data name="uiGroupBox5.MinimumSize" type="System.Drawing.Size, System.Drawing">
+    <value>1, 1</value>
+  </data>
+  <data name="CH2CodeBaud.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 4, 4, 4</value>
+  </data>
+  <data name="uiGroupBox12.Size" type="System.Drawing.Size, System.Drawing">
+    <value>221, 531</value>
+  </data>
+  <data name="&gt;&gt;CH4FlowBreak.Name" xml:space="preserve">
+    <value>CH4FlowBreak</value>
+  </data>
+  <data name="&gt;&gt;tabPage1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TabPage, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;btnCKCh1Refresh.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="btnCKCh1Disconnect.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 4, 4, 4</value>
+  </data>
+  <data name="label10.TabIndex" type="System.Int32, mscorlib">
+    <value>67</value>
+  </data>
+  <data name="&gt;&gt;CH2ADCBaud.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ComboBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;uiGroupBox5.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="label22.Text" xml:space="preserve">
+    <value>波特率</value>
+  </data>
+  <data name="label13.Location" type="System.Drawing.Point, System.Drawing">
+    <value>40, 66</value>
+  </data>
+  <data name="label31.Location" type="System.Drawing.Point, System.Drawing">
+    <value>52, 208</value>
+  </data>
+  <data name="label28.TabIndex" type="System.Int32, mscorlib">
+    <value>70</value>
+  </data>
+  <data name="CH4FlowBreak.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 4, 4, 4</value>
+  </data>
+  <data name="uiGroupBox5.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="uiGroupBox8.Font" type="System.Drawing.Font, System.Drawing">
+    <value>SimSun, 12pt</value>
+  </data>
+  <data name="&gt;&gt;label1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="CH2FlowCon.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 4, 4, 4</value>
+  </data>
+  <data name="label5.TabIndex" type="System.Int32, mscorlib">
+    <value>65</value>
+  </data>
+  <data name="CH2FlowBreak.Size" type="System.Drawing.Size, System.Drawing">
+    <value>125, 45</value>
+  </data>
+  <data name="label19.Size" type="System.Drawing.Size, System.Drawing">
+    <value>87, 16</value>
+  </data>
+  <data name="&gt;&gt;CH1VDCIsComm.Name" xml:space="preserve">
+    <value>CH1VDCIsComm</value>
+  </data>
+  <data name="tabPage2.Text" xml:space="preserve">
+    <value>流量计串口设置</value>
+  </data>
+  <data name="&gt;&gt;CKCH2Baud.Parent" xml:space="preserve">
+    <value>uiGroupBox11</value>
+  </data>
+  <data name="&gt;&gt;tabPage4.Name" xml:space="preserve">
+    <value>tabPage4</value>
+  </data>
+  <data name="&gt;&gt;CH2CodePort.Parent" xml:space="preserve">
+    <value>uiGroupBox10</value>
+  </data>
+  <data name="label16.Font" type="System.Drawing.Font, System.Drawing">
+    <value>SimSun, 12pt</value>
+  </data>
+  <data name="&gt;&gt;uiGroupBox8.Type" xml:space="preserve">
+    <value>Sunny.UI.UIGroupBox, SunnyUI, Version=3.1.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="button1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>787, 566</value>
+  </data>
+  <data name="&gt;&gt;CH4FlowBreak.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;uiGroupBox6.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="&gt;&gt;CH1VDCCon.Name" xml:space="preserve">
+    <value>CH1VDCCon</value>
+  </data>
+  <data name="CH2VDCRefresh.TabIndex" type="System.Int32, mscorlib">
+    <value>65</value>
+  </data>
+  <data name="tabPage1.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="label18.Text" xml:space="preserve">
+    <value>波特率</value>
+  </data>
+  <data name="label18.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 0, 4, 0</value>
+  </data>
+  <data name="label11.Text" xml:space="preserve">
+    <value>端口号</value>
+  </data>
+  <data name="&gt;&gt;CH4FlowIsComm.Parent" xml:space="preserve">
+    <value>uiGroupBox8</value>
+  </data>
+  <data name="&gt;&gt;CH2CodeIsComm.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="CH4FlowPort.TabIndex" type="System.Int32, mscorlib">
+    <value>67</value>
+  </data>
+  <data name="label15.Location" type="System.Drawing.Point, System.Drawing">
+    <value>40, 132</value>
+  </data>
+  <data name="&gt;&gt;CKCH1Baud.Name" xml:space="preserve">
+    <value>CKCH1Baud</value>
+  </data>
+  <data name="CKCH1Baud.Items" xml:space="preserve">
+    <value>115200</value>
+  </data>
+  <data name="&gt;&gt;CH1VDCCon.Parent" xml:space="preserve">
+    <value>uiGroupBox2</value>
+  </data>
+  <data name="label3.TabIndex" type="System.Int32, mscorlib">
+    <value>70</value>
+  </data>
+  <data name="&gt;&gt;CH4FlowIsComm.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="CH1VDCBaud.Items" xml:space="preserve">
+    <value>115200</value>
+  </data>
+  <data name="&gt;&gt;CodeCon.ZOrder" xml:space="preserve">
+    <value>6</value>
+  </data>
+  <data name="&gt;&gt;btnCKCh1Disconnect.Parent" xml:space="preserve">
+    <value>uiGroupBox12</value>
+  </data>
+  <data name="&gt;&gt;CH4FlowBaud.Name" xml:space="preserve">
+    <value>CH4FlowBaud</value>
+  </data>
+  <data name="&gt;&gt;uiGroupBox8.Parent" xml:space="preserve">
+    <value>tabPage2</value>
+  </data>
+  <data name="&gt;&gt;CH2ADCRefresh.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="label7.Font" type="System.Drawing.Font, System.Drawing">
+    <value>SimSun, 12pt</value>
+  </data>
+  <data name="&gt;&gt;button2.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="CH1FlowBreak.Size" type="System.Drawing.Size, System.Drawing">
+    <value>125, 45</value>
+  </data>
+  <data name="&gt;&gt;ReadStatus.Name" xml:space="preserve">
+    <value>ReadStatus</value>
+  </data>
+  <data name="&gt;&gt;uiTabControlMenu1.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;CH2ADCIsComm.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="&gt;&gt;CH1FlowRefresh.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="label35.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 0, 4, 0</value>
+  </data>
+  <data name="&gt;&gt;label13.Parent" xml:space="preserve">
+    <value>uiGroupBox3</value>
+  </data>
+  <data name="CodeBreak.Text" xml:space="preserve">
+    <value>断开连接</value>
+  </data>
+  <data name="CH2FlowCon.Text" xml:space="preserve">
+    <value>连接串口</value>
+  </data>
+  <data name="CH1FlowIsComm.Location" type="System.Drawing.Point, System.Drawing">
+    <value>64, 237</value>
+  </data>
+  <data name="CH2FlowBaud.TabIndex" type="System.Int32, mscorlib">
+    <value>68</value>
+  </data>
+  <data name="&gt;&gt;CKCH1Port.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="CH4FlowBaud.TabIndex" type="System.Int32, mscorlib">
+    <value>68</value>
+  </data>
+  <data name="uiGroupBox12.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 5, 4, 5</value>
+  </data>
+  <data name="&gt;&gt;CH2VDCPort.Parent" xml:space="preserve">
+    <value>uiGroupBox4</value>
+  </data>
+  <data name="label31.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 0, 4, 0</value>
+  </data>
+  <data name="&gt;&gt;label9.Name" xml:space="preserve">
+    <value>label9</value>
+  </data>
+  <data name="&gt;&gt;label4.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="label17.TabIndex" type="System.Int32, mscorlib">
+    <value>65</value>
+  </data>
+  <data name="CodeIsComm.Size" type="System.Drawing.Size, System.Drawing">
+    <value>55, 16</value>
+  </data>
+  <data name="&gt;&gt;CH2CodeCon.Parent" xml:space="preserve">
+    <value>uiGroupBox10</value>
+  </data>
+  <data name="button3.TabIndex" type="System.Int32, mscorlib">
+    <value>74</value>
+  </data>
+  <data name="&gt;&gt;CH2VDCBreak.Name" xml:space="preserve">
+    <value>CH2VDCBreak</value>
+  </data>
+  <data name="label18.Size" type="System.Drawing.Size, System.Drawing">
+    <value>55, 16</value>
+  </data>
+  <data name="&gt;&gt;CH1FlowIsComm.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;uiGroupBox11.Parent" xml:space="preserve">
+    <value>tabPage4</value>
+  </data>
+  <data name="uiGroupBox11.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 5, 4, 5</value>
+  </data>
+  <data name="&gt;&gt;CodePort.Parent" xml:space="preserve">
+    <value>uiGroupBox9</value>
+  </data>
+  <data name="button3.Location" type="System.Drawing.Point, System.Drawing">
+    <value>853, 590</value>
+  </data>
+  <data name="CH3FlowRefresh.TabIndex" type="System.Int32, mscorlib">
+    <value>64</value>
+  </data>
+  <data name="label22.Location" type="System.Drawing.Point, System.Drawing">
+    <value>40, 132</value>
+  </data>
+  <data name="CodeCon.Location" type="System.Drawing.Point, System.Drawing">
+    <value>48, 275</value>
+  </data>
+  <data name="uiGroupBox6.Size" type="System.Drawing.Size, System.Drawing">
+    <value>221, 531</value>
+  </data>
+  <data name="&gt;&gt;CH2CodeBreak.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;uiGroupBox4.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="label16.Size" type="System.Drawing.Size, System.Drawing">
+    <value>87, 16</value>
+  </data>
+  <data name="&gt;&gt;label2.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="CH3FlowBreak.Text" xml:space="preserve">
+    <value>断开连接</value>
+  </data>
+  <data name="label3.Font" type="System.Drawing.Font, System.Drawing">
+    <value>SimSun, 12pt</value>
+  </data>
+  <data name="labCKCH1.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="label11.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="CH2ADCRefresh.Location" type="System.Drawing.Point, System.Drawing">
+    <value>48, 327</value>
+  </data>
+  <data name="uiTabControlMenu1.ItemSize" type="System.Drawing.Size, System.Drawing">
+    <value>40, 200</value>
+  </data>
+  <data name="&gt;&gt;uiGroupBox2.Parent" xml:space="preserve">
+    <value>tabPage1</value>
+  </data>
+  <data name="CH1ADCRefresh.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 4, 4, 4</value>
+  </data>
+  <data name="&gt;&gt;CH1FlowBaud.Name" xml:space="preserve">
+    <value>CH1FlowBaud</value>
+  </data>
+  <data name="CodeBaud.Size" type="System.Drawing.Size, System.Drawing">
+    <value>137, 24</value>
+  </data>
+  <data name="CKCH2Port.Size" type="System.Drawing.Size, System.Drawing">
+    <value>137, 24</value>
+  </data>
+  <data name="&gt;&gt;CH1FlowRefresh.Parent" xml:space="preserve">
+    <value>uiGroupBox5</value>
+  </data>
+  <data name="label33.Location" type="System.Drawing.Point, System.Drawing">
+    <value>40, 132</value>
+  </data>
+  <data name="label12.TabIndex" type="System.Int32, mscorlib">
+    <value>70</value>
+  </data>
+  <data name="CodeRefresh.Location" type="System.Drawing.Point, System.Drawing">
+    <value>48, 327</value>
+  </data>
+  <data name="&gt;&gt;label3.Parent" xml:space="preserve">
+    <value>uiGroupBox1</value>
+  </data>
+  <data name="CH1FlowCon.Text" xml:space="preserve">
+    <value>连接串口</value>
+  </data>
+  <data name="uiGroupBox10.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 5, 4, 5</value>
+  </data>
+  <data name="&gt;&gt;CH2VDCCon.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label24.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="uiGroupBox12.Location" type="System.Drawing.Point, System.Drawing">
+    <value>16, 5</value>
+  </data>
+  <data name="btnCKCh2Refresh.TabIndex" type="System.Int32, mscorlib">
+    <value>64</value>
+  </data>
+  <data name="CH1VDCIsComm.Size" type="System.Drawing.Size, System.Drawing">
+    <value>55, 16</value>
+  </data>
+  <data name="CH1FlowBreak.Text" xml:space="preserve">
+    <value>断开连接</value>
+  </data>
+  <data name="button2.Location" type="System.Drawing.Point, System.Drawing">
+    <value>837, 590</value>
+  </data>
+  <data name="uiGroupBox1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>221, 531</value>
+  </data>
+  <data name="label18.TabIndex" type="System.Int32, mscorlib">
+    <value>66</value>
+  </data>
+  <data name="&gt;&gt;uiGroupBox7.Parent" xml:space="preserve">
+    <value>tabPage2</value>
+  </data>
+  <data name="label11.Size" type="System.Drawing.Size, System.Drawing">
+    <value>55, 16</value>
+  </data>
+  <data name="&gt;&gt;CH2FlowIsComm.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="&gt;&gt;CH4FlowPort.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="CH1ADCIsComm.Font" type="System.Drawing.Font, System.Drawing">
+    <value>SimSun, 12pt</value>
+  </data>
+  <data name="CH2VDCBaud.Items" xml:space="preserve">
+    <value>115200</value>
+  </data>
+  <data name="CH2VDCBreak.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 4, 4, 4</value>
+  </data>
+  <data name="&gt;&gt;CH2FlowPort.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ComboBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;CH1FlowPort.Name" xml:space="preserve">
+    <value>CH1FlowPort</value>
+  </data>
+  <data name="&gt;&gt;label35.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;btnCKCh1Refresh.ZOrder" xml:space="preserve">
+    <value>8</value>
+  </data>
+  <data name="&gt;&gt;label20.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="labCKCH1.Font" type="System.Drawing.Font, System.Drawing">
+    <value>SimSun, 12pt</value>
+  </data>
+  <data name="label6.Location" type="System.Drawing.Point, System.Drawing">
+    <value>40, 132</value>
+  </data>
+  <data name="labCKCH2.Text" xml:space="preserve">
+    <value>label6</value>
+  </data>
+  <data name="&gt;&gt;CH2ADCCon.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="uiGroupBox3.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>0, 35, 0, 0</value>
+  </data>
+  <data name="&gt;&gt;CH2CodeRefresh.Name" xml:space="preserve">
+    <value>CH2CodeRefresh</value>
+  </data>
+  <data name="btnCKCh2Refresh.Location" type="System.Drawing.Point, System.Drawing">
+    <value>48, 327</value>
+  </data>
+  <data name="uiGroupBox2.Text" xml:space="preserve">
+    <value>CH1工作电压串口设置</value>
+  </data>
+  <data name="CodeIsComm.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 0, 4, 0</value>
+  </data>
+  <data name="&gt;&gt;btnSerialPortLock.Parent" xml:space="preserve">
+    <value>tabPage2</value>
+  </data>
+  <data name="CH2VDCBreak.Location" type="System.Drawing.Point, System.Drawing">
+    <value>48, 379</value>
+  </data>
+  <data name="CH3FlowBreak.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 4, 4, 4</value>
+  </data>
+  <data name="&gt;&gt;label29.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;CH1VDCRefresh.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="CodePort.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 4, 4, 4</value>
+  </data>
+  <data name="&gt;&gt;label7.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="label32.Location" type="System.Drawing.Point, System.Drawing">
+    <value>40, 66</value>
+  </data>
+  <data name="CH2FlowIsComm.Location" type="System.Drawing.Point, System.Drawing">
+    <value>64, 237</value>
+  </data>
+  <data name="&gt;&gt;CH1ADCBaud.Parent" xml:space="preserve">
+    <value>uiGroupBox1</value>
+  </data>
+  <data name="uiGroupBox10.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>0, 35, 0, 0</value>
+  </data>
+  <data name="btnCKCh2Disconnect.Location" type="System.Drawing.Point, System.Drawing">
+    <value>48, 379</value>
+  </data>
+  <data name="CH2FlowPort.TabIndex" type="System.Int32, mscorlib">
+    <value>67</value>
+  </data>
+  <data name="CH2ADCBreak.Text" xml:space="preserve">
+    <value>断开连接</value>
+  </data>
+  <data name="CH4FlowBaud.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 4, 4, 4</value>
+  </data>
+  <data name="CH3FlowIsComm.Font" type="System.Drawing.Font, System.Drawing">
+    <value>SimSun, 12pt</value>
+  </data>
+  <data name="&gt;&gt;CH1ADCRefresh.Parent" xml:space="preserve">
+    <value>uiGroupBox1</value>
+  </data>
+  <data name="&gt;&gt;label15.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="uiGroupBox12.Font" type="System.Drawing.Font, System.Drawing">
+    <value>SimSun, 12pt</value>
+  </data>
+  <data name="CH2CodeBaud.TabIndex" type="System.Int32, mscorlib">
+    <value>68</value>
+  </data>
+  <data name="CH1FlowRefresh.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 4, 4, 4</value>
+  </data>
+  <data name="&gt;&gt;CKCH1Port.Parent" xml:space="preserve">
+    <value>uiGroupBox12</value>
+  </data>
+  <data name="&gt;&gt;label23.Parent" xml:space="preserve">
+    <value>uiGroupBox10</value>
+  </data>
+  <data name="label32.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="label26.Text" xml:space="preserve">
+    <value>波特率</value>
+  </data>
+  <data name="uiGroupBox8.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 5, 4, 5</value>
+  </data>
+  <data name="&gt;&gt;label33.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="CH4FlowBreak.TabIndex" type="System.Int32, mscorlib">
+    <value>63</value>
+  </data>
+  <data name="&gt;&gt;CH2FlowIsComm.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label16.Name" xml:space="preserve">
+    <value>label16</value>
+  </data>
+  <data name="&gt;&gt;label2.Parent" xml:space="preserve">
+    <value>uiGroupBox1</value>
+  </data>
+  <data name="label33.Text" xml:space="preserve">
+    <value>波特率</value>
+  </data>
+  <data name="&gt;&gt;button3.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;CH1ADCBaud.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ComboBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="label3.Location" type="System.Drawing.Point, System.Drawing">
+    <value>71, 208</value>
+  </data>
+  <data name="CodeIsComm.Font" type="System.Drawing.Font, System.Drawing">
+    <value>SimSun, 12pt</value>
+  </data>
+  <data name="uiGroupBox6.MinimumSize" type="System.Drawing.Size, System.Drawing">
+    <value>1, 1</value>
+  </data>
+  <data name="&gt;&gt;CH1VDCPort.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="uiGroupBox4.Size" type="System.Drawing.Size, System.Drawing">
+    <value>221, 531</value>
+  </data>
+  <data name="&gt;&gt;label32.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="label17.Location" type="System.Drawing.Point, System.Drawing">
+    <value>40, 66</value>
+  </data>
+  <data name="CH2VDCBreak.Size" type="System.Drawing.Size, System.Drawing">
+    <value>125, 45</value>
+  </data>
+  <data name="&gt;&gt;CH2CodeBaud.Parent" xml:space="preserve">
+    <value>uiGroupBox10</value>
+  </data>
+  <data name="&gt;&gt;label16.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="CH2CodeIsComm.Size" type="System.Drawing.Size, System.Drawing">
+    <value>55, 16</value>
+  </data>
+  <data name="&gt;&gt;CH2ADCIsComm.Parent" xml:space="preserve">
+    <value>uiGroupBox3</value>
+  </data>
+  <data name="&gt;&gt;CH1FlowBreak.Parent" xml:space="preserve">
+    <value>uiGroupBox5</value>
+  </data>
+  <data name="&gt;&gt;CH2VDCRefresh.Parent" xml:space="preserve">
+    <value>uiGroupBox4</value>
+  </data>
+  <data name="CH2ADCBreak.TabIndex" type="System.Int32, mscorlib">
+    <value>63</value>
+  </data>
+  <data name="&gt;&gt;label11.Name" xml:space="preserve">
+    <value>label11</value>
+  </data>
+  <data name="CH2ADCBaud.TabIndex" type="System.Int32, mscorlib">
+    <value>68</value>
+  </data>
+  <data name="&gt;&gt;label18.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="CH2VDCBaud.Location" type="System.Drawing.Point, System.Drawing">
+    <value>43, 156</value>
+  </data>
+  <data name="CH1ADCCon.TabIndex" type="System.Int32, mscorlib">
+    <value>62</value>
+  </data>
+  <data name="label15.Text" xml:space="preserve">
+    <value>波特率</value>
+  </data>
+  <data name="&gt;&gt;CH1VDCBaud.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="CH2FlowBreak.Text" xml:space="preserve">
+    <value>断开连接</value>
+  </data>
+  <data name="CKCH2Port.Location" type="System.Drawing.Point, System.Drawing">
+    <value>43, 89</value>
+  </data>
+  <data name="label9.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="label4.Size" type="System.Drawing.Size, System.Drawing">
+    <value>87, 16</value>
+  </data>
+  <data name="CH2VDCIsComm.Text" xml:space="preserve">
+    <value>label6</value>
+  </data>
+  <data name="&gt;&gt;label35.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="button2.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 4, 4, 4</value>
+  </data>
+  <data name="btnCKCh1Refresh.Text" xml:space="preserve">
+    <value>刷新串口</value>
+  </data>
+  <data name="btnSerialPortLock.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 4, 4, 4</value>
+  </data>
+  <data name="&gt;&gt;CH1FlowRefresh.Name" xml:space="preserve">
+    <value>CH1FlowRefresh</value>
+  </data>
+  <data name="uiTabControlMenu1.Font" type="System.Drawing.Font, System.Drawing">
+    <value>SimSun, 12pt</value>
+  </data>
+  <data name="&gt;&gt;button3.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="label15.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
+    <value>1200, 646</value>
+  </data>
+  <data name="&gt;&gt;CH2CodeBreak.Parent" xml:space="preserve">
+    <value>uiGroupBox10</value>
+  </data>
+  <data name="&gt;&gt;uiGroupBox11.Type" xml:space="preserve">
+    <value>Sunny.UI.UIGroupBox, SunnyUI, Version=3.1.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="btnCKCh1Connect.Size" type="System.Drawing.Size, System.Drawing">
+    <value>125, 45</value>
+  </data>
+  <data name="CH3FlowBaud.Items" xml:space="preserve">
+    <value>115200</value>
+  </data>
+  <data name="&gt;&gt;CH2ADCPort.Parent" xml:space="preserve">
+    <value>uiGroupBox3</value>
+  </data>
+  <data name="uiGroupBox11.Font" type="System.Drawing.Font, System.Drawing">
+    <value>SimSun, 12pt</value>
+  </data>
+  <data name="&gt;&gt;CH1FlowBaud.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ComboBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="uiGroupBox3.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 5, 4, 5</value>
+  </data>
+  <data name="CH4FlowCon.Text" xml:space="preserve">
+    <value>连接串口</value>
+  </data>
+  <data name="CodeRefresh.Text" xml:space="preserve">
+    <value>刷新串口</value>
+  </data>
+  <data name="&gt;&gt;label27.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="CH4FlowIsComm.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 0, 4, 0</value>
+  </data>
+  <data name="&gt;&gt;uiGroupBox4.Parent" xml:space="preserve">
+    <value>tabPage1</value>
+  </data>
+  <data name="label28.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 0, 4, 0</value>
+  </data>
+  <data name="label24.TabIndex" type="System.Int32, mscorlib">
+    <value>70</value>
+  </data>
+  <data name="uiGroupBox1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>4, 4</value>
+  </data>
+  <data name="CH2ADCBreak.Size" type="System.Drawing.Size, System.Drawing">
+    <value>125, 45</value>
+  </data>
+  <data name="&gt;&gt;CH2VDCBreak.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;CH1ADCRefresh.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;CH3FlowBreak.Name" xml:space="preserve">
+    <value>CH3FlowBreak</value>
+  </data>
+  <data name="CodeIsComm.Text" xml:space="preserve">
+    <value>label6</value>
+  </data>
+  <data name="btnCKCh2Disconnect.Text" xml:space="preserve">
+    <value>断开连接</value>
+  </data>
+  <data name="&gt;&gt;CH2VDCIsComm.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="label20.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 0, 4, 0</value>
+  </data>
+  <data name="label36.Size" type="System.Drawing.Size, System.Drawing">
+    <value>55, 16</value>
+  </data>
+  <data name="CH1VDCBaud.Size" type="System.Drawing.Size, System.Drawing">
+    <value>137, 24</value>
+  </data>
+  <data name="CH4FlowCon.Location" type="System.Drawing.Point, System.Drawing">
+    <value>48, 275</value>
+  </data>
+  <data name="CH1ADCBaud.Items" xml:space="preserve">
+    <value>115200</value>
+  </data>
+  <data name="&gt;&gt;CH4FlowCon.ZOrder" xml:space="preserve">
+    <value>6</value>
+  </data>
+  <data name="CodeBaud.Items1" xml:space="preserve">
+    <value>9600</value>
+  </data>
+  <data name="&gt;&gt;CodeBaud.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="&gt;&gt;label9.Parent" xml:space="preserve">
+    <value>uiGroupBox4</value>
+  </data>
+  <data name="&gt;&gt;uiGroupBox5.Parent" xml:space="preserve">
+    <value>tabPage2</value>
+  </data>
+  <data name="CH3FlowCon.Size" type="System.Drawing.Size, System.Drawing">
+    <value>125, 45</value>
+  </data>
+  <data name="CH2VDCBaud.TabIndex" type="System.Int32, mscorlib">
+    <value>68</value>
+  </data>
+  <data name="CH1VDCCon.TabIndex" type="System.Int32, mscorlib">
+    <value>62</value>
+  </data>
+  <data name="uiGroupBox8.Size" type="System.Drawing.Size, System.Drawing">
+    <value>221, 531</value>
+  </data>
+  <data name="CH1FlowBreak.Location" type="System.Drawing.Point, System.Drawing">
+    <value>48, 379</value>
+  </data>
+  <data name="labCKCH2.TabIndex" type="System.Int32, mscorlib">
+    <value>69</value>
+  </data>
+  <data name="label18.Location" type="System.Drawing.Point, System.Drawing">
+    <value>40, 132</value>
+  </data>
+  <data name="&gt;&gt;uiGroupBox2.Type" xml:space="preserve">
+    <value>Sunny.UI.UIGroupBox, SunnyUI, Version=3.1.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="label6.TabIndex" type="System.Int32, mscorlib">
+    <value>66</value>
+  </data>
+  <data name="CH1ADCCon.Size" type="System.Drawing.Size, System.Drawing">
+    <value>125, 45</value>
+  </data>
+  <data name="label28.Text" xml:space="preserve">
+    <value>串口状态：</value>
+  </data>
+  <data name="label8.Location" type="System.Drawing.Point, System.Drawing">
+    <value>52, 208</value>
+  </data>
+  <data name="label21.Text" xml:space="preserve">
+    <value>端口号</value>
+  </data>
+  <data name="&gt;&gt;button1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;CH1ADCIsComm.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="CKCH1Port.TabIndex" type="System.Int32, mscorlib">
+    <value>67</value>
+  </data>
+  <data name="uiGroupBox7.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>0, 35, 0, 0</value>
+  </data>
+  <data name="&gt;&gt;CH3FlowIsComm.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;uiGroupBox9.Name" xml:space="preserve">
+    <value>uiGroupBox9</value>
+  </data>
+  <data name="label14.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="&gt;&gt;label19.Parent" xml:space="preserve">
+    <value>uiGroupBox10</value>
+  </data>
+  <data name="CodeBaud.Location" type="System.Drawing.Point, System.Drawing">
+    <value>43, 156</value>
+  </data>
+  <data name="label25.Location" type="System.Drawing.Point, System.Drawing">
+    <value>40, 66</value>
+  </data>
+  <data name="&gt;&gt;CH3FlowCon.Parent" xml:space="preserve">
+    <value>uiGroupBox7</value>
+  </data>
+  <data name="&gt;&gt;label16.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="CKCH2Baud.Items1" xml:space="preserve">
+    <value>9600</value>
+  </data>
+  <data name="CH2VDCBaud.Size" type="System.Drawing.Size, System.Drawing">
+    <value>137, 24</value>
+  </data>
+  <data name="uiGroupBox6.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 5, 4, 5</value>
+  </data>
+  <data name="labCKCH2.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="label13.TabIndex" type="System.Int32, mscorlib">
+    <value>65</value>
+  </data>
+  <data name="&gt;&gt;button2.Parent" xml:space="preserve">
+    <value>tabPage3</value>
+  </data>
+  <data name="CH1VDCRefresh.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 4, 4, 4</value>
+  </data>
+  <data name="uiGroupBox2.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>0, 35, 0, 0</value>
+  </data>
+  <data name="&gt;&gt;CH4FlowPort.Parent" xml:space="preserve">
+    <value>uiGroupBox8</value>
+  </data>
+  <data name="&gt;&gt;CH1VDCBreak.ZOrder" xml:space="preserve">
+    <value>7</value>
+  </data>
+  <data name="&gt;&gt;CH1FlowBreak.Name" xml:space="preserve">
+    <value>CH1FlowBreak</value>
+  </data>
+  <data name="&gt;&gt;CKCH1Baud.Parent" xml:space="preserve">
+    <value>uiGroupBox12</value>
+  </data>
+  <data name="CH1VDCBreak.Location" type="System.Drawing.Point, System.Drawing">
+    <value>48, 379</value>
+  </data>
+  <data name="uiGroupBox5.Location" type="System.Drawing.Point, System.Drawing">
+    <value>4, 5</value>
+  </data>
+  <data name="&gt;&gt;CH2ADCBreak.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;CKCH2Port.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="label19.TabIndex" type="System.Int32, mscorlib">
+    <value>70</value>
+  </data>
+  <data name="&gt;&gt;CH3FlowPort.Parent" xml:space="preserve">
+    <value>uiGroupBox7</value>
+  </data>
+  <data name="CH3FlowRefresh.Location" type="System.Drawing.Point, System.Drawing">
+    <value>48, 327</value>
+  </data>
+  <data name="&gt;&gt;btnCKCh1Refresh.Name" xml:space="preserve">
+    <value>btnCKCh1Refresh</value>
+  </data>
+  <data name="CH1ADCBaud.TabIndex" type="System.Int32, mscorlib">
+    <value>68</value>
+  </data>
+  <data name="CH3FlowIsComm.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="&gt;&gt;CH1ADCCon.Name" xml:space="preserve">
+    <value>CH1ADCCon</value>
+  </data>
+  <data name="CKCH2Baud.Location" type="System.Drawing.Point, System.Drawing">
+    <value>43, 156</value>
+  </data>
+  <data name="CKCH2Baud.TabIndex" type="System.Int32, mscorlib">
+    <value>68</value>
+  </data>
+  <data name="&gt;&gt;uiGroupBox10.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;label31.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="label3.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 0, 4, 0</value>
+  </data>
+  <data name="&gt;&gt;label27.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="&gt;&gt;CH2FlowBaud.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ComboBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label6.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="CH3FlowPort.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 4, 4, 4</value>
+  </data>
+  <data name="tabPage1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>201, 0</value>
+  </data>
+  <data name="CH1ADCBaud.Location" type="System.Drawing.Point, System.Drawing">
+    <value>46, 156</value>
+  </data>
+  <data name="btnCKCh2Refresh.Size" type="System.Drawing.Size, System.Drawing">
+    <value>125, 45</value>
+  </data>
+  <data name="CH2CodeRefresh.Location" type="System.Drawing.Point, System.Drawing">
+    <value>48, 327</value>
+  </data>
+  <data name="&gt;&gt;CH1FlowCon.Name" xml:space="preserve">
+    <value>CH1FlowCon</value>
+  </data>
+  <data name="label4.Font" type="System.Drawing.Font, System.Drawing">
+    <value>SimSun, 12pt</value>
+  </data>
+  <data name="uiGroupBox6.Text" xml:space="preserve">
+    <value>CH1_2流量计串口设置</value>
+  </data>
+  <data name="btnCKCh1Connect.Location" type="System.Drawing.Point, System.Drawing">
+    <value>48, 275</value>
+  </data>
+  <data name="btnCKCh2Connect.Text" xml:space="preserve">
+    <value>连接串口</value>
+  </data>
+  <data name="&gt;&gt;label35.Name" xml:space="preserve">
+    <value>label35</value>
+  </data>
+  <data name="&gt;&gt;label33.Name" xml:space="preserve">
+    <value>label33</value>
+  </data>
+  <data name="CH1VDCCon.Size" type="System.Drawing.Size, System.Drawing">
+    <value>125, 45</value>
+  </data>
+  <data name="CH2CodePort.TabIndex" type="System.Int32, mscorlib">
+    <value>67</value>
+  </data>
+  <data name="&gt;&gt;btnCKCh2Refresh.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label26.Parent" xml:space="preserve">
+    <value>uiGroupBox6</value>
+  </data>
+  <data name="uiGroupBox11.Location" type="System.Drawing.Point, System.Drawing">
+    <value>262, 5</value>
+  </data>
+  <data name="&gt;&gt;CKCH1Baud.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="button3.Size" type="System.Drawing.Size, System.Drawing">
+    <value>125, 45</value>
+  </data>
+  <data name="CH1FlowCon.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 4, 4, 4</value>
+  </data>
+  <data name="&gt;&gt;CH4FlowRefresh.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="label37.Location" type="System.Drawing.Point, System.Drawing">
+    <value>40, 132</value>
+  </data>
+  <data name="&gt;&gt;CH1VDCCon.ZOrder" xml:space="preserve">
+    <value>6</value>
+  </data>
+  <data name="label9.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 0, 4, 0</value>
+  </data>
+  <data name="CH2CodeIsComm.Text" xml:space="preserve">
+    <value>label6</value>
+  </data>
+  <data name="CH2CodeIsComm.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 0, 4, 0</value>
+  </data>
+  <data name="label23.Size" type="System.Drawing.Size, System.Drawing">
+    <value>55, 16</value>
+  </data>
+  <data name="&gt;&gt;label9.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;CH4FlowBreak.ZOrder" xml:space="preserve">
+    <value>7</value>
+  </data>
+  <data name="&gt;&gt;button1.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="tabPage3.Location" type="System.Drawing.Point, System.Drawing">
+    <value>201, 0</value>
+  </data>
+  <data name="tabPage1.Text" xml:space="preserve">
+    <value>工作电流串口设置</value>
+  </data>
+  <data name="CH2CodeRefresh.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 4, 4, 4</value>
+  </data>
+  <data name="&gt;&gt;CH2VDCPort.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;CH2FlowBaud.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="CH1VDCPort.Location" type="System.Drawing.Point, System.Drawing">
+    <value>43, 89</value>
+  </data>
+  <data name="&gt;&gt;CH4FlowCon.Parent" xml:space="preserve">
+    <value>uiGroupBox8</value>
+  </data>
+  <data name="&gt;&gt;uiGroupBox2.Name" xml:space="preserve">
+    <value>uiGroupBox2</value>
+  </data>
+  <data name="label37.Text" xml:space="preserve">
+    <value>波特率</value>
+  </data>
+  <data name="label15.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 0, 4, 0</value>
+  </data>
+  <data name="label28.Location" type="System.Drawing.Point, System.Drawing">
+    <value>52, 208</value>
+  </data>
+  <data name="CodeBreak.TabIndex" type="System.Int32, mscorlib">
+    <value>63</value>
+  </data>
+  <data name="&gt;&gt;label1.Name" xml:space="preserve">
+    <value>label1</value>
+  </data>
+  <data name="CodeRefresh.Size" type="System.Drawing.Size, System.Drawing">
+    <value>125, 45</value>
+  </data>
+  <data name="label37.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 0, 4, 0</value>
+  </data>
+  <data name="&gt;&gt;CH2FlowCon.ZOrder" xml:space="preserve">
+    <value>6</value>
+  </data>
+  <data name="btnCKCh1Disconnect.Text" xml:space="preserve">
+    <value>断开连接</value>
+  </data>
+  <data name="label2.Location" type="System.Drawing.Point, System.Drawing">
+    <value>46, 132</value>
+  </data>
+  <data name="CH2CodeCon.Size" type="System.Drawing.Size, System.Drawing">
+    <value>125, 45</value>
+  </data>
+  <data name="labCKCH1.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 0, 4, 0</value>
+  </data>
+  <data name="CH2VDCPort.TabIndex" type="System.Int32, mscorlib">
+    <value>71</value>
+  </data>
+  <data name="CH2ADCRefresh.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 4, 4, 4</value>
+  </data>
+  <data name="label8.TabIndex" type="System.Int32, mscorlib">
+    <value>70</value>
+  </data>
+  <data name="btnCKCh2Refresh.Text" xml:space="preserve">
+    <value>刷新串口</value>
+  </data>
+  <data name="label5.Text" xml:space="preserve">
+    <value>端口号</value>
+  </data>
+  <data name="&gt;&gt;label2.Name" xml:space="preserve">
+    <value>label2</value>
+  </data>
+  <data name="CodePort.Size" type="System.Drawing.Size, System.Drawing">
+    <value>137, 24</value>
+  </data>
+  <data name="label28.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="CH2ADCRefresh.Text" xml:space="preserve">
+    <value>刷新串口</value>
+  </data>
+  <data name="label8.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="label15.Size" type="System.Drawing.Size, System.Drawing">
+    <value>55, 16</value>
+  </data>
+  <data name="CH2FlowIsComm.Text" xml:space="preserve">
+    <value>label6</value>
+  </data>
+  <data name="&gt;&gt;label6.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="CH2VDCBaud.Items1" xml:space="preserve">
+    <value>9600</value>
+  </data>
+  <data name="uiGroupBox5.Font" type="System.Drawing.Font, System.Drawing">
+    <value>SimSun, 12pt</value>
+  </data>
+  <data name="&gt;&gt;uiGroupBox4.Type" xml:space="preserve">
+    <value>Sunny.UI.UIGroupBox, SunnyUI, Version=3.1.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;CKCH2Port.Name" xml:space="preserve">
+    <value>CKCH2Port</value>
+  </data>
+  <data name="&gt;&gt;CH2ADCCon.Name" xml:space="preserve">
+    <value>CH2ADCCon</value>
+  </data>
+  <data name="&gt;&gt;btnSerialPortLock.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label14.Parent" xml:space="preserve">
+    <value>uiGroupBox3</value>
+  </data>
+  <data name="CH2CodeCon.Location" type="System.Drawing.Point, System.Drawing">
+    <value>48, 275</value>
+  </data>
+  <data name="&gt;&gt;CH1VDCRefresh.Parent" xml:space="preserve">
+    <value>uiGroupBox2</value>
+  </data>
+  <data name="label1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>55, 16</value>
+  </data>
+  <data name="&gt;&gt;label4.Parent" xml:space="preserve">
+    <value>uiGroupBox2</value>
+  </data>
+  <data name="&gt;&gt;labCKCH2.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="&gt;&gt;labCKCH1.Name" xml:space="preserve">
+    <value>labCKCH1</value>
+  </data>
+  <data name="btnCKCh2Connect.Location" type="System.Drawing.Point, System.Drawing">
+    <value>48, 275</value>
+  </data>
+  <data name="&gt;&gt;CH4FlowBaud.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="&gt;&gt;label29.Parent" xml:space="preserve">
+    <value>uiGroupBox5</value>
+  </data>
+  <data name="CH1VDCBaud.Location" type="System.Drawing.Point, System.Drawing">
+    <value>43, 156</value>
+  </data>
+  <data name="CH2ADCRefresh.Size" type="System.Drawing.Size, System.Drawing">
+    <value>125, 45</value>
+  </data>
+  <data name="&gt;&gt;CH1ADCBaud.Name" xml:space="preserve">
+    <value>CH1ADCBaud</value>
+  </data>
+  <data name="CodeBreak.Size" type="System.Drawing.Size, System.Drawing">
+    <value>125, 45</value>
+  </data>
+  <data name="&gt;&gt;CH2VDCBreak.ZOrder" xml:space="preserve">
+    <value>7</value>
+  </data>
+  <data name="&gt;&gt;label31.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;label33.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label23.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;CH2ADCPort.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ComboBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;CH1VDCBaud.Name" xml:space="preserve">
+    <value>CH1VDCBaud</value>
+  </data>
+  <data name="btnCKCh1Disconnect.TabIndex" type="System.Int32, mscorlib">
+    <value>63</value>
+  </data>
+  <data name="label3.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="CH3FlowIsComm.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 0, 4, 0</value>
+  </data>
+  <data name="CH2VDCBreak.Text" xml:space="preserve">
+    <value>断开连接</value>
+  </data>
+  <data name="CH3FlowBaud.Items1" xml:space="preserve">
+    <value>9600</value>
+  </data>
+  <data name="uiGroupBox8.Text" xml:space="preserve">
+    <value>CH2_2流量计串口设置</value>
+  </data>
+  <data name="label25.TabIndex" type="System.Int32, mscorlib">
+    <value>65</value>
+  </data>
+  <data name="uiGroupBox1.Text" xml:space="preserve">
+    <value>CH1工作电流串口设置</value>
+  </data>
+  <data name="uiGroupBox11.TabIndex" type="System.Int32, mscorlib">
+    <value>73</value>
+  </data>
+  <data name="uiGroupBox3.Text" xml:space="preserve">
+    <value>CH2工作电流串口设置</value>
+  </data>
+  <data name="&gt;&gt;CH2VDCBaud.Parent" xml:space="preserve">
+    <value>uiGroupBox4</value>
+  </data>
+  <data name="&gt;&gt;uiGroupBox3.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="&gt;&gt;label14.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="CH1FlowPort.Size" type="System.Drawing.Size, System.Drawing">
+    <value>137, 24</value>
+  </data>
+  <data name="label36.TabIndex" type="System.Int32, mscorlib">
+    <value>65</value>
+  </data>
+  <data name="CH2VDCRefresh.Text" xml:space="preserve">
+    <value>刷新串口</value>
+  </data>
+  <data name="&gt;&gt;label5.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="CH4FlowBreak.Size" type="System.Drawing.Size, System.Drawing">
+    <value>125, 45</value>
+  </data>
+  <data name="&gt;&gt;CH4FlowPort.Name" xml:space="preserve">
+    <value>CH4FlowPort</value>
+  </data>
+  <data name="CH2FlowBreak.Location" type="System.Drawing.Point, System.Drawing">
+    <value>48, 379</value>
+  </data>
+  <data name="CH2VDCIsComm.TabIndex" type="System.Int32, mscorlib">
+    <value>69</value>
+  </data>
+  <data name="&gt;&gt;label32.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="&gt;&gt;CH3FlowBaud.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ComboBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;CH2CodeIsComm.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="btnCKCh2Connect.TabIndex" type="System.Int32, mscorlib">
+    <value>62</value>
+  </data>
+  <data name="&gt;&gt;label9.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="&gt;&gt;uiGroupBox8.Name" xml:space="preserve">
+    <value>uiGroupBox8</value>
+  </data>
+  <data name="CH2FlowIsComm.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="CodeIsComm.Location" type="System.Drawing.Point, System.Drawing">
+    <value>64, 237</value>
+  </data>
+  <data name="&gt;&gt;CH1VDCBreak.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="label23.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="&gt;&gt;tabPage1.Name" xml:space="preserve">
+    <value>tabPage1</value>
+  </data>
+  <data name="&gt;&gt;uiGroupBox9.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="&gt;&gt;uiGroupBox11.Name" xml:space="preserve">
+    <value>uiGroupBox11</value>
+  </data>
+  <data name="&gt;&gt;CH2FlowRefresh.Parent" xml:space="preserve">
+    <value>uiGroupBox6</value>
+  </data>
+  <data name="CH2VDCPort.Location" type="System.Drawing.Point, System.Drawing">
+    <value>43, 89</value>
+  </data>
+  <data name="&gt;&gt;CH2CodePort.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ComboBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;CH2ADCBreak.Parent" xml:space="preserve">
+    <value>uiGroupBox3</value>
+  </data>
+  <data name="&gt;&gt;CH4FlowRefresh.Parent" xml:space="preserve">
+    <value>uiGroupBox8</value>
+  </data>
+  <data name="&gt;&gt;CH3FlowCon.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="label26.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 0, 4, 0</value>
+  </data>
+  <data name="&gt;&gt;btnCKCh2Connect.Parent" xml:space="preserve">
+    <value>uiGroupBox11</value>
+  </data>
+  <data name="&gt;&gt;uiGroupBox9.Parent" xml:space="preserve">
+    <value>tabPage3</value>
+  </data>
+  <data name="&gt;&gt;CH1ADCIsComm.Parent" xml:space="preserve">
+    <value>uiGroupBox1</value>
+  </data>
+  <data name="&gt;&gt;label8.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;uiGroupBox7.Name" xml:space="preserve">
+    <value>uiGroupBox7</value>
+  </data>
+  <data name="&gt;&gt;CH1ADCPort.Parent" xml:space="preserve">
+    <value>uiGroupBox1</value>
+  </data>
+  <data name="label11.Location" type="System.Drawing.Point, System.Drawing">
+    <value>40, 66</value>
+  </data>
+  <data name="CH3FlowBaud.Location" type="System.Drawing.Point, System.Drawing">
+    <value>43, 156</value>
+  </data>
+  <data name="&gt;&gt;label4.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="label30.Text" xml:space="preserve">
+    <value>波特率</value>
+  </data>
+  <data name="btnSerialPortLock.Text" xml:space="preserve">
+    <value>串口锁定</value>
+  </data>
+  <data name="CH2FlowRefresh.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 4, 4, 4</value>
+  </data>
+  <data name="&gt;&gt;CH1FlowPort.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ComboBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="label25.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 0, 4, 0</value>
+  </data>
+  <data name="CH1ADCIsComm.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="$this.Icon" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        AAABAAkAMDAQAAEABABoBgAAlgAAACAgEAABAAQA6AIAAP4GAAAQEBAAAQAEACgBAADmCQAAMDAAAAEA
+        CACoDgAADgsAACAgAAABAAgAqAgAALYZAAAQEAAAAQAIAGgFAABeIgAAMDAAAAEAIACoJQAAxicAACAg
+        AAABACAAqBAAAG5NAAAQEAAAAQAgAGgEAAAWXgAAKAAAADAAAABgAAAAAQAEAAAAAACABAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAIAAAIAAAACAgACAAAAAgACAAICAAACAgIAAwMDAAAAA/wAA/wAAAP//AP8A
+        AAD/AP8A//8AAP///wAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACKAAAAAAAAAAAAAAAAAAAAAAAAAACq
+        qnqHeoqqgAAAAAAAAAAAAAAAAAAACqiAAAAAAAAAeqgAAAAAAAAAAAAAAAAKqAAAAAAAAAAAAAqoAAAA
+        AAAAAAAAAAegAAAAAAAAAAAAAAAIoAAAAAAAAAAAAKcAAAAAAAAAAAAAAAAACqAAAAAAAAAACgAIenqq
+        qqqqqqqqqqAAAIoAAAAAAAAAoAAAAKqqqqqqqqqqqqgAAAigAAAAAAAKAAAAiqqqqqqqqqqqqqoAAACK
+        AAAAAAB3AAAAeHiqqqqqqqqqqqoAAAAKAAAAAACgAAAAAAqqqqqqqqqqqqoAAAAAoAAAAAqAAAAAAKqq
+        qqqqoAAAAAAAAAAAgAAAAAoAAAAAAAAIqqqqpwAAAAAAAAAACgAAAAoAAAAAAAAKqqqqqgAAAAAAAAAA
+        CgAAAAgAAAAAAAiqqqqqqqAAAAAAAAAABwAAAAoAAAAAAAAACKqqqqAAAAAAAAAACgAAAAgAAAAAAAAA
+        qqqqqqgAAAAAAAAACgAAAAoAAAAAAAAKqqqqqqoAAAAAAAAACgAAAAoAAAAAAAAAAAqqqqpwAAAAAAAA
+        CgAAAAoAAAAAAAAAAKqqqqqgAAAAAAAAiAAAAACAAAAAAAAAB6iqqqqoAAAAAAAAoAAAAACgAAAAAAAA
+        AACKqqqqAAAAAAAIoAAAAAAKAAAAAAAAAAqqqqqqgAAAAAAKAAAAAAAAoAAAAAAAAIqKiqqqoAAAAACg
+        AAAAAAAAigAAAAAAAAAAqqqqqAAAAAoAAAAAAAAACKAAAAAAAAAKqqqqqgAAAKAAAAAAAAAAAAqAAAAA
+        AAAAAAAAAAAAqgAAAAAAAAAAAACqgAAAAAAAAAAAAAB6gAAAAAAAAAAAAAAAeqAAAAAAAAAAAKqAAAAA
+        AAAAAAAAAAAAAAenoAAAAAB6qAAAAAAAAAAAAAAAAAAAAAAAinqqqqhwAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAD///////8AAP///////wAA////////AAD///////8AAP//
+        /////wAA////////AAD///////8AAP///////wAA////P///AAD//8AAf/8AAP/+H/8P/wAA//j//+P/
+        AAD/5///+f8AAP/P///+fwAA/7gAAB8/AAD/fwAAD58AAP78AAAPzwAA/PwAAA/vAAD9/4AAD/cAAPn/
+        AB//9wAA+//gD//7AAD7/+AP//sAAPv/gAf/+wAA+//4B//7AAD7//AD//sAAPv/4AP/+wAA+//+Af/7
+        AAD7//wB//MAAP3/+AD/9wAA/f//AP/nAAD+//4Af+8AAP9//AB/3wAA/z//wD+/AAD/n/+AP38AAP/n
+        ///8/wAA//H///H/AAD//H//x/8AAP//h/w//wAA///wAf//AAD///////8AAP///////wAA////////
+        AAD///////8AAP///////wAA////////AAD///////8AAP///////wAA////////AAAoAAAAIAAAAEAA
+        AAABAAQAAAAAAAACAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAgAAAgAAAAICAAIAAAACAAIAAgIAAAICA
+        gADAwMAAAAD/AAD/AAAA//8A/wAAAP8A/wD//wAA////AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAACKqAAAenAAAAAAAAAAAACoAAAAAAAAegAAAAAAAAB3AAAAAAAAAACKAAAAAA
+        AKAAqqqqqqqqoAAIAAAAAAoAAIqqqqqqqqoAAKAAAACAAAinqqqqqqqqAAAIAAAAoAAACqqqqqeqigAA
+        CgAACAAAAAiKqqoAAAAAAAAAAAoAAAAAqqqqoAAAAAAAgAAKAAAAAACqqqAAAAAAAKAACAAAAAAIqqqq
+        AAAAAABwAAoAAAAAAAqqqgAAAAAAcAAAAAAAAACqqqqgAAAAAAAAAHAAAAAAAKqqoAAAAAoAAAAIAAAA
+        AAqqqqgAAACAAAAACgAAAAAACKqqAAAIAAAAAACHAAAAAKqqqqAAoAAAAAAAAKAAAAAAAAAACAAAAAAA
+        AAAAdwAAAAAAigAAAAAAAAAAAAAHqKeooAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAA/////////////////////////////////+Hj//+f/n/+f/+f/cAB7/vAAPf3gAD79+AA++/g
+        P//v8B/97/wf/e/4D/3v/g/9//wH//f/B/v7/gP3+/+D7/z/Ad//f/+//8/8///4B///////////////
+        //////////////////8oAAAAEAAAACAAAAABAAQAAAAAAIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        gAAAgAAAAICAAIAAAACAAIAAgIAAAICAgADAwMAAAAD/AAD/AAAA//8A/wAAAP8A/wD//wAA////AAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAqqqqoAAAAAAKqoAAAAAAAAiqoA
+        AAAAAAAKqgAAAAAAAAiqgAAAAAAAAHqgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAA//8AAP//AAD//wAA//8AAP//AAD4DwAA/D8AAPw/AAD+PwAA/h8AAP8fAAD//wAA//8AAP//
+        AAD//wAA//8AACgAAAAwAAAAYAAAAAEACAAAAAAAAAkAAAAAAAAAAAAAAAEAAAABAAAAAAAAAP4AAAX+
+        BQAJ/wkADf4NABH/EQAW/hYAGf8ZAB3+HQAh/iEAJv4mACr+KgAt/i0AMf4xADX+NQA5/jkAPf49AEH+
+        QQBF/kUAS/9LAE3+TQBR/lEAVf5VAFn+WQBe/14AYf5hAGX+ZQBp/mkAbv9uAHD/cAB1/nUAef55AH7+
+        fgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAD///8AAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAICAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAFggIDhMXFxsXFxIOBgobAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAFgwSIAAAAAAAAAAAAAAAAAAdEQwbAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABIMHQAA
+        AAAAAAAAAAAAAAAAAAAAAAAbDBYAAAAAAAAAAAAAAAAAAAAAAAAAAAAbCAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAB0IAAAAAAAAAAAAAAAAAAAAAAAAAAwWAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAEREA
+        AAAAAAAAAAAAAAAAAAAACgAAACAbFgwBAQEBAQEBAQEBAQEBAQEBAQEAAAAAABsOAAAAAAAAAAAAAAAA
+        AAAKAAAAAAAAAAwBAQEBAQEBAQEBAQEBAQEBAQEbAAAAAAAgDgAAAAAAAAAAAAAAAA4AAAAAAAAdBAEB
+        AQEBAQEBAQEBAQEBAQEBAQEOAAAAAAAAGxIAAAAAAAAAAAAAGxYAAAAAAAAgICAgCgEBAQEBAQEBAQEB
+        AQEBAQEBAAAAAAAAAA4AAAAAAAAAAAAADAAAAAAAAAAAAAAWAQEBAQEBAQEBAQEBAQEBAQEBAAAAAAAA
+        AAAKAAAAAAAAAAAWHQAAAAAAAAAAAAwBAQEBAQEBAQEBAAAAAAAAAAAAAAAAAAAAAAASAAAAAAAAAAAK
+        AAAAAAAAAAAAAAAAACAGAQEBAQEBFgAAAAAAAAAAAAAAAAAAAAAAEgAAAAAAAAAOAAAAAAAAAAAAAAAA
+        AAgBAQEBAQEBBAAAAAAAAAAAAAAAAAAAAAAADgAAAAAAAAATAAAAAAAAAAAAAAAXAQEBAQEBAQEBARYA
+        AAAAAAAAAAAAAAAAAAAADAAAAAAAAAAXAAAAAAAAAAAAAAAAAAAAFwEBAQEBAQYAAAAAAAAAAAAAAAAA
+        AAAADAAAAAAAAAAWAAAAAAAAAAAAAAAAAAAWAQEBAQEBAQEXAAAAAAAAAAAAAAAAAAAADAAAAAAAAAAS
+        AAAAAAAAAAAAAAAAAAoBBAQBAQEBAQEEAAAAAAAAAAAAAAAAAAAADgAAAAAAAAAKAAAAAAAAAAAAAAAA
+        AAAAAAAOAQEBAQEBGwAAAAAAAAAAAAAAAAAAEQAAAAAAAAAOAAAAAAAAAAAAAAAAAAAAAAYBAQEBAQEB
+        BAAAAAAAAAAAAAAAAAAbFwAAAAAAAAAAEgAAAAAAAAAAAAAAAAAAEQwODAQBAQEBAR0AAAAAAAAAAAAA
+        AAAKAAAAAAAAAAAADgAAAAAAAAAAAAAAAAAAAAAAIAQBAQEBAQgAAAAAAAAAAAAAAB0WAAAAAAAAAAAA
+        AAoAAAAAAAAAAAAAAAAAAAARAQEBAQEBAQEdAAAAAAAAAAAAAAYAAAAAAAAAAAAAAAAMAAAAAAAAAAAA
+        AAAAABsbFxsRAQEBAQEKAAAAAAAAAAAACgAAAAAAAAAAAAAAAAAbEQAAAAAAAAAAAAAAAAAAAAAMAQEB
+        AQEBIAAAAAAAAAAOAAAAAAAAAAAAAAAAAAAAGw4AAAAAAAAAAAAAAAAAAAYBAQEBAQEBCAAAAAAAAAoA
+        AAAAAAAAAAAAAAAAAAAAAAAIGwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAWCgAAAAAAAAAAAAAAAAAA
+        AAAAAAAAFwgdAAAAAAAAAAAAAAAAAAAAAAAAAAAAGwgbAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAXDBMA
+        AAAAAAAAAAAAAAAAAAAAABIMGwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAODhIXAAAAAAAAAAAA
+        FxEMEgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAgEw4IBAQECA4WIAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAA////////AAD///////8AAP///////wAA////////AAD///////8AAP//
+        /////wAA////////AAD///////8AAP///z///wAA///AAH//AAD//h//D/8AAP/4///j/wAA/+f///n/
+        AAD/z////n8AAP+4AAAfPwAA/38AAA+fAAD+/AAAD88AAPz8AAAP7wAA/f+AAA/3AAD5/wAf//cAAPv/
+        4A//+wAA+//gD//7AAD7/4AH//sAAPv/+Af/+wAA+//wA//7AAD7/+AD//sAAPv//gH/+wAA+//8Af/z
+        AAD9//gA//cAAP3//wD/5wAA/v/+AH/vAAD/f/wAf98AAP8//8A/vwAA/5//gD9/AAD/5////P8AAP/x
+        ///x/wAA//x//8f/AAD//4f8P/8AAP//8AH//wAA////////AAD///////8AAP///////wAA////////
+        AAD///////8AAP///////wAA////////AAD///////8AAP///////wAAKAAAACAAAABAAAAAAQAIAAAA
+        AAAABAAAAAAAAAAAAAAAAQAAAAEAAAAAAAAA/gAABf4FAAn+CQAP/g8AHv4eACv+KwAs/ywAM/8zADT/
+        NAA+/j4AQv5CAEX+RQBJ/kkATP5MAFD+UABV/lUAWf9ZAF7+XgBh/mEAZf5lAGj+aABt/m0Acv5yAHX+
+        dQB5/nkAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAP///wAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABkODhcAAAAAFg4O
+        AAAAAAAAAAAAAAAAAAAAAAAAAA8WAAAAAAAAAAAAAAAAExEAAAAAAAAAAAAAAAAAABMWAAAAAAAAAAAA
+        AAAAAAAAABEXAAAAAAAAAAAAAAANAAAADQQEAgQCBAIEAgQCBAAAAAAPAAAAAAAAAAAADQAAAAARAgIC
+        AgICAgICAgICCgAAAAAPAAAAAAAAABMAAAAAGREPBAICAgICAgICAgICAAAAAAAZAAAAAAAAFgAAAAAA
+        ABECAgICAgIGBwgICAgAAAAAAA8AAAAAABMAAAAAAAAAFxYFAgICAgAAAAAAAAAAAAAAAAAAAAAADgAA
+        AAAAAAAADwICAgICBwAAAAAAAAAAAAAADwAAAAANAAAAAAAAAAAAAAcCAgICAAAAAAAAAAAAAAANAAAA
+        AA0AAAAAAAAAAAAOAgICAgIHAAAAAAAAAAAAAA0AAAAADgAAAAAAAAAAAAAACgICAgIAAAAAAAAAAAAA
+        EwAAAAAAAAAAAAAAAAAAAA0CAgICAggAAAAAAAAAAAAAAAAAAAAOAAAAAAAAAAAAAAAPAgICAgAAAAAA
+        AAAADQAAAAAAAAAXAAAAAAAAAAAADQICAgICCgAAAAAAABEAAAAAAAAAABcAAAAAAAAAAAAAABMCAgIC
+        AAAAAAAXAAAAAAAAAAAAABkTAAAAAAAAAAAOBAICAgQOAAAADwAAAAAAAAAAAAAAAAAOAAAAAAAAAAAA
+        AAAAAAAAAA4AAAAAAAAAAAAAAAAAAAAADhMAAAAAAAAAAAAAEw8AAAAAAAAAAAAAAAAAAAAAAAAAAAAT
+        Dg0KCg0OEwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/////////////////////////////////+Hj//+f
+        /n/+f/+f/cAB7/vAAPf3gAD79+AA++/gP//v8B/97/wf/e/4D/3v/g/9//wH//f/B/v7/gP3+/+D7/z/
+        Ad//f/+//8/8///4B/////////////////////////////////8oAAAAEAAAACAAAAABAAgAAAAAAAAB
+        AAAAAAAAAAAAAAABAAAAAQAAAAAAAAD+AAAE/wQAC/4LAAz/DAAR/hEAFf8VACP/IwA6/zoAQ/5DAFL/
+        UgBb/1sAb/5vAHb+dgB5/3kAfv9+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAA////AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAJAgICAgIFAAAAAAAA
+        AAAAAAcCAg4AAAAAAAAAAAAAAAALAwIMAAAAAAAAAAAAAAAAAAgCAwAAAAAAAAAAAAAAAAANBQIOAAAA
+        AAAAAAAAAAAAAAoCAwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAD//wAA//8AAP//AAD//wAA//8AAPgP
+        AAD8PwAA/D8AAP4/AAD+HwAA/x8AAP//AAD//wAA//8AAP//AAD//wAAKAAAADAAAABgAAAAAQAgAAAA
+        AACAJQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAA/wADAP8AHwD/AEUA/wBjAP8AdgD+AIMA/wCGAP8AfAD/AHIA/wBeAP8AQAD+
+        ABkAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAD/AAIA/wAnAP4AZgD/AKkA/wDiAP8A5QD/AMkA/wC0AP8ApQD+AJ4A/wCZAP8AnwD/
+        AKgA/wC4AP8AzAD+AOkA/wDaAP8AmwD/AFwA/wAeAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAA/wAQAP8ATgD/AKwA/wDRAP4AuwD/AIAA/wBCAP8AIgD/ABUA/wAMAP8ABQD+
+        AAIAAAAAAP8AAwD/AAYA/wANAP8AFwD+ACQA/wBMAP8AjQD/AMAA/wDTAP8AnAD+AD8A/wAKAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAP4ACAD+AEQA/gC5AP4A0QD+AIcA/gA3AP4ACgAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAD+ABEA/gA+AP4AmwD+
+        ANQA/gCmAP4AOAD+AAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/wAZAP4AlgD/AOcA/wB2AP8AGQAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAD+ACcA/wCQAP8A5gD/AH4A/wALAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAD/AD8A/wDTAP4AqwD/ACEA/wAGAP8AMAD/
+        AF8A/wByAP4AcgD/AHIA/wByAP8AcgD/AHIA/wByAP8AcgD+AHIA/wByAP8AcgD/AHIA/wByAP8AcgD+
+        AHIA/wByAP8AcgD/AHIA/wByAP8ACwAAAAAAAAAAAP8AMQD/AMYA/wDBAP8AKwAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/wACAP8ATAD/ANsA/wB3AP4AHwD/
+        AEsA/wCHAP8AnAD/AKoA/wDSAP4A/gD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD+AP4A/wD/AP8A/wD/
+        AP8A/wD/AP8A/wD+AP4A/wD/AP8A/wD/AP8A/wD/AP8ATAAAAAAAAAAAAAAAAAD/ABMA/wCYAP8AywD+
+        ADkAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAD/AAEA/wA/AP8A3AD/
+        AGMA/wAGAAAAAAAAAAAAAAAAAP8ACAD/AFQA/wDVAP4A/gD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD+
+        AP4A/wD/AP8A/wD/AP8A/wD/AP8A/wD+AP4A/wD/AP8A/wD/AP8A/wD/AP8AlAD+AAMAAAAAAAAAAAAA
+        AAAA/wAMAP8AhgD+AMwA/wAmAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAD/
+        ACIA/wDKAP8AfAD/AAIAAAAAAAAAAAAAAAAA/wARAP8AjgD/APIA/wD/AP4A/gD/AP8A/wD/AP8A/wD/
+        AP8A/wD/AP8A/wD+AP4A/wD/AP8A/wD/AP8A/wD/AP8A/wD+AP4A/wD/AP8A/wD/AP8A/wD/AP8AzgD+
+        ABQAAAAAAAAAAAAAAAAAAAAAAP8ADAD+AJkA/wC8AP8ACgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAP4ABQD+AJ8A/gCpAP4AAwAAAAAAAAAAAAAAAAAAAAAA/gBPAP4AgAD+AIAA/gCAAP4AhAD+
+        AN0A/gD+AP4A/gD+AP4A/gD+AP4A/gD+AP4A/gD+AP4A/gD+AP4A/gD+AP4A/gD+AP4A/gD+AP4A/gD+
+        AP4A/gD+AP4A+wD+ADYAAAAAAAAAAAAAAAAAAAAAAAAAAAD+ABAA/gDJAP4AdQD+AAIAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAP4ASAD/ANEA/wAsAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAA/wAiAP4AqwD/APkA/wD/AP8A/wD/AP8A/wD/AP8A/wD+AP4A/wD/AP8A/wD/AP8A/wD/AP8A/wD+
+        AP4A/wD/AP8A/wD/AP8A/wD/AP8A/wD+AH8AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/wBCAP8A3AD/
+        ACcAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAP4AqAD/AI4A/wACAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAP8ABgD/AFAA/wDRAP4A/gD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD+AP4A/wD/AP8A/wD/
+        AHQA/wAyAP8AMgD+ADIA/wAyAP8AMgD/ADIA/wAyAP8AMgD+AB8AAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAA/wADAP8AuAD/AHsAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/wAWAP4A3wD/ADsAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAP8ACQD/AEQA/wBTAP4AUwD/AFYA/wCDAP8A7gD/AP8A/wD/AP8A/wD+
+        AP4A/wD/AP8A/wD/AK0A/wALAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAP8AYAD/AL4A/wANAAAAAAAAAAAAAAAAAAAAAAAAAAAA/wBIAP4AxwD/
+        ABoAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAP4AAQD/AGIA/wDkAP8A/wD/
+        AP8A/wD/AP8A/wD+AP4A/wD/AP8A/wD/APIA/wBAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAP8ALwD/AMwA/wAtAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAA/wBoAP4AsAD/AAgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/wAcAP4ApgD/
+        APoA/wD/AP8A/wD/AP8A/wD/AP8A/wD+AP4A/wD/AP8A/wD/AP8A/wCuAP8ABQAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAP8ADgD/ANAA/wBDAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAA/wB1AP4AqAD/AAIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAA/wAKAP4AJQD/ACYA/wAmAP8ANwD/AKEA/wD9AP8A/wD+AP4A/wD/AP8A/wD/AP8A/wDsAP8AQAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAP8AAgD/
+        ANIA/wBMAAAAAAAAAAAAAAAAAAAAAAAAAAAA/gBvAP4AqwD+AAUAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAD+AAEA/gAtAP4ArgD+APoA/gD+AP4A/gD+AP4A/gD+AP4A/gD+
+        AP4A/gD+AP4ApQD+AAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAP4ABwD+ANEA/gBIAAAAAAAAAAAAAAAAAAAAAAAAAAAA/wBYAP4AuwD/ABAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAD/AFMA/wDXAP8A+QD/APkA/wD5AP8A/QD+
+        AP4A/wD/AP8A/wD/AP8A/wD/AP8A8QD+AC4AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAP8AHgD/AM0A/wA4AAAAAAAAAAAAAAAAAAAAAAAAAAAA/wApAP4A2AD/
+        ACcAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAA/wA8AP8AzQD+AP4A/wD/AP8A/wD/AP8A/wD/AP8A/gD+AJ0A/wAEAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAP8ARwD/AMYA/wAaAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAA/wADAP4AzAD/AGcAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAP8ADQD/AHMA/wDuAP8A/gD+AP4A/wD/AP8A/wD/AP8A/wD/AP8A/wD+APMA/wAnAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAP8AkAD/AKAA/wACAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAP4AbwD/AL8A/wASAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAA/wAMAP8AdgD/AMUA/wDLAP8AywD+ANIA/wD3AP8A/wD/AP8A/wD/AP8A/wD+
+        AP4A/wCPAP8ABQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/wAbAP8A3wD/
+        AEYAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAP4AGwD/AMgA/wBrAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAP8AEwD+AIQA/wDxAP8A/wD/
+        AP8A/wD/AP8A/wD+AP4A/wDkAP8AKAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAD+
+        AAUA/wCOAP8ArgD/AA0AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAD+AFEA/gDeAP4AMQAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/gAzAP4AwwD+
+        AP4A/gD+AP4A/gD+AP4A/gD+AP4A/gD+AP4A/gD+AP4AigAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAD+AE4A/gDoAP4AKgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAD/
+        AAYA/wB9AP8A1AD/ACIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAD/
+        ABsA/wCPAP8AngD+AJ4A/wCfAP8AvgD/APsA/wD/AP8A/wD+AP4A/wD/AP8A3wD/ACkAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAP8AQgD+ANgA/wBdAP8AAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAA/wAOAP8AmAD/AMMA/wAyAP4AAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAD+AAUA/wBHAP8A1QD/AP0A/wD/AP8A/wD+AP4A/wD/AP8A/QD/
+        AIQAAAAAAAAAAAAAAAAAAAAAAAAAAAD/AAEA/wBMAP8AzgD+AHwA/wAEAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAP8ADQD/AJYA/wDNAP4AUgD/AAcAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAP8AEwD+AH4A/wDtAP8A/wD/AP8A/wD/AP8A/wD+
+        AP4A/wD/AP8A/wD/AN8A/wAcAAAAAAAAAAAAAAAAAP8ACwD/AGoA/wDYAP8AdQD+AAgAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAD/AAQA/wBqAP4A4QD/
+        AJwA/wAWAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAP8ANQD+AHAA/wBxAP8AcQD/
+        AHEA/wBxAP8AcQD+AHEA/wBxAP8AcQD/AG4A/wAmAAAAAAAAAAAA/wAqAP8ArAD/AN0A/wBMAP8AAwAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAP4AJAD/AKEA/wDnAP8AhwD/AC0A/wABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/wABAP8APQD+AJ4A/wDjAP8AkgD/
+        ABIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAD+AAgA/gBCAP4AqQD+ANMA/gCzAP4AXQD+AC0A/gANAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/gASAP4ANAD+AGsA/gC+AP4A0QD+
+        AJcA/gA0AP4ABQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAP8ACAD/ADUA/wB7AP4AyAD/
+        AMwA/wC/AP8AoAD/AHQA/wBVAP8APgD+ADMA/wArAP8ANAD/AEEA/wBaAP8AegD+AKcA/wDCAP8AzwD/
+        AL4A/wBwAP8AKQD+AAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAP4ABQD/AC8A/wBbAP8AhwD/AK8A/wDPAP8A5AD+APEA/wD1AP8A8AD/AOAA/wDJAP8AqgD+
+        AIAA/wBTAP8AJQD/AAMAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAP//
+        /////wAA////////AAD///////8AAP///////wAA////////AAD///////8AAP///////wAA////////
+        AAD//+AB//8AAP/+AAAf/wAA//gAQAP/AAD/4D//gP8AAP/B///wfwAA/4AAAAw/AAD+AAAADh8AAPwc
+        AAAHDwAA/DgAAAeHAAD4eAAAB8MAAPj/AAAH4wAA+PwAAAfjAADx/AAH//EAAPH/gAf/8QAA8f8AA//x
+        AADx/wAD//EAAPH/wAH/8QAA8f/AAf/xAADx//wA//EAAPH/8AD/8QAA+P/gAH/jAAD4//4Af8MAAPx/
+        /AB/xwAA/D/4AD+HAAD+D/8APg8AAP8H/gAcHwAA/4P+ABg/AAD/4H//wP8AAP/wD/4B/wAA//wAAAf/
+        AAD//4AAP/8AAP///////wAA////////AAD///////8AAP///////wAA////////AAD///////8AAP//
+        /////wAA////////AAD///////8AACgAAAAgAAAAQAAAAAEAIAAAAAAAgBAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAD+AA8A/gAzAP4ASwD/AFgA/gBVAP4ASQD+
+        ADAA/wALAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/gAEAP4ANwD+AIcA/wCzAP4AtAD+AI8A/gB1AP8AaQD+
+        AGoA/gB4AP4AkgD/ALcA/gCvAP4AfwD+AC4A/wACAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/gADAP8ARAD+AK4A/gCWAP4AQQD/ABMA/gABAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAP8AAQD+ABYA/gBKAP4AnwD/AKYA/gA5AP4AAQAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAP8AEwD/AJsA/wCVAP8AHgAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAP8AKgD/AKEA/wCMAP8ADAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAD+ACMA/gC5AP4AUQD/AD8A/gB+AP4AuQD+
+        APAA/wD2AP4A9gD+APYA/gD2AP8A9gD+APYA/gD2AP4A9gD/APYA/gD2AP4A9gD+AHkAAAAAAP4AAgD+
+        AF0A/gCvAP8AGQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/wAXAP4AuAD+AC8AAAAAAAAAAAD+
+        ABYA/gCfAP4A+gD/AP8A/gD+AP4A/gD+AP4A/wD/AP4A/gD+AP4A/gD+AP8A/wD+AP4A/gD+AP4AwQD/
+        AAUAAAAAAAAAAAD+AEYA/wCvAP4ACQAAAAAAAAAAAAAAAAAAAAAAAAAAAP4AAgD/AJwA/gBHAAAAAAAA
+        AAAA/wALAP4AhQD+AKoA/gCsAP8A8AD+AP4A/gD+AP4A/gD/AP8A/gD+AP4A/gD+AP4A/wD/AP4A/gD+
+        AP4A/gD1AP8AHQAAAAAAAAAAAAAAAAD/AF0A/gCHAP4AAQAAAAAAAAAAAAAAAAAAAAAA/wBAAP8AlgAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAP8AGgD/AKgA/wD8AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wDUAP8AywD/
+        AMwA/wDLAP8AywD/AMsA/wBGAAAAAAAAAAAAAAAAAP8AAgD/AK0A/wAnAAAAAAAAAAAAAAAAAAAAAAD+
+        AJcA/wA0AAAAAAAAAAAAAAAAAAAAAAD+AAcA/gBmAP4AjAD/AJIA/gDhAP4A/gD+AP4A/wD/AP4A/gD+
+        AGcAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAP4ATgD+AHsAAAAAAAAAAAAA
+        AAAAAAAAAP4AtwD/AA4AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/gAZAP8ArQD+AP0A/gD+AP4A/gD/
+        AP8A/gD+AP4A1AD+AA0AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/gAZAP4AqwAA
+        AAAAAAAAAAAAAAAAAAAA/gC9AP8AAgAAAAAAAAAAAAAAAAAAAAAAAAAAAP4AAgD+AFAA/wBuAP4AdgD+
+        ANQA/gD+AP8A/wD+AP4A/gD9AP4AYAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAD+
+        AAMA/gC9AAAAAAAAAAAAAAAAAAAAAAD/ALsA/wAFAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAD/
+        AB4A/wCvAP8A/QD/AP8A/wD/AP8A/wD/AP8A/wDTAP8ABQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAP8ACAD/ALkAAAAAAAAAAAAAAAAAAAAAAP4ArwD/ABYAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAP8ANwD+AFAA/gBWAP4AwwD/AP8A/gD+AP4A/gD+AP0A/wBXAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAA/gAoAP4AnAAAAAAAAAAAAAAAAAAAAAAA/gB6AP8AVgAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAP4AIwD+ALgA/gD9AP8A/wD+AP4A/gD+AP4A/gD/AMgA/gAIAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAD+AHIA/gBcAAAAAAAAAAAAAAAAAAAAAAD+AB8A/wCzAP4ACgAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/gAcAP4AMgD+ADsA/wCrAP4A/gD+AP4A/gD+AP8A/QD+
+        AEsAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/wAQAP4AuwD+ABAAAAAAAAAAAAAAAAAAAAAAAAAAAAD/
+        AGUA/wCJAP8AAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/wAkAP8AvQD/AP4A/wD/AP8A/wD/
+        AP8A/wD/AP8AwQD/AAUAAAAAAAAAAAAAAAAAAAAAAP8ABgD/AJ8A/wBKAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAP8ABQD+AIsA/gB2AP4ABQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAD+AAkA/gAUAP8AIAD+
+        AJcA/gD8AP4A/gD/AP8A/gD6AP4ARwAAAAAAAAAAAAAAAAD+AAkA/gCMAP8AdgAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAP4ABQD+AIQA/gCaAP8AFgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAD+
+        ACAA/wC0AP4A9QD+APUA/gD1AP8A9gD+APUA/gCyAAAAAAAAAAAA/gAeAP4AqgD+AG8A/wADAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAD+AEkA/wC5AP4AbgD+ABQAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/gAbAP8AfQD+ALUA/gA3AAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAD/AAwA/wBkAP8AswD/
+        AJgA/wBVAP8AJQD/ABEA/wAGAP8AAQD/AAIA/wAIAP8AEwD/ACgA/wBeAP8AngD/AK8A/wBVAP8ACQAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAA/gAFAP4AMAD/AHAA/gCgAP4AsAD+ALoA/wDAAP4AwAD+ALkA/gCvAP8AnAD+AGcA/gArAP4AAgAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAA////////////////////////////+Af//4AAf/4D8B/8P/8P+AAAh/GA
+        AGPjAABx58AAceeAH/nn4A/558AP+efwB/nn8Af55/gD+eP4A/Hx/AHj8PwBx/h+AYf+H/4f/wAAP//A
+        AP////////////////////////////////8oAAAAEAAAACAAAAABACAAAAAAAEAEAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/wADAP8AHwD/ACsA/wAeAP8AAgAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAD/AD4A/gBlAP8AXgD+AEEA/wA1AP4AQgD/
+        AF8A/gBmAP8AOAAAAAAAAAAAAAAAAAAAAAAAAAAAAP8ACAD/AG4A/wBcAP8AagD/AHsA/wB7AP8AewD/
+        AHsA/wB7AP8AWwD/ADMA/wBpAP8ABgAAAAAAAAAAAAAAAAD/AGwA/gAMAP8AKQD+ALwA/wD7AP4A/gD/
+        AP8A/gD+AP8A/wD+AO0A/wAIAP4AEQD/AGcAAAAAAAAAAAD/ADYA/wAzAAAAAAD/AAEA/wBtAP8A3AD/
+        AP8A/wD/AP8AgQD/AGYA/wBlAP8AEQAAAAAA/wA/AP8AKAAAAAAA/gBdAP8ABAAAAAAAAAAAAP4AGwD/
+        AKQA/gD0AP8A/wD+AJAAAAAAAAAAAAAAAAAAAAAAAP8ABwD+AFoAAAAAAP8AWgD/AAYAAAAAAAAAAAAA
+        AAAA/wBVAP8AxQD/AP8A/wDzAP8AFwAAAAAAAAAAAAAAAAD/AAwA/wBVAAAAAAD+ACYA/wBFAAAAAAAA
+        AAAAAAAAAP8ADwD+AIkA/wDqAP4A/gD/AIYAAAAAAAAAAAAAAAAA/wBPAP4AGwAAAAAAAAAAAP8AXwD/
+        AB8AAAAAAAAAAAAAAAAA/wBAAP8ArQD/AP4A/wDuAP8AEwAAAAAA/wAnAP8AWAAAAAAAAAAAAAAAAAD/
+        AAEA/gBaAP8ATwD+AAUAAAAAAP4ACAD/AGoA/gB6AP8AegD+ADMA/wBUAP4AVAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAD/ABwA/wBgAP8AYgD/AGEA/wBhAP8AYQD/AGIA/wBfAP8AFwAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAP//AAD//wAA/B8AAPAHAADAAQAAwAEAAJAEAACYPAAAnBwAAJwcAADOCQAAwgMAAPAH
+        AAD//wAA//8AAP//AAA=
+</value>
+  </data>
+  <data name="CH2CodeIsComm.Location" type="System.Drawing.Point, System.Drawing">
+    <value>64, 237</value>
+  </data>
+  <data name="CH1VDCRefresh.Text" xml:space="preserve">
+    <value>刷新串口</value>
+  </data>
+  <data name="&gt;&gt;CH1VDCBaud.Parent" xml:space="preserve">
+    <value>uiGroupBox2</value>
+  </data>
+  <data name="&gt;&gt;CH2FlowCon.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;CH3FlowPort.Name" xml:space="preserve">
+    <value>CH3FlowPort</value>
+  </data>
+  <data name="&gt;&gt;CodeBreak.ZOrder" xml:space="preserve">
+    <value>7</value>
+  </data>
+  <data name="&gt;&gt;CH3FlowPort.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ComboBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;CH3FlowRefresh.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="label32.Size" type="System.Drawing.Size, System.Drawing">
+    <value>55, 16</value>
+  </data>
+  <data name="&gt;&gt;uiGroupBox10.Name" xml:space="preserve">
+    <value>uiGroupBox10</value>
+  </data>
+  <data name="&gt;&gt;label32.Name" xml:space="preserve">
+    <value>label32</value>
+  </data>
+  <data name="label30.Location" type="System.Drawing.Point, System.Drawing">
+    <value>40, 132</value>
+  </data>
+  <data name="uiTabControlMenu1.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;CH2CodeRefresh.Parent" xml:space="preserve">
+    <value>uiGroupBox10</value>
+  </data>
+  <data name="&gt;&gt;CH2ADCIsComm.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="labCKCH1.Text" xml:space="preserve">
+    <value>label6</value>
+  </data>
+  <data name="CH1FlowRefresh.Size" type="System.Drawing.Size, System.Drawing">
+    <value>125, 45</value>
+  </data>
+  <data name="&gt;&gt;label15.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="label35.TabIndex" type="System.Int32, mscorlib">
+    <value>70</value>
+  </data>
+  <data name="CH2FlowPort.Size" type="System.Drawing.Size, System.Drawing">
+    <value>137, 24</value>
+  </data>
+  <data name="&gt;&gt;uiGroupBox10.Type" xml:space="preserve">
+    <value>Sunny.UI.UIGroupBox, SunnyUI, Version=3.1.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;label17.Name" xml:space="preserve">
+    <value>label17</value>
+  </data>
+  <data name="CH2VDCRefresh.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 4, 4, 4</value>
+  </data>
+  <data name="label13.Text" xml:space="preserve">
+    <value>端口号</value>
+  </data>
+  <data name="CH1VDCBreak.TabIndex" type="System.Int32, mscorlib">
+    <value>63</value>
+  </data>
+  <data name="label22.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="&gt;&gt;CH1VDCPort.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ComboBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;CH1ADCIsComm.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label3.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;CH1VDCIsComm.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;CodeCon.Parent" xml:space="preserve">
+    <value>uiGroupBox9</value>
+  </data>
+  <data name="&gt;&gt;CH3FlowBaud.Parent" xml:space="preserve">
+    <value>uiGroupBox7</value>
+  </data>
+  <data name="uiGroupBox2.MinimumSize" type="System.Drawing.Size, System.Drawing">
+    <value>1, 1</value>
+  </data>
+  <data name="CH2VDCIsComm.Font" type="System.Drawing.Font, System.Drawing">
+    <value>SimSun, 12pt</value>
+  </data>
+  <data name="CH1ADCBaud.Items1" xml:space="preserve">
+    <value>9600</value>
+  </data>
+  <data name="label20.TabIndex" type="System.Int32, mscorlib">
+    <value>70</value>
+  </data>
+  <data name="CH3FlowCon.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 4, 4, 4</value>
+  </data>
+  <data name="&gt;&gt;label25.Name" xml:space="preserve">
+    <value>label25</value>
+  </data>
+  <data name="CH1VDCBreak.Size" type="System.Drawing.Size, System.Drawing">
+    <value>125, 45</value>
+  </data>
+  <data name="&gt;&gt;CKCH2Baud.Name" xml:space="preserve">
+    <value>CKCH2Baud</value>
+  </data>
+  <data name="CH3FlowCon.Location" type="System.Drawing.Point, System.Drawing">
+    <value>48, 275</value>
+  </data>
+  <data name="label21.Location" type="System.Drawing.Point, System.Drawing">
+    <value>40, 66</value>
+  </data>
+  <data name="button3.Text" xml:space="preserve">
+    <value>串口锁定</value>
+  </data>
+  <data name="&gt;&gt;CH2CodeBreak.Name" xml:space="preserve">
+    <value>CH2CodeBreak</value>
+  </data>
+  <data name="labCKCH2.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 0, 4, 0</value>
+  </data>
+  <data name="&gt;&gt;CH2VDCRefresh.Name" xml:space="preserve">
+    <value>CH2VDCRefresh</value>
+  </data>
+  <data name="CH4FlowRefresh.Location" type="System.Drawing.Point, System.Drawing">
+    <value>48, 327</value>
+  </data>
+  <data name="CH2CodeRefresh.TabIndex" type="System.Int32, mscorlib">
+    <value>64</value>
+  </data>
+  <data name="uiGroupBox4.Location" type="System.Drawing.Point, System.Drawing">
+    <value>691, 4</value>
+  </data>
+  <data name="&gt;&gt;label30.Parent" xml:space="preserve">
+    <value>uiGroupBox5</value>
+  </data>
+  <data name="label19.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 0, 4, 0</value>
+  </data>
+  <data name="CH1FlowIsComm.TabIndex" type="System.Int32, mscorlib">
+    <value>69</value>
+  </data>
+  <data name="label23.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 0, 4, 0</value>
+  </data>
+  <data name="label27.TabIndex" type="System.Int32, mscorlib">
+    <value>66</value>
+  </data>
+  <data name="&gt;&gt;tabPage3.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="&gt;&gt;uiGroupBox12.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="CKCH2Baud.Size" type="System.Drawing.Size, System.Drawing">
+    <value>137, 24</value>
+  </data>
+  <data name="&gt;&gt;CH1FlowBaud.Parent" xml:space="preserve">
+    <value>uiGroupBox5</value>
+  </data>
+  <data name="uiGroupBox4.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 5, 4, 5</value>
+  </data>
+  <data name="&gt;&gt;CH2CodeIsComm.Parent" xml:space="preserve">
+    <value>uiGroupBox10</value>
+  </data>
+  <data name="&gt;&gt;button3.Name" xml:space="preserve">
+    <value>button3</value>
+  </data>
+  <data name="&gt;&gt;label7.Name" xml:space="preserve">
+    <value>label7</value>
+  </data>
+  <data name="&gt;&gt;CH1ADCBreak.Name" xml:space="preserve">
+    <value>CH1ADCBreak</value>
+  </data>
+  <data name="&gt;&gt;CH2VDCCon.Parent" xml:space="preserve">
+    <value>uiGroupBox4</value>
+  </data>
+  <data name="&gt;&gt;label4.Name" xml:space="preserve">
+    <value>label4</value>
+  </data>
+  <data name="uiGroupBox10.MinimumSize" type="System.Drawing.Size, System.Drawing">
+    <value>1, 1</value>
+  </data>
+  <data name="&gt;&gt;CH3FlowBreak.ZOrder" xml:space="preserve">
+    <value>7</value>
+  </data>
+  <data name="&gt;&gt;label25.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="CH1ADCPort.TabIndex" type="System.Int32, mscorlib">
+    <value>67</value>
+  </data>
+  <data name="&gt;&gt;CodeBreak.Parent" xml:space="preserve">
+    <value>uiGroupBox9</value>
+  </data>
+  <data name="label30.TabIndex" type="System.Int32, mscorlib">
+    <value>66</value>
+  </data>
+  <data name="&gt;&gt;label26.Name" xml:space="preserve">
+    <value>label26</value>
+  </data>
+  <data name="&gt;&gt;CH2FlowBreak.Name" xml:space="preserve">
+    <value>CH2FlowBreak</value>
+  </data>
+  <data name="label37.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="&gt;&gt;uiGroupBox3.Parent" xml:space="preserve">
+    <value>tabPage1</value>
+  </data>
+  <data name="btnCKCh1Refresh.Size" type="System.Drawing.Size, System.Drawing">
+    <value>125, 45</value>
+  </data>
+  <data name="&gt;&gt;CH2CodeRefresh.ZOrder" xml:space="preserve">
+    <value>8</value>
+  </data>
+  <data name="&gt;&gt;label36.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="CH2VDCBreak.TabIndex" type="System.Int32, mscorlib">
+    <value>64</value>
+  </data>
+  <data name="uiGroupBox1.Font" type="System.Drawing.Font, System.Drawing">
+    <value>SimSun, 12pt</value>
+  </data>
+  <data name="CH1FlowBreak.TabIndex" type="System.Int32, mscorlib">
+    <value>63</value>
+  </data>
+  <data name="label26.TabIndex" type="System.Int32, mscorlib">
+    <value>66</value>
+  </data>
+  <data name="CH2ADCBaud.Location" type="System.Drawing.Point, System.Drawing">
+    <value>43, 156</value>
+  </data>
+  <data name="&gt;&gt;btnCKCh1Connect.Name" xml:space="preserve">
+    <value>btnCKCh1Connect</value>
+  </data>
+  <data name="&gt;&gt;label5.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;CH2ADCRefresh.Parent" xml:space="preserve">
+    <value>uiGroupBox3</value>
+  </data>
+  <metadata name="$this.TrayHeight" type="System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>25</value>
+  </metadata>
+  <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="$this.Language" type="System.Globalization.CultureInfo, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>es</value>
+  </metadata>
+  <metadata name="ReadStatus.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>17, 17</value>
+  </metadata>
+</root>

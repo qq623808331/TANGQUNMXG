@@ -1,0 +1,2824 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="label140.Location" type="System.Drawing.Point, System.Drawing">
+    <value>145, 192</value>
+  </data>
+  <data name="label140.Size" type="System.Drawing.Size, System.Drawing">
+    <value>277, 16</value>
+  </data>
+  <data name="label140.Text" xml:space="preserve">
+    <value>Compensación de tensión de trabajo</value>
+  </data>
+  <data name="label141.Location" type="System.Drawing.Point, System.Drawing">
+    <value>101, 117</value>
+  </data>
+  <data name="label141.Size" type="System.Drawing.Size, System.Drawing">
+    <value>321, 16</value>
+  </data>
+  <data name="label141.Text" xml:space="preserve">
+    <value>Límite inferior de la tensión de trabajo</value>
+  </data>
+  <data name="label142.Location" type="System.Drawing.Point, System.Drawing">
+    <value>125, 47</value>
+  </data>
+  <data name="label142.Size" type="System.Drawing.Size, System.Drawing">
+    <value>297, 16</value>
+  </data>
+  <data name="label142.Text" xml:space="preserve">
+    <value>Límite superior de tensión de trabajo</value>
+  </data>
+  <data name="label145.Location" type="System.Drawing.Point, System.Drawing">
+    <value>39, 177</value>
+  </data>
+  <data name="label145.Size" type="System.Drawing.Size, System.Drawing">
+    <value>294, 16</value>
+  </data>
+  <data name="label145.Text" xml:space="preserve">
+    <value>Compensación de corriente de trabajo</value>
+  </data>
+  <data name="label146.Location" type="System.Drawing.Point, System.Drawing">
+    <value>36, 90</value>
+  </data>
+  <data name="label146.Size" type="System.Drawing.Size, System.Drawing">
+    <value>338, 16</value>
+  </data>
+  <data name="label146.Text" xml:space="preserve">
+    <value>Límite inferior de la corriente de trabajo</value>
+  </data>
+  <data name="label148.Location" type="System.Drawing.Point, System.Drawing">
+    <value>27, 31</value>
+  </data>
+  <data name="label148.Size" type="System.Drawing.Size, System.Drawing">
+    <value>338, 16</value>
+  </data>
+  <data name="label148.Text" xml:space="preserve">
+    <value>Límite superior de la corriente de trabajo</value>
+  </data>
+  <data name="uiGroupBox29.Size" type="System.Drawing.Size, System.Drawing">
+    <value>469, 271</value>
+  </data>
+  <data name="uiGroupBox29.Text" xml:space="preserve">
+    <value>Límites superior e inferior de tensión y corriente</value>
+  </data>
+  <data name="RDOWNParamsCopy.Location" type="System.Drawing.Point, System.Drawing">
+    <value>787, 613</value>
+  </data>
+  <data name="RDOWNParamsCopy.Size" type="System.Drawing.Size, System.Drawing">
+    <value>230, 37</value>
+  </data>
+  <data name="RDOWNParamsCopy.Text" xml:space="preserve">
+    <value>Copiar a la derecha</value>
+  </data>
+  <data name="DOWNParamsSave.Location" type="System.Drawing.Point, System.Drawing">
+    <value>367, 613</value>
+  </data>
+  <data name="DOWNParamsSave.Size" type="System.Drawing.Size, System.Drawing">
+    <value>274, 37</value>
+  </data>
+  <data name="DOWNParamsSave.Text" xml:space="preserve">
+    <value>Guardar configuración</value>
+  </data>
+  <data name="LDOWNParamsCopy.Location" type="System.Drawing.Point, System.Drawing">
+    <value>44, 613</value>
+  </data>
+  <data name="LDOWNParamsCopy.Size" type="System.Drawing.Size, System.Drawing">
+    <value>213, 37</value>
+  </data>
+  <data name="LDOWNParamsCopy.Text" xml:space="preserve">
+    <value>Copia izquierda</value>
+  </data>
+  <data name="label158.Size" type="System.Drawing.Size, System.Drawing">
+    <value>257, 16</value>
+  </data>
+  <data name="label158.Text" xml:space="preserve">
+    <value>Límite superior de presión ch2 1</value>
+  </data>
+  <data name="label159.Size" type="System.Drawing.Size, System.Drawing">
+    <value>257, 16</value>
+  </data>
+  <data name="label159.Text" xml:space="preserve">
+    <value>Límite inferior de presión ch2 1</value>
+  </data>
+  <data name="label160.Location" type="System.Drawing.Point, System.Drawing">
+    <value>43, 176</value>
+  </data>
+  <data name="label160.Size" type="System.Drawing.Size, System.Drawing">
+    <value>265, 16</value>
+  </data>
+  <data name="label160.Text" xml:space="preserve">
+    <value>Límite inferior del tráfico ch2 1</value>
+  </data>
+  <data name="label161.Location" type="System.Drawing.Point, System.Drawing">
+    <value>43, 100</value>
+  </data>
+  <data name="label161.Size" type="System.Drawing.Size, System.Drawing">
+    <value>240, 16</value>
+  </data>
+  <data name="label161.Text" xml:space="preserve">
+    <value>Ch2 1 límite máximo de tráfico</value>
+  </data>
+  <data name="label162.Location" type="System.Drawing.Point, System.Drawing">
+    <value>43, 32</value>
+  </data>
+  <data name="label162.Size" type="System.Drawing.Size, System.Drawing">
+    <value>278, 16</value>
+  </data>
+  <data name="label162.Text" xml:space="preserve">
+    <value>Tiempo de espera del tráfico ch2 1</value>
+  </data>
+  <data name="label163.Size" type="System.Drawing.Size, System.Drawing">
+    <value>238, 16</value>
+  </data>
+  <data name="label163.Text" xml:space="preserve">
+    <value>Horas extras de presión ch2 1</value>
+  </data>
+  <data name="uiGroupBox24.Location" type="System.Drawing.Point, System.Drawing">
+    <value>49, 318</value>
+  </data>
+  <data name="uiGroupBox24.Size" type="System.Drawing.Size, System.Drawing">
+    <value>509, 271</value>
+  </data>
+  <data name="uiGroupBox24.Text" xml:space="preserve">
+    <value>Límite superior e inferior de la presión de flujo</value>
+  </data>
+  <data name="label188.Size" type="System.Drawing.Size, System.Drawing">
+    <value>277, 16</value>
+  </data>
+  <data name="label188.Text" xml:space="preserve">
+    <value>Compensación de tensión de trabajo</value>
+  </data>
+  <data name="label189.Size" type="System.Drawing.Size, System.Drawing">
+    <value>321, 16</value>
+  </data>
+  <data name="label189.Text" xml:space="preserve">
+    <value>Límite inferior de la tensión de trabajo</value>
+  </data>
+  <data name="label190.Size" type="System.Drawing.Size, System.Drawing">
+    <value>297, 16</value>
+  </data>
+  <data name="label190.Text" xml:space="preserve">
+    <value>Límite superior de tensión de trabajo</value>
+  </data>
+  <data name="label193.Location" type="System.Drawing.Point, System.Drawing">
+    <value>42, 176</value>
+  </data>
+  <data name="label193.Size" type="System.Drawing.Size, System.Drawing">
+    <value>294, 16</value>
+  </data>
+  <data name="label193.Text" xml:space="preserve">
+    <value>Compensación de corriente de trabajo</value>
+  </data>
+  <data name="label194.Location" type="System.Drawing.Point, System.Drawing">
+    <value>42, 101</value>
+  </data>
+  <data name="label194.Size" type="System.Drawing.Size, System.Drawing">
+    <value>338, 16</value>
+  </data>
+  <data name="label194.Text" xml:space="preserve">
+    <value>Límite inferior de la corriente de trabajo</value>
+  </data>
+  <data name="label196.Location" type="System.Drawing.Point, System.Drawing">
+    <value>42, 32</value>
+  </data>
+  <data name="label196.Size" type="System.Drawing.Size, System.Drawing">
+    <value>338, 16</value>
+  </data>
+  <data name="label196.Text" xml:space="preserve">
+    <value>Límite superior de la corriente de trabajo</value>
+  </data>
+  <data name="uiGroupBox28.Location" type="System.Drawing.Point, System.Drawing">
+    <value>46, 36</value>
+  </data>
+  <data name="uiGroupBox28.Size" type="System.Drawing.Size, System.Drawing">
+    <value>521, 271</value>
+  </data>
+  <data name="uiGroupBox28.Text" xml:space="preserve">
+    <value>Límites superior e inferior de tensión y corriente</value>
+  </data>
+  <data name="uiGroupBox21.Location" type="System.Drawing.Point, System.Drawing">
+    <value>503, 5</value>
+  </data>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="uiGroupBox21.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>0, 32, 0, 0</value>
+  </data>
+  <data name="uiGroupBox21.Size" type="System.Drawing.Size, System.Drawing">
+    <value>588, 582</value>
+  </data>
+  <data name="uiGroupBox21.Text" xml:space="preserve">
+    <value>Configuración de los parámetros de prueba ch2</value>
+  </data>
+  <data name="label55.Size" type="System.Drawing.Size, System.Drawing">
+    <value>273, 16</value>
+  </data>
+  <data name="label55.Text" xml:space="preserve">
+    <value>CH1 1 1 límite superior de presión</value>
+  </data>
+  <data name="label56.Size" type="System.Drawing.Size, System.Drawing">
+    <value>273, 16</value>
+  </data>
+  <data name="label56.Text" xml:space="preserve">
+    <value>Límite inferior de presión CH1 1 1</value>
+  </data>
+  <data name="label29.Location" type="System.Drawing.Point, System.Drawing">
+    <value>43, 172</value>
+  </data>
+  <data name="label29.Size" type="System.Drawing.Size, System.Drawing">
+    <value>266, 16</value>
+  </data>
+  <data name="label29.Text" xml:space="preserve">
+    <value>Límite inferior del flujo CH1 1 1</value>
+  </data>
+  <data name="label62.Location" type="System.Drawing.Point, System.Drawing">
+    <value>41, 101</value>
+  </data>
+  <data name="label62.Size" type="System.Drawing.Size, System.Drawing">
+    <value>256, 16</value>
+  </data>
+  <data name="label62.Text" xml:space="preserve">
+    <value>CH1 1 1 límite máximo de tráfico</value>
+  </data>
+  <data name="label66.Location" type="System.Drawing.Point, System.Drawing">
+    <value>32, 32</value>
+  </data>
+  <data name="label66.Size" type="System.Drawing.Size, System.Drawing">
+    <value>277, 16</value>
+  </data>
+  <data name="label66.Text" xml:space="preserve">
+    <value>Compensación de tensión de trabajo</value>
+  </data>
+  <data name="label30.Size" type="System.Drawing.Size, System.Drawing">
+    <value>254, 16</value>
+  </data>
+  <data name="label30.Text" xml:space="preserve">
+    <value>CH1 1 1 horas extras de presión</value>
+  </data>
+  <data name="uiGroupBox11.Size" type="System.Drawing.Size, System.Drawing">
+    <value>466, 271</value>
+  </data>
+  <data name="uiGroupBox11.Text" xml:space="preserve">
+    <value>Límite superior e inferior de la presión de flujo</value>
+  </data>
+  <data name="label65.Location" type="System.Drawing.Point, System.Drawing">
+    <value>166, 188</value>
+  </data>
+  <data name="label65.Size" type="System.Drawing.Size, System.Drawing">
+    <value>277, 16</value>
+  </data>
+  <data name="label65.Text" xml:space="preserve">
+    <value>Compensación de tensión de trabajo</value>
+  </data>
+  <data name="label67.Location" type="System.Drawing.Point, System.Drawing">
+    <value>122, 117</value>
+  </data>
+  <data name="label67.Size" type="System.Drawing.Size, System.Drawing">
+    <value>321, 16</value>
+  </data>
+  <data name="label67.Text" xml:space="preserve">
+    <value>Límite inferior de la tensión de trabajo</value>
+  </data>
+  <data name="label68.Location" type="System.Drawing.Point, System.Drawing">
+    <value>165, 47</value>
+  </data>
+  <data name="label68.Size" type="System.Drawing.Size, System.Drawing">
+    <value>297, 16</value>
+  </data>
+  <data name="label68.Text" xml:space="preserve">
+    <value>Límite superior de tensión de trabajo</value>
+  </data>
+  <data name="label129.Location" type="System.Drawing.Point, System.Drawing">
+    <value>16, 172</value>
+  </data>
+  <data name="label129.Size" type="System.Drawing.Size, System.Drawing">
+    <value>294, 16</value>
+  </data>
+  <data name="label129.Text" xml:space="preserve">
+    <value>Compensación de corriente de trabajo</value>
+  </data>
+  <data name="label130.Location" type="System.Drawing.Point, System.Drawing">
+    <value>6, 101</value>
+  </data>
+  <data name="label130.Size" type="System.Drawing.Size, System.Drawing">
+    <value>338, 16</value>
+  </data>
+  <data name="label130.Text" xml:space="preserve">
+    <value>Límite inferior de la corriente de trabajo</value>
+  </data>
+  <data name="label132.Location" type="System.Drawing.Point, System.Drawing">
+    <value>6, 31</value>
+  </data>
+  <data name="label132.Size" type="System.Drawing.Size, System.Drawing">
+    <value>338, 16</value>
+  </data>
+  <data name="label132.Text" xml:space="preserve">
+    <value>Límite superior de la corriente de trabajo</value>
+  </data>
+  <data name="uiGroupBox18.Size" type="System.Drawing.Size, System.Drawing">
+    <value>487, 271</value>
+  </data>
+  <data name="uiGroupBox18.Text" xml:space="preserve">
+    <value>Límites superior e inferior de tensión y corriente</value>
+  </data>
+  <data name="uiGroupBox17.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>0, 32, 0, 0</value>
+  </data>
+  <data name="uiGroupBox17.Size" type="System.Drawing.Size, System.Drawing">
+    <value>471, 582</value>
+  </data>
+  <data name="uiGroupBox17.Text" xml:space="preserve">
+    <value>Configuración de los parámetros de prueba CH1</value>
+  </data>
+  <data name="tabPage5.Size" type="System.Drawing.Size, System.Drawing">
+    <value>1126, 1044</value>
+  </data>
+  <data name="tabPage5.Text" xml:space="preserve">
+    <value>Estanqueidad a la baja establecida</value>
+  </data>
+  <data name="label230.Size" type="System.Drawing.Size, System.Drawing">
+    <value>277, 16</value>
+  </data>
+  <data name="label230.Text" xml:space="preserve">
+    <value>Compensación de tensión de trabajo</value>
+  </data>
+  <data name="label231.Size" type="System.Drawing.Size, System.Drawing">
+    <value>321, 16</value>
+  </data>
+  <data name="label231.Text" xml:space="preserve">
+    <value>Límite inferior de la tensión de trabajo</value>
+  </data>
+  <data name="label232.Size" type="System.Drawing.Size, System.Drawing">
+    <value>297, 16</value>
+  </data>
+  <data name="label232.Text" xml:space="preserve">
+    <value>Límite superior de tensión de trabajo</value>
+  </data>
+  <data name="label235.Location" type="System.Drawing.Point, System.Drawing">
+    <value>27, 176</value>
+  </data>
+  <data name="label235.Size" type="System.Drawing.Size, System.Drawing">
+    <value>231, 16</value>
+  </data>
+  <data name="label235.Text" xml:space="preserve">
+    <value>Working current compensation</value>
+  </data>
+  <data name="label236.Location" type="System.Drawing.Point, System.Drawing">
+    <value>28, 101</value>
+  </data>
+  <data name="label236.Size" type="System.Drawing.Size, System.Drawing">
+    <value>338, 16</value>
+  </data>
+  <data name="label236.Text" xml:space="preserve">
+    <value>Límite inferior de la corriente de trabajo</value>
+  </data>
+  <data name="label238.Location" type="System.Drawing.Point, System.Drawing">
+    <value>28, 32</value>
+  </data>
+  <data name="label238.Size" type="System.Drawing.Size, System.Drawing">
+    <value>338, 16</value>
+  </data>
+  <data name="label238.Text" xml:space="preserve">
+    <value>Límite superior de la corriente de trabajo</value>
+  </data>
+  <data name="uiGroupBox40.Size" type="System.Drawing.Size, System.Drawing">
+    <value>554, 271</value>
+  </data>
+  <data name="uiGroupBox40.Text" xml:space="preserve">
+    <value>Límites superior e inferior de tensión y corriente</value>
+  </data>
+  <data name="label224.Size" type="System.Drawing.Size, System.Drawing">
+    <value>241, 16</value>
+  </data>
+  <data name="label224.Text" xml:space="preserve">
+    <value>Límite superior de presión ch2</value>
+  </data>
+  <data name="label225.Size" type="System.Drawing.Size, System.Drawing">
+    <value>241, 16</value>
+  </data>
+  <data name="label225.Text" xml:space="preserve">
+    <value>Límite inferior de presión ch2</value>
+  </data>
+  <data name="label226.Size" type="System.Drawing.Size, System.Drawing">
+    <value>222, 16</value>
+  </data>
+  <data name="label226.Text" xml:space="preserve">
+    <value>Horas extras de presión ch2</value>
+  </data>
+  <data name="uiGroupBox42.Size" type="System.Drawing.Size, System.Drawing">
+    <value>538, 246</value>
+  </data>
+  <data name="uiGroupBox42.Text" xml:space="preserve">
+    <value>Límite superior e inferior de la presión ch2</value>
+  </data>
+  <data name="RWDParamsSave.Location" type="System.Drawing.Point, System.Drawing">
+    <value>339, 603</value>
+  </data>
+  <data name="RWDParamsSave.Size" type="System.Drawing.Size, System.Drawing">
+    <value>159, 40</value>
+  </data>
+  <data name="RWDParamsSave.Text" xml:space="preserve">
+    <value>Guardar configuración</value>
+  </data>
+  <data name="uiGroupBox39.Location" type="System.Drawing.Point, System.Drawing">
+    <value>563, 14</value>
+  </data>
+  <data name="uiGroupBox39.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>0, 32, 0, 0</value>
+  </data>
+  <data name="uiGroupBox39.Size" type="System.Drawing.Size, System.Drawing">
+    <value>562, 525</value>
+  </data>
+  <data name="uiGroupBox39.Text" xml:space="preserve">
+    <value>CH2 test parameter settings</value>
+  </data>
+  <data name="label84.Size" type="System.Drawing.Size, System.Drawing">
+    <value>277, 16</value>
+  </data>
+  <data name="label84.Text" xml:space="preserve">
+    <value>Compensación de tensión de trabajo</value>
+  </data>
+  <data name="label85.Size" type="System.Drawing.Size, System.Drawing">
+    <value>321, 16</value>
+  </data>
+  <data name="label85.Text" xml:space="preserve">
+    <value>Límite inferior de la tensión de trabajo</value>
+  </data>
+  <data name="label86.Size" type="System.Drawing.Size, System.Drawing">
+    <value>297, 16</value>
+  </data>
+  <data name="label86.Text" xml:space="preserve">
+    <value>Límite superior de tensión de trabajo</value>
+  </data>
+  <data name="label123.Location" type="System.Drawing.Point, System.Drawing">
+    <value>48, 176</value>
+  </data>
+  <data name="label123.Size" type="System.Drawing.Size, System.Drawing">
+    <value>294, 16</value>
+  </data>
+  <data name="label123.Text" xml:space="preserve">
+    <value>Compensación de corriente de trabajo</value>
+  </data>
+  <data name="label124.Location" type="System.Drawing.Point, System.Drawing">
+    <value>51, 101</value>
+  </data>
+  <data name="label124.Size" type="System.Drawing.Size, System.Drawing">
+    <value>338, 16</value>
+  </data>
+  <data name="label124.Text" xml:space="preserve">
+    <value>Límite inferior de la corriente de trabajo</value>
+  </data>
+  <data name="label126.Location" type="System.Drawing.Point, System.Drawing">
+    <value>48, 32</value>
+  </data>
+  <data name="label126.Size" type="System.Drawing.Size, System.Drawing">
+    <value>338, 16</value>
+  </data>
+  <data name="label126.Text" xml:space="preserve">
+    <value>Límite superior de la corriente de trabajo</value>
+  </data>
+  <data name="uiGroupBox34.Size" type="System.Drawing.Size, System.Drawing">
+    <value>580, 271</value>
+  </data>
+  <data name="uiGroupBox34.Text" xml:space="preserve">
+    <value>Límites superior e inferior de tensión y corriente</value>
+  </data>
+  <data name="uiGroupBox26.Location" type="System.Drawing.Point, System.Drawing">
+    <value>485, 5</value>
+  </data>
+  <data name="uiGroupBox26.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>0, 32, 0, 0</value>
+  </data>
+  <data name="uiGroupBox26.Size" type="System.Drawing.Size, System.Drawing">
+    <value>609, 279</value>
+  </data>
+  <data name="uiGroupBox26.Text" xml:space="preserve">
+    <value>Configuración de los parámetros de prueba ch2</value>
+  </data>
+  <data name="FWDParamsSave.Location" type="System.Drawing.Point, System.Drawing">
+    <value>327, 631</value>
+  </data>
+  <data name="FWDParamsSave.Size" type="System.Drawing.Size, System.Drawing">
+    <value>227, 37</value>
+  </data>
+  <data name="FWDParamsSave.Text" xml:space="preserve">
+    <value>Guardar configuración</value>
+  </data>
+  <data name="uiGroupBox22.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>0, 32, 0, 0</value>
+  </data>
+  <data name="uiGroupBox22.Size" type="System.Drawing.Size, System.Drawing">
+    <value>430, 302</value>
+  </data>
+  <data name="uiGroupBox22.Text" xml:space="preserve">
+    <value>Configuración de los parámetros de prueba CH1</value>
+  </data>
+  <data name="LUnit.Location" type="System.Drawing.Point, System.Drawing">
+    <value>303, 305</value>
+  </data>
+  <data name="PUnit.Location" type="System.Drawing.Point, System.Drawing">
+    <value>303, 233</value>
+  </data>
+  <data name="CHKUnit.Location" type="System.Drawing.Point, System.Drawing">
+    <value>73, 352</value>
+  </data>
+  <data name="CHKUnit.Size" type="System.Drawing.Size, System.Drawing">
+    <value>336, 29</value>
+  </data>
+  <data name="CHKUnit.Text" xml:space="preserve">
+    <value>Unidad de presión de aire KGF / cm2</value>
+  </data>
+  <data name="label119.Location" type="System.Drawing.Point, System.Drawing">
+    <value>381, 152</value>
+  </data>
+  <data name="label119.Size" type="System.Drawing.Size, System.Drawing">
+    <value>55, 16</value>
+  </data>
+  <data name="label119.Text" xml:space="preserve">
+    <value>Unidad</value>
+  </data>
+  <data name="label118.Location" type="System.Drawing.Point, System.Drawing">
+    <value>381, 81</value>
+  </data>
+  <data name="label118.Size" type="System.Drawing.Size, System.Drawing">
+    <value>55, 16</value>
+  </data>
+  <data name="label118.Text" xml:space="preserve">
+    <value>Unidad</value>
+  </data>
+  <data name="Leaklowlimit.Location" type="System.Drawing.Point, System.Drawing">
+    <value>245, 146</value>
+  </data>
+  <data name="label117.Location" type="System.Drawing.Point, System.Drawing">
+    <value>179, 306</value>
+  </data>
+  <data name="Leaktoplimit.Location" type="System.Drawing.Point, System.Drawing">
+    <value>245, 75</value>
+  </data>
+  <data name="label116.Location" type="System.Drawing.Point, System.Drawing">
+    <value>183, 227</value>
+  </data>
+  <data name="BalanPreMin.Location" type="System.Drawing.Point, System.Drawing">
+    <value>37, 306</value>
+  </data>
+  <data name="label115.Location" type="System.Drawing.Point, System.Drawing">
+    <value>173, 152</value>
+  </data>
+  <data name="label115.Size" type="System.Drawing.Size, System.Drawing">
+    <value>55, 16</value>
+  </data>
+  <data name="label115.Text" xml:space="preserve">
+    <value>Unidad</value>
+  </data>
+  <data name="BalanPreMax.Location" type="System.Drawing.Point, System.Drawing">
+    <value>47, 221</value>
+  </data>
+  <data name="label114.Location" type="System.Drawing.Point, System.Drawing">
+    <value>173, 81</value>
+  </data>
+  <data name="label114.Size" type="System.Drawing.Size, System.Drawing">
+    <value>55, 16</value>
+  </data>
+  <data name="label114.Text" xml:space="preserve">
+    <value>Unidad</value>
+  </data>
+  <data name="FPlowlimit.Location" type="System.Drawing.Point, System.Drawing">
+    <value>38, 146</value>
+  </data>
+  <data name="FPtoplimit.Location" type="System.Drawing.Point, System.Drawing">
+    <value>37, 75</value>
+  </data>
+  <data name="label106.Location" type="System.Drawing.Point, System.Drawing">
+    <value>259, 214</value>
+  </data>
+  <data name="label106.Size" type="System.Drawing.Size, System.Drawing">
+    <value>181, 15</value>
+  </data>
+  <data name="label106.Text" xml:space="preserve">
+    <value>Dispositivo de presión</value>
+  </data>
+  <data name="label107.Location" type="System.Drawing.Point, System.Drawing">
+    <value>300, 285</value>
+  </data>
+  <data name="label107.Size" type="System.Drawing.Size, System.Drawing">
+    <value>119, 15</value>
+  </data>
+  <data name="label107.Text" xml:space="preserve">
+    <value>Unidad de fuga</value>
+  </data>
+  <data name="label108.Size" type="System.Drawing.Size, System.Drawing">
+    <value>281, 15</value>
+  </data>
+  <data name="label108.Text" xml:space="preserve">
+    <value>Límite superior de presión inflable</value>
+  </data>
+  <data name="label109.Location" type="System.Drawing.Point, System.Drawing">
+    <value>34, 109</value>
+  </data>
+  <data name="label109.Size" type="System.Drawing.Size, System.Drawing">
+    <value>335, 15</value>
+  </data>
+  <data name="label109.Text" xml:space="preserve">
+    <value>Límite inferior de la presión de inflación</value>
+  </data>
+  <data name="label110.Location" type="System.Drawing.Point, System.Drawing">
+    <value>242, 55</value>
+  </data>
+  <data name="label110.Size" type="System.Drawing.Size, System.Drawing">
+    <value>195, 15</value>
+  </data>
+  <data name="label110.Text" xml:space="preserve">
+    <value>Límite superior de fugas</value>
+  </data>
+  <data name="label120.Size" type="System.Drawing.Size, System.Drawing">
+    <value>187, 15</value>
+  </data>
+  <data name="label120.Text" xml:space="preserve">
+    <value>Compensación de presión</value>
+  </data>
+  <data name="ParaNum.Items" xml:space="preserve">
+    <value>1 caudal</value>
+  </data>
+  <data name="ParaNum.Items1" xml:space="preserve">
+    <value>2 estanqueidad del instrumento</value>
+  </data>
+  <data name="ParaNum.Items2" xml:space="preserve">
+    <value>3 bomba de válvula hermética</value>
+  </data>
+  <data name="ParaNum.Items3" xml:space="preserve">
+    <value>4 A1 / D1 hermético</value>
+  </data>
+  <data name="ParaNum.Items4" xml:space="preserve">
+    <value>5 A2 / D2 hermético</value>
+  </data>
+  <data name="ParaNum.Items5" xml:space="preserve">
+    <value>6b1 / E1 hermético</value>
+  </data>
+  <data name="ParaNum.Items6" xml:space="preserve">
+    <value>7 B2 / E2 hermético</value>
+  </data>
+  <data name="ParaNum.Items7" xml:space="preserve">
+    <value>8 C1 / f1 hermético</value>
+  </data>
+  <data name="ParaNum.Items8" xml:space="preserve">
+    <value>9 C2 / f2 hermético</value>
+  </data>
+  <data name="MachineNum.Items" xml:space="preserve">
+    <value>1 estación de trabajo izquierda CH1 - 1</value>
+  </data>
+  <data name="MachineNum.Items1" xml:space="preserve">
+    <value>2 estación de trabajo izquierda CH1 - 2</value>
+  </data>
+  <data name="MachineNum.Items2" xml:space="preserve">
+    <value>CH1 - 2</value>
+  </data>
+  <data name="MachineNum.Items3" xml:space="preserve">
+    <value>4 estación de trabajo derecha ch2 - 2</value>
+  </data>
+  <data name="BtnKeep.Location" type="System.Drawing.Point, System.Drawing">
+    <value>732, 499</value>
+  </data>
+  <data name="BtnKeep.Text" xml:space="preserve">
+    <value>Guardar parámetros</value>
+  </data>
+  <data name="Compensation.Text" xml:space="preserve">
+    <value>Compensación de presión</value>
+  </data>
+  <data name="uiGroupBox16.Location" type="System.Drawing.Point, System.Drawing">
+    <value>1116, 40</value>
+  </data>
+  <data name="uiGroupBox16.Size" type="System.Drawing.Size, System.Drawing">
+    <value>305, 313</value>
+  </data>
+  <data name="uiGroupBox16.Text" xml:space="preserve">
+    <value>Compensación de presión</value>
+  </data>
+  <data name="label111.Location" type="System.Drawing.Point, System.Drawing">
+    <value>20, 194</value>
+  </data>
+  <data name="label111.Size" type="System.Drawing.Size, System.Drawing">
+    <value>457, 15</value>
+  </data>
+  <data name="label111.Text" xml:space="preserve">
+    <value>Límite superior de la diferencia de presión de equilibrio</value>
+  </data>
+  <data name="label112.Location" type="System.Drawing.Point, System.Drawing">
+    <value>20, 269</value>
+  </data>
+  <data name="label112.Size" type="System.Drawing.Size, System.Drawing">
+    <value>457, 15</value>
+  </data>
+  <data name="label112.Text" xml:space="preserve">
+    <value>Límite inferior de la diferencia de presión de equilibrio</value>
+  </data>
+  <data name="label113.Location" type="System.Drawing.Point, System.Drawing">
+    <value>242, 126</value>
+  </data>
+  <data name="label113.Size" type="System.Drawing.Size, System.Drawing">
+    <value>211, 15</value>
+  </data>
+  <data name="label113.Text" xml:space="preserve">
+    <value>Límite inferior de la fuga</value>
+  </data>
+  <data name="uiGroupBox15.Size" type="System.Drawing.Size, System.Drawing">
+    <value>492, 399</value>
+  </data>
+  <data name="uiGroupBox15.Text" xml:space="preserve">
+    <value>Parámetros de presión</value>
+  </data>
+  <data name="BtnUpload.Location" type="System.Drawing.Point, System.Drawing">
+    <value>340, 421</value>
+  </data>
+  <data name="BtnUpload.Size" type="System.Drawing.Size, System.Drawing">
+    <value>235, 35</value>
+  </data>
+  <data name="BtnUpload.Text" xml:space="preserve">
+    <value>Modificar el zumbador</value>
+  </data>
+  <data name="label87.Size" type="System.Drawing.Size, System.Drawing">
+    <value>227, 20</value>
+  </data>
+  <data name="label87.Text" xml:space="preserve">
+    <value>Número del instrumento</value>
+  </data>
+  <data name="label90.Size" type="System.Drawing.Size, System.Drawing">
+    <value>165, 15</value>
+  </data>
+  <data name="label90.Text" xml:space="preserve">
+    <value>Liberación 2 retraso</value>
+  </data>
+  <data name="label97.Size" type="System.Drawing.Size, System.Drawing">
+    <value>79, 15</value>
+  </data>
+  <data name="label97.Text" xml:space="preserve">
+    <value>Retraso 1</value>
+  </data>
+  <data name="label91.Size" type="System.Drawing.Size, System.Drawing">
+    <value>167, 15</value>
+  </data>
+  <data name="label91.Text" xml:space="preserve">
+    <value>Tiempo de equilibrio</value>
+  </data>
+  <data name="label96.Size" type="System.Drawing.Size, System.Drawing">
+    <value>79, 15</value>
+  </data>
+  <data name="label96.Text" xml:space="preserve">
+    <value>Retraso 2</value>
+  </data>
+  <data name="label92.Size" type="System.Drawing.Size, System.Drawing">
+    <value>157, 15</value>
+  </data>
+  <data name="label92.Text" xml:space="preserve">
+    <value>Tiempo de inflación</value>
+  </data>
+  <data name="label95.Size" type="System.Drawing.Size, System.Drawing">
+    <value>159, 15</value>
+  </data>
+  <data name="label95.Text" xml:space="preserve">
+    <value>Volumen equivalente</value>
+  </data>
+  <data name="label93.Size" type="System.Drawing.Size, System.Drawing">
+    <value>173, 15</value>
+  </data>
+  <data name="label93.Text" xml:space="preserve">
+    <value>Tiempo de detección 1</value>
+  </data>
+  <data name="label94.Size" type="System.Drawing.Size, System.Drawing">
+    <value>135, 15</value>
+  </data>
+  <data name="label94.Text" xml:space="preserve">
+    <value>Tiempo de escape</value>
+  </data>
+  <data name="uiGroupBox14.Location" type="System.Drawing.Point, System.Drawing">
+    <value>224, 40</value>
+  </data>
+  <data name="uiGroupBox14.Size" type="System.Drawing.Size, System.Drawing">
+    <value>384, 313</value>
+  </data>
+  <data name="uiGroupBox14.Text" xml:space="preserve">
+    <value>Parámetros de tiempo</value>
+  </data>
+  <data name="label89.Size" type="System.Drawing.Size, System.Drawing">
+    <value>207, 20</value>
+  </data>
+  <data name="label89.Text" xml:space="preserve">
+    <value>Nombre del parámetro</value>
+  </data>
+  <data name="label218.Size" type="System.Drawing.Size, System.Drawing">
+    <value>241, 16</value>
+  </data>
+  <data name="label218.Text" xml:space="preserve">
+    <value>Límite superior de presión CH1</value>
+  </data>
+  <data name="label219.Size" type="System.Drawing.Size, System.Drawing">
+    <value>241, 16</value>
+  </data>
+  <data name="label219.Text" xml:space="preserve">
+    <value>Límite inferior de presión CH1</value>
+  </data>
+  <data name="label220.Size" type="System.Drawing.Size, System.Drawing">
+    <value>222, 16</value>
+  </data>
+  <data name="label220.Text" xml:space="preserve">
+    <value>Horas extras de presión CH1</value>
+  </data>
+  <data name="uiGroupBox38.Size" type="System.Drawing.Size, System.Drawing">
+    <value>494, 271</value>
+  </data>
+  <data name="uiGroupBox38.Text" xml:space="preserve">
+    <value>Límite superior e inferior de la presión CH1</value>
+  </data>
+  <data name="label206.Size" type="System.Drawing.Size, System.Drawing">
+    <value>277, 16</value>
+  </data>
+  <data name="label206.Text" xml:space="preserve">
+    <value>Compensación de tensión de trabajo</value>
+  </data>
+  <data name="label207.Location" type="System.Drawing.Point, System.Drawing">
+    <value>192, 117</value>
+  </data>
+  <data name="label207.Size" type="System.Drawing.Size, System.Drawing">
+    <value>321, 16</value>
+  </data>
+  <data name="label207.Text" xml:space="preserve">
+    <value>Límite inferior de la tensión de trabajo</value>
+  </data>
+  <data name="label208.Size" type="System.Drawing.Size, System.Drawing">
+    <value>297, 16</value>
+  </data>
+  <data name="label208.Text" xml:space="preserve">
+    <value>Límite superior de tensión de trabajo</value>
+  </data>
+  <data name="label211.Location" type="System.Drawing.Point, System.Drawing">
+    <value>30, 176</value>
+  </data>
+  <data name="label211.Size" type="System.Drawing.Size, System.Drawing">
+    <value>294, 16</value>
+  </data>
+  <data name="label211.Text" xml:space="preserve">
+    <value>Compensación de corriente de trabajo</value>
+  </data>
+  <data name="label212.Location" type="System.Drawing.Point, System.Drawing">
+    <value>28, 101</value>
+  </data>
+  <data name="label212.Size" type="System.Drawing.Size, System.Drawing">
+    <value>338, 16</value>
+  </data>
+  <data name="label212.Text" xml:space="preserve">
+    <value>Límite inferior de la corriente de trabajo</value>
+  </data>
+  <data name="label214.Location" type="System.Drawing.Point, System.Drawing">
+    <value>28, 32</value>
+  </data>
+  <data name="label214.Size" type="System.Drawing.Size, System.Drawing">
+    <value>338, 16</value>
+  </data>
+  <data name="label214.Text" xml:space="preserve">
+    <value>Límite superior de la corriente de trabajo</value>
+  </data>
+  <data name="uiGroupBox36.Size" type="System.Drawing.Size, System.Drawing">
+    <value>529, 271</value>
+  </data>
+  <data name="uiGroupBox36.Text" xml:space="preserve">
+    <value>Límites superior e inferior de tensión y corriente</value>
+  </data>
+  <data name="uiGroupBox35.Location" type="System.Drawing.Point, System.Drawing">
+    <value>4, 15</value>
+  </data>
+  <data name="uiGroupBox35.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>0, 32, 0, 0</value>
+  </data>
+  <data name="uiGroupBox35.Size" type="System.Drawing.Size, System.Drawing">
+    <value>537, 525</value>
+  </data>
+  <data name="uiGroupBox35.Text" xml:space="preserve">
+    <value>Configuración de los parámetros de prueba CH1</value>
+  </data>
+  <data name="ChkBee.Size" type="System.Drawing.Size, System.Drawing">
+    <value>125, 28</value>
+  </data>
+  <data name="ChkBee.Text" xml:space="preserve">
+    <value>Zumbador</value>
+  </data>
+  <data name="label88.Size" type="System.Drawing.Size, System.Drawing">
+    <value>205, 20</value>
+  </data>
+  <data name="label88.Text" xml:space="preserve">
+    <value>Número de parámetros</value>
+  </data>
+  <data name="uiGroupBox13.Location" type="System.Drawing.Point, System.Drawing">
+    <value>4, 14</value>
+  </data>
+  <data name="uiGroupBox13.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>0, 32, 0, 0</value>
+  </data>
+  <data name="uiGroupBox13.Size" type="System.Drawing.Size, System.Drawing">
+    <value>1436, 531</value>
+  </data>
+  <data name="uiGroupBox13.Text" xml:space="preserve">
+    <value>Configuración de los parámetros del instrumento</value>
+  </data>
+  <data name="SendText.Location" type="System.Drawing.Point, System.Drawing">
+    <value>119, 498</value>
+  </data>
+  <data name="SendText.Size" type="System.Drawing.Size, System.Drawing">
+    <value>245, 78</value>
+  </data>
+  <data name="tabPage3.Size" type="System.Drawing.Size, System.Drawing">
+    <value>1460, 1045</value>
+  </data>
+  <data name="tabPage3.Text" xml:space="preserve">
+    <value>Configuración de los parámetros del instrumento</value>
+  </data>
+  <data name="RUPParamsCopy.Location" type="System.Drawing.Point, System.Drawing">
+    <value>694, 835</value>
+  </data>
+  <data name="RUPParamsCopy.Size" type="System.Drawing.Size, System.Drawing">
+    <value>122, 40</value>
+  </data>
+  <data name="RUPParamsCopy.Text" xml:space="preserve">
+    <value>Right Copy</value>
+  </data>
+  <data name="UPParamsSave.Location" type="System.Drawing.Point, System.Drawing">
+    <value>424, 835</value>
+  </data>
+  <data name="UPParamsSave.Size" type="System.Drawing.Size, System.Drawing">
+    <value>233, 37</value>
+  </data>
+  <data name="UPParamsSave.Text" xml:space="preserve">
+    <value>Guardar configuración</value>
+  </data>
+  <data name="LUPParamsCopy.Location" type="System.Drawing.Point, System.Drawing">
+    <value>226, 835</value>
+  </data>
+  <data name="LUPParamsCopy.Size" type="System.Drawing.Size, System.Drawing">
+    <value>122, 40</value>
+  </data>
+  <data name="label179.Size" type="System.Drawing.Size, System.Drawing">
+    <value>273, 16</value>
+  </data>
+  <data name="label179.Text" xml:space="preserve">
+    <value>Límite superior de presión ch2 2 2</value>
+  </data>
+  <data name="label180.Size" type="System.Drawing.Size, System.Drawing">
+    <value>273, 16</value>
+  </data>
+  <data name="label180.Text" xml:space="preserve">
+    <value>Límite inferior de presión ch2 2 2</value>
+  </data>
+  <data name="label181.Location" type="System.Drawing.Point, System.Drawing">
+    <value>40, 172</value>
+  </data>
+  <data name="label181.Size" type="System.Drawing.Size, System.Drawing">
+    <value>281, 16</value>
+  </data>
+  <data name="label181.Text" xml:space="preserve">
+    <value>Límite inferior del tráfico ch2 2 2</value>
+  </data>
+  <data name="label182.Location" type="System.Drawing.Point, System.Drawing">
+    <value>46, 101</value>
+  </data>
+  <data name="label182.Size" type="System.Drawing.Size, System.Drawing">
+    <value>240, 16</value>
+  </data>
+  <data name="label182.Text" xml:space="preserve">
+    <value>Ch2 2 límite máximo de tráfico</value>
+  </data>
+  <data name="label183.Location" type="System.Drawing.Point, System.Drawing">
+    <value>49, 32</value>
+  </data>
+  <data name="label183.Size" type="System.Drawing.Size, System.Drawing">
+    <value>294, 16</value>
+  </data>
+  <data name="label183.Text" xml:space="preserve">
+    <value>Tiempo de espera del tráfico ch2 2 2</value>
+  </data>
+  <data name="label184.Size" type="System.Drawing.Size, System.Drawing">
+    <value>254, 16</value>
+  </data>
+  <data name="label184.Text" xml:space="preserve">
+    <value>Horas extras de presión ch2 2 2</value>
+  </data>
+  <data name="uiGroupBox27.Size" type="System.Drawing.Size, System.Drawing">
+    <value>576, 271</value>
+  </data>
+  <data name="uiGroupBox27.Text" xml:space="preserve">
+    <value>Límite superior e inferior de la presión de flujo</value>
+  </data>
+  <data name="label151.Location" type="System.Drawing.Point, System.Drawing">
+    <value>205, 192</value>
+  </data>
+  <data name="label151.Size" type="System.Drawing.Size, System.Drawing">
+    <value>357, 16</value>
+  </data>
+  <data name="label151.Text" xml:space="preserve">
+    <value>Compensación de la relación de corriente ch2</value>
+  </data>
+  <data name="label152.Location" type="System.Drawing.Point, System.Drawing">
+    <value>24, 176</value>
+  </data>
+  <data name="label152.Size" type="System.Drawing.Size, System.Drawing">
+    <value>340, 16</value>
+  </data>
+  <data name="label152.Text" xml:space="preserve">
+    <value>Compensación de la relación de presión ch2</value>
+  </data>
+  <data name="CH2Cont_PressMin.Location" type="System.Drawing.Point, System.Drawing">
+    <value>49, 138</value>
+  </data>
+  <data name="CH2Cont_PressMax.Location" type="System.Drawing.Point, System.Drawing">
+    <value>46, 66</value>
+  </data>
+  <data name="label153.Location" type="System.Drawing.Point, System.Drawing">
+    <value>205, 117</value>
+  </data>
+  <data name="label153.Size" type="System.Drawing.Size, System.Drawing">
+    <value>377, 16</value>
+  </data>
+  <data name="label153.Text" xml:space="preserve">
+    <value>Límite inferior de la relación de corriente ch2</value>
+  </data>
+  <data name="label155.Location" type="System.Drawing.Point, System.Drawing">
+    <value>205, 48</value>
+  </data>
+  <data name="label155.Size" type="System.Drawing.Size, System.Drawing">
+    <value>377, 16</value>
+  </data>
+  <data name="label155.Text" xml:space="preserve">
+    <value>Límite superior de la relación de corriente ch2</value>
+  </data>
+  <data name="label156.Location" type="System.Drawing.Point, System.Drawing">
+    <value>24, 31</value>
+  </data>
+  <data name="label156.Size" type="System.Drawing.Size, System.Drawing">
+    <value>360, 16</value>
+  </data>
+  <data name="label156.Text" xml:space="preserve">
+    <value>Límite superior de la relación de presión ch2</value>
+  </data>
+  <data name="label157.Location" type="System.Drawing.Point, System.Drawing">
+    <value>24, 101</value>
+  </data>
+  <data name="label157.Size" type="System.Drawing.Size, System.Drawing">
+    <value>360, 16</value>
+  </data>
+  <data name="label157.Text" xml:space="preserve">
+    <value>Límite inferior de la relación de presión ch2</value>
+  </data>
+  <data name="uiGroupBox23.Size" type="System.Drawing.Size, System.Drawing">
+    <value>635, 271</value>
+  </data>
+  <data name="uiGroupBox23.Text" xml:space="preserve">
+    <value>Límite superior e inferior de la tasa</value>
+  </data>
+  <data name="label167.Size" type="System.Drawing.Size, System.Drawing">
+    <value>294, 16</value>
+  </data>
+  <data name="label167.Text" xml:space="preserve">
+    <value>Compensación de corriente de trabajo</value>
+  </data>
+  <data name="label168.Size" type="System.Drawing.Size, System.Drawing">
+    <value>321, 16</value>
+  </data>
+  <data name="label168.Text" xml:space="preserve">
+    <value>Límite inferior de la tensión de trabajo</value>
+  </data>
+  <data name="label169.Size" type="System.Drawing.Size, System.Drawing">
+    <value>297, 16</value>
+  </data>
+  <data name="label169.Text" xml:space="preserve">
+    <value>Límite superior de tensión de trabajo</value>
+  </data>
+  <data name="label172.Location" type="System.Drawing.Point, System.Drawing">
+    <value>49, 172</value>
+  </data>
+  <data name="label172.Size" type="System.Drawing.Size, System.Drawing">
+    <value>294, 16</value>
+  </data>
+  <data name="label172.Text" xml:space="preserve">
+    <value>Compensación de corriente de trabajo</value>
+  </data>
+  <data name="label173.Location" type="System.Drawing.Point, System.Drawing">
+    <value>46, 101</value>
+  </data>
+  <data name="label173.Size" type="System.Drawing.Size, System.Drawing">
+    <value>338, 16</value>
+  </data>
+  <data name="label173.Text" xml:space="preserve">
+    <value>Límite inferior de la corriente de trabajo</value>
+  </data>
+  <data name="label175.Location" type="System.Drawing.Point, System.Drawing">
+    <value>46, 31</value>
+  </data>
+  <data name="label175.Size" type="System.Drawing.Size, System.Drawing">
+    <value>338, 16</value>
+  </data>
+  <data name="label175.Text" xml:space="preserve">
+    <value>Límite superior de la corriente de trabajo</value>
+  </data>
+  <data name="uiGroupBox25.Size" type="System.Drawing.Size, System.Drawing">
+    <value>605, 271</value>
+  </data>
+  <data name="uiGroupBox25.Text" xml:space="preserve">
+    <value>Límites superior e inferior de tensión y corriente</value>
+  </data>
+  <data name="uiGroupBox12.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>0, 32, 0, 0</value>
+  </data>
+  <data name="uiGroupBox12.Size" type="System.Drawing.Size, System.Drawing">
+    <value>613, 813</value>
+  </data>
+  <data name="uiGroupBox12.Text" xml:space="preserve">
+    <value>Configuración de los parámetros de prueba ch2</value>
+  </data>
+  <data name="label48.Location" type="System.Drawing.Point, System.Drawing">
+    <value>54, 101</value>
+  </data>
+  <data name="label48.Size" type="System.Drawing.Size, System.Drawing">
+    <value>240, 16</value>
+  </data>
+  <data name="label48.Text" xml:space="preserve">
+    <value>CH1 2 límite máximo de tráfico</value>
+  </data>
+  <data name="label59.Location" type="System.Drawing.Point, System.Drawing">
+    <value>45, 32</value>
+  </data>
+  <data name="label59.Size" type="System.Drawing.Size, System.Drawing">
+    <value>270, 16</value>
+  </data>
+  <data name="label59.Text" xml:space="preserve">
+    <value>CH1 2 tiempo de espera de tráfico</value>
+  </data>
+  <data name="label35.Location" type="System.Drawing.Point, System.Drawing">
+    <value>39, 172</value>
+  </data>
+  <data name="label35.Size" type="System.Drawing.Size, System.Drawing">
+    <value>215, 16</value>
+  </data>
+  <data name="label35.Text" xml:space="preserve">
+    <value>CH1_ 2 Lower limit of flow</value>
+  </data>
+  <data name="label31.Size" type="System.Drawing.Size, System.Drawing">
+    <value>257, 16</value>
+  </data>
+  <data name="label31.Text" xml:space="preserve">
+    <value>CH1 2 límite superior de presión</value>
+  </data>
+  <data name="label60.Size" type="System.Drawing.Size, System.Drawing">
+    <value>238, 16</value>
+  </data>
+  <data name="label60.Text" xml:space="preserve">
+    <value>CH1 2 horas extras de presión</value>
+  </data>
+  <data name="label33.Size" type="System.Drawing.Size, System.Drawing">
+    <value>257, 16</value>
+  </data>
+  <data name="label33.Text" xml:space="preserve">
+    <value>Límite inferior de presión CH1 2</value>
+  </data>
+  <data name="uiGroupBox20.Size" type="System.Drawing.Size, System.Drawing">
+    <value>479, 271</value>
+  </data>
+  <data name="uiGroupBox20.Text" xml:space="preserve">
+    <value>Límite superior e inferior de la presión de flujo</value>
+  </data>
+  <data name="label57.Location" type="System.Drawing.Point, System.Drawing">
+    <value>74, 188</value>
+  </data>
+  <data name="label57.Size" type="System.Drawing.Size, System.Drawing">
+    <value>357, 16</value>
+  </data>
+  <data name="label57.Text" xml:space="preserve">
+    <value>Compensación de la relación de corriente CH1</value>
+  </data>
+  <data name="CH1Cont_Pre_Compen.Location" type="System.Drawing.Point, System.Drawing">
+    <value>25, 209</value>
+  </data>
+  <data name="label58.Location" type="System.Drawing.Point, System.Drawing">
+    <value>22, 172</value>
+  </data>
+  <data name="label58.Size" type="System.Drawing.Size, System.Drawing">
+    <value>340, 16</value>
+  </data>
+  <data name="label58.Text" xml:space="preserve">
+    <value>Compensación de la relación de presión CH1</value>
+  </data>
+  <data name="CH1Cont_PressMin.Location" type="System.Drawing.Point, System.Drawing">
+    <value>25, 138</value>
+  </data>
+  <data name="CH1Cont_PressMax.Location" type="System.Drawing.Point, System.Drawing">
+    <value>25, 66</value>
+  </data>
+  <data name="label135.Location" type="System.Drawing.Point, System.Drawing">
+    <value>65, 117</value>
+  </data>
+  <data name="label135.Size" type="System.Drawing.Size, System.Drawing">
+    <value>377, 16</value>
+  </data>
+  <data name="label135.Text" xml:space="preserve">
+    <value>Límite inferior de la relación de corriente CH1</value>
+  </data>
+  <data name="label136.Location" type="System.Drawing.Point, System.Drawing">
+    <value>54, 48</value>
+  </data>
+  <data name="label136.Size" type="System.Drawing.Size, System.Drawing">
+    <value>377, 16</value>
+  </data>
+  <data name="label136.Text" xml:space="preserve">
+    <value>Límite superior de la relación de corriente CH1</value>
+  </data>
+  <data name="label137.Location" type="System.Drawing.Point, System.Drawing">
+    <value>23, 32</value>
+  </data>
+  <data name="label137.Size" type="System.Drawing.Size, System.Drawing">
+    <value>360, 16</value>
+  </data>
+  <data name="label137.Text" xml:space="preserve">
+    <value>Límite superior de la relación de presión CH1</value>
+  </data>
+  <data name="label138.Location" type="System.Drawing.Point, System.Drawing">
+    <value>22, 100</value>
+  </data>
+  <data name="label138.Size" type="System.Drawing.Size, System.Drawing">
+    <value>360, 16</value>
+  </data>
+  <data name="label138.Text" xml:space="preserve">
+    <value>Límite inferior de la relación de presión CH1</value>
+  </data>
+  <data name="uiGroupBox19.Size" type="System.Drawing.Size, System.Drawing">
+    <value>479, 271</value>
+  </data>
+  <data name="uiGroupBox19.Text" xml:space="preserve">
+    <value>Límite superior e inferior de la tasa</value>
+  </data>
+  <data name="label52.Location" type="System.Drawing.Point, System.Drawing">
+    <value>154, 193</value>
+  </data>
+  <data name="label52.Size" type="System.Drawing.Size, System.Drawing">
+    <value>277, 16</value>
+  </data>
+  <data name="label52.Text" xml:space="preserve">
+    <value>Compensación de tensión de trabajo</value>
+  </data>
+  <data name="label38.Location" type="System.Drawing.Point, System.Drawing">
+    <value>123, 118</value>
+  </data>
+  <data name="label38.Size" type="System.Drawing.Size, System.Drawing">
+    <value>321, 16</value>
+  </data>
+  <data name="label38.Text" xml:space="preserve">
+    <value>Límite inferior de la tensión de trabajo</value>
+  </data>
+  <data name="label40.Size" type="System.Drawing.Size, System.Drawing">
+    <value>247, 16</value>
+  </data>
+  <data name="label40.Text" xml:space="preserve">
+    <value>Upper limit of working voltage</value>
+  </data>
+  <data name="label44.Location" type="System.Drawing.Point, System.Drawing">
+    <value>45, 176</value>
+  </data>
+  <data name="label44.Size" type="System.Drawing.Size, System.Drawing">
+    <value>294, 16</value>
+  </data>
+  <data name="label44.Text" xml:space="preserve">
+    <value>Compensación de corriente de trabajo</value>
+  </data>
+  <data name="label41.Location" type="System.Drawing.Point, System.Drawing">
+    <value>45, 102</value>
+  </data>
+  <data name="label41.Size" type="System.Drawing.Size, System.Drawing">
+    <value>338, 16</value>
+  </data>
+  <data name="label41.Text" xml:space="preserve">
+    <value>Límite inferior de la corriente de trabajo</value>
+  </data>
+  <data name="label54.Location" type="System.Drawing.Point, System.Drawing">
+    <value>45, 32</value>
+  </data>
+  <data name="label54.Size" type="System.Drawing.Size, System.Drawing">
+    <value>338, 16</value>
+  </data>
+  <data name="label54.Text" xml:space="preserve">
+    <value>Límite superior de la corriente de trabajo</value>
+  </data>
+  <data name="uiGroupBox10.Size" type="System.Drawing.Size, System.Drawing">
+    <value>469, 271</value>
+  </data>
+  <data name="uiGroupBox10.Text" xml:space="preserve">
+    <value>Límites superior e inferior de tensión y corriente</value>
+  </data>
+  <data name="uiGroupBox9.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>0, 32, 0, 0</value>
+  </data>
+  <data name="uiGroupBox9.Size" type="System.Drawing.Size, System.Drawing">
+    <value>487, 803</value>
+  </data>
+  <data name="uiGroupBox9.Text" xml:space="preserve">
+    <value>Configuración de los parámetros de prueba CH1</value>
+  </data>
+  <data name="tabPage4.Size" type="System.Drawing.Size, System.Drawing">
+    <value>1126, 1044</value>
+  </data>
+  <data name="tabPage4.Text" xml:space="preserve">
+    <value>Estanqueidad superior establecida</value>
+  </data>
+  <data name="uiGroupBox41.Location" type="System.Drawing.Point, System.Drawing">
+    <value>23, 332</value>
+  </data>
+  <data name="uiGroupBox41.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>0, 30, 0, 0</value>
+  </data>
+  <data name="uiGroupBox41.Size" type="System.Drawing.Size, System.Drawing">
+    <value>344, 250</value>
+  </data>
+  <data name="uiGroupBox33.Location" type="System.Drawing.Point, System.Drawing">
+    <value>467, 332</value>
+  </data>
+  <data name="uiGroupBox33.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>0, 30, 0, 0</value>
+  </data>
+  <data name="uiGroupBox33.Size" type="System.Drawing.Size, System.Drawing">
+    <value>344, 250</value>
+  </data>
+  <data name="uiGroupBox37.Location" type="System.Drawing.Point, System.Drawing">
+    <value>467, 333</value>
+  </data>
+  <data name="uiGroupBox37.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>0, 30, 0, 0</value>
+  </data>
+  <data name="uiGroupBox37.Size" type="System.Drawing.Size, System.Drawing">
+    <value>344, 250</value>
+  </data>
+  <data name="RFWDParamsCopy.Location" type="System.Drawing.Point, System.Drawing">
+    <value>667, 297</value>
+  </data>
+  <data name="RFWDParamsCopy.Size" type="System.Drawing.Size, System.Drawing">
+    <value>122, 40</value>
+  </data>
+  <data name="RFWDParamsCopy.Text" xml:space="preserve">
+    <value>Right Copy</value>
+  </data>
+  <data name="LFWDParamsCopy.Location" type="System.Drawing.Point, System.Drawing">
+    <value>141, 297</value>
+  </data>
+  <data name="LFWDParamsCopy.Size" type="System.Drawing.Size, System.Drawing">
+    <value>201, 37</value>
+  </data>
+  <data name="LFWDParamsCopy.Text" xml:space="preserve">
+    <value>Copia izquierda</value>
+  </data>
+  <data name="tabPage6.Size" type="System.Drawing.Size, System.Drawing">
+    <value>1126, 1044</value>
+  </data>
+  <data name="tabPage6.Text" xml:space="preserve">
+    <value>Configuración de la misma prueba de carga</value>
+  </data>
+  <data name="PRWDParamsCopy.Location" type="System.Drawing.Point, System.Drawing">
+    <value>522, 603</value>
+  </data>
+  <data name="PRWDParamsCopy.Size" type="System.Drawing.Size, System.Drawing">
+    <value>122, 40</value>
+  </data>
+  <data name="PRWDParamsCopy.Text" xml:space="preserve">
+    <value>Copiar a la derecha</value>
+  </data>
+  <data name="LRWDParamsCopy.Location" type="System.Drawing.Point, System.Drawing">
+    <value>189, 603</value>
+  </data>
+  <data name="LRWDParamsCopy.Size" type="System.Drawing.Size, System.Drawing">
+    <value>122, 40</value>
+  </data>
+  <data name="LRWDParamsCopy.Text" xml:space="preserve">
+    <value>Copia izquierda</value>
+  </data>
+  <data name="tabPage7.Size" type="System.Drawing.Size, System.Drawing">
+    <value>1126, 1044</value>
+  </data>
+  <data name="tabPage7.Text" xml:space="preserve">
+    <value>Configuración de la prueba de Liberación de aire</value>
+  </data>
+  <data name="uiTabControlMenu2.Location" type="System.Drawing.Point, System.Drawing">
+    <value>3, 0</value>
+  </data>
+  <data name="uiTabControlMenu2.Size" type="System.Drawing.Size, System.Drawing">
+    <value>1327, 1044</value>
+  </data>
+  <data name="tabPage2.Size" type="System.Drawing.Size, System.Drawing">
+    <value>1460, 1045</value>
+  </data>
+  <data name="tabPage2.Text" xml:space="preserve">
+    <value>Configuración de los parámetros de prueba</value>
+  </data>
+  <data name="CH1ElecSave.Size" type="System.Drawing.Size, System.Drawing">
+    <value>289, 39</value>
+  </data>
+  <data name="CH1ElecSave.Text" xml:space="preserve">
+    <value>Guardar configuración</value>
+  </data>
+  <data name="label17.Size" type="System.Drawing.Size, System.Drawing">
+    <value>27, 19</value>
+  </data>
+  <data name="label20.Size" type="System.Drawing.Size, System.Drawing">
+    <value>27, 19</value>
+  </data>
+  <data name="label18.Size" type="System.Drawing.Size, System.Drawing">
+    <value>27, 19</value>
+  </data>
+  <data name="label19.Size" type="System.Drawing.Size, System.Drawing">
+    <value>309, 16</value>
+  </data>
+  <data name="label19.Text" xml:space="preserve">
+    <value>Compensación de corriente estática CH1</value>
+  </data>
+  <data name="label25.Location" type="System.Drawing.Point, System.Drawing">
+    <value>88, 102</value>
+  </data>
+  <data name="label25.Size" type="System.Drawing.Size, System.Drawing">
+    <value>353, 16</value>
+  </data>
+  <data name="label25.Text" xml:space="preserve">
+    <value>Límite inferior de la corriente estática CH1</value>
+  </data>
+  <data name="label26.Size" type="System.Drawing.Size, System.Drawing">
+    <value>329, 16</value>
+  </data>
+  <data name="label26.Text" xml:space="preserve">
+    <value>Límite superior de corriente estática CH1</value>
+  </data>
+  <data name="uiGroupBox5.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>0, 32, 0, 0</value>
+  </data>
+  <data name="uiGroupBox5.Size" type="System.Drawing.Size, System.Drawing">
+    <value>529, 270</value>
+  </data>
+  <data name="uiGroupBox5.Text" xml:space="preserve">
+    <value>Corriente estática CH1</value>
+  </data>
+  <data name="label24.Size" type="System.Drawing.Size, System.Drawing">
+    <value>309, 16</value>
+  </data>
+  <data name="label24.Text" xml:space="preserve">
+    <value>Compensación de corriente estática ch2</value>
+  </data>
+  <data name="label27.Size" type="System.Drawing.Size, System.Drawing">
+    <value>353, 16</value>
+  </data>
+  <data name="label27.Text" xml:space="preserve">
+    <value>Límite inferior de la corriente estática ch2</value>
+  </data>
+  <data name="label28.Size" type="System.Drawing.Size, System.Drawing">
+    <value>329, 16</value>
+  </data>
+  <data name="label28.Text" xml:space="preserve">
+    <value>Límite superior de corriente estática ch2</value>
+  </data>
+  <data name="CFQuiescentCurrnt.Text" xml:space="preserve">
+    <value>Tranquilo y tranquilo</value>
+  </data>
+  <data name="CFFWDLeak.Text" xml:space="preserve">
+    <value>Igual que las mallas inflables</value>
+  </data>
+  <data name="CFDOWNLeak.Text" xml:space="preserve">
+    <value>La inflación más baja se endurece</value>
+  </data>
+  <data name="CFUPLeak.Text" xml:space="preserve">
+    <value>Alta inflación</value>
+  </data>
+  <data name="CFRWD.Text" xml:space="preserve">
+    <value>Rwd: desinflación</value>
+  </data>
+  <data name="CFFWD.Text" xml:space="preserve">
+    <value>Fwd: inflación simultánea</value>
+  </data>
+  <data name="CFDOWN.Text" xml:space="preserve">
+    <value>A la baja: menor inflación</value>
+  </data>
+  <data name="CFUP.Text" xml:space="preserve">
+    <value>Up: inflable superior</value>
+  </data>
+  <data name="uiGroupBox32.Location" type="System.Drawing.Point, System.Drawing">
+    <value>7, 570</value>
+  </data>
+  <data name="uiGroupBox32.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>0, 32, 0, 0</value>
+  </data>
+  <data name="uiGroupBox32.Size" type="System.Drawing.Size, System.Drawing">
+    <value>550, 268</value>
+  </data>
+  <data name="uiGroupBox32.Text" xml:space="preserve">
+    <value>Configuración del proceso del canal C / F</value>
+  </data>
+  <data name="BEQuiescentCurrntIndex.Location" type="System.Drawing.Point, System.Drawing">
+    <value>480, 28</value>
+  </data>
+  <data name="BEQuiescentCurrnt.Size" type="System.Drawing.Size, System.Drawing">
+    <value>231, 29</value>
+  </data>
+  <data name="BEQuiescentCurrnt.Text" xml:space="preserve">
+    <value>Tranquilo y tranquilo</value>
+  </data>
+  <data name="BEFWDLeakindex.Location" type="System.Drawing.Point, System.Drawing">
+    <value>480, 257</value>
+  </data>
+  <data name="BEDOWNLeakindex.Location" type="System.Drawing.Point, System.Drawing">
+    <value>480, 222</value>
+  </data>
+  <data name="BEUPLeakindex.Location" type="System.Drawing.Point, System.Drawing">
+    <value>480, 188</value>
+  </data>
+  <data name="BERWDindex.Location" type="System.Drawing.Point, System.Drawing">
+    <value>480, 154</value>
+  </data>
+  <data name="BEFWDindex.Location" type="System.Drawing.Point, System.Drawing">
+    <value>480, 124</value>
+  </data>
+  <data name="BEDOWNindex.Location" type="System.Drawing.Point, System.Drawing">
+    <value>480, 88</value>
+  </data>
+  <data name="BEUPindex.Location" type="System.Drawing.Point, System.Drawing">
+    <value>480, 60</value>
+  </data>
+  <data name="BEFWDLeak.Size" type="System.Drawing.Size, System.Drawing">
+    <value>300, 29</value>
+  </data>
+  <data name="BEFWDLeak.Text" xml:space="preserve">
+    <value>Igual que las mallas inflables</value>
+  </data>
+  <data name="BEDOWNLeak.Size" type="System.Drawing.Size, System.Drawing">
+    <value>341, 29</value>
+  </data>
+  <data name="BEDOWNLeak.Text" xml:space="preserve">
+    <value>La inflación más baja se endurece</value>
+  </data>
+  <data name="BEUPLeak.Size" type="System.Drawing.Size, System.Drawing">
+    <value>242, 29</value>
+  </data>
+  <data name="BEUPLeak.Text" xml:space="preserve">
+    <value>Alta inflación</value>
+  </data>
+  <data name="BERWD.Size" type="System.Drawing.Size, System.Drawing">
+    <value>242, 29</value>
+  </data>
+  <data name="BERWD.Text" xml:space="preserve">
+    <value>Rwd: desinflación</value>
+  </data>
+  <data name="BEFWD.Size" type="System.Drawing.Size, System.Drawing">
+    <value>242, 29</value>
+  </data>
+  <data name="BEFWD.Text" xml:space="preserve">
+    <value>Fwd: inflación simultánea</value>
+  </data>
+  <data name="BEDOWN.Size" type="System.Drawing.Size, System.Drawing">
+    <value>259, 29</value>
+  </data>
+  <data name="BEDOWN.Text" xml:space="preserve">
+    <value>A la baja: menor inflación</value>
+  </data>
+  <data name="BEUP.Size" type="System.Drawing.Size, System.Drawing">
+    <value>214, 29</value>
+  </data>
+  <data name="BEUP.Text" xml:space="preserve">
+    <value>Up: inflable superior</value>
+  </data>
+  <data name="uiGroupBox3.Location" type="System.Drawing.Point, System.Drawing">
+    <value>575, 290</value>
+  </data>
+  <data name="uiGroupBox3.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>0, 32, 0, 0</value>
+  </data>
+  <data name="uiGroupBox3.Size" type="System.Drawing.Size, System.Drawing">
+    <value>772, 264</value>
+  </data>
+  <data name="uiGroupBox3.Text" xml:space="preserve">
+    <value>Configuración del proceso del canal B / e</value>
+  </data>
+  <data name="ADQuiescentCurrntIndex.Location" type="System.Drawing.Point, System.Drawing">
+    <value>426, 25</value>
+  </data>
+  <data name="ADQuiescentCurrnt.Location" type="System.Drawing.Point, System.Drawing">
+    <value>14, 35</value>
+  </data>
+  <data name="ADQuiescentCurrnt.Size" type="System.Drawing.Size, System.Drawing">
+    <value>275, 29</value>
+  </data>
+  <data name="ADQuiescentCurrnt.Text" xml:space="preserve">
+    <value>Tranquilo y tranquilo</value>
+  </data>
+  <data name="ADFWDLeakindex.Location" type="System.Drawing.Point, System.Drawing">
+    <value>426, 262</value>
+  </data>
+  <data name="ADDOWNLeakindex.Location" type="System.Drawing.Point, System.Drawing">
+    <value>426, 225</value>
+  </data>
+  <data name="ADUPLeakindex.Location" type="System.Drawing.Point, System.Drawing">
+    <value>426, 188</value>
+  </data>
+  <data name="ADRWDindex.Location" type="System.Drawing.Point, System.Drawing">
+    <value>426, 157</value>
+  </data>
+  <data name="ADFWDindex.Location" type="System.Drawing.Point, System.Drawing">
+    <value>426, 125</value>
+  </data>
+  <data name="ADDOWNindex.Location" type="System.Drawing.Point, System.Drawing">
+    <value>426, 93</value>
+  </data>
+  <data name="ADUPindex.Location" type="System.Drawing.Point, System.Drawing">
+    <value>426, 61</value>
+  </data>
+  <data name="ADFWDLeak.Location" type="System.Drawing.Point, System.Drawing">
+    <value>14, 266</value>
+  </data>
+  <data name="ADFWDLeak.Size" type="System.Drawing.Size, System.Drawing">
+    <value>317, 29</value>
+  </data>
+  <data name="ADFWDLeak.Text" xml:space="preserve">
+    <value>Igual que las mallas inflables</value>
+  </data>
+  <data name="ADDOWNLeak.Location" type="System.Drawing.Point, System.Drawing">
+    <value>14, 231</value>
+  </data>
+  <data name="ADDOWNLeak.Size" type="System.Drawing.Size, System.Drawing">
+    <value>357, 29</value>
+  </data>
+  <data name="ADDOWNLeak.Text" xml:space="preserve">
+    <value>La inflación más baja se endurece</value>
+  </data>
+  <data name="ADUPLeak.Location" type="System.Drawing.Point, System.Drawing">
+    <value>14, 196</value>
+  </data>
+  <data name="ADUPLeak.Size" type="System.Drawing.Size, System.Drawing">
+    <value>213, 29</value>
+  </data>
+  <data name="ADUPLeak.Text" xml:space="preserve">
+    <value>Alta inflación</value>
+  </data>
+  <data name="ADRWD.Location" type="System.Drawing.Point, System.Drawing">
+    <value>14, 167</value>
+  </data>
+  <data name="ADRWD.Size" type="System.Drawing.Size, System.Drawing">
+    <value>238, 29</value>
+  </data>
+  <data name="ADRWD.Text" xml:space="preserve">
+    <value>Rwd: desinflación</value>
+  </data>
+  <data name="ADFWD.Location" type="System.Drawing.Point, System.Drawing">
+    <value>14, 132</value>
+  </data>
+  <data name="ADFWD.Size" type="System.Drawing.Size, System.Drawing">
+    <value>262, 29</value>
+  </data>
+  <data name="ADFWD.Text" xml:space="preserve">
+    <value>Fwd: inflación simultánea</value>
+  </data>
+  <data name="ADDOWN.Location" type="System.Drawing.Point, System.Drawing">
+    <value>14, 97</value>
+  </data>
+  <data name="ADDOWN.Size" type="System.Drawing.Size, System.Drawing">
+    <value>275, 29</value>
+  </data>
+  <data name="ADDOWN.Text" xml:space="preserve">
+    <value>A la baja: menor inflación</value>
+  </data>
+  <data name="ADUP.Location" type="System.Drawing.Point, System.Drawing">
+    <value>14, 64</value>
+  </data>
+  <data name="ADUP.Size" type="System.Drawing.Size, System.Drawing">
+    <value>225, 29</value>
+  </data>
+  <data name="ADUP.Text" xml:space="preserve">
+    <value>Up: inflable superior</value>
+  </data>
+  <data name="uiGroupBox1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>17, 279</value>
+  </data>
+  <data name="uiGroupBox1.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>0, 32, 0, 0</value>
+  </data>
+  <data name="uiGroupBox1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>550, 275</value>
+  </data>
+  <data name="uiGroupBox1.Text" xml:space="preserve">
+    <value>Configuración del proceso del Canal a / D</value>
+  </data>
+  <data name="btnSave.Location" type="System.Drawing.Point, System.Drawing">
+    <value>687, 822</value>
+  </data>
+  <data name="btnSave.Size" type="System.Drawing.Size, System.Drawing">
+    <value>352, 33</value>
+  </data>
+  <data name="btnSave.Text" xml:space="preserve">
+    <value>Guardar configuración</value>
+  </data>
+  <data name="CH2QuiescentCurrntIndex.Location" type="System.Drawing.Point, System.Drawing">
+    <value>281, 38</value>
+  </data>
+  <data name="CH2UpDownChange.Location" type="System.Drawing.Point, System.Drawing">
+    <value>351, 159</value>
+  </data>
+  <data name="CH2UpDownChange.Size" type="System.Drawing.Size, System.Drawing">
+    <value>282, 57</value>
+  </data>
+  <data name="CH2UpDownChange.Text" xml:space="preserve">
+    <value>Intercambio de tarifas superiores e inferiores</value>
+  </data>
+  <data name="CH2QuiescentCurrnt.Location" type="System.Drawing.Point, System.Drawing">
+    <value>12, 38</value>
+  </data>
+  <data name="CH2QuiescentCurrnt.Size" type="System.Drawing.Size, System.Drawing">
+    <value>231, 29</value>
+  </data>
+  <data name="CH2QuiescentCurrnt.Text" xml:space="preserve">
+    <value>Corriente estática ch2</value>
+  </data>
+  <data name="CH2DOWNindex.Location" type="System.Drawing.Point, System.Drawing">
+    <value>281, 97</value>
+  </data>
+  <data name="CH2RWDindex.Location" type="System.Drawing.Point, System.Drawing">
+    <value>281, 163</value>
+  </data>
+  <data name="CH2HighLevel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>351, 39</value>
+  </data>
+  <data name="CH2HighLevel.Text" xml:space="preserve">
+    <value>Alto nivel de ch2</value>
+  </data>
+  <data name="CH2FWDLeakindex.Location" type="System.Drawing.Point, System.Drawing">
+    <value>317, 269</value>
+  </data>
+  <data name="CH2FWDindex.Location" type="System.Drawing.Point, System.Drawing">
+    <value>281, 129</value>
+  </data>
+  <data name="OrderRightCopy.Location" type="System.Drawing.Point, System.Drawing">
+    <value>364, 234</value>
+  </data>
+  <data name="OrderRightCopy.Size" type="System.Drawing.Size, System.Drawing">
+    <value>269, 39</value>
+  </data>
+  <data name="OrderRightCopy.Text" xml:space="preserve">
+    <value>Copiar a la derecha</value>
+  </data>
+  <data name="CH2DOWNLeakindex.Location" type="System.Drawing.Point, System.Drawing">
+    <value>317, 230</value>
+  </data>
+  <data name="CH2UPindex.Location" type="System.Drawing.Point, System.Drawing">
+    <value>281, 66</value>
+  </data>
+  <data name="CH2UP.Location" type="System.Drawing.Point, System.Drawing">
+    <value>12, 66</value>
+  </data>
+  <data name="CH2UP.Size" type="System.Drawing.Size, System.Drawing">
+    <value>214, 29</value>
+  </data>
+  <data name="CH2UP.Text" xml:space="preserve">
+    <value>Up: inflable superior</value>
+  </data>
+  <data name="CH2UPLeakindex.Location" type="System.Drawing.Point, System.Drawing">
+    <value>281, 195</value>
+  </data>
+  <data name="CH2DOWN.Location" type="System.Drawing.Point, System.Drawing">
+    <value>12, 96</value>
+  </data>
+  <data name="CH2DOWN.Size" type="System.Drawing.Size, System.Drawing">
+    <value>262, 29</value>
+  </data>
+  <data name="CH2DOWN.Text" xml:space="preserve">
+    <value>A la baja: menor inflación</value>
+  </data>
+  <data name="CH2FWD.Location" type="System.Drawing.Point, System.Drawing">
+    <value>12, 131</value>
+  </data>
+  <data name="CH2FWD.Size" type="System.Drawing.Size, System.Drawing">
+    <value>259, 29</value>
+  </data>
+  <data name="CH2FWD.Text" xml:space="preserve">
+    <value>Fwd: inflación simultánea</value>
+  </data>
+  <data name="CH2RWD.Location" type="System.Drawing.Point, System.Drawing">
+    <value>12, 163</value>
+  </data>
+  <data name="CH2RWD.Size" type="System.Drawing.Size, System.Drawing">
+    <value>242, 29</value>
+  </data>
+  <data name="CH2RWD.Text" xml:space="preserve">
+    <value>Rwd: desinflación</value>
+  </data>
+  <data name="CH2UPLeak.Location" type="System.Drawing.Point, System.Drawing">
+    <value>12, 198</value>
+  </data>
+  <data name="CH2UPLeak.Size" type="System.Drawing.Size, System.Drawing">
+    <value>242, 29</value>
+  </data>
+  <data name="CH2UPLeak.Text" xml:space="preserve">
+    <value>Denso</value>
+  </data>
+  <data name="CH2DOWNLeak.Location" type="System.Drawing.Point, System.Drawing">
+    <value>12, 226</value>
+  </data>
+  <data name="CH2DOWNLeak.Size" type="System.Drawing.Size, System.Drawing">
+    <value>300, 29</value>
+  </data>
+  <data name="CH2DOWNLeak.Text" xml:space="preserve">
+    <value>La inflación más baja se endurece</value>
+  </data>
+  <data name="CH2IGN.Location" type="System.Drawing.Point, System.Drawing">
+    <value>351, 69</value>
+  </data>
+  <data name="CH2FWDLeak.Location" type="System.Drawing.Point, System.Drawing">
+    <value>12, 258</value>
+  </data>
+  <data name="CH2FWDLeak.Size" type="System.Drawing.Size, System.Drawing">
+    <value>286, 29</value>
+  </data>
+  <data name="CH2FWDLeak.Text" xml:space="preserve">
+    <value>Igual que las mallas inflables</value>
+  </data>
+  <data name="CH2LIN.Location" type="System.Drawing.Point, System.Drawing">
+    <value>351, 129</value>
+  </data>
+  <data name="CH2Pump.Location" type="System.Drawing.Point, System.Drawing">
+    <value>351, 99</value>
+  </data>
+  <data name="CH2Pump.Text" xml:space="preserve">
+    <value>Suministro de gas de la bomba de válvula</value>
+  </data>
+  <data name="uiGroupBox8.Location" type="System.Drawing.Point, System.Drawing">
+    <value>727, 5</value>
+  </data>
+  <data name="uiGroupBox8.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>0, 32, 0, 0</value>
+  </data>
+  <data name="uiGroupBox8.Size" type="System.Drawing.Size, System.Drawing">
+    <value>680, 275</value>
+  </data>
+  <data name="uiGroupBox8.Text" xml:space="preserve">
+    <value>Configuración del proceso del canal principal ch2</value>
+  </data>
+  <data name="CH1QuiescentCurrntIndex.Location" type="System.Drawing.Point, System.Drawing">
+    <value>272, 35</value>
+  </data>
+  <data name="CH1QuiescentCurrnt.Location" type="System.Drawing.Point, System.Drawing">
+    <value>3, 30</value>
+  </data>
+  <data name="CH1QuiescentCurrnt.Size" type="System.Drawing.Size, System.Drawing">
+    <value>236, 29</value>
+  </data>
+  <data name="CH1QuiescentCurrnt.Text" xml:space="preserve">
+    <value>CH1 quiescent current</value>
+  </data>
+  <data name="CH1UpDownChange.Location" type="System.Drawing.Point, System.Drawing">
+    <value>296, 165</value>
+  </data>
+  <data name="CH1UpDownChange.Size" type="System.Drawing.Size, System.Drawing">
+    <value>416, 29</value>
+  </data>
+  <data name="CH1UpDownChange.Text" xml:space="preserve">
+    <value>Entre la parte superior y la inferior de tarifa</value>
+  </data>
+  <data name="CH1HighLevel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>299, 30</value>
+  </data>
+  <data name="CH1HighLevel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>241, 29</value>
+  </data>
+  <data name="CH1HighLevel.Text" xml:space="preserve">
+    <value>Alto nivel de CH1</value>
+  </data>
+  <data name="OrderLeftCopy.Location" type="System.Drawing.Point, System.Drawing">
+    <value>477, 230</value>
+  </data>
+  <data name="OrderLeftCopy.Size" type="System.Drawing.Size, System.Drawing">
+    <value>221, 39</value>
+  </data>
+  <data name="OrderLeftCopy.Text" xml:space="preserve">
+    <value>Copia izquierda</value>
+  </data>
+  <data name="CH1FWDLeakindex.Location" type="System.Drawing.Point, System.Drawing">
+    <value>354, 254</value>
+  </data>
+  <data name="CH1DOWNLeakindex.Location" type="System.Drawing.Point, System.Drawing">
+    <value>314, 226</value>
+  </data>
+  <data name="CH1UPLeakindex.Location" type="System.Drawing.Point, System.Drawing">
+    <value>272, 193</value>
+  </data>
+  <data name="CH1RWDindex.Location" type="System.Drawing.Point, System.Drawing">
+    <value>272, 164</value>
+  </data>
+  <data name="CH1FWDindex.Location" type="System.Drawing.Point, System.Drawing">
+    <value>272, 133</value>
+  </data>
+  <data name="CH1DOWNindex.Location" type="System.Drawing.Point, System.Drawing">
+    <value>272, 97</value>
+  </data>
+  <data name="CH1UPindex.Location" type="System.Drawing.Point, System.Drawing">
+    <value>272, 69</value>
+  </data>
+  <data name="CH1IGN.Location" type="System.Drawing.Point, System.Drawing">
+    <value>299, 69</value>
+  </data>
+  <data name="CH1IGN.Size" type="System.Drawing.Size, System.Drawing">
+    <value>147, 29</value>
+  </data>
+  <data name="CH1LIN.Location" type="System.Drawing.Point, System.Drawing">
+    <value>296, 132</value>
+  </data>
+  <data name="CH1LIN.Size" type="System.Drawing.Size, System.Drawing">
+    <value>147, 29</value>
+  </data>
+  <data name="CH1Pump.Location" type="System.Drawing.Point, System.Drawing">
+    <value>299, 97</value>
+  </data>
+  <data name="CH1Pump.Size" type="System.Drawing.Size, System.Drawing">
+    <value>364, 29</value>
+  </data>
+  <data name="CH1Pump.Text" xml:space="preserve">
+    <value>Suministro de gas de la bomba de válvula</value>
+  </data>
+  <data name="CH1FWDLeak.Location" type="System.Drawing.Point, System.Drawing">
+    <value>3, 243</value>
+  </data>
+  <data name="CH1FWDLeak.Size" type="System.Drawing.Size, System.Drawing">
+    <value>311, 29</value>
+  </data>
+  <data name="CH1FWDLeak.Text" xml:space="preserve">
+    <value>Igual que las mallas inflables</value>
+  </data>
+  <data name="CH1DOWNLeak.Location" type="System.Drawing.Point, System.Drawing">
+    <value>3, 216</value>
+  </data>
+  <data name="CH1DOWNLeak.Size" type="System.Drawing.Size, System.Drawing">
+    <value>304, 29</value>
+  </data>
+  <data name="CH1DOWNLeak.Text" xml:space="preserve">
+    <value>La inflación más baja se endurece</value>
+  </data>
+  <data name="CH1UPLeak.Location" type="System.Drawing.Point, System.Drawing">
+    <value>3, 187</value>
+  </data>
+  <data name="CH1UPLeak.Size" type="System.Drawing.Size, System.Drawing">
+    <value>224, 29</value>
+  </data>
+  <data name="CH1UPLeak.Text" xml:space="preserve">
+    <value>Alta inflación</value>
+  </data>
+  <data name="CH1RWD.Location" type="System.Drawing.Point, System.Drawing">
+    <value>3, 158</value>
+  </data>
+  <data name="CH1RWD.Size" type="System.Drawing.Size, System.Drawing">
+    <value>249, 29</value>
+  </data>
+  <data name="CH1RWD.Text" xml:space="preserve">
+    <value>Rwd: desinflación</value>
+  </data>
+  <data name="CH1FWD.Location" type="System.Drawing.Point, System.Drawing">
+    <value>3, 123</value>
+  </data>
+  <data name="CH1FWD.Size" type="System.Drawing.Size, System.Drawing">
+    <value>249, 29</value>
+  </data>
+  <data name="CH1FWD.Text" xml:space="preserve">
+    <value>Fwd: inflación simultánea</value>
+  </data>
+  <data name="CH1DOWN.Location" type="System.Drawing.Point, System.Drawing">
+    <value>3, 92</value>
+  </data>
+  <data name="CH1DOWN.Size" type="System.Drawing.Size, System.Drawing">
+    <value>249, 29</value>
+  </data>
+  <data name="CH1DOWN.Text" xml:space="preserve">
+    <value>A la baja: menor inflación</value>
+  </data>
+  <data name="CH1UP.Location" type="System.Drawing.Point, System.Drawing">
+    <value>3, 61</value>
+  </data>
+  <data name="CH1UP.Size" type="System.Drawing.Size, System.Drawing">
+    <value>206, 29</value>
+  </data>
+  <data name="CH1UP.Text" xml:space="preserve">
+    <value>Up: inflable superior</value>
+  </data>
+  <data name="uiGroupBox7.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>0, 32, 0, 0</value>
+  </data>
+  <data name="uiGroupBox7.Size" type="System.Drawing.Size, System.Drawing">
+    <value>715, 264</value>
+  </data>
+  <data name="uiGroupBox7.Text" xml:space="preserve">
+    <value>Configuración del proceso del canal principal CH1</value>
+  </data>
+  <data name="tabPage0.Size" type="System.Drawing.Size, System.Drawing">
+    <value>1460, 1045</value>
+  </data>
+  <data name="tabPage0.Text" xml:space="preserve">
+    <value>Configuración del proceso</value>
+  </data>
+  <data name="ChkPLCPress.Location" type="System.Drawing.Point, System.Drawing">
+    <value>1081, 304</value>
+  </data>
+  <data name="ChkPLCPress.Size" type="System.Drawing.Size, System.Drawing">
+    <value>232, 27</value>
+  </data>
+  <data name="ChkPLCPress.Text" xml:space="preserve">
+    <value>Unidad de presión de aire KGF / cm2</value>
+  </data>
+  <data name="CH2ElecSave.Size" type="System.Drawing.Size, System.Drawing">
+    <value>328, 39</value>
+  </data>
+  <data name="CH2ElecSave.Text" xml:space="preserve">
+    <value>Guardar configuración</value>
+  </data>
+  <data name="label21.Size" type="System.Drawing.Size, System.Drawing">
+    <value>27, 19</value>
+  </data>
+  <data name="label22.Size" type="System.Drawing.Size, System.Drawing">
+    <value>27, 19</value>
+  </data>
+  <data name="label23.Size" type="System.Drawing.Size, System.Drawing">
+    <value>27, 19</value>
+  </data>
+  <data name="uiGroupBox6.Location" type="System.Drawing.Point, System.Drawing">
+    <value>640, 14</value>
+  </data>
+  <data name="uiGroupBox6.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>0, 32, 0, 0</value>
+  </data>
+  <data name="uiGroupBox6.Size" type="System.Drawing.Size, System.Drawing">
+    <value>538, 270</value>
+  </data>
+  <data name="uiGroupBox6.Text" xml:space="preserve">
+    <value>Corriente estática ch2</value>
+  </data>
+  <data name="CH4ValveWrite.Text" xml:space="preserve">
+    <value>Escribir</value>
+  </data>
+  <data name="label13.Location" type="System.Drawing.Point, System.Drawing">
+    <value>31, 165</value>
+  </data>
+  <data name="label13.Size" type="System.Drawing.Size, System.Drawing">
+    <value>301, 16</value>
+  </data>
+  <data name="label13.Text" xml:space="preserve">
+    <value>Válvula reguladora de presión ch2 - 2</value>
+  </data>
+  <data name="CH3ValveWrite.Text" xml:space="preserve">
+    <value>Escribir</value>
+  </data>
+  <data name="label15.Location" type="System.Drawing.Point, System.Drawing">
+    <value>13, 59</value>
+  </data>
+  <data name="label15.Size" type="System.Drawing.Size, System.Drawing">
+    <value>301, 16</value>
+  </data>
+  <data name="label15.Text" xml:space="preserve">
+    <value>Válvula reguladora de presión ch2 - 1</value>
+  </data>
+  <data name="uiGroupBox4.Location" type="System.Drawing.Point, System.Drawing">
+    <value>579, 304</value>
+  </data>
+  <data name="uiGroupBox4.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>0, 32, 0, 0</value>
+  </data>
+  <data name="uiGroupBox4.Size" type="System.Drawing.Size, System.Drawing">
+    <value>463, 265</value>
+  </data>
+  <data name="uiGroupBox4.Text" xml:space="preserve">
+    <value>Válvula reguladora de presión ch2</value>
+  </data>
+  <data name="CH2ValveWrite.Text" xml:space="preserve">
+    <value>Escribir</value>
+  </data>
+  <data name="label3.Location" type="System.Drawing.Point, System.Drawing">
+    <value>22, 170</value>
+  </data>
+  <data name="label3.Size" type="System.Drawing.Size, System.Drawing">
+    <value>301, 16</value>
+  </data>
+  <data name="label3.Text" xml:space="preserve">
+    <value>Válvula reguladora de presión CH1 - 2</value>
+  </data>
+  <data name="CH1ValveWrite.Text" xml:space="preserve">
+    <value>Escribir</value>
+  </data>
+  <data name="label1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>22, 59</value>
+  </data>
+  <data name="label1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>301, 16</value>
+  </data>
+  <data name="label1.Text" xml:space="preserve">
+    <value>Válvula reguladora de presión CH1 - 1</value>
+  </data>
+  <data name="uiGroupBox2.Location" type="System.Drawing.Point, System.Drawing">
+    <value>4, 318</value>
+  </data>
+  <data name="uiGroupBox2.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>0, 32, 0, 0</value>
+  </data>
+  <data name="uiGroupBox2.Size" type="System.Drawing.Size, System.Drawing">
+    <value>546, 265</value>
+  </data>
+  <data name="uiGroupBox2.Text" xml:space="preserve">
+    <value>Válvula reguladora de presión CH1</value>
+  </data>
+  <data name="tabPage1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>1460, 1045</value>
+  </data>
+  <data name="tabPage1.Text" xml:space="preserve">
+    <value>Configuración de corriente y tensión</value>
+  </data>
+  <data name="btnCKCh2Off.Location" type="System.Drawing.Point, System.Drawing">
+    <value>47, 336</value>
+  </data>
+  <data name="btnCKCh2Off.Size" type="System.Drawing.Size, System.Drawing">
+    <value>520, 39</value>
+  </data>
+  <data name="btnCKCh2Off.Text" xml:space="preserve">
+    <value>La fuente de alimentación programable ch2 está apagada</value>
+  </data>
+  <data name="btnCKCh2On.Location" type="System.Drawing.Point, System.Drawing">
+    <value>124, 274</value>
+  </data>
+  <data name="btnCKCh2On.Size" type="System.Drawing.Size, System.Drawing">
+    <value>373, 39</value>
+  </data>
+  <data name="btnCKCh2On.Text" xml:space="preserve">
+    <value>Encendido programable ch2</value>
+  </data>
+  <data name="btnCKCh2Save.Location" type="System.Drawing.Point, System.Drawing">
+    <value>223, 211</value>
+  </data>
+  <data name="btnCKCh2Save.Text" xml:space="preserve">
+    <value>Escribir</value>
+  </data>
+  <data name="label2.Location" type="System.Drawing.Point, System.Drawing">
+    <value>337, 142</value>
+  </data>
+  <data name="CKCh2Current.Location" type="System.Drawing.Point, System.Drawing">
+    <value>168, 142</value>
+  </data>
+  <data name="label4.Location" type="System.Drawing.Point, System.Drawing">
+    <value>75, 109</value>
+  </data>
+  <data name="label4.Size" type="System.Drawing.Size, System.Drawing">
+    <value>334, 16</value>
+  </data>
+  <data name="label4.Text" xml:space="preserve">
+    <value>Corriente de alimentación programable ch2</value>
+  </data>
+  <data name="label14.Location" type="System.Drawing.Point, System.Drawing">
+    <value>337, 76</value>
+  </data>
+  <data name="CKCh2Vol.Location" type="System.Drawing.Point, System.Drawing">
+    <value>168, 75</value>
+  </data>
+  <data name="label16.Location" type="System.Drawing.Point, System.Drawing">
+    <value>92, 50</value>
+  </data>
+  <data name="label16.Size" type="System.Drawing.Size, System.Drawing">
+    <value>317, 16</value>
+  </data>
+  <data name="label16.Text" xml:space="preserve">
+    <value>Tensión de alimentación programable ch2</value>
+  </data>
+  <data name="uiGroupBox30.Location" type="System.Drawing.Point, System.Drawing">
+    <value>650, 14</value>
+  </data>
+  <data name="uiGroupBox30.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>0, 32, 0, 0</value>
+  </data>
+  <data name="uiGroupBox30.Size" type="System.Drawing.Size, System.Drawing">
+    <value>629, 397</value>
+  </data>
+  <data name="uiGroupBox30.Text" xml:space="preserve">
+    <value>Fuente de alimentación programable ch2</value>
+  </data>
+  <data name="btnCKCh1Off.Location" type="System.Drawing.Point, System.Drawing">
+    <value>17, 353</value>
+  </data>
+  <data name="btnCKCh1Off.Size" type="System.Drawing.Size, System.Drawing">
+    <value>544, 39</value>
+  </data>
+  <data name="btnCKCh1Off.Text" xml:space="preserve">
+    <value>La fuente de alimentación programable CH1 está apagada</value>
+  </data>
+  <data name="btnCKCh1On.Location" type="System.Drawing.Point, System.Drawing">
+    <value>96, 297</value>
+  </data>
+  <data name="btnCKCh1On.Size" type="System.Drawing.Size, System.Drawing">
+    <value>374, 39</value>
+  </data>
+  <data name="btnCKCh1On.Text" xml:space="preserve">
+    <value>Encendido programable CH1</value>
+  </data>
+  <data name="btnCKCh1Save.Location" type="System.Drawing.Point, System.Drawing">
+    <value>221, 233</value>
+  </data>
+  <data name="btnCKCh1Save.Text" xml:space="preserve">
+    <value>Escribir</value>
+  </data>
+  <data name="label42.Location" type="System.Drawing.Point, System.Drawing">
+    <value>365, 152</value>
+  </data>
+  <data name="CKCh1Current.Location" type="System.Drawing.Point, System.Drawing">
+    <value>188, 142</value>
+  </data>
+  <data name="label43.Location" type="System.Drawing.Point, System.Drawing">
+    <value>88, 110</value>
+  </data>
+  <data name="label43.Size" type="System.Drawing.Size, System.Drawing">
+    <value>334, 16</value>
+  </data>
+  <data name="label43.Text" xml:space="preserve">
+    <value>Corriente de alimentación programable CH1</value>
+  </data>
+  <data name="label45.Location" type="System.Drawing.Point, System.Drawing">
+    <value>365, 76</value>
+  </data>
+  <data name="CKCh1Vol.Location" type="System.Drawing.Point, System.Drawing">
+    <value>188, 76</value>
+  </data>
+  <data name="label46.Location" type="System.Drawing.Point, System.Drawing">
+    <value>89, 51</value>
+  </data>
+  <data name="label46.Size" type="System.Drawing.Size, System.Drawing">
+    <value>317, 16</value>
+  </data>
+  <data name="label46.Text" xml:space="preserve">
+    <value>Tensión de alimentación programable CH1</value>
+  </data>
+  <data name="uiGroupBox31.Location" type="System.Drawing.Point, System.Drawing">
+    <value>4, 14</value>
+  </data>
+  <data name="uiGroupBox31.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>0, 32, 0, 0</value>
+  </data>
+  <data name="uiGroupBox31.Size" type="System.Drawing.Size, System.Drawing">
+    <value>585, 407</value>
+  </data>
+  <data name="uiGroupBox31.Text" xml:space="preserve">
+    <value>Fuente de alimentación programable CH1</value>
+  </data>
+  <data name="tabPage9.Size" type="System.Drawing.Size, System.Drawing">
+    <value>1460, 1045</value>
+  </data>
+  <data name="tabPage9.Text" xml:space="preserve">
+    <value>Programación de la configuración de los parámetros de la fuente de alimentación</value>
+  </data>
+  <data name="uiTabControlMenu1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>-9, -1</value>
+  </data>
+  <data name="uiTabControlMenu1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>1661, 1045</value>
+  </data>
+  <data name="$this.AutoScaleDimensions" type="System.Drawing.SizeF, System.Drawing">
+    <value>6, 12</value>
+  </data>
+  <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
+    <value>1654, 979</value>
+  </data>
+  <data name="$this.Icon" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        AAABAAkAMDAQAAEABABoBgAAlgAAACAgEAABAAQA6AIAAP4GAAAQEBAAAQAEACgBAADmCQAAMDAAAAEA
+        CACoDgAADgsAACAgAAABAAgAqAgAALYZAAAQEAAAAQAIAGgFAABeIgAAMDAAAAEAIACoJQAAxicAACAg
+        AAABACAAqBAAAG5NAAAQEAAAAQAgAGgEAAAWXgAAKAAAADAAAABgAAAAAQAEAAAAAACABAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAIAAAIAAAACAgACAAAAAgACAAICAAACAgIAAwMDAAAAA/wAA/wAAAP//AP8A
+        AAD/AP8A//8AAP///wAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACKAAAAAAAAAAAAAAAAAAAAAAAAAACq
+        qnqHeoqqgAAAAAAAAAAAAAAAAAAACqiAAAAAAAAAeqgAAAAAAAAAAAAAAAAKqAAAAAAAAAAAAAqoAAAA
+        AAAAAAAAAAegAAAAAAAAAAAAAAAIoAAAAAAAAAAAAKcAAAAAAAAAAAAAAAAACqAAAAAAAAAACgAIenqq
+        qqqqqqqqqqAAAIoAAAAAAAAAoAAAAKqqqqqqqqqqqqgAAAigAAAAAAAKAAAAiqqqqqqqqqqqqqoAAACK
+        AAAAAAB3AAAAeHiqqqqqqqqqqqoAAAAKAAAAAACgAAAAAAqqqqqqqqqqqqoAAAAAoAAAAAqAAAAAAKqq
+        qqqqoAAAAAAAAAAAgAAAAAoAAAAAAAAIqqqqpwAAAAAAAAAACgAAAAoAAAAAAAAKqqqqqgAAAAAAAAAA
+        CgAAAAgAAAAAAAiqqqqqqqAAAAAAAAAABwAAAAoAAAAAAAAACKqqqqAAAAAAAAAACgAAAAgAAAAAAAAA
+        qqqqqqgAAAAAAAAACgAAAAoAAAAAAAAKqqqqqqoAAAAAAAAACgAAAAoAAAAAAAAAAAqqqqpwAAAAAAAA
+        CgAAAAoAAAAAAAAAAKqqqqqgAAAAAAAAiAAAAACAAAAAAAAAB6iqqqqoAAAAAAAAoAAAAACgAAAAAAAA
+        AACKqqqqAAAAAAAIoAAAAAAKAAAAAAAAAAqqqqqqgAAAAAAKAAAAAAAAoAAAAAAAAIqKiqqqoAAAAACg
+        AAAAAAAAigAAAAAAAAAAqqqqqAAAAAoAAAAAAAAACKAAAAAAAAAKqqqqqgAAAKAAAAAAAAAAAAqAAAAA
+        AAAAAAAAAAAAqgAAAAAAAAAAAACqgAAAAAAAAAAAAAB6gAAAAAAAAAAAAAAAeqAAAAAAAAAAAKqAAAAA
+        AAAAAAAAAAAAAAenoAAAAAB6qAAAAAAAAAAAAAAAAAAAAAAAinqqqqhwAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAD///////8AAP///////wAA////////AAD///////8AAP//
+        /////wAA////////AAD///////8AAP///////wAA////P///AAD//8AAf/8AAP/+H/8P/wAA//j//+P/
+        AAD/5///+f8AAP/P///+fwAA/7gAAB8/AAD/fwAAD58AAP78AAAPzwAA/PwAAA/vAAD9/4AAD/cAAPn/
+        AB//9wAA+//gD//7AAD7/+AP//sAAPv/gAf/+wAA+//4B//7AAD7//AD//sAAPv/4AP/+wAA+//+Af/7
+        AAD7//wB//MAAP3/+AD/9wAA/f//AP/nAAD+//4Af+8AAP9//AB/3wAA/z//wD+/AAD/n/+AP38AAP/n
+        ///8/wAA//H///H/AAD//H//x/8AAP//h/w//wAA///wAf//AAD///////8AAP///////wAA////////
+        AAD///////8AAP///////wAA////////AAD///////8AAP///////wAA////////AAAoAAAAIAAAAEAA
+        AAABAAQAAAAAAAACAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAgAAAgAAAAICAAIAAAACAAIAAgIAAAICA
+        gADAwMAAAAD/AAD/AAAA//8A/wAAAP8A/wD//wAA////AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAACKqAAAenAAAAAAAAAAAACoAAAAAAAAegAAAAAAAAB3AAAAAAAAAACKAAAAAA
+        AKAAqqqqqqqqoAAIAAAAAAoAAIqqqqqqqqoAAKAAAACAAAinqqqqqqqqAAAIAAAAoAAACqqqqqeqigAA
+        CgAACAAAAAiKqqoAAAAAAAAAAAoAAAAAqqqqoAAAAAAAgAAKAAAAAACqqqAAAAAAAKAACAAAAAAIqqqq
+        AAAAAABwAAoAAAAAAAqqqgAAAAAAcAAAAAAAAACqqqqgAAAAAAAAAHAAAAAAAKqqoAAAAAoAAAAIAAAA
+        AAqqqqgAAACAAAAACgAAAAAACKqqAAAIAAAAAACHAAAAAKqqqqAAoAAAAAAAAKAAAAAAAAAACAAAAAAA
+        AAAAdwAAAAAAigAAAAAAAAAAAAAHqKeooAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAA/////////////////////////////////+Hj//+f/n/+f/+f/cAB7/vAAPf3gAD79+AA++/g
+        P//v8B/97/wf/e/4D/3v/g/9//wH//f/B/v7/gP3+/+D7/z/Ad//f/+//8/8///4B///////////////
+        //////////////////8oAAAAEAAAACAAAAABAAQAAAAAAIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        gAAAgAAAAICAAIAAAACAAIAAgIAAAICAgADAwMAAAAD/AAD/AAAA//8A/wAAAP8A/wD//wAA////AAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAqqqqoAAAAAAKqoAAAAAAAAiqoA
+        AAAAAAAKqgAAAAAAAAiqgAAAAAAAAHqgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAA//8AAP//AAD//wAA//8AAP//AAD4DwAA/D8AAPw/AAD+PwAA/h8AAP8fAAD//wAA//8AAP//
+        AAD//wAA//8AACgAAAAwAAAAYAAAAAEACAAAAAAAAAkAAAAAAAAAAAAAAAEAAAABAAAAAAAAAP4AAAX+
+        BQAJ/wkADf4NABH/EQAW/hYAGf8ZAB3+HQAh/iEAJv4mACr+KgAt/i0AMf4xADX+NQA5/jkAPf49AEH+
+        QQBF/kUAS/9LAE3+TQBR/lEAVf5VAFn+WQBe/14AYf5hAGX+ZQBp/mkAbv9uAHD/cAB1/nUAef55AH7+
+        fgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAD///8AAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAICAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAFggIDhMXFxsXFxIOBgobAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAFgwSIAAAAAAAAAAAAAAAAAAdEQwbAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABIMHQAA
+        AAAAAAAAAAAAAAAAAAAAAAAbDBYAAAAAAAAAAAAAAAAAAAAAAAAAAAAbCAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAB0IAAAAAAAAAAAAAAAAAAAAAAAAAAwWAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAEREA
+        AAAAAAAAAAAAAAAAAAAACgAAACAbFgwBAQEBAQEBAQEBAQEBAQEBAQEAAAAAABsOAAAAAAAAAAAAAAAA
+        AAAKAAAAAAAAAAwBAQEBAQEBAQEBAQEBAQEBAQEbAAAAAAAgDgAAAAAAAAAAAAAAAA4AAAAAAAAdBAEB
+        AQEBAQEBAQEBAQEBAQEBAQEOAAAAAAAAGxIAAAAAAAAAAAAAGxYAAAAAAAAgICAgCgEBAQEBAQEBAQEB
+        AQEBAQEBAAAAAAAAAA4AAAAAAAAAAAAADAAAAAAAAAAAAAAWAQEBAQEBAQEBAQEBAQEBAQEBAAAAAAAA
+        AAAKAAAAAAAAAAAWHQAAAAAAAAAAAAwBAQEBAQEBAQEBAAAAAAAAAAAAAAAAAAAAAAASAAAAAAAAAAAK
+        AAAAAAAAAAAAAAAAACAGAQEBAQEBFgAAAAAAAAAAAAAAAAAAAAAAEgAAAAAAAAAOAAAAAAAAAAAAAAAA
+        AAgBAQEBAQEBBAAAAAAAAAAAAAAAAAAAAAAADgAAAAAAAAATAAAAAAAAAAAAAAAXAQEBAQEBAQEBARYA
+        AAAAAAAAAAAAAAAAAAAADAAAAAAAAAAXAAAAAAAAAAAAAAAAAAAAFwEBAQEBAQYAAAAAAAAAAAAAAAAA
+        AAAADAAAAAAAAAAWAAAAAAAAAAAAAAAAAAAWAQEBAQEBAQEXAAAAAAAAAAAAAAAAAAAADAAAAAAAAAAS
+        AAAAAAAAAAAAAAAAAAoBBAQBAQEBAQEEAAAAAAAAAAAAAAAAAAAADgAAAAAAAAAKAAAAAAAAAAAAAAAA
+        AAAAAAAOAQEBAQEBGwAAAAAAAAAAAAAAAAAAEQAAAAAAAAAOAAAAAAAAAAAAAAAAAAAAAAYBAQEBAQEB
+        BAAAAAAAAAAAAAAAAAAbFwAAAAAAAAAAEgAAAAAAAAAAAAAAAAAAEQwODAQBAQEBAR0AAAAAAAAAAAAA
+        AAAKAAAAAAAAAAAADgAAAAAAAAAAAAAAAAAAAAAAIAQBAQEBAQgAAAAAAAAAAAAAAB0WAAAAAAAAAAAA
+        AAoAAAAAAAAAAAAAAAAAAAARAQEBAQEBAQEdAAAAAAAAAAAAAAYAAAAAAAAAAAAAAAAMAAAAAAAAAAAA
+        AAAAABsbFxsRAQEBAQEKAAAAAAAAAAAACgAAAAAAAAAAAAAAAAAbEQAAAAAAAAAAAAAAAAAAAAAMAQEB
+        AQEBIAAAAAAAAAAOAAAAAAAAAAAAAAAAAAAAGw4AAAAAAAAAAAAAAAAAAAYBAQEBAQEBCAAAAAAAAAoA
+        AAAAAAAAAAAAAAAAAAAAAAAIGwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAWCgAAAAAAAAAAAAAAAAAA
+        AAAAAAAAFwgdAAAAAAAAAAAAAAAAAAAAAAAAAAAAGwgbAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAXDBMA
+        AAAAAAAAAAAAAAAAAAAAABIMGwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAODhIXAAAAAAAAAAAA
+        FxEMEgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAgEw4IBAQECA4WIAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAA////////AAD///////8AAP///////wAA////////AAD///////8AAP//
+        /////wAA////////AAD///////8AAP///z///wAA///AAH//AAD//h//D/8AAP/4///j/wAA/+f///n/
+        AAD/z////n8AAP+4AAAfPwAA/38AAA+fAAD+/AAAD88AAPz8AAAP7wAA/f+AAA/3AAD5/wAf//cAAPv/
+        4A//+wAA+//gD//7AAD7/4AH//sAAPv/+Af/+wAA+//wA//7AAD7/+AD//sAAPv//gH/+wAA+//8Af/z
+        AAD9//gA//cAAP3//wD/5wAA/v/+AH/vAAD/f/wAf98AAP8//8A/vwAA/5//gD9/AAD/5////P8AAP/x
+        ///x/wAA//x//8f/AAD//4f8P/8AAP//8AH//wAA////////AAD///////8AAP///////wAA////////
+        AAD///////8AAP///////wAA////////AAD///////8AAP///////wAAKAAAACAAAABAAAAAAQAIAAAA
+        AAAABAAAAAAAAAAAAAAAAQAAAAEAAAAAAAAA/gAABf4FAAn+CQAP/g8AHv4eACv+KwAs/ywAM/8zADT/
+        NAA+/j4AQv5CAEX+RQBJ/kkATP5MAFD+UABV/lUAWf9ZAF7+XgBh/mEAZf5lAGj+aABt/m0Acv5yAHX+
+        dQB5/nkAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAP///wAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABkODhcAAAAAFg4O
+        AAAAAAAAAAAAAAAAAAAAAAAAAA8WAAAAAAAAAAAAAAAAExEAAAAAAAAAAAAAAAAAABMWAAAAAAAAAAAA
+        AAAAAAAAABEXAAAAAAAAAAAAAAANAAAADQQEAgQCBAIEAgQCBAAAAAAPAAAAAAAAAAAADQAAAAARAgIC
+        AgICAgICAgICCgAAAAAPAAAAAAAAABMAAAAAGREPBAICAgICAgICAgICAAAAAAAZAAAAAAAAFgAAAAAA
+        ABECAgICAgIGBwgICAgAAAAAAA8AAAAAABMAAAAAAAAAFxYFAgICAgAAAAAAAAAAAAAAAAAAAAAADgAA
+        AAAAAAAADwICAgICBwAAAAAAAAAAAAAADwAAAAANAAAAAAAAAAAAAAcCAgICAAAAAAAAAAAAAAANAAAA
+        AA0AAAAAAAAAAAAOAgICAgIHAAAAAAAAAAAAAA0AAAAADgAAAAAAAAAAAAAACgICAgIAAAAAAAAAAAAA
+        EwAAAAAAAAAAAAAAAAAAAA0CAgICAggAAAAAAAAAAAAAAAAAAAAOAAAAAAAAAAAAAAAPAgICAgAAAAAA
+        AAAADQAAAAAAAAAXAAAAAAAAAAAADQICAgICCgAAAAAAABEAAAAAAAAAABcAAAAAAAAAAAAAABMCAgIC
+        AAAAAAAXAAAAAAAAAAAAABkTAAAAAAAAAAAOBAICAgQOAAAADwAAAAAAAAAAAAAAAAAOAAAAAAAAAAAA
+        AAAAAAAAAA4AAAAAAAAAAAAAAAAAAAAADhMAAAAAAAAAAAAAEw8AAAAAAAAAAAAAAAAAAAAAAAAAAAAT
+        Dg0KCg0OEwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/////////////////////////////////+Hj//+f
+        /n/+f/+f/cAB7/vAAPf3gAD79+AA++/gP//v8B/97/wf/e/4D/3v/g/9//wH//f/B/v7/gP3+/+D7/z/
+        Ad//f/+//8/8///4B/////////////////////////////////8oAAAAEAAAACAAAAABAAgAAAAAAAAB
+        AAAAAAAAAAAAAAABAAAAAQAAAAAAAAD+AAAE/wQAC/4LAAz/DAAR/hEAFf8VACP/IwA6/zoAQ/5DAFL/
+        UgBb/1sAb/5vAHb+dgB5/3kAfv9+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAA////AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAJAgICAgIFAAAAAAAA
+        AAAAAAcCAg4AAAAAAAAAAAAAAAALAwIMAAAAAAAAAAAAAAAAAAgCAwAAAAAAAAAAAAAAAAANBQIOAAAA
+        AAAAAAAAAAAAAAoCAwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAD//wAA//8AAP//AAD//wAA//8AAPgP
+        AAD8PwAA/D8AAP4/AAD+HwAA/x8AAP//AAD//wAA//8AAP//AAD//wAAKAAAADAAAABgAAAAAQAgAAAA
+        AACAJQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAA/wADAP8AHwD/AEUA/wBjAP8AdgD+AIMA/wCGAP8AfAD/AHIA/wBeAP8AQAD+
+        ABkAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAD/AAIA/wAnAP4AZgD/AKkA/wDiAP8A5QD/AMkA/wC0AP8ApQD+AJ4A/wCZAP8AnwD/
+        AKgA/wC4AP8AzAD+AOkA/wDaAP8AmwD/AFwA/wAeAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAA/wAQAP8ATgD/AKwA/wDRAP4AuwD/AIAA/wBCAP8AIgD/ABUA/wAMAP8ABQD+
+        AAIAAAAAAP8AAwD/AAYA/wANAP8AFwD+ACQA/wBMAP8AjQD/AMAA/wDTAP8AnAD+AD8A/wAKAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAP4ACAD+AEQA/gC5AP4A0QD+AIcA/gA3AP4ACgAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAD+ABEA/gA+AP4AmwD+
+        ANQA/gCmAP4AOAD+AAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/wAZAP4AlgD/AOcA/wB2AP8AGQAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAD+ACcA/wCQAP8A5gD/AH4A/wALAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAD/AD8A/wDTAP4AqwD/ACEA/wAGAP8AMAD/
+        AF8A/wByAP4AcgD/AHIA/wByAP8AcgD/AHIA/wByAP8AcgD+AHIA/wByAP8AcgD/AHIA/wByAP8AcgD+
+        AHIA/wByAP8AcgD/AHIA/wByAP8ACwAAAAAAAAAAAP8AMQD/AMYA/wDBAP8AKwAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/wACAP8ATAD/ANsA/wB3AP4AHwD/
+        AEsA/wCHAP8AnAD/AKoA/wDSAP4A/gD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD+AP4A/wD/AP8A/wD/
+        AP8A/wD/AP8A/wD+AP4A/wD/AP8A/wD/AP8A/wD/AP8ATAAAAAAAAAAAAAAAAAD/ABMA/wCYAP8AywD+
+        ADkAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAD/AAEA/wA/AP8A3AD/
+        AGMA/wAGAAAAAAAAAAAAAAAAAP8ACAD/AFQA/wDVAP4A/gD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD+
+        AP4A/wD/AP8A/wD/AP8A/wD/AP8A/wD+AP4A/wD/AP8A/wD/AP8A/wD/AP8AlAD+AAMAAAAAAAAAAAAA
+        AAAA/wAMAP8AhgD+AMwA/wAmAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAD/
+        ACIA/wDKAP8AfAD/AAIAAAAAAAAAAAAAAAAA/wARAP8AjgD/APIA/wD/AP4A/gD/AP8A/wD/AP8A/wD/
+        AP8A/wD/AP8A/wD+AP4A/wD/AP8A/wD/AP8A/wD/AP8A/wD+AP4A/wD/AP8A/wD/AP8A/wD/AP8AzgD+
+        ABQAAAAAAAAAAAAAAAAAAAAAAP8ADAD+AJkA/wC8AP8ACgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAP4ABQD+AJ8A/gCpAP4AAwAAAAAAAAAAAAAAAAAAAAAA/gBPAP4AgAD+AIAA/gCAAP4AhAD+
+        AN0A/gD+AP4A/gD+AP4A/gD+AP4A/gD+AP4A/gD+AP4A/gD+AP4A/gD+AP4A/gD+AP4A/gD+AP4A/gD+
+        AP4A/gD+AP4A+wD+ADYAAAAAAAAAAAAAAAAAAAAAAAAAAAD+ABAA/gDJAP4AdQD+AAIAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAP4ASAD/ANEA/wAsAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAA/wAiAP4AqwD/APkA/wD/AP8A/wD/AP8A/wD/AP8A/wD+AP4A/wD/AP8A/wD/AP8A/wD/AP8A/wD+
+        AP4A/wD/AP8A/wD/AP8A/wD/AP8A/wD+AH8AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/wBCAP8A3AD/
+        ACcAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAP4AqAD/AI4A/wACAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAP8ABgD/AFAA/wDRAP4A/gD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD+AP4A/wD/AP8A/wD/
+        AHQA/wAyAP8AMgD+ADIA/wAyAP8AMgD/ADIA/wAyAP8AMgD+AB8AAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAA/wADAP8AuAD/AHsAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/wAWAP4A3wD/ADsAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAP8ACQD/AEQA/wBTAP4AUwD/AFYA/wCDAP8A7gD/AP8A/wD/AP8A/wD+
+        AP4A/wD/AP8A/wD/AK0A/wALAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAP8AYAD/AL4A/wANAAAAAAAAAAAAAAAAAAAAAAAAAAAA/wBIAP4AxwD/
+        ABoAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAP4AAQD/AGIA/wDkAP8A/wD/
+        AP8A/wD/AP8A/wD+AP4A/wD/AP8A/wD/APIA/wBAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAP8ALwD/AMwA/wAtAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAA/wBoAP4AsAD/AAgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/wAcAP4ApgD/
+        APoA/wD/AP8A/wD/AP8A/wD/AP8A/wD+AP4A/wD/AP8A/wD/AP8A/wCuAP8ABQAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAP8ADgD/ANAA/wBDAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAA/wB1AP4AqAD/AAIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAA/wAKAP4AJQD/ACYA/wAmAP8ANwD/AKEA/wD9AP8A/wD+AP4A/wD/AP8A/wD/AP8A/wDsAP8AQAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAP8AAgD/
+        ANIA/wBMAAAAAAAAAAAAAAAAAAAAAAAAAAAA/gBvAP4AqwD+AAUAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAD+AAEA/gAtAP4ArgD+APoA/gD+AP4A/gD+AP4A/gD+AP4A/gD+
+        AP4A/gD+AP4ApQD+AAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAP4ABwD+ANEA/gBIAAAAAAAAAAAAAAAAAAAAAAAAAAAA/wBYAP4AuwD/ABAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAD/AFMA/wDXAP8A+QD/APkA/wD5AP8A/QD+
+        AP4A/wD/AP8A/wD/AP8A/wD/AP8A8QD+AC4AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAP8AHgD/AM0A/wA4AAAAAAAAAAAAAAAAAAAAAAAAAAAA/wApAP4A2AD/
+        ACcAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAA/wA8AP8AzQD+AP4A/wD/AP8A/wD/AP8A/wD/AP8A/gD+AJ0A/wAEAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAP8ARwD/AMYA/wAaAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAA/wADAP4AzAD/AGcAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAP8ADQD/AHMA/wDuAP8A/gD+AP4A/wD/AP8A/wD/AP8A/wD/AP8A/wD+APMA/wAnAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAP8AkAD/AKAA/wACAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAP4AbwD/AL8A/wASAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAA/wAMAP8AdgD/AMUA/wDLAP8AywD+ANIA/wD3AP8A/wD/AP8A/wD/AP8A/wD+
+        AP4A/wCPAP8ABQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/wAbAP8A3wD/
+        AEYAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAP4AGwD/AMgA/wBrAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAP8AEwD+AIQA/wDxAP8A/wD/
+        AP8A/wD/AP8A/wD+AP4A/wDkAP8AKAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAD+
+        AAUA/wCOAP8ArgD/AA0AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAD+AFEA/gDeAP4AMQAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/gAzAP4AwwD+
+        AP4A/gD+AP4A/gD+AP4A/gD+AP4A/gD+AP4A/gD+AP4AigAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAD+AE4A/gDoAP4AKgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAD/
+        AAYA/wB9AP8A1AD/ACIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAD/
+        ABsA/wCPAP8AngD+AJ4A/wCfAP8AvgD/APsA/wD/AP8A/wD+AP4A/wD/AP8A3wD/ACkAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAP8AQgD+ANgA/wBdAP8AAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAA/wAOAP8AmAD/AMMA/wAyAP4AAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAD+AAUA/wBHAP8A1QD/AP0A/wD/AP8A/wD+AP4A/wD/AP8A/QD/
+        AIQAAAAAAAAAAAAAAAAAAAAAAAAAAAD/AAEA/wBMAP8AzgD+AHwA/wAEAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAP8ADQD/AJYA/wDNAP4AUgD/AAcAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAP8AEwD+AH4A/wDtAP8A/wD/AP8A/wD/AP8A/wD+
+        AP4A/wD/AP8A/wD/AN8A/wAcAAAAAAAAAAAAAAAAAP8ACwD/AGoA/wDYAP8AdQD+AAgAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAD/AAQA/wBqAP4A4QD/
+        AJwA/wAWAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAP8ANQD+AHAA/wBxAP8AcQD/
+        AHEA/wBxAP8AcQD+AHEA/wBxAP8AcQD/AG4A/wAmAAAAAAAAAAAA/wAqAP8ArAD/AN0A/wBMAP8AAwAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAP4AJAD/AKEA/wDnAP8AhwD/AC0A/wABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/wABAP8APQD+AJ4A/wDjAP8AkgD/
+        ABIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAD+AAgA/gBCAP4AqQD+ANMA/gCzAP4AXQD+AC0A/gANAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/gASAP4ANAD+AGsA/gC+AP4A0QD+
+        AJcA/gA0AP4ABQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAP8ACAD/ADUA/wB7AP4AyAD/
+        AMwA/wC/AP8AoAD/AHQA/wBVAP8APgD+ADMA/wArAP8ANAD/AEEA/wBaAP8AegD+AKcA/wDCAP8AzwD/
+        AL4A/wBwAP8AKQD+AAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAP4ABQD/AC8A/wBbAP8AhwD/AK8A/wDPAP8A5AD+APEA/wD1AP8A8AD/AOAA/wDJAP8AqgD+
+        AIAA/wBTAP8AJQD/AAMAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAP//
+        /////wAA////////AAD///////8AAP///////wAA////////AAD///////8AAP///////wAA////////
+        AAD//+AB//8AAP/+AAAf/wAA//gAQAP/AAD/4D//gP8AAP/B///wfwAA/4AAAAw/AAD+AAAADh8AAPwc
+        AAAHDwAA/DgAAAeHAAD4eAAAB8MAAPj/AAAH4wAA+PwAAAfjAADx/AAH//EAAPH/gAf/8QAA8f8AA//x
+        AADx/wAD//EAAPH/wAH/8QAA8f/AAf/xAADx//wA//EAAPH/8AD/8QAA+P/gAH/jAAD4//4Af8MAAPx/
+        /AB/xwAA/D/4AD+HAAD+D/8APg8AAP8H/gAcHwAA/4P+ABg/AAD/4H//wP8AAP/wD/4B/wAA//wAAAf/
+        AAD//4AAP/8AAP///////wAA////////AAD///////8AAP///////wAA////////AAD///////8AAP//
+        /////wAA////////AAD///////8AACgAAAAgAAAAQAAAAAEAIAAAAAAAgBAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAD+AA8A/gAzAP4ASwD/AFgA/gBVAP4ASQD+
+        ADAA/wALAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/gAEAP4ANwD+AIcA/wCzAP4AtAD+AI8A/gB1AP8AaQD+
+        AGoA/gB4AP4AkgD/ALcA/gCvAP4AfwD+AC4A/wACAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/gADAP8ARAD+AK4A/gCWAP4AQQD/ABMA/gABAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAP8AAQD+ABYA/gBKAP4AnwD/AKYA/gA5AP4AAQAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAP8AEwD/AJsA/wCVAP8AHgAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAP8AKgD/AKEA/wCMAP8ADAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAD+ACMA/gC5AP4AUQD/AD8A/gB+AP4AuQD+
+        APAA/wD2AP4A9gD+APYA/gD2AP8A9gD+APYA/gD2AP4A9gD/APYA/gD2AP4A9gD+AHkAAAAAAP4AAgD+
+        AF0A/gCvAP8AGQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/wAXAP4AuAD+AC8AAAAAAAAAAAD+
+        ABYA/gCfAP4A+gD/AP8A/gD+AP4A/gD+AP4A/wD/AP4A/gD+AP4A/gD+AP8A/wD+AP4A/gD+AP4AwQD/
+        AAUAAAAAAAAAAAD+AEYA/wCvAP4ACQAAAAAAAAAAAAAAAAAAAAAAAAAAAP4AAgD/AJwA/gBHAAAAAAAA
+        AAAA/wALAP4AhQD+AKoA/gCsAP8A8AD+AP4A/gD+AP4A/gD/AP8A/gD+AP4A/gD+AP4A/wD/AP4A/gD+
+        AP4A/gD1AP8AHQAAAAAAAAAAAAAAAAD/AF0A/gCHAP4AAQAAAAAAAAAAAAAAAAAAAAAA/wBAAP8AlgAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAP8AGgD/AKgA/wD8AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wDUAP8AywD/
+        AMwA/wDLAP8AywD/AMsA/wBGAAAAAAAAAAAAAAAAAP8AAgD/AK0A/wAnAAAAAAAAAAAAAAAAAAAAAAD+
+        AJcA/wA0AAAAAAAAAAAAAAAAAAAAAAD+AAcA/gBmAP4AjAD/AJIA/gDhAP4A/gD+AP4A/wD/AP4A/gD+
+        AGcAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAP4ATgD+AHsAAAAAAAAAAAAA
+        AAAAAAAAAP4AtwD/AA4AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/gAZAP8ArQD+AP0A/gD+AP4A/gD/
+        AP8A/gD+AP4A1AD+AA0AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/gAZAP4AqwAA
+        AAAAAAAAAAAAAAAAAAAA/gC9AP8AAgAAAAAAAAAAAAAAAAAAAAAAAAAAAP4AAgD+AFAA/wBuAP4AdgD+
+        ANQA/gD+AP8A/wD+AP4A/gD9AP4AYAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAD+
+        AAMA/gC9AAAAAAAAAAAAAAAAAAAAAAD/ALsA/wAFAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAD/
+        AB4A/wCvAP8A/QD/AP8A/wD/AP8A/wD/AP8A/wDTAP8ABQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAP8ACAD/ALkAAAAAAAAAAAAAAAAAAAAAAP4ArwD/ABYAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAP8ANwD+AFAA/gBWAP4AwwD/AP8A/gD+AP4A/gD+AP0A/wBXAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAA/gAoAP4AnAAAAAAAAAAAAAAAAAAAAAAA/gB6AP8AVgAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAP4AIwD+ALgA/gD9AP8A/wD+AP4A/gD+AP4A/gD/AMgA/gAIAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAD+AHIA/gBcAAAAAAAAAAAAAAAAAAAAAAD+AB8A/wCzAP4ACgAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/gAcAP4AMgD+ADsA/wCrAP4A/gD+AP4A/gD+AP8A/QD+
+        AEsAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/wAQAP4AuwD+ABAAAAAAAAAAAAAAAAAAAAAAAAAAAAD/
+        AGUA/wCJAP8AAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/wAkAP8AvQD/AP4A/wD/AP8A/wD/
+        AP8A/wD/AP8AwQD/AAUAAAAAAAAAAAAAAAAAAAAAAP8ABgD/AJ8A/wBKAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAP8ABQD+AIsA/gB2AP4ABQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAD+AAkA/gAUAP8AIAD+
+        AJcA/gD8AP4A/gD/AP8A/gD6AP4ARwAAAAAAAAAAAAAAAAD+AAkA/gCMAP8AdgAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAP4ABQD+AIQA/gCaAP8AFgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAD+
+        ACAA/wC0AP4A9QD+APUA/gD1AP8A9gD+APUA/gCyAAAAAAAAAAAA/gAeAP4AqgD+AG8A/wADAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAD+AEkA/wC5AP4AbgD+ABQAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/gAbAP8AfQD+ALUA/gA3AAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAD/AAwA/wBkAP8AswD/
+        AJgA/wBVAP8AJQD/ABEA/wAGAP8AAQD/AAIA/wAIAP8AEwD/ACgA/wBeAP8AngD/AK8A/wBVAP8ACQAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAA/gAFAP4AMAD/AHAA/gCgAP4AsAD+ALoA/wDAAP4AwAD+ALkA/gCvAP8AnAD+AGcA/gArAP4AAgAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAA////////////////////////////+Af//4AAf/4D8B/8P/8P+AAAh/GA
+        AGPjAABx58AAceeAH/nn4A/558AP+efwB/nn8Af55/gD+eP4A/Hx/AHj8PwBx/h+AYf+H/4f/wAAP//A
+        AP////////////////////////////////8oAAAAEAAAACAAAAABACAAAAAAAEAEAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/wADAP8AHwD/ACsA/wAeAP8AAgAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAD/AD4A/gBlAP8AXgD+AEEA/wA1AP4AQgD/
+        AF8A/gBmAP8AOAAAAAAAAAAAAAAAAAAAAAAAAAAAAP8ACAD/AG4A/wBcAP8AagD/AHsA/wB7AP8AewD/
+        AHsA/wB7AP8AWwD/ADMA/wBpAP8ABgAAAAAAAAAAAAAAAAD/AGwA/gAMAP8AKQD+ALwA/wD7AP4A/gD/
+        AP8A/gD+AP8A/wD+AO0A/wAIAP4AEQD/AGcAAAAAAAAAAAD/ADYA/wAzAAAAAAD/AAEA/wBtAP8A3AD/
+        AP8A/wD/AP8AgQD/AGYA/wBlAP8AEQAAAAAA/wA/AP8AKAAAAAAA/gBdAP8ABAAAAAAAAAAAAP4AGwD/
+        AKQA/gD0AP8A/wD+AJAAAAAAAAAAAAAAAAAAAAAAAP8ABwD+AFoAAAAAAP8AWgD/AAYAAAAAAAAAAAAA
+        AAAA/wBVAP8AxQD/AP8A/wDzAP8AFwAAAAAAAAAAAAAAAAD/AAwA/wBVAAAAAAD+ACYA/wBFAAAAAAAA
+        AAAAAAAAAP8ADwD+AIkA/wDqAP4A/gD/AIYAAAAAAAAAAAAAAAAA/wBPAP4AGwAAAAAAAAAAAP8AXwD/
+        AB8AAAAAAAAAAAAAAAAA/wBAAP8ArQD/AP4A/wDuAP8AEwAAAAAA/wAnAP8AWAAAAAAAAAAAAAAAAAD/
+        AAEA/gBaAP8ATwD+AAUAAAAAAP4ACAD/AGoA/gB6AP8AegD+ADMA/wBUAP4AVAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAD/ABwA/wBgAP8AYgD/AGEA/wBhAP8AYQD/AGIA/wBfAP8AFwAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAP//AAD//wAA/B8AAPAHAADAAQAAwAEAAJAEAACYPAAAnBwAAJwcAADOCQAAwgMAAPAH
+        AAD//wAA//8AAP//AAA=
+</value>
+  </data>
+  <data name="$this.Text" xml:space="preserve">
+    <value>Parámetros de prueba</value>
+  </data>
+</root>

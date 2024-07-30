@@ -1,0 +1,416 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="Function7.Location" type="System.Drawing.Point, System.Drawing">
+    <value>289, 143</value>
+  </data>
+  <data name="Function7.Size" type="System.Drawing.Size, System.Drawing">
+    <value>552, 144</value>
+  </data>
+  <data name="Function6.Location" type="System.Drawing.Point, System.Drawing">
+    <value>290, 143</value>
+  </data>
+  <data name="Function6.Size" type="System.Drawing.Size, System.Drawing">
+    <value>600, 96</value>
+  </data>
+  <data name="BtnManual7.Location" type="System.Drawing.Point, System.Drawing">
+    <value>84, 492</value>
+  </data>
+  <data name="BtnManual7.Size" type="System.Drawing.Size, System.Drawing">
+    <value>145, 45</value>
+  </data>
+  <data name="BtnManual6.Location" type="System.Drawing.Point, System.Drawing">
+    <value>84, 437</value>
+  </data>
+  <data name="BtnManual6.Size" type="System.Drawing.Size, System.Drawing">
+    <value>145, 45</value>
+  </data>
+  <data name="LinkLabel2.Location" type="System.Drawing.Point, System.Drawing">
+    <value>304, 443</value>
+  </data>
+  <data name="LinkLabel2.Size" type="System.Drawing.Size, System.Drawing">
+    <value>216, 16</value>
+  </data>
+  <data name="function5.Location" type="System.Drawing.Point, System.Drawing">
+    <value>290, 143</value>
+  </data>
+  <data name="function5.Size" type="System.Drawing.Size, System.Drawing">
+    <value>632, 256</value>
+  </data>
+  <data name="BtnManual5.Location" type="System.Drawing.Point, System.Drawing">
+    <value>84, 382</value>
+  </data>
+  <data name="BtnManual5.Size" type="System.Drawing.Size, System.Drawing">
+    <value>145, 45</value>
+  </data>
+  <data name="Label3.Location" type="System.Drawing.Point, System.Drawing">
+    <value>290, 143</value>
+  </data>
+  <data name="Label3.Size" type="System.Drawing.Size, System.Drawing">
+    <value>568, 320</value>
+  </data>
+  <data name="function3.Location" type="System.Drawing.Point, System.Drawing">
+    <value>290, 143</value>
+  </data>
+  <data name="function3.Size" type="System.Drawing.Size, System.Drawing">
+    <value>616, 336</value>
+  </data>
+  <data name="function2.Location" type="System.Drawing.Point, System.Drawing">
+    <value>289, 143</value>
+  </data>
+  <data name="function2.Size" type="System.Drawing.Size, System.Drawing">
+    <value>536, 64</value>
+  </data>
+  <data name="function1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>289, 143</value>
+  </data>
+  <data name="function1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>408, 128</value>
+  </data>
+  <data name="BtnManual4.Location" type="System.Drawing.Point, System.Drawing">
+    <value>84, 327</value>
+  </data>
+  <data name="BtnManual4.Size" type="System.Drawing.Size, System.Drawing">
+    <value>145, 45</value>
+  </data>
+  <data name="BtnManual3.Location" type="System.Drawing.Point, System.Drawing">
+    <value>84, 272</value>
+  </data>
+  <data name="BtnManual3.Size" type="System.Drawing.Size, System.Drawing">
+    <value>145, 45</value>
+  </data>
+  <data name="BtnManual2.Location" type="System.Drawing.Point, System.Drawing">
+    <value>84, 217</value>
+  </data>
+  <data name="BtnManual2.Size" type="System.Drawing.Size, System.Drawing">
+    <value>145, 45</value>
+  </data>
+  <data name="BtnManual1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>84, 162</value>
+  </data>
+  <data name="BtnManual1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>145, 45</value>
+  </data>
+  <data name="Label5.Location" type="System.Drawing.Point, System.Drawing">
+    <value>14, 143</value>
+  </data>
+  <data name="Label5.Size" type="System.Drawing.Size, System.Drawing">
+    <value>88, 16</value>
+  </data>
+  <data name="Label4.Location" type="System.Drawing.Point, System.Drawing">
+    <value>184, 107</value>
+  </data>
+  <data name="Label4.Size" type="System.Drawing.Size, System.Drawing">
+    <value>514, 16</value>
+  </data>
+  <data name="LinkLabel1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>155, 600</value>
+  </data>
+  <data name="LinkLabel1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>137, 12</value>
+  </data>
+  <data name="Label2.Location" type="System.Drawing.Point, System.Drawing">
+    <value>330, 44</value>
+  </data>
+  <data name="Label2.Size" type="System.Drawing.Size, System.Drawing">
+    <value>277, 40</value>
+  </data>
+  <data name="BtnManual1.Text" xml:space="preserve">
+    <value>1. función de configuración de Puerto serie</value>
+  </data>
+  <data name="Label1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>12, 600</value>
+  </data>
+  <data name="Label1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>137, 12</value>
+  </data>
+  <data name="PictureBox1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>244, 14</value>
+  </data>
+  <data name="PictureBox1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>102, 96</value>
+  </data>
+  <data name="$this.AutoScaleDimensions" type="System.Drawing.SizeF, System.Drawing">
+    <value>6, 12</value>
+  </data>
+  <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
+    <value>934, 626</value>
+  </data>
+  <data name="BtnManual2.Text" xml:space="preserve">
+    <value>2. inicio de sesión y modificación de contraseña</value>
+  </data>
+  <data name="BtnManual3.Text" xml:space="preserve">
+    <value>3. función de configuración de almacenamiento</value>
+  </data>
+  <data name="BtnManual4.Text" xml:space="preserve">
+    <value>4. pasos básicos de uso</value>
+  </data>
+  <data name="BtnManual5.Text" xml:space="preserve">
+    <value>5. exportar archivos SQL</value>
+  </data>
+  <data name="BtnManual6.Text" xml:space="preserve">
+    <value>6. función de configuración básica</value>
+  </data>
+  <data name="BtnManual7.Text" xml:space="preserve">
+    <value>7. función de parámetros de prueba</value>
+  </data>
+  <data name="function1.Text" xml:space="preserve">
+    <value>1. seleccione la "tasa de porto" correcta de la lista desplegable "tasa de porto". El valor predeterminado es de 9600.
+
+2. seleccione el puerto correcto de la lista desplegable del número de puerto y luego haga clic para conectar el puerto serie,
+
+Si está conectado, el Estado del puerto serie mostrará que el puerto serie está conectado. Si se conecta al instrumento
+
+En el momento de la comunicación, el Estado de la comunicación se mostrará conectado. Si no se establece el desplegable del puerto
+
+Haga clic para actualizar el puerto serie del puerto correspondiente. para desconectar del puerto serie
+
+Conecte y luego haga clic para desconectar.</value>
+  </data>
+  <data name="function2.Text" xml:space="preserve">
+    <value>1. Click on Login and enter your password to unlock menu bar permissions or modify your password.
+2. Click to modify the password, enter the new password twice, and then click Modify to change the password to a new one.
+Next login requires a new password.</value>
+  </data>
+  <data name="function3.Text" xml:space="preserve">
+    <value>1. Check the desired export file type, and if none of them are checked, the file will not be exported.
+
+2. Export TXT function: Click the Select File Path button, select a TXT file, and after the test is completed
+
+The results can be imported into the selected TXT file. If no file path is selected, default to creating a new one on the desktop
+
+A txt file called the current day's date. If the TXT file does not exist in the selected path, then it will follow the path
+
+Create a new txt file.
+
+3. Export Excel function: Click the Select File Path button, select an Excel file, and after the test is completed
+
+You can import the results into the selected Excel file. If no file path is selected, it defaults to a new one on the desktop
+
+Create an Excel file called the current day's date. If the Excel file does not exist in the selected path, it will be pressed
+
+Create a new Excel file according to the path.
+
+4. Export CSV function: Click the Select File Path button, select a CSV file, and after the test is completed
+
+You can import the results into the selected CSV file. If no file path is selected, it defaults to a new one on the desktop
+
+Create a CSV file called the current day's date. If the CSV file in the selected path does not exist, then the
+
+Create a new CSV file according to the path.
+
+5. For more information on the function of exporting SqlServer files, please refer to directory 5 "Exporting SQL Files"
+
+6. After selecting the path and the file format to be exported, click Apply Settings to apply the settings and save them
+
+Locally. There is no need to set it again when opening the software next time.</value>
+  </data>
+  <data name="function5.Text" xml:space="preserve">
+    <value>Exportar la función de archivo sqlserver:
+
+(1) haga clic en el botón "connect sql", rellene el nombre del servidor o la dirección IP del servidor sqlserver, y luego rellene el nombre de usuario y
+
+Palabras clave Después de introducir la información de inicio de sesión, haga clic en "guardar", y la próxima vez que abra este sistema, también puede leer los datos de inicio de sesión introducidos.
+
+Si no hace clic en "guardar", los datos de inicio de sesión introducidos no se leerán la próxima vez que inicie sesión.
+
+(2) una vez finalizada la prueba, se puede crear un nuevo archivo de base de datos llamado "leaktest" y conectarse a los datos
+
+Biblioteca, que se puede operar en ssms. Hay un archivo de base de datos llamado
+
+Una tabla con "prueba de fuga + fecha del día" se utiliza para almacenar los registros de prueba. Durante la prueba del producto, este número se puede actualizar automáticamente todos los días
+
+Crear una nueva tabla en la base de datos llamada "leaktest + fecha del día" para almacenar el registro de pruebas del día.
+
+(3) si se conecta a una base de datos en el ordenador donde se instala este software, se puede introducir el nombre del servidor localmente
+
+Conectarse al servidor sqlserver. El nombre del servidor es el nombre de la instancia que se muestra en el gestor de recursos de objetos del servidor sqlserver, también conocido como
+
+Después de iniciar sesión, puede consultar "select @ @ servername" con una sentencia para obtenerlo.
+
+(4) si se conecta a una base de datos en un ordenador en una red local, se puede conectar al servidor SQLServer introduciendo una dirección Ip.</value>
+  </data>
+  <data name="Function6.Text" xml:space="preserve">
+    <value>1. establecer el número de estación: el número de estación debe ser consistente con el número de estación subordinada del instrumento. Por ejemplo, si el número del salpicadero es 1, se selecciona 01;
+
+Si el número de estación de instrumentos es 2, se selecciona 02, y así sucesivamente. si no se selecciona, el número de estación de instrumentos predeterminado es 01
+
+2. longitud del Código de barras: se puede establecer la longitud del Código de barras a la longitud del Código de barras que se debe introducir. Después del escaneo, se realiza la verificación del escaneo.
+
+Verifique si la longitud es correcta. Si no se introduce la longitud del Código de barras, el valor predeterminado es de 13 dígitos.</value>
+  </data>
+  <data name="Label1.Text" xml:space="preserve">
+    <value>Shenzhen linglong Technology co., Ltd.</value>
+  </data>
+  <data name="Label2.Text" xml:space="preserve">
+    <value>Instrucciones de uso</value>
+  </data>
+  <data name="Label3.Text" xml:space="preserve">
+    <value>Los pasos básicos de uso son los siguientes:
+
+1. ingrese a la función de configuración del puerto serie y elija la tasa de Baud correcta, que por defecto es de 9600.
+
+2. seleccione el puerto correcto y luego haga clic en "conectarse al puerto serie". si la conexión es exitosa, el Estado del puerto serie se mostrará como "conectado".
+
+Después de conectarse al puerto serie, ingrese a la función de configuración de almacenamiento para configurar el archivo de almacenamiento.
+
+4. haga clic en activar el instrumento para iniciar el instrumento para la prueba del producto.
+
+5. para activar el instrumento con código de barras, primero introduzca la longitud del Código de barras en la configuración básica.
+
+Longitud y luego escanear el Código de barras. Si no se introduce la longitud del Código de barras, el valor predeterminado es de 13 dígitos.
+
+Si necesita restablecer el instrumento, haga clic para restablecer el instrumento. Si hace clic en el botón restablecer el instrumento durante la prueba, entonces
+
+Interrumpir el proceso de prueba.
+
+Precauciones:
+
+1. siga las instrucciones, de lo contrario puede causar anomalías en el software.
+
+2. siga las instrucciones funcionales detalladas en el catálogo de funciones, de lo contrario puede causar anomalías en el software.
+
+3. si el software tiene una anomalía, reinicie.</value>
+  </data>
+  <data name="Label4.Text" xml:space="preserve">
+    <value>¡¡ Bienvenido al sistema de control de computadora superior ll28 desarrollado por Shenzhen linglong Technology co., ltd.!</value>
+  </data>
+  <data name="Label5.Text" xml:space="preserve">
+    <value>Catálogo de funciones:</value>
+  </data>
+  <data name="Linklabel 2. texto" xml:space="preserve">
+    <value>Método de configuración para conectarse a la base de datos de la red local</value>
+  </data>
+  <data name="Function7.Text" xml:space="preserve">
+    <value>Si necesita cambiar los parámetros del instrumento, introduzca los parámetros deseados en cada cuadro de parámetros y luego haga clic para cargar los parámetros.
+
+El botón cargar parámetros se convertirá en texto rojo "cargar con éxito". El botón de parámetros a cargar volverá a su Estado original, es decir, cargar
+
+Completado Después de cargar, puede hacer clic en el botón "leer parámetros" para verificar si todos los parámetros han sido subidos. Cargar parámetros
+
+El formato del parámetro debe cumplir con los requisitos del instrumento, de lo contrario puede causar anomalías en el software.
+
+2. haga clic en el botón Leer parámetros para leer los parámetros del instrumento.
+
+3. si necesita guardar los parámetros localmente, introduzca los parámetros en el cuadro de entrada de parámetros y luego haga clic en "guardar parámetros"
+
+El botón a guardar. Se pueden guardar hasta 15 parámetros. Puede cambiar entre los parámetros guardados localmente en el número del Grupo de parámetros.</value>
+  </data>
+</root>

@@ -1,0 +1,269 @@
+
+
+LIN_description_file;
+LIN_protocol_version = "2.0";
+LIN_language_version = "2.0";
+LIN_speed = 10.417 kbps;
+
+Nodes {
+  Master: MSM, 10 ms, 0 ms ;
+  Slaves: MBM ;
+}
+
+Signals {
+  MemCmd: 4, 0, MSM, MBM ;
+  ReservedBit4: 1, 0, MSM, MBM ;
+  LmbrRwdReq: 1, 0, MSM, MBM ;
+  LmbrUpReq: 1, 0, MSM, MBM ;
+  LmbrDwnReq: 1, 0, MSM, MBM ;
+  BckBlstrInReq: 1, 0, MSM, MBM ;
+  BckBlstrOutReq: 1, 0, MSM, MBM ;
+  CushBlstrInReq: 1, 0, MSM, MBM ;
+  CushBlstrOutReq: 1, 0, MSM, MBM ;
+  CushLngthFwdReq: 1, 0, MSM, MBM ;
+  CushLngthRwdReq: 1, 0, MSM, MBM ;
+  HdrstFwdReq: 1, 0, MSM, MBM ;
+  HdrstRwdReq: 1, 0, MSM, MBM ;
+  DynamcMdCtrl: 3, 0, MSM, MBM ;
+  ReservedBit20: 1, 0, MSM, MBM ;
+  ReservedBit21: 1, 0, MSM, MBM ;
+  LmbrFwdReq: 1, 0, MSM, MBM ;
+  UprShldrFwdReq: 1, 0, MSM, MBM ;
+  UprShldrRwdReq: 1, 0, MSM, MBM ;
+  MssgTypPnmtcReq: 4, 0, MSM, MBM ;
+  MssgIntstyPnmtcRq: 3, 0, MSM, MBM ;
+  ReservedBit31: 1, 0, MSM, MBM ;
+  LMM_2LAPINFO0: 1, 0, MBM, MSM ;
+  LMM_2LAPINFO1: 1, 0, MBM, MSM ;
+  LMM_2LAPINFO2: 1, 0, MBM, MSM ;
+  LMM_2LAPINFO3: 1, 0, MBM, MSM ;
+  LMM_2LAPINFO4: 1, 0, MBM, MSM ;
+  LMM_2LJ2602Error: 3, 0, MBM, MSM ;
+  SeatPnmtcRclCmplt: 2, 0, MBM, MSM ;
+  MCM_PumpStatus: 1, 0, MBM, MSM ;
+  MemBolsModChldIntrnlFltPr: 1, 0, MBM, MSM ;
+  ReservedBit12: 4, 0, MBM, MSM ;
+}
+
+Diagnostic_signals {
+  MasterReqB0: 8, 0 ;
+  MasterReqB1: 8, 0 ;
+  MasterReqB2: 8, 0 ;
+  MasterReqB3: 8, 0 ;
+  MasterReqB4: 8, 0 ;
+  MasterReqB5: 8, 0 ;
+  MasterReqB6: 8, 0 ;
+  MasterReqB7: 8, 0 ;
+  SlaveRespB0: 8, 0 ;
+  SlaveRespB1: 8, 0 ;
+  SlaveRespB2: 8, 0 ;
+  SlaveRespB3: 8, 0 ;
+  SlaveRespB4: 8, 0 ;
+  SlaveRespB5: 8, 0 ;
+  SlaveRespB6: 8, 0 ;
+  SlaveRespB7: 8, 0 ;
+}
+
+
+Frames {
+  MSM_LIN2_MBM_BLOSTERSTATUS_Rsp_MSG: 0, MSM, 4 {
+    LmbrUpReq, 6 ;
+    MemCmd, 0 ;
+    ReservedBit4, 4 ;
+    LmbrRwdReq, 5 ;
+    LmbrDwnReq, 7 ;
+    BckBlstrInReq, 8 ;
+    BckBlstrOutReq, 9 ;
+    CushBlstrInReq, 10 ;
+    CushBlstrOutReq, 11 ;
+    CushLngthFwdReq, 12 ;
+    CushLngthRwdReq, 13 ;
+    HdrstFwdReq, 14 ;
+    HdrstRwdReq, 15 ;
+    DynamcMdCtrl, 16 ;
+    ReservedBit20, 20 ;
+    ReservedBit21, 21 ;
+    LmbrFwdReq, 19 ;
+    UprShldrFwdReq, 22 ;
+    UprShldrRwdReq, 23 ;
+    MssgTypPnmtcReq, 24 ;
+    MssgIntstyPnmtcRq, 28 ;
+    ReservedBit31, 31 ;
+  }
+  MSM_LIN2_MBM_BLOSTER_Cmd_MSG: 1, MBM, 2 {
+    LMM_2LAPINFO0, 0 ;
+    LMM_2LAPINFO1, 1 ;
+    LMM_2LAPINFO2, 2 ;
+    LMM_2LAPINFO3, 3 ;
+    LMM_2LAPINFO4, 4 ;
+    LMM_2LJ2602Error, 5 ;
+    SeatPnmtcRclCmplt, 8 ;
+    MCM_PumpStatus, 10 ;
+    MemBolsModChldIntrnlFltPr, 11 ;
+    ReservedBit12, 12 ;
+  }
+}
+
+
+
+Diagnostic_frames {
+  MasterReq: 0x3c {
+    MasterReqB0, 0 ;
+    MasterReqB1, 8 ;
+    MasterReqB2, 16 ;
+    MasterReqB3, 24 ;
+    MasterReqB4, 32 ;
+    MasterReqB5, 40 ;
+    MasterReqB6, 48 ;
+    MasterReqB7, 56 ;
+  }
+  SlaveResp: 0x3d {
+    SlaveRespB0, 0 ;
+    SlaveRespB1, 8 ;
+    SlaveRespB2, 16 ;
+    SlaveRespB3, 24 ;
+    SlaveRespB4, 32 ;
+    SlaveRespB5, 40 ;
+    SlaveRespB6, 48 ;
+    SlaveRespB7, 56 ;
+  }
+}
+
+Node_attributes {
+  MBM{
+    LIN_protocol = "2.0" ;
+    configured_NAD = 0x60 ;
+    product_id = 0xFF, 0xFF, 255 ;
+    P2_min = 0 ms ;
+    ST_min = 0 ms ;
+    configurable_frames {
+      MSM_LIN2_MBM_BLOSTERSTATUS_Rsp_MSG = 0x0 ;
+      MSM_LIN2_MBM_BLOSTER_Cmd_MSG = 0x0 ;
+    }
+  }
+}
+
+Schedule_tables {
+ MSM {
+    MSM_LIN2_MBM_BLOSTERSTATUS_Rsp_MSG delay 20 ms ;
+    MSM_LIN2_MBM_BLOSTER_Cmd_MSG delay 20 ms ;
+  }
+}
+
+
+Signal_encoding_types {
+  BckBlstrInReq {
+    logical_value, 0, "FALSE" ;
+    logical_value, 1, "TRUE" ;
+  }
+  BckBlstrOutReq {
+    logical_value, 0, "FALSE" ;
+    logical_value, 1, "TRUE" ;
+  }
+  CushBlstrInReq {
+    logical_value, 0, "FALSE" ;
+    logical_value, 1, "TRUE" ;
+  }
+  CushBlstrOutReq {
+    logical_value, 0, "FALSE" ;
+    logical_value, 1, "TRUE" ;
+  }
+  CushLngthFwdReq {
+    logical_value, 0, "FALSE" ;
+    logical_value, 1, "TRUE" ;
+  }
+  DynamcMdCtrl {
+    logical_value, 0, "DMC Level 0" ;
+    logical_value, 1, "DMC Level 1" ;
+    logical_value, 2, "DMC Level 2" ;
+    logical_value, 3, "DMC Level 3" ;
+    logical_value, 4, "DMC Level 4" ;
+    logical_value, 5, "DMC Level 5" ;
+    logical_value, 6, "DMC Level 6" ;
+    logical_value, 7, "DMC Level 7" ;
+  }
+  HdrstFwdReq {
+    logical_value, 0, "FALSE" ;
+    logical_value, 1, "TRUE" ;
+  }
+  LMM_2LAPINFO0 {
+    logical_value, 0, "No Communication Continue Requested" ;
+    logical_value, 1, "Communication Continue Requested" ;
+  }
+  LMM_2LAPINFO1 {
+    logical_value, 0, "No Diagnostic Information" ;
+    logical_value, 1, "Diagnostic Information" ;
+  }
+  LMM_2LAPINFO2 {
+    logical_value, 0, "No Application Reset Occurred" ;
+    logical_value, 1, "Application Reset Occurred" ;
+  }
+  LMM_2LAPINFO3 {
+    logical_value, 0, "Application Configuration Status OK" ;
+    logical_value, 1, "Application Configuration Status not OK" ;
+  }
+  LMM_2LAPINFO4 {
+    logical_value, 0, "No Application Fault Detected" ;
+    logical_value, 1, "Application Fault Detected" ;
+  }
+  LMM_2LJ2602Error {
+    logical_value, 0, "No Detected Fault" ;
+    logical_value, 1, "Reset" ;
+    logical_value, 2, "Reserved" ;
+    logical_value, 3, "Reserved" ;
+    logical_value, 4, "Tx Bit Error" ;
+    logical_value, 5, "Checksum Error" ;
+    logical_value, 6, "Byte Field Framing Error" ;
+    logical_value, 7, "ID Parity Error" ;
+  }
+  LmbrDwnReq {
+    logical_value, 0, "FALSE" ;
+    logical_value, 1, "TRUE" ;
+  }
+  LmbrFwdReq {
+    logical_value, 0, "FALSE" ;
+    logical_value, 1, "TRUE" ;
+  }
+  LmbrRwdReq {
+    logical_value, 0, "FALSE" ;
+    logical_value, 1, "TRUE" ;
+  }
+  LmbrUpReq {
+    logical_value, 0, "FALSE" ;
+    logical_value, 1, "TRUE" ;
+  }
+  SeatPnmtcRclCmplt {
+    logical_value, 0, "No Recall Requested" ;
+    logical_value, 1, "Recall In Process" ;
+    logical_value, 2, "Recall Complete" ;
+  }
+  CushLngthRwdReq {
+    logical_value, 0, "FALSE" ;
+    logical_value, 1, "TRUE" ;
+  }
+  HdrstRwdReq {
+    logical_value, 0, "FALSE" ;
+    logical_value, 1, "TRUE" ;
+  }
+}
+
+Signal_representation {
+  BckBlstrInReq: BckBlstrInReq ;
+  BckBlstrOutReq: BckBlstrOutReq ;
+  CushBlstrInReq: CushBlstrInReq ;
+  CushBlstrOutReq: CushBlstrOutReq ;
+  CushLngthFwdReq: CushLngthFwdReq ;
+  DynamcMdCtrl: DynamcMdCtrl ;
+  HdrstFwdReq: HdrstFwdReq ;
+  LMM_2LAPINFO0: LMM_2LAPINFO0 ;
+  LMM_2LAPINFO1: LMM_2LAPINFO1 ;
+  LMM_2LAPINFO2: LMM_2LAPINFO2 ;
+  LMM_2LAPINFO3: LMM_2LAPINFO3 ;
+  LMM_2LAPINFO4: LMM_2LAPINFO4 ;
+  LMM_2LJ2602Error: LMM_2LJ2602Error ;
+  LmbrDwnReq: LmbrDwnReq ;
+  LmbrFwdReq: LmbrFwdReq ;
+  LmbrRwdReq: LmbrRwdReq ;
+  LmbrUpReq: LmbrUpReq ;
+  SeatPnmtcRclCmplt: MCM_PumpStatus ;
+}

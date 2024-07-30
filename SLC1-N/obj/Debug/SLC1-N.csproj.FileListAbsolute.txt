@@ -1,0 +1,1957 @@
+F:\代码开发\C#开发\LL28\小米LL28-N-1\SLC1-N\bin\Debug\Newtonsoft.Json.dll
+F:\代码开发\C#开发\LL28\小米LL28-N-1\SLC1-N\bin\Debug\Newtonsoft.Json.xml
+F:\代码开发\C#开发\LL28\小米LL28-N-1\SLC1-N\obj\Debug\SLC1_N.Config.resources
+F:\代码开发\C#开发\LL28\小米LL28-N-1\SLC1-N\obj\Debug\SLC1_N.Form1.resources
+F:\代码开发\C#开发\LL28\小米LL28-N-1\SLC1-N\obj\Debug\SLC1_N.LogOn.resources
+F:\代码开发\C#开发\LL28\小米LL28-N-1\SLC1-N\obj\Debug\SLC1_N.MESConfig.resources
+F:\代码开发\C#开发\LL28\小米LL28-N-1\SLC1-N\obj\Debug\SLC1_N.PortSetting.resources
+F:\代码开发\C#开发\LL28\小米LL28-N-1\SLC1-N\obj\Debug\SLC1_N.Properties.Resources.resources
+F:\代码开发\C#开发\LL28\小米LL28-N-1\SLC1-N\obj\Debug\SLC1_N.Save.resources
+F:\代码开发\C#开发\LL28\小米LL28-N-1\SLC1-N\obj\Debug\SLC1_N.SQLConfig.resources
+F:\代码开发\C#开发\LL28\小米LL28-N-1\SLC1-N\obj\Debug\SLC1_N.SQLConnectionMethod.resources
+F:\代码开发\C#开发\LL28\小米LL28-N-1\SLC1-N\obj\Debug\SLC1_N.TestParams.resources
+F:\代码开发\C#开发\LL28\小米LL28-N-1\SLC1-N\obj\Debug\SLC1_N.UserPassword.resources
+F:\代码开发\C#开发\LL28\小米LL28-N-1\SLC1-N\obj\Debug\SLC1-N.csproj.GenerateResource.cache
+F:\代码开发\C#开发\LL28\小米LL28-N-1\SLC1-N\obj\Debug\SLC1-N.csproj.CopyComplete
+F:\代码开发\C#开发\LL28\小米LL28-N-1\SLC1-N\obj\Debug\SLC1_N.Help.resources
+F:\代码开发\C#开发\LL28\小米LL28-N-1\SLC1-N\bin\Debug\LL28-N-V1.0.exe.config
+F:\代码开发\C#开发\LL28\小米LL28-N-1\SLC1-N\bin\Debug\LL28-N-V1.0.exe
+F:\代码开发\C#开发\LL28\小米LL28-N-1\SLC1-N\bin\Debug\LL28-N-V1.0.pdb
+F:\代码开发\C#开发\LL28\小米LL28-N-1\SLC1-N\obj\Debug\LL28-N-V1.0.exe
+F:\代码开发\C#开发\LL28\小米LL28-N-1\SLC1-N\obj\Debug\LL28-N-V1.0.pdb
+F:\代码开发\C#开发\LL28\小米LL28-N-2\SLC1-N\bin\Debug\LL28-N-V1.0.exe.config
+F:\代码开发\C#开发\LL28\小米LL28-N-2\SLC1-N\bin\Debug\LL28-N-V1.0.exe
+F:\代码开发\C#开发\LL28\小米LL28-N-2\SLC1-N\bin\Debug\LL28-N-V1.0.pdb
+F:\代码开发\C#开发\LL28\小米LL28-N-2\SLC1-N\bin\Debug\Newtonsoft.Json.dll
+F:\代码开发\C#开发\LL28\小米LL28-N-2\SLC1-N\bin\Debug\Newtonsoft.Json.xml
+F:\代码开发\C#开发\LL28\小米LL28-N-2\SLC1-N\obj\Debug\SLC1_N.Config.resources
+F:\代码开发\C#开发\LL28\小米LL28-N-2\SLC1-N\obj\Debug\SLC1_N.Form1.resources
+F:\代码开发\C#开发\LL28\小米LL28-N-2\SLC1-N\obj\Debug\SLC1_N.Help.resources
+F:\代码开发\C#开发\LL28\小米LL28-N-2\SLC1-N\obj\Debug\SLC1_N.LogOn.resources
+F:\代码开发\C#开发\LL28\小米LL28-N-2\SLC1-N\obj\Debug\SLC1_N.MESConfig.resources
+F:\代码开发\C#开发\LL28\小米LL28-N-2\SLC1-N\obj\Debug\SLC1_N.PortSetting.resources
+F:\代码开发\C#开发\LL28\小米LL28-N-2\SLC1-N\obj\Debug\SLC1_N.Properties.Resources.resources
+F:\代码开发\C#开发\LL28\小米LL28-N-2\SLC1-N\obj\Debug\SLC1_N.Save.resources
+F:\代码开发\C#开发\LL28\小米LL28-N-2\SLC1-N\obj\Debug\SLC1_N.SQLConfig.resources
+F:\代码开发\C#开发\LL28\小米LL28-N-2\SLC1-N\obj\Debug\SLC1_N.SQLConnectionMethod.resources
+F:\代码开发\C#开发\LL28\小米LL28-N-2\SLC1-N\obj\Debug\SLC1_N.TestParams.resources
+F:\代码开发\C#开发\LL28\小米LL28-N-2\SLC1-N\obj\Debug\SLC1_N.UserPassword.resources
+F:\代码开发\C#开发\LL28\小米LL28-N-2\SLC1-N\obj\Debug\SLC1-N.csproj.GenerateResource.cache
+F:\代码开发\C#开发\LL28\小米LL28-N-2\SLC1-N\obj\Debug\SLC1-N.csproj.CopyComplete
+F:\代码开发\C#开发\LL28\小米LL28-N-2\SLC1-N\obj\Debug\LL28-N-V1.0.exe
+F:\代码开发\C#开发\LL28\小米LL28-N-2\SLC1-N\obj\Debug\LL28-N-V1.0.pdb
+F:\代码开发\C#开发\LL28\小米LL28-N-2\SLC1-N\obj\Debug\SLC1-N.csprojAssemblyReference.cache
+F:\代码开发\C#开发\LL28\小米LL28-N-3 补偿\SLC1-N\bin\Debug\Newtonsoft.Json.dll
+F:\代码开发\C#开发\LL28\小米LL28-N-3 补偿\SLC1-N\bin\Debug\Newtonsoft.Json.xml
+F:\代码开发\C#开发\LL28\小米LL28-N-3 补偿\SLC1-N\obj\Debug\SLC1_N.CompensationConfig.resources
+F:\代码开发\C#开发\LL28\小米LL28-N-3 补偿\SLC1-N\obj\Debug\SLC1_N.Config.resources
+F:\代码开发\C#开发\LL28\小米LL28-N-3 补偿\SLC1-N\obj\Debug\SLC1_N.ConfigLogOn.resources
+F:\代码开发\C#开发\LL28\小米LL28-N-3 补偿\SLC1-N\obj\Debug\SLC1_N.Form1.resources
+F:\代码开发\C#开发\LL28\小米LL28-N-3 补偿\SLC1-N\obj\Debug\SLC1_N.Help.resources
+F:\代码开发\C#开发\LL28\小米LL28-N-3 补偿\SLC1-N\obj\Debug\SLC1_N.LogOn.resources
+F:\代码开发\C#开发\LL28\小米LL28-N-3 补偿\SLC1-N\obj\Debug\SLC1_N.MESConfig.resources
+F:\代码开发\C#开发\LL28\小米LL28-N-3 补偿\SLC1-N\obj\Debug\SLC1_N.PortSetting.resources
+F:\代码开发\C#开发\LL28\小米LL28-N-3 补偿\SLC1-N\obj\Debug\SLC1_N.Properties.Resources.resources
+F:\代码开发\C#开发\LL28\小米LL28-N-3 补偿\SLC1-N\obj\Debug\SLC1_N.Save.resources
+F:\代码开发\C#开发\LL28\小米LL28-N-3 补偿\SLC1-N\obj\Debug\SLC1_N.SQLConfig.resources
+F:\代码开发\C#开发\LL28\小米LL28-N-3 补偿\SLC1-N\obj\Debug\SLC1_N.SQLConnectionMethod.resources
+F:\代码开发\C#开发\LL28\小米LL28-N-3 补偿\SLC1-N\obj\Debug\SLC1_N.TestParams.resources
+F:\代码开发\C#开发\LL28\小米LL28-N-3 补偿\SLC1-N\obj\Debug\SLC1_N.UserPassword.resources
+F:\代码开发\C#开发\LL28\小米LL28-N-3 补偿\SLC1-N\obj\Debug\SLC1-N.csproj.GenerateResource.cache
+F:\代码开发\C#开发\LL28\小米LL28-N-3 补偿\SLC1-N\obj\Debug\SLC1-N.csproj.CopyComplete
+F:\代码开发\C#开发\LL28\小米LL28-N-3 补偿\SLC1-N\bin\Debug\LL28-N-V1.1.exe.config
+F:\代码开发\C#开发\LL28\小米LL28-N-3 补偿\SLC1-N\bin\Debug\LL28-N-V1.1.exe
+F:\代码开发\C#开发\LL28\小米LL28-N-3 补偿\SLC1-N\bin\Debug\LL28-N-V1.1.pdb
+F:\代码开发\C#开发\LL28\小米LL28-N-3 补偿\SLC1-N\obj\Debug\LL28-N-V1.1.exe
+F:\代码开发\C#开发\LL28\小米LL28-N-3 补偿\SLC1-N\obj\Debug\LL28-N-V1.1.pdb
+F:\代码开发\C#开发\LL28\小米LL28-N-4\SLC1-N\bin\Debug\LL28-N-V1.1.exe.config
+F:\代码开发\C#开发\LL28\小米LL28-N-4\SLC1-N\bin\Debug\LL28-N-V1.1.exe
+F:\代码开发\C#开发\LL28\小米LL28-N-4\SLC1-N\bin\Debug\LL28-N-V1.1.pdb
+F:\代码开发\C#开发\LL28\小米LL28-N-4\SLC1-N\bin\Debug\Newtonsoft.Json.dll
+F:\代码开发\C#开发\LL28\小米LL28-N-4\SLC1-N\bin\Debug\Newtonsoft.Json.xml
+F:\代码开发\C#开发\LL28\小米LL28-N-4\SLC1-N\obj\Debug\SLC1-N.csprojAssemblyReference.cache
+F:\代码开发\C#开发\LL28\小米LL28-N-4\SLC1-N\obj\Debug\SLC1_N.CompensationConfig.resources
+F:\代码开发\C#开发\LL28\小米LL28-N-4\SLC1-N\obj\Debug\SLC1_N.Config.resources
+F:\代码开发\C#开发\LL28\小米LL28-N-4\SLC1-N\obj\Debug\SLC1_N.ConfigLogOn.resources
+F:\代码开发\C#开发\LL28\小米LL28-N-4\SLC1-N\obj\Debug\SLC1_N.Form1.resources
+F:\代码开发\C#开发\LL28\小米LL28-N-4\SLC1-N\obj\Debug\SLC1_N.Help.resources
+F:\代码开发\C#开发\LL28\小米LL28-N-4\SLC1-N\obj\Debug\SLC1_N.LogOn.resources
+F:\代码开发\C#开发\LL28\小米LL28-N-4\SLC1-N\obj\Debug\SLC1_N.MESConfig.resources
+F:\代码开发\C#开发\LL28\小米LL28-N-4\SLC1-N\obj\Debug\SLC1_N.PortSetting.resources
+F:\代码开发\C#开发\LL28\小米LL28-N-4\SLC1-N\obj\Debug\SLC1_N.Properties.Resources.resources
+F:\代码开发\C#开发\LL28\小米LL28-N-4\SLC1-N\obj\Debug\SLC1_N.Save.resources
+F:\代码开发\C#开发\LL28\小米LL28-N-4\SLC1-N\obj\Debug\SLC1_N.SQLConfig.resources
+F:\代码开发\C#开发\LL28\小米LL28-N-4\SLC1-N\obj\Debug\SLC1_N.SQLConnectionMethod.resources
+F:\代码开发\C#开发\LL28\小米LL28-N-4\SLC1-N\obj\Debug\SLC1_N.TestParams.resources
+F:\代码开发\C#开发\LL28\小米LL28-N-4\SLC1-N\obj\Debug\SLC1_N.UserPassword.resources
+F:\代码开发\C#开发\LL28\小米LL28-N-4\SLC1-N\obj\Debug\SLC1-N.csproj.GenerateResource.cache
+F:\代码开发\C#开发\LL28\小米LL28-N-4\SLC1-N\obj\Debug\SLC1-N.csproj.CopyComplete
+F:\代码开发\C#开发\LL28\小米LL28-N-4\SLC1-N\obj\Debug\LL28-N-V1.1.exe
+F:\代码开发\C#开发\LL28\小米LL28-N-4\SLC1-N\obj\Debug\LL28-N-V1.1.pdb
+F:\代码开发\C#开发\LL28\小米LL28-N-5\SLC1-N\bin\Debug\Newtonsoft.Json.dll
+F:\代码开发\C#开发\LL28\小米LL28-N-5\SLC1-N\bin\Debug\Newtonsoft.Json.xml
+F:\代码开发\C#开发\LL28\小米LL28-N-5\SLC1-N\obj\Debug\SLC1_N.CompensationConfig.resources
+F:\代码开发\C#开发\LL28\小米LL28-N-5\SLC1-N\obj\Debug\SLC1_N.Config.resources
+F:\代码开发\C#开发\LL28\小米LL28-N-5\SLC1-N\obj\Debug\SLC1_N.ConfigLogOn.resources
+F:\代码开发\C#开发\LL28\小米LL28-N-5\SLC1-N\obj\Debug\SLC1_N.Form1.resources
+F:\代码开发\C#开发\LL28\小米LL28-N-5\SLC1-N\obj\Debug\SLC1_N.Help.resources
+F:\代码开发\C#开发\LL28\小米LL28-N-5\SLC1-N\obj\Debug\SLC1_N.LogOn.resources
+F:\代码开发\C#开发\LL28\小米LL28-N-5\SLC1-N\obj\Debug\SLC1_N.MESConfig.resources
+F:\代码开发\C#开发\LL28\小米LL28-N-5\SLC1-N\obj\Debug\SLC1_N.PortSetting.resources
+F:\代码开发\C#开发\LL28\小米LL28-N-5\SLC1-N\obj\Debug\SLC1_N.Properties.Resources.resources
+F:\代码开发\C#开发\LL28\小米LL28-N-5\SLC1-N\obj\Debug\SLC1_N.Save.resources
+F:\代码开发\C#开发\LL28\小米LL28-N-5\SLC1-N\obj\Debug\SLC1_N.SQLConfig.resources
+F:\代码开发\C#开发\LL28\小米LL28-N-5\SLC1-N\obj\Debug\SLC1_N.SQLConnectionMethod.resources
+F:\代码开发\C#开发\LL28\小米LL28-N-5\SLC1-N\obj\Debug\SLC1_N.TestParams.resources
+F:\代码开发\C#开发\LL28\小米LL28-N-5\SLC1-N\obj\Debug\SLC1_N.UserPassword.resources
+F:\代码开发\C#开发\LL28\小米LL28-N-5\SLC1-N\obj\Debug\SLC1-N.csproj.GenerateResource.cache
+F:\代码开发\C#开发\LL28\小米LL28-N-5\SLC1-N\obj\Debug\SLC1-N.csproj.CopyComplete
+F:\代码开发\C#开发\LL28\小米LL28-N-5\SLC1-N\obj\Debug\SLC1-N.csprojAssemblyReference.cache
+F:\代码开发\C#开发\LL28\小米LL28-N-5\SLC1-N\bin\Debug\LL28-N-V1.2.exe.config
+F:\代码开发\C#开发\LL28\小米LL28-N-5\SLC1-N\bin\Debug\LL28-N-V1.2.exe
+F:\代码开发\C#开发\LL28\小米LL28-N-5\SLC1-N\bin\Debug\LL28-N-V1.2.pdb
+F:\代码开发\C#开发\LL28\小米LL28-N-5\SLC1-N\obj\Debug\LL28-N-V1.2.exe
+F:\代码开发\C#开发\LL28\小米LL28-N-5\SLC1-N\obj\Debug\LL28-N-V1.2.pdb
+F:\代码开发\C#开发\LL28\小米LL28-N-6\SLC1-N\bin\Debug\Newtonsoft.Json.dll
+F:\代码开发\C#开发\LL28\小米LL28-N-6\SLC1-N\bin\Debug\Newtonsoft.Json.xml
+F:\代码开发\C#开发\LL28\小米LL28-N-6\SLC1-N\obj\Debug\SLC1-N.csprojAssemblyReference.cache
+F:\代码开发\C#开发\LL28\小米LL28-N-6\SLC1-N\obj\Debug\SLC1_N.CompensationConfig.resources
+F:\代码开发\C#开发\LL28\小米LL28-N-6\SLC1-N\obj\Debug\SLC1_N.Config.resources
+F:\代码开发\C#开发\LL28\小米LL28-N-6\SLC1-N\obj\Debug\SLC1_N.ConfigLogOn.resources
+F:\代码开发\C#开发\LL28\小米LL28-N-6\SLC1-N\obj\Debug\SLC1_N.Form1.resources
+F:\代码开发\C#开发\LL28\小米LL28-N-6\SLC1-N\obj\Debug\SLC1_N.Help.resources
+F:\代码开发\C#开发\LL28\小米LL28-N-6\SLC1-N\obj\Debug\SLC1_N.LogOn.resources
+F:\代码开发\C#开发\LL28\小米LL28-N-6\SLC1-N\obj\Debug\SLC1_N.MESConfig.resources
+F:\代码开发\C#开发\LL28\小米LL28-N-6\SLC1-N\obj\Debug\SLC1_N.PortSetting.resources
+F:\代码开发\C#开发\LL28\小米LL28-N-6\SLC1-N\obj\Debug\SLC1_N.Properties.Resources.resources
+F:\代码开发\C#开发\LL28\小米LL28-N-6\SLC1-N\obj\Debug\SLC1_N.Save.resources
+F:\代码开发\C#开发\LL28\小米LL28-N-6\SLC1-N\obj\Debug\SLC1_N.SQLConfig.resources
+F:\代码开发\C#开发\LL28\小米LL28-N-6\SLC1-N\obj\Debug\SLC1_N.SQLConnectionMethod.resources
+F:\代码开发\C#开发\LL28\小米LL28-N-6\SLC1-N\obj\Debug\SLC1_N.TestParams.resources
+F:\代码开发\C#开发\LL28\小米LL28-N-6\SLC1-N\obj\Debug\SLC1_N.UserPassword.resources
+F:\代码开发\C#开发\LL28\小米LL28-N-6\SLC1-N\obj\Debug\SLC1-N.csproj.GenerateResource.cache
+F:\代码开发\C#开发\LL28\小米LL28-N-6\SLC1-N\obj\Debug\SLC1-N.csproj.CopyComplete
+F:\代码开发\C#开发\LL28\小米LL28-N-6\SLC1-N\bin\Debug\LL28-N-V1.3.exe.config
+F:\代码开发\C#开发\LL28\小米LL28-N-6\SLC1-N\bin\Debug\LL28-N-V1.3.exe
+F:\代码开发\C#开发\LL28\小米LL28-N-6\SLC1-N\bin\Debug\LL28-N-V1.3.pdb
+F:\代码开发\C#开发\LL28\小米LL28-N-6\SLC1-N\obj\Debug\LL28-N-V1.3.exe
+F:\代码开发\C#开发\LL28\小米LL28-N-6\SLC1-N\obj\Debug\LL28-N-V1.3.pdb
+F:\代码开发\C#开发\LL28\小米LL28-N-7\SLC1-N\bin\Debug\Newtonsoft.Json.dll
+F:\代码开发\C#开发\LL28\小米LL28-N-7\SLC1-N\bin\Debug\Newtonsoft.Json.xml
+F:\代码开发\C#开发\LL28\小米LL28-N-7\SLC1-N\obj\Debug\SLC1_N.CompensationConfig.resources
+F:\代码开发\C#开发\LL28\小米LL28-N-7\SLC1-N\obj\Debug\SLC1_N.Config.resources
+F:\代码开发\C#开发\LL28\小米LL28-N-7\SLC1-N\obj\Debug\SLC1_N.ConfigLogOn.resources
+F:\代码开发\C#开发\LL28\小米LL28-N-7\SLC1-N\obj\Debug\SLC1_N.Form1.resources
+F:\代码开发\C#开发\LL28\小米LL28-N-7\SLC1-N\obj\Debug\SLC1_N.Help.resources
+F:\代码开发\C#开发\LL28\小米LL28-N-7\SLC1-N\obj\Debug\SLC1_N.LogOn.resources
+F:\代码开发\C#开发\LL28\小米LL28-N-7\SLC1-N\obj\Debug\SLC1_N.MESConfig.resources
+F:\代码开发\C#开发\LL28\小米LL28-N-7\SLC1-N\obj\Debug\SLC1_N.PortSetting.resources
+F:\代码开发\C#开发\LL28\小米LL28-N-7\SLC1-N\obj\Debug\SLC1_N.Properties.Resources.resources
+F:\代码开发\C#开发\LL28\小米LL28-N-7\SLC1-N\obj\Debug\SLC1_N.Save.resources
+F:\代码开发\C#开发\LL28\小米LL28-N-7\SLC1-N\obj\Debug\SLC1_N.SQLConfig.resources
+F:\代码开发\C#开发\LL28\小米LL28-N-7\SLC1-N\obj\Debug\SLC1_N.SQLConnectionMethod.resources
+F:\代码开发\C#开发\LL28\小米LL28-N-7\SLC1-N\obj\Debug\SLC1_N.TestParams.resources
+F:\代码开发\C#开发\LL28\小米LL28-N-7\SLC1-N\obj\Debug\SLC1_N.UserPassword.resources
+F:\代码开发\C#开发\LL28\小米LL28-N-7\SLC1-N\obj\Debug\SLC1-N.csproj.GenerateResource.cache
+F:\代码开发\C#开发\LL28\小米LL28-N-7\SLC1-N\obj\Debug\SLC1-N.csproj.CopyComplete
+F:\代码开发\C#开发\LL28\小米LL28-N-7\SLC1-N\bin\Debug\LL28-N-V1.4.exe.config
+F:\代码开发\C#开发\LL28\小米LL28-N-7\SLC1-N\bin\Debug\LL28-N-V1.4.exe
+F:\代码开发\C#开发\LL28\小米LL28-N-7\SLC1-N\bin\Debug\LL28-N-V1.4.pdb
+F:\代码开发\C#开发\LL28\小米LL28-N-7\SLC1-N\obj\Debug\LL28-N-V1.4.exe
+F:\代码开发\C#开发\LL28\小米LL28-N-7\SLC1-N\obj\Debug\LL28-N-V1.4.pdb
+F:\代码开发\C#开发\LL28\唐群LL28-N-1\SLC1-N\obj\Debug\SLC1_N.Config.resources
+F:\代码开发\C#开发\LL28\唐群LL28-N-1\SLC1-N\obj\Debug\SLC1_N.ConfigLogOn.resources
+F:\代码开发\C#开发\LL28\唐群LL28-N-1\SLC1-N\obj\Debug\SLC1_N.Form1.resources
+F:\代码开发\C#开发\LL28\唐群LL28-N-1\SLC1-N\obj\Debug\SLC1_N.Help.resources
+F:\代码开发\C#开发\LL28\唐群LL28-N-1\SLC1-N\obj\Debug\SLC1_N.LogOn.resources
+F:\代码开发\C#开发\LL28\唐群LL28-N-1\SLC1-N\obj\Debug\SLC1_N.MESConfig.resources
+F:\代码开发\C#开发\LL28\唐群LL28-N-1\SLC1-N\obj\Debug\SLC1_N.Properties.Resources.resources
+F:\代码开发\C#开发\LL28\唐群LL28-N-1\SLC1-N\obj\Debug\SLC1_N.Save.resources
+F:\代码开发\C#开发\LL28\唐群LL28-N-1\SLC1-N\obj\Debug\SLC1_N.SQLConnectionMethod.resources
+F:\代码开发\C#开发\LL28\唐群LL28-N-1\SLC1-N\obj\Debug\SLC1_N.TestParams.resources
+F:\代码开发\C#开发\LL28\唐群LL28-N-1\SLC1-N\obj\Debug\SLC1_N.UserPassword.resources
+F:\代码开发\C#开发\LL28\唐群LL28-N-1\SLC1-N\obj\Debug\SLC1-N.csproj.GenerateResource.cache
+F:\代码开发\C#开发\LL28\唐群LL28-N-1\SLC1-N\obj\Debug\LL28-N-V1.4.exe
+F:\代码开发\C#开发\LL28\唐群LL28-N-1\SLC1-N\obj\Debug\LL28-N-V1.4.pdb
+F:\代码开发\C#开发\LL28\唐群LL28-N-1\SLC1-N\obj\Debug\LL28-N-V1.4.exe.config
+F:\代码开发\C#开发\LL28\唐群LL28-N-1\SLC1-N\obj\Debug\Interop.ADOX.dll
+F:\代码开发\C#开发\LL28\唐群LL28-N-1\SLC1-N\obj\Debug\SLC1-N.csproj.ResolveComReference.cache
+F:\代码开发\C#开发\LL28\唐群LL28-N-1\SLC1-N\obj\Debug\SLC1_N.ConfigTCP.resources
+F:\代码开发\C#开发\LL28\唐群LL28-N-1\SLC1-N\obj\Debug\SLC1_N.Electricity.resources
+F:\代码开发\C#开发\LL28\唐群LL28-N-1\SLC1-N\obj\Debug\SLC1_N.PLCConfig.resources
+F:\代码开发\C#开发\LL28\唐群LL28-N-1\SLC1-N\obj\Debug\SLC1_N.Port.resources
+F:\代码开发\C#开发\LL28\唐群LL28-N-1\SLC1-N\obj\Debug\SLC1_N.ResetPassword.resources
+F:\代码开发\C#开发\LL28\唐群LL28-N-1\SLC1-N\obj\Debug\SLC1_N.UserManagement.resources
+F:\代码开发\C#开发\LL28\唐群LL28-N-1\SLC1-N\bin\Debug\LL28-N-V1.4.exe.config
+F:\代码开发\C#开发\LL28\唐群LL28-N-1\SLC1-N\bin\Debug\LL28-N-V1.4.exe
+F:\代码开发\C#开发\LL28\唐群LL28-N-1\SLC1-N\bin\Debug\LL28-N-V1.4.pdb
+F:\代码开发\C#开发\LL28\唐群LL28-N-1\SLC1-N\bin\Debug\HslCommunication.dll
+F:\代码开发\C#开发\LL28\唐群LL28-N-1\SLC1-N\bin\Debug\Newtonsoft.Json.dll
+F:\代码开发\C#开发\LL28\唐群LL28-N-1\SLC1-N\bin\Debug\Newtonsoft.Json.xml
+F:\代码开发\C#开发\LL28\唐群LL28-N-1\SLC1-N\obj\Debug\SLC1-N.csproj.CopyComplete
+F:\代码开发\C#开发\LL28\唐群LL28-N-1\SLC1-N\obj\Debug\SLC1-N.csprojAssemblyReference.cache
+F:\代码开发\C#开发\LL28\唐群LL28-N-2\SLC1-N\bin\Debug\LL28-N-V1.4.exe.config
+F:\代码开发\C#开发\LL28\唐群LL28-N-2\SLC1-N\bin\Debug\LL28-N-V1.4.exe
+F:\代码开发\C#开发\LL28\唐群LL28-N-2\SLC1-N\bin\Debug\LL28-N-V1.4.pdb
+F:\代码开发\C#开发\LL28\唐群LL28-N-2\SLC1-N\bin\Debug\Newtonsoft.Json.dll
+F:\代码开发\C#开发\LL28\唐群LL28-N-2\SLC1-N\bin\Debug\Newtonsoft.Json.xml
+F:\代码开发\C#开发\LL28\唐群LL28-N-2\SLC1-N\obj\Debug\LL28-N-V1.4.exe.config
+F:\代码开发\C#开发\LL28\唐群LL28-N-2\SLC1-N\obj\Debug\Interop.ADOX.dll
+F:\代码开发\C#开发\LL28\唐群LL28-N-2\SLC1-N\obj\Debug\SLC1-N.csproj.ResolveComReference.cache
+F:\代码开发\C#开发\LL28\唐群LL28-N-2\SLC1-N\obj\Debug\SLC1_N.Config.resources
+F:\代码开发\C#开发\LL28\唐群LL28-N-2\SLC1-N\obj\Debug\SLC1_N.ConfigLogOn.resources
+F:\代码开发\C#开发\LL28\唐群LL28-N-2\SLC1-N\obj\Debug\SLC1_N.ConfigTCP.resources
+F:\代码开发\C#开发\LL28\唐群LL28-N-2\SLC1-N\obj\Debug\SLC1_N.Electricity.resources
+F:\代码开发\C#开发\LL28\唐群LL28-N-2\SLC1-N\obj\Debug\SLC1_N.Form1.resources
+F:\代码开发\C#开发\LL28\唐群LL28-N-2\SLC1-N\obj\Debug\SLC1_N.Help.resources
+F:\代码开发\C#开发\LL28\唐群LL28-N-2\SLC1-N\obj\Debug\SLC1_N.LogOn.resources
+F:\代码开发\C#开发\LL28\唐群LL28-N-2\SLC1-N\obj\Debug\SLC1_N.MESConfig.resources
+F:\代码开发\C#开发\LL28\唐群LL28-N-2\SLC1-N\obj\Debug\SLC1_N.PLCConfig.resources
+F:\代码开发\C#开发\LL28\唐群LL28-N-2\SLC1-N\obj\Debug\SLC1_N.Port.resources
+F:\代码开发\C#开发\LL28\唐群LL28-N-2\SLC1-N\obj\Debug\SLC1_N.Properties.Resources.resources
+F:\代码开发\C#开发\LL28\唐群LL28-N-2\SLC1-N\obj\Debug\SLC1_N.ResetPassword.resources
+F:\代码开发\C#开发\LL28\唐群LL28-N-2\SLC1-N\obj\Debug\SLC1_N.Save.resources
+F:\代码开发\C#开发\LL28\唐群LL28-N-2\SLC1-N\obj\Debug\SLC1_N.SQLConnectionMethod.resources
+F:\代码开发\C#开发\LL28\唐群LL28-N-2\SLC1-N\obj\Debug\SLC1_N.TestParams.resources
+F:\代码开发\C#开发\LL28\唐群LL28-N-2\SLC1-N\obj\Debug\SLC1_N.UserManagement.resources
+F:\代码开发\C#开发\LL28\唐群LL28-N-2\SLC1-N\obj\Debug\SLC1_N.UserPassword.resources
+F:\代码开发\C#开发\LL28\唐群LL28-N-2\SLC1-N\obj\Debug\SLC1-N.csproj.GenerateResource.cache
+F:\代码开发\C#开发\LL28\唐群LL28-N-2\SLC1-N\obj\Debug\SLC1-N.csproj.CopyComplete
+F:\代码开发\C#开发\LL28\唐群LL28-N-2\SLC1-N\obj\Debug\LL28-N-V1.4.exe
+F:\代码开发\C#开发\LL28\唐群LL28-N-2\SLC1-N\obj\Debug\LL28-N-V1.4.pdb
+F:\代码开发\C#开发\LL28\唐群LL28-N-2\SLC1-N\obj\Debug\SLC1-N.csprojAssemblyReference.cache
+F:\代码开发\C#开发\LL28\唐群LL28-N-3\SLC1-N\obj\Debug\SLC1-N.csprojAssemblyReference.cache
+F:\代码开发\C#开发\LL28\唐群LL28-N-3\SLC1-N\obj\Debug\LL28-N-V1.4.exe.config
+F:\代码开发\C#开发\LL28\唐群LL28-N-3\SLC1-N\obj\Debug\Interop.ADOX.dll
+F:\代码开发\C#开发\LL28\唐群LL28-N-3\SLC1-N\obj\Debug\SLC1-N.csproj.ResolveComReference.cache
+F:\代码开发\C#开发\LL28\唐群LL28-N-3\SLC1-N\obj\Debug\SLC1_N.Config.resources
+F:\代码开发\C#开发\LL28\唐群LL28-N-3\SLC1-N\obj\Debug\SLC1_N.ConfigLogOn.resources
+F:\代码开发\C#开发\LL28\唐群LL28-N-3\SLC1-N\obj\Debug\SLC1_N.ConfigTCP.resources
+F:\代码开发\C#开发\LL28\唐群LL28-N-3\SLC1-N\obj\Debug\SLC1_N.Electricity.resources
+F:\代码开发\C#开发\LL28\唐群LL28-N-3\SLC1-N\obj\Debug\SLC1_N.Form1.resources
+F:\代码开发\C#开发\LL28\唐群LL28-N-3\SLC1-N\obj\Debug\SLC1_N.Help.resources
+F:\代码开发\C#开发\LL28\唐群LL28-N-3\SLC1-N\obj\Debug\SLC1_N.LogOn.resources
+F:\代码开发\C#开发\LL28\唐群LL28-N-3\SLC1-N\obj\Debug\SLC1_N.MESConfig.resources
+F:\代码开发\C#开发\LL28\唐群LL28-N-3\SLC1-N\obj\Debug\SLC1_N.PLCConfig.resources
+F:\代码开发\C#开发\LL28\唐群LL28-N-3\SLC1-N\obj\Debug\SLC1_N.Port.resources
+F:\代码开发\C#开发\LL28\唐群LL28-N-3\SLC1-N\obj\Debug\SLC1_N.Properties.Resources.resources
+F:\代码开发\C#开发\LL28\唐群LL28-N-3\SLC1-N\obj\Debug\SLC1_N.ResetPassword.resources
+F:\代码开发\C#开发\LL28\唐群LL28-N-3\SLC1-N\obj\Debug\SLC1_N.Save.resources
+F:\代码开发\C#开发\LL28\唐群LL28-N-3\SLC1-N\obj\Debug\SLC1_N.SQLConnectionMethod.resources
+F:\代码开发\C#开发\LL28\唐群LL28-N-3\SLC1-N\obj\Debug\SLC1_N.TestParams.resources
+F:\代码开发\C#开发\LL28\唐群LL28-N-3\SLC1-N\obj\Debug\SLC1_N.UserManagement.resources
+F:\代码开发\C#开发\LL28\唐群LL28-N-3\SLC1-N\obj\Debug\SLC1_N.UserPassword.resources
+F:\代码开发\C#开发\LL28\唐群LL28-N-3\SLC1-N\obj\Debug\SLC1-N.csproj.GenerateResource.cache
+F:\代码开发\C#开发\LL28\唐群LL28-N-3\SLC1-N\obj\Debug\LL28-N-V1.4.exe
+F:\代码开发\C#开发\LL28\唐群LL28-N-3\SLC1-N\obj\Debug\LL28-N-V1.4.pdb
+F:\代码开发\C#开发\LL28\唐群LL28-N-3\SLC1-N\bin\Debug\LL28-N-V1.4.exe.config
+F:\代码开发\C#开发\LL28\唐群LL28-N-3\SLC1-N\bin\Debug\LL28-N-V1.4.exe
+F:\代码开发\C#开发\LL28\唐群LL28-N-3\SLC1-N\bin\Debug\LL28-N-V1.4.pdb
+F:\代码开发\C#开发\LL28\唐群LL28-N-3\SLC1-N\bin\Debug\HslCommunication.dll
+F:\代码开发\C#开发\LL28\唐群LL28-N-3\SLC1-N\bin\Debug\NetWorkHelper.dll
+F:\代码开发\C#开发\LL28\唐群LL28-N-3\SLC1-N\bin\Debug\Newtonsoft.Json.dll
+F:\代码开发\C#开发\LL28\唐群LL28-N-3\SLC1-N\bin\Debug\NetWorkHelper.pdb
+F:\代码开发\C#开发\LL28\唐群LL28-N-3\SLC1-N\bin\Debug\Newtonsoft.Json.xml
+F:\代码开发\C#开发\LL28\唐群LL28-N-3\SLC1-N\obj\Debug\SLC1-N.csproj.CopyComplete
+F:\代码开发\C#开发\LL28\唐群LL28-N-3\SLC1-N\bin\Debug\TCP\ITcpClient.cs
+F:\代码开发\C#开发\LL28\唐群LL28-N-3\SLC1-N\bin\Debug\TCP\ITcpClient.Designer.cs
+F:\代码开发\C#开发\LL28\唐群LL28-N-4\SLC1-N\bin\Debug\TCP\ITcpClient.cs
+F:\代码开发\C#开发\LL28\唐群LL28-N-4\SLC1-N\bin\Debug\TCP\ITcpClient.Designer.cs
+F:\代码开发\C#开发\LL28\唐群LL28-N-4\SLC1-N\bin\Debug\LL28-N-V1.4.exe.config
+F:\代码开发\C#开发\LL28\唐群LL28-N-4\SLC1-N\bin\Debug\LL28-N-V1.4.exe
+F:\代码开发\C#开发\LL28\唐群LL28-N-4\SLC1-N\bin\Debug\LL28-N-V1.4.pdb
+F:\代码开发\C#开发\LL28\唐群LL28-N-4\SLC1-N\bin\Debug\HslCommunication.dll
+F:\代码开发\C#开发\LL28\唐群LL28-N-4\SLC1-N\bin\Debug\NetWorkHelper.dll
+F:\代码开发\C#开发\LL28\唐群LL28-N-4\SLC1-N\bin\Debug\Newtonsoft.Json.dll
+F:\代码开发\C#开发\LL28\唐群LL28-N-4\SLC1-N\bin\Debug\NetWorkHelper.pdb
+F:\代码开发\C#开发\LL28\唐群LL28-N-4\SLC1-N\bin\Debug\Newtonsoft.Json.xml
+F:\代码开发\C#开发\LL28\唐群LL28-N-4\SLC1-N\obj\Debug\SLC1-N.csprojAssemblyReference.cache
+F:\代码开发\C#开发\LL28\唐群LL28-N-4\SLC1-N\obj\Debug\LL28-N-V1.4.exe.config
+F:\代码开发\C#开发\LL28\唐群LL28-N-4\SLC1-N\obj\Debug\Interop.ADOX.dll
+F:\代码开发\C#开发\LL28\唐群LL28-N-4\SLC1-N\obj\Debug\SLC1-N.csproj.ResolveComReference.cache
+F:\代码开发\C#开发\LL28\唐群LL28-N-4\SLC1-N\obj\Debug\SLC1_N.Config.resources
+F:\代码开发\C#开发\LL28\唐群LL28-N-4\SLC1-N\obj\Debug\SLC1_N.ConfigLogOn.resources
+F:\代码开发\C#开发\LL28\唐群LL28-N-4\SLC1-N\obj\Debug\SLC1_N.ConfigTCP.resources
+F:\代码开发\C#开发\LL28\唐群LL28-N-4\SLC1-N\obj\Debug\SLC1_N.Electricity.resources
+F:\代码开发\C#开发\LL28\唐群LL28-N-4\SLC1-N\obj\Debug\SLC1_N.Form1.resources
+F:\代码开发\C#开发\LL28\唐群LL28-N-4\SLC1-N\obj\Debug\SLC1_N.Help.resources
+F:\代码开发\C#开发\LL28\唐群LL28-N-4\SLC1-N\obj\Debug\SLC1_N.LogOn.resources
+F:\代码开发\C#开发\LL28\唐群LL28-N-4\SLC1-N\obj\Debug\SLC1_N.MESConfig.resources
+F:\代码开发\C#开发\LL28\唐群LL28-N-4\SLC1-N\obj\Debug\SLC1_N.PLCConfig.resources
+F:\代码开发\C#开发\LL28\唐群LL28-N-4\SLC1-N\obj\Debug\SLC1_N.Port.resources
+F:\代码开发\C#开发\LL28\唐群LL28-N-4\SLC1-N\obj\Debug\SLC1_N.Properties.Resources.resources
+F:\代码开发\C#开发\LL28\唐群LL28-N-4\SLC1-N\obj\Debug\SLC1_N.ResetPassword.resources
+F:\代码开发\C#开发\LL28\唐群LL28-N-4\SLC1-N\obj\Debug\SLC1_N.Save.resources
+F:\代码开发\C#开发\LL28\唐群LL28-N-4\SLC1-N\obj\Debug\SLC1_N.SQLConnectionMethod.resources
+F:\代码开发\C#开发\LL28\唐群LL28-N-4\SLC1-N\obj\Debug\SLC1_N.TestParams.resources
+F:\代码开发\C#开发\LL28\唐群LL28-N-4\SLC1-N\obj\Debug\SLC1_N.UserManagement.resources
+F:\代码开发\C#开发\LL28\唐群LL28-N-4\SLC1-N\obj\Debug\SLC1_N.UserPassword.resources
+F:\代码开发\C#开发\LL28\唐群LL28-N-4\SLC1-N\obj\Debug\SLC1-N.csproj.GenerateResource.cache
+F:\代码开发\C#开发\LL28\唐群LL28-N-4\SLC1-N\obj\Debug\SLC1-N.csproj.CopyComplete
+F:\代码开发\C#开发\LL28\唐群LL28-N-4\SLC1-N\obj\Debug\LL28-N-V1.4.exe
+F:\代码开发\C#开发\LL28\唐群LL28-N-4\SLC1-N\obj\Debug\LL28-N-V1.4.pdb
+F:\代码开发\C#开发\LL28\唐群LL28-N-5\SLC1-N\bin\Debug\TCP\ITcpClient.cs
+F:\代码开发\C#开发\LL28\唐群LL28-N-5\SLC1-N\bin\Debug\TCP\ITcpClient.Designer.cs
+F:\代码开发\C#开发\LL28\唐群LL28-N-5\SLC1-N\bin\Debug\LL28-N-V1.4.exe.config
+F:\代码开发\C#开发\LL28\唐群LL28-N-5\SLC1-N\bin\Debug\LL28-N-V1.4.exe
+F:\代码开发\C#开发\LL28\唐群LL28-N-5\SLC1-N\bin\Debug\LL28-N-V1.4.pdb
+F:\代码开发\C#开发\LL28\唐群LL28-N-5\SLC1-N\bin\Debug\HslCommunication.dll
+F:\代码开发\C#开发\LL28\唐群LL28-N-5\SLC1-N\bin\Debug\NetWorkHelper.dll
+F:\代码开发\C#开发\LL28\唐群LL28-N-5\SLC1-N\bin\Debug\Newtonsoft.Json.dll
+F:\代码开发\C#开发\LL28\唐群LL28-N-5\SLC1-N\bin\Debug\NetWorkHelper.pdb
+F:\代码开发\C#开发\LL28\唐群LL28-N-5\SLC1-N\bin\Debug\Newtonsoft.Json.xml
+F:\代码开发\C#开发\LL28\唐群LL28-N-5\SLC1-N\obj\Debug\SLC1-N.csprojAssemblyReference.cache
+F:\代码开发\C#开发\LL28\唐群LL28-N-5\SLC1-N\obj\Debug\LL28-N-V1.4.exe.config
+F:\代码开发\C#开发\LL28\唐群LL28-N-5\SLC1-N\obj\Debug\Interop.ADOX.dll
+F:\代码开发\C#开发\LL28\唐群LL28-N-5\SLC1-N\obj\Debug\SLC1-N.csproj.ResolveComReference.cache
+F:\代码开发\C#开发\LL28\唐群LL28-N-5\SLC1-N\obj\Debug\SLC1_N.Config.resources
+F:\代码开发\C#开发\LL28\唐群LL28-N-5\SLC1-N\obj\Debug\SLC1_N.ConfigLogOn.resources
+F:\代码开发\C#开发\LL28\唐群LL28-N-5\SLC1-N\obj\Debug\SLC1_N.ConfigTCP.resources
+F:\代码开发\C#开发\LL28\唐群LL28-N-5\SLC1-N\obj\Debug\SLC1_N.Electricity.resources
+F:\代码开发\C#开发\LL28\唐群LL28-N-5\SLC1-N\obj\Debug\SLC1_N.Form1.resources
+F:\代码开发\C#开发\LL28\唐群LL28-N-5\SLC1-N\obj\Debug\SLC1_N.Help.resources
+F:\代码开发\C#开发\LL28\唐群LL28-N-5\SLC1-N\obj\Debug\SLC1_N.LogOn.resources
+F:\代码开发\C#开发\LL28\唐群LL28-N-5\SLC1-N\obj\Debug\SLC1_N.MESConfig.resources
+F:\代码开发\C#开发\LL28\唐群LL28-N-5\SLC1-N\obj\Debug\SLC1_N.PLCConfig.resources
+F:\代码开发\C#开发\LL28\唐群LL28-N-5\SLC1-N\obj\Debug\SLC1_N.Port.resources
+F:\代码开发\C#开发\LL28\唐群LL28-N-5\SLC1-N\obj\Debug\SLC1_N.Properties.Resources.resources
+F:\代码开发\C#开发\LL28\唐群LL28-N-5\SLC1-N\obj\Debug\SLC1_N.ResetPassword.resources
+F:\代码开发\C#开发\LL28\唐群LL28-N-5\SLC1-N\obj\Debug\SLC1_N.Save.resources
+F:\代码开发\C#开发\LL28\唐群LL28-N-5\SLC1-N\obj\Debug\SLC1_N.SQLConnectionMethod.resources
+F:\代码开发\C#开发\LL28\唐群LL28-N-5\SLC1-N\obj\Debug\SLC1_N.TestParams.resources
+F:\代码开发\C#开发\LL28\唐群LL28-N-5\SLC1-N\obj\Debug\SLC1_N.UserManagement.resources
+F:\代码开发\C#开发\LL28\唐群LL28-N-5\SLC1-N\obj\Debug\SLC1_N.UserPassword.resources
+F:\代码开发\C#开发\LL28\唐群LL28-N-5\SLC1-N\obj\Debug\SLC1-N.csproj.GenerateResource.cache
+F:\代码开发\C#开发\LL28\唐群LL28-N-5\SLC1-N\obj\Debug\SLC1-N.csproj.CopyComplete
+F:\代码开发\C#开发\LL28\唐群LL28-N-5\SLC1-N\obj\Debug\LL28-N-V1.4.exe
+F:\代码开发\C#开发\LL28\唐群LL28-N-5\SLC1-N\obj\Debug\LL28-N-V1.4.pdb
+F:\代码开发\C#开发\LL28\唐群LL28-N-6\SLC1-N\bin\Debug\TCP\ITcpClient.cs
+F:\代码开发\C#开发\LL28\唐群LL28-N-6\SLC1-N\bin\Debug\TCP\ITcpClient.Designer.cs
+F:\代码开发\C#开发\LL28\唐群LL28-N-6\SLC1-N\bin\Debug\LL28-N-V1.4.exe.config
+F:\代码开发\C#开发\LL28\唐群LL28-N-6\SLC1-N\bin\Debug\LL28-N-V1.4.exe
+F:\代码开发\C#开发\LL28\唐群LL28-N-6\SLC1-N\bin\Debug\LL28-N-V1.4.pdb
+F:\代码开发\C#开发\LL28\唐群LL28-N-6\SLC1-N\bin\Debug\HslCommunication.dll
+F:\代码开发\C#开发\LL28\唐群LL28-N-6\SLC1-N\bin\Debug\NetWorkHelper.dll
+F:\代码开发\C#开发\LL28\唐群LL28-N-6\SLC1-N\bin\Debug\Newtonsoft.Json.dll
+F:\代码开发\C#开发\LL28\唐群LL28-N-6\SLC1-N\bin\Debug\NetWorkHelper.pdb
+F:\代码开发\C#开发\LL28\唐群LL28-N-6\SLC1-N\bin\Debug\Newtonsoft.Json.xml
+F:\代码开发\C#开发\LL28\唐群LL28-N-6\SLC1-N\obj\Debug\SLC1-N.csprojAssemblyReference.cache
+F:\代码开发\C#开发\LL28\唐群LL28-N-6\SLC1-N\obj\Debug\LL28-N-V1.4.exe.config
+F:\代码开发\C#开发\LL28\唐群LL28-N-6\SLC1-N\obj\Debug\Interop.ADOX.dll
+F:\代码开发\C#开发\LL28\唐群LL28-N-6\SLC1-N\obj\Debug\SLC1-N.csproj.ResolveComReference.cache
+F:\代码开发\C#开发\LL28\唐群LL28-N-6\SLC1-N\obj\Debug\SLC1_N.Config.resources
+F:\代码开发\C#开发\LL28\唐群LL28-N-6\SLC1-N\obj\Debug\SLC1_N.ConfigLogOn.resources
+F:\代码开发\C#开发\LL28\唐群LL28-N-6\SLC1-N\obj\Debug\SLC1_N.ConfigTCP.resources
+F:\代码开发\C#开发\LL28\唐群LL28-N-6\SLC1-N\obj\Debug\SLC1_N.Electricity.resources
+F:\代码开发\C#开发\LL28\唐群LL28-N-6\SLC1-N\obj\Debug\SLC1_N.Form1.resources
+F:\代码开发\C#开发\LL28\唐群LL28-N-6\SLC1-N\obj\Debug\SLC1_N.Help.resources
+F:\代码开发\C#开发\LL28\唐群LL28-N-6\SLC1-N\obj\Debug\SLC1_N.LogOn.resources
+F:\代码开发\C#开发\LL28\唐群LL28-N-6\SLC1-N\obj\Debug\SLC1_N.MESConfig.resources
+F:\代码开发\C#开发\LL28\唐群LL28-N-6\SLC1-N\obj\Debug\SLC1_N.PLCConfig.resources
+F:\代码开发\C#开发\LL28\唐群LL28-N-6\SLC1-N\obj\Debug\SLC1_N.Port.resources
+F:\代码开发\C#开发\LL28\唐群LL28-N-6\SLC1-N\obj\Debug\SLC1_N.Properties.Resources.resources
+F:\代码开发\C#开发\LL28\唐群LL28-N-6\SLC1-N\obj\Debug\SLC1_N.ResetPassword.resources
+F:\代码开发\C#开发\LL28\唐群LL28-N-6\SLC1-N\obj\Debug\SLC1_N.Save.resources
+F:\代码开发\C#开发\LL28\唐群LL28-N-6\SLC1-N\obj\Debug\SLC1_N.SQLConnectionMethod.resources
+F:\代码开发\C#开发\LL28\唐群LL28-N-6\SLC1-N\obj\Debug\SLC1_N.TestParams.resources
+F:\代码开发\C#开发\LL28\唐群LL28-N-6\SLC1-N\obj\Debug\SLC1_N.UserManagement.resources
+F:\代码开发\C#开发\LL28\唐群LL28-N-6\SLC1-N\obj\Debug\SLC1_N.UserPassword.resources
+F:\代码开发\C#开发\LL28\唐群LL28-N-6\SLC1-N\obj\Debug\SLC1-N.csproj.GenerateResource.cache
+F:\代码开发\C#开发\LL28\唐群LL28-N-6\SLC1-N\obj\Debug\SLC1-N.csproj.CopyComplete
+F:\代码开发\C#开发\LL28\唐群LL28-N-6\SLC1-N\obj\Debug\LL28-N-V1.4.exe
+F:\代码开发\C#开发\LL28\唐群LL28-N-6\SLC1-N\obj\Debug\LL28-N-V1.4.pdb
+F:\代码开发\C#开发\LL28\唐群LL28-N-6\SLC1-N\obj\Debug\SLC1_N.Machine.resources
+F:\代码开发\C#开发\LL28\唐群LL28-N-6\SLC1-N\obj\Debug\SLC1_N.Warning.resources
+F:\代码开发\C#开发\LL28\唐群LL28-N-6\SLC1-N\obj\Debug\SLC1_N.FlowConfig.resources
+C:\Users\Administrator\Desktop\唐群LL28-N-6\SLC1-N\obj\Debug\SLC1-N.csproj.AssemblyReference.cache
+C:\Users\Administrator\Desktop\唐群LL28-N-6\SLC1-N\obj\Debug\SLC1-N.csproj.SuggestedBindingRedirects.cache
+C:\Users\Administrator\Desktop\唐群LL28-N-6\SLC1-N\obj\Debug\LL28-N-V1.4.exe.config
+C:\Users\Administrator\Desktop\唐群LL28-N-6\SLC1-N\obj\Debug\Interop.ADOX.dll
+C:\Users\Administrator\Desktop\唐群LL28-N-6\SLC1-N\obj\Debug\SLC1-N.csproj.ResolveComReference.cache
+C:\Users\Administrator\Desktop\唐群LL28-N-6\SLC1-N\obj\Debug\SLC1_N.Config.resources
+C:\Users\Administrator\Desktop\唐群LL28-N-6\SLC1-N\obj\Debug\SLC1_N.ConfigLogOn.resources
+C:\Users\Administrator\Desktop\唐群LL28-N-6\SLC1-N\obj\Debug\SLC1_N.ConfigTCP.resources
+C:\Users\Administrator\Desktop\唐群LL28-N-6\SLC1-N\obj\Debug\SLC1_N.Electricity.resources
+C:\Users\Administrator\Desktop\唐群LL28-N-6\SLC1-N\obj\Debug\SLC1_N.FlowConfig.resources
+C:\Users\Administrator\Desktop\唐群LL28-N-6\SLC1-N\obj\Debug\SLC1_N.Form1.resources
+C:\Users\Administrator\Desktop\唐群LL28-N-6\SLC1-N\obj\Debug\SLC1_N.Help.resources
+C:\Users\Administrator\Desktop\唐群LL28-N-6\SLC1-N\obj\Debug\SLC1_N.LogOn.resources
+C:\Users\Administrator\Desktop\唐群LL28-N-6\SLC1-N\obj\Debug\SLC1_N.Machine.resources
+C:\Users\Administrator\Desktop\唐群LL28-N-6\SLC1-N\obj\Debug\SLC1_N.MESConfig.resources
+C:\Users\Administrator\Desktop\唐群LL28-N-6\SLC1-N\obj\Debug\SLC1_N.PLCConfig.resources
+C:\Users\Administrator\Desktop\唐群LL28-N-6\SLC1-N\obj\Debug\SLC1_N.Port.resources
+C:\Users\Administrator\Desktop\唐群LL28-N-6\SLC1-N\obj\Debug\SLC1_N.Properties.Resources.resources
+C:\Users\Administrator\Desktop\唐群LL28-N-6\SLC1-N\obj\Debug\SLC1_N.ResetPassword.resources
+C:\Users\Administrator\Desktop\唐群LL28-N-6\SLC1-N\obj\Debug\SLC1_N.Save.resources
+C:\Users\Administrator\Desktop\唐群LL28-N-6\SLC1-N\obj\Debug\SLC1_N.SQLConnectionMethod.resources
+C:\Users\Administrator\Desktop\唐群LL28-N-6\SLC1-N\obj\Debug\SLC1_N.TestParams.resources
+C:\Users\Administrator\Desktop\唐群LL28-N-6\SLC1-N\obj\Debug\SLC1_N.UserManagement.resources
+C:\Users\Administrator\Desktop\唐群LL28-N-6\SLC1-N\obj\Debug\SLC1_N.UserPassword.resources
+C:\Users\Administrator\Desktop\唐群LL28-N-6\SLC1-N\obj\Debug\SLC1_N.Warning.resources
+C:\Users\Administrator\Desktop\唐群LL28-N-6\SLC1-N\obj\Debug\SLC1-N.csproj.GenerateResource.cache
+C:\Users\Administrator\Desktop\唐群LL28-N-6\SLC1-N\obj\Debug\SLC1-N.csproj.CoreCompileInputs.cache
+C:\Users\Administrator\Desktop\唐群LL28-N-6\SLC1-N\obj\Debug\LL28-N-V1.4.exe
+C:\Users\Administrator\Desktop\唐群LL28-N-6\SLC1-N\obj\Debug\LL28-N-V1.4.pdb
+C:\Users\Administrator\Desktop\唐群LL28-N-6\SLC1-N\bin\Debug\TCP\ITcpClient.cs
+C:\Users\Administrator\Desktop\唐群LL28-N-6\SLC1-N\bin\Debug\TCP\ITcpClient.Designer.cs
+C:\Users\Administrator\Desktop\唐群LL28-N-6\SLC1-N\bin\Debug\LL28-N-V1.4.exe.config
+C:\Users\Administrator\Desktop\唐群LL28-N-6\SLC1-N\bin\Debug\LL28-N-V1.4.exe
+C:\Users\Administrator\Desktop\唐群LL28-N-6\SLC1-N\bin\Debug\LL28-N-V1.4.pdb
+C:\Users\Administrator\Desktop\唐群LL28-N-6\SLC1-N\bin\Debug\NetWorkHelper.dll
+C:\Users\Administrator\Desktop\唐群LL28-N-6\SLC1-N\bin\Debug\Newtonsoft.Json.dll
+C:\Users\Administrator\Desktop\唐群LL28-N-6\SLC1-N\bin\Debug\NetWorkHelper.pdb
+C:\Users\Administrator\Desktop\唐群LL28-N-6\SLC1-N\bin\Debug\Newtonsoft.Json.xml
+C:\Users\Administrator\Desktop\唐群LL28-N-6\SLC1-N\obj\Debug\SLC1-N.csproj.CopyComplete
+C:\Users\T\Desktop\唐群LL28-N-6\SLC1-N\bin\Debug\TCP\ITcpClient.cs
+C:\Users\T\Desktop\唐群LL28-N-6\SLC1-N\bin\Debug\TCP\ITcpClient.Designer.cs
+C:\Users\T\Desktop\唐群LL28-N-6\SLC1-N\bin\Debug\LL28-N-V1.4.exe.config
+C:\Users\T\Desktop\唐群LL28-N-6\SLC1-N\bin\Debug\LL28-N-V1.4.exe
+C:\Users\T\Desktop\唐群LL28-N-6\SLC1-N\bin\Debug\LL28-N-V1.4.pdb
+C:\Users\T\Desktop\唐群LL28-N-6\SLC1-N\bin\Debug\NetWorkHelper.dll
+C:\Users\T\Desktop\唐群LL28-N-6\SLC1-N\bin\Debug\Newtonsoft.Json.dll
+C:\Users\T\Desktop\唐群LL28-N-6\SLC1-N\bin\Debug\NetWorkHelper.pdb
+C:\Users\T\Desktop\唐群LL28-N-6\SLC1-N\bin\Debug\Newtonsoft.Json.xml
+C:\Users\T\Desktop\唐群LL28-N-6\SLC1-N\obj\Debug\SLC1-N.csprojAssemblyReference.cache
+C:\Users\T\Desktop\唐群LL28-N-6\SLC1-N\obj\Debug\LL28-N-V1.4.exe.config
+C:\Users\T\Desktop\唐群LL28-N-6\SLC1-N\obj\Debug\Interop.ADOX.dll
+C:\Users\T\Desktop\唐群LL28-N-6\SLC1-N\obj\Debug\SLC1-N.csproj.ResolveComReference.cache
+C:\Users\T\Desktop\唐群LL28-N-6\SLC1-N\obj\Debug\SLC1_N.Config.resources
+C:\Users\T\Desktop\唐群LL28-N-6\SLC1-N\obj\Debug\SLC1_N.ConfigLogOn.resources
+C:\Users\T\Desktop\唐群LL28-N-6\SLC1-N\obj\Debug\SLC1_N.ConfigTCP.resources
+C:\Users\T\Desktop\唐群LL28-N-6\SLC1-N\obj\Debug\SLC1_N.Electricity.resources
+C:\Users\T\Desktop\唐群LL28-N-6\SLC1-N\obj\Debug\SLC1_N.FlowConfig.resources
+C:\Users\T\Desktop\唐群LL28-N-6\SLC1-N\obj\Debug\SLC1_N.Form1.resources
+C:\Users\T\Desktop\唐群LL28-N-6\SLC1-N\obj\Debug\SLC1_N.Help.resources
+C:\Users\T\Desktop\唐群LL28-N-6\SLC1-N\obj\Debug\SLC1_N.LogOn.resources
+C:\Users\T\Desktop\唐群LL28-N-6\SLC1-N\obj\Debug\SLC1_N.Machine.resources
+C:\Users\T\Desktop\唐群LL28-N-6\SLC1-N\obj\Debug\SLC1_N.MESConfig.resources
+C:\Users\T\Desktop\唐群LL28-N-6\SLC1-N\obj\Debug\SLC1_N.PLCConfig.resources
+C:\Users\T\Desktop\唐群LL28-N-6\SLC1-N\obj\Debug\SLC1_N.Port.resources
+C:\Users\T\Desktop\唐群LL28-N-6\SLC1-N\obj\Debug\SLC1_N.Properties.Resources.resources
+C:\Users\T\Desktop\唐群LL28-N-6\SLC1-N\obj\Debug\SLC1_N.ResetPassword.resources
+C:\Users\T\Desktop\唐群LL28-N-6\SLC1-N\obj\Debug\SLC1_N.Save.resources
+C:\Users\T\Desktop\唐群LL28-N-6\SLC1-N\obj\Debug\SLC1_N.SQLConnectionMethod.resources
+C:\Users\T\Desktop\唐群LL28-N-6\SLC1-N\obj\Debug\SLC1_N.TestParams.resources
+C:\Users\T\Desktop\唐群LL28-N-6\SLC1-N\obj\Debug\SLC1_N.UserManagement.resources
+C:\Users\T\Desktop\唐群LL28-N-6\SLC1-N\obj\Debug\SLC1_N.UserPassword.resources
+C:\Users\T\Desktop\唐群LL28-N-6\SLC1-N\obj\Debug\SLC1_N.Warning.resources
+C:\Users\T\Desktop\唐群LL28-N-6\SLC1-N\obj\Debug\SLC1-N.csproj.GenerateResource.cache
+C:\Users\T\Desktop\唐群LL28-N-6\SLC1-N\obj\Debug\SLC1-N.csproj.CopyComplete
+C:\Users\T\Desktop\唐群LL28-N-6\SLC1-N\obj\Debug\LL28-N-V1.4.exe
+C:\Users\T\Desktop\唐群LL28-N-6\SLC1-N\obj\Debug\LL28-N-V1.4.pdb
+C:\Users\Administrator\Desktop\唐群LL28-N-6_1\SLC1-N\bin\Debug\TCP\ITcpClient.cs
+C:\Users\Administrator\Desktop\唐群LL28-N-6_1\SLC1-N\bin\Debug\TCP\ITcpClient.Designer.cs
+C:\Users\Administrator\Desktop\唐群LL28-N-6_1\SLC1-N\bin\Debug\LL28-N-V1.4.exe.config
+C:\Users\Administrator\Desktop\唐群LL28-N-6_1\SLC1-N\bin\Debug\LL28-N-V1.4.exe
+C:\Users\Administrator\Desktop\唐群LL28-N-6_1\SLC1-N\bin\Debug\LL28-N-V1.4.pdb
+C:\Users\Administrator\Desktop\唐群LL28-N-6_1\SLC1-N\bin\Debug\NetWorkHelper.dll
+C:\Users\Administrator\Desktop\唐群LL28-N-6_1\SLC1-N\bin\Debug\Newtonsoft.Json.dll
+C:\Users\Administrator\Desktop\唐群LL28-N-6_1\SLC1-N\bin\Debug\NetWorkHelper.pdb
+C:\Users\Administrator\Desktop\唐群LL28-N-6_1\SLC1-N\bin\Debug\Newtonsoft.Json.xml
+C:\Users\Administrator\Desktop\唐群LL28-N-6_1\SLC1-N\obj\Debug\SLC1-N.csproj.AssemblyReference.cache
+C:\Users\Administrator\Desktop\唐群LL28-N-6_1\SLC1-N\obj\Debug\SLC1-N.csproj.SuggestedBindingRedirects.cache
+C:\Users\Administrator\Desktop\唐群LL28-N-6_1\SLC1-N\obj\Debug\LL28-N-V1.4.exe.config
+C:\Users\Administrator\Desktop\唐群LL28-N-6_1\SLC1-N\obj\Debug\Interop.ADOX.dll
+C:\Users\Administrator\Desktop\唐群LL28-N-6_1\SLC1-N\obj\Debug\SLC1-N.csproj.ResolveComReference.cache
+C:\Users\Administrator\Desktop\唐群LL28-N-6_1\SLC1-N\obj\Debug\SLC1_N.Config.resources
+C:\Users\Administrator\Desktop\唐群LL28-N-6_1\SLC1-N\obj\Debug\SLC1_N.ConfigLogOn.resources
+C:\Users\Administrator\Desktop\唐群LL28-N-6_1\SLC1-N\obj\Debug\SLC1_N.ConfigTCP.resources
+C:\Users\Administrator\Desktop\唐群LL28-N-6_1\SLC1-N\obj\Debug\SLC1_N.Electricity.resources
+C:\Users\Administrator\Desktop\唐群LL28-N-6_1\SLC1-N\obj\Debug\SLC1_N.FlowConfig.resources
+C:\Users\Administrator\Desktop\唐群LL28-N-6_1\SLC1-N\obj\Debug\SLC1_N.Form1.resources
+C:\Users\Administrator\Desktop\唐群LL28-N-6_1\SLC1-N\obj\Debug\SLC1_N.Help.resources
+C:\Users\Administrator\Desktop\唐群LL28-N-6_1\SLC1-N\obj\Debug\SLC1_N.LogOn.resources
+C:\Users\Administrator\Desktop\唐群LL28-N-6_1\SLC1-N\obj\Debug\SLC1_N.Machine.resources
+C:\Users\Administrator\Desktop\唐群LL28-N-6_1\SLC1-N\obj\Debug\SLC1_N.MESConfig.resources
+C:\Users\Administrator\Desktop\唐群LL28-N-6_1\SLC1-N\obj\Debug\SLC1_N.PLCConfig.resources
+C:\Users\Administrator\Desktop\唐群LL28-N-6_1\SLC1-N\obj\Debug\SLC1_N.Port.resources
+C:\Users\Administrator\Desktop\唐群LL28-N-6_1\SLC1-N\obj\Debug\SLC1_N.Properties.Resources.resources
+C:\Users\Administrator\Desktop\唐群LL28-N-6_1\SLC1-N\obj\Debug\SLC1_N.ResetPassword.resources
+C:\Users\Administrator\Desktop\唐群LL28-N-6_1\SLC1-N\obj\Debug\SLC1_N.Save.resources
+C:\Users\Administrator\Desktop\唐群LL28-N-6_1\SLC1-N\obj\Debug\SLC1_N.SQLConnectionMethod.resources
+C:\Users\Administrator\Desktop\唐群LL28-N-6_1\SLC1-N\obj\Debug\SLC1_N.TestParams.resources
+C:\Users\Administrator\Desktop\唐群LL28-N-6_1\SLC1-N\obj\Debug\SLC1_N.UserManagement.resources
+C:\Users\Administrator\Desktop\唐群LL28-N-6_1\SLC1-N\obj\Debug\SLC1_N.UserPassword.resources
+C:\Users\Administrator\Desktop\唐群LL28-N-6_1\SLC1-N\obj\Debug\SLC1_N.Warning.resources
+C:\Users\Administrator\Desktop\唐群LL28-N-6_1\SLC1-N\obj\Debug\SLC1-N.csproj.GenerateResource.cache
+C:\Users\Administrator\Desktop\唐群LL28-N-6_1\SLC1-N\obj\Debug\SLC1-N.csproj.CoreCompileInputs.cache
+C:\Users\Administrator\Desktop\唐群LL28-N-6_1\SLC1-N\obj\Debug\SLC1-N.csproj.CopyComplete
+C:\Users\Administrator\Desktop\唐群LL28-N-6_1\SLC1-N\obj\Debug\LL28-N-V1.4.exe
+C:\Users\Administrator\Desktop\唐群LL28-N-6_1\SLC1-N\obj\Debug\LL28-N-V1.4.pdb
+C:\Users\T\Desktop\唐群LL28-N-6_1\SLC1-N\bin\Debug\TCP\ITcpClient.cs
+C:\Users\T\Desktop\唐群LL28-N-6_1\SLC1-N\bin\Debug\TCP\ITcpClient.Designer.cs
+C:\Users\T\Desktop\唐群LL28-N-6_1\SLC1-N\bin\Debug\LL28-N-V1.4.exe.config
+C:\Users\T\Desktop\唐群LL28-N-6_1\SLC1-N\bin\Debug\LL28-N-V1.4.exe
+C:\Users\T\Desktop\唐群LL28-N-6_1\SLC1-N\bin\Debug\LL28-N-V1.4.pdb
+C:\Users\T\Desktop\唐群LL28-N-6_1\SLC1-N\bin\Debug\NetWorkHelper.dll
+C:\Users\T\Desktop\唐群LL28-N-6_1\SLC1-N\bin\Debug\Newtonsoft.Json.dll
+C:\Users\T\Desktop\唐群LL28-N-6_1\SLC1-N\bin\Debug\NetWorkHelper.pdb
+C:\Users\T\Desktop\唐群LL28-N-6_1\SLC1-N\bin\Debug\Newtonsoft.Json.xml
+C:\Users\T\Desktop\唐群LL28-N-6_1\SLC1-N\obj\Debug\SLC1-N.csprojAssemblyReference.cache
+C:\Users\T\Desktop\唐群LL28-N-6_1\SLC1-N\obj\Debug\LL28-N-V1.4.exe.config
+C:\Users\T\Desktop\唐群LL28-N-6_1\SLC1-N\obj\Debug\Interop.ADOX.dll
+C:\Users\T\Desktop\唐群LL28-N-6_1\SLC1-N\obj\Debug\SLC1-N.csproj.ResolveComReference.cache
+C:\Users\T\Desktop\唐群LL28-N-6_1\SLC1-N\obj\Debug\SLC1_N.Config.resources
+C:\Users\T\Desktop\唐群LL28-N-6_1\SLC1-N\obj\Debug\SLC1_N.ConfigLogOn.resources
+C:\Users\T\Desktop\唐群LL28-N-6_1\SLC1-N\obj\Debug\SLC1_N.ConfigTCP.resources
+C:\Users\T\Desktop\唐群LL28-N-6_1\SLC1-N\obj\Debug\SLC1_N.Electricity.resources
+C:\Users\T\Desktop\唐群LL28-N-6_1\SLC1-N\obj\Debug\SLC1_N.FlowConfig.resources
+C:\Users\T\Desktop\唐群LL28-N-6_1\SLC1-N\obj\Debug\SLC1_N.Form1.resources
+C:\Users\T\Desktop\唐群LL28-N-6_1\SLC1-N\obj\Debug\SLC1_N.Help.resources
+C:\Users\T\Desktop\唐群LL28-N-6_1\SLC1-N\obj\Debug\SLC1_N.LogOn.resources
+C:\Users\T\Desktop\唐群LL28-N-6_1\SLC1-N\obj\Debug\SLC1_N.Machine.resources
+C:\Users\T\Desktop\唐群LL28-N-6_1\SLC1-N\obj\Debug\SLC1_N.MESConfig.resources
+C:\Users\T\Desktop\唐群LL28-N-6_1\SLC1-N\obj\Debug\SLC1_N.PLCConfig.resources
+C:\Users\T\Desktop\唐群LL28-N-6_1\SLC1-N\obj\Debug\SLC1_N.Port.resources
+C:\Users\T\Desktop\唐群LL28-N-6_1\SLC1-N\obj\Debug\SLC1_N.Properties.Resources.resources
+C:\Users\T\Desktop\唐群LL28-N-6_1\SLC1-N\obj\Debug\SLC1_N.ResetPassword.resources
+C:\Users\T\Desktop\唐群LL28-N-6_1\SLC1-N\obj\Debug\SLC1_N.Save.resources
+C:\Users\T\Desktop\唐群LL28-N-6_1\SLC1-N\obj\Debug\SLC1_N.SQLConnectionMethod.resources
+C:\Users\T\Desktop\唐群LL28-N-6_1\SLC1-N\obj\Debug\SLC1_N.TestParams.resources
+C:\Users\T\Desktop\唐群LL28-N-6_1\SLC1-N\obj\Debug\SLC1_N.UserManagement.resources
+C:\Users\T\Desktop\唐群LL28-N-6_1\SLC1-N\obj\Debug\SLC1_N.UserPassword.resources
+C:\Users\T\Desktop\唐群LL28-N-6_1\SLC1-N\obj\Debug\SLC1_N.Warning.resources
+C:\Users\T\Desktop\唐群LL28-N-6_1\SLC1-N\obj\Debug\SLC1-N.csproj.GenerateResource.cache
+C:\Users\T\Desktop\唐群LL28-N-6_1\SLC1-N\obj\Debug\SLC1-N.csproj.CopyComplete
+C:\Users\T\Desktop\唐群LL28-N-6_1\SLC1-N\obj\Debug\LL28-N-V1.4.exe
+C:\Users\T\Desktop\唐群LL28-N-6_1\SLC1-N\obj\Debug\LL28-N-V1.4.pdb
+C:\Users\qiyu0\Desktop\唐群LL28-N\唐群LL28-N-6_1_1\SLC1-N\bin\Debug\TCP\ITcpClient.cs
+C:\Users\qiyu0\Desktop\唐群LL28-N\唐群LL28-N-6_1_1\SLC1-N\bin\Debug\TCP\ITcpClient.Designer.cs
+C:\Users\qiyu0\Desktop\唐群LL28-N\唐群LL28-N-6_1_1\SLC1-N\bin\Debug\LL28-N-V1.4.exe.config
+C:\Users\qiyu0\Desktop\唐群LL28-N\唐群LL28-N-6_1_1\SLC1-N\bin\Debug\LL28-N-V1.4.exe
+C:\Users\qiyu0\Desktop\唐群LL28-N\唐群LL28-N-6_1_1\SLC1-N\bin\Debug\LL28-N-V1.4.pdb
+C:\Users\qiyu0\Desktop\唐群LL28-N\唐群LL28-N-6_1_1\SLC1-N\bin\Debug\Guna.UI2.dll
+C:\Users\qiyu0\Desktop\唐群LL28-N\唐群LL28-N-6_1_1\SLC1-N\bin\Debug\NetWorkHelper.dll
+C:\Users\qiyu0\Desktop\唐群LL28-N\唐群LL28-N-6_1_1\SLC1-N\bin\Debug\Newtonsoft.Json.dll
+C:\Users\qiyu0\Desktop\唐群LL28-N\唐群LL28-N-6_1_1\SLC1-N\bin\Debug\SunnyUI.dll
+C:\Users\qiyu0\Desktop\唐群LL28-N\唐群LL28-N-6_1_1\SLC1-N\bin\Debug\SunnyUI.Common.dll
+C:\Users\qiyu0\Desktop\唐群LL28-N\唐群LL28-N-6_1_1\SLC1-N\bin\Debug\NetWorkHelper.pdb
+C:\Users\qiyu0\Desktop\唐群LL28-N\唐群LL28-N-6_1_1\SLC1-N\bin\Debug\Newtonsoft.Json.xml
+C:\Users\qiyu0\Desktop\唐群LL28-N\唐群LL28-N-6_1_1\SLC1-N\obj\Debug\SLC1-N.csproj.AssemblyReference.cache
+C:\Users\qiyu0\Desktop\唐群LL28-N\唐群LL28-N-6_1_1\SLC1-N\obj\Debug\SLC1-N.csproj.SuggestedBindingRedirects.cache
+C:\Users\qiyu0\Desktop\唐群LL28-N\唐群LL28-N-6_1_1\SLC1-N\obj\Debug\LL28-N-V1.4.exe.config
+C:\Users\qiyu0\Desktop\唐群LL28-N\唐群LL28-N-6_1_1\SLC1-N\obj\Debug\Interop.ADOX.dll
+C:\Users\qiyu0\Desktop\唐群LL28-N\唐群LL28-N-6_1_1\SLC1-N\obj\Debug\SLC1-N.csproj.ResolveComReference.cache
+C:\Users\qiyu0\Desktop\唐群LL28-N\唐群LL28-N-6_1_1\SLC1-N\obj\Debug\SLC1_N.Config.resources
+C:\Users\qiyu0\Desktop\唐群LL28-N\唐群LL28-N-6_1_1\SLC1-N\obj\Debug\SLC1_N.ConfigLogOn.resources
+C:\Users\qiyu0\Desktop\唐群LL28-N\唐群LL28-N-6_1_1\SLC1-N\obj\Debug\SLC1_N.ConfigTCP.resources
+C:\Users\qiyu0\Desktop\唐群LL28-N\唐群LL28-N-6_1_1\SLC1-N\obj\Debug\SLC1_N.Electricity.resources
+C:\Users\qiyu0\Desktop\唐群LL28-N\唐群LL28-N-6_1_1\SLC1-N\obj\Debug\SLC1_N.FlowConfig.resources
+C:\Users\qiyu0\Desktop\唐群LL28-N\唐群LL28-N-6_1_1\SLC1-N\obj\Debug\SLC1_N.Form1.resources
+C:\Users\qiyu0\Desktop\唐群LL28-N\唐群LL28-N-6_1_1\SLC1-N\obj\Debug\SLC1_N.Form2.resources
+C:\Users\qiyu0\Desktop\唐群LL28-N\唐群LL28-N-6_1_1\SLC1-N\obj\Debug\SLC1_N.Help.resources
+C:\Users\qiyu0\Desktop\唐群LL28-N\唐群LL28-N-6_1_1\SLC1-N\obj\Debug\SLC1_N.LogOn.resources
+C:\Users\qiyu0\Desktop\唐群LL28-N\唐群LL28-N-6_1_1\SLC1-N\obj\Debug\SLC1_N.Machine.resources
+C:\Users\qiyu0\Desktop\唐群LL28-N\唐群LL28-N-6_1_1\SLC1-N\obj\Debug\SLC1_N.MESConfig.resources
+C:\Users\qiyu0\Desktop\唐群LL28-N\唐群LL28-N-6_1_1\SLC1-N\obj\Debug\SLC1_N.PLCConfig.resources
+C:\Users\qiyu0\Desktop\唐群LL28-N\唐群LL28-N-6_1_1\SLC1-N\obj\Debug\SLC1_N.Port.resources
+C:\Users\qiyu0\Desktop\唐群LL28-N\唐群LL28-N-6_1_1\SLC1-N\obj\Debug\SLC1_N.Properties.Resources.resources
+C:\Users\qiyu0\Desktop\唐群LL28-N\唐群LL28-N-6_1_1\SLC1-N\obj\Debug\SLC1_N.ResetPassword.resources
+C:\Users\qiyu0\Desktop\唐群LL28-N\唐群LL28-N-6_1_1\SLC1-N\obj\Debug\SLC1_N.Save.resources
+C:\Users\qiyu0\Desktop\唐群LL28-N\唐群LL28-N-6_1_1\SLC1-N\obj\Debug\SLC1_N.SQLConnectionMethod.resources
+C:\Users\qiyu0\Desktop\唐群LL28-N\唐群LL28-N-6_1_1\SLC1-N\obj\Debug\SLC1_N.TestParams.resources
+C:\Users\qiyu0\Desktop\唐群LL28-N\唐群LL28-N-6_1_1\SLC1-N\obj\Debug\SLC1_N.UserManagement.resources
+C:\Users\qiyu0\Desktop\唐群LL28-N\唐群LL28-N-6_1_1\SLC1-N\obj\Debug\SLC1_N.UserPassword.resources
+C:\Users\qiyu0\Desktop\唐群LL28-N\唐群LL28-N-6_1_1\SLC1-N\obj\Debug\SLC1_N.Warning.resources
+C:\Users\qiyu0\Desktop\唐群LL28-N\唐群LL28-N-6_1_1\SLC1-N\obj\Debug\SLC1-N.csproj.GenerateResource.cache
+C:\Users\qiyu0\Desktop\唐群LL28-N\唐群LL28-N-6_1_1\SLC1-N\obj\Debug\SLC1-N.csproj.CoreCompileInputs.cache
+C:\Users\qiyu0\Desktop\唐群LL28-N\唐群LL28-N-6_1_1\SLC1-N\obj\Debug\SLC1-N.csproj.CopyComplete
+C:\Users\qiyu0\Desktop\唐群LL28-N\唐群LL28-N-6_1_1\SLC1-N\obj\Debug\LL28-N-V1.4.exe
+C:\Users\qiyu0\Desktop\唐群LL28-N\唐群LL28-N-6_1_1\SLC1-N\obj\Debug\LL28-N-V1.4.pdb
+C:\Users\qiyu0\Desktop\唐群LL28-N-HHH\唐群LL28-N-6_1_1\SLC1-N\bin\Debug\TCP\ITcpClient.cs
+C:\Users\qiyu0\Desktop\唐群LL28-N-HHH\唐群LL28-N-6_1_1\SLC1-N\bin\Debug\TCP\ITcpClient.Designer.cs
+C:\Users\qiyu0\Desktop\唐群LL28-N-HHH\唐群LL28-N-6_1_1\SLC1-N\bin\Debug\LL28-N-V1.4.exe.config
+C:\Users\qiyu0\Desktop\唐群LL28-N-HHH\唐群LL28-N-6_1_1\SLC1-N\bin\Debug\LL28-N-V1.4.exe
+C:\Users\qiyu0\Desktop\唐群LL28-N-HHH\唐群LL28-N-6_1_1\SLC1-N\bin\Debug\LL28-N-V1.4.pdb
+C:\Users\qiyu0\Desktop\唐群LL28-N-HHH\唐群LL28-N-6_1_1\SLC1-N\bin\Debug\Guna.UI2.dll
+C:\Users\qiyu0\Desktop\唐群LL28-N-HHH\唐群LL28-N-6_1_1\SLC1-N\bin\Debug\NetWorkHelper.dll
+C:\Users\qiyu0\Desktop\唐群LL28-N-HHH\唐群LL28-N-6_1_1\SLC1-N\bin\Debug\Newtonsoft.Json.dll
+C:\Users\qiyu0\Desktop\唐群LL28-N-HHH\唐群LL28-N-6_1_1\SLC1-N\bin\Debug\SunnyUI.dll
+C:\Users\qiyu0\Desktop\唐群LL28-N-HHH\唐群LL28-N-6_1_1\SLC1-N\bin\Debug\SunnyUI.Common.dll
+C:\Users\qiyu0\Desktop\唐群LL28-N-HHH\唐群LL28-N-6_1_1\SLC1-N\bin\Debug\NetWorkHelper.pdb
+C:\Users\qiyu0\Desktop\唐群LL28-N-HHH\唐群LL28-N-6_1_1\SLC1-N\bin\Debug\Newtonsoft.Json.xml
+C:\Users\qiyu0\Desktop\唐群LL28-N-HHH\唐群LL28-N-6_1_1\SLC1-N\obj\Debug\SLC1-N.csproj.AssemblyReference.cache
+C:\Users\qiyu0\Desktop\唐群LL28-N-HHH\唐群LL28-N-6_1_1\SLC1-N\obj\Debug\SLC1-N.csproj.SuggestedBindingRedirects.cache
+C:\Users\qiyu0\Desktop\唐群LL28-N-HHH\唐群LL28-N-6_1_1\SLC1-N\obj\Debug\LL28-N-V1.4.exe.config
+C:\Users\qiyu0\Desktop\唐群LL28-N-HHH\唐群LL28-N-6_1_1\SLC1-N\obj\Debug\Interop.ADOX.dll
+C:\Users\qiyu0\Desktop\唐群LL28-N-HHH\唐群LL28-N-6_1_1\SLC1-N\obj\Debug\SLC1-N.csproj.ResolveComReference.cache
+C:\Users\qiyu0\Desktop\唐群LL28-N-HHH\唐群LL28-N-6_1_1\SLC1-N\obj\Debug\SLC1_N.Config.resources
+C:\Users\qiyu0\Desktop\唐群LL28-N-HHH\唐群LL28-N-6_1_1\SLC1-N\obj\Debug\SLC1_N.ConfigLogOn.resources
+C:\Users\qiyu0\Desktop\唐群LL28-N-HHH\唐群LL28-N-6_1_1\SLC1-N\obj\Debug\SLC1_N.ConfigTCP.resources
+C:\Users\qiyu0\Desktop\唐群LL28-N-HHH\唐群LL28-N-6_1_1\SLC1-N\obj\Debug\SLC1_N.Electricity.resources
+C:\Users\qiyu0\Desktop\唐群LL28-N-HHH\唐群LL28-N-6_1_1\SLC1-N\obj\Debug\SLC1_N.FlowConfig.resources
+C:\Users\qiyu0\Desktop\唐群LL28-N-HHH\唐群LL28-N-6_1_1\SLC1-N\obj\Debug\SLC1_N.Form1.resources
+C:\Users\qiyu0\Desktop\唐群LL28-N-HHH\唐群LL28-N-6_1_1\SLC1-N\obj\Debug\SLC1_N.Form2.resources
+C:\Users\qiyu0\Desktop\唐群LL28-N-HHH\唐群LL28-N-6_1_1\SLC1-N\obj\Debug\SLC1_N.Help.resources
+C:\Users\qiyu0\Desktop\唐群LL28-N-HHH\唐群LL28-N-6_1_1\SLC1-N\obj\Debug\SLC1_N.LogOn.resources
+C:\Users\qiyu0\Desktop\唐群LL28-N-HHH\唐群LL28-N-6_1_1\SLC1-N\obj\Debug\SLC1_N.Machine.resources
+C:\Users\qiyu0\Desktop\唐群LL28-N-HHH\唐群LL28-N-6_1_1\SLC1-N\obj\Debug\SLC1_N.MESConfig.resources
+C:\Users\qiyu0\Desktop\唐群LL28-N-HHH\唐群LL28-N-6_1_1\SLC1-N\obj\Debug\SLC1_N.PLCConfig.resources
+C:\Users\qiyu0\Desktop\唐群LL28-N-HHH\唐群LL28-N-6_1_1\SLC1-N\obj\Debug\SLC1_N.Port.resources
+C:\Users\qiyu0\Desktop\唐群LL28-N-HHH\唐群LL28-N-6_1_1\SLC1-N\obj\Debug\SLC1_N.Properties.Resources.resources
+C:\Users\qiyu0\Desktop\唐群LL28-N-HHH\唐群LL28-N-6_1_1\SLC1-N\obj\Debug\SLC1_N.ResetPassword.resources
+C:\Users\qiyu0\Desktop\唐群LL28-N-HHH\唐群LL28-N-6_1_1\SLC1-N\obj\Debug\SLC1_N.Save.resources
+C:\Users\qiyu0\Desktop\唐群LL28-N-HHH\唐群LL28-N-6_1_1\SLC1-N\obj\Debug\SLC1_N.SQLConnectionMethod.resources
+C:\Users\qiyu0\Desktop\唐群LL28-N-HHH\唐群LL28-N-6_1_1\SLC1-N\obj\Debug\SLC1_N.TestParams.resources
+C:\Users\qiyu0\Desktop\唐群LL28-N-HHH\唐群LL28-N-6_1_1\SLC1-N\obj\Debug\SLC1_N.UserManagement.resources
+C:\Users\qiyu0\Desktop\唐群LL28-N-HHH\唐群LL28-N-6_1_1\SLC1-N\obj\Debug\SLC1_N.UserPassword.resources
+C:\Users\qiyu0\Desktop\唐群LL28-N-HHH\唐群LL28-N-6_1_1\SLC1-N\obj\Debug\SLC1_N.Warning.resources
+C:\Users\qiyu0\Desktop\唐群LL28-N-HHH\唐群LL28-N-6_1_1\SLC1-N\obj\Debug\SLC1-N.csproj.GenerateResource.cache
+C:\Users\qiyu0\Desktop\唐群LL28-N-HHH\唐群LL28-N-6_1_1\SLC1-N\obj\Debug\SLC1-N.csproj.CoreCompileInputs.cache
+C:\Users\qiyu0\Desktop\唐群LL28-N-HHH\唐群LL28-N-6_1_1\SLC1-N\obj\Debug\SLC1-N.csproj.CopyComplete
+C:\Users\qiyu0\Desktop\唐群LL28-N-HHH\唐群LL28-N-6_1_1\SLC1-N\obj\Debug\LL28-N-V1.4.exe
+C:\Users\qiyu0\Desktop\唐群LL28-N-HHH\唐群LL28-N-6_1_1\SLC1-N\obj\Debug\LL28-N-V1.4.pdb
+C:\Users\qiyu0\Desktop\唐群LL28-N-HHHH\唐群LL28-N-6_1_1\SLC1-N\bin\Debug\TCP\ITcpClient.cs
+C:\Users\qiyu0\Desktop\唐群LL28-N-HHHH\唐群LL28-N-6_1_1\SLC1-N\bin\Debug\TCP\ITcpClient.Designer.cs
+C:\Users\qiyu0\Desktop\唐群LL28-N-HHHH\唐群LL28-N-6_1_1\SLC1-N\bin\Debug\LL28-N-V1.4.exe.config
+C:\Users\qiyu0\Desktop\唐群LL28-N-HHHH\唐群LL28-N-6_1_1\SLC1-N\bin\Debug\LL28-N-V1.4.exe
+C:\Users\qiyu0\Desktop\唐群LL28-N-HHHH\唐群LL28-N-6_1_1\SLC1-N\bin\Debug\LL28-N-V1.4.pdb
+C:\Users\qiyu0\Desktop\唐群LL28-N-HHHH\唐群LL28-N-6_1_1\SLC1-N\bin\Debug\Guna.UI2.dll
+C:\Users\qiyu0\Desktop\唐群LL28-N-HHHH\唐群LL28-N-6_1_1\SLC1-N\bin\Debug\NetWorkHelper.dll
+C:\Users\qiyu0\Desktop\唐群LL28-N-HHHH\唐群LL28-N-6_1_1\SLC1-N\bin\Debug\Newtonsoft.Json.dll
+C:\Users\qiyu0\Desktop\唐群LL28-N-HHHH\唐群LL28-N-6_1_1\SLC1-N\bin\Debug\SunnyUI.dll
+C:\Users\qiyu0\Desktop\唐群LL28-N-HHHH\唐群LL28-N-6_1_1\SLC1-N\bin\Debug\SunnyUI.Common.dll
+C:\Users\qiyu0\Desktop\唐群LL28-N-HHHH\唐群LL28-N-6_1_1\SLC1-N\bin\Debug\NetWorkHelper.pdb
+C:\Users\qiyu0\Desktop\唐群LL28-N-HHHH\唐群LL28-N-6_1_1\SLC1-N\bin\Debug\Newtonsoft.Json.xml
+C:\Users\qiyu0\Desktop\唐群LL28-N-HHHH\唐群LL28-N-6_1_1\SLC1-N\obj\Debug\SLC1-N.csproj.AssemblyReference.cache
+C:\Users\qiyu0\Desktop\唐群LL28-N-HHHH\唐群LL28-N-6_1_1\SLC1-N\obj\Debug\SLC1-N.csproj.SuggestedBindingRedirects.cache
+C:\Users\qiyu0\Desktop\唐群LL28-N-HHHH\唐群LL28-N-6_1_1\SLC1-N\obj\Debug\LL28-N-V1.4.exe.config
+C:\Users\qiyu0\Desktop\唐群LL28-N-HHHH\唐群LL28-N-6_1_1\SLC1-N\obj\Debug\Interop.ADOX.dll
+C:\Users\qiyu0\Desktop\唐群LL28-N-HHHH\唐群LL28-N-6_1_1\SLC1-N\obj\Debug\SLC1-N.csproj.ResolveComReference.cache
+C:\Users\qiyu0\Desktop\唐群LL28-N-HHHH\唐群LL28-N-6_1_1\SLC1-N\obj\Debug\SLC1_N.Config.resources
+C:\Users\qiyu0\Desktop\唐群LL28-N-HHHH\唐群LL28-N-6_1_1\SLC1-N\obj\Debug\SLC1_N.ConfigLogOn.resources
+C:\Users\qiyu0\Desktop\唐群LL28-N-HHHH\唐群LL28-N-6_1_1\SLC1-N\obj\Debug\SLC1_N.ConfigTCP.resources
+C:\Users\qiyu0\Desktop\唐群LL28-N-HHHH\唐群LL28-N-6_1_1\SLC1-N\obj\Debug\SLC1_N.Electricity.resources
+C:\Users\qiyu0\Desktop\唐群LL28-N-HHHH\唐群LL28-N-6_1_1\SLC1-N\obj\Debug\SLC1_N.FlowConfig.resources
+C:\Users\qiyu0\Desktop\唐群LL28-N-HHHH\唐群LL28-N-6_1_1\SLC1-N\obj\Debug\SLC1_N.Form1.resources
+C:\Users\qiyu0\Desktop\唐群LL28-N-HHHH\唐群LL28-N-6_1_1\SLC1-N\obj\Debug\SLC1_N.Form2.resources
+C:\Users\qiyu0\Desktop\唐群LL28-N-HHHH\唐群LL28-N-6_1_1\SLC1-N\obj\Debug\SLC1_N.Help.resources
+C:\Users\qiyu0\Desktop\唐群LL28-N-HHHH\唐群LL28-N-6_1_1\SLC1-N\obj\Debug\SLC1_N.LogOn.resources
+C:\Users\qiyu0\Desktop\唐群LL28-N-HHHH\唐群LL28-N-6_1_1\SLC1-N\obj\Debug\SLC1_N.Machine.resources
+C:\Users\qiyu0\Desktop\唐群LL28-N-HHHH\唐群LL28-N-6_1_1\SLC1-N\obj\Debug\SLC1_N.MESConfig.resources
+C:\Users\qiyu0\Desktop\唐群LL28-N-HHHH\唐群LL28-N-6_1_1\SLC1-N\obj\Debug\SLC1_N.PLCConfig.resources
+C:\Users\qiyu0\Desktop\唐群LL28-N-HHHH\唐群LL28-N-6_1_1\SLC1-N\obj\Debug\SLC1_N.Port.resources
+C:\Users\qiyu0\Desktop\唐群LL28-N-HHHH\唐群LL28-N-6_1_1\SLC1-N\obj\Debug\SLC1_N.Properties.Resources.resources
+C:\Users\qiyu0\Desktop\唐群LL28-N-HHHH\唐群LL28-N-6_1_1\SLC1-N\obj\Debug\SLC1_N.ResetPassword.resources
+C:\Users\qiyu0\Desktop\唐群LL28-N-HHHH\唐群LL28-N-6_1_1\SLC1-N\obj\Debug\SLC1_N.Save.resources
+C:\Users\qiyu0\Desktop\唐群LL28-N-HHHH\唐群LL28-N-6_1_1\SLC1-N\obj\Debug\SLC1_N.SQLConnectionMethod.resources
+C:\Users\qiyu0\Desktop\唐群LL28-N-HHHH\唐群LL28-N-6_1_1\SLC1-N\obj\Debug\SLC1_N.TestParams.resources
+C:\Users\qiyu0\Desktop\唐群LL28-N-HHHH\唐群LL28-N-6_1_1\SLC1-N\obj\Debug\SLC1_N.UserManagement.resources
+C:\Users\qiyu0\Desktop\唐群LL28-N-HHHH\唐群LL28-N-6_1_1\SLC1-N\obj\Debug\SLC1_N.UserPassword.resources
+C:\Users\qiyu0\Desktop\唐群LL28-N-HHHH\唐群LL28-N-6_1_1\SLC1-N\obj\Debug\SLC1_N.Warning.resources
+C:\Users\qiyu0\Desktop\唐群LL28-N-HHHH\唐群LL28-N-6_1_1\SLC1-N\obj\Debug\SLC1-N.csproj.GenerateResource.cache
+C:\Users\qiyu0\Desktop\唐群LL28-N-HHHH\唐群LL28-N-6_1_1\SLC1-N\obj\Debug\SLC1-N.csproj.CoreCompileInputs.cache
+C:\Users\qiyu0\Desktop\唐群LL28-N-HHHH\唐群LL28-N-6_1_1\SLC1-N\obj\Debug\SLC1-N.csproj.CopyComplete
+C:\Users\qiyu0\Desktop\唐群LL28-N-HHHH\唐群LL28-N-6_1_1\SLC1-N\obj\Debug\LL28-N-V1.4.exe
+C:\Users\qiyu0\Desktop\唐群LL28-N-HHHH\唐群LL28-N-6_1_1\SLC1-N\obj\Debug\LL28-N-V1.4.pdb
+C:\Users\qiyu0\Desktop\唐群LL28-N-HHHH\唐群LL28-N-6_1_1\SLC1-N\bin\Debug\Guna.UI.dll
+C:\Users\qiyu0\Desktop\唐群LL28-N-HHHH\唐群LL28-N-6_1_1\SLC1-N\obj\Debug\SLC1_N.Form3.resources
+C:\Users\T\Desktop\唐群LL28-N-HHHH\唐群LL28-N-HHHH\唐群LL28-N-6_1_1\SLC1-N\bin\Debug\TCP\ITcpClient.cs
+C:\Users\T\Desktop\唐群LL28-N-HHHH\唐群LL28-N-HHHH\唐群LL28-N-6_1_1\SLC1-N\bin\Debug\TCP\ITcpClient.Designer.cs
+C:\Users\T\Desktop\唐群LL28-N-HHHH\唐群LL28-N-HHHH\唐群LL28-N-6_1_1\SLC1-N\bin\Debug\LL28-N-V1.4.exe.config
+C:\Users\T\Desktop\唐群LL28-N-HHHH\唐群LL28-N-HHHH\唐群LL28-N-6_1_1\SLC1-N\bin\Debug\LL28-N-V1.4.exe
+C:\Users\T\Desktop\唐群LL28-N-HHHH\唐群LL28-N-HHHH\唐群LL28-N-6_1_1\SLC1-N\bin\Debug\LL28-N-V1.4.pdb
+C:\Users\T\Desktop\唐群LL28-N-HHHH\唐群LL28-N-HHHH\唐群LL28-N-6_1_1\SLC1-N\bin\Debug\NetWorkHelper.dll
+C:\Users\T\Desktop\唐群LL28-N-HHHH\唐群LL28-N-HHHH\唐群LL28-N-6_1_1\SLC1-N\bin\Debug\Newtonsoft.Json.dll
+C:\Users\T\Desktop\唐群LL28-N-HHHH\唐群LL28-N-HHHH\唐群LL28-N-6_1_1\SLC1-N\bin\Debug\NetWorkHelper.pdb
+C:\Users\T\Desktop\唐群LL28-N-HHHH\唐群LL28-N-HHHH\唐群LL28-N-6_1_1\SLC1-N\bin\Debug\Newtonsoft.Json.xml
+C:\Users\T\Desktop\唐群LL28-N-HHHH\唐群LL28-N-HHHH\唐群LL28-N-6_1_1\SLC1-N\obj\Debug\SLC1-N.csprojAssemblyReference.cache
+C:\Users\T\Desktop\唐群LL28-N-HHHH\唐群LL28-N-HHHH\唐群LL28-N-6_1_1\SLC1-N\obj\Debug\LL28-N-V1.4.exe.config
+C:\Users\T\Desktop\唐群LL28-N-HHHH\唐群LL28-N-HHHH\唐群LL28-N-6_1_1\SLC1-N\obj\Debug\Interop.ADOX.dll
+C:\Users\T\Desktop\唐群LL28-N-HHHH\唐群LL28-N-HHHH\唐群LL28-N-6_1_1\SLC1-N\obj\Debug\SLC1-N.csproj.ResolveComReference.cache
+C:\Users\T\Desktop\唐群LL28-N-HHHH\唐群LL28-N-HHHH\唐群LL28-N-6_1_1\SLC1-N\obj\Debug\SLC1_N.Config.resources
+C:\Users\T\Desktop\唐群LL28-N-HHHH\唐群LL28-N-HHHH\唐群LL28-N-6_1_1\SLC1-N\obj\Debug\SLC1_N.ConfigLogOn.resources
+C:\Users\T\Desktop\唐群LL28-N-HHHH\唐群LL28-N-HHHH\唐群LL28-N-6_1_1\SLC1-N\obj\Debug\SLC1_N.ConfigTCP.resources
+C:\Users\T\Desktop\唐群LL28-N-HHHH\唐群LL28-N-HHHH\唐群LL28-N-6_1_1\SLC1-N\obj\Debug\SLC1_N.Electricity.resources
+C:\Users\T\Desktop\唐群LL28-N-HHHH\唐群LL28-N-HHHH\唐群LL28-N-6_1_1\SLC1-N\obj\Debug\SLC1_N.FlowConfig.resources
+C:\Users\T\Desktop\唐群LL28-N-HHHH\唐群LL28-N-HHHH\唐群LL28-N-6_1_1\SLC1-N\obj\Debug\SLC1_N.Form1.resources
+C:\Users\T\Desktop\唐群LL28-N-HHHH\唐群LL28-N-HHHH\唐群LL28-N-6_1_1\SLC1-N\obj\Debug\SLC1_N.Form2.resources
+C:\Users\T\Desktop\唐群LL28-N-HHHH\唐群LL28-N-HHHH\唐群LL28-N-6_1_1\SLC1-N\obj\Debug\SLC1_N.Form3.resources
+C:\Users\T\Desktop\唐群LL28-N-HHHH\唐群LL28-N-HHHH\唐群LL28-N-6_1_1\SLC1-N\obj\Debug\SLC1_N.Help.resources
+C:\Users\T\Desktop\唐群LL28-N-HHHH\唐群LL28-N-HHHH\唐群LL28-N-6_1_1\SLC1-N\obj\Debug\SLC1_N.LogOn.resources
+C:\Users\T\Desktop\唐群LL28-N-HHHH\唐群LL28-N-HHHH\唐群LL28-N-6_1_1\SLC1-N\obj\Debug\SLC1_N.Machine.resources
+C:\Users\T\Desktop\唐群LL28-N-HHHH\唐群LL28-N-HHHH\唐群LL28-N-6_1_1\SLC1-N\obj\Debug\SLC1_N.MESConfig.resources
+C:\Users\T\Desktop\唐群LL28-N-HHHH\唐群LL28-N-HHHH\唐群LL28-N-6_1_1\SLC1-N\obj\Debug\SLC1_N.PLCConfig.resources
+C:\Users\T\Desktop\唐群LL28-N-HHHH\唐群LL28-N-HHHH\唐群LL28-N-6_1_1\SLC1-N\obj\Debug\SLC1_N.Port.resources
+C:\Users\T\Desktop\唐群LL28-N-HHHH\唐群LL28-N-HHHH\唐群LL28-N-6_1_1\SLC1-N\obj\Debug\SLC1_N.Properties.Resources.resources
+C:\Users\T\Desktop\唐群LL28-N-HHHH\唐群LL28-N-HHHH\唐群LL28-N-6_1_1\SLC1-N\obj\Debug\SLC1_N.ResetPassword.resources
+C:\Users\T\Desktop\唐群LL28-N-HHHH\唐群LL28-N-HHHH\唐群LL28-N-6_1_1\SLC1-N\obj\Debug\SLC1_N.Save.resources
+C:\Users\T\Desktop\唐群LL28-N-HHHH\唐群LL28-N-HHHH\唐群LL28-N-6_1_1\SLC1-N\obj\Debug\SLC1_N.SQLConnectionMethod.resources
+C:\Users\T\Desktop\唐群LL28-N-HHHH\唐群LL28-N-HHHH\唐群LL28-N-6_1_1\SLC1-N\obj\Debug\SLC1_N.TestParams.resources
+C:\Users\T\Desktop\唐群LL28-N-HHHH\唐群LL28-N-HHHH\唐群LL28-N-6_1_1\SLC1-N\obj\Debug\SLC1_N.UserManagement.resources
+C:\Users\T\Desktop\唐群LL28-N-HHHH\唐群LL28-N-HHHH\唐群LL28-N-6_1_1\SLC1-N\obj\Debug\SLC1_N.UserPassword.resources
+C:\Users\T\Desktop\唐群LL28-N-HHHH\唐群LL28-N-HHHH\唐群LL28-N-6_1_1\SLC1-N\obj\Debug\SLC1_N.Warning.resources
+C:\Users\T\Desktop\唐群LL28-N-HHHH\唐群LL28-N-HHHH\唐群LL28-N-6_1_1\SLC1-N\obj\Debug\SLC1-N.csproj.GenerateResource.cache
+C:\Users\T\Desktop\唐群LL28-N-HHHH\唐群LL28-N-HHHH\唐群LL28-N-6_1_1\SLC1-N\obj\Debug\SLC1-N.csproj.CopyComplete
+C:\Users\T\Desktop\唐群LL28-N-HHHH\唐群LL28-N-HHHH\唐群LL28-N-6_1_1\SLC1-N\obj\Debug\LL28-N-V1.4.exe
+C:\Users\T\Desktop\唐群LL28-N-HHHH\唐群LL28-N-HHHH\唐群LL28-N-6_1_1\SLC1-N\obj\Debug\LL28-N-V1.4.pdb
+C:\Users\Administrator\Desktop\唐群LL28-N-HHHH\唐群LL28-N-HHHH\唐群LL28-N-HHHH\唐群LL28-N-6_1_1\SLC1-N\bin\Debug\TCP\ITcpClient.cs
+C:\Users\Administrator\Desktop\唐群LL28-N-HHHH\唐群LL28-N-HHHH\唐群LL28-N-HHHH\唐群LL28-N-6_1_1\SLC1-N\bin\Debug\TCP\ITcpClient.Designer.cs
+C:\Users\Administrator\Desktop\唐群LL28-N-HHHH\唐群LL28-N-HHHH\唐群LL28-N-HHHH\唐群LL28-N-6_1_1\SLC1-N\bin\Debug\LL28-N-V1.4.exe.config
+C:\Users\Administrator\Desktop\唐群LL28-N-HHHH\唐群LL28-N-HHHH\唐群LL28-N-HHHH\唐群LL28-N-6_1_1\SLC1-N\bin\Debug\LL28-N-V1.4.exe
+C:\Users\Administrator\Desktop\唐群LL28-N-HHHH\唐群LL28-N-HHHH\唐群LL28-N-HHHH\唐群LL28-N-6_1_1\SLC1-N\bin\Debug\LL28-N-V1.4.pdb
+C:\Users\Administrator\Desktop\唐群LL28-N-HHHH\唐群LL28-N-HHHH\唐群LL28-N-HHHH\唐群LL28-N-6_1_1\SLC1-N\bin\Debug\NetWorkHelper.dll
+C:\Users\Administrator\Desktop\唐群LL28-N-HHHH\唐群LL28-N-HHHH\唐群LL28-N-HHHH\唐群LL28-N-6_1_1\SLC1-N\bin\Debug\Newtonsoft.Json.dll
+C:\Users\Administrator\Desktop\唐群LL28-N-HHHH\唐群LL28-N-HHHH\唐群LL28-N-HHHH\唐群LL28-N-6_1_1\SLC1-N\bin\Debug\NetWorkHelper.pdb
+C:\Users\Administrator\Desktop\唐群LL28-N-HHHH\唐群LL28-N-HHHH\唐群LL28-N-HHHH\唐群LL28-N-6_1_1\SLC1-N\bin\Debug\Newtonsoft.Json.xml
+C:\Users\Administrator\Desktop\唐群LL28-N-HHHH\唐群LL28-N-HHHH\唐群LL28-N-HHHH\唐群LL28-N-6_1_1\SLC1-N\obj\Debug\SLC1-N.csproj.AssemblyReference.cache
+C:\Users\Administrator\Desktop\唐群LL28-N-HHHH\唐群LL28-N-HHHH\唐群LL28-N-HHHH\唐群LL28-N-6_1_1\SLC1-N\obj\Debug\SLC1-N.csproj.SuggestedBindingRedirects.cache
+C:\Users\Administrator\Desktop\唐群LL28-N-HHHH\唐群LL28-N-HHHH\唐群LL28-N-HHHH\唐群LL28-N-6_1_1\SLC1-N\obj\Debug\LL28-N-V1.4.exe.config
+C:\Users\Administrator\Desktop\唐群LL28-N-HHHH\唐群LL28-N-HHHH\唐群LL28-N-HHHH\唐群LL28-N-6_1_1\SLC1-N\obj\Debug\Interop.ADOX.dll
+C:\Users\Administrator\Desktop\唐群LL28-N-HHHH\唐群LL28-N-HHHH\唐群LL28-N-HHHH\唐群LL28-N-6_1_1\SLC1-N\obj\Debug\SLC1-N.csproj.ResolveComReference.cache
+C:\Users\Administrator\Desktop\唐群LL28-N-HHHH\唐群LL28-N-HHHH\唐群LL28-N-HHHH\唐群LL28-N-6_1_1\SLC1-N\obj\Debug\SLC1_N.Config.resources
+C:\Users\Administrator\Desktop\唐群LL28-N-HHHH\唐群LL28-N-HHHH\唐群LL28-N-HHHH\唐群LL28-N-6_1_1\SLC1-N\obj\Debug\SLC1_N.ConfigLogOn.resources
+C:\Users\Administrator\Desktop\唐群LL28-N-HHHH\唐群LL28-N-HHHH\唐群LL28-N-HHHH\唐群LL28-N-6_1_1\SLC1-N\obj\Debug\SLC1_N.ConfigTCP.resources
+C:\Users\Administrator\Desktop\唐群LL28-N-HHHH\唐群LL28-N-HHHH\唐群LL28-N-HHHH\唐群LL28-N-6_1_1\SLC1-N\obj\Debug\SLC1_N.Electricity.resources
+C:\Users\Administrator\Desktop\唐群LL28-N-HHHH\唐群LL28-N-HHHH\唐群LL28-N-HHHH\唐群LL28-N-6_1_1\SLC1-N\obj\Debug\SLC1_N.FlowConfig.resources
+C:\Users\Administrator\Desktop\唐群LL28-N-HHHH\唐群LL28-N-HHHH\唐群LL28-N-HHHH\唐群LL28-N-6_1_1\SLC1-N\obj\Debug\SLC1_N.Form1.resources
+C:\Users\Administrator\Desktop\唐群LL28-N-HHHH\唐群LL28-N-HHHH\唐群LL28-N-HHHH\唐群LL28-N-6_1_1\SLC1-N\obj\Debug\SLC1_N.Form2.resources
+C:\Users\Administrator\Desktop\唐群LL28-N-HHHH\唐群LL28-N-HHHH\唐群LL28-N-HHHH\唐群LL28-N-6_1_1\SLC1-N\obj\Debug\SLC1_N.Form3.resources
+C:\Users\Administrator\Desktop\唐群LL28-N-HHHH\唐群LL28-N-HHHH\唐群LL28-N-HHHH\唐群LL28-N-6_1_1\SLC1-N\obj\Debug\SLC1_N.Help.resources
+C:\Users\Administrator\Desktop\唐群LL28-N-HHHH\唐群LL28-N-HHHH\唐群LL28-N-HHHH\唐群LL28-N-6_1_1\SLC1-N\obj\Debug\SLC1_N.LogOn.resources
+C:\Users\Administrator\Desktop\唐群LL28-N-HHHH\唐群LL28-N-HHHH\唐群LL28-N-HHHH\唐群LL28-N-6_1_1\SLC1-N\obj\Debug\SLC1_N.Machine.resources
+C:\Users\Administrator\Desktop\唐群LL28-N-HHHH\唐群LL28-N-HHHH\唐群LL28-N-HHHH\唐群LL28-N-6_1_1\SLC1-N\obj\Debug\SLC1_N.MESConfig.resources
+C:\Users\Administrator\Desktop\唐群LL28-N-HHHH\唐群LL28-N-HHHH\唐群LL28-N-HHHH\唐群LL28-N-6_1_1\SLC1-N\obj\Debug\SLC1_N.PLCConfig.resources
+C:\Users\Administrator\Desktop\唐群LL28-N-HHHH\唐群LL28-N-HHHH\唐群LL28-N-HHHH\唐群LL28-N-6_1_1\SLC1-N\obj\Debug\SLC1_N.Port.resources
+C:\Users\Administrator\Desktop\唐群LL28-N-HHHH\唐群LL28-N-HHHH\唐群LL28-N-HHHH\唐群LL28-N-6_1_1\SLC1-N\obj\Debug\SLC1_N.Properties.Resources.resources
+C:\Users\Administrator\Desktop\唐群LL28-N-HHHH\唐群LL28-N-HHHH\唐群LL28-N-HHHH\唐群LL28-N-6_1_1\SLC1-N\obj\Debug\SLC1_N.ResetPassword.resources
+C:\Users\Administrator\Desktop\唐群LL28-N-HHHH\唐群LL28-N-HHHH\唐群LL28-N-HHHH\唐群LL28-N-6_1_1\SLC1-N\obj\Debug\SLC1_N.Save.resources
+C:\Users\Administrator\Desktop\唐群LL28-N-HHHH\唐群LL28-N-HHHH\唐群LL28-N-HHHH\唐群LL28-N-6_1_1\SLC1-N\obj\Debug\SLC1_N.SQLConnectionMethod.resources
+C:\Users\Administrator\Desktop\唐群LL28-N-HHHH\唐群LL28-N-HHHH\唐群LL28-N-HHHH\唐群LL28-N-6_1_1\SLC1-N\obj\Debug\SLC1_N.TestParams.resources
+C:\Users\Administrator\Desktop\唐群LL28-N-HHHH\唐群LL28-N-HHHH\唐群LL28-N-HHHH\唐群LL28-N-6_1_1\SLC1-N\obj\Debug\SLC1_N.UserManagement.resources
+C:\Users\Administrator\Desktop\唐群LL28-N-HHHH\唐群LL28-N-HHHH\唐群LL28-N-HHHH\唐群LL28-N-6_1_1\SLC1-N\obj\Debug\SLC1_N.UserPassword.resources
+C:\Users\Administrator\Desktop\唐群LL28-N-HHHH\唐群LL28-N-HHHH\唐群LL28-N-HHHH\唐群LL28-N-6_1_1\SLC1-N\obj\Debug\SLC1_N.Warning.resources
+C:\Users\Administrator\Desktop\唐群LL28-N-HHHH\唐群LL28-N-HHHH\唐群LL28-N-HHHH\唐群LL28-N-6_1_1\SLC1-N\obj\Debug\SLC1-N.csproj.GenerateResource.cache
+C:\Users\Administrator\Desktop\唐群LL28-N-HHHH\唐群LL28-N-HHHH\唐群LL28-N-HHHH\唐群LL28-N-6_1_1\SLC1-N\obj\Debug\SLC1-N.csproj.CoreCompileInputs.cache
+C:\Users\Administrator\Desktop\唐群LL28-N-HHHH\唐群LL28-N-HHHH\唐群LL28-N-HHHH\唐群LL28-N-6_1_1\SLC1-N\obj\Debug\SLC1-N.csproj.CopyComplete
+C:\Users\Administrator\Desktop\唐群LL28-N-HHHH\唐群LL28-N-HHHH\唐群LL28-N-HHHH\唐群LL28-N-6_1_1\SLC1-N\obj\Debug\LL28-N-V1.4.exe
+C:\Users\Administrator\Desktop\唐群LL28-N-HHHH\唐群LL28-N-HHHH\唐群LL28-N-HHHH\唐群LL28-N-6_1_1\SLC1-N\obj\Debug\LL28-N-V1.4.pdb
+E:\Desktop\唐群LL28-N-HHHH\唐群LL28-N-HHHH\唐群LL28-N-HHHH\唐群LL28-N-6_1_1\SLC1-N\bin\Debug\TCP\ITcpClient.cs
+E:\Desktop\唐群LL28-N-HHHH\唐群LL28-N-HHHH\唐群LL28-N-HHHH\唐群LL28-N-6_1_1\SLC1-N\bin\Debug\TCP\ITcpClient.Designer.cs
+E:\Desktop\唐群LL28-N-HHHH\唐群LL28-N-HHHH\唐群LL28-N-HHHH\唐群LL28-N-6_1_1\SLC1-N\bin\Debug\LL28-N-V1.4.exe.config
+E:\Desktop\唐群LL28-N-HHHH\唐群LL28-N-HHHH\唐群LL28-N-HHHH\唐群LL28-N-6_1_1\SLC1-N\bin\Debug\LL28-N-V1.4.exe
+E:\Desktop\唐群LL28-N-HHHH\唐群LL28-N-HHHH\唐群LL28-N-HHHH\唐群LL28-N-6_1_1\SLC1-N\bin\Debug\LL28-N-V1.4.pdb
+E:\Desktop\唐群LL28-N-HHHH\唐群LL28-N-HHHH\唐群LL28-N-HHHH\唐群LL28-N-6_1_1\SLC1-N\bin\Debug\NetWorkHelper.dll
+E:\Desktop\唐群LL28-N-HHHH\唐群LL28-N-HHHH\唐群LL28-N-HHHH\唐群LL28-N-6_1_1\SLC1-N\bin\Debug\Newtonsoft.Json.dll
+E:\Desktop\唐群LL28-N-HHHH\唐群LL28-N-HHHH\唐群LL28-N-HHHH\唐群LL28-N-6_1_1\SLC1-N\bin\Debug\NetWorkHelper.pdb
+E:\Desktop\唐群LL28-N-HHHH\唐群LL28-N-HHHH\唐群LL28-N-HHHH\唐群LL28-N-6_1_1\SLC1-N\bin\Debug\Newtonsoft.Json.xml
+E:\Desktop\唐群LL28-N-HHHH\唐群LL28-N-HHHH\唐群LL28-N-HHHH\唐群LL28-N-6_1_1\SLC1-N\obj\Debug\SLC1-N.csproj.AssemblyReference.cache
+E:\Desktop\唐群LL28-N-HHHH\唐群LL28-N-HHHH\唐群LL28-N-HHHH\唐群LL28-N-6_1_1\SLC1-N\obj\Debug\LL28-N-V1.4.exe.config
+E:\Desktop\唐群LL28-N-HHHH\唐群LL28-N-HHHH\唐群LL28-N-HHHH\唐群LL28-N-6_1_1\SLC1-N\obj\Debug\Interop.ADOX.dll
+E:\Desktop\唐群LL28-N-HHHH\唐群LL28-N-HHHH\唐群LL28-N-HHHH\唐群LL28-N-6_1_1\SLC1-N\obj\Debug\SLC1-N.csproj.ResolveComReference.cache
+E:\Desktop\唐群LL28-N-HHHH\唐群LL28-N-HHHH\唐群LL28-N-HHHH\唐群LL28-N-6_1_1\SLC1-N\obj\Debug\SLC1_N.Config.resources
+E:\Desktop\唐群LL28-N-HHHH\唐群LL28-N-HHHH\唐群LL28-N-HHHH\唐群LL28-N-6_1_1\SLC1-N\obj\Debug\SLC1_N.ConfigLogOn.resources
+E:\Desktop\唐群LL28-N-HHHH\唐群LL28-N-HHHH\唐群LL28-N-HHHH\唐群LL28-N-6_1_1\SLC1-N\obj\Debug\SLC1_N.ConfigTCP.resources
+E:\Desktop\唐群LL28-N-HHHH\唐群LL28-N-HHHH\唐群LL28-N-HHHH\唐群LL28-N-6_1_1\SLC1-N\obj\Debug\SLC1_N.Electricity.resources
+E:\Desktop\唐群LL28-N-HHHH\唐群LL28-N-HHHH\唐群LL28-N-HHHH\唐群LL28-N-6_1_1\SLC1-N\obj\Debug\SLC1_N.FlowConfig.resources
+E:\Desktop\唐群LL28-N-HHHH\唐群LL28-N-HHHH\唐群LL28-N-HHHH\唐群LL28-N-6_1_1\SLC1-N\obj\Debug\SLC1_N.Form1.resources
+E:\Desktop\唐群LL28-N-HHHH\唐群LL28-N-HHHH\唐群LL28-N-HHHH\唐群LL28-N-6_1_1\SLC1-N\obj\Debug\SLC1_N.Form2.resources
+E:\Desktop\唐群LL28-N-HHHH\唐群LL28-N-HHHH\唐群LL28-N-HHHH\唐群LL28-N-6_1_1\SLC1-N\obj\Debug\SLC1_N.Form3.resources
+E:\Desktop\唐群LL28-N-HHHH\唐群LL28-N-HHHH\唐群LL28-N-HHHH\唐群LL28-N-6_1_1\SLC1-N\obj\Debug\SLC1_N.Help.resources
+E:\Desktop\唐群LL28-N-HHHH\唐群LL28-N-HHHH\唐群LL28-N-HHHH\唐群LL28-N-6_1_1\SLC1-N\obj\Debug\SLC1_N.LogOn.resources
+E:\Desktop\唐群LL28-N-HHHH\唐群LL28-N-HHHH\唐群LL28-N-HHHH\唐群LL28-N-6_1_1\SLC1-N\obj\Debug\SLC1_N.Machine.resources
+E:\Desktop\唐群LL28-N-HHHH\唐群LL28-N-HHHH\唐群LL28-N-HHHH\唐群LL28-N-6_1_1\SLC1-N\obj\Debug\SLC1_N.MESConfig.resources
+E:\Desktop\唐群LL28-N-HHHH\唐群LL28-N-HHHH\唐群LL28-N-HHHH\唐群LL28-N-6_1_1\SLC1-N\obj\Debug\SLC1_N.PLCConfig.resources
+E:\Desktop\唐群LL28-N-HHHH\唐群LL28-N-HHHH\唐群LL28-N-HHHH\唐群LL28-N-6_1_1\SLC1-N\obj\Debug\SLC1_N.Port.resources
+E:\Desktop\唐群LL28-N-HHHH\唐群LL28-N-HHHH\唐群LL28-N-HHHH\唐群LL28-N-6_1_1\SLC1-N\obj\Debug\SLC1_N.Properties.Resources.resources
+E:\Desktop\唐群LL28-N-HHHH\唐群LL28-N-HHHH\唐群LL28-N-HHHH\唐群LL28-N-6_1_1\SLC1-N\obj\Debug\SLC1_N.ResetPassword.resources
+E:\Desktop\唐群LL28-N-HHHH\唐群LL28-N-HHHH\唐群LL28-N-HHHH\唐群LL28-N-6_1_1\SLC1-N\obj\Debug\SLC1_N.Save.resources
+E:\Desktop\唐群LL28-N-HHHH\唐群LL28-N-HHHH\唐群LL28-N-HHHH\唐群LL28-N-6_1_1\SLC1-N\obj\Debug\SLC1_N.SelectMachine.resources
+E:\Desktop\唐群LL28-N-HHHH\唐群LL28-N-HHHH\唐群LL28-N-HHHH\唐群LL28-N-6_1_1\SLC1-N\obj\Debug\SLC1_N.SQLConnectionMethod.resources
+E:\Desktop\唐群LL28-N-HHHH\唐群LL28-N-HHHH\唐群LL28-N-HHHH\唐群LL28-N-6_1_1\SLC1-N\obj\Debug\SLC1_N.TestParams.resources
+E:\Desktop\唐群LL28-N-HHHH\唐群LL28-N-HHHH\唐群LL28-N-HHHH\唐群LL28-N-6_1_1\SLC1-N\obj\Debug\SLC1_N.UserManagement.resources
+E:\Desktop\唐群LL28-N-HHHH\唐群LL28-N-HHHH\唐群LL28-N-HHHH\唐群LL28-N-6_1_1\SLC1-N\obj\Debug\SLC1_N.UserPassword.resources
+E:\Desktop\唐群LL28-N-HHHH\唐群LL28-N-HHHH\唐群LL28-N-HHHH\唐群LL28-N-6_1_1\SLC1-N\obj\Debug\SLC1_N.Warning.resources
+E:\Desktop\唐群LL28-N-HHHH\唐群LL28-N-HHHH\唐群LL28-N-HHHH\唐群LL28-N-6_1_1\SLC1-N\obj\Debug\SLC1-N.csproj.GenerateResource.cache
+E:\Desktop\唐群LL28-N-HHHH\唐群LL28-N-HHHH\唐群LL28-N-HHHH\唐群LL28-N-6_1_1\SLC1-N\obj\Debug\SLC1-N.csproj.CoreCompileInputs.cache
+E:\Desktop\唐群LL28-N-HHHH\唐群LL28-N-HHHH\唐群LL28-N-HHHH\唐群LL28-N-6_1_1\SLC1-N\obj\Debug\SLC1-N.csproj.CopyComplete
+E:\Desktop\唐群LL28-N-HHHH\唐群LL28-N-HHHH\唐群LL28-N-HHHH\唐群LL28-N-6_1_1\SLC1-N\obj\Debug\LL28-N-V1.4.exe
+E:\Desktop\唐群LL28-N-HHHH\唐群LL28-N-HHHH\唐群LL28-N-HHHH\唐群LL28-N-6_1_1\SLC1-N\obj\Debug\LL28-N-V1.4.pdb
+E:\Desktop\气泵敲定一版 - 待改2222\气泵敲定一版 - 待改\SLC1-N\obj\Debug\SLC1-N.csproj.AssemblyReference.cache
+E:\Desktop\气泵敲定一版 - 待改2222\气泵敲定一版 - 待改\SLC1-N\obj\Debug\LL28-N-V1.4.exe.config
+E:\Desktop\气泵敲定一版 - 待改2222\气泵敲定一版 - 待改\SLC1-N\obj\Debug\Interop.ADOX.dll
+E:\Desktop\气泵敲定一版 - 待改2222\气泵敲定一版 - 待改\SLC1-N\obj\Debug\SLC1-N.csproj.ResolveComReference.cache
+E:\Desktop\气泵敲定一版 - 待改2222\气泵敲定一版 - 待改\SLC1-N\obj\Debug\SLC1_N.Config.resources
+E:\Desktop\气泵敲定一版 - 待改2222\气泵敲定一版 - 待改\SLC1-N\obj\Debug\SLC1_N.ConfigLogOn.resources
+E:\Desktop\气泵敲定一版 - 待改2222\气泵敲定一版 - 待改\SLC1-N\obj\Debug\SLC1_N.ConfigTCP.resources
+E:\Desktop\气泵敲定一版 - 待改2222\气泵敲定一版 - 待改\SLC1-N\obj\Debug\SLC1_N.Electricity.resources
+E:\Desktop\气泵敲定一版 - 待改2222\气泵敲定一版 - 待改\SLC1-N\obj\Debug\SLC1_N.FlowConfig.resources
+E:\Desktop\气泵敲定一版 - 待改2222\气泵敲定一版 - 待改\SLC1-N\obj\Debug\SLC1_N.Form1.resources
+E:\Desktop\气泵敲定一版 - 待改2222\气泵敲定一版 - 待改\SLC1-N\obj\Debug\SLC1_N.Help.resources
+E:\Desktop\气泵敲定一版 - 待改2222\气泵敲定一版 - 待改\SLC1-N\obj\Debug\SLC1_N.LogOn.resources
+E:\Desktop\气泵敲定一版 - 待改2222\气泵敲定一版 - 待改\SLC1-N\obj\Debug\SLC1_N.Machine.resources
+E:\Desktop\气泵敲定一版 - 待改2222\气泵敲定一版 - 待改\SLC1-N\obj\Debug\SLC1_N.MESConfig.resources
+E:\Desktop\气泵敲定一版 - 待改2222\气泵敲定一版 - 待改\SLC1-N\obj\Debug\SLC1_N.PLCConfig.resources
+E:\Desktop\气泵敲定一版 - 待改2222\气泵敲定一版 - 待改\SLC1-N\obj\Debug\SLC1_N.Port.resources
+E:\Desktop\气泵敲定一版 - 待改2222\气泵敲定一版 - 待改\SLC1-N\obj\Debug\SLC1_N.Properties.Resources.resources
+E:\Desktop\气泵敲定一版 - 待改2222\气泵敲定一版 - 待改\SLC1-N\obj\Debug\SLC1_N.ResetPassword.resources
+E:\Desktop\气泵敲定一版 - 待改2222\气泵敲定一版 - 待改\SLC1-N\obj\Debug\SLC1_N.Save.resources
+E:\Desktop\气泵敲定一版 - 待改2222\气泵敲定一版 - 待改\SLC1-N\obj\Debug\SLC1_N.SelectMachine.resources
+E:\Desktop\气泵敲定一版 - 待改2222\气泵敲定一版 - 待改\SLC1-N\obj\Debug\SLC1_N.SQLConnectionMethod.resources
+E:\Desktop\气泵敲定一版 - 待改2222\气泵敲定一版 - 待改\SLC1-N\obj\Debug\SLC1_N.TestParams.resources
+E:\Desktop\气泵敲定一版 - 待改2222\气泵敲定一版 - 待改\SLC1-N\obj\Debug\SLC1_N.UserManagement.resources
+E:\Desktop\气泵敲定一版 - 待改2222\气泵敲定一版 - 待改\SLC1-N\obj\Debug\SLC1_N.UserPassword.resources
+E:\Desktop\气泵敲定一版 - 待改2222\气泵敲定一版 - 待改\SLC1-N\obj\Debug\SLC1_N.Warning.resources
+E:\Desktop\气泵敲定一版 - 待改2222\气泵敲定一版 - 待改\SLC1-N\obj\Debug\SLC1-N.csproj.GenerateResource.cache
+E:\Desktop\气泵敲定一版 - 待改2222\气泵敲定一版 - 待改\SLC1-N\obj\Debug\SLC1-N.csproj.CoreCompileInputs.cache
+E:\Desktop\气泵敲定一版 - 待改2222\气泵敲定一版 - 待改\SLC1-N\obj\Debug\LL28-N-V1.4.exe
+E:\Desktop\气泵敲定一版 - 待改2222\气泵敲定一版 - 待改\SLC1-N\obj\Debug\LL28-N-V1.4.pdb
+E:\Desktop\气泵敲定一版 - 待改2222\气泵敲定一版 - 待改\SLC1-N\bin\Debug\TCP\ITcpClient.cs
+E:\Desktop\气泵敲定一版 - 待改2222\气泵敲定一版 - 待改\SLC1-N\bin\Debug\TCP\ITcpClient.Designer.cs
+E:\Desktop\气泵敲定一版 - 待改2222\气泵敲定一版 - 待改\SLC1-N\bin\Debug\LL28-N-V1.4.exe.config
+E:\Desktop\气泵敲定一版 - 待改2222\气泵敲定一版 - 待改\SLC1-N\bin\Debug\LL28-N-V1.4.exe
+E:\Desktop\气泵敲定一版 - 待改2222\气泵敲定一版 - 待改\SLC1-N\bin\Debug\LL28-N-V1.4.pdb
+E:\Desktop\气泵敲定一版 - 待改2222\气泵敲定一版 - 待改\SLC1-N\bin\Debug\NetWorkHelper.dll
+E:\Desktop\气泵敲定一版 - 待改2222\气泵敲定一版 - 待改\SLC1-N\bin\Debug\Newtonsoft.Json.dll
+E:\Desktop\气泵敲定一版 - 待改2222\气泵敲定一版 - 待改\SLC1-N\bin\Debug\NetWorkHelper.pdb
+E:\Desktop\气泵敲定一版 - 待改2222\气泵敲定一版 - 待改\SLC1-N\bin\Debug\Newtonsoft.Json.xml
+E:\Desktop\气泵敲定一版 - 待改2222\气泵敲定一版 - 待改\SLC1-N\obj\Debug\SLC1-N.csproj.CopyComplete
+C:\Users\Administrator\Desktop\气泵敲定一版 - 待改2222\气泵敲定一版 - 待改\SLC1-N\bin\Debug\TCP\ITcpClient.cs
+C:\Users\Administrator\Desktop\气泵敲定一版 - 待改2222\气泵敲定一版 - 待改\SLC1-N\bin\Debug\TCP\ITcpClient.Designer.cs
+C:\Users\Administrator\Desktop\气泵敲定一版 - 待改2222\气泵敲定一版 - 待改\SLC1-N\bin\Debug\LL28-N-V1.4.exe.config
+C:\Users\Administrator\Desktop\气泵敲定一版 - 待改2222\气泵敲定一版 - 待改\SLC1-N\bin\Debug\LL28-N-V1.4.exe
+C:\Users\Administrator\Desktop\气泵敲定一版 - 待改2222\气泵敲定一版 - 待改\SLC1-N\bin\Debug\LL28-N-V1.4.pdb
+C:\Users\Administrator\Desktop\气泵敲定一版 - 待改2222\气泵敲定一版 - 待改\SLC1-N\bin\Debug\NetWorkHelper.dll
+C:\Users\Administrator\Desktop\气泵敲定一版 - 待改2222\气泵敲定一版 - 待改\SLC1-N\bin\Debug\Newtonsoft.Json.dll
+C:\Users\Administrator\Desktop\气泵敲定一版 - 待改2222\气泵敲定一版 - 待改\SLC1-N\bin\Debug\SunnyUI.Common.dll
+C:\Users\Administrator\Desktop\气泵敲定一版 - 待改2222\气泵敲定一版 - 待改\SLC1-N\bin\Debug\NetWorkHelper.pdb
+C:\Users\Administrator\Desktop\气泵敲定一版 - 待改2222\气泵敲定一版 - 待改\SLC1-N\bin\Debug\Newtonsoft.Json.xml
+C:\Users\Administrator\Desktop\气泵敲定一版 - 待改2222\气泵敲定一版 - 待改\SLC1-N\obj\Debug\SLC1-N.csproj.AssemblyReference.cache
+C:\Users\Administrator\Desktop\气泵敲定一版 - 待改2222\气泵敲定一版 - 待改\SLC1-N\obj\Debug\SLC1-N.csproj.SuggestedBindingRedirects.cache
+C:\Users\Administrator\Desktop\气泵敲定一版 - 待改2222\气泵敲定一版 - 待改\SLC1-N\obj\Debug\LL28-N-V1.4.exe.config
+C:\Users\Administrator\Desktop\气泵敲定一版 - 待改2222\气泵敲定一版 - 待改\SLC1-N\obj\Debug\Interop.ADOX.dll
+C:\Users\Administrator\Desktop\气泵敲定一版 - 待改2222\气泵敲定一版 - 待改\SLC1-N\obj\Debug\SLC1-N.csproj.ResolveComReference.cache
+C:\Users\Administrator\Desktop\气泵敲定一版 - 待改2222\气泵敲定一版 - 待改\SLC1-N\obj\Debug\SLC1_N.Config.resources
+C:\Users\Administrator\Desktop\气泵敲定一版 - 待改2222\气泵敲定一版 - 待改\SLC1-N\obj\Debug\SLC1_N.ConfigLogOn.resources
+C:\Users\Administrator\Desktop\气泵敲定一版 - 待改2222\气泵敲定一版 - 待改\SLC1-N\obj\Debug\SLC1_N.ConfigTCP.resources
+C:\Users\Administrator\Desktop\气泵敲定一版 - 待改2222\气泵敲定一版 - 待改\SLC1-N\obj\Debug\SLC1_N.Electricity.resources
+C:\Users\Administrator\Desktop\气泵敲定一版 - 待改2222\气泵敲定一版 - 待改\SLC1-N\obj\Debug\SLC1_N.FlowConfig.resources
+C:\Users\Administrator\Desktop\气泵敲定一版 - 待改2222\气泵敲定一版 - 待改\SLC1-N\obj\Debug\SLC1_N.Form1.resources
+C:\Users\Administrator\Desktop\气泵敲定一版 - 待改2222\气泵敲定一版 - 待改\SLC1-N\obj\Debug\SLC1_N.Help.resources
+C:\Users\Administrator\Desktop\气泵敲定一版 - 待改2222\气泵敲定一版 - 待改\SLC1-N\obj\Debug\SLC1_N.LogOn.resources
+C:\Users\Administrator\Desktop\气泵敲定一版 - 待改2222\气泵敲定一版 - 待改\SLC1-N\obj\Debug\SLC1_N.Machine.resources
+C:\Users\Administrator\Desktop\气泵敲定一版 - 待改2222\气泵敲定一版 - 待改\SLC1-N\obj\Debug\SLC1_N.MESConfig.resources
+C:\Users\Administrator\Desktop\气泵敲定一版 - 待改2222\气泵敲定一版 - 待改\SLC1-N\obj\Debug\SLC1_N.PLCConfig.resources
+C:\Users\Administrator\Desktop\气泵敲定一版 - 待改2222\气泵敲定一版 - 待改\SLC1-N\obj\Debug\SLC1_N.Port.resources
+C:\Users\Administrator\Desktop\气泵敲定一版 - 待改2222\气泵敲定一版 - 待改\SLC1-N\obj\Debug\SLC1_N.Properties.Resources.resources
+C:\Users\Administrator\Desktop\气泵敲定一版 - 待改2222\气泵敲定一版 - 待改\SLC1-N\obj\Debug\SLC1_N.ResetPassword.resources
+C:\Users\Administrator\Desktop\气泵敲定一版 - 待改2222\气泵敲定一版 - 待改\SLC1-N\obj\Debug\SLC1_N.Save.resources
+C:\Users\Administrator\Desktop\气泵敲定一版 - 待改2222\气泵敲定一版 - 待改\SLC1-N\obj\Debug\SLC1_N.SelectMachine.resources
+C:\Users\Administrator\Desktop\气泵敲定一版 - 待改2222\气泵敲定一版 - 待改\SLC1-N\obj\Debug\SLC1_N.SQLConnectionMethod.resources
+C:\Users\Administrator\Desktop\气泵敲定一版 - 待改2222\气泵敲定一版 - 待改\SLC1-N\obj\Debug\SLC1_N.TestParams.resources
+C:\Users\Administrator\Desktop\气泵敲定一版 - 待改2222\气泵敲定一版 - 待改\SLC1-N\obj\Debug\SLC1_N.UserManagement.resources
+C:\Users\Administrator\Desktop\气泵敲定一版 - 待改2222\气泵敲定一版 - 待改\SLC1-N\obj\Debug\SLC1_N.UserPassword.resources
+C:\Users\Administrator\Desktop\气泵敲定一版 - 待改2222\气泵敲定一版 - 待改\SLC1-N\obj\Debug\SLC1_N.Warning.resources
+C:\Users\Administrator\Desktop\气泵敲定一版 - 待改2222\气泵敲定一版 - 待改\SLC1-N\obj\Debug\SLC1-N.csproj.GenerateResource.cache
+C:\Users\Administrator\Desktop\气泵敲定一版 - 待改2222\气泵敲定一版 - 待改\SLC1-N\obj\Debug\SLC1-N.csproj.CoreCompileInputs.cache
+C:\Users\Administrator\Desktop\气泵敲定一版 - 待改2222\气泵敲定一版 - 待改\SLC1-N\obj\Debug\SLC1-N.csproj.CopyComplete
+C:\Users\Administrator\Desktop\气泵敲定一版 - 待改2222\气泵敲定一版 - 待改\SLC1-N\obj\Debug\LL28-N-V1.4.exe
+C:\Users\Administrator\Desktop\气泵敲定一版 - 待改2222\气泵敲定一版 - 待改\SLC1-N\obj\Debug\LL28-N-V1.4.pdb
+C:\Users\Administrator\Desktop\气泵敲定一版 - 待改2版\气泵敲定一版 - 待改\SLC1-N\bin\Debug\TCP\ITcpClient.cs
+C:\Users\Administrator\Desktop\气泵敲定一版 - 待改2版\气泵敲定一版 - 待改\SLC1-N\bin\Debug\TCP\ITcpClient.Designer.cs
+C:\Users\Administrator\Desktop\气泵敲定一版 - 待改2版\气泵敲定一版 - 待改\SLC1-N\bin\Debug\LL28-N-V1.4.exe.config
+C:\Users\Administrator\Desktop\气泵敲定一版 - 待改2版\气泵敲定一版 - 待改\SLC1-N\bin\Debug\LL28-N-V1.4.exe
+C:\Users\Administrator\Desktop\气泵敲定一版 - 待改2版\气泵敲定一版 - 待改\SLC1-N\bin\Debug\LL28-N-V1.4.pdb
+C:\Users\Administrator\Desktop\气泵敲定一版 - 待改2版\气泵敲定一版 - 待改\SLC1-N\bin\Debug\NetWorkHelper.dll
+C:\Users\Administrator\Desktop\气泵敲定一版 - 待改2版\气泵敲定一版 - 待改\SLC1-N\bin\Debug\Newtonsoft.Json.dll
+C:\Users\Administrator\Desktop\气泵敲定一版 - 待改2版\气泵敲定一版 - 待改\SLC1-N\bin\Debug\SunnyUI.Common.dll
+C:\Users\Administrator\Desktop\气泵敲定一版 - 待改2版\气泵敲定一版 - 待改\SLC1-N\bin\Debug\NetWorkHelper.pdb
+C:\Users\Administrator\Desktop\气泵敲定一版 - 待改2版\气泵敲定一版 - 待改\SLC1-N\bin\Debug\Newtonsoft.Json.xml
+C:\Users\Administrator\Desktop\气泵敲定一版 - 待改2版\气泵敲定一版 - 待改\SLC1-N\obj\Debug\SLC1-N.csproj.AssemblyReference.cache
+C:\Users\Administrator\Desktop\气泵敲定一版 - 待改2版\气泵敲定一版 - 待改\SLC1-N\obj\Debug\SLC1-N.csproj.SuggestedBindingRedirects.cache
+C:\Users\Administrator\Desktop\气泵敲定一版 - 待改2版\气泵敲定一版 - 待改\SLC1-N\obj\Debug\LL28-N-V1.4.exe.config
+C:\Users\Administrator\Desktop\气泵敲定一版 - 待改2版\气泵敲定一版 - 待改\SLC1-N\obj\Debug\Interop.ADOX.dll
+C:\Users\Administrator\Desktop\气泵敲定一版 - 待改2版\气泵敲定一版 - 待改\SLC1-N\obj\Debug\SLC1-N.csproj.ResolveComReference.cache
+C:\Users\Administrator\Desktop\气泵敲定一版 - 待改2版\气泵敲定一版 - 待改\SLC1-N\obj\Debug\SLC1_N.Config.resources
+C:\Users\Administrator\Desktop\气泵敲定一版 - 待改2版\气泵敲定一版 - 待改\SLC1-N\obj\Debug\SLC1_N.ConfigLogOn.resources
+C:\Users\Administrator\Desktop\气泵敲定一版 - 待改2版\气泵敲定一版 - 待改\SLC1-N\obj\Debug\SLC1_N.ConfigTCP.resources
+C:\Users\Administrator\Desktop\气泵敲定一版 - 待改2版\气泵敲定一版 - 待改\SLC1-N\obj\Debug\SLC1_N.Electricity.resources
+C:\Users\Administrator\Desktop\气泵敲定一版 - 待改2版\气泵敲定一版 - 待改\SLC1-N\obj\Debug\SLC1_N.FlowConfig.resources
+C:\Users\Administrator\Desktop\气泵敲定一版 - 待改2版\气泵敲定一版 - 待改\SLC1-N\obj\Debug\SLC1_N.Form1.resources
+C:\Users\Administrator\Desktop\气泵敲定一版 - 待改2版\气泵敲定一版 - 待改\SLC1-N\obj\Debug\SLC1_N.Help.resources
+C:\Users\Administrator\Desktop\气泵敲定一版 - 待改2版\气泵敲定一版 - 待改\SLC1-N\obj\Debug\SLC1_N.LogOn.resources
+C:\Users\Administrator\Desktop\气泵敲定一版 - 待改2版\气泵敲定一版 - 待改\SLC1-N\obj\Debug\SLC1_N.Machine.resources
+C:\Users\Administrator\Desktop\气泵敲定一版 - 待改2版\气泵敲定一版 - 待改\SLC1-N\obj\Debug\SLC1_N.MESConfig.resources
+C:\Users\Administrator\Desktop\气泵敲定一版 - 待改2版\气泵敲定一版 - 待改\SLC1-N\obj\Debug\SLC1_N.PLCConfig.resources
+C:\Users\Administrator\Desktop\气泵敲定一版 - 待改2版\气泵敲定一版 - 待改\SLC1-N\obj\Debug\SLC1_N.Port.resources
+C:\Users\Administrator\Desktop\气泵敲定一版 - 待改2版\气泵敲定一版 - 待改\SLC1-N\obj\Debug\SLC1_N.Properties.Resources.resources
+C:\Users\Administrator\Desktop\气泵敲定一版 - 待改2版\气泵敲定一版 - 待改\SLC1-N\obj\Debug\SLC1_N.ResetPassword.resources
+C:\Users\Administrator\Desktop\气泵敲定一版 - 待改2版\气泵敲定一版 - 待改\SLC1-N\obj\Debug\SLC1_N.Save.resources
+C:\Users\Administrator\Desktop\气泵敲定一版 - 待改2版\气泵敲定一版 - 待改\SLC1-N\obj\Debug\SLC1_N.SelectMachine.resources
+C:\Users\Administrator\Desktop\气泵敲定一版 - 待改2版\气泵敲定一版 - 待改\SLC1-N\obj\Debug\SLC1_N.SQLConnectionMethod.resources
+C:\Users\Administrator\Desktop\气泵敲定一版 - 待改2版\气泵敲定一版 - 待改\SLC1-N\obj\Debug\SLC1_N.TestParams.resources
+C:\Users\Administrator\Desktop\气泵敲定一版 - 待改2版\气泵敲定一版 - 待改\SLC1-N\obj\Debug\SLC1_N.UserManagement.resources
+C:\Users\Administrator\Desktop\气泵敲定一版 - 待改2版\气泵敲定一版 - 待改\SLC1-N\obj\Debug\SLC1_N.UserPassword.resources
+C:\Users\Administrator\Desktop\气泵敲定一版 - 待改2版\气泵敲定一版 - 待改\SLC1-N\obj\Debug\SLC1_N.Warning.resources
+C:\Users\Administrator\Desktop\气泵敲定一版 - 待改2版\气泵敲定一版 - 待改\SLC1-N\obj\Debug\SLC1-N.csproj.GenerateResource.cache
+C:\Users\Administrator\Desktop\气泵敲定一版 - 待改2版\气泵敲定一版 - 待改\SLC1-N\obj\Debug\SLC1-N.csproj.CoreCompileInputs.cache
+C:\Users\Administrator\Desktop\气泵敲定一版 - 待改2版\气泵敲定一版 - 待改\SLC1-N\obj\Debug\SLC1-N.csproj.CopyComplete
+C:\Users\Administrator\Desktop\气泵敲定一版 - 待改2版\气泵敲定一版 - 待改\SLC1-N\obj\Debug\LL28-N-V1.4.exe
+C:\Users\Administrator\Desktop\气泵敲定一版 - 待改2版\气泵敲定一版 - 待改\SLC1-N\obj\Debug\LL28-N-V1.4.pdb
+E:\Desktop\气泵敲定一版 - 待改3版\气泵敲定一版 - 待改\SLC1-N\obj\Debug\SLC1-N.csproj.AssemblyReference.cache
+E:\Desktop\气泵敲定一版 - 待改3版\气泵敲定一版 - 待改\SLC1-N\obj\Debug\LL28-N-V1.4.exe.config
+E:\Desktop\气泵敲定一版 - 待改3版\气泵敲定一版 - 待改\SLC1-N\obj\Debug\Interop.ADOX.dll
+E:\Desktop\气泵敲定一版 - 待改3版\气泵敲定一版 - 待改\SLC1-N\obj\Debug\SLC1-N.csproj.ResolveComReference.cache
+E:\Desktop\气泵敲定一版 - 待改3版\气泵敲定一版 - 待改\SLC1-N\obj\Debug\SLC1_N.Config.resources
+E:\Desktop\气泵敲定一版 - 待改3版\气泵敲定一版 - 待改\SLC1-N\obj\Debug\SLC1_N.ConfigLogOn.resources
+E:\Desktop\气泵敲定一版 - 待改3版\气泵敲定一版 - 待改\SLC1-N\obj\Debug\SLC1_N.ConfigTCP.resources
+E:\Desktop\气泵敲定一版 - 待改3版\气泵敲定一版 - 待改\SLC1-N\obj\Debug\SLC1_N.Electricity.resources
+E:\Desktop\气泵敲定一版 - 待改3版\气泵敲定一版 - 待改\SLC1-N\obj\Debug\SLC1_N.FlowConfig.resources
+E:\Desktop\气泵敲定一版 - 待改3版\气泵敲定一版 - 待改\SLC1-N\obj\Debug\SLC1_N.Form1.resources
+E:\Desktop\气泵敲定一版 - 待改3版\气泵敲定一版 - 待改\SLC1-N\obj\Debug\SLC1_N.Help.resources
+E:\Desktop\气泵敲定一版 - 待改3版\气泵敲定一版 - 待改\SLC1-N\obj\Debug\SLC1_N.LinConfig.resources
+E:\Desktop\气泵敲定一版 - 待改3版\气泵敲定一版 - 待改\SLC1-N\obj\Debug\SLC1_N.LogOn.resources
+E:\Desktop\气泵敲定一版 - 待改3版\气泵敲定一版 - 待改\SLC1-N\obj\Debug\SLC1_N.Machine.resources
+E:\Desktop\气泵敲定一版 - 待改3版\气泵敲定一版 - 待改\SLC1-N\obj\Debug\SLC1_N.MESConfig.resources
+E:\Desktop\气泵敲定一版 - 待改3版\气泵敲定一版 - 待改\SLC1-N\obj\Debug\SLC1_N.PLCConfig.resources
+E:\Desktop\气泵敲定一版 - 待改3版\气泵敲定一版 - 待改\SLC1-N\obj\Debug\SLC1_N.Port.resources
+E:\Desktop\气泵敲定一版 - 待改3版\气泵敲定一版 - 待改\SLC1-N\obj\Debug\SLC1_N.Properties.Resources.resources
+E:\Desktop\气泵敲定一版 - 待改3版\气泵敲定一版 - 待改\SLC1-N\obj\Debug\SLC1_N.ResetPassword.resources
+E:\Desktop\气泵敲定一版 - 待改3版\气泵敲定一版 - 待改\SLC1-N\obj\Debug\SLC1_N.Save.resources
+E:\Desktop\气泵敲定一版 - 待改3版\气泵敲定一版 - 待改\SLC1-N\obj\Debug\SLC1_N.SelectMachine.resources
+E:\Desktop\气泵敲定一版 - 待改3版\气泵敲定一版 - 待改\SLC1-N\obj\Debug\SLC1_N.SQLConnectionMethod.resources
+E:\Desktop\气泵敲定一版 - 待改3版\气泵敲定一版 - 待改\SLC1-N\obj\Debug\SLC1_N.TestParams.resources
+E:\Desktop\气泵敲定一版 - 待改3版\气泵敲定一版 - 待改\SLC1-N\obj\Debug\SLC1_N.UserManagement.resources
+E:\Desktop\气泵敲定一版 - 待改3版\气泵敲定一版 - 待改\SLC1-N\obj\Debug\SLC1_N.UserPassword.resources
+E:\Desktop\气泵敲定一版 - 待改3版\气泵敲定一版 - 待改\SLC1-N\obj\Debug\SLC1_N.Warning.resources
+E:\Desktop\气泵敲定一版 - 待改3版\气泵敲定一版 - 待改\SLC1-N\obj\Debug\SLC1-N.csproj.GenerateResource.cache
+E:\Desktop\气泵敲定一版 - 待改3版\气泵敲定一版 - 待改\SLC1-N\obj\Debug\SLC1-N.csproj.CoreCompileInputs.cache
+E:\Desktop\气泵敲定一版 - 待改3版\气泵敲定一版 - 待改\SLC1-N\obj\Debug\LL28-N-V1.4.exe
+E:\Desktop\气泵敲定一版 - 待改3版\气泵敲定一版 - 待改\SLC1-N\obj\Debug\LL28-N-V1.4.pdb
+E:\Desktop\气泵敲定一版 - 待改3版\气泵敲定一版 - 待改\SLC1-N\bin\Debug\TCP\ITcpClient.cs
+E:\Desktop\气泵敲定一版 - 待改3版\气泵敲定一版 - 待改\SLC1-N\bin\Debug\TCP\ITcpClient.Designer.cs
+E:\Desktop\气泵敲定一版 - 待改3版\气泵敲定一版 - 待改\SLC1-N\bin\Debug\LL28-N-V1.4.exe.config
+E:\Desktop\气泵敲定一版 - 待改3版\气泵敲定一版 - 待改\SLC1-N\bin\Debug\LL28-N-V1.4.exe
+E:\Desktop\气泵敲定一版 - 待改3版\气泵敲定一版 - 待改\SLC1-N\bin\Debug\LL28-N-V1.4.pdb
+E:\Desktop\气泵敲定一版 - 待改3版\气泵敲定一版 - 待改\SLC1-N\bin\Debug\NetWorkHelper.dll
+E:\Desktop\气泵敲定一版 - 待改3版\气泵敲定一版 - 待改\SLC1-N\bin\Debug\Newtonsoft.Json.dll
+E:\Desktop\气泵敲定一版 - 待改3版\气泵敲定一版 - 待改\SLC1-N\bin\Debug\NetWorkHelper.pdb
+E:\Desktop\气泵敲定一版 - 待改3版\气泵敲定一版 - 待改\SLC1-N\bin\Debug\Newtonsoft.Json.xml
+E:\Desktop\气泵敲定一版 - 待改3版\气泵敲定一版 - 待改\SLC1-N\obj\Debug\SLC1-N.csproj.CopyComplete
+C:\Users\Administrator\Desktop\气泵敲定一版 - 待改3版\气泵敲定一版 - 待改\SLC1-N\bin\Debug\TCP\ITcpClient.cs
+C:\Users\Administrator\Desktop\气泵敲定一版 - 待改3版\气泵敲定一版 - 待改\SLC1-N\bin\Debug\TCP\ITcpClient.Designer.cs
+C:\Users\Administrator\Desktop\气泵敲定一版 - 待改3版\气泵敲定一版 - 待改\SLC1-N\bin\Debug\LL28-N-V1.4.exe.config
+C:\Users\Administrator\Desktop\气泵敲定一版 - 待改3版\气泵敲定一版 - 待改\SLC1-N\bin\Debug\LL28-N-V1.4.exe
+C:\Users\Administrator\Desktop\气泵敲定一版 - 待改3版\气泵敲定一版 - 待改\SLC1-N\bin\Debug\LL28-N-V1.4.pdb
+C:\Users\Administrator\Desktop\气泵敲定一版 - 待改3版\气泵敲定一版 - 待改\SLC1-N\bin\Debug\NetWorkHelper.dll
+C:\Users\Administrator\Desktop\气泵敲定一版 - 待改3版\气泵敲定一版 - 待改\SLC1-N\bin\Debug\Newtonsoft.Json.dll
+C:\Users\Administrator\Desktop\气泵敲定一版 - 待改3版\气泵敲定一版 - 待改\SLC1-N\bin\Debug\SunnyUI.Common.dll
+C:\Users\Administrator\Desktop\气泵敲定一版 - 待改3版\气泵敲定一版 - 待改\SLC1-N\bin\Debug\NetWorkHelper.pdb
+C:\Users\Administrator\Desktop\气泵敲定一版 - 待改3版\气泵敲定一版 - 待改\SLC1-N\bin\Debug\Newtonsoft.Json.xml
+C:\Users\Administrator\Desktop\气泵敲定一版 - 待改3版\气泵敲定一版 - 待改\SLC1-N\obj\Debug\SLC1-N.csproj.AssemblyReference.cache
+C:\Users\Administrator\Desktop\气泵敲定一版 - 待改3版\气泵敲定一版 - 待改\SLC1-N\obj\Debug\SLC1-N.csproj.SuggestedBindingRedirects.cache
+C:\Users\Administrator\Desktop\气泵敲定一版 - 待改3版\气泵敲定一版 - 待改\SLC1-N\obj\Debug\LL28-N-V1.4.exe.config
+C:\Users\Administrator\Desktop\气泵敲定一版 - 待改3版\气泵敲定一版 - 待改\SLC1-N\obj\Debug\Interop.ADOX.dll
+C:\Users\Administrator\Desktop\气泵敲定一版 - 待改3版\气泵敲定一版 - 待改\SLC1-N\obj\Debug\SLC1-N.csproj.ResolveComReference.cache
+C:\Users\Administrator\Desktop\气泵敲定一版 - 待改3版\气泵敲定一版 - 待改\SLC1-N\obj\Debug\SLC1_N.Config.resources
+C:\Users\Administrator\Desktop\气泵敲定一版 - 待改3版\气泵敲定一版 - 待改\SLC1-N\obj\Debug\SLC1_N.ConfigLogOn.resources
+C:\Users\Administrator\Desktop\气泵敲定一版 - 待改3版\气泵敲定一版 - 待改\SLC1-N\obj\Debug\SLC1_N.ConfigTCP.resources
+C:\Users\Administrator\Desktop\气泵敲定一版 - 待改3版\气泵敲定一版 - 待改\SLC1-N\obj\Debug\SLC1_N.Electricity.resources
+C:\Users\Administrator\Desktop\气泵敲定一版 - 待改3版\气泵敲定一版 - 待改\SLC1-N\obj\Debug\SLC1_N.FlowConfig.resources
+C:\Users\Administrator\Desktop\气泵敲定一版 - 待改3版\气泵敲定一版 - 待改\SLC1-N\obj\Debug\SLC1_N.Form1.resources
+C:\Users\Administrator\Desktop\气泵敲定一版 - 待改3版\气泵敲定一版 - 待改\SLC1-N\obj\Debug\SLC1_N.Help.resources
+C:\Users\Administrator\Desktop\气泵敲定一版 - 待改3版\气泵敲定一版 - 待改\SLC1-N\obj\Debug\SLC1_N.LinConfig.resources
+C:\Users\Administrator\Desktop\气泵敲定一版 - 待改3版\气泵敲定一版 - 待改\SLC1-N\obj\Debug\SLC1_N.LogOn.resources
+C:\Users\Administrator\Desktop\气泵敲定一版 - 待改3版\气泵敲定一版 - 待改\SLC1-N\obj\Debug\SLC1_N.Machine.resources
+C:\Users\Administrator\Desktop\气泵敲定一版 - 待改3版\气泵敲定一版 - 待改\SLC1-N\obj\Debug\SLC1_N.MESConfig.resources
+C:\Users\Administrator\Desktop\气泵敲定一版 - 待改3版\气泵敲定一版 - 待改\SLC1-N\obj\Debug\SLC1_N.PLCConfig.resources
+C:\Users\Administrator\Desktop\气泵敲定一版 - 待改3版\气泵敲定一版 - 待改\SLC1-N\obj\Debug\SLC1_N.Port.resources
+C:\Users\Administrator\Desktop\气泵敲定一版 - 待改3版\气泵敲定一版 - 待改\SLC1-N\obj\Debug\SLC1_N.Properties.Resources.resources
+C:\Users\Administrator\Desktop\气泵敲定一版 - 待改3版\气泵敲定一版 - 待改\SLC1-N\obj\Debug\SLC1_N.ResetPassword.resources
+C:\Users\Administrator\Desktop\气泵敲定一版 - 待改3版\气泵敲定一版 - 待改\SLC1-N\obj\Debug\SLC1_N.Save.resources
+C:\Users\Administrator\Desktop\气泵敲定一版 - 待改3版\气泵敲定一版 - 待改\SLC1-N\obj\Debug\SLC1_N.SelectMachine.resources
+C:\Users\Administrator\Desktop\气泵敲定一版 - 待改3版\气泵敲定一版 - 待改\SLC1-N\obj\Debug\SLC1_N.SQLConnectionMethod.resources
+C:\Users\Administrator\Desktop\气泵敲定一版 - 待改3版\气泵敲定一版 - 待改\SLC1-N\obj\Debug\SLC1_N.TestParams.resources
+C:\Users\Administrator\Desktop\气泵敲定一版 - 待改3版\气泵敲定一版 - 待改\SLC1-N\obj\Debug\SLC1_N.UserManagement.resources
+C:\Users\Administrator\Desktop\气泵敲定一版 - 待改3版\气泵敲定一版 - 待改\SLC1-N\obj\Debug\SLC1_N.UserPassword.resources
+C:\Users\Administrator\Desktop\气泵敲定一版 - 待改3版\气泵敲定一版 - 待改\SLC1-N\obj\Debug\SLC1_N.Warning.resources
+C:\Users\Administrator\Desktop\气泵敲定一版 - 待改3版\气泵敲定一版 - 待改\SLC1-N\obj\Debug\SLC1-N.csproj.GenerateResource.cache
+C:\Users\Administrator\Desktop\气泵敲定一版 - 待改3版\气泵敲定一版 - 待改\SLC1-N\obj\Debug\SLC1-N.csproj.CoreCompileInputs.cache
+C:\Users\Administrator\Desktop\气泵敲定一版 - 待改3版\气泵敲定一版 - 待改\SLC1-N\obj\Debug\SLC1-N.csproj.CopyComplete
+C:\Users\Administrator\Desktop\气泵敲定一版 - 待改3版\气泵敲定一版 - 待改\SLC1-N\obj\Debug\LL28-N-V1.4.exe
+C:\Users\Administrator\Desktop\气泵敲定一版 - 待改3版\气泵敲定一版 - 待改\SLC1-N\obj\Debug\LL28-N-V1.4.pdb
+C:\Users\Administrator\Desktop\气泵敲定一版 - 待改4版\气泵敲定一版 - 待改\SLC1-N\bin\Debug\TCP\ITcpClient.cs
+C:\Users\Administrator\Desktop\气泵敲定一版 - 待改4版\气泵敲定一版 - 待改\SLC1-N\bin\Debug\TCP\ITcpClient.Designer.cs
+C:\Users\Administrator\Desktop\气泵敲定一版 - 待改4版\气泵敲定一版 - 待改\SLC1-N\bin\Debug\LL28-N-V1.4.exe.config
+C:\Users\Administrator\Desktop\气泵敲定一版 - 待改4版\气泵敲定一版 - 待改\SLC1-N\bin\Debug\LL28-N-V1.4.exe
+C:\Users\Administrator\Desktop\气泵敲定一版 - 待改4版\气泵敲定一版 - 待改\SLC1-N\bin\Debug\LL28-N-V1.4.pdb
+C:\Users\Administrator\Desktop\气泵敲定一版 - 待改4版\气泵敲定一版 - 待改\SLC1-N\bin\Debug\NetWorkHelper.dll
+C:\Users\Administrator\Desktop\气泵敲定一版 - 待改4版\气泵敲定一版 - 待改\SLC1-N\bin\Debug\Newtonsoft.Json.dll
+C:\Users\Administrator\Desktop\气泵敲定一版 - 待改4版\气泵敲定一版 - 待改\SLC1-N\bin\Debug\NetWorkHelper.pdb
+C:\Users\Administrator\Desktop\气泵敲定一版 - 待改4版\气泵敲定一版 - 待改\SLC1-N\bin\Debug\Newtonsoft.Json.xml
+C:\Users\Administrator\Desktop\气泵敲定一版 - 待改4版\气泵敲定一版 - 待改\SLC1-N\obj\Debug\SLC1-N.csproj.AssemblyReference.cache
+C:\Users\Administrator\Desktop\气泵敲定一版 - 待改4版\气泵敲定一版 - 待改\SLC1-N\obj\Debug\SLC1-N.csproj.SuggestedBindingRedirects.cache
+C:\Users\Administrator\Desktop\气泵敲定一版 - 待改4版\气泵敲定一版 - 待改\SLC1-N\obj\Debug\LL28-N-V1.4.exe.config
+C:\Users\Administrator\Desktop\气泵敲定一版 - 待改4版\气泵敲定一版 - 待改\SLC1-N\obj\Debug\Interop.ADOX.dll
+C:\Users\Administrator\Desktop\气泵敲定一版 - 待改4版\气泵敲定一版 - 待改\SLC1-N\obj\Debug\SLC1-N.csproj.ResolveComReference.cache
+C:\Users\Administrator\Desktop\气泵敲定一版 - 待改4版\气泵敲定一版 - 待改\SLC1-N\obj\Debug\SLC1_N.Config.resources
+C:\Users\Administrator\Desktop\气泵敲定一版 - 待改4版\气泵敲定一版 - 待改\SLC1-N\obj\Debug\SLC1_N.ConfigLogOn.resources
+C:\Users\Administrator\Desktop\气泵敲定一版 - 待改4版\气泵敲定一版 - 待改\SLC1-N\obj\Debug\SLC1_N.ConfigTCP.resources
+C:\Users\Administrator\Desktop\气泵敲定一版 - 待改4版\气泵敲定一版 - 待改\SLC1-N\obj\Debug\SLC1_N.Electricity.resources
+C:\Users\Administrator\Desktop\气泵敲定一版 - 待改4版\气泵敲定一版 - 待改\SLC1-N\obj\Debug\SLC1_N.FlowConfig.resources
+C:\Users\Administrator\Desktop\气泵敲定一版 - 待改4版\气泵敲定一版 - 待改\SLC1-N\obj\Debug\SLC1_N.Form1.resources
+C:\Users\Administrator\Desktop\气泵敲定一版 - 待改4版\气泵敲定一版 - 待改\SLC1-N\obj\Debug\SLC1_N.Help.resources
+C:\Users\Administrator\Desktop\气泵敲定一版 - 待改4版\气泵敲定一版 - 待改\SLC1-N\obj\Debug\SLC1_N.LinConfig.resources
+C:\Users\Administrator\Desktop\气泵敲定一版 - 待改4版\气泵敲定一版 - 待改\SLC1-N\obj\Debug\SLC1_N.LogOn.resources
+C:\Users\Administrator\Desktop\气泵敲定一版 - 待改4版\气泵敲定一版 - 待改\SLC1-N\obj\Debug\SLC1_N.Machine.resources
+C:\Users\Administrator\Desktop\气泵敲定一版 - 待改4版\气泵敲定一版 - 待改\SLC1-N\obj\Debug\SLC1_N.MESConfig.resources
+C:\Users\Administrator\Desktop\气泵敲定一版 - 待改4版\气泵敲定一版 - 待改\SLC1-N\obj\Debug\SLC1_N.PLCConfig.resources
+C:\Users\Administrator\Desktop\气泵敲定一版 - 待改4版\气泵敲定一版 - 待改\SLC1-N\obj\Debug\SLC1_N.Port.resources
+C:\Users\Administrator\Desktop\气泵敲定一版 - 待改4版\气泵敲定一版 - 待改\SLC1-N\obj\Debug\SLC1_N.Properties.Resources.resources
+C:\Users\Administrator\Desktop\气泵敲定一版 - 待改4版\气泵敲定一版 - 待改\SLC1-N\obj\Debug\SLC1_N.ResetPassword.resources
+C:\Users\Administrator\Desktop\气泵敲定一版 - 待改4版\气泵敲定一版 - 待改\SLC1-N\obj\Debug\SLC1_N.Save.resources
+C:\Users\Administrator\Desktop\气泵敲定一版 - 待改4版\气泵敲定一版 - 待改\SLC1-N\obj\Debug\SLC1_N.SelectMachine.resources
+C:\Users\Administrator\Desktop\气泵敲定一版 - 待改4版\气泵敲定一版 - 待改\SLC1-N\obj\Debug\SLC1_N.SQLConnectionMethod.resources
+C:\Users\Administrator\Desktop\气泵敲定一版 - 待改4版\气泵敲定一版 - 待改\SLC1-N\obj\Debug\SLC1_N.TestParams.resources
+C:\Users\Administrator\Desktop\气泵敲定一版 - 待改4版\气泵敲定一版 - 待改\SLC1-N\obj\Debug\SLC1_N.UserManagement.resources
+C:\Users\Administrator\Desktop\气泵敲定一版 - 待改4版\气泵敲定一版 - 待改\SLC1-N\obj\Debug\SLC1_N.UserPassword.resources
+C:\Users\Administrator\Desktop\气泵敲定一版 - 待改4版\气泵敲定一版 - 待改\SLC1-N\obj\Debug\SLC1_N.Warning.resources
+C:\Users\Administrator\Desktop\气泵敲定一版 - 待改4版\气泵敲定一版 - 待改\SLC1-N\obj\Debug\SLC1-N.csproj.GenerateResource.cache
+C:\Users\Administrator\Desktop\气泵敲定一版 - 待改4版\气泵敲定一版 - 待改\SLC1-N\obj\Debug\SLC1-N.csproj.CoreCompileInputs.cache
+C:\Users\Administrator\Desktop\气泵敲定一版 - 待改4版\气泵敲定一版 - 待改\SLC1-N\obj\Debug\SLC1-N.csproj.CopyComplete
+C:\Users\Administrator\Desktop\气泵敲定一版 - 待改4版\气泵敲定一版 - 待改\SLC1-N\obj\Debug\LL28-N-V1.4.exe
+C:\Users\Administrator\Desktop\气泵敲定一版 - 待改4版\气泵敲定一版 - 待改\SLC1-N\obj\Debug\LL28-N-V1.4.pdb
+C:\Users\Administrator\Desktop\气泵敲定一版 - 待改4版\气泵敲定一版 - 待改\SLC1-N\bin\Debug\SunnyUI.Common.dll
+C:\Users\Administrator\Desktop\气泵敲定一版 - 待改6版\气泵敲定一版 - 待改\SLC1-N\bin\Debug\TCP\ITcpClient.cs
+C:\Users\Administrator\Desktop\气泵敲定一版 - 待改6版\气泵敲定一版 - 待改\SLC1-N\bin\Debug\TCP\ITcpClient.Designer.cs
+C:\Users\Administrator\Desktop\气泵敲定一版 - 待改6版\气泵敲定一版 - 待改\SLC1-N\bin\Debug\LL28-N-V1.4.exe.config
+C:\Users\Administrator\Desktop\气泵敲定一版 - 待改6版\气泵敲定一版 - 待改\SLC1-N\bin\Debug\LL28-N-V1.4.exe
+C:\Users\Administrator\Desktop\气泵敲定一版 - 待改6版\气泵敲定一版 - 待改\SLC1-N\bin\Debug\LL28-N-V1.4.pdb
+C:\Users\Administrator\Desktop\气泵敲定一版 - 待改6版\气泵敲定一版 - 待改\SLC1-N\bin\Debug\NetWorkHelper.dll
+C:\Users\Administrator\Desktop\气泵敲定一版 - 待改6版\气泵敲定一版 - 待改\SLC1-N\bin\Debug\Newtonsoft.Json.dll
+C:\Users\Administrator\Desktop\气泵敲定一版 - 待改6版\气泵敲定一版 - 待改\SLC1-N\bin\Debug\SunnyUI.Common.dll
+C:\Users\Administrator\Desktop\气泵敲定一版 - 待改6版\气泵敲定一版 - 待改\SLC1-N\bin\Debug\NetWorkHelper.pdb
+C:\Users\Administrator\Desktop\气泵敲定一版 - 待改6版\气泵敲定一版 - 待改\SLC1-N\bin\Debug\Newtonsoft.Json.xml
+C:\Users\Administrator\Desktop\气泵敲定一版 - 待改6版\气泵敲定一版 - 待改\SLC1-N\obj\Debug\SLC1-N.csproj.AssemblyReference.cache
+C:\Users\Administrator\Desktop\气泵敲定一版 - 待改6版\气泵敲定一版 - 待改\SLC1-N\obj\Debug\SLC1-N.csproj.SuggestedBindingRedirects.cache
+C:\Users\Administrator\Desktop\气泵敲定一版 - 待改6版\气泵敲定一版 - 待改\SLC1-N\obj\Debug\LL28-N-V1.4.exe.config
+C:\Users\Administrator\Desktop\气泵敲定一版 - 待改6版\气泵敲定一版 - 待改\SLC1-N\obj\Debug\Interop.ADOX.dll
+C:\Users\Administrator\Desktop\气泵敲定一版 - 待改6版\气泵敲定一版 - 待改\SLC1-N\obj\Debug\SLC1-N.csproj.ResolveComReference.cache
+C:\Users\Administrator\Desktop\气泵敲定一版 - 待改6版\气泵敲定一版 - 待改\SLC1-N\obj\Debug\SLC1_N.Config.resources
+C:\Users\Administrator\Desktop\气泵敲定一版 - 待改6版\气泵敲定一版 - 待改\SLC1-N\obj\Debug\SLC1_N.ConfigLogOn.resources
+C:\Users\Administrator\Desktop\气泵敲定一版 - 待改6版\气泵敲定一版 - 待改\SLC1-N\obj\Debug\SLC1_N.ConfigTCP.resources
+C:\Users\Administrator\Desktop\气泵敲定一版 - 待改6版\气泵敲定一版 - 待改\SLC1-N\obj\Debug\SLC1_N.Electricity.resources
+C:\Users\Administrator\Desktop\气泵敲定一版 - 待改6版\气泵敲定一版 - 待改\SLC1-N\obj\Debug\SLC1_N.FlowConfig.resources
+C:\Users\Administrator\Desktop\气泵敲定一版 - 待改6版\气泵敲定一版 - 待改\SLC1-N\obj\Debug\SLC1_N.Form1.resources
+C:\Users\Administrator\Desktop\气泵敲定一版 - 待改6版\气泵敲定一版 - 待改\SLC1-N\obj\Debug\SLC1_N.Help.resources
+C:\Users\Administrator\Desktop\气泵敲定一版 - 待改6版\气泵敲定一版 - 待改\SLC1-N\obj\Debug\SLC1_N.LinConfig.resources
+C:\Users\Administrator\Desktop\气泵敲定一版 - 待改6版\气泵敲定一版 - 待改\SLC1-N\obj\Debug\SLC1_N.LogOn.resources
+C:\Users\Administrator\Desktop\气泵敲定一版 - 待改6版\气泵敲定一版 - 待改\SLC1-N\obj\Debug\SLC1_N.Machine.resources
+C:\Users\Administrator\Desktop\气泵敲定一版 - 待改6版\气泵敲定一版 - 待改\SLC1-N\obj\Debug\SLC1_N.MESConfig.resources
+C:\Users\Administrator\Desktop\气泵敲定一版 - 待改6版\气泵敲定一版 - 待改\SLC1-N\obj\Debug\SLC1_N.PLCConfig.resources
+C:\Users\Administrator\Desktop\气泵敲定一版 - 待改6版\气泵敲定一版 - 待改\SLC1-N\obj\Debug\SLC1_N.Port.resources
+C:\Users\Administrator\Desktop\气泵敲定一版 - 待改6版\气泵敲定一版 - 待改\SLC1-N\obj\Debug\SLC1_N.Properties.Resources.resources
+C:\Users\Administrator\Desktop\气泵敲定一版 - 待改6版\气泵敲定一版 - 待改\SLC1-N\obj\Debug\SLC1_N.ResetPassword.resources
+C:\Users\Administrator\Desktop\气泵敲定一版 - 待改6版\气泵敲定一版 - 待改\SLC1-N\obj\Debug\SLC1_N.Save.resources
+C:\Users\Administrator\Desktop\气泵敲定一版 - 待改6版\气泵敲定一版 - 待改\SLC1-N\obj\Debug\SLC1_N.SelectMachine.resources
+C:\Users\Administrator\Desktop\气泵敲定一版 - 待改6版\气泵敲定一版 - 待改\SLC1-N\obj\Debug\SLC1_N.SQLConnectionMethod.resources
+C:\Users\Administrator\Desktop\气泵敲定一版 - 待改6版\气泵敲定一版 - 待改\SLC1-N\obj\Debug\SLC1_N.TestParams.resources
+C:\Users\Administrator\Desktop\气泵敲定一版 - 待改6版\气泵敲定一版 - 待改\SLC1-N\obj\Debug\SLC1_N.UserManagement.resources
+C:\Users\Administrator\Desktop\气泵敲定一版 - 待改6版\气泵敲定一版 - 待改\SLC1-N\obj\Debug\SLC1_N.UserPassword.resources
+C:\Users\Administrator\Desktop\气泵敲定一版 - 待改6版\气泵敲定一版 - 待改\SLC1-N\obj\Debug\SLC1_N.Warning.resources
+C:\Users\Administrator\Desktop\气泵敲定一版 - 待改6版\气泵敲定一版 - 待改\SLC1-N\obj\Debug\SLC1-N.csproj.GenerateResource.cache
+C:\Users\Administrator\Desktop\气泵敲定一版 - 待改6版\气泵敲定一版 - 待改\SLC1-N\obj\Debug\SLC1-N.csproj.CoreCompileInputs.cache
+C:\Users\Administrator\Desktop\气泵敲定一版 - 待改6版\气泵敲定一版 - 待改\SLC1-N\obj\Debug\SLC1-N.csproj.CopyComplete
+C:\Users\Administrator\Desktop\气泵敲定一版 - 待改6版\气泵敲定一版 - 待改\SLC1-N\obj\Debug\LL28-N-V1.4.exe
+C:\Users\Administrator\Desktop\气泵敲定一版 - 待改6版\气泵敲定一版 - 待改\SLC1-N\obj\Debug\LL28-N-V1.4.pdb
+C:\Users\Administrator\Desktop\气泵敲定一版 - 待改6版 - 副本\气泵敲定一版 - 待改\SLC1-N\bin\Debug\TCP\ITcpClient.cs
+C:\Users\Administrator\Desktop\气泵敲定一版 - 待改6版 - 副本\气泵敲定一版 - 待改\SLC1-N\bin\Debug\TCP\ITcpClient.Designer.cs
+C:\Users\Administrator\Desktop\气泵敲定一版 - 待改6版 - 副本\气泵敲定一版 - 待改\SLC1-N\bin\Debug\LL28-N-V1.4.exe.config
+C:\Users\Administrator\Desktop\气泵敲定一版 - 待改6版 - 副本\气泵敲定一版 - 待改\SLC1-N\bin\Debug\LL28-N-V1.4.exe
+C:\Users\Administrator\Desktop\气泵敲定一版 - 待改6版 - 副本\气泵敲定一版 - 待改\SLC1-N\bin\Debug\LL28-N-V1.4.pdb
+C:\Users\Administrator\Desktop\气泵敲定一版 - 待改6版 - 副本\气泵敲定一版 - 待改\SLC1-N\bin\Debug\NetWorkHelper.dll
+C:\Users\Administrator\Desktop\气泵敲定一版 - 待改6版 - 副本\气泵敲定一版 - 待改\SLC1-N\bin\Debug\Newtonsoft.Json.dll
+C:\Users\Administrator\Desktop\气泵敲定一版 - 待改6版 - 副本\气泵敲定一版 - 待改\SLC1-N\bin\Debug\SunnyUI.Common.dll
+C:\Users\Administrator\Desktop\气泵敲定一版 - 待改6版 - 副本\气泵敲定一版 - 待改\SLC1-N\bin\Debug\NetWorkHelper.pdb
+C:\Users\Administrator\Desktop\气泵敲定一版 - 待改6版 - 副本\气泵敲定一版 - 待改\SLC1-N\bin\Debug\Newtonsoft.Json.xml
+C:\Users\Administrator\Desktop\气泵敲定一版 - 待改6版 - 副本\气泵敲定一版 - 待改\SLC1-N\obj\Debug\SLC1-N.csproj.AssemblyReference.cache
+C:\Users\Administrator\Desktop\气泵敲定一版 - 待改6版 - 副本\气泵敲定一版 - 待改\SLC1-N\obj\Debug\SLC1-N.csproj.SuggestedBindingRedirects.cache
+C:\Users\Administrator\Desktop\气泵敲定一版 - 待改6版 - 副本\气泵敲定一版 - 待改\SLC1-N\obj\Debug\LL28-N-V1.4.exe.config
+C:\Users\Administrator\Desktop\气泵敲定一版 - 待改6版 - 副本\气泵敲定一版 - 待改\SLC1-N\obj\Debug\Interop.ADOX.dll
+C:\Users\Administrator\Desktop\气泵敲定一版 - 待改6版 - 副本\气泵敲定一版 - 待改\SLC1-N\obj\Debug\SLC1-N.csproj.ResolveComReference.cache
+C:\Users\Administrator\Desktop\气泵敲定一版 - 待改6版 - 副本\气泵敲定一版 - 待改\SLC1-N\obj\Debug\SLC1_N.Config.resources
+C:\Users\Administrator\Desktop\气泵敲定一版 - 待改6版 - 副本\气泵敲定一版 - 待改\SLC1-N\obj\Debug\SLC1_N.ConfigLogOn.resources
+C:\Users\Administrator\Desktop\气泵敲定一版 - 待改6版 - 副本\气泵敲定一版 - 待改\SLC1-N\obj\Debug\SLC1_N.ConfigTCP.resources
+C:\Users\Administrator\Desktop\气泵敲定一版 - 待改6版 - 副本\气泵敲定一版 - 待改\SLC1-N\obj\Debug\SLC1_N.Electricity.resources
+C:\Users\Administrator\Desktop\气泵敲定一版 - 待改6版 - 副本\气泵敲定一版 - 待改\SLC1-N\obj\Debug\SLC1_N.FlowConfig.resources
+C:\Users\Administrator\Desktop\气泵敲定一版 - 待改6版 - 副本\气泵敲定一版 - 待改\SLC1-N\obj\Debug\SLC1_N.Form1.resources
+C:\Users\Administrator\Desktop\气泵敲定一版 - 待改6版 - 副本\气泵敲定一版 - 待改\SLC1-N\obj\Debug\SLC1_N.Help.resources
+C:\Users\Administrator\Desktop\气泵敲定一版 - 待改6版 - 副本\气泵敲定一版 - 待改\SLC1-N\obj\Debug\SLC1_N.LinConfig.resources
+C:\Users\Administrator\Desktop\气泵敲定一版 - 待改6版 - 副本\气泵敲定一版 - 待改\SLC1-N\obj\Debug\SLC1_N.LogOn.resources
+C:\Users\Administrator\Desktop\气泵敲定一版 - 待改6版 - 副本\气泵敲定一版 - 待改\SLC1-N\obj\Debug\SLC1_N.Machine.resources
+C:\Users\Administrator\Desktop\气泵敲定一版 - 待改6版 - 副本\气泵敲定一版 - 待改\SLC1-N\obj\Debug\SLC1_N.MESConfig.resources
+C:\Users\Administrator\Desktop\气泵敲定一版 - 待改6版 - 副本\气泵敲定一版 - 待改\SLC1-N\obj\Debug\SLC1_N.PLCConfig.resources
+C:\Users\Administrator\Desktop\气泵敲定一版 - 待改6版 - 副本\气泵敲定一版 - 待改\SLC1-N\obj\Debug\SLC1_N.Port.resources
+C:\Users\Administrator\Desktop\气泵敲定一版 - 待改6版 - 副本\气泵敲定一版 - 待改\SLC1-N\obj\Debug\SLC1_N.Properties.Resources.resources
+C:\Users\Administrator\Desktop\气泵敲定一版 - 待改6版 - 副本\气泵敲定一版 - 待改\SLC1-N\obj\Debug\SLC1_N.ResetPassword.resources
+C:\Users\Administrator\Desktop\气泵敲定一版 - 待改6版 - 副本\气泵敲定一版 - 待改\SLC1-N\obj\Debug\SLC1_N.Save.resources
+C:\Users\Administrator\Desktop\气泵敲定一版 - 待改6版 - 副本\气泵敲定一版 - 待改\SLC1-N\obj\Debug\SLC1_N.SelectMachine.resources
+C:\Users\Administrator\Desktop\气泵敲定一版 - 待改6版 - 副本\气泵敲定一版 - 待改\SLC1-N\obj\Debug\SLC1_N.SQLConnectionMethod.resources
+C:\Users\Administrator\Desktop\气泵敲定一版 - 待改6版 - 副本\气泵敲定一版 - 待改\SLC1-N\obj\Debug\SLC1_N.TestParams.resources
+C:\Users\Administrator\Desktop\气泵敲定一版 - 待改6版 - 副本\气泵敲定一版 - 待改\SLC1-N\obj\Debug\SLC1_N.UserManagement.resources
+C:\Users\Administrator\Desktop\气泵敲定一版 - 待改6版 - 副本\气泵敲定一版 - 待改\SLC1-N\obj\Debug\SLC1_N.UserPassword.resources
+C:\Users\Administrator\Desktop\气泵敲定一版 - 待改6版 - 副本\气泵敲定一版 - 待改\SLC1-N\obj\Debug\SLC1_N.Warning.resources
+C:\Users\Administrator\Desktop\气泵敲定一版 - 待改6版 - 副本\气泵敲定一版 - 待改\SLC1-N\obj\Debug\SLC1-N.csproj.GenerateResource.cache
+C:\Users\Administrator\Desktop\气泵敲定一版 - 待改6版 - 副本\气泵敲定一版 - 待改\SLC1-N\obj\Debug\SLC1-N.csproj.CoreCompileInputs.cache
+C:\Users\Administrator\Desktop\气泵敲定一版 - 待改6版 - 副本\气泵敲定一版 - 待改\SLC1-N\obj\Debug\SLC1-N.csproj.CopyComplete
+C:\Users\Administrator\Desktop\气泵敲定一版 - 待改6版 - 副本\气泵敲定一版 - 待改\SLC1-N\obj\Debug\LL28-N-V1.4.exe
+C:\Users\Administrator\Desktop\气泵敲定一版 - 待改6版 - 副本\气泵敲定一版 - 待改\SLC1-N\obj\Debug\LL28-N-V1.4.pdb
+C:\Users\Administrator\Desktop\气泵敲定一版 - 待改7版\气泵敲定一版 - 待改\SLC1-N\bin\Debug\TCP\ITcpClient.cs
+C:\Users\Administrator\Desktop\气泵敲定一版 - 待改7版\气泵敲定一版 - 待改\SLC1-N\bin\Debug\TCP\ITcpClient.Designer.cs
+C:\Users\Administrator\Desktop\气泵敲定一版 - 待改7版\气泵敲定一版 - 待改\SLC1-N\bin\Debug\LL28-N-V1.4.exe.config
+C:\Users\Administrator\Desktop\气泵敲定一版 - 待改7版\气泵敲定一版 - 待改\SLC1-N\bin\Debug\LL28-N-V1.4.exe
+C:\Users\Administrator\Desktop\气泵敲定一版 - 待改7版\气泵敲定一版 - 待改\SLC1-N\bin\Debug\LL28-N-V1.4.pdb
+C:\Users\Administrator\Desktop\气泵敲定一版 - 待改7版\气泵敲定一版 - 待改\SLC1-N\bin\Debug\NetWorkHelper.dll
+C:\Users\Administrator\Desktop\气泵敲定一版 - 待改7版\气泵敲定一版 - 待改\SLC1-N\bin\Debug\Newtonsoft.Json.dll
+C:\Users\Administrator\Desktop\气泵敲定一版 - 待改7版\气泵敲定一版 - 待改\SLC1-N\bin\Debug\SunnyUI.Common.dll
+C:\Users\Administrator\Desktop\气泵敲定一版 - 待改7版\气泵敲定一版 - 待改\SLC1-N\bin\Debug\NetWorkHelper.pdb
+C:\Users\Administrator\Desktop\气泵敲定一版 - 待改7版\气泵敲定一版 - 待改\SLC1-N\bin\Debug\Newtonsoft.Json.xml
+C:\Users\Administrator\Desktop\气泵敲定一版 - 待改7版\气泵敲定一版 - 待改\SLC1-N\obj\Debug\SLC1-N.csproj.AssemblyReference.cache
+C:\Users\Administrator\Desktop\气泵敲定一版 - 待改7版\气泵敲定一版 - 待改\SLC1-N\obj\Debug\SLC1-N.csproj.SuggestedBindingRedirects.cache
+C:\Users\Administrator\Desktop\气泵敲定一版 - 待改7版\气泵敲定一版 - 待改\SLC1-N\obj\Debug\LL28-N-V1.4.exe.config
+C:\Users\Administrator\Desktop\气泵敲定一版 - 待改7版\气泵敲定一版 - 待改\SLC1-N\obj\Debug\Interop.ADOX.dll
+C:\Users\Administrator\Desktop\气泵敲定一版 - 待改7版\气泵敲定一版 - 待改\SLC1-N\obj\Debug\SLC1-N.csproj.ResolveComReference.cache
+C:\Users\Administrator\Desktop\气泵敲定一版 - 待改7版\气泵敲定一版 - 待改\SLC1-N\obj\Debug\SLC1_N.Config.resources
+C:\Users\Administrator\Desktop\气泵敲定一版 - 待改7版\气泵敲定一版 - 待改\SLC1-N\obj\Debug\SLC1_N.ConfigLogOn.resources
+C:\Users\Administrator\Desktop\气泵敲定一版 - 待改7版\气泵敲定一版 - 待改\SLC1-N\obj\Debug\SLC1_N.ConfigTCP.resources
+C:\Users\Administrator\Desktop\气泵敲定一版 - 待改7版\气泵敲定一版 - 待改\SLC1-N\obj\Debug\SLC1_N.Electricity.resources
+C:\Users\Administrator\Desktop\气泵敲定一版 - 待改7版\气泵敲定一版 - 待改\SLC1-N\obj\Debug\SLC1_N.FlowConfig.resources
+C:\Users\Administrator\Desktop\气泵敲定一版 - 待改7版\气泵敲定一版 - 待改\SLC1-N\obj\Debug\SLC1_N.Form1.resources
+C:\Users\Administrator\Desktop\气泵敲定一版 - 待改7版\气泵敲定一版 - 待改\SLC1-N\obj\Debug\SLC1_N.Help.resources
+C:\Users\Administrator\Desktop\气泵敲定一版 - 待改7版\气泵敲定一版 - 待改\SLC1-N\obj\Debug\SLC1_N.LinConfig.resources
+C:\Users\Administrator\Desktop\气泵敲定一版 - 待改7版\气泵敲定一版 - 待改\SLC1-N\obj\Debug\SLC1_N.LogOn.resources
+C:\Users\Administrator\Desktop\气泵敲定一版 - 待改7版\气泵敲定一版 - 待改\SLC1-N\obj\Debug\SLC1_N.Machine.resources
+C:\Users\Administrator\Desktop\气泵敲定一版 - 待改7版\气泵敲定一版 - 待改\SLC1-N\obj\Debug\SLC1_N.MESConfig.resources
+C:\Users\Administrator\Desktop\气泵敲定一版 - 待改7版\气泵敲定一版 - 待改\SLC1-N\obj\Debug\SLC1_N.PLCConfig.resources
+C:\Users\Administrator\Desktop\气泵敲定一版 - 待改7版\气泵敲定一版 - 待改\SLC1-N\obj\Debug\SLC1_N.Port.resources
+C:\Users\Administrator\Desktop\气泵敲定一版 - 待改7版\气泵敲定一版 - 待改\SLC1-N\obj\Debug\SLC1_N.Properties.Resources.resources
+C:\Users\Administrator\Desktop\气泵敲定一版 - 待改7版\气泵敲定一版 - 待改\SLC1-N\obj\Debug\SLC1_N.ResetPassword.resources
+C:\Users\Administrator\Desktop\气泵敲定一版 - 待改7版\气泵敲定一版 - 待改\SLC1-N\obj\Debug\SLC1_N.Save.resources
+C:\Users\Administrator\Desktop\气泵敲定一版 - 待改7版\气泵敲定一版 - 待改\SLC1-N\obj\Debug\SLC1_N.SelectMachine.resources
+C:\Users\Administrator\Desktop\气泵敲定一版 - 待改7版\气泵敲定一版 - 待改\SLC1-N\obj\Debug\SLC1_N.SQLConnectionMethod.resources
+C:\Users\Administrator\Desktop\气泵敲定一版 - 待改7版\气泵敲定一版 - 待改\SLC1-N\obj\Debug\SLC1_N.TestParams.resources
+C:\Users\Administrator\Desktop\气泵敲定一版 - 待改7版\气泵敲定一版 - 待改\SLC1-N\obj\Debug\SLC1_N.UserManagement.resources
+C:\Users\Administrator\Desktop\气泵敲定一版 - 待改7版\气泵敲定一版 - 待改\SLC1-N\obj\Debug\SLC1_N.UserPassword.resources
+C:\Users\Administrator\Desktop\气泵敲定一版 - 待改7版\气泵敲定一版 - 待改\SLC1-N\obj\Debug\SLC1_N.Warning.resources
+C:\Users\Administrator\Desktop\气泵敲定一版 - 待改7版\气泵敲定一版 - 待改\SLC1-N\obj\Debug\SLC1-N.csproj.GenerateResource.cache
+C:\Users\Administrator\Desktop\气泵敲定一版 - 待改7版\气泵敲定一版 - 待改\SLC1-N\obj\Debug\SLC1-N.csproj.CoreCompileInputs.cache
+C:\Users\Administrator\Desktop\气泵敲定一版 - 待改7版\气泵敲定一版 - 待改\SLC1-N\obj\Debug\SLC1-N.csproj.CopyComplete
+C:\Users\Administrator\Desktop\气泵敲定一版 - 待改7版\气泵敲定一版 - 待改\SLC1-N\obj\Debug\LL28-N-V1.4.exe
+C:\Users\Administrator\Desktop\气泵敲定一版 - 待改7版\气泵敲定一版 - 待改\SLC1-N\obj\Debug\LL28-N-V1.4.pdb
+C:\Users\Administrator\Desktop\气泵敲定一版 - 待改8版\气泵敲定一版 - 待改\SLC1-N\bin\Debug\TCP\ITcpClient.cs
+C:\Users\Administrator\Desktop\气泵敲定一版 - 待改8版\气泵敲定一版 - 待改\SLC1-N\bin\Debug\TCP\ITcpClient.Designer.cs
+C:\Users\Administrator\Desktop\气泵敲定一版 - 待改8版\气泵敲定一版 - 待改\SLC1-N\bin\Debug\LL28-N-V1.4.exe.config
+C:\Users\Administrator\Desktop\气泵敲定一版 - 待改8版\气泵敲定一版 - 待改\SLC1-N\bin\Debug\LL28-N-V1.4.exe
+C:\Users\Administrator\Desktop\气泵敲定一版 - 待改8版\气泵敲定一版 - 待改\SLC1-N\bin\Debug\LL28-N-V1.4.pdb
+C:\Users\Administrator\Desktop\气泵敲定一版 - 待改8版\气泵敲定一版 - 待改\SLC1-N\bin\Debug\NetWorkHelper.dll
+C:\Users\Administrator\Desktop\气泵敲定一版 - 待改8版\气泵敲定一版 - 待改\SLC1-N\bin\Debug\Newtonsoft.Json.dll
+C:\Users\Administrator\Desktop\气泵敲定一版 - 待改8版\气泵敲定一版 - 待改\SLC1-N\bin\Debug\SunnyUI.Common.dll
+C:\Users\Administrator\Desktop\气泵敲定一版 - 待改8版\气泵敲定一版 - 待改\SLC1-N\bin\Debug\NetWorkHelper.pdb
+C:\Users\Administrator\Desktop\气泵敲定一版 - 待改8版\气泵敲定一版 - 待改\SLC1-N\bin\Debug\Newtonsoft.Json.xml
+C:\Users\Administrator\Desktop\气泵敲定一版 - 待改8版\气泵敲定一版 - 待改\SLC1-N\obj\Debug\SLC1-N.csproj.AssemblyReference.cache
+C:\Users\Administrator\Desktop\气泵敲定一版 - 待改8版\气泵敲定一版 - 待改\SLC1-N\obj\Debug\SLC1-N.csproj.SuggestedBindingRedirects.cache
+C:\Users\Administrator\Desktop\气泵敲定一版 - 待改8版\气泵敲定一版 - 待改\SLC1-N\obj\Debug\LL28-N-V1.4.exe.config
+C:\Users\Administrator\Desktop\气泵敲定一版 - 待改8版\气泵敲定一版 - 待改\SLC1-N\obj\Debug\Interop.ADOX.dll
+C:\Users\Administrator\Desktop\气泵敲定一版 - 待改8版\气泵敲定一版 - 待改\SLC1-N\obj\Debug\SLC1-N.csproj.ResolveComReference.cache
+C:\Users\Administrator\Desktop\气泵敲定一版 - 待改8版\气泵敲定一版 - 待改\SLC1-N\obj\Debug\SLC1_N.Config.resources
+C:\Users\Administrator\Desktop\气泵敲定一版 - 待改8版\气泵敲定一版 - 待改\SLC1-N\obj\Debug\SLC1_N.ConfigLogOn.resources
+C:\Users\Administrator\Desktop\气泵敲定一版 - 待改8版\气泵敲定一版 - 待改\SLC1-N\obj\Debug\SLC1_N.ConfigTCP.resources
+C:\Users\Administrator\Desktop\气泵敲定一版 - 待改8版\气泵敲定一版 - 待改\SLC1-N\obj\Debug\SLC1_N.Electricity.resources
+C:\Users\Administrator\Desktop\气泵敲定一版 - 待改8版\气泵敲定一版 - 待改\SLC1-N\obj\Debug\SLC1_N.FlowConfig.resources
+C:\Users\Administrator\Desktop\气泵敲定一版 - 待改8版\气泵敲定一版 - 待改\SLC1-N\obj\Debug\SLC1_N.Form1.resources
+C:\Users\Administrator\Desktop\气泵敲定一版 - 待改8版\气泵敲定一版 - 待改\SLC1-N\obj\Debug\SLC1_N.Help.resources
+C:\Users\Administrator\Desktop\气泵敲定一版 - 待改8版\气泵敲定一版 - 待改\SLC1-N\obj\Debug\SLC1_N.LinConfig.resources
+C:\Users\Administrator\Desktop\气泵敲定一版 - 待改8版\气泵敲定一版 - 待改\SLC1-N\obj\Debug\SLC1_N.LogOn.resources
+C:\Users\Administrator\Desktop\气泵敲定一版 - 待改8版\气泵敲定一版 - 待改\SLC1-N\obj\Debug\SLC1_N.Machine.resources
+C:\Users\Administrator\Desktop\气泵敲定一版 - 待改8版\气泵敲定一版 - 待改\SLC1-N\obj\Debug\SLC1_N.MESConfig.resources
+C:\Users\Administrator\Desktop\气泵敲定一版 - 待改8版\气泵敲定一版 - 待改\SLC1-N\obj\Debug\SLC1_N.PLCConfig.resources
+C:\Users\Administrator\Desktop\气泵敲定一版 - 待改8版\气泵敲定一版 - 待改\SLC1-N\obj\Debug\SLC1_N.Port.resources
+C:\Users\Administrator\Desktop\气泵敲定一版 - 待改8版\气泵敲定一版 - 待改\SLC1-N\obj\Debug\SLC1_N.Properties.Resources.resources
+C:\Users\Administrator\Desktop\气泵敲定一版 - 待改8版\气泵敲定一版 - 待改\SLC1-N\obj\Debug\SLC1_N.ResetPassword.resources
+C:\Users\Administrator\Desktop\气泵敲定一版 - 待改8版\气泵敲定一版 - 待改\SLC1-N\obj\Debug\SLC1_N.Save.resources
+C:\Users\Administrator\Desktop\气泵敲定一版 - 待改8版\气泵敲定一版 - 待改\SLC1-N\obj\Debug\SLC1_N.SelectMachine.resources
+C:\Users\Administrator\Desktop\气泵敲定一版 - 待改8版\气泵敲定一版 - 待改\SLC1-N\obj\Debug\SLC1_N.SQLConnectionMethod.resources
+C:\Users\Administrator\Desktop\气泵敲定一版 - 待改8版\气泵敲定一版 - 待改\SLC1-N\obj\Debug\SLC1_N.TestParams.resources
+C:\Users\Administrator\Desktop\气泵敲定一版 - 待改8版\气泵敲定一版 - 待改\SLC1-N\obj\Debug\SLC1_N.UserManagement.resources
+C:\Users\Administrator\Desktop\气泵敲定一版 - 待改8版\气泵敲定一版 - 待改\SLC1-N\obj\Debug\SLC1_N.UserPassword.resources
+C:\Users\Administrator\Desktop\气泵敲定一版 - 待改8版\气泵敲定一版 - 待改\SLC1-N\obj\Debug\SLC1_N.Warning.resources
+C:\Users\Administrator\Desktop\气泵敲定一版 - 待改8版\气泵敲定一版 - 待改\SLC1-N\obj\Debug\SLC1-N.csproj.GenerateResource.cache
+C:\Users\Administrator\Desktop\气泵敲定一版 - 待改8版\气泵敲定一版 - 待改\SLC1-N\obj\Debug\SLC1-N.csproj.CoreCompileInputs.cache
+C:\Users\Administrator\Desktop\气泵敲定一版 - 待改8版\气泵敲定一版 - 待改\SLC1-N\obj\Debug\SLC1-N.csproj.CopyComplete
+C:\Users\Administrator\Desktop\气泵敲定一版 - 待改8版\气泵敲定一版 - 待改\SLC1-N\obj\Debug\LL28-N-V1.4.exe
+C:\Users\Administrator\Desktop\气泵敲定一版 - 待改8版\气泵敲定一版 - 待改\SLC1-N\obj\Debug\LL28-N-V1.4.pdb
+C:\Users\Administrator\Desktop\气泵敲定一版 - 待改10版\气泵敲定一版 - 待改\SLC1-N\bin\Debug\TCP\ITcpClient.cs
+C:\Users\Administrator\Desktop\气泵敲定一版 - 待改10版\气泵敲定一版 - 待改\SLC1-N\bin\Debug\TCP\ITcpClient.Designer.cs
+C:\Users\Administrator\Desktop\气泵敲定一版 - 待改10版\气泵敲定一版 - 待改\SLC1-N\bin\Debug\LL28-N-V1.4.exe.config
+C:\Users\Administrator\Desktop\气泵敲定一版 - 待改10版\气泵敲定一版 - 待改\SLC1-N\bin\Debug\LL28-N-V1.4.exe
+C:\Users\Administrator\Desktop\气泵敲定一版 - 待改10版\气泵敲定一版 - 待改\SLC1-N\bin\Debug\LL28-N-V1.4.pdb
+C:\Users\Administrator\Desktop\气泵敲定一版 - 待改10版\气泵敲定一版 - 待改\SLC1-N\bin\Debug\NetWorkHelper.dll
+C:\Users\Administrator\Desktop\气泵敲定一版 - 待改10版\气泵敲定一版 - 待改\SLC1-N\bin\Debug\Newtonsoft.Json.dll
+C:\Users\Administrator\Desktop\气泵敲定一版 - 待改10版\气泵敲定一版 - 待改\SLC1-N\bin\Debug\SunnyUI.Common.dll
+C:\Users\Administrator\Desktop\气泵敲定一版 - 待改10版\气泵敲定一版 - 待改\SLC1-N\bin\Debug\NetWorkHelper.pdb
+C:\Users\Administrator\Desktop\气泵敲定一版 - 待改10版\气泵敲定一版 - 待改\SLC1-N\bin\Debug\Newtonsoft.Json.xml
+C:\Users\Administrator\Desktop\气泵敲定一版 - 待改10版\气泵敲定一版 - 待改\SLC1-N\obj\Debug\SLC1-N.csproj.AssemblyReference.cache
+C:\Users\Administrator\Desktop\气泵敲定一版 - 待改10版\气泵敲定一版 - 待改\SLC1-N\obj\Debug\SLC1-N.csproj.SuggestedBindingRedirects.cache
+C:\Users\Administrator\Desktop\气泵敲定一版 - 待改10版\气泵敲定一版 - 待改\SLC1-N\obj\Debug\LL28-N-V1.4.exe.config
+C:\Users\Administrator\Desktop\气泵敲定一版 - 待改10版\气泵敲定一版 - 待改\SLC1-N\obj\Debug\Interop.ADOX.dll
+C:\Users\Administrator\Desktop\气泵敲定一版 - 待改10版\气泵敲定一版 - 待改\SLC1-N\obj\Debug\SLC1-N.csproj.ResolveComReference.cache
+C:\Users\Administrator\Desktop\气泵敲定一版 - 待改10版\气泵敲定一版 - 待改\SLC1-N\obj\Debug\SLC1_N.Config.resources
+C:\Users\Administrator\Desktop\气泵敲定一版 - 待改10版\气泵敲定一版 - 待改\SLC1-N\obj\Debug\SLC1_N.ConfigLogOn.resources
+C:\Users\Administrator\Desktop\气泵敲定一版 - 待改10版\气泵敲定一版 - 待改\SLC1-N\obj\Debug\SLC1_N.ConfigTCP.resources
+C:\Users\Administrator\Desktop\气泵敲定一版 - 待改10版\气泵敲定一版 - 待改\SLC1-N\obj\Debug\SLC1_N.Electricity.resources
+C:\Users\Administrator\Desktop\气泵敲定一版 - 待改10版\气泵敲定一版 - 待改\SLC1-N\obj\Debug\SLC1_N.FlowConfig.resources
+C:\Users\Administrator\Desktop\气泵敲定一版 - 待改10版\气泵敲定一版 - 待改\SLC1-N\obj\Debug\SLC1_N.Form1.resources
+C:\Users\Administrator\Desktop\气泵敲定一版 - 待改10版\气泵敲定一版 - 待改\SLC1-N\obj\Debug\SLC1_N.Help.resources
+C:\Users\Administrator\Desktop\气泵敲定一版 - 待改10版\气泵敲定一版 - 待改\SLC1-N\obj\Debug\SLC1_N.LinConfig.resources
+C:\Users\Administrator\Desktop\气泵敲定一版 - 待改10版\气泵敲定一版 - 待改\SLC1-N\obj\Debug\SLC1_N.LogOn.resources
+C:\Users\Administrator\Desktop\气泵敲定一版 - 待改10版\气泵敲定一版 - 待改\SLC1-N\obj\Debug\SLC1_N.Machine.resources
+C:\Users\Administrator\Desktop\气泵敲定一版 - 待改10版\气泵敲定一版 - 待改\SLC1-N\obj\Debug\SLC1_N.MESConfig.resources
+C:\Users\Administrator\Desktop\气泵敲定一版 - 待改10版\气泵敲定一版 - 待改\SLC1-N\obj\Debug\SLC1_N.PLCConfig.resources
+C:\Users\Administrator\Desktop\气泵敲定一版 - 待改10版\气泵敲定一版 - 待改\SLC1-N\obj\Debug\SLC1_N.Port.resources
+C:\Users\Administrator\Desktop\气泵敲定一版 - 待改10版\气泵敲定一版 - 待改\SLC1-N\obj\Debug\SLC1_N.Properties.Resources.resources
+C:\Users\Administrator\Desktop\气泵敲定一版 - 待改10版\气泵敲定一版 - 待改\SLC1-N\obj\Debug\SLC1_N.ResetPassword.resources
+C:\Users\Administrator\Desktop\气泵敲定一版 - 待改10版\气泵敲定一版 - 待改\SLC1-N\obj\Debug\SLC1_N.Save.resources
+C:\Users\Administrator\Desktop\气泵敲定一版 - 待改10版\气泵敲定一版 - 待改\SLC1-N\obj\Debug\SLC1_N.SelectMachine.resources
+C:\Users\Administrator\Desktop\气泵敲定一版 - 待改10版\气泵敲定一版 - 待改\SLC1-N\obj\Debug\SLC1_N.SQLConnectionMethod.resources
+C:\Users\Administrator\Desktop\气泵敲定一版 - 待改10版\气泵敲定一版 - 待改\SLC1-N\obj\Debug\SLC1_N.TestParams.resources
+C:\Users\Administrator\Desktop\气泵敲定一版 - 待改10版\气泵敲定一版 - 待改\SLC1-N\obj\Debug\SLC1_N.UserManagement.resources
+C:\Users\Administrator\Desktop\气泵敲定一版 - 待改10版\气泵敲定一版 - 待改\SLC1-N\obj\Debug\SLC1_N.UserPassword.resources
+C:\Users\Administrator\Desktop\气泵敲定一版 - 待改10版\气泵敲定一版 - 待改\SLC1-N\obj\Debug\SLC1_N.Warning.resources
+C:\Users\Administrator\Desktop\气泵敲定一版 - 待改10版\气泵敲定一版 - 待改\SLC1-N\obj\Debug\SLC1-N.csproj.GenerateResource.cache
+C:\Users\Administrator\Desktop\气泵敲定一版 - 待改10版\气泵敲定一版 - 待改\SLC1-N\obj\Debug\SLC1-N.csproj.CoreCompileInputs.cache
+C:\Users\Administrator\Desktop\气泵敲定一版 - 待改10版\气泵敲定一版 - 待改\SLC1-N\obj\Debug\SLC1-N.csproj.CopyComplete
+C:\Users\Administrator\Desktop\气泵敲定一版 - 待改10版\气泵敲定一版 - 待改\SLC1-N\obj\Debug\LL28-N-V1.4.exe
+C:\Users\Administrator\Desktop\气泵敲定一版 - 待改10版\气泵敲定一版 - 待改\SLC1-N\obj\Debug\LL28-N-V1.4.pdb
+C:\Users\Administrator\Desktop\气泵敲定一版 - 待改11版(uA修改版）\气泵敲定一版 - 待改\SLC1-N\bin\Debug\TCP\ITcpClient.cs
+C:\Users\Administrator\Desktop\气泵敲定一版 - 待改11版(uA修改版）\气泵敲定一版 - 待改\SLC1-N\bin\Debug\TCP\ITcpClient.Designer.cs
+C:\Users\Administrator\Desktop\气泵敲定一版 - 待改11版(uA修改版）\气泵敲定一版 - 待改\SLC1-N\bin\Debug\LL28-N-V1.4.exe.config
+C:\Users\Administrator\Desktop\气泵敲定一版 - 待改11版(uA修改版）\气泵敲定一版 - 待改\SLC1-N\bin\Debug\LL28-N-V1.4.exe
+C:\Users\Administrator\Desktop\气泵敲定一版 - 待改11版(uA修改版）\气泵敲定一版 - 待改\SLC1-N\bin\Debug\LL28-N-V1.4.pdb
+C:\Users\Administrator\Desktop\气泵敲定一版 - 待改11版(uA修改版）\气泵敲定一版 - 待改\SLC1-N\bin\Debug\NetWorkHelper.dll
+C:\Users\Administrator\Desktop\气泵敲定一版 - 待改11版(uA修改版）\气泵敲定一版 - 待改\SLC1-N\bin\Debug\Newtonsoft.Json.dll
+C:\Users\Administrator\Desktop\气泵敲定一版 - 待改11版(uA修改版）\气泵敲定一版 - 待改\SLC1-N\bin\Debug\SunnyUI.Common.dll
+C:\Users\Administrator\Desktop\气泵敲定一版 - 待改11版(uA修改版）\气泵敲定一版 - 待改\SLC1-N\bin\Debug\NetWorkHelper.pdb
+C:\Users\Administrator\Desktop\气泵敲定一版 - 待改11版(uA修改版）\气泵敲定一版 - 待改\SLC1-N\bin\Debug\Newtonsoft.Json.xml
+C:\Users\Administrator\Desktop\气泵敲定一版 - 待改11版(uA修改版）\气泵敲定一版 - 待改\SLC1-N\obj\Debug\SLC1-N.csproj.AssemblyReference.cache
+C:\Users\Administrator\Desktop\气泵敲定一版 - 待改11版(uA修改版）\气泵敲定一版 - 待改\SLC1-N\obj\Debug\SLC1-N.csproj.SuggestedBindingRedirects.cache
+C:\Users\Administrator\Desktop\气泵敲定一版 - 待改11版(uA修改版）\气泵敲定一版 - 待改\SLC1-N\obj\Debug\LL28-N-V1.4.exe.config
+C:\Users\Administrator\Desktop\气泵敲定一版 - 待改11版(uA修改版）\气泵敲定一版 - 待改\SLC1-N\obj\Debug\Interop.ADOX.dll
+C:\Users\Administrator\Desktop\气泵敲定一版 - 待改11版(uA修改版）\气泵敲定一版 - 待改\SLC1-N\obj\Debug\SLC1-N.csproj.ResolveComReference.cache
+C:\Users\Administrator\Desktop\气泵敲定一版 - 待改11版(uA修改版）\气泵敲定一版 - 待改\SLC1-N\obj\Debug\SLC1_N.Config.resources
+C:\Users\Administrator\Desktop\气泵敲定一版 - 待改11版(uA修改版）\气泵敲定一版 - 待改\SLC1-N\obj\Debug\SLC1_N.ConfigLogOn.resources
+C:\Users\Administrator\Desktop\气泵敲定一版 - 待改11版(uA修改版）\气泵敲定一版 - 待改\SLC1-N\obj\Debug\SLC1_N.ConfigTCP.resources
+C:\Users\Administrator\Desktop\气泵敲定一版 - 待改11版(uA修改版）\气泵敲定一版 - 待改\SLC1-N\obj\Debug\SLC1_N.Electricity.resources
+C:\Users\Administrator\Desktop\气泵敲定一版 - 待改11版(uA修改版）\气泵敲定一版 - 待改\SLC1-N\obj\Debug\SLC1_N.FlowConfig.resources
+C:\Users\Administrator\Desktop\气泵敲定一版 - 待改11版(uA修改版）\气泵敲定一版 - 待改\SLC1-N\obj\Debug\SLC1_N.Form1.resources
+C:\Users\Administrator\Desktop\气泵敲定一版 - 待改11版(uA修改版）\气泵敲定一版 - 待改\SLC1-N\obj\Debug\SLC1_N.Help.resources
+C:\Users\Administrator\Desktop\气泵敲定一版 - 待改11版(uA修改版）\气泵敲定一版 - 待改\SLC1-N\obj\Debug\SLC1_N.LinConfig.resources
+C:\Users\Administrator\Desktop\气泵敲定一版 - 待改11版(uA修改版）\气泵敲定一版 - 待改\SLC1-N\obj\Debug\SLC1_N.LogOn.resources
+C:\Users\Administrator\Desktop\气泵敲定一版 - 待改11版(uA修改版）\气泵敲定一版 - 待改\SLC1-N\obj\Debug\SLC1_N.Machine.resources
+C:\Users\Administrator\Desktop\气泵敲定一版 - 待改11版(uA修改版）\气泵敲定一版 - 待改\SLC1-N\obj\Debug\SLC1_N.MESConfig.resources
+C:\Users\Administrator\Desktop\气泵敲定一版 - 待改11版(uA修改版）\气泵敲定一版 - 待改\SLC1-N\obj\Debug\SLC1_N.PLCConfig.resources
+C:\Users\Administrator\Desktop\气泵敲定一版 - 待改11版(uA修改版）\气泵敲定一版 - 待改\SLC1-N\obj\Debug\SLC1_N.Port.resources
+C:\Users\Administrator\Desktop\气泵敲定一版 - 待改11版(uA修改版）\气泵敲定一版 - 待改\SLC1-N\obj\Debug\SLC1_N.Properties.Resources.resources
+C:\Users\Administrator\Desktop\气泵敲定一版 - 待改11版(uA修改版）\气泵敲定一版 - 待改\SLC1-N\obj\Debug\SLC1_N.ResetPassword.resources
+C:\Users\Administrator\Desktop\气泵敲定一版 - 待改11版(uA修改版）\气泵敲定一版 - 待改\SLC1-N\obj\Debug\SLC1_N.Save.resources
+C:\Users\Administrator\Desktop\气泵敲定一版 - 待改11版(uA修改版）\气泵敲定一版 - 待改\SLC1-N\obj\Debug\SLC1_N.SelectMachine.resources
+C:\Users\Administrator\Desktop\气泵敲定一版 - 待改11版(uA修改版）\气泵敲定一版 - 待改\SLC1-N\obj\Debug\SLC1_N.SQLConnectionMethod.resources
+C:\Users\Administrator\Desktop\气泵敲定一版 - 待改11版(uA修改版）\气泵敲定一版 - 待改\SLC1-N\obj\Debug\SLC1_N.TestParams.resources
+C:\Users\Administrator\Desktop\气泵敲定一版 - 待改11版(uA修改版）\气泵敲定一版 - 待改\SLC1-N\obj\Debug\SLC1_N.UserManagement.resources
+C:\Users\Administrator\Desktop\气泵敲定一版 - 待改11版(uA修改版）\气泵敲定一版 - 待改\SLC1-N\obj\Debug\SLC1_N.UserPassword.resources
+C:\Users\Administrator\Desktop\气泵敲定一版 - 待改11版(uA修改版）\气泵敲定一版 - 待改\SLC1-N\obj\Debug\SLC1_N.Warning.resources
+C:\Users\Administrator\Desktop\气泵敲定一版 - 待改11版(uA修改版）\气泵敲定一版 - 待改\SLC1-N\obj\Debug\SLC1-N.csproj.GenerateResource.cache
+C:\Users\Administrator\Desktop\气泵敲定一版 - 待改11版(uA修改版）\气泵敲定一版 - 待改\SLC1-N\obj\Debug\SLC1-N.csproj.CoreCompileInputs.cache
+C:\Users\Administrator\Desktop\气泵敲定一版 - 待改11版(uA修改版）\气泵敲定一版 - 待改\SLC1-N\obj\Debug\SLC1-N.csproj.CopyComplete
+C:\Users\Administrator\Desktop\气泵敲定一版 - 待改11版(uA修改版）\气泵敲定一版 - 待改\SLC1-N\obj\Debug\LL28-N-V1.4.exe
+C:\Users\Administrator\Desktop\气泵敲定一版 - 待改11版(uA修改版）\气泵敲定一版 - 待改\SLC1-N\obj\Debug\LL28-N-V1.4.pdb
+C:\Users\Administrator\Desktop\气泵敲定二版 电流表\气泵敲定一版 - 待改\SLC1-N\bin\Debug\TCP\ITcpClient.cs
+C:\Users\Administrator\Desktop\气泵敲定二版 电流表\气泵敲定一版 - 待改\SLC1-N\bin\Debug\TCP\ITcpClient.Designer.cs
+C:\Users\Administrator\Desktop\气泵敲定二版 电流表\气泵敲定一版 - 待改\SLC1-N\bin\Debug\LL28-N-V1.4.exe.config
+C:\Users\Administrator\Desktop\气泵敲定二版 电流表\气泵敲定一版 - 待改\SLC1-N\bin\Debug\LL28-N-V1.4.exe
+C:\Users\Administrator\Desktop\气泵敲定二版 电流表\气泵敲定一版 - 待改\SLC1-N\bin\Debug\LL28-N-V1.4.pdb
+C:\Users\Administrator\Desktop\气泵敲定二版 电流表\气泵敲定一版 - 待改\SLC1-N\bin\Debug\NetWorkHelper.dll
+C:\Users\Administrator\Desktop\气泵敲定二版 电流表\气泵敲定一版 - 待改\SLC1-N\bin\Debug\Newtonsoft.Json.dll
+C:\Users\Administrator\Desktop\气泵敲定二版 电流表\气泵敲定一版 - 待改\SLC1-N\bin\Debug\NetWorkHelper.pdb
+C:\Users\Administrator\Desktop\气泵敲定二版 电流表\气泵敲定一版 - 待改\SLC1-N\bin\Debug\Newtonsoft.Json.xml
+C:\Users\Administrator\Desktop\气泵敲定二版 电流表\气泵敲定一版 - 待改\SLC1-N\obj\Debug\SLC1-N.csproj.AssemblyReference.cache
+C:\Users\Administrator\Desktop\气泵敲定二版 电流表\气泵敲定一版 - 待改\SLC1-N\obj\Debug\SLC1-N.csproj.SuggestedBindingRedirects.cache
+C:\Users\Administrator\Desktop\气泵敲定二版 电流表\气泵敲定一版 - 待改\SLC1-N\obj\Debug\LL28-N-V1.4.exe.config
+C:\Users\Administrator\Desktop\气泵敲定二版 电流表\气泵敲定一版 - 待改\SLC1-N\obj\Debug\Interop.ADOX.dll
+C:\Users\Administrator\Desktop\气泵敲定二版 电流表\气泵敲定一版 - 待改\SLC1-N\obj\Debug\SLC1-N.csproj.ResolveComReference.cache
+C:\Users\Administrator\Desktop\气泵敲定二版 电流表\气泵敲定一版 - 待改\SLC1-N\obj\Debug\SLC1_N.Config.resources
+C:\Users\Administrator\Desktop\气泵敲定二版 电流表\气泵敲定一版 - 待改\SLC1-N\obj\Debug\SLC1_N.ConfigLogOn.resources
+C:\Users\Administrator\Desktop\气泵敲定二版 电流表\气泵敲定一版 - 待改\SLC1-N\obj\Debug\SLC1_N.ConfigTCP.resources
+C:\Users\Administrator\Desktop\气泵敲定二版 电流表\气泵敲定一版 - 待改\SLC1-N\obj\Debug\SLC1_N.Electricity.resources
+C:\Users\Administrator\Desktop\气泵敲定二版 电流表\气泵敲定一版 - 待改\SLC1-N\obj\Debug\SLC1_N.FlowConfig.resources
+C:\Users\Administrator\Desktop\气泵敲定二版 电流表\气泵敲定一版 - 待改\SLC1-N\obj\Debug\SLC1_N.Form1.resources
+C:\Users\Administrator\Desktop\气泵敲定二版 电流表\气泵敲定一版 - 待改\SLC1-N\obj\Debug\SLC1_N.Help.resources
+C:\Users\Administrator\Desktop\气泵敲定二版 电流表\气泵敲定一版 - 待改\SLC1-N\obj\Debug\SLC1_N.LinConfig.resources
+C:\Users\Administrator\Desktop\气泵敲定二版 电流表\气泵敲定一版 - 待改\SLC1-N\obj\Debug\SLC1_N.LogOn.resources
+C:\Users\Administrator\Desktop\气泵敲定二版 电流表\气泵敲定一版 - 待改\SLC1-N\obj\Debug\SLC1_N.Machine.resources
+C:\Users\Administrator\Desktop\气泵敲定二版 电流表\气泵敲定一版 - 待改\SLC1-N\obj\Debug\SLC1_N.MESConfig.resources
+C:\Users\Administrator\Desktop\气泵敲定二版 电流表\气泵敲定一版 - 待改\SLC1-N\obj\Debug\SLC1_N.PLCConfig.resources
+C:\Users\Administrator\Desktop\气泵敲定二版 电流表\气泵敲定一版 - 待改\SLC1-N\obj\Debug\SLC1_N.Port.resources
+C:\Users\Administrator\Desktop\气泵敲定二版 电流表\气泵敲定一版 - 待改\SLC1-N\obj\Debug\SLC1_N.Properties.Resources.resources
+C:\Users\Administrator\Desktop\气泵敲定二版 电流表\气泵敲定一版 - 待改\SLC1-N\obj\Debug\SLC1_N.ResetPassword.resources
+C:\Users\Administrator\Desktop\气泵敲定二版 电流表\气泵敲定一版 - 待改\SLC1-N\obj\Debug\SLC1_N.Save.resources
+C:\Users\Administrator\Desktop\气泵敲定二版 电流表\气泵敲定一版 - 待改\SLC1-N\obj\Debug\SLC1_N.SelectMachine.resources
+C:\Users\Administrator\Desktop\气泵敲定二版 电流表\气泵敲定一版 - 待改\SLC1-N\obj\Debug\SLC1_N.SQLConnectionMethod.resources
+C:\Users\Administrator\Desktop\气泵敲定二版 电流表\气泵敲定一版 - 待改\SLC1-N\obj\Debug\SLC1_N.TestParams.resources
+C:\Users\Administrator\Desktop\气泵敲定二版 电流表\气泵敲定一版 - 待改\SLC1-N\obj\Debug\SLC1_N.UserManagement.resources
+C:\Users\Administrator\Desktop\气泵敲定二版 电流表\气泵敲定一版 - 待改\SLC1-N\obj\Debug\SLC1_N.UserPassword.resources
+C:\Users\Administrator\Desktop\气泵敲定二版 电流表\气泵敲定一版 - 待改\SLC1-N\obj\Debug\SLC1_N.Warning.resources
+C:\Users\Administrator\Desktop\气泵敲定二版 电流表\气泵敲定一版 - 待改\SLC1-N\obj\Debug\SLC1-N.csproj.GenerateResource.cache
+C:\Users\Administrator\Desktop\气泵敲定二版 电流表\气泵敲定一版 - 待改\SLC1-N\obj\Debug\SLC1-N.csproj.CoreCompileInputs.cache
+C:\Users\Administrator\Desktop\气泵敲定二版 电流表\气泵敲定一版 - 待改\SLC1-N\obj\Debug\SLC1-N.csproj.CopyComplete
+C:\Users\Administrator\Desktop\气泵敲定二版 电流表\气泵敲定一版 - 待改\SLC1-N\obj\Debug\LL28-N-V1.4.exe
+C:\Users\Administrator\Desktop\气泵敲定二版 电流表\气泵敲定一版 - 待改\SLC1-N\obj\Debug\LL28-N-V1.4.pdb
+C:\Users\Administrator\Desktop\气泵敲定二版 电流表\气泵敲定一版 - 待改\SLC1-N\bin\Debug\SunnyUI.Common.dll
+C:\Users\qiyu0\Desktop\气泵敲定\气泵敲定二版 电流表 -2\气泵敲定一版 - 待改\SLC1-N\bin\Debug\TCP\ITcpClient.cs
+C:\Users\qiyu0\Desktop\气泵敲定\气泵敲定二版 电流表 -2\气泵敲定一版 - 待改\SLC1-N\bin\Debug\TCP\ITcpClient.Designer.cs
+C:\Users\qiyu0\Desktop\气泵敲定\气泵敲定二版 电流表 -2\气泵敲定一版 - 待改\SLC1-N\bin\Debug\NetWorkHelper.dll
+C:\Users\qiyu0\Desktop\气泵敲定\气泵敲定二版 电流表 -2\气泵敲定一版 - 待改\SLC1-N\bin\Debug\Newtonsoft.Json.dll
+C:\Users\qiyu0\Desktop\气泵敲定\气泵敲定二版 电流表 -2\气泵敲定一版 - 待改\SLC1-N\bin\Debug\SunnyUI.dll
+C:\Users\qiyu0\Desktop\气泵敲定\气泵敲定二版 电流表 -2\气泵敲定一版 - 待改\SLC1-N\bin\Debug\SunnyUI.Common.dll
+C:\Users\qiyu0\Desktop\气泵敲定\气泵敲定二版 电流表 -2\气泵敲定一版 - 待改\SLC1-N\bin\Debug\NetWorkHelper.pdb
+C:\Users\qiyu0\Desktop\气泵敲定\气泵敲定二版 电流表 -2\气泵敲定一版 - 待改\SLC1-N\bin\Debug\Newtonsoft.Json.xml
+C:\Users\qiyu0\Desktop\气泵敲定\气泵敲定二版 电流表 -2\气泵敲定一版 - 待改\SLC1-N\obj\Debug\SLC1-N.csproj.AssemblyReference.cache
+C:\Users\qiyu0\Desktop\气泵敲定\气泵敲定二版 电流表 -2\气泵敲定一版 - 待改\SLC1-N\obj\Debug\SLC1-N.csproj.SuggestedBindingRedirects.cache
+C:\Users\qiyu0\Desktop\气泵敲定\气泵敲定二版 电流表 -2\气泵敲定一版 - 待改\SLC1-N\obj\Debug\Interop.ADOX.dll
+C:\Users\qiyu0\Desktop\气泵敲定\气泵敲定二版 电流表 -2\气泵敲定一版 - 待改\SLC1-N\obj\Debug\SLC1-N.csproj.ResolveComReference.cache
+C:\Users\qiyu0\Desktop\气泵敲定\气泵敲定二版 电流表 -2\气泵敲定一版 - 待改\SLC1-N\obj\Debug\SLC1_N.Config.resources
+C:\Users\qiyu0\Desktop\气泵敲定\气泵敲定二版 电流表 -2\气泵敲定一版 - 待改\SLC1-N\obj\Debug\SLC1_N.ConfigLogOn.resources
+C:\Users\qiyu0\Desktop\气泵敲定\气泵敲定二版 电流表 -2\气泵敲定一版 - 待改\SLC1-N\obj\Debug\SLC1_N.ConfigTCP.resources
+C:\Users\qiyu0\Desktop\气泵敲定\气泵敲定二版 电流表 -2\气泵敲定一版 - 待改\SLC1-N\obj\Debug\SLC1_N.Electricity.resources
+C:\Users\qiyu0\Desktop\气泵敲定\气泵敲定二版 电流表 -2\气泵敲定一版 - 待改\SLC1-N\obj\Debug\SLC1_N.FlowConfig.resources
+C:\Users\qiyu0\Desktop\气泵敲定\气泵敲定二版 电流表 -2\气泵敲定一版 - 待改\SLC1-N\obj\Debug\SLC1_N.Form1.resources
+C:\Users\qiyu0\Desktop\气泵敲定\气泵敲定二版 电流表 -2\气泵敲定一版 - 待改\SLC1-N\obj\Debug\SLC1_N.Help.resources
+C:\Users\qiyu0\Desktop\气泵敲定\气泵敲定二版 电流表 -2\气泵敲定一版 - 待改\SLC1-N\obj\Debug\SLC1_N.LinConfig.resources
+C:\Users\qiyu0\Desktop\气泵敲定\气泵敲定二版 电流表 -2\气泵敲定一版 - 待改\SLC1-N\obj\Debug\SLC1_N.LogOn.resources
+C:\Users\qiyu0\Desktop\气泵敲定\气泵敲定二版 电流表 -2\气泵敲定一版 - 待改\SLC1-N\obj\Debug\SLC1_N.Machine.resources
+C:\Users\qiyu0\Desktop\气泵敲定\气泵敲定二版 电流表 -2\气泵敲定一版 - 待改\SLC1-N\obj\Debug\SLC1_N.MESConfig.resources
+C:\Users\qiyu0\Desktop\气泵敲定\气泵敲定二版 电流表 -2\气泵敲定一版 - 待改\SLC1-N\obj\Debug\SLC1_N.PLCConfig.resources
+C:\Users\qiyu0\Desktop\气泵敲定\气泵敲定二版 电流表 -2\气泵敲定一版 - 待改\SLC1-N\obj\Debug\SLC1_N.Port.resources
+C:\Users\qiyu0\Desktop\气泵敲定\气泵敲定二版 电流表 -2\气泵敲定一版 - 待改\SLC1-N\obj\Debug\SLC1_N.Properties.Resources.resources
+C:\Users\qiyu0\Desktop\气泵敲定\气泵敲定二版 电流表 -2\气泵敲定一版 - 待改\SLC1-N\obj\Debug\SLC1_N.ResetPassword.resources
+C:\Users\qiyu0\Desktop\气泵敲定\气泵敲定二版 电流表 -2\气泵敲定一版 - 待改\SLC1-N\obj\Debug\SLC1_N.Save.resources
+C:\Users\qiyu0\Desktop\气泵敲定\气泵敲定二版 电流表 -2\气泵敲定一版 - 待改\SLC1-N\obj\Debug\SLC1_N.SelectMachine.resources
+C:\Users\qiyu0\Desktop\气泵敲定\气泵敲定二版 电流表 -2\气泵敲定一版 - 待改\SLC1-N\obj\Debug\SLC1_N.SQLConnectionMethod.resources
+C:\Users\qiyu0\Desktop\气泵敲定\气泵敲定二版 电流表 -2\气泵敲定一版 - 待改\SLC1-N\obj\Debug\SLC1_N.TestParams.resources
+C:\Users\qiyu0\Desktop\气泵敲定\气泵敲定二版 电流表 -2\气泵敲定一版 - 待改\SLC1-N\obj\Debug\SLC1_N.UserManagement.resources
+C:\Users\qiyu0\Desktop\气泵敲定\气泵敲定二版 电流表 -2\气泵敲定一版 - 待改\SLC1-N\obj\Debug\SLC1_N.UserPassword.resources
+C:\Users\qiyu0\Desktop\气泵敲定\气泵敲定二版 电流表 -2\气泵敲定一版 - 待改\SLC1-N\obj\Debug\SLC1_N.Warning.resources
+C:\Users\qiyu0\Desktop\气泵敲定\气泵敲定二版 电流表 -2\气泵敲定一版 - 待改\SLC1-N\obj\Debug\SLC1-N.csproj.GenerateResource.cache
+C:\Users\qiyu0\Desktop\气泵敲定\气泵敲定二版 电流表 -2\气泵敲定一版 - 待改\SLC1-N\obj\Debug\SLC1-N.csproj.CoreCompileInputs.cache
+C:\Users\qiyu0\Desktop\气泵敲定\气泵敲定二版 电流表 -2\气泵敲定一版 - 待改\SLC1-N\obj\Debug\SLC1-N.csproj.CopyComplete
+C:\Users\qiyu0\Desktop\气泵敲定\气泵敲定二版 电流表 -2\气泵敲定一版 - 待改\SLC1-N\bin\Debug\LL28-N-V1.5.exe.config
+C:\Users\qiyu0\Desktop\气泵敲定\气泵敲定二版 电流表 -2\气泵敲定一版 - 待改\SLC1-N\bin\Debug\LL28-N-V1.5.exe
+C:\Users\qiyu0\Desktop\气泵敲定\气泵敲定二版 电流表 -2\气泵敲定一版 - 待改\SLC1-N\bin\Debug\LL28-N-V1.5.pdb
+C:\Users\qiyu0\Desktop\气泵敲定\气泵敲定二版 电流表 -2\气泵敲定一版 - 待改\SLC1-N\obj\Debug\LL28-N-V1.5.exe.config
+C:\Users\qiyu0\Desktop\气泵敲定\气泵敲定二版 电流表 -2\气泵敲定一版 - 待改\SLC1-N\obj\Debug\LL28-N-V1.5.exe
+C:\Users\qiyu0\Desktop\气泵敲定\气泵敲定二版 电流表 -2\气泵敲定一版 - 待改\SLC1-N\obj\Debug\LL28-N-V1.5.pdb
+E:\研发部\对接项目\唐群\2023-3-15\气泵敲定二版\SLC1-N\bin\Debug\TCP\ITcpClient.cs
+E:\研发部\对接项目\唐群\2023-3-15\气泵敲定二版\SLC1-N\bin\Debug\TCP\ITcpClient.Designer.cs
+E:\研发部\对接项目\唐群\2023-3-15\气泵敲定二版\SLC1-N\bin\Debug\LL28-N-V1.5.exe.config
+E:\研发部\对接项目\唐群\2023-3-15\气泵敲定二版\SLC1-N\bin\Debug\LL28-N-V1.5.exe
+E:\研发部\对接项目\唐群\2023-3-15\气泵敲定二版\SLC1-N\bin\Debug\LL28-N-V1.5.pdb
+E:\研发部\对接项目\唐群\2023-3-15\气泵敲定二版\SLC1-N\bin\Debug\NetWorkHelper.dll
+E:\研发部\对接项目\唐群\2023-3-15\气泵敲定二版\SLC1-N\bin\Debug\Newtonsoft.Json.dll
+E:\研发部\对接项目\唐群\2023-3-15\气泵敲定二版\SLC1-N\bin\Debug\SunnyUI.Common.dll
+E:\研发部\对接项目\唐群\2023-3-15\气泵敲定二版\SLC1-N\bin\Debug\NetWorkHelper.pdb
+E:\研发部\对接项目\唐群\2023-3-15\气泵敲定二版\SLC1-N\bin\Debug\Newtonsoft.Json.xml
+E:\研发部\对接项目\唐群\2023-3-15\气泵敲定二版\SLC1-N\obj\Debug\SLC1-N.csproj.AssemblyReference.cache
+E:\研发部\对接项目\唐群\2023-3-15\气泵敲定二版\SLC1-N\obj\Debug\SLC1-N.csproj.SuggestedBindingRedirects.cache
+E:\研发部\对接项目\唐群\2023-3-15\气泵敲定二版\SLC1-N\obj\Debug\LL28-N-V1.5.exe.config
+E:\研发部\对接项目\唐群\2023-3-15\气泵敲定二版\SLC1-N\obj\Debug\Interop.ADOX.dll
+E:\研发部\对接项目\唐群\2023-3-15\气泵敲定二版\SLC1-N\obj\Debug\SLC1-N.csproj.ResolveComReference.cache
+E:\研发部\对接项目\唐群\2023-3-15\气泵敲定二版\SLC1-N\obj\Debug\SLC1_N.Config.resources
+E:\研发部\对接项目\唐群\2023-3-15\气泵敲定二版\SLC1-N\obj\Debug\SLC1_N.ConfigLogOn.resources
+E:\研发部\对接项目\唐群\2023-3-15\气泵敲定二版\SLC1-N\obj\Debug\SLC1_N.ConfigTCP.resources
+E:\研发部\对接项目\唐群\2023-3-15\气泵敲定二版\SLC1-N\obj\Debug\SLC1_N.Electricity.resources
+E:\研发部\对接项目\唐群\2023-3-15\气泵敲定二版\SLC1-N\obj\Debug\SLC1_N.FlowConfig.resources
+E:\研发部\对接项目\唐群\2023-3-15\气泵敲定二版\SLC1-N\obj\Debug\SLC1_N.Form1.resources
+E:\研发部\对接项目\唐群\2023-3-15\气泵敲定二版\SLC1-N\obj\Debug\SLC1_N.Help.resources
+E:\研发部\对接项目\唐群\2023-3-15\气泵敲定二版\SLC1-N\obj\Debug\SLC1_N.LinConfig.resources
+E:\研发部\对接项目\唐群\2023-3-15\气泵敲定二版\SLC1-N\obj\Debug\SLC1_N.LogOn.resources
+E:\研发部\对接项目\唐群\2023-3-15\气泵敲定二版\SLC1-N\obj\Debug\SLC1_N.Machine.resources
+E:\研发部\对接项目\唐群\2023-3-15\气泵敲定二版\SLC1-N\obj\Debug\SLC1_N.MESConfig.resources
+E:\研发部\对接项目\唐群\2023-3-15\气泵敲定二版\SLC1-N\obj\Debug\SLC1_N.PLCConfig.resources
+E:\研发部\对接项目\唐群\2023-3-15\气泵敲定二版\SLC1-N\obj\Debug\SLC1_N.Port.resources
+E:\研发部\对接项目\唐群\2023-3-15\气泵敲定二版\SLC1-N\obj\Debug\SLC1_N.Properties.Resources.resources
+E:\研发部\对接项目\唐群\2023-3-15\气泵敲定二版\SLC1-N\obj\Debug\SLC1_N.ResetPassword.resources
+E:\研发部\对接项目\唐群\2023-3-15\气泵敲定二版\SLC1-N\obj\Debug\SLC1_N.Save.resources
+E:\研发部\对接项目\唐群\2023-3-15\气泵敲定二版\SLC1-N\obj\Debug\SLC1_N.SelectMachine.resources
+E:\研发部\对接项目\唐群\2023-3-15\气泵敲定二版\SLC1-N\obj\Debug\SLC1_N.SQLConnectionMethod.resources
+E:\研发部\对接项目\唐群\2023-3-15\气泵敲定二版\SLC1-N\obj\Debug\SLC1_N.TestParams.resources
+E:\研发部\对接项目\唐群\2023-3-15\气泵敲定二版\SLC1-N\obj\Debug\SLC1_N.UserManagement.resources
+E:\研发部\对接项目\唐群\2023-3-15\气泵敲定二版\SLC1-N\obj\Debug\SLC1_N.UserPassword.resources
+E:\研发部\对接项目\唐群\2023-3-15\气泵敲定二版\SLC1-N\obj\Debug\SLC1_N.Warning.resources
+E:\研发部\对接项目\唐群\2023-3-15\气泵敲定二版\SLC1-N\obj\Debug\SLC1-N.csproj.GenerateResource.cache
+E:\研发部\对接项目\唐群\2023-3-15\气泵敲定二版\SLC1-N\obj\Debug\SLC1-N.csproj.CoreCompileInputs.cache
+E:\研发部\对接项目\唐群\2023-3-15\气泵敲定二版\SLC1-N\obj\Debug\SLC1-N.csproj.CopyComplete
+E:\研发部\对接项目\唐群\2023-3-15\气泵敲定二版\SLC1-N\obj\Debug\LL28-N-V1.5.exe
+E:\研发部\对接项目\唐群\2023-3-15\气泵敲定二版\SLC1-N\obj\Debug\LL28-N-V1.5.pdb
+C:\Users\马凯\Documents\WeChat Files\wxid_6brgamxrh8xb12\FileStorage\File\2023-03\气泵敲定二版1\气泵敲定二版\SLC1-N\bin\Debug\TCP\ITcpClient.cs
+C:\Users\马凯\Documents\WeChat Files\wxid_6brgamxrh8xb12\FileStorage\File\2023-03\气泵敲定二版1\气泵敲定二版\SLC1-N\bin\Debug\TCP\ITcpClient.Designer.cs
+C:\Users\马凯\Documents\WeChat Files\wxid_6brgamxrh8xb12\FileStorage\File\2023-03\气泵敲定二版1\气泵敲定二版\SLC1-N\bin\Debug\LL28-N-V1.5.exe.config
+C:\Users\马凯\Documents\WeChat Files\wxid_6brgamxrh8xb12\FileStorage\File\2023-03\气泵敲定二版1\气泵敲定二版\SLC1-N\bin\Debug\LL28-N-V1.5.exe
+C:\Users\马凯\Documents\WeChat Files\wxid_6brgamxrh8xb12\FileStorage\File\2023-03\气泵敲定二版1\气泵敲定二版\SLC1-N\bin\Debug\LL28-N-V1.5.pdb
+C:\Users\马凯\Documents\WeChat Files\wxid_6brgamxrh8xb12\FileStorage\File\2023-03\气泵敲定二版1\气泵敲定二版\SLC1-N\bin\Debug\NetWorkHelper.dll
+C:\Users\马凯\Documents\WeChat Files\wxid_6brgamxrh8xb12\FileStorage\File\2023-03\气泵敲定二版1\气泵敲定二版\SLC1-N\bin\Debug\Newtonsoft.Json.dll
+C:\Users\马凯\Documents\WeChat Files\wxid_6brgamxrh8xb12\FileStorage\File\2023-03\气泵敲定二版1\气泵敲定二版\SLC1-N\bin\Debug\NetWorkHelper.pdb
+C:\Users\马凯\Documents\WeChat Files\wxid_6brgamxrh8xb12\FileStorage\File\2023-03\气泵敲定二版1\气泵敲定二版\SLC1-N\bin\Debug\Newtonsoft.Json.xml
+C:\Users\马凯\Documents\WeChat Files\wxid_6brgamxrh8xb12\FileStorage\File\2023-03\气泵敲定二版1\气泵敲定二版\SLC1-N\obj\Debug\SLC1-N.csproj.AssemblyReference.cache
+C:\Users\马凯\Documents\WeChat Files\wxid_6brgamxrh8xb12\FileStorage\File\2023-03\气泵敲定二版1\气泵敲定二版\SLC1-N\obj\Debug\SLC1-N.csproj.SuggestedBindingRedirects.cache
+C:\Users\马凯\Documents\WeChat Files\wxid_6brgamxrh8xb12\FileStorage\File\2023-03\气泵敲定二版1\气泵敲定二版\SLC1-N\obj\Debug\LL28-N-V1.5.exe.config
+C:\Users\马凯\Documents\WeChat Files\wxid_6brgamxrh8xb12\FileStorage\File\2023-03\气泵敲定二版1\气泵敲定二版\SLC1-N\obj\Debug\Interop.ADOX.dll
+C:\Users\马凯\Documents\WeChat Files\wxid_6brgamxrh8xb12\FileStorage\File\2023-03\气泵敲定二版1\气泵敲定二版\SLC1-N\obj\Debug\SLC1-N.csproj.ResolveComReference.cache
+C:\Users\马凯\Documents\WeChat Files\wxid_6brgamxrh8xb12\FileStorage\File\2023-03\气泵敲定二版1\气泵敲定二版\SLC1-N\obj\Debug\SLC1_N.Config.resources
+C:\Users\马凯\Documents\WeChat Files\wxid_6brgamxrh8xb12\FileStorage\File\2023-03\气泵敲定二版1\气泵敲定二版\SLC1-N\obj\Debug\SLC1_N.ConfigLogOn.resources
+C:\Users\马凯\Documents\WeChat Files\wxid_6brgamxrh8xb12\FileStorage\File\2023-03\气泵敲定二版1\气泵敲定二版\SLC1-N\obj\Debug\SLC1_N.ConfigTCP.resources
+C:\Users\马凯\Documents\WeChat Files\wxid_6brgamxrh8xb12\FileStorage\File\2023-03\气泵敲定二版1\气泵敲定二版\SLC1-N\obj\Debug\SLC1_N.Electricity.resources
+C:\Users\马凯\Documents\WeChat Files\wxid_6brgamxrh8xb12\FileStorage\File\2023-03\气泵敲定二版1\气泵敲定二版\SLC1-N\obj\Debug\SLC1_N.FlowConfig.resources
+C:\Users\马凯\Documents\WeChat Files\wxid_6brgamxrh8xb12\FileStorage\File\2023-03\气泵敲定二版1\气泵敲定二版\SLC1-N\obj\Debug\SLC1_N.Form1.resources
+C:\Users\马凯\Documents\WeChat Files\wxid_6brgamxrh8xb12\FileStorage\File\2023-03\气泵敲定二版1\气泵敲定二版\SLC1-N\obj\Debug\SLC1_N.Help.resources
+C:\Users\马凯\Documents\WeChat Files\wxid_6brgamxrh8xb12\FileStorage\File\2023-03\气泵敲定二版1\气泵敲定二版\SLC1-N\obj\Debug\SLC1_N.LinConfig.resources
+C:\Users\马凯\Documents\WeChat Files\wxid_6brgamxrh8xb12\FileStorage\File\2023-03\气泵敲定二版1\气泵敲定二版\SLC1-N\obj\Debug\SLC1_N.LogOn.resources
+C:\Users\马凯\Documents\WeChat Files\wxid_6brgamxrh8xb12\FileStorage\File\2023-03\气泵敲定二版1\气泵敲定二版\SLC1-N\obj\Debug\SLC1_N.Machine.resources
+C:\Users\马凯\Documents\WeChat Files\wxid_6brgamxrh8xb12\FileStorage\File\2023-03\气泵敲定二版1\气泵敲定二版\SLC1-N\obj\Debug\SLC1_N.MESConfig.resources
+C:\Users\马凯\Documents\WeChat Files\wxid_6brgamxrh8xb12\FileStorage\File\2023-03\气泵敲定二版1\气泵敲定二版\SLC1-N\obj\Debug\SLC1_N.PLCConfig.resources
+C:\Users\马凯\Documents\WeChat Files\wxid_6brgamxrh8xb12\FileStorage\File\2023-03\气泵敲定二版1\气泵敲定二版\SLC1-N\obj\Debug\SLC1_N.Port.resources
+C:\Users\马凯\Documents\WeChat Files\wxid_6brgamxrh8xb12\FileStorage\File\2023-03\气泵敲定二版1\气泵敲定二版\SLC1-N\obj\Debug\SLC1_N.Properties.Resources.resources
+C:\Users\马凯\Documents\WeChat Files\wxid_6brgamxrh8xb12\FileStorage\File\2023-03\气泵敲定二版1\气泵敲定二版\SLC1-N\obj\Debug\SLC1_N.ResetPassword.resources
+C:\Users\马凯\Documents\WeChat Files\wxid_6brgamxrh8xb12\FileStorage\File\2023-03\气泵敲定二版1\气泵敲定二版\SLC1-N\obj\Debug\SLC1_N.Save.resources
+C:\Users\马凯\Documents\WeChat Files\wxid_6brgamxrh8xb12\FileStorage\File\2023-03\气泵敲定二版1\气泵敲定二版\SLC1-N\obj\Debug\SLC1_N.SelectMachine.resources
+C:\Users\马凯\Documents\WeChat Files\wxid_6brgamxrh8xb12\FileStorage\File\2023-03\气泵敲定二版1\气泵敲定二版\SLC1-N\obj\Debug\SLC1_N.SQLConnectionMethod.resources
+C:\Users\马凯\Documents\WeChat Files\wxid_6brgamxrh8xb12\FileStorage\File\2023-03\气泵敲定二版1\气泵敲定二版\SLC1-N\obj\Debug\SLC1_N.TestParams.resources
+C:\Users\马凯\Documents\WeChat Files\wxid_6brgamxrh8xb12\FileStorage\File\2023-03\气泵敲定二版1\气泵敲定二版\SLC1-N\obj\Debug\SLC1_N.UserManagement.resources
+C:\Users\马凯\Documents\WeChat Files\wxid_6brgamxrh8xb12\FileStorage\File\2023-03\气泵敲定二版1\气泵敲定二版\SLC1-N\obj\Debug\SLC1_N.UserPassword.resources
+C:\Users\马凯\Documents\WeChat Files\wxid_6brgamxrh8xb12\FileStorage\File\2023-03\气泵敲定二版1\气泵敲定二版\SLC1-N\obj\Debug\SLC1_N.Warning.resources
+C:\Users\马凯\Documents\WeChat Files\wxid_6brgamxrh8xb12\FileStorage\File\2023-03\气泵敲定二版1\气泵敲定二版\SLC1-N\obj\Debug\SLC1-N.csproj.GenerateResource.cache
+C:\Users\马凯\Documents\WeChat Files\wxid_6brgamxrh8xb12\FileStorage\File\2023-03\气泵敲定二版1\气泵敲定二版\SLC1-N\obj\Debug\SLC1-N.csproj.CoreCompileInputs.cache
+C:\Users\马凯\Documents\WeChat Files\wxid_6brgamxrh8xb12\FileStorage\File\2023-03\气泵敲定二版1\气泵敲定二版\SLC1-N\obj\Debug\SLC1-N.csproj.CopyComplete
+C:\Users\马凯\Documents\WeChat Files\wxid_6brgamxrh8xb12\FileStorage\File\2023-03\气泵敲定二版1\气泵敲定二版\SLC1-N\obj\Debug\LL28-N-V1.5.exe
+C:\Users\马凯\Documents\WeChat Files\wxid_6brgamxrh8xb12\FileStorage\File\2023-03\气泵敲定二版1\气泵敲定二版\SLC1-N\obj\Debug\LL28-N-V1.5.pdb
+C:\Users\马凯\Desktop\XXXXXX\最新\气泵敲定二版\SLC1-N\bin\Debug\TCP\ITcpClient.cs
+C:\Users\马凯\Desktop\XXXXXX\最新\气泵敲定二版\SLC1-N\bin\Debug\TCP\ITcpClient.Designer.cs
+C:\Users\马凯\Desktop\XXXXXX\最新\气泵敲定二版\SLC1-N\bin\Debug\LL28-N-V1.5.exe.config
+C:\Users\马凯\Desktop\XXXXXX\最新\气泵敲定二版\SLC1-N\bin\Debug\LL28-N-V1.5.exe
+C:\Users\马凯\Desktop\XXXXXX\最新\气泵敲定二版\SLC1-N\bin\Debug\LL28-N-V1.5.pdb
+C:\Users\马凯\Desktop\XXXXXX\最新\气泵敲定二版\SLC1-N\bin\Debug\NetWorkHelper.dll
+C:\Users\马凯\Desktop\XXXXXX\最新\气泵敲定二版\SLC1-N\bin\Debug\Newtonsoft.Json.dll
+C:\Users\马凯\Desktop\XXXXXX\最新\气泵敲定二版\SLC1-N\bin\Debug\SunnyUI.Common.dll
+C:\Users\马凯\Desktop\XXXXXX\最新\气泵敲定二版\SLC1-N\bin\Debug\NetWorkHelper.pdb
+C:\Users\马凯\Desktop\XXXXXX\最新\气泵敲定二版\SLC1-N\bin\Debug\Newtonsoft.Json.xml
+C:\Users\马凯\Desktop\XXXXXX\最新\气泵敲定二版\SLC1-N\obj\Debug\SLC1-N.csproj.AssemblyReference.cache
+C:\Users\马凯\Desktop\XXXXXX\最新\气泵敲定二版\SLC1-N\obj\Debug\SLC1-N.csproj.SuggestedBindingRedirects.cache
+C:\Users\马凯\Desktop\XXXXXX\最新\气泵敲定二版\SLC1-N\obj\Debug\LL28-N-V1.5.exe.config
+C:\Users\马凯\Desktop\XXXXXX\最新\气泵敲定二版\SLC1-N\obj\Debug\Interop.ADOX.dll
+C:\Users\马凯\Desktop\XXXXXX\最新\气泵敲定二版\SLC1-N\obj\Debug\SLC1-N.csproj.ResolveComReference.cache
+C:\Users\马凯\Desktop\XXXXXX\最新\气泵敲定二版\SLC1-N\obj\Debug\SLC1_N.Config.resources
+C:\Users\马凯\Desktop\XXXXXX\最新\气泵敲定二版\SLC1-N\obj\Debug\SLC1_N.ConfigLogOn.resources
+C:\Users\马凯\Desktop\XXXXXX\最新\气泵敲定二版\SLC1-N\obj\Debug\SLC1_N.ConfigTCP.resources
+C:\Users\马凯\Desktop\XXXXXX\最新\气泵敲定二版\SLC1-N\obj\Debug\SLC1_N.Electricity.resources
+C:\Users\马凯\Desktop\XXXXXX\最新\气泵敲定二版\SLC1-N\obj\Debug\SLC1_N.FlowConfig.resources
+C:\Users\马凯\Desktop\XXXXXX\最新\气泵敲定二版\SLC1-N\obj\Debug\SLC1_N.Form1.resources
+C:\Users\马凯\Desktop\XXXXXX\最新\气泵敲定二版\SLC1-N\obj\Debug\SLC1_N.Help.resources
+C:\Users\马凯\Desktop\XXXXXX\最新\气泵敲定二版\SLC1-N\obj\Debug\SLC1_N.LinConfig.resources
+C:\Users\马凯\Desktop\XXXXXX\最新\气泵敲定二版\SLC1-N\obj\Debug\SLC1_N.LogOn.resources
+C:\Users\马凯\Desktop\XXXXXX\最新\气泵敲定二版\SLC1-N\obj\Debug\SLC1_N.Machine.resources
+C:\Users\马凯\Desktop\XXXXXX\最新\气泵敲定二版\SLC1-N\obj\Debug\SLC1_N.MESConfig.resources
+C:\Users\马凯\Desktop\XXXXXX\最新\气泵敲定二版\SLC1-N\obj\Debug\SLC1_N.PLCConfig.resources
+C:\Users\马凯\Desktop\XXXXXX\最新\气泵敲定二版\SLC1-N\obj\Debug\SLC1_N.Port.resources
+C:\Users\马凯\Desktop\XXXXXX\最新\气泵敲定二版\SLC1-N\obj\Debug\SLC1_N.Properties.Resources.resources
+C:\Users\马凯\Desktop\XXXXXX\最新\气泵敲定二版\SLC1-N\obj\Debug\SLC1_N.ResetPassword.resources
+C:\Users\马凯\Desktop\XXXXXX\最新\气泵敲定二版\SLC1-N\obj\Debug\SLC1_N.Save.resources
+C:\Users\马凯\Desktop\XXXXXX\最新\气泵敲定二版\SLC1-N\obj\Debug\SLC1_N.SelectMachine.resources
+C:\Users\马凯\Desktop\XXXXXX\最新\气泵敲定二版\SLC1-N\obj\Debug\SLC1_N.SQLConnectionMethod.resources
+C:\Users\马凯\Desktop\XXXXXX\最新\气泵敲定二版\SLC1-N\obj\Debug\SLC1_N.TestParams.resources
+C:\Users\马凯\Desktop\XXXXXX\最新\气泵敲定二版\SLC1-N\obj\Debug\SLC1_N.UserManagement.resources
+C:\Users\马凯\Desktop\XXXXXX\最新\气泵敲定二版\SLC1-N\obj\Debug\SLC1_N.UserPassword.resources
+C:\Users\马凯\Desktop\XXXXXX\最新\气泵敲定二版\SLC1-N\obj\Debug\SLC1_N.Warning.resources
+C:\Users\马凯\Desktop\XXXXXX\最新\气泵敲定二版\SLC1-N\obj\Debug\SLC1-N.csproj.GenerateResource.cache
+C:\Users\马凯\Desktop\XXXXXX\最新\气泵敲定二版\SLC1-N\obj\Debug\SLC1-N.csproj.CoreCompileInputs.cache
+C:\Users\马凯\Desktop\XXXXXX\最新\气泵敲定二版\SLC1-N\obj\Debug\SLC1-N.csproj.CopyComplete
+C:\Users\马凯\Desktop\XXXXXX\最新\气泵敲定二版\SLC1-N\obj\Debug\LL28-N-V1.5.exe
+C:\Users\马凯\Desktop\XXXXXX\最新\气泵敲定二版\SLC1-N\obj\Debug\LL28-N-V1.5.pdb
+F:\凌龙项目\项目2023\气泵敲定二版_唐群_0505\SLC1-N\bin\Debug\TCP\ITcpClient.cs
+F:\凌龙项目\项目2023\气泵敲定二版_唐群_0505\SLC1-N\bin\Debug\TCP\ITcpClient.Designer.cs
+F:\凌龙项目\项目2023\气泵敲定二版_唐群_0505\SLC1-N\bin\Debug\LL28-N-V1.5.exe.config
+F:\凌龙项目\项目2023\气泵敲定二版_唐群_0505\SLC1-N\bin\Debug\LL28-N-V1.5.exe
+F:\凌龙项目\项目2023\气泵敲定二版_唐群_0505\SLC1-N\bin\Debug\LL28-N-V1.5.pdb
+F:\凌龙项目\项目2023\气泵敲定二版_唐群_0505\SLC1-N\bin\Debug\NetWorkHelper.dll
+F:\凌龙项目\项目2023\气泵敲定二版_唐群_0505\SLC1-N\bin\Debug\Newtonsoft.Json.dll
+F:\凌龙项目\项目2023\气泵敲定二版_唐群_0505\SLC1-N\bin\Debug\NetWorkHelper.pdb
+F:\凌龙项目\项目2023\气泵敲定二版_唐群_0505\SLC1-N\bin\Debug\Newtonsoft.Json.xml
+F:\凌龙项目\项目2023\气泵敲定二版_唐群_0505\SLC1-N\obj\Debug\SLC1-N.csproj.AssemblyReference.cache
+F:\凌龙项目\项目2023\气泵敲定二版_唐群_0505\SLC1-N\obj\Debug\Interop.ADOX.dll
+F:\凌龙项目\项目2023\气泵敲定二版_唐群_0505\SLC1-N\obj\Debug\SLC1-N.csproj.ResolveComReference.cache
+F:\凌龙项目\项目2023\气泵敲定二版_唐群_0505\SLC1-N\obj\Debug\SLC1_N.Config.resources
+F:\凌龙项目\项目2023\气泵敲定二版_唐群_0505\SLC1-N\obj\Debug\SLC1_N.ConfigLogOn.resources
+F:\凌龙项目\项目2023\气泵敲定二版_唐群_0505\SLC1-N\obj\Debug\SLC1_N.ConfigTCP.resources
+F:\凌龙项目\项目2023\气泵敲定二版_唐群_0505\SLC1-N\obj\Debug\SLC1_N.Electricity.resources
+F:\凌龙项目\项目2023\气泵敲定二版_唐群_0505\SLC1-N\obj\Debug\SLC1_N.FlowConfig.resources
+F:\凌龙项目\项目2023\气泵敲定二版_唐群_0505\SLC1-N\obj\Debug\SLC1_N.Form1.resources
+F:\凌龙项目\项目2023\气泵敲定二版_唐群_0505\SLC1-N\obj\Debug\SLC1_N.Help.resources
+F:\凌龙项目\项目2023\气泵敲定二版_唐群_0505\SLC1-N\obj\Debug\SLC1_N.LinConfig.resources
+F:\凌龙项目\项目2023\气泵敲定二版_唐群_0505\SLC1-N\obj\Debug\SLC1_N.LogOn.resources
+F:\凌龙项目\项目2023\气泵敲定二版_唐群_0505\SLC1-N\obj\Debug\SLC1_N.Machine.resources
+F:\凌龙项目\项目2023\气泵敲定二版_唐群_0505\SLC1-N\obj\Debug\SLC1_N.MESConfig.resources
+F:\凌龙项目\项目2023\气泵敲定二版_唐群_0505\SLC1-N\obj\Debug\SLC1_N.PLCConfig.resources
+F:\凌龙项目\项目2023\气泵敲定二版_唐群_0505\SLC1-N\obj\Debug\SLC1_N.Port.resources
+F:\凌龙项目\项目2023\气泵敲定二版_唐群_0505\SLC1-N\obj\Debug\SLC1_N.Properties.Resources.resources
+F:\凌龙项目\项目2023\气泵敲定二版_唐群_0505\SLC1-N\obj\Debug\SLC1_N.ResetPassword.resources
+F:\凌龙项目\项目2023\气泵敲定二版_唐群_0505\SLC1-N\obj\Debug\SLC1_N.Save.resources
+F:\凌龙项目\项目2023\气泵敲定二版_唐群_0505\SLC1-N\obj\Debug\SLC1_N.SelectMachine.resources
+F:\凌龙项目\项目2023\气泵敲定二版_唐群_0505\SLC1-N\obj\Debug\SLC1_N.SQLConnectionMethod.resources
+F:\凌龙项目\项目2023\气泵敲定二版_唐群_0505\SLC1-N\obj\Debug\SLC1_N.TestParams.resources
+F:\凌龙项目\项目2023\气泵敲定二版_唐群_0505\SLC1-N\obj\Debug\SLC1_N.UserManagement.resources
+F:\凌龙项目\项目2023\气泵敲定二版_唐群_0505\SLC1-N\obj\Debug\SLC1_N.UserPassword.resources
+F:\凌龙项目\项目2023\气泵敲定二版_唐群_0505\SLC1-N\obj\Debug\SLC1_N.Warning.resources
+F:\凌龙项目\项目2023\气泵敲定二版_唐群_0505\SLC1-N\obj\Debug\SLC1-N.csproj.GenerateResource.cache
+F:\凌龙项目\项目2023\气泵敲定二版_唐群_0505\SLC1-N\obj\Debug\SLC1-N.csproj.CoreCompileInputs.cache
+F:\凌龙项目\项目2023\气泵敲定二版_唐群_0505\SLC1-N\obj\Debug\SLC1-N.csproj.CopyComplete
+F:\凌龙项目\项目2023\气泵敲定二版_唐群_0505\SLC1-N\obj\Debug\LL28-N-V1.5.exe
+F:\凌龙项目\项目2023\气泵敲定二版_唐群_0505\SLC1-N\obj\Debug\LL28-N-V1.5.pdb
+F:\凌龙项目\项目2023\气泵敲定二版_唐群_0505\SLC1-N\bin\Debug\SunnyUI.Common.dll
+D:\上位机\0513\SLC1-N\obj\Debug\SLC1-N.csproj.AssemblyReference.cache
+D:\上位机\0513\SLC1-N\obj\Debug\SLC1-N.csproj.SuggestedBindingRedirects.cache
+D:\上位机\0513\SLC1-N\obj\Debug\Interop.ADOX.dll
+D:\上位机\0513\SLC1-N\obj\Debug\SLC1-N.csproj.ResolveComReference.cache
+D:\上位机\0513\SLC1-N\obj\Debug\SLC1_N.Config.resources
+D:\上位机\0513\SLC1-N\obj\Debug\SLC1_N.ConfigLogOn.resources
+D:\上位机\0513\SLC1-N\obj\Debug\SLC1_N.ConfigTCP.resources
+D:\上位机\0513\SLC1-N\obj\Debug\SLC1_N.Electricity.resources
+D:\上位机\0513\SLC1-N\obj\Debug\SLC1_N.FlowConfig.resources
+D:\上位机\0513\SLC1-N\obj\Debug\SLC1_N.Form1.resources
+D:\上位机\0513\SLC1-N\obj\Debug\SLC1_N.Help.resources
+D:\上位机\0513\SLC1-N\obj\Debug\SLC1_N.LinConfig.resources
+D:\上位机\0513\SLC1-N\obj\Debug\SLC1_N.LogOn.resources
+D:\上位机\0513\SLC1-N\obj\Debug\SLC1_N.Machine.resources
+D:\上位机\0513\SLC1-N\obj\Debug\SLC1_N.MESConfig.resources
+D:\上位机\0513\SLC1-N\obj\Debug\SLC1_N.PLCConfig.resources
+D:\上位机\0513\SLC1-N\obj\Debug\SLC1_N.Port.resources
+D:\上位机\0513\SLC1-N\obj\Debug\SLC1_N.Properties.Resources.resources
+D:\上位机\0513\SLC1-N\obj\Debug\SLC1_N.ResetPassword.resources
+D:\上位机\0513\SLC1-N\obj\Debug\SLC1_N.Save.resources
+D:\上位机\0513\SLC1-N\obj\Debug\SLC1_N.SelectMachine.resources
+D:\上位机\0513\SLC1-N\obj\Debug\SLC1_N.SQLConnectionMethod.resources
+D:\上位机\0513\SLC1-N\obj\Debug\SLC1_N.TestParams.resources
+D:\上位机\0513\SLC1-N\obj\Debug\SLC1_N.UserManagement.resources
+D:\上位机\0513\SLC1-N\obj\Debug\SLC1_N.UserPassword.resources
+D:\上位机\0513\SLC1-N\obj\Debug\SLC1_N.Warning.resources
+D:\上位机\0513\SLC1-N\obj\Debug\SLC1-N.csproj.GenerateResource.cache
+D:\上位机\0513\SLC1-N\obj\Debug\SLC1-N.csproj.CoreCompileInputs.cache
+D:\上位机\0513\SLC1-N\obj\Debug\LL28-N-V1.5.exe
+D:\上位机\0513\SLC1-N\obj\Debug\LL28-N-V1.5.pdb
+D:\上位机\0513\SLC1-N\bin\Debug\TCP\ITcpClient.cs
+D:\上位机\0513\SLC1-N\bin\Debug\TCP\ITcpClient.Designer.cs
+D:\上位机\0513\SLC1-N\bin\Debug\LL28-N-V1.5.exe.config
+D:\上位机\0513\SLC1-N\bin\Debug\LL28-N-V1.5.exe
+D:\上位机\0513\SLC1-N\bin\Debug\LL28-N-V1.5.pdb
+D:\上位机\0513\SLC1-N\bin\Debug\NetWorkHelper.dll
+D:\上位机\0513\SLC1-N\bin\Debug\Newtonsoft.Json.dll
+D:\上位机\0513\SLC1-N\bin\Debug\NetWorkHelper.pdb
+D:\上位机\0513\SLC1-N\bin\Debug\Newtonsoft.Json.xml
+D:\上位机\0513\SLC1-N\obj\Debug\SLC1-N.csproj.CopyComplete
+D:\PC\0513\SLC1-N\bin\Debug\TCP\ITcpClient.cs
+D:\PC\0513\SLC1-N\bin\Debug\TCP\ITcpClient.Designer.cs
+D:\PC\0513\SLC1-N\bin\Debug\LL28-N-V1.5.exe.config
+D:\PC\0513\SLC1-N\bin\Debug\LL28-N-V1.5.exe
+D:\PC\0513\SLC1-N\bin\Debug\LL28-N-V1.5.pdb
+D:\PC\0513\SLC1-N\bin\Debug\NetWorkHelper.dll
+D:\PC\0513\SLC1-N\bin\Debug\Newtonsoft.Json.dll
+D:\PC\0513\SLC1-N\bin\Debug\NetWorkHelper.pdb
+D:\PC\0513\SLC1-N\bin\Debug\Newtonsoft.Json.xml
+D:\PC\0513\SLC1-N\obj\Debug\SLC1-N.csproj.AssemblyReference.cache
+D:\PC\0513\SLC1-N\obj\Debug\SLC1-N.csproj.SuggestedBindingRedirects.cache
+D:\PC\0513\SLC1-N\obj\Debug\Interop.ADOX.dll
+D:\PC\0513\SLC1-N\obj\Debug\SLC1-N.csproj.ResolveComReference.cache
+D:\PC\0513\SLC1-N\obj\Debug\SLC1_N.Config.resources
+D:\PC\0513\SLC1-N\obj\Debug\SLC1_N.ConfigLogOn.resources
+D:\PC\0513\SLC1-N\obj\Debug\SLC1_N.ConfigTCP.resources
+D:\PC\0513\SLC1-N\obj\Debug\SLC1_N.Electricity.resources
+D:\PC\0513\SLC1-N\obj\Debug\SLC1_N.FlowConfig.resources
+D:\PC\0513\SLC1-N\obj\Debug\SLC1_N.Form1.resources
+D:\PC\0513\SLC1-N\obj\Debug\SLC1_N.Help.resources
+D:\PC\0513\SLC1-N\obj\Debug\SLC1_N.LinConfig.resources
+D:\PC\0513\SLC1-N\obj\Debug\SLC1_N.LogOn.resources
+D:\PC\0513\SLC1-N\obj\Debug\SLC1_N.Machine.resources
+D:\PC\0513\SLC1-N\obj\Debug\SLC1_N.MESConfig.resources
+D:\PC\0513\SLC1-N\obj\Debug\SLC1_N.PLCConfig.resources
+D:\PC\0513\SLC1-N\obj\Debug\SLC1_N.Port.resources
+D:\PC\0513\SLC1-N\obj\Debug\SLC1_N.Properties.Resources.resources
+D:\PC\0513\SLC1-N\obj\Debug\SLC1_N.ResetPassword.resources
+D:\PC\0513\SLC1-N\obj\Debug\SLC1_N.Save.resources
+D:\PC\0513\SLC1-N\obj\Debug\SLC1_N.SelectMachine.resources
+D:\PC\0513\SLC1-N\obj\Debug\SLC1_N.SQLConnectionMethod.resources
+D:\PC\0513\SLC1-N\obj\Debug\SLC1_N.TestParams.resources
+D:\PC\0513\SLC1-N\obj\Debug\SLC1_N.UserManagement.resources
+D:\PC\0513\SLC1-N\obj\Debug\SLC1_N.UserPassword.resources
+D:\PC\0513\SLC1-N\obj\Debug\SLC1_N.Warning.resources
+D:\PC\0513\SLC1-N\obj\Debug\SLC1-N.csproj.GenerateResource.cache
+D:\PC\0513\SLC1-N\obj\Debug\SLC1-N.csproj.CoreCompileInputs.cache
+D:\PC\0513\SLC1-N\obj\Debug\SLC1-N.csproj.CopyComplete
+D:\PC\0513\SLC1-N\obj\Debug\LL28-N-V1.5.exe
+D:\PC\0513\SLC1-N\obj\Debug\LL28-N-V1.5.pdb
+D:\上位机\0513\SLC1-N\bin\Debug\SunnyUI.Common.dll
+D:\项目2023\TQ\0528\SLC1-N\bin\Debug\TCP\ITcpClient.cs
+D:\项目2023\TQ\0528\SLC1-N\bin\Debug\TCP\ITcpClient.Designer.cs
+D:\项目2023\TQ\0528\SLC1-N\bin\Debug\LL28-N-V1.5.exe.config
+D:\项目2023\TQ\0528\SLC1-N\bin\Debug\LL28-N-V1.5.exe
+D:\项目2023\TQ\0528\SLC1-N\bin\Debug\LL28-N-V1.5.pdb
+D:\项目2023\TQ\0528\SLC1-N\bin\Debug\NetWorkHelper.dll
+D:\项目2023\TQ\0528\SLC1-N\bin\Debug\Newtonsoft.Json.dll
+D:\项目2023\TQ\0528\SLC1-N\bin\Debug\SunnyUI.Common.dll
+D:\项目2023\TQ\0528\SLC1-N\bin\Debug\NetWorkHelper.pdb
+D:\项目2023\TQ\0528\SLC1-N\bin\Debug\Newtonsoft.Json.xml
+D:\项目2023\TQ\0528\SLC1-N\obj\Debug\Interop.ADOX.dll
+D:\项目2023\TQ\0528\SLC1-N\obj\Debug\SLC1-N.csproj.ResolveComReference.cache
+D:\项目2023\TQ\0528\SLC1-N\obj\Debug\SLC1_N.Config.resources
+D:\项目2023\TQ\0528\SLC1-N\obj\Debug\SLC1_N.ConfigLogOn.resources
+D:\项目2023\TQ\0528\SLC1-N\obj\Debug\SLC1_N.ConfigTCP.resources
+D:\项目2023\TQ\0528\SLC1-N\obj\Debug\SLC1_N.Electricity.resources
+D:\项目2023\TQ\0528\SLC1-N\obj\Debug\SLC1_N.FlowConfig.resources
+D:\项目2023\TQ\0528\SLC1-N\obj\Debug\SLC1_N.Form1.resources
+D:\项目2023\TQ\0528\SLC1-N\obj\Debug\SLC1_N.Help.resources
+D:\项目2023\TQ\0528\SLC1-N\obj\Debug\SLC1_N.LinConfig.resources
+D:\项目2023\TQ\0528\SLC1-N\obj\Debug\SLC1_N.LogOn.resources
+D:\项目2023\TQ\0528\SLC1-N\obj\Debug\SLC1_N.Machine.resources
+D:\项目2023\TQ\0528\SLC1-N\obj\Debug\SLC1_N.MESConfig.resources
+D:\项目2023\TQ\0528\SLC1-N\obj\Debug\SLC1_N.PLCConfig.resources
+D:\项目2023\TQ\0528\SLC1-N\obj\Debug\SLC1_N.Port.resources
+D:\项目2023\TQ\0528\SLC1-N\obj\Debug\SLC1_N.Properties.Resources.resources
+D:\项目2023\TQ\0528\SLC1-N\obj\Debug\SLC1_N.ResetPassword.resources
+D:\项目2023\TQ\0528\SLC1-N\obj\Debug\SLC1_N.Save.resources
+D:\项目2023\TQ\0528\SLC1-N\obj\Debug\SLC1_N.SelectMachine.resources
+D:\项目2023\TQ\0528\SLC1-N\obj\Debug\SLC1_N.SQLConnectionMethod.resources
+D:\项目2023\TQ\0528\SLC1-N\obj\Debug\SLC1_N.TestParams.resources
+D:\项目2023\TQ\0528\SLC1-N\obj\Debug\SLC1_N.UserManagement.resources
+D:\项目2023\TQ\0528\SLC1-N\obj\Debug\SLC1_N.UserPassword.resources
+D:\项目2023\TQ\0528\SLC1-N\obj\Debug\SLC1_N.Warning.resources
+D:\项目2023\TQ\0528\SLC1-N\obj\Debug\SLC1-N.csproj.GenerateResource.cache
+D:\项目2023\TQ\0528\SLC1-N\obj\Debug\SLC1-N.csproj.CoreCompileInputs.cache
+D:\项目2023\TQ\0528\SLC1-N\obj\Debug\SLC1-N.csproj.CopyComplete
+D:\项目2023\TQ\0528\SLC1-N\obj\Debug\LL28-N-V1.5.exe
+D:\项目2023\TQ\0528\SLC1-N\obj\Debug\LL28-N-V1.5.pdb
+D:\项目2023\TQ\0528\SLC1-N\obj\Debug\SLC1_N.LogDisplay.resources
+D:\项目2023\TQ\0528\SLC1-N\bin\Debug\en\LL28-N-V1.5.resources.dll
+D:\项目2023\TQ\0528\SLC1-N\obj\Debug\SLC1_N.Form1.en.resources
+D:\项目2023\TQ\0528\SLC1-N\obj\Debug\en\LL28-N-V1.5.resources.dll
+D:\项目2023\TQ\0528\SLC1-N\obj\Debug\SLC1_N.LogOn.en.resources
+D:\项目2023\TQ\0528\SLC1-N\obj\Debug\SLC1-N.csprojAssemblyReference.cache
+D:\项目2023\TQ\0528\SLC1-N\obj\Debug\SLC1_N.Machine.en.resources
+D:\项目2023\TQ\0528\SLC1-N\obj\Debug\SLC1_N.Warning.en.resources
+D:\项目2023\TQ\0528\SLC1-N\obj\Debug\SLC1_N.UserManagement.en.resources
+D:\项目2023\TQ\0528\SLC1-N\obj\Debug\SLC1_N.TestParams.en.resources
+D:\项目2023\TQ\0528\SLC1-N\obj\Debug\SLC1_N.SelectMachine.en.resources
+D:\项目2023\TQ\0528\SLC1-N\obj\Debug\SLC1_N.UserPassword.en.resources
+D:\项目2023\TQ\0528\SLC1-N\obj\Debug\SLC1_N.Save.en.resources
+D:\项目2023\TQ\0528\SLC1-N\obj\Debug\SLC1_N.ResetPassword.en.resources
+D:\项目2023\TQ\0528\SLC1-N\obj\Debug\SLC1_N.MESConfig.en.resources
+D:\项目2023\TQ\0528\SLC1-N\obj\Debug\SLC1_N.ConfigLogOn.en.resources
+D:\项目2023\TQ\0528\SLC1-N\obj\Debug\SLC1_N.LinConfig.en.resources
+D:\项目2023\TQ\0528\SLC1-N\obj\Debug\SLC1_N.Config.en.resources
+D:\项目2023\TQ\0528\SLC1-N\obj\Debug\SLC1_N.ConfigTCP.en.resources
+D:\项目2023\TQ\0528\SLC1-N\obj\Debug\SLC1_N.FlowConfig.en.resources
+D:\项目2023\TQ\0528\SLC1-N\obj\Debug\SLC1_N.PLCConfig.en.resources
+D:\上位机\0608\SLC1-N\bin\Debug\TCP\ITcpClient.cs
+D:\上位机\0608\SLC1-N\bin\Debug\TCP\ITcpClient.Designer.cs
+D:\上位机\0608\SLC1-N\bin\Debug\LL28-N-V1.5.exe.config
+D:\上位机\0608\SLC1-N\bin\Debug\LL28-N-V1.5.exe
+D:\上位机\0608\SLC1-N\bin\Debug\LL28-N-V1.5.pdb
+D:\上位机\0608\SLC1-N\bin\Debug\en\LL28-N-V1.5.resources.dll
+D:\上位机\0608\SLC1-N\bin\Debug\NetWorkHelper.dll
+D:\上位机\0608\SLC1-N\bin\Debug\Newtonsoft.Json.dll
+D:\上位机\0608\SLC1-N\bin\Debug\SunnyUI.Common.dll
+D:\上位机\0608\SLC1-N\bin\Debug\NetWorkHelper.pdb
+D:\上位机\0608\SLC1-N\bin\Debug\Newtonsoft.Json.xml
+D:\上位机\0608\SLC1-N\obj\Debug\SLC1-N.csproj.AssemblyReference.cache
+D:\上位机\0608\SLC1-N\obj\Debug\SLC1-N.csproj.SuggestedBindingRedirects.cache
+D:\上位机\0608\SLC1-N\obj\Debug\Interop.ADOX.dll
+D:\上位机\0608\SLC1-N\obj\Debug\SLC1-N.csproj.ResolveComReference.cache
+D:\上位机\0608\SLC1-N\obj\Debug\SLC1_N.Config.resources
+D:\上位机\0608\SLC1-N\obj\Debug\SLC1_N.ConfigLogOn.resources
+D:\上位机\0608\SLC1-N\obj\Debug\SLC1_N.ConfigTCP.resources
+D:\上位机\0608\SLC1-N\obj\Debug\SLC1_N.Electricity.resources
+D:\上位机\0608\SLC1-N\obj\Debug\SLC1_N.FlowConfig.resources
+D:\上位机\0608\SLC1-N\obj\Debug\SLC1_N.Form1.resources
+D:\上位机\0608\SLC1-N\obj\Debug\SLC1_N.Help.resources
+D:\上位机\0608\SLC1-N\obj\Debug\SLC1_N.LinConfig.resources
+D:\上位机\0608\SLC1-N\obj\Debug\SLC1_N.LogDisplay.resources
+D:\上位机\0608\SLC1-N\obj\Debug\SLC1_N.LogOn.resources
+D:\上位机\0608\SLC1-N\obj\Debug\SLC1_N.Machine.resources
+D:\上位机\0608\SLC1-N\obj\Debug\SLC1_N.MESConfig.resources
+D:\上位机\0608\SLC1-N\obj\Debug\SLC1_N.PLCConfig.resources
+D:\上位机\0608\SLC1-N\obj\Debug\SLC1_N.Port.resources
+D:\上位机\0608\SLC1-N\obj\Debug\SLC1_N.Properties.Resources.resources
+D:\上位机\0608\SLC1-N\obj\Debug\SLC1_N.ResetPassword.resources
+D:\上位机\0608\SLC1-N\obj\Debug\SLC1_N.Save.resources
+D:\上位机\0608\SLC1-N\obj\Debug\SLC1_N.SelectMachine.resources
+D:\上位机\0608\SLC1-N\obj\Debug\SLC1_N.SQLConnectionMethod.resources
+D:\上位机\0608\SLC1-N\obj\Debug\SLC1_N.TestParams.resources
+D:\上位机\0608\SLC1-N\obj\Debug\SLC1_N.UserManagement.resources
+D:\上位机\0608\SLC1-N\obj\Debug\SLC1_N.UserPassword.resources
+D:\上位机\0608\SLC1-N\obj\Debug\SLC1_N.Warning.resources
+D:\上位机\0608\SLC1-N\obj\Debug\SLC1_N.Config.en.resources
+D:\上位机\0608\SLC1-N\obj\Debug\SLC1_N.ConfigLogOn.en.resources
+D:\上位机\0608\SLC1-N\obj\Debug\SLC1_N.ConfigTCP.en.resources
+D:\上位机\0608\SLC1-N\obj\Debug\SLC1_N.FlowConfig.en.resources
+D:\上位机\0608\SLC1-N\obj\Debug\SLC1_N.Form1.en.resources
+D:\上位机\0608\SLC1-N\obj\Debug\SLC1_N.LinConfig.en.resources
+D:\上位机\0608\SLC1-N\obj\Debug\SLC1_N.LogOn.en.resources
+D:\上位机\0608\SLC1-N\obj\Debug\SLC1_N.Machine.en.resources
+D:\上位机\0608\SLC1-N\obj\Debug\SLC1_N.MESConfig.en.resources
+D:\上位机\0608\SLC1-N\obj\Debug\SLC1_N.PLCConfig.en.resources
+D:\上位机\0608\SLC1-N\obj\Debug\SLC1_N.ResetPassword.en.resources
+D:\上位机\0608\SLC1-N\obj\Debug\SLC1_N.Save.en.resources
+D:\上位机\0608\SLC1-N\obj\Debug\SLC1_N.SelectMachine.en.resources
+D:\上位机\0608\SLC1-N\obj\Debug\SLC1_N.TestParams.en.resources
+D:\上位机\0608\SLC1-N\obj\Debug\SLC1_N.UserManagement.en.resources
+D:\上位机\0608\SLC1-N\obj\Debug\SLC1_N.UserPassword.en.resources
+D:\上位机\0608\SLC1-N\obj\Debug\SLC1_N.Warning.en.resources
+D:\上位机\0608\SLC1-N\obj\Debug\SLC1-N.csproj.GenerateResource.cache
+D:\上位机\0608\SLC1-N\obj\Debug\SLC1-N.csproj.CoreCompileInputs.cache
+D:\上位机\0608\SLC1-N\obj\Debug\en\LL28-N-V1.5.resources.dll
+D:\上位机\0608\SLC1-N\obj\Debug\SLC1-N.csproj.CopyComplete
+D:\上位机\0608\SLC1-N\obj\Debug\LL28-N-V1.5.exe
+D:\上位机\0608\SLC1-N\obj\Debug\LL28-N-V1.5.pdb
+D:\上位机\0608\SLC1-N\obj\Debug\SLC1_N.Electricity.en.resources
+D:\上位机\0608\SLC1-N\obj\Debug\SLC1_N.Port.en.resources
+D:\上位机\0608\SLC1-N\obj\Debug\SLC1_N.Help.en.resources
+D:\上位机\0608\0702\SLC1-N\bin\Debug\TCP\ITcpClient.cs
+D:\上位机\0608\0702\SLC1-N\bin\Debug\TCP\ITcpClient.Designer.cs
+D:\上位机\0608\0702\SLC1-N\bin\Debug\LL28-N-V1.5.exe.config
+D:\上位机\0608\0702\SLC1-N\bin\Debug\LL28-N-V1.5.exe
+D:\上位机\0608\0702\SLC1-N\bin\Debug\LL28-N-V1.5.pdb
+D:\上位机\0608\0702\SLC1-N\bin\Debug\en\LL28-N-V1.5.resources.dll
+D:\上位机\0608\0702\SLC1-N\bin\Debug\NetWorkHelper.dll
+D:\上位机\0608\0702\SLC1-N\bin\Debug\Newtonsoft.Json.dll
+D:\上位机\0608\0702\SLC1-N\bin\Debug\SunnyUI.Common.dll
+D:\上位机\0608\0702\SLC1-N\bin\Debug\NetWorkHelper.pdb
+D:\上位机\0608\0702\SLC1-N\bin\Debug\Newtonsoft.Json.xml
+D:\上位机\0608\0702\SLC1-N\obj\Debug\SLC1-N.csproj.AssemblyReference.cache
+D:\上位机\0608\0702\SLC1-N\obj\Debug\SLC1-N.csproj.SuggestedBindingRedirects.cache
+D:\上位机\0608\0702\SLC1-N\obj\Debug\Interop.ADOX.dll
+D:\上位机\0608\0702\SLC1-N\obj\Debug\SLC1-N.csproj.ResolveComReference.cache
+D:\上位机\0608\0702\SLC1-N\obj\Debug\SLC1_N.Config.resources
+D:\上位机\0608\0702\SLC1-N\obj\Debug\SLC1_N.ConfigLogOn.resources
+D:\上位机\0608\0702\SLC1-N\obj\Debug\SLC1_N.ConfigTCP.resources
+D:\上位机\0608\0702\SLC1-N\obj\Debug\SLC1_N.Electricity.resources
+D:\上位机\0608\0702\SLC1-N\obj\Debug\SLC1_N.FlowConfig.resources
+D:\上位机\0608\0702\SLC1-N\obj\Debug\SLC1_N.Form1.resources
+D:\上位机\0608\0702\SLC1-N\obj\Debug\SLC1_N.Help.resources
+D:\上位机\0608\0702\SLC1-N\obj\Debug\SLC1_N.LinConfig.resources
+D:\上位机\0608\0702\SLC1-N\obj\Debug\SLC1_N.LogDisplay.resources
+D:\上位机\0608\0702\SLC1-N\obj\Debug\SLC1_N.LogOn.resources
+D:\上位机\0608\0702\SLC1-N\obj\Debug\SLC1_N.Machine.resources
+D:\上位机\0608\0702\SLC1-N\obj\Debug\SLC1_N.MESConfig.resources
+D:\上位机\0608\0702\SLC1-N\obj\Debug\SLC1_N.PLCConfig.resources
+D:\上位机\0608\0702\SLC1-N\obj\Debug\SLC1_N.Port.resources
+D:\上位机\0608\0702\SLC1-N\obj\Debug\SLC1_N.Properties.Resources.resources
+D:\上位机\0608\0702\SLC1-N\obj\Debug\SLC1_N.ResetPassword.resources
+D:\上位机\0608\0702\SLC1-N\obj\Debug\SLC1_N.Save.resources
+D:\上位机\0608\0702\SLC1-N\obj\Debug\SLC1_N.SelectMachine.resources
+D:\上位机\0608\0702\SLC1-N\obj\Debug\SLC1_N.SQLConnectionMethod.resources
+D:\上位机\0608\0702\SLC1-N\obj\Debug\SLC1_N.TestParams.resources
+D:\上位机\0608\0702\SLC1-N\obj\Debug\SLC1_N.UserManagement.resources
+D:\上位机\0608\0702\SLC1-N\obj\Debug\SLC1_N.UserPassword.resources
+D:\上位机\0608\0702\SLC1-N\obj\Debug\SLC1_N.Warning.resources
+D:\上位机\0608\0702\SLC1-N\obj\Debug\SLC1_N.Config.en.resources
+D:\上位机\0608\0702\SLC1-N\obj\Debug\SLC1_N.ConfigLogOn.en.resources
+D:\上位机\0608\0702\SLC1-N\obj\Debug\SLC1_N.ConfigTCP.en.resources
+D:\上位机\0608\0702\SLC1-N\obj\Debug\SLC1_N.Electricity.en.resources
+D:\上位机\0608\0702\SLC1-N\obj\Debug\SLC1_N.FlowConfig.en.resources
+D:\上位机\0608\0702\SLC1-N\obj\Debug\SLC1_N.Form1.en.resources
+D:\上位机\0608\0702\SLC1-N\obj\Debug\SLC1_N.Help.en.resources
+D:\上位机\0608\0702\SLC1-N\obj\Debug\SLC1_N.LinConfig.en.resources
+D:\上位机\0608\0702\SLC1-N\obj\Debug\SLC1_N.LogOn.en.resources
+D:\上位机\0608\0702\SLC1-N\obj\Debug\SLC1_N.Machine.en.resources
+D:\上位机\0608\0702\SLC1-N\obj\Debug\SLC1_N.MESConfig.en.resources
+D:\上位机\0608\0702\SLC1-N\obj\Debug\SLC1_N.PLCConfig.en.resources
+D:\上位机\0608\0702\SLC1-N\obj\Debug\SLC1_N.Port.en.resources
+D:\上位机\0608\0702\SLC1-N\obj\Debug\SLC1_N.ResetPassword.en.resources
+D:\上位机\0608\0702\SLC1-N\obj\Debug\SLC1_N.Save.en.resources
+D:\上位机\0608\0702\SLC1-N\obj\Debug\SLC1_N.SelectMachine.en.resources
+D:\上位机\0608\0702\SLC1-N\obj\Debug\SLC1_N.TestParams.en.resources
+D:\上位机\0608\0702\SLC1-N\obj\Debug\SLC1_N.UserManagement.en.resources
+D:\上位机\0608\0702\SLC1-N\obj\Debug\SLC1_N.UserPassword.en.resources
+D:\上位机\0608\0702\SLC1-N\obj\Debug\SLC1_N.Warning.en.resources
+D:\上位机\0608\0702\SLC1-N\obj\Debug\SLC1-N.csproj.GenerateResource.cache
+D:\上位机\0608\0702\SLC1-N\obj\Debug\SLC1-N.csproj.CoreCompileInputs.cache
+D:\上位机\0608\0702\SLC1-N\obj\Debug\en\LL28-N-V1.5.resources.dll
+D:\上位机\0608\0702\SLC1-N\obj\Debug\SLC1-N.csproj.CopyComplete
+D:\上位机\0608\0702\SLC1-N\obj\Debug\LL28-N-V1.5.exe
+D:\上位机\0608\0702\SLC1-N\obj\Debug\LL28-N-V1.5.pdb
+D:\上位机\0702\SLC1-N\bin\Debug\TCP\ITcpClient.cs
+D:\上位机\0702\SLC1-N\bin\Debug\TCP\ITcpClient.Designer.cs
+D:\上位机\0702\SLC1-N\bin\Debug\LL28-N-V1.5.exe.config
+D:\上位机\0702\SLC1-N\bin\Debug\LL28-N-V1.5.exe
+D:\上位机\0702\SLC1-N\bin\Debug\LL28-N-V1.5.pdb
+D:\上位机\0702\SLC1-N\bin\Debug\en\LL28-N-V1.5.resources.dll
+D:\上位机\0702\SLC1-N\bin\Debug\NetWorkHelper.dll
+D:\上位机\0702\SLC1-N\bin\Debug\Newtonsoft.Json.dll
+D:\上位机\0702\SLC1-N\bin\Debug\SunnyUI.Common.dll
+D:\上位机\0702\SLC1-N\bin\Debug\NetWorkHelper.pdb
+D:\上位机\0702\SLC1-N\bin\Debug\Newtonsoft.Json.xml
+D:\上位机\0702\SLC1-N\obj\Debug\SLC1-N.csproj.AssemblyReference.cache
+D:\上位机\0702\SLC1-N\obj\Debug\SLC1-N.csproj.SuggestedBindingRedirects.cache
+D:\上位机\0702\SLC1-N\obj\Debug\Interop.ADOX.dll
+D:\上位机\0702\SLC1-N\obj\Debug\SLC1-N.csproj.ResolveComReference.cache
+D:\上位机\0702\SLC1-N\obj\Debug\SLC1_N.Config.resources
+D:\上位机\0702\SLC1-N\obj\Debug\SLC1_N.ConfigLogOn.resources
+D:\上位机\0702\SLC1-N\obj\Debug\SLC1_N.ConfigTCP.resources
+D:\上位机\0702\SLC1-N\obj\Debug\SLC1_N.Electricity.resources
+D:\上位机\0702\SLC1-N\obj\Debug\SLC1_N.FlowConfig.resources
+D:\上位机\0702\SLC1-N\obj\Debug\SLC1_N.Form1.resources
+D:\上位机\0702\SLC1-N\obj\Debug\SLC1_N.Help.resources
+D:\上位机\0702\SLC1-N\obj\Debug\SLC1_N.LinConfig.resources
+D:\上位机\0702\SLC1-N\obj\Debug\SLC1_N.LogDisplay.resources
+D:\上位机\0702\SLC1-N\obj\Debug\SLC1_N.LogOn.resources
+D:\上位机\0702\SLC1-N\obj\Debug\SLC1_N.Machine.resources
+D:\上位机\0702\SLC1-N\obj\Debug\SLC1_N.MESConfig.resources
+D:\上位机\0702\SLC1-N\obj\Debug\SLC1_N.PLCConfig.resources
+D:\上位机\0702\SLC1-N\obj\Debug\SLC1_N.Port.resources
+D:\上位机\0702\SLC1-N\obj\Debug\SLC1_N.Properties.Resources.resources
+D:\上位机\0702\SLC1-N\obj\Debug\SLC1_N.ResetPassword.resources
+D:\上位机\0702\SLC1-N\obj\Debug\SLC1_N.Save.resources
+D:\上位机\0702\SLC1-N\obj\Debug\SLC1_N.SelectMachine.resources
+D:\上位机\0702\SLC1-N\obj\Debug\SLC1_N.SQLConnectionMethod.resources
+D:\上位机\0702\SLC1-N\obj\Debug\SLC1_N.TestParams.resources
+D:\上位机\0702\SLC1-N\obj\Debug\SLC1_N.UserManagement.resources
+D:\上位机\0702\SLC1-N\obj\Debug\SLC1_N.UserPassword.resources
+D:\上位机\0702\SLC1-N\obj\Debug\SLC1_N.Warning.resources
+D:\上位机\0702\SLC1-N\obj\Debug\SLC1_N.Config.en.resources
+D:\上位机\0702\SLC1-N\obj\Debug\SLC1_N.ConfigLogOn.en.resources
+D:\上位机\0702\SLC1-N\obj\Debug\SLC1_N.ConfigTCP.en.resources
+D:\上位机\0702\SLC1-N\obj\Debug\SLC1_N.Electricity.en.resources
+D:\上位机\0702\SLC1-N\obj\Debug\SLC1_N.FlowConfig.en.resources
+D:\上位机\0702\SLC1-N\obj\Debug\SLC1_N.Form1.en.resources
+D:\上位机\0702\SLC1-N\obj\Debug\SLC1_N.Help.en.resources
+D:\上位机\0702\SLC1-N\obj\Debug\SLC1_N.LinConfig.en.resources
+D:\上位机\0702\SLC1-N\obj\Debug\SLC1_N.LogOn.en.resources
+D:\上位机\0702\SLC1-N\obj\Debug\SLC1_N.Machine.en.resources
+D:\上位机\0702\SLC1-N\obj\Debug\SLC1_N.MESConfig.en.resources
+D:\上位机\0702\SLC1-N\obj\Debug\SLC1_N.PLCConfig.en.resources
+D:\上位机\0702\SLC1-N\obj\Debug\SLC1_N.Port.en.resources
+D:\上位机\0702\SLC1-N\obj\Debug\SLC1_N.ResetPassword.en.resources
+D:\上位机\0702\SLC1-N\obj\Debug\SLC1_N.Save.en.resources
+D:\上位机\0702\SLC1-N\obj\Debug\SLC1_N.SelectMachine.en.resources
+D:\上位机\0702\SLC1-N\obj\Debug\SLC1_N.TestParams.en.resources
+D:\上位机\0702\SLC1-N\obj\Debug\SLC1_N.UserManagement.en.resources
+D:\上位机\0702\SLC1-N\obj\Debug\SLC1_N.UserPassword.en.resources
+D:\上位机\0702\SLC1-N\obj\Debug\SLC1_N.Warning.en.resources
+D:\上位机\0702\SLC1-N\obj\Debug\SLC1-N.csproj.GenerateResource.cache
+D:\上位机\0702\SLC1-N\obj\Debug\SLC1-N.csproj.CoreCompileInputs.cache
+D:\上位机\0702\SLC1-N\obj\Debug\en\LL28-N-V1.5.resources.dll
+D:\上位机\0702\SLC1-N\obj\Debug\SLC1-N.csproj.CopyComplete
+D:\上位机\0702\SLC1-N\obj\Debug\LL28-N-V1.5.exe
+D:\上位机\0702\SLC1-N\obj\Debug\LL28-N-V1.5.pdb
+D:\上位机\0702\SLC1-N\bin\Debug\zh\LL28-N-V1.5.resources.dll
+D:\上位机\0702\SLC1-N\obj\Debug\SLC1_N.PLCConfig.zh.resources
+D:\上位机\0702\SLC1-N\obj\Debug\zh\LL28-N-V1.5.resources.dll
+D:\上位机\0702\SLC1-N\bin\Debug\es\LL28-N-V1.5.resources.dll
+D:\上位机\0702\SLC1-N\obj\Debug\SLC1_N.Config.es.resources
+D:\上位机\0702\SLC1-N\obj\Debug\SLC1_N.ConfigLogOn.es.resources
+D:\上位机\0702\SLC1-N\obj\Debug\SLC1_N.ConfigTCP.es.resources
+D:\上位机\0702\SLC1-N\obj\Debug\SLC1_N.Electricity.es.resources
+D:\上位机\0702\SLC1-N\obj\Debug\SLC1_N.FlowConfig.es.resources
+D:\上位机\0702\SLC1-N\obj\Debug\SLC1_N.Form1.es.resources
+D:\上位机\0702\SLC1-N\obj\Debug\SLC1_N.Help.es.resources
+D:\上位机\0702\SLC1-N\obj\Debug\SLC1_N.LinConfig.es.resources
+D:\上位机\0702\SLC1-N\obj\Debug\SLC1_N.LogOn.es.resources
+D:\上位机\0702\SLC1-N\obj\Debug\SLC1_N.PLCConfig.es.resources
+D:\上位机\0702\SLC1-N\obj\Debug\SLC1_N.Save.es.resources
+D:\上位机\0702\SLC1-N\obj\Debug\SLC1_N.SelectMachine.es.resources
+D:\上位机\0702\SLC1-N\obj\Debug\es\LL28-N-V1.5.resources.dll
+D:\上位机\0702\SLC1-N\obj\Debug\SLC1_N.Electricity.zh.resources
+D:\上位机\0702\SLC1-N\obj\Debug\SLC1_N.Port.es.resources
+D:\上位机\0702\SLC1-N\obj\Debug\SLC1_N.Form1.zh.resources
+\\192.168.1.17\研发部\上位机\唐群\24072801\SLC1-N\obj\Debug\SLC1-N.csproj.AssemblyReference.cache
+\\192.168.1.17\研发部\上位机\唐群\24072801\SLC1-N\obj\Debug\Interop.ADOX.dll
+\\192.168.1.17\研发部\上位机\唐群\24072801\SLC1-N\obj\Debug\SLC1-N.csproj.ResolveComReference.cache
+\\192.168.1.17\研发部\上位机\唐群\24072801\SLC1-N\obj\Debug\LL28-N-V1.5.exe
+\\192.168.1.17\研发部\上位机\唐群\24072801\SLC1-N\obj\Debug\LL28-N-V1.5.pdb
+C:\Users\Administrator\Desktop\24072801\SLC1-N\bin\Debug\SunnyUI.Common.dll
+C:\Users\Administrator\Desktop\24072801\SLC1-N\bin\Debug\TCP\ITcpClient.cs
+C:\Users\Administrator\Desktop\24072801\SLC1-N\bin\Debug\TCP\ITcpClient.Designer.cs
+C:\Users\Administrator\Desktop\24072801\SLC1-N\bin\Debug\LL28-N-V1.5.exe.config
+C:\Users\Administrator\Desktop\24072801\SLC1-N\bin\Debug\LL28-N-V1.5.exe
+C:\Users\Administrator\Desktop\24072801\SLC1-N\bin\Debug\LL28-N-V1.5.pdb
+C:\Users\Administrator\Desktop\24072801\SLC1-N\bin\Debug\en\LL28-N-V1.5.resources.dll
+C:\Users\Administrator\Desktop\24072801\SLC1-N\bin\Debug\es\LL28-N-V1.5.resources.dll
+C:\Users\Administrator\Desktop\24072801\SLC1-N\bin\Debug\zh\LL28-N-V1.5.resources.dll
+C:\Users\Administrator\Desktop\24072801\SLC1-N\bin\Debug\NetWorkHelper.dll
+C:\Users\Administrator\Desktop\24072801\SLC1-N\bin\Debug\Newtonsoft.Json.dll
+C:\Users\Administrator\Desktop\24072801\SLC1-N\bin\Debug\NetWorkHelper.pdb
+C:\Users\Administrator\Desktop\24072801\SLC1-N\bin\Debug\Newtonsoft.Json.xml
+C:\Users\Administrator\Desktop\24072801\SLC1-N\obj\Debug\SLC1-N.csproj.AssemblyReference.cache
+C:\Users\Administrator\Desktop\24072801\SLC1-N\obj\Debug\Interop.ADOX.dll
+C:\Users\Administrator\Desktop\24072801\SLC1-N\obj\Debug\SLC1-N.csproj.ResolveComReference.cache
+C:\Users\Administrator\Desktop\24072801\SLC1-N\obj\Debug\SLC1_N.Config.resources
+C:\Users\Administrator\Desktop\24072801\SLC1-N\obj\Debug\SLC1_N.ConfigLogOn.resources
+C:\Users\Administrator\Desktop\24072801\SLC1-N\obj\Debug\SLC1_N.ConfigTCP.resources
+C:\Users\Administrator\Desktop\24072801\SLC1-N\obj\Debug\SLC1_N.Electricity.resources
+C:\Users\Administrator\Desktop\24072801\SLC1-N\obj\Debug\SLC1_N.FlowConfig.resources
+C:\Users\Administrator\Desktop\24072801\SLC1-N\obj\Debug\SLC1_N.Form1.resources
+C:\Users\Administrator\Desktop\24072801\SLC1-N\obj\Debug\SLC1_N.Help.resources
+C:\Users\Administrator\Desktop\24072801\SLC1-N\obj\Debug\SLC1_N.LinConfig.resources
+C:\Users\Administrator\Desktop\24072801\SLC1-N\obj\Debug\SLC1_N.LogDisplay.resources
+C:\Users\Administrator\Desktop\24072801\SLC1-N\obj\Debug\SLC1_N.LogOn.resources
+C:\Users\Administrator\Desktop\24072801\SLC1-N\obj\Debug\SLC1_N.Machine.resources
+C:\Users\Administrator\Desktop\24072801\SLC1-N\obj\Debug\SLC1_N.MESConfig.resources
+C:\Users\Administrator\Desktop\24072801\SLC1-N\obj\Debug\SLC1_N.PLCConfig.resources
+C:\Users\Administrator\Desktop\24072801\SLC1-N\obj\Debug\SLC1_N.Port.resources
+C:\Users\Administrator\Desktop\24072801\SLC1-N\obj\Debug\SLC1_N.Properties.Resources.resources
+C:\Users\Administrator\Desktop\24072801\SLC1-N\obj\Debug\SLC1_N.ResetPassword.resources
+C:\Users\Administrator\Desktop\24072801\SLC1-N\obj\Debug\SLC1_N.Save.resources
+C:\Users\Administrator\Desktop\24072801\SLC1-N\obj\Debug\SLC1_N.SelectMachine.resources
+C:\Users\Administrator\Desktop\24072801\SLC1-N\obj\Debug\SLC1_N.SQLConnectionMethod.resources
+C:\Users\Administrator\Desktop\24072801\SLC1-N\obj\Debug\SLC1_N.TestParams.resources
+C:\Users\Administrator\Desktop\24072801\SLC1-N\obj\Debug\SLC1_N.UserManagement.resources
+C:\Users\Administrator\Desktop\24072801\SLC1-N\obj\Debug\SLC1_N.UserPassword.resources
+C:\Users\Administrator\Desktop\24072801\SLC1-N\obj\Debug\SLC1_N.Warning.resources
+C:\Users\Administrator\Desktop\24072801\SLC1-N\obj\Debug\SLC1_N.Config.en.resources
+C:\Users\Administrator\Desktop\24072801\SLC1-N\obj\Debug\SLC1_N.Config.es.resources
+C:\Users\Administrator\Desktop\24072801\SLC1-N\obj\Debug\SLC1_N.ConfigLogOn.en.resources
+C:\Users\Administrator\Desktop\24072801\SLC1-N\obj\Debug\SLC1_N.ConfigLogOn.es.resources
+C:\Users\Administrator\Desktop\24072801\SLC1-N\obj\Debug\SLC1_N.ConfigTCP.en.resources
+C:\Users\Administrator\Desktop\24072801\SLC1-N\obj\Debug\SLC1_N.ConfigTCP.es.resources
+C:\Users\Administrator\Desktop\24072801\SLC1-N\obj\Debug\SLC1_N.Electricity.en.resources
+C:\Users\Administrator\Desktop\24072801\SLC1-N\obj\Debug\SLC1_N.Electricity.es.resources
+C:\Users\Administrator\Desktop\24072801\SLC1-N\obj\Debug\SLC1_N.Electricity.zh.resources
+C:\Users\Administrator\Desktop\24072801\SLC1-N\obj\Debug\SLC1_N.FlowConfig.en.resources
+C:\Users\Administrator\Desktop\24072801\SLC1-N\obj\Debug\SLC1_N.FlowConfig.es.resources
+C:\Users\Administrator\Desktop\24072801\SLC1-N\obj\Debug\SLC1_N.Form1.en.resources
+C:\Users\Administrator\Desktop\24072801\SLC1-N\obj\Debug\SLC1_N.Form1.es.resources
+C:\Users\Administrator\Desktop\24072801\SLC1-N\obj\Debug\SLC1_N.Form1.zh.resources
+C:\Users\Administrator\Desktop\24072801\SLC1-N\obj\Debug\SLC1_N.Help.en.resources
+C:\Users\Administrator\Desktop\24072801\SLC1-N\obj\Debug\SLC1_N.Help.es.resources
+C:\Users\Administrator\Desktop\24072801\SLC1-N\obj\Debug\SLC1_N.LinConfig.en.resources
+C:\Users\Administrator\Desktop\24072801\SLC1-N\obj\Debug\SLC1_N.LinConfig.es.resources
+C:\Users\Administrator\Desktop\24072801\SLC1-N\obj\Debug\SLC1_N.LogOn.en.resources
+C:\Users\Administrator\Desktop\24072801\SLC1-N\obj\Debug\SLC1_N.LogOn.es.resources
+C:\Users\Administrator\Desktop\24072801\SLC1-N\obj\Debug\SLC1_N.Machine.en.resources
+C:\Users\Administrator\Desktop\24072801\SLC1-N\obj\Debug\SLC1_N.MESConfig.en.resources
+C:\Users\Administrator\Desktop\24072801\SLC1-N\obj\Debug\SLC1_N.PLCConfig.en.resources
+C:\Users\Administrator\Desktop\24072801\SLC1-N\obj\Debug\SLC1_N.PLCConfig.es.resources
+C:\Users\Administrator\Desktop\24072801\SLC1-N\obj\Debug\SLC1_N.PLCConfig.zh.resources
+C:\Users\Administrator\Desktop\24072801\SLC1-N\obj\Debug\SLC1_N.Port.en.resources
+C:\Users\Administrator\Desktop\24072801\SLC1-N\obj\Debug\SLC1_N.Port.es.resources
+C:\Users\Administrator\Desktop\24072801\SLC1-N\obj\Debug\SLC1_N.ResetPassword.en.resources
+C:\Users\Administrator\Desktop\24072801\SLC1-N\obj\Debug\SLC1_N.Save.en.resources
+C:\Users\Administrator\Desktop\24072801\SLC1-N\obj\Debug\SLC1_N.Save.es.resources
+C:\Users\Administrator\Desktop\24072801\SLC1-N\obj\Debug\SLC1_N.SelectMachine.en.resources
+C:\Users\Administrator\Desktop\24072801\SLC1-N\obj\Debug\SLC1_N.SelectMachine.es.resources
+C:\Users\Administrator\Desktop\24072801\SLC1-N\obj\Debug\SLC1_N.TestParams.en.resources
+C:\Users\Administrator\Desktop\24072801\SLC1-N\obj\Debug\SLC1_N.UserManagement.en.resources
+C:\Users\Administrator\Desktop\24072801\SLC1-N\obj\Debug\SLC1_N.UserPassword.en.resources
+C:\Users\Administrator\Desktop\24072801\SLC1-N\obj\Debug\SLC1_N.Warning.en.resources
+C:\Users\Administrator\Desktop\24072801\SLC1-N\obj\Debug\SLC1-N.csproj.GenerateResource.cache
+C:\Users\Administrator\Desktop\24072801\SLC1-N\obj\Debug\SLC1-N.csproj.CoreCompileInputs.cache
+C:\Users\Administrator\Desktop\24072801\SLC1-N\obj\Debug\en\LL28-N-V1.5.resources.dll
+C:\Users\Administrator\Desktop\24072801\SLC1-N\obj\Debug\es\LL28-N-V1.5.resources.dll
+C:\Users\Administrator\Desktop\24072801\SLC1-N\obj\Debug\zh\LL28-N-V1.5.resources.dll
+C:\Users\Administrator\Desktop\24072801\SLC1-N\obj\Debug\SLC1-N.csproj.Up2Date
+C:\Users\Administrator\Desktop\24072801\SLC1-N\obj\Debug\LL28-N-V1.5.exe
+C:\Users\Administrator\Desktop\24072801\SLC1-N\obj\Debug\LL28-N-V1.5.pdb

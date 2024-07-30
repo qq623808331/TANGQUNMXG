@@ -1,0 +1,12 @@
+2021-07-16 14:32:32  MESSend:  {"header":{"appid":"xm_1004","sign":"86085311B3394249D0A9A50EEA3B9FF4","method":"outrepair.importWRTresult"},"body":"{\"dept\":\"dept\",\"type\":\"type\",\"model\":\"model\",\"station\":\"station\",\"timestamp\":\"2021-07-16 14:32:31\",\"sn\":\"11\",\"result\":\"FAIL\",\"inflationPressureMax\":\"20KPa\",\"inflationPressureMin\":\"10KPa\",\"inflationPressure\":\"-10.57KPa\",\"balancePressureMax\":\"20KPa\",\"balancePressureMin\":\"10KPa\",\"balancePressure\":\"-10.57KPa\",\"leakMax\":\"60Pa\",\"leakMin\":\"-60Pa\",\"leakage\":\"0.28Pa\"}"}
+
+2021-07-16 14:32:33  MESReceive:  请求被中止: 未能创建 SSL/TLS 安全通道。
+
+2021-07-16 15:57:05  MESSend:  {"header":{"appid":"xm_1004","sign":"E029A91AD7C70709A4A23FFC9D88F0FD","method":"outrepair.importWRTresult"},"body":"{\"dept\":\"dept\",\"type\":\"type\",\"model\":\"model\",\"station\":\"station\",\"timestamp\":\"2021-07-16 15:57:05\",\"sn\":\"A2\",\"result\":\"PASS\",\"inflationPressureMax\":\"0KPa\",\"inflationPressureMin\":\"-80KPa\",\"inflationPressure\":\"-28.60KPa\",\"balancePressureMax\":\"0KPa\",\"balancePressureMin\":\"-80KPa\",\"balancePressure\":\"-28.46KPa\",\"leakMax\":\"60Pa\",\"leakMin\":\"-20Pa\",\"leakage\":\"-0.73Pa\"}"}
+
+2021-07-16 15:57:06  MESReceive:  请求被中止: 未能创建 SSL/TLS 安全通道。
+
+2021-07-16 16:01:27  MESSend:  {"header":{"appid":"xm_1004","sign":"8BF77E6BEF536AAF850B30A0D33F0900","method":"outrepair.importWRTresult"},"body":"{\"dept\":\"dept\",\"type\":\"type\",\"model\":\"model\",\"station\":\"station\",\"timestamp\":\"2021-07-16 16:01:27\",\"sn\":\"A3\",\"result\":\"PASS\",\"inflationPressureMax\":\"0KPa\",\"inflationPressureMin\":\"-80KPa\",\"inflationPressure\":\"-1.33KPa\",\"balancePressureMax\":\"0KPa\",\"balancePressureMin\":\"-80KPa\",\"balancePressure\":\"-1.83KPa\",\"leakMax\":\"60Pa\",\"leakMin\":\"-20Pa\",\"leakage\":\"-0.68Pa\"}"}
+
+2021-07-16 16:01:28  MESReceive:  请求被中止: 未能创建 SSL/TLS 安全通道。
+

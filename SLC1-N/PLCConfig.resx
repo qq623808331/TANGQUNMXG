@@ -1,0 +1,2342 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="Shield_SafetyDoor.Location" type="System.Drawing.Point, System.Drawing">
+    <value>204, 19</value>
+  </data>
+  <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="button6.TabIndex" type="System.Int32, mscorlib">
+    <value>378</value>
+  </data>
+  <data name="&gt;&gt;Timer_CH2PCUP.Name" xml:space="preserve">
+    <value>Timer_CH2PCUP</value>
+  </data>
+  <data name="&gt;&gt;Back_SafetyDoorUp.Type" xml:space="preserve">
+    <value>System.Windows.Forms.PictureBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="label4.Font" type="System.Drawing.Font, System.Drawing">
+    <value>SimSun, 13pt</value>
+  </data>
+  <data name="&gt;&gt;CH2LinBaudrate.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="CH2ValActionStop.Size" type="System.Drawing.Size, System.Drawing">
+    <value>107, 58</value>
+  </data>
+  <data name="CH1PCylinderUP.TabIndex" type="System.Int32, mscorlib">
+    <value>303</value>
+  </data>
+  <data name="&gt;&gt;Stopping.ZOrder" xml:space="preserve">
+    <value>41</value>
+  </data>
+  <data name="&gt;&gt;CH2LinComm.Name" xml:space="preserve">
+    <value>CH2LinComm</value>
+  </data>
+  <data name="CH1PCylinderDown.TabIndex" type="System.Int32, mscorlib">
+    <value>304</value>
+  </data>
+  <data name="&gt;&gt;CH1FNCylinderUP.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;Timer_CH1SPCUP.Name" xml:space="preserve">
+    <value>Timer_CH1SPCUP</value>
+  </data>
+  <data name="&gt;&gt;label23.Name" xml:space="preserve">
+    <value>label23</value>
+  </data>
+  <data name="label20.Text" xml:space="preserve">
+    <value>CH1Lin波特率</value>
+  </data>
+  <data name="label8.TabIndex" type="System.Int32, mscorlib">
+    <value>283</value>
+  </data>
+  <data name="label8.Text" xml:space="preserve">
+    <value>总急停</value>
+  </data>
+  <data name="label4.Location" type="System.Drawing.Point, System.Drawing">
+    <value>40, 426</value>
+  </data>
+  <data name="Left_SafetyDoor.TabIndex" type="System.Int32, mscorlib">
+    <value>278</value>
+  </data>
+  <data name="CH2ValveAction.Text" xml:space="preserve">
+    <value>CH2阀泵动作</value>
+  </data>
+  <data name="&gt;&gt;CH2LinBaudrate.Name" xml:space="preserve">
+    <value>CH2LinBaudrate</value>
+  </data>
+  <data name="label23.Text" xml:space="preserve">
+    <value>CH1急停中</value>
+  </data>
+  <data name="&gt;&gt;PLCReConnect.ZOrder" xml:space="preserve">
+    <value>25</value>
+  </data>
+  <data name="&gt;&gt;Timer_CH2SRCUP.Name" xml:space="preserve">
+    <value>Timer_CH2SRCUP</value>
+  </data>
+  <data name="&gt;&gt;Timer_CH2SPCUP.Name" xml:space="preserve">
+    <value>Timer_CH2SPCUP</value>
+  </data>
+  <data name="CH1Reset.Size" type="System.Drawing.Size, System.Drawing">
+    <value>43, 25</value>
+  </data>
+  <data name="&gt;&gt;CH1LinBaudrate.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;CH3OpenClose.Type" xml:space="preserve">
+    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;Left_SafetyDoor.Name" xml:space="preserve">
+    <value>Left_SafetyDoor</value>
+  </data>
+  <data name="Shield_SafetyDoor.TabIndex" type="System.Int32, mscorlib">
+    <value>334</value>
+  </data>
+  <data name="&gt;&gt;CH2SPCylinderUP.Name" xml:space="preserve">
+    <value>CH2SPCylinderUP</value>
+  </data>
+  <data name="&gt;&gt;CH1Shield_Bee.ZOrder" xml:space="preserve">
+    <value>16</value>
+  </data>
+  <data name="&gt;&gt;Front_SafetyDoor.ZOrder" xml:space="preserve">
+    <value>55</value>
+  </data>
+  <data name="&gt;&gt;CH2ValveAction.ZOrder" xml:space="preserve">
+    <value>8</value>
+  </data>
+  <data name="&gt;&gt;CH1SRCylinderUP.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;CH2PCylinderDown.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="label8.Size" type="System.Drawing.Size, System.Drawing">
+    <value>62, 18</value>
+  </data>
+  <data name="CH2Stopping.Size" type="System.Drawing.Size, System.Drawing">
+    <value>43, 25</value>
+  </data>
+  <data name="&gt;&gt;CH1PCylinderUP.ZOrder" xml:space="preserve">
+    <value>32</value>
+  </data>
+  <data name="label21.Text" xml:space="preserve">
+    <value>通讯状态</value>
+  </data>
+  <data name="Shield_SafetyDoor.Text" xml:space="preserve">
+    <value>安全门屏蔽</value>
+  </data>
+  <data name="CH1LinBaudrate.Visible" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="&gt;&gt;Timer_CH1SRCDOWN.Name" xml:space="preserve">
+    <value>Timer_CH1SRCDOWN</value>
+  </data>
+  <data name="CH1SRCylinderDown.TabIndex" type="System.Int32, mscorlib">
+    <value>298</value>
+  </data>
+  <data name="&gt;&gt;CH1Stopping.Type" xml:space="preserve">
+    <value>System.Windows.Forms.PictureBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;button4.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="CH1SRCylinderUP.TabIndex" type="System.Int32, mscorlib">
+    <value>297</value>
+  </data>
+  <data name="&gt;&gt;label24.Name" xml:space="preserve">
+    <value>label24</value>
+  </data>
+  <data name="label5.TabIndex" type="System.Int32, mscorlib">
+    <value>279</value>
+  </data>
+  <data name="&gt;&gt;CH2SRCylinderDown.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="CH1PCylinderUP.Size" type="System.Drawing.Size, System.Drawing">
+    <value>107, 58</value>
+  </data>
+  <data name="CH3OpenClose.TabIndex" type="System.Int32, mscorlib">
+    <value>350</value>
+  </data>
+  <data name="&gt;&gt;CH1Reset.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;CH2Stopping.Type" xml:space="preserve">
+    <value>System.Windows.Forms.PictureBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="label11.Size" type="System.Drawing.Size, System.Drawing">
+    <value>71, 18</value>
+  </data>
+  <data name="CH4OpenClose.Location" type="System.Drawing.Point, System.Drawing">
+    <value>204, 181</value>
+  </data>
+  <data name="&gt;&gt;PLCReConnect.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;CH2FNCylinderDown.ZOrder" xml:space="preserve">
+    <value>24</value>
+  </data>
+  <data name="&gt;&gt;CH1Stopping.Name" xml:space="preserve">
+    <value>CH1Stopping</value>
+  </data>
+  <data name="&gt;&gt;CH1SRCylinderDown.Name" xml:space="preserve">
+    <value>CH1SRCylinderDown</value>
+  </data>
+  <data name="&gt;&gt;Timer_CH2FNCDOWN.Name" xml:space="preserve">
+    <value>Timer_CH2FNCDOWN</value>
+  </data>
+  <data name="Save.TabIndex" type="System.Int32, mscorlib">
+    <value>372</value>
+  </data>
+  <data name="label21.Location" type="System.Drawing.Point, System.Drawing">
+    <value>31, 19</value>
+  </data>
+  <data name="&gt;&gt;CH1PCylinderDown.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="CH2Shield_Bee.TabIndex" type="System.Int32, mscorlib">
+    <value>363</value>
+  </data>
+  <data name="&gt;&gt;CH1OpenClose.ZOrder" xml:space="preserve">
+    <value>20</value>
+  </data>
+  <data name="&gt;&gt;label11.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="CH1FNCylinderDown.Location" type="System.Drawing.Point, System.Drawing">
+    <value>721, 76</value>
+  </data>
+  <data name="ValActionStop.Text" xml:space="preserve">
+    <value>CH1阀泵停止</value>
+  </data>
+  <data name="PLCReConnect.TabIndex" type="System.Int32, mscorlib">
+    <value>258</value>
+  </data>
+  <data name="label20.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="ValActionStop.Size" type="System.Drawing.Size, System.Drawing">
+    <value>107, 58</value>
+  </data>
+  <data name="&gt;&gt;CH4OpenClose.Type" xml:space="preserve">
+    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="CH2SPCylinderUP.Size" type="System.Drawing.Size, System.Drawing">
+    <value>107, 58</value>
+  </data>
+  <data name="CH2PCylinderDown.Location" type="System.Drawing.Point, System.Drawing">
+    <value>721, 460</value>
+  </data>
+  <data name="CH2Shield_Bee.Font" type="System.Drawing.Font, System.Drawing">
+    <value>SimSun, 13pt</value>
+  </data>
+  <data name="&gt;&gt;Right_SafetyDoor.Type" xml:space="preserve">
+    <value>System.Windows.Forms.PictureBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="label20.Location" type="System.Drawing.Point, System.Drawing">
+    <value>202, 223</value>
+  </data>
+  <data name="&gt;&gt;Timer_CH2PCDOWN.Name" xml:space="preserve">
+    <value>Timer_CH2PCDOWN</value>
+  </data>
+  <data name="CH2SRCylinderUP.Size" type="System.Drawing.Size, System.Drawing">
+    <value>107, 58</value>
+  </data>
+  <data name="&gt;&gt;CH2OpenClose.Type" xml:space="preserve">
+    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label11.Name" xml:space="preserve">
+    <value>label11</value>
+  </data>
+  <data name="label23.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="&gt;&gt;CH2FNCylinderUP.Name" xml:space="preserve">
+    <value>CH2FNCylinderUP</value>
+  </data>
+  <data name="CH1SPCylinderUP.Location" type="System.Drawing.Point, System.Drawing">
+    <value>598, 140</value>
+  </data>
+  <data name="&gt;&gt;Timer_CH1FNCUP.Name" xml:space="preserve">
+    <value>Timer_CH1FNCUP</value>
+  </data>
+  <data name="&gt;&gt;CH1SPCylinderDown.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;CH1Stopping.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;CH2LinBaudrate.ZOrder" xml:space="preserve">
+    <value>11</value>
+  </data>
+  <data name="CH1FNCylinderUP.TabIndex" type="System.Int32, mscorlib">
+    <value>301</value>
+  </data>
+  <data name="label19.Location" type="System.Drawing.Point, System.Drawing">
+    <value>202, 287</value>
+  </data>
+  <data name="&gt;&gt;button6.Name" xml:space="preserve">
+    <value>button6</value>
+  </data>
+  <data name="&gt;&gt;label8.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="CH1OpenClose.Location" type="System.Drawing.Point, System.Drawing">
+    <value>204, 100</value>
+  </data>
+  <data name="&gt;&gt;CH2Reset.Name" xml:space="preserve">
+    <value>CH2Reset</value>
+  </data>
+  <data name="CH2Reset.Location" type="System.Drawing.Point, System.Drawing">
+    <value>127, 461</value>
+  </data>
+  <data name="&gt;&gt;CH1LinComm.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Timer, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;button2.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label24.ZOrder" xml:space="preserve">
+    <value>60</value>
+  </data>
+  <data name="CH1Shield_Bee.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="label20.Font" type="System.Drawing.Font, System.Drawing">
+    <value>SimSun, 13pt</value>
+  </data>
+  <data name="CH1PCylinderUP.Font" type="System.Drawing.Font, System.Drawing">
+    <value>SimSun, 12pt</value>
+  </data>
+  <data name="&gt;&gt;CH2SRCylinderUP.ZOrder" xml:space="preserve">
+    <value>30</value>
+  </data>
+  <data name="&gt;&gt;Back_SafetyDoorDown.Name" xml:space="preserve">
+    <value>Back_SafetyDoorDown</value>
+  </data>
+  <data name="&gt;&gt;CH2PCylinderUP.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="CH2SRCylinderUP.Location" type="System.Drawing.Point, System.Drawing">
+    <value>598, 268</value>
+  </data>
+  <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
+    <value>859, 620</value>
+  </data>
+  <data name="&gt;&gt;CH4OpenClose.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="CH1SPCylinderDown.Font" type="System.Drawing.Font, System.Drawing">
+    <value>SimSun, 12pt</value>
+  </data>
+  <data name="CH2SRCylinderUP.TabIndex" type="System.Int32, mscorlib">
+    <value>305</value>
+  </data>
+  <data name="&gt;&gt;label3.ZOrder" xml:space="preserve">
+    <value>48</value>
+  </data>
+  <data name="CH1Reset.TabIndex" type="System.Int32, mscorlib">
+    <value>268</value>
+  </data>
+  <data name="CH2SRCylinderDown.Size" type="System.Drawing.Size, System.Drawing">
+    <value>107, 58</value>
+  </data>
+  <data name="&gt;&gt;ValActionStop.Name" xml:space="preserve">
+    <value>ValActionStop</value>
+  </data>
+  <data name="label11.Location" type="System.Drawing.Point, System.Drawing">
+    <value>40, 469</value>
+  </data>
+  <data name="&gt;&gt;label23.ZOrder" xml:space="preserve">
+    <value>58</value>
+  </data>
+  <data name="&gt;&gt;Save.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;Front_SafetyDoor.Type" xml:space="preserve">
+    <value>System.Windows.Forms.PictureBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="Right_SafetyDoor.TabIndex" type="System.Int32, mscorlib">
+    <value>280</value>
+  </data>
+  <data name="&gt;&gt;label20.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="label19.TabIndex" type="System.Int32, mscorlib">
+    <value>367</value>
+  </data>
+  <data name="&gt;&gt;label19.ZOrder" xml:space="preserve">
+    <value>12</value>
+  </data>
+  <data name="Front_SafetyDoor.TabIndex" type="System.Int32, mscorlib">
+    <value>262</value>
+  </data>
+  <data name="&gt;&gt;Right_SafetyDoor.Name" xml:space="preserve">
+    <value>Right_SafetyDoor</value>
+  </data>
+  <data name="&gt;&gt;label2.ZOrder" xml:space="preserve">
+    <value>50</value>
+  </data>
+  <data name="ValveAction.Font" type="System.Drawing.Font, System.Drawing">
+    <value>SimSun, 12pt</value>
+  </data>
+  <data name="&gt;&gt;label19.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="label23.Location" type="System.Drawing.Point, System.Drawing">
+    <value>31, 294</value>
+  </data>
+  <data name="CH1FNCylinderDown.TabIndex" type="System.Int32, mscorlib">
+    <value>302</value>
+  </data>
+  <data name="CH2ValveAction.Font" type="System.Drawing.Font, System.Drawing">
+    <value>SimSun, 12pt</value>
+  </data>
+  <data name="CH2Reset.TabIndex" type="System.Int32, mscorlib">
+    <value>286</value>
+  </data>
+  <data name="PLCRun.TabIndex" type="System.Int32, mscorlib">
+    <value>259</value>
+  </data>
+  <data name="&gt;&gt;ValActionStop.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="CH1SPCylinderDown.TabIndex" type="System.Int32, mscorlib">
+    <value>300</value>
+  </data>
+  <data name="CH2ValveAction.TabIndex" type="System.Int32, mscorlib">
+    <value>370</value>
+  </data>
+  <data name="&gt;&gt;Stopping.Name" xml:space="preserve">
+    <value>Stopping</value>
+  </data>
+  <data name="CH2PCylinderUP.Text" xml:space="preserve">
+    <value>CH2充气气缸伸出</value>
+  </data>
+  <data name="label5.Location" type="System.Drawing.Point, System.Drawing">
+    <value>25, 245</value>
+  </data>
+  <data name="CH2PCylinderUP.Font" type="System.Drawing.Font, System.Drawing">
+    <value>SimSun, 12pt</value>
+  </data>
+  <data name="&gt;&gt;CH2FNCylinderUP.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;CH2SPCylinderDown.ZOrder" xml:space="preserve">
+    <value>27</value>
+  </data>
+  <data name="CH2SPCylinderUP.Text" xml:space="preserve">
+    <value>CH2侧推气缸伸出</value>
+  </data>
+  <data name="CH1LinBaudrate.TabIndex" type="System.Int32, mscorlib">
+    <value>364</value>
+  </data>
+  <data name="Right_SafetyDoor.Size" type="System.Drawing.Size, System.Drawing">
+    <value>43, 25</value>
+  </data>
+  <data name="label22.Location" type="System.Drawing.Point, System.Drawing">
+    <value>31, 61</value>
+  </data>
+  <data name="&gt;&gt;CH1LinBaudrate.Name" xml:space="preserve">
+    <value>CH1LinBaudrate</value>
+  </data>
+  <data name="&gt;&gt;CH1OpenClose.Type" xml:space="preserve">
+    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="Back_SafetyDoorDown.Size" type="System.Drawing.Size, System.Drawing">
+    <value>43, 25</value>
+  </data>
+  <data name="&gt;&gt;CH2Shield_Bee.Name" xml:space="preserve">
+    <value>CH2Shield_Bee</value>
+  </data>
+  <data name="&gt;&gt;ValveAction.Name" xml:space="preserve">
+    <value>ValveAction</value>
+  </data>
+  <data name="&gt;&gt;label23.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="label11.Text" xml:space="preserve">
+    <value>CH2复位</value>
+  </data>
+  <data name="&gt;&gt;button5.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="label4.Size" type="System.Drawing.Size, System.Drawing">
+    <value>71, 18</value>
+  </data>
+  <data name="PLCRun.Location" type="System.Drawing.Point, System.Drawing">
+    <value>127, 12</value>
+  </data>
+  <data name="&gt;&gt;CH2SPCylinderDown.Name" xml:space="preserve">
+    <value>CH2SPCylinderDown</value>
+  </data>
+  <data name="ValActionStop.Font" type="System.Drawing.Font, System.Drawing">
+    <value>SimSun, 12pt</value>
+  </data>
+  <data name="&gt;&gt;ReadSignal.Name" xml:space="preserve">
+    <value>ReadSignal</value>
+  </data>
+  <data name="&gt;&gt;Front_SafetyDoor.Name" xml:space="preserve">
+    <value>Front_SafetyDoor</value>
+  </data>
+  <data name="&gt;&gt;CH2ValveAction.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="Save.Text" xml:space="preserve">
+    <value>设置</value>
+  </data>
+  <data name="CH2ValActionStop.TabIndex" type="System.Int32, mscorlib">
+    <value>371</value>
+  </data>
+  <data name="CH1Stopping.Location" type="System.Drawing.Point, System.Drawing">
+    <value>127, 287</value>
+  </data>
+  <data name="&gt;&gt;button4.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="&gt;&gt;Left_SafetyDoor.Type" xml:space="preserve">
+    <value>System.Windows.Forms.PictureBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label5.ZOrder" xml:space="preserve">
+    <value>46</value>
+  </data>
+  <data name="label3.TabIndex" type="System.Int32, mscorlib">
+    <value>277</value>
+  </data>
+  <data name="CH1SRCylinderDown.Font" type="System.Drawing.Font, System.Drawing">
+    <value>SimSun, 12pt</value>
+  </data>
+  <data name="&gt;&gt;button6.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="label22.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="label19.Visible" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="&gt;&gt;CH2PCylinderDown.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="CH2Stopping.TabIndex" type="System.Int32, mscorlib">
+    <value>282</value>
+  </data>
+  <data name="CH2OpenClose.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="Back_SafetyDoorUp.Location" type="System.Drawing.Point, System.Drawing">
+    <value>127, 101</value>
+  </data>
+  <data name="label20.Visible" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="label5.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="button1.TabIndex" type="System.Int32, mscorlib">
+    <value>373</value>
+  </data>
+  <data name="Front_SafetyDoor.Size" type="System.Drawing.Size, System.Drawing">
+    <value>43, 25</value>
+  </data>
+  <data name="&gt;&gt;Timer_CH1SPCDOWN.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Timer, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;CH2PCylinderUP.Name" xml:space="preserve">
+    <value>CH2PCylinderUP</value>
+  </data>
+  <data name="&gt;&gt;CH2SPCylinderDown.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="CH2SPCylinderDown.TabIndex" type="System.Int32, mscorlib">
+    <value>308</value>
+  </data>
+  <data name="&gt;&gt;label5.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;Timer_CH2FNCUP.Name" xml:space="preserve">
+    <value>Timer_CH2FNCUP</value>
+  </data>
+  <data name="&gt;&gt;button4.Name" xml:space="preserve">
+    <value>button4</value>
+  </data>
+  <data name="CH1PCylinderUP.Text" xml:space="preserve">
+    <value>CH1充气气缸伸出</value>
+  </data>
+  <data name="&gt;&gt;CH1Shield_Bee.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="CH2SPCylinderUP.Font" type="System.Drawing.Font, System.Drawing">
+    <value>SimSun, 12pt</value>
+  </data>
+  <data name="&gt;&gt;Timer_CH2FNCDOWN.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Timer, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;ReadSignal.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Timer, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;Left_SafetyDoor.ZOrder" xml:space="preserve">
+    <value>47</value>
+  </data>
+  <data name="&gt;&gt;CH1SPCylinderUP.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="label19.Font" type="System.Drawing.Font, System.Drawing">
+    <value>SimSun, 13pt</value>
+  </data>
+  <data name="&gt;&gt;label19.Name" xml:space="preserve">
+    <value>label19</value>
+  </data>
+  <data name="&gt;&gt;Timer_CH1SPCUP.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Timer, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;PLCReConnect.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;label4.Name" xml:space="preserve">
+    <value>label4</value>
+  </data>
+  <data name="label24.Location" type="System.Drawing.Point, System.Drawing">
+    <value>10, 153</value>
+  </data>
+  <data name="label6.Location" type="System.Drawing.Point, System.Drawing">
+    <value>31, 338</value>
+  </data>
+  <data name="label19.Text" xml:space="preserve">
+    <value>CH2Lin波特率</value>
+  </data>
+  <data name="button2.Location" type="System.Drawing.Point, System.Drawing">
+    <value>869, 282</value>
+  </data>
+  <data name="CH2FNCylinderUP.Size" type="System.Drawing.Size, System.Drawing">
+    <value>107, 58</value>
+  </data>
+  <data name="CH1FNCylinderDown.Size" type="System.Drawing.Size, System.Drawing">
+    <value>107, 58</value>
+  </data>
+  <data name="&gt;&gt;Timer_CH1FNCDOWN.Name" xml:space="preserve">
+    <value>Timer_CH1FNCDOWN</value>
+  </data>
+  <data name="&gt;&gt;Timer_CH1PCUP.Name" xml:space="preserve">
+    <value>Timer_CH1PCUP</value>
+  </data>
+  <data name="CH1SPCylinderUP.Text" xml:space="preserve">
+    <value>CH1侧推气缸伸出</value>
+  </data>
+  <data name="label6.Font" type="System.Drawing.Font, System.Drawing">
+    <value>SimSun, 13pt</value>
+  </data>
+  <data name="&gt;&gt;Back_SafetyDoorDown.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="Back_SafetyDoorDown.TabIndex" type="System.Int32, mscorlib">
+    <value>266</value>
+  </data>
+  <data name="CH1SPCylinderUP.TabIndex" type="System.Int32, mscorlib">
+    <value>299</value>
+  </data>
+  <data name="CH1PCylinderUP.Location" type="System.Drawing.Point, System.Drawing">
+    <value>598, 204</value>
+  </data>
+  <data name="&gt;&gt;CH4OpenClose.ZOrder" xml:space="preserve">
+    <value>17</value>
+  </data>
+  <data name="&gt;&gt;ValveAction.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;Timer_CH1PCDOWN.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Timer, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="label19.Size" type="System.Drawing.Size, System.Drawing">
+    <value>116, 18</value>
+  </data>
+  <data name="&gt;&gt;Left_SafetyDoor.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="label4.Text" xml:space="preserve">
+    <value>CH1复位</value>
+  </data>
+  <data name="Left_SafetyDoor.Location" type="System.Drawing.Point, System.Drawing">
+    <value>127, 193</value>
+  </data>
+  <data name="CH2SRCylinderUP.Text" xml:space="preserve">
+    <value>CH2滑轨气缸伸出</value>
+  </data>
+  <data name="CH1FNCylinderUP.Font" type="System.Drawing.Font, System.Drawing">
+    <value>SimSun, 12pt</value>
+  </data>
+  <data name="&gt;&gt;Timer_CH2SPCDOWN.Name" xml:space="preserve">
+    <value>Timer_CH2SPCDOWN</value>
+  </data>
+  <data name="&gt;&gt;CH1Reset.Name" xml:space="preserve">
+    <value>CH1Reset</value>
+  </data>
+  <data name="&gt;&gt;CH2SPCylinderUP.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="CH2ValveAction.Location" type="System.Drawing.Point, System.Drawing">
+    <value>485, 12</value>
+  </data>
+  <data name="Left_SafetyDoor.Size" type="System.Drawing.Size, System.Drawing">
+    <value>43, 25</value>
+  </data>
+  <data name="&gt;&gt;label5.Name" xml:space="preserve">
+    <value>label5</value>
+  </data>
+  <data name="PLCReConnect.Font" type="System.Drawing.Font, System.Drawing">
+    <value>SimSun, 12pt</value>
+  </data>
+  <data name="label2.Size" type="System.Drawing.Size, System.Drawing">
+    <value>116, 18</value>
+  </data>
+  <data name="label24.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="label21.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="&gt;&gt;Back_SafetyDoorUp.ZOrder" xml:space="preserve">
+    <value>49</value>
+  </data>
+  <data name="CH1Shield_Bee.Font" type="System.Drawing.Font, System.Drawing">
+    <value>SimSun, 13pt</value>
+  </data>
+  <data name="label24.Size" type="System.Drawing.Size, System.Drawing">
+    <value>116, 18</value>
+  </data>
+  <data name="label20.TabIndex" type="System.Int32, mscorlib">
+    <value>365</value>
+  </data>
+  <data name="&gt;&gt;CH2PCylinderDown.Name" xml:space="preserve">
+    <value>CH2PCylinderDown</value>
+  </data>
+  <data name="&gt;&gt;CH1SRCylinderDown.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;CH1FNCylinderDown.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;CH1SRCylinderUP.Name" xml:space="preserve">
+    <value>CH1SRCylinderUP</value>
+  </data>
+  <data name="&gt;&gt;label8.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="CH1Stopping.TabIndex" type="System.Int32, mscorlib">
+    <value>264</value>
+  </data>
+  <data name="&gt;&gt;CH1Reset.Type" xml:space="preserve">
+    <value>System.Windows.Forms.PictureBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="label22.Font" type="System.Drawing.Font, System.Drawing">
+    <value>SimSun, 13pt</value>
+  </data>
+  <data name="&gt;&gt;label22.ZOrder" xml:space="preserve">
+    <value>56</value>
+  </data>
+  <data name="&gt;&gt;CH2ValActionStop.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;Timer_CH1PCUP.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Timer, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="CH3OpenClose.Location" type="System.Drawing.Point, System.Drawing">
+    <value>204, 154</value>
+  </data>
+  <data name="&gt;&gt;CH2FNCylinderDown.Name" xml:space="preserve">
+    <value>CH2FNCylinderDown</value>
+  </data>
+  <data name="&gt;&gt;button6.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="label3.Size" type="System.Drawing.Size, System.Drawing">
+    <value>98, 18</value>
+  </data>
+  <data name="&gt;&gt;CH2ValActionStop.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="Save.Location" type="System.Drawing.Point, System.Drawing">
+    <value>372, 245</value>
+  </data>
+  <data name="&gt;&gt;Shield_SafetyDoor.ZOrder" xml:space="preserve">
+    <value>21</value>
+  </data>
+  <data name="&gt;&gt;label6.Name" xml:space="preserve">
+    <value>label6</value>
+  </data>
+  <data name="label6.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="CH1PCylinderDown.Text" xml:space="preserve">
+    <value>CH1充气气缸缩回</value>
+  </data>
+  <data name="&gt;&gt;CH2PCylinderUP.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label6.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label22.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="label24.Text" xml:space="preserve">
+    <value>后侧下安全门</value>
+  </data>
+  <data name="&gt;&gt;Timer_CH2SRCDOWN.Name" xml:space="preserve">
+    <value>Timer_CH2SRCDOWN</value>
+  </data>
+  <data name="&gt;&gt;CH2SRCylinderUP.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="CH3OpenClose.Text" xml:space="preserve">
+    <value>CH2左通道启用</value>
+  </data>
+  <data name="Right_SafetyDoor.Location" type="System.Drawing.Point, System.Drawing">
+    <value>127, 238</value>
+  </data>
+  <data name="&gt;&gt;CH2Reset.Type" xml:space="preserve">
+    <value>System.Windows.Forms.PictureBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="CH1Stopping.Size" type="System.Drawing.Size, System.Drawing">
+    <value>43, 25</value>
+  </data>
+  <data name="CH2FNCylinderDown.Font" type="System.Drawing.Font, System.Drawing">
+    <value>SimSun, 12pt</value>
+  </data>
+  <data name="&gt;&gt;CH2SRCylinderUP.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="CH1SRCylinderUP.Size" type="System.Drawing.Size, System.Drawing">
+    <value>107, 58</value>
+  </data>
+  <data name="CH1PCylinderDown.Size" type="System.Drawing.Size, System.Drawing">
+    <value>107, 58</value>
+  </data>
+  <data name="&gt;&gt;CH3OpenClose.ZOrder" xml:space="preserve">
+    <value>19</value>
+  </data>
+  <data name="&gt;&gt;CH1LinBaudrate.ZOrder" xml:space="preserve">
+    <value>13</value>
+  </data>
+  <data name="label2.Location" type="System.Drawing.Point, System.Drawing">
+    <value>13, 104</value>
+  </data>
+  <data name="&gt;&gt;ValveAction.ZOrder" xml:space="preserve">
+    <value>10</value>
+  </data>
+  <data name="&gt;&gt;CH1SPCylinderUP.ZOrder" xml:space="preserve">
+    <value>36</value>
+  </data>
+  <data name="&gt;&gt;CH1PCylinderUP.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;label2.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="label22.Text" xml:space="preserve">
+    <value>前侧安全门</value>
+  </data>
+  <data name="label22.TabIndex" type="System.Int32, mscorlib">
+    <value>261</value>
+  </data>
+  <data name="&gt;&gt;label8.ZOrder" xml:space="preserve">
+    <value>42</value>
+  </data>
+  <data name="label21.Font" type="System.Drawing.Font, System.Drawing">
+    <value>SimSun, 13pt</value>
+  </data>
+  <data name="&gt;&gt;CH2FNCylinderUP.ZOrder" xml:space="preserve">
+    <value>26</value>
+  </data>
+  <data name="&gt;&gt;CH2ValveAction.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;label23.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="CH2FNCylinderUP.Font" type="System.Drawing.Font, System.Drawing">
+    <value>SimSun, 12pt</value>
+  </data>
+  <data name="label3.Location" type="System.Drawing.Point, System.Drawing">
+    <value>25, 200</value>
+  </data>
+  <data name="label22.Size" type="System.Drawing.Size, System.Drawing">
+    <value>98, 18</value>
+  </data>
+  <data name="CH1FNCylinderDown.Text" xml:space="preserve">
+    <value>CH1飞针气缸缩回</value>
+  </data>
+  <data name="&gt;&gt;CH2OpenClose.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="label11.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="&gt;&gt;CH2SRCylinderDown.ZOrder" xml:space="preserve">
+    <value>29</value>
+  </data>
+  <data name="CH1OpenClose.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="&gt;&gt;Timer_CH2FNCUP.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Timer, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label20.Name" xml:space="preserve">
+    <value>label20</value>
+  </data>
+  <data name="&gt;&gt;CH1SRCylinderDown.ZOrder" xml:space="preserve">
+    <value>37</value>
+  </data>
+  <data name="&gt;&gt;button3.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="CH1Shield_Bee.Text" xml:space="preserve">
+    <value>屏蔽CH1蜂鸣器</value>
+  </data>
+  <data name="button4.Location" type="System.Drawing.Point, System.Drawing">
+    <value>869, 366</value>
+  </data>
+  <data name="CH2FNCylinderUP.Text" xml:space="preserve">
+    <value>CH2飞针气缸伸出</value>
+  </data>
+  <data name="CH2Shield_Bee.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="&gt;&gt;Timer_CH1FNCUP.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Timer, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="CH2SRCylinderDown.Text" xml:space="preserve">
+    <value>CH2滑轨气缸缩回</value>
+  </data>
+  <data name="&gt;&gt;label21.ZOrder" xml:space="preserve">
+    <value>53</value>
+  </data>
+  <data name="&gt;&gt;Back_SafetyDoorDown.ZOrder" xml:space="preserve">
+    <value>59</value>
+  </data>
+  <data name="CH2PCylinderDown.Font" type="System.Drawing.Font, System.Drawing">
+    <value>SimSun, 12pt</value>
+  </data>
+  <data name="CH2SPCylinderUP.TabIndex" type="System.Int32, mscorlib">
+    <value>307</value>
+  </data>
+  <data name="CH4OpenClose.Text" xml:space="preserve">
+    <value>CH2右通道启用</value>
+  </data>
+  <data name="CH1Shield_Bee.TabIndex" type="System.Int32, mscorlib">
+    <value>362</value>
+  </data>
+  <data name="&gt;&gt;CH2PCylinderUP.ZOrder" xml:space="preserve">
+    <value>23</value>
+  </data>
+  <data name="CH1SRCylinderDown.Location" type="System.Drawing.Point, System.Drawing">
+    <value>721, 12</value>
+  </data>
+  <data name="CH1SRCylinderUP.Location" type="System.Drawing.Point, System.Drawing">
+    <value>598, 12</value>
+  </data>
+  <data name="&gt;&gt;label3.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="CH3OpenClose.Size" type="System.Drawing.Size, System.Drawing">
+    <value>144, 22</value>
+  </data>
+  <data name="Stopping.TabIndex" type="System.Int32, mscorlib">
+    <value>284</value>
+  </data>
+  <data name="PLCReConnect.Location" type="System.Drawing.Point, System.Drawing">
+    <value>372, 143</value>
+  </data>
+  <data name="&gt;&gt;CH1PCylinderUP.Name" xml:space="preserve">
+    <value>CH1PCylinderUP</value>
+  </data>
+  <data name="Save.Font" type="System.Drawing.Font, System.Drawing">
+    <value>SimSun, 12pt</value>
+  </data>
+  <data name="CH2FNCylinderDown.Text" xml:space="preserve">
+    <value>CH2飞针气缸缩回</value>
+  </data>
+  <data name="&gt;&gt;label3.Name" xml:space="preserve">
+    <value>label3</value>
+  </data>
+  <data name="&gt;&gt;CH1FNCylinderDown.Name" xml:space="preserve">
+    <value>CH1FNCylinderDown</value>
+  </data>
+  <data name="CH1LinBaudrate.Size" type="System.Drawing.Size, System.Drawing">
+    <value>70, 27</value>
+  </data>
+  <data name="&gt;&gt;CH1FNCylinderUP.ZOrder" xml:space="preserve">
+    <value>34</value>
+  </data>
+  <data name="&gt;&gt;CH2Stopping.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="label3.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="&gt;&gt;CH1PCylinderDown.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;CH2Shield_Bee.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="CH2ValveAction.Size" type="System.Drawing.Size, System.Drawing">
+    <value>107, 58</value>
+  </data>
+  <data name="button3.Location" type="System.Drawing.Point, System.Drawing">
+    <value>697, 366</value>
+  </data>
+  <data name="CH2LinBaudrate.Visible" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="label2.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="CH2ValActionStop.Text" xml:space="preserve">
+    <value>CH2阀泵停止</value>
+  </data>
+  <data name="&gt;&gt;CH2ValActionStop.Name" xml:space="preserve">
+    <value>CH2ValActionStop</value>
+  </data>
+  <data name="CH1Reset.Location" type="System.Drawing.Point, System.Drawing">
+    <value>127, 418</value>
+  </data>
+  <data name="CH1PCylinderDown.Font" type="System.Drawing.Font, System.Drawing">
+    <value>SimSun, 12pt</value>
+  </data>
+  <data name="CH1SPCylinderDown.Location" type="System.Drawing.Point, System.Drawing">
+    <value>721, 140</value>
+  </data>
+  <data name="CH2PCylinderDown.Text" xml:space="preserve">
+    <value>CH2充气气缸缩回</value>
+  </data>
+  <data name="label11.TabIndex" type="System.Int32, mscorlib">
+    <value>285</value>
+  </data>
+  <data name="CH1SRCylinderDown.Size" type="System.Drawing.Size, System.Drawing">
+    <value>107, 58</value>
+  </data>
+  <data name="CH2SPCylinderDown.Location" type="System.Drawing.Point, System.Drawing">
+    <value>721, 396</value>
+  </data>
+  <data name="button6.Location" type="System.Drawing.Point, System.Drawing">
+    <value>456, 467</value>
+  </data>
+  <data name="&gt;&gt;Timer_CH1SRCUP.Name" xml:space="preserve">
+    <value>Timer_CH1SRCUP</value>
+  </data>
+  <data name="&gt;&gt;CH1SPCylinderDown.ZOrder" xml:space="preserve">
+    <value>35</value>
+  </data>
+  <data name="&gt;&gt;CH2Reset.ZOrder" xml:space="preserve">
+    <value>39</value>
+  </data>
+  <data name="CH1SRCylinderDown.Text" xml:space="preserve">
+    <value>CH1滑轨气缸缩回</value>
+  </data>
+  <data name="label4.TabIndex" type="System.Int32, mscorlib">
+    <value>267</value>
+  </data>
+  <data name="&gt;&gt;Timer_CH1SRCDOWN.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Timer, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;Shield_SafetyDoor.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;button5.Name" xml:space="preserve">
+    <value>button5</value>
+  </data>
+  <data name="&gt;&gt;label21.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="label3.Text" xml:space="preserve">
+    <value>左侧安全门</value>
+  </data>
+  <data name="label23.Size" type="System.Drawing.Size, System.Drawing">
+    <value>89, 18</value>
+  </data>
+  <data name="&gt;&gt;button2.Name" xml:space="preserve">
+    <value>button2</value>
+  </data>
+  <data name="&gt;&gt;CH1SRCylinderUP.ZOrder" xml:space="preserve">
+    <value>38</value>
+  </data>
+  <data name="&gt;&gt;ValActionStop.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="label21.TabIndex" type="System.Int32, mscorlib">
+    <value>260</value>
+  </data>
+  <data name="&gt;&gt;$this.Name" xml:space="preserve">
+    <value>PLCConfig</value>
+  </data>
+  <data name="CH1SPCylinderUP.Size" type="System.Drawing.Size, System.Drawing">
+    <value>107, 58</value>
+  </data>
+  <data name="&gt;&gt;CH3OpenClose.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="CH2SRCylinderUP.Font" type="System.Drawing.Font, System.Drawing">
+    <value>SimSun, 12pt</value>
+  </data>
+  <data name="&gt;&gt;label4.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="button2.TabIndex" type="System.Int32, mscorlib">
+    <value>374</value>
+  </data>
+  <data name="CH2SPCylinderUP.Location" type="System.Drawing.Point, System.Drawing">
+    <value>598, 396</value>
+  </data>
+  <data name="CH1SPCylinderDown.Text" xml:space="preserve">
+    <value>CH1侧推气缸缩回</value>
+  </data>
+  <data name="label2.Text" xml:space="preserve">
+    <value>后侧上安全门</value>
+  </data>
+  <data name="&gt;&gt;CH2Shield_Bee.ZOrder" xml:space="preserve">
+    <value>15</value>
+  </data>
+  <data name="CH4OpenClose.TabIndex" type="System.Int32, mscorlib">
+    <value>352</value>
+  </data>
+  <data name="&gt;&gt;Stopping.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="label8.Font" type="System.Drawing.Font, System.Drawing">
+    <value>SimSun, 13pt</value>
+  </data>
+  <data name="CH1OpenClose.Size" type="System.Drawing.Size, System.Drawing">
+    <value>144, 22</value>
+  </data>
+  <data name="&gt;&gt;Back_SafetyDoorDown.Type" xml:space="preserve">
+    <value>System.Windows.Forms.PictureBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="Save.Visible" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="CH2PCylinderUP.Size" type="System.Drawing.Size, System.Drawing">
+    <value>107, 58</value>
+  </data>
+  <data name="&gt;&gt;Stopping.Type" xml:space="preserve">
+    <value>System.Windows.Forms.PictureBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="label23.Font" type="System.Drawing.Font, System.Drawing">
+    <value>SimSun, 13pt</value>
+  </data>
+  <data name="CH2Shield_Bee.Location" type="System.Drawing.Point, System.Drawing">
+    <value>204, 73</value>
+  </data>
+  <data name="&gt;&gt;CH2FNCylinderDown.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="CH2SPCylinderDown.Font" type="System.Drawing.Font, System.Drawing">
+    <value>SimSun, 12pt</value>
+  </data>
+  <data name="&gt;&gt;CH1PCylinderDown.Name" xml:space="preserve">
+    <value>CH1PCylinderDown</value>
+  </data>
+  <data name="&gt;&gt;ValveAction.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;CH1FNCylinderUP.Name" xml:space="preserve">
+    <value>CH1FNCylinderUP</value>
+  </data>
+  <data name="&gt;&gt;label4.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="ValveAction.Size" type="System.Drawing.Size, System.Drawing">
+    <value>107, 58</value>
+  </data>
+  <data name="&gt;&gt;Back_SafetyDoorUp.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;CH3OpenClose.Name" xml:space="preserve">
+    <value>CH3OpenClose</value>
+  </data>
+  <data name="&gt;&gt;CH1SPCylinderDown.Name" xml:space="preserve">
+    <value>CH1SPCylinderDown</value>
+  </data>
+  <data name="CH2LinBaudrate.Size" type="System.Drawing.Size, System.Drawing">
+    <value>70, 27</value>
+  </data>
+  <data name="$this.Icon" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        AAABAAkAMDAQAAEABABoBgAAlgAAACAgEAABAAQA6AIAAP4GAAAQEBAAAQAEACgBAADmCQAAMDAAAAEA
+        CACoDgAADgsAACAgAAABAAgAqAgAALYZAAAQEAAAAQAIAGgFAABeIgAAMDAAAAEAIACoJQAAxicAACAg
+        AAABACAAqBAAAG5NAAAQEAAAAQAgAGgEAAAWXgAAKAAAADAAAABgAAAAAQAEAAAAAACABAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAIAAAIAAAACAgACAAAAAgACAAICAAACAgIAAwMDAAAAA/wAA/wAAAP//AP8A
+        AAD/AP8A//8AAP///wAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACKAAAAAAAAAAAAAAAAAAAAAAAAAACq
+        qnqHeoqqgAAAAAAAAAAAAAAAAAAACqiAAAAAAAAAeqgAAAAAAAAAAAAAAAAKqAAAAAAAAAAAAAqoAAAA
+        AAAAAAAAAAegAAAAAAAAAAAAAAAIoAAAAAAAAAAAAKcAAAAAAAAAAAAAAAAACqAAAAAAAAAACgAIenqq
+        qqqqqqqqqqAAAIoAAAAAAAAAoAAAAKqqqqqqqqqqqqgAAAigAAAAAAAKAAAAiqqqqqqqqqqqqqoAAACK
+        AAAAAAB3AAAAeHiqqqqqqqqqqqoAAAAKAAAAAACgAAAAAAqqqqqqqqqqqqoAAAAAoAAAAAqAAAAAAKqq
+        qqqqoAAAAAAAAAAAgAAAAAoAAAAAAAAIqqqqpwAAAAAAAAAACgAAAAoAAAAAAAAKqqqqqgAAAAAAAAAA
+        CgAAAAgAAAAAAAiqqqqqqqAAAAAAAAAABwAAAAoAAAAAAAAACKqqqqAAAAAAAAAACgAAAAgAAAAAAAAA
+        qqqqqqgAAAAAAAAACgAAAAoAAAAAAAAKqqqqqqoAAAAAAAAACgAAAAoAAAAAAAAAAAqqqqpwAAAAAAAA
+        CgAAAAoAAAAAAAAAAKqqqqqgAAAAAAAAiAAAAACAAAAAAAAAB6iqqqqoAAAAAAAAoAAAAACgAAAAAAAA
+        AACKqqqqAAAAAAAIoAAAAAAKAAAAAAAAAAqqqqqqgAAAAAAKAAAAAAAAoAAAAAAAAIqKiqqqoAAAAACg
+        AAAAAAAAigAAAAAAAAAAqqqqqAAAAAoAAAAAAAAACKAAAAAAAAAKqqqqqgAAAKAAAAAAAAAAAAqAAAAA
+        AAAAAAAAAAAAqgAAAAAAAAAAAACqgAAAAAAAAAAAAAB6gAAAAAAAAAAAAAAAeqAAAAAAAAAAAKqAAAAA
+        AAAAAAAAAAAAAAenoAAAAAB6qAAAAAAAAAAAAAAAAAAAAAAAinqqqqhwAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAD///////8AAP///////wAA////////AAD///////8AAP//
+        /////wAA////////AAD///////8AAP///////wAA////P///AAD//8AAf/8AAP/+H/8P/wAA//j//+P/
+        AAD/5///+f8AAP/P///+fwAA/7gAAB8/AAD/fwAAD58AAP78AAAPzwAA/PwAAA/vAAD9/4AAD/cAAPn/
+        AB//9wAA+//gD//7AAD7/+AP//sAAPv/gAf/+wAA+//4B//7AAD7//AD//sAAPv/4AP/+wAA+//+Af/7
+        AAD7//wB//MAAP3/+AD/9wAA/f//AP/nAAD+//4Af+8AAP9//AB/3wAA/z//wD+/AAD/n/+AP38AAP/n
+        ///8/wAA//H///H/AAD//H//x/8AAP//h/w//wAA///wAf//AAD///////8AAP///////wAA////////
+        AAD///////8AAP///////wAA////////AAD///////8AAP///////wAA////////AAAoAAAAIAAAAEAA
+        AAABAAQAAAAAAAACAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAgAAAgAAAAICAAIAAAACAAIAAgIAAAICA
+        gADAwMAAAAD/AAD/AAAA//8A/wAAAP8A/wD//wAA////AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAACKqAAAenAAAAAAAAAAAACoAAAAAAAAegAAAAAAAAB3AAAAAAAAAACKAAAAAA
+        AKAAqqqqqqqqoAAIAAAAAAoAAIqqqqqqqqoAAKAAAACAAAinqqqqqqqqAAAIAAAAoAAACqqqqqeqigAA
+        CgAACAAAAAiKqqoAAAAAAAAAAAoAAAAAqqqqoAAAAAAAgAAKAAAAAACqqqAAAAAAAKAACAAAAAAIqqqq
+        AAAAAABwAAoAAAAAAAqqqgAAAAAAcAAAAAAAAACqqqqgAAAAAAAAAHAAAAAAAKqqoAAAAAoAAAAIAAAA
+        AAqqqqgAAACAAAAACgAAAAAACKqqAAAIAAAAAACHAAAAAKqqqqAAoAAAAAAAAKAAAAAAAAAACAAAAAAA
+        AAAAdwAAAAAAigAAAAAAAAAAAAAHqKeooAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAA/////////////////////////////////+Hj//+f/n/+f/+f/cAB7/vAAPf3gAD79+AA++/g
+        P//v8B/97/wf/e/4D/3v/g/9//wH//f/B/v7/gP3+/+D7/z/Ad//f/+//8/8///4B///////////////
+        //////////////////8oAAAAEAAAACAAAAABAAQAAAAAAIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        gAAAgAAAAICAAIAAAACAAIAAgIAAAICAgADAwMAAAAD/AAD/AAAA//8A/wAAAP8A/wD//wAA////AAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAqqqqoAAAAAAKqoAAAAAAAAiqoA
+        AAAAAAAKqgAAAAAAAAiqgAAAAAAAAHqgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAA//8AAP//AAD//wAA//8AAP//AAD4DwAA/D8AAPw/AAD+PwAA/h8AAP8fAAD//wAA//8AAP//
+        AAD//wAA//8AACgAAAAwAAAAYAAAAAEACAAAAAAAAAkAAAAAAAAAAAAAAAEAAAABAAAAAAAAAP4AAAX+
+        BQAJ/wkADf4NABH/EQAW/hYAGf8ZAB3+HQAh/iEAJv4mACr+KgAt/i0AMf4xADX+NQA5/jkAPf49AEH+
+        QQBF/kUAS/9LAE3+TQBR/lEAVf5VAFn+WQBe/14AYf5hAGX+ZQBp/mkAbv9uAHD/cAB1/nUAef55AH7+
+        fgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAD///8AAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAICAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAFggIDhMXFxsXFxIOBgobAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAFgwSIAAAAAAAAAAAAAAAAAAdEQwbAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABIMHQAA
+        AAAAAAAAAAAAAAAAAAAAAAAbDBYAAAAAAAAAAAAAAAAAAAAAAAAAAAAbCAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAB0IAAAAAAAAAAAAAAAAAAAAAAAAAAwWAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAEREA
+        AAAAAAAAAAAAAAAAAAAACgAAACAbFgwBAQEBAQEBAQEBAQEBAQEBAQEAAAAAABsOAAAAAAAAAAAAAAAA
+        AAAKAAAAAAAAAAwBAQEBAQEBAQEBAQEBAQEBAQEbAAAAAAAgDgAAAAAAAAAAAAAAAA4AAAAAAAAdBAEB
+        AQEBAQEBAQEBAQEBAQEBAQEOAAAAAAAAGxIAAAAAAAAAAAAAGxYAAAAAAAAgICAgCgEBAQEBAQEBAQEB
+        AQEBAQEBAAAAAAAAAA4AAAAAAAAAAAAADAAAAAAAAAAAAAAWAQEBAQEBAQEBAQEBAQEBAQEBAAAAAAAA
+        AAAKAAAAAAAAAAAWHQAAAAAAAAAAAAwBAQEBAQEBAQEBAAAAAAAAAAAAAAAAAAAAAAASAAAAAAAAAAAK
+        AAAAAAAAAAAAAAAAACAGAQEBAQEBFgAAAAAAAAAAAAAAAAAAAAAAEgAAAAAAAAAOAAAAAAAAAAAAAAAA
+        AAgBAQEBAQEBBAAAAAAAAAAAAAAAAAAAAAAADgAAAAAAAAATAAAAAAAAAAAAAAAXAQEBAQEBAQEBARYA
+        AAAAAAAAAAAAAAAAAAAADAAAAAAAAAAXAAAAAAAAAAAAAAAAAAAAFwEBAQEBAQYAAAAAAAAAAAAAAAAA
+        AAAADAAAAAAAAAAWAAAAAAAAAAAAAAAAAAAWAQEBAQEBAQEXAAAAAAAAAAAAAAAAAAAADAAAAAAAAAAS
+        AAAAAAAAAAAAAAAAAAoBBAQBAQEBAQEEAAAAAAAAAAAAAAAAAAAADgAAAAAAAAAKAAAAAAAAAAAAAAAA
+        AAAAAAAOAQEBAQEBGwAAAAAAAAAAAAAAAAAAEQAAAAAAAAAOAAAAAAAAAAAAAAAAAAAAAAYBAQEBAQEB
+        BAAAAAAAAAAAAAAAAAAbFwAAAAAAAAAAEgAAAAAAAAAAAAAAAAAAEQwODAQBAQEBAR0AAAAAAAAAAAAA
+        AAAKAAAAAAAAAAAADgAAAAAAAAAAAAAAAAAAAAAAIAQBAQEBAQgAAAAAAAAAAAAAAB0WAAAAAAAAAAAA
+        AAoAAAAAAAAAAAAAAAAAAAARAQEBAQEBAQEdAAAAAAAAAAAAAAYAAAAAAAAAAAAAAAAMAAAAAAAAAAAA
+        AAAAABsbFxsRAQEBAQEKAAAAAAAAAAAACgAAAAAAAAAAAAAAAAAbEQAAAAAAAAAAAAAAAAAAAAAMAQEB
+        AQEBIAAAAAAAAAAOAAAAAAAAAAAAAAAAAAAAGw4AAAAAAAAAAAAAAAAAAAYBAQEBAQEBCAAAAAAAAAoA
+        AAAAAAAAAAAAAAAAAAAAAAAIGwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAWCgAAAAAAAAAAAAAAAAAA
+        AAAAAAAAFwgdAAAAAAAAAAAAAAAAAAAAAAAAAAAAGwgbAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAXDBMA
+        AAAAAAAAAAAAAAAAAAAAABIMGwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAODhIXAAAAAAAAAAAA
+        FxEMEgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAgEw4IBAQECA4WIAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAA////////AAD///////8AAP///////wAA////////AAD///////8AAP//
+        /////wAA////////AAD///////8AAP///z///wAA///AAH//AAD//h//D/8AAP/4///j/wAA/+f///n/
+        AAD/z////n8AAP+4AAAfPwAA/38AAA+fAAD+/AAAD88AAPz8AAAP7wAA/f+AAA/3AAD5/wAf//cAAPv/
+        4A//+wAA+//gD//7AAD7/4AH//sAAPv/+Af/+wAA+//wA//7AAD7/+AD//sAAPv//gH/+wAA+//8Af/z
+        AAD9//gA//cAAP3//wD/5wAA/v/+AH/vAAD/f/wAf98AAP8//8A/vwAA/5//gD9/AAD/5////P8AAP/x
+        ///x/wAA//x//8f/AAD//4f8P/8AAP//8AH//wAA////////AAD///////8AAP///////wAA////////
+        AAD///////8AAP///////wAA////////AAD///////8AAP///////wAAKAAAACAAAABAAAAAAQAIAAAA
+        AAAABAAAAAAAAAAAAAAAAQAAAAEAAAAAAAAA/gAABf4FAAn+CQAP/g8AHv4eACv+KwAs/ywAM/8zADT/
+        NAA+/j4AQv5CAEX+RQBJ/kkATP5MAFD+UABV/lUAWf9ZAF7+XgBh/mEAZf5lAGj+aABt/m0Acv5yAHX+
+        dQB5/nkAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAP///wAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABkODhcAAAAAFg4O
+        AAAAAAAAAAAAAAAAAAAAAAAAAA8WAAAAAAAAAAAAAAAAExEAAAAAAAAAAAAAAAAAABMWAAAAAAAAAAAA
+        AAAAAAAAABEXAAAAAAAAAAAAAAANAAAADQQEAgQCBAIEAgQCBAAAAAAPAAAAAAAAAAAADQAAAAARAgIC
+        AgICAgICAgICCgAAAAAPAAAAAAAAABMAAAAAGREPBAICAgICAgICAgICAAAAAAAZAAAAAAAAFgAAAAAA
+        ABECAgICAgIGBwgICAgAAAAAAA8AAAAAABMAAAAAAAAAFxYFAgICAgAAAAAAAAAAAAAAAAAAAAAADgAA
+        AAAAAAAADwICAgICBwAAAAAAAAAAAAAADwAAAAANAAAAAAAAAAAAAAcCAgICAAAAAAAAAAAAAAANAAAA
+        AA0AAAAAAAAAAAAOAgICAgIHAAAAAAAAAAAAAA0AAAAADgAAAAAAAAAAAAAACgICAgIAAAAAAAAAAAAA
+        EwAAAAAAAAAAAAAAAAAAAA0CAgICAggAAAAAAAAAAAAAAAAAAAAOAAAAAAAAAAAAAAAPAgICAgAAAAAA
+        AAAADQAAAAAAAAAXAAAAAAAAAAAADQICAgICCgAAAAAAABEAAAAAAAAAABcAAAAAAAAAAAAAABMCAgIC
+        AAAAAAAXAAAAAAAAAAAAABkTAAAAAAAAAAAOBAICAgQOAAAADwAAAAAAAAAAAAAAAAAOAAAAAAAAAAAA
+        AAAAAAAAAA4AAAAAAAAAAAAAAAAAAAAADhMAAAAAAAAAAAAAEw8AAAAAAAAAAAAAAAAAAAAAAAAAAAAT
+        Dg0KCg0OEwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/////////////////////////////////+Hj//+f
+        /n/+f/+f/cAB7/vAAPf3gAD79+AA++/gP//v8B/97/wf/e/4D/3v/g/9//wH//f/B/v7/gP3+/+D7/z/
+        Ad//f/+//8/8///4B/////////////////////////////////8oAAAAEAAAACAAAAABAAgAAAAAAAAB
+        AAAAAAAAAAAAAAABAAAAAQAAAAAAAAD+AAAE/wQAC/4LAAz/DAAR/hEAFf8VACP/IwA6/zoAQ/5DAFL/
+        UgBb/1sAb/5vAHb+dgB5/3kAfv9+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAA////AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAJAgICAgIFAAAAAAAA
+        AAAAAAcCAg4AAAAAAAAAAAAAAAALAwIMAAAAAAAAAAAAAAAAAAgCAwAAAAAAAAAAAAAAAAANBQIOAAAA
+        AAAAAAAAAAAAAAoCAwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAD//wAA//8AAP//AAD//wAA//8AAPgP
+        AAD8PwAA/D8AAP4/AAD+HwAA/x8AAP//AAD//wAA//8AAP//AAD//wAAKAAAADAAAABgAAAAAQAgAAAA
+        AACAJQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAA/wADAP8AHwD/AEUA/wBjAP8AdgD+AIMA/wCGAP8AfAD/AHIA/wBeAP8AQAD+
+        ABkAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAD/AAIA/wAnAP4AZgD/AKkA/wDiAP8A5QD/AMkA/wC0AP8ApQD+AJ4A/wCZAP8AnwD/
+        AKgA/wC4AP8AzAD+AOkA/wDaAP8AmwD/AFwA/wAeAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAA/wAQAP8ATgD/AKwA/wDRAP4AuwD/AIAA/wBCAP8AIgD/ABUA/wAMAP8ABQD+
+        AAIAAAAAAP8AAwD/AAYA/wANAP8AFwD+ACQA/wBMAP8AjQD/AMAA/wDTAP8AnAD+AD8A/wAKAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAP4ACAD+AEQA/gC5AP4A0QD+AIcA/gA3AP4ACgAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAD+ABEA/gA+AP4AmwD+
+        ANQA/gCmAP4AOAD+AAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/wAZAP4AlgD/AOcA/wB2AP8AGQAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAD+ACcA/wCQAP8A5gD/AH4A/wALAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAD/AD8A/wDTAP4AqwD/ACEA/wAGAP8AMAD/
+        AF8A/wByAP4AcgD/AHIA/wByAP8AcgD/AHIA/wByAP8AcgD+AHIA/wByAP8AcgD/AHIA/wByAP8AcgD+
+        AHIA/wByAP8AcgD/AHIA/wByAP8ACwAAAAAAAAAAAP8AMQD/AMYA/wDBAP8AKwAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/wACAP8ATAD/ANsA/wB3AP4AHwD/
+        AEsA/wCHAP8AnAD/AKoA/wDSAP4A/gD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD+AP4A/wD/AP8A/wD/
+        AP8A/wD/AP8A/wD+AP4A/wD/AP8A/wD/AP8A/wD/AP8ATAAAAAAAAAAAAAAAAAD/ABMA/wCYAP8AywD+
+        ADkAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAD/AAEA/wA/AP8A3AD/
+        AGMA/wAGAAAAAAAAAAAAAAAAAP8ACAD/AFQA/wDVAP4A/gD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD+
+        AP4A/wD/AP8A/wD/AP8A/wD/AP8A/wD+AP4A/wD/AP8A/wD/AP8A/wD/AP8AlAD+AAMAAAAAAAAAAAAA
+        AAAA/wAMAP8AhgD+AMwA/wAmAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAD/
+        ACIA/wDKAP8AfAD/AAIAAAAAAAAAAAAAAAAA/wARAP8AjgD/APIA/wD/AP4A/gD/AP8A/wD/AP8A/wD/
+        AP8A/wD/AP8A/wD+AP4A/wD/AP8A/wD/AP8A/wD/AP8A/wD+AP4A/wD/AP8A/wD/AP8A/wD/AP8AzgD+
+        ABQAAAAAAAAAAAAAAAAAAAAAAP8ADAD+AJkA/wC8AP8ACgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAP4ABQD+AJ8A/gCpAP4AAwAAAAAAAAAAAAAAAAAAAAAA/gBPAP4AgAD+AIAA/gCAAP4AhAD+
+        AN0A/gD+AP4A/gD+AP4A/gD+AP4A/gD+AP4A/gD+AP4A/gD+AP4A/gD+AP4A/gD+AP4A/gD+AP4A/gD+
+        AP4A/gD+AP4A+wD+ADYAAAAAAAAAAAAAAAAAAAAAAAAAAAD+ABAA/gDJAP4AdQD+AAIAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAP4ASAD/ANEA/wAsAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAA/wAiAP4AqwD/APkA/wD/AP8A/wD/AP8A/wD/AP8A/wD+AP4A/wD/AP8A/wD/AP8A/wD/AP8A/wD+
+        AP4A/wD/AP8A/wD/AP8A/wD/AP8A/wD+AH8AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/wBCAP8A3AD/
+        ACcAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAP4AqAD/AI4A/wACAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAP8ABgD/AFAA/wDRAP4A/gD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD+AP4A/wD/AP8A/wD/
+        AHQA/wAyAP8AMgD+ADIA/wAyAP8AMgD/ADIA/wAyAP8AMgD+AB8AAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAA/wADAP8AuAD/AHsAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/wAWAP4A3wD/ADsAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAP8ACQD/AEQA/wBTAP4AUwD/AFYA/wCDAP8A7gD/AP8A/wD/AP8A/wD+
+        AP4A/wD/AP8A/wD/AK0A/wALAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAP8AYAD/AL4A/wANAAAAAAAAAAAAAAAAAAAAAAAAAAAA/wBIAP4AxwD/
+        ABoAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAP4AAQD/AGIA/wDkAP8A/wD/
+        AP8A/wD/AP8A/wD+AP4A/wD/AP8A/wD/APIA/wBAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAP8ALwD/AMwA/wAtAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAA/wBoAP4AsAD/AAgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/wAcAP4ApgD/
+        APoA/wD/AP8A/wD/AP8A/wD/AP8A/wD+AP4A/wD/AP8A/wD/AP8A/wCuAP8ABQAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAP8ADgD/ANAA/wBDAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAA/wB1AP4AqAD/AAIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAA/wAKAP4AJQD/ACYA/wAmAP8ANwD/AKEA/wD9AP8A/wD+AP4A/wD/AP8A/wD/AP8A/wDsAP8AQAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAP8AAgD/
+        ANIA/wBMAAAAAAAAAAAAAAAAAAAAAAAAAAAA/gBvAP4AqwD+AAUAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAD+AAEA/gAtAP4ArgD+APoA/gD+AP4A/gD+AP4A/gD+AP4A/gD+
+        AP4A/gD+AP4ApQD+AAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAP4ABwD+ANEA/gBIAAAAAAAAAAAAAAAAAAAAAAAAAAAA/wBYAP4AuwD/ABAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAD/AFMA/wDXAP8A+QD/APkA/wD5AP8A/QD+
+        AP4A/wD/AP8A/wD/AP8A/wD/AP8A8QD+AC4AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAP8AHgD/AM0A/wA4AAAAAAAAAAAAAAAAAAAAAAAAAAAA/wApAP4A2AD/
+        ACcAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAA/wA8AP8AzQD+AP4A/wD/AP8A/wD/AP8A/wD/AP8A/gD+AJ0A/wAEAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAP8ARwD/AMYA/wAaAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAA/wADAP4AzAD/AGcAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAP8ADQD/AHMA/wDuAP8A/gD+AP4A/wD/AP8A/wD/AP8A/wD/AP8A/wD+APMA/wAnAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAP8AkAD/AKAA/wACAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAP4AbwD/AL8A/wASAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAA/wAMAP8AdgD/AMUA/wDLAP8AywD+ANIA/wD3AP8A/wD/AP8A/wD/AP8A/wD+
+        AP4A/wCPAP8ABQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/wAbAP8A3wD/
+        AEYAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAP4AGwD/AMgA/wBrAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAP8AEwD+AIQA/wDxAP8A/wD/
+        AP8A/wD/AP8A/wD+AP4A/wDkAP8AKAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAD+
+        AAUA/wCOAP8ArgD/AA0AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAD+AFEA/gDeAP4AMQAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/gAzAP4AwwD+
+        AP4A/gD+AP4A/gD+AP4A/gD+AP4A/gD+AP4A/gD+AP4AigAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAD+AE4A/gDoAP4AKgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAD/
+        AAYA/wB9AP8A1AD/ACIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAD/
+        ABsA/wCPAP8AngD+AJ4A/wCfAP8AvgD/APsA/wD/AP8A/wD+AP4A/wD/AP8A3wD/ACkAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAP8AQgD+ANgA/wBdAP8AAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAA/wAOAP8AmAD/AMMA/wAyAP4AAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAD+AAUA/wBHAP8A1QD/AP0A/wD/AP8A/wD+AP4A/wD/AP8A/QD/
+        AIQAAAAAAAAAAAAAAAAAAAAAAAAAAAD/AAEA/wBMAP8AzgD+AHwA/wAEAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAP8ADQD/AJYA/wDNAP4AUgD/AAcAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAP8AEwD+AH4A/wDtAP8A/wD/AP8A/wD/AP8A/wD+
+        AP4A/wD/AP8A/wD/AN8A/wAcAAAAAAAAAAAAAAAAAP8ACwD/AGoA/wDYAP8AdQD+AAgAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAD/AAQA/wBqAP4A4QD/
+        AJwA/wAWAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAP8ANQD+AHAA/wBxAP8AcQD/
+        AHEA/wBxAP8AcQD+AHEA/wBxAP8AcQD/AG4A/wAmAAAAAAAAAAAA/wAqAP8ArAD/AN0A/wBMAP8AAwAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAP4AJAD/AKEA/wDnAP8AhwD/AC0A/wABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/wABAP8APQD+AJ4A/wDjAP8AkgD/
+        ABIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAD+AAgA/gBCAP4AqQD+ANMA/gCzAP4AXQD+AC0A/gANAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/gASAP4ANAD+AGsA/gC+AP4A0QD+
+        AJcA/gA0AP4ABQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAP8ACAD/ADUA/wB7AP4AyAD/
+        AMwA/wC/AP8AoAD/AHQA/wBVAP8APgD+ADMA/wArAP8ANAD/AEEA/wBaAP8AegD+AKcA/wDCAP8AzwD/
+        AL4A/wBwAP8AKQD+AAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAP4ABQD/AC8A/wBbAP8AhwD/AK8A/wDPAP8A5AD+APEA/wD1AP8A8AD/AOAA/wDJAP8AqgD+
+        AIAA/wBTAP8AJQD/AAMAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAP//
+        /////wAA////////AAD///////8AAP///////wAA////////AAD///////8AAP///////wAA////////
+        AAD//+AB//8AAP/+AAAf/wAA//gAQAP/AAD/4D//gP8AAP/B///wfwAA/4AAAAw/AAD+AAAADh8AAPwc
+        AAAHDwAA/DgAAAeHAAD4eAAAB8MAAPj/AAAH4wAA+PwAAAfjAADx/AAH//EAAPH/gAf/8QAA8f8AA//x
+        AADx/wAD//EAAPH/wAH/8QAA8f/AAf/xAADx//wA//EAAPH/8AD/8QAA+P/gAH/jAAD4//4Af8MAAPx/
+        /AB/xwAA/D/4AD+HAAD+D/8APg8AAP8H/gAcHwAA/4P+ABg/AAD/4H//wP8AAP/wD/4B/wAA//wAAAf/
+        AAD//4AAP/8AAP///////wAA////////AAD///////8AAP///////wAA////////AAD///////8AAP//
+        /////wAA////////AAD///////8AACgAAAAgAAAAQAAAAAEAIAAAAAAAgBAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAD+AA8A/gAzAP4ASwD/AFgA/gBVAP4ASQD+
+        ADAA/wALAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/gAEAP4ANwD+AIcA/wCzAP4AtAD+AI8A/gB1AP8AaQD+
+        AGoA/gB4AP4AkgD/ALcA/gCvAP4AfwD+AC4A/wACAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/gADAP8ARAD+AK4A/gCWAP4AQQD/ABMA/gABAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAP8AAQD+ABYA/gBKAP4AnwD/AKYA/gA5AP4AAQAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAP8AEwD/AJsA/wCVAP8AHgAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAP8AKgD/AKEA/wCMAP8ADAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAD+ACMA/gC5AP4AUQD/AD8A/gB+AP4AuQD+
+        APAA/wD2AP4A9gD+APYA/gD2AP8A9gD+APYA/gD2AP4A9gD/APYA/gD2AP4A9gD+AHkAAAAAAP4AAgD+
+        AF0A/gCvAP8AGQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/wAXAP4AuAD+AC8AAAAAAAAAAAD+
+        ABYA/gCfAP4A+gD/AP8A/gD+AP4A/gD+AP4A/wD/AP4A/gD+AP4A/gD+AP8A/wD+AP4A/gD+AP4AwQD/
+        AAUAAAAAAAAAAAD+AEYA/wCvAP4ACQAAAAAAAAAAAAAAAAAAAAAAAAAAAP4AAgD/AJwA/gBHAAAAAAAA
+        AAAA/wALAP4AhQD+AKoA/gCsAP8A8AD+AP4A/gD+AP4A/gD/AP8A/gD+AP4A/gD+AP4A/wD/AP4A/gD+
+        AP4A/gD1AP8AHQAAAAAAAAAAAAAAAAD/AF0A/gCHAP4AAQAAAAAAAAAAAAAAAAAAAAAA/wBAAP8AlgAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAP8AGgD/AKgA/wD8AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wDUAP8AywD/
+        AMwA/wDLAP8AywD/AMsA/wBGAAAAAAAAAAAAAAAAAP8AAgD/AK0A/wAnAAAAAAAAAAAAAAAAAAAAAAD+
+        AJcA/wA0AAAAAAAAAAAAAAAAAAAAAAD+AAcA/gBmAP4AjAD/AJIA/gDhAP4A/gD+AP4A/wD/AP4A/gD+
+        AGcAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAP4ATgD+AHsAAAAAAAAAAAAA
+        AAAAAAAAAP4AtwD/AA4AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/gAZAP8ArQD+AP0A/gD+AP4A/gD/
+        AP8A/gD+AP4A1AD+AA0AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/gAZAP4AqwAA
+        AAAAAAAAAAAAAAAAAAAA/gC9AP8AAgAAAAAAAAAAAAAAAAAAAAAAAAAAAP4AAgD+AFAA/wBuAP4AdgD+
+        ANQA/gD+AP8A/wD+AP4A/gD9AP4AYAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAD+
+        AAMA/gC9AAAAAAAAAAAAAAAAAAAAAAD/ALsA/wAFAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAD/
+        AB4A/wCvAP8A/QD/AP8A/wD/AP8A/wD/AP8A/wDTAP8ABQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAP8ACAD/ALkAAAAAAAAAAAAAAAAAAAAAAP4ArwD/ABYAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAP8ANwD+AFAA/gBWAP4AwwD/AP8A/gD+AP4A/gD+AP0A/wBXAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAA/gAoAP4AnAAAAAAAAAAAAAAAAAAAAAAA/gB6AP8AVgAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAP4AIwD+ALgA/gD9AP8A/wD+AP4A/gD+AP4A/gD/AMgA/gAIAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAD+AHIA/gBcAAAAAAAAAAAAAAAAAAAAAAD+AB8A/wCzAP4ACgAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/gAcAP4AMgD+ADsA/wCrAP4A/gD+AP4A/gD+AP8A/QD+
+        AEsAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/wAQAP4AuwD+ABAAAAAAAAAAAAAAAAAAAAAAAAAAAAD/
+        AGUA/wCJAP8AAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/wAkAP8AvQD/AP4A/wD/AP8A/wD/
+        AP8A/wD/AP8AwQD/AAUAAAAAAAAAAAAAAAAAAAAAAP8ABgD/AJ8A/wBKAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAP8ABQD+AIsA/gB2AP4ABQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAD+AAkA/gAUAP8AIAD+
+        AJcA/gD8AP4A/gD/AP8A/gD6AP4ARwAAAAAAAAAAAAAAAAD+AAkA/gCMAP8AdgAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAP4ABQD+AIQA/gCaAP8AFgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAD+
+        ACAA/wC0AP4A9QD+APUA/gD1AP8A9gD+APUA/gCyAAAAAAAAAAAA/gAeAP4AqgD+AG8A/wADAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAD+AEkA/wC5AP4AbgD+ABQAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/gAbAP8AfQD+ALUA/gA3AAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAD/AAwA/wBkAP8AswD/
+        AJgA/wBVAP8AJQD/ABEA/wAGAP8AAQD/AAIA/wAIAP8AEwD/ACgA/wBeAP8AngD/AK8A/wBVAP8ACQAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAA/gAFAP4AMAD/AHAA/gCgAP4AsAD+ALoA/wDAAP4AwAD+ALkA/gCvAP8AnAD+AGcA/gArAP4AAgAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAA////////////////////////////+Af//4AAf/4D8B/8P/8P+AAAh/GA
+        AGPjAABx58AAceeAH/nn4A/558AP+efwB/nn8Af55/gD+eP4A/Hx/AHj8PwBx/h+AYf+H/4f/wAAP//A
+        AP////////////////////////////////8oAAAAEAAAACAAAAABACAAAAAAAEAEAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/wADAP8AHwD/ACsA/wAeAP8AAgAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAD/AD4A/gBlAP8AXgD+AEEA/wA1AP4AQgD/
+        AF8A/gBmAP8AOAAAAAAAAAAAAAAAAAAAAAAAAAAAAP8ACAD/AG4A/wBcAP8AagD/AHsA/wB7AP8AewD/
+        AHsA/wB7AP8AWwD/ADMA/wBpAP8ABgAAAAAAAAAAAAAAAAD/AGwA/gAMAP8AKQD+ALwA/wD7AP4A/gD/
+        AP8A/gD+AP8A/wD+AO0A/wAIAP4AEQD/AGcAAAAAAAAAAAD/ADYA/wAzAAAAAAD/AAEA/wBtAP8A3AD/
+        AP8A/wD/AP8AgQD/AGYA/wBlAP8AEQAAAAAA/wA/AP8AKAAAAAAA/gBdAP8ABAAAAAAAAAAAAP4AGwD/
+        AKQA/gD0AP8A/wD+AJAAAAAAAAAAAAAAAAAAAAAAAP8ABwD+AFoAAAAAAP8AWgD/AAYAAAAAAAAAAAAA
+        AAAA/wBVAP8AxQD/AP8A/wDzAP8AFwAAAAAAAAAAAAAAAAD/AAwA/wBVAAAAAAD+ACYA/wBFAAAAAAAA
+        AAAAAAAAAP8ADwD+AIkA/wDqAP4A/gD/AIYAAAAAAAAAAAAAAAAA/wBPAP4AGwAAAAAAAAAAAP8AXwD/
+        AB8AAAAAAAAAAAAAAAAA/wBAAP8ArQD/AP4A/wDuAP8AEwAAAAAA/wAnAP8AWAAAAAAAAAAAAAAAAAD/
+        AAEA/gBaAP8ATwD+AAUAAAAAAP4ACAD/AGoA/gB6AP8AegD+ADMA/wBUAP4AVAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAD/ABwA/wBgAP8AYgD/AGEA/wBhAP8AYQD/AGIA/wBfAP8AFwAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAP//AAD//wAA/B8AAPAHAADAAQAAwAEAAJAEAACYPAAAnBwAAJwcAADOCQAAwgMAAPAH
+        AAD//wAA//8AAP//AAA=
+</value>
+  </data>
+  <data name="&gt;&gt;CH1FNCylinderDown.ZOrder" xml:space="preserve">
+    <value>33</value>
+  </data>
+  <data name="CH1Shield_Bee.Size" type="System.Drawing.Size, System.Drawing">
+    <value>144, 22</value>
+  </data>
+  <data name="&gt;&gt;Timer_CH1SRCUP.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Timer, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="label20.Size" type="System.Drawing.Size, System.Drawing">
+    <value>116, 18</value>
+  </data>
+  <data name="CH4OpenClose.Size" type="System.Drawing.Size, System.Drawing">
+    <value>144, 22</value>
+  </data>
+  <data name="&gt;&gt;CH2SPCylinderUP.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;button3.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="label24.TabIndex" type="System.Int32, mscorlib">
+    <value>265</value>
+  </data>
+  <data name="&gt;&gt;CH2Stopping.ZOrder" xml:space="preserve">
+    <value>43</value>
+  </data>
+  <data name="CH2PCylinderUP.TabIndex" type="System.Int32, mscorlib">
+    <value>311</value>
+  </data>
+  <data name="&gt;&gt;label22.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="CH1OpenClose.TabIndex" type="System.Int32, mscorlib">
+    <value>349</value>
+  </data>
+  <data name="button5.Location" type="System.Drawing.Point, System.Drawing">
+    <value>456, 439</value>
+  </data>
+  <data name="CH3OpenClose.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="CH2Stopping.Location" type="System.Drawing.Point, System.Drawing">
+    <value>127, 331</value>
+  </data>
+  <data name="&gt;&gt;CH1PCylinderUP.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="label23.TabIndex" type="System.Int32, mscorlib">
+    <value>263</value>
+  </data>
+  <data name="&gt;&gt;label22.Name" xml:space="preserve">
+    <value>label22</value>
+  </data>
+  <data name="&gt;&gt;button3.Name" xml:space="preserve">
+    <value>button3</value>
+  </data>
+  <data name="&gt;&gt;button2.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="label6.Size" type="System.Drawing.Size, System.Drawing">
+    <value>89, 18</value>
+  </data>
+  <data name="CH1FNCylinderUP.Size" type="System.Drawing.Size, System.Drawing">
+    <value>107, 58</value>
+  </data>
+  <data name="CH1FNCylinderDown.Font" type="System.Drawing.Font, System.Drawing">
+    <value>SimSun, 12pt</value>
+  </data>
+  <data name="&gt;&gt;button6.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;CH1SRCylinderUP.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="label8.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="&gt;&gt;Shield_SafetyDoor.Name" xml:space="preserve">
+    <value>Shield_SafetyDoor</value>
+  </data>
+  <data name="&gt;&gt;CH2SRCylinderUP.Name" xml:space="preserve">
+    <value>CH2SRCylinderUP</value>
+  </data>
+  <data name="&gt;&gt;Right_SafetyDoor.ZOrder" xml:space="preserve">
+    <value>45</value>
+  </data>
+  <data name="label5.Text" xml:space="preserve">
+    <value>右侧安全门</value>
+  </data>
+  <data name="&gt;&gt;CH1LinComm.Name" xml:space="preserve">
+    <value>CH1LinComm</value>
+  </data>
+  <data name="&gt;&gt;Save.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label11.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;Timer_CH1PCDOWN.Name" xml:space="preserve">
+    <value>Timer_CH1PCDOWN</value>
+  </data>
+  <data name="&gt;&gt;CH1OpenClose.Name" xml:space="preserve">
+    <value>CH1OpenClose</value>
+  </data>
+  <data name="&gt;&gt;label20.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="CH3OpenClose.Font" type="System.Drawing.Font, System.Drawing">
+    <value>SimSun, 13pt</value>
+  </data>
+  <data name="&gt;&gt;CH2ValveAction.Name" xml:space="preserve">
+    <value>CH2ValveAction</value>
+  </data>
+  <data name="CH1SRCylinderUP.Text" xml:space="preserve">
+    <value>CH1滑轨气缸伸出</value>
+  </data>
+  <data name="&gt;&gt;CH2LinBaudrate.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;CH2FNCylinderDown.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="CH2SPCylinderDown.Text" xml:space="preserve">
+    <value>CH2侧推气缸缩回</value>
+  </data>
+  <data name="&gt;&gt;button1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="label8.Location" type="System.Drawing.Point, System.Drawing">
+    <value>40, 379</value>
+  </data>
+  <data name="CH2ValActionStop.Location" type="System.Drawing.Point, System.Drawing">
+    <value>485, 79</value>
+  </data>
+  <data name="CH2LinBaudrate.Font" type="System.Drawing.Font, System.Drawing">
+    <value>SimSun, 13pt</value>
+  </data>
+  <data name="Save.Size" type="System.Drawing.Size, System.Drawing">
+    <value>107, 58</value>
+  </data>
+  <data name="CH1SRCylinderUP.Font" type="System.Drawing.Font, System.Drawing">
+    <value>SimSun, 12pt</value>
+  </data>
+  <data name="&gt;&gt;label8.Name" xml:space="preserve">
+    <value>label8</value>
+  </data>
+  <data name="&gt;&gt;PLCReConnect.Name" xml:space="preserve">
+    <value>PLCReConnect</value>
+  </data>
+  <data name="&gt;&gt;CH2OpenClose.ZOrder" xml:space="preserve">
+    <value>18</value>
+  </data>
+  <data name="&gt;&gt;CH1SRCylinderDown.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;PLCRun.Name" xml:space="preserve">
+    <value>PLCRun</value>
+  </data>
+  <data name="CH2OpenClose.Size" type="System.Drawing.Size, System.Drawing">
+    <value>144, 22</value>
+  </data>
+  <data name="&gt;&gt;button5.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;CH2SPCylinderUP.ZOrder" xml:space="preserve">
+    <value>28</value>
+  </data>
+  <data name="CH2PCylinderDown.Size" type="System.Drawing.Size, System.Drawing">
+    <value>107, 58</value>
+  </data>
+  <data name="&gt;&gt;label6.ZOrder" xml:space="preserve">
+    <value>44</value>
+  </data>
+  <data name="$this.Text" xml:space="preserve">
+    <value>PLC控制</value>
+  </data>
+  <data name="ValActionStop.TabIndex" type="System.Int32, mscorlib">
+    <value>369</value>
+  </data>
+  <data name="CH2ValActionStop.Font" type="System.Drawing.Font, System.Drawing">
+    <value>SimSun, 12pt</value>
+  </data>
+  <data name="CH2SRCylinderDown.Font" type="System.Drawing.Font, System.Drawing">
+    <value>SimSun, 12pt</value>
+  </data>
+  <data name="CH2PCylinderDown.TabIndex" type="System.Int32, mscorlib">
+    <value>312</value>
+  </data>
+  <data name="&gt;&gt;button5.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="label21.Size" type="System.Drawing.Size, System.Drawing">
+    <value>80, 18</value>
+  </data>
+  <data name="&gt;&gt;CH1SPCylinderUP.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;CH2Stopping.Name" xml:space="preserve">
+    <value>CH2Stopping</value>
+  </data>
+  <data name="&gt;&gt;label5.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label2.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="button3.TabIndex" type="System.Int32, mscorlib">
+    <value>375</value>
+  </data>
+  <data name="CH2OpenClose.Text" xml:space="preserve">
+    <value>CH1右通道启用</value>
+  </data>
+  <data name="CH1FNCylinderUP.Text" xml:space="preserve">
+    <value>CH1飞针气缸伸出</value>
+  </data>
+  <data name="&gt;&gt;button1.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="CH2FNCylinderDown.TabIndex" type="System.Int32, mscorlib">
+    <value>310</value>
+  </data>
+  <data name="label6.Text" xml:space="preserve">
+    <value>CH2急停中</value>
+  </data>
+  <data name="Front_SafetyDoor.Location" type="System.Drawing.Point, System.Drawing">
+    <value>127, 56</value>
+  </data>
+  <data name="label11.Font" type="System.Drawing.Font, System.Drawing">
+    <value>SimSun, 13pt</value>
+  </data>
+  <data name="&gt;&gt;Front_SafetyDoor.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;label3.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="ValveAction.Location" type="System.Drawing.Point, System.Drawing">
+    <value>372, 12</value>
+  </data>
+  <data name="&gt;&gt;CH2PCylinderDown.ZOrder" xml:space="preserve">
+    <value>22</value>
+  </data>
+  <data name="CH2Shield_Bee.Text" xml:space="preserve">
+    <value>屏蔽CH2蜂鸣器</value>
+  </data>
+  <data name="CH1Shield_Bee.Location" type="System.Drawing.Point, System.Drawing">
+    <value>204, 46</value>
+  </data>
+  <data name="button5.TabIndex" type="System.Int32, mscorlib">
+    <value>377</value>
+  </data>
+  <data name="&gt;&gt;CH1PCylinderDown.ZOrder" xml:space="preserve">
+    <value>31</value>
+  </data>
+  <data name="CH2FNCylinderDown.Location" type="System.Drawing.Point, System.Drawing">
+    <value>721, 332</value>
+  </data>
+  <data name="Back_SafetyDoorDown.Location" type="System.Drawing.Point, System.Drawing">
+    <value>127, 146</value>
+  </data>
+  <data name="&gt;&gt;Timer_CH2SRCUP.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Timer, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="Shield_SafetyDoor.Font" type="System.Drawing.Font, System.Drawing">
+    <value>SimSun, 13pt</value>
+  </data>
+  <data name="&gt;&gt;Timer_CH1SPCDOWN.Name" xml:space="preserve">
+    <value>Timer_CH1SPCDOWN</value>
+  </data>
+  <data name="&gt;&gt;CH1FNCylinderDown.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;Save.ZOrder" xml:space="preserve">
+    <value>6</value>
+  </data>
+  <data name="CH1FNCylinderUP.Location" type="System.Drawing.Point, System.Drawing">
+    <value>598, 76</value>
+  </data>
+  <data name="&gt;&gt;PLCRun.Type" xml:space="preserve">
+    <value>System.Windows.Forms.PictureBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;CH2SRCylinderDown.Name" xml:space="preserve">
+    <value>CH2SRCylinderDown</value>
+  </data>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="$this.StartPosition" type="System.Windows.Forms.FormStartPosition, System.Windows.Forms">
+    <value>CenterScreen</value>
+  </data>
+  <data name="&gt;&gt;button1.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="label4.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="&gt;&gt;label21.Name" xml:space="preserve">
+    <value>label21</value>
+  </data>
+  <data name="Shield_SafetyDoor.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="CH1SPCylinderUP.Font" type="System.Drawing.Font, System.Drawing">
+    <value>SimSun, 12pt</value>
+  </data>
+  <data name="CH2OpenClose.Font" type="System.Drawing.Font, System.Drawing">
+    <value>SimSun, 13pt</value>
+  </data>
+  <data name="&gt;&gt;button2.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="CH2LinBaudrate.Location" type="System.Drawing.Point, System.Drawing">
+    <value>204, 309</value>
+  </data>
+  <data name="PLCReConnect.Text" xml:space="preserve">
+    <value>PLC重连</value>
+  </data>
+  <data name="CH2PCylinderUP.Location" type="System.Drawing.Point, System.Drawing">
+    <value>598, 460</value>
+  </data>
+  <data name="CH1LinBaudrate.Font" type="System.Drawing.Font, System.Drawing">
+    <value>SimSun, 13pt</value>
+  </data>
+  <data name="CH4OpenClose.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="&gt;&gt;CH1LinBaudrate.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;Timer_CH2PCUP.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Timer, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="CH2OpenClose.Location" type="System.Drawing.Point, System.Drawing">
+    <value>204, 127</value>
+  </data>
+  <data name="CH2OpenClose.TabIndex" type="System.Int32, mscorlib">
+    <value>351</value>
+  </data>
+  <data name="CH2SRCylinderDown.TabIndex" type="System.Int32, mscorlib">
+    <value>306</value>
+  </data>
+  <data name="&gt;&gt;label2.Name" xml:space="preserve">
+    <value>label2</value>
+  </data>
+  <data name="&gt;&gt;CH1Shield_Bee.Name" xml:space="preserve">
+    <value>CH1Shield_Bee</value>
+  </data>
+  <data name="&gt;&gt;CH2ValActionStop.ZOrder" xml:space="preserve">
+    <value>7</value>
+  </data>
+  <data name="Back_SafetyDoorUp.Size" type="System.Drawing.Size, System.Drawing">
+    <value>43, 25</value>
+  </data>
+  <data name="Shield_SafetyDoor.Size" type="System.Drawing.Size, System.Drawing">
+    <value>117, 22</value>
+  </data>
+  <data name="$this.AutoScaleDimensions" type="System.Drawing.SizeF, System.Drawing">
+    <value>6, 12</value>
+  </data>
+  <data name="&gt;&gt;label21.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;CH2SRCylinderDown.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="label24.Font" type="System.Drawing.Font, System.Drawing">
+    <value>SimSun, 13pt</value>
+  </data>
+  <data name="PLCRun.Size" type="System.Drawing.Size, System.Drawing">
+    <value>43, 25</value>
+  </data>
+  <data name="ValveAction.TabIndex" type="System.Int32, mscorlib">
+    <value>368</value>
+  </data>
+  <data name="CH2Reset.Size" type="System.Drawing.Size, System.Drawing">
+    <value>43, 25</value>
+  </data>
+  <data name="label5.Size" type="System.Drawing.Size, System.Drawing">
+    <value>98, 18</value>
+  </data>
+  <data name="label3.Font" type="System.Drawing.Font, System.Drawing">
+    <value>SimSun, 13pt</value>
+  </data>
+  <data name="&gt;&gt;CH2FNCylinderUP.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="label2.TabIndex" type="System.Int32, mscorlib">
+    <value>275</value>
+  </data>
+  <data name="&gt;&gt;label24.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;CH1Reset.ZOrder" xml:space="preserve">
+    <value>51</value>
+  </data>
+  <data name="CH2Shield_Bee.Size" type="System.Drawing.Size, System.Drawing">
+    <value>144, 22</value>
+  </data>
+  <data name="label6.TabIndex" type="System.Int32, mscorlib">
+    <value>281</value>
+  </data>
+  <data name="label2.Font" type="System.Drawing.Font, System.Drawing">
+    <value>SimSun, 13pt</value>
+  </data>
+  <data name="&gt;&gt;CH2Shield_Bee.Type" xml:space="preserve">
+    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label11.ZOrder" xml:space="preserve">
+    <value>40</value>
+  </data>
+  <data name="&gt;&gt;Timer_CH2SPCDOWN.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Timer, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;$this.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Form, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;CH1OpenClose.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="CH2FNCylinderUP.Location" type="System.Drawing.Point, System.Drawing">
+    <value>598, 331</value>
+  </data>
+  <data name="&gt;&gt;label20.ZOrder" xml:space="preserve">
+    <value>14</value>
+  </data>
+  <data name="&gt;&gt;ValActionStop.ZOrder" xml:space="preserve">
+    <value>9</value>
+  </data>
+  <data name="CH2LinBaudrate.TabIndex" type="System.Int32, mscorlib">
+    <value>366</value>
+  </data>
+  <data name="&gt;&gt;label6.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;CH4OpenClose.Name" xml:space="preserve">
+    <value>CH4OpenClose</value>
+  </data>
+  <data name="&gt;&gt;Timer_CH1FNCDOWN.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Timer, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label19.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="ValveAction.Text" xml:space="preserve">
+    <value>CH1阀泵动作</value>
+  </data>
+  <data name="&gt;&gt;PLCRun.ZOrder" xml:space="preserve">
+    <value>54</value>
+  </data>
+  <data name="&gt;&gt;button3.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;PLCRun.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;button4.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;CH1Stopping.ZOrder" xml:space="preserve">
+    <value>57</value>
+  </data>
+  <data name="CH1PCylinderDown.Location" type="System.Drawing.Point, System.Drawing">
+    <value>721, 204</value>
+  </data>
+  <data name="&gt;&gt;Timer_CH2PCDOWN.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Timer, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="CH1OpenClose.Text" xml:space="preserve">
+    <value>CH1左通道启用</value>
+  </data>
+  <data name="&gt;&gt;CH2SPCylinderDown.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="button4.TabIndex" type="System.Int32, mscorlib">
+    <value>376</value>
+  </data>
+  <data name="ValActionStop.Location" type="System.Drawing.Point, System.Drawing">
+    <value>372, 79</value>
+  </data>
+  <data name="&gt;&gt;CH2OpenClose.Name" xml:space="preserve">
+    <value>CH2OpenClose</value>
+  </data>
+  <data name="PLCReConnect.Size" type="System.Drawing.Size, System.Drawing">
+    <value>107, 58</value>
+  </data>
+  <data name="CH1SPCylinderDown.Size" type="System.Drawing.Size, System.Drawing">
+    <value>107, 58</value>
+  </data>
+  <data name="&gt;&gt;Back_SafetyDoorUp.Name" xml:space="preserve">
+    <value>Back_SafetyDoorUp</value>
+  </data>
+  <data name="Stopping.Size" type="System.Drawing.Size, System.Drawing">
+    <value>43, 25</value>
+  </data>
+  <data name="&gt;&gt;CH2Reset.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="CH1LinBaudrate.Location" type="System.Drawing.Point, System.Drawing">
+    <value>204, 245</value>
+  </data>
+  <data name="&gt;&gt;Timer_CH2SPCUP.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Timer, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;CH2LinComm.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Timer, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="CH2SPCylinderDown.Size" type="System.Drawing.Size, System.Drawing">
+    <value>107, 58</value>
+  </data>
+  <data name="&gt;&gt;Timer_CH2SRCDOWN.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Timer, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;CH1Shield_Bee.Type" xml:space="preserve">
+    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;Shield_SafetyDoor.Type" xml:space="preserve">
+    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="label19.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="label5.Font" type="System.Drawing.Font, System.Drawing">
+    <value>SimSun, 13pt</value>
+  </data>
+  <data name="CH4OpenClose.Font" type="System.Drawing.Font, System.Drawing">
+    <value>SimSun, 13pt</value>
+  </data>
+  <data name="&gt;&gt;CH1FNCylinderUP.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="CH2SRCylinderDown.Location" type="System.Drawing.Point, System.Drawing">
+    <value>721, 268</value>
+  </data>
+  <data name="button1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>696, 282</value>
+  </data>
+  <data name="&gt;&gt;CH1SPCylinderDown.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;CH1SPCylinderUP.Name" xml:space="preserve">
+    <value>CH1SPCylinderUP</value>
+  </data>
+  <data name="CH1OpenClose.Font" type="System.Drawing.Font, System.Drawing">
+    <value>SimSun, 13pt</value>
+  </data>
+  <data name="Stopping.Location" type="System.Drawing.Point, System.Drawing">
+    <value>127, 372</value>
+  </data>
+  <data name="CH2FNCylinderDown.Size" type="System.Drawing.Size, System.Drawing">
+    <value>107, 58</value>
+  </data>
+  <data name="&gt;&gt;label24.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;Right_SafetyDoor.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="Back_SafetyDoorUp.TabIndex" type="System.Int32, mscorlib">
+    <value>276</value>
+  </data>
+  <data name="&gt;&gt;button1.Name" xml:space="preserve">
+    <value>button1</value>
+  </data>
+  <data name="CH2FNCylinderUP.TabIndex" type="System.Int32, mscorlib">
+    <value>309</value>
+  </data>
+  <data name="&gt;&gt;Save.Name" xml:space="preserve">
+    <value>Save</value>
+  </data>
+  <data name="&gt;&gt;label4.ZOrder" xml:space="preserve">
+    <value>52</value>
+  </data>
+  <metadata name="Timer_CH1SPCDOWN.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>605, 21</value>
+  </metadata>
+  <metadata name="$this.Language" type="System.Globalization.CultureInfo, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>zh</value>
+  </metadata>
+  <metadata name="$this.TrayHeight" type="System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>157</value>
+  </metadata>
+  <metadata name="Timer_CH1SRCUP.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>135, 18</value>
+  </metadata>
+  <metadata name="Timer_CH2FNCDOWN.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>968, 51</value>
+  </metadata>
+  <metadata name="Timer_CH1FNCDOWN.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>931, 19</value>
+  </metadata>
+  <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="Timer_CH1PCDOWN.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>17, 57</value>
+  </metadata>
+  <metadata name="Timer_CH2SPCUP.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>505, 51</value>
+  </metadata>
+  <metadata name="Timer_CH1FNCUP.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>786, 21</value>
+  </metadata>
+  <metadata name="Timer_CH2FNCUP.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>824, 52</value>
+  </metadata>
+  <metadata name="Timer_CH1SPCUP.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>460, 18</value>
+  </metadata>
+  <metadata name="Timer_CH2PCUP.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>1135, 47</value>
+  </metadata>
+  <metadata name="Timer_CH1PCUP.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>1114, 19</value>
+  </metadata>
+  <metadata name="ReadSignal.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>17, 23</value>
+  </metadata>
+  <metadata name="Timer_CH2SRCDOWN.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>330, 56</value>
+  </metadata>
+  <metadata name="Timer_CH1SRCDOWN.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>284, 16</value>
+  </metadata>
+  <metadata name="Timer_CH2SPCDOWN.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>643, 52</value>
+  </metadata>
+  <metadata name="CH2LinComm.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>300, 86</value>
+  </metadata>
+  <metadata name="Timer_CH2PCDOWN.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>24, 89</value>
+  </metadata>
+  <metadata name="CH1LinComm.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>190, 87</value>
+  </metadata>
+  <metadata name="Timer_CH2SRCUP.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>191, 57</value>
+  </metadata>
+</root>

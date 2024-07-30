@@ -1,0 +1,25 @@
+基本设置=Configuración básica
+条形码=Código de barras
+左工位条码可用产品个数=Código de barras de la estación izquierda número de productos disponibles
+右工位条码可用产品个数=Código de barras de la estación derecha número de productos disponibles
+应用设置=Aplicar la configuración
+左工位CH1=Estación izquierda CH1
+右工位CH2=Estación derecha CH2
+说明：若不设置，条形码长度默认为13=Descripción: la longitud predeterminada del código de barras es 13 si no se establece
+左工位条形码长度=Longitud del código de barras de la estación izquierda
+右工位条形码长度=Estación derecha código de barras longitud
+左工位条码已用次数=Número de códigos de barras utilizados en la estación izquierda
+右工位条码已用次数=Número de códigos de barras utilizados en la estación derecha
+工单信息=Información de orden de trabajo
+产品名称=Nombre del producto
+产品型号=Productos y modelos
+工单单号=Número de trabajo
+生产料号=Material de producción no
+测试类型=Tipos de pruebas
+测试站名=Nombre de estación de prueba
+生产数量=Cantidad de producción
+CH1清空产品计数=CH1 producto vaciado recuento
+CH2清空产品计数=CH2 vacío producto cuenta
+PLC未通讯=PLC no se comunica
+可用产品个数需填写=Número de productos disponibles a rellenar
+

@@ -1,0 +1,106 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\Administrator\\Desktop\\24072801\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{F7F71589-095A-45C2-975C-739BE2D1CE15}|SLC1-N\\SLC1-N.csproj|c:\\users\\administrator\\desktop\\24072801\\slc1-n\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F7F71589-095A-45C2-975C-739BE2D1CE15}|SLC1-N\\SLC1-N.csproj|solutionrelative:slc1-n\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F7F71589-095A-45C2-975C-739BE2D1CE15}|SLC1-N\\SLC1-N.csproj|c:\\users\\administrator\\desktop\\24072801\\slc1-n\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{F7F71589-095A-45C2-975C-739BE2D1CE15}|SLC1-N\\SLC1-N.csproj|solutionrelative:slc1-n\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F7F71589-095A-45C2-975C-739BE2D1CE15}|SLC1-N\\SLC1-N.csproj|c:\\users\\administrator\\desktop\\24072801\\slc1-n\\electricity.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{F7F71589-095A-45C2-975C-739BE2D1CE15}|SLC1-N\\SLC1-N.csproj|solutionrelative:slc1-n\\electricity.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F7F71589-095A-45C2-975C-739BE2D1CE15}|SLC1-N\\SLC1-N.csproj|c:\\users\\administrator\\desktop\\24072801\\slc1-n\\flowconfig.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{F7F71589-095A-45C2-975C-739BE2D1CE15}|SLC1-N\\SLC1-N.csproj|solutionrelative:slc1-n\\flowconfig.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F7F71589-095A-45C2-975C-739BE2D1CE15}|SLC1-N\\SLC1-N.csproj|c:\\users\\administrator\\desktop\\24072801\\slc1-n\\electricity.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F7F71589-095A-45C2-975C-739BE2D1CE15}|SLC1-N\\SLC1-N.csproj|solutionrelative:slc1-n\\electricity.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 4,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Electricity.cs",
+              "DocumentMoniker": "C:\\Users\\Administrator\\Desktop\\24072801\\SLC1-N\\Electricity.cs",
+              "RelativeDocumentMoniker": "SLC1-N\\Electricity.cs",
+              "ToolTip": "C:\\Users\\Administrator\\Desktop\\24072801\\SLC1-N\\Electricity.cs",
+              "RelativeToolTip": "SLC1-N\\Electricity.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAADwvwgAAAABAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-30T07:18:59.377Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Electricity.cs [\u8BBE\u8BA1 - \u4E2D\u6587]",
+              "DocumentMoniker": "C:\\Users\\Administrator\\Desktop\\24072801\\SLC1-N\\Electricity.cs",
+              "RelativeDocumentMoniker": "SLC1-N\\Electricity.cs",
+              "ToolTip": "C:\\Users\\Administrator\\Desktop\\24072801\\SLC1-N\\Electricity.cs [\u8BBE\u8BA1 - \u4E2D\u6587]",
+              "RelativeToolTip": "SLC1-N\\Electricity.cs [\u8BBE\u8BA1 - \u4E2D\u6587]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-30T07:12:39.929Z",
+              "EditorCaption": " [\u8BBE\u8BA1 - \u4E2D\u6587]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "FlowConfig.cs [\u8BBE\u8BA1 - \u82F1\u8BED]",
+              "DocumentMoniker": "C:\\Users\\Administrator\\Desktop\\24072801\\SLC1-N\\FlowConfig.cs",
+              "RelativeDocumentMoniker": "SLC1-N\\FlowConfig.cs",
+              "ToolTip": "C:\\Users\\Administrator\\Desktop\\24072801\\SLC1-N\\FlowConfig.cs [\u8BBE\u8BA1 - \u82F1\u8BED]",
+              "RelativeToolTip": "SLC1-N\\FlowConfig.cs [\u8BBE\u8BA1 - \u82F1\u8BED]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-30T07:12:32.616Z",
+              "EditorCaption": " [\u8BBE\u8BA1 - \u82F1\u8BED]"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Form1.cs",
+              "DocumentMoniker": "C:\\Users\\Administrator\\Desktop\\24072801\\SLC1-N\\Form1.cs",
+              "RelativeDocumentMoniker": "SLC1-N\\Form1.cs",
+              "ToolTip": "C:\\Users\\Administrator\\Desktop\\24072801\\SLC1-N\\Form1.cs",
+              "RelativeToolTip": "SLC1-N\\Form1.cs",
+              "ViewState": "AQIAAEYCAAAAAAAAAAD4v1UCAAAWAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-29T15:34:04.989Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Form1.cs [\u8BBE\u8BA1 - \u4E2D\u6587]",
+              "DocumentMoniker": "C:\\Users\\Administrator\\Desktop\\24072801\\SLC1-N\\Form1.cs",
+              "RelativeDocumentMoniker": "SLC1-N\\Form1.cs",
+              "ToolTip": "C:\\Users\\Administrator\\Desktop\\24072801\\SLC1-N\\Form1.cs [\u8BBE\u8BA1 - \u4E2D\u6587]",
+              "RelativeToolTip": "SLC1-N\\Form1.cs [\u8BBE\u8BA1 - \u4E2D\u6587]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-29T15:31:26.871Z",
+              "EditorCaption": " [\u8BBE\u8BA1 - \u4E2D\u6587]"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

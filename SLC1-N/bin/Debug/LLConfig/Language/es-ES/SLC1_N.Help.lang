@@ -1,0 +1,149 @@
+LL28使用说明=LL28 instrucciones de uso
+欢迎使用深圳市凌龙科技有限公司研发的LL28上位机控制系统！(*^▽^*)=¡Bienvenido al sistema de control LL28 pc desarrollado por shenzhen linglong technology co., LTD! (* ^ ▽ ^ *)
+功能目录=Catálogo de funciones
+1.串口设置功能=1. Función de configuración serial
+2.登录、修改密码=2. Iniciar sesión y cambiar contraseña
+3.存储设置功能=3. Función de configuración de almacenamiento
+4.基本使用步骤=4. Pasos básicos del uso
+5.导出SQL文件=5. Exportar archivos SQL
+6.基本设置功能=6. Función de configuración básica
+7.测试参数功能=7. Función de parámetros de prueba
+深圳市凌龙科技有限公司=Tecnología Co. de shenzhen linglong, LTD
+
+1.若需要改变仪器参数，则在各个参数框中输入需要的参数并点击上传参数，
+上传参数按钮会变成红色字样“上传成功”。待上传参数按钮恢复原样，即上传
+完成。上传之后可以点击读取参数按钮，检验是否将参数都上传。上传参数
+时，参数格式必须符合仪器要求，否则可能导致软件异常。
+2.点击读取参数按钮可以读取仪器参数。
+3.若需要将参数保存在本地，则在参数输入框中输入参数，然后点击保存参数
+按钮保存。最多可保存十五参数。参数组号处可以切换保存在本地的参数。
+
+1. Si necesita cambiar los parámetros del instrumento, ingrese los parámetros deseados en cada cuadro de parámetros y haga clic en cargar parámetros,
+El botón de parámetros de subida se convertirá en rojo con las palabras "subida exitosa". El botón de parámetros para subir se restaura como estaba, es decir, subir
+Listo. Después de subir, puede hacer clic en el botón leer parámetros para verificar si se cargan todos los parámetros. Subir los parámetros
+Cuando, el formato del parámetro debe cumplir con los requisitos del instrumento, de lo contrario puede conducir a la excepción del software.
+2. Haga clic en el botón leer parámetros para leer los parámetros del instrumento.
+3. Si desea guardar los parámetros localmente, ingrese los parámetros en el cuadro de entrada de parámetros y haga clic en guardar parámetros
+Botón guardar. Se pueden guardar hasta quince parámetros. El número de grupo de parámetros permite cambiar los parámetros guardados localmente.
+
+导出SqlServer文件功能：
+（1）点击连接SQL按钮，填入SqlServer的服务器名称或IP地址，填入用户名和
+密码。输入登录信息后，点击保存，则下次打开本系统也可以读取到输入的登录数据。
+若不点击保存，则下次登录读取不到输入的登录数据。
+（2）测试完成后即可新建一个名为“LeakTest”的数据库文件，并且连接上了数据
+库，在SSMS中可以操作该数据库。在该数据库文件中有一个名为
+“leaktest+当天日期”的表格，用以存放测试记录。测试产品时每天均可自动在该数
+据库中新建一个名为“leaktest+当天日期”的表格用以存放当天的测试记录。
+（3）若连接安装本软件的计算机上的数据库，可以通过输入服务器名称进行本地
+SqlServer的连接。服务器名称为SqlServer对象资源管理器中显示的实例名，也
+可以登录后用语句查询“select @@SERVERNAME”即可获得。
+（4）若连接局域网中的计算机上的数据库，可以通过输入IP地址进行SqlServer的连接。
+
+
+Funciones para exportar archivos SqlServer:
+(1) haga clic en el botón conectar SQL y rellene el nombre del servidor o la dirección IP de SqlServer, el nombre de usuario y
+La contraseña. Después de ingresar la información de inicio de sesión, haga clic en guardar, entonces la próxima vez que abra este sistema también puede leer los datos de inicio de sesión ingresados.
+Si no hace clic en guardar, no podrá leer los datos de inicio de sesión ingresados en el próximo inicio de sesión.
+(2) después de la prueba se puede crear un nuevo archivo de base de datos llamado "LeakTest", y los datos están conectados
+Biblioteca, en SSMS puede manipular esta base de datos. En este archivo de base de datos hay un archivo llamado
+Formulario "leaktest+ fecha del día" para el registro de la prueba. Pruebe los productos cada día puede automáticamente en el número
+Un nuevo formulario llamado "leaktest+ day date" en la biblioteca contiene los registros de prueba del día.
+(3) si se conecta a la base de datos en la computadora en la que este software está instalado, usted puede hacerlo localmente introduciendo el nombre del servidor
+Conexión a SqlServer. El nombre del servidor es el nombre de la instancia que aparece en el explorador de objetos SqlServer, y también
+Puede obtenerse mediante la consulta "select@@servername" después de iniciar sesión.
+(4) si se conecta a la base de datos en la computadora en la lan, puede conectarse a SqlServer ingresando la dirección IP.
+
+
+1.设置站号：站号需要和仪器从站号一致。比如，若仪器站号为1，则选择01；
+若仪器站号为2，则选择02，以此类推。若不选择，则默认仪器站号为01.
+2.条形码长度：条形码长度可以设置需要输入的条形码的长度，扫码后做一次扫码验
+证，判断长度是否正确。条形码长度处若不输入，则默认13位。
+
+1. Establecer el número de estación: el número de estación debe ser lo mismo que el número de estación esclava del instrumento. Por ejemplo, si el número de la estación de instrumentos es 1, seleccione 01;
+Si el número de estación de instrumentos es 2, seleccione 02 y así sucesivamente. Si no está seleccionado, el número predeterminado de la estación del instrumento es 01.
+2. Longitud del código de barras: la longitud del código de barras puede establecer la longitud del código de barras que usted necesita ingresar. Después de barrer el código, haga una verificación del código de barrido para determinar si la longitud es correcta. Si no se ingresa en la longitud del código de barras, el valor predeterminado es de 13 dígitos.
+
+基本使用步骤如下：
+1.进入串口设置功能，选择正确的波特率，默认为9600。
+2.选择正确的端口，点击连接串口，若连接成功，串口状态处显示串口已连接。
+3.串口连接上之后，进入存储设置功能，进行存储文件的设置。
+4.点击启动仪器，即可启动仪器进行产品测试。
+5.若要使用条形码来启动仪器，先在基本设置中的条形码长度处输入条形码的
+长度，然后扫描条形码即可。条形码长度处若不输入，则默认13位。
+6.若需要复位仪器，则点击复位仪器。若测试过程中点击复位仪器按钮，则
+中断测试过程。
+注意事项：
+1.请遵照使用说明进行操作，否则可能导致软件异常。
+2.请遵照功能目录里面的详细功能说明进行操作，否则可能导致软件异常。
+3.若软件异常，重启即可。
+
+Los pasos básicos del uso son los siguientes:
+1. Vaya a la función de configuración del puerto serie y seleccione la velocidad de transmisión correcta. El valor predeterminado es 9600.
+2. Seleccione el puerto correcto y haga clic en conectar el puerto serie. Si la conexión es exitosa, el puerto serie mostrará que está conectado en el estado del puerto serie.
+3. Después de que el puerto serie esté conectado, vaya a la función de configuración de almacenamiento para configurar los archivos de almacenamiento.
+4. Haga clic en iniciar el instrumento, luego inicie el instrumento para probar el producto.
+5. Para utilizar el código de barras para iniciar el instrumento, primero introduzca el código de barras en la longitud en la configuración básica
+La longitud, entonces escanea el código de barras es aceptable. Si no se ingresa en la longitud del código de barras, el valor predeterminado es de 13 dígitos.
+6. Si necesita restablecer el instrumento, haga clic en restablecer el instrumento. Si haga clic en el botón de reset instrument durante la prueba, entonces
+Interrumpir el proceso de prueba.
+Nota importante:
+1. Siga las instrucciones de uso. De lo contrario, puede causar una excepción de software.
+2. Siga por favor las instrucciones detalladas de la función dentro del catálogo de la función, si no puede conducir a la excepción del software.
+3. Si el software es anormal, reinicie.
+
+1.勾选想要的导出文件类型，都不勾选则不导出文件。
+2.导出TXT功能：点击选择文件路径按钮，选择一个TXT文件，测试完成后即
+可将结果导入到选择的TXT文件中。若没有选择文件路径，则默认在桌面新建
+一个名为当天日期的txt文件。如果选择的路径下TXT文件不存在，那么将按照路
+径新建一个txt文件。
+3.导出Excel功能：点击选择文件路径按钮，选择一个Excel文件，测试完成后
+即可将结果导入到选择的Excel文件中。若没有选择文件路径，则默认在桌面新
+建一个名为当天日期的Excel文件。如果选择的路径下Excel文件不存在，那么将按
+照路径新建一个Excel文件。
+4.导出CSV功能：点击选择文件路径按钮，选择一个CSV文件，测试完成后
+即可将结果导入到选择的CSV文件中。若没有选择文件路径，则默认在桌面新
+建一个名为当天日期的CSV文件。如果选择的路径下CSV文件不存在，那么将按
+照路径新建一个CSV文件。
+5.导出SqlServer文件功能详情请查看目录五“导出SQL文件”
+6.选择好路径和需要导出的文件格式后，点击应用设置，即可应用设置，并将设置保存
+在本地。下次打开软件无需再次设置。
+
+1. Marque el tipo de archivo de exportación deseado. Si ninguno de ellos está marcado, no se exportará el archivo.
+2. Exportar función TXT: haga clic en el botón seleccionar ruta de archivo, seleccione un archivo TXT, después de la prueba es
+Los resultados se pueden importar a un archivo TXT de su elección. Nuevo en el escritorio por defecto si no se selecciona ninguna ruta de archivo
+Un archivo TXT con la fecha del día. Si el archivo TXT no existe bajo la ruta seleccionada, entonces la ruta será
+Crear un nuevo archivo TXT.
+3. Función de exportación de Excel: haga clic en el botón seleccionar ruta de archivo, seleccione un archivo de Excel y después de la prueba
+Los resultados se pueden importar a un archivo Excel de su elección. Si no se selecciona la ruta del archivo, por defecto en el escritorio nuevo
+Construya un archivo de Excel llamado la fecha del día. Si el archivo Excel no existe en la ruta seleccionada, entonces se presionará
+Crea un archivo de Excel con la ruta.
+4. Función de exportación CSV: haga clic en el botón seleccionar ruta de archivo y seleccione un archivo CSV. Después de la prueba
+Los resultados se pueden importar a un archivo CSV de su elección. Si no se selecciona la ruta del archivo, por defecto en el escritorio nuevo
+Construya un archivo CSV llamado la fecha del día. Si el archivo CSV no existe bajo la ruta seleccionada, se presionará
+Crea un archivo CSV con la ruta.
+5. Exportar archivos SqlServer para más detalles de la función, consulte el catálogo cinco "exportar archivos SQL"
+6. Después de seleccionar la ruta y el formato de archivo que desea exportar, haga clic en aplicar ajustes para aplicar y guardar los ajustes
+A nivel local. La próxima vez que abra el software no es necesario establecer otra vez.
+
+1.点击登录，输入密码，可以解锁菜单栏权限，也可以修改密码。
+2.点击修改密码，两次输入新密码，点击修改，即可将密码修改为新密码。
+下次登录需要用新密码登录。
+1. Haga clic en iniciar sesión e ingrese su contraseña. Puede desbloquear los permisos de la barra de menú o cambiar su contraseña.
+2. Haga clic en cambiar contraseña. Ingrese la nueva contraseña dos veces y haga clic en cambiar para cambiar la contraseña a una nueva.
+La próxima vez que inicie sesión, necesitará iniciar sesión con una nueva contraseña.
+
+连接局域网数据库的配置方法
+Método de configuración para conectarse a la base de datos lan
+
+
+1.在波特率下拉列表中选择正确的波特率，默认为9600。
+2.在端口号下拉列表中选择正确的端口，点击连接串口，
+若连接上，串口状态处会显示串口已连接，如果和仪器成
+功通讯上，通讯状态会显示已连接。若端口下拉项没有设
+备所对应的端口，则点击刷新串口。若要断开和串口的连
+接，则点击断开连接。
+1. Seleccione la velocidad de transmisión correcta en la lista desplegable velocidad de transmisión. El valor predeterminado es 9600.
+2. Seleccione el puerto correcto en la lista desplegable número de puerto y haga clic en conectar al puerto serie,
+Si está conectado, el lugar del estado del puerto serie mostrará que el puerto serie está conectado, si se comunica con éxito con el instrumento, el estado de comunicación mostrará que está conectado. Si el menú desplegable de puertos no tiene el puerto correspondiente al dispositivo, haga clic en refrescar el puerto serie. Para desconectar del puerto serie, haga clic en desconectar.
+
+

@@ -1,0 +1,45 @@
+全局异常捕捉
+****************************异常文本****************************
+【出现时间】：8/8/2023 8:55:57 AM
+【异常类型】：NullReferenceException
+【异常信息】：未将对象引用设置到对象的实例。
+【堆栈调用】：   在 SLC1_N.LIN_LDFParser.maintr() 位置 D:\上位机\0702\SLC1-N\LIN_LDFParser.cs:行号 41
+   在 System.Threading.ThreadHelper.ThreadStart_Context(Object state)
+   在 System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state, Boolean preserveSyncCtx)
+   在 System.Threading.ExecutionContext.Run(ExecutionContext executionContext, ContextCallback callback, Object state, Boolean preserveSyncCtx)
+   在 System.Threading.ExecutionContext.Run(ExecutionContext executionContext, ContextCallback callback, Object state)
+   在 System.Threading.ThreadHelper.ThreadStart()
+***************************************************************
+
+8/8/2023 8:55:57 AM
+=======================================================
+全局异常捕捉
+****************************异常文本****************************
+【出现时间】：8/8/2023 8:57:37 AM
+【异常类型】：NullReferenceException
+【异常信息】：未将对象引用设置到对象的实例。
+【堆栈调用】：   在 SLC1_N.LIN_LDFParser.maintr() 位置 D:\上位机\0702\SLC1-N\LIN_LDFParser.cs:行号 41
+   在 System.Threading.ThreadHelper.ThreadStart_Context(Object state)
+   在 System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state, Boolean preserveSyncCtx)
+   在 System.Threading.ExecutionContext.Run(ExecutionContext executionContext, ContextCallback callback, Object state, Boolean preserveSyncCtx)
+   在 System.Threading.ExecutionContext.Run(ExecutionContext executionContext, ContextCallback callback, Object state)
+   在 System.Threading.ThreadHelper.ThreadStart()
+***************************************************************
+
+8/8/2023 8:57:37 AM
+=======================================================
+全局异常捕捉
+****************************异常文本****************************
+【出现时间】：8/8/2023 9:00:30 AM
+【异常类型】：NullReferenceException
+【异常信息】：未将对象引用设置到对象的实例。
+【堆栈调用】：   在 SLC1_N.LIN_LDFParser.maintr() 位置 D:\上位机\0702\SLC1-N\LIN_LDFParser.cs:行号 41
+   在 System.Threading.ThreadHelper.ThreadStart_Context(Object state)
+   在 System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state, Boolean preserveSyncCtx)
+   在 System.Threading.ExecutionContext.Run(ExecutionContext executionContext, ContextCallback callback, Object state, Boolean preserveSyncCtx)
+   在 System.Threading.ExecutionContext.Run(ExecutionContext executionContext, ContextCallback callback, Object state)
+   在 System.Threading.ThreadHelper.ThreadStart()
+***************************************************************
+
+8/8/2023 9:00:30 AM
+=======================================================

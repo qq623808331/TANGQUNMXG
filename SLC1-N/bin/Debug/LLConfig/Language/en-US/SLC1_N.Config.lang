@@ -1,0 +1,25 @@
+基本设置=Basic Settings
+条形码=BarCode
+左工位条码可用产品个数=Number of available products for left workstation barcode
+右工位条码可用产品个数=Number of available products for right workstation barcode
+应用设置=Application setting
+左工位CH1=Left station CH1
+右工位CH2=Right station CH1
+说明：若不设置，条形码长度默认为13=Note: If not set, the barcode length defaults to 13
+左工位条形码长度=Left workstation barcode length
+右工位条形码长度=Right workstation barcode length
+左工位条码已用次数=Left workstation barcode used times
+右工位条码已用次数=Number of times the barcode for the right workstation has been used
+工单信息=Work Order Information
+产品名称=Product name
+产品型号=Model
+工单单号=Work order number
+生产料号=Production part number
+测试类型=Test type
+测试站名=Test Station Name
+生产数量=Production quantity
+CH1清空产品计数=CH1 Clear Product Count
+CH2清空产品计数=CH2 Clear Product Count
+PLC未通讯=PLC not communicating
+可用产品个数需填写=The number of available products needs to be filled in
+

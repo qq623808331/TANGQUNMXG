@@ -1,0 +1,820 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
+    <value>934, 678</value>
+  </data>
+  <data name="function1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>407, 128</value>
+  </data>
+  <data name="&gt;&gt;BtnManual4.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;LinkLabel2.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="&gt;&gt;BtnManual1.ZOrder" xml:space="preserve">
+    <value>14</value>
+  </data>
+  <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="Label2.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="&gt;&gt;Function6.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="LinkLabel1.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="LinkLabel2.Text" xml:space="preserve">
+    <value>连接局域网数据库的配置方法</value>
+  </data>
+  <data name="Label2.Text" xml:space="preserve">
+    <value>LL28使用说明</value>
+  </data>
+  <data name="BtnManual6.Text" xml:space="preserve">
+    <value>6.基本设置功能</value>
+  </data>
+  <data name="BtnManual1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>145, 49</value>
+  </data>
+  <data name="&gt;&gt;Function6.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="function1.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="Function7.Size" type="System.Drawing.Size, System.Drawing">
+    <value>567, 144</value>
+  </data>
+  <data name="LinkLabel2.TabIndex" type="System.Int32, mscorlib">
+    <value>54</value>
+  </data>
+  <data name="function5.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="&gt;&gt;BtnManual7.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;function1.ZOrder" xml:space="preserve">
+    <value>10</value>
+  </data>
+  <data name="Label4.TabIndex" type="System.Int32, mscorlib">
+    <value>43</value>
+  </data>
+  <data name="function5.Size" type="System.Drawing.Size, System.Drawing">
+    <value>631, 256</value>
+  </data>
+  <data name="&gt;&gt;BtnManual7.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;Label1.ZOrder" xml:space="preserve">
+    <value>19</value>
+  </data>
+  <data name="&gt;&gt;BtnManual6.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="&gt;&gt;BtnManual5.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="function2.Size" type="System.Drawing.Size, System.Drawing">
+    <value>535, 64</value>
+  </data>
+  <data name="Label1.Text" xml:space="preserve">
+    <value>深圳市凌龙科技有限公司</value>
+  </data>
+  <data name="Label5.TabIndex" type="System.Int32, mscorlib">
+    <value>44</value>
+  </data>
+  <data name="Label4.Text" xml:space="preserve">
+    <value>欢迎使用深圳市凌龙科技有限公司研发的LL28上位机控制系统！(*^▽^*)</value>
+  </data>
+  <data name="&gt;&gt;BtnManual1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;LinkLabel1.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="Label5.Text" xml:space="preserve">
+    <value>功能目录：</value>
+  </data>
+  <data name="&gt;&gt;function2.ZOrder" xml:space="preserve">
+    <value>9</value>
+  </data>
+  <data name="BtnManual4.Location" type="System.Drawing.Point, System.Drawing">
+    <value>84, 354</value>
+  </data>
+  <data name="&gt;&gt;BtnManual7.Name" xml:space="preserve">
+    <value>BtnManual7</value>
+  </data>
+  <data name="Label3.TabIndex" type="System.Int32, mscorlib">
+    <value>41</value>
+  </data>
+  <data name="&gt;&gt;BtnManual5.ZOrder" xml:space="preserve">
+    <value>6</value>
+  </data>
+  <data name="&gt;&gt;PictureBox1.ZOrder" xml:space="preserve">
+    <value>20</value>
+  </data>
+  <data name="&gt;&gt;Label3.Name" xml:space="preserve">
+    <value>Label3</value>
+  </data>
+  <data name="Label3.Text" xml:space="preserve">
+    <value>基本使用步骤如下：
+1.进入串口设置功能，选择正确的波特率，默认为9600。
+
+2.选择正确的端口，点击连接串口，若连接成功，串口状态处显示串口已连接。
+
+3.串口连接上之后，进入存储设置功能，进行存储文件的设置。
+
+4.点击启动仪器，即可启动仪器进行产品测试。
+
+5.若要使用条形码来启动仪器，先在基本设置中的条形码长度处输入条形码的
+长度，然后扫描条形码即可。条形码长度处若不输入，则默认13位。
+
+6.若需要复位仪器，则点击复位仪器。若测试过程中点击复位仪器按钮，则
+中断测试过程。
+
+
+注意事项：
+1.请遵照使用说明进行操作，否则可能导致软件异常。
+2.请遵照功能目录里面的详细功能说明进行操作，否则可能导致软件异常。
+3.若软件异常，重启即可。</value>
+  </data>
+  <data name="function5.Text" xml:space="preserve">
+    <value>导出SqlServer文件功能：
+
+（1）点击连接SQL按钮，填入SqlServer的服务器名称或IP地址，填入用户名和
+密码。输入登录信息后，点击保存，则下次打开本系统也可以读取到输入的登录数据。
+若不点击保存，则下次登录读取不到输入的登录数据。
+
+（2）测试完成后即可新建一个名为“LeakTest”的数据库文件，并且连接上了数据
+库，在SSMS中可以操作该数据库。在该数据库文件中有一个名为
+“leaktest+当天日期”的表格，用以存放测试记录。测试产品时每天均可自动在该数
+据库中新建一个名为“leaktest+当天日期”的表格用以存放当天的测试记录。
+
+（3）若连接安装本软件的计算机上的数据库，可以通过输入服务器名称进行本地
+SqlServer的连接。服务器名称为SqlServer对象资源管理器中显示的实例名，也
+可以登录后用语句查询“select @@SERVERNAME”即可获得。
+
+（4）若连接局域网中的计算机上的数据库，可以通过输入IP地址进行SqlServer的连接。
+</value>
+  </data>
+  <data name="&gt;&gt;Function7.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;$this.Name" xml:space="preserve">
+    <value>Help</value>
+  </data>
+  <data name="&gt;&gt;function5.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="Label5.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="Function6.TabIndex" type="System.Int32, mscorlib">
+    <value>57</value>
+  </data>
+  <data name="&gt;&gt;BtnManual3.ZOrder" xml:space="preserve">
+    <value>12</value>
+  </data>
+  <data name="BtnManual4.Font" type="System.Drawing.Font, System.Drawing">
+    <value>SimSun, 12pt</value>
+  </data>
+  <data name="BtnManual2.Font" type="System.Drawing.Font, System.Drawing">
+    <value>SimSun, 12pt</value>
+  </data>
+  <data name="&gt;&gt;BtnManual3.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="LinkLabel1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>155, 650</value>
+  </data>
+  <data name="&gt;&gt;function2.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;Function6.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="LinkLabel2.Location" type="System.Drawing.Point, System.Drawing">
+    <value>304, 480</value>
+  </data>
+  <data name="Function6.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="&gt;&gt;BtnManual2.ZOrder" xml:space="preserve">
+    <value>13</value>
+  </data>
+  <data name="Label3.Font" type="System.Drawing.Font, System.Drawing">
+    <value>SimSun, 12pt</value>
+  </data>
+  <data name="&gt;&gt;LinkLabel2.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;Label4.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="Label4.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="BtnManual2.Location" type="System.Drawing.Point, System.Drawing">
+    <value>84, 235</value>
+  </data>
+  <data name="LinkLabel2.Size" type="System.Drawing.Size, System.Drawing">
+    <value>215, 16</value>
+  </data>
+  <data name="function5.Location" type="System.Drawing.Point, System.Drawing">
+    <value>290, 155</value>
+  </data>
+  <data name="&gt;&gt;Function7.Name" xml:space="preserve">
+    <value>Function7</value>
+  </data>
+  <data name="function5.Font" type="System.Drawing.Font, System.Drawing">
+    <value>SimSun, 12pt</value>
+  </data>
+  <data name="LinkLabel2.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="Function7.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="BtnManual6.TabIndex" type="System.Int32, mscorlib">
+    <value>55</value>
+  </data>
+  <data name="PictureBox1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>102, 104</value>
+  </data>
+  <data name="&gt;&gt;function1.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;Label3.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;function5.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="BtnManual7.TabIndex" type="System.Int32, mscorlib">
+    <value>56</value>
+  </data>
+  <data name="Label5.Font" type="System.Drawing.Font, System.Drawing">
+    <value>SimSun, 12pt</value>
+  </data>
+  <data name="function3.Font" type="System.Drawing.Font, System.Drawing">
+    <value>SimSun, 12pt</value>
+  </data>
+  <data name="BtnManual1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>84, 176</value>
+  </data>
+  <data name="BtnManual1.Font" type="System.Drawing.Font, System.Drawing">
+    <value>SimSun, 12pt</value>
+  </data>
+  <data name="&gt;&gt;function1.Name" xml:space="preserve">
+    <value>function1</value>
+  </data>
+  <data name="BtnManual4.TabIndex" type="System.Int32, mscorlib">
+    <value>48</value>
+  </data>
+  <data name="LinkLabel1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>119, 13</value>
+  </data>
+  <data name="function3.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="&gt;&gt;function3.ZOrder" xml:space="preserve">
+    <value>8</value>
+  </data>
+  <data name="&gt;&gt;Label1.Name" xml:space="preserve">
+    <value>Label1</value>
+  </data>
+  <data name="BtnManual1.TabIndex" type="System.Int32, mscorlib">
+    <value>45</value>
+  </data>
+  <data name="BtnManual3.Location" type="System.Drawing.Point, System.Drawing">
+    <value>84, 295</value>
+  </data>
+  <data name="$this.Text" xml:space="preserve">
+    <value>Help</value>
+  </data>
+  <data name="&gt;&gt;BtnManual4.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="function2.Location" type="System.Drawing.Point, System.Drawing">
+    <value>289, 155</value>
+  </data>
+  <data name="Label3.Size" type="System.Drawing.Size, System.Drawing">
+    <value>567, 320</value>
+  </data>
+  <data name="&gt;&gt;function3.Name" xml:space="preserve">
+    <value>function3</value>
+  </data>
+  <data name="Function6.Size" type="System.Drawing.Size, System.Drawing">
+    <value>599, 96</value>
+  </data>
+  <data name="BtnManual2.Size" type="System.Drawing.Size, System.Drawing">
+    <value>145, 49</value>
+  </data>
+  <data name="Label4.Size" type="System.Drawing.Size, System.Drawing">
+    <value>519, 16</value>
+  </data>
+  <data name="&gt;&gt;function2.Name" xml:space="preserve">
+    <value>function2</value>
+  </data>
+  <data name="$this.AutoScaleDimensions" type="System.Drawing.SizeF, System.Drawing">
+    <value>6, 13</value>
+  </data>
+  <data name="function3.Location" type="System.Drawing.Point, System.Drawing">
+    <value>290, 155</value>
+  </data>
+  <data name="Function6.Location" type="System.Drawing.Point, System.Drawing">
+    <value>290, 155</value>
+  </data>
+  <data name="Label3.Location" type="System.Drawing.Point, System.Drawing">
+    <value>290, 155</value>
+  </data>
+  <data name="Function7.Text" xml:space="preserve">
+    <value>1.若需要改变仪器参数，则在各个参数框中输入需要的参数并点击上传参数，
+上传参数按钮会变成红色字样“上传成功”。待上传参数按钮恢复原样，即上传
+完成。上传之后可以点击读取参数按钮，检验是否将参数都上传。上传参数
+时，参数格式必须符合仪器要求，否则可能导致软件异常。
+
+2.点击读取参数按钮可以读取仪器参数。
+
+3.若需要将参数保存在本地，则在参数输入框中输入参数，然后点击保存参数
+按钮保存。最多可保存十五参数。参数组号处可以切换保存在本地的参数。
+</value>
+  </data>
+  <data name="BtnManual5.Font" type="System.Drawing.Font, System.Drawing">
+    <value>SimSun, 12pt</value>
+  </data>
+  <data name="&gt;&gt;BtnManual1.Name" xml:space="preserve">
+    <value>BtnManual1</value>
+  </data>
+  <data name="&gt;&gt;BtnManual6.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;Label3.ZOrder" xml:space="preserve">
+    <value>7</value>
+  </data>
+  <data name="Function6.Font" type="System.Drawing.Font, System.Drawing">
+    <value>SimSun, 12pt</value>
+  </data>
+  <data name="&gt;&gt;BtnManual2.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;BtnManual2.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;$this.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Form, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="PictureBox1.TabIndex" type="System.Int32, mscorlib">
+    <value>38</value>
+  </data>
+  <data name="function1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>289, 155</value>
+  </data>
+  <data name="&gt;&gt;Function6.Name" xml:space="preserve">
+    <value>Function6</value>
+  </data>
+  <data name="function5.TabIndex" type="System.Int32, mscorlib">
+    <value>53</value>
+  </data>
+  <data name="&gt;&gt;BtnManual5.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="BtnManual3.Size" type="System.Drawing.Size, System.Drawing">
+    <value>145, 49</value>
+  </data>
+  <data name="Function7.Location" type="System.Drawing.Point, System.Drawing">
+    <value>289, 155</value>
+  </data>
+  <data name="function3.Text" xml:space="preserve">
+    <value>1.勾选想要的导出文件类型，都不勾选则不导出文件。
+
+2.导出TXT功能：点击选择文件路径按钮，选择一个TXT文件，测试完成后即
+可将结果导入到选择的TXT文件中。若没有选择文件路径，则默认在桌面新建
+一个名为当天日期的txt文件。如果选择的路径下TXT文件不存在，那么将按照路
+径新建一个txt文件。
+
+3.导出Excel功能：点击选择文件路径按钮，选择一个Excel文件，测试完成后
+即可将结果导入到选择的Excel文件中。若没有选择文件路径，则默认在桌面新
+建一个名为当天日期的Excel文件。如果选择的路径下Excel文件不存在，那么将按
+照路径新建一个Excel文件。
+
+4.导出CSV功能：点击选择文件路径按钮，选择一个CSV文件，测试完成后
+即可将结果导入到选择的CSV文件中。若没有选择文件路径，则默认在桌面新
+建一个名为当天日期的CSV文件。如果选择的路径下CSV文件不存在，那么将按
+照路径新建一个CSV文件。
+
+5.导出SqlServer文件功能详情请查看目录五“导出SQL文件”
+
+6.选择好路径和需要导出的文件格式后，点击应用设置，即可应用设置，并将设置保存
+在本地。下次打开软件无需再次设置。
+</value>
+  </data>
+  <data name="Label2.Font" type="System.Drawing.Font, System.Drawing">
+    <value>SimSun, 30pt</value>
+  </data>
+  <data name="&gt;&gt;function5.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="Label1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>139, 13</value>
+  </data>
+  <data name="&gt;&gt;function3.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="function2.Text" xml:space="preserve">
+    <value>1.点击登录，输入密码，可以解锁菜单栏权限，也可以修改密码。
+
+2.点击修改密码，两次输入新密码，点击修改，即可将密码修改为新密码。
+下次登录需要用新密码登录。
+</value>
+  </data>
+  <data name="&gt;&gt;Label2.Name" xml:space="preserve">
+    <value>Label2</value>
+  </data>
+  <data name="&gt;&gt;LinkLabel2.Name" xml:space="preserve">
+    <value>LinkLabel2</value>
+  </data>
+  <data name="BtnManual7.Size" type="System.Drawing.Size, System.Drawing">
+    <value>145, 49</value>
+  </data>
+  <data name="&gt;&gt;LinkLabel1.Name" xml:space="preserve">
+    <value>LinkLabel1</value>
+  </data>
+  <data name="Label1.TabIndex" type="System.Int32, mscorlib">
+    <value>39</value>
+  </data>
+  <data name="&gt;&gt;LinkLabel2.Type" xml:space="preserve">
+    <value>System.Windows.Forms.LinkLabel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="Label5.Size" type="System.Drawing.Size, System.Drawing">
+    <value>87, 16</value>
+  </data>
+  <data name="&gt;&gt;BtnManual3.Name" xml:space="preserve">
+    <value>BtnManual3</value>
+  </data>
+  <data name="BtnManual2.Text" xml:space="preserve">
+    <value>2.登录、修改密码</value>
+  </data>
+  <data name="&gt;&gt;BtnManual6.Name" xml:space="preserve">
+    <value>BtnManual6</value>
+  </data>
+  <data name="BtnManual4.Text" xml:space="preserve">
+    <value>4.基本使用步骤</value>
+  </data>
+  <data name="&gt;&gt;PictureBox1.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="BtnManual7.Font" type="System.Drawing.Font, System.Drawing">
+    <value>SimSun, 12pt</value>
+  </data>
+  <data name="Label1.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="BtnManual5.Size" type="System.Drawing.Size, System.Drawing">
+    <value>145, 49</value>
+  </data>
+  <data name="&gt;&gt;Function7.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="Function7.Font" type="System.Drawing.Font, System.Drawing">
+    <value>SimSun, 12pt</value>
+  </data>
+  <data name="BtnManual6.Location" type="System.Drawing.Point, System.Drawing">
+    <value>84, 473</value>
+  </data>
+  <data name="LinkLabel2.Font" type="System.Drawing.Font, System.Drawing">
+    <value>SimSun, 12pt</value>
+  </data>
+  <data name="&gt;&gt;BtnManual6.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="Function6.Text" xml:space="preserve">
+    <value>1.设置站号：站号需要和仪器从站号一致。比如，若仪器站号为1，则选择01；
+若仪器站号为2，则选择02，以此类推。若不选择，则默认仪器站号为01.
+
+
+2.条形码长度：条形码长度可以设置需要输入的条形码的长度，扫码后做一次扫码验
+证，判断长度是否正确。条形码长度处若不输入，则默认13位。
+</value>
+  </data>
+  <data name="&gt;&gt;BtnManual1.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;BtnManual7.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="&gt;&gt;Label5.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;BtnManual4.ZOrder" xml:space="preserve">
+    <value>11</value>
+  </data>
+  <data name="&gt;&gt;function5.Name" xml:space="preserve">
+    <value>function5</value>
+  </data>
+  <data name="LinkLabel1.TabIndex" type="System.Int32, mscorlib">
+    <value>42</value>
+  </data>
+  <data name="Label4.Font" type="System.Drawing.Font, System.Drawing">
+    <value>SimSun, 12pt</value>
+  </data>
+  <data name="BtnManual3.Text" xml:space="preserve">
+    <value>3.存储设置功能</value>
+  </data>
+  <data name="&gt;&gt;Label2.ZOrder" xml:space="preserve">
+    <value>18</value>
+  </data>
+  <data name="function1.Text" xml:space="preserve">
+    <value>1.在波特率下拉列表中选择正确的波特率，默认为9600。
+
+2.在端口号下拉列表中选择正确的端口，点击连接串口，
+若连接上，串口状态处会显示串口已连接，如果和仪器成
+功通讯上，通讯状态会显示已连接。若端口下拉项没有设
+备所对应的端口，则点击刷新串口。若要断开和串口的连
+接，则点击断开连接。
+
+</value>
+  </data>
+  <data name="Label2.TabIndex" type="System.Int32, mscorlib">
+    <value>40</value>
+  </data>
+  <data name="function1.TabIndex" type="System.Int32, mscorlib">
+    <value>49</value>
+  </data>
+  <data name="&gt;&gt;Function7.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;function2.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="BtnManual7.Text" xml:space="preserve">
+    <value>7.测试参数功能</value>
+  </data>
+  <data name="&gt;&gt;Label2.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="BtnManual5.TabIndex" type="System.Int32, mscorlib">
+    <value>52</value>
+  </data>
+  <data name="BtnManual7.Location" type="System.Drawing.Point, System.Drawing">
+    <value>84, 533</value>
+  </data>
+  <data name="function2.Font" type="System.Drawing.Font, System.Drawing">
+    <value>SimSun, 12pt</value>
+  </data>
+  <data name="&gt;&gt;LinkLabel1.ZOrder" xml:space="preserve">
+    <value>17</value>
+  </data>
+  <data name="&gt;&gt;Label5.Name" xml:space="preserve">
+    <value>Label5</value>
+  </data>
+  <data name="function1.Font" type="System.Drawing.Font, System.Drawing">
+    <value>SimSun, 12pt</value>
+  </data>
+  <data name="PictureBox1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>244, 15</value>
+  </data>
+  <data name="Label1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>12, 650</value>
+  </data>
+  <data name="function2.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="LinkLabel1.Text" xml:space="preserve">
+    <value>http://www.shzhll.com/</value>
+  </data>
+  <data name="BtnManual6.Size" type="System.Drawing.Size, System.Drawing">
+    <value>145, 49</value>
+  </data>
+  <data name="&gt;&gt;function1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="function2.TabIndex" type="System.Int32, mscorlib">
+    <value>50</value>
+  </data>
+  <data name="BtnManual5.Text" xml:space="preserve">
+    <value>5.导出SQL文件</value>
+  </data>
+  <data name="BtnManual3.TabIndex" type="System.Int32, mscorlib">
+    <value>47</value>
+  </data>
+  <data name="&gt;&gt;LinkLabel1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.LinkLabel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;BtnManual2.Name" xml:space="preserve">
+    <value>BtnManual2</value>
+  </data>
+  <data name="BtnManual3.Font" type="System.Drawing.Font, System.Drawing">
+    <value>SimSun, 12pt</value>
+  </data>
+  <data name="Label2.Location" type="System.Drawing.Point, System.Drawing">
+    <value>330, 48</value>
+  </data>
+  <data name="BtnManual1.Text" xml:space="preserve">
+    <value>1.串口设置功能</value>
+  </data>
+  <data name="&gt;&gt;Label1.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="Label2.Size" type="System.Drawing.Size, System.Drawing">
+    <value>257, 40</value>
+  </data>
+  <data name="&gt;&gt;BtnManual5.Name" xml:space="preserve">
+    <value>BtnManual5</value>
+  </data>
+  <data name="&gt;&gt;BtnManual3.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="Function7.TabIndex" type="System.Int32, mscorlib">
+    <value>58</value>
+  </data>
+  <data name="&gt;&gt;BtnManual4.Name" xml:space="preserve">
+    <value>BtnManual4</value>
+  </data>
+  <data name="&gt;&gt;Label4.Name" xml:space="preserve">
+    <value>Label4</value>
+  </data>
+  <data name="function3.Size" type="System.Drawing.Size, System.Drawing">
+    <value>615, 336</value>
+  </data>
+  <data name="&gt;&gt;Label5.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;Label2.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="BtnManual4.Size" type="System.Drawing.Size, System.Drawing">
+    <value>145, 49</value>
+  </data>
+  <data name="BtnManual6.Font" type="System.Drawing.Font, System.Drawing">
+    <value>SimSun, 12pt</value>
+  </data>
+  <data name="&gt;&gt;PictureBox1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.PictureBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;PictureBox1.Name" xml:space="preserve">
+    <value>PictureBox1</value>
+  </data>
+  <data name="&gt;&gt;Label1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="Label4.Location" type="System.Drawing.Point, System.Drawing">
+    <value>184, 116</value>
+  </data>
+  <data name="Label5.Location" type="System.Drawing.Point, System.Drawing">
+    <value>14, 155</value>
+  </data>
+  <data name="Label3.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="&gt;&gt;Label5.ZOrder" xml:space="preserve">
+    <value>15</value>
+  </data>
+  <data name="&gt;&gt;Label3.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;function3.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="BtnManual2.TabIndex" type="System.Int32, mscorlib">
+    <value>46</value>
+  </data>
+  <data name="&gt;&gt;Label4.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="BtnManual5.Location" type="System.Drawing.Point, System.Drawing">
+    <value>84, 414</value>
+  </data>
+  <data name="function3.TabIndex" type="System.Int32, mscorlib">
+    <value>51</value>
+  </data>
+  <data name="&gt;&gt;Label4.ZOrder" xml:space="preserve">
+    <value>16</value>
+  </data>
+  <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="$this.Language" type="System.Globalization.CultureInfo, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>en</value>
+  </metadata>
+</root>

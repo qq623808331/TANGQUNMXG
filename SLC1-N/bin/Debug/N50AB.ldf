@@ -1,0 +1,99 @@
+LIN_description_file ;
+LIN_protocol_version = "2.1" ;
+LIN_language_version = "2.1" ;
+LIN_speed = 19.200 kbps ;
+Nodes {
+    Master:BCM,1.0000 ms,0.0000 ms ;
+    Slaves:MCM;
+}
+Signals {
+    BCM_PowerKeySt:2,0x0,BCM,MCM;
+    BCM_MasLumbarSupFuncButtonSt:1,0x0,BCM,MCM;
+    BCM_UpLumbarSupAdjButtonSt:1,0x0,BCM,MCM;
+    BCM_DownLumbarSupAdjButtonSt:1,0x0,BCM,MCM;
+    BCM_FwdLumbarSupAdjButtonSt:1,0x0,BCM,MCM;
+    BCM_RwdLumbarSupAdjButtonSt:1,0x0,BCM,MCM;
+    BCM_MasActivated:1,0x0,BCM,MCM;
+    BCM_MassageReq:4,0x0,BCM,MCM;
+    Reserved0:4,0x0,BCM;
+    MCM_MasSt:1,0x0,MCM;
+    MCM_MassageSts:4,0x0,MCM;
+    MCM_BatVoltAbnormal:2,0x0,MCM;
+    Reserved1:1,0x0,MCM,BCM;
+    MCM_UpLumbarSupSt:1,0x0,MCM,BCM;
+    MCM_DownLumbarSupSt:1,0x0,MCM,BCM;
+    MCM_FwdLumbarSupSt:1,0x0,MCM,BCM;
+    MCM_RwdLumbarSupSt:1,0x0,MCM,BCM;
+    MCM_Resp_Err:1,0x0,MCM,BCM;
+}
+Diagnostic_signals {
+    MasterReqB0:8,0;
+    MasterReqB1:8,0;
+    MasterReqB2:8,0;
+    MasterReqB3:8,0;
+    MasterReqB4:8,0;
+    MasterReqB5:8,0;
+    MasterReqB6:8,0;
+    MasterReqB7:8,0;
+    SlaveRespB0:8,0;
+    SlaveRespB1:8,0;
+    SlaveRespB2:8,0;
+    SlaveRespB3:8,0;
+    SlaveRespB4:8,0;
+    SlaveRespB5:8,0;
+    SlaveRespB6:8,0;
+    SlaveRespB7:8,0;
+}
+Frames {
+    BCM:0x12,BCM,8{
+        BCM_PowerKeySt,0;
+        BCM_DownLumbarSupAdjButtonSt,3;
+        BCM_UpLumbarSupAdjButtonSt,2;
+        BCM_FwdLumbarSupAdjButtonSt,4;
+        BCM_RwdLumbarSupAdjButtonSt,5;
+    }
+    MCM:0x2A,MCM,8{
+        MCM_BatVoltAbnormal,0;
+        Reserved1,6;
+        MCM_UpLumbarSupSt,2;
+        MCM_DownLumbarSupSt,3;
+        MCM_FwdLumbarSupSt,4;
+        MCM_RwdLumbarSupSt,5;
+        MCM_Resp_Err,7;
+    }
+}
+Diagnostic_frames {
+    MasterReq : 60 {
+        MasterReqB0,0;
+        MasterReqB1,8;
+        MasterReqB2,16;
+        MasterReqB3,24;
+        MasterReqB4,32;
+        MasterReqB5,40;
+        MasterReqB6,48;
+        MasterReqB7,56;
+    }
+    SlaveResp : 61 {
+        SlaveRespB0,0;
+        SlaveRespB1,8;
+        SlaveRespB2,16;
+        SlaveRespB3,24;
+        SlaveRespB4,32;
+        SlaveRespB5,40;
+        SlaveRespB6,48;
+        SlaveRespB7,56;
+    }
+}
+Node_attributes {
+    MCM {
+        LIN_protocol = 2.1 ;
+        configured_NAD = 0x01 ;
+        initial_NAD = 0x00 ;
+    }
+}
+Schedule_tables {
+    N60AB {
+        BCM delay 100.0000 ms ;
+        MCM delay 180.0000 ms ;
+    }
+}

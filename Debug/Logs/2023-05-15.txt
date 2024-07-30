@@ -1,0 +1,300 @@
+全局异常捕捉
+****************************异常文本****************************
+【出现时间】：5/15/2023 3:05:58 AM
+【异常类型】：ArgumentException
+【异常信息】：Offset and length were out of bounds for the array or count is greater than the number of elements from index to the end of the source collection.
+【堆栈调用】：   at System.ThrowHelper.ThrowArgumentException(ExceptionResource resource)
+   at System.Collections.Generic.List`1.RemoveRange(Int32 index, Int32 count)
+   at SLC1_N.Form1.ReadLin() in D:\上位机\0513\SLC1-N\Form1.cs:line 5876
+   at SLC1_N.Form1.Form1_Load(Object sender, EventArgs e) in D:\上位机\0513\SLC1-N\Form1.cs:line 478
+   at System.Windows.Forms.Form.OnLoad(EventArgs e)
+   at System.Windows.Forms.Form.OnCreateControl()
+   at System.Windows.Forms.Control.CreateControl(Boolean fIgnoreVisible)
+   at System.Windows.Forms.Control.CreateControl()
+   at System.Windows.Forms.Control.WmShowWindow(Message& m)
+   at System.Windows.Forms.Control.WndProc(Message& m)
+   at System.Windows.Forms.ScrollableControl.WndProc(Message& m)
+   at System.Windows.Forms.Form.WmShowWindow(Message& m)
+   at System.Windows.Forms.Form.WndProc(Message& m)
+   at System.Windows.Forms.Control.ControlNativeWindow.OnMessage(Message& m)
+   at System.Windows.Forms.Control.ControlNativeWindow.WndProc(Message& m)
+   at System.Windows.Forms.NativeWindow.Callback(IntPtr hWnd, Int32 msg, IntPtr wparam, IntPtr lparam)
+***************************************************************
+
+5/15/2023 3:05:58 AM
+=======================================================
+全局异常捕捉
+****************************异常文本****************************
+【出现时间】：5/15/2023 4:04:32 AM
+【异常类型】：ArgumentException
+【异常信息】：Offset and length were out of bounds for the array or count is greater than the number of elements from index to the end of the source collection.
+【堆栈调用】：   at System.ThrowHelper.ThrowArgumentException(ExceptionResource resource)
+   at System.Collections.Generic.List`1.RemoveRange(Int32 index, Int32 count)
+   at SLC1_N.Form1.ReadLin() in D:\上位机\0513\SLC1-N\Form1.cs:line 5886
+   at SLC1_N.Form1.Form1_Load(Object sender, EventArgs e) in D:\上位机\0513\SLC1-N\Form1.cs:line 478
+   at System.Windows.Forms.Form.OnLoad(EventArgs e)
+   at System.Windows.Forms.Form.OnCreateControl()
+   at System.Windows.Forms.Control.CreateControl(Boolean fIgnoreVisible)
+   at System.Windows.Forms.Control.CreateControl()
+   at System.Windows.Forms.Control.WmShowWindow(Message& m)
+   at System.Windows.Forms.Control.WndProc(Message& m)
+   at System.Windows.Forms.ScrollableControl.WndProc(Message& m)
+   at System.Windows.Forms.Form.WmShowWindow(Message& m)
+   at System.Windows.Forms.Form.WndProc(Message& m)
+   at System.Windows.Forms.Control.ControlNativeWindow.OnMessage(Message& m)
+   at System.Windows.Forms.Control.ControlNativeWindow.WndProc(Message& m)
+   at System.Windows.Forms.NativeWindow.Callback(IntPtr hWnd, Int32 msg, IntPtr wparam, IntPtr lparam)
+***************************************************************
+
+5/15/2023 4:04:32 AM
+=======================================================
+全局异常捕捉
+****************************异常文本****************************
+【出现时间】：5/15/2023 4:06:11 AM
+【异常类型】：ArgumentException
+【异常信息】：Offset and length were out of bounds for the array or count is greater than the number of elements from index to the end of the source collection.
+【堆栈调用】：   at System.ThrowHelper.ThrowArgumentException(ExceptionResource resource)
+   at System.Collections.Generic.List`1.RemoveRange(Int32 index, Int32 count)
+   at SLC1_N.Form1.ReadLin() in D:\上位机\0513\SLC1-N\Form1.cs:line 5933
+   at SLC1_N.Form1.Form1_Load(Object sender, EventArgs e) in D:\上位机\0513\SLC1-N\Form1.cs:line 478
+   at System.Windows.Forms.Form.OnLoad(EventArgs e)
+   at System.Windows.Forms.Form.OnCreateControl()
+   at System.Windows.Forms.Control.CreateControl(Boolean fIgnoreVisible)
+   at System.Windows.Forms.Control.CreateControl()
+   at System.Windows.Forms.Control.WmShowWindow(Message& m)
+   at System.Windows.Forms.Control.WndProc(Message& m)
+   at System.Windows.Forms.ScrollableControl.WndProc(Message& m)
+   at System.Windows.Forms.Form.WmShowWindow(Message& m)
+   at System.Windows.Forms.Form.WndProc(Message& m)
+   at System.Windows.Forms.Control.ControlNativeWindow.OnMessage(Message& m)
+   at System.Windows.Forms.Control.ControlNativeWindow.WndProc(Message& m)
+   at System.Windows.Forms.NativeWindow.Callback(IntPtr hWnd, Int32 msg, IntPtr wparam, IntPtr lparam)
+***************************************************************
+
+5/15/2023 4:06:11 AM
+=======================================================
+全局异常捕捉
+****************************异常文本****************************
+【出现时间】：5/15/2023 4:08:43 AM
+【异常类型】：ArgumentException
+【异常信息】：Parameter is not valid.
+【堆栈调用】：   at System.Drawing.Graphics.MeasureString(String text, Font font, SizeF layoutArea, StringFormat stringFormat)
+   at System.Drawing.Graphics.MeasureString(String text, Font font)
+   at Sunny.UI.FontImages.BinarySearch(Graphics graphics, Int32 low, Int32 high, Int32 symbol, Int32 imageSize)
+   at Sunny.UI.FontImages.BinarySearch(Graphics graphics, Int32 low, Int32 high, Int32 symbol, Int32 imageSize)
+   at Sunny.UI.FontImages.BinarySearch(Graphics graphics, Int32 low, Int32 high, Int32 symbol, Int32 imageSize)
+   at Sunny.UI.FontImages.BinarySearch(Graphics graphics, Int32 low, Int32 high, Int32 symbol, Int32 imageSize)
+   at Sunny.UI.FontImages.BinarySearch(Graphics graphics, Int32 low, Int32 high, Int32 symbol, Int32 imageSize)
+   at Sunny.UI.FontImages.BinarySearch(Graphics graphics, Int32 low, Int32 high, Int32 symbol, Int32 imageSize)
+   at Sunny.UI.FontImages.BinarySearch(Graphics graphics, Int32 low, Int32 high, Int32 symbol, Int32 imageSize)
+   at Sunny.UI.FontImages.GetFontSize(Int32 symbol, Int32 imageSize)
+   at Sunny.UI.FontImages.GetFont(Int32 iconText, Int32 imageSize)
+   at Sunny.UI.FontImageHelper.GetFont(Int32 symbol, Int32 imageSize)
+   at Sunny.UI.FontImageHelper.DrawFontImage(Graphics graphics, Int32 symbol, Int32 symbolSize, Color color, Single left, Single top, Int32 xOffset, Int32 yOffSet)
+   at Sunny.UI.UINavBar.OnPaint(PaintEventArgs e)
+   at System.Windows.Forms.Control.PaintWithErrorHandling(PaintEventArgs e, Int16 layer)
+   at System.Windows.Forms.Control.WmPaint(Message& m)
+   at System.Windows.Forms.Control.WndProc(Message& m)
+   at System.Windows.Forms.ScrollableControl.WndProc(Message& m)
+   at System.Windows.Forms.Control.ControlNativeWindow.OnMessage(Message& m)
+   at System.Windows.Forms.Control.ControlNativeWindow.WndProc(Message& m)
+   at System.Windows.Forms.NativeWindow.Callback(IntPtr hWnd, Int32 msg, IntPtr wparam, IntPtr lparam)
+***************************************************************
+
+5/15/2023 4:08:43 AM
+=======================================================
+全局异常捕捉
+****************************异常文本****************************
+【出现时间】：5/15/2023 4:21:09 AM
+【异常类型】：ArgumentException
+【异常信息】：Parameter is not valid.
+【堆栈调用】：   at System.Drawing.Graphics.set_SmoothingMode(SmoothingMode value)
+   at Sunny.UI.GDI.SetDefaultQuality(Graphics g)
+   at Sunny.UI.GraphicsEx.DrawRectangle(Graphics g, Color color, Rectangle rect, Boolean smooth, Single penWidth)
+   at Sunny.UI.UIDataGridView.OnPaint(PaintEventArgs e)
+   at System.Windows.Forms.Control.PaintWithErrorHandling(PaintEventArgs e, Int16 layer)
+   at System.Windows.Forms.Control.WmPaint(Message& m)
+   at System.Windows.Forms.Control.WndProc(Message& m)
+   at System.Windows.Forms.DataGridView.WndProc(Message& m)
+   at System.Windows.Forms.Control.ControlNativeWindow.OnMessage(Message& m)
+   at System.Windows.Forms.Control.ControlNativeWindow.WndProc(Message& m)
+   at System.Windows.Forms.NativeWindow.Callback(IntPtr hWnd, Int32 msg, IntPtr wparam, IntPtr lparam)
+***************************************************************
+
+5/15/2023 4:21:09 AM
+=======================================================
+全局异常捕捉
+****************************异常文本****************************
+【出现时间】：5/15/2023 4:26:47 AM
+【异常类型】：ArgumentException
+【异常信息】：Parameter is not valid.
+【堆栈调用】：   at System.Drawing.Graphics.set_SmoothingMode(SmoothingMode value)
+   at Sunny.UI.GDI.SetDefaultQuality(Graphics g)
+   at Sunny.UI.GraphicsEx.DrawRectangle(Graphics g, Color color, Rectangle rect, Boolean smooth, Single penWidth)
+   at Sunny.UI.UIDataGridView.OnPaint(PaintEventArgs e)
+   at System.Windows.Forms.Control.PaintWithErrorHandling(PaintEventArgs e, Int16 layer)
+   at System.Windows.Forms.Control.WmPaint(Message& m)
+   at System.Windows.Forms.Control.WndProc(Message& m)
+   at System.Windows.Forms.DataGridView.WndProc(Message& m)
+   at System.Windows.Forms.Control.ControlNativeWindow.OnMessage(Message& m)
+   at System.Windows.Forms.Control.ControlNativeWindow.WndProc(Message& m)
+   at System.Windows.Forms.NativeWindow.Callback(IntPtr hWnd, Int32 msg, IntPtr wparam, IntPtr lparam)
+***************************************************************
+
+5/15/2023 4:26:47 AM
+=======================================================
+全局异常捕捉
+****************************异常文本****************************
+【出现时间】：5/15/2023 4:56:33 AM
+【异常类型】：ArgumentOutOfRangeException
+【异常信息】：Non-negative number required.
+Parameter name: index
+【堆栈调用】：   at System.ThrowHelper.ThrowArgumentOutOfRangeException(ExceptionArgument argument, ExceptionResource resource)
+   at System.Collections.Generic.List`1.RemoveRange(Int32 index, Int32 count)
+   at SLC1_N.Form1.ReadLin() in D:\上位机\0513\SLC1-N\Form1.cs:line 5868
+   at SLC1_N.Form1.Form1_Load(Object sender, EventArgs e) in D:\上位机\0513\SLC1-N\Form1.cs:line 478
+   at System.Windows.Forms.Form.OnLoad(EventArgs e)
+   at System.Windows.Forms.Form.OnCreateControl()
+   at System.Windows.Forms.Control.CreateControl(Boolean fIgnoreVisible)
+   at System.Windows.Forms.Control.CreateControl()
+   at System.Windows.Forms.Control.WmShowWindow(Message& m)
+   at System.Windows.Forms.Control.WndProc(Message& m)
+   at System.Windows.Forms.ScrollableControl.WndProc(Message& m)
+   at System.Windows.Forms.Form.WmShowWindow(Message& m)
+   at System.Windows.Forms.Form.WndProc(Message& m)
+   at System.Windows.Forms.Control.ControlNativeWindow.OnMessage(Message& m)
+   at System.Windows.Forms.Control.ControlNativeWindow.WndProc(Message& m)
+   at System.Windows.Forms.NativeWindow.Callback(IntPtr hWnd, Int32 msg, IntPtr wparam, IntPtr lparam)
+***************************************************************
+
+5/15/2023 4:56:33 AM
+=======================================================
+全局异常捕捉
+****************************异常文本****************************
+【出现时间】：5/15/2023 4:57:42 AM
+【异常类型】：ArgumentOutOfRangeException
+【异常信息】：Non-negative number required.
+Parameter name: index
+【堆栈调用】：   at System.ThrowHelper.ThrowArgumentOutOfRangeException(ExceptionArgument argument, ExceptionResource resource)
+   at System.Collections.Generic.List`1.RemoveRange(Int32 index, Int32 count)
+   at SLC1_N.Form1.ReadLin() in D:\上位机\0513\SLC1-N\Form1.cs:line 5868
+   at SLC1_N.Form1.Form1_Load(Object sender, EventArgs e) in D:\上位机\0513\SLC1-N\Form1.cs:line 478
+   at System.Windows.Forms.Form.OnLoad(EventArgs e)
+   at System.Windows.Forms.Form.OnCreateControl()
+   at System.Windows.Forms.Control.CreateControl(Boolean fIgnoreVisible)
+   at System.Windows.Forms.Control.CreateControl()
+   at System.Windows.Forms.Control.WmShowWindow(Message& m)
+   at System.Windows.Forms.Control.WndProc(Message& m)
+   at System.Windows.Forms.ScrollableControl.WndProc(Message& m)
+   at System.Windows.Forms.Form.WmShowWindow(Message& m)
+   at System.Windows.Forms.Form.WndProc(Message& m)
+   at System.Windows.Forms.Control.ControlNativeWindow.OnMessage(Message& m)
+   at System.Windows.Forms.Control.ControlNativeWindow.WndProc(Message& m)
+   at System.Windows.Forms.NativeWindow.Callback(IntPtr hWnd, Int32 msg, IntPtr wparam, IntPtr lparam)
+***************************************************************
+
+5/15/2023 4:57:42 AM
+=======================================================
+全局异常捕捉
+****************************异常文本****************************
+【出现时间】：5/15/2023 5:10:31 AM
+【异常类型】：ArgumentException
+【异常信息】：Offset and length were out of bounds for the array or count is greater than the number of elements from index to the end of the source collection.
+【堆栈调用】：   at System.ThrowHelper.ThrowArgumentException(ExceptionResource resource)
+   at System.Collections.Generic.List`1.RemoveRange(Int32 index, Int32 count)
+   at SLC1_N.Form1.ReadLin() in D:\上位机\0513\SLC1-N\Form1.cs:line 5923
+   at SLC1_N.Form1.Form1_Load(Object sender, EventArgs e) in D:\上位机\0513\SLC1-N\Form1.cs:line 478
+   at System.Windows.Forms.Form.OnLoad(EventArgs e)
+   at System.Windows.Forms.Form.OnCreateControl()
+   at System.Windows.Forms.Control.CreateControl(Boolean fIgnoreVisible)
+   at System.Windows.Forms.Control.CreateControl()
+   at System.Windows.Forms.Control.WmShowWindow(Message& m)
+   at System.Windows.Forms.Control.WndProc(Message& m)
+   at System.Windows.Forms.ScrollableControl.WndProc(Message& m)
+   at System.Windows.Forms.Form.WmShowWindow(Message& m)
+   at System.Windows.Forms.Form.WndProc(Message& m)
+   at System.Windows.Forms.Control.ControlNativeWindow.OnMessage(Message& m)
+   at System.Windows.Forms.Control.ControlNativeWindow.WndProc(Message& m)
+   at System.Windows.Forms.NativeWindow.Callback(IntPtr hWnd, Int32 msg, IntPtr wparam, IntPtr lparam)
+***************************************************************
+
+5/15/2023 5:10:31 AM
+=======================================================
+全局异常捕捉
+****************************异常文本****************************
+【出现时间】：5/15/2023 5:48:21 AM
+【异常类型】：ArgumentOutOfRangeException
+【异常信息】：Index must be within the bounds of the List.
+Parameter name: index
+【堆栈调用】：   at System.ThrowHelper.ThrowArgumentOutOfRangeException(ExceptionArgument argument, ExceptionResource resource)
+   at System.Collections.Generic.List`1.Insert(Int32 index, T item)
+   at SLC1_N.Form1.ReadLin() in D:\上位机\0513\SLC1-N\Form1.cs:line 5887
+   at SLC1_N.Form1.Form1_Load(Object sender, EventArgs e) in D:\上位机\0513\SLC1-N\Form1.cs:line 478
+   at System.Windows.Forms.Form.OnLoad(EventArgs e)
+   at System.Windows.Forms.Form.OnCreateControl()
+   at System.Windows.Forms.Control.CreateControl(Boolean fIgnoreVisible)
+   at System.Windows.Forms.Control.CreateControl()
+   at System.Windows.Forms.Control.WmShowWindow(Message& m)
+   at System.Windows.Forms.Control.WndProc(Message& m)
+   at System.Windows.Forms.ScrollableControl.WndProc(Message& m)
+   at System.Windows.Forms.Form.WmShowWindow(Message& m)
+   at System.Windows.Forms.Form.WndProc(Message& m)
+   at System.Windows.Forms.Control.ControlNativeWindow.OnMessage(Message& m)
+   at System.Windows.Forms.Control.ControlNativeWindow.WndProc(Message& m)
+   at System.Windows.Forms.NativeWindow.Callback(IntPtr hWnd, Int32 msg, IntPtr wparam, IntPtr lparam)
+***************************************************************
+
+5/15/2023 5:48:21 AM
+=======================================================
+全局异常捕捉
+****************************异常文本****************************
+【出现时间】：5/15/2023 5:48:50 AM
+【异常类型】：ArgumentOutOfRangeException
+【异常信息】：Index must be within the bounds of the List.
+Parameter name: index
+【堆栈调用】：   at System.ThrowHelper.ThrowArgumentOutOfRangeException(ExceptionArgument argument, ExceptionResource resource)
+   at System.Collections.Generic.List`1.Insert(Int32 index, T item)
+   at SLC1_N.Form1.ReadLin() in D:\上位机\0513\SLC1-N\Form1.cs:line 5887
+   at SLC1_N.Form1.Form1_Load(Object sender, EventArgs e) in D:\上位机\0513\SLC1-N\Form1.cs:line 478
+   at System.Windows.Forms.Form.OnLoad(EventArgs e)
+   at System.Windows.Forms.Form.OnCreateControl()
+   at System.Windows.Forms.Control.CreateControl(Boolean fIgnoreVisible)
+   at System.Windows.Forms.Control.CreateControl()
+   at System.Windows.Forms.Control.WmShowWindow(Message& m)
+   at System.Windows.Forms.Control.WndProc(Message& m)
+   at System.Windows.Forms.ScrollableControl.WndProc(Message& m)
+   at System.Windows.Forms.Form.WmShowWindow(Message& m)
+   at System.Windows.Forms.Form.WndProc(Message& m)
+   at System.Windows.Forms.Control.ControlNativeWindow.OnMessage(Message& m)
+   at System.Windows.Forms.Control.ControlNativeWindow.WndProc(Message& m)
+   at System.Windows.Forms.NativeWindow.Callback(IntPtr hWnd, Int32 msg, IntPtr wparam, IntPtr lparam)
+***************************************************************
+
+5/15/2023 5:48:51 AM
+=======================================================
+全局异常捕捉
+****************************异常文本****************************
+【出现时间】：5/15/2023 8:37:23 PM
+【异常类型】：ArgumentOutOfRangeException
+【异常信息】：Non-negative number required.
+Parameter name: index
+【堆栈调用】：   at System.ThrowHelper.ThrowArgumentOutOfRangeException(ExceptionArgument argument, ExceptionResource resource)
+   at System.Collections.Generic.List`1.RemoveRange(Int32 index, Int32 count)
+   at SLC1_N.Form1.ReadLin() in D:\上位机\0513\SLC1-N\Form1.cs:line 5886
+   at SLC1_N.Form1.Form1_Load(Object sender, EventArgs e) in D:\上位机\0513\SLC1-N\Form1.cs:line 478
+   at System.Windows.Forms.Form.OnLoad(EventArgs e)
+   at System.Windows.Forms.Form.OnCreateControl()
+   at System.Windows.Forms.Control.CreateControl(Boolean fIgnoreVisible)
+   at System.Windows.Forms.Control.CreateControl()
+   at System.Windows.Forms.Control.WmShowWindow(Message& m)
+   at System.Windows.Forms.Control.WndProc(Message& m)
+   at System.Windows.Forms.ScrollableControl.WndProc(Message& m)
+   at System.Windows.Forms.Form.WmShowWindow(Message& m)
+   at System.Windows.Forms.Form.WndProc(Message& m)
+   at System.Windows.Forms.Control.ControlNativeWindow.OnMessage(Message& m)
+   at System.Windows.Forms.Control.ControlNativeWindow.WndProc(Message& m)
+   at System.Windows.Forms.NativeWindow.Callback(IntPtr hWnd, Int32 msg, IntPtr wparam, IntPtr lparam)
+***************************************************************
+
+5/15/2023 8:37:23 PM
+=======================================================
