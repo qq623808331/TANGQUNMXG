@@ -45,10 +45,6 @@
             this.CH4IsRun = new System.Windows.Forms.Timer(this.components);
             this.CodePort1 = new System.IO.Ports.SerialPort(this.components);
             this.PLCSignal = new System.Windows.Forms.Timer(this.components);
-            this.ADCPort1 = new System.IO.Ports.SerialPort(this.components);
-            this.VDCPort1 = new System.IO.Ports.SerialPort(this.components);
-            this.CH2ADCPort = new System.IO.Ports.SerialPort(this.components);
-            this.CH2VDCPort = new System.IO.Ports.SerialPort(this.components);
             this.CH1ReadElec = new System.Windows.Forms.Timer(this.components);
             this.CH2ReadElec = new System.Windows.Forms.Timer(this.components);
             this.CH1ReaduA = new System.Windows.Forms.Timer(this.components);
@@ -321,22 +317,6 @@
             // 
             this.PLCSignal.Tick += new System.EventHandler(this.PLCSignal_Tick_1);
             // 
-            // ADCPort1
-            // 
-            this.ADCPort1.DataReceived += new System.IO.Ports.SerialDataReceivedEventHandler(this.ADCPort1_DataReceived);
-            // 
-            // VDCPort1
-            // 
-            this.VDCPort1.DataReceived += new System.IO.Ports.SerialDataReceivedEventHandler(this.VDCPort1_DataReceived);
-            // 
-            // CH2ADCPort
-            // 
-            this.CH2ADCPort.DataReceived += new System.IO.Ports.SerialDataReceivedEventHandler(this.CH2ADCPort_DataReceived);
-            // 
-            // CH2VDCPort
-            // 
-            this.CH2VDCPort.DataReceived += new System.IO.Ports.SerialDataReceivedEventHandler(this.CH2VDCPort_DataReceived);
-            // 
             // CH1ReadElec
             // 
             this.CH1ReadElec.Tick += new System.EventHandler(this.CH1ReadElec_Tick);
@@ -372,22 +352,6 @@
             // CH2LinUP
             // 
             this.CH2LinUP.Tick += new System.EventHandler(this.CH2LinUP_Tick);
-            // 
-            // CH1FlowPort
-            // 
-            this.CH1FlowPort.DataReceived += new System.IO.Ports.SerialDataReceivedEventHandler(this.CH1FlowPort_DataReceived);
-            // 
-            // CH3FlowPort
-            // 
-            this.CH3FlowPort.DataReceived += new System.IO.Ports.SerialDataReceivedEventHandler(this.CH3FlowPort_DataReceived);
-            // 
-            // CH2FlowPort
-            // 
-            this.CH2FlowPort.DataReceived += new System.IO.Ports.SerialDataReceivedEventHandler(this.CH2FlowPort_DataReceived);
-            // 
-            // CH4FlowPort
-            // 
-            this.CH4FlowPort.DataReceived += new System.IO.Ports.SerialDataReceivedEventHandler(this.CH4FlowPort_DataReceived);
             // 
             // CH1ReadFlowT
             // 
@@ -912,7 +876,6 @@
             this.right_CH1Code.Name = "right_CH1Code";
             this.right_CH1Code.Style = Sunny.UI.UIStyle.Custom;
             this.right_CH1Code.TextAlignment = System.Drawing.ContentAlignment.MiddleLeft;
-            this.right_CH1Code.TextChanged += new System.EventHandler(this.right_CH1Code_TextChanged);
             // 
             // label103
             // 
@@ -1423,7 +1386,6 @@
             this.left_CH1Code.Minimum = -2147483648D;
             this.left_CH1Code.Name = "left_CH1Code";
             this.left_CH1Code.TextAlignment = System.Drawing.ContentAlignment.MiddleLeft;
-            this.left_CH1Code.TextChanged += new System.EventHandler(this.left_CH1Code_TextChanged);
             // 
             // label32
             // 
@@ -2206,10 +2168,6 @@
         private System.Windows.Forms.Timer PLCSignal;
         private System.Windows.Forms.Timer CH1ReaduA;
         private System.Windows.Forms.Timer CH2ReaduA;
-        public System.IO.Ports.SerialPort ADCPort1;
-        public System.IO.Ports.SerialPort VDCPort1;
-        public System.IO.Ports.SerialPort CH2ADCPort;
-        public System.IO.Ports.SerialPort CH2VDCPort;
         public System.Windows.Forms.Timer DayTime;
         private System.Windows.Forms.Timer UDPOverTime;
         private System.Windows.Forms.Timer UDPRead;

@@ -1,11 +1,10 @@
 ﻿using HslCommunication;
 using HslCommunication.ModBus;
-using Microsoft.Office.Interop.Excel;
-using Sunny.UI.Win32;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Diagnostics;
+using System.Diagnostics.Eventing.Reader;
 using System.Drawing;
 using System.IO;
 using System.Linq;
@@ -20,9 +19,11 @@ using System.Threading;
 using System.Threading.Tasks;
 using System.Timers;
 using System.Windows.Forms;
+using System.Windows.Forms.DataVisualization.Charting;
 using static SLC1_N.Model;
 using Excel = Microsoft.Office.Interop.Excel;
-
+using System.IO.Ports;
+using static SLC1_N.Setup;
 namespace SLC1_N
 {
     public partial class Form1 : Form
@@ -264,7 +265,7 @@ namespace SLC1_N
         /// <summary>
         /// 仪器的数据发送,1是读取仪器启动状态，2是读取参数，3是读取测试结果,4是读取仪器复位状态，5是保持仪器通讯
         /// </summary>
-        public int ch1_1step=1;
+        public int ch1_1step = 1;
 
         public int ch1_2step = 1;
         public int ch2_1step = 1;
@@ -390,7 +391,13 @@ namespace SLC1_N
 
         [DllImport("psapi.dll")]
         private static extern int EmptyWorkingSet(IntPtr hwProc); //清理内存相关
-
+        /// <summary>
+        /// ///////新加后台读取串口
+        /// </summary>
+        ///       
+        public SerialPort ADCPort1, VDCPort1, CH2ADCPort, CH2VDCPort;
+      
+        private CancellationTokenSource _cancellationTokenSource;
         public Form1()
         {
             //dllCall.RegistDLL();
@@ -424,47 +431,80 @@ namespace SLC1_N
 
             }
 
-         
+
+
+      
+
+            //后台流量读取线程
             Task.Run(() =>
             {
-                
+                while (true)
+                {
+                }
+
+
             });
 
-            //Task.Run(() =>
-            //{
-            //    Thread.Sleep(200);
-            //    while (true && mSerialPort)
-            //    {
-            //        try
-            //        {
+            ADCPort1 = new SerialPort { };
+            VDCPort1 = new SerialPort { };
+            CH2ADCPort = new SerialPort { };
+            CH2VDCPort = new SerialPort { };
+            //后台电压电流读取线程
+            Task.Run(() =>
+            {
+                Thread.Sleep(200);
+                
+                while (true && mSerialPort)
+                {
+                    try
+                    {
+                        if (true && mSerialPort)
+                        {
+                            try
+                            {
+                                ReadMultimeterPort();
+                                Thread.Sleep(100);
+                                PortSend(1);
+                                Thread.Sleep(100);
+                                PortSend(3);
+                                Thread.Sleep(100);
+                            }
+                            catch (Exception ex)
+                            {
+                                Logger.Log(ex.StackTrace);
+                                wa.InsertWarningData(DateTime.Now.ToString("yyyy-MM-dd HH:mm:ss"), "-", ex.StackTrace);
+                            }
+                        }
+                    }
+                    catch (Exception ex)
+                    {
+                        Logger.Log(ex.StackTrace);
+                        wa.InsertWarningData(DateTime.Now.ToString("yyyy-MM-dd HH:mm:ss"), "-", ex.StackTrace);
+                    }
+                }
+            });
+            //后台电压电流读取线程
+            Task.Run(() =>
+            {
+                Thread.Sleep(200);
+                while (true && mSerialPort)
+                {
+                    try
+                    {
+                        Thread.Sleep(100);
+                        PortSend(2);
+                        Thread.Sleep(100);
+                        PortSend(4);
+                        Thread.Sleep(100);
 
-            //        }
-            //        catch (Exception ex)
-            //        {
-            //            Logger.Log(ex.StackTrace);
-            //            wa.InsertWarningData(DateTime.Now.ToString("yyyy-MM-dd HH:mm:ss"), "-", ex.StackTrace);
-            //        }
-            //    }
-            //});
-
-            //Task.Run(() =>
-            //{
-            //    Thread.Sleep(200);
-            //    while (true && mSerialPort)
-            //    {
-            //        try
-            //        {
-            //            PortSend(2);
-            //            PortSend(4);
-            //            Thread.Sleep(50);
-            //        }
-            //        catch (Exception ex)
-            //        {
-            //            Logger.Log(ex.StackTrace);
-            //            wa.InsertWarningData(DateTime.Now.ToString("yyyy-MM-dd HH:mm:ss"), "-", ex.StackTrace);
-            //        }
-            //    }
-            //});
+                    }
+                    catch (Exception ex)
+                    {
+                        Logger.Log(ex.StackTrace);
+                        wa.InsertWarningData(DateTime.Now.ToString("yyyy-MM-dd HH:mm:ss"), "-", ex.StackTrace);
+                    }
+                }
+            });
         }
 
         private void ChangLang()
@@ -521,6 +561,11 @@ namespace SLC1_N
 
         private void Form1_Load(object sender, EventArgs e)
         {
+            ///////新加串口初始化
+            ///
+         
+
+            ////
             //Sunny.UI.UIMessageTip.ShowError("AAAAA", 1000);
             //this.TopMost = true;
             timer1.Interval = 100;
@@ -664,18 +709,18 @@ namespace SLC1_N
                 ///////
                 ///if
                 ///
-                if(Fwdjg==1&& Fwdjg2== 1 && left_CH1Tlight.Text.Contains("OK") && left_CH2Tlight.Text.Contains("OK"))
+                if (Fwdjg == 1 && Fwdjg2 == 1 && left_CH1Tlight.Text.Contains("OK") && left_CH2Tlight.Text.Contains("OK"))
                 {
                     Fwdjg = 0;
                     Fwdjg2 = 0;
-                //    Thread.Sleep(100);
+                    //    Thread.Sleep(100);
                     CH1Step += 1;
                     CH1Method(CH1Step);
                 }
-                if ( CH2JGFLAG == 2 && right_CH1Tlight.Text.Contains("OK") && right_CH2Tlight.Text.Contains("OK"))
+                if (CH2JGFLAG == 2 && right_CH1Tlight.Text.Contains("OK") && right_CH2Tlight.Text.Contains("OK"))
                 {
                     CH2JGFLAG = 0;
-                        //Thread.Sleep(100);
+                    //Thread.Sleep(100);
                     CH2Step += 1;
                     CH2Method(CH2Step);
                 }
@@ -835,8 +880,8 @@ namespace SLC1_N
                             {
                                 timerCH2CT.Stop();
                                 CH2IsStart = false;
-                              
-                                    if (CKCH2Port.IsOpen)   Form1.f1.CKCH2Port.WriteLine("OUTP 0");
+
+                                if (CKCH2Port.IsOpen) Form1.f1.CKCH2Port.WriteLine("OUTP 0");
                                 this.Invoke(new System.Action(() => { CH2CT.Text = "0S"; }));
                             }
                             //MessageBox.Show("右复位按下！", "右复位");
@@ -1222,7 +1267,7 @@ namespace SLC1_N
                             {
                                 dtCT2 = DateTime.Now;
                                 timerCH2CT.Start();
-                               // if (CKCH2Port.IsOpen)   if (CKCH2Port.IsOpen)   Form1.f1.CKCH2Port.WriteLine("OUTP 1");
+                                // if (CKCH2Port.IsOpen)   if (CKCH2Port.IsOpen)   Form1.f1.CKCH2Port.WriteLine("OUTP 1");
                             }
                             CH2Status.Text = I18N.GetLangText(dicLang, "测试");
                             CH2Status.ForeColor = Color.Green;
@@ -1279,7 +1324,7 @@ namespace SLC1_N
                         if ((plc.CH1Run | plc.CH1ARun | plc.CH1BRun | plc.CH1CRun) && !plcch1lastsignal)
                         {
                             plcch1lastsignal = (plc.CH1Run | plc.CH1ARun | plc.CH1BRun | plc.CH1CRun);
-                       //     Thread.Sleep(500);
+                            //     Thread.Sleep(500);
                             CH1Method(0);
                             CH1Step = 0;
                             plc.CH1Rset();
@@ -1294,7 +1339,7 @@ namespace SLC1_N
                         if ((plc.CH2Run | plc.CH2DRun | plc.CH2ERun | plc.CH2FRun) && !plcch2lastsignal)
                         {
                             plcch2lastsignal = (plc.CH2Run | plc.CH2DRun | plc.CH2ERun | plc.CH2FRun);
-                       //     Thread.Sleep(500);
+                            //     Thread.Sleep(500);
                             CH2Method(0);
                             CH2Step = 0;
                             plc.CH2Rset();
@@ -1347,7 +1392,7 @@ namespace SLC1_N
                             {
                                 AddMES(1);
                             }
-                           
+
 
                             CHXProBarFlag[1] = 0;
                             CHXProBarFlag[2] = 0;
@@ -1396,7 +1441,7 @@ namespace SLC1_N
                             {
                                 AddMES(1);
                             }
-                          
+
                         }
                     }
                     else
@@ -2160,7 +2205,7 @@ namespace SLC1_N
                                     }
                                 }
                                 else
-                                     if (CKCH1Port.IsOpen) 
+                                     if (CKCH1Port.IsOpen)
                                     Form1.f1.CKCH1Port.WriteLine("OUTP 1");
                             }
                         }
@@ -2172,7 +2217,7 @@ namespace SLC1_N
                         CH1IsRun.Interval = 300;
                         CH1IsRun.Start();
                         ch1stage = 5;
-                        
+
                         break;
 
                     case 5://对仪器是否结束的判断
@@ -2208,12 +2253,12 @@ namespace SLC1_N
                                 {
                                     CH1TestResult.Leak1 = LeftCH1SmallLeak.Text;
                                 }
-             
+
                                 //界面表格
                                 if (CH1RTStep == "UPLeak")
                                 {
                                     CH1Display($"{CH1RunName}" + I18N.GetLangText(dicLang, "CH1-1上充气密"), LeftCH1SmallLeak.Text, LeakUnit.Text, ch1_1params.Leaktoplimit, ch1_1params.Leaklowlimit, left_CH1Tlight.Text);
-                                    if (left_CH1Tlight.Text=="NG")
+                                    if (left_CH1Tlight.Text == "NG")
                                     {
                                         FlowNG(1);
                                     }
@@ -2227,16 +2272,16 @@ namespace SLC1_N
                                 //{
                                 //    CH1Display("CH1-2下充气密", LeftCH1SmallLeak.Text, LeakUnit.Text, ch1_1params.Leaktoplimit, ch1_1params.Leaklowlimit, left_CH1Tlight.Text);
                                 //}
-                               
-                                if (CH1RTStep == "FWDLeak" && Fwdjg2 ==1 && left_CH1Tlight.Text.Contains("OK") && left_CH2Tlight.Text.Contains("OK") && !left_CH2Tlight.Text.Contains("NG"))
+
+                                if (CH1RTStep == "FWDLeak" && Fwdjg2 == 1 && left_CH1Tlight.Text.Contains("OK") && left_CH2Tlight.Text.Contains("OK") && !left_CH2Tlight.Text.Contains("NG"))
                                 {
-                                  
+
                                     //Fwdjg = 0;
                                     //Thread.Sleep(100);
                                     //CH1Step += 1;
                                     //CH1Method(CH1Step);
                                 }
-                                else if (CH1RTStep == "UPLeak"  && left_CH1Tlight.Text.Contains("OK") && !left_CH2Tlight.Text.Contains("NG"))
+                                else if (CH1RTStep == "UPLeak" && left_CH1Tlight.Text.Contains("OK") && !left_CH2Tlight.Text.Contains("NG"))
                                 //  if (CH1RTStep != "FWDLeak"&& CH1RTStep!= "QC" && left_CH1Tlight.Text.Contains("OK") && !left_CH2Tlight.Text.Contains("NG"))
                                 {
                                     left_CH1Tlight.Text = "";
@@ -2244,7 +2289,7 @@ namespace SLC1_N
                                     Thread.Sleep(100);
                                     CH1Step += 1;
                                     CH1Method(CH1Step);
-                                   // ch1_1step = 5;//5-27
+                                    // ch1_1step = 5;//5-27
                                 }
                                 else if (left_CH1Tlight.Text.Contains("NG"))
                                 {
@@ -2508,7 +2553,7 @@ namespace SLC1_N
                                 if (left_CH2Tlight.Text.Contains("OK") || left_CH2Tlight.Text.Contains("NG"))
                                 {
                                     //排气阶段或结束测试
-                            
+
                                     ch1_2step = 4;
                                     CHXProBarFlag[2] = 0;
                                     CH2progressBar.Value = CH2progressBar.Maximum;
@@ -2592,7 +2637,7 @@ namespace SLC1_N
                         CH2IsRun.Interval = 300;
                         CH2IsRun.Start();
                         ch2stage = 5;
-                        
+
                         break;
 
                     case 5://对仪器是否结束的判断
@@ -2621,9 +2666,9 @@ namespace SLC1_N
                             {
                                 ch2write = 1;
                                 if (CH1RTStep != "FWDLeak")
-                          
+
                                 {
-                                  
+
                                     CH1TestResult.Leak2 = LeftCH2SmallLeak.Text;
                                 }
                                 if (CH1RTStep == "DOWNLeak")
@@ -2639,7 +2684,7 @@ namespace SLC1_N
                                 {
                                     CH1TestResult.FWD_Leak2 = LeftCH2SmallLeak.Text;
                                     Fwdjg2 = 1;
-                                  
+
                                 }
                                 if (CH1RTStep == "FWDLeak" && Fwdjg == 1 && left_CH2Tlight.Text.Contains("OK") && left_CH1Tlight.Text.Contains("OK") && !left_CH1Tlight.Text.Contains("NG"))
                                 {
@@ -2798,7 +2843,7 @@ namespace SLC1_N
                     case 1://此时为状态位读取
                         string str1;
                         str1 = CH3ReceiveText.Text;
-                      //  if (CKCH2Port.IsOpen)   Form1.f1.CKCH2Port.WriteLine("OUTP 1");
+                        //  if (CKCH2Port.IsOpen)   Form1.f1.CKCH2Port.WriteLine("OUTP 1");
                         if (str1.Substring(6, 2) == "01")
                         {
                             //CH3IsRun.Stop();//ERIC
@@ -2825,10 +2870,10 @@ namespace SLC1_N
                         string str2;
                         str2 = CH3ReceiveText.Text;
                         //CH3ReadParams.Stop();
-                        if (CKCH2Port.IsOpen)   if (CKCH2Port.IsOpen)   Form1.f1.CKCH2Port.WriteLine("OUTP 1");
+                        if (CKCH2Port.IsOpen) if (CKCH2Port.IsOpen) Form1.f1.CKCH2Port.WriteLine("OUTP 1");
                         if (str2.Length == 126 && str2.Substring(2, 2) == "03")
                         {
-                            if (CKCH2Port.IsOpen)   if (CKCH2Port.IsOpen)   Form1.f1.CKCH2Port.WriteLine("OUTP 1");
+                            if (CKCH2Port.IsOpen) if (CKCH2Port.IsOpen) Form1.f1.CKCH2Port.WriteLine("OUTP 1");
                             CH3IsRun.Stop();
                             ch2_1params = comm.ReadParams(str2, ch2_1params.CHKUnit);
                             if (CH2RTStep.Contains("Leak"))
@@ -2930,7 +2975,7 @@ namespace SLC1_N
                             else if (str4.Substring(8, 2) == "04")
                             {
                                 RightCH1Status.Text = I18N.GetLangText(dicLang, "检测");
-                                if (CKCH2Port.IsOpen)   if (CKCH2Port.IsOpen)   Form1.f1.CKCH2Port.WriteLine("OUTP 0");
+                                if (CKCH2Port.IsOpen) if (CKCH2Port.IsOpen) Form1.f1.CKCH2Port.WriteLine("OUTP 0");
                             }
                             else if (str4.Substring(8, 2) == "01")
                             {
@@ -2944,7 +2989,7 @@ namespace SLC1_N
                                 //平衡阶段
                                 //balanpressure = LeakPressure.Text;
                                 RightCH1Status.Text = I18N.GetLangText(dicLang, "充气");
-                                if (CKCH2Port.IsOpen)   if (CKCH2Port.IsOpen)   Form1.f1.CKCH2Port.WriteLine("OUTP 1");
+                                if (CKCH2Port.IsOpen) if (CKCH2Port.IsOpen) Form1.f1.CKCH2Port.WriteLine("OUTP 1");
                                 if (CH2RTStep == "UPLeak" || CH2RTStep == "DOWNLeak")
                                 {
                                     CH2TestResult.FullPre1 = RightCH1LeakPress.Text;
@@ -2956,7 +3001,7 @@ namespace SLC1_N
                             }
                             else if (str4.Substring(8, 2) == "03")
                             {
-                               // Form1.f1.CKCH1Port.WriteLine("OUTP 1");
+                                // Form1.f1.CKCH1Port.WriteLine("OUTP 1");
                                 //平衡阶段
                                 //balanpressure = LeakPressure.Text;
                                 RightCH1Status.Text = I18N.GetLangText(dicLang, "平衡");
@@ -2965,7 +3010,7 @@ namespace SLC1_N
                                 {
                                     plc.CH2FWDLeakFalse();
                                     plc.CH2UPLeakFalse();
-                                    if (CKCH2Port.IsOpen)   if (CKCH2Port.IsOpen)   Form1.f1.CKCH2Port.WriteLine("OUTP 0");
+                                    if (CKCH2Port.IsOpen) if (CKCH2Port.IsOpen) Form1.f1.CKCH2Port.WriteLine("OUTP 0");
                                     if (CH2RTStep == "FWDLeak")
                                     {
                                         CH2TestResult.FWD_BalanPre1 = RightCH1LeakPress.Text;
@@ -2980,7 +3025,7 @@ namespace SLC1_N
                                         plc.CH3Balance();
                                     }
                                 }
-                                else if (CKCH2Port.IsOpen)   if (CKCH2Port.IsOpen)   Form1.f1.CKCH2Port.WriteLine("OUTP 1");
+                                else if (CKCH2Port.IsOpen) if (CKCH2Port.IsOpen) Form1.f1.CKCH2Port.WriteLine("OUTP 1");
                             }
                         }
 
@@ -3040,7 +3085,7 @@ namespace SLC1_N
                                 }
                                 if (CH2RTStep == "FWDLeak" && CH2JGFLAG == 2 && right_CH1Tlight.Text.Contains("OK") && !right_CH2Tlight.Text.Contains("NG"))
                                 {
-                                 
+
                                     //Thread.Sleep(100);
                                     //CH2Step += 1;
                                     //CH2Method(CH2Step);
@@ -3148,15 +3193,6 @@ namespace SLC1_N
                                 {
                                     CH3PressMax = realtimepress;
                                 }
-                                if (CH2RTStep == "DOWN")
-                                {
-                                    if (CH3PressMax > Flow.CH2_1PreMax || CH3PressMax < Flow.CH2_1PreMin)
-                                    {
-                                        plc.CH2DOWNPreNG();
-                                        FlowNG(2);
-                                        CH3Display($"{CH2RunName}" + I18N.GetLangText(dicLang, "输出压力(DOWN-UP)"), CH3PressMax.ToString(), CH3PressureUnit.Text, Flow.CH2_1PreMax.ToString(), Flow.CH2_1PreMin.ToString(), "NG");
-                                    }
-                                }
                             }
                         }
                         break;
@@ -3191,7 +3227,7 @@ namespace SLC1_N
                     case 1://此时为状态位读取
                         string str1;
                         str1 = CH4ReceiveText.Text;
-                     //   if (CKCH2Port.IsOpen)   if (CKCH2Port.IsOpen)   Form1.f1.CKCH2Port.WriteLine("OUTP 1");
+                        //   if (CKCH2Port.IsOpen)   if (CKCH2Port.IsOpen)   Form1.f1.CKCH2Port.WriteLine("OUTP 1");
                         if (str1.Substring(6, 2) == "01")
                         {
                             //CH4IsRun.Stop();
@@ -3216,10 +3252,10 @@ namespace SLC1_N
 
                     case 2://此时为读取参数并数据转换
                         string str2;
-                        
+
                         str2 = CH4ReceiveText.Text;
                         //CH4ReadParams.Stop();
-                        if (CKCH2Port.IsOpen)   if (CKCH2Port.IsOpen)   Form1.f1.CKCH2Port.WriteLine("OUTP 1");
+                        if (CKCH2Port.IsOpen) if (CKCH2Port.IsOpen) Form1.f1.CKCH2Port.WriteLine("OUTP 1");
                         if (str2.Length >= 126 && str2.Substring(2, 2) == "03")
                         {
                             //  CH4IsRun.Stop();
@@ -3327,7 +3363,7 @@ namespace SLC1_N
                             else if (str4.Substring(8, 2) == "04")
                             {
                                 RightCH2Status.Text = I18N.GetLangText(dicLang, "检测");
-                                if (CKCH2Port.IsOpen)   Form1.f1.CKCH2Port.WriteLine("OUTP 0");
+                                if (CKCH2Port.IsOpen) Form1.f1.CKCH2Port.WriteLine("OUTP 0");
                             }
                             else if (str4.Substring(8, 2) == "01")
                             {
@@ -3335,8 +3371,8 @@ namespace SLC1_N
                                 //充气阶段
                                 //fullpressure = LeakPressure.Text;
                                 RightCH2Status.Text = I18N.GetLangText(dicLang, "准备");
-                                if(Convert.ToDouble( CH2RTVDC.Text)<3)
-                                if (CKCH2Port.IsOpen)   Form1.f1.CKCH2Port.WriteLine("OUTP 1");
+                                if (Convert.ToDouble(CH2RTVDC.Text) < 3)
+                                    if (CKCH2Port.IsOpen) Form1.f1.CKCH2Port.WriteLine("OUTP 1");
                             }
                             else if (str4.Substring(8, 2) == "02")
                             {
@@ -3351,8 +3387,8 @@ namespace SLC1_N
                                 {
                                     CH2TestResult.FWD_FullPre2 = RightCH2LeakPress.Text;
                                 }
-                             // else
-                                if (CKCH2Port.IsOpen)   Form1.f1.CKCH2Port.WriteLine("OUTP 1");
+                                // else
+                                if (CKCH2Port.IsOpen) Form1.f1.CKCH2Port.WriteLine("OUTP 1");
                             }
                             else if (str4.Substring(8, 2) == "03")
                             {
@@ -3365,7 +3401,7 @@ namespace SLC1_N
                                     plc.CH2FWDLeakFalse();
                                     plc.CH2DownLeakFalse();//4014
                                     //if (Convert.ToDouble(CH2RTVDC.Text) > 3)
-                                    if (CKCH2Port.IsOpen)   Form1.f1.CKCH2Port.WriteLine("OUTP 0");
+                                    if (CKCH2Port.IsOpen) Form1.f1.CKCH2Port.WriteLine("OUTP 0");
                                     if (CH2RTStep == "FWDLeak")
                                     {
                                         CH2TestResult.FWD_BalanPre2 = RightCH2LeakPress.Text;
@@ -3377,14 +3413,14 @@ namespace SLC1_N
 
                                     if (CH2Pump)
                                     {
-                                       
+
                                         CH2LinUP.Stop();
                                         plc.CH4Balance();
                                     }
                                 }
                                 else //if (Convert.ToDouble(CH2RTVDC.Text) < 3)
-                                    if (CKCH2Port.IsOpen)   Form1.f1.CKCH2Port.WriteLine("OUTP 1");
-                              
+                                    if (CKCH2Port.IsOpen) Form1.f1.CKCH2Port.WriteLine("OUTP 1");
+
                             }
                         }
 
@@ -3413,7 +3449,7 @@ namespace SLC1_N
                             ReadConfig con = new ReadConfig();
                             Model.CH_PARAMS ch_params;
                             ch_params = con.ReadParameters(1, 2);
-                          string  Leaklowlimit = ch_params.Leaklowlimit;
+                            string Leaklowlimit = ch_params.Leaklowlimit;
 
 
 
@@ -3440,11 +3476,11 @@ namespace SLC1_N
                                 //}
                                 if (CH2RTStep == "DOWNLeak")
                                 {
-                                    CH3Display($"{CH2RunName}" + I18N.GetLangText(dicLang, "CH2-2下充气密"), RightCH2SmallLeak.Text, CH4LeakUnit.Text, ch2_2params.Leaktoplimit,Leaklowlimit, right_CH2Tlight.Text);
+                                    CH3Display($"{CH2RunName}" + I18N.GetLangText(dicLang, "CH2-2下充气密"), RightCH2SmallLeak.Text, CH4LeakUnit.Text, ch2_2params.Leaktoplimit, Leaklowlimit, right_CH2Tlight.Text);
                                 }
                                 if (CH2RTStep == "FWDLeak")
                                 {
-                                    CH3Display($"{CH2RunName}" + I18N.GetLangText(dicLang, "CH2-2同充气密"), RightCH2SmallLeak.Text, CH4LeakUnit.Text, ch2_2params.Leaktoplimit,Leaklowlimit, right_CH2Tlight.Text);
+                                    CH3Display($"{CH2RunName}" + I18N.GetLangText(dicLang, "CH2-2同充气密"), RightCH2SmallLeak.Text, CH4LeakUnit.Text, ch2_2params.Leaktoplimit, Leaklowlimit, right_CH2Tlight.Text);
                                 }
                                 if (CH2RTStep == "FWDLeak" && CH2JGFLAG == 2 && right_CH2Tlight.Text.Contains("OK") && !right_CH1Tlight.Text.Contains("NG"))
                                 {
@@ -3588,7 +3624,7 @@ namespace SLC1_N
                 {
                     case 1:
                         text = "01 01 00 02 00 01";
-                      //  Form1.f1.CKCH1Port.WriteLine("OUTP 1");
+                        //  Form1.f1.CKCH1Port.WriteLine("OUTP 1");
                         ch1client.btnSendData(text);
                         ch1stage = 1;
                         break;
@@ -3617,7 +3653,7 @@ namespace SLC1_N
 
                     case 5:
                         text = "01 01 00 02 00 01";
-                     
+
                         ch1client.btnSendData(text);
                         ch1stage = 10;
                         break;
@@ -3625,7 +3661,7 @@ namespace SLC1_N
             }
             catch (Exception ex)
             {
-               CH1IsRun.Stop();
+                CH1IsRun.Stop();
                 //MessageBox.Show("CH1_1通道：" + ex.Message);
                 Logger.Log(I18N.GetLangText(dicLang, "CH2-CH1_1通道") + "：" + ex.Message);
             }
@@ -3681,7 +3717,7 @@ namespace SLC1_N
                 switch (ch1_2step)
                 {
                     case 1:
-                       // Form1.f1.CKCH1Port.WriteLine("OUTP 1");
+                        // Form1.f1.CKCH1Port.WriteLine("OUTP 1");
                         text = "02 01 00 02 00 01";
                         ch2client.btnSendData(text);
                         ch2stage = 1;
@@ -3702,14 +3738,14 @@ namespace SLC1_N
                         break;
 
                     case 4:
-                       // Form1.f1.CKCH1Port.WriteLine("OUTP 0");
+                        // Form1.f1.CKCH1Port.WriteLine("OUTP 0");
                         text = "02 01 00 02 00 01";
                         ch2client.btnSendData(text);
                         ch2stage = 5;
                         break;
 
                     case 5:
-                          
+
                         text = "02 01 00 02 00 01";
                         ch2client.btnSendData(text);
                         ch2stage = 10;
@@ -3734,13 +3770,13 @@ namespace SLC1_N
                 {
                     case 1:
                         text = "03 01 00 02 00 01";
-                   //     if (CKCH2Port.IsOpen)   Form1.f1.CKCH2Port.WriteLine("OUTP 1");
+                        //     if (CKCH2Port.IsOpen)   Form1.f1.CKCH2Port.WriteLine("OUTP 1");
                         ch3client.btnSendData(text);
                         ch3stage = 1;
                         break;
 
                     case 2:
-                        if (CKCH2Port.IsOpen)   Form1.f1.CKCH2Port.WriteLine("OUTP 1");
+                        if (CKCH2Port.IsOpen) Form1.f1.CKCH2Port.WriteLine("OUTP 1");
                         text = "03 03 03 E8 00 1D";
                         ch3client.btnSendData(text);
                         ch3stage = 2;
@@ -3754,13 +3790,13 @@ namespace SLC1_N
 
                     case 4:
                         text = "03 01 00 02 00 01";
-                        if (CKCH2Port.IsOpen)   Form1.f1.CKCH2Port.WriteLine("OUTP 0");
+                        if (CKCH2Port.IsOpen) Form1.f1.CKCH2Port.WriteLine("OUTP 0");
                         ch3client.btnSendData(text);
                         ch3stage = 5;
                         break;
 
                     case 5:
-                     //   if (CKCH2Port.IsOpen)   Form1.f1.CKCH2Port.WriteLine("OUTP 0");
+                        //   if (CKCH2Port.IsOpen)   Form1.f1.CKCH2Port.WriteLine("OUTP 0");
                         text = "03 01 00 02 00 01";
                         ch3client.btnSendData(text);
                         ch3stage = 10;
@@ -3784,14 +3820,14 @@ namespace SLC1_N
                 {
                     case 1:
                         text = "04 01 00 02 00 01";
-                   //     if (CKCH2Port.IsOpen)   Form1.f1.CKCH2Port.WriteLine("OUTP 1");
+                        //     if (CKCH2Port.IsOpen)   Form1.f1.CKCH2Port.WriteLine("OUTP 1");
                         ch4client.btnSendData(text);
                         ch4stage = 1;
                         break;
 
                     case 2:
                         text = "04 03 03 E8 00 1D";
-                        if (CKCH2Port.IsOpen)   Form1.f1.CKCH2Port.WriteLine("OUTP 1");
+                        if (CKCH2Port.IsOpen) Form1.f1.CKCH2Port.WriteLine("OUTP 1");
                         ch4client.btnSendData(text);
                         ch4stage = 2;
                         break;
@@ -3804,7 +3840,7 @@ namespace SLC1_N
 
                     case 4:
                         text = "04 01 00 02 00 01";
-                       if (CKCH2Port.IsOpen)   Form1.f1.CKCH2Port.WriteLine("OUTP 0");
+                        if (CKCH2Port.IsOpen) Form1.f1.CKCH2Port.WriteLine("OUTP 0");
                         ch4client.btnSendData(text);
                         ch4stage = 5;
                         break;
@@ -4323,41 +4359,24 @@ namespace SLC1_N
                         //fileWriter1.Write("作业序号,测试时间,条形码,判定结果 OK/NG,");
                         fileWriter1.Write(I18N.GetLangText(dicLang, "作业序号") + "," + I18N.GetLangText(dicLang, "测试时间") + "," + I18N.GetLangText(dicLang, "条形码") + "," + I18N.GetLangText(dicLang, "判定结果") + "OK/NG,");
                         fileWriter1.Write(I18N.GetLangText(dicLang, "左avg静态电流") + "(" + elec.CH1ElecMin + "-" + elec.CH1ElecMax + "uA),");
-                     //   if (!Electricity.ord.CH1UpDownChange)
+                        //   if (!Electricity.ord.CH1UpDownChange)
                         {
                             fileWriter1.Write(I18N.GetLangText(dicLang, "左max电流(上充)") + "(" + elec.CH1UPADCMin + "-" + elec.CH1UPADCMax + "A),");
                             fileWriter1.Write(I18N.GetLangText(dicLang, "左max电压(上充)") + "(" + elec.CH1UPVDCMin + "-" + elec.CH1UPVDCMax + "V),");
                             fileWriter1.Write(I18N.GetLangText(dicLang, "左输出压力(上充)") + "(" + Flow.CH1_1PreMin + "-" + Flow.CH1_1PreMax + PressureUnit.Text + "),");
                             //7.24
                             fileWriter1.Write(I18N.GetLangText(dicLang, "左输出压力(上下充)") + "(" + Flow.CH1_2PreMax.ToString() + "-" + Flow.CH1_1PreMax + PressureUnit.Text + "),");
-                         //  CH1Display($"{CH1RunName}" + I18N.GetLangText(dicLang, "输出压力(UP-DOWN)"), CH2PressMax.ToString(), CH2PressureUnit.Text, Flow.CH1_2PreMax.ToString(), Flow.CH1_2PreMin.ToString(), "OK");
-                           
-                            fileWriter1.Write(I18N.GetLangText(dicLang, "左max流量(上充)(lpm)") + "(" + Flow.CH1_2FlowMax.ToString() + "-" + Flow.CH1_2FlowMin + PressureUnit.Text + "),"+ ",");
-                            //CH1Display($"{CH1RunName}" + I18N.GetLangText(dicLang, "max流量(UP-DOWN)"), flow.ToString(), "lpm", Flow.CH1_2FlowMax.ToString(), Flow.CH1_2FlowMin.ToString(), "NG");
+                            fileWriter1.Write(I18N.GetLangText(dicLang, "左max流量(上充)(lpm)") + "(" + Flow.CH1_2FlowMax.ToString() + "-" + Flow.CH1_2FlowMin + PressureUnit.Text + ")," + ",");
                             fileWriter1.Write(I18N.GetLangText(dicLang, "左max流量(上下充)(lpm)") + "(" + Flow.CH1_2FlowMax.ToString() + "-" + Flow.CH1_2FlowMin + PressureUnit.Text + ")," + ",");
                             fileWriter1.Write(I18N.GetLangText(dicLang, "左max电流(下充)") + "(" + elec.CH1DOWNADCMin + "-" + elec.CH1DOWNADCMax + "A),");
-
                             fileWriter1.Write(I18N.GetLangText(dicLang, "左max电压(下充)") + "(" + elec.CH1DOWNVDCMin + "-" + elec.CH1DOWNVDCMax + "V),");
                             fileWriter1.Write(I18N.GetLangText(dicLang, "左输出压力(下充)") + "(" + Flow.CH1_2PreMin + "-" + Flow.CH1_2PreMax + CH2PressureUnit.Text + "),");
-                            //CH1Display($"{CH1RunName}" + I18N.GetLangText(dicLang, "输出压力(DOWN-UP)"), CH1PressMax.ToString(), PressureUnit.Text, Flow.CH1_1PreMax.ToString(), Flow.CH1_1PreMin.ToString(), "NG");
-                            fileWriter1.Write(I18N.GetLangText(dicLang, "左输出压力(下上充)") + "(" + Flow.CH1_1PreMin + "-" + Flow.CH1_1PreMax + PressureUnit.Text + "),");
-
+                           fileWriter1.Write(I18N.GetLangText(dicLang, "左输出压力(下上充)") + "(" + Flow.CH1_1PreMin + "-" + Flow.CH1_1PreMax + PressureUnit.Text + "),");
                             fileWriter1.Write(I18N.GetLangText(dicLang, "左max流量(下充)(lpm)") + ",");
-                            fileWriter1.Write(I18N.GetLangText(dicLang, "左max流量(下上充)(lpm)") + "(" + Flow.CH1_1FlowMin + "-" + Flow.CH1_1FlowMax +  "),");
-                          //  CH1Display($"{CH1RunName}" + I18N.GetLangText(dicLang, "max流量(DOWN-UP)"), CH1Q.ToString(), "lpm", Flow.CH1_1FlowMax.ToString(), Flow.CH1_1FlowMin.ToString(), "OK");
-
+                            fileWriter1.Write(I18N.GetLangText(dicLang, "左max流量(下上充)(lpm)") + "(" + Flow.CH1_1FlowMin + "-" + Flow.CH1_1FlowMax + "),");
+                  
                         }
-                        //else
-                        //{
-                        //    fileWriter1.Write(I18N.GetLangText(dicLang, "左max电流(下充)") + "(" + elec.CH1UPADCMin + "-" + elec.CH1UPADCMax + "A),");
-                        //    fileWriter1.Write(I18N.GetLangText(dicLang, "左max电压(下充)") + "(" + elec.CH1UPVDCMin + "-" + elec.CH1UPVDCMax + "V),");
-                        //    fileWriter1.Write(I18N.GetLangText(dicLang, "左输出压力(下充)") + "(" + Flow.CH1_1PreMin + "-" + Flow.CH1_1PreMax + PressureUnit.Text + "),");
-                        //    fileWriter1.Write(I18N.GetLangText(dicLang, "左max流量(下充)(plm)") + ",");
-                        //    fileWriter1.Write(I18N.GetLangText(dicLang, "左max电流(上充)") + "(" + elec.CH1DOWNADCMin + "-" + elec.CH1DOWNADCMax + "A),");
-                        //    fileWriter1.Write(I18N.GetLangText(dicLang, "左max电压(上充)") + "(" + elec.CH1DOWNVDCMin + "-" + elec.CH1DOWNVDCMax + "V),");
-                        //    fileWriter1.Write(I18N.GetLangText(dicLang, "左输出压力(上充)") + "(" + Flow.CH1_2PreMin + "-" + Flow.CH1_2PreMax + CH2PressureUnit.Text + "),");
-                        //    fileWriter1.Write(I18N.GetLangText(dicLang, "左max流量(上充）(plm)") + ",");
-                        //}
+                    
 
                         fileWriter1.Write(I18N.GetLangText(dicLang, "左电流对比值") + "(" + Flow.CH1Cont_ElecMin + "-" + Flow.CH1Cont_ElecMax + "),");
                         fileWriter1.Write(I18N.GetLangText(dicLang, "左压力对比值") + "(" + Flow.CH1Cont_PressMin + "-" + Flow.CH1Cont_PressMax + "),");
@@ -4373,11 +4392,11 @@ namespace SLC1_N
                         fileWriter1.Write(I18N.GetLangText(dicLang, "左输出压力(泄气下)") + "(" + Flow.CH1RWDPressMin + "-" + Flow.CH1RWDPressMax + CH2PressureUnit.Text + "),");
                         fileWriter1.Write(I18N.GetLangText(dicLang, "右avg静态电流") + "(" + elec.CH2ElecMin + "-" + elec.CH2ElecMax + "uA),");
 
-                  //      if (!Electricity.ord.CH2UpDownChange)
+                        //      if (!Electricity.ord.CH2UpDownChange)
                         {
                             fileWriter1.Write(I18N.GetLangText(dicLang, "右max电流(上充)") + "(" + elec.CH2UPADCMin + "-" + elec.CH2UPADCMax + "A),");
                             fileWriter1.Write(I18N.GetLangText(dicLang, "右max电压(上充)") + "(" + elec.CH2UPVDCMin + "-" + elec.CH2UPVDCMax + "V),");
-                           
+
                             fileWriter1.Write(I18N.GetLangText(dicLang, "右输出压力(上充)") + "(" + Flow.CH2_1PreMin + "-" + Flow.CH2_1PreMax + CH3PressureUnit.Text + "),");
                             fileWriter1.Write(I18N.GetLangText(dicLang, "右输出压力(上下充)") + "(" + Flow.CH2_2PreMax.ToString() + "-" + Flow.CH2_1PreMax + PressureUnit.Text + "),");
                             fileWriter1.Write(I18N.GetLangText(dicLang, "右max流量(上充)(plm)") + ",");
@@ -4419,7 +4438,7 @@ namespace SLC1_N
                         fileWriter1.Write(I18N.GetLangText(dicLang, "左2压力(充气)") + "(" + ch1_2leakparams.FPlowlimit + "-" + ch1_2leakparams.FPtoplimit + CH2PressureUnit.Text + "),");
                         fileWriter1.Write(I18N.GetLangText(dicLang, "左2压力(平衡)") + "(" + ch1_2leakparams.BalanPreMin + "-" + ch1_2leakparams.BalanPreMax + CH2PressureUnit.Text + "),");
                         fileWriter1.Write(I18N.GetLangText(dicLang, "左2泄漏量") + "(" + ch1_2leakparams.Leaklowlimit + "-" + ch1_2leakparams.Leaktoplimit + CH2LeakUnit.Text + "),");
-                        fileWriter1.Write(I18N.GetLangText(dicLang ,"左1同充压力(充气)") + "+(" + ch1_1leakparams.FPlowlimit + "-" + ch1_1leakparams.FPtoplimit + PressureUnit.Text + "),");
+                        fileWriter1.Write(I18N.GetLangText(dicLang, "左1同充压力(充气)") + "+(" + ch1_1leakparams.FPlowlimit + "-" + ch1_1leakparams.FPtoplimit + PressureUnit.Text + "),");
                         fileWriter1.Write(I18N.GetLangText(dicLang, "左1同充压力(平衡)") + "(" + ch1_1leakparams.BalanPreMin + "-" + ch1_1leakparams.BalanPreMax + PressureUnit.Text + "),");
                         fileWriter1.Write(I18N.GetLangText(dicLang, "左1同充泄漏量") + "(" + ch1_1leakparams.Leaklowlimit + "-" + ch1_1leakparams.Leaktoplimit + LeakUnit.Text + "),");
                         fileWriter1.Write(I18N.GetLangText(dicLang, "左2同充压力(充气)") + "(" + ch1_2leakparams.FPlowlimit + "-" + ch1_2leakparams.FPtoplimit + CH2PressureUnit.Text + "),");
@@ -4564,34 +4583,181 @@ namespace SLC1_N
                      fileWriter1.Close();
                  }*/
                 StreamWriter fileWriter = new StreamWriter(fileName, true, Encoding.UTF8);
+                int i = 0;
                 switch (CH)
                 {
                     case 1:
-                        fileWriter.Write(CH1csvworknum + I18N.GetLangText(dicLang, "左") + ",#" + CH1timestamp + "#,'" + left_CH1Code.Text.Trim().Replace("\r\n", "").Replace("\r", "").Replace("\n", "") + "," + CH1Tlight.Text + ",");
-                        fileWriter.Write(CH1RTElec.Text + "," + CH1TestResult.UP_ADCMAX + "," + CH1TestResult.UP_VDCMAX + "," + CH1TestResult.UP_Pre + ","+ CH1PressMax.ToString()+",");
-                        fileWriter.Write(CH1TestResult.UP_Flow + "," + up_downFlow.ToString()+"," + CH1TestResult.DOWN_ADCMAX + "," + CH1TestResult.DOWN_VDCMAX + ",");
-                        fileWriter.Write(CH1TestResult.DOWN_Pre + ","+ down_UPPre+"," +
-                            "" + CH1TestResult.DOWN_Flow + "," +down_upFlow+","+ CH1TestResult.ElecRatio + ",");
-                         fileWriter.Write(CH1TestResult.PressRatio + "," + CH1TestResult.FWD_ADCMAX + "," + CH1TestResult.FWD_VDCMAX + ",");
-                        //fileWriter.Write(CH1TestResult.PressRatio + "," + CH1RTADC.Text + "," + CH1RTVDC.Text + ",");
-                        //fileWriter.Write(CH1TestResult.PressRatio + "," + CH1TestResult.FWD_ADCMAX + "," + CH1TestResult.FWD_VDCMAX + ",");
-                        fileWriter.Write(CH1TestResult.FWD_Pre1 + "," + CH1TestResult.FWD_Pre2 + "," + CH1TestResult.FWD_Flow1 + "," + CH1TestResult.FWD_Flow2 + ",");
-                        fileWriter.Write(CH1TestResult.RWD_ADCMAX + "," + CH1TestResult.RWD_VDCMAX + "," + CH1TestResult.RWD_Pre1 + "," + CH1TestResult.RWD_Pre2 + ",,,,,,,,,,,,,,,,,,,,,,");
-                        fileWriter.Write(CH1TestResult.FullPre1 + "," + CH1TestResult.BalanPre1 + "," + CH1TestResult.Leak1 + ",");
+
+                        //////////////////////////
+
+
+                        
+                        string[] CSVwritedate = new string[100];
+                        fileWriter.Write(
+                            CH1csvworknum + I18N.GetLangText(dicLang, "左") + "#,"
+                         + CH1timestamp + "#,'"
+                         + left_CH1Code.Text.Trim().Replace("\r\n", "").Replace("\r", "").Replace("\n", "") + ","
+                         + CH1Tlight.Text + ",");
+
+                        CSVwritedate[0] = CH1csvworknum + I18N.GetLangText(dicLang, "左") + "#,";
+                        CSVwritedate[1] = CH1timestamp + "#,'";
+                        CSVwritedate[2] = left_CH1Code.Text.Trim().Replace("\r\n", "").Replace("\r", "").Replace("\n", "") + ",";
+                        CSVwritedate[3] = CH1Tlight.Text + ",";
+                   
+                        //fileWriter.Write(
+                        //    CH1RTElec.Text + "," 
+                        //    + CH1TestResult.UP_ADCMAX + ","
+                        //    + CH1TestResult.UP_VDCMAX + "," 
+                        //    + CH1TestResult.UP_Pre + "," 
+                        //    + CH1PressMax.ToString() + ",");
+                        CSVwritedate[4] = CH1RTElec.Text;
+                        CSVwritedate[5] = CH1TestResult.UP_ADCMAX.ToString() + ",";
+                        CSVwritedate[6]= CH1TestResult.UP_VDCMAX.ToString()+ ",";
+                        CSVwritedate[7] = CH1TestResult.UP_Pre.ToString() + ",";
+                        CSVwritedate[8] = CH1PressMax.ToString() + ",";
+                        //fileWriter.Write(CH1RTElec.Text + "," 
+                        //    + CH1TestResult.UP_ADCMAX + "," 
+                        //    + CH1TestResult.UP_VDCMAX + "," 
+                        //    + CH1TestResult.UP_Pre + ","
+                        //    + CH1PressMax.ToString() + ",");
+                        CSVwritedate[9] = CH1RTElec.Text.ToString() + ",";
+                        CSVwritedate[10] = CH1TestResult.UP_ADCMAX.ToString() + ",";
+                        CSVwritedate[11] = CH1TestResult.UP_VDCMAX.ToString()+",";
+                        CSVwritedate[12] = CH1TestResult.UP_Pre.ToString()+",";
+                        CSVwritedate[13] = CH1PressMax.ToString() + ",";
+          
+
+                        //fileWriter.Write(CH1TestResult.UP_Flow + "," 
+                        //    + up_downFlow.ToString() + "," 
+                        //    + CH1TestResult.DOWN_ADCMAX + "," 
+                        //    + CH1TestResult.DOWN_VDCMAX + ",");
+                        CSVwritedate[14] = CH1TestResult.UP_Flow + ",";
+                        CSVwritedate[15] = up_downFlow.ToString() + ",";
+                        CSVwritedate[16] = CH1TestResult.DOWN_ADCMAX + ",";
+                        CSVwritedate[17] = CH1TestResult.DOWN_VDCMAX + ",";
+
+                        //fileWriter.Write(CH1TestResult.DOWN_Pre + "," +
+                           // down_UPPre + "," +
+                           //"" + CH1TestResult.DOWN_Flow + "," 
+                           //+ down_upFlow + ","
+                           //+ CH1TestResult.ElecRatio + ",");
+                        CSVwritedate[18] = CH1TestResult.DOWN_Pre + ",";
+                        CSVwritedate[19] = down_UPPre + ",";
+                        CSVwritedate[20] = CH1TestResult.DOWN_Flow + ",";
+                        CSVwritedate[21] = CH1TestResult.ElecRatio + ",";
+
+
+
+                        //fileWriter.Write(CH1TestResult.PressRatio + "," 
+                        //    + CH1TestResult.FWD_ADCMAX + ","
+                        //    + CH1TestResult.FWD_VDCMAX + ",");
+                        CSVwritedate[22] = CH1TestResult.PressRatio + ",";
+                        CSVwritedate[23] = CH1TestResult.FWD_ADCMAX + ","; 
+                        CSVwritedate[24] = CH1TestResult.FWD_VDCMAX + ",";
+
+
+
+
+                        //fileWriter.Write(CH1TestResult.DOWN_Pre + ","
+                        //    + down_UPPre + "," +
+                        //    "" + CH1TestResult.DOWN_Flow + ","
+                        //    + down_upFlow + "," +
+                        //    CH1TestResult.ElecRatio + ",");
+
+                        CSVwritedate[25] = CH1TestResult.DOWN_Pre + ",";
+                        CSVwritedate[26] = down_UPPre + ",";
+                        CSVwritedate[27] = CH1TestResult.DOWN_Flow + ",";
+                        CSVwritedate[28] = down_upFlow + ",";
+                        CSVwritedate[29] = CH1TestResult.ElecRatio + ",";
+
+
+                        //fileWriter.Write(CH1TestResult.PressRatio + "," + 
+                        //    CH1TestResult.FWD_ADCMAX + "," +
+                        //    CH1TestResult.FWD_VDCMAX + ",");
+
+                        CSVwritedate[30] = CH1TestResult.PressRatio + ",";
+                        CSVwritedate[31] = CH1TestResult.FWD_ADCMAX + ",";
+                        CSVwritedate[32] = CH1TestResult.FWD_VDCMAX + ",";
+
+                        //fileWriter.Write(CH1TestResult.FWD_Pre1 + "," + 
+                        //    CH1TestResult.FWD_Pre2 + ","
+                        //    + CH1TestResult.FWD_Flow1 + ","
+                        //    + CH1TestResult.FWD_Flow2 + ",");
+                        CSVwritedate[33] = CH1TestResult.FWD_Pre1 + ",";
+                        CSVwritedate[34] = CH1TestResult.FWD_Pre2 + ",";
+                        CSVwritedate[35] = CH1TestResult.FWD_Flow1 + ",";
+                        CSVwritedate[36] = CH1TestResult.FWD_Flow2 + ",";
+
+
+                        //fileWriter.Write(CH1TestResult.RWD_ADCMAX + ","
+                        //    + CH1TestResult.RWD_VDCMAX + "," 
+                        //    + CH1TestResult.RWD_Pre1 + "," 
+                        //    + CH1TestResult.RWD_Pre2 + "," +
+                        //    ",,,,,,,,,,,,,,,,,,,,,");
+
+                        CSVwritedate[37] = CH1TestResult.RWD_ADCMAX + ",";
+                        CSVwritedate[38] = CH1TestResult.RWD_VDCMAX + ",";
+                        CSVwritedate[39] = CH1TestResult.RWD_Pre1 + ",";
+                        CSVwritedate[40] = CH1TestResult.RWD_Pre2 + ",";
+                        for (i = 0; i < 20; i++)
+                        {
+                            CSVwritedate[41 + i] = ",";
+                        }
+                        fileWriter.Write(CH1TestResult.FullPre1 + ","
+                            + CH1TestResult.BalanPre1 + "," 
+                            + CH1TestResult.Leak1 + ",");
+
+                        CSVwritedate[60] = CH1TestResult.FullPre1 + ",";
+                        CSVwritedate[61] = CH1TestResult.BalanPre1 + ",";
+                        CSVwritedate[62] = CH1TestResult.Leak1 + ",";
+
+
                         fileWriter.Write(CH1TestResult.FullPre2 + "," + CH1TestResult.BalanPre2 + "," + CH1TestResult.Leak2 + ",");
                         fileWriter.Write(CH1TestResult.FWD_FullPre1 + "," + CH1TestResult.FWD_BalanPre1 + "," + CH1TestResult.FWD_Leak1 + ",");
                         fileWriter.Write(CH1TestResult.FWD_FullPre2 + "," + CH1TestResult.FWD_BalanPre2 + "," + CH1TestResult.FWD_Leak2 + ",\n");
                         CH1csvworknum += 1;
+
+
+                        string csvall = "";
+                        
+                        for (i = 0; i < 14; i++)
+                        {
+                            csvall += CSVwritedate[i];
+                        }
+                        fileWriter.Write(csvall);
+
+
+
+
+
+
+
+                        ////////////////////////////
+                        //fileWriter.Write(CH1csvworknum + I18N.GetLangText(dicLang, "左") + ",#" + CH1timestamp + "#,'" + left_CH1Code.Text.Trim().Replace("\r\n", "").Replace("\r", "").Replace("\n", "") + "," + CH1Tlight.Text + ",");
+                        //fileWriter.Write(CH1RTElec.Text + "," + CH1TestResult.UP_ADCMAX + "," + CH1TestResult.UP_VDCMAX + "," + CH1TestResult.UP_Pre + "," + CH1PressMax.ToString() + ",");
+                        //fileWriter.Write(CH1TestResult.UP_Flow + "," + up_downFlow.ToString() + "," + CH1TestResult.DOWN_ADCMAX + "," + CH1TestResult.DOWN_VDCMAX + ",");
+                        //fileWriter.Write(CH1TestResult.DOWN_Pre + "," + down_UPPre + "," +
+                        //    "" + CH1TestResult.DOWN_Flow + "," + down_upFlow + "," + CH1TestResult.ElecRatio + ",");
+                        //fileWriter.Write(CH1TestResult.PressRatio + "," + CH1TestResult.FWD_ADCMAX + "," + CH1TestResult.FWD_VDCMAX + ",");
+                        ////fileWriter.Write(CH1TestResult.PressRatio + "," + CH1RTADC.Text + "," + CH1RTVDC.Text + ",");
+                        ////fileWriter.Write(CH1TestResult.PressRatio + "," + CH1TestResult.FWD_ADCMAX + "," + CH1TestResult.FWD_VDCMAX + ",");
+                        //fileWriter.Write(CH1TestResult.FWD_Pre1 + "," + CH1TestResult.FWD_Pre2 + "," + CH1TestResult.FWD_Flow1 + "," + CH1TestResult.FWD_Flow2 + ",");
+                        //fileWriter.Write(CH1TestResult.RWD_ADCMAX + "," + CH1TestResult.RWD_VDCMAX + "," + CH1TestResult.RWD_Pre1 + "," + CH1TestResult.RWD_Pre2 + ",,,,,,,,,,,,,,,,,,,,,,");
+                        //fileWriter.Write(CH1TestResult.FullPre1 + "," + CH1TestResult.BalanPre1 + "," + CH1TestResult.Leak1 + ",");
+                        //fileWriter.Write(CH1TestResult.FullPre2 + "," + CH1TestResult.BalanPre2 + "," + CH1TestResult.Leak2 + ",");
+                        //fileWriter.Write(CH1TestResult.FWD_FullPre1 + "," + CH1TestResult.FWD_BalanPre1 + "," + CH1TestResult.FWD_Leak1 + ",");
+                        //fileWriter.Write(CH1TestResult.FWD_FullPre2 + "," + CH1TestResult.FWD_BalanPre2 + "," + CH1TestResult.FWD_Leak2 + ",\n");
+                        //CH1csvworknum += 1;
                         break;
 
                     case 2:
                         fileWriter.Write(CH2csvworknum + I18N.GetLangText(dicLang, "右") + ",#" + CH2timestamp + "#,'" + right_CH1Code.Text.Trim().Replace("\r\n", "").Replace("\r", "").Replace("\n", "") + "," + CH2Tlight.Text + ",,,,,,,,,,,,,,,,,,,,,,,,,,,,");
                         fileWriter.Write(CH2RTElec.Text + "," + CH2TestResult.UP_ADCMAX + "," + CH2TestResult.UP_VDCMAX + "," + CH2TestResult.UP_Pre + "," + CH3PressMax.ToString() + ",");
-                        fileWriter.Write(CH2TestResult.UP_Flow + "," + CH4Q.ToString() +","+ CH2TestResult.DOWN_ADCMAX + "," + CH2TestResult.DOWN_VDCMAX + ",");
-                        fileWriter.Write(CH2TestResult.DOWN_Pre + "," +down_UPPre2+","+
+                        fileWriter.Write(CH2TestResult.UP_Flow + "," + CH4Q.ToString() + "," + CH2TestResult.DOWN_ADCMAX + "," + CH2TestResult.DOWN_VDCMAX + ",");
+                        fileWriter.Write(CH2TestResult.DOWN_Pre + "," + down_UPPre2 + "," +
                             CH2TestResult.DOWN_Flow + "," + CH2TestResult.ElecRatio + ",");
                         fileWriter.Write(CH2TestResult.PressRatio + "," + CH2TestResult.FWD_ADCMAX + "," + CH2TestResult.FWD_VDCMAX + ",");
-                      //  fileWriter.Write(CH2TestResult.PressRatio + "," + CH2RTADC.Text + "," + CH2RTVDC.Text + ",");
+                        //  fileWriter.Write(CH2TestResult.PressRatio + "," + CH2RTADC.Text + "," + CH2RTVDC.Text + ",");
                         fileWriter.Write(CH2TestResult.FWD_Pre1 + "," + CH2TestResult.FWD_Pre2 + "," + CH2TestResult.FWD_Flow1 + "," + CH2TestResult.FWD_Flow2 + ",");
                         fileWriter.Write(CH2TestResult.RWD_ADCMAX + "," + CH2TestResult.RWD_VDCMAX + "," + CH2TestResult.RWD_Pre1 + "," + CH2TestResult.RWD_Pre2 + ",");
                         fileWriter.Write(",,,,,,,,,,,," + CH2TestResult.FullPre1 + "," + CH2TestResult.BalanPre1 + "," + CH2TestResult.Leak1 + ",");
@@ -4793,13 +4959,13 @@ namespace SLC1_N
                     fileWriter1.Close();
                 }
                 StreamWriter fileWriter = new StreamWriter(fileName, true, Encoding.UTF8);
-                
+
 
 
                 switch (CH)
                 {
                     case 1:
-                       
+
                         fileWriter.Write(CH1mesworknum + I18N.GetLangText(dicLang, "左") + ",#" + CH1timestamp + "#,'" + left_CH1Code.Text.Trim().Replace("\r\n", "").Replace("\r", "").Replace("\n", "") + "," + CH1Tlight.Text + ",");
                         fileWriter.Write(CH1RTElec.Text + "," + CH1TestResult.UP_ADCMAX + "," + CH1TestResult.UP_VDCMAX + "," + CH1TestResult.UP_Pre + ",");
                         fileWriter.Write(CH1TestResult.UP_Flow + "," + CH1TestResult.DOWN_ADCMAX + "," + CH1TestResult.DOWN_VDCMAX + ",");
@@ -4818,8 +4984,8 @@ namespace SLC1_N
 
                     case 2:
                         //fileWriter.Write(CH2mesworknum + I18N.GetLangText(dicLang, "右") + ",#" + CH2timestamp + "#,'" + right_CH1Code.Text.Trim().Replace("\r\n", "").Replace("\r", "").Replace("\n", "") + "," + CH2Tlight.Text + ",,,,,,,,,,,,,,,,,,,,,,");
-                        fileWriter.Write(CH2mesworknum + I18N.GetLangText(dicLang, "右") + ",#" + CH2timestamp + "#,'" + right_CH1Code.Text.Trim().Replace("\r\n", "").Replace("\r", "").Replace("\n", "") + "," + CH2Tlight.Text + ","+"0"+","+"0"+","+"0"+","+"0"+","+"0"+","+"0"+","+"0"+","+"0"+","+"0"+","+"0"+","+"0"+","+"0"+","+"0"
-                            +","+"0"+","+"0"+","+"0"+","+"0"+","+"0"+","+"0"+","+"0"+","+"0"+",");
+                        fileWriter.Write(CH2mesworknum + I18N.GetLangText(dicLang, "右") + ",#" + CH2timestamp + "#,'" + right_CH1Code.Text.Trim().Replace("\r\n", "").Replace("\r", "").Replace("\n", "") + "," + CH2Tlight.Text + "," + "0" + "," + "0" + "," + "0" + "," + "0" + "," + "0" + "," + "0" + "," + "0" + "," + "0" + "," + "0" + "," + "0" + "," + "0" + "," + "0" + "," + "0"
+                            + "," + "0" + "," + "0" + "," + "0" + "," + "0" + "," + "0" + "," + "0" + "," + "0" + "," + "0" + ",");
                         fileWriter.Write(CH2RTElec.Text + "," + CH2TestResult.UP_ADCMAX + "," + CH2TestResult.UP_VDCMAX + "," + CH2TestResult.UP_Pre + ",");
                         fileWriter.Write(CH2TestResult.UP_Flow + "," + CH2TestResult.DOWN_ADCMAX + "," + CH2TestResult.DOWN_VDCMAX + ",");
                         fileWriter.Write(CH2TestResult.DOWN_Pre + "," + CH2TestResult.DOWN_Flow + "," + CH2TestResult.ElecRatio + ",");
@@ -4827,7 +4993,7 @@ namespace SLC1_N
                         fileWriter.Write(CH2TestResult.FWD_Pre1 + "," + CH2TestResult.FWD_Pre2 + "," + CH2TestResult.FWD_Flow1 + "," + CH2TestResult.FWD_Flow2 + ",");
                         fileWriter.Write(CH2TestResult.RWD_ADCMAX + "," + CH2TestResult.RWD_VDCMAX + "," + CH2TestResult.RWD_Pre1 + "," + CH2TestResult.RWD_Pre2 + ",");
                         //fileWriter.Write(",,,,,,,,,,,," + CH2TestResult.FullPre1 + "," + CH2TestResult.BalanPre1 + "," + CH2TestResult.Leak1 + ",");
-                        fileWriter.Write("0" + "," + "0" + "," + "0" + "," + "0" + "," + "0" + "," + "0" + "," + "0" + "," + "0" + "," +"0" + "," + "0" + "," + "0" + "," + "0" + "," + CH2TestResult.FullPre1 + "," + CH2TestResult.BalanPre1 + "," + CH2TestResult.Leak1 + ",");
+                        fileWriter.Write("0" + "," + "0" + "," + "0" + "," + "0" + "," + "0" + "," + "0" + "," + "0" + "," + "0" + "," + "0" + "," + "0" + "," + "0" + "," + "0" + "," + CH2TestResult.FullPre1 + "," + CH2TestResult.BalanPre1 + "," + CH2TestResult.Leak1 + ",");
                         fileWriter.Write(CH2TestResult.FullPre2 + "," + CH2TestResult.BalanPre2 + "," + CH2TestResult.Leak2 + ",");
                         fileWriter.Write(CH2TestResult.FWD_FullPre1 + "," + CH2TestResult.FWD_BalanPre1 + "," + CH2TestResult.FWD_Leak1 + ",");
                         fileWriter.Write(CH2TestResult.FWD_FullPre2 + "," + CH2TestResult.FWD_BalanPre2 + "," + CH2TestResult.FWD_Leak2 + ",\n");
@@ -5149,7 +5315,7 @@ namespace SLC1_N
         //在界面显示数据
         private void CH3Display(string item, string data, string unit, string max, string min, string result)
         {
-          //  if (!Electricity.ord.CH2UpDownChange)
+            //  if (!Electricity.ord.CH2UpDownChange)
             {
                 string nowdate = DateTime.Now.ToString("HH:mm:ss");
                 string[] dataArr = { nowdate, item, data, unit, max, min, result };
@@ -5218,13 +5384,7 @@ namespace SLC1_N
             else e.Cancel = true;
         }
 
-        private void left_CH1Code_TextChanged(object sender, EventArgs e)
-        {
-        }
-
-        private void right_CH1Code_TextChanged(object sender, EventArgs e)
-        {
-        }
+ 
 
         /// <summary>
         /// 条码输入
@@ -5252,7 +5412,7 @@ namespace SLC1_N
                         string code = Encoding.Default.GetString(buff);
                         CodeJudge(code, 1);
                         if (CodePort1.IsOpen)
-                        { 
+                        {
                             CodePort1.DiscardInBuffer();
                             CodePort1.DiscardOutBuffer();
                         }
@@ -5292,7 +5452,7 @@ namespace SLC1_N
                         string code = Encoding.Default.GetString(buff);
                         CodeJudge(code, 2);
                         if (CodePort2.IsOpen)
-                        { 
+                        {
                             CodePort2.DiscardInBuffer();
                             CodePort2.DiscardOutBuffer();
                         }
@@ -5592,7 +5752,7 @@ namespace SLC1_N
                     ADCPort1.ReadTimeout = 1000;
                     ADCPort1.RtsEnable = false;
                     ADCPort1.Open();
-                    this.ADCPort1.DataReceived += new System.IO.Ports.SerialDataReceivedEventHandler(this.ADCPort1_DataReceived);
+                    this.ADCPort1.DataReceived += this.ADCPort1_DataReceived;
                     if (ADCPort1.IsOpen)
                     {
                         byte[] data = Encoding.Default.GetBytes("ADC\r\n");
@@ -5637,7 +5797,7 @@ namespace SLC1_N
                     {
                         byte[] data = Encoding.Default.GetBytes("VDC\r\n");
                         VDCPort1.Write(data, 0, data.Length);
-                     
+
                     }
                     this.VDCPort1.DataReceived += new System.IO.Ports.SerialDataReceivedEventHandler(this.VDCPort1_DataReceived);
                 }
@@ -5676,8 +5836,8 @@ namespace SLC1_N
                     if (CH2ADCPort.IsOpen)
                     {
                         byte[] data = Encoding.Default.GetBytes("ADC\r\n");
-                       CH2ADCPort.Write(data, 0, data.Length);
-                       
+                        CH2ADCPort.Write(data, 0, data.Length);
+
                     }
                 }
             }
@@ -5710,7 +5870,7 @@ namespace SLC1_N
                     CH2VDCPort.ReadBufferSize = 4096;
                     CH2VDCPort.ReadTimeout = 1000;
                     CH2VDCPort.WriteTimeout = 1000;
-                    CH2VDCPort.RtsEnable=true; 
+                    CH2VDCPort.RtsEnable = true;
                     CH2VDCPort.Open();
                     if (CH2VDCPort.IsOpen)
                     {
@@ -5753,14 +5913,14 @@ namespace SLC1_N
                         //}
                         //else
                         //{
-                            adc_index = str_adc.IndexOf("ADC");
+                        adc_index = str_adc.IndexOf("ADC");
                         //}
 
-             
+
                         //string adc = str_adc.Remove(adc_index);
                         //string 
-                            
-                           
+
+
                         if (adc_index > 0)
                         {
                             Decimal dData = 0.0M;
@@ -5804,7 +5964,7 @@ namespace SLC1_N
                         }
                     }
                     if (ADCPort1.IsOpen)
-                    { 
+                    {
                         ADCPort1.DiscardInBuffer();
                         ADCPort1.DiscardOutBuffer();
                     }
@@ -5921,14 +6081,14 @@ namespace SLC1_N
                     if (str_adc.StartsWith("+") && str_adc.Contains("ADC"))
                     {
                         int adc_index = 0;
-                           adc_index = str_adc.IndexOf("ADC");
+                        adc_index = str_adc.IndexOf("ADC");
                         if (adc_index > 0)
                         {
                             Decimal dData = 0.0M;
                             string adc = str_adc.Remove(adc_index);
                             if (adc.Contains("E"))
                             {
-                                
+
                                 dData = Convert.ToDecimal(Decimal.Parse(adc.ToString(), System.Globalization.NumberStyles.Float));
                                 adc = dData.ToString();
                             }
@@ -5960,8 +6120,8 @@ namespace SLC1_N
                                     double number1 = Convert.ToDouble(strArray[0].ToString());
                                     string numberFromStringFormat = string.Format("{0:F5}", number1);
                                     CH2RTADC.Text = numberFromStringFormat;
-                                    if (CH2ADCPort.IsOpen) 
-                                    { 
+                                    if (CH2ADCPort.IsOpen)
+                                    {
                                         CH2ADCPort.DiscardInBuffer();
                                         CH2ADCPort.DiscardOutBuffer();
                                     }
@@ -6000,7 +6160,7 @@ namespace SLC1_N
                     if (str_vdc.StartsWith("+") && str_vdc.Contains("VDC") && str_vdc.Contains("E"))
                     {
                         int vdc_index;
-                            vdc_index = str_vdc.IndexOf("VDC");
+                        vdc_index = str_vdc.IndexOf("VDC");
                         if (vdc_index > 0)
                         {
                             Decimal dData = 0.0M;
@@ -6042,12 +6202,12 @@ namespace SLC1_N
                             }
                         }
                     }
-                    if (CH2VDCPort.IsOpen) 
-                    { 
-                     CH2VDCPort.DiscardInBuffer();
+                    if (CH2VDCPort.IsOpen)
+                    {
+                        CH2VDCPort.DiscardInBuffer();
                         CH2VDCPort.DiscardOutBuffer();
                     }
-                   
+
                 }
                 else
                 {
@@ -6070,44 +6230,35 @@ namespace SLC1_N
                 string str = "MEAS?\r\n";
                 //String str = SendPort.Text;
                 byte[] data = Encoding.Default.GetBytes(str);
-               
-                    switch (type)
-                    {
-                        //type1为CH1ADCF
-                        case 1:
+
+                switch (type)
+                {
+                    //type1为CH1ADCF
+                    case 1:
                         if (ADCPort1.IsOpen)
-            
-                                
-                                ADCPort1.Write(data, 0, data.Length);
-                        
-
+                            ADCPort1.Write(data, 0, data.Length);
                         break;
 
-                        case 2:
+                    case 2:
                         if (VDCPort1.IsOpen)
-                
-                                VDCPort1.Write(data, 0, data.Length);
-                        
+                            VDCPort1.Write(data, 0, data.Length);
                         break;
 
-                        case 3:
-                            if (CH2ADCPort.IsOpen)
-                        
-                                CH2ADCPort.Write(data, 0, data.Length);
-                        
+                    case 3:
+                        if (CH2ADCPort.IsOpen)
+                            CH2ADCPort.Write(data, 0, data.Length);
                         break;
-                        case 4:
-                            if (CH2VDCPort.IsOpen)
-                  
-                                CH2VDCPort.Write(data, 0, data.Length);
-                        
+                    case 4:
+                        if (CH2VDCPort.IsOpen)
+                            CH2VDCPort.Write(data, 0, data.Length);
+
                         break;
-                    }
-                
+                }
+
             }
             catch (Exception ex)
             {
-   
+
                 wa.InsertWarningData(DateTime.Now.ToString("yyyy-MM-dd HH:mm:ss"), "-", I18N.GetLangText(dicLang, "电流电压发送") + ":" + ex.Message);
                 Logger.Log(I18N.GetLangText(dicLang, "电流电压发送") + ":" + ex.Message);
                 Logger.Log(ex.StackTrace);
@@ -6119,940 +6270,12 @@ namespace SLC1_N
 
         private void CH1ReadElec_Tick(object sender, EventArgs e)
         {
-            /* try
-             {
-                 // CH1ReadElec.Stop();
-                 double ch1adcmax = 0;
-                 double ch1vdcmax = 0;
-                 double ch1adcmin = 0;
-                 double ch1vdcmin = 0;
-                 if (CH1RTStep == "UP")
-                 {
-                     ch1adcmax = elec.CH1UPADCMax;
-                     ch1vdcmax = elec.CH1UPVDCMax;
-                     ch1adcmin = elec.CH1UPADCMin;
-                     ch1vdcmin = elec.CH1UPVDCMin;
-                 }
-                 if (CH1RTStep == "DOWN")
-                 {
-                     ch1adcmax = elec.CH1DOWNADCMax;
-                     ch1vdcmax = elec.CH1DOWNVDCMax;
-                     ch1adcmin = elec.CH1DOWNADCMin;
-                     ch1vdcmin = elec.CH1DOWNVDCMin;
-                 }
-                 if (CH1RTStep == "FWD")
-                 {
-                     ch1adcmax = elec.CH1FWDADCMax;
-                     ch1vdcmax = elec.CH1FWDVDCMax;
-                     ch1adcmin = elec.CH1FWDADCMin;
-                     ch1vdcmin = elec.CH1FWDVDCMin;
-                 }
-                 if (CH1RTStep == "RWD")
-                 {
-                     ch1adcmax = elec.CH1RWDADCMax;
-                     ch1vdcmax = elec.CH1RWDVDCMax;
-                     ch1adcmin = elec.CH1RWDADCMin;
-                     ch1vdcmin = elec.CH1RWDVDCMin;
-                 }
 
-                 if (ADCPort1.IsOpen && VDCPort1.IsOpen && JudgeCH1ADC)
-                 {
-                     //ch11iread++;
-                     //if (ch11iread > 4)
-                     //{
-                     //CH1ReadElec.Stop();
-                     JudgeCH1ADC = false;
-                     CH1ADCresult = "NG";
-                     CH1VDCresult = "NG";
-                     //界面表格
-                     if (CH1ADC < 0)
-                     {
-                         if (CH1RTStep == "UP")
-                         {
-                             FlowNG(1);
-                             plc.CH1UPADCNG();
-                             CH1Display($"{CH1RunName}" + I18N.GetLangText(dicLang, "max电流(UP)"), CH1RTADC.Text, "A", ch1adcmax.ToString(), ch1adcmin.ToString(), "NG");
-                         }
-                         else if (CH1RTStep == "DOWN")
-                         {
-                             FlowNG(1);
-                             plc.CH1DOWNADCNG();
-                             plc.CH1DOWNFlowEnd();
-                             CH1Display($"{CH1RunName}" + I18N.GetLangText(dicLang, "max电流(DOWN)"), CH1RTADC.Text, "A", ch1adcmax.ToString(), ch1adcmin.ToString(), "NG");
-                         }
-                         else if (CH1RTStep == "FWD")
-                         {
-                             FlowNG(1);
-                             plc.CH1FWDADCNG();
-                             plc.CH1FWDFlowEnd();
-                             CH1Display($"{CH1RunName}" + I18N.GetLangText(dicLang, "max电流(FWD)"), CH1RTADC.Text, "A", ch1adcmax.ToString(), ch1adcmin.ToString(), "NG");
-                         }
-                         else if (CH1RTStep == "RWD")
-                         {
-                             FlowNG(1);
-                             plc.CH1RWDADCNG();
-                             plc.CH1RWDFlowEnd();
-                             CH1Display($"{CH1RunName}" + I18N.GetLangText(dicLang, "max电流(RWD)"), CH1RTADC.Text, "A", ch1adcmax.ToString(), ch1adcmin.ToString(), "NG");
-                         }
-                     }
-                     if (CH1VDC < 0)
-                     {
-                         if (CH1RTStep == "UP")
-                         {
-                             FlowNG(1);
-                             plc.CH1UPVDCNG();
-                             CH1Display($"{CH1RunName}" + I18N.GetLangText(dicLang, "max电压(UP)"), CH1RTVDC.Text, "V", ch1vdcmax.ToString(), ch1vdcmin.ToString(), "NG");
-                         }
-                         else if (CH1RTStep == "DOWN")
-                         {
-                             FlowNG(1);
-                             plc.CH1DOWNVDCNG();
-                             CH1Display($"{CH1RunName}" + I18N.GetLangText(dicLang, "max电压(DOWN)"), CH1RTVDC.Text, "V", ch1vdcmax.ToString(), ch1vdcmin.ToString(), "NG");
-                         }
-                         else if (CH1RTStep == "FWD")
-                         {
-                             FlowNG(1);
-                             plc.CH1FWDVDCNG();
-                             CH1Display($"{CH1RunName}" + I18N.GetLangText(dicLang, "max电压(FWD)"), CH1RTVDC.Text, "V", ch1vdcmax.ToString(), ch1vdcmin.ToString(), "NG");
-                         }
-                         else if (CH1RTStep == "RWD")
-                         {
-                             FlowNG(1);
-                             plc.CH1RWDVDCNG();
-                             CH1Display($"{CH1RunName}" + I18N.GetLangText(dicLang, "max电压(RWD)"), CH1RTVDC.Text, "V", ch1vdcmax.ToString(), ch1vdcmin.ToString(), "NG");
-                         }
-                     }
-                     if (CH1ADC >= 0 || CH1VDC >= 0)
-                     {
-                         //CH1ReadElec.Stop();
-                         if (CH1ADC > ch1adcmax || CH1ADC < ch1adcmin)
-                         {
-                             CH1ADCresult = "NG";
-                             JudgeCH1ADC = false;
-                             if (CH1RTStep == "UP")
-                             {
-                                 FlowNG(1);
-                                 plc.CH1UPADCNG();
-                                 CH1Display($"{CH1RunName}" + I18N.GetLangText(dicLang, "max电流(UP)"), CH1RTADC.Text, "A", ch1adcmax.ToString(), ch1adcmin.ToString(), "NG");
-                             }
-                             else if (CH1RTStep == "DOWN")
-                             {
-                                 FlowNG(1);
-                                 plc.CH1DOWNADCNG();
-                                 CH1Display($"{CH1RunName}" + I18N.GetLangText(dicLang, "max电流(DOWN)"), CH1RTADC.Text, "A", ch1adcmax.ToString(), ch1adcmin.ToString(), "NG");
-                             }
-                             else if (CH1RTStep == "FWD")
-                             {
-                                 FlowNG(1);
-                                 plc.CH1FWDADCNG();
-                                 CH1Display($"{CH1RunName}" + I18N.GetLangText(dicLang, "max电流(FWD)"), CH1RTADC.Text, "A", ch1adcmax.ToString(), ch1adcmin.ToString(), "NG");
-                             }
-                             else if (CH1RTStep == "RWD")
-                             {
-                                 FlowNG(1);
-                                 plc.CH1RWDADCNG();
-                                 CH1Display($"{CH1RunName}" + I18N.GetLangText(dicLang, "max电流(RWD)"), CH1RTADC.Text, "A", ch1adcmax.ToString(), ch1adcmin.ToString(), "NG");
-                             }
-                         }
-                         else
-                         {
-                             //textBox1.Text += CH1ADC.ToString();
-                             //判断最大值
-                             if (CH1ADC > CH1ADCMax)
-                             {
-                                 CH1ADCMax = CH1ADC;
-                                 CH1VDCMax = CH1VDC;
-                                 if (CH1RTStep == "RWD" && (CH1VDCMax == 0 || CH1VDCMax < 0.5))
-                                 {
-                                     CH1ADCMax = 0;
-                                     CH1VDCMax = 0;
-                                 }
-                             }
-                         }
-                         if (CH1VDC > ch1vdcmax || CH1VDC < ch1vdcmin)
-                         {
-                             CH1VDCresult = "NG";
-                             JudgeCH1ADC = false;
-                             if (CH1RTStep == "UP")
-                             {
-                                 FlowNG(1);
-                                 plc.CH1UPVDCNG();
-                                 CH1Display($"{CH1RunName}" + I18N.GetLangText(dicLang, "max电压(UP)"), CH1RTVDC.Text, "V", ch1vdcmax.ToString(), ch1vdcmin.ToString(), "NG");
-                             }
-                             else if (CH1RTStep == "DOWN")
-                             {
-                                 FlowNG(1);
-                                 plc.CH1DOWNVDCNG();
-                                 CH1Display($"{CH1RunName}" + I18N.GetLangText(dicLang, "max电压(DOWN)"), CH1RTVDC.Text, "V", ch1vdcmax.ToString(), ch1vdcmin.ToString(), "NG");
-                             }
-                             else if (CH1RTStep == "FWD")
-                             {
-                                 FlowNG(1);
-                                 plc.CH1FWDVDCNG();
-                                 CH1Display($"{CH1RunName}" + I18N.GetLangText(dicLang, "max电压(FWD)"), CH1RTVDC.Text, "V", ch1vdcmax.ToString(), ch1vdcmin.ToString(), "NG");
-                             }
-                             else if (CH1RTStep == "RWD")
-                             {
-                                 FlowNG(1);
-                                 plc.CH1RWDVDCNG();
-                                 CH1Display($"{CH1RunName}" + I18N.GetLangText(dicLang, "max电压(RWD)"), CH1RTVDC.Text, "V", ch1vdcmax.ToString(), ch1vdcmin.ToString(), "NG");
-                             }
-                         }
-                         //}
-                     }
-                     else if (CH1ADC > 0.1)
-                         if (CH1ADC >= 0 || CH1VDC >= 0)
-                         {
-                             //CH1ReadElec.Stop();
-                             if (CH1ADC > ch1adcmax || CH1ADC < ch1adcmin)
-                             {
-                                 CH1ADCresult = "NG";
-                                 JudgeCH1ADC = false;
-                                 if (CH1RTStep == "UP")
-                                 {
-                                     FlowNG(1);
-                                     plc.CH1UPADCNG();
-                                     CH1Display($"{CH1RunName}" + I18N.GetLangText(dicLang, "max电流(UP)"), CH1RTADC.Text, "A", ch1adcmax.ToString(), ch1adcmin.ToString(), "NG");
-                                 }
-                                 else if (CH1RTStep == "DOWN")
-                                 {
-                                     FlowNG(1);
-                                     plc.CH1DOWNADCNG();
-                                     CH1Display($"{CH1RunName}" + I18N.GetLangText(dicLang, "max电流(DOWN)"), CH1RTADC.Text, "A", ch1adcmax.ToString(), ch1adcmin.ToString(), "NG");
-                                 }
-                                 else if (CH1RTStep == "FWD")
-                                 {
-                                     FlowNG(1);
-                                     plc.CH1FWDADCNG();
-                                     CH1Display($"{CH1RunName}" + I18N.GetLangText(dicLang, "max电流(FWD)"), CH1RTADC.Text, "A", ch1adcmax.ToString(), ch1adcmin.ToString(), "NG");
-                                 }
-                                 else if (CH1RTStep == "RWD")
-                                 {
-                                     FlowNG(1);
-                                     plc.CH1RWDADCNG();
-                                     CH1Display($"{CH1RunName}" + I18N.GetLangText(dicLang, "max电流(RWD)"), CH1RTADC.Text, "A", ch1adcmax.ToString(), ch1adcmin.ToString(), "NG");
-                                 }
-                             }
-                             else
-                             {
-                                 //textBox1.Text += CH1ADC.ToString();
-                                 //判断最大值
-                                 if (CH1ADC > CH1ADCMax)
-                                 {
-                                     CH1ADCMax = CH1ADC;
-                                     CH1VDCMax = CH1VDC;
-                                     if (CH1RTStep == "RWD" && (CH1VDCMax == 0 || CH1VDCMax < 0.5))
-                                     {
-                                         CH1ADCMax = 0;
-                                         CH1VDCMax = 0;
-                                     }
-                                 }
-                             }
-                             if (CH1VDC > ch1vdcmax || CH1VDC < ch1vdcmin)
-                             {
-                                 CH1VDCresult = "NG";
-                                 JudgeCH1ADC = false;
-                                 if (CH1RTStep == "UP")
-                                 {
-                                     FlowNG(1);
-                                     plc.CH1UPVDCNG();
-                                     CH1Display($"{CH1RunName}" + I18N.GetLangText(dicLang, "max电压(UP)"), CH1RTVDC.Text, "V", ch1vdcmax.ToString(), ch1vdcmin.ToString(), "NG");
-                                 }
-                                 else if (CH1RTStep == "DOWN")
-                                 {
-                                     FlowNG(1);
-                                     plc.CH1DOWNVDCNG();
-                                     CH1Display($"{CH1RunName}" + I18N.GetLangText(dicLang, "max电压(DOWN)"), CH1RTVDC.Text, "V", ch1vdcmax.ToString(), ch1vdcmin.ToString(), "NG");
-                                 }
-                                 else if (CH1RTStep == "FWD")
-                                 {
-                                     FlowNG(1);
-                                     plc.CH1FWDVDCNG();
-                                     CH1Display($"{CH1RunName}" + I18N.GetLangText(dicLang, "max电压(FWD)"), CH1RTVDC.Text, "V", ch1vdcmax.ToString(), ch1vdcmin.ToString(), "NG");
-                                 }
-                                 else if (CH1RTStep == "RWD")
-                                 {
-                                     FlowNG(1);
-                                     plc.CH1RWDVDCNG();
-                                     CH1Display($"{CH1RunName}" + I18N.GetLangText(dicLang, "max电压(RWD)"), CH1RTVDC.Text, "V", ch1vdcmax.ToString(), ch1vdcmin.ToString(), "NG");
-                                 }
-                             }
-                         }
-                 }
-             }
-             catch (Exception ex)
-             {
-                 wa.InsertWarningData(DateTime.Now.ToString("yyyy-MM-dd HH:mm:ss"), "-", I18N.GetLangText(dicLang, "CH1电流电压") + ":" + ex.Message);
-                 //CH1ReadElec.Stop();
-                 //MessageBox.Show("CH1电流电压：" + ex.Message);
-                 Logger.Log(I18N.GetLangText(dicLang, "CH1电流电压") + ":" + ex.Message);
-                 Logger.Log(ex.StackTrace);
-             }*/
-
-            /*  try
-              {
-                  CH1ReadElec.Interval = 500;
-                  CH1ReadElec.Start();
-                  List<ValueClass> CH1ADCListTemp = new List<ValueClass>(CH1ADCList.GetRange(0, CH1ADCList.Count > 0 ? CH1ADCList.Count - 1 : 0));
-                  List<ValueClass> CH1VDCListTemp = new List<ValueClass>(CH1VDCList.GetRange(0, CH1VDCList.Count > 0 ? CH1VDCList.Count - 1 : 0));
-
-                  double ch1adcmax = 0;
-                  double ch1vdcmax = 0;
-                  double ch1adcmin = 0;
-                  double ch1vdcmin = 0;
-                  if (CH1RTStep == "UP")
-                  {
-                      ch1adcmax = elec.CH1UPADCMax;
-                      ch1vdcmax = elec.CH1UPVDCMax;
-                      ch1adcmin = elec.CH1UPADCMin;
-                      ch1vdcmin = elec.CH1UPVDCMin;
-                  }
-                  if (CH1RTStep == "DOWN")
-                  {
-                      ch1adcmax = elec.CH1DOWNADCMax;
-                      ch1vdcmax = elec.CH1DOWNVDCMax;
-                      ch1adcmin = elec.CH1DOWNADCMin;
-                      ch1vdcmin = elec.CH1DOWNVDCMin;
-                  }
-                  if (CH1RTStep == "FWD")
-                  {
-                      ch1adcmax = elec.CH1FWDADCMax;
-                      ch1vdcmax = elec.CH1FWDVDCMax;
-                      ch1adcmin = elec.CH1FWDADCMin;
-                      ch1vdcmin = elec.CH1FWDVDCMin;
-                  }
-                  if (CH1RTStep == "RWD")
-                  {
-                      ch1adcmax = elec.CH1RWDADCMax;
-                      ch1vdcmax = elec.CH1RWDVDCMax;
-                      ch1adcmin = elec.CH1RWDADCMin;
-                      ch1vdcmin = elec.CH1RWDVDCMin;
-                  }
-                  if (ADCPort1.IsOpen && VDCPort1.IsOpen && JudgeCH1ADC)
-                  {
-                      foreach (var item in CH1ADCListTemp.ToArray())
-                      {
-                          if (item.Value == 0)
-                          {
-                              CH1ADCListTemp.Remove(item);
-                          }
-                      }
-                      foreach (var item in CH1VDCListTemp.ToArray())
-                      {
-                          if (item.Value == 0)
-                          {
-                              CH1VDCListTemp.Remove(item);
-                          }
-                      }
-
-                      if (CH1ADCListTemp.Count > 0)
-                      {
-                          var lstADCFind = CH1ADCListTemp.FindAll(p => p.Value >= ch1adcmin && p.Value <= ch1adcmax);
-                          if (lstADCFind.Count == 0) CH1ReadElecCount++;
-                          if (lstADCFind.Count == 0&& CH1ReadElecCount>7)
-                          {
-                              CH1ADCresult = "NG";
-
-                              if (CH1RTStep == "UP")
-                              {
-                                  plc.CH1UPADCNG();
-                                  CH1Display($"{CH1RunName}" + I18N.GetLangText(dicLang, "max电流(UP)"), CH1RTADC.Text, "A", ch1adcmax.ToString(), ch1adcmin.ToString(), "NG");
-                              }
-                              else if (CH1RTStep == "DOWN")
-                              {
-                                  plc.CH1DOWNADCNG();
-                                  CH1Display($"{CH1RunName}" + I18N.GetLangText(dicLang, "max电流(DOWN)"), CH1RTADC.Text, "A", ch1adcmax.ToString(), ch1adcmin.ToString(), "NG");
-                              }
-                              else if (CH1RTStep == "FWD")
-                              {
-                                  plc.CH1FWDADCNG();
-                                  CH1Display($"{CH1RunName}" + I18N.GetLangText(dicLang, "max电流(FWD)"), CH1RTADC.Text, "A", ch1adcmax.ToString(), ch1adcmin.ToString(), "NG");
-                              }
-                              else if (CH1RTStep == "RWD")
-                              {
-                                  plc.CH1RWDADCNG();
-                                  CH1Display($"{CH1RunName}" + I18N.GetLangText(dicLang, "max电流(RWD)"), CH1RTADC.Text, "A", ch1adcmax.ToString(), ch1adcmin.ToString(), "NG");
-                              }
-                              if (CH1RTStep == "UP" || CH1RTStep == "DOWN" || CH1RTStep == "FWD" || CH1RTStep == "RWD")
-                              {
-                                  FlowNG(1);
-                              }
-                          }
-                          else
-                          {
-                              if (CH1ADCListTemp.Max(x => x.Value) > CH1ADCMax)
-                              {
-                                  CH1ADCMax = CH1ADCListTemp.Max(x => x.Value);
-                                  CH1VDCMax = CH1VDCListTemp.Max(x => x.Value);
-                                  if (CH1RTStep == "RWD" && (CH1VDCMax == 0 || CH1VDCMax < 0.5))
-                                  {
-                                      CH1ADCMax = 0;
-                                      CH1VDCMax = 0;
-                                  }
-                              }
-                          }
-                          if(CH1VDCListTemp.Count > 0)
-                          {
-                              var lstVDCFind = CH1VDCListTemp.FindAll(p => p.Value >= ch1vdcmin && p.Value <= ch1vdcmax);
-                              if (lstVDCFind.Count == 0) CH1ReadElecCount++;
-                              if (lstVDCFind.Count == 0 && CH1ReadElecCount > 7)
-                              {
-                                  CH1VDCresult = "NG";
-                                  if (CH1RTStep == "UP")
-                                  {
-                                      plc.CH1UPVDCNG();
-                                      CH1Display($"{CH1RunName}" + I18N.GetLangText(dicLang, "max电压(UP)"), CH1RTVDC.Text, "V", ch1vdcmax.ToString(), ch1vdcmin.ToString(), "NG");
-                                  }
-                                  else if (CH1RTStep == "DOWN")
-                                  {
-                                      plc.CH1DOWNVDCNG();
-                                      CH1Display($"{CH1RunName}" + I18N.GetLangText(dicLang, "max电压(DOWN)"), CH1RTVDC.Text, "V", ch1vdcmax.ToString(), ch1vdcmin.ToString(), "NG");
-                                  }
-                                  else if (CH1RTStep == "FWD")
-                                  {
-                                      plc.CH1FWDVDCNG();
-                                      CH1Display($"{CH1RunName}" + I18N.GetLangText(dicLang, "max电压(FWD)"), CH1RTVDC.Text, "V", ch1vdcmax.ToString(), ch1vdcmin.ToString(), "NG");
-                                  }
-                                  else if (CH1RTStep == "RWD")
-                                  {
-                                      plc.CH1RWDVDCNG();
-                                      CH1Display($"{CH1RunName}" + I18N.GetLangText(dicLang, "max电压(RWD)"), CH1RTVDC.Text, "V", ch1vdcmax.ToString(), ch1vdcmin.ToString(), "NG");
-                                  }
-                                  if (CH1RTStep == "UP" || CH1RTStep == "DOWN" || CH1RTStep == "FWD" || CH1RTStep == "RWD")
-                                  {
-                                      FlowNG(1);
-                                  }
-                              }
-                              else
-                              {
-                                  if (CH1ADCListTemp.Max(x => x.Value) > CH1ADCMax)
-                                  {
-                                      CH1ADCMax = CH1ADCListTemp.Max(x => x.Value);
-                                      CH1VDCMax = CH1VDCListTemp.Max(x => x.Value);
-                                      if (CH1RTStep == "RWD" && (CH1VDCMax == 0 || CH1VDCMax < 0.5))
-                                      {
-                                          CH1ADCMax = 0;
-                                          CH1VDCMax = 0;
-                                      }
-                                  }
-                              }
-                          }
-                      }
-                      *//*else
-                      {
-                          CH1ADCresult = "NG";
-                          CH1VDCresult = "NG";
-                          //界面表格
-                          if (CH1ADCListTemp.Where(p => p.Value < 0).Count() > 0)
-                          {
-                              if (CH1RTStep == "UP")
-                              {
-                                  plc.CH1UPADCNG();
-                                  CH1Display($"{CH1RunName}" + I18N.GetLangText(dicLang, "max电流(UP)"), CH1RTADC.Text, "A", ch1adcmax.ToString(), ch1adcmin.ToString(), "NG");
-                              }
-                              else if (CH1RTStep == "DOWN")
-                              {
-                                  plc.CH1DOWNADCNG();
-                                  plc.CH1DOWNFlowEnd();
-                                  CH1Display($"{CH1RunName}" + I18N.GetLangText(dicLang, "max电流(DOWN)"), CH1RTADC.Text, "A", ch1adcmax.ToString(), ch1adcmin.ToString(), "NG");
-                              }
-                              else if (CH1RTStep == "FWD")
-                              {
-                                  plc.CH1FWDADCNG();
-                                  plc.CH1FWDFlowEnd();
-                                  CH1Display($"{CH1RunName}" + I18N.GetLangText(dicLang, "max电流(FWD)"), CH1RTADC.Text, "A", ch1adcmax.ToString(), ch1adcmin.ToString(), "NG");
-                              }
-                              else if (CH1RTStep == "RWD")
-                              {
-                                  plc.CH1RWDADCNG();
-                                  plc.CH1RWDFlowEnd();
-                                  CH1Display($"{CH1RunName}" + I18N.GetLangText(dicLang, "max电流(RWD)"), CH1RTADC.Text, "A", ch1adcmax.ToString(), ch1adcmin.ToString(), "NG");
-                              }
-                              if (CH1RTStep == "UP" || CH1RTStep == "DOWN" || CH1RTStep == "FWD" || CH1RTStep == "RWD")
-                              {
-                                  FlowNG(1);
-                              }
-                          }
-                          if (CH1VDCListTemp.Where(p => p.Value < 0).Count() > 0)
-                          {
-                              if (CH1RTStep == "UP")
-                              {
-                                  plc.CH1UPVDCNG();
-                                  CH1Display($"{CH1RunName}" + I18N.GetLangText(dicLang, "max电压(UP)"), CH1RTVDC.Text, "V", ch1vdcmax.ToString(), ch1vdcmin.ToString(), "NG");
-                              }
-                              else if (CH1RTStep == "DOWN")
-                              {
-                                  plc.CH1DOWNVDCNG();
-                                  CH1Display($"{CH1RunName}" + I18N.GetLangText(dicLang, "max电压(DOWN)"), CH1RTVDC.Text, "V", ch1vdcmax.ToString(), ch1vdcmin.ToString(), "NG");
-                              }
-                              else if (CH1RTStep == "FWD")
-                              {
-                                  plc.CH1FWDVDCNG();
-                                  CH1Display($"{CH1RunName}" + I18N.GetLangText(dicLang, "max电压(FWD)"), CH1RTVDC.Text, "V", ch1vdcmax.ToString(), ch1vdcmin.ToString(), "NG");
-                              }
-                              else if (CH1RTStep == "RWD")
-                              {
-                                  plc.CH1RWDVDCNG();
-                                  CH1Display($"{CH1RunName}" + I18N.GetLangText(dicLang, "max电压(RWD)"), CH1RTVDC.Text, "V", ch1vdcmax.ToString(), ch1vdcmin.ToString(), "NG");
-                              }
-                              if (CH1RTStep == "UP" || CH1RTStep == "DOWN" || CH1RTStep == "FWD" || CH1RTStep == "RWD")
-                              {
-                                  FlowNG(1);
-                              }
-                          }
-                      }*//*
-                  }
-              }
-              catch (Exception ex)
-              {
-                  wa.InsertWarningData(DateTime.Now.ToString("yyyy-MM-dd HH:mm:ss"), "-", I18N.GetLangText(dicLang, "CH1电流电压") + ":" + ex.Message);
-                  //CH1ReadElec.Stop();
-                  //MessageBox.Show("CH1电流电压：" + ex.Message);
-                  Logger.Log(I18N.GetLangText(dicLang, "CH1电流电压") + ":" + ex.Message);
-                  Logger.Log(ex.StackTrace);
-              }*/
         }
 
         private void CH2ReadElec_Tick(object sender, EventArgs e)
         {
-            /*try
-            {
-                //PortSend(3);
-                //PortSend(4);
 
-                double ch2adcmax = 0;
-                double ch2vdcmax = 0;
-                double ch2adcmin = 0;
-                double ch2vdcmin = 0;
-                if (CH2RTStep == "UP")
-                {
-                    ch2adcmax = elec.CH2UPADCMax;
-                    ch2vdcmax = elec.CH2UPVDCMax;
-                    ch2adcmin = elec.CH2UPADCMin;
-                    ch2vdcmin = elec.CH2UPVDCMin;
-                }
-                if (CH2RTStep == "DOWN")
-                {
-                    ch2adcmax = elec.CH2DOWNADCMax;
-                    ch2vdcmax = elec.CH2DOWNVDCMax;
-                    ch2adcmin = elec.CH2DOWNADCMin;
-                    ch2vdcmin = elec.CH2DOWNVDCMin;
-                }
-                if (CH2RTStep == "FWD")
-                {
-                    ch2adcmax = elec.CH2FWDADCMax;
-                    ch2vdcmax = elec.CH2FWDVDCMax;
-                    ch2adcmin = elec.CH2FWDADCMin;
-                    ch2vdcmin = elec.CH2FWDVDCMin;
-                }
-                if (CH2RTStep == "RWD")
-                {
-                    ch2adcmax = elec.CH2RWDADCMax;
-                    ch2vdcmax = elec.CH2RWDVDCMax;
-                    ch2adcmin = elec.CH2RWDADCMin;
-                    ch2vdcmin = elec.CH2RWDVDCMin;
-                }
-                //if (CH2RTStep == "QC")
-                //{
-                //    ch2adcmax = elec.CH2ElecMax;
-                //    ch2vdcmax = elec.CH2ElecMin;
-                //}
-                Thread.Sleep(50);
-                if (CH2ADCPort.IsOpen && CH2VDCPort.IsOpen&&JudgeCH2ADC)
-                {
-                    if (CH2ADC >= 0 || CH2VDC >= 0)
-                    {
-                        if (CH2ADC > ch2adcmax || CH2ADC < ch2adcmin)
-                        {
-                            CH2ADCresult = "NG";
-                            JudgeCH2ADC = false;
-                            FlowNG(2);
-
-                            if (CH2RTStep == "UP")
-                            {
-                                FlowNG(2);
-                                plc.CH2UPADCNG();
-                                CH3Display($"{CH2RunName}" + I18N.GetLangText(dicLang, "max电流(UP)"), CH2RTADC.Text, "A", ch2adcmax.ToString(), ch2adcmin.ToString(), "NG");
-                            }
-                            else if (CH2RTStep == "DOWN")
-                            {
-                                FlowNG(2);
-                                plc.CH2DOWNADCNG();
-                                CH3Display($"{CH2RunName}" + I18N.GetLangText(dicLang, "max电流(DOWN)"), CH2RTADC.Text, "A", ch2adcmax.ToString(), ch2adcmin.ToString(), "NG");
-                            }
-                            else if (CH2RTStep == "FWD")
-                            {
-                                FlowNG(2);
-                                plc.CH2FWDADCNG();
-                                CH3Display($"{CH2RunName}" + I18N.GetLangText(dicLang, "max电流(FWD)"), CH2RTADC.Text, "A", ch2adcmax.ToString(), ch2adcmin.ToString(), "NG");
-                            }
-                            else if (CH2RTStep == "RWD")
-                            {
-                                FlowNG(2);
-                                plc.CH2RWDADCNG();
-                                CH3Display($"{CH2RunName}" + I18N.GetLangText(dicLang, "max电流(RWD)"), CH2RTADC.Text, "A", ch2adcmax.ToString(), ch2adcmin.ToString(), "NG");
-                            }
-                        }
-                        else
-                        {
-                            //判断最大值
-                            if (CH2ADC > CH2ADCMax)
-                            {
-                                CH2ADCMax = CH2ADC;
-                                CH2VDCMax = CH2VDC;
-                                if (CH2RTStep == "RWD" && (CH2VDCMax == 0 || CH2VDCMax < 0.5))
-                                {
-                                    CH2ADCMax = 0;
-                                    CH2VDCMax = 0;
-                                }
-                            }
-                        }
-
-                        if (CH2VDC > ch2vdcmax || CH2VDC < ch2vdcmin)
-                        {
-                            CH2VDCresult = "NG";
-                            JudgeCH2ADC = false;
-                            if (CH2RTStep == "UP")
-                            {
-                                FlowNG(2);
-                                plc.CH2UPVDCNG();
-                                CH3Display($"{CH2RunName}" + I18N.GetLangText(dicLang, "max电压(UP)"), CH2RTVDC.Text, "V", ch2vdcmax.ToString(), ch2vdcmin.ToString(), "NG");
-                            }
-                            else if (CH2RTStep == "DOWN")
-                            {
-                                FlowNG(2);
-                                plc.CH2DOWNVDCNG();
-                                CH3Display($"{CH2RunName}" + I18N.GetLangText(dicLang, "max电压(DOWN)"), CH2RTVDC.Text, "V", ch2vdcmax.ToString(), ch2vdcmin.ToString(), "NG");
-                            }
-                            else if (CH2RTStep == "FWD")
-                            {
-                                FlowNG(2);
-                                plc.CH2FWDVDCNG();
-                                CH3Display($"{CH2RunName}" + I18N.GetLangText(dicLang, "max电压(FWD)"), CH2RTVDC.Text, "V", ch2vdcmax.ToString(), ch2vdcmin.ToString(), "NG");
-                            }
-                            else if (CH2RTStep == "RWD")
-                            {
-                                FlowNG(2);
-                                plc.CH2RWDVDCNG();
-                                CH3Display($"{CH2RunName}" + I18N.GetLangText(dicLang, "max电压(RWD)"), CH2RTVDC.Text, "V", ch2vdcmax.ToString(), ch2vdcmin.ToString(), "NG");
-                            }
-                            //else if (CH2RTStep == "QC")
-                            //{
-                            //    plc.CH2RWDVDCNG();
-                            //    //CH3Display($"{CH2RunName}" + "静态电流（QC）", CH2RTVDC.Text, "uA", CH1ElecMax.ToString(), CH1ElecMin.ToString(), "NG");
-                            //}
-                        }
-                    }
-                    else
-                    {
-                        Thread.Sleep(50);
-                        JudgeCH2ADC = false;
-                        CH2ADCresult = "NG";
-                        CH2VDCresult = "NG";
-                        //界面表格
-                        if (CH2ADC < 0)
-                        {
-                            if (CH2RTStep == "UP")
-                            {
-                                FlowNG(2);
-                                plc.CH2UPADCNG();
-                                CH3Display($"{CH2RunName}" + I18N.GetLangText(dicLang, "max电流(UP)"), CH2RTADC.Text, "A", ch2adcmax.ToString(), ch2adcmin.ToString(), "NG");
-                            }
-                            else if (CH2RTStep == "DOWN")
-                            {
-                                FlowNG(2);
-                                plc.CH2DOWNADCNG();
-                                CH3Display($"{CH2RunName}" + I18N.GetLangText(dicLang, "max电流(DOWN)"), CH2RTADC.Text, "A", ch2adcmax.ToString(), ch2adcmin.ToString(), "NG");
-                            }
-                            else if (CH2RTStep == "FWD")
-                            {
-                                FlowNG(2);
-                                plc.CH2FWDADCNG();
-                                CH3Display($"{CH2RunName}" + I18N.GetLangText(dicLang, "max电流(FWD)"), CH2RTADC.Text, "A", ch2adcmax.ToString(), ch2adcmin.ToString(), "NG");
-                            }
-                            else if (CH2RTStep == "RWD")
-                            {
-                                FlowNG(2);
-                                plc.CH2RWDADCNG();
-                                CH3Display($"{CH2RunName}" + I18N.GetLangText(dicLang, "max电流(RWD)"), CH2RTADC.Text, "A", ch2adcmax.ToString(), ch2adcmin.ToString(), "NG");
-                            }
-                        }
-                        if (CH2VDC < 0)
-                        {
-                            if (CH2RTStep == "UP")
-                            {
-                                FlowNG(2);
-                                plc.CH2UPVDCNG();
-                                CH3Display($"{CH2RunName}" + I18N.GetLangText(dicLang, "max电压(UP)"), CH2RTVDC.Text, "V", ch2vdcmax.ToString(), ch2vdcmin.ToString(), "NG");
-                            }
-                            else if (CH2RTStep == "DOWN")
-                            {
-                                FlowNG(2);
-                                plc.CH2DOWNVDCNG();
-                                CH3Display($"{CH2RunName}" + I18N.GetLangText(dicLang, "max电压(DOWN)"), CH2RTVDC.Text, "V", ch2vdcmax.ToString(), ch2vdcmin.ToString(), "NG");
-                            }
-                            else if (CH2RTStep == "FWD")
-                            {
-                                FlowNG(2);
-                                plc.CH2FWDVDCNG();
-                                CH3Display($"{CH2RunName}" + I18N.GetLangText(dicLang, "max电压(FWD)"), CH2RTVDC.Text, "V", ch2vdcmax.ToString(), ch2vdcmin.ToString(), "NG");
-                            }
-                            else if (CH2RTStep == "RWD")
-                            {
-                                FlowNG(2);
-                                plc.CH2RWDVDCNG();
-                                CH3Display($"{CH2RunName}" + I18N.GetLangText(dicLang, "max电压(RWD)"), CH2RTVDC.Text, "V", ch2vdcmax.ToString(), ch2vdcmin.ToString(), "NG");
-                            }
-                        }
-                    }
-                }
-            }
-            catch (Exception ex)
-            {
-                //CH2ReadElec.Stop();
-                //MessageBox.Show("CH2电流电压：" + ex.Message);
-                wa.InsertWarningData(DateTime.Now.ToString("yyyy-MM-dd HH:mm:ss"), "-", I18N.GetLangText(dicLang, "CH2电流电压") + ":" + ex.Message);
-                Logger.Log(I18N.GetLangText(dicLang, "CH2电流电压") + ":" + ex.Message);
-                Logger.Log(ex.StackTrace);
-            }*/
-
-            /*try
-            {
-                CH2ReadElec.Interval = 500;
-                CH2ReadElec.Start();
-                List<ValueClass> CH2ADCListTemp = new List<ValueClass>(CH2ADCList.GetRange(0, CH2ADCList.Count > 0 ? CH2ADCList.Count - 1 : 0));
-                List<ValueClass> CH2VDCListTemp = new List<ValueClass>(CH2VDCList.GetRange(0, CH2VDCList.Count > 0 ? CH2VDCList.Count - 1 : 0));
-
-                // CH2ADCListTemp = Clone<double>(CH2ADCList);
-                //CH2ADCList.ForEach(i => CH2ADCListTemp.Add(i));
-                //PortSend(3);
-                //PortSend(4);
-
-                double ch2adcmax = 0;
-                double ch2vdcmax = 0;
-                double ch2adcmin = 0;
-                double ch2vdcmin = 0;
-                if (CH2RTStep == "UP")
-                {
-                    ch2adcmax = elec.CH2UPADCMax;
-                    ch2vdcmax = elec.CH2UPVDCMax;
-                    ch2adcmin = elec.CH2UPADCMin;
-                    ch2vdcmin = elec.CH2UPVDCMin;
-                }
-                if (CH2RTStep == "DOWN")
-                {
-                    ch2adcmax = elec.CH2DOWNADCMax;
-                    ch2vdcmax = elec.CH2DOWNVDCMax;
-                    ch2adcmin = elec.CH2DOWNADCMin;
-                    ch2vdcmin = elec.CH2DOWNVDCMin;
-                }
-                if (CH2RTStep == "FWD")
-                {
-                    ch2adcmax = elec.CH2FWDADCMax;
-                    ch2vdcmax = elec.CH2FWDVDCMax;
-                    ch2adcmin = elec.CH2FWDADCMin;
-                    ch2vdcmin = elec.CH2FWDVDCMin;
-                }
-                if (CH2RTStep == "RWD")
-                {
-                    ch2adcmax = elec.CH2RWDADCMax;
-                    ch2vdcmax = elec.CH2RWDVDCMax;
-                    ch2adcmin = elec.CH2RWDADCMin;
-                    ch2vdcmin = elec.CH2RWDVDCMin;
-                }
-                //if (CH2RTStep == "QC")
-                //{
-                //    ch2adcmax = elec.CH2ElecMax;
-                //    ch2vdcmax = elec.CH2ElecMin;
-                //}
-                Thread.Sleep(50);
-                if (CH2ADCPort.IsOpen && CH2VDCPort.IsOpen && JudgeCH2ADC)
-                {
-                    foreach (var item in CH2ADCListTemp.ToArray())
-                    {
-                        if (item.Value == 0)
-                        {
-                            CH2ADCListTemp.Remove(item);
-                        }
-                    }
-                    foreach (var item in CH2VDCListTemp.ToArray())
-                    {
-                        if (item.Value == 0)
-                        {
-                            CH2VDCListTemp.Remove(item);
-                        }
-                    }
-
-                    if (CH2ADCListTemp.Count > 0)
-                    {
-                        var lstADCFind = CH2ADCListTemp.FindAll(p => p.Value >= ch2adcmin && p.Value <= ch2adcmax);
-                        //if (CH2ADCListTemp.Max() > ch2adcmax || CH2ADCListTemp.Min() < ch2adcmin)
-                        if (lstADCFind.Count == 0) CH2ReadElecCount++;
-                        if (lstADCFind.Count == 0&& CH2ReadElecCount>7)
-                        {
-                            CH2ADCresult = "NG";
-
-                            if (CH2RTStep == "UP")
-                            {
-                                plc.CH2UPADCNG();
-                                CH3Display($"{CH2RunName}" + I18N.GetLangText(dicLang, "max电流(UP)"), CH2RTADC.Text, "A", ch2adcmax.ToString(), ch2adcmin.ToString(), "NG");
-                            }
-                            else if (CH2RTStep == "DOWN")
-                            {
-                                plc.CH2DOWNADCNG();
-                                CH3Display($"{CH2RunName}" + I18N.GetLangText(dicLang, "max电流(DOWN)"), CH2RTADC.Text, "A", ch2adcmax.ToString(), ch2adcmin.ToString(), "NG");
-                            }
-                            else if (CH2RTStep == "FWD")
-                            {
-                                plc.CH2FWDADCNG();
-                                CH3Display($"{CH2RunName}" + I18N.GetLangText(dicLang, "max电流(FWD)"), CH2RTADC.Text, "A", ch2adcmax.ToString(), ch2adcmin.ToString(), "NG");
-                            }
-                            else if (CH2RTStep == "RWD")
-                            {
-                                plc.CH2RWDADCNG();
-                                CH3Display($"{CH2RunName}" + I18N.GetLangText(dicLang, "max电流(RWD)"), CH2RTADC.Text, "A", ch2adcmax.ToString(), ch2adcmin.ToString(), "NG");
-                            }
-                            if (CH2RTStep == "UP" || CH2RTStep == "DOWN" || CH2RTStep == "FWD" || CH2RTStep == "RWD")
-                            {
-                                FlowNG(2);
-                            }
-                        }
-                        else
-                        {
-                            //判断最大值
-                            if (CH2ADCListTemp.Max(x => x.Value) > CH2ADCMax)
-                            {
-                                CH2ADCMax = CH2ADCListTemp.Max(x => x.Value);
-                                CH2VDCMax = CH2VDCListTemp.Max(x => x.Value);
-                                if (CH2RTStep == "RWD" && (CH2VDCMax == 0 || CH2VDCMax < 0.5))
-                                {
-                                    CH2ADCMax = 0;
-                                    CH2VDCMax = 0;
-                                }
-                            }
-                        }
-                        if (CH2VDCListTemp.Count > 0)
-                        {
-                            var lstVDCFind = CH2VDCListTemp.FindAll(p => p.Value >= ch2vdcmin && p.Value <= ch2vdcmax);
-                            if (lstVDCFind.Count == 0) CH2ReadElecCount++;
-                            if (lstVDCFind.Count == 0 && CH2ReadElecCount > 7)
-                            {
-                                CH2VDCresult = "NG";
-
-                                if (CH2RTStep == "UP")
-                                {
-                                    plc.CH2UPVDCNG();
-                                    CH3Display($"{CH2RunName}" + I18N.GetLangText(dicLang, "max电压(UP)"), CH2RTVDC.Text, "V", ch2vdcmax.ToString(), ch2vdcmin.ToString(), "NG");
-                                }
-                                else if (CH2RTStep == "DOWN")
-                                {
-                                    plc.CH2DOWNVDCNG();
-                                    CH3Display($"{CH2RunName}" + I18N.GetLangText(dicLang, "max电压(DOWN)"), CH2RTVDC.Text, "V", ch2vdcmax.ToString(), ch2vdcmin.ToString(), "NG");
-                                }
-                                else if (CH2RTStep == "FWD")
-                                {
-                                    plc.CH2FWDVDCNG();
-                                    CH3Display($"{CH2RunName}" + I18N.GetLangText(dicLang, "max电压(FWD)"), CH2RTVDC.Text, "V", ch2vdcmax.ToString(), ch2vdcmin.ToString(), "NG");
-                                }
-                                else if (CH2RTStep == "RWD")
-                                {
-                                    plc.CH2RWDVDCNG();
-                                    CH3Display($"{CH2RunName}" + I18N.GetLangText(dicLang, "max电压(RWD)"), CH2RTVDC.Text, "V", ch2vdcmax.ToString(), ch2vdcmin.ToString(), "NG");
-                                }
-                                if (CH2RTStep == "UP" || CH2RTStep == "DOWN" || CH2RTStep == "FWD" || CH2RTStep == "RWD")
-                                {
-                                    FlowNG(2);
-                                }
-                            }
-                            else
-                            {
-                                //判断最大值
-                                if (CH2ADCListTemp.Max(x => x.Value) > CH2ADCMax)
-                                {
-                                    CH2ADCMax = CH2ADCListTemp.Max(x => x.Value);
-                                    CH2VDCMax = CH2VDCListTemp.Max(x => x.Value);
-                                    if (CH2RTStep == "RWD" && (CH2VDCMax == 0 || CH2VDCMax < 0.5))
-                                    {
-                                        CH2ADCMax = 0;
-                                        CH2VDCMax = 0;
-                                    }
-                                }
-                            }
-                        }
-                    }
-                   *//* else
-                    {
-                        Thread.Sleep(50);
-
-                        CH2ADCresult = "NG";
-                        CH2VDCresult = "NG";
-                        //界面表格
-                        if (CH2ADCListTemp.Where(p => p.Value < 0).Count() > 0)
-                        {
-                            if (CH2RTStep == "UP")
-                            {
-                                plc.CH2UPADCNG();
-                                CH3Display($"{CH2RunName}" + I18N.GetLangText(dicLang, "max电流(UP)"), CH2RTADC.Text, "A", ch2adcmax.ToString(), ch2adcmin.ToString(), "NG");
-                            }
-                            else if (CH2RTStep == "DOWN")
-                            {
-                                plc.CH2DOWNADCNG();
-                                CH3Display($"{CH2RunName}" + I18N.GetLangText(dicLang, "max电流(DOWN)"), CH2RTADC.Text, "A", ch2adcmax.ToString(), ch2adcmin.ToString(), "NG");
-                            }
-                            else if (CH2RTStep == "FWD")
-                            {
-                                plc.CH2FWDADCNG();
-                                CH3Display($"{CH2RunName}" + I18N.GetLangText(dicLang, "max电流(FWD)"), CH2RTADC.Text, "A", ch2adcmax.ToString(), ch2adcmin.ToString(), "NG");
-                            }
-                            else if (CH2RTStep == "RWD")
-                            {
-                                //plc.CH2RWDADCNG();
-                                //CH3Display($"{CH2RunName}" + I18N.GetLangText(dicLang, "max电流(RWD)"), CH2RTADC.Text, "A", ch2adcmax.ToString(), ch2adcmin.ToString(), "NG");
-                            }
-                            if (CH2RTStep == "UP" || CH2RTStep == "DOWN" || CH2RTStep == "FWD" || CH2RTStep == "RWD")
-                            {
-                                FlowNG(2);
-                            }
-                        }
-                        //if (CH2VDC < 0)
-                        if (CH2VDCListTemp.Where(p => p.Value < 0).Count() > 0)
-                        {
-                            if (CH2RTStep == "UP")
-                            {
-                                plc.CH2UPVDCNG();
-                                CH3Display($"{CH2RunName}" + I18N.GetLangText(dicLang, "max电压(UP)"), CH2RTVDC.Text, "V", ch2vdcmax.ToString(), ch2vdcmin.ToString(), "NG");
-                            }
-                            else if (CH2RTStep == "DOWN")
-                            {
-                                plc.CH2DOWNVDCNG();
-                                CH3Display($"{CH2RunName}" + I18N.GetLangText(dicLang, "max电压(DOWN)"), CH2RTVDC.Text, "V", ch2vdcmax.ToString(), ch2vdcmin.ToString(), "NG");
-                            }
-                            else if (CH2RTStep == "FWD")
-                            {
-                                plc.CH2FWDVDCNG();
-                                CH3Display($"{CH2RunName}" + I18N.GetLangText(dicLang, "max电压(FWD)"), CH2RTVDC.Text, "V", ch2vdcmax.ToString(), ch2vdcmin.ToString(), "NG");
-                            }
-                            else if (CH2RTStep == "RWD")
-                            {
-                                //plc.CH2RWDVDCNG();
-                                //CH3Display($"{CH2RunName}" + I18N.GetLangText(dicLang, "max电压(RWD)"), CH2RTVDC.Text, "V", ch2vdcmax.ToString(), ch2vdcmin.ToString(), "NG");
-                            }
-                            if (CH2RTStep == "UP" || CH2RTStep == "DOWN" || CH2RTStep == "FWD" || CH2RTStep == "RWD")
-                            {
-                                FlowNG(2);
-                            }
-                        }
-                    }*//*
-                }
-            }
-            catch (Exception ex)
-            {
-                //CH2ReadElec.Stop();
-                //MessageBox.Show("CH2电流电压：" + ex.Message);
-                wa.InsertWarningData(DateTime.Now.ToString("yyyy-MM-dd HH:mm:ss"), "-", I18N.GetLangText(dicLang, "CH2电流电压") + ":" + ex.Message);
-                Logger.Log(I18N.GetLangText(dicLang, "CH2电流电压") + ":" + ex.Message);
-                Logger.Log(ex.StackTrace);
-            }*/
         }
 
         private bool CH1ReadElecResult()
@@ -7102,7 +6325,7 @@ namespace SLC1_N
                 {
                     CH1ADCMax = CH1ADCListTemp.Max(x => x.Value);
                 }
-               // if (ADCPort1.IsOpen && VDCPort1.IsOpen)
+                // if (ADCPort1.IsOpen && VDCPort1.IsOpen)
                 {
                     if (CH1ADCListTemp?.Count >= 0)
                     {
@@ -7237,7 +6460,7 @@ namespace SLC1_N
                 {
                     CH2ADCMax = CH2ADCListTemp.Max(x => x.Value);
                 }
-           //     if (CH2ADCPort.IsOpen && CH2VDCPort.IsOpen)
+                //     if (CH2ADCPort.IsOpen && CH2VDCPort.IsOpen)
                 {
                     if (CH2ADCListTemp?.Count >= 0)
                     {
@@ -7270,7 +6493,7 @@ namespace SLC1_N
                             }
                             if (CH2RTStep == "UP" || CH2RTStep == "DOWN" || CH2RTStep == "FWD" || CH2RTStep == "RWD")
                             {
-                                FlowNG(2);
+                                                  FlowNG(2);
                                 return false;
                             }
                         }
@@ -7335,7 +6558,7 @@ namespace SLC1_N
         /// <param name="e"></param>
         private void CH1ReaduA_Tick(object sender, EventArgs e)
         {
-           
+
             //计算时间
             ch1uAendtime = System.DateTime.Now.Ticks;
             TimeSpan ts1 = new TimeSpan(ch1uAstarttime);
@@ -7343,7 +6566,7 @@ namespace SLC1_N
             TimeSpan utime = ts2.Subtract(ts1).Duration();
             double uatime = utime.TotalSeconds;
             double CH1uA = Convert.ToDouble(CH1RTADC.Text);
-             CH1uA = CH1uA * 1000000;
+            CH1uA = CH1uA * 1000000;
             CH1uAarray.Add(CH1uA);
             CH1RTElec.Text = CH1uA.ToString();
             log.MES_Logmsg(CH1uA.ToString());
@@ -7351,7 +6574,7 @@ namespace SLC1_N
             {
                 int i, j;
                 i = j = 0;
-                
+
                 CH1ReaduA.Stop();
                 int len = 0;
                 double sum = 0;
@@ -7367,24 +6590,24 @@ namespace SLC1_N
                             len++;
                             sum += CH1uAarray[i];
                         }
-                        else if(CH1uAarray[i]>400)
+                        else if (CH1uAarray[i] > 400)
                         {
                             overlen++;
                             j = i;
-                           // sum = CH1uAarray[i];
+                            // sum = CH1uAarray[i];
                         }
                     }
 
                 }
                 i = CH1uAarray.Count;
-                string showua = "当前静态读取数量" + ":" 
+                string showua = "当前静态读取数量" + ":"
                     + i.ToString()
-                    +"--超越数量："+ overlen.ToString()
-                    +"--获得平均点数"+ len.ToString();
+                    + "--超越数量：" + overlen.ToString()
+                    + "--获得平均点数" + len.ToString();
                 Logger.Log(showua);
                 double CH1uAResult = 0;
-               // if (overlen < 2)
-                    CH1uAResult = (sum / len);
+                // if (overlen < 2)
+                CH1uAResult = (sum / len);
                 //else
                 //    CH1uAResult = CH1uAarray[j];
                 CH1TestResult = new Model.TestResult();
@@ -7450,7 +6673,7 @@ namespace SLC1_N
                 }
                 double CH2uA = Convert.ToDouble(CH2RTADC.Text);
                 CH2uA = CH2uA * 1000000;
-                if (CH2uA<50)
+                if (CH2uA < 50)
                 {
                     CH2RTElec.Text = CH2uA.ToString();
 
@@ -7459,7 +6682,7 @@ namespace SLC1_N
                 {
                     CH2RTElec.Text = CH2uA.ToString();
                 }
-               
+
                 //Debug.WriteLine("CH2uAarray:" + string.Join(",", CH2uAarray));
                 CH2TestResult.Elec = CH2uA;
                 //if (CH2uA > elec.CH2ElecMax || CH2uA < elec.CH2ElecMin || plc.CH2uA == 0)
@@ -7765,7 +6988,7 @@ namespace SLC1_N
         /// <summary>
         /// 读取流量相关的上下限参数、电压电流参数
         /// </summary>Elec
-        private  void ReadFlow()
+        private void ReadFlow()
         {
             ReadConfig con = new ReadConfig();
             Flow = con.ReadFlow();
@@ -7804,13 +7027,13 @@ namespace SLC1_N
 
 
                 if (ord.CH1HighLevel)
-                    {
-                        Form1.f1.plc.WriteCH1HLevelTure();
-                    }
-                    else
-                    {
-                        Form1.f1.plc.WriteCH1HLevelFalse();
-                    }
+                {
+                    Form1.f1.plc.WriteCH1HLevelTure();
+                }
+                else
+                {
+                    Form1.f1.plc.WriteCH1HLevelFalse();
+                }
 
                 if (ord.CH2HighLevel)
                 {
@@ -7822,16 +7045,16 @@ namespace SLC1_N
                 }
 
                 if (ord.CH1LIN)
-                    {
-                       
-                        Form1.f1.plc.WriteCH1LINTure();
-                    }
-                    else
-                    {
-                      
-                        Form1.f1.plc.WriteCH1LINFlase();
-                    }
-                
+                {
+
+                    Form1.f1.plc.WriteCH1LINTure();
+                }
+                else
+                {
+
+                    Form1.f1.plc.WriteCH1LINFlase();
+                }
+
                 if (ord.CH2LIN)
                 {
 
@@ -8383,7 +7606,7 @@ namespace SLC1_N
                 //CH1lin.LinFWD();
                 if (string.IsNullOrEmpty(CH1RunName))
                 {
-                    
+
                     CH1lin.LINFWD(linconfig.PowerSignalName, linconfig.PowerSignalValue, linconfig.FWDSignalName, linconfig.Schedule_tables);
                     log.MES_Logmsg("CH1:liN发送FWDT同充指令");
                 }
@@ -8509,7 +7732,7 @@ namespace SLC1_N
                     CH2lin.LINRWD(linconfig.CFPowerSignalName, linconfig.CFPowerSignalValue, linconfig.CFRWDSignalName, linconfig.CFSchedule_tables);
                 }
             }
-              int i = 0;
+            int i = 0;
             if (Convert.ToDouble(CH2RTADC.Text) == 0)
             {
                 while (i++ < 10)
@@ -8541,7 +7764,7 @@ namespace SLC1_N
                 ReadConfig con = new ReadConfig();
                 ch_params = con.ReadParameters(CH, step);
 
-                
+
                 double full = Convert.ToDouble(ch_params.FullTime) * 10;
                 double balan = Convert.ToDouble(ch_params.BalanTime) * 10;
                 double testtime = Convert.ToDouble(ch_params.TestTime1) * 10;
@@ -8652,7 +7875,7 @@ namespace SLC1_N
                         ch2client.btnSendData(ch2sendstr);
                         ch2stage = 10;
                         chXstartflag[2] = 1;
-                        CH2IsRun.Stop(); 
+                        CH2IsRun.Stop();
                         MachineStart.Interval = 400;
                         MachineStart.Start();
                         CH2ParamIndex.Text = i.ToString();
@@ -8746,15 +7969,15 @@ namespace SLC1_N
                     //CH1FlowPort.Write(senddata, 0, senddata.Length);
                     // registerBuffer = masterCH1FlowPort.ReadHoldingRegisters(byte.Parse("01"), ushort.Parse("04"), ushort.Parse("02"));
                     busRtuClientCH1.Station = 2;
-                      result = busRtuClientCH1.ReadFloat("02");
+                    result = busRtuClientCH1.ReadFloat("02");
                     break;
 
                 case 2:
                     //CH2FlowPort.Write(senddata, 0, senddata.Length);
                     //registerBuffer = masterCH2FlowPort.ReadHoldingRegisters(byte.Parse("01"), ushort.Parse("04"), ushort.Parse("02"));
-                  //  result = busRtuClientCH2.ReadFloat("02");
+                    //  result = busRtuClientCH2.ReadFloat("02");
 
-                    busRtuClientCH1.Station =1;
+                    busRtuClientCH1.Station = 1;
                     result = busRtuClientCH1.ReadFloat("02");
                     break;
 
@@ -8762,7 +7985,7 @@ namespace SLC1_N
                     //CH3FlowPort.Write(senddata, 0, senddata.Length);
                     // registerBuffer = masterCH3FlowPort.ReadHoldingRegisters(byte.Parse("01"), ushort.Parse("04"), ushort.Parse("02"));
                     //result = busRtuClientCH3.ReadFloat("02");
-                    busRtuClientCH1.Station =3;
+                    busRtuClientCH1.Station = 3;
                     result = busRtuClientCH1.ReadFloat("02");
                     break;
 
@@ -8786,271 +8009,116 @@ namespace SLC1_N
         /// <param name="e"></param>
         private void CH1FlowPort_DataReceived(object sender, System.IO.Ports.SerialDataReceivedEventArgs e)
         {
-            /* try
-             {
-                 System.Threading.Thread.Sleep(50);
-                 int len = CH1FlowPort.BytesToRead;//获取可以读取的字节数
-                 if (len > 1)
-                 {
-                     byte[] buff = new byte[len];//创建缓存数据数组
-                     CH1FlowPort.Read(buff, 0, len);//把数据读取到buff数组
-                     string str_flow = Encoding.Default.GetString(buff);
-                     //textBox3.Text = str_flow + "\r\n";
-                     log.CH1FlowPort_Logmsg("CH1Receive:  " + str_flow);
-                     string[] flowdata = str_flow.Split(' ');
-                     if (flowdata.Length == 9)
-                     {
-                         double flow = Math.Round(Convert.ToDouble(flowdata[3]), 2);
-                         if (CH1RTStep == "DOWN")
-                         {
-                             Invoke((new System.Action(() =>
-                             {
-                                 CH1_1flow.Text = flow.ToString();
-                                 if (flow < Flow.CH1_1FlowMin || flow > Flow.CH1_1FlowMax)
-                                 {
-                                     CH1Display("max流量(DOWN-UP)", flow.ToString(), "plm", Flow.CH1_1FlowMax.ToString(), Flow.CH1_1FlowMin.ToString(), "NG");
-                                     plc.CH1DOWNFLOWNG();
-                                     FlowNG(1);
-                                 }
-                             })));
-                         }
-                         if (flow > CH1Q)
-                         {
-                             CH1Q = flow;
-                         }
-                     }
 
-                     CH1FlowPort.DiscardInBuffer();
-                 }
-                 else
-                 {
-                     return;
-                 }
-             }
-             catch (Exception ex)
-             {
-                 MessageBox.Show("CH1流量计：" + ex.Message);
-                 wa.InsertWarningData(DateTime.Now.ToString("yyyy-MM-dd HH:mm:ss"), "-", "CH1流量计：" + ex.Message);
-             }*/
         }
 
         private void CH2FlowPort_DataReceived(object sender, System.IO.Ports.SerialDataReceivedEventArgs e)
         {
-            /*  try
-              {
-                  System.Threading.Thread.Sleep(50);
-                  int len = CH2FlowPort.BytesToRead;//获取可以读取的字节数
-                  if (len > 1)
-                  {
-                      byte[] buff = new byte[len];//创建缓存数据数组
-                      CH2FlowPort.Read(buff, 0, len);//把数据读取到buff数组
-                      string str_flow = Encoding.Default.GetString(buff);
-                      log.CH2FlowPort_Logmsg("CH2Receive:  " + str_flow);
-                      string[] flowdata = str_flow.Split(' ');
-                      if (flowdata.Length == 9)
-                      {
-                          double flow = Math.Round(Convert.ToDouble(flowdata[3]), 2);
-                          if (CH1RTStep == "UP")
-                          {
-                              Invoke((new System.Action(() =>
-                              {
-                                  CH1_2flow.Text = flow.ToString();
-                                  if (flow < Flow.CH1_2FlowMin || flow > Flow.CH1_2FlowMax)
-                                  {
-                                      CH1Display("max流量(UP-DOWN)", flow.ToString(), "plm", Flow.CH1_2FlowMax.ToString(), Flow.CH1_2FlowMin.ToString(), "NG");
-                                      plc.CH1UPFLOWNG();
-                                      FlowNG(1);
-                                  }
-                              })));
-                          }
-                          if (flow > CH2Q)
-                          {
-                              CH2Q = flow;
-                          }
-                      }
 
-                      CH2FlowPort.DiscardInBuffer();
-                  }
-                  else
-                  {
-                      return;
-                  }
-              }
-              catch (Exception ex)
-              {
-                  MessageBox.Show("CH2流量计：" + ex.Message);
-                  wa.InsertWarningData(DateTime.Now.ToString("yyyy-MM-dd HH:mm:ss"), "-", "CH2流量计：" + ex.Message);
-              }*/
         }
 
         private void CH3FlowPort_DataReceived(object sender, System.IO.Ports.SerialDataReceivedEventArgs e)
         {
-            /*  try
-              {
-                  System.Threading.Thread.Sleep(50);
-                  int len = CH3FlowPort.BytesToRead;//获取可以读取的字节数
-                  if (len > 1)
-                  {
-                      byte[] buff = new byte[len];//创建缓存数据数组
-                      CH3FlowPort.Read(buff, 0, len);//把数据读取到buff数组
-                      string str_flow = Encoding.Default.GetString(buff);
-                      //textBox3.Text = str_flow + "\r\n";
-                      log.CH3FlowPort_Logmsg("CH3Receive:  " + str_flow);
-                      string[] flowdata = str_flow.Split(' ');
-                      if (flowdata.Length == 9)
-                      {
-                          double flow = Math.Round(Convert.ToDouble(flowdata[3]), 2);
 
-                          if (CH2RTStep == "DOWN")
-                          {
-                              Invoke((new System.Action(() =>
-                              {
-                                  CH2_1flow.Text = flow.ToString();
-                                  if (flow < Flow.CH2_1FlowMin || flow > Flow.CH2_1FlowMax)
-                                  {
-                                      CH3Display("max流量(DOWN-UP)", flow.ToString(), "plm", Flow.CH2_1FlowMax.ToString(), Flow.CH2_1FlowMin.ToString(), "NG");
-                                      plc.CH2DOWNFLOWNG();
-                                      FlowNG(2);
-                                  }
-                              })));
-                          }
-                          if (flow > CH3Q)
-                          {
-                              CH3Q = flow;
-                          }
-                      }
-
-                      CH3FlowPort.DiscardInBuffer();
-                  }
-                  else
-                  {
-                      return;
-                  }
-              }
-              catch (Exception ex)
-              {
-                  MessageBox.Show("CH3流量计：" + ex.Message);
-                  wa.InsertWarningData(DateTime.Now.ToString("yyyy-MM-dd HH:mm:ss"), "-", "CH3流量计：" + ex.Message);
-              }*/
         }
 
         private void CH4FlowPort_DataReceived(object sender, System.IO.Ports.SerialDataReceivedEventArgs e)
         {
-            /*  try
-              {
-                  System.Threading.Thread.Sleep(50);
-                  int len = CH4FlowPort.BytesToRead;//获取可以读取的字节数
-                  if (len > 1)
-                  {
-                      byte[] buff = new byte[len];//创建缓存数据数组
-                      CH4FlowPort.Read(buff, 0, len);//把数据读取到buff数组
-                      string str_flow = Encoding.Default.GetString(buff);
-                      log.CH4FlowPort_Logmsg("CH4Receive:  " + str_flow);
-                      string[] flowdata = str_flow.Split(' ');
-                      if (flowdata.Length == 9)
-                      {
-                          double flow = Math.Round(Convert.ToDouble(flowdata[3]), 2);
-                          if (CH2RTStep == "UP")
-                          {
-                              Invoke((new System.Action(() =>
-                              {
-                                  CH2_2flow.Text = flow.ToString();
-                                  if (flow < Flow.CH2_2FlowMin || flow > Flow.CH2_2FlowMax)
-                                  {
-                                      CH3Display("max流量(UP-DOWN)", flow.ToString(), "plm", Flow.CH2_2FlowMax.ToString(), Flow.CH2_2FlowMin.ToString(), "NG");
-                                      plc.CH2UPFLOWNG();
-                                      FlowNG(2);
-                                  }
-                              })));
-                          }
-                          if (flow > CH4Q)
-                          {
-                              CH4Q = flow;
-                          }
-                      }
 
-                      CH4FlowPort.DiscardInBuffer();
-                  }
-                  else
-                  {
-                      return;
-                  }
-              }
-              catch (Exception ex)
-              {
-                  MessageBox.Show("CH4流量计：" + ex.Message);
-                  wa.InsertWarningData(DateTime.Now.ToString("yyyy-MM-dd HH:mm:ss"), "-", "CH4流量计：" + ex.Message);
-              }*/
         }
 
         private void CH1ReadFlowT_Tick(object sender, EventArgs e)
         {
-            if(CH1RTStep== "UP" || CH1RTStep == "DOWN"|| CH1RTStep == "FWD"|| CH1RTStep == "RWD")
-            try
-            {
-                ////泄气会有误差，所以把电流电压读取放后面一点，在lin通讯后
-                //JudgeCH1ADC = true;
-                var result = FlowSend(1);
-                double flow = 0.0D;
-                if (result.IsSuccess) flow = Math.Round(Convert.ToDouble(result.Content), 2);
-
-                //计算时间
-                ch1fullend = System.DateTime.Now.Ticks;
-                TimeSpan ts1 = new TimeSpan(ch1fullstart);
-                TimeSpan ts2 = new TimeSpan(ch1fullend);
-                TimeSpan ftime = ts2.Subtract(ts1).Duration();
-                double fulltime = ftime.TotalSeconds;
-                if (flow > CH1Q)
+            if (CH1RTStep == "UP" || CH1RTStep == "DOWN" || CH1RTStep == "FWD" || CH1RTStep == "RWD")
+                try
                 {
-                    CH1Q = flow;
+                    ////泄气会有误差，所以把电流电压读取放后面一点，在lin通讯后
+                    //JudgeCH1ADC = true;
+
+                    var result = FlowSend(1);
+                    double flow = 0.0D;
+                    if (result.IsSuccess) flow = Math.Round(Convert.ToDouble(result.Content), 2);
+                    //计算时间
+                    ch1fullend = System.DateTime.Now.Ticks;
+                    TimeSpan ts1 = new TimeSpan(ch1fullstart);
+                    TimeSpan ts2 = new TimeSpan(ch1fullend);
+                    TimeSpan ftime = ts2.Subtract(ts1).Duration();
+                    double fulltime = ftime.TotalSeconds;
+                    if (flow > CH1Q)
+                    {
+                        CH1Q = flow;
+                        CH1_1flow.Text = CH1Q.ToString();
                         //7.26
-                    down_upFlow = flow;
-    }
-                //如果此时步骤是下充，则由下充流量定时器控制停止
-                if ((fulltime > Flow.CH1OverTime) && CH1RTStep == "DOWN")
-                {
-                    Invoke((new System.Action(() =>
+                        down_upFlow = flow;
+                    }
+                    //如果此时步骤是下充，则由下充流量定时器控制停止
+                    if ((fulltime > Flow.CH1OverTime) && CH1RTStep == "DOWN")
                     {
-                        CH1_1flow.Text = flow.ToString();
-
-                        if (flow < Flow.CH1_1FlowMin || flow > Flow.CH1_1FlowMax)
+                        CH1ReadFlowT.Stop();
+                        //将作为保持连接的定时器给停止
+                        CH1IsRun.Stop();
+                        plc.CH1valveclose();
+                        plc.CH2valveclose();
+                        CH1_1flow.Text = CH1Q.ToString();
+                        //流量测试完之后，需要读取压力
+                        CH1ReadPress.Interval = 1000;
+                        CH1ReadPress.Start();
+                        ch1pressstart = System.DateTime.Now.Ticks;
+                        Invoke((new System.Action(() =>
                         {
-                            CH1Display($"{CH1RunName}" + I18N.GetLangText(dicLang, "max流量(DOWN-UP)"), flow.ToString(), "plm", Flow.CH1_1FlowMax.ToString(), Flow.CH1_1FlowMin.ToString(), "NG");
-                            plc.CH1DOWNFLOWNG();
-                            FlowNG(1);
-                        }
-                    })));
-                }
-                if ((fulltime > Flow.CH1OverTime) && (CH1RTStep != "DOWN"))
-                {
-                    CH1ReadFlowT.Stop();
-                    //将作为保持连接的定时器给停止
-                    CH1IsRun.Stop();
-                    plc.CH1valveclose();
-                    plc.CH2valveclose();
-                    CH1_1flow.Text = CH1Q.ToString();
-                    //流量测试完之后，需要读取压力
-                    CH1ReadPress.Interval = 1000;
-                    CH1ReadPress.Start();
-                    ch1pressstart = System.DateTime.Now.Ticks;
-                    if (CH1RTStep == "UP")
+                            CH1_1flow.Text = flow.ToString();
+
+                            if (flow < Flow.CH1_1FlowMin || flow > Flow.CH1_1FlowMax)
+                            {
+                                CH1Display($"{CH1RunName}" + I18N.GetLangText(dicLang, "max流量(DOWN-UP)"), flow.ToString(), "plm", Flow.CH1_1FlowMax.ToString(), Flow.CH1_1FlowMin.ToString(), "NG");
+                                plc.CH1DOWNFLOWNG();
+                                FlowNG(1);
+                            }
+                        })));
+                    }
+                    if ((fulltime > Flow.CH1OverTime) && ((CH1RTStep == "UP")|| (CH1RTStep == "RWD")))
                     {
-                        CH2IsRun.Stop();
-                        ch1_1step = 10;
-                        plc.CH1UPFLOWOK();
-                        //CH2ReadFlowT.Stop();
-                        CH2ReadPress.Interval = 1000;
-                        CH2ReadPress.Start();
+                        CH1ReadFlowT.Stop();
+                        //将作为保持连接的定时器给停止
+                        CH1IsRun.Stop();
+                        plc.CH1valveclose();
+                        plc.CH2valveclose();
+                        CH1_1flow.Text = CH1Q.ToString();
+                        //流量测试完之后，需要读取压力
+                        CH1ReadPress.Interval = 1000;
+                        CH1ReadPress.Start();
+                        ch1pressstart = System.DateTime.Now.Ticks;
+                    }
+                    if ((fulltime > elec.CH1FWDFlowTime) && (CH1RTStep == "FWD"))
+                    {
+                        CH1ReadFlowT.Stop();
+                        //将作为保持连接的定时器给停止
+                        CH1IsRun.Stop();
+                        plc.CH1valveclose();
+                        plc.CH2valveclose();
+                        
+                        //流量测试完之后，需要读取压力
+                        CH1ReadPress.Interval = 1000;
+                        CH1ReadPress.Start();
+                        ch1pressstart = System.DateTime.Now.Ticks;
+
+                        Invoke((new System.Action(() =>
+                        {
+                            CH1_1flow.Text = flow.ToString();
+
+                                              })));
+
+
+       
                     }
                 }
-            }
-            catch (Exception ex)
-            {
-                wa.InsertWarningData(DateTime.Now.ToString("yyyy-MM-dd HH:mm:ss"), "-", I18N.GetLangText(dicLang, "CH1流量计时") + ":" + ex.Message);
-                //CH1ReadFlowT.Stop();
-                //MessageBox.Show("CH1流量计时：" + ex.Message);
-                Logger.Log(I18N.GetLangText(dicLang, "CH1流量计时") + ":" + ex.Message);
-            }
+                catch (Exception ex)
+                {
+                    wa.InsertWarningData(DateTime.Now.ToString("yyyy-MM-dd HH:mm:ss"), "-", I18N.GetLangText(dicLang, "CH1流量计时") + ":" + ex.Message);
+                    //CH1ReadFlowT.Stop();
+                    //MessageBox.Show("CH1流量计时：" + ex.Message);
+                    Logger.Log(I18N.GetLangText(dicLang, "CH1流量计时") + ":" + ex.Message);
+                }
             //break;
             //}
             //CH1ReadFlowT.Stop();
@@ -9060,75 +8128,86 @@ namespace SLC1_N
         {
             if (CH1RTStep == "UP" || CH1RTStep == "DOWN" || CH1RTStep == "FWD" || CH1RTStep == "RWD")
                 try
-            {
-                ////泄气会有误差，所以把电流电压读取放后面一点，在lin通讯后
-                //JudgeCH1ADC = true;
-                //CH2flowtest = true;
-                var result = FlowSend(2);
-                double flow = 0.0D;
-                if (result.IsSuccess) flow = Math.Round(Convert.ToDouble(result.Content / 1000.0), 2);
+                {
+                    ////泄气会有误差，所以把电流电压读取放后面一点，在lin通讯后
+                    //JudgeCH1ADC = true;
+                    //CH2flowtest = true;
 
-                //计算时间
-                ch2fullend = System.DateTime.Now.Ticks;
-                TimeSpan ts1 = new TimeSpan(ch2fullstart);
-                TimeSpan ts2 = new TimeSpan(ch2fullend);
-                TimeSpan ftime = ts2.Subtract(ts1).Duration();
-                double fulltime = ftime.TotalSeconds;
-                if (flow > CH2Q)
-                {
-                    CH2Q = flow;
-                }
-                if ((fulltime > Flow.CH2OverTime) && (CH1RTStep != "UP"))
-                {
-                    CH2ReadFlowT.Stop();
-                    CH2IsRun.Stop();
-                    plc.CH2valveclose();
-                    plc.CH1valveclose();
-                    CH1_2flow.Text = CH2Q.ToString();
-                    //流量测试完之后，需要读取压力
-                    CH2ReadPress.Interval = 1000;
-                    CH2ReadPress.Start();
-                    ch2pressstart = System.DateTime.Now.Ticks;
-                    if (CH1RTStep == "DOWN")
+                    var result = FlowSend(2);
+                    double flow = 0.0D;
+                    if (result.IsSuccess) flow = Math.Round(Convert.ToDouble(result.Content / 1000.0), 2);
+                    //计算时间
+                    ch2fullend = System.DateTime.Now.Ticks;
+                    TimeSpan ts1 = new TimeSpan(ch2fullstart);
+                    TimeSpan ts2 = new TimeSpan(ch2fullend);
+                    TimeSpan ftime = ts2.Subtract(ts1).Duration();
+                    double fulltime = ftime.TotalSeconds;
+                    if (flow > CH2Q)
                     {
-                      //  CH1IsRun.Stop();
-                        ch1_2step = 10;
-                        plc.CH1DOWNFLOWOK();
-                        //CH1ReadFlowT.Stop();
-                        CH1ReadPress.Interval = 1000;
-                        CH1ReadPress.Start();
+                        CH2Q = flow;
+                        CH1_2flow.Text = CH2Q.ToString();
+                    }
+                    if ((fulltime > Flow.CH2OverTime) && (CH1RTStep == "DOWN"|| CH1RTStep == "RWD"))
+                    {
+                        CH2ReadFlowT.Stop();
+                        CH2IsRun.Stop();
+                        plc.CH2valveclose();
+                        plc.CH1valveclose();
+                        CH1_2flow.Text = CH2Q.ToString();
+                        //流量测试完之后，需要读取压力
+                        CH2ReadPress.Interval = 1000;
+                        CH2ReadPress.Start();
+                        ch2pressstart = System.DateTime.Now.Ticks;
+                    }
+                    if ((fulltime > Flow.CH2OverTime) && CH1RTStep == "UP")
+                    {
+                        CH2ReadFlowT.Stop();
+                        CH2IsRun.Stop();
+                        plc.CH2valveclose();
+                        plc.CH1valveclose();
+                        CH1_2flow.Text = CH2Q.ToString();
+                        //流量测试完之后，需要读取压力
+                        CH2ReadPress.Interval = 1000;
+                        CH2ReadPress.Start();
+                        ch2pressstart = System.DateTime.Now.Ticks;
+                        Invoke((new System.Action(() =>
+                        {
+                           
+                            up_downFlow = flow;
+                            if (flow < Flow.CH1_2FlowMin || flow > Flow.CH1_2FlowMax)
+                            {
+                                CH1Display($"{CH1RunName}" + I18N.GetLangText(dicLang, "max流量(UP-DOWN)"), flow.ToString(), "lpm", Flow.CH1_2FlowMax.ToString(), Flow.CH1_2FlowMin.ToString(), "NG");
+                                plc.CH1UPFLOWNG();
+                                FlowNG(1);
+                            }
+                        })));
+                    }
+                    if ((fulltime > elec.CH1FWDFlowTime) && CH1RTStep == "FWD")
+                    {
+                        CH2ReadFlowT.Stop();
+                        //CH2IsRun.Stop();
+                        plc.CH2valveclose();
+                        plc.CH1valveclose();
+                        CH1_2flow.Text = CH2Q.ToString();
+                        //流量测试完之后，需要读取压力
+                        CH2ReadPress.Interval = 1000;
+                        CH2ReadPress.Start();
+                        ch2pressstart = System.DateTime.Now.Ticks;
                     }
                 }
-                if ((fulltime > Flow.CH2OverTime) && CH1RTStep == "UP")
+                catch (Exception ex)
                 {
-                    Invoke((new System.Action(() =>
-                    {
-                        CH1_2flow.Text = flow.ToString();
-                        up_downFlow= flow;
-                        if (flow < Flow.CH1_2FlowMin || flow > Flow.CH1_2FlowMax)
-                        {
-                            CH1Display($"{CH1RunName}" + I18N.GetLangText(dicLang, "max流量(UP-DOWN)"), flow.ToString(), "lpm", Flow.CH1_2FlowMax.ToString(), Flow.CH1_2FlowMin.ToString(), "NG");
-                            plc.CH1UPFLOWNG();
-                            FlowNG(1);
-                        }
-                    })));
+                    // CH2ReadFlowT.Stop();
+                    //MessageBox.Show("CH2流量计时：" + ex.Message);
+                    Logger.Log(I18N.GetLangText(dicLang, "CH2流量计时") + ":" + ex.Message);
+                    wa.InsertWarningData(DateTime.Now.ToString("yyyy-MM-dd HH:mm:ss"), "-", I18N.GetLangText(dicLang, "CH2流量计时") + ":" + ex.Message);
                 }
-            }
-            catch (Exception ex)
-            {
-                // CH2ReadFlowT.Stop();
-                //MessageBox.Show("CH2流量计时：" + ex.Message);
-                Logger.Log(I18N.GetLangText(dicLang, "CH2流量计时") + ":" + ex.Message);
-                wa.InsertWarningData(DateTime.Now.ToString("yyyy-MM-dd HH:mm:ss"), "-", I18N.GetLangText(dicLang, "CH2流量计时") + ":" + ex.Message);
-            }
         }
 
         //7.26 定义流量变量
         public static double up_downFlow;
         public static double down_UPPre;
         public static double down_upFlow;
-
-
         public static double up_downFlow2;
         public static double down_UPPre2;
         public static double down_upFlow2;
@@ -9137,7 +8216,7 @@ namespace SLC1_N
             try
             {
                 ////泄气会有误差，所以把电流电压读取放后面一点，在lin通讯后
-                //JudgeCH1ADC = true;
+
                 var result = FlowSend(3);
                 double flow = 0.0D;
                 if (result.IsSuccess) flow = Math.Round(Convert.ToDouble(result.Content / 1000.0), 2);
@@ -9152,21 +8231,24 @@ namespace SLC1_N
                 {
                     CH3Q = flow;
                 }
-                if ((fulltime > Flow.CH3OverTime) && (CH2RTStep == "DOWN"))
+                double CH3flowtime;
+                switch (CH2RTStep)
                 {
-                    Invoke((new System.Action(() =>
-                    {
-                        CH2_1flow.Text = flow.ToString();
-                        down_upFlow2 = flow;
-                        if (flow < Flow.CH2_1FlowMin || flow > Flow.CH2_1FlowMax)
-                        {
-                            CH3Display($"{CH2RunName}" + I18N.GetLangText(dicLang, "max流量(DOWN-UP)"), flow.ToString(), "lpm", Flow.CH2_1FlowMax.ToString(), Flow.CH2_1FlowMin.ToString(), "NG");
-                            plc.CH2DOWNFLOWNG();
-                            FlowNG(2);
-                        }
-                    })));
+                    case "DOWN":
+                        CH3flowtime = Flow.CH3OverTime;
+                        break;
+                    case "UP":
+                        CH3flowtime = Flow.CH3OverTime;
+                        break;
+                    case "FWD":
+                        CH3flowtime = elec.CH2FWDFlowTime;
+                        break;
+                    case "RWD":
+                        CH3flowtime = 0;
+                        break;
+                    default: CH3flowtime = 0; break;
                 }
-                if ((fulltime > Flow.CH3OverTime) && (CH2RTStep != "DOWN"))
+                if (fulltime> CH3flowtime) 
                 {
                     CH3ReadFlowT.Stop();
                     //将作为保持连接的定时器给停止
@@ -9178,16 +8260,10 @@ namespace SLC1_N
                     CH3ReadPress.Interval = 1000;
                     CH3ReadPress.Start();
                     ch3pressstart = System.DateTime.Now.Ticks;
-                    if (CH2RTStep == "UP")
-                    {
-                        CH4IsRun.Stop();
-                        ch2_2step = 10;
-                        plc.CH2UPFLOWOK();
-                        CH4ReadFlowT.Stop();
-                        CH4ReadPress.Interval = 1000;
-                        CH4ReadPress.Start();
-                    }
+                    CH2_1flow.Text = flow.ToString();
+                    down_upFlow2 = flow;
                 }
+               
             }
             catch (Exception ex)
             {
@@ -9205,10 +8281,10 @@ namespace SLC1_N
                 ////泄气会有误差，所以把电流电压读取放后面一点，在lin通讯后
                 //JudgeCH1ADC = true;
                 //CH2flowtest = true;
+
                 var result = FlowSend(4);
                 double flow = 0.0D;
                 if (result.IsSuccess) flow = Math.Round(Convert.ToDouble(result.Content), 2);
-
                 //计算时间
                 ch4fullend = System.DateTime.Now.Ticks;
                 TimeSpan ts1 = new TimeSpan(ch4fullstart);
@@ -9219,20 +8295,24 @@ namespace SLC1_N
                 {
                     CH4Q = flow;
                 }
-                if ((fulltime > Flow.CH4OverTime) && CH2RTStep == "UP")
+                double CH4flowtime;
+                switch (CH2RTStep)
                 {
-                    Invoke((new System.Action(() =>
-                    {
-                        CH2_2flow.Text = flow.ToString();
-                        if (flow < Flow.CH2_2FlowMin || flow > Flow.CH2_2FlowMax)
-                        {
-                            CH3Display($"{CH2RunName}" + I18N.GetLangText(dicLang, "max流量(UP-DOWN)"), flow.ToString(), "lpm", Flow.CH2_2FlowMax.ToString(), Flow.CH2_2FlowMin.ToString(), "NG");
-                            plc.CH2UPFLOWNG();
-                            FlowNG(2);
-                        }
-                    })));
+                    case "DOWN":
+                        CH4flowtime = Flow.CH3OverTime;
+                        break;
+                    case "UP":
+                        CH4flowtime = Flow.CH3OverTime;
+                        break;
+                    case "FWD":
+                        CH4flowtime = elec.CH2FWDFlowTime;
+                        break;
+                    case "RWD":
+                        CH4flowtime = 0;
+                        break;
+                    default: CH4flowtime = 0; break;
                 }
-                if ((fulltime > Flow.CH4OverTime) && (CH2RTStep != "UP"))
+                if (fulltime > CH4flowtime)
                 {
                     CH4ReadFlowT.Stop();
                     CH4IsRun.Stop();
@@ -9243,15 +8323,6 @@ namespace SLC1_N
                     CH4ReadPress.Interval = 1000;
                     CH4ReadPress.Start();
                     ch4pressstart = System.DateTime.Now.Ticks;
-                    if (CH2RTStep == "DOWN")
-                    {
-                        CH3IsRun.Stop();
-                        ch2_1step = 10;
-                        plc.CH2DOWNFLOWOK();
-                        CH3ReadFlowT.Stop();
-                        CH3ReadPress.Interval = 1000;
-                        CH3ReadPress.Start();
-                    }
                 }
             }
             catch (Exception ex)
@@ -9276,382 +8347,377 @@ namespace SLC1_N
             //ERIC
             if (CH1RTStep == "UP" || CH1RTStep == "DOWN" || CH1RTStep == "FWD" || CH1RTStep == "RWD")
                 try
-            {
-                //泄气会有误差，所以把电流电压读取放后面一点，在lin通讯后
-                JudgeCH1ADC = true;
-                CH1IsRun.Stop();
-                CH1ReadPress.Interval = 200;
-                ch1client.btnSendData("01 03 04 03 00 17 ");
-                //leftclient.btnSendData("01 03 04 18 00 02 ");
-                ch1stage = 7;
-                //计算时间
-                ch1pressend = System.DateTime.Now.Ticks;
-                TimeSpan ts1 = new TimeSpan(ch1pressstart);
-                TimeSpan ts2 = new TimeSpan(ch1pressend);
-                TimeSpan ptime = ts2.Subtract(ts1).Duration();
-                double presstime = ptime.TotalSeconds;
-                double pressovertime;
-                if (CH1RTStep == "RWD")
                 {
-                    pressovertime = Flow.CH1RWDOverTime;
-                    //plc.CH1RWDStart();
-                }
-                else
-                {
-                    pressovertime = Flow.CH1Press_OverTime;
-                }
-                if (presstime > pressovertime)
-                {
-                    CH1ReadPress.Stop();
-                    CH1_1FullPress.Text = CH1PressMax.ToString();
-                    CH1flowtest = false;
-                    //CH1IsRun.Interval = 500;
-                    //CH1IsRun.Start();
-                    //ch1_1step = 5;//5-27
-                    CHpreflag++;
-                    if (CHpreflag >= 2)
-                    //  if (!CH2flowtest)
+                    //泄气会有误差，所以把电流电压读取放后面一点，在lin通讯后
+                    JudgeCH1ADC = true;
+                    CH1IsRun.Stop();
+                    CH1ReadPress.Interval = 200;
+                    ch1client.btnSendData("01 03 04 03 00 17 ");
+                    //leftclient.btnSendData("01 03 04 18 00 02 ");
+                    ch1stage = 7;
+                    //计算时间
+                    ch1pressend = System.DateTime.Now.Ticks;
+                    TimeSpan ts1 = new TimeSpan(ch1pressstart);
+                    TimeSpan ts2 = new TimeSpan(ch1pressend);
+                    TimeSpan ptime = ts2.Subtract(ts1).Duration();
+                    double presstime = ptime.TotalSeconds;
+                    double pressovertime;
+                    if (CH1RTStep == "RWD")
                     {
-                        //plc.CH1PowerClose();
-                        CH1ReadPress.Stop();
-                        //两台仪器都没有在测试，则停止lin通讯
-                        CH1LinUP.Stop();
-                        CH1ReadFlowT.Stop();
-                        plc.CH1PLCValveBreak();
-
-                        //流量测试完之后，需要把测试仪复位，避免后续步骤启动失败
-                        {
-                            ch1client.btnSendData("01 05 00 01 FF 00");
-                            ch2client.btnSendData("02 05 00 01 FF 00");
-                            Thread.Sleep(50);
-                            ch1client.btnSendData("01 05 00 01 FF 00");
-                            ch2client.btnSendData("02 05 00 01 FF 00");
-                        }
-
-                        ch1stage = 10;
-                        CHXProBarFlag[1] = 0;
-                        CH1IsRun.Interval = 500;
-                        CH1IsRun.Start();
-                        ch1_1step = 1;
-                        ch1write = 1;
-                        ch2stage = 10;
-                        CHXProBarFlag[2] = 0;
-                        CH2IsRun.Interval = 500;
-                        CH2IsRun.Start();
-                        ch1_2step = 1;
-                        ch2write = 1;
-
-                        if (plc.CH1LIN)
-                        {
-                            plc.CH1LinFinish();
-                        }
-
-                        if (!CH1ReadElecResult())
-                        {
-                            return;
-                        }
-                        CH1VDCresult = "OK";
-                        CH1ADCresult = "OK";
-
-                        if (CH1RTStep == "UP")
-                        {
-                            plc.CH1UPPreOK();
-                            plc.CH1UPADCOK();
-                            plc.CH1UPVDCOK();
-                            plc.CH1uAOK();//增加一个BUG
-                            CH1_2FullPress.Text = CH2PressMax.ToString();
-                            CH1TestResult.UP_ADCMAX = CH1ADCMax;
-                            CH1TestResult.UP_VDCMAX = CH1VDCMax;
-                            CH1TestResult.UP_Flow = CH1Q;
-                            CH1TestResult.UP_Pre = CH1PressMax;
-                            CH1Display($"{CH1RunName}" + I18N.GetLangText(dicLang, "输出压力(UP)"), CH1PressMax.ToString(), PressureUnit.Text, "-", "-", "OK");
-                            CH1Display($"{CH1RunName}" + I18N.GetLangText(dicLang, "输出压力(UP-DOWN)"), CH2PressMax.ToString(), CH2PressureUnit.Text, Flow.CH1_2PreMax.ToString(), Flow.CH1_2PreMin.ToString(), "OK");
-                            CH1Display($"{CH1RunName}" + I18N.GetLangText(dicLang, "max电流(UP)"), CH1ADCMax.ToString(), "A", elec.CH1UPADCMax.ToString(), elec.CH1UPADCMin.ToString(), "OK");
-                            CH1Display($"{CH1RunName}" + I18N.GetLangText(dicLang, "max电压(UP)"), CH1VDCMax.ToString(), "V", elec.CH1UPVDCMax.ToString(), elec.CH1UPVDCMin.ToString(), "OK");
-                            CH1Display($"{CH1RunName}" + I18N.GetLangText(dicLang, "max流量(UP)"), CH1Q.ToString(), "lpm", "-", "-", "OK");
-                            CH1Display($"{CH1RunName}" + I18N.GetLangText(dicLang, "max流量(UP-DOWN)"), CH2Q.ToString(), "lpm", Flow.CH1_2FlowMax.ToString(), Flow.CH1_2FlowMin.ToString(), "OK");
-                            /*     if (CH1lastmodel == 1)
-                                 {
-                                     CH1lastmodel = 3;
-                                     CH1cont_elec = CH1ADCMax / CH1lastelec;
-                                     CH1cont_elec += Flow.CH1Cont_Elec_Compen;
-                                     CH1cont_elec = Math.Round(CH1cont_elec, 2);
-                                     CH1TestResult.ElecRatio = CH1cont_elec;
-                                     if (CH1cont_elec < Flow.CH1Cont_ElecMin || CH1cont_elec > Flow.CH1Cont_ElecMax)
-                                     {
-                                         CH1Display($"{CH1RunName}" + I18N.GetLangText(dicLang, "电流比值"), CH1cont_elec.ToString(""), "-", Flow.CH1Cont_ElecMax.ToString(), Flow.CH1Cont_ElecMin.ToString(), "NG");
-                                         plc.CH1RatioNG();
-                                         return;
-                                     }
-                                     CH1Display($"{CH1RunName}" + I18N.GetLangText(dicLang, "电流比值"), CH1cont_elec.ToString(""), "-", Flow.CH1Cont_ElecMax.ToString(), Flow.CH1Cont_ElecMin.ToString(), "OK");
-                                     if (CH1lastpress == 0)
-                                     {
-                                         CH1lastpress = 0.1;
-                                     }
-                                     CH1cont_press = CH1PressMax / CH1lastpress;
-                                     CH1cont_press += Flow.CH1Cont_Pre_Compen;
-                                     CH1cont_press = Math.Round(CH1cont_press, 2);
-                                     CH1TestResult.PressRatio = CH1cont_press;
-                                     if (CH1cont_press < Flow.CH1Cont_PressMin || CH1cont_press > Flow.CH1Cont_PressMax)
-                                     {
-                                         CH1Display($"{CH1RunName}" + I18N.GetLangText(dicLang, "压力比值"), CH1cont_press.ToString(), "-", Flow.CH1Cont_PressMax.ToString(), Flow.CH1Cont_PressMin.ToString(), "NG");
-                                         plc.CH1RatioNG();
-                                         return;
-                                     }
-                                     CH1Display($"{CH1RunName}" + I18N.GetLangText(dicLang, "压力比值"), CH1cont_press.ToString(), "-", Flow.CH1Cont_PressMax.ToString(), Flow.CH1Cont_PressMin.ToString(), "OK");
-                                     plc.CH1RatioOK();
-                                 }
-                                 else
-                                 {
-                                     CH1lastmodel = 0;
-                                     CH1lastelec = CH1ADCMax;
-                                     CH1lastpress = CH1PressMax;
-                                 }*/
-
-                            for (int i = 0; i < this.DataGridView1.Rows.Count - 1; i++)
-                            {
-                                if (this.DataGridView1.Rows[i].Cells[1].Value.ToString() == $"{CH1RunName}" + I18N.GetLangText(dicLang, "max电流(DOWN)"))
-                                {
-                                    CH1lastelec = Convert.ToDouble(this.DataGridView1.Rows[i].Cells[2].Value.ToString());
-                                    CH1cont_elec = CH1ADCMax / CH1lastelec;
-                                    CH1cont_elec += Flow.CH1Cont_Elec_Compen;
-                                    CH1cont_elec = Math.Round(CH1cont_elec, 2);
-                                    CH1TestResult.ElecRatio = CH1cont_elec;
-                                    if (CH1cont_elec < Flow.CH1Cont_ElecMin || CH1cont_elec > Flow.CH1Cont_ElecMax)
-                                    {
-                                        CH1Display($"{CH1RunName}" + I18N.GetLangText(dicLang, "电流比值"), CH1cont_elec.ToString(""), "-", Flow.CH1Cont_ElecMax.ToString(), Flow.CH1Cont_ElecMin.ToString(), "NG");
-                                        plc.CH1RatioNG();
-                                        return;
-                                    }
-                                    CH1Display($"{CH1RunName}" + I18N.GetLangText(dicLang, "电流比值"), CH1cont_elec.ToString(""), "-", Flow.CH1Cont_ElecMax.ToString(), Flow.CH1Cont_ElecMin.ToString(), "OK");
-                                    if (CH1lastpress == 0)
-                                    {
-                                        CH1lastpress = 0.1;
-                                    }
-                                    break;
-                                }
-                            }
-
-                            for (int i = 0; i < this.DataGridView1.Rows.Count - 1; i++)
-                            {
-                                if (this.DataGridView1.Rows[i].Cells[1].Value.ToString() == $"{CH1RunName}" + I18N.GetLangText(dicLang, "输出压力(DOWN)"))
-                                {
-                                    CH1lastpress = Convert.ToDouble(this.DataGridView1.Rows[i].Cells[2].Value.ToString());
-                                    CH1cont_press = CH1PressMax / CH1lastpress;
-                                    CH1cont_press += Flow.CH1Cont_Pre_Compen;
-                                    CH1cont_press = Math.Round(CH1cont_press, 2);
-                                    CH1TestResult.PressRatio = CH1cont_press;
-                                    if (CH1cont_press < Flow.CH1Cont_PressMin || CH1cont_press > Flow.CH1Cont_PressMax)
-                                    {
-                                        CH1Display($"{CH1RunName}" + I18N.GetLangText(dicLang, "压力比值"), CH1cont_press.ToString(), "-", Flow.CH1Cont_PressMax.ToString(), Flow.CH1Cont_PressMin.ToString(), "NG");
-                                        plc.CH1RatioNG();
-                                        return;
-                                    }
-                                    CH1Display($"{CH1RunName}" + I18N.GetLangText(dicLang, "压力比值"), CH1cont_press.ToString(), "-", Flow.CH1Cont_PressMax.ToString(), Flow.CH1Cont_PressMin.ToString(), "OK");
-                                    plc.CH1RatioOK();
-                                    break;
-                                }
-                            }
-
-                            plc.CH1UPFlowEnd();
-                        }
+                        pressovertime = Flow.CH1RWDOverTime;
+                        //plc.CH1RWDStart();
+                    }
+                    else
+                    {
                         if (CH1RTStep == "FWD")
                         {
-                            plc.CH1FWDADCOK();
-                            plc.CH1FWDVDCOK();
-                            plc.CH1FWDFlowEnd();
-                            plc.CH1uAOK();//增加一个BUG
-                                
-                                CH1TestResult.FWD_ADCMAX = CH1ADCMax;
-                            CH1TestResult.FWD_VDCMAX = CH1VDCMax;
-                            CH1TestResult.FWD_Flow1 = CH1Q;
-                            CH1TestResult.FWD_Flow2 = CH2Q;
-                            CH1TestResult.FWD_Pre1 = CH1PressMax;
-                            CH1TestResult.FWD_Pre2 = CH2PressMax;
-                                //1.444   ch_params.FPlowlimit, ch_params.FPtoplimit flow.CH1_1FlowMax.ToString(), flow.CH1_1FlowMin.ToString()
-                                //6.18
-                                if (CH1PressMax > elec.CH1_1PreFwdMax || CH1PressMax < elec.CH1_2FlowFwdMin)
-                                {
-                                    log.MES_Logmsg(DateTime.Now.ToString()+ "进入NG判断");
-                                    CH1Display($"{CH1RunName}" + I18N.GetLangText(dicLang, "输出压力(FWD上)"), CH1PressMax.ToString(), PressureUnit.Text, elec.CH2_1PreFwdMax.ToString(), elec.CH2_2PreFwdMin.ToString(), "NG");
-                                    FlowNG(1);
-                                }
-                                else
-                                {
-
-                                    CH1Display($"{CH1RunName}" + I18N.GetLangText(dicLang, "输出压力(FWD上)"), CH1PressMax.ToString(), PressureUnit.Text, elec.CH2_1PreFwdMax.ToString(), elec.CH2_2PreFwdMin.ToString(), "OK");
-                                    log.MES_Logmsg(DateTime.Now.ToString() + "进入OK判断");
-                                }
-                                if (CH2PressMax> elec.CH1_1PreFwdMax || CH2PressMax< elec.CH1_2FlowFwdMin)
-                                {
-                                    log.MES_Logmsg(DateTime.Now.ToString() + "进入NG判断");
-                                    CH1Display($"{CH1RunName}" + I18N.GetLangText(dicLang, "输出压力(FWD下)"), CH2PressMax.ToString(), CH2PressureUnit.Text, elec.CH2_1PreFwdMax.ToString(), elec.CH2_2PreFwdMin.ToString(), "NG");
-                                    FlowNG(1);
-                                }
-                                else {
-                                    log.MES_Logmsg(DateTime.Now.ToString() + "进入OK判断");
-                                    CH1Display($"{CH1RunName}" + I18N.GetLangText(dicLang, "输出压力(FWD下)"), CH2PressMax.ToString(), CH2PressureUnit.Text, elec.CH2_1PreFwdMax.ToString(), elec.CH2_2PreFwdMin.ToString(), "OK");
-                                }
-                                
-                            CH1Display($"{CH1RunName}" + I18N.GetLangText(dicLang, "max电流(FWD)"), CH1ADCMax.ToString(), "A", elec.CH1FWDADCMax.ToString(), elec.CH1FWDADCMin.ToString(), "OK");
-                            CH1Display($"{CH1RunName}" + I18N.GetLangText(dicLang, "max电压(FWD)"), CH1VDCMax.ToString(), "V", elec.CH1FWDVDCMax.ToString(), elec.CH1FWDVDCMin.ToString(), "OK");
-                                if (CH1Q> flow.CH1_1FlowMax||CH1Q < flow.CH1_1FlowMin)
-                                {
-                                    CH1Display($"{CH1RunName}" + I18N.GetLangText(dicLang, "max流量(FWD上)"), CH1Q.ToString(), "lpm", flow.CH1_1FlowMax.ToString(), flow.CH1_1FlowMin.ToString(), "NG");
-                                    FlowNG(1);
-                                }
-                                else{
-                                    CH1Display($"{CH1RunName}" + I18N.GetLangText(dicLang, "max流量(FWD上)"), CH1Q.ToString(), "lpm", flow.CH1_1FlowMax.ToString(), flow.CH1_1FlowMin.ToString(), "OK");
-                                }
-                                if (CH2Q> flow.CH1_1FlowMax|| CH2Q< flow.CH1_1FlowMin)
-                                {
-                                    CH1Display($"{CH1RunName}" + I18N.GetLangText(dicLang, "max流量(FWD下)"), CH2Q.ToString(), "lpm", flow.CH1_1FlowMax.ToString(), flow.CH1_1FlowMin.ToString(), "NG");
-                                    FlowNG(1);
-                                }
-                            CH1Display($"{CH1RunName}" + I18N.GetLangText(dicLang, "max流量(FWD下)"), CH2Q.ToString(), "lpm", flow.CH1_1FlowMax.ToString(), flow.CH1_1FlowMin.ToString(), "OK");
+                            pressovertime=elec.CH1FWDFlowTime;
                         }
-                        if (CH1RTStep == "RWD")
+                        else
+                        pressovertime = Flow.CH1Press_OverTime;
+                    }
+                    if (presstime > pressovertime)
+                    {
+                        CH1ReadPress.Stop();
+                        CH1_1FullPress.Text = CH1PressMax.ToString();
+                        CH1flowtest = false;
+                        CHpreflag++;
+                        if (CHpreflag >= 2)
                         {
-                            if (Flow.CH1RWDOverTime == 0)
-                            {
-                                CH1PressMax = CH1TestResult.FWD_Pre1;
-                                CH2PressMax = CH1TestResult.FWD_Pre2;
-                            }
-                            CH1TestResult.RWD_Pre1 = CH1PressMax;
-                            CH1TestResult.RWD_Pre2 = CH2PressMax;
-                            if (CH1PressMax > Flow.CH1RWDPressMax || CH1PressMax < Flow.CH1RWDPressMin || CH2PressMax > Flow.CH1RWDPressMax || CH2PressMax < Flow.CH1RWDPressMin)
-                            {
-                                if (CH1PressMax > Flow.CH1RWDPressMax || CH1PressMax < Flow.CH1RWDPressMin)
-                                {
-                                    CH1Display($"{CH1RunName}" + I18N.GetLangText(dicLang, "输出压力(RWD上)"), CH1PressMax.ToString(), PressureUnit.Text, Flow.CH1RWDPressMax.ToString(), Flow.CH1RWDPressMin.ToString(), "NG");
+                            CH1ReadPress.Stop();
+                            //两台仪器都没有在测试，则停止lin通讯
+                            CH1LinUP.Stop();
+                            CH1ReadFlowT.Stop();
+                            plc.CH1PLCValveBreak();
 
-                                        //6.18NG
-                                        FlowNG(1);
-                                }
-                                else
-                                {
-                                    CH1Display($"{CH1RunName}" + I18N.GetLangText(dicLang, "输出压力(RWD上)"), CH1PressMax.ToString(), PressureUnit.Text, Flow.CH1RWDPressMax.ToString(), Flow.CH1RWDPressMin.ToString(), "OK");
-                                }
-                                if (CH2PressMax > Flow.CH1RWDPressMax || CH2PressMax < Flow.CH1RWDPressMin)
-                                {
-                                  
-                                        CH1Display($"{CH1RunName}" + I18N.GetLangText(dicLang, "输出压力(RWD下)"), CH2PressMax.ToString(), PressureUnit.Text, Flow.CH1RWDPressMax.ToString(), Flow.CH1RWDPressMin.ToString(), "NG");
-                                        //6.18NG
-                                        FlowNG(1);
-                                    }
-                                else
-                                {
-                                    CH1Display($"{CH1RunName}" + I18N.GetLangText(dicLang, "输出压力(RWD下)"), CH2PressMax.ToString(), PressureUnit.Text, Flow.CH1RWDPressMax.ToString(), Flow.CH1RWDPressMin.ToString(), "OK");
-                                }
-                                plc.CH1RWDPressNG();
-                                plc.CH1RWDFlowEnd();
-                                FlowNG(1);
-                                //6-28
-                         
+                            //流量测试完之后，需要把测试仪复位，避免后续步骤启动失败
+                            {
+                                ch1client.btnSendData("01 05 00 01 FF 00");
+                                ch2client.btnSendData("02 05 00 01 FF 00");
+                                Thread.Sleep(50);
+                                ch1client.btnSendData("01 05 00 01 FF 00");
+                                ch2client.btnSendData("02 05 00 01 FF 00");
+                            }
+
+                            ch1stage = 10;
+                            CHXProBarFlag[1] = 0;
+                            CH1IsRun.Interval = 500;
+                            CH1IsRun.Start();
+                            ch1_1step = 1;
+                            ch1write = 1;
+                            ch2stage = 10;
+                            CHXProBarFlag[2] = 0;
+                            CH2IsRun.Interval = 500;
+                            CH2IsRun.Start();
+                            ch1_2step = 1;
+                            ch2write = 1;
+
+                            if (plc.CH1LIN)
+                            {
+                                plc.CH1LinFinish();
+                            }
+
+                            if (!CH1ReadElecResult())
+                            {
                                 return;
                             }
-                            else
+                            CH1VDCresult = "OK";
+                            CH1ADCresult = "OK";
+                            Invoke((new System.Action(() =>
                             {
-                                CH1Display($"{CH1RunName}" + I18N.GetLangText(dicLang, "输出压力(RWD上)"), CH1PressMax.ToString(), PressureUnit.Text, Flow.CH1RWDPressMax.ToString(), Flow.CH1RWDPressMin.ToString(), "OK");
-                                CH1Display($"{CH1RunName}" + I18N.GetLangText(dicLang, "输出压力(RWD下)"), CH2PressMax.ToString(), PressureUnit.Text, Flow.CH1RWDPressMax.ToString(), Flow.CH1RWDPressMin.ToString(), "OK");
-                                plc.CH1RWDPressOK();
-                                plc.CH1RWDADCOK();
-                                plc.CH1RWDVDCOK();
-                                plc.CH1RWDFlowEnd();
-                                plc.CH1uAOK();//增加一个BUG
-                                CH1TestResult.RWD_ADCMAX = CH1ADCMax;
-                                CH1TestResult.RWD_VDCMAX = CH1VDCMax;
-                                CH1Display($"{CH1RunName}" + I18N.GetLangText(dicLang, "max电流(RWD)"), CH1ADCMax.ToString(), "A", elec.CH1RWDADCMax.ToString(), elec.CH1RWDADCMin.ToString(), "OK");
-                                CH1Display($"{CH1RunName}" + I18N.GetLangText(dicLang, "max电压(RWD)"), CH1VDCMax.ToString(), "V", elec.CH1RWDVDCMax.ToString(), elec.CH1RWDVDCMin.ToString(), "OK");
-                            }
-                        }
-                        if (CH1RTStep == "DOWN")
-                        {
-                            plc.CH1DOWNPreOK();
-                            CH1_1FullPress.Text = CH1PressMax.ToString();
-                            CH1ReadPress.Stop();
-                            CH1TestResult.DOWN_Pre = CH2PressMax;
-                            CH1TestResult.DOWN_ADCMAX = CH1ADCMax;
-                            CH1TestResult.DOWN_VDCMAX = CH1VDCMax;
-                            CH1TestResult.DOWN_Flow = CH2Q;
-                            plc.CH1DOWNADCOK();
-                            plc.CH1DOWNVDCOK();
-                            plc.CH1PLCValveBreak();
-                            plc.CH1uAOK();//增加一个BUG
-                                //7.26下充
-                                down_UPPre = CH1PressMax;
-                            CH1Display($"{CH1RunName}" + I18N.GetLangText(dicLang, "输出压力(DOWN-UP)"), CH1PressMax.ToString(), PressureUnit.Text, Flow.CH1_1PreMax.ToString(), Flow.CH1_1PreMin.ToString(), "OK");
-                            CH1Display($"{CH1RunName}" + I18N.GetLangText(dicLang, "输出压力(DOWN)"), CH2PressMax.ToString(), CH2PressureUnit.Text, "-", "-", "OK");
-                            CH1Display($"{CH1RunName}" + I18N.GetLangText(dicLang, "max电流(DOWN)"), CH1ADCMax.ToString(), "A", elec.CH1DOWNADCMax.ToString(), elec.CH1DOWNADCMin.ToString(), "OK");
-                            CH1Display($"{CH1RunName}" + I18N.GetLangText(dicLang, "max电压(DOWN)"), CH1VDCMax.ToString(), "V", elec.CH1DOWNVDCMax.ToString(), elec.CH1DOWNVDCMin.ToString(), "OK");
-                            CH1Display($"{CH1RunName}" + I18N.GetLangText(dicLang, "max流量(DOWN)"), CH2Q.ToString(), "lpm", "-", "-", "OK");
-                            CH1Display($"{CH1RunName}" + I18N.GetLangText(dicLang, "max流量(DOWN-UP)"), CH1Q.ToString(), "lpm", Flow.CH1_1FlowMax.ToString(), Flow.CH1_1FlowMin.ToString(), "OK");
-                          
-
-                            for (int i = 0; i < this.DataGridView1.Rows.Count - 1; i++)
-                            {
-                                if (this.DataGridView1.Rows[i].Cells[1].Value.ToString() == $"{CH1RunName}" + I18N.GetLangText(dicLang, "max电流(UP)"))
+                                if (CH1RTStep == "UP")
                                 {
-                                    CH1lastelec = Convert.ToDouble(this.DataGridView1.Rows[i].Cells[2].Value.ToString());
-                                    CH1cont_elec = CH1ADCMax / CH1lastelec;
-                                    CH1cont_elec += Flow.CH1Cont_Elec_Compen;
-                                    CH1cont_elec = Math.Round(CH1cont_elec, 2);
-                                    CH1TestResult.ElecRatio = CH1cont_elec;
-                                    if (CH1cont_elec < Flow.CH1Cont_ElecMin || CH1cont_elec > Flow.CH1Cont_ElecMax)
+                                    plc.CH1UPPreOK();
+                                    plc.CH1UPADCOK();
+                                    plc.CH1UPVDCOK();
+                                    plc.CH1uAOK();//增加一个BUG
+                                    CH1_2FullPress.Text = CH2PressMax.ToString();
+                                    CH1TestResult.UP_ADCMAX = CH1ADCMax;
+                                    CH1TestResult.UP_VDCMAX = CH1VDCMax;
+                                    CH1TestResult.UP_Flow = CH1Q;
+                                    CH1TestResult.UP_Pre = CH1PressMax;
+                                    CH1Display($"{CH1RunName}" + I18N.GetLangText(dicLang, "输出压力(UP)"), CH1_1FullPress.Text.ToString(), PressureUnit.Text, "-", "-", "OK");
+                                    CH1Display($"{CH1RunName}" + I18N.GetLangText(dicLang, "输出压力(UP-DOWN)"), CH1_2FullPress.Text.ToString(), CH2PressureUnit.Text, Flow.CH1_2PreMax.ToString(), Flow.CH1_2PreMin.ToString(), "OK");
+                                    CH1Display($"{CH1RunName}" + I18N.GetLangText(dicLang, "max电流(UP)"), CH1ADCMax.ToString(), "A", elec.CH1UPADCMax.ToString(), elec.CH1UPADCMin.ToString(), "OK");
+                                    CH1Display($"{CH1RunName}" + I18N.GetLangText(dicLang, "max电压(UP)"), CH1VDCMax.ToString(), "V", elec.CH1UPVDCMax.ToString(), elec.CH1UPVDCMin.ToString(), "OK");
+                                    CH1Display($"{CH1RunName}" + I18N.GetLangText(dicLang, "max流量(UP)"), CH1Q.ToString(), "lpm", "-", "-", "OK");
+                                    CH1Display($"{CH1RunName}" + I18N.GetLangText(dicLang, "max流量(UP-DOWN)"), CH2Q.ToString(), "lpm", Flow.CH1_2FlowMax.ToString(), Flow.CH1_2FlowMin.ToString(), "OK");
+
+
+                                    for (int i = 0; i < this.DataGridView1.Rows.Count - 1; i++)
                                     {
-                                        CH1Display($"{CH1RunName}" + I18N.GetLangText(dicLang, "电流比值"), CH1cont_elec.ToString(""), "-", Flow.CH1Cont_ElecMax.ToString(), Flow.CH1Cont_ElecMin.ToString(), "NG");
-                                        plc.CH1RatioNG();
+                                        if (this.DataGridView1.Rows[i].Cells[1].Value.ToString() == $"{CH1RunName}" + I18N.GetLangText(dicLang, "max电流(DOWN)"))
+                                        {
+                                            CH1lastelec = Convert.ToDouble(this.DataGridView1.Rows[i].Cells[2].Value.ToString());
+                                            CH1cont_elec = CH1ADCMax / CH1lastelec;
+                                            CH1cont_elec += Flow.CH1Cont_Elec_Compen;
+                                            CH1cont_elec = Math.Round(CH1cont_elec, 2);
+                                            CH1TestResult.ElecRatio = CH1cont_elec;
+                                            if (CH1cont_elec < Flow.CH1Cont_ElecMin || CH1cont_elec > Flow.CH1Cont_ElecMax)
+                                            {
+                                                CH1Display($"{CH1RunName}" + I18N.GetLangText(dicLang, "电流比值"), CH1cont_elec.ToString(""), "-", Flow.CH1Cont_ElecMax.ToString(), Flow.CH1Cont_ElecMin.ToString(), "NG");
+                                                plc.CH1RatioNG();
+                                                return;
+                                            }
+                                            CH1Display($"{CH1RunName}" + I18N.GetLangText(dicLang, "电流比值"), CH1cont_elec.ToString(""), "-", Flow.CH1Cont_ElecMax.ToString(), Flow.CH1Cont_ElecMin.ToString(), "OK");
+                                            if (CH1lastpress == 0)
+                                            {
+                                                CH1lastpress = 0.1;
+                                            }
+                                            break;
+                                        }
+                                    }
+
+                                    for (int i = 0; i < this.DataGridView1.Rows.Count - 1; i++)
+                                    {
+                                        if (this.DataGridView1.Rows[i].Cells[1].Value.ToString() == $"{CH1RunName}" + I18N.GetLangText(dicLang, "输出压力(DOWN)"))
+                                        {
+                                            CH1lastpress = Convert.ToDouble(this.DataGridView1.Rows[i].Cells[2].Value.ToString());
+                                            CH1cont_press = CH1PressMax / CH1lastpress;
+                                            CH1cont_press += Flow.CH1Cont_Pre_Compen;
+                                            CH1cont_press = Math.Round(CH1cont_press, 2);
+                                            CH1TestResult.PressRatio = CH1cont_press;
+                                            if (CH1cont_press < Flow.CH1Cont_PressMin || CH1cont_press > Flow.CH1Cont_PressMax)
+                                            {
+                                                CH1Display($"{CH1RunName}" + I18N.GetLangText(dicLang, "压力比值"), CH1cont_press.ToString(), "-", Flow.CH1Cont_PressMax.ToString(), Flow.CH1Cont_PressMin.ToString(), "NG");
+                                                plc.CH1RatioNG();
+                                                return;
+                                            }
+                                            CH1Display($"{CH1RunName}" + I18N.GetLangText(dicLang, "压力比值"), CH1cont_press.ToString(), "-", Flow.CH1Cont_PressMax.ToString(), Flow.CH1Cont_PressMin.ToString(), "OK");
+                                            plc.CH1RatioOK();
+                                            break;
+                                        }
+                                    }
+
+                                    plc.CH1UPFlowEnd();
+                                }
+                                if (CH1RTStep == "FWD")
+                                {
+                                    plc.CH1FWDADCOK();
+                                    plc.CH1FWDVDCOK();
+                                    plc.CH1FWDFlowEnd();
+                                    plc.CH1uAOK();//增加一个BUG
+                                    CH1TestResult.FWD_ADCMAX = CH1ADCMax;
+                                    CH1TestResult.FWD_VDCMAX = CH1VDCMax;
+                                    CH1TestResult.FWD_Flow1 = Convert.ToDouble(CH1_1flow.Text);
+                                    CH1TestResult.FWD_Flow2 = Convert.ToDouble(CH1_2flow.Text);
+                                    CH1TestResult.FWD_Pre1 = Convert.ToDouble(CH1_1FullPress.Text);
+                                    CH1TestResult.FWD_Pre2 = Convert.ToDouble(CH1_2FullPress.Text);
+                                    /////新加240801
+                                    ///
+                                    if (CH1TestResult.FWD_Flow1 + CH1TestResult.FWD_Flow2 > elec.TotalFlowMax|| CH1TestResult.FWD_Flow1 + CH1TestResult.FWD_Flow2 < elec.TotalFlowMin)
+                                    {
+                                        CH1Display($"{CH1RunName}" + I18N.GetLangText(dicLang, "max流量(FWD总)"), (CH1TestResult.FWD_Flow1 + CH1TestResult.FWD_Flow2).ToString(), "lpm", elec.TotalFlowMax.ToString(), elec.TotalFlowMin.ToString(), "NG");
+                                        FlowNG(1);
+                                    }
+                                    else
+                                    {
+                                        CH1Display($"{CH1RunName}" + I18N.GetLangText(dicLang, "max流量(FWD总)"), (CH1TestResult.FWD_Flow1 + CH1TestResult.FWD_Flow2).ToString(), "lpm", elec.TotalFlowMax.ToString(), elec.TotalFlowMin.ToString(), "OK");
+                                    }
+                                    double preEROR = Math.Abs(CH1TestResult.FWD_Pre1 - CH1TestResult.FWD_Pre2);
+
+
+                                    if (preEROR > Convert.ToDouble(elec.TotalPreMax))
+                                    {
+                                        CH1Display($"{CH1RunName}" + I18N.GetLangText(dicLang, "max压力差(FWD)"), preEROR.ToString(), "Kpa", elec.TotalPreMax.ToString(), "0", "NG");
+                                        FlowNG(1);
+                                    }
+                                    else
+                                        CH1Display($"{CH1RunName}" + I18N.GetLangText(dicLang, "max压力差(FWD)"), preEROR.ToString(), "Kpa", elec.TotalPreMax.ToString(), "0", "OK");
+
+                                    /////////240801
+                                    //1.444   ch_params.FPlowlimit, ch_params.FPtoplimit flow.CH1_1FlowMax.ToString(), flow.CH1_1FlowMin.ToString()
+                                    //6.18
+                                    if (CH1Q > elec.CH1FwdFlowMax || CH1Q < elec.CH1FwdFlowMin)
+                                    {
+                                        CH1Display($"{CH1RunName}" + I18N.GetLangText(dicLang, "max流量(FWD上)"), CH1Q.ToString(), "lpm", elec.CH1FwdFlowMax.ToString(), elec.CH1FwdFlowMin.ToString(), "NG");
+                                        FlowNG(1);
+                                    }
+                                    else
+                                    {
+                                        CH1Display($"{CH1RunName}" + I18N.GetLangText(dicLang, "max流量(FWD上)"), CH1Q.ToString(), "lpm", elec.CH1FwdFlowMax.ToString(), elec.CH1FwdFlowMin.ToString(), "OK");
+                                    }
+                                    if (CH2Q > elec.CH1FwdFlowMax || CH2Q < elec.CH1FwdFlowMin)
+                                    {
+                                        CH1Display($"{CH1RunName}" + I18N.GetLangText(dicLang, "max流量(FWD下)"), CH2Q.ToString(), "lpm", elec.CH1FwdFlowMax.ToString(), elec.CH1FwdFlowMin.ToString(), "NG");
+                                        FlowNG(1);
+                                    }
+                                    else
+                                    {
+                                        CH1Display($"{CH1RunName}" + I18N.GetLangText(dicLang, "max流量(FWD下)"), CH2Q.ToString(), "lpm", elec.CH1FwdFlowMax.ToString(), elec.CH1FwdFlowMin.ToString(), "OK");
+                                    }
+                                    if ((Convert.ToDouble(CH1_1FullPress.Text) > elec.CH1FwdPreMax) || (Convert.ToDouble(CH1_1FullPress.Text) < elec.CH1FwdPreMin))
+                                    {
+                                        // log.MES_Logmsg(DateTime.Now.ToString() + "进入NG判断");
+                                        CH1Display($"{CH1RunName}" + I18N.GetLangText(dicLang, "输出压力(FWD上)"), CH1_1FullPress.Text.ToString(), PressureUnit.Text, elec.CH1FwdPreMax.ToString(), elec.CH1FwdPreMin.ToString(), "NG");
+                                        FlowNG(1);
+                                    }
+                                    else
+                                    {
+                                        CH1Display($"{CH1RunName}" + I18N.GetLangText(dicLang, "输出压力(FWD上)"), CH1_1FullPress.Text.ToString(), PressureUnit.Text, elec.CH1FwdPreMax.ToString(), elec.CH1FwdPreMin.ToString(), "OK");
+                                        //  log.MES_Logmsg(DateTime.Now.ToString() + "进入OK判断");
+                                    }
+                                    if ((Convert.ToDouble(CH1_2FullPress.Text) > elec.CH1FwdPreMax) || (Convert.ToDouble(CH1_2FullPress.Text) < elec.CH1FwdPreMin))
+                                    {
+                                        CH1Display($"{CH1RunName}" + I18N.GetLangText(dicLang, "输出压力(FWD下)"), CH1_2FullPress.Text.ToString(), CH2PressureUnit.Text, elec.CH1FwdPreMax.ToString(), elec.CH1FwdPreMin.ToString(), "NG");
+                                        FlowNG(1);
+                                    }
+                                    else
+                                    {
+                                        //  log.MES_Logmsg(DateTime.Now.ToString() + "进入OK判断");
+                                        CH1Display($"{CH1RunName}" + I18N.GetLangText(dicLang, "输出压力(FWD下)"), CH1_2FullPress.Text.ToString(), CH2PressureUnit.Text, elec.CH1FwdPreMax.ToString(), elec.CH1FwdPreMin.ToString(), "OK");
+                                    }
+
+
+                                    CH1Display($"{CH1RunName}" + I18N.GetLangText(dicLang, "max电流(FWD)"), CH1ADCMax.ToString(), "A", elec.CH1FWDADCMax.ToString(), elec.CH1FWDADCMin.ToString(), "OK");
+                                    CH1Display($"{CH1RunName}" + I18N.GetLangText(dicLang, "max电压(FWD)"), CH1VDCMax.ToString(), "V", elec.CH1FWDVDCMax.ToString(), elec.CH1FWDVDCMin.ToString(), "OK");
+
+                                }
+
+                                if (CH1RTStep == "RWD")
+                                {
+                                    if (Flow.CH1RWDOverTime == 0)
+                                    {
+                                        CH1PressMax = CH1TestResult.FWD_Pre1;
+                                        CH2PressMax = CH1TestResult.FWD_Pre2;
+                                    }
+                                    CH1TestResult.RWD_Pre1 = Convert.ToDouble(CH1_1FullPress.Text);
+                                    CH1TestResult.RWD_Pre2 = CH2PressMax;
+                                    if (Convert.ToDouble(CH1_1FullPress.Text) > Flow.CH1RWDPressMax || Convert.ToDouble(CH1_1FullPress.Text) < Flow.CH1RWDPressMin || CH2PressMax > Flow.CH1RWDPressMax || CH2PressMax < Flow.CH1RWDPressMin)
+                                    {
+                                        if (Convert.ToDouble(CH1_1FullPress.Text) > Flow.CH1RWDPressMax || Convert.ToDouble(CH1_1FullPress.Text) < Flow.CH1RWDPressMin)
+                                        {
+                                            CH1Display($"{CH1RunName}" + I18N.GetLangText(dicLang, "输出压力(RWD上)"), Convert.ToDouble(CH1_1FullPress.Text).ToString(), PressureUnit.Text, Flow.CH1RWDPressMax.ToString(), Flow.CH1RWDPressMin.ToString(), "NG");
+
+                                            //6.18NG
+                                            FlowNG(1);
+                                        }
+                                        else
+                                        {
+                                            CH1Display($"{CH1RunName}" + I18N.GetLangText(dicLang, "输出压力(RWD上)"), Convert.ToDouble(CH1_1FullPress.Text).ToString(), PressureUnit.Text, Flow.CH1RWDPressMax.ToString(), Flow.CH1RWDPressMin.ToString(), "OK");
+                                        }
+                                        if (CH2PressMax > Flow.CH1RWDPressMax || CH2PressMax < Flow.CH1RWDPressMin)
+                                        {
+
+                                            CH1Display($"{CH1RunName}" + I18N.GetLangText(dicLang, "输出压力(RWD下)"), CH2PressMax.ToString(), PressureUnit.Text, Flow.CH1RWDPressMax.ToString(), Flow.CH1RWDPressMin.ToString(), "NG");
+                                            //6.18NG
+                                            FlowNG(1);
+                                        }
+                                        else
+                                        {
+                                            CH1Display($"{CH1RunName}" + I18N.GetLangText(dicLang, "输出压力(RWD下)"), CH2PressMax.ToString(), PressureUnit.Text, Flow.CH1RWDPressMax.ToString(), Flow.CH1RWDPressMin.ToString(), "OK");
+                                        }
+                                        plc.CH1RWDPressNG();
+                                        plc.CH1RWDFlowEnd();
+                                        FlowNG(1);
+                                        //6-28
+
                                         return;
                                     }
-                                    CH1Display($"{CH1RunName}" + I18N.GetLangText(dicLang, "电流比值"), CH1cont_elec.ToString(""), "-", Flow.CH1Cont_ElecMax.ToString(), Flow.CH1Cont_ElecMin.ToString(), "OK");
-                                    if (CH1lastpress == 0)
+                                    else
                                     {
-                                        CH1lastpress = 0.1;
+                                        CH1Display($"{CH1RunName}" + I18N.GetLangText(dicLang, "输出压力(RWD上)"), Convert.ToDouble(CH1_1FullPress.Text).ToString(), PressureUnit.Text, Flow.CH1RWDPressMax.ToString(), Flow.CH1RWDPressMin.ToString(), "OK");
+                                        CH1Display($"{CH1RunName}" + I18N.GetLangText(dicLang, "输出压力(RWD下)"), CH2PressMax.ToString(), PressureUnit.Text, Flow.CH1RWDPressMax.ToString(), Flow.CH1RWDPressMin.ToString(), "OK");
+                                        plc.CH1RWDPressOK();
+                                        plc.CH1RWDADCOK();
+                                        plc.CH1RWDVDCOK();
+                                        plc.CH1RWDFlowEnd();
+                                        plc.CH1uAOK();//增加一个BUG
+                                        CH1TestResult.RWD_ADCMAX = CH1ADCMax;
+                                        CH1TestResult.RWD_VDCMAX = CH1VDCMax;
+                                        CH1Display($"{CH1RunName}" + I18N.GetLangText(dicLang, "max电流(RWD)"), CH1ADCMax.ToString(), "A", elec.CH1RWDADCMax.ToString(), elec.CH1RWDADCMin.ToString(), "OK");
+                                        CH1Display($"{CH1RunName}" + I18N.GetLangText(dicLang, "max电压(RWD)"), CH1VDCMax.ToString(), "V", elec.CH1RWDVDCMax.ToString(), elec.CH1RWDVDCMin.ToString(), "OK");
                                     }
-                                    break;
                                 }
-                            }
-                            for (int i = 0; i < this.DataGridView1.Rows.Count - 1; i++)
-                            {
-                                if (this.DataGridView1.Rows[i].Cells[1].Value.ToString() == $"{CH1RunName}" + I18N.GetLangText(dicLang, "输出压力(UP)"))
+                                if (CH1RTStep == "DOWN")
                                 {
-                                    CH1lastpress = Convert.ToDouble(this.DataGridView1.Rows[i].Cells[2].Value.ToString());
-                                    CH1cont_press = CH1lastpress / CH2PressMax;
-                                    CH1cont_press += Flow.CH1Cont_Pre_Compen;
-                                    CH1cont_press = Math.Round(CH1cont_press, 2);
-                                    CH1TestResult.PressRatio = CH1cont_press;
-                                    if (CH1cont_press < Flow.CH1Cont_PressMin || CH1cont_press > Flow.CH1Cont_PressMax)
-                                    {
-                                        CH1Display($"{CH1RunName}" + I18N.GetLangText(dicLang, "压力比值"), CH1cont_press.ToString(), "-", Flow.CH1Cont_PressMax.ToString(), Flow.CH1Cont_PressMin.ToString(), "NG");
-                                        plc.CH1RatioNG();
-                                        return;
-                                    }
-                                    CH1Display($"{CH1RunName}" + I18N.GetLangText(dicLang, "压力比值"), CH1cont_press.ToString(), "-", Flow.CH1Cont_PressMax.ToString(), Flow.CH1Cont_PressMin.ToString(), "OK");
-                                    plc.CH1RatioOK();
-                                    break;
-                                }
-                            }
+                                    plc.CH1DOWNPreOK();
+                                    CH1_1FullPress.Text = CH1PressMax.ToString();
+                                    CH1ReadPress.Stop();
+                                    CH1TestResult.DOWN_Pre = CH2PressMax;
+                                    CH1TestResult.DOWN_ADCMAX = CH1ADCMax;
+                                    CH1TestResult.DOWN_VDCMAX = CH1VDCMax;
+                                    CH1TestResult.DOWN_Flow = CH2Q;
+                                    plc.CH1DOWNADCOK();
+                                    plc.CH1DOWNVDCOK();
+                                    plc.CH1PLCValveBreak();
+                                    plc.CH1uAOK();//增加一个BUG
+                                                  //7.26下充
+                                    down_UPPre = CH1PressMax;
+                                    CH1Display($"{CH1RunName}" + I18N.GetLangText(dicLang, "输出压力(DOWN-UP)"), CH1_1FullPress.Text.ToString(), PressureUnit.Text, Flow.CH1_1PreMax.ToString(), Flow.CH1_1PreMin.ToString(), "OK");
+                                    CH1Display($"{CH1RunName}" + I18N.GetLangText(dicLang, "输出压力(DOWN)"), CH2PressMax.ToString(), CH2PressureUnit.Text, "-", "-", "OK");
+                                    CH1Display($"{CH1RunName}" + I18N.GetLangText(dicLang, "max电流(DOWN)"), CH1ADCMax.ToString(), "A", elec.CH1DOWNADCMax.ToString(), elec.CH1DOWNADCMin.ToString(), "OK");
+                                    CH1Display($"{CH1RunName}" + I18N.GetLangText(dicLang, "max电压(DOWN)"), CH1VDCMax.ToString(), "V", elec.CH1DOWNVDCMax.ToString(), elec.CH1DOWNVDCMin.ToString(), "OK");
+                                    CH1Display($"{CH1RunName}" + I18N.GetLangText(dicLang, "max流量(DOWN)"), CH2Q.ToString(), "lpm", "-", "-", "OK");
+                                    CH1Display($"{CH1RunName}" + I18N.GetLangText(dicLang, "max流量(DOWN-UP)"), CH1Q.ToString(), "lpm", Flow.CH1_1FlowMax.ToString(), Flow.CH1_1FlowMin.ToString(), "OK");
 
-                            plc.CH1DOWNFlowEnd();
-                        }
-                     
-                        if (CH1RTStep == "DOWN" || CH1RTStep == "FWD" || CH1RTStep == "RWD" || CH1RTStep == "UP")
-                        {
-                            CH1Step += 1;
-                            CH1Method(CH1Step);
+
+                                    for (int i = 0; i < this.DataGridView1.Rows.Count - 1; i++)
+                                    {
+                                        if (this.DataGridView1.Rows[i].Cells[1].Value.ToString() == $"{CH1RunName}" + I18N.GetLangText(dicLang, "max电流(UP)"))
+                                        {
+                                            CH1lastelec = Convert.ToDouble(this.DataGridView1.Rows[i].Cells[2].Value.ToString());
+                                            CH1cont_elec = CH1ADCMax / CH1lastelec;
+                                            CH1cont_elec += Flow.CH1Cont_Elec_Compen;
+                                            CH1cont_elec = Math.Round(CH1cont_elec, 2);
+                                            CH1TestResult.ElecRatio = CH1cont_elec;
+                                            if (CH1cont_elec < Flow.CH1Cont_ElecMin || CH1cont_elec > Flow.CH1Cont_ElecMax)
+                                            {
+                                                CH1Display($"{CH1RunName}" + I18N.GetLangText(dicLang, "电流比值"), CH1cont_elec.ToString(""), "-", Flow.CH1Cont_ElecMax.ToString(), Flow.CH1Cont_ElecMin.ToString(), "NG");
+                                                plc.CH1RatioNG();
+                                                return;
+                                            }
+                                            CH1Display($"{CH1RunName}" + I18N.GetLangText(dicLang, "电流比值"), CH1cont_elec.ToString(""), "-", Flow.CH1Cont_ElecMax.ToString(), Flow.CH1Cont_ElecMin.ToString(), "OK");
+                                            if (CH1lastpress == 0)
+                                            {
+                                                CH1lastpress = 0.1;
+                                            }
+                                            break;
+                                        }
+                                    }
+                                    for (int i = 0; i < this.DataGridView1.Rows.Count - 1; i++)
+                                    {
+                                        if (this.DataGridView1.Rows[i].Cells[1].Value.ToString() == $"{CH1RunName}" + I18N.GetLangText(dicLang, "输出压力(UP)"))
+                                        {
+                                            CH1lastpress = Convert.ToDouble(this.DataGridView1.Rows[i].Cells[2].Value.ToString());
+                                            CH1cont_press = CH1lastpress / CH2PressMax;
+                                            CH1cont_press += Flow.CH1Cont_Pre_Compen;
+                                            CH1cont_press = Math.Round(CH1cont_press, 2);
+                                            CH1TestResult.PressRatio = CH1cont_press;
+                                            if (CH1cont_press < Flow.CH1Cont_PressMin || CH1cont_press > Flow.CH1Cont_PressMax)
+                                            {
+                                                CH1Display($"{CH1RunName}" + I18N.GetLangText(dicLang, "压力比值"), CH1cont_press.ToString(), "-", Flow.CH1Cont_PressMax.ToString(), Flow.CH1Cont_PressMin.ToString(), "NG");
+                                                plc.CH1RatioNG();
+                                                return;
+                                            }
+                                            CH1Display($"{CH1RunName}" + I18N.GetLangText(dicLang, "压力比值"), CH1cont_press.ToString(), "-", Flow.CH1Cont_PressMax.ToString(), Flow.CH1Cont_PressMin.ToString(), "OK");
+                                            plc.CH1RatioOK();
+                                            break;
+                                        }
+                                    }
+
+                                    plc.CH1DOWNFlowEnd();
+                                }
+                            })));
+   
+                            if (CH1Tlight.Text != "NG")
+                                if (CH1RTStep == "DOWN" || CH1RTStep == "FWD" || CH1RTStep == "RWD" || CH1RTStep == "UP")
+                                {
+                                    CH1Step += 1;
+                                    CH1Method(CH1Step);
+                                }
                         }
                     }
                 }
-            }
-            catch (Exception ex)
-            {
-                wa.InsertWarningData(DateTime.Now.ToString("yyyy-MM-dd HH:mm:ss"), "-", I18N.GetLangText(dicLang, "CH1-1读取输出压力") + ":" + ex.Message);
-                //MessageBox.Show("CH1-1读取输出压力：" + ex.Message);
-                Logger.Log(I18N.GetLangText(dicLang, "CH1-1读取输出压力") + ":" + ex.Message);
-                Logger.Log(ex.StackTrace);
-            }
+                catch (Exception ex)
+                {
+                    wa.InsertWarningData(DateTime.Now.ToString("yyyy-MM-dd HH:mm:ss"), "-", I18N.GetLangText(dicLang, "CH1-1读取输出压力") + ":" + ex.Message);
+                    //MessageBox.Show("CH1-1读取输出压力：" + ex.Message);
+                    Logger.Log(I18N.GetLangText(dicLang, "CH1-1读取输出压力") + ":" + ex.Message);
+                    Logger.Log(ex.StackTrace);
+                }
 
-        
+
         }
 
         private void CH2ReadPress_Tick(object sender, EventArgs e)
@@ -9663,1031 +8729,1136 @@ namespace SLC1_N
             //ERIC
             if (CH1RTStep == "UP" || CH1RTStep == "DOWN" || CH1RTStep == "FWD" || CH1RTStep == "RWD")
                 try
-            {
-                //泄气会有误差，所以把电流电压读取放后面一点，在lin通讯后
-                JudgeCH1ADC = true;
-                CH2IsRun.Stop();
-                CH2ReadPress.Interval = 200;
-                ch2client.btnSendData("02 03 04 03 00 17 ");
-                //leftclient.btnSendData("02 03 04 21 00 02 ");
-                ch2stage = 7;
-                //计算时间
-                ch2pressend = System.DateTime.Now.Ticks;
-                TimeSpan ts1 = new TimeSpan(ch2pressstart);
-                TimeSpan ts2 = new TimeSpan(ch2pressend);
-                TimeSpan ptime = ts2.Subtract(ts1).Duration();
-                double presstime = ptime.TotalSeconds;
-                double pressovertime;
-                if (CH1RTStep == "RWD")
                 {
-                    pressovertime = Flow.CH1RWDOverTime;
-                    //plc.CH1RWDStart();
-                }
-                else
-                {
-                    pressovertime = Flow.CH2Press_OverTime;
-                }
-                if (presstime > pressovertime)
-                {
-                    CH2ReadPress.Stop();
-                    CH1_2FullPress.Text = CH2PressMax.ToString();
-                    CH2flowtest = false;
-                    CHpreflag++;
-                    if (CHpreflag >= 2)
-                    //  if (!CH1flowtest)
+                    //泄气会有误差，所以把电流电压读取放后面一点，在lin通讯后
+                    JudgeCH1ADC = true;
+                    CH2IsRun.Stop();
+                    CH2ReadPress.Interval = 200;
+                    ch2client.btnSendData("02 03 04 03 00 17 ");
+                    //leftclient.btnSendData("02 03 04 21 00 02 ");
+                    ch2stage = 7;
+                    //计算时间
+                    ch2pressend = System.DateTime.Now.Ticks;
+                    TimeSpan ts1 = new TimeSpan(ch2pressstart);
+                    TimeSpan ts2 = new TimeSpan(ch2pressend);
+                    TimeSpan ptime = ts2.Subtract(ts1).Duration();
+                    double presstime = ptime.TotalSeconds;
+                    double pressovertime;
+                    if (CH1RTStep == "RWD")
                     {
-                        //plc.CH1PowerClose();
-                        CH2ReadPress.Stop();
-                        CH1LinUP.Stop();
-                        CH2ReadFlowT.Stop();
-                        plc.CH1PLCValveBreak();
-                        //流量测试完之后，需要把测试仪复位，避免后续步骤启动失败
-                        {
-                            ch1client.btnSendData("01 05 00 01 FF 00");
-                            ch2client.btnSendData("02 05 00 01 FF 00");
-                            Thread.Sleep(50);
-                            ch1client.btnSendData("01 05 00 01 FF 00");
-                            ch2client.btnSendData("02 05 00 01 FF 00");
-                            Thread.Sleep(50);
-                            ch1client.btnSendData("01 05 00 01 FF 00");
-                            ch2client.btnSendData("02 05 00 01 FF 00");
-                        }
-
-                        ch1stage = 10;
-                        CHXProBarFlag[1] = 0;
-                        CH1IsRun.Interval = 500;
-                        CH1IsRun.Start();
-                        ch1_1step = 1;
-                        ch1write = 1;
-                        ch2stage = 10;
-                        CHXProBarFlag[2] = 0;
-                        CH2IsRun.Interval = 500;
-                        CH2IsRun.Start();
-                        ch1_2step = 1;
-                        ch2write = 1;
-
-                        if (plc.CH1LIN)
-                        {
-                            plc.CH1LinFinish();
-                        }
-
-                        if (!CH1ReadElecResult())
-                        {
-                            return;
-                        }
-
-                        CH1VDCresult = "OK";
-                        CH1ADCresult = "OK";
-
-                        if (CH1RTStep == "DOWN")
-                        {
-                            plc.CH1DOWNPreOK();
-                            CH1_1FullPress.Text = CH1PressMax.ToString();
-                            CH1ReadPress.Stop();
-                            CH1TestResult.DOWN_Pre = CH2PressMax;
-                            CH1TestResult.DOWN_ADCMAX = CH1ADCMax;
-                            CH1TestResult.DOWN_VDCMAX = CH1VDCMax;
-                            CH1TestResult.DOWN_Flow = CH2Q;
-                            plc.CH1DOWNADCOK();
-                            plc.CH1DOWNVDCOK();
-                            plc.CH1PLCValveBreak();
-                            plc.CH1uAOK();//增加一个BUG
-                            CH1Display($"{CH1RunName}" + I18N.GetLangText(dicLang, "输出压力(DOWN-UP)"), CH1PressMax.ToString(), PressureUnit.Text, Flow.CH1_1PreMax.ToString(), Flow.CH1_1PreMin.ToString(), "OK");
-                            CH1Display($"{CH1RunName}" + I18N.GetLangText(dicLang, "输出压力(DOWN)"), CH2PressMax.ToString(), CH2PressureUnit.Text, "-", "-", "OK");
-                            CH1Display($"{CH1RunName}" + I18N.GetLangText(dicLang, "max电流(DOWN)"), CH1ADCMax.ToString(), "A", elec.CH1DOWNADCMax.ToString(), elec.CH1DOWNADCMin.ToString(), "OK");
-                            CH1Display($"{CH1RunName}" + I18N.GetLangText(dicLang, "max电压(DOWN)"), CH1VDCMax.ToString(), "V", elec.CH1DOWNVDCMax.ToString(), elec.CH1DOWNVDCMin.ToString(), "OK");
-                            CH1Display($"{CH1RunName}" + I18N.GetLangText(dicLang, "max流量(DOWN)"), CH2Q.ToString(), "lpm", "-", "-", "OK");
-                            CH1Display($"{CH1RunName}" + I18N.GetLangText(dicLang, "max流量(DOWN-UP)"), CH1Q.ToString(), "lpm", Flow.CH1_1FlowMax.ToString(), Flow.CH1_1FlowMin.ToString(), "OK");
-                     
-
-                            for (int i = 0; i < this.DataGridView1.Rows.Count - 1; i++)
-                            {
-                                if (this.DataGridView1.Rows[i].Cells[1].Value.ToString() == $"{CH1RunName}" + I18N.GetLangText(dicLang, "max电流(UP)"))
-                                {
-                                    CH1lastelec = Convert.ToDouble(this.DataGridView1.Rows[i].Cells[2].Value.ToString());
-                                    CH1cont_elec = CH1lastelec / CH1ADCMax;
-                                    CH1cont_elec += Flow.CH1Cont_Elec_Compen;
-                                    CH1cont_elec = Math.Round(CH1cont_elec, 2);
-                                    CH1TestResult.ElecRatio = CH1cont_elec;
-                                    if (CH1cont_elec < Flow.CH1Cont_ElecMin || CH1cont_elec > Flow.CH1Cont_ElecMax)
-                                    {
-                                        CH1Display($"{CH1RunName}" + I18N.GetLangText(dicLang, "电流比值"), CH1cont_elec.ToString(), "-", Flow.CH1Cont_ElecMax.ToString(), Flow.CH1Cont_ElecMin.ToString(), "NG");
-                                        plc.CH1RatioNG();
-                                        return;
-                                    }
-                                    CH1Display($"{CH1RunName}" + I18N.GetLangText(dicLang, "电流比值"), CH1cont_elec.ToString(), "-", Flow.CH1Cont_ElecMax.ToString(), Flow.CH1Cont_ElecMin.ToString(), "OK");
-                                    if (CH2PressMax == 0)
-                                    {
-                                        CH2PressMax = 0.1;
-                                    }
-                                    break;
-                                }
-                            }
-                            for (int i = 0; i < this.DataGridView1.Rows.Count - 1; i++)
-                            {
-                                if (this.DataGridView1.Rows[i].Cells[1].Value.ToString() == $"{CH1RunName}" + I18N.GetLangText(dicLang, "输出压力(UP)"))
-                                {
-                                    CH1lastpress = Convert.ToDouble(this.DataGridView1.Rows[i].Cells[2].Value.ToString());
-                                    CH1cont_press = CH1lastpress / CH2PressMax;
-                                    CH1cont_press += Flow.CH1Cont_Pre_Compen;
-                                    CH1cont_press = Math.Round(CH1cont_press, 2);
-                                    CH1TestResult.PressRatio = CH1cont_press;
-                                    if (CH1cont_press < Flow.CH1Cont_PressMin || CH1cont_press > Flow.CH1Cont_PressMax)
-                                    {
-                                        CH1Display($"{CH1RunName}" + I18N.GetLangText(dicLang, "压力比值"), CH1cont_press.ToString(), "-", Flow.CH1Cont_PressMax.ToString(), Flow.CH1Cont_PressMin.ToString(), "NG");
-                                        plc.CH1RatioNG();
-                                        return;
-                                    }
-                                    CH1Display($"{CH1RunName}" + I18N.GetLangText(dicLang, "压力比值"), CH1cont_press.ToString(), "-", Flow.CH1Cont_PressMax.ToString(), Flow.CH1Cont_PressMin.ToString(), "OK");
-                                    plc.CH1RatioOK();
-                                    break;
-                                }
-                            }
-                            plc.CH1DOWNFlowEnd();
-                        }
+                        pressovertime = Flow.CH1RWDOverTime;
+                        //plc.CH1RWDStart();
+                    }
+                    else
+                    {
                         if (CH1RTStep == "FWD")
+                            pressovertime = elec.CH1FWDFlowTime;
+                        else
+                             pressovertime = Flow.CH2Press_OverTime;
+                    }
+                    if (presstime > pressovertime)
+                    {
+                        CH2ReadPress.Stop();
+                        CH1_2FullPress.Text = CH2PressMax.ToString();
+                        CH2flowtest = false;
+                        CHpreflag++;
+                        if (CHpreflag >= 2)
                         {
-                            plc.CH1FWDADCOK();
-                            plc.CH1FWDVDCOK();
-                            plc.CH1FWDFlowEnd();
-                            plc.CH1uAOK();//增加一个BUG
-                            CH1TestResult.FWD_ADCMAX = CH1ADCMax;
-                            CH1TestResult.FWD_VDCMAX = CH1VDCMax;
-                            CH1TestResult.FWD_Flow1 = CH1Q;
-                            CH1TestResult.FWD_Flow2 = CH2Q;
-                            CH1TestResult.FWD_Pre1 = CH1PressMax;
-                            CH1TestResult.FWD_Pre2 = CH2PressMax;
-                                //6.18
-                                if (CH1PressMax > elec.CH1_1PreFwdMax || CH1PressMax < elec.CH1_2FlowFwdMin)
-                                {
-                                    CH1Display($"{CH1RunName}" + I18N.GetLangText(dicLang, "输出压力(FWD上)"), CH1PressMax.ToString(), PressureUnit.Text, elec.CH2_1PreFwdMax.ToString(), elec.CH2_2PreFwdMin.ToString(), "NG");
-                                    FlowNG(1);
-                                }
-                                else
-                                {
-                                    CH1Display($"{CH1RunName}" + I18N.GetLangText(dicLang, "输出压力(FWD上)"), CH1PressMax.ToString(), PressureUnit.Text, elec.CH2_1PreFwdMax.ToString(), elec.CH2_2PreFwdMin.ToString(), "OK");
-                                }
-                                if (CH2PressMax > elec.CH1_1PreFwdMax || CH2PressMax < elec.CH1_2FlowFwdMin)
-                                {
-                                    CH1Display($"{CH1RunName}" + I18N.GetLangText(dicLang, "输出压力(FWD下)"), CH2PressMax.ToString(), CH2PressureUnit.Text, elec.CH2_1PreFwdMax.ToString(), elec.CH2_2PreFwdMin.ToString(), "NG");
-                                    FlowNG(1);
-                                }
-                                else
-                                {
-                                    CH1Display($"{CH1RunName}" + I18N.GetLangText(dicLang, "输出压力(FWD下)"), CH2PressMax.ToString(), CH2PressureUnit.Text, elec.CH2_1PreFwdMax.ToString(), elec.CH1_2PreFwdMin.ToString(), "OK");
-                                }
-                                  
-                          
-                            CH1Display($"{CH1RunName}" + I18N.GetLangText(dicLang, "max电流(FWD)"), CH1ADCMax.ToString(), "A", elec.CH1FWDADCMax.ToString(), elec.CH1FWDADCMin.ToString(), "OK");
-                            CH1Display($"{CH1RunName}" + I18N.GetLangText(dicLang, "max电压(FWD)"), CH1VDCMax.ToString(), "V", elec.CH1FWDVDCMax.ToString(), elec.CH1FWDVDCMin.ToString(), "OK");
-                            CH1Display($"{CH1RunName}" + I18N.GetLangText(dicLang, "max流量(FWD上)"), CH1Q.ToString(), "lpm", elec.CH1_2FlowFwdMax.ToString(), elec.CH1_2FlowFwdMin.ToString(), "OK");
-                            CH1Display($"{CH1RunName}" + I18N.GetLangText(dicLang, "max流量(FWD下)"), CH2Q.ToString(), "lpm", elec.CH1_2FlowFwdMax.ToString(), elec.CH1_2FlowFwdMin.ToString(), "OK");
-                        }
-                        if (CH1RTStep == "RWD")
-                        {
-                            if (Flow.CH1RWDOverTime == 0)
+                            CH1ReadPress.Stop();
+                            //两台仪器都没有在测试，则停止lin通讯
+                            CH1LinUP.Stop();
+                            CH1ReadFlowT.Stop();
+                            plc.CH1PLCValveBreak();
+
+                            //流量测试完之后，需要把测试仪复位，避免后续步骤启动失败
                             {
-                                CH1PressMax = CH1TestResult.FWD_Pre1;
-                                CH2PressMax = CH1TestResult.FWD_Pre2;
+                                ch1client.btnSendData("01 05 00 01 FF 00");
+                                ch2client.btnSendData("02 05 00 01 FF 00");
+                                Thread.Sleep(50);
+                                ch1client.btnSendData("01 05 00 01 FF 00");
+                                ch2client.btnSendData("02 05 00 01 FF 00");
                             }
-                            CH1TestResult.RWD_Pre1 = CH1PressMax;
-                            CH1TestResult.RWD_Pre2 = CH2PressMax;
-                            if (CH1PressMax > Flow.CH1RWDPressMax || CH1PressMax < Flow.CH1RWDPressMin || CH2PressMax > Flow.CH1RWDPressMax || CH2PressMax < Flow.CH1RWDPressMin)
+
+                            ch1stage = 10;
+                            CHXProBarFlag[1] = 0;
+                            CH1IsRun.Interval = 500;
+                            CH1IsRun.Start();
+                            ch1_1step = 1;
+                            ch1write = 1;
+                            ch2stage = 10;
+                            CHXProBarFlag[2] = 0;
+                            CH2IsRun.Interval = 500;
+                            CH2IsRun.Start();
+                            ch1_2step = 1;
+                            ch2write = 1;
+
+                            if (plc.CH1LIN)
                             {
-                                if (CH1PressMax > Flow.CH1RWDPressMax || CH1PressMax < Flow.CH1RWDPressMin)
-                                {
-                                    CH1Display($"{CH1RunName}" + I18N.GetLangText(dicLang, "输出压力(RWD上)"), CH1PressMax.ToString(), PressureUnit.Text, Flow.CH1RWDPressMax.ToString(), Flow.CH1RWDPressMin.ToString(), "NG");
-                                }
-                                else
-                                {
-                                    CH1Display($"{CH1RunName}" + I18N.GetLangText(dicLang, "输出压力(RWD上)"), CH1PressMax.ToString(), PressureUnit.Text, Flow.CH1RWDPressMax.ToString(), Flow.CH1RWDPressMin.ToString(), "OK");
-                                }
-                                if (CH2PressMax > Flow.CH1RWDPressMax || CH2PressMax < Flow.CH1RWDPressMin)
-                                {
-                                    CH1Display($"{CH1RunName}" + I18N.GetLangText(dicLang, "输出压力(RWD下)"), CH2PressMax.ToString(), PressureUnit.Text, Flow.CH1RWDPressMax.ToString(), Flow.CH1RWDPressMin.ToString(), "NG");
-                                }
-                                else
-                                {
-                                    CH1Display($"{CH1RunName}" + I18N.GetLangText(dicLang, "输出压力(RWD下)"), CH2PressMax.ToString(), PressureUnit.Text, Flow.CH1RWDPressMax.ToString(), Flow.CH1RWDPressMin.ToString(), "OK");
-                                }
-                                plc.CH1RWDPressNG();
-                                plc.CH1RWDFlowEnd();
-                                FlowNG(1);
-                                //6-28
-                                
+                                plc.CH1LinFinish();
+                            }
+
+                            if (!CH1ReadElecResult())
+                            {
                                 return;
                             }
-                            else
-                            {
-                                CH1Display($"{CH1RunName}" + I18N.GetLangText(dicLang, "输出压力(RWD上)"), CH1PressMax.ToString(), PressureUnit.Text, Flow.CH1RWDPressMax.ToString(), Flow.CH1RWDPressMin.ToString(), "OK");
-                                CH1Display($"{CH1RunName}" + I18N.GetLangText(dicLang, "输出压力(RWD下)"), CH2PressMax.ToString(), PressureUnit.Text, Flow.CH1RWDPressMax.ToString(), Flow.CH1RWDPressMin.ToString(), "OK");
-                                plc.CH1RWDPressOK();
-                                plc.CH1RWDADCOK();
-                                plc.CH1RWDVDCOK();
-                                plc.CH1RWDFlowEnd();
-                                plc.CH1uAOK();//增加一个BUG
-                                CH1TestResult.RWD_ADCMAX = CH1ADCMax;
-                                CH1TestResult.RWD_VDCMAX = CH1VDCMax;
-                                CH1Display($"{CH1RunName}" + I18N.GetLangText(dicLang, "max电流(RWD)"), CH1ADCMax.ToString(), "A", elec.CH1RWDADCMax.ToString(), elec.CH1RWDADCMin.ToString(), "OK");
-                                CH1Display($"{CH1RunName}" + I18N.GetLangText(dicLang, "max电压(RWD)"), CH1VDCMax.ToString(), "V", elec.CH1RWDVDCMax.ToString(), elec.CH1RWDVDCMin.ToString(), "OK");
-                            }
-                        }
-                        if (CH1RTStep == "UP")
-                        {
-                            plc.CH1UPPreOK();
-                            plc.CH1UPADCOK();
-                            plc.CH1UPVDCOK();
-                            plc.CH1uAOK();//增加一个BUG
-                            CH1_2FullPress.Text = CH2PressMax.ToString();
-                            CH1TestResult.UP_ADCMAX = CH1ADCMax;
-                            CH1TestResult.UP_VDCMAX = CH1VDCMax;
-                            CH1TestResult.UP_Flow = CH1Q;
-                            CH1TestResult.UP_Pre = CH1PressMax;
-                            CH1Display($"{CH1RunName}" + I18N.GetLangText(dicLang, "输出压力(UP)"), CH1PressMax.ToString(), PressureUnit.Text, "-", "-", "OK");
-                            CH1Display($"{CH1RunName}" + I18N.GetLangText(dicLang, "输出压力(UP-DOWN)"), CH2PressMax.ToString(), CH2PressureUnit.Text, Flow.CH1_2PreMax.ToString(), Flow.CH1_2PreMin.ToString(), "OK");
-                            CH1Display($"{CH1RunName}" + I18N.GetLangText(dicLang, "max电流(UP)"), CH1ADCMax.ToString(), "A", elec.CH1UPADCMax.ToString(), elec.CH1UPADCMin.ToString(), "OK");
-                            CH1Display($"{CH1RunName}" + I18N.GetLangText(dicLang, "max电压(UP)"), CH1VDCMax.ToString(), "V", elec.CH1UPVDCMax.ToString(), elec.CH1UPVDCMin.ToString(), "OK");
-                            CH1Display($"{CH1RunName}" + I18N.GetLangText(dicLang, "max流量(UP)"), CH1Q.ToString(), "lpm", Flow.CH1_2FlowMax.ToString(), Flow.CH1_2FlowMin.ToString(), "OK");
-                            CH1Display($"{CH1RunName}" + I18N.GetLangText(dicLang, "max流量(UP-DOWN)"), CH2Q.ToString(), "lpm", Flow.CH1_2FlowMax.ToString(), Flow.CH1_2FlowMin.ToString(), "OK");
-                       
-
-                            for (int i = 0; i < this.DataGridView1.Rows.Count - 1; i++)
-                            {
-                                if (this.DataGridView1.Rows[i].Cells[1].Value.ToString() == $"{CH1RunName}" + I18N.GetLangText(dicLang, "max电流(DOWN)"))
+                            CH1VDCresult = "OK";
+                            CH1ADCresult = "OK";
+                            Invoke((new System.Action(() =>
+                            { 
+                                if (CH1RTStep == "UP")
                                 {
-                                    CH1lastelec = Convert.ToDouble(this.DataGridView1.Rows[i].Cells[2].Value.ToString());
-                                    CH1cont_elec = CH1ADCMax / CH1lastelec;
-                                    CH1cont_elec += Flow.CH1Cont_Elec_Compen;
-                                    CH1cont_elec = Math.Round(CH1cont_elec, 2);
-                                    CH1TestResult.ElecRatio = CH1cont_elec;
-                                    if (CH1cont_elec < Flow.CH1Cont_ElecMin || CH1cont_elec > Flow.CH1Cont_ElecMax)
+                                    plc.CH1UPPreOK();
+                                    plc.CH1UPADCOK();
+                                    plc.CH1UPVDCOK();
+                                    plc.CH1uAOK();//增加一个BUG
+                                    CH1_2FullPress.Text = CH2PressMax.ToString();
+                                    CH1TestResult.UP_ADCMAX = CH1ADCMax;
+                                    CH1TestResult.UP_VDCMAX = CH1VDCMax;
+                                    CH1TestResult.UP_Flow = CH1Q;
+                                    CH1TestResult.UP_Pre = CH1PressMax;
+                                    CH1Display($"{CH1RunName}" + I18N.GetLangText(dicLang, "输出压力(UP)"), CH1_1FullPress.Text.ToString(), PressureUnit.Text, "-", "-", "OK");
+                                    CH1Display($"{CH1RunName}" + I18N.GetLangText(dicLang, "输出压力(UP-DOWN)"), CH1_2FullPress.Text.ToString(), CH2PressureUnit.Text, Flow.CH1_2PreMax.ToString(), Flow.CH1_2PreMin.ToString(), "OK");
+                                    CH1Display($"{CH1RunName}" + I18N.GetLangText(dicLang, "max电流(UP)"), CH1ADCMax.ToString(), "A", elec.CH1UPADCMax.ToString(), elec.CH1UPADCMin.ToString(), "OK");
+                                    CH1Display($"{CH1RunName}" + I18N.GetLangText(dicLang, "max电压(UP)"), CH1VDCMax.ToString(), "V", elec.CH1UPVDCMax.ToString(), elec.CH1UPVDCMin.ToString(), "OK");
+                                    CH1Display($"{CH1RunName}" + I18N.GetLangText(dicLang, "max流量(UP)"), CH1Q.ToString(), "lpm", "-", "-", "OK");
+                                    CH1Display($"{CH1RunName}" + I18N.GetLangText(dicLang, "max流量(UP-DOWN)"), CH2Q.ToString(), "lpm", Flow.CH1_2FlowMax.ToString(), Flow.CH1_2FlowMin.ToString(), "OK");
+
+
+                                    for (int i = 0; i < this.DataGridView1.Rows.Count - 1; i++)
                                     {
-                                        CH1Display($"{CH1RunName}" + I18N.GetLangText(dicLang, "电流比值"), CH1cont_elec.ToString(""), "-", Flow.CH1Cont_ElecMax.ToString(), Flow.CH1Cont_ElecMin.ToString(), "NG");
-                                        plc.CH1RatioNG();
+                                        if (this.DataGridView1.Rows[i].Cells[1].Value.ToString() == $"{CH1RunName}" + I18N.GetLangText(dicLang, "max电流(DOWN)"))
+                                        {
+                                            CH1lastelec = Convert.ToDouble(this.DataGridView1.Rows[i].Cells[2].Value.ToString());
+                                            CH1cont_elec = CH1ADCMax / CH1lastelec;
+                                            CH1cont_elec += Flow.CH1Cont_Elec_Compen;
+                                            CH1cont_elec = Math.Round(CH1cont_elec, 2);
+                                            CH1TestResult.ElecRatio = CH1cont_elec;
+                                            if (CH1cont_elec < Flow.CH1Cont_ElecMin || CH1cont_elec > Flow.CH1Cont_ElecMax)
+                                            {
+                                                CH1Display($"{CH1RunName}" + I18N.GetLangText(dicLang, "电流比值"), CH1cont_elec.ToString(""), "-", Flow.CH1Cont_ElecMax.ToString(), Flow.CH1Cont_ElecMin.ToString(), "NG");
+                                                plc.CH1RatioNG();
+                                                return;
+                                            }
+                                            CH1Display($"{CH1RunName}" + I18N.GetLangText(dicLang, "电流比值"), CH1cont_elec.ToString(""), "-", Flow.CH1Cont_ElecMax.ToString(), Flow.CH1Cont_ElecMin.ToString(), "OK");
+                                            if (CH1lastpress == 0)
+                                            {
+                                                CH1lastpress = 0.1;
+                                            }
+                                            break;
+                                        }
+                                    }
+
+                                    for (int i = 0; i < this.DataGridView1.Rows.Count - 1; i++)
+                                    {
+                                        if (this.DataGridView1.Rows[i].Cells[1].Value.ToString() == $"{CH1RunName}" + I18N.GetLangText(dicLang, "输出压力(DOWN)"))
+                                        {
+                                            CH1lastpress = Convert.ToDouble(this.DataGridView1.Rows[i].Cells[2].Value.ToString());
+                                            CH1cont_press = CH1PressMax / CH1lastpress;
+                                            CH1cont_press += Flow.CH1Cont_Pre_Compen;
+                                            CH1cont_press = Math.Round(CH1cont_press, 2);
+                                            CH1TestResult.PressRatio = CH1cont_press;
+                                            if (CH1cont_press < Flow.CH1Cont_PressMin || CH1cont_press > Flow.CH1Cont_PressMax)
+                                            {
+                                                CH1Display($"{CH1RunName}" + I18N.GetLangText(dicLang, "压力比值"), CH1cont_press.ToString(), "-", Flow.CH1Cont_PressMax.ToString(), Flow.CH1Cont_PressMin.ToString(), "NG");
+                                                plc.CH1RatioNG();
+                                                return;
+                                            }
+                                            CH1Display($"{CH1RunName}" + I18N.GetLangText(dicLang, "压力比值"), CH1cont_press.ToString(), "-", Flow.CH1Cont_PressMax.ToString(), Flow.CH1Cont_PressMin.ToString(), "OK");
+                                            plc.CH1RatioOK();
+                                            break;
+                                        }
+                                    }
+
+                                    plc.CH1UPFlowEnd();
+                                }
+                                if (CH1RTStep == "FWD")
+                                {
+                                    plc.CH1FWDADCOK();
+                                    plc.CH1FWDVDCOK();
+                                    plc.CH1FWDFlowEnd();
+                                    plc.CH1uAOK();//增加一个BUG
+                                    CH1TestResult.FWD_ADCMAX = CH1ADCMax;
+                                    CH1TestResult.FWD_VDCMAX = CH1VDCMax;
+                                    CH1TestResult.FWD_Flow1 = Convert.ToDouble(CH1_1flow.Text);
+                                    CH1TestResult.FWD_Flow2 = Convert.ToDouble(CH1_2flow.Text); ;
+                                    CH1TestResult.FWD_Pre1 = Convert.ToDouble(CH1_1FullPress.Text);
+                                    CH1TestResult.FWD_Pre2 = Convert.ToDouble(CH1_2FullPress.Text);
+                                    /////新加240801
+                                    ///
+                                    if (CH1TestResult.FWD_Flow1+ CH1TestResult.FWD_Flow2 > elec.TotalFlowMax || CH1TestResult.FWD_Flow1 + CH1TestResult.FWD_Flow2 < elec.TotalFlowMin)
+                                    {
+                                        CH1Display($"{CH1RunName}" + I18N.GetLangText(dicLang, "max流量(FWD总)"), (CH1TestResult.FWD_Flow1 + CH1TestResult.FWD_Flow2).ToString(), "lpm", elec.TotalFlowMax.ToString(), elec.TotalFlowMin.ToString(), "NG");
+                                        FlowNG(1);
+                                    }
+                                    else
+                                    {
+                                        CH1Display($"{CH1RunName}" + I18N.GetLangText(dicLang, "max流量(FWD总)"), (CH1TestResult.FWD_Flow1 + CH1TestResult.FWD_Flow2).ToString(), "lpm", elec.TotalFlowMax.ToString(), elec.TotalFlowMin.ToString(), "OK");
+                                    }
+                                    double preEROR = Math.Abs(Convert.ToDouble(CH1_2FullPress.Text) - Convert.ToDouble(CH1_1FullPress.Text));
+
+
+                                    if (preEROR > Convert.ToDouble(elec.TotalPreMax))
+                                    {
+                                        CH1Display($"{CH1RunName}" + I18N.GetLangText(dicLang, "max压力差(FWD)"), preEROR.ToString(), "Kpa", elec.TotalPreMax.ToString(), "0", "NG");
+                                        FlowNG(1);
+                                    }
+                                    else
+                                        CH1Display($"{CH1RunName}" + I18N.GetLangText(dicLang, "max压力差(FWD)"), preEROR.ToString(), "Kpa", elec.TotalPreMax.ToString(), "0", "OK");
+
+                                    /////////240801
+                                    //1.444   ch_params.FPlowlimit, ch_params.FPtoplimit flow.CH1_1FlowMax.ToString(), flow.CH1_1FlowMin.ToString()
+                                    //6.18
+                                    if (CH1Q > elec.CH1FwdFlowMax || CH1Q < elec.CH1FwdFlowMin)
+                                    {
+                                        CH1Display($"{CH1RunName}" + I18N.GetLangText(dicLang, "max流量(FWD上)"), CH1Q.ToString(), "lpm", elec.CH1FwdFlowMax.ToString(), elec.CH1FwdFlowMin.ToString(), "NG");
+                                        FlowNG(1);
+                                    }
+                                    else
+                                    {
+                                        CH1Display($"{CH1RunName}" + I18N.GetLangText(dicLang, "max流量(FWD上)"), CH1Q.ToString(), "lpm", elec.CH1FwdFlowMax.ToString(), elec.CH1FwdFlowMin.ToString(), "OK");
+                                    }
+                                    if (CH2Q > elec.CH1FwdFlowMax || CH2Q < elec.CH1FwdFlowMin)
+                                    {
+                                        CH1Display($"{CH1RunName}" + I18N.GetLangText(dicLang, "max流量(FWD下)"), CH2Q.ToString(), "lpm", elec.CH1FwdFlowMax.ToString(), elec.CH1FwdFlowMin.ToString(), "NG");
+                                        FlowNG(1);
+                                    }
+                                    else
+                                    {
+                                        CH1Display($"{CH1RunName}" + I18N.GetLangText(dicLang, "max流量(FWD下)"), CH2Q.ToString(), "lpm", elec.CH1FwdFlowMax.ToString(), elec.CH1FwdFlowMin.ToString(), "OK");
+                                    }
+                                    if ((Convert.ToDouble(CH1_1FullPress.Text) > elec.CH1FwdPreMax) || (Convert.ToDouble(CH1_1FullPress.Text) < elec.CH1FwdPreMin))
+                                    {
+                                        // log.MES_Logmsg(DateTime.Now.ToString() + "进入NG判断");
+                                        CH1Display($"{CH1RunName}" + I18N.GetLangText(dicLang, "输出压力(FWD上)"), CH1_1FullPress.Text.ToString(), PressureUnit.Text, elec.CH1FwdPreMax.ToString(), elec.CH1FwdPreMin.ToString(), "NG");
+                                        FlowNG(1);
+                                    }
+                                    else
+                                    {
+                                        CH1Display($"{CH1RunName}" + I18N.GetLangText(dicLang, "输出压力(FWD上)"), CH1_1FullPress.Text.ToString(), PressureUnit.Text, elec.CH1FwdPreMax.ToString(), elec.CH1FwdPreMin.ToString(), "OK");
+                                        //  log.MES_Logmsg(DateTime.Now.ToString() + "进入OK判断");
+                                    }
+                                    if ((Convert.ToDouble(CH1_2FullPress.Text) > elec.CH1FwdPreMax) || (Convert.ToDouble(CH1_2FullPress.Text) < elec.CH1FwdPreMin))
+                                    {
+                                        CH1Display($"{CH1RunName}" + I18N.GetLangText(dicLang, "输出压力(FWD下)"), CH1_2FullPress.Text.ToString(), CH2PressureUnit.Text, elec.CH1FwdPreMax.ToString(), elec.CH1FwdPreMin.ToString(), "NG");
+                                        FlowNG(1);
+                                    }
+                                    else
+                                    {
+                                        //  log.MES_Logmsg(DateTime.Now.ToString() + "进入OK判断");
+                                        CH1Display($"{CH1RunName}" + I18N.GetLangText(dicLang, "输出压力(FWD下)"), CH1_2FullPress.Text.ToString(), CH2PressureUnit.Text, elec.CH1FwdPreMax.ToString(), elec.CH1FwdPreMin.ToString(), "OK");
+                                    }
+
+
+                                    CH1Display($"{CH1RunName}" + I18N.GetLangText(dicLang, "max电流(FWD)"), CH1ADCMax.ToString(), "A", elec.CH1FWDADCMax.ToString(), elec.CH1FWDADCMin.ToString(), "OK");
+                                    CH1Display($"{CH1RunName}" + I18N.GetLangText(dicLang, "max电压(FWD)"), CH1VDCMax.ToString(), "V", elec.CH1FWDVDCMax.ToString(), elec.CH1FWDVDCMin.ToString(), "OK");
+
+                                }
+
+                                if (CH1RTStep == "RWD")
+                                {
+                                    if (Flow.CH1RWDOverTime == 0)
+                                    {
+                                        CH1PressMax = CH1TestResult.FWD_Pre1;
+                                        CH2PressMax = CH1TestResult.FWD_Pre2;
+                                    }
+                                    CH1TestResult.RWD_Pre1 = Convert.ToDouble(CH1_1FullPress.Text);
+                                    CH1TestResult.RWD_Pre2 = CH2PressMax;
+                                    if (Convert.ToDouble(CH1_1FullPress.Text) > Flow.CH1RWDPressMax || Convert.ToDouble(CH1_1FullPress.Text) < Flow.CH1RWDPressMin || CH2PressMax > Flow.CH1RWDPressMax || CH2PressMax < Flow.CH1RWDPressMin)
+                                    {
+                                        if (Convert.ToDouble(CH1_1FullPress.Text) > Flow.CH1RWDPressMax || Convert.ToDouble(CH1_1FullPress.Text) < Flow.CH1RWDPressMin)
+                                        {
+                                            CH1Display($"{CH1RunName}" + I18N.GetLangText(dicLang, "输出压力(RWD上)"), Convert.ToDouble(CH1_1FullPress.Text).ToString(), PressureUnit.Text, Flow.CH1RWDPressMax.ToString(), Flow.CH1RWDPressMin.ToString(), "NG");
+
+                                            //6.18NG
+                                            FlowNG(1);
+                                        }
+                                        else
+                                        {
+                                            CH1Display($"{CH1RunName}" + I18N.GetLangText(dicLang, "输出压力(RWD上)"), Convert.ToDouble(CH1_1FullPress.Text).ToString(), PressureUnit.Text, Flow.CH1RWDPressMax.ToString(), Flow.CH1RWDPressMin.ToString(), "OK");
+                                        }
+                                        if (CH2PressMax > Flow.CH1RWDPressMax || CH2PressMax < Flow.CH1RWDPressMin)
+                                        {
+
+                                            CH1Display($"{CH1RunName}" + I18N.GetLangText(dicLang, "输出压力(RWD下)"), CH2PressMax.ToString(), PressureUnit.Text, Flow.CH1RWDPressMax.ToString(), Flow.CH1RWDPressMin.ToString(), "NG");
+                                            //6.18NG
+                                            FlowNG(1);
+                                        }
+                                        else
+                                        {
+                                            CH1Display($"{CH1RunName}" + I18N.GetLangText(dicLang, "输出压力(RWD下)"), CH2PressMax.ToString(), PressureUnit.Text, Flow.CH1RWDPressMax.ToString(), Flow.CH1RWDPressMin.ToString(), "OK");
+                                        }
+                                        plc.CH1RWDPressNG();
+                                        plc.CH1RWDFlowEnd();
+                                        FlowNG(1);
+                                        //6-28
+
                                         return;
                                     }
-                                    CH1Display($"{CH1RunName}" + I18N.GetLangText(dicLang, "电流比值"), CH1cont_elec.ToString(""), "-", Flow.CH1Cont_ElecMax.ToString(), Flow.CH1Cont_ElecMin.ToString(), "OK");
-                                    if (CH1lastpress == 0)
+                                    else
                                     {
-                                        CH1lastpress = 0.1;
+                                        CH1Display($"{CH1RunName}" + I18N.GetLangText(dicLang, "输出压力(RWD上)"), Convert.ToDouble(CH1_1FullPress.Text).ToString(), PressureUnit.Text, Flow.CH1RWDPressMax.ToString(), Flow.CH1RWDPressMin.ToString(), "OK");
+                                        CH1Display($"{CH1RunName}" + I18N.GetLangText(dicLang, "输出压力(RWD下)"), CH2PressMax.ToString(), PressureUnit.Text, Flow.CH1RWDPressMax.ToString(), Flow.CH1RWDPressMin.ToString(), "OK");
+                                        plc.CH1RWDPressOK();
+                                        plc.CH1RWDADCOK();
+                                        plc.CH1RWDVDCOK();
+                                        plc.CH1RWDFlowEnd();
+                                        plc.CH1uAOK();//增加一个BUG
+                                        CH1TestResult.RWD_ADCMAX = CH1ADCMax;
+                                        CH1TestResult.RWD_VDCMAX = CH1VDCMax;
+                                        CH1Display($"{CH1RunName}" + I18N.GetLangText(dicLang, "max电流(RWD)"), CH1ADCMax.ToString(), "A", elec.CH1RWDADCMax.ToString(), elec.CH1RWDADCMin.ToString(), "OK");
+                                        CH1Display($"{CH1RunName}" + I18N.GetLangText(dicLang, "max电压(RWD)"), CH1VDCMax.ToString(), "V", elec.CH1RWDVDCMax.ToString(), elec.CH1RWDVDCMin.ToString(), "OK");
                                     }
-                                    break;
                                 }
-                            }
-
-                            for (int i = 0; i < this.DataGridView1.Rows.Count - 1; i++)
-                            {
-                                if (this.DataGridView1.Rows[i].Cells[1].Value.ToString() == $"{CH1RunName}" + I18N.GetLangText(dicLang, "输出压力(DOWN)"))
+                                if (CH1RTStep == "DOWN")
                                 {
-                                    CH1lastpress = Convert.ToDouble(this.DataGridView1.Rows[i].Cells[2].Value.ToString());
-                                    CH1cont_press = CH1PressMax / CH1lastpress;
-                                    CH1cont_press += Flow.CH1Cont_Pre_Compen;
-                                    CH1cont_press = Math.Round(CH1cont_press, 2);
-                                    CH1TestResult.PressRatio = CH1cont_press;
-                                    if (CH1cont_press < Flow.CH1Cont_PressMin || CH1cont_press > Flow.CH1Cont_PressMax)
+                                    plc.CH1DOWNPreOK();
+                                    CH1_1FullPress.Text = CH1PressMax.ToString();
+                                    CH1ReadPress.Stop();
+                                    CH1TestResult.DOWN_Pre = CH2PressMax;
+                                    CH1TestResult.DOWN_ADCMAX = CH1ADCMax;
+                                    CH1TestResult.DOWN_VDCMAX = CH1VDCMax;
+                                    CH1TestResult.DOWN_Flow = CH2Q;
+                                    plc.CH1DOWNADCOK();
+                                    plc.CH1DOWNVDCOK();
+                                    plc.CH1PLCValveBreak();
+                                    plc.CH1uAOK();//增加一个BUG
+                                                  //7.26下充
+                                    down_UPPre = CH1PressMax;
+                                    CH1Display($"{CH1RunName}" + I18N.GetLangText(dicLang, "输出压力(DOWN-UP)"), CH1_1FullPress.Text.ToString(), PressureUnit.Text, Flow.CH1_1PreMax.ToString(), Flow.CH1_1PreMin.ToString(), "OK");
+                                    CH1Display($"{CH1RunName}" + I18N.GetLangText(dicLang, "输出压力(DOWN)"), CH2PressMax.ToString(), CH2PressureUnit.Text, "-", "-", "OK");
+                                    CH1Display($"{CH1RunName}" + I18N.GetLangText(dicLang, "max电流(DOWN)"), CH1ADCMax.ToString(), "A", elec.CH1DOWNADCMax.ToString(), elec.CH1DOWNADCMin.ToString(), "OK");
+                                    CH1Display($"{CH1RunName}" + I18N.GetLangText(dicLang, "max电压(DOWN)"), CH1VDCMax.ToString(), "V", elec.CH1DOWNVDCMax.ToString(), elec.CH1DOWNVDCMin.ToString(), "OK");
+                                    CH1Display($"{CH1RunName}" + I18N.GetLangText(dicLang, "max流量(DOWN)"), CH2Q.ToString(), "lpm", "-", "-", "OK");
+                                    CH1Display($"{CH1RunName}" + I18N.GetLangText(dicLang, "max流量(DOWN-UP)"), CH1Q.ToString(), "lpm", Flow.CH1_1FlowMax.ToString(), Flow.CH1_1FlowMin.ToString(), "OK");
+
+
+                                    for (int i = 0; i < this.DataGridView1.Rows.Count - 1; i++)
                                     {
-                                        CH1Display($"{CH1RunName}" + I18N.GetLangText(dicLang, "压力比值"), CH1cont_press.ToString(), "-", Flow.CH1Cont_PressMax.ToString(), Flow.CH1Cont_PressMin.ToString(), "NG");
-                                        plc.CH1RatioNG();
-                                        return;
+                                        if (this.DataGridView1.Rows[i].Cells[1].Value.ToString() == $"{CH1RunName}" + I18N.GetLangText(dicLang, "max电流(UP)"))
+                                        {
+                                            CH1lastelec = Convert.ToDouble(this.DataGridView1.Rows[i].Cells[2].Value.ToString());
+                                            CH1cont_elec = CH1ADCMax / CH1lastelec;
+                                            CH1cont_elec += Flow.CH1Cont_Elec_Compen;
+                                            CH1cont_elec = Math.Round(CH1cont_elec, 2);
+                                            CH1TestResult.ElecRatio = CH1cont_elec;
+                                            if (CH1cont_elec < Flow.CH1Cont_ElecMin || CH1cont_elec > Flow.CH1Cont_ElecMax)
+                                            {
+                                                CH1Display($"{CH1RunName}" + I18N.GetLangText(dicLang, "电流比值"), CH1cont_elec.ToString(""), "-", Flow.CH1Cont_ElecMax.ToString(), Flow.CH1Cont_ElecMin.ToString(), "NG");
+                                                plc.CH1RatioNG();
+                                                return;
+                                            }
+                                            CH1Display($"{CH1RunName}" + I18N.GetLangText(dicLang, "电流比值"), CH1cont_elec.ToString(""), "-", Flow.CH1Cont_ElecMax.ToString(), Flow.CH1Cont_ElecMin.ToString(), "OK");
+                                            if (CH1lastpress == 0)
+                                            {
+                                                CH1lastpress = 0.1;
+                                            }
+                                            break;
+                                        }
                                     }
-                                    CH1Display($"{CH1RunName}" + I18N.GetLangText(dicLang, "压力比值"), CH1cont_press.ToString(), "-", Flow.CH1Cont_PressMax.ToString(), Flow.CH1Cont_PressMin.ToString(), "OK");
-                                    plc.CH1RatioOK();
-                                    break;
+                                    for (int i = 0; i < this.DataGridView1.Rows.Count - 1; i++)
+                                    {
+                                        if (this.DataGridView1.Rows[i].Cells[1].Value.ToString() == $"{CH1RunName}" + I18N.GetLangText(dicLang, "输出压力(UP)"))
+                                        {
+                                            CH1lastpress = Convert.ToDouble(this.DataGridView1.Rows[i].Cells[2].Value.ToString());
+                                            CH1cont_press = CH1lastpress / CH2PressMax;
+                                            CH1cont_press += Flow.CH1Cont_Pre_Compen;
+                                            CH1cont_press = Math.Round(CH1cont_press, 2);
+                                            CH1TestResult.PressRatio = CH1cont_press;
+                                            if (CH1cont_press < Flow.CH1Cont_PressMin || CH1cont_press > Flow.CH1Cont_PressMax)
+                                            {
+                                                CH1Display($"{CH1RunName}" + I18N.GetLangText(dicLang, "压力比值"), CH1cont_press.ToString(), "-", Flow.CH1Cont_PressMax.ToString(), Flow.CH1Cont_PressMin.ToString(), "NG");
+                                                plc.CH1RatioNG();
+                                                return;
+                                            }
+                                            CH1Display($"{CH1RunName}" + I18N.GetLangText(dicLang, "压力比值"), CH1cont_press.ToString(), "-", Flow.CH1Cont_PressMax.ToString(), Flow.CH1Cont_PressMin.ToString(), "OK");
+                                            plc.CH1RatioOK();
+                                            break;
+                                        }
+                                    }
+
+                                    plc.CH1DOWNFlowEnd();
                                 }
-                            }
-                            plc.CH1UPFlowEnd();
+                            })));
+
+                            if (CH1Tlight.Text != "NG")
+                                if (CH1RTStep == "DOWN" || CH1RTStep == "FWD" || CH1RTStep == "RWD" || CH1RTStep == "UP")
+                                {
+                                    CH1Step += 1;
+                                    CH1Method(CH1Step);
+                                }
                         }
-                
-                           if (!CH1RTStep.Contains("Leak"))
-                            {
-                            CH1Step += 1;
-                            CH1Method(CH1Step);
-                            }
                     }
                 }
-            }
-            catch (Exception ex)
-            {
-                wa.InsertWarningData(DateTime.Now.ToString("yyyy-MM-dd HH:mm:ss"), "-", I18N.GetLangText(dicLang, "CH1-2读取输出压力") + ":" + ex.Message);
-                //MessageBox.Show("CH1-2读取输出压力：" + ex.Message);
-                Logger.Log(I18N.GetLangText(dicLang, "CH1-2读取输出压力") + ":" + ex.Message);
-                Logger.Log(ex.StackTrace);
-            }
+                catch (Exception ex)
+                {
+                    wa.InsertWarningData(DateTime.Now.ToString("yyyy-MM-dd HH:mm:ss"), "-", I18N.GetLangText(dicLang, "CH1-2读取输出压力") + ":" + ex.Message);
+                    //MessageBox.Show("CH1-2读取输出压力：" + ex.Message);
+                    Logger.Log(I18N.GetLangText(dicLang, "CH1-2读取输出压力") + ":" + ex.Message);
+                    Logger.Log(ex.StackTrace);
+                }
 
-        
+
         }
 
         private void CH3ReadPress_Tick(object sender, EventArgs e)
         {
             if (CH2RTStep == "UP" || CH2RTStep == "DOWN" || CH2RTStep == "FWD" || CH2RTStep == "RWD")
                 try
-            {
+                {
                     ReadConfig con = new ReadConfig();
                     Model.Flow flow;
                     flow = con.ReadFlow();
 
                     //泄气会有误差，所以把电流电压读取放后面一点，在lin通讯后
                     JudgeCH2ADC = true;
-                CH3IsRun.Stop();
-                ch2_1step = 10;
-                CH3ReadPress.Interval = 300;
-                ch3client.btnSendData("03 03 04 03 00 17 ");
-                //leftclient.btnSendData("01 03 04 18 00 02 ");
-                ch3stage = 7;
-                //计算时间
-                ch3pressend = System.DateTime.Now.Ticks;
-                TimeSpan ts1 = new TimeSpan(ch3pressstart);
-                TimeSpan ts2 = new TimeSpan(ch3pressend);
-                TimeSpan ptime = ts2.Subtract(ts1).Duration();
-                double presstime = ptime.TotalSeconds;
-                double pressovertime;
-                if (CH2RTStep == "RWD")
-                {
-                    pressovertime = Flow.CH2RWDOverTime;
-                    //plc.CH2RWDStart();
-                }
-                else
-                {
-                    pressovertime = Flow.CH3Press_OverTime;
-                }
-
-                if (presstime > pressovertime)
-                {
-                    CHpreflag2++;
-                    CH3ReadPress.Stop();
-                    CH2_1FullPress.Text = CH3PressMax.ToString();
-                    CH3flowtest = false;
-                    //CH1IsRun.Interval = 500;
-                    //CH1IsRun.Start();
-                    //ch1_1step = 5;//5-27
-                    if (CHpreflag2 >= 2)
-                    //  if (!CH4flowtest)
+                    CH3IsRun.Stop();
+                    ch2_1step = 10;
+                    CH3ReadPress.Interval = 300;
+                    ch3client.btnSendData("03 03 04 03 00 17 ");
+                    //leftclient.btnSendData("01 03 04 18 00 02 ");
+                    ch3stage = 7;
+                    //计算时间
+                    ch3pressend = System.DateTime.Now.Ticks;
+                    TimeSpan ts1 = new TimeSpan(ch3pressstart);
+                    TimeSpan ts2 = new TimeSpan(ch3pressend);
+                    TimeSpan ptime = ts2.Subtract(ts1).Duration();
+                    double presstime = ptime.TotalSeconds;
+                    double pressovertime;
+                    if (CH2RTStep == "RWD")
                     {
-                        //CH4ReadFlowT.Stop();
-                        CH3ReadPress.Stop();
-                        //两台仪器都没有在测试，则停止lin通讯
-                        CH2LinUP.Stop();
-                        CH3ReadFlowT.Stop();
-                        Thread.Sleep(200);
-                        //plc.CH2PowerClose();
-                        plc.CH2PLCValveBreak();
-
-                        //流量测试完之后，需要把测试仪复位，避免后续步骤启动失败
-                        {
-                            ch3client.btnSendData("03 05 00 01 FF 00");
-                            ch4client.btnSendData("04 05 00 01 FF 00");
-                            Thread.Sleep(50);
-                            ch3client.btnSendData("03 05 00 01 FF 00");
-                            ch4client.btnSendData("04 05 00 01 FF 00");
-                            Thread.Sleep(50);
-                            ch3client.btnSendData("03 05 00 01 FF 00");
-                            ch4client.btnSendData("04 05 00 01 FF 00");
-                        }
-
-                        ch3stage = 10;
-                        CHXProBarFlag[3] = 0;
-                        CH3IsRun.Interval = 500;
-                        CH3IsRun.Start();
-                        ch2_1step = 4;
-                        ch3write = 1;
-                        ch4stage = 10;
-                        CHXProBarFlag[4] = 0;
-                        CH4IsRun.Interval = 500;
-                        CH4IsRun.Start();
-                        ch2_2step = 4;
-                        ch4write = 1;
-                        if (plc.CH2LIN)
-                        {
-                            plc.CH2LinFinish();
-                        }
-                        if (!CH2ReadElecResult())
-                        {
-                            return;
-                        }
-
-                        CH2VDCresult = "OK";
-                        CH2ADCresult = "OK";
-                        if (CH2RTStep == "UP")
-                        {
-                            plc.CH2UPPreOK();//电流电压ok M
-                            plc.CH2UPADCOK();//
-                            plc.CH2UPVDCOK();//
-                            plc.CH2uAOK();//增加一个BUG
-                            CH2_2FullPress.Text = CH4PressMax.ToString();
-                            CH2TestResult.UP_ADCMAX = CH2ADCMax;
-                            CH2TestResult.UP_VDCMAX = CH2VDCMax;
-                            CH2TestResult.UP_Flow = CH3Q;
-                            CH2TestResult.UP_Pre = CH3PressMax;
-                            CH3Display($"{CH2RunName}" + I18N.GetLangText(dicLang, "输出压力(UP)"), CH3PressMax.ToString(), CH3PressureUnit.Text, "-", "-", "OK");
-                            CH3Display($"{CH2RunName}" + I18N.GetLangText(dicLang, "输出压力(UP-DOWN)"), CH4PressMax.ToString(), CH4PressureUnit.Text, Flow.CH2_2PreMax.ToString(), Flow.CH2_2PreMin.ToString(), "OK");
-                            CH3Display($"{CH2RunName}" + I18N.GetLangText(dicLang, "max电流(UP)"), CH2ADCMax.ToString(), "A", elec.CH2UPADCMax.ToString(), elec.CH2UPADCMin.ToString(), "OK");
-                            CH3Display($"{CH2RunName}" + I18N.GetLangText(dicLang, "max电压(UP)"), CH2VDCMax.ToString(), "V", elec.CH2UPVDCMax.ToString(), elec.CH2UPVDCMin.ToString(), "OK");
-                            CH3Display($"{CH2RunName}" + I18N.GetLangText(dicLang, "max流量(UP)"), CH3Q.ToString(), "lpm", "-", "-", "OK");
-                            CH3Display($"{CH2RunName}" + I18N.GetLangText(dicLang, "max流量(UP-DOWN)"), CH4Q.ToString(), "lpm", Flow.CH2_2FlowMax.ToString(), Flow.CH2_2FlowMin.ToString(), "OK");
-                           
-
-                            for (int i = 0; i < this.DataGridView2.Rows.Count - 1; i++)
-                            {
-                                if (this.DataGridView2.Rows[i].Cells[1].Value.ToString() == $"{CH2RunName}" + I18N.GetLangText(dicLang, "max电流(DOWN)"))
-                                {
-                                    CH2lastelec = Convert.ToDouble(this.DataGridView2.Rows[i].Cells[2].Value.ToString());
-                                    CH2cont_elec = CH2ADCMax / CH2lastelec;
-                                    CH2cont_elec += Flow.CH2Cont_Elec_Compen;
-                                    CH2cont_elec = Math.Round(CH2cont_elec, 2);
-                                    CH2TestResult.ElecRatio = CH2cont_elec;
-                                    if (CH2cont_elec < Flow.CH2Cont_ElecMin || CH2cont_elec > Flow.CH2Cont_ElecMax)
-                                    {
-                                        CH3Display($"{CH2RunName}" + I18N.GetLangText(dicLang, "电流比值"), CH2cont_elec.ToString(), "-", Flow.CH2Cont_ElecMax.ToString(), Flow.CH2Cont_ElecMin.ToString(), "NG");
-                                        plc.CH2RatioNG();
-                                            FlowNG(2);
-                                            return;
-                                    }
-
-                                    CH3Display($"{CH2RunName}" + I18N.GetLangText(dicLang, "电流比值"), CH2cont_elec.ToString(), "-", Flow.CH2Cont_ElecMax.ToString(), Flow.CH2Cont_ElecMin.ToString(), "OK");
-                                    if (CH2lastpress == 0)
-                                    {
-                                        CH2lastpress = 0.1;
-                                    }
-                                    break;
-                                }
-                            }
-
-                            for (int i = 0; i < this.DataGridView2.Rows.Count - 1; i++)
-                            {
-                                if (this.DataGridView2.Rows[i].Cells[1].Value.ToString() == $"{CH2RunName}" + I18N.GetLangText(dicLang, "输出压力(DOWN)"))
-                                {
-                                    CH2lastpress = Convert.ToDouble(this.DataGridView2.Rows[i].Cells[2].Value.ToString());
-                                    CH2cont_press = CH3PressMax / CH2lastpress;
-                                    CH2cont_press += Flow.CH2Cont_Pre_Compen;
-                                    CH2cont_press = Math.Round(CH2cont_press, 2);
-                                    CH2TestResult.PressRatio = CH2cont_press;
-
-                                    if (CH2cont_press < Flow.CH2Cont_PressMin || CH2cont_press > Flow.CH2Cont_PressMax)
-                                    {
-                                        CH3Display($"{CH2RunName}" + I18N.GetLangText(dicLang, "压力比值"), CH2cont_press.ToString(), "-", Flow.CH2Cont_PressMax.ToString(), Flow.CH2Cont_PressMin.ToString(), "NG");
-                                        plc.CH2RatioNG();
-                                            FlowNG(2);
-                                            return;
-                                    }
-                                    CH3Display($"{CH2RunName}" + I18N.GetLangText(dicLang, "压力比值"), CH2cont_press.ToString(), "-", Flow.CH2Cont_PressMax.ToString(), Flow.CH2Cont_PressMin.ToString(), "OK");
-                                    plc.CH2RatioOK();
-                                    break;
-                                }
-                            }
-                            plc.CH2UPFlowEnd();
-                        }
+                        pressovertime = Flow.CH2RWDOverTime;
+                        //plc.CH2RWDStart();
+                    }
+                    else
+                    {
                         if (CH2RTStep == "FWD")
-                            {
-
-                                plc.CH2FWDVDCOK();
-                            plc.CH2FWDFlowEnd();
-                            plc.CH2uAOK();//增加一个BUG
-                            CH2TestResult.FWD_ADCMAX = CH2ADCMax;
-                            CH2TestResult.FWD_VDCMAX = CH2VDCMax;
-                            CH2TestResult.FWD_Flow1 = CH3Q;
-                            CH2TestResult.FWD_Flow2 = CH4Q;
-                            CH2TestResult.FWD_Pre1 = CH3PressMax;
-                            CH2TestResult.FWD_Pre2 = CH4PressMax;
-                                //6.18c
-                                if (CH3PressMax > elec.CH2_1PreFwdMax || CH3PressMax < elec.CH2_2PreFwdMin)
-                                {
-                                    log.MES_Logmsg(DateTime.Now.ToString() + "进入CH3Ng");
-                                    
-                                    CH3Display($"{CH2RunName}" + I18N.GetLangText(dicLang, "输出压力(FWD上)"), CH3PressMax.ToString(), CH3PressureUnit.Text, elec.CH2_1PreFwdMax.ToString(),
-                                        elec.CH2_2PreFwdMin.ToString(), "NG");
-
-                                    FlowNG(2);
-                                }
-                                else
-                                {
-                                    log.MES_Logmsg(DateTime.Now.ToString() + "进入CH3ok");
-                                    CH3Display($"{CH2RunName}" + I18N.GetLangText(dicLang, "输出压力(FWD上)"), CH3PressMax.ToString(), CH3PressureUnit.Text, elec.CH2_1PreFwdMax.ToString(),
-                                      elec.CH2_2PreFwdMin.ToString(), "OK");
-                                }
-                                if (CH4PressMax > elec.CH2_1PreFwdMax || CH4PressMax < elec.CH2_2PreFwdMin)
-                                {
-                                    CH3Display($"{CH2RunName}" + I18N.GetLangText(dicLang, "输出压力(FWD下)"), CH4PressMax.ToString(), CH4PressureUnit.Text, elec.CH2_1PreFwdMax.ToString(), elec.CH2_2PreFwdMin.ToString(), "NG");
-                                    FlowNG(2);
-                                }
-                                else
-                                {
-                                    CH3Display($"{CH2RunName}" + I18N.GetLangText(dicLang, "输出压力(FWD下)"), CH4PressMax.ToString(), CH4PressureUnit.Text, elec.CH2_1PreFwdMax.ToString(), elec.CH2_2PreFwdMin.ToString().ToString(), "OK");
-
-                                }
-                          
-                            CH3Display($"{CH2RunName}" + I18N.GetLangText(dicLang, "max电流(FWD)"), CH2ADCMax.ToString(), "A", elec.CH2FWDADCMax.ToString(), elec.CH2FWDADCMin.ToString(), "OK");
-                            CH3Display($"{CH2RunName}" + I18N.GetLangText(dicLang, "max电压(FWD)"), CH2VDCMax.ToString(), "V", elec.CH2FWDVDCMax.ToString(), elec.CH2FWDVDCMin.ToString(), "OK");
-
-                                if (CH3Q> flow.CH1_1FlowMax||CH3Q< flow.CH1_1FlowMin)
-                                {
-                                    CH3Display($"{CH2RunName}" + I18N.GetLangText(dicLang, "max流量(FWD上)"), CH3Q.ToString(), "lpm", flow.CH1_1FlowMax.ToString(), flow.CH1_1FlowMin.ToString(), "NG");
-                                    FlowNG(2);
-                                }
-                                CH3Display($"{CH2RunName}" + I18N.GetLangText(dicLang, "max流量(FWD上)"), CH3Q.ToString(), "lpm", flow.CH1_1FlowMax.ToString(), flow.CH1_1FlowMin.ToString(), "OK");
-
-                                if (CH4Q > flow.CH1_1FlowMax || CH4Q < flow.CH1_1FlowMin)
-                                {
-                                    CH3Display($"{CH2RunName}" + I18N.GetLangText(dicLang, "max流量(FWD下)"), CH4Q.ToString(), "lpm", flow.CH1_1FlowMax.ToString(), flow.CH1_1FlowMin.ToString(), "NG");
-                                    FlowNG(2);
-                                }
-                                CH3Display($"{CH2RunName}" + I18N.GetLangText(dicLang, "max流量(FWD下)"), CH4Q.ToString(), "lpm", flow.CH1_1FlowMax.ToString(), flow.CH1_1FlowMin.ToString(), "OK");
-
-                            }
-                        if (CH2RTStep == "RWD")
                         {
-                            if (Flow.CH2RWDOverTime == 0)
-                            {
-                                CH3PressMax = CH2TestResult.FWD_Pre1;
-                                CH4PressMax = CH2TestResult.FWD_Pre2;
-                            }
-                            CH2TestResult.RWD_Pre1 = CH3PressMax;
-                            CH2TestResult.RWD_Pre2 = CH4PressMax;
-                            if (CH3PressMax > Flow.CH2RWDPressMax || CH3PressMax < Flow.CH2RWDPressMin || CH4PressMax > Flow.CH2RWDPressMax || CH4PressMax < Flow.CH2RWDPressMin)
-                            {
-                                if (CH3PressMax > Flow.CH2RWDPressMax || CH3PressMax < Flow.CH2RWDPressMin)
-                                {
-                                    CH3Display($"{CH2RunName}" + I18N.GetLangText(dicLang, "输出压力(RWD上)"), CH3PressMax.ToString(), CH3PressureUnit.Text, Flow.CH2RWDPressMax.ToString(), Flow.CH2RWDPressMin.ToString(), "NG");
-                                        //6.18NG
-                                        FlowNG(2);
-                                    }
-                                else
-                                {
-                                    CH3Display($"{CH2RunName}" + I18N.GetLangText(dicLang, "输出压力(RWD上)"), CH3PressMax.ToString(), CH3PressureUnit.Text, Flow.CH2RWDPressMax.ToString(), Flow.CH2RWDPressMin.ToString(), "OK");
-                                }
-                                if (CH4PressMax > Flow.CH2RWDPressMax || CH4PressMax < Flow.CH2RWDPressMin)
-                                {
-                                    CH3Display($"{CH2RunName}" + I18N.GetLangText(dicLang, "输出压力(RWD下)"), CH4PressMax.ToString(), CH4PressureUnit.Text, Flow.CH2RWDPressMax.ToString(), Flow.CH2RWDPressMin.ToString(), "NG");
-                                        FlowNG(2);
-                                    }
-                                else
-                                {
-                                    CH3Display($"{CH2RunName}" + I18N.GetLangText(dicLang, "输出压力(RWD下)"), CH4PressMax.ToString(), CH4PressureUnit.Text, Flow.CH2RWDPressMax.ToString(), Flow.CH2RWDPressMin.ToString(), "OK");
-                                }
-                                plc.CH2RWDPressNG();
-                                plc.CH2RWDFlowEnd();
-                                return;
-                            }
-                            else
-                            {
-                                CH3Display($"{CH2RunName}" + I18N.GetLangText(dicLang, "输出压力(RWD上)"), CH3PressMax.ToString(), CH3PressureUnit.Text, Flow.CH2RWDPressMax.ToString(), Flow.CH2RWDPressMin.ToString(), "OK");
-                                CH3Display($"{CH2RunName}" + I18N.GetLangText(dicLang, "输出压力(RWD下)"), CH4PressMax.ToString(), CH4PressureUnit.Text, Flow.CH2RWDPressMax.ToString(), Flow.CH2RWDPressMin.ToString(), "OK");
-                                plc.CH2RWDPressOK();
-                                plc.CH2RWDADCOK();
-                                plc.CH2RWDVDCOK();
-                                plc.CH2uAOK();//增加一个BUG
-                                plc.CH2RWDFlowEnd();
-                                CH2TestResult.RWD_ADCMAX = CH2ADCMax;
-                                CH2TestResult.RWD_VDCMAX = CH2VDCMax;
-                                CH3Display($"{CH2RunName}" + I18N.GetLangText(dicLang, "max电流(RWD)"), CH2ADCMax.ToString(), "A", elec.CH2RWDADCMax.ToString(), elec.CH2RWDADCMin.ToString(), "OK");
-                                CH3Display($"{CH2RunName}" + I18N.GetLangText(dicLang, "max电压(RWD)"), CH2VDCMax.ToString(), "V", elec.CH2RWDVDCMax.ToString(), elec.CH2RWDVDCMin.ToString(), "OK");
-                            }
+                            pressovertime = elec.CH2FwdpreTime;
                         }
-                        if (CH2RTStep == "DOWN")
-                        {
-                            CH3ReadPress.Stop();
-                            plc.CH2DOWNPreOK();
-                            CH2_1FullPress.Text = CH2PressMax.ToString();
-                            //CH2ReadPress.Stop();
-                            CH2TestResult.DOWN_Pre = CH4PressMax;
-                            CH2TestResult.DOWN_ADCMAX = CH2ADCMax;
-                            CH2TestResult.DOWN_VDCMAX = CH2VDCMax;
-                            CH2TestResult.DOWN_Flow = CH4Q;
-                            plc.CH2DOWNADCOK();
-                            plc.CH2DOWNVDCOK();
-                            plc.CH2PLCValveBreak();
-                            plc.CH2uAOK();//增加一个BUG
-                            CH3Display($"{CH2RunName}" + I18N.GetLangText(dicLang, "输出压力(DOWN-UP)"), CH3PressMax.ToString(), CH3PressureUnit.Text, Flow.CH2_1PreMax.ToString(), Flow.CH2_1PreMin.ToString(), "OK");
-                            CH3Display($"{CH2RunName}" + I18N.GetLangText(dicLang, "输出压力(DOWN)"), CH4PressMax.ToString(), CH4PressureUnit.Text, "-", "-", "OK");
-                            CH3Display($"{CH2RunName}" + I18N.GetLangText(dicLang, "max电流(DOWN)"), CH2ADCMax.ToString(), "A", elec.CH2DOWNADCMax.ToString(), elec.CH2DOWNADCMin.ToString(), "OK");
-                            CH3Display($"{CH2RunName}" + I18N.GetLangText(dicLang, "max电压(DOWN)"), CH2VDCMax.ToString(), "V", elec.CH2DOWNVDCMax.ToString(), elec.CH2DOWNVDCMin.ToString(), "OK");
-                            CH3Display($"{CH2RunName}" + I18N.GetLangText(dicLang, "max流量(DOWN)"), CH4Q.ToString(), "lpm", "-", "-", "OK");
-                            CH3Display($"{CH2RunName}" + I18N.GetLangText(dicLang, "max流量(DOWN-UP)"), CH3Q.ToString(), "lpm", Flow.CH2_1FlowMax.ToString(), Flow.CH2_1FlowMin.ToString(), "OK");
-                   
-                            for (int i = 0; i < this.DataGridView2.Rows.Count - 1; i++)
-                            {
-                                if (this.DataGridView2.Rows[i].Cells[1].Value.ToString() == $"{CH2RunName}" + I18N.GetLangText(dicLang, "max电流(UP)"))
-                                {
-                                    CH2lastelec = Convert.ToDouble(this.DataGridView2.Rows[i].Cells[2].Value.ToString());
+                        else
+                            pressovertime = Flow.CH3Press_OverTime;
+                    }
 
-                                    CH2cont_elec = CH2lastelec / CH2ADCMax;
-                                    CH2cont_elec += Flow.CH2Cont_Elec_Compen;
-                                    CH2cont_elec = Math.Round(CH2cont_elec, 2);
+                    if (presstime > pressovertime)
+                    {
+                        CHpreflag2++;
+                        CH3ReadPress.Stop();
+                        CH2_1FullPress.Text = CH3PressMax.ToString();
+                        CH3flowtest = false;
+                        //CH1IsRun.Interval = 500;
+                        //CH1IsRun.Start();
+                        //ch1_1step = 5;//5-27
 
-                                    CH2TestResult.ElecRatio = CH2cont_elec;
-                                    if (CH2cont_elec < Flow.CH2Cont_ElecMin || CH2cont_elec > Flow.CH2Cont_ElecMax)
-                                    {
-                                        CH3Display($"{CH2RunName}" + I18N.GetLangText(dicLang, "电流比值"), CH2cont_elec.ToString(), "-", Flow.CH2Cont_ElecMax.ToString(), Flow.CH2Cont_ElecMin.ToString(), "NG");
-                                        plc.CH2RatioNG();
-                                        return;
-                                    }
-                                    CH3Display($"{CH2RunName}" + I18N.GetLangText(dicLang, "电流比值"), CH2cont_elec.ToString(), "-", Flow.CH2Cont_ElecMax.ToString(), Flow.CH2Cont_ElecMin.ToString(), "OK");
-                                    if (CH4PressMax == 0)
-                                    {
-                                        CH4PressMax = 0.1;
-                                    }
-                                    break;
-                                }
-                            }
+                        /////////////////////////////
+                        //if (CHpreflag2 >= 2)
+                        ////  if (!CH4flowtest)
+                        //{
+                        //    //CH4ReadFlowT.Stop();
+                        //    CH3ReadPress.Stop();
+                        //    //两台仪器都没有在测试，则停止lin通讯
+                        //    CH2LinUP.Stop();
+                        //    CH3ReadFlowT.Stop();
+                        //    Thread.Sleep(200);
+                        //    //plc.CH2PowerClose();
+                        //    plc.CH2PLCValveBreak();
 
-                            for (int i = 0; i < this.DataGridView2.Rows.Count - 1; i++)
-                            {
-                                if (this.DataGridView2.Rows[i].Cells[1].Value.ToString() == $"{CH2RunName}" + I18N.GetLangText(dicLang, "输出压力(UP)"))
-                                {
-                                    CH2lastpress = Convert.ToDouble(this.DataGridView2.Rows[i].Cells[2].Value.ToString());
-                                    CH2cont_press = CH2lastpress / CH4PressMax;
-                                    CH2cont_press += Flow.CH2Cont_Pre_Compen;
-                                    CH2cont_press = Math.Round(CH2cont_press, 2);
-                                    CH2TestResult.PressRatio = CH2cont_press;
-                                    if (CH2cont_press < Flow.CH2Cont_PressMin || CH2cont_press > Flow.CH2Cont_PressMax)
-                                    {
-                                        CH3Display($"{CH2RunName}" + I18N.GetLangText(dicLang, "压力比值"), CH2cont_press.ToString(), "-", Flow.CH2Cont_PressMax.ToString(), Flow.CH2Cont_PressMin.ToString(), "NG");
-                                        plc.CH2RatioNG();
-                                            FlowNG(2);
-                                            return;
-                                    }
-                                    CH3Display($"{CH2RunName}" + I18N.GetLangText(dicLang, "压力比值"), CH2cont_press.ToString(), "-", Flow.CH2Cont_PressMax.ToString(), Flow.CH2Cont_PressMin.ToString(), "OK");
-                                    plc.CH2RatioOK();
-                                    break;
-                                }
-                            }
+                        //    //流量测试完之后，需要把测试仪复位，避免后续步骤启动失败
+                        //    {
+                        //        ch3client.btnSendData("03 05 00 01 FF 00");
+                        //        ch4client.btnSendData("04 05 00 01 FF 00");
+                        //        Thread.Sleep(50);
+                        //        ch3client.btnSendData("03 05 00 01 FF 00");
+                        //        ch4client.btnSendData("04 05 00 01 FF 00");
+                        //        Thread.Sleep(50);
+                        //        ch3client.btnSendData("03 05 00 01 FF 00");
+                        //        ch4client.btnSendData("04 05 00 01 FF 00");
+                        //    }
 
-                            plc.CH2DOWNFlowEnd();
-                        }
+                        //    ch3stage = 10;
+                        //    CHXProBarFlag[3] = 0;
+                        //    CH3IsRun.Interval = 500;
+                        //    CH3IsRun.Start();
+                        //    ch2_1step = 4;
+                        //    ch3write = 1;
+                        //    ch4stage = 10;
+                        //    CHXProBarFlag[4] = 0;
+                        //    CH4IsRun.Interval = 500;
+                        //    CH4IsRun.Start();
+                        //    ch2_2step = 4;
+                        //    ch4write = 1;
+                        //    if (plc.CH2LIN)
+                        //    {
+                        //        plc.CH2LinFinish();
+                        //    }
+                        //    if (!CH2ReadElecResult())
+                        //    {
+                        //        return;
+                        //    }
+
+                        //    CH2VDCresult = "OK";
+                        //    CH2ADCresult = "OK";
+                        //    if (CH2RTStep == "UP")
+                        //    {
+                        //        plc.CH2UPPreOK();//电流电压ok M
+                        //        plc.CH2UPADCOK();//
+                        //        plc.CH2UPVDCOK();//
+                        //        plc.CH2uAOK();//增加一个BUG
+                        //        CH2_2FullPress.Text = CH4PressMax.ToString();
+                        //        CH2TestResult.UP_ADCMAX = CH2ADCMax;
+                        //        CH2TestResult.UP_VDCMAX = CH2VDCMax;
+                        //        CH2TestResult.UP_Flow = CH3Q;
+                        //        CH2TestResult.UP_Pre = CH3PressMax;
+                        //        CH3Display($"{CH2RunName}" + I18N.GetLangText(dicLang, "输出压力(UP)"), CH3PressMax.ToString(), CH3PressureUnit.Text, "-", "-", "OK");
+                        //        CH3Display($"{CH2RunName}" + I18N.GetLangText(dicLang, "输出压力(UP-DOWN)"), CH4PressMax.ToString(), CH4PressureUnit.Text, Flow.CH2_2PreMax.ToString(), Flow.CH2_2PreMin.ToString(), "OK");
+                        //        CH3Display($"{CH2RunName}" + I18N.GetLangText(dicLang, "max电流(UP)"), CH2ADCMax.ToString(), "A", elec.CH2UPADCMax.ToString(), elec.CH2UPADCMin.ToString(), "OK");
+                        //        CH3Display($"{CH2RunName}" + I18N.GetLangText(dicLang, "max电压(UP)"), CH2VDCMax.ToString(), "V", elec.CH2UPVDCMax.ToString(), elec.CH2UPVDCMin.ToString(), "OK");
+                        //        CH3Display($"{CH2RunName}" + I18N.GetLangText(dicLang, "max流量(UP)"), CH3Q.ToString(), "lpm", "-", "-", "OK");
+                        //        CH3Display($"{CH2RunName}" + I18N.GetLangText(dicLang, "max流量(UP-DOWN)"), CH4Q.ToString(), "lpm", Flow.CH2_2FlowMax.ToString(), Flow.CH2_2FlowMin.ToString(), "OK");
 
 
-                        if (CH2RTStep == "DOWN" || CH2RTStep == "FWD" || CH2RTStep == "RWD" || CH2RTStep == "UP")
-                        {
-                            CH2Step += 1;
-                            CH2Method(CH2Step);
-                        }
+                        //        for (int i = 0; i < this.DataGridView2.Rows.Count - 1; i++)
+                        //        {
+                        //            if (this.DataGridView2.Rows[i].Cells[1].Value.ToString() == $"{CH2RunName}" + I18N.GetLangText(dicLang, "max电流(DOWN)"))
+                        //            {
+                        //                CH2lastelec = Convert.ToDouble(this.DataGridView2.Rows[i].Cells[2].Value.ToString());
+                        //                CH2cont_elec = CH2ADCMax / CH2lastelec;
+                        //                CH2cont_elec += Flow.CH2Cont_Elec_Compen;
+                        //                CH2cont_elec = Math.Round(CH2cont_elec, 2);
+                        //                CH2TestResult.ElecRatio = CH2cont_elec;
+                        //                if (CH2cont_elec < Flow.CH2Cont_ElecMin || CH2cont_elec > Flow.CH2Cont_ElecMax)
+                        //                {
+                        //                    CH3Display($"{CH2RunName}" + I18N.GetLangText(dicLang, "电流比值"), CH2cont_elec.ToString(), "-", Flow.CH2Cont_ElecMax.ToString(), Flow.CH2Cont_ElecMin.ToString(), "NG");
+                        //                    plc.CH2RatioNG();
+                        //                    FlowNG(2);
+                        //                    return;
+                        //                }
+
+                        //                CH3Display($"{CH2RunName}" + I18N.GetLangText(dicLang, "电流比值"), CH2cont_elec.ToString(), "-", Flow.CH2Cont_ElecMax.ToString(), Flow.CH2Cont_ElecMin.ToString(), "OK");
+                        //                if (CH2lastpress == 0)
+                        //                {
+                        //                    CH2lastpress = 0.1;
+                        //                }
+                        //                break;
+                        //            }
+                        //        }
+
+                        //        for (int i = 0; i < this.DataGridView2.Rows.Count - 1; i++)
+                        //        {
+                        //            if (this.DataGridView2.Rows[i].Cells[1].Value.ToString() == $"{CH2RunName}" + I18N.GetLangText(dicLang, "输出压力(DOWN)"))
+                        //            {
+                        //                CH2lastpress = Convert.ToDouble(this.DataGridView2.Rows[i].Cells[2].Value.ToString());
+                        //                CH2cont_press = CH3PressMax / CH2lastpress;
+                        //                CH2cont_press += Flow.CH2Cont_Pre_Compen;
+                        //                CH2cont_press = Math.Round(CH2cont_press, 2);
+                        //                CH2TestResult.PressRatio = CH2cont_press;
+
+                        //                if (CH2cont_press < Flow.CH2Cont_PressMin || CH2cont_press > Flow.CH2Cont_PressMax)
+                        //                {
+                        //                    CH3Display($"{CH2RunName}" + I18N.GetLangText(dicLang, "压力比值"), CH2cont_press.ToString(), "-", Flow.CH2Cont_PressMax.ToString(), Flow.CH2Cont_PressMin.ToString(), "NG");
+                        //                    plc.CH2RatioNG();
+                        //                    FlowNG(2);
+                        //                    return;
+                        //                }
+                        //                CH3Display($"{CH2RunName}" + I18N.GetLangText(dicLang, "压力比值"), CH2cont_press.ToString(), "-", Flow.CH2Cont_PressMax.ToString(), Flow.CH2Cont_PressMin.ToString(), "OK");
+                        //                plc.CH2RatioOK();
+                        //                break;
+                        //            }
+                        //        }
+                        //        plc.CH2UPFlowEnd();
+                        //    }
+                        //    if (CH2RTStep == "FWD")
+                        //    {
+
+                        //        plc.CH2FWDVDCOK();
+                        //        plc.CH2FWDFlowEnd();
+                        //        plc.CH2uAOK();//增加一个BUG
+                        //        CH2TestResult.FWD_ADCMAX = CH2ADCMax;
+                        //        CH2TestResult.FWD_VDCMAX = CH2VDCMax;
+                        //        CH2TestResult.FWD_Flow1 = Convert.ToDouble(CH2_1flow.Text);
+                        //        CH2TestResult.FWD_Flow2 = Convert.ToDouble(CH2_2flow.Text);
+                        //        CH2TestResult.FWD_Pre1 = Convert.ToDouble(CH2_1FullPress.Text);
+                        //        CH2TestResult.FWD_Pre2 = Convert.ToDouble(CH2_2FullPress.Text);
+                        //        ////////////24080101添加////////////////
+                        //        ///
+                        //        if (CH2TestResult.FWD_Flow1 + CH2TestResult.FWD_Flow2 > elec.TotalFlowMax || CH2TestResult.FWD_Flow1 + CH2TestResult.FWD_Flow2 < elec.TotalFlowMin)
+                        //        {
+                        //            CH3Display($"{CH2RunName}" + I18N.GetLangText(dicLang, "max流量(FWD总)"), (CH2TestResult.FWD_Flow1 + CH2TestResult.FWD_Flow2).ToString(), "lpm", elec.TotalFlowMax.ToString(), elec.TotalFlowMin.ToString(), "NG");
+                        //            FlowNG(2);
+                        //        }
+                        //        else
+                        //        {
+                        //            CH3Display($"{CH2RunName}" + I18N.GetLangText(dicLang, "max流量(FWD总)"), (CH2TestResult.FWD_Flow1 + CH2TestResult.FWD_Flow2).ToString(), "lpm", elec.TotalFlowMax.ToString(), elec.TotalFlowMin.ToString(), "OK");
+                        //        }
+                        //        double preEROR = Math.Abs(CH2TestResult.FWD_Pre1 - CH2TestResult.FWD_Pre2);
+                        //        if (preEROR > Convert.ToDouble(elec.TotalPreMax))
+                        //        {
+                        //            CH3Display($"{CH1RunName}" + I18N.GetLangText(dicLang, "max压力差(FWD)"), preEROR.ToString(), "Kpa", elec.TotalPreMax.ToString(), "0", "NG");
+                        //            FlowNG(2);
+                        //        }
+                        //        else
+                        //            CH3Display($"{CH1RunName}" + I18N.GetLangText(dicLang, "max压力差(FWD)"), preEROR.ToString(), "Kpa", elec.TotalPreMax.ToString(), "0", "OK");
+
+
+
+                        //        ////////////
+                        //        //6.18c
+                        //        if (CH3PressMax > elec.CH2FwdPreMax || CH3PressMax < elec.CH2FwdPreMin)
+                        //        {
+                        //            log.MES_Logmsg(DateTime.Now.ToString() + "进入CH3Ng");
+
+                        //            CH3Display($"{CH2RunName}" + I18N.GetLangText(dicLang, "输出压力(FWD上)"), CH3PressMax.ToString(), CH3PressureUnit.Text, elec.CH2FwdPreMax.ToString(),
+                        //                elec.CH2FwdPreMin.ToString(), "NG");
+
+                        //            FlowNG(2);
+                        //        }
+                        //        else
+                        //        {
+                        //            log.MES_Logmsg(DateTime.Now.ToString() + "进入CH3ok");
+                        //            CH3Display($"{CH2RunName}" + I18N.GetLangText(dicLang, "输出压力(FWD上)"), CH3PressMax.ToString(), CH3PressureUnit.Text, elec.CH2FwdPreMax.ToString(),
+                        //              elec.CH2FwdPreMin.ToString(), "OK");
+                        //        }
+                        //        if (CH4PressMax > elec.CH2FwdPreMax || CH4PressMax < elec.CH2FwdPreMin)
+                        //        {
+                        //            CH3Display($"{CH2RunName}" + I18N.GetLangText(dicLang, "输出压力(FWD下)"), CH4PressMax.ToString(), CH4PressureUnit.Text, elec.CH2FwdPreMax.ToString(), elec.CH2FwdPreMin.ToString(), "NG");
+                        //            FlowNG(2);
+                        //        }
+                        //        else
+                        //        {
+                        //            CH3Display($"{CH2RunName}" + I18N.GetLangText(dicLang, "输出压力(FWD下)"), CH4PressMax.ToString(), CH4PressureUnit.Text, elec.CH2FwdPreMax.ToString(), elec.CH2FwdPreMin.ToString().ToString(), "OK");
+
+                        //        }
+
+                        //        CH3Display($"{CH2RunName}" + I18N.GetLangText(dicLang, "max电流(FWD)"), CH2ADCMax.ToString(), "A", elec.CH2FWDADCMax.ToString(), elec.CH2FWDADCMin.ToString(), "OK");
+                        //        CH3Display($"{CH2RunName}" + I18N.GetLangText(dicLang, "max电压(FWD)"), CH2VDCMax.ToString(), "V", elec.CH2FWDVDCMax.ToString(), elec.CH2FWDVDCMin.ToString(), "OK");
+
+                        //        if (CH3Q > flow.CH1_1FlowMax || CH3Q < flow.CH1_1FlowMin)
+                        //        {
+                        //            CH3Display($"{CH2RunName}" + I18N.GetLangText(dicLang, "max流量(FWD上)"), CH3Q.ToString(), "lpm", elec.CH2FwdFlowMax.ToString(), elec.CH2FwdFlowMin.ToString(), "NG");
+                        //            FlowNG(2);
+                        //        }
+                        //        CH3Display($"{CH2RunName}" + I18N.GetLangText(dicLang, "max流量(FWD上)"), CH3Q.ToString(), "lpm", elec.CH2FwdFlowMax.ToString(), elec.CH2FwdFlowMin.ToString(), "OK");
+
+                        //        if (CH4Q > flow.CH1_1FlowMax || CH4Q < flow.CH1_1FlowMin)
+                        //        {
+                        //            CH3Display($"{CH2RunName}" + I18N.GetLangText(dicLang, "max流量(FWD下)"), CH4Q.ToString(), "lpm", elec.CH2FwdFlowMax.ToString(), elec.CH2FwdFlowMin.ToString(), "NG");
+                        //            FlowNG(2);
+                        //        }
+                        //        CH3Display($"{CH2RunName}" + I18N.GetLangText(dicLang, "max流量(FWD下)"), CH4Q.ToString(), "lpm", elec.CH2FwdFlowMax.ToString(), elec.CH2FwdFlowMin.ToString(), "OK");
+
+                        //    }
+                        //    if (CH2RTStep == "RWD")
+                        //    {
+                        //        if (Flow.CH2RWDOverTime == 0)
+                        //        {
+                        //            CH3PressMax = CH2TestResult.FWD_Pre1;
+                        //            CH4PressMax = CH2TestResult.FWD_Pre2;
+                        //        }
+                        //        CH2TestResult.RWD_Pre1 = CH3PressMax;
+                        //        CH2TestResult.RWD_Pre2 = CH4PressMax;
+                        //        if (CH3PressMax > Flow.CH2RWDPressMax || CH3PressMax < Flow.CH2RWDPressMin || CH4PressMax > Flow.CH2RWDPressMax || CH4PressMax < Flow.CH2RWDPressMin)
+                        //        {
+                        //            if (CH3PressMax > Flow.CH2RWDPressMax || CH3PressMax < Flow.CH2RWDPressMin)
+                        //            {
+                        //                CH3Display($"{CH2RunName}" + I18N.GetLangText(dicLang, "输出压力(RWD上)"), CH3PressMax.ToString(), CH3PressureUnit.Text, Flow.CH2RWDPressMax.ToString(), Flow.CH2RWDPressMin.ToString(), "NG");
+                        //                //6.18NG
+                        //                FlowNG(2);
+                        //            }
+                        //            else
+                        //            {
+                        //                CH3Display($"{CH2RunName}" + I18N.GetLangText(dicLang, "输出压力(RWD上)"), CH3PressMax.ToString(), CH3PressureUnit.Text, Flow.CH2RWDPressMax.ToString(), Flow.CH2RWDPressMin.ToString(), "OK");
+                        //            }
+                        //            if (CH4PressMax > Flow.CH2RWDPressMax || CH4PressMax < Flow.CH2RWDPressMin)
+                        //            {
+                        //                CH3Display($"{CH2RunName}" + I18N.GetLangText(dicLang, "输出压力(RWD下)"), CH4PressMax.ToString(), CH4PressureUnit.Text, Flow.CH2RWDPressMax.ToString(), Flow.CH2RWDPressMin.ToString(), "NG");
+                        //                FlowNG(2);
+                        //            }
+                        //            else
+                        //            {
+                        //                CH3Display($"{CH2RunName}" + I18N.GetLangText(dicLang, "输出压力(RWD下)"), CH4PressMax.ToString(), CH4PressureUnit.Text, Flow.CH2RWDPressMax.ToString(), Flow.CH2RWDPressMin.ToString(), "OK");
+                        //            }
+                        //            plc.CH2RWDPressNG();
+                        //            plc.CH2RWDFlowEnd();
+                        //            return;
+                        //        }
+                        //        else
+                        //        {
+                        //            CH3Display($"{CH2RunName}" + I18N.GetLangText(dicLang, "输出压力(RWD上)"), CH3PressMax.ToString(), CH3PressureUnit.Text, Flow.CH2RWDPressMax.ToString(), Flow.CH2RWDPressMin.ToString(), "OK");
+                        //            CH3Display($"{CH2RunName}" + I18N.GetLangText(dicLang, "输出压力(RWD下)"), CH4PressMax.ToString(), CH4PressureUnit.Text, Flow.CH2RWDPressMax.ToString(), Flow.CH2RWDPressMin.ToString(), "OK");
+                        //            plc.CH2RWDPressOK();
+                        //            plc.CH2RWDADCOK();
+                        //            plc.CH2RWDVDCOK();
+                        //            plc.CH2uAOK();//增加一个BUG
+                        //            plc.CH2RWDFlowEnd();
+                        //            CH2TestResult.RWD_ADCMAX = CH2ADCMax;
+                        //            CH2TestResult.RWD_VDCMAX = CH2VDCMax;
+                        //            CH3Display($"{CH2RunName}" + I18N.GetLangText(dicLang, "max电流(RWD)"), CH2ADCMax.ToString(), "A", elec.CH2RWDADCMax.ToString(), elec.CH2RWDADCMin.ToString(), "OK");
+                        //            CH3Display($"{CH2RunName}" + I18N.GetLangText(dicLang, "max电压(RWD)"), CH2VDCMax.ToString(), "V", elec.CH2RWDVDCMax.ToString(), elec.CH2RWDVDCMin.ToString(), "OK");
+                        //        }
+                        //    }
+                        //    if (CH2RTStep == "DOWN")
+                        //    {
+                        //        CH3ReadPress.Stop();
+                        //        plc.CH2DOWNPreOK();
+                        //        CH2_1FullPress.Text = CH2PressMax.ToString();
+                        //        //CH2ReadPress.Stop();
+                        //        CH2TestResult.DOWN_Pre = CH4PressMax;
+                        //        CH2TestResult.DOWN_ADCMAX = CH2ADCMax;
+                        //        CH2TestResult.DOWN_VDCMAX = CH2VDCMax;
+                        //        CH2TestResult.DOWN_Flow = CH4Q;
+                        //        plc.CH2DOWNADCOK();
+                        //        plc.CH2DOWNVDCOK();
+                        //        plc.CH2PLCValveBreak();
+                        //        plc.CH2uAOK();//增加一个BUG
+                        //        CH3Display($"{CH2RunName}" + I18N.GetLangText(dicLang, "输出压力(DOWN-UP)"), CH3PressMax.ToString(), CH3PressureUnit.Text, Flow.CH2_1PreMax.ToString(), Flow.CH2_1PreMin.ToString(), "OK");
+                        //        CH3Display($"{CH2RunName}" + I18N.GetLangText(dicLang, "输出压力(DOWN)"), CH4PressMax.ToString(), CH4PressureUnit.Text, "-", "-", "OK");
+                        //        CH3Display($"{CH2RunName}" + I18N.GetLangText(dicLang, "max电流(DOWN)"), CH2ADCMax.ToString(), "A", elec.CH2DOWNADCMax.ToString(), elec.CH2DOWNADCMin.ToString(), "OK");
+                        //        CH3Display($"{CH2RunName}" + I18N.GetLangText(dicLang, "max电压(DOWN)"), CH2VDCMax.ToString(), "V", elec.CH2DOWNVDCMax.ToString(), elec.CH2DOWNVDCMin.ToString(), "OK");
+                        //        CH3Display($"{CH2RunName}" + I18N.GetLangText(dicLang, "max流量(DOWN)"), CH4Q.ToString(), "lpm", "-", "-", "OK");
+                        //        CH3Display($"{CH2RunName}" + I18N.GetLangText(dicLang, "max流量(DOWN-UP)"), CH3Q.ToString(), "lpm", Flow.CH2_1FlowMax.ToString(), Flow.CH2_1FlowMin.ToString(), "OK");
+
+                        //        for (int i = 0; i < this.DataGridView2.Rows.Count - 1; i++)
+                        //        {
+                        //            if (this.DataGridView2.Rows[i].Cells[1].Value.ToString() == $"{CH2RunName}" + I18N.GetLangText(dicLang, "max电流(UP)"))
+                        //            {
+                        //                CH2lastelec = Convert.ToDouble(this.DataGridView2.Rows[i].Cells[2].Value.ToString());
+
+                        //                CH2cont_elec = CH2lastelec / CH2ADCMax;
+                        //                CH2cont_elec += Flow.CH2Cont_Elec_Compen;
+                        //                CH2cont_elec = Math.Round(CH2cont_elec, 2);
+
+                        //                CH2TestResult.ElecRatio = CH2cont_elec;
+                        //                if (CH2cont_elec < Flow.CH2Cont_ElecMin || CH2cont_elec > Flow.CH2Cont_ElecMax)
+                        //                {
+                        //                    CH3Display($"{CH2RunName}" + I18N.GetLangText(dicLang, "电流比值"), CH2cont_elec.ToString(), "-", Flow.CH2Cont_ElecMax.ToString(), Flow.CH2Cont_ElecMin.ToString(), "NG");
+                        //                    plc.CH2RatioNG();
+                        //                    return;
+                        //                }
+                        //                CH3Display($"{CH2RunName}" + I18N.GetLangText(dicLang, "电流比值"), CH2cont_elec.ToString(), "-", Flow.CH2Cont_ElecMax.ToString(), Flow.CH2Cont_ElecMin.ToString(), "OK");
+                        //                if (CH4PressMax == 0)
+                        //                {
+                        //                    CH4PressMax = 0.1;
+                        //                }
+                        //                break;
+                        //            }
+                        //        }
+
+                        //        for (int i = 0; i < this.DataGridView2.Rows.Count - 1; i++)
+                        //        {
+                        //            if (this.DataGridView2.Rows[i].Cells[1].Value.ToString() == $"{CH2RunName}" + I18N.GetLangText(dicLang, "输出压力(UP)"))
+                        //            {
+                        //                CH2lastpress = Convert.ToDouble(this.DataGridView2.Rows[i].Cells[2].Value.ToString());
+                        //                CH2cont_press = CH2lastpress / CH4PressMax;
+                        //                CH2cont_press += Flow.CH2Cont_Pre_Compen;
+                        //                CH2cont_press = Math.Round(CH2cont_press, 2);
+                        //                CH2TestResult.PressRatio = CH2cont_press;
+                        //                if (CH2cont_press < Flow.CH2Cont_PressMin || CH2cont_press > Flow.CH2Cont_PressMax)
+                        //                {
+                        //                    CH3Display($"{CH2RunName}" + I18N.GetLangText(dicLang, "压力比值"), CH2cont_press.ToString(), "-", Flow.CH2Cont_PressMax.ToString(), Flow.CH2Cont_PressMin.ToString(), "NG");
+                        //                    plc.CH2RatioNG();
+                        //                    FlowNG(2);
+                        //                    return;
+                        //                }
+                        //                CH3Display($"{CH2RunName}" + I18N.GetLangText(dicLang, "压力比值"), CH2cont_press.ToString(), "-", Flow.CH2Cont_PressMax.ToString(), Flow.CH2Cont_PressMin.ToString(), "OK");
+                        //                plc.CH2RatioOK();
+                        //                break;
+                        //            }
+                        //        }
+
+                        //        plc.CH2DOWNFlowEnd();
+                        //    }
+
+                        //    if (CH2Tlight.Text != "NG")
+                        //        if (CH2RTStep == "DOWN" || CH2RTStep == "FWD" || CH2RTStep == "RWD" || CH2RTStep == "UP")
+                        //        {
+                        //            CH2Step += 1;
+                        //            CH2Method(CH2Step);
+                        //        }
+                        //}
                     }
                 }
-            }
-            catch (Exception ex)
-            {
-                wa.InsertWarningData(DateTime.Now.ToString("yyyy-MM-dd HH:mm:ss"), "-", I18N.GetLangText(dicLang, "CH2-1读取输出压力") + ":" + ex.Message);
-                //MessageBox.Show("CH2-1读取输出压力：" + ex.Message);
-                Logger.Log(I18N.GetLangText(dicLang, "CH2-1读取输出压力") + ":" + ex.Message);
-            }
+                catch (Exception ex)
+                {
+                    wa.InsertWarningData(DateTime.Now.ToString("yyyy-MM-dd HH:mm:ss"), "-", I18N.GetLangText(dicLang, "CH2-1读取输出压力") + ":" + ex.Message);
+                    //MessageBox.Show("CH2-1读取输出压力：" + ex.Message);
+                    Logger.Log(I18N.GetLangText(dicLang, "CH2-1读取输出压力") + ":" + ex.Message);
+                }
         }
 
         private void CH4ReadPress_Tick(object sender, EventArgs e)
         {
             if (CH2RTStep == "UP" || CH2RTStep == "DOWN" || CH2RTStep == "FWD" || CH2RTStep == "RWD")
                 try
-            {
+                {
                     ReadConfig con = new ReadConfig();
                     Model.Flow flow;
                     flow = con.ReadFlow();
 
                     // 泄气会有误差，所以把电流电压读取放后面一点，在lin通讯后
                     JudgeCH2ADC = true;
-                CH4IsRun.Stop();
-                ch2_2step = 10;
-                CH4ReadPress.Interval = 300;
-                ch4client.btnSendData("04 03 04 03 00 17 ");
-                //leftclient.btnSendData("02 03 04 21 00 02 ");
-                ch4stage = 7;
-                //计算时间
-                ch4pressend = System.DateTime.Now.Ticks;
-                TimeSpan ts1 = new TimeSpan(ch4pressstart);
-                TimeSpan ts2 = new TimeSpan(ch4pressend);
-                TimeSpan ptime = ts2.Subtract(ts1).Duration();
-                double presstime = ptime.TotalSeconds;
-                double pressovertime;
-                if (CH2RTStep == "RWD")
-                {
-                    pressovertime = Flow.CH2RWDOverTime;
-                    //plc.CH2RWDStart();
-                }
-                else
-                {
-                    pressovertime = Flow.CH4Press_OverTime;
-                }
-                if (presstime > pressovertime)
-                {
-                    CH4ReadPress.Stop();
-                    CH2_2FullPress.Text = CH4PressMax.ToString();
-                    CH4flowtest = false;
-                    CHpreflag2++;
-                    if (CHpreflag2 >= 2)
-                    // if (!CH3flowtest)
+                    CH4IsRun.Stop();
+                    ch2_2step = 10;
+                    CH4ReadPress.Interval = 300;
+                    ch4client.btnSendData("04 03 04 03 00 17 ");
+                    //leftclient.btnSendData("02 03 04 21 00 02 ");
+                    ch4stage = 7;
+                    //计算时间
+                    ch4pressend = System.DateTime.Now.Ticks;
+                    TimeSpan ts1 = new TimeSpan(ch4pressstart);
+                    TimeSpan ts2 = new TimeSpan(ch4pressend);
+                    TimeSpan ptime = ts2.Subtract(ts1).Duration();
+                    double presstime = ptime.TotalSeconds;
+                    double pressovertime;
+                    if (CH2RTStep == "RWD")
                     {
-                        CH4ReadPress.Stop();
-                        CH2LinUP.Stop();
-                        //plc.CH2PowerClose();
-                        plc.CH2PLCValveBreak();
-                        if (plc.CH2LIN)
+                        pressovertime = Flow.CH2RWDOverTime;
+                        //plc.CH2RWDStart();
+                    }
+                    else
+                    {
+                        pressovertime = Flow.CH4Press_OverTime;
+                    }
+                    if (presstime > pressovertime)
+                    {
+                       
+                        CH2_2FullPress.Text = CH4PressMax.ToString();
+                        CH4flowtest = false;
+                        CHpreflag2++;
+                        Invoke((new System.Action(() =>
                         {
-                            plc.CH2LinFinish();
-                        }
-                        CH4ReadFlowT.Stop();
-                        //流量测试完之后，需要把测试仪复位，避免后续步骤启动失败
-                        {
-                            ch3client.btnSendData("03 05 00 01 FF 00");
-                            ch4client.btnSendData("04 05 00 01 FF 00");
-                            Thread.Sleep(50);
-                            ch3client.btnSendData("03 05 00 01 FF 00");
-                            ch4client.btnSendData("04 05 00 01 FF 00");
-                            Thread.Sleep(50);
-                            ch3client.btnSendData("03 05 00 01 FF 00");
-                            ch4client.btnSendData("04 05 00 01 FF 00");
-                        }
-
-                        ch3stage = 10;
-                        CHXProBarFlag[3] = 0;
-                        CH3IsRun.Interval = 500;
-                        CH3IsRun.Start();
-                        ch2_1step = 4;
-                        ch3write = 1;
-                        ch4stage = 10;
-                        CHXProBarFlag[4] = 0;
-                        CH4IsRun.Interval = 500;
-                        CH4IsRun.Start();
-                        ch2_2step = 4;
-                        ch4write = 1;
-
-                        if (!CH2ReadElecResult())
-                        {
-                            return;
-                        }
-
-                        CH2VDCresult = "OK";
-                        CH2ADCresult = "OK";
-
-                        if (CH2RTStep == "DOWN")
-                        {
-                            plc.CH2DOWNPreOK();
-                            CH2_1FullPress.Text = CH2PressMax.ToString();
-                            //CH2ReadPress.Stop();
-                            CH2TestResult.DOWN_Pre = CH4PressMax;
-                            CH2TestResult.DOWN_ADCMAX = CH2ADCMax;
-                            CH2TestResult.DOWN_VDCMAX = CH2VDCMax;
-                            CH2TestResult.DOWN_Flow = CH4Q;
-                            plc.CH2DOWNADCOK();
-                            plc.CH2DOWNVDCOK();
-                            plc.CH2PLCValveBreak();
-                            plc.CH2uAOK();//增加一个BUG
-                            CH3Display($"{CH2RunName}" + I18N.GetLangText(dicLang, "输出压力(DOWN-UP)"), CH3PressMax.ToString(), CH3PressureUnit.Text, Flow.CH2_1PreMax.ToString(), Flow.CH2_1PreMin.ToString(), "OK");
-                            CH3Display($"{CH2RunName}" + I18N.GetLangText(dicLang, "输出压力(DOWN)"), CH4PressMax.ToString(), CH4PressureUnit.Text, "-", "-", "OK");
-                            CH3Display($"{CH2RunName}" + I18N.GetLangText(dicLang, "max电流(DOWN)"), CH2ADCMax.ToString(), "A", elec.CH2DOWNADCMax.ToString(), elec.CH2DOWNADCMin.ToString(), "OK");
-                            CH3Display($"{CH2RunName}" + I18N.GetLangText(dicLang, "max电压(DOWN)"), CH2VDCMax.ToString(), "V", elec.CH2DOWNVDCMax.ToString(), elec.CH2DOWNVDCMin.ToString(), "OK");
-                            CH3Display($"{CH2RunName}" + I18N.GetLangText(dicLang, "max流量(DOWN)"), CH4Q.ToString(), "lpm", "-", "-", "OK");
-                            CH3Display($"{CH2RunName}" + I18N.GetLangText(dicLang, "max流量(DOWN-UP)"), CH3Q.ToString(), "lpm", Flow.CH2_1FlowMax.ToString(), Flow.CH2_1FlowMin.ToString(), "OK");
-             
-
-                            for (int i = 0; i < this.DataGridView2.Rows.Count - 1; i++)
+                            if (CHpreflag2 >= 2)
                             {
-                                if (this.DataGridView2.Rows[i].Cells[1].Value.ToString() == $"{CH2RunName}" + I18N.GetLangText(dicLang, "max电流(UP)"))
-                                {
-                                    CH2lastelec = Convert.ToDouble(this.DataGridView2.Rows[i].Cells[2].Value.ToString());
-                                    CH2cont_elec = CH2lastelec / CH2ADCMax;
-                                    CH2cont_elec += Flow.CH2Cont_Elec_Compen;
-                                    CH2cont_elec = Math.Round(CH2cont_elec, 2);
-                                    CH2TestResult.ElecRatio = CH2cont_elec;
-                                    if (CH2cont_elec < Flow.CH2Cont_ElecMin || CH2cont_elec > Flow.CH2Cont_ElecMax)
-                                    {
-                                        CH3Display($"{CH2RunName}" + I18N.GetLangText(dicLang, "电流比值"), CH2cont_elec.ToString(), "-", Flow.CH2Cont_ElecMax.ToString(), Flow.CH2Cont_ElecMin.ToString(), "NG");
-                                        plc.CH2RatioNG();
-                                            FlowNG(2);
-                                            return;
-                                    }
-                                    CH3Display($"{CH2RunName}" + I18N.GetLangText(dicLang, "电流比值"), CH2cont_elec.ToString(), "-", Flow.CH2Cont_ElecMax.ToString(), Flow.CH2Cont_ElecMin.ToString(), "OK");
-                                    if (CH4PressMax == 0)
-                                    {
-                                        CH4PressMax = 0.1;
-                                    }
-                                }
-                            }
+                                CH4ReadPress.Stop();
+                                //CH4ReadFlowT.Stop();
+                                CH3ReadPress.Stop();
+                                //两台仪器都没有在测试，则停止lin通讯
+                                CH2LinUP.Stop();
+                                CH3ReadFlowT.Stop();
+                                Thread.Sleep(200);
+                                //plc.CH2PowerClose();
+                                plc.CH2PLCValveBreak();
 
-                            for (int i = 0; i < this.DataGridView2.Rows.Count - 1; i++)
-                            {
-                                if (this.DataGridView2.Rows[i].Cells[1].Value.ToString() == $"{CH2RunName}" + I18N.GetLangText(dicLang, "输出压力(UP)"))
+                                //流量测试完之后，需要把测试仪复位，避免后续步骤启动失败
                                 {
-                                    CH2lastpress = Convert.ToDouble(this.DataGridView2.Rows[i].Cells[2].Value.ToString());
-                                    CH2cont_press = CH2lastpress / CH4PressMax;
-                                    CH2cont_press += Flow.CH2Cont_Pre_Compen;
-                                    CH2cont_press = Math.Round(CH2cont_press, 2);
-                                    CH2TestResult.PressRatio = CH2cont_press;
-                                    if (CH2cont_press < Flow.CH2Cont_PressMin || CH2cont_press > Flow.CH2Cont_PressMax)
-                                    {
-                                        CH3Display($"{CH2RunName}" + I18N.GetLangText(dicLang, "压力比值"), CH2cont_press.ToString(), "-", Flow.CH2Cont_PressMax.ToString(), Flow.CH2Cont_PressMin.ToString(), "NG");
-                                        plc.CH2RatioNG();
-                                            FlowNG(2);
-                                            return;
-                                    }
-                                    CH3Display($"{CH2RunName}" + I18N.GetLangText(dicLang, "压力比值"), CH2cont_press.ToString(), "-", Flow.CH2Cont_PressMax.ToString(), Flow.CH2Cont_PressMin.ToString(), "OK");
-                                    plc.CH2RatioOK();
-                                    break;
+                                    ch3client.btnSendData("03 05 00 01 FF 00");
+                                    ch4client.btnSendData("04 05 00 01 FF 00");
+                                    Thread.Sleep(50);
+                                    ch3client.btnSendData("03 05 00 01 FF 00");
+                                    ch4client.btnSendData("04 05 00 01 FF 00");
+                                    Thread.Sleep(50);
+                                    ch3client.btnSendData("03 05 00 01 FF 00");
+                                    ch4client.btnSendData("04 05 00 01 FF 00");
                                 }
-                            }
-                            plc.CH2DOWNFlowEnd();
-                        }
-                        if (CH2RTStep == "FWD")
-                        {
-                            plc.CH2FWDADCOK();
-                            plc.CH2FWDVDCOK();
-                            plc.CH2FWDFlowEnd();
-                            plc.CH2uAOK();//增加一个BUG
-                            CH2TestResult.FWD_ADCMAX = CH2ADCMax;
-                            CH2TestResult.FWD_VDCMAX = CH2VDCMax;
-                            CH2TestResult.FWD_Flow1 = CH3Q;
-                            CH2TestResult.FWD_Flow2 = CH4Q;
-                            CH2TestResult.FWD_Pre1 = CH3PressMax;
-                            CH2TestResult.FWD_Pre2 = CH4PressMax;
-                                if (CH3PressMax > elec.CH2_1PreFwdMax || CH3PressMax < elec.CH2_2PreFwdMin)
+
+                                ch3stage = 10;
+                                CHXProBarFlag[3] = 0;
+                                CH3IsRun.Interval = 500;
+                                CH3IsRun.Start();
+                                ch2_1step = 4;
+                                ch3write = 1;
+                                ch4stage = 10;
+                                CHXProBarFlag[4] = 0;
+                                CH4IsRun.Interval = 500;
+                                CH4IsRun.Start();
+                                ch2_2step = 4;
+                                ch4write = 1;
+                                if (plc.CH2LIN)
                                 {
-                                    CH3Display($"{CH2RunName}" + I18N.GetLangText(dicLang, "输出压力(FWD上)"), CH3PressMax.ToString(), CH3PressureUnit.Text, elec.CH2_1PreFwdMax.ToString(), elec.CH2_2PreFwdMin.ToString(), "NG");
-                                    FlowNG(2);
+                                    plc.CH2LinFinish();
                                 }
-                                else
+                                if (!CH2ReadElecResult())
                                 {
-                                    CH3Display($"{CH2RunName}" + I18N.GetLangText(dicLang, "输出压力(FWD上)"), CH3PressMax.ToString(), CH3PressureUnit.Text, elec.CH2_1PreFwdMax.ToString(), elec.CH2_2PreFwdMin.ToString(), "OK");
-                                }
-                                if (CH3PressMax > elec.CH2_1PreFwdMax || CH3PressMax < elec.CH2_2PreFwdMin)
-                                {
-                                    CH3Display($"{CH2RunName}" + I18N.GetLangText(dicLang, "输出压力(FWD下)"), CH4PressMax.ToString(), CH4PressureUnit.Text, elec.CH2_1PreFwdMax.ToString(), elec.CH2_2PreFwdMin.ToString(), "NG");
-                                    FlowNG(2);
-                                }
-                                else
-                                {
-                                    CH3Display($"{CH2RunName}" + I18N.GetLangText(dicLang, "输出压力(FWD下)"), CH4PressMax.ToString(), CH4PressureUnit.Text, elec.CH2_1PreFwdMax.ToString(), elec.CH2_2PreFwdMin.ToString(), "OK");
-                                }
-                                  
-                            CH3Display($"{CH2RunName}" + I18N.GetLangText(dicLang, "max电流(FWD)"), CH2ADCMax.ToString(), "A", elec.CH2FWDADCMax.ToString(), elec.CH2FWDADCMin.ToString(), "OK");
-                            CH3Display($"{CH2RunName}" + I18N.GetLangText(dicLang, "max电压(FWD)"), CH2VDCMax.ToString(), "V", elec.CH2FWDVDCMax.ToString(), elec.CH2FWDVDCMin.ToString(), "OK");
-                            CH3Display($"{CH2RunName}" + I18N.GetLangText(dicLang, "max流量(FWD上)"), CH3Q.ToString(), "lpm", flow.CH1_1FlowMax.ToString(), flow.CH1_1FlowMin.ToString(), "OK");
-                            CH3Display($"{CH2RunName}" + I18N.GetLangText(dicLang, "max流量(FWD下)"), CH4Q.ToString(), "lpm", flow.CH1_1FlowMax.ToString(), flow.CH1_1FlowMin.ToString(), "OK");
-                        }
-                        if (CH2RTStep == "RWD")
-                        {
-                            if (Flow.CH2RWDOverTime == 0)
-                            {
-                                CH3PressMax = CH2TestResult.FWD_Pre1;
-                                CH4PressMax = CH2TestResult.FWD_Pre2;
-                            }
-                            CH2TestResult.RWD_Pre1 = CH3PressMax;
-                            CH2TestResult.RWD_Pre2 = CH4PressMax;
-                            if (CH3PressMax > Flow.CH2RWDPressMax || CH3PressMax < Flow.CH2RWDPressMin || CH4PressMax > Flow.CH2RWDPressMax || CH4PressMax < Flow.CH2RWDPressMin)
-                            {
-                                if (CH3PressMax > Flow.CH2RWDPressMax || CH3PressMax < Flow.CH2RWDPressMin)
-                                {
-                                    CH3Display($"{CH2RunName}" + I18N.GetLangText(dicLang, "输出压力(RWD上)"), CH3PressMax.ToString(), CH3PressureUnit.Text, Flow.CH2RWDPressMax.ToString(), Flow.CH2RWDPressMin.ToString(), "NG");
-                                        FlowNG(2);
-                                    }
-                                else
-                                {
-                                    CH3Display($"{CH2RunName}" + I18N.GetLangText(dicLang, "输出压力(RWD上)"), CH3PressMax.ToString(), CH3PressureUnit.Text, Flow.CH2RWDPressMax.ToString(), Flow.CH2RWDPressMin.ToString(), "OK");
-                                }
-                                if (CH4PressMax > Flow.CH2RWDPressMax || CH4PressMax < Flow.CH2RWDPressMin)
-                                {
-                                    CH3Display($"{CH2RunName}" + I18N.GetLangText(dicLang, "输出压力(RWD下)"), CH4PressMax.ToString(), CH4PressureUnit.Text, Flow.CH2RWDPressMax.ToString(), Flow.CH2RWDPressMin.ToString(), "NG");
-                                        FlowNG(2);
-                                    }
-                                else
-                                {
-                                    CH3Display($"{CH2RunName}" + I18N.GetLangText(dicLang, "输出压力(RWD下)"), CH4PressMax.ToString(), CH4PressureUnit.Text, Flow.CH2RWDPressMax.ToString(), Flow.CH2RWDPressMin.ToString(), "OK");
-                                }
-                                plc.CH2RWDPressNG();
-                                plc.CH2RWDFlowEnd();
-                                return;
-                            }
-                            else
-                            {
-                                CH3Display($"{CH2RunName}" + I18N.GetLangText(dicLang, "输出压力(RWD上)"), CH3PressMax.ToString(), CH3PressureUnit.Text, Flow.CH2RWDPressMax.ToString(), Flow.CH2RWDPressMin.ToString(), "OK");
-                                CH3Display($"{CH2RunName}" + I18N.GetLangText(dicLang, "输出压力(RWD下)"), CH4PressMax.ToString(), CH4PressureUnit.Text, Flow.CH2RWDPressMax.ToString(), Flow.CH2RWDPressMin.ToString(), "OK");
-                                plc.CH2RWDPressOK();
-                                plc.CH2RWDADCOK();
-                                plc.CH2RWDVDCOK();
-                                plc.CH2RWDFlowEnd();
-                                plc.CH2uAOK();//增加一个BUG
-                                CH2TestResult.RWD_ADCMAX = CH2ADCMax;
-                                CH2TestResult.RWD_VDCMAX = CH2VDCMax;
-                                CH3Display($"{CH2RunName}" + I18N.GetLangText(dicLang, "max电流(RWD)"), CH2ADCMax.ToString(), "A", elec.CH2RWDADCMax.ToString(), elec.CH2RWDADCMin.ToString(), "OK");
-                                CH3Display($"{CH2RunName}" + I18N.GetLangText(dicLang, "max电压(RWD)"), CH2VDCMax.ToString(), "V", elec.CH2RWDVDCMax.ToString(), elec.CH2RWDVDCMin.ToString(), "OK");
-                            }
-                        }
-                        if (CH2RTStep == "UP")
-                        {
-                            plc.CH2UPPreOK();//电流电压ok M
-                            plc.CH2UPADCOK();//
-                            plc.CH2UPVDCOK();//
-                            plc.CH2uAOK();//增加一个BUG
-                            CH2_2FullPress.Text = CH4PressMax.ToString();
-                            CH2TestResult.UP_ADCMAX = CH2ADCMax;
-                            CH2TestResult.UP_VDCMAX = CH2VDCMax;
-                            CH2TestResult.UP_Flow = CH3Q;
-                            CH2TestResult.UP_Pre = CH3PressMax;
-                            CH3Display($"{CH2RunName}" + I18N.GetLangText(dicLang, "输出压力(UP)"), CH3PressMax.ToString(), CH3PressureUnit.Text, "-", "-", "OK");
-                            CH3Display($"{CH2RunName}" + I18N.GetLangText(dicLang, "输出压力(UP-DOWN)"), CH4PressMax.ToString(), CH4PressureUnit.Text, Flow.CH2_2PreMax.ToString(), Flow.CH2_2PreMin.ToString(), "OK");
-                            CH3Display($"{CH2RunName}" + I18N.GetLangText(dicLang, "max电流(UP)"), CH2ADCMax.ToString(), "A", elec.CH2UPADCMax.ToString(), elec.CH2UPADCMin.ToString(), "OK");
-                            CH3Display($"{CH2RunName}" + I18N.GetLangText(dicLang, "max电压(UP)"), CH2VDCMax.ToString(), "V", elec.CH2UPVDCMax.ToString(), elec.CH2UPVDCMin.ToString(), "OK");
-                            CH3Display($"{CH2RunName}" + I18N.GetLangText(dicLang, "max流量(UP)"), CH3Q.ToString(), "lpm", "-", "-", "OK");
-                            CH3Display($"{CH2RunName}" + I18N.GetLangText(dicLang, "max流量(UP-DOWN)"), CH4Q.ToString(), "lpm", Flow.CH2_2FlowMax.ToString(), Flow.CH2_2FlowMin.ToString(), "OK");
-                            /*if (CH2lastmodel == 1)
-                            {
-                                CH2lastmodel = 3;
-                                CH2cont_elec = CH2ADCMax / CH2lastelec;
-                                CH2cont_elec += Flow.CH2Cont_Elec_Compen;
-                                CH2cont_elec = Math.Round(CH2cont_elec, 2);
-                                CH2TestResult.ElecRatio = CH2cont_elec;
-                                if (CH2cont_elec < Flow.CH2Cont_ElecMin || CH2cont_elec > Flow.CH2Cont_ElecMax)
-                                {
-                                    CH3Display($"{CH2RunName}" + I18N.GetLangText(dicLang, "电流比值"), CH2cont_elec.ToString(), "-", Flow.CH2Cont_ElecMax.ToString(), Flow.CH2Cont_ElecMin.ToString(), "NG");
-                                    plc.CH2RatioNG();
                                     return;
                                 }
-                                CH3Display($"{CH2RunName}" + I18N.GetLangText(dicLang, "电流比值"), CH2cont_elec.ToString(), "-", Flow.CH2Cont_ElecMax.ToString(), Flow.CH2Cont_ElecMin.ToString(), "OK");
-                                if (CH2lastpress == 0)
-                                {
-                                    CH2lastpress = 0.1;
-                                }
-                                CH2cont_press = CH3PressMax / CH2lastpress;
-                                CH2cont_press += Flow.CH2Cont_Pre_Compen;
-                                CH2cont_press = Math.Round(CH2cont_press, 2);
-                                CH2TestResult.PressRatio = CH2cont_press;
-                                if (CH2cont_press < Flow.CH2Cont_PressMin || CH2cont_press > Flow.CH2Cont_PressMax)
-                                {
-                                    CH3Display($"{CH2RunName}" + I18N.GetLangText(dicLang, "压力比值"), CH2cont_press.ToString(), "-", Flow.CH2Cont_PressMax.ToString(), Flow.CH2Cont_PressMin.ToString(), "NG");
-                                    plc.CH2RatioNG();
-                                    return;
-                                }
-                                CH3Display($"{CH2RunName}" + I18N.GetLangText(dicLang, "压力比值"), CH2cont_press.ToString(), "-", Flow.CH2Cont_PressMax.ToString(), Flow.CH2Cont_PressMin.ToString(), "OK");
-                                plc.CH2RatioOK();
-                            }
-                            else
-                            {
-                                CH2lastmodel = 0;
-                                CH2lastelec = CH2ADCMax;
-                                CH2lastpress = CH3PressMax;
-                            }*/
 
-                            for (int i = 0; i < this.DataGridView2.Rows.Count - 1; i++)
-                            {
-                                if (this.DataGridView2.Rows[i].Cells[1].Value.ToString() == $"{CH2RunName}" + I18N.GetLangText(dicLang, "max电流(DOWN)"))
+                                CH2VDCresult = "OK";
+                                CH2ADCresult = "OK";
+                                if (CH2RTStep == "UP")
                                 {
-                                    //CH2lastmodel = 3;
-                                    CH2lastelec = Convert.ToDouble(this.DataGridView2.Rows[i].Cells[2].Value.ToString());
-                                    CH2cont_elec = CH2ADCMax / CH2lastelec;
-                                    CH2cont_elec += Flow.CH2Cont_Elec_Compen;
-                                    CH2cont_elec = Math.Round(CH2cont_elec, 2);
-                                    CH2TestResult.ElecRatio = CH2cont_elec;
-                                    if (CH2cont_elec < Flow.CH2Cont_ElecMin || CH2cont_elec > Flow.CH2Cont_ElecMax)
+                                    plc.CH2UPPreOK();//电流电压ok M
+                                    plc.CH2UPADCOK();//
+                                    plc.CH2UPVDCOK();//
+                                    plc.CH2uAOK();//增加一个BUG
+                                    CH2_2FullPress.Text = CH4PressMax.ToString();
+                                    CH2TestResult.UP_ADCMAX = CH2ADCMax;
+                                    CH2TestResult.UP_VDCMAX = CH2VDCMax;
+                                    CH2TestResult.UP_Flow = CH3Q;
+                                    CH2TestResult.UP_Pre = CH3PressMax;
+                                    CH3Display($"{CH2RunName}" + I18N.GetLangText(dicLang, "输出压力(UP)"), CH3PressMax.ToString(), CH3PressureUnit.Text, "-", "-", "OK");
+                                    CH3Display($"{CH2RunName}" + I18N.GetLangText(dicLang, "输出压力(UP-DOWN)"), CH4PressMax.ToString(), CH4PressureUnit.Text, Flow.CH2_2PreMax.ToString(), Flow.CH2_2PreMin.ToString(), "OK");
+                                    CH3Display($"{CH2RunName}" + I18N.GetLangText(dicLang, "max电流(UP)"), CH2ADCMax.ToString(), "A", elec.CH2UPADCMax.ToString(), elec.CH2UPADCMin.ToString(), "OK");
+                                    CH3Display($"{CH2RunName}" + I18N.GetLangText(dicLang, "max电压(UP)"), CH2VDCMax.ToString(), "V", elec.CH2UPVDCMax.ToString(), elec.CH2UPVDCMin.ToString(), "OK");
+                                    CH3Display($"{CH2RunName}" + I18N.GetLangText(dicLang, "max流量(UP)"), CH3Q.ToString(), "lpm", "-", "-", "OK");
+                                    CH3Display($"{CH2RunName}" + I18N.GetLangText(dicLang, "max流量(UP-DOWN)"), CH4Q.ToString(), "lpm", Flow.CH2_2FlowMax.ToString(), Flow.CH2_2FlowMin.ToString(), "OK");
+
+
+                                    for (int i = 0; i < this.DataGridView2.Rows.Count - 1; i++)
                                     {
-                                        CH3Display($"{CH2RunName}" + I18N.GetLangText(dicLang, "电流比值"), CH2cont_elec.ToString(), "-", Flow.CH2Cont_ElecMax.ToString(), Flow.CH2Cont_ElecMin.ToString(), "NG");
-                                        plc.CH2RatioNG();
+                                        if (this.DataGridView2.Rows[i].Cells[1].Value.ToString() == $"{CH2RunName}" + I18N.GetLangText(dicLang, "max电流(DOWN)"))
+                                        {
+                                            CH2lastelec = Convert.ToDouble(this.DataGridView2.Rows[i].Cells[2].Value.ToString());
+                                            CH2cont_elec = CH2ADCMax / CH2lastelec;
+                                            CH2cont_elec += Flow.CH2Cont_Elec_Compen;
+                                            CH2cont_elec = Math.Round(CH2cont_elec, 2);
+                                            CH2TestResult.ElecRatio = CH2cont_elec;
+                                            if (CH2cont_elec < Flow.CH2Cont_ElecMin || CH2cont_elec > Flow.CH2Cont_ElecMax)
+                                            {
+                                                CH3Display($"{CH2RunName}" + I18N.GetLangText(dicLang, "电流比值"), CH2cont_elec.ToString(), "-", Flow.CH2Cont_ElecMax.ToString(), Flow.CH2Cont_ElecMin.ToString(), "NG");
+                                                plc.CH2RatioNG();
+                                                FlowNG(2);
+                                                return;
+                                            }
+
+                                            CH3Display($"{CH2RunName}" + I18N.GetLangText(dicLang, "电流比值"), CH2cont_elec.ToString(), "-", Flow.CH2Cont_ElecMax.ToString(), Flow.CH2Cont_ElecMin.ToString(), "OK");
+                                            if (CH2lastpress == 0)
+                                            {
+                                                CH2lastpress = 0.1;
+                                            }
+                                            break;
+                                        }
+                                    }
+
+                                    for (int i = 0; i < this.DataGridView2.Rows.Count - 1; i++)
+                                    {
+                                        if (this.DataGridView2.Rows[i].Cells[1].Value.ToString() == $"{CH2RunName}" + I18N.GetLangText(dicLang, "输出压力(DOWN)"))
+                                        {
+                                            CH2lastpress = Convert.ToDouble(this.DataGridView2.Rows[i].Cells[2].Value.ToString());
+                                            CH2cont_press = CH3PressMax / CH2lastpress;
+                                            CH2cont_press += Flow.CH2Cont_Pre_Compen;
+                                            CH2cont_press = Math.Round(CH2cont_press, 2);
+                                            CH2TestResult.PressRatio = CH2cont_press;
+
+                                            if (CH2cont_press < Flow.CH2Cont_PressMin || CH2cont_press > Flow.CH2Cont_PressMax)
+                                            {
+                                                CH3Display($"{CH2RunName}" + I18N.GetLangText(dicLang, "压力比值"), CH2cont_press.ToString(), "-", Flow.CH2Cont_PressMax.ToString(), Flow.CH2Cont_PressMin.ToString(), "NG");
+                                                plc.CH2RatioNG();
+                                                FlowNG(2);
+                                                return;
+                                            }
+                                            CH3Display($"{CH2RunName}" + I18N.GetLangText(dicLang, "压力比值"), CH2cont_press.ToString(), "-", Flow.CH2Cont_PressMax.ToString(), Flow.CH2Cont_PressMin.ToString(), "OK");
+                                            plc.CH2RatioOK();
+                                            break;
+                                        }
+                                    }
+                                    plc.CH2UPFlowEnd();
+                                }
+                                if (CH2RTStep == "FWD")
+                                {
+
+                                    plc.CH2UPPreOK();//电流电压ok M
+                                    plc.CH2UPADCOK();//
+                                    plc.CH2UPVDCOK();//
+                                    plc.CH2uAOK();//增加一个BUG
+                                    CH2TestResult.FWD_ADCMAX = CH2ADCMax;
+                                    CH2TestResult.FWD_VDCMAX = CH2VDCMax;
+                                    CH2TestResult.FWD_Flow1 = Convert.ToDouble(CH2_1flow.Text);
+                                    CH2TestResult.FWD_Flow2 = Convert.ToDouble(CH2_2flow.Text);
+                                    CH2TestResult.FWD_Pre1 = Convert.ToDouble(CH2_1FullPress.Text);
+                                    CH2TestResult.FWD_Pre2 = Convert.ToDouble(CH2_2FullPress.Text);
+                                    ////////////24080101添加////////////////
+                                    
+                                    if (CH2TestResult.FWD_Flow1 + CH2TestResult.FWD_Flow2 > elec.TotalFlowMax || CH2TestResult.FWD_Flow1 + CH2TestResult.FWD_Flow2 < elec.TotalFlowMin)
+                                    {
+                                        CH3Display($"{CH2RunName}" + I18N.GetLangText(dicLang, "max流量(FWD总)"), (CH2TestResult.FWD_Flow1 + CH2TestResult.FWD_Flow2).ToString(), "lpm", elec.TotalFlowMax.ToString(), elec.TotalFlowMin.ToString(), "NG");
+                                        FlowNG(2);
+                                    }
+                                    else
+                                    {
+                                        CH3Display($"{CH2RunName}" + I18N.GetLangText(dicLang, "max流量(FWD总)"), (CH2TestResult.FWD_Flow1 + CH2TestResult.FWD_Flow2).ToString(), "lpm", elec.TotalFlowMax.ToString(), elec.TotalFlowMin.ToString(), "OK");
+                                    }
+                                    double preEROR = Math.Abs(CH2TestResult.FWD_Pre1 - CH2TestResult.FWD_Pre2);
+                                    if (preEROR > Convert.ToDouble(elec.TotalPreMax))
+                                    {
+                                        CH3Display($"{CH2RunName}" + I18N.GetLangText(dicLang, "max压力差(FWD)"), preEROR.ToString(), "Kpa", elec.TotalPreMax.ToString(), "0", "NG");
+                                        FlowNG(2);
+                                    }
+                                    else
+                                        CH3Display($"{CH2RunName}" + I18N.GetLangText(dicLang, "max压力差(FWD)"), preEROR.ToString(), "Kpa", elec.TotalPreMax.ToString(), "0", "OK");
+
+
+
+                                    //////////
+                                    //6.18c
+                                    if (CH2TestResult.FWD_Pre1 > elec.CH2FwdPreMax || CH2TestResult.FWD_Pre1 < elec.CH2FwdPreMin)
+                                    {
+
+                                        CH3Display($"{CH2RunName}" + I18N.GetLangText(dicLang, "输出压力(FWD上)"), CH2TestResult.FWD_Pre1.ToString(), CH3PressureUnit.Text, elec.CH2FwdPreMax.ToString(),
+                                            elec.CH2FwdPreMin.ToString(), "NG");
+                                        FlowNG(2);
+                                    }
+                                    else
+                                    {
+                                        CH3Display($"{CH2RunName}" + I18N.GetLangText(dicLang, "输出压力(FWD上)"), CH2TestResult.FWD_Pre1.ToString(), CH3PressureUnit.Text, elec.CH2FwdPreMax.ToString(),
+                                          elec.CH2FwdPreMin.ToString(), "OK");
+                                    }
+                                    if (CH2TestResult.FWD_Pre2 > elec.CH2FwdPreMax || CH2TestResult.FWD_Pre2 < elec.CH2FwdPreMin)
+                                    {
+                                        CH3Display($"{CH2RunName}" + I18N.GetLangText(dicLang, "输出压力(FWD下)"), CH2TestResult.FWD_Pre2.ToString(), CH4PressureUnit.Text, elec.CH2FwdPreMax.ToString(), elec.CH2FwdPreMin.ToString(), "NG");
+                                        FlowNG(2);
+                                    }
+                                    else
+                                    {
+                                        CH3Display($"{CH2RunName}" + I18N.GetLangText(dicLang, "输出压力(FWD下)"), CH2TestResult.FWD_Pre2.ToString(), CH4PressureUnit.Text, elec.CH2FwdPreMax.ToString(), elec.CH2FwdPreMin.ToString().ToString(), "OK");
+
+                                    }
+
+                                    CH3Display($"{CH2RunName}" + I18N.GetLangText(dicLang, "max电流(FWD)"), CH2ADCMax.ToString(), "A", elec.CH2FWDADCMax.ToString(), elec.CH2FWDADCMin.ToString(), "OK");
+                                    CH3Display($"{CH2RunName}" + I18N.GetLangText(dicLang, "max电压(FWD)"), CH2VDCMax.ToString(), "V", elec.CH2FWDVDCMax.ToString(), elec.CH2FWDVDCMin.ToString(), "OK");
+
+                                    if (CH2TestResult.FWD_Flow1 > elec.CH2FwdFlowMax || CH2TestResult.FWD_Flow1 < elec.CH2FwdFlowMin)
+                                    {
+                                        CH3Display($"{CH2RunName}" + I18N.GetLangText(dicLang, "max流量(FWD上)"), CH2TestResult.FWD_Flow1.ToString(), "lpm", elec.CH2FwdFlowMax.ToString(), elec.CH2FwdFlowMin.ToString(), "NG");
+                                        FlowNG(2);
+                                    }
+                                    else
+                                    CH3Display($"{CH2RunName}" + I18N.GetLangText(dicLang, "max流量(FWD上)"), CH2TestResult.FWD_Flow1.ToString(), "lpm", elec.CH2FwdFlowMax.ToString(), elec.CH2FwdFlowMin.ToString(), "OK");
+
+                                    if (CH2TestResult.FWD_Flow2 > elec.CH2FwdFlowMax || CH2TestResult.FWD_Flow2 < elec.CH2FwdFlowMin)
+                                    {
+                                        CH3Display($"{CH2RunName}" + I18N.GetLangText(dicLang, "max流量(FWD下)"), CH2TestResult.FWD_Flow2.ToString(), "lpm", elec.CH2FwdFlowMax.ToString(), elec.CH2FwdFlowMin.ToString(), "NG");
+                                        FlowNG(2);
+                                    }
+                                    else
+                                    CH3Display($"{CH2RunName}" + I18N.GetLangText(dicLang, "max流量(FWD下)"), CH2TestResult.FWD_Flow2.ToString(), "lpm", elec.CH2FwdFlowMax.ToString(), elec.CH2FwdFlowMin.ToString(), "OK");
+
+                                }
+                                if (CH2RTStep == "RWD")
+                                {
+                                    if (Flow.CH2RWDOverTime == 0)
+                                    {
+                                        CH3PressMax = CH2TestResult.FWD_Pre1;
+                                        CH4PressMax = CH2TestResult.FWD_Pre2;
+                                    }
+                                    CH2TestResult.RWD_Pre1 = CH3PressMax;
+                                    CH2TestResult.RWD_Pre2 = CH4PressMax;
+                                    if (CH3PressMax > Flow.CH2RWDPressMax || CH3PressMax < Flow.CH2RWDPressMin || CH4PressMax > Flow.CH2RWDPressMax || CH4PressMax < Flow.CH2RWDPressMin)
+                                    {
+                                        if (CH3PressMax > Flow.CH2RWDPressMax || CH3PressMax < Flow.CH2RWDPressMin)
+                                        {
+                                            CH3Display($"{CH2RunName}" + I18N.GetLangText(dicLang, "输出压力(RWD上)"), CH3PressMax.ToString(), CH3PressureUnit.Text, Flow.CH2RWDPressMax.ToString(), Flow.CH2RWDPressMin.ToString(), "NG");
+                                            //6.18NG
+                                            FlowNG(2);
+                                        }
+                                        else
+                                        {
+                                            CH3Display($"{CH2RunName}" + I18N.GetLangText(dicLang, "输出压力(RWD上)"), CH3PressMax.ToString(), CH3PressureUnit.Text, Flow.CH2RWDPressMax.ToString(), Flow.CH2RWDPressMin.ToString(), "OK");
+                                        }
+                                        if (CH4PressMax > Flow.CH2RWDPressMax || CH4PressMax < Flow.CH2RWDPressMin)
+                                        {
+                                            CH3Display($"{CH2RunName}" + I18N.GetLangText(dicLang, "输出压力(RWD下)"), CH4PressMax.ToString(), CH4PressureUnit.Text, Flow.CH2RWDPressMax.ToString(), Flow.CH2RWDPressMin.ToString(), "NG");
+                                            FlowNG(2);
+                                        }
+                                        else
+                                        {
+                                            CH3Display($"{CH2RunName}" + I18N.GetLangText(dicLang, "输出压力(RWD下)"), CH4PressMax.ToString(), CH4PressureUnit.Text, Flow.CH2RWDPressMax.ToString(), Flow.CH2RWDPressMin.ToString(), "OK");
+                                        }
+                                        plc.CH2RWDPressNG();
+                                        plc.CH2RWDFlowEnd();
                                         return;
                                     }
-                                    CH3Display($"{CH2RunName}" + I18N.GetLangText(dicLang, "电流比值"), CH2cont_elec.ToString(), "-", Flow.CH2Cont_ElecMax.ToString(), Flow.CH2Cont_ElecMin.ToString(), "OK");
-                                    if (CH2lastpress == 0)
+                                    else
                                     {
-                                        CH2lastpress = 0.1;
+                                        CH3Display($"{CH2RunName}" + I18N.GetLangText(dicLang, "输出压力(RWD上)"), CH3PressMax.ToString(), CH3PressureUnit.Text, Flow.CH2RWDPressMax.ToString(), Flow.CH2RWDPressMin.ToString(), "OK");
+                                        CH3Display($"{CH2RunName}" + I18N.GetLangText(dicLang, "输出压力(RWD下)"), CH4PressMax.ToString(), CH4PressureUnit.Text, Flow.CH2RWDPressMax.ToString(), Flow.CH2RWDPressMin.ToString(), "OK");
+                                        plc.CH2RWDPressOK();
+                                        plc.CH2RWDADCOK();
+                                        plc.CH2RWDVDCOK();
+                                        plc.CH2uAOK();//增加一个BUG
+                                        plc.CH2RWDFlowEnd();
+                                        CH2TestResult.RWD_ADCMAX = CH2ADCMax;
+                                        CH2TestResult.RWD_VDCMAX = CH2VDCMax;
+                                        CH3Display($"{CH2RunName}" + I18N.GetLangText(dicLang, "max电流(RWD)"), CH2ADCMax.ToString(), "A", elec.CH2RWDADCMax.ToString(), elec.CH2RWDADCMin.ToString(), "OK");
+                                        CH3Display($"{CH2RunName}" + I18N.GetLangText(dicLang, "max电压(RWD)"), CH2VDCMax.ToString(), "V", elec.CH2RWDVDCMax.ToString(), elec.CH2RWDVDCMin.ToString(), "OK");
                                     }
-                                    break;
                                 }
-                            }
-
-                            for (int i = 0; i < this.DataGridView2.Rows.Count - 1; i++)
-                            {
-                                if (this.DataGridView2.Rows[i].Cells[1].Value.ToString() == $"{CH2RunName}" + I18N.GetLangText(dicLang, "输出压力(DOWN)"))
+                                if (CH2RTStep == "DOWN")
                                 {
-                                    //CH2lastmodel = 3;
-                                    CH2lastpress = Convert.ToDouble(this.DataGridView2.Rows[i].Cells[2].Value.ToString());
-                                    CH2cont_press = CH3PressMax / CH2lastpress;
-                                    CH2cont_press += Flow.CH2Cont_Pre_Compen;
-                                    CH2cont_press = Math.Round(CH2cont_press, 2);
-                                    CH2TestResult.PressRatio = CH2cont_press;
-                                    if (CH2cont_press < Flow.CH2Cont_PressMin || CH2cont_press > Flow.CH2Cont_PressMax)
+                                    CH3ReadPress.Stop();
+                                    plc.CH2DOWNPreOK();
+                                    CH2_1FullPress.Text = CH2PressMax.ToString();
+                                    //CH2ReadPress.Stop();
+                                    CH2TestResult.DOWN_Pre = CH4PressMax;
+                                    CH2TestResult.DOWN_ADCMAX = CH2ADCMax;
+                                    CH2TestResult.DOWN_VDCMAX = CH2VDCMax;
+                                    CH2TestResult.DOWN_Flow = CH4Q;
+                                    plc.CH2DOWNADCOK();
+                                    plc.CH2DOWNVDCOK();
+                                    plc.CH2PLCValveBreak();
+                                    plc.CH2uAOK();//增加一个BUG
+                                    CH3Display($"{CH2RunName}" + I18N.GetLangText(dicLang, "输出压力(DOWN-UP)"), CH3PressMax.ToString(), CH3PressureUnit.Text, Flow.CH2_1PreMax.ToString(), Flow.CH2_1PreMin.ToString(), "OK");
+                                    CH3Display($"{CH2RunName}" + I18N.GetLangText(dicLang, "输出压力(DOWN)"), CH4PressMax.ToString(), CH4PressureUnit.Text, "-", "-", "OK");
+                                    CH3Display($"{CH2RunName}" + I18N.GetLangText(dicLang, "max电流(DOWN)"), CH2ADCMax.ToString(), "A", elec.CH2DOWNADCMax.ToString(), elec.CH2DOWNADCMin.ToString(), "OK");
+                                    CH3Display($"{CH2RunName}" + I18N.GetLangText(dicLang, "max电压(DOWN)"), CH2VDCMax.ToString(), "V", elec.CH2DOWNVDCMax.ToString(), elec.CH2DOWNVDCMin.ToString(), "OK");
+                                    CH3Display($"{CH2RunName}" + I18N.GetLangText(dicLang, "max流量(DOWN)"), CH4Q.ToString(), "lpm", "-", "-", "OK");
+                                    CH3Display($"{CH2RunName}" + I18N.GetLangText(dicLang, "max流量(DOWN-UP)"), CH3Q.ToString(), "lpm", Flow.CH2_1FlowMax.ToString(), Flow.CH2_1FlowMin.ToString(), "OK");
+
+                                    for (int i = 0; i < this.DataGridView2.Rows.Count - 1; i++)
                                     {
-                                        CH3Display($"{CH2RunName}" + I18N.GetLangText(dicLang, "压力比值"), CH2cont_press.ToString(), "-", Flow.CH2Cont_PressMax.ToString(), Flow.CH2Cont_PressMin.ToString(), "NG");
-                                        plc.CH2RatioNG();
-                                        return;
+                                        if (this.DataGridView2.Rows[i].Cells[1].Value.ToString() == $"{CH2RunName}" + I18N.GetLangText(dicLang, "max电流(UP)"))
+                                        {
+                                            CH2lastelec = Convert.ToDouble(this.DataGridView2.Rows[i].Cells[2].Value.ToString());
+
+                                            CH2cont_elec = CH2lastelec / CH2ADCMax;
+                                            CH2cont_elec += Flow.CH2Cont_Elec_Compen;
+                                            CH2cont_elec = Math.Round(CH2cont_elec, 2);
+
+                                            CH2TestResult.ElecRatio = CH2cont_elec;
+                                            if (CH2cont_elec < Flow.CH2Cont_ElecMin || CH2cont_elec > Flow.CH2Cont_ElecMax)
+                                            {
+                                                CH3Display($"{CH2RunName}" + I18N.GetLangText(dicLang, "电流比值"), CH2cont_elec.ToString(), "-", Flow.CH2Cont_ElecMax.ToString(), Flow.CH2Cont_ElecMin.ToString(), "NG");
+                                                plc.CH2RatioNG();
+                                                return;
+                                            }
+                                            CH3Display($"{CH2RunName}" + I18N.GetLangText(dicLang, "电流比值"), CH2cont_elec.ToString(), "-", Flow.CH2Cont_ElecMax.ToString(), Flow.CH2Cont_ElecMin.ToString(), "OK");
+                                            if (CH4PressMax == 0)
+                                            {
+                                                CH4PressMax = 0.1;
+                                            }
+                                            break;
+                                        }
                                     }
-                                    CH3Display($"{CH2RunName}" + I18N.GetLangText(dicLang, "压力比值"), CH2cont_press.ToString(), "-", Flow.CH2Cont_PressMax.ToString(), Flow.CH2Cont_PressMin.ToString(), "OK");
-                                    plc.CH2RatioOK();
-                                    break;
+
+                                    for (int i = 0; i < this.DataGridView2.Rows.Count - 1; i++)
+                                    {
+                                        if (this.DataGridView2.Rows[i].Cells[1].Value.ToString() == $"{CH2RunName}" + I18N.GetLangText(dicLang, "输出压力(UP)"))
+                                        {
+                                            CH2lastpress = Convert.ToDouble(this.DataGridView2.Rows[i].Cells[2].Value.ToString());
+                                            CH2cont_press = CH2lastpress / CH4PressMax;
+                                            CH2cont_press += Flow.CH2Cont_Pre_Compen;
+                                            CH2cont_press = Math.Round(CH2cont_press, 2);
+                                            CH2TestResult.PressRatio = CH2cont_press;
+                                            if (CH2cont_press < Flow.CH2Cont_PressMin || CH2cont_press > Flow.CH2Cont_PressMax)
+                                            {
+                                                CH3Display($"{CH2RunName}" + I18N.GetLangText(dicLang, "压力比值"), CH2cont_press.ToString(), "-", Flow.CH2Cont_PressMax.ToString(), Flow.CH2Cont_PressMin.ToString(), "NG");
+                                                plc.CH2RatioNG();
+                                                FlowNG(2);
+                                                return;
+                                            }
+                                            CH3Display($"{CH2RunName}" + I18N.GetLangText(dicLang, "压力比值"), CH2cont_press.ToString(), "-", Flow.CH2Cont_PressMax.ToString(), Flow.CH2Cont_PressMin.ToString(), "OK");
+                                            plc.CH2RatioOK();
+                                            break;
+                                        }
+                                    }
+
+                                    plc.CH2DOWNFlowEnd();
                                 }
+
+                                if (CH2Tlight.Text != "NG")
+                                    if (CH2RTStep == "DOWN" || CH2RTStep == "FWD" || CH2RTStep == "RWD" || CH2RTStep == "UP")
+                                    {
+                                        CH2Step += 1;
+                                        CH2Method(CH2Step);
+                                    }
                             }
-                            plc.CH2UPFlowEnd();
-                        }
-                        /* CH2Step += 1;
-                         CH2Method(CH2Step);
-                         //两台仪器压力都测试完，就停止读取电流电压
-                         JudgeCH2ADC = false;*/
-                        if (CH2RTStep == "DOWN" || CH2RTStep == "FWD" || CH2RTStep == "RWD" || CH2RTStep == "UP")
-                        {
-                            CH2Step += 1;
-                            CH2Method(CH2Step);
-                        }
+                        })));
+                       
                     }
                 }
-            }
-            catch (Exception ex)
-            {
-                wa.InsertWarningData(DateTime.Now.ToString("yyyy-MM-dd HH:mm:ss"), "-", I18N.GetLangText(dicLang, "CH2-2读取输出压力") + ":" + ex.Message);
-                //MessageBox.Show("CH2-2读取输出压力：" + ex.Message);
-                Logger.Log(I18N.GetLangText(dicLang, "CH2-2读取输出压力") + ":" + ex.Message);
-            }
+                catch (Exception ex)
+                {
+                    wa.InsertWarningData(DateTime.Now.ToString("yyyy-MM-dd HH:mm:ss"), "-", I18N.GetLangText(dicLang, "CH2-2读取输出压力") + ":" + ex.Message);
+                    //MessageBox.Show("CH2-2读取输出压力：" + ex.Message);
+                    Logger.Log(I18N.GetLangText(dicLang, "CH2-2读取输出压力") + ":" + ex.Message);
+                }
         }
 
         ///// <summary>
@@ -10883,7 +10054,7 @@ namespace SLC1_N
             ReadConfig con = new ReadConfig();
             Model.Flow flow;
             flow = con.ReadFlow();
-            
+            elec = con.ReadElectricity();
             Fwdjg = 0;
             Fwdjg2 = 0;
             CH1ADCList.Clear();
@@ -10891,8 +10062,8 @@ namespace SLC1_N
             CH1ReadElecCount = 0;
             CH1ReadElec.Stop();
             //计算电压和电流是否超过上下限
-            if(CKCH1Port.IsOpen)
-            Form1.f1.CKCH1Port.WriteLine("OUTP 0");
+            if (CKCH1Port.IsOpen)
+                Form1.f1.CKCH1Port.WriteLine("OUTP 0");
             System.Threading.Thread.Sleep(100);
             if (CKCH1Port.IsOpen)
                 Form1.f1.CKCH1Port.WriteLine("OUTP 0");
@@ -10907,13 +10078,13 @@ namespace SLC1_N
                 // plc.CH1HLevelFlase(false);
                 //Thread.Sleep(50);
             }
-           
+
             if (i < CH1OrderTemp.Count)
             {
-                
+
                 CHpreflag = 0;
-                if(CKCH1Port.IsOpen)
-                Form1.f1.CKCH1Port.WriteLine("OUTP 1");
+                if (CKCH1Port.IsOpen)
+                    Form1.f1.CKCH1Port.WriteLine("OUTP 1");
                 System.Threading.Thread.Sleep(100);
                 if (CKCH1Port.IsOpen)
                     Form1.f1.CKCH1Port.WriteLine("OUTP 1");
@@ -10941,14 +10112,14 @@ namespace SLC1_N
                     //CH1lin.LinComm();
                     CH1lin = new LIN_LDFParser(1);
                     CH1lin.Main(linconfig.LDFFileName);
-                  //  CH1lin.MainThread();//开其他线程发送
+                    //  CH1lin.MainThread();//开其他线程发送
 
                 }
                 CH1RTStep = CH1OrderTemp[i];
                 CH1timestamp = DateTime.Now.ToString("yyyy-MM-dd HH:mm:ss");
 
                 //3.9
-              
+
                 Model.CH_PARAMS ch_params;
                 ch_params = con.ReadParameters(1, 2);
                 string Leaklowlimit = ch_params.Leaklowlimit;
@@ -11008,20 +10179,29 @@ namespace SLC1_N
                         plc.CH1valveopen();
                         plc.CH2valveopen();
                         plc.CH1FWDStart();
-
                         ReadParameters(1, 1);
                         ReadParameters(1, 2);
 
                         CH1flowtest = true;
                         CH2flowtest = true;
-                        CH1Display($"{CH1RunName}" + I18N.GetLangText(dicLang, "max电流(FWD)"), "", "A", elec.CH1FWDADCMax.ToString(), elec.CH1FWDADCMin.ToString(), "");
-                        CH1Display($"{CH1RunName}" + I18N.GetLangText(dicLang, "max电压(FWD)"), "", "V", elec.CH1FWDVDCMax.ToString(), elec.CH1FWDVDCMin.ToString(), "");
-                        
-                            CH1Display($"{CH1RunName}" + I18N.GetLangText(dicLang, "输出压力(FWD上)"), "", PressureUnit.Text, elec.CH1_1PreFwdMax.ToString(), elec.CH2_2PreFwdMin.ToString(), "");
-                        CH1Display($"{CH1RunName}" + I18N.GetLangText(dicLang, "输出压力(FWD下)"), "", CH2PressureUnit.Text, elec.CH1_1PreFwdMax.ToString(), elec.CH2_2PreFwdMin.ToString(), "");
-                        CH1Display($"{CH1RunName}" + I18N.GetLangText(dicLang, "max流量(FWD上)"), "", "lpm", flow.CH1_1FlowMax.ToString(), flow.CH1_1FlowMin.ToString(), "");
-                        CH1Display($"{CH1RunName}" + I18N.GetLangText(dicLang, "max流量(FWD下)"), "", "lpm", flow.CH1_1FlowMax.ToString(), flow.CH1_1FlowMin.ToString(), "");
-                        //plc.CH1PowerOpen();
+                        Invoke((new System.Action(() =>
+                        {
+                            //240801新增
+                            CH1Display($"{CH1RunName}" + I18N.GetLangText(dicLang, "max流量(FWD总)"), "", "lpm", elec.TotalFlowMax.ToString(), elec.TotalFlowMin.ToString(), "");
+                            CH1Display($"{CH1RunName}" + I18N.GetLangText(dicLang, "max压力差(FWD)"), "", "Kpa", elec.TotalPreMax.ToString(), "0", "");
+
+
+                            CH1Display($"{CH1RunName}" + I18N.GetLangText(dicLang, "max电流(FWD)"), "", "A", elec.CH1FWDADCMax.ToString(), elec.CH1FWDADCMin.ToString(), "");
+                            CH1Display($"{CH1RunName}" + I18N.GetLangText(dicLang, "max电压(FWD)"), "", "V", elec.CH1FWDVDCMax.ToString(), elec.CH1FWDVDCMin.ToString(), "");
+
+                            CH1Display($"{CH1RunName}" + I18N.GetLangText(dicLang, "输出压力(FWD上)"), "", PressureUnit.Text, elec.CH1FwdPreMax.ToString(), elec.CH1FwdPreMin.ToString(), "");
+                            CH1Display($"{CH1RunName}" + I18N.GetLangText(dicLang, "输出压力(FWD下)"), "", CH2PressureUnit.Text, elec.CH1FwdPreMax.ToString(), elec.CH1FwdPreMin.ToString(), "");
+                            CH1Display($"{CH1RunName}" + I18N.GetLangText(dicLang, "max流量(FWD上)"), "", "lpm", elec.CH1FwdFlowMax.ToString(), elec.CH1FwdFlowMin.ToString(), "");
+                            CH1Display($"{CH1RunName}" + I18N.GetLangText(dicLang, "max流量(FWD下)"), "", "lpm", elec.CH1FwdFlowMax.ToString(), elec.CH1FwdFlowMin.ToString(), "");
+                            
+
+                        })));
+                                              //plc.CH1PowerOpen();
                         plc.WriteCH1TC(true);
 
                         break;
@@ -11236,7 +10416,7 @@ namespace SLC1_N
                         CH1Display($"{CH1RunName}" + I18N.GetLangText(dicLang, "CH1-1同充气密"), "", LeakUnit.Text, ch1_1params.Leaktoplimit, Leaklowlimit, "");
                         CH1Display($"{CH1RunName}" + I18N.GetLangText(dicLang, "CH1-2同充气密"), "", CH2LeakUnit.Text, ch1_2params.Leaktoplimit, Leaklowlimit, "");
                         //plc.CH1PowerOpen();
-                        break; 
+                        break;
 
                     case "QC":
                         //Electricity静态电流
@@ -11299,7 +10479,7 @@ namespace SLC1_N
             ReadConfig con = new ReadConfig();
             Model.Flow flow;
             flow = con.ReadFlow();
-
+            elec = con.ReadElectricity();
             CH2JGFLAG = 0;
             CH2ReadElec.Stop();
             CH2ADCList.Clear();
@@ -11307,23 +10487,23 @@ namespace SLC1_N
             CH2ReadElecCount = 0;
             //RightCH1Status.Text = "待机";
             //RightCH2Status.Text = "待机";
-            if (CKCH2Port.IsOpen)   Form1.f1.CKCH2Port.WriteLine("OUTP 0");
-            if (CKCH2Port.IsOpen)   Form1.f1.CKCH2Port.WriteLine("OUTP 0");
+            if (CKCH2Port.IsOpen) Form1.f1.CKCH2Port.WriteLine("OUTP 0");
+            if (CKCH2Port.IsOpen) Form1.f1.CKCH2Port.WriteLine("OUTP 0");
             System.Threading.Thread.Sleep(1000);
             {
                 plc.WriteCH2SC(false);
                 plc.WriteCH2XC(false);
                 plc.WriteCH2TC(false);
                 plc.WriteCH2XQ(false);
-              //  Thread.Sleep(50);
+                //  Thread.Sleep(50);
             }
 
             if (i < CH2OrderTemp.Count)
             {
                 CHpreflag2 = 0;
-                if (CKCH2Port.IsOpen)   Form1.f1.CKCH2Port.WriteLine("OUTP 1");
+                if (CKCH2Port.IsOpen) Form1.f1.CKCH2Port.WriteLine("OUTP 1");
                 System.Threading.Thread.Sleep(100);
-                if (CKCH2Port.IsOpen)   Form1.f1.CKCH2Port.WriteLine("OUTP 1");
+                if (CKCH2Port.IsOpen) Form1.f1.CKCH2Port.WriteLine("OUTP 1");
                 CH2ADCMax = 0;
                 CH2VDCMax = 0;
                 //CH2ADC = 0;
@@ -11419,13 +10599,17 @@ namespace SLC1_N
 
                         CH3flowtest = true;
                         CH4flowtest = true;
+                        //240802
+                        CH3Display($"{CH2RunName}" + I18N.GetLangText(dicLang, "max流量(FWD总)"), "", "lpm", elec.TotalFlowMax.ToString(), elec.TotalFlowMin.ToString(), "");
+                        CH3Display($"{CH2RunName}" + I18N.GetLangText(dicLang, "max压力差(FWD)"), "", "Kpa", elec.TotalPreMax.ToString(), "0", "");
+                        //240802end
 
                         CH3Display($"{CH2RunName}" + I18N.GetLangText(dicLang, "max电流(FWD)"), "", "A", elec.CH2FWDADCMax.ToString(), elec.CH2FWDADCMin.ToString(), "");
                         CH3Display($"{CH2RunName}" + I18N.GetLangText(dicLang, "max电压(FWD)"), "", "V", elec.CH2FWDVDCMax.ToString(), elec.CH2FWDVDCMin.ToString(), "");
-                        CH3Display($"{CH2RunName}" + I18N.GetLangText(dicLang, "输出压力(FWD上)"), "", CH3PressureUnit.Text, elec.CH2_1PreFwdMax.ToString(), elec.CH1_2PreFwdMin.ToString(), "");
-                        CH3Display($"{CH2RunName}" + I18N.GetLangText(dicLang, "输出压力(FWD下)"), "", CH4PressureUnit.Text, elec.CH2_1PreFwdMax.ToString(), elec.CH1_2PreFwdMin.ToString(), "");
-                        CH3Display($"{CH2RunName}" + I18N.GetLangText(dicLang, "max流量(FWD上)"), "", "lpm", flow.CH1_1FlowMax.ToString(), flow.CH1_1FlowMin.ToString(), "");
-                        CH3Display($"{CH2RunName}" + I18N.GetLangText(dicLang, "max流量(FWD下)"), "", "lpm", flow.CH1_1FlowMax.ToString(), flow.CH1_1FlowMin.ToString(), "");
+                        CH3Display($"{CH2RunName}" + I18N.GetLangText(dicLang, "输出压力(FWD上)"), "", CH3PressureUnit.Text, elec.CH2FwdPreMax.ToString(), elec.CH1FwdPreMin.ToString(), "");
+                        CH3Display($"{CH2RunName}" + I18N.GetLangText(dicLang, "输出压力(FWD下)"), "", CH4PressureUnit.Text, elec.CH2FwdPreMax.ToString(), elec.CH1FwdPreMin.ToString(), "");
+                        CH3Display($"{CH2RunName}" + I18N.GetLangText(dicLang, "max流量(FWD上)"), "", "lpm",  elec.CH2FwdFlowMax.ToString(), elec.CH2FwdFlowMin.ToString(), "");
+                        CH3Display($"{CH2RunName}" + I18N.GetLangText(dicLang, "max流量(FWD下)"), "", "lpm",  elec.CH2FwdFlowMax.ToString(), elec.CH2FwdFlowMin.ToString(), "");
                         //plc.CH2PowerOpen();
                         plc.WriteCH2TC(true);
                         break;
@@ -11434,7 +10618,7 @@ namespace SLC1_N
                         plc.CH3valveclose();
                         plc.CH4valveclose();
                         plc.CH2RWDStart();
-                        if (CKCH2Port.IsOpen)   Form1.f1.CKCH2Port.WriteLine("OUTP 1");
+                        if (CKCH2Port.IsOpen) Form1.f1.CKCH2Port.WriteLine("OUTP 1");
                         ReadParameters(1, 3);
                         ReadParameters(1, 4);
 
@@ -11632,7 +10816,7 @@ namespace SLC1_N
                                 ReadParameters(9, 4);
                             }
                         }
-                       
+
                         CH3IsRun.Interval = 1300;
                         CH3IsRun.Start();
                         ch2_1step = 1;
@@ -11647,7 +10831,7 @@ namespace SLC1_N
                     case "QC":
                         // Electricity静态电流
                         CH2ReaduA.Interval = 200;
-                        if (CKCH2Port.IsOpen)   Form1.f1.CKCH2Port.WriteLine("OUTP 1");
+                        if (CKCH2Port.IsOpen) Form1.f1.CKCH2Port.WriteLine("OUTP 1");
                         CH2ReaduA.Start();
                         ch2uAstarttime = System.DateTime.Now.Ticks;
                         CH2uAarray.Clear();
@@ -11657,7 +10841,7 @@ namespace SLC1_N
                 }
                 if (plc.CH2LIN)
                 {
-                    if (CH2OrderTemp[i]!= "QC")
+                    if (CH2OrderTemp[i] != "QC")
                     {
                         CH2LinUP.Interval = 102;
                         CH2LinUP.Start();
@@ -11687,7 +10871,7 @@ namespace SLC1_N
                 {
                     timerCH2CT.Stop();
                     CH2IsStart = false;
-                    if (CKCH2Port.IsOpen)   Form1.f1.CKCH2Port.WriteLine("OUTP 0");
+                    if (CKCH2Port.IsOpen) Form1.f1.CKCH2Port.WriteLine("OUTP 0");
                     plc.WriteCH2RatioOK();
                 }
                 plc.CH2FlowEnd();
@@ -11710,7 +10894,7 @@ namespace SLC1_N
                     //ProBarRun.Stop();
                     CH1IsRun.Interval = 400;
                     CH1IsRun.Start();
-                  // ch1_1step = 5;
+                    // ch1_1step = 5;
                     ch1write = 1;
                 }
                 if (ch2client.IsConnect)
@@ -11720,7 +10904,7 @@ namespace SLC1_N
                     //ProBarRun.Stop();
                     CH2IsRun.Interval = 400;
                     CH2IsRun.Start();
-                 //  ch1_2step = 5;
+                    //  ch1_2step = 5;
                     ch2write = 1;
                 }
                 CH1LinUP.Stop();
@@ -12000,73 +11184,7 @@ namespace SLC1_N
 
                         press.ChkPLCPress = Convert.ToBoolean(config.IniReadValue("PLC", "ChkPLCPress"));
 
-                        //if (String.IsNullOrEmpty(press.CH1Elect.Trim()))
-                        //{
-                        //    MessageBox.Show("电流数值需填写！");
-                        //}
-                        //else
-                        //{
-                        //    if (Convert.ToDouble(press.CH1Elect) > 5)
-                        //    {
-                        //        MessageBox.Show("电流数值不可以超过5！");
-                        //    }
-                        //    else
-                        //    {
-                        //        Form1.f1.plc.ch1elec = Convert.ToInt32(press.CH1Elect) * 10000;
-                        //        Form1.f1.plc.CH1WriteElec();
-                        //    }
-                        //}
-
-                        //if (String.IsNullOrEmpty(press.CH1Vol.Trim()))
-                        //{
-                        //    MessageBox.Show("电压数值需填写！");
-                        //}
-                        //else
-                        //{
-                        //    if (Convert.ToDouble(press.CH1Vol) > 60)
-                        //    {
-                        //        MessageBox.Show("电压数值不可以超过60！");
-                        //    }
-                        //    else
-                        //    {
-                        //        Form1.f1.plc.ch1vol = Convert.ToInt32(Convert.ToDouble(press.CH1Vol) * 1000);
-                        //        Form1.f1.plc.CH1WriteVol();
-                        //    }
-                        //}
-
-                        //if (String.IsNullOrEmpty(press.CH2Vol.Trim()))
-                        //{
-                        //    MessageBox.Show("电压数值需填写！");
-                        //}
-                        //else
-                        //{
-                        //    if (Convert.ToDouble(press.CH2Vol) > 60)
-                        //    {
-                        //        MessageBox.Show("电压数值不可以超过60！");
-                        //    }
-                        //    else
-                        //    {
-                        //        Form1.f1.plc.ch2vol = Convert.ToInt32(Convert.ToDouble(press.CH2Vol) * 1000);
-                        //        Form1.f1.plc.CH2WriteVol();
-                        //    }
-                        //}
-                        //if (String.IsNullOrEmpty(press.CH2Elect.Trim()))
-                        //{
-                        //    MessageBox.Show("电流数值需填写！");
-                        //}
-                        //else
-                        //{
-                        //    if (Convert.ToDouble(press.CH2Elect) > 5)
-                        //    {
-                        //        MessageBox.Show("电流数值不可以超过5！");
-                        //    }
-                        //    else
-                        //    {
-                        //        Form1.f1.plc.ch2elec = Convert.ToInt32(press.CH2Elect) * 10000;
-                        //        Form1.f1.plc.CH2WriteElec();
-                        //    }
-                        //}
-                        /////////////////////////////////////////////////////////
+  
                         short ch1pressure;
                         if (press.ChkPLCPress)
                         {
@@ -12333,11 +11451,11 @@ namespace SLC1_N
             CH1TestResult.FWD_BalanPre1 = "0";
             CH1TestResult.FWD_Leak1 = "0";
 
-            CH1TestResult.FWD_FullPre2= "0";
+            CH1TestResult.FWD_FullPre2 = "0";
             CH1TestResult.FWD_BalanPre2 = "0";
             CH1TestResult.FWD_Leak2 = "0";
 
-          
+
         }
 
 
@@ -12625,29 +11743,7 @@ namespace SLC1_N
 
         private void timer1_Tick_1(object sender, EventArgs e)
         {
-            if (true && mSerialPort)
-            {
-                try
-                {
-                    ReadMultimeterPort();
-                    // Thread.Sleep(50);
 
-                    PortSend(1);
-                    //Thread.Sleep(100);
-                    PortSend(3);
-                    //Thread.Sleep(100);
-                    PortSend(2);
-                    //Thread.Sleep(100);
-                    PortSend(4);
-                    //Thread.Sleep(100);
-
-                }
-                catch (Exception ex)
-                {
-                    Logger.Log(ex.StackTrace);
-                    wa.InsertWarningData(DateTime.Now.ToString("yyyy-MM-dd HH:mm:ss"), "-", ex.StackTrace);
-                }
-            }
         }
 
         private void button1_Click(object sender, EventArgs e)
@@ -12668,22 +11764,7 @@ namespace SLC1_N
 
         }
 
-        /// <summary>
-        /// Clones the specified list.
-        /// </summary>
-        /// <typeparam name="T"></typeparam>
-        /// <param name="List">The list.</param>
-        /// <returns>List{0}.</returns>
-        public static List<T> Clone<T>(object List)
-        {
-            using (Stream objectStream = new MemoryStream())
-            {
-                IFormatter formatter = new BinaryFormatter();
-                formatter.Serialize(objectStream, List);
-                objectStream.Seek(0, SeekOrigin.Begin);
-                return formatter.Deserialize(objectStream) as List<T>;
-            }
-        }
+     
     }
 
     public class ValueClass

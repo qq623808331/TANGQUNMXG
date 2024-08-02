@@ -1,5 +1,4 @@
-﻿using HslCommunication;
-using HslCommunication.Profinet.Melsec;
+﻿using HslCommunication.Profinet.Melsec;
 using System.Threading;
 using System.Threading.Tasks;
 
@@ -56,7 +55,7 @@ namespace SLC1_N
         public bool CH2DRun;
         public bool CH2ERun;
         public bool CH2FRun;
-  
+
 
 
         //        CH1Run = melsecFx.ReadBool("M3300").Content;
@@ -3290,7 +3289,7 @@ namespace SLC1_N
         public void WriteCH2Balance()
         {
             //melsecFx.Write("M3236", true);
-            if (Form1.f1.CKCH2Port.IsOpen)   Form1.f1.CKCH2Port.WriteLine("OUTP 0");
+            if (Form1.f1.CKCH2Port.IsOpen) Form1.f1.CKCH2Port.WriteLine("OUTP 0");
         }
         Thread ch1udpre;
         /// <summary>
@@ -3368,7 +3367,7 @@ namespace SLC1_N
         }
         public void WriteCH2UPLeakFalse()
         {
-           melsecFx.Write("M4013", false);
+            melsecFx.Write("M4013", false);
             melsecFx.Write("M4400", false);
         }
 
@@ -3391,7 +3390,7 @@ namespace SLC1_N
         }
         public void WriteCH1DownLeakFalse()
         {
-           melsecFx.Write("M4011", false);
+            melsecFx.Write("M4011", false);
         }
 
         public void CH1LeakFalse()
@@ -3404,7 +3403,7 @@ namespace SLC1_N
         {
             melsecFx.Write("M4010", false);
         }
-        
+
         /// <summary>
         /// CH2下充气密启动
         /// </summary>

@@ -2,14 +2,12 @@
 using System.Collections.Generic;
 using System.Globalization;
 using System.IO;
-using System.Linq;
 using System.Text;
 using System.Threading;
-using System.Threading.Tasks;
 
 namespace SLC1_N
 {
- 
+
     public class I18N
     {
         public Action ChangLangNotify { get; set; }
@@ -40,7 +38,7 @@ namespace SLC1_N
                     string lang_file = CfgPath + "Language.lang";
                     if (File.Exists(lang_file))
                     {
-                        File.WriteAllText(lang_file, mLanguage,Encoding.UTF8);
+                        File.WriteAllText(lang_file, mLanguage, Encoding.UTF8);
                     }
                 }
             }
@@ -114,8 +112,8 @@ namespace SLC1_N
             string text = string.Empty;
             try
             {
-                if(dic!=null)
-                 text = dic[key.Trim()][0];
+                if (dic != null)
+                    text = dic[key.Trim()][0];
                 else
                     return key;
             }

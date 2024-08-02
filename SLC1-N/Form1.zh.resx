@@ -531,7 +531,7 @@
     <value>0, 32</value>
   </data>
   <data name="logDisplay1.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>47430, 34967, 47430, 34967</value>
+    <value>131750, 107086, 131750, 107086</value>
   </data>
   <data name="logDisplay1.Size" type="System.Drawing.Size, System.Drawing">
     <value>1917, 73</value>

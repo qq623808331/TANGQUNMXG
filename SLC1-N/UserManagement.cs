@@ -1,5 +1,4 @@
 ﻿using ADOX;
-using Microsoft.Office.Interop.Excel;
 using System;
 using System.Collections.Generic;
 using System.Data.OleDb;
@@ -125,8 +124,8 @@ namespace SLC1_N
         {
             if (Password.TextLength > 0)
             {
-                if ( Characters.Text==I18N.GetLangText(dicLang, "操作员")||
-                    Characters.Text==I18N.GetLangText(dicLang, "技术员"))
+                if (Characters.Text == I18N.GetLangText(dicLang, "操作员") ||
+                    Characters.Text == I18N.GetLangText(dicLang, "技术员"))
                 {
                     Boolean add = true;
 
@@ -257,7 +256,7 @@ namespace SLC1_N
 
                 if (File.Exists(filepath) == false)//判断所选路径是否有文件
                 {
-                    MessageBox.Show( I18N.GetLangText(dicLang, "路径下不存在用户信息文件"));
+                    MessageBox.Show(I18N.GetLangText(dicLang, "路径下不存在用户信息文件"));
                 }
                 else
                 {

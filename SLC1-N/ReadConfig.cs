@@ -258,7 +258,7 @@ namespace SLC1_N
             {
                 ch_params.ChkBee = Convert.ToBoolean(bee);
             }
-            string presscompensation = config.IniReadValue("Parameters", CH + "presscompensation" );
+            string presscompensation = config.IniReadValue("Parameters", CH + "presscompensation");
             Log log = new Log();
             log.CH1Port_Logmsg("补偿值" + presscompensation);
             if (!String.IsNullOrEmpty(presscompensation))
@@ -269,7 +269,7 @@ namespace SLC1_N
             {
                 ch_params.PressCompensation = presscompensation;
             }
-           
+
             string unit = config.IniReadValue("Parameters", CH + "unit");
             if (String.IsNullOrEmpty(unit))
             {
@@ -318,7 +318,7 @@ namespace SLC1_N
 
 
 
-            if (String.IsNullOrEmpty(config.IniReadValue("Lin", "CH1HighLevel"))) 
+            if (String.IsNullOrEmpty(config.IniReadValue("Lin", "CH1HighLevel")))
                 ord.CH1HighLevel = false;
             else
                 ord.CH1HighLevel = Convert.ToBoolean(config.IniReadValue("Lin", "CH1HighLevel"));
@@ -1424,9 +1424,38 @@ namespace SLC1_N
             {
                 elec.CH1UPADCMax = Convert.ToDouble(ch1upadcmax);
             }
+            //240731新增
+            string TotalFlowMax = config.IniReadValue("Limits", "TotalFlowMax");
+            if (String.IsNullOrEmpty(TotalFlowMax))
+            {
+                elec.TotalFlowMax = 0;
+            }
+            else
+            {
+                elec.TotalFlowMax = Convert.ToDouble(TotalFlowMax);
+            }
 
-           
+            string TotalFlowMin = config.IniReadValue("Limits", "TotalFlowMin");
+            if (String.IsNullOrEmpty(TotalFlowMin))
+            {
+                elec.TotalFlowMin = 0;
+            }
+            else
+            {
+                elec.TotalFlowMin = Convert.ToDouble(TotalFlowMin);
+            }
 
+            string TotalPreMax = config.IniReadValue("Limits", "TotalPreMax");
+            if (String.IsNullOrEmpty(TotalPreMax))
+            {
+                elec.TotalPreMax = 0;
+            }
+            else
+            {
+                elec.TotalPreMax = Convert.ToDouble(TotalPreMax);
+            }
+
+            ///////////////////
 
 
             string ch2upadcmax = config.IniReadValue("Limits", "CH2UPADCMax");
@@ -1912,116 +1941,116 @@ namespace SLC1_N
             string CH1FWDFlowTime = config.IniReadValue("Limits", "CH1FWDFlowTime");
             if (String.IsNullOrEmpty(CH1FWDFlowTime))
             {
-                elec.CH1FlowTime = 0;
+                elec.CH1FWDFlowTime = 0;
             }
             else
             {
-                elec.CH1FlowTime = Convert.ToDouble(CH1FWDFlowTime);
+                elec.CH1FWDFlowTime = Convert.ToDouble(CH1FWDFlowTime);
             }
 
             string CH2FWDFlowTime = config.IniReadValue("Limits", "CH2FWDFlowTime");
             if (String.IsNullOrEmpty(CH2FWDFlowTime))
             {
-                elec.CH2FlowTime = 0;
+                elec.CH2FWDFlowTime = 0;
             }
             else
             {
-                elec.CH2FlowTime = Convert.ToDouble(CH2FWDFlowTime);
+                elec.CH2FWDFlowTime = Convert.ToDouble(CH2FWDFlowTime);
             }
 
             string CH1FWDPreTime = config.IniReadValue("Limits", "CH1FWDPreTime");
             if (String.IsNullOrEmpty(CH1FWDPreTime))
             {
-                elec.CH1FreFwdTime = 0;
+                elec.CH1FwdpreTime = 0;
             }
             else
             {
-                elec.CH1FreFwdTime = Convert.ToDouble(CH1FWDPreTime);
+                elec.CH1FwdpreTime = Convert.ToDouble(CH1FWDPreTime);
             }
 
             string CH2FWDPreTime = config.IniReadValue("Limits", "CH2FWDPreTime");
             if (String.IsNullOrEmpty(CH2FWDPreTime))
             {
-                elec.CH2FreFwdTime = 0;
+                elec.CH2FwdpreTime = 0;
             }
             else
             {
-                elec.CH2FreFwdTime = Convert.ToDouble(CH2FWDPreTime);
+                elec.CH2FwdpreTime = Convert.ToDouble(CH2FWDPreTime);
             }
 
             string CH1FWDFlowMax = config.IniReadValue("Limits", "CH1FWDFlowMax");
             if (String.IsNullOrEmpty(CH1FWDFlowMax))
             {
-                elec.CH1_2FlowFwdMax = 0;
+                elec.CH1FwdFlowMax = 0;
             }
             else
             {
-                elec.CH1_2FlowFwdMax = Convert.ToDouble(CH1FWDFlowMax);
+                elec.CH1FwdFlowMax = Convert.ToDouble(CH1FWDFlowMax);
             }
 
             string CH2FWDFlowMax = config.IniReadValue("Limits", "CH2FWDFlowMax");
             if (String.IsNullOrEmpty(CH2FWDFlowMax))
             {
-                elec.CH2_2FlowFwdMax = 0;
+                elec.CH2FwdFlowMax = 0;
             }
             else
             {
-                elec.CH2_2FlowFwdMax = Convert.ToDouble(CH2FWDFlowMax);
+                elec.CH2FwdFlowMax = Convert.ToDouble(CH2FWDFlowMax);
             }
             string CH1FWDFlowMin = config.IniReadValue("Limits", "CH1FWDFlowMin");
             if (String.IsNullOrEmpty(CH1FWDFlowMin))
             {
-                elec.CH1_2FlowFwdMin = 0;
+                elec.CH1FwdFlowMin = 0;
             }
             else
             {
-                elec.CH1_2FlowFwdMin = Convert.ToDouble(CH1FWDFlowMin);
+                elec.CH1FwdFlowMin = Convert.ToDouble(CH1FWDFlowMin);
             }
             string CH2FWDFlowMin = config.IniReadValue("Limits", "CH2FWDFlowMin");
             if (String.IsNullOrEmpty(CH2FWDFlowMin))
             {
-                elec.CH2_2FlowFwdMin = 0;
+                elec.CH2FwdFlowMin = 0;
             }
             else
             {
-                elec.CH2_2FlowFwdMin = Convert.ToDouble(CH2FWDFlowMin);
+                elec.CH2FwdFlowMin = Convert.ToDouble(CH2FWDFlowMin);
             }
             string CH1FWDPreMax = config.IniReadValue("Limits", "CH1FWDPreMax");
             if (String.IsNullOrEmpty(CH1FWDPreMax))
             {
-                elec.CH1_1PreFwdMax = 0;
+                elec.CH1FwdPreMax = 0;
             }
             else
             {
-                elec.CH1_1PreFwdMax = Convert.ToDouble(CH1FWDPreMax);
+                elec.CH1FwdPreMax = Convert.ToDouble(CH1FWDPreMax);
             }
             string CH2FWDPreMax = config.IniReadValue("Limits", "CH2FWDPreMax");
             if (String.IsNullOrEmpty(CH2FWDPreMax))
             {
-                elec.CH2_1PreFwdMax = 0;
+                elec.CH2FwdPreMax = 0;
             }
             else
             {
-                elec.CH2_1PreFwdMax = Convert.ToDouble(CH2FWDPreMax);
+                elec.CH2FwdPreMax = Convert.ToDouble(CH2FWDPreMax);
             }
             string CH1FWDPreMin = config.IniReadValue("Limits", "CH1FWDPreMin");
             if (String.IsNullOrEmpty(CH1FWDPreMin))
             {
-                elec.CH1_2PreFwdMin = 0;
+                elec.CH1FwdPreMin = 0;
             }
             else
             {
-                elec.CH1_2PreFwdMin = Convert.ToDouble(CH1FWDPreMin);
+                elec.CH1FwdPreMin = Convert.ToDouble(CH1FWDPreMin);
             }
 
             string CH2FWDPreMin = config.IniReadValue("Limits", "CH2FWDPreMin");
             if (String.IsNullOrEmpty(CH2FWDPreMin))
             {
-                elec.CH2_2PreFwdMin = 0;
+                elec.CH2FwdPreMin = 0;
             }
             else
             {
-                elec.CH2_2PreFwdMin = Convert.ToDouble(CH2FWDPreMin);
+                elec.CH2FwdPreMin = Convert.ToDouble(CH2FWDPreMin);
             }
 
 

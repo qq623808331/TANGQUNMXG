@@ -2,7 +2,6 @@
 using System;
 using System.Collections.Generic;
 using System.Drawing;
-using System.IO.Ports;
 using System.Text;
 using System.Windows.Forms;
 
@@ -946,7 +945,7 @@ namespace SLC1_N
             Form1.f1.CodePort2.Close();
             if (!Form1.f1.CodePort2.IsOpen)
             {
-                CH2CodeIsComm.Text =I18N.GetLangText(dicLang, "未打开"); ;
+                CH2CodeIsComm.Text = I18N.GetLangText(dicLang, "未打开"); ;
                 CH2CodeIsComm.ForeColor = Color.Red;
                 CH2CodePort.Enabled = true;
                 CH2CodeCon.Enabled = true;
@@ -1020,7 +1019,7 @@ namespace SLC1_N
                 Form1.f1.CKCH2Port.Open();
                 if (Form1.f1.CKCH2Port.IsOpen)
                 {
-                    if (Form1.f1.CKCH2Port.IsOpen)   Form1.f1.CKCH2Port.WriteLine("SYST:REM");
+                    if (Form1.f1.CKCH2Port.IsOpen) Form1.f1.CKCH2Port.WriteLine("SYST:REM");
                     labCKCH2.Text = I18N.GetLangText(dicLang, "已打开");
                     labCKCH2.ForeColor = Color.Green;
                     btnCKCh2Connect.Enabled = false;

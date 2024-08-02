@@ -118,7 +118,7 @@ namespace SLC1_N
             Form1.f1.linconfig.BEPowerSignalName = BEPowerSignalName.Text;
             Form1.f1.linconfig.BEPowerSignalValue = Convert.ToDouble(BEPowerSignalValue.Text);
             //CF
-            Form1.f1.linconfig.CFUPSignalName =CFUPSignalName.Text;
+            Form1.f1.linconfig.CFUPSignalName = CFUPSignalName.Text;
             Form1.f1.linconfig.CFDOWNSignalName = CFDOWNSignalName.Text;
             Form1.f1.linconfig.CFFWDSignalName = CFFWDSignalName.Text;
             Form1.f1.linconfig.CFRWDSignalName = CFRWDSignalName.Text;
@@ -163,7 +163,7 @@ namespace SLC1_N
             BEPowerSignalName.Text = lin.BEPowerSignalName;
             BEPowerSignalValue.Text = lin.BEPowerSignalValue.ToString();
             //CF
-          
+
             CFUPSignalName.Text = lin.CFUPSignalName;
             CFDOWNSignalName.Text = lin.CFDOWNSignalName;
             CFFWDSignalName.Text = lin.CFFWDSignalName;

@@ -790,7 +790,7 @@ namespace SLC1_N
         private void ValveAction_Click(object sender, EventArgs e)
         {
             Form1.f1.plc.CH1ValveAction();
-            if (Form1.f1.plc.CH1LIN&&!string.IsNullOrEmpty(CH1LinBaudrate.Text))
+            if (Form1.f1.plc.CH1LIN && !string.IsNullOrEmpty(CH1LinBaudrate.Text))
             {
                 CH1lin = new LIN(1, int.Parse(CH1LinBaudrate.Text));
                 CH1lin.LinComm();

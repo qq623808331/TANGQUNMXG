@@ -720,6 +720,25 @@ namespace SLC1_N
             //ConfigINI config = new ConfigINI(Form1.f1.machine, dialog);
             string dialog = Form1.f1.machine;
             ConfigINI config = new ConfigINI("Model", dialog);
+            //新增 240801
+            config.IniWriteValue("Limits", "TotalFlowMax", TotalFlowMax.Text);
+            config.IniWriteValue("Limits", "TotalFlowMin", TotalFlowMin.Text);
+            config.IniWriteValue("Limits", "TotalPreMax", TotalPreMax.Text);
+
+            config.IniWriteValue("Limits", "CH1FWDFlowTime", CH1FWDFLOWTime.Text);
+            config.IniWriteValue("Limits", "CH2FWDFlowTime", CH2FWDflowtime.Text);
+            config.IniWriteValue("Limits", "CH1FWDPreTime", CH1FwdPreTime.Text);
+            config.IniWriteValue("Limits", "CH2FWDPreTime", CH2FwdpreTime.Text);
+            config.IniWriteValue("Limits", "CH1FWDFlowMax", CH1FWDFlowMax.Text);
+            config.IniWriteValue("Limits", "CH2FWDFlowMax", CH2FWDFlowMax.Text);
+            config.IniWriteValue("Limits", "CH1FWDFlowMin", CH1FWDFlowMin.Text);
+            config.IniWriteValue("Limits", "CH2FWDFlowMin", CH2FWDFlowMin.Text);
+            config.IniWriteValue("Limits", "CH1FWDPreMax", CH1FwdPreMax.Text);
+            config.IniWriteValue("Limits", "CH2FWDPreMax", CH2FWDPreMax.Text);
+            config.IniWriteValue("Limits", "CH1FWDPreMin", CH1FwdPreMin.Text);
+            config.IniWriteValue("Limits", "CH2FWDPreMin", CH2FWDPreMin.Text);
+
+            ////////////////////////240801
             config.IniWriteValue("Limits", "CH1UPADCMax", CH1UPADCMax.Text);
             config.IniWriteValue("Limits", "CH2UPADCMax", CH2UPADCMax.Text);
             config.IniWriteValue("Limits", "CH1UPADCMin", CH1UPADCMin.Text);
@@ -763,19 +782,7 @@ namespace SLC1_N
             config.IniWriteValue("Limits", "CH2FWDVDCComp", CH2FWDVDCComp.Text);
 
 
-            //新增
-            config.IniWriteValue("Limits", "CH1FWDFlowTime", CH1_2OverTime.Text);
-            config.IniWriteValue("Limits", "CH2FWDFlowTime", CH2_2OverTime.Text);
-            config.IniWriteValue("Limits", "CH1FWDPreTime", CH1_2Fwd_OverTime.Text);
-            config.IniWriteValue("Limits", "CH2FWDPreTime", CH2_2Fwd_OverTime.Text);
-            config.IniWriteValue("Limits", "CH1FWDFlowMax", CH1_2FwdFlowMax.Text);
-            config.IniWriteValue("Limits", "CH2FWDFlowMax", CH2_2FwdFlowMax.Text);
-            config.IniWriteValue("Limits", "CH1FWDFlowMin", CH1_2FwdFlowMin.Text);
-            config.IniWriteValue("Limits", "CH2FWDFlowMin", CH2_2FwdFlowMin.Text);
-            config.IniWriteValue("Limits", "CH1FWDPreMax", CH1_2FwdPreMax.Text);
-            config.IniWriteValue("Limits", "CH2FWDPreMax", CH2_2PreFwdMax.Text);
-            config.IniWriteValue("Limits", "CH1FWDPreMin", CH1_2FwdPreMin.Text);
-            config.IniWriteValue("Limits", "CH2FWDPreMin", CH2_2FwdPreMin.Text);
+
 
             config.IniWriteValue("Limits", "CH1RWDADCMax", CH1RWDADCMax.Text);
             config.IniWriteValue("Limits", "CH2RWDADCMax", CH2RWDADCMax.Text);
@@ -859,6 +866,11 @@ namespace SLC1_N
             Model.Electricity elec;
             elec = con.ReadElectricity();
 
+            //240731新增
+            TotalFlowMax.Text = elec.TotalFlowMax.ToString();
+            TotalFlowMin.Text = elec.TotalFlowMin.ToString();
+            TotalPreMax.Text = elec.TotalPreMax.ToString();
+
             CH1UPADCMax.Text = elec.CH1UPADCMax.ToString();
             CH2UPADCMax.Text = elec.CH2UPADCMax.ToString();
             CH1UPADCMin.Text = elec.CH1UPADCMin.ToString();
@@ -902,20 +914,20 @@ namespace SLC1_N
             CH2FWDVDCComp.Text = elec.CH2FWDVDCComp.ToString();
 
             //新增
-            CH1_2OverTime.Text = elec.CH1FlowTime.ToString();
-            CH2_2OverTime.Text = elec.CH2FlowTime.ToString();
-            CH1_2Fwd_OverTime.Text = elec.CH1FreFwdTime.ToString();
-            CH2_2Fwd_OverTime.Text = elec.CH2FreFwdTime.ToString();
-            CH1_2FwdFlowMax.Text = elec.CH1_2FlowFwdMax.ToString();
-            CH2_2FwdFlowMax.Text = elec.CH2_2FlowFwdMax.ToString();
-            CH1_2FwdFlowMin.Text = elec.CH1_2FlowFwdMin.ToString();
-            CH2_2FwdFlowMin.Text = elec.CH2_2FlowFwdMin.ToString();
-            CH1_2FwdPreMax.Text = elec.CH1_1PreFwdMax.ToString();
-            CH2_2PreFwdMax.Text = elec.CH2_1PreFwdMax.ToString();
-           CH2_2FwdFlowMax.Text = elec.CH2_2FlowFwdMax.ToString();
-            CH1_2FwdPreMin.Text = elec.CH1_2PreFwdMin.ToString();
-            CH2_2FwdPreMin.Text = elec.CH2_2PreFwdMin.ToString();
-           
+            CH1FWDFLOWTime.Text = elec.CH1FWDFlowTime.ToString();
+            CH2FWDflowtime.Text = elec.CH2FWDFlowTime.ToString();
+            CH1FwdPreTime.Text = elec.CH1FwdpreTime.ToString();
+            CH2FwdpreTime.Text = elec.CH2FwdpreTime.ToString();
+            CH1FWDFlowMax.Text = elec.CH1FwdFlowMax.ToString();
+            CH2FWDFlowMax.Text = elec.CH2FwdFlowMax.ToString();
+            CH1FWDFlowMin.Text = elec.CH1FwdFlowMin.ToString();
+            CH2FWDFlowMin.Text = elec.CH2FwdFlowMin.ToString();
+            CH1FwdPreMax.Text = elec.CH1FwdPreMax.ToString();
+            CH2FWDPreMax.Text = elec.CH2FwdPreMax.ToString();
+            CH2FWDFlowMax.Text = elec.CH2FwdFlowMax.ToString();
+            CH1FwdPreMin.Text = elec.CH1FwdPreMin.ToString();
+            CH2FWDPreMin.Text = elec.CH2FwdPreMin.ToString();
+
 
             CH1RWDADCMax.Text = elec.CH1RWDADCMax.ToString();
             CH2RWDADCMax.Text = elec.CH2RWDADCMax.ToString();
@@ -1475,7 +1487,7 @@ namespace SLC1_N
             PUnit.SelectedIndex = ch_params.PUnit_index;
             LUnit.SelectedIndex = ch_params.LUnit_index;
             ChkBee.Checked = ch_params.ChkBee;
-            PressCompensation.Text=ch_params.PressCompensation;
+            PressCompensation.Text = ch_params.PressCompensation;
             //BtnRead.Enabled = true;
         }
 
@@ -1508,7 +1520,7 @@ namespace SLC1_N
         {
             string dialog = Form1.f1.machine;
             ConfigINI mesconfig = new ConfigINI("Model", dialog);
-            mesconfig.IniWriteValue("Bc",  "BCBC", PressCompensation.Text);
+            mesconfig.IniWriteValue("Bc", "BCBC", PressCompensation.Text);
 
         }
 
@@ -1516,7 +1528,7 @@ namespace SLC1_N
         {
             string dialog = Form1.f1.machine;
             ConfigINI mesconfig = new ConfigINI("Model", dialog);
-            PressCompensation.Text= mesconfig.IniReadValue("Bc", "BCBC" );
+            PressCompensation.Text = mesconfig.IniReadValue("Bc", "BCBC");
 
         }
 
@@ -1607,7 +1619,7 @@ namespace SLC1_N
             ChkBee.Checked = ch_params.ChkBee;
 
 
-         
+
             PressCompensation.Text = ch_params.PressCompensation;
             CHKUnit.Checked = ch_params.CHKUnit;
         }
@@ -1841,7 +1853,7 @@ namespace SLC1_N
 
         }
 
-        
+
         //校验上充参数上下限
         public bool UpDate()
         {
@@ -1921,54 +1933,54 @@ namespace SLC1_N
             if (UpDate())
             {
 
-            
-            Model.Electricity elec = Form1.f1.elec;
-            elec.CH1UPADCMax = Convert.ToDouble(CH1UPADCMax.Text);
-            elec.CH1UPADCMin = Convert.ToDouble(CH1UPADCMin.Text);
-            elec.CH1UPADCComp = Convert.ToDouble(CH1UPADCComp.Text);
-            elec.CH2UPADCMax = Convert.ToDouble(CH2UPADCMax.Text);
-            elec.CH2UPADCMin = Convert.ToDouble(CH2UPADCMin.Text);
-            elec.CH2UPADCComp = Convert.ToDouble(CH2UPADCComp.Text);
 
-            elec.CH1UPVDCMax = Convert.ToDouble(CH1UPVDCMax.Text);
-            elec.CH1UPVDCMin = Convert.ToDouble(CH1UPVDCMin.Text);
-            elec.CH1UPVDCComp = Convert.ToDouble(CH1UPVDCComp.Text);
-            elec.CH2UPVDCMax = Convert.ToDouble(CH2UPVDCMax.Text);
-            elec.CH2UPVDCMin = Convert.ToDouble(CH2UPVDCMin.Text);
-            elec.CH2UPVDCComp = Convert.ToDouble(CH2UPVDCComp.Text);
-            Form1.f1.elec = elec;
+                Model.Electricity elec = Form1.f1.elec;
+                elec.CH1UPADCMax = Convert.ToDouble(CH1UPADCMax.Text);
+                elec.CH1UPADCMin = Convert.ToDouble(CH1UPADCMin.Text);
+                elec.CH1UPADCComp = Convert.ToDouble(CH1UPADCComp.Text);
+                elec.CH2UPADCMax = Convert.ToDouble(CH2UPADCMax.Text);
+                elec.CH2UPADCMin = Convert.ToDouble(CH2UPADCMin.Text);
+                elec.CH2UPADCComp = Convert.ToDouble(CH2UPADCComp.Text);
 
-            Model.Flow flow = Form1.f1.Flow;
-            //
+                elec.CH1UPVDCMax = Convert.ToDouble(CH1UPVDCMax.Text);
+                elec.CH1UPVDCMin = Convert.ToDouble(CH1UPVDCMin.Text);
+                elec.CH1UPVDCComp = Convert.ToDouble(CH1UPVDCComp.Text);
+                elec.CH2UPVDCMax = Convert.ToDouble(CH2UPVDCMax.Text);
+                elec.CH2UPVDCMin = Convert.ToDouble(CH2UPVDCMin.Text);
+                elec.CH2UPVDCComp = Convert.ToDouble(CH2UPVDCComp.Text);
+                Form1.f1.elec = elec;
 
-            flow.CH2OverTime = Convert.ToDouble(CH2OverTime.Text);
-            flow.CH2Press_OverTime = Convert.ToDouble(CH2Press_OverTime.Text);
-            flow.CH1_2FlowMax = Convert.ToDouble(CH1_2FlowMax.Text);
-            flow.CH1_2FlowMin = Convert.ToDouble(CH1_2FlowMin.Text);
-            flow.CH1_2PreMax = Convert.ToDouble(CH1_2PreMax.Text);
-            flow.CH1_2PreMin = Convert.ToDouble(CH1_2PreMin.Text);
-            flow.CH4OverTime = Convert.ToDouble(CH4OverTime.Text);
-            flow.CH4Press_OverTime = Convert.ToDouble(CH2Press_OverTime.Text);
-            flow.CH2_2FlowMax = Convert.ToDouble(CH2_2FlowMax.Text);
-            flow.CH2_2FlowMin = Convert.ToDouble(CH2_2FlowMin.Text);
-            flow.CH2_2PreMax = Convert.ToDouble(CH2_2PreMax.Text);
-            flow.CH2_2PreMin = Convert.ToDouble(CH2_2PreMin.Text);
+                Model.Flow flow = Form1.f1.Flow;
+                //
 
-            flow.CH1Cont_ElecMax = Convert.ToDouble(CH1Cont_ElecMax.Text);
-            flow.CH1Cont_ElecMin = Convert.ToDouble(CH1Cont_ElecMin.Text);
-            flow.CH1Cont_Elec_Compen = Convert.ToDouble(CH1Cont_Elec_Compen.Text);
-            flow.CH2Cont_ElecMax = Convert.ToDouble(CH2Cont_ElecMax.Text);
-            flow.CH2Cont_ElecMin = Convert.ToDouble(CH2Cont_ElecMin.Text);
-            flow.CH2Cont_Elec_Compen = Convert.ToDouble(CH2Cont_Elec_Compen.Text);
-            flow.CH1Cont_PressMax = Convert.ToDouble(CH1Cont_PressMax.Text);
-            flow.CH1Cont_PressMin = Convert.ToDouble(CH1Cont_PressMin.Text);
-            flow.CH1Cont_Pre_Compen = Convert.ToDouble(CH1Cont_Pre_Compen.Text);
-            flow.CH2Cont_PressMax = Convert.ToDouble(CH2Cont_PressMax.Text);
-            flow.CH2Cont_PressMin = Convert.ToDouble(CH2Cont_PressMin.Text);
-            flow.CH2Cont_Pre_Compen = Convert.ToDouble(CH2Cont_Pre_Compen.Text);
-            Form1.f1.Flow = flow;
+                flow.CH2OverTime = Convert.ToDouble(CH2OverTime.Text);
+                flow.CH2Press_OverTime = Convert.ToDouble(CH2Press_OverTime.Text);
+                flow.CH1_2FlowMax = Convert.ToDouble(CH1_2FlowMax.Text);
+                flow.CH1_2FlowMin = Convert.ToDouble(CH1_2FlowMin.Text);
+                flow.CH1_2PreMax = Convert.ToDouble(CH1_2PreMax.Text);
+                flow.CH1_2PreMin = Convert.ToDouble(CH1_2PreMin.Text);
+                flow.CH4OverTime = Convert.ToDouble(CH4OverTime.Text);
+                flow.CH4Press_OverTime = Convert.ToDouble(CH2Press_OverTime.Text);
+                flow.CH2_2FlowMax = Convert.ToDouble(CH2_2FlowMax.Text);
+                flow.CH2_2FlowMin = Convert.ToDouble(CH2_2FlowMin.Text);
+                flow.CH2_2PreMax = Convert.ToDouble(CH2_2PreMax.Text);
+                flow.CH2_2PreMin = Convert.ToDouble(CH2_2PreMin.Text);
 
-            WriteElectricity();
+                flow.CH1Cont_ElecMax = Convert.ToDouble(CH1Cont_ElecMax.Text);
+                flow.CH1Cont_ElecMin = Convert.ToDouble(CH1Cont_ElecMin.Text);
+                flow.CH1Cont_Elec_Compen = Convert.ToDouble(CH1Cont_Elec_Compen.Text);
+                flow.CH2Cont_ElecMax = Convert.ToDouble(CH2Cont_ElecMax.Text);
+                flow.CH2Cont_ElecMin = Convert.ToDouble(CH2Cont_ElecMin.Text);
+                flow.CH2Cont_Elec_Compen = Convert.ToDouble(CH2Cont_Elec_Compen.Text);
+                flow.CH1Cont_PressMax = Convert.ToDouble(CH1Cont_PressMax.Text);
+                flow.CH1Cont_PressMin = Convert.ToDouble(CH1Cont_PressMin.Text);
+                flow.CH1Cont_Pre_Compen = Convert.ToDouble(CH1Cont_Pre_Compen.Text);
+                flow.CH2Cont_PressMax = Convert.ToDouble(CH2Cont_PressMax.Text);
+                flow.CH2Cont_PressMin = Convert.ToDouble(CH2Cont_PressMin.Text);
+                flow.CH2Cont_Pre_Compen = Convert.ToDouble(CH2Cont_Pre_Compen.Text);
+                Form1.f1.Flow = flow;
+
+                WriteElectricity();
                 UPParamsSave.Text = "保存成功";
             }
             else
@@ -2083,39 +2095,39 @@ namespace SLC1_N
             if (DownDate())
             {
 
-            Model.Electricity elec = Form1.f1.elec;
-            elec.CH1DOWNADCMax = Convert.ToDouble(CH1DOWNADCMax.Text);
-            elec.CH1DOWNADCMin = Convert.ToDouble(CH1DOWNADCMin.Text);
-            elec.CH1DOWNADCComp = Convert.ToDouble(CH1DOWNADCComp.Text);
-            elec.CH2DOWNADCMax = Convert.ToDouble(CH2DOWNADCMax.Text);
-            elec.CH2DOWNADCMin = Convert.ToDouble(CH2DOWNADCMin.Text);
-            elec.CH2DOWNADCComp = Convert.ToDouble(CH2DOWNADCComp.Text);
-            
-            elec.CH1DOWNVDCComp = Convert.ToDouble(CH1DOWNVDCComp.Text);
-            elec.CH2DOWNVDCMax = Convert.ToDouble(CH2DOWNVDCMax.Text);
-            elec.CH2DOWNVDCMin = Convert.ToDouble(CH2DOWNVDCMin.Text);
-            elec.CH2DOWNVDCComp = Convert.ToDouble(CH2DOWNVDCComp.Text);
-            Form1.f1.elec = elec;
+                Model.Electricity elec = Form1.f1.elec;
+                elec.CH1DOWNADCMax = Convert.ToDouble(CH1DOWNADCMax.Text);
+                elec.CH1DOWNADCMin = Convert.ToDouble(CH1DOWNADCMin.Text);
+                elec.CH1DOWNADCComp = Convert.ToDouble(CH1DOWNADCComp.Text);
+                elec.CH2DOWNADCMax = Convert.ToDouble(CH2DOWNADCMax.Text);
+                elec.CH2DOWNADCMin = Convert.ToDouble(CH2DOWNADCMin.Text);
+                elec.CH2DOWNADCComp = Convert.ToDouble(CH2DOWNADCComp.Text);
 
-            Model.Flow flow = Form1.f1.Flow;
+                elec.CH1DOWNVDCComp = Convert.ToDouble(CH1DOWNVDCComp.Text);
+                elec.CH2DOWNVDCMax = Convert.ToDouble(CH2DOWNVDCMax.Text);
+                elec.CH2DOWNVDCMin = Convert.ToDouble(CH2DOWNVDCMin.Text);
+                elec.CH2DOWNVDCComp = Convert.ToDouble(CH2DOWNVDCComp.Text);
+                Form1.f1.elec = elec;
 
-            //
-            flow.CH1OverTime = Convert.ToDouble(CH1OverTime.Text);
-            flow.CH1Press_OverTime = Convert.ToDouble(CH1Press_OverTime.Text);
-            flow.CH1_1FlowMax = Convert.ToDouble(CH1_1FlowMax.Text);
-            flow.CH1_1FlowMin = Convert.ToDouble(CH1_1FlowMin.Text);
-            flow.CH1_1PreMax = Convert.ToDouble(CH1_1PreMax.Text);
-            flow.CH1_1PreMin = Convert.ToDouble(CH1_1PreMin.Text);
-            flow.CH3OverTime = Convert.ToDouble(CH3OverTime.Text);
-            flow.CH3Press_OverTime = Convert.ToDouble(CH3Press_OverTime.Text);
-            flow.CH2_1FlowMax = Convert.ToDouble(CH2_1FlowMax.Text);
-            flow.CH2_1FlowMin = Convert.ToDouble(CH2_1FlowMin.Text);
-            flow.CH2_1PreMax = Convert.ToDouble(CH2_1PreMax.Text);
-            flow.CH2_1PreMin = Convert.ToDouble(CH2_1PreMin.Text);
+                Model.Flow flow = Form1.f1.Flow;
 
-            Form1.f1.Flow = flow;
+                //
+                flow.CH1OverTime = Convert.ToDouble(CH1OverTime.Text);
+                flow.CH1Press_OverTime = Convert.ToDouble(CH1Press_OverTime.Text);
+                flow.CH1_1FlowMax = Convert.ToDouble(CH1_1FlowMax.Text);
+                flow.CH1_1FlowMin = Convert.ToDouble(CH1_1FlowMin.Text);
+                flow.CH1_1PreMax = Convert.ToDouble(CH1_1PreMax.Text);
+                flow.CH1_1PreMin = Convert.ToDouble(CH1_1PreMin.Text);
+                flow.CH3OverTime = Convert.ToDouble(CH3OverTime.Text);
+                flow.CH3Press_OverTime = Convert.ToDouble(CH3Press_OverTime.Text);
+                flow.CH2_1FlowMax = Convert.ToDouble(CH2_1FlowMax.Text);
+                flow.CH2_1FlowMin = Convert.ToDouble(CH2_1FlowMin.Text);
+                flow.CH2_1PreMax = Convert.ToDouble(CH2_1PreMax.Text);
+                flow.CH2_1PreMin = Convert.ToDouble(CH2_1PreMin.Text);
 
-            WriteElectricity();
+                Form1.f1.Flow = flow;
+
+                WriteElectricity();
                 DOWNParamsSave.Text = "保存成功";
             }
             else
@@ -2183,25 +2195,25 @@ namespace SLC1_N
                 CH2FWDVDCMin.Text = "";
                 return false;
             }
-            else if (double.Parse(CH1_2FwdFlowMax.Text) < double.Parse(CH1_2FwdFlowMin.Text))
+            else if (double.Parse(CH1FWDFlowMax.Text) < double.Parse(CH1FWDFlowMin.Text))
             {
-                CH1_2FwdFlowMin.Text = "";
+                CH1FWDFlowMin.Text = "";
                 return false;
             }
-            else if (double.Parse(CH1_2FwdPreMax.Text) < double.Parse(CH1_2FwdPreMin.Text))
+            else if (double.Parse(CH1FwdPreMax.Text) < double.Parse(CH1FwdPreMin.Text))
             {
-                
-                CH1_2FwdPreMin.Text = "";
+
+                CH1FwdPreMin.Text = "";
                 return false;
             }
-            else if (double.Parse(CH2_2FwdFlowMax.Text) < double.Parse(CH2_2FwdFlowMin.Text))
+            else if (double.Parse(CH2FWDFlowMax.Text) < double.Parse(CH2FWDFlowMin.Text))
             {
-                CH2_2FwdFlowMin.Text = "";
+                CH2FWDFlowMin.Text = "";
                 return false;
             }
-            else if (double.Parse(CH2_2PreFwdMax.Text) < double.Parse(CH2_2FwdPreMin.Text))
+            else if (double.Parse(CH2FWDPreMax.Text) < double.Parse(CH2FWDPreMin.Text))
             {
-                CH2_2FwdPreMin.Text = "";
+                CH2FWDPreMin.Text = "";
                 return false;
             }
             else
@@ -2213,54 +2225,65 @@ namespace SLC1_N
         }
         private void FWDParamsSave_Click(object sender, EventArgs e)
         {
-            if (FwdDate())
+            // if (FwdDate())
             {
+                Model.Electricity elec = Form1.f1.elec;
+ 
 
-            
-            Model.Electricity elec = Form1.f1.elec;
-            elec.CH1FWDADCMax = Convert.ToDouble(CH1FWDADCMax.Text);
-            elec.CH1FWDADCMin = Convert.ToDouble(CH1FWDADCMin.Text);
-            elec.CH1FWDADCComp = Convert.ToDouble(CH1FWDADCComp.Text);
-            elec.CH2FWDADCMax = Convert.ToDouble(CH2FWDADCMax.Text);
-            elec.CH2FWDADCMin = Convert.ToDouble(CH2FWDADCMin.Text);
-            elec.CH2FWDADCComp = Convert.ToDouble(CH2FWDADCComp.Text);
+                //新增
+                elec.TotalFlowMax = Convert.ToDouble(TotalFlowMax.Text);
+                elec.TotalFlowMin = Convert.ToDouble(TotalFlowMin.Text);
+                elec.TotalPreMax = Convert.ToDouble(TotalPreMax.Text);
 
-            elec.CH1FWDVDCMax = Convert.ToDouble(CH1FWDVDCMax.Text);
-            elec.CH1FWDVDCMin = Convert.ToDouble(CH1FWDVDCMin.Text);
-            elec.CH1FWDVDCComp = Convert.ToDouble(CH1FWDVDCComp.Text);
-            elec.CH2FWDVDCMax = Convert.ToDouble(CH2FWDVDCMax.Text);
-            elec.CH2FWDVDCMin = Convert.ToDouble(CH2FWDVDCMin.Text);
-            elec.CH2FWDVDCComp = Convert.ToDouble(CH2FWDVDCComp.Text);
+                elec.CH1FwdpreTime = Convert.ToDouble(CH1FwdPreTime.Text);
+                elec.CH2FwdpreTime = Convert.ToDouble(CH2FwdpreTime.Text);
 
+                elec.CH1FWDFlowTime = Convert.ToDouble(CH1FWDFLOWTime.Text);
+                elec.CH2FWDFlowTime = Convert.ToDouble(CH2FWDflowtime.Text);
 
-            //新增
+                elec.CH1FwdFlowMax = Convert.ToDouble(CH1FWDFlowMax.Text);
+                elec.CH2FwdFlowMax = Convert.ToDouble(CH2FWDFlowMax.Text);
 
-            elec.CH1FreFwdTime = Convert.ToDouble(CH1_2Fwd_OverTime.Text);
-            elec.CH2FreFwdTime = Convert.ToDouble(CH2_2Fwd_OverTime.Text);
+                //elec.CH1FwdFlowMin = Convert.ToDouble(CH1_1FlowMin.Text);
+                //elec.CH2FwdFlowMin = Convert.ToDouble(CH2_2FlowMin.Text);
+                elec.CH1FwdFlowMin = Convert.ToDouble(CH1FWDFlowMin.Text);
+                elec.CH2FwdFlowMin = Convert.ToDouble(CH2FWDFlowMin.Text);
 
-            elec.CH1FlowTime = Convert.ToDouble(CH1_2OverTime.Text);
-            elec.CH2FlowTime = Convert.ToDouble(CH2_2OverTime.Text);
+                elec.CH1FwdPreMax = Convert.ToDouble(CH1FwdPreMax.Text);
+                elec.CH2FwdPreMax = Convert.ToDouble(CH2FWDPreMax.Text);
 
-            elec.CH1_2FlowFwdMax = Convert.ToDouble(CH1_2FwdFlowMax.Text);
-            elec.CH2_2FlowFwdMax = Convert.ToDouble(CH2_2FwdFlowMax.Text);
-
-            elec.CH1_2FlowFwdMin = Convert.ToDouble(CH1_1FlowMin.Text);
-            elec.CH2_2FlowFwdMin = Convert.ToDouble(CH2_2FlowMin.Text);
+                elec.CH1FwdPreMin = Convert.ToDouble(CH1FwdPreMin.Text);
+                elec.CH2FwdPreMin = Convert.ToDouble(CH2FWDPreMin.Text);
 
 
-            elec.CH1_1PreFwdMax = Convert.ToDouble(CH1_1PreMax.Text);
-            elec.CH2_1PreFwdMax = Convert.ToDouble(CH2_1PreMax.Text);
 
-            elec.CH1_2PreFwdMin = Convert.ToDouble(CH1_1PreMin.Text);
-            elec.CH2_2PreFwdMin = Convert.ToDouble(CH2_1PreMin.Text);
-            Form1.f1.elec = elec;
 
-            WriteElectricity();
+                elec.CH1FWDADCMax = Convert.ToDouble(CH1FWDADCMax.Text);
+                elec.CH1FWDADCMin = Convert.ToDouble(CH1FWDADCMin.Text);
+                elec.CH1FWDADCComp = Convert.ToDouble(CH1FWDADCComp.Text);
+                elec.CH2FWDADCMax = Convert.ToDouble(CH2FWDADCMax.Text);
+                elec.CH2FWDADCMin = Convert.ToDouble(CH2FWDADCMin.Text);
+                elec.CH2FWDADCComp = Convert.ToDouble(CH2FWDADCComp.Text);
+
+                elec.CH1FWDVDCMax = Convert.ToDouble(CH1FWDVDCMax.Text);
+                elec.CH1FWDVDCMin = Convert.ToDouble(CH1FWDVDCMin.Text);
+                elec.CH1FWDVDCComp = Convert.ToDouble(CH1FWDVDCComp.Text);
+                elec.CH2FWDVDCMax = Convert.ToDouble(CH2FWDVDCMax.Text);
+                elec.CH2FWDVDCMin = Convert.ToDouble(CH2FWDVDCMin.Text);
+                elec.CH2FWDVDCComp = Convert.ToDouble(CH2FWDVDCComp.Text);
+
+
+
+
+          
+                Form1.f1.elec = elec;
+
+                WriteElectricity();
                 FWDParamsSave.Text = "保存成功";
             }
-            else
+            //   else
             {
-                FWDParamsSave.Text = "保存失败";
+                //    FWDParamsSave.Text = "保存失败";
             }
 
         }
@@ -2332,33 +2355,33 @@ namespace SLC1_N
             if (RwdDate())
             {
 
-            
-            Model.Electricity elec = Form1.f1.elec;
-            elec.CH1RWDADCMax = Convert.ToDouble(CH1RWDADCMax.Text);
-            elec.CH1RWDADCMin = Convert.ToDouble(CH1RWDADCMin.Text);
-            elec.CH1RWDADCComp = Convert.ToDouble(CH1RWDADCComp.Text);
-            elec.CH2RWDADCMax = Convert.ToDouble(CH2RWDADCMax.Text);
-            elec.CH2RWDADCMin = Convert.ToDouble(CH2RWDADCMin.Text);
-            elec.CH2RWDADCComp = Convert.ToDouble(CH2RWDADCComp.Text);
 
-            elec.CH1RWDVDCMax = Convert.ToDouble(CH1RWDVDCMax.Text);
-            elec.CH1RWDVDCMin = Convert.ToDouble(CH1RWDVDCMin.Text);
-            elec.CH1RWDVDCComp = Convert.ToDouble(CH1RWDVDCComp.Text);
-            elec.CH2RWDVDCMax = Convert.ToDouble(CH2RWDVDCMax.Text);
-            elec.CH2RWDVDCMin = Convert.ToDouble(CH2RWDVDCMin.Text);
-            elec.CH2RWDVDCComp = Convert.ToDouble(CH2RWDVDCComp.Text);
-            Form1.f1.elec = elec;
+                Model.Electricity elec = Form1.f1.elec;
+                elec.CH1RWDADCMax = Convert.ToDouble(CH1RWDADCMax.Text);
+                elec.CH1RWDADCMin = Convert.ToDouble(CH1RWDADCMin.Text);
+                elec.CH1RWDADCComp = Convert.ToDouble(CH1RWDADCComp.Text);
+                elec.CH2RWDADCMax = Convert.ToDouble(CH2RWDADCMax.Text);
+                elec.CH2RWDADCMin = Convert.ToDouble(CH2RWDADCMin.Text);
+                elec.CH2RWDADCComp = Convert.ToDouble(CH2RWDADCComp.Text);
 
-            Model.Flow flow = Form1.f1.Flow;
-            flow.CH1RWDPressMax = Convert.ToDouble(CH1RWDPressMax.Text);
-            flow.CH2RWDPressMax = Convert.ToDouble(CH2RWDPressMax.Text);
-            flow.CH1RWDPressMin = Convert.ToDouble(CH1RWDPressMin.Text);
-            flow.CH2RWDPressMin = Convert.ToDouble(CH2RWDPressMin.Text);
-            flow.CH1RWDOverTime = Convert.ToDouble(CH1RWDOverTime.Text);
-            flow.CH2RWDOverTime = Convert.ToDouble(CH2RWDOverTime.Text);
-            Form1.f1.Flow = flow;
+                elec.CH1RWDVDCMax = Convert.ToDouble(CH1RWDVDCMax.Text);
+                elec.CH1RWDVDCMin = Convert.ToDouble(CH1RWDVDCMin.Text);
+                elec.CH1RWDVDCComp = Convert.ToDouble(CH1RWDVDCComp.Text);
+                elec.CH2RWDVDCMax = Convert.ToDouble(CH2RWDVDCMax.Text);
+                elec.CH2RWDVDCMin = Convert.ToDouble(CH2RWDVDCMin.Text);
+                elec.CH2RWDVDCComp = Convert.ToDouble(CH2RWDVDCComp.Text);
+                Form1.f1.elec = elec;
 
-            WriteElectricity();
+                Model.Flow flow = Form1.f1.Flow;
+                flow.CH1RWDPressMax = Convert.ToDouble(CH1RWDPressMax.Text);
+                flow.CH2RWDPressMax = Convert.ToDouble(CH2RWDPressMax.Text);
+                flow.CH1RWDPressMin = Convert.ToDouble(CH1RWDPressMin.Text);
+                flow.CH2RWDPressMin = Convert.ToDouble(CH2RWDPressMin.Text);
+                flow.CH1RWDOverTime = Convert.ToDouble(CH1RWDOverTime.Text);
+                flow.CH2RWDOverTime = Convert.ToDouble(CH2RWDOverTime.Text);
+                Form1.f1.Flow = flow;
+
+                WriteElectricity();
                 RWDParamsSave.Text = "保存成功";
             }
             else
@@ -2431,7 +2454,7 @@ namespace SLC1_N
                 Logger.Log(I18N.GetLangText(dicLang, "仪器的第三组参数设置成功"));
                 MessageBox.Show(I18N.GetLangText(dicLang, "仪器的第三组参数设置成功"));
             }
-            else if (para == 4 || para == 6|| para==8)
+            else if (para == 4 || para == 6 || para == 8)
             {
                 SetParameters(MachineNum.SelectedIndex + 1, 4);
                 SetParameters(MachineNum.SelectedIndex + 1, 6);
@@ -2650,7 +2673,7 @@ namespace SLC1_N
             }
             if (CH1RWD.Checked)
             {
-                CH1RWDindex.Text = ((CH1Order.IndexOf("RWD") ==-1 ? 0 : CH1Order.IndexOf("RWD")) + 1).ToString(); //(CH1Order.IndexOf("RWD") + 1).ToString();
+                CH1RWDindex.Text = ((CH1Order.IndexOf("RWD") == -1 ? 0 : CH1Order.IndexOf("RWD")) + 1).ToString(); //(CH1Order.IndexOf("RWD") + 1).ToString();
             }
             else
             {
@@ -2674,7 +2697,7 @@ namespace SLC1_N
             }
             if (CH1FWDLeak.Checked)
             {
-                CH1FWDLeakindex.Text = ((CH1Order.IndexOf("FWDLeak") ==-1 ? 0 : CH1Order.IndexOf("FWDLeak")) + 1).ToString();// (CH1Order.IndexOf("FWDLeak") + 1).ToString();
+                CH1FWDLeakindex.Text = ((CH1Order.IndexOf("FWDLeak") == -1 ? 0 : CH1Order.IndexOf("FWDLeak")) + 1).ToString();// (CH1Order.IndexOf("FWDLeak") + 1).ToString();
             }
             else
             {
@@ -2691,7 +2714,7 @@ namespace SLC1_N
             }
             if (CH2UP.Checked)
             {
-                CH2UPindex.Text = ((CH2Order.IndexOf("UP") ==-1 ? 0 : CH2Order.IndexOf("UP")) + 1).ToString(); //(CH2Order.IndexOf("UP") + 1).ToString();
+                CH2UPindex.Text = ((CH2Order.IndexOf("UP") == -1 ? 0 : CH2Order.IndexOf("UP")) + 1).ToString(); //(CH2Order.IndexOf("UP") + 1).ToString();
             }
             else
             {
@@ -2699,7 +2722,7 @@ namespace SLC1_N
             }
             if (CH2DOWN.Checked)
             {
-                CH2DOWNindex.Text = ((CH2Order.IndexOf("DOWN") ==-1 ? 0 : CH2Order.IndexOf("DOWN")) + 1).ToString(); //(CH2Order.IndexOf("DOWN") + 1).ToString();
+                CH2DOWNindex.Text = ((CH2Order.IndexOf("DOWN") == -1 ? 0 : CH2Order.IndexOf("DOWN")) + 1).ToString(); //(CH2Order.IndexOf("DOWN") + 1).ToString();
             }
             else
             {
@@ -2715,7 +2738,7 @@ namespace SLC1_N
             }
             if (CH2RWD.Checked)
             {
-                CH2RWDindex.Text = ((CH2Order.IndexOf("RWD") ==- 1 ? 0 : CH2Order.IndexOf("RWD")) + 1).ToString(); //(CH2Order.IndexOf("RWD") + 1).ToString();
+                CH2RWDindex.Text = ((CH2Order.IndexOf("RWD") == -1 ? 0 : CH2Order.IndexOf("RWD")) + 1).ToString(); //(CH2Order.IndexOf("RWD") + 1).ToString();
             }
             else
             {
@@ -2759,7 +2782,7 @@ namespace SLC1_N
             //AD
             if (ADUP.Checked)
             {
-                ADUPindex.Text = ((ADOrder.IndexOf("UP") ==- 1 ? 0 : ADOrder.IndexOf("UP")) + 1).ToString();
+                ADUPindex.Text = ((ADOrder.IndexOf("UP") == -1 ? 0 : ADOrder.IndexOf("UP")) + 1).ToString();
             }
             else
             {
@@ -2791,7 +2814,7 @@ namespace SLC1_N
             }
             if (ADUPLeak.Checked)
             {
-                ADUPLeakindex.Text = ((ADOrder.IndexOf("UPLeak") ==- 1 ? 0 : ADOrder.IndexOf("UPLeak")) + 1).ToString(); 
+                ADUPLeakindex.Text = ((ADOrder.IndexOf("UPLeak") == -1 ? 0 : ADOrder.IndexOf("UPLeak")) + 1).ToString();
             }
             else
             {
@@ -2799,7 +2822,7 @@ namespace SLC1_N
             }
             if (ADDOWNLeak.Checked)
             {
-                ADDOWNLeakindex.Text = ((ADOrder.IndexOf("DOWNLeak") == -1 ? 0 : ADOrder.IndexOf("DOWNLeak")) + 1).ToString(); 
+                ADDOWNLeakindex.Text = ((ADOrder.IndexOf("DOWNLeak") == -1 ? 0 : ADOrder.IndexOf("DOWNLeak")) + 1).ToString();
             }
             else
             {
@@ -2824,7 +2847,7 @@ namespace SLC1_N
             //BE
             if (BEUP.Checked)
             {
-                BEUPindex.Text = ((BEOrder.IndexOf("UP") ==-1 ? 0 : BEOrder.IndexOf("UP")) + 1).ToString();
+                BEUPindex.Text = ((BEOrder.IndexOf("UP") == -1 ? 0 : BEOrder.IndexOf("UP")) + 1).ToString();
             }
             else
             {
@@ -2840,7 +2863,7 @@ namespace SLC1_N
             }
             if (BEFWD.Checked)
             {
-                BEFWDindex.Text = ((BEOrder.IndexOf("FWD") ==- 1 ? 0 : BEOrder.IndexOf("FWD")) + 1).ToString();
+                BEFWDindex.Text = ((BEOrder.IndexOf("FWD") == -1 ? 0 : BEOrder.IndexOf("FWD")) + 1).ToString();
             }
             else
             {
@@ -2848,7 +2871,7 @@ namespace SLC1_N
             }
             if (BERWD.Checked)
             {
-                BERWDindex.Text = ((BEOrder.IndexOf("RWD") ==- 1 ? 0 : BEOrder.IndexOf("RWD")) + 1).ToString();
+                BERWDindex.Text = ((BEOrder.IndexOf("RWD") == -1 ? 0 : BEOrder.IndexOf("RWD")) + 1).ToString();
             }
             else
             {
@@ -2872,7 +2895,7 @@ namespace SLC1_N
             }
             if (BEFWDLeak.Checked)
             {
-                BEFWDLeakindex.Text = ((BEOrder.IndexOf("FWDLeak") ==-1 ? 0 : BEOrder.IndexOf("FWDLeak")) + 1).ToString();
+                BEFWDLeakindex.Text = ((BEOrder.IndexOf("FWDLeak") == -1 ? 0 : BEOrder.IndexOf("FWDLeak")) + 1).ToString();
             }
             else
             {
@@ -2921,7 +2944,7 @@ namespace SLC1_N
             }
             if (CFUPLeak.Checked)
             {
-                CFUPLeakindex.Text = ((CFOrder.IndexOf("UPLeak") ==-1 ? 0 : CFOrder.IndexOf("UPLeak")) + 1).ToString();
+                CFUPLeakindex.Text = ((CFOrder.IndexOf("UPLeak") == -1 ? 0 : CFOrder.IndexOf("UPLeak")) + 1).ToString();
             }
             else
             {
@@ -2970,7 +2993,7 @@ namespace SLC1_N
             config.IniWriteValue("Lin", "CH1LIN", CH1LIN.Checked.ToString());
             config.IniWriteValue("Lin", "CH1UpDownChange", CH1UpDownChange.Checked.ToString());
             config.IniWriteValue("Lin", "CH2UpDownChange", CH2UpDownChange.Checked.ToString());
-            
+
             config.IniWriteValue("Lin", "CH1IGN", CH1IGN.Checked.ToString());
             config.IniWriteValue("Lin", "CH2IGN", CH2IGN.Checked.ToString());
 
@@ -2991,7 +3014,7 @@ namespace SLC1_N
             config.IniWriteValue("Lin", "CH1DOWNLeakindex", CH1DOWNLeakindex.Text);
             config.IniWriteValue("Lin", "CH1FWDLeakindex", CH1FWDLeakindex.Text);
             config.IniWriteValue("Lin", "CH1Pump", CH1Pump.Checked.ToString());
-            
+
             config.IniWriteValue("Lin", "CH1QuiescentCurrnt", CH1QuiescentCurrnt.Checked.ToString());
             config.IniWriteValue("Lin", "CH1QuiescentCurrntIndex", CH1QuiescentCurrntIndex.Text);
             config.IniWriteValue("Lin", "CH2UP", CH2UP.Checked.ToString());
@@ -3011,7 +3034,7 @@ namespace SLC1_N
             config.IniWriteValue("Lin", "CH2DOWNLeakindex", CH2DOWNLeakindex.Text);
             config.IniWriteValue("Lin", "CH2FWDLeakindex", CH2FWDLeakindex.Text);
             config.IniWriteValue("Lin", "CH2Pump", CH2Pump.Checked.ToString());
-            
+
             config.IniWriteValue("Lin", "CH2QuiescentCurrnt", CH2QuiescentCurrnt.Checked.ToString());
             config.IniWriteValue("Lin", "CH2QuiescentCurrntIndex", CH2QuiescentCurrntIndex.Text);
             //AD
@@ -3047,7 +3070,7 @@ namespace SLC1_N
             config.IniWriteValue("Lin", "BEDOWNLeakindex", BEDOWNLeakindex.Text);
             config.IniWriteValue("Lin", "BEFWDLeakindex", BEFWDLeakindex.Text);
             config.IniWriteValue("Lin", "BEQuiescentCurrnt", BEQuiescentCurrnt.Checked.ToString());
-            config.IniWriteValue("Lin", "BEQuiescentCurrntIndex",BEQuiescentCurrntIndex.Text);
+            config.IniWriteValue("Lin", "BEQuiescentCurrntIndex", BEQuiescentCurrntIndex.Text);
             //CF
             config.IniWriteValue("Lin", "CFUP", CFUP.Checked.ToString());
             config.IniWriteValue("Lin", "CFDOWN", CFDOWN.Checked.ToString());
@@ -3328,15 +3351,15 @@ namespace SLC1_N
             ReadConfig con = new ReadConfig();
             ord = con.ReadLin();
 
-      
+
             CH1Pump.Checked = ord.CH1Pump;
             CH2LIN.Checked = ord.CH2LIN;
-            CH1HighLevel.Checked= ord.CH1HighLevel;
-            
+            CH1HighLevel.Checked = ord.CH1HighLevel;
+
             CH1UpDownChange.Checked = ord.CH1UpDownChange;
             //CH1QuiescentCurrnt.Checked = ord.CH1QuiescentCurrnt;
 
-            int[] asa= {0,0,0,0,0,0,0,0,0 };
+            int[] asa = { 0, 0, 0, 0, 0, 0, 0, 0, 0 };
             asa[0] = Convert.ToInt32(ord.CH1QuiescentCurrntIndex);
             asa[1] = Convert.ToInt32(ord.CH1UPindex);
             asa[2] = Convert.ToInt32(ord.CH1DOWNindex);
@@ -3345,7 +3368,7 @@ namespace SLC1_N
             asa[5] = Convert.ToInt32(ord.CH1UPLeakindex);
             asa[6] = Convert.ToInt32(ord.CH1DOWNLeakindex);
             asa[7] = Convert.ToInt32(ord.CH1FWDLeakindex);
-           
+
             CH1UPindex.Text = ord.CH1UPindex;
             CH1DOWNindex.Text = ord.CH1DOWNindex;
             CH1FWDindex.Text = ord.CH1FWDindex;
@@ -3354,29 +3377,30 @@ namespace SLC1_N
             CH1DOWNLeakindex.Text = ord.CH1DOWNLeakindex;
             CH1FWDLeakindex.Text = ord.CH1FWDLeakindex;
             CH1QuiescentCurrntIndex.Text = ord.CH1QuiescentCurrntIndex;
-            int i,j;
-            for(j=0;j<8;j++)
-            for (i = 0; i < 8; i++)
-            {
-                if (asa[i] == j+1)
-                {   if(i==0)
+            int i, j;
+            for (j = 0; j < 8; j++)
+                for (i = 0; i < 8; i++)
+                {
+                    if (asa[i] == j + 1)
+                    {
+                        if (i == 0)
                             CH1QuiescentCurrnt.Checked = ord.CH1QuiescentCurrnt;
-                        if (i==1)
-                        CH1UP.Checked = ord.CH1UP;
-                    if (i == 2)
-                        CH1DOWN.Checked = ord.CH1DOWN;
-                    if (i == 3)
-                        CH1FWD.Checked = ord.CH1FWD;
-                    if (i == 4)
-                        CH1RWD.Checked = ord.CH1RWD;
-                    if (i == 5)
-                        CH1UPLeak.Checked = ord.CH1UPLeak;
-                    if (i == 6)
-                        CH1DOWNLeak.Checked = ord.CH1DOWNLeak;
-                    if (i == 7)
-                        CH1FWDLeak.Checked = ord.CH1FWDLeak;
+                        if (i == 1)
+                            CH1UP.Checked = ord.CH1UP;
+                        if (i == 2)
+                            CH1DOWN.Checked = ord.CH1DOWN;
+                        if (i == 3)
+                            CH1FWD.Checked = ord.CH1FWD;
+                        if (i == 4)
+                            CH1RWD.Checked = ord.CH1RWD;
+                        if (i == 5)
+                            CH1UPLeak.Checked = ord.CH1UPLeak;
+                        if (i == 6)
+                            CH1DOWNLeak.Checked = ord.CH1DOWNLeak;
+                        if (i == 7)
+                            CH1FWDLeak.Checked = ord.CH1FWDLeak;
+                    }
                 }
-            }
             asa[0] = Convert.ToInt32(ord.CH2QuiescentCurrntIndex);
             asa[1] = Convert.ToInt32(ord.CH2UPindex);
             asa[2] = Convert.ToInt32(ord.CH2DOWNindex);
@@ -3418,7 +3442,7 @@ namespace SLC1_N
                 }
             CH2Pump.Checked = ord.CH2Pump;
             CH2UpDownChange.Checked = ord.CH2UpDownChange;
-            
+
 
             CH2UPindex.Text = ord.CH2UPindex;
             CH2DOWNindex.Text = ord.CH2DOWNindex;
@@ -3445,7 +3469,7 @@ namespace SLC1_N
             ADUPLeakindex.Text = ord.ADUPLeakindex;
             ADDOWNLeakindex.Text = ord.ADDOWNLeakindex;
             ADFWDLeakindex.Text = ord.ADFWDLeakindex;
-            
+
 
 
             asa[0] = Convert.ToInt32(ord.ADQuiescentCurrntIndex);
@@ -3571,9 +3595,9 @@ namespace SLC1_N
             CFFWDLeakindex.Text = ord.CFFWDLeakindex;
             CFQuiescentCurrntIndex.Text = ord.CFQuiescentCurrntIndex;
 
-           
 
-    }
+
+        }
 
         private void ChkPLCPress_CheckedChanged(object sender, EventArgs e)
         {
@@ -3664,8 +3688,8 @@ namespace SLC1_N
 
             double Vs = double.Parse(CKCh2Vol.Text);
             double As = double.Parse(CKCh2Current.Text);
-            if (Form1.f1.CKCH2Port.IsOpen)   Form1.f1.CKCH2Port.WriteLine("VOLT " + Vs.ToString("0.0000"));
-            if (Form1.f1.CKCH2Port.IsOpen)   Form1.f1.CKCH2Port.WriteLine("CURR " + As.ToString("0.0000"));
+            if (Form1.f1.CKCH2Port.IsOpen) Form1.f1.CKCH2Port.WriteLine("VOLT " + Vs.ToString("0.0000"));
+            if (Form1.f1.CKCH2Port.IsOpen) Form1.f1.CKCH2Port.WriteLine("CURR " + As.ToString("0.0000"));
 
             WritePLCConfig();
             SaveFlowRunLog();
@@ -3683,26 +3707,26 @@ namespace SLC1_N
 
         private void btnCKCh2On_Click(object sender, EventArgs e)
         {
-            if (Form1.f1.CKCH2Port.IsOpen)   Form1.f1.CKCH2Port.WriteLine("OUTP 1");
+            if (Form1.f1.CKCH2Port.IsOpen) Form1.f1.CKCH2Port.WriteLine("OUTP 1");
         }
 
         private void btnCKCh2Off_Click(object sender, EventArgs e)
         {
-            if (Form1.f1.CKCH2Port.IsOpen)   Form1.f1.CKCH2Port.WriteLine("OUTP 0");
+            if (Form1.f1.CKCH2Port.IsOpen) Form1.f1.CKCH2Port.WriteLine("OUTP 0");
         }
 
         private void CH1UpDownChange_CheckedChanged(object sender, EventArgs e)
         {
             //WriteLin();
-            ord.CH1UpDownChange = CH1UpDownChange.Checked ;
-            Form1.f1.CH1change= CH1UpDownChange.Checked ;
+            ord.CH1UpDownChange = CH1UpDownChange.Checked;
+            Form1.f1.CH1change = CH1UpDownChange.Checked;
         }
 
         private void CH2UpDownChange_CheckedChanged(object sender, EventArgs e)
         {
             //WriteLin();
             ord.CH2UpDownChange = CH2UpDownChange.Checked;
-            Form1.f1.CH2change= CH2UpDownChange.Checked;
+            Form1.f1.CH2change = CH2UpDownChange.Checked;
         }
 
         private void CH1QuiescentCurrnt_Click(object sender, EventArgs e)
@@ -4077,7 +4101,7 @@ namespace SLC1_N
         {
             if (CH1FWD.Checked && !CH1Order.Contains("FWD"))
             {
-                if(CH1Order.IndexOf("FWD")!=0)
+                if (CH1Order.IndexOf("FWD") != 0)
                     CH1Order.Add("FWD");
                 CH1FWDindex.Text = ((CH1Order.IndexOf("FWD") == -1 ? 0 : CH1Order.IndexOf("FWD")) + 1).ToString();// (CH1Order.IndexOf("FWD") + 1).ToString();
             }
@@ -4436,7 +4460,7 @@ namespace SLC1_N
                         fileWriter1.Close();
                     }
                 }
-                
+
             }
             catch (Exception ex)
             {
@@ -4512,7 +4536,7 @@ namespace SLC1_N
                 RefreshIndex();
             }
             // WriteLin();
-            Form1.f1.ADOrder =ADOrder;
+            Form1.f1.ADOrder = ADOrder;
         }
 
         private void ADRWD_CheckedChanged(object sender, EventArgs e)
@@ -4555,7 +4579,7 @@ namespace SLC1_N
             if (ADDOWNLeak.Checked && !ADOrder.Contains("DOWNLeak"))
             {
                 ADOrder.Add("DOWNLeak");
-                ADDOWNLeakindex.Text = ((ADOrder.IndexOf("DOWNLeak") == -1 ? 0 : ADOrder.IndexOf("DOWNLeak")) + 1).ToString(); 
+                ADDOWNLeakindex.Text = ((ADOrder.IndexOf("DOWNLeak") == -1 ? 0 : ADOrder.IndexOf("DOWNLeak")) + 1).ToString();
             }
             else
             {
@@ -4572,12 +4596,12 @@ namespace SLC1_N
             if (ADFWDLeak.Checked && !ADOrder.Contains("FWDLeak"))
             {
                 ADOrder.Add("FWDLeak");
-                ADFWDLeakindex.Text = ((ADOrder.IndexOf("FWDLeak") == -1 ? 0 : ADOrder.IndexOf("FWDLeak")) + 1).ToString(); 
+                ADFWDLeakindex.Text = ((ADOrder.IndexOf("FWDLeak") == -1 ? 0 : ADOrder.IndexOf("FWDLeak")) + 1).ToString();
             }
             else
             {
-               ADOrder.Remove("FWDLeak");
-               ADFWDLeakindex.Text = "";
+                ADOrder.Remove("FWDLeak");
+                ADFWDLeakindex.Text = "";
                 RefreshIndex();
             }
             //WriteLin();
@@ -4910,7 +4934,17 @@ namespace SLC1_N
 
         private void Electricity_FormClosed(object sender, FormClosedEventArgs e)
         {
-     
+
+        }
+
+        private void uiGroupBox33_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void CH2FWDFlowMax_TextChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }

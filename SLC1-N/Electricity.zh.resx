@@ -118,6 +118,851 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="tabPage5.Size" type="System.Drawing.Size, System.Drawing">
+    <value>1129, 1131</value>
+  </data>
+  <data name="RDOWNParamsCopy.Location" type="System.Drawing.Point, System.Drawing">
+    <value>501, 582</value>
+  </data>
+  <data name="RDOWNParamsCopy.Size" type="System.Drawing.Size, System.Drawing">
+    <value>122, 40</value>
+  </data>
+  <data name="DOWNParamsSave.Location" type="System.Drawing.Point, System.Drawing">
+    <value>315, 582</value>
+  </data>
+  <data name="DOWNParamsSave.Size" type="System.Drawing.Size, System.Drawing">
+    <value>159, 40</value>
+  </data>
+  <data name="LDOWNParamsCopy.Location" type="System.Drawing.Point, System.Drawing">
+    <value>168, 582</value>
+  </data>
+  <data name="LDOWNParamsCopy.Size" type="System.Drawing.Size, System.Drawing">
+    <value>122, 40</value>
+  </data>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="uiGroupBox21.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>0, 32, 0, 0</value>
+  </data>
+  <data name="uiGroupBox21.Size" type="System.Drawing.Size, System.Drawing">
+    <value>373, 560</value>
+  </data>
+  <data name="uiGroupBox17.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>0, 32, 0, 0</value>
+  </data>
+  <data name="uiGroupBox17.Size" type="System.Drawing.Size, System.Drawing">
+    <value>373, 561</value>
+  </data>
+  <data name="RWDParamsSave.Location" type="System.Drawing.Point, System.Drawing">
+    <value>339, 603</value>
+  </data>
+  <data name="RWDParamsSave.Size" type="System.Drawing.Size, System.Drawing">
+    <value>159, 40</value>
+  </data>
+  <data name="uiGroupBox39.Location" type="System.Drawing.Point, System.Drawing">
+    <value>415, 15</value>
+  </data>
+  <data name="uiGroupBox39.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>0, 32, 0, 0</value>
+  </data>
+  <data name="uiGroupBox39.Size" type="System.Drawing.Size, System.Drawing">
+    <value>366, 569</value>
+  </data>
+  <data name="uiGroupBox26.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>0, 32, 0, 0</value>
+  </data>
+  <data name="uiGroupBox26.Size" type="System.Drawing.Size, System.Drawing">
+    <value>430, 302</value>
+  </data>
+  <data name="uiGroupBox37.Location" type="System.Drawing.Point, System.Drawing">
+    <value>313, 183</value>
+  </data>
+  <data name="uiGroupBox37.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>0, 30, 0, 0</value>
+  </data>
+  <data name="uiGroupBox37.Size" type="System.Drawing.Size, System.Drawing">
+    <value>344, 368</value>
+  </data>
+  <data name="uiTextBox1.Font" type="System.Drawing.Font, System.Drawing">
+    <value>SimSun-ExtB, 12pt</value>
+  </data>
+  <data name="uiTextBox1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>188, 213</value>
+  </data>
+  <data name="uiTextBox1.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 5, 4, 5</value>
+  </data>
+  <data name="uiTextBox1.MinimumSize" type="System.Drawing.Size, System.Drawing">
+    <value>1, 16</value>
+  </data>
+  <data name="uiTextBox1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>108, 29</value>
+  </data>
+  <data name="uiTextBox2.Font" type="System.Drawing.Font, System.Drawing">
+    <value>SimSun-ExtB, 12pt</value>
+  </data>
+  <data name="uiTextBox2.Location" type="System.Drawing.Point, System.Drawing">
+    <value>188, 138</value>
+  </data>
+  <data name="uiTextBox2.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 5, 4, 5</value>
+  </data>
+  <data name="uiTextBox2.MinimumSize" type="System.Drawing.Size, System.Drawing">
+    <value>1, 16</value>
+  </data>
+  <data name="uiTextBox2.Size" type="System.Drawing.Size, System.Drawing">
+    <value>108, 29</value>
+  </data>
+  <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="uiTextBox2.TabIndex" type="System.Int32, mscorlib">
+    <value>462</value>
+  </data>
+  <data name="label12.Location" type="System.Drawing.Point, System.Drawing">
+    <value>188, 117</value>
+  </data>
+  <data name="label12.TabIndex" type="System.Int32, mscorlib">
+    <value>459</value>
+  </data>
+  <data name="label12.Text" xml:space="preserve">
+    <value>CHX_2压力上限</value>
+  </data>
+  <data name="label47.Location" type="System.Drawing.Point, System.Drawing">
+    <value>188, 192</value>
+  </data>
+  <data name="label47.TabIndex" type="System.Int32, mscorlib">
+    <value>460</value>
+  </data>
+  <data name="label47.Text" xml:space="preserve">
+    <value>CHX_2压力下限</value>
+  </data>
+  <data name="uiTextBox3.Font" type="System.Drawing.Font, System.Drawing">
+    <value>SimSun-ExtB, 12pt</value>
+  </data>
+  <data name="uiTextBox3.Location" type="System.Drawing.Point, System.Drawing">
+    <value>43, 213</value>
+  </data>
+  <data name="uiTextBox3.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 5, 4, 5</value>
+  </data>
+  <data name="uiTextBox3.MinimumSize" type="System.Drawing.Size, System.Drawing">
+    <value>1, 16</value>
+  </data>
+  <data name="uiTextBox3.Size" type="System.Drawing.Size, System.Drawing">
+    <value>108, 29</value>
+  </data>
+  <data name="uiTextBox3.TabIndex" type="System.Int32, mscorlib">
+    <value>456</value>
+  </data>
+  <data name="label9.Location" type="System.Drawing.Point, System.Drawing">
+    <value>-26, 12</value>
+  </data>
+  <data name="label9.Text" xml:space="preserve">
+    <value>CHX_2流量超时</value>
+  </data>
+  <data name="label9.Visible" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="uiTextBox4.Font" type="System.Drawing.Font, System.Drawing">
+    <value>SimSun-ExtB, 12pt</value>
+  </data>
+  <data name="uiTextBox4.Location" type="System.Drawing.Point, System.Drawing">
+    <value>43, 138</value>
+  </data>
+  <data name="uiTextBox4.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 5, 4, 5</value>
+  </data>
+  <data name="uiTextBox4.MinimumSize" type="System.Drawing.Size, System.Drawing">
+    <value>1, 16</value>
+  </data>
+  <data name="uiTextBox4.Size" type="System.Drawing.Size, System.Drawing">
+    <value>108, 29</value>
+  </data>
+  <data name="uiTextBox4.TabIndex" type="System.Int32, mscorlib">
+    <value>457</value>
+  </data>
+  <data name="label49.Location" type="System.Drawing.Point, System.Drawing">
+    <value>43, 192</value>
+  </data>
+  <data name="label49.TabIndex" type="System.Int32, mscorlib">
+    <value>453</value>
+  </data>
+  <data name="label49.Text" xml:space="preserve">
+    <value>CHX_2流量下限</value>
+  </data>
+  <data name="label50.Location" type="System.Drawing.Point, System.Drawing">
+    <value>43, 117</value>
+  </data>
+  <data name="label50.TabIndex" type="System.Int32, mscorlib">
+    <value>452</value>
+  </data>
+  <data name="label50.Text" xml:space="preserve">
+    <value>CHX_2流量上限</value>
+  </data>
+  <data name="FWDParamsSave.Location" type="System.Drawing.Point, System.Drawing">
+    <value>357, 865</value>
+  </data>
+  <data name="FWDParamsSave.Size" type="System.Drawing.Size, System.Drawing">
+    <value>159, 40</value>
+  </data>
+  <data name="uiGroupBox22.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>0, 32, 0, 0</value>
+  </data>
+  <data name="uiGroupBox22.Size" type="System.Drawing.Size, System.Drawing">
+    <value>430, 302</value>
+  </data>
+  <data name="label106.Size" type="System.Drawing.Size, System.Drawing">
+    <value>71, 15</value>
+  </data>
+  <data name="label107.Size" type="System.Drawing.Size, System.Drawing">
+    <value>87, 15</value>
+  </data>
+  <data name="label108.Size" type="System.Drawing.Size, System.Drawing">
+    <value>103, 15</value>
+  </data>
+  <data name="label109.Size" type="System.Drawing.Size, System.Drawing">
+    <value>103, 15</value>
+  </data>
+  <data name="label110.Size" type="System.Drawing.Size, System.Drawing">
+    <value>87, 15</value>
+  </data>
+  <data name="label120.Size" type="System.Drawing.Size, System.Drawing">
+    <value>71, 15</value>
+  </data>
+  <data name="label111.Size" type="System.Drawing.Size, System.Drawing">
+    <value>103, 15</value>
+  </data>
+  <data name="label112.Size" type="System.Drawing.Size, System.Drawing">
+    <value>103, 15</value>
+  </data>
+  <data name="label113.Size" type="System.Drawing.Size, System.Drawing">
+    <value>87, 15</value>
+  </data>
+  <data name="label90.Size" type="System.Drawing.Size, System.Drawing">
+    <value>79, 15</value>
+  </data>
+  <data name="label97.Size" type="System.Drawing.Size, System.Drawing">
+    <value>47, 15</value>
+  </data>
+  <data name="label91.Size" type="System.Drawing.Size, System.Drawing">
+    <value>71, 15</value>
+  </data>
+  <data name="label96.Size" type="System.Drawing.Size, System.Drawing">
+    <value>47, 15</value>
+  </data>
+  <data name="label92.Size" type="System.Drawing.Size, System.Drawing">
+    <value>71, 15</value>
+  </data>
+  <data name="label95.Size" type="System.Drawing.Size, System.Drawing">
+    <value>71, 15</value>
+  </data>
+  <data name="label93.Size" type="System.Drawing.Size, System.Drawing">
+    <value>79, 15</value>
+  </data>
+  <data name="label94.Size" type="System.Drawing.Size, System.Drawing">
+    <value>71, 15</value>
+  </data>
+  <data name="uiGroupBox35.Location" type="System.Drawing.Point, System.Drawing">
+    <value>4, 15</value>
+  </data>
+  <data name="uiGroupBox35.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>0, 32, 0, 0</value>
+  </data>
+  <data name="uiGroupBox35.Size" type="System.Drawing.Size, System.Drawing">
+    <value>366, 569</value>
+  </data>
+  <data name="uiGroupBox13.Location" type="System.Drawing.Point, System.Drawing">
+    <value>4, 14</value>
+  </data>
+  <data name="uiGroupBox13.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>0, 32, 0, 0</value>
+  </data>
+  <data name="uiGroupBox13.Size" type="System.Drawing.Size, System.Drawing">
+    <value>1436, 457</value>
+  </data>
+  <data name="tabPage3.Size" type="System.Drawing.Size, System.Drawing">
+    <value>1451, 1132</value>
+  </data>
+  <data name="SendText.Location" type="System.Drawing.Point, System.Drawing">
+    <value>119, 498</value>
+  </data>
+  <data name="SendText.Size" type="System.Drawing.Size, System.Drawing">
+    <value>245, 78</value>
+  </data>
+  <data name="tabPage4.Size" type="System.Drawing.Size, System.Drawing">
+    <value>1129, 1131</value>
+  </data>
+  <data name="RUPParamsCopy.Location" type="System.Drawing.Point, System.Drawing">
+    <value>597, 851</value>
+  </data>
+  <data name="RUPParamsCopy.Size" type="System.Drawing.Size, System.Drawing">
+    <value>122, 40</value>
+  </data>
+  <data name="UPParamsSave.Location" type="System.Drawing.Point, System.Drawing">
+    <value>412, 850</value>
+  </data>
+  <data name="UPParamsSave.Size" type="System.Drawing.Size, System.Drawing">
+    <value>159, 40</value>
+  </data>
+  <data name="LUPParamsCopy.Location" type="System.Drawing.Point, System.Drawing">
+    <value>264, 850</value>
+  </data>
+  <data name="LUPParamsCopy.Size" type="System.Drawing.Size, System.Drawing">
+    <value>122, 40</value>
+  </data>
+  <data name="uiGroupBox12.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>0, 32, 0, 0</value>
+  </data>
+  <data name="uiGroupBox12.Size" type="System.Drawing.Size, System.Drawing">
+    <value>487, 822</value>
+  </data>
+  <data name="uiGroupBox9.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>0, 32, 0, 0</value>
+  </data>
+  <data name="uiGroupBox9.Size" type="System.Drawing.Size, System.Drawing">
+    <value>487, 822</value>
+  </data>
+  <data name="uiGroupBox43.Font" type="System.Drawing.Font, System.Drawing">
+    <value>SimSun-ExtB, 12pt</value>
+  </data>
+  <data name="uiGroupBox43.Location" type="System.Drawing.Point, System.Drawing">
+    <value>241, 602</value>
+  </data>
+  <data name="uiGroupBox43.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 5, 4, 5</value>
+  </data>
+  <data name="uiGroupBox43.MinimumSize" type="System.Drawing.Size, System.Drawing">
+    <value>1, 1</value>
+  </data>
+  <data name="uiGroupBox43.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>0, 30, 0, 0</value>
+  </data>
+  <data name="uiGroupBox43.Size" type="System.Drawing.Size, System.Drawing">
+    <value>344, 264</value>
+  </data>
+  <data name="uiGroupBox43.TabIndex" type="System.Int32, mscorlib">
+    <value>485</value>
+  </data>
+  <data name="uiGroupBox43.Text" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="uiGroupBox41.Location" type="System.Drawing.Point, System.Drawing">
+    <value>8, 328</value>
+  </data>
+  <data name="uiGroupBox41.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>0, 30, 0, 0</value>
+  </data>
+  <data name="uiGroupBox41.Size" type="System.Drawing.Size, System.Drawing">
+    <value>354, 260</value>
+  </data>
+  <data name="CH2FWDflowtime.Font" type="System.Drawing.Font, System.Drawing">
+    <value>SimSun-ExtB, 12pt</value>
+  </data>
+  <data name="CH2FWDflowtime.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 5, 4, 5</value>
+  </data>
+  <data name="CH2FWDflowtime.MinimumSize" type="System.Drawing.Size, System.Drawing">
+    <value>1, 16</value>
+  </data>
+  <data name="CH2FWDflowtime.Size" type="System.Drawing.Size, System.Drawing">
+    <value>108, 29</value>
+  </data>
+  <data name="label11.Location" type="System.Drawing.Point, System.Drawing">
+    <value>45, 43</value>
+  </data>
+  <data name="label11.Size" type="System.Drawing.Size, System.Drawing">
+    <value>95, 16</value>
+  </data>
+  <data name="label11.TabIndex" type="System.Int32, mscorlib">
+    <value>463</value>
+  </data>
+  <data name="label11.Text" xml:space="preserve">
+    <value>CH2流量时间</value>
+  </data>
+  <data name="CH2FWDPreMin.Font" type="System.Drawing.Font, System.Drawing">
+    <value>SimSun-ExtB, 12pt</value>
+  </data>
+  <data name="CH2FWDPreMin.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 5, 4, 5</value>
+  </data>
+  <data name="CH2FWDPreMin.MinimumSize" type="System.Drawing.Size, System.Drawing">
+    <value>1, 16</value>
+  </data>
+  <data name="CH2FWDPreMin.Size" type="System.Drawing.Size, System.Drawing">
+    <value>108, 29</value>
+  </data>
+  <data name="CH2FWDPreMax.Font" type="System.Drawing.Font, System.Drawing">
+    <value>SimSun-ExtB, 12pt</value>
+  </data>
+  <data name="CH2FWDPreMax.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 5, 4, 5</value>
+  </data>
+  <data name="CH2FWDPreMax.MinimumSize" type="System.Drawing.Size, System.Drawing">
+    <value>1, 16</value>
+  </data>
+  <data name="CH2FWDPreMax.Size" type="System.Drawing.Size, System.Drawing">
+    <value>108, 29</value>
+  </data>
+  <data name="label5.Size" type="System.Drawing.Size, System.Drawing">
+    <value>95, 16</value>
+  </data>
+  <data name="label5.Text" xml:space="preserve">
+    <value>CH2压力上限</value>
+  </data>
+  <data name="label6.Size" type="System.Drawing.Size, System.Drawing">
+    <value>95, 16</value>
+  </data>
+  <data name="label6.Text" xml:space="preserve">
+    <value>CH2压力下限</value>
+  </data>
+  <data name="CH2FWDFlowMin.Font" type="System.Drawing.Font, System.Drawing">
+    <value>SimSun-ExtB, 12pt</value>
+  </data>
+  <data name="CH2FWDFlowMin.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 5, 4, 5</value>
+  </data>
+  <data name="CH2FWDFlowMin.MinimumSize" type="System.Drawing.Size, System.Drawing">
+    <value>1, 16</value>
+  </data>
+  <data name="CH2FWDFlowMin.Size" type="System.Drawing.Size, System.Drawing">
+    <value>108, 29</value>
+  </data>
+  <data name="CH2FWDFlowMax.Font" type="System.Drawing.Font, System.Drawing">
+    <value>SimSun-ExtB, 12pt</value>
+  </data>
+  <data name="CH2FWDFlowMax.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 5, 4, 5</value>
+  </data>
+  <data name="CH2FWDFlowMax.MinimumSize" type="System.Drawing.Size, System.Drawing">
+    <value>1, 16</value>
+  </data>
+  <data name="CH2FWDFlowMax.Size" type="System.Drawing.Size, System.Drawing">
+    <value>108, 29</value>
+  </data>
+  <data name="CH2FwdpreTime.Font" type="System.Drawing.Font, System.Drawing">
+    <value>SimSun-ExtB, 12pt</value>
+  </data>
+  <data name="CH2FwdpreTime.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 5, 4, 5</value>
+  </data>
+  <data name="CH2FwdpreTime.MinimumSize" type="System.Drawing.Size, System.Drawing">
+    <value>1, 16</value>
+  </data>
+  <data name="CH2FwdpreTime.Size" type="System.Drawing.Size, System.Drawing">
+    <value>108, 29</value>
+  </data>
+  <data name="label7.Size" type="System.Drawing.Size, System.Drawing">
+    <value>95, 16</value>
+  </data>
+  <data name="label7.Text" xml:space="preserve">
+    <value>CH2流量下限</value>
+  </data>
+  <data name="label10.Location" type="System.Drawing.Point, System.Drawing">
+    <value>193, 47</value>
+  </data>
+  <data name="label10.Size" type="System.Drawing.Size, System.Drawing">
+    <value>95, 16</value>
+  </data>
+  <data name="label10.Text" xml:space="preserve">
+    <value>CH2压力时间</value>
+  </data>
+  <data name="label8.Size" type="System.Drawing.Size, System.Drawing">
+    <value>95, 16</value>
+  </data>
+  <data name="label8.Text" xml:space="preserve">
+    <value>CH2流量上限</value>
+  </data>
+  <data name="uiGroupBox33.Location" type="System.Drawing.Point, System.Drawing">
+    <value>442, 324</value>
+  </data>
+  <data name="uiGroupBox33.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>0, 30, 0, 0</value>
+  </data>
+  <data name="uiGroupBox33.Size" type="System.Drawing.Size, System.Drawing">
+    <value>344, 264</value>
+  </data>
+  <data name="RFWDParamsCopy.Location" type="System.Drawing.Point, System.Drawing">
+    <value>609, 865</value>
+  </data>
+  <data name="RFWDParamsCopy.Size" type="System.Drawing.Size, System.Drawing">
+    <value>122, 40</value>
+  </data>
+  <data name="LFWDParamsCopy.Location" type="System.Drawing.Point, System.Drawing">
+    <value>166, 865</value>
+  </data>
+  <data name="LFWDParamsCopy.Size" type="System.Drawing.Size, System.Drawing">
+    <value>122, 40</value>
+  </data>
+  <data name="tabPage6.Size" type="System.Drawing.Size, System.Drawing">
+    <value>1129, 1131</value>
+  </data>
+  <data name="TotalPreMax.Font" type="System.Drawing.Font, System.Drawing">
+    <value>SimSun-ExtB, 12pt</value>
+  </data>
+  <data name="TotalPreMax.Location" type="System.Drawing.Point, System.Drawing">
+    <value>43, 142</value>
+  </data>
+  <data name="TotalPreMax.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 5, 4, 5</value>
+  </data>
+  <data name="TotalPreMax.MinimumSize" type="System.Drawing.Size, System.Drawing">
+    <value>1, 16</value>
+  </data>
+  <data name="TotalPreMax.Size" type="System.Drawing.Size, System.Drawing">
+    <value>108, 29</value>
+  </data>
+  <data name="TotalPreMax.TabIndex" type="System.Int32, mscorlib">
+    <value>462</value>
+  </data>
+  <data name="label51.Location" type="System.Drawing.Point, System.Drawing">
+    <value>32, 117</value>
+  </data>
+  <data name="label51.Size" type="System.Drawing.Size, System.Drawing">
+    <value>119, 16</value>
+  </data>
+  <data name="label51.TabIndex" type="System.Int32, mscorlib">
+    <value>459</value>
+  </data>
+  <data name="label51.Text" xml:space="preserve">
+    <value>压力相差最大值</value>
+  </data>
+  <data name="TotalFlowMin.Font" type="System.Drawing.Font, System.Drawing">
+    <value>SimSun-ExtB, 12pt</value>
+  </data>
+  <data name="TotalFlowMin.Location" type="System.Drawing.Point, System.Drawing">
+    <value>191, 57</value>
+  </data>
+  <data name="TotalFlowMin.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 5, 4, 5</value>
+  </data>
+  <data name="TotalFlowMin.MinimumSize" type="System.Drawing.Size, System.Drawing">
+    <value>1, 16</value>
+  </data>
+  <data name="TotalFlowMin.Size" type="System.Drawing.Size, System.Drawing">
+    <value>108, 29</value>
+  </data>
+  <data name="TotalFlowMax.Font" type="System.Drawing.Font, System.Drawing">
+    <value>SimSun-ExtB, 12pt</value>
+  </data>
+  <data name="TotalFlowMax.Location" type="System.Drawing.Point, System.Drawing">
+    <value>43, 57</value>
+  </data>
+  <data name="TotalFlowMax.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 5, 4, 5</value>
+  </data>
+  <data name="TotalFlowMax.MinimumSize" type="System.Drawing.Size, System.Drawing">
+    <value>1, 16</value>
+  </data>
+  <data name="TotalFlowMax.Size" type="System.Drawing.Size, System.Drawing">
+    <value>108, 29</value>
+  </data>
+  <data name="label78.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="label78.Font" type="System.Drawing.Font, System.Drawing">
+    <value>SimSun-ExtB, 12pt</value>
+  </data>
+  <data name="label78.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="label78.Location" type="System.Drawing.Point, System.Drawing">
+    <value>43, 36</value>
+  </data>
+  <data name="label78.Size" type="System.Drawing.Size, System.Drawing">
+    <value>87, 16</value>
+  </data>
+  <data name="label78.TabIndex" type="System.Int32, mscorlib">
+    <value>453</value>
+  </data>
+  <data name="label78.Text" xml:space="preserve">
+    <value>总流量上限</value>
+  </data>
+  <data name="label79.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="label79.Font" type="System.Drawing.Font, System.Drawing">
+    <value>SimSun-ExtB, 12pt</value>
+  </data>
+  <data name="label79.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="label79.Location" type="System.Drawing.Point, System.Drawing">
+    <value>191, 36</value>
+  </data>
+  <data name="label79.Size" type="System.Drawing.Size, System.Drawing">
+    <value>87, 16</value>
+  </data>
+  <data name="label79.TabIndex" type="System.Int32, mscorlib">
+    <value>452</value>
+  </data>
+  <data name="label79.Text" xml:space="preserve">
+    <value>总流量下限</value>
+  </data>
+  <data name="CH1FwdPreMin.Font" type="System.Drawing.Font, System.Drawing">
+    <value>SimSun-ExtB, 12pt</value>
+  </data>
+  <data name="CH1FwdPreMin.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 5, 4, 5</value>
+  </data>
+  <data name="CH1FwdPreMin.MinimumSize" type="System.Drawing.Size, System.Drawing">
+    <value>1, 16</value>
+  </data>
+  <data name="CH1FwdPreMin.Size" type="System.Drawing.Size, System.Drawing">
+    <value>108, 29</value>
+  </data>
+  <data name="CH1FWDFLOWTime.Font" type="System.Drawing.Font, System.Drawing">
+    <value>SimSun-ExtB, 12pt</value>
+  </data>
+  <data name="CH1FWDFLOWTime.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 5, 4, 5</value>
+  </data>
+  <data name="CH1FWDFLOWTime.MinimumSize" type="System.Drawing.Size, System.Drawing">
+    <value>1, 16</value>
+  </data>
+  <data name="CH1FWDFLOWTime.Size" type="System.Drawing.Size, System.Drawing">
+    <value>108, 29</value>
+  </data>
+  <data name="label69.Size" type="System.Drawing.Size, System.Drawing">
+    <value>95, 16</value>
+  </data>
+  <data name="label69.Text" xml:space="preserve">
+    <value>CH1流量上限</value>
+  </data>
+  <data name="CH1FwdPreMax.Font" type="System.Drawing.Font, System.Drawing">
+    <value>SimSun-ExtB, 12pt</value>
+  </data>
+  <data name="CH1FwdPreMax.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 5, 4, 5</value>
+  </data>
+  <data name="CH1FwdPreMax.MinimumSize" type="System.Drawing.Size, System.Drawing">
+    <value>1, 16</value>
+  </data>
+  <data name="CH1FwdPreMax.Size" type="System.Drawing.Size, System.Drawing">
+    <value>108, 29</value>
+  </data>
+  <data name="label70.Location" type="System.Drawing.Point, System.Drawing">
+    <value>42, 43</value>
+  </data>
+  <data name="label70.Size" type="System.Drawing.Size, System.Drawing">
+    <value>95, 16</value>
+  </data>
+  <data name="label70.Text" xml:space="preserve">
+    <value>CH1流量时间</value>
+  </data>
+  <data name="label71.Size" type="System.Drawing.Size, System.Drawing">
+    <value>95, 16</value>
+  </data>
+  <data name="label71.Text" xml:space="preserve">
+    <value>CH1流量下限</value>
+  </data>
+  <data name="label72.Size" type="System.Drawing.Size, System.Drawing">
+    <value>95, 16</value>
+  </data>
+  <data name="label72.Text" xml:space="preserve">
+    <value>CH1压力上限</value>
+  </data>
+  <data name="label73.Size" type="System.Drawing.Size, System.Drawing">
+    <value>95, 16</value>
+  </data>
+  <data name="label73.Text" xml:space="preserve">
+    <value>CH1压力时间</value>
+  </data>
+  <data name="CH1FwdPreTime.Font" type="System.Drawing.Font, System.Drawing">
+    <value>SimSun-ExtB, 12pt</value>
+  </data>
+  <data name="CH1FwdPreTime.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 5, 4, 5</value>
+  </data>
+  <data name="CH1FwdPreTime.MinimumSize" type="System.Drawing.Size, System.Drawing">
+    <value>1, 16</value>
+  </data>
+  <data name="CH1FwdPreTime.Size" type="System.Drawing.Size, System.Drawing">
+    <value>108, 29</value>
+  </data>
+  <data name="label74.Size" type="System.Drawing.Size, System.Drawing">
+    <value>95, 16</value>
+  </data>
+  <data name="label74.Text" xml:space="preserve">
+    <value>CH1压力下限</value>
+  </data>
+  <data name="CH1FWDFlowMax.Font" type="System.Drawing.Font, System.Drawing">
+    <value>SimSun-ExtB, 12pt</value>
+  </data>
+  <data name="CH1FWDFlowMax.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 5, 4, 5</value>
+  </data>
+  <data name="CH1FWDFlowMax.MinimumSize" type="System.Drawing.Size, System.Drawing">
+    <value>1, 16</value>
+  </data>
+  <data name="CH1FWDFlowMax.Size" type="System.Drawing.Size, System.Drawing">
+    <value>108, 29</value>
+  </data>
+  <data name="CH1FWDFlowMin.Font" type="System.Drawing.Font, System.Drawing">
+    <value>SimSun-ExtB, 12pt</value>
+  </data>
+  <data name="CH1FWDFlowMin.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 5, 4, 5</value>
+  </data>
+  <data name="CH1FWDFlowMin.MinimumSize" type="System.Drawing.Size, System.Drawing">
+    <value>1, 16</value>
+  </data>
+  <data name="CH1FWDFlowMin.Size" type="System.Drawing.Size, System.Drawing">
+    <value>108, 29</value>
+  </data>
+  <data name="tabPage7.Size" type="System.Drawing.Size, System.Drawing">
+    <value>1129, 1131</value>
+  </data>
+  <data name="uiTabControlMenu2.Size" type="System.Drawing.Size, System.Drawing">
+    <value>1330, 1131</value>
+  </data>
+  <data name="tabPage2.Size" type="System.Drawing.Size, System.Drawing">
+    <value>1451, 1132</value>
+  </data>
+  <data name="PRWDParamsCopy.Location" type="System.Drawing.Point, System.Drawing">
+    <value>522, 603</value>
+  </data>
+  <data name="PRWDParamsCopy.Size" type="System.Drawing.Size, System.Drawing">
+    <value>122, 40</value>
+  </data>
+  <data name="LRWDParamsCopy.Location" type="System.Drawing.Point, System.Drawing">
+    <value>189, 603</value>
+  </data>
+  <data name="LRWDParamsCopy.Size" type="System.Drawing.Size, System.Drawing">
+    <value>122, 40</value>
+  </data>
+  <data name="uiGroupBox5.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>0, 32, 0, 0</value>
+  </data>
+  <data name="uiGroupBox5.Size" type="System.Drawing.Size, System.Drawing">
+    <value>307, 293</value>
+  </data>
+  <data name="label17.Size" type="System.Drawing.Size, System.Drawing">
+    <value>27, 19</value>
+  </data>
+  <data name="label20.Size" type="System.Drawing.Size, System.Drawing">
+    <value>27, 19</value>
+  </data>
+  <data name="label18.Size" type="System.Drawing.Size, System.Drawing">
+    <value>27, 19</value>
+  </data>
+  <data name="tabPage0.Size" type="System.Drawing.Size, System.Drawing">
+    <value>1451, 1132</value>
+  </data>
+  <data name="tabPage1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>1451, 1132</value>
+  </data>
+  <data name="tabPage9.Size" type="System.Drawing.Size, System.Drawing">
+    <value>1451, 1132</value>
+  </data>
+  <data name="uiTabControlMenu1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>1652, 1132</value>
+  </data>
+  <data name="uiGroupBox32.Location" type="System.Drawing.Point, System.Drawing">
+    <value>4, 566</value>
+  </data>
+  <data name="uiGroupBox32.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>0, 32, 0, 0</value>
+  </data>
+  <data name="uiGroupBox32.Size" type="System.Drawing.Size, System.Drawing">
+    <value>550, 269</value>
+  </data>
+  <data name="uiGroupBox3.Location" type="System.Drawing.Point, System.Drawing">
+    <value>575, 286</value>
+  </data>
+  <data name="uiGroupBox3.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>0, 32, 0, 0</value>
+  </data>
+  <data name="uiGroupBox3.Size" type="System.Drawing.Size, System.Drawing">
+    <value>550, 276</value>
+  </data>
+  <data name="uiGroupBox1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>4, 281</value>
+  </data>
+  <data name="uiGroupBox1.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>0, 32, 0, 0</value>
+  </data>
+  <data name="uiGroupBox1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>550, 276</value>
+  </data>
+  <data name="btnSave.Location" type="System.Drawing.Point, System.Drawing">
+    <value>511, 853</value>
+  </data>
+  <data name="btnSave.Size" type="System.Drawing.Size, System.Drawing">
+    <value>159, 36</value>
+  </data>
+  <data name="uiGroupBox8.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>0, 32, 0, 0</value>
+  </data>
+  <data name="uiGroupBox8.Size" type="System.Drawing.Size, System.Drawing">
+    <value>550, 271</value>
+  </data>
+  <data name="uiGroupBox7.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>0, 32, 0, 0</value>
+  </data>
+  <data name="uiGroupBox7.Size" type="System.Drawing.Size, System.Drawing">
+    <value>550, 266</value>
+  </data>
+  <data name="ChkPLCPress.Location" type="System.Drawing.Point, System.Drawing">
+    <value>626, 330</value>
+  </data>
+  <data name="ChkPLCPress.Size" type="System.Drawing.Size, System.Drawing">
+    <value>150, 29</value>
+  </data>
+  <data name="uiGroupBox6.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>0, 32, 0, 0</value>
+  </data>
+  <data name="uiGroupBox6.Size" type="System.Drawing.Size, System.Drawing">
+    <value>307, 293</value>
+  </data>
+  <data name="label21.Size" type="System.Drawing.Size, System.Drawing">
+    <value>27, 19</value>
+  </data>
+  <data name="label22.Size" type="System.Drawing.Size, System.Drawing">
+    <value>27, 19</value>
+  </data>
+  <data name="label23.Size" type="System.Drawing.Size, System.Drawing">
+    <value>27, 19</value>
+  </data>
+  <data name="uiGroupBox4.Location" type="System.Drawing.Point, System.Drawing">
+    <value>312, 318</value>
+  </data>
+  <data name="uiGroupBox4.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>0, 32, 0, 0</value>
+  </data>
+  <data name="uiGroupBox4.Size" type="System.Drawing.Size, System.Drawing">
+    <value>307, 287</value>
+  </data>
+  <data name="uiGroupBox2.Location" type="System.Drawing.Point, System.Drawing">
+    <value>4, 318</value>
+  </data>
+  <data name="uiGroupBox2.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>0, 32, 0, 0</value>
+  </data>
+  <data name="uiGroupBox2.Size" type="System.Drawing.Size, System.Drawing">
+    <value>307, 287</value>
+  </data>
+  <data name="uiGroupBox30.Location" type="System.Drawing.Point, System.Drawing">
+    <value>370, 14</value>
+  </data>
+  <data name="uiGroupBox30.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>0, 32, 0, 0</value>
+  </data>
+  <data name="uiGroupBox30.Size" type="System.Drawing.Size, System.Drawing">
+    <value>358, 318</value>
+  </data>
+  <data name="uiGroupBox31.Location" type="System.Drawing.Point, System.Drawing">
+    <value>4, 14</value>
+  </data>
+  <data name="uiGroupBox31.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>0, 32, 0, 0</value>
+  </data>
+  <data name="uiGroupBox31.Size" type="System.Drawing.Size, System.Drawing">
+    <value>358, 318</value>
+  </data>
+  <data name="$this.AutoScaleDimensions" type="System.Drawing.SizeF, System.Drawing">
+    <value>6, 12</value>
+  </data>
+  <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
+    <value>1654, 979</value>
+  </data>
   <data name="$this.Icon" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         AAABAAkAMDAQAAEABABoBgAAlgAAACAgEAABAAQA6AIAAP4GAAAQEBAAAQAEACgBAADmCQAAMDAAAAEA

@@ -149,6 +149,16 @@
             this.uiGroupBox39 = new Sunny.UI.UIGroupBox();
             this.uiGroupBox26 = new Sunny.UI.UIGroupBox();
             this.uiGroupBox34 = new Sunny.UI.UIGroupBox();
+            this.uiGroupBox37 = new Sunny.UI.UIGroupBox();
+            this.uiTextBox1 = new Sunny.UI.UITextBox();
+            this.uiTextBox2 = new Sunny.UI.UITextBox();
+            this.label12 = new System.Windows.Forms.Label();
+            this.label47 = new System.Windows.Forms.Label();
+            this.uiTextBox3 = new Sunny.UI.UITextBox();
+            this.label9 = new System.Windows.Forms.Label();
+            this.uiTextBox4 = new Sunny.UI.UITextBox();
+            this.label49 = new System.Windows.Forms.Label();
+            this.label50 = new System.Windows.Forms.Label();
             this.label81 = new System.Windows.Forms.Label();
             this.label82 = new System.Windows.Forms.Label();
             this.CH2FWDVDCComp = new Sunny.UI.UITextBox();
@@ -361,45 +371,39 @@
             this.label53 = new System.Windows.Forms.Label();
             this.label54 = new System.Windows.Forms.Label();
             this.tabPage6 = new System.Windows.Forms.TabPage();
+            this.uiGroupBox43 = new Sunny.UI.UIGroupBox();
+            this.TotalPreMax = new Sunny.UI.UITextBox();
+            this.label51 = new System.Windows.Forms.Label();
+            this.TotalFlowMin = new Sunny.UI.UITextBox();
+            this.TotalFlowMax = new Sunny.UI.UITextBox();
+            this.label78 = new System.Windows.Forms.Label();
+            this.label79 = new System.Windows.Forms.Label();
             this.uiGroupBox41 = new Sunny.UI.UIGroupBox();
-            this.CH1_2FwdPreMin = new Sunny.UI.UITextBox();
-            this.CH1_2OverTime = new Sunny.UI.UITextBox();
+            this.CH1FwdPreMin = new Sunny.UI.UITextBox();
+            this.CH1FWDFLOWTime = new Sunny.UI.UITextBox();
             this.label69 = new System.Windows.Forms.Label();
-            this.CH1_2FwdPreMax = new Sunny.UI.UITextBox();
+            this.CH1FwdPreMax = new Sunny.UI.UITextBox();
             this.label70 = new System.Windows.Forms.Label();
             this.label71 = new System.Windows.Forms.Label();
             this.label72 = new System.Windows.Forms.Label();
             this.label73 = new System.Windows.Forms.Label();
-            this.CH1_2Fwd_OverTime = new Sunny.UI.UITextBox();
+            this.CH1FwdPreTime = new Sunny.UI.UITextBox();
             this.label74 = new System.Windows.Forms.Label();
-            this.CH1_2FwdFlowMax = new Sunny.UI.UITextBox();
-            this.CH1_2FwdFlowMin = new Sunny.UI.UITextBox();
+            this.CH1FWDFlowMax = new Sunny.UI.UITextBox();
+            this.CH1FWDFlowMin = new Sunny.UI.UITextBox();
             this.uiGroupBox33 = new Sunny.UI.UIGroupBox();
-            this.CH2_2FwdPreMin = new Sunny.UI.UITextBox();
-            this.CH2_2PreFwdMax = new Sunny.UI.UITextBox();
+            this.CH2FWDflowtime = new Sunny.UI.UITextBox();
+            this.label11 = new System.Windows.Forms.Label();
+            this.CH2FWDPreMin = new Sunny.UI.UITextBox();
+            this.CH2FWDPreMax = new Sunny.UI.UITextBox();
             this.label5 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
-            this.CH2_2FwdFlowMin = new Sunny.UI.UITextBox();
-            this.CH2_2FwdFlowMax = new Sunny.UI.UITextBox();
-            this.CH2_2Fwd_OverTime = new Sunny.UI.UITextBox();
+            this.CH2FWDFlowMin = new Sunny.UI.UITextBox();
+            this.CH2FWDFlowMax = new Sunny.UI.UITextBox();
+            this.CH2FwdpreTime = new Sunny.UI.UITextBox();
             this.label7 = new System.Windows.Forms.Label();
-            this.label8 = new System.Windows.Forms.Label();
-            this.CH2_2OverTime = new Sunny.UI.UITextBox();
-            this.label9 = new System.Windows.Forms.Label();
             this.label10 = new System.Windows.Forms.Label();
-            this.uiGroupBox37 = new Sunny.UI.UIGroupBox();
-            this.uiTextBox7 = new Sunny.UI.UITextBox();
-            this.uiTextBox8 = new Sunny.UI.UITextBox();
-            this.label11 = new System.Windows.Forms.Label();
-            this.uiTextBox9 = new Sunny.UI.UITextBox();
-            this.label12 = new System.Windows.Forms.Label();
-            this.label47 = new System.Windows.Forms.Label();
-            this.label49 = new System.Windows.Forms.Label();
-            this.label50 = new System.Windows.Forms.Label();
-            this.uiTextBox10 = new Sunny.UI.UITextBox();
-            this.label51 = new System.Windows.Forms.Label();
-            this.uiTextBox11 = new Sunny.UI.UITextBox();
-            this.uiTextBox12 = new Sunny.UI.UITextBox();
+            this.label8 = new System.Windows.Forms.Label();
             this.RFWDParamsCopy = new Sunny.UI.UISymbolButton();
             this.LFWDParamsCopy = new Sunny.UI.UISymbolButton();
             this.tabPage2 = new System.Windows.Forms.TabPage();
@@ -594,6 +598,8 @@
             this.uiGroupBox39.SuspendLayout();
             this.uiGroupBox26.SuspendLayout();
             this.uiGroupBox34.SuspendLayout();
+            this.uiGroupBox37.SuspendLayout();
+            this.uiTextBox3.SuspendLayout();
             this.uiGroupBox22.SuspendLayout();
             this.uiGroupBox16.SuspendLayout();
             this.uiGroupBox15.SuspendLayout();
@@ -613,9 +619,9 @@
             this.uiGroupBox19.SuspendLayout();
             this.uiGroupBox10.SuspendLayout();
             this.tabPage6.SuspendLayout();
+            this.uiGroupBox43.SuspendLayout();
             this.uiGroupBox41.SuspendLayout();
             this.uiGroupBox33.SuspendLayout();
-            this.uiGroupBox37.SuspendLayout();
             this.tabPage2.SuspendLayout();
             this.uiTabControlMenu2.SuspendLayout();
             this.tabPage7.SuspendLayout();
@@ -1671,6 +1677,7 @@
             // uiGroupBox34
             // 
             resources.ApplyResources(this.uiGroupBox34, "uiGroupBox34");
+            this.uiGroupBox34.Controls.Add(this.uiGroupBox37);
             this.uiGroupBox34.Controls.Add(this.label81);
             this.uiGroupBox34.Controls.Add(this.label82);
             this.uiGroupBox34.Controls.Add(this.CH2FWDVDCComp);
@@ -1693,6 +1700,96 @@
             this.uiGroupBox34.Name = "uiGroupBox34";
             this.uiGroupBox34.Style = Sunny.UI.UIStyle.Custom;
             this.uiGroupBox34.TextAlignment = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // uiGroupBox37
+            // 
+            resources.ApplyResources(this.uiGroupBox37, "uiGroupBox37");
+            this.uiGroupBox37.Controls.Add(this.uiTextBox1);
+            this.uiGroupBox37.Controls.Add(this.uiTextBox2);
+            this.uiGroupBox37.Controls.Add(this.label12);
+            this.uiGroupBox37.Controls.Add(this.label47);
+            this.uiGroupBox37.Controls.Add(this.uiTextBox3);
+            this.uiGroupBox37.Controls.Add(this.uiTextBox4);
+            this.uiGroupBox37.Controls.Add(this.label49);
+            this.uiGroupBox37.Controls.Add(this.label50);
+            this.uiGroupBox37.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(243)))), ((int)(((byte)(255)))));
+            this.uiGroupBox37.Name = "uiGroupBox37";
+            this.uiGroupBox37.Style = Sunny.UI.UIStyle.Custom;
+            this.uiGroupBox37.TextAlignment = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // uiTextBox1
+            // 
+            resources.ApplyResources(this.uiTextBox1, "uiTextBox1");
+            this.uiTextBox1.ButtonSymbol = 61761;
+            this.uiTextBox1.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.uiTextBox1.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(243)))), ((int)(((byte)(255)))));
+            this.uiTextBox1.Maximum = 2147483647D;
+            this.uiTextBox1.Minimum = -2147483648D;
+            this.uiTextBox1.Name = "uiTextBox1";
+            this.uiTextBox1.Style = Sunny.UI.UIStyle.Custom;
+            this.uiTextBox1.TextAlignment = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // uiTextBox2
+            // 
+            resources.ApplyResources(this.uiTextBox2, "uiTextBox2");
+            this.uiTextBox2.ButtonSymbol = 61761;
+            this.uiTextBox2.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.uiTextBox2.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(243)))), ((int)(((byte)(255)))));
+            this.uiTextBox2.Maximum = 2147483647D;
+            this.uiTextBox2.Minimum = -2147483648D;
+            this.uiTextBox2.Name = "uiTextBox2";
+            this.uiTextBox2.Style = Sunny.UI.UIStyle.Custom;
+            this.uiTextBox2.TextAlignment = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // label12
+            // 
+            resources.ApplyResources(this.label12, "label12");
+            this.label12.Name = "label12";
+            // 
+            // label47
+            // 
+            resources.ApplyResources(this.label47, "label47");
+            this.label47.Name = "label47";
+            // 
+            // uiTextBox3
+            // 
+            resources.ApplyResources(this.uiTextBox3, "uiTextBox3");
+            this.uiTextBox3.ButtonSymbol = 61761;
+            this.uiTextBox3.Controls.Add(this.label9);
+            this.uiTextBox3.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.uiTextBox3.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(243)))), ((int)(((byte)(255)))));
+            this.uiTextBox3.Maximum = 2147483647D;
+            this.uiTextBox3.Minimum = -2147483648D;
+            this.uiTextBox3.Name = "uiTextBox3";
+            this.uiTextBox3.Style = Sunny.UI.UIStyle.Custom;
+            this.uiTextBox3.TextAlignment = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // label9
+            // 
+            resources.ApplyResources(this.label9, "label9");
+            this.label9.Name = "label9";
+            // 
+            // uiTextBox4
+            // 
+            resources.ApplyResources(this.uiTextBox4, "uiTextBox4");
+            this.uiTextBox4.ButtonSymbol = 61761;
+            this.uiTextBox4.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.uiTextBox4.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(243)))), ((int)(((byte)(255)))));
+            this.uiTextBox4.Maximum = 2147483647D;
+            this.uiTextBox4.Minimum = -2147483648D;
+            this.uiTextBox4.Name = "uiTextBox4";
+            this.uiTextBox4.Style = Sunny.UI.UIStyle.Custom;
+            this.uiTextBox4.TextAlignment = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // label49
+            // 
+            resources.ApplyResources(this.label49, "label49");
+            this.label49.Name = "label49";
+            // 
+            // label50
+            // 
+            resources.ApplyResources(this.label50, "label50");
+            this.label50.Name = "label50";
             // 
             // label81
             // 
@@ -3571,9 +3668,9 @@
             // 
             resources.ApplyResources(this.tabPage6, "tabPage6");
             this.tabPage6.BackColor = System.Drawing.Color.LightBlue;
+            this.tabPage6.Controls.Add(this.uiGroupBox43);
             this.tabPage6.Controls.Add(this.uiGroupBox41);
             this.tabPage6.Controls.Add(this.uiGroupBox33);
-            this.tabPage6.Controls.Add(this.uiGroupBox37);
             this.tabPage6.Controls.Add(this.RFWDParamsCopy);
             this.tabPage6.Controls.Add(this.LFWDParamsCopy);
             this.tabPage6.Controls.Add(this.FWDParamsSave);
@@ -3582,66 +3679,131 @@
             this.tabPage6.Name = "tabPage6";
             this.tabPage6.Click += new System.EventHandler(this.tabPage6_Click);
             // 
+            // uiGroupBox43
+            // 
+            resources.ApplyResources(this.uiGroupBox43, "uiGroupBox43");
+            this.uiGroupBox43.Controls.Add(this.TotalPreMax);
+            this.uiGroupBox43.Controls.Add(this.label51);
+            this.uiGroupBox43.Controls.Add(this.TotalFlowMin);
+            this.uiGroupBox43.Controls.Add(this.TotalFlowMax);
+            this.uiGroupBox43.Controls.Add(this.label78);
+            this.uiGroupBox43.Controls.Add(this.label79);
+            this.uiGroupBox43.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(243)))), ((int)(((byte)(255)))));
+            this.uiGroupBox43.Name = "uiGroupBox43";
+            this.uiGroupBox43.Style = Sunny.UI.UIStyle.Custom;
+            this.uiGroupBox43.TextAlignment = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // TotalPreMax
+            // 
+            resources.ApplyResources(this.TotalPreMax, "TotalPreMax");
+            this.TotalPreMax.ButtonSymbol = 61761;
+            this.TotalPreMax.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.TotalPreMax.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(243)))), ((int)(((byte)(255)))));
+            this.TotalPreMax.Maximum = 2147483647D;
+            this.TotalPreMax.Minimum = -2147483648D;
+            this.TotalPreMax.Name = "TotalPreMax";
+            this.TotalPreMax.Style = Sunny.UI.UIStyle.Custom;
+            this.TotalPreMax.TextAlignment = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // label51
+            // 
+            resources.ApplyResources(this.label51, "label51");
+            this.label51.Name = "label51";
+            // 
+            // TotalFlowMin
+            // 
+            resources.ApplyResources(this.TotalFlowMin, "TotalFlowMin");
+            this.TotalFlowMin.ButtonSymbol = 61761;
+            this.TotalFlowMin.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.TotalFlowMin.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(243)))), ((int)(((byte)(255)))));
+            this.TotalFlowMin.Maximum = 2147483647D;
+            this.TotalFlowMin.Minimum = -2147483648D;
+            this.TotalFlowMin.Name = "TotalFlowMin";
+            this.TotalFlowMin.Style = Sunny.UI.UIStyle.Custom;
+            this.TotalFlowMin.TextAlignment = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // TotalFlowMax
+            // 
+            resources.ApplyResources(this.TotalFlowMax, "TotalFlowMax");
+            this.TotalFlowMax.ButtonSymbol = 61761;
+            this.TotalFlowMax.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.TotalFlowMax.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(243)))), ((int)(((byte)(255)))));
+            this.TotalFlowMax.Maximum = 2147483647D;
+            this.TotalFlowMax.Minimum = -2147483648D;
+            this.TotalFlowMax.Name = "TotalFlowMax";
+            this.TotalFlowMax.Style = Sunny.UI.UIStyle.Custom;
+            this.TotalFlowMax.TextAlignment = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // label78
+            // 
+            resources.ApplyResources(this.label78, "label78");
+            this.label78.Name = "label78";
+            // 
+            // label79
+            // 
+            resources.ApplyResources(this.label79, "label79");
+            this.label79.Name = "label79";
+            // 
             // uiGroupBox41
             // 
             resources.ApplyResources(this.uiGroupBox41, "uiGroupBox41");
-            this.uiGroupBox41.Controls.Add(this.CH1_2FwdPreMin);
-            this.uiGroupBox41.Controls.Add(this.CH1_2OverTime);
+            this.uiGroupBox41.Controls.Add(this.CH1FwdPreMin);
+            this.uiGroupBox41.Controls.Add(this.CH1FWDFLOWTime);
             this.uiGroupBox41.Controls.Add(this.label69);
-            this.uiGroupBox41.Controls.Add(this.CH1_2FwdPreMax);
+            this.uiGroupBox41.Controls.Add(this.CH1FwdPreMax);
             this.uiGroupBox41.Controls.Add(this.label70);
             this.uiGroupBox41.Controls.Add(this.label71);
             this.uiGroupBox41.Controls.Add(this.label72);
             this.uiGroupBox41.Controls.Add(this.label73);
-            this.uiGroupBox41.Controls.Add(this.CH1_2Fwd_OverTime);
+            this.uiGroupBox41.Controls.Add(this.CH1FwdPreTime);
             this.uiGroupBox41.Controls.Add(this.label74);
-            this.uiGroupBox41.Controls.Add(this.CH1_2FwdFlowMax);
-            this.uiGroupBox41.Controls.Add(this.CH1_2FwdFlowMin);
+            this.uiGroupBox41.Controls.Add(this.CH1FWDFlowMax);
+            this.uiGroupBox41.Controls.Add(this.CH1FWDFlowMin);
             this.uiGroupBox41.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(243)))), ((int)(((byte)(255)))));
             this.uiGroupBox41.Name = "uiGroupBox41";
             this.uiGroupBox41.Style = Sunny.UI.UIStyle.Custom;
             this.uiGroupBox41.TextAlignment = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // CH1_2FwdPreMin
+            // CH1FwdPreMin
             // 
-            resources.ApplyResources(this.CH1_2FwdPreMin, "CH1_2FwdPreMin");
-            this.CH1_2FwdPreMin.ButtonSymbol = 61761;
-            this.CH1_2FwdPreMin.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.CH1_2FwdPreMin.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(243)))), ((int)(((byte)(255)))));
-            this.CH1_2FwdPreMin.Maximum = 2147483647D;
-            this.CH1_2FwdPreMin.Minimum = -2147483648D;
-            this.CH1_2FwdPreMin.Name = "CH1_2FwdPreMin";
-            this.CH1_2FwdPreMin.Style = Sunny.UI.UIStyle.Custom;
-            this.CH1_2FwdPreMin.TextAlignment = System.Drawing.ContentAlignment.MiddleLeft;
+            resources.ApplyResources(this.CH1FwdPreMin, "CH1FwdPreMin");
+            this.CH1FwdPreMin.ButtonSymbol = 61761;
+            this.CH1FwdPreMin.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.CH1FwdPreMin.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(243)))), ((int)(((byte)(255)))));
+            this.CH1FwdPreMin.Maximum = 2147483647D;
+            this.CH1FwdPreMin.Minimum = -2147483648D;
+            this.CH1FwdPreMin.Name = "CH1FwdPreMin";
+            this.CH1FwdPreMin.Style = Sunny.UI.UIStyle.Custom;
+            this.CH1FwdPreMin.TextAlignment = System.Drawing.ContentAlignment.MiddleLeft;
             // 
-            // CH1_2OverTime
+            // CH1FWDFLOWTime
             // 
-            resources.ApplyResources(this.CH1_2OverTime, "CH1_2OverTime");
-            this.CH1_2OverTime.ButtonSymbol = 61761;
-            this.CH1_2OverTime.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.CH1_2OverTime.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(243)))), ((int)(((byte)(255)))));
-            this.CH1_2OverTime.Maximum = 2147483647D;
-            this.CH1_2OverTime.Minimum = -2147483648D;
-            this.CH1_2OverTime.Name = "CH1_2OverTime";
-            this.CH1_2OverTime.Style = Sunny.UI.UIStyle.Custom;
-            this.CH1_2OverTime.TextAlignment = System.Drawing.ContentAlignment.MiddleLeft;
+            resources.ApplyResources(this.CH1FWDFLOWTime, "CH1FWDFLOWTime");
+            this.CH1FWDFLOWTime.ButtonSymbol = 61761;
+            this.CH1FWDFLOWTime.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.CH1FWDFLOWTime.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(243)))), ((int)(((byte)(255)))));
+            this.CH1FWDFLOWTime.Maximum = 2147483647D;
+            this.CH1FWDFLOWTime.Minimum = -2147483648D;
+            this.CH1FWDFLOWTime.Name = "CH1FWDFLOWTime";
+            this.CH1FWDFLOWTime.Style = Sunny.UI.UIStyle.Custom;
+            this.CH1FWDFLOWTime.TextAlignment = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // label69
             // 
             resources.ApplyResources(this.label69, "label69");
             this.label69.Name = "label69";
             // 
-            // CH1_2FwdPreMax
+            // CH1FwdPreMax
             // 
-            resources.ApplyResources(this.CH1_2FwdPreMax, "CH1_2FwdPreMax");
-            this.CH1_2FwdPreMax.ButtonSymbol = 61761;
-            this.CH1_2FwdPreMax.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.CH1_2FwdPreMax.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(243)))), ((int)(((byte)(255)))));
-            this.CH1_2FwdPreMax.Maximum = 2147483647D;
-            this.CH1_2FwdPreMax.Minimum = -2147483648D;
-            this.CH1_2FwdPreMax.Name = "CH1_2FwdPreMax";
-            this.CH1_2FwdPreMax.Style = Sunny.UI.UIStyle.Custom;
-            this.CH1_2FwdPreMax.TextAlignment = System.Drawing.ContentAlignment.MiddleLeft;
+            resources.ApplyResources(this.CH1FwdPreMax, "CH1FwdPreMax");
+            this.CH1FwdPreMax.ButtonSymbol = 61761;
+            this.CH1FwdPreMax.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.CH1FwdPreMax.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(243)))), ((int)(((byte)(255)))));
+            this.CH1FwdPreMax.Maximum = 2147483647D;
+            this.CH1FwdPreMax.Minimum = -2147483648D;
+            this.CH1FwdPreMax.Name = "CH1FwdPreMax";
+            this.CH1FwdPreMax.Style = Sunny.UI.UIStyle.Custom;
+            this.CH1FwdPreMax.TextAlignment = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // label70
             // 
@@ -3663,90 +3825,108 @@
             resources.ApplyResources(this.label73, "label73");
             this.label73.Name = "label73";
             // 
-            // CH1_2Fwd_OverTime
+            // CH1FwdPreTime
             // 
-            resources.ApplyResources(this.CH1_2Fwd_OverTime, "CH1_2Fwd_OverTime");
-            this.CH1_2Fwd_OverTime.ButtonSymbol = 61761;
-            this.CH1_2Fwd_OverTime.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.CH1_2Fwd_OverTime.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(243)))), ((int)(((byte)(255)))));
-            this.CH1_2Fwd_OverTime.Maximum = 2147483647D;
-            this.CH1_2Fwd_OverTime.Minimum = -2147483648D;
-            this.CH1_2Fwd_OverTime.Name = "CH1_2Fwd_OverTime";
-            this.CH1_2Fwd_OverTime.Style = Sunny.UI.UIStyle.Custom;
-            this.CH1_2Fwd_OverTime.TextAlignment = System.Drawing.ContentAlignment.MiddleLeft;
+            resources.ApplyResources(this.CH1FwdPreTime, "CH1FwdPreTime");
+            this.CH1FwdPreTime.ButtonSymbol = 61761;
+            this.CH1FwdPreTime.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.CH1FwdPreTime.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(243)))), ((int)(((byte)(255)))));
+            this.CH1FwdPreTime.Maximum = 2147483647D;
+            this.CH1FwdPreTime.Minimum = -2147483648D;
+            this.CH1FwdPreTime.Name = "CH1FwdPreTime";
+            this.CH1FwdPreTime.Style = Sunny.UI.UIStyle.Custom;
+            this.CH1FwdPreTime.TextAlignment = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // label74
             // 
             resources.ApplyResources(this.label74, "label74");
             this.label74.Name = "label74";
             // 
-            // CH1_2FwdFlowMax
+            // CH1FWDFlowMax
             // 
-            resources.ApplyResources(this.CH1_2FwdFlowMax, "CH1_2FwdFlowMax");
-            this.CH1_2FwdFlowMax.ButtonSymbol = 61761;
-            this.CH1_2FwdFlowMax.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.CH1_2FwdFlowMax.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(243)))), ((int)(((byte)(255)))));
-            this.CH1_2FwdFlowMax.Maximum = 2147483647D;
-            this.CH1_2FwdFlowMax.Minimum = -2147483648D;
-            this.CH1_2FwdFlowMax.Name = "CH1_2FwdFlowMax";
-            this.CH1_2FwdFlowMax.Style = Sunny.UI.UIStyle.Custom;
-            this.CH1_2FwdFlowMax.TextAlignment = System.Drawing.ContentAlignment.MiddleLeft;
+            resources.ApplyResources(this.CH1FWDFlowMax, "CH1FWDFlowMax");
+            this.CH1FWDFlowMax.ButtonSymbol = 61761;
+            this.CH1FWDFlowMax.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.CH1FWDFlowMax.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(243)))), ((int)(((byte)(255)))));
+            this.CH1FWDFlowMax.Maximum = 2147483647D;
+            this.CH1FWDFlowMax.Minimum = -2147483648D;
+            this.CH1FWDFlowMax.Name = "CH1FWDFlowMax";
+            this.CH1FWDFlowMax.Style = Sunny.UI.UIStyle.Custom;
+            this.CH1FWDFlowMax.TextAlignment = System.Drawing.ContentAlignment.MiddleLeft;
             // 
-            // CH1_2FwdFlowMin
+            // CH1FWDFlowMin
             // 
-            resources.ApplyResources(this.CH1_2FwdFlowMin, "CH1_2FwdFlowMin");
-            this.CH1_2FwdFlowMin.ButtonSymbol = 61761;
-            this.CH1_2FwdFlowMin.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.CH1_2FwdFlowMin.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(243)))), ((int)(((byte)(255)))));
-            this.CH1_2FwdFlowMin.Maximum = 2147483647D;
-            this.CH1_2FwdFlowMin.Minimum = -2147483648D;
-            this.CH1_2FwdFlowMin.Name = "CH1_2FwdFlowMin";
-            this.CH1_2FwdFlowMin.Style = Sunny.UI.UIStyle.Custom;
-            this.CH1_2FwdFlowMin.TextAlignment = System.Drawing.ContentAlignment.MiddleLeft;
+            resources.ApplyResources(this.CH1FWDFlowMin, "CH1FWDFlowMin");
+            this.CH1FWDFlowMin.ButtonSymbol = 61761;
+            this.CH1FWDFlowMin.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.CH1FWDFlowMin.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(243)))), ((int)(((byte)(255)))));
+            this.CH1FWDFlowMin.Maximum = 2147483647D;
+            this.CH1FWDFlowMin.Minimum = -2147483648D;
+            this.CH1FWDFlowMin.Name = "CH1FWDFlowMin";
+            this.CH1FWDFlowMin.Style = Sunny.UI.UIStyle.Custom;
+            this.CH1FWDFlowMin.TextAlignment = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // uiGroupBox33
             // 
             resources.ApplyResources(this.uiGroupBox33, "uiGroupBox33");
-            this.uiGroupBox33.Controls.Add(this.CH2_2FwdPreMin);
-            this.uiGroupBox33.Controls.Add(this.CH2_2PreFwdMax);
+            this.uiGroupBox33.Controls.Add(this.CH2FWDflowtime);
+            this.uiGroupBox33.Controls.Add(this.label11);
+            this.uiGroupBox33.Controls.Add(this.CH2FWDPreMin);
+            this.uiGroupBox33.Controls.Add(this.CH2FWDPreMax);
             this.uiGroupBox33.Controls.Add(this.label5);
             this.uiGroupBox33.Controls.Add(this.label6);
-            this.uiGroupBox33.Controls.Add(this.CH2_2FwdFlowMin);
-            this.uiGroupBox33.Controls.Add(this.CH2_2FwdFlowMax);
-            this.uiGroupBox33.Controls.Add(this.CH2_2Fwd_OverTime);
+            this.uiGroupBox33.Controls.Add(this.CH2FWDFlowMin);
+            this.uiGroupBox33.Controls.Add(this.CH2FWDFlowMax);
+            this.uiGroupBox33.Controls.Add(this.CH2FwdpreTime);
             this.uiGroupBox33.Controls.Add(this.label7);
-            this.uiGroupBox33.Controls.Add(this.label8);
-            this.uiGroupBox33.Controls.Add(this.CH2_2OverTime);
-            this.uiGroupBox33.Controls.Add(this.label9);
             this.uiGroupBox33.Controls.Add(this.label10);
+            this.uiGroupBox33.Controls.Add(this.label8);
             this.uiGroupBox33.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(243)))), ((int)(((byte)(255)))));
             this.uiGroupBox33.Name = "uiGroupBox33";
             this.uiGroupBox33.Style = Sunny.UI.UIStyle.Custom;
             this.uiGroupBox33.TextAlignment = System.Drawing.ContentAlignment.MiddleCenter;
+            this.uiGroupBox33.Click += new System.EventHandler(this.uiGroupBox33_Click);
             // 
-            // CH2_2FwdPreMin
+            // CH2FWDflowtime
             // 
-            resources.ApplyResources(this.CH2_2FwdPreMin, "CH2_2FwdPreMin");
-            this.CH2_2FwdPreMin.ButtonSymbol = 61761;
-            this.CH2_2FwdPreMin.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.CH2_2FwdPreMin.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(243)))), ((int)(((byte)(255)))));
-            this.CH2_2FwdPreMin.Maximum = 2147483647D;
-            this.CH2_2FwdPreMin.Minimum = -2147483648D;
-            this.CH2_2FwdPreMin.Name = "CH2_2FwdPreMin";
-            this.CH2_2FwdPreMin.Style = Sunny.UI.UIStyle.Custom;
-            this.CH2_2FwdPreMin.TextAlignment = System.Drawing.ContentAlignment.MiddleLeft;
+            resources.ApplyResources(this.CH2FWDflowtime, "CH2FWDflowtime");
+            this.CH2FWDflowtime.ButtonSymbol = 61761;
+            this.CH2FWDflowtime.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.CH2FWDflowtime.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(243)))), ((int)(((byte)(255)))));
+            this.CH2FWDflowtime.Maximum = 2147483647D;
+            this.CH2FWDflowtime.Minimum = -2147483648D;
+            this.CH2FWDflowtime.Name = "CH2FWDflowtime";
+            this.CH2FWDflowtime.Style = Sunny.UI.UIStyle.Custom;
+            this.CH2FWDflowtime.TextAlignment = System.Drawing.ContentAlignment.MiddleLeft;
             // 
-            // CH2_2PreFwdMax
+            // label11
             // 
-            resources.ApplyResources(this.CH2_2PreFwdMax, "CH2_2PreFwdMax");
-            this.CH2_2PreFwdMax.ButtonSymbol = 61761;
-            this.CH2_2PreFwdMax.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.CH2_2PreFwdMax.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(243)))), ((int)(((byte)(255)))));
-            this.CH2_2PreFwdMax.Maximum = 2147483647D;
-            this.CH2_2PreFwdMax.Minimum = -2147483648D;
-            this.CH2_2PreFwdMax.Name = "CH2_2PreFwdMax";
-            this.CH2_2PreFwdMax.Style = Sunny.UI.UIStyle.Custom;
-            this.CH2_2PreFwdMax.TextAlignment = System.Drawing.ContentAlignment.MiddleLeft;
+            resources.ApplyResources(this.label11, "label11");
+            this.label11.Name = "label11";
+            // 
+            // CH2FWDPreMin
+            // 
+            resources.ApplyResources(this.CH2FWDPreMin, "CH2FWDPreMin");
+            this.CH2FWDPreMin.ButtonSymbol = 61761;
+            this.CH2FWDPreMin.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.CH2FWDPreMin.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(243)))), ((int)(((byte)(255)))));
+            this.CH2FWDPreMin.Maximum = 2147483647D;
+            this.CH2FWDPreMin.Minimum = -2147483648D;
+            this.CH2FWDPreMin.Name = "CH2FWDPreMin";
+            this.CH2FWDPreMin.Style = Sunny.UI.UIStyle.Custom;
+            this.CH2FWDPreMin.TextAlignment = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // CH2FWDPreMax
+            // 
+            resources.ApplyResources(this.CH2FWDPreMax, "CH2FWDPreMax");
+            this.CH2FWDPreMax.ButtonSymbol = 61761;
+            this.CH2FWDPreMax.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.CH2FWDPreMax.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(243)))), ((int)(((byte)(255)))));
+            this.CH2FWDPreMax.Maximum = 2147483647D;
+            this.CH2FWDPreMax.Minimum = -2147483648D;
+            this.CH2FWDPreMax.Name = "CH2FWDPreMax";
+            this.CH2FWDPreMax.Style = Sunny.UI.UIStyle.Custom;
+            this.CH2FWDPreMax.TextAlignment = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // label5
             // 
@@ -3758,195 +3938,57 @@
             resources.ApplyResources(this.label6, "label6");
             this.label6.Name = "label6";
             // 
-            // CH2_2FwdFlowMin
+            // CH2FWDFlowMin
             // 
-            resources.ApplyResources(this.CH2_2FwdFlowMin, "CH2_2FwdFlowMin");
-            this.CH2_2FwdFlowMin.ButtonSymbol = 61761;
-            this.CH2_2FwdFlowMin.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.CH2_2FwdFlowMin.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(243)))), ((int)(((byte)(255)))));
-            this.CH2_2FwdFlowMin.Maximum = 2147483647D;
-            this.CH2_2FwdFlowMin.Minimum = -2147483648D;
-            this.CH2_2FwdFlowMin.Name = "CH2_2FwdFlowMin";
-            this.CH2_2FwdFlowMin.Style = Sunny.UI.UIStyle.Custom;
-            this.CH2_2FwdFlowMin.TextAlignment = System.Drawing.ContentAlignment.MiddleLeft;
+            resources.ApplyResources(this.CH2FWDFlowMin, "CH2FWDFlowMin");
+            this.CH2FWDFlowMin.ButtonSymbol = 61761;
+            this.CH2FWDFlowMin.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.CH2FWDFlowMin.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(243)))), ((int)(((byte)(255)))));
+            this.CH2FWDFlowMin.Maximum = 2147483647D;
+            this.CH2FWDFlowMin.Minimum = -2147483648D;
+            this.CH2FWDFlowMin.Name = "CH2FWDFlowMin";
+            this.CH2FWDFlowMin.Style = Sunny.UI.UIStyle.Custom;
+            this.CH2FWDFlowMin.TextAlignment = System.Drawing.ContentAlignment.MiddleLeft;
             // 
-            // CH2_2FwdFlowMax
+            // CH2FWDFlowMax
             // 
-            resources.ApplyResources(this.CH2_2FwdFlowMax, "CH2_2FwdFlowMax");
-            this.CH2_2FwdFlowMax.ButtonSymbol = 61761;
-            this.CH2_2FwdFlowMax.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.CH2_2FwdFlowMax.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(243)))), ((int)(((byte)(255)))));
-            this.CH2_2FwdFlowMax.Maximum = 2147483647D;
-            this.CH2_2FwdFlowMax.Minimum = -2147483648D;
-            this.CH2_2FwdFlowMax.Name = "CH2_2FwdFlowMax";
-            this.CH2_2FwdFlowMax.Style = Sunny.UI.UIStyle.Custom;
-            this.CH2_2FwdFlowMax.TextAlignment = System.Drawing.ContentAlignment.MiddleLeft;
+            resources.ApplyResources(this.CH2FWDFlowMax, "CH2FWDFlowMax");
+            this.CH2FWDFlowMax.ButtonSymbol = 61761;
+            this.CH2FWDFlowMax.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.CH2FWDFlowMax.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(243)))), ((int)(((byte)(255)))));
+            this.CH2FWDFlowMax.Maximum = 2147483647D;
+            this.CH2FWDFlowMax.Minimum = -2147483648D;
+            this.CH2FWDFlowMax.Name = "CH2FWDFlowMax";
+            this.CH2FWDFlowMax.Style = Sunny.UI.UIStyle.Custom;
+            this.CH2FWDFlowMax.TextAlignment = System.Drawing.ContentAlignment.MiddleLeft;
+            this.CH2FWDFlowMax.TextChanged += new System.EventHandler(this.CH2FWDFlowMax_TextChanged);
             // 
-            // CH2_2Fwd_OverTime
+            // CH2FwdpreTime
             // 
-            resources.ApplyResources(this.CH2_2Fwd_OverTime, "CH2_2Fwd_OverTime");
-            this.CH2_2Fwd_OverTime.ButtonSymbol = 61761;
-            this.CH2_2Fwd_OverTime.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.CH2_2Fwd_OverTime.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(243)))), ((int)(((byte)(255)))));
-            this.CH2_2Fwd_OverTime.Maximum = 2147483647D;
-            this.CH2_2Fwd_OverTime.Minimum = -2147483648D;
-            this.CH2_2Fwd_OverTime.Name = "CH2_2Fwd_OverTime";
-            this.CH2_2Fwd_OverTime.Style = Sunny.UI.UIStyle.Custom;
-            this.CH2_2Fwd_OverTime.TextAlignment = System.Drawing.ContentAlignment.MiddleLeft;
+            resources.ApplyResources(this.CH2FwdpreTime, "CH2FwdpreTime");
+            this.CH2FwdpreTime.ButtonSymbol = 61761;
+            this.CH2FwdpreTime.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.CH2FwdpreTime.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(243)))), ((int)(((byte)(255)))));
+            this.CH2FwdpreTime.Maximum = 2147483647D;
+            this.CH2FwdpreTime.Minimum = -2147483648D;
+            this.CH2FwdpreTime.Name = "CH2FwdpreTime";
+            this.CH2FwdpreTime.Style = Sunny.UI.UIStyle.Custom;
+            this.CH2FwdpreTime.TextAlignment = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // label7
             // 
             resources.ApplyResources(this.label7, "label7");
             this.label7.Name = "label7";
             // 
-            // label8
-            // 
-            resources.ApplyResources(this.label8, "label8");
-            this.label8.Name = "label8";
-            // 
-            // CH2_2OverTime
-            // 
-            resources.ApplyResources(this.CH2_2OverTime, "CH2_2OverTime");
-            this.CH2_2OverTime.ButtonSymbol = 61761;
-            this.CH2_2OverTime.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.CH2_2OverTime.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(243)))), ((int)(((byte)(255)))));
-            this.CH2_2OverTime.Maximum = 2147483647D;
-            this.CH2_2OverTime.Minimum = -2147483648D;
-            this.CH2_2OverTime.Name = "CH2_2OverTime";
-            this.CH2_2OverTime.Style = Sunny.UI.UIStyle.Custom;
-            this.CH2_2OverTime.TextAlignment = System.Drawing.ContentAlignment.MiddleLeft;
-            // 
-            // label9
-            // 
-            resources.ApplyResources(this.label9, "label9");
-            this.label9.Name = "label9";
-            // 
             // label10
             // 
             resources.ApplyResources(this.label10, "label10");
             this.label10.Name = "label10";
             // 
-            // uiGroupBox37
+            // label8
             // 
-            resources.ApplyResources(this.uiGroupBox37, "uiGroupBox37");
-            this.uiGroupBox37.Controls.Add(this.uiTextBox7);
-            this.uiGroupBox37.Controls.Add(this.uiTextBox8);
-            this.uiGroupBox37.Controls.Add(this.label11);
-            this.uiGroupBox37.Controls.Add(this.uiTextBox9);
-            this.uiGroupBox37.Controls.Add(this.label12);
-            this.uiGroupBox37.Controls.Add(this.label47);
-            this.uiGroupBox37.Controls.Add(this.label49);
-            this.uiGroupBox37.Controls.Add(this.label50);
-            this.uiGroupBox37.Controls.Add(this.uiTextBox10);
-            this.uiGroupBox37.Controls.Add(this.label51);
-            this.uiGroupBox37.Controls.Add(this.uiTextBox11);
-            this.uiGroupBox37.Controls.Add(this.uiTextBox12);
-            this.uiGroupBox37.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(243)))), ((int)(((byte)(255)))));
-            this.uiGroupBox37.Name = "uiGroupBox37";
-            this.uiGroupBox37.Style = Sunny.UI.UIStyle.Custom;
-            this.uiGroupBox37.TextAlignment = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // uiTextBox7
-            // 
-            resources.ApplyResources(this.uiTextBox7, "uiTextBox7");
-            this.uiTextBox7.ButtonSymbol = 61761;
-            this.uiTextBox7.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.uiTextBox7.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(243)))), ((int)(((byte)(255)))));
-            this.uiTextBox7.Maximum = 2147483647D;
-            this.uiTextBox7.Minimum = -2147483648D;
-            this.uiTextBox7.Name = "uiTextBox7";
-            this.uiTextBox7.Style = Sunny.UI.UIStyle.Custom;
-            this.uiTextBox7.TextAlignment = System.Drawing.ContentAlignment.MiddleLeft;
-            // 
-            // uiTextBox8
-            // 
-            resources.ApplyResources(this.uiTextBox8, "uiTextBox8");
-            this.uiTextBox8.ButtonSymbol = 61761;
-            this.uiTextBox8.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.uiTextBox8.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(243)))), ((int)(((byte)(255)))));
-            this.uiTextBox8.Maximum = 2147483647D;
-            this.uiTextBox8.Minimum = -2147483648D;
-            this.uiTextBox8.Name = "uiTextBox8";
-            this.uiTextBox8.Style = Sunny.UI.UIStyle.Custom;
-            this.uiTextBox8.TextAlignment = System.Drawing.ContentAlignment.MiddleLeft;
-            // 
-            // label11
-            // 
-            resources.ApplyResources(this.label11, "label11");
-            this.label11.Name = "label11";
-            // 
-            // uiTextBox9
-            // 
-            resources.ApplyResources(this.uiTextBox9, "uiTextBox9");
-            this.uiTextBox9.ButtonSymbol = 61761;
-            this.uiTextBox9.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.uiTextBox9.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(243)))), ((int)(((byte)(255)))));
-            this.uiTextBox9.Maximum = 2147483647D;
-            this.uiTextBox9.Minimum = -2147483648D;
-            this.uiTextBox9.Name = "uiTextBox9";
-            this.uiTextBox9.Style = Sunny.UI.UIStyle.Custom;
-            this.uiTextBox9.TextAlignment = System.Drawing.ContentAlignment.MiddleLeft;
-            // 
-            // label12
-            // 
-            resources.ApplyResources(this.label12, "label12");
-            this.label12.Name = "label12";
-            // 
-            // label47
-            // 
-            resources.ApplyResources(this.label47, "label47");
-            this.label47.Name = "label47";
-            // 
-            // label49
-            // 
-            resources.ApplyResources(this.label49, "label49");
-            this.label49.Name = "label49";
-            // 
-            // label50
-            // 
-            resources.ApplyResources(this.label50, "label50");
-            this.label50.Name = "label50";
-            // 
-            // uiTextBox10
-            // 
-            resources.ApplyResources(this.uiTextBox10, "uiTextBox10");
-            this.uiTextBox10.ButtonSymbol = 61761;
-            this.uiTextBox10.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.uiTextBox10.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(243)))), ((int)(((byte)(255)))));
-            this.uiTextBox10.Maximum = 2147483647D;
-            this.uiTextBox10.Minimum = -2147483648D;
-            this.uiTextBox10.Name = "uiTextBox10";
-            this.uiTextBox10.Style = Sunny.UI.UIStyle.Custom;
-            this.uiTextBox10.TextAlignment = System.Drawing.ContentAlignment.MiddleLeft;
-            // 
-            // label51
-            // 
-            resources.ApplyResources(this.label51, "label51");
-            this.label51.Name = "label51";
-            // 
-            // uiTextBox11
-            // 
-            resources.ApplyResources(this.uiTextBox11, "uiTextBox11");
-            this.uiTextBox11.ButtonSymbol = 61761;
-            this.uiTextBox11.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.uiTextBox11.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(243)))), ((int)(((byte)(255)))));
-            this.uiTextBox11.Maximum = 2147483647D;
-            this.uiTextBox11.Minimum = -2147483648D;
-            this.uiTextBox11.Name = "uiTextBox11";
-            this.uiTextBox11.Style = Sunny.UI.UIStyle.Custom;
-            this.uiTextBox11.TextAlignment = System.Drawing.ContentAlignment.MiddleLeft;
-            // 
-            // uiTextBox12
-            // 
-            resources.ApplyResources(this.uiTextBox12, "uiTextBox12");
-            this.uiTextBox12.ButtonSymbol = 61761;
-            this.uiTextBox12.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.uiTextBox12.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(243)))), ((int)(((byte)(255)))));
-            this.uiTextBox12.Maximum = 2147483647D;
-            this.uiTextBox12.Minimum = -2147483648D;
-            this.uiTextBox12.Name = "uiTextBox12";
-            this.uiTextBox12.Style = Sunny.UI.UIStyle.Custom;
-            this.uiTextBox12.TextAlignment = System.Drawing.ContentAlignment.MiddleLeft;
+            resources.ApplyResources(this.label8, "label8");
+            this.label8.Name = "label8";
             // 
             // RFWDParamsCopy
             // 
@@ -5475,6 +5517,10 @@
             this.uiGroupBox26.ResumeLayout(false);
             this.uiGroupBox34.ResumeLayout(false);
             this.uiGroupBox34.PerformLayout();
+            this.uiGroupBox37.ResumeLayout(false);
+            this.uiGroupBox37.PerformLayout();
+            this.uiTextBox3.ResumeLayout(false);
+            this.uiTextBox3.PerformLayout();
             this.uiGroupBox22.ResumeLayout(false);
             this.uiGroupBox16.ResumeLayout(false);
             this.uiGroupBox16.PerformLayout();
@@ -5507,12 +5553,12 @@
             this.uiGroupBox10.ResumeLayout(false);
             this.uiGroupBox10.PerformLayout();
             this.tabPage6.ResumeLayout(false);
+            this.uiGroupBox43.ResumeLayout(false);
+            this.uiGroupBox43.PerformLayout();
             this.uiGroupBox41.ResumeLayout(false);
             this.uiGroupBox41.PerformLayout();
             this.uiGroupBox33.ResumeLayout(false);
             this.uiGroupBox33.PerformLayout();
-            this.uiGroupBox37.ResumeLayout(false);
-            this.uiGroupBox37.PerformLayout();
             this.tabPage2.ResumeLayout(false);
             this.uiTabControlMenu2.ResumeLayout(false);
             this.tabPage7.ResumeLayout(false);
@@ -6060,43 +6106,47 @@
         private System.Windows.Forms.Label CFDOWNindex;
         private System.Windows.Forms.Label CFUPindex;
         private Sunny.UI.UIGroupBox uiGroupBox41;
-        private Sunny.UI.UITextBox CH1_2FwdPreMin;
-        private Sunny.UI.UITextBox CH1_2OverTime;
+        private Sunny.UI.UITextBox CH1FwdPreMin;
+        private Sunny.UI.UITextBox CH1FWDFLOWTime;
         private System.Windows.Forms.Label label69;
-        private Sunny.UI.UITextBox CH1_2FwdPreMax;
+        private Sunny.UI.UITextBox CH1FwdPreMax;
         private System.Windows.Forms.Label label70;
         private System.Windows.Forms.Label label71;
         private System.Windows.Forms.Label label72;
         private System.Windows.Forms.Label label73;
-        private Sunny.UI.UITextBox CH1_2Fwd_OverTime;
+        private Sunny.UI.UITextBox CH1FwdPreTime;
         private System.Windows.Forms.Label label74;
-        private Sunny.UI.UITextBox CH1_2FwdFlowMax;
-        private Sunny.UI.UITextBox CH1_2FwdFlowMin;
+        private Sunny.UI.UITextBox CH1FWDFlowMax;
+        private Sunny.UI.UITextBox CH1FWDFlowMin;
         private Sunny.UI.UIGroupBox uiGroupBox33;
-        private Sunny.UI.UITextBox CH2_2FwdPreMin;
-        private Sunny.UI.UITextBox CH2_2PreFwdMax;
+        private Sunny.UI.UITextBox CH2FWDPreMin;
+        private Sunny.UI.UITextBox CH2FWDPreMax;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label6;
-        private Sunny.UI.UITextBox CH2_2FwdFlowMin;
-        private Sunny.UI.UITextBox CH2_2FwdFlowMax;
-        private Sunny.UI.UITextBox CH2_2Fwd_OverTime;
+        private Sunny.UI.UITextBox CH2FWDFlowMin;
+        private Sunny.UI.UITextBox CH2FWDFlowMax;
+        private Sunny.UI.UITextBox CH2FwdpreTime;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Label label8;
-        private Sunny.UI.UITextBox CH2_2OverTime;
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.Label label10;
         private Sunny.UI.UIGroupBox uiGroupBox37;
-        private Sunny.UI.UITextBox uiTextBox7;
-        private Sunny.UI.UITextBox uiTextBox8;
-        private System.Windows.Forms.Label label11;
-        private Sunny.UI.UITextBox uiTextBox9;
+        private Sunny.UI.UITextBox uiTextBox1;
+        private Sunny.UI.UITextBox uiTextBox2;
         private System.Windows.Forms.Label label12;
         private System.Windows.Forms.Label label47;
+        private Sunny.UI.UITextBox uiTextBox3;
+        private Sunny.UI.UITextBox uiTextBox4;
         private System.Windows.Forms.Label label49;
         private System.Windows.Forms.Label label50;
-        private Sunny.UI.UITextBox uiTextBox10;
+        private Sunny.UI.UIGroupBox uiGroupBox43;
+        private Sunny.UI.UITextBox TotalPreMax;
         private System.Windows.Forms.Label label51;
-        private Sunny.UI.UITextBox uiTextBox11;
-        private Sunny.UI.UITextBox uiTextBox12;
+        private Sunny.UI.UITextBox TotalFlowMin;
+        private Sunny.UI.UITextBox TotalFlowMax;
+        private System.Windows.Forms.Label label78;
+        private System.Windows.Forms.Label label79;
+        private Sunny.UI.UITextBox CH2FWDflowtime;
+        private System.Windows.Forms.Label label11;
     }
 }

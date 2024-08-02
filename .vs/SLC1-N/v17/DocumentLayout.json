@@ -7,20 +7,96 @@
       "RelativeMoniker": "D:0:0:{F7F71589-095A-45C2-975C-739BE2D1CE15}|SLC1-N\\SLC1-N.csproj|solutionrelative:slc1-n\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{F7F71589-095A-45C2-975C-739BE2D1CE15}|SLC1-N\\SLC1-N.csproj|c:\\users\\administrator\\desktop\\24072801\\slc1-n\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "AbsoluteMoniker": "D:0:0:{F7F71589-095A-45C2-975C-739BE2D1CE15}|SLC1-N\\SLC1-N.csproj|C:\\Users\\Administrator\\Desktop\\24072801\\slc1-n\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{F7F71589-095A-45C2-975C-739BE2D1CE15}|SLC1-N\\SLC1-N.csproj|solutionrelative:slc1-n\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{F7F71589-095A-45C2-975C-739BE2D1CE15}|SLC1-N\\SLC1-N.csproj|c:\\users\\administrator\\desktop\\24072801\\slc1-n\\electricity.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "AbsoluteMoniker": "D:0:0:{F7F71589-095A-45C2-975C-739BE2D1CE15}|SLC1-N\\SLC1-N.csproj|C:\\Users\\Administrator\\Desktop\\24072801\\slc1-n\\form1.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F7F71589-095A-45C2-975C-739BE2D1CE15}|SLC1-N\\SLC1-N.csproj|solutionrelative:slc1-n\\form1.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F7F71589-095A-45C2-975C-739BE2D1CE15}|SLC1-N\\SLC1-N.csproj|C:\\Users\\Administrator\\Desktop\\24072801\\slc1-n\\port.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F7F71589-095A-45C2-975C-739BE2D1CE15}|SLC1-N\\SLC1-N.csproj|solutionrelative:slc1-n\\port.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F7F71589-095A-45C2-975C-739BE2D1CE15}|SLC1-N\\SLC1-N.csproj|C:\\Users\\Administrator\\Desktop\\24072801\\slc1-n\\electricity.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{F7F71589-095A-45C2-975C-739BE2D1CE15}|SLC1-N\\SLC1-N.csproj|solutionrelative:slc1-n\\electricity.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{F7F71589-095A-45C2-975C-739BE2D1CE15}|SLC1-N\\SLC1-N.csproj|c:\\users\\administrator\\desktop\\24072801\\slc1-n\\flowconfig.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "AbsoluteMoniker": "D:0:0:{F7F71589-095A-45C2-975C-739BE2D1CE15}|SLC1-N\\SLC1-N.csproj|C:\\Users\\Administrator\\Desktop\\24072801\\slc1-n\\electricity.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F7F71589-095A-45C2-975C-739BE2D1CE15}|SLC1-N\\SLC1-N.csproj|solutionrelative:slc1-n\\electricity.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F7F71589-095A-45C2-975C-739BE2D1CE15}|SLC1-N\\SLC1-N.csproj|C:\\Users\\Administrator\\Desktop\\24072801\\slc1-n\\model.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F7F71589-095A-45C2-975C-739BE2D1CE15}|SLC1-N\\SLC1-N.csproj|solutionrelative:slc1-n\\model.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F7F71589-095A-45C2-975C-739BE2D1CE15}|SLC1-N\\SLC1-N.csproj|C:\\Users\\Administrator\\Desktop\\24072801\\slc1-n\\plcconfig.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{F7F71589-095A-45C2-975C-739BE2D1CE15}|SLC1-N\\SLC1-N.csproj|solutionrelative:slc1-n\\plcconfig.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F7F71589-095A-45C2-975C-739BE2D1CE15}|SLC1-N\\SLC1-N.csproj|C:\\Users\\Administrator\\Desktop\\24072801\\slc1-n\\configini.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F7F71589-095A-45C2-975C-739BE2D1CE15}|SLC1-N\\SLC1-N.csproj|solutionrelative:slc1-n\\configini.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F7F71589-095A-45C2-975C-739BE2D1CE15}|SLC1-N\\SLC1-N.csproj|C:\\Users\\Administrator\\Desktop\\24072801\\slc1-n\\configtcp.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{F7F71589-095A-45C2-975C-739BE2D1CE15}|SLC1-N\\SLC1-N.csproj|solutionrelative:slc1-n\\configtcp.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F7F71589-095A-45C2-975C-739BE2D1CE15}|SLC1-N\\SLC1-N.csproj|C:\\Users\\Administrator\\Desktop\\24072801\\slc1-n\\configlogon.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{F7F71589-095A-45C2-975C-739BE2D1CE15}|SLC1-N\\SLC1-N.csproj|solutionrelative:slc1-n\\configlogon.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F7F71589-095A-45C2-975C-739BE2D1CE15}|SLC1-N\\SLC1-N.csproj|C:\\Users\\Administrator\\Desktop\\24072801\\slc1-n\\electricity.resx||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{F7F71589-095A-45C2-975C-739BE2D1CE15}|SLC1-N\\SLC1-N.csproj|solutionrelative:slc1-n\\electricity.resx||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F7F71589-095A-45C2-975C-739BE2D1CE15}|SLC1-N\\SLC1-N.csproj|C:\\Users\\Administrator\\Desktop\\24072801\\slc1-n\\electricity.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F7F71589-095A-45C2-975C-739BE2D1CE15}|SLC1-N\\SLC1-N.csproj|solutionrelative:slc1-n\\electricity.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FB7970FD-F699-4093-83D0-509501B7863C}|tongxin\\NetWorkHelper\\NetWorkHelper.csproj|C:\\Users\\Administrator\\Desktop\\24072801\\tongxin\\networkhelper\\tcp\\itcpclient.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FB7970FD-F699-4093-83D0-509501B7863C}|tongxin\\NetWorkHelper\\NetWorkHelper.csproj|solutionrelative:tongxin\\networkhelper\\tcp\\itcpclient.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F7F71589-095A-45C2-975C-739BE2D1CE15}|SLC1-N\\SLC1-N.csproj|C:\\Users\\Administrator\\Desktop\\24072801\\slc1-n\\plcconnect.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F7F71589-095A-45C2-975C-739BE2D1CE15}|SLC1-N\\SLC1-N.csproj|solutionrelative:slc1-n\\plcconnect.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FB7970FD-F699-4093-83D0-509501B7863C}|tongxin\\NetWorkHelper\\NetWorkHelper.csproj|C:\\Users\\Administrator\\Desktop\\24072801\\tongxin\\networkhelper\\helper\\xmlhelper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FB7970FD-F699-4093-83D0-509501B7863C}|tongxin\\NetWorkHelper\\NetWorkHelper.csproj|solutionrelative:tongxin\\networkhelper\\helper\\xmlhelper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F7F71589-095A-45C2-975C-739BE2D1CE15}|SLC1-N\\SLC1-N.csproj|C:\\Users\\Administrator\\Desktop\\24072801\\slc1-n\\readconfig.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F7F71589-095A-45C2-975C-739BE2D1CE15}|SLC1-N\\SLC1-N.csproj|solutionrelative:slc1-n\\readconfig.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FB7970FD-F699-4093-83D0-509501B7863C}|tongxin\\NetWorkHelper\\NetWorkHelper.csproj|C:\\Users\\Administrator\\Desktop\\24072801\\tongxin\\networkhelper\\helper\\collectionhelper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FB7970FD-F699-4093-83D0-509501B7863C}|tongxin\\NetWorkHelper\\NetWorkHelper.csproj|solutionrelative:tongxin\\networkhelper\\helper\\collectionhelper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F7F71589-095A-45C2-975C-739BE2D1CE15}|SLC1-N\\SLC1-N.csproj|C:\\Users\\Administrator\\Desktop\\24072801\\slc1-n\\flowconfig.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F7F71589-095A-45C2-975C-739BE2D1CE15}|SLC1-N\\SLC1-N.csproj|solutionrelative:slc1-n\\flowconfig.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F7F71589-095A-45C2-975C-739BE2D1CE15}|SLC1-N\\SLC1-N.csproj|C:\\Users\\Administrator\\Desktop\\24072801\\slc1-n\\selectmachine.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F7F71589-095A-45C2-975C-739BE2D1CE15}|SLC1-N\\SLC1-N.csproj|solutionrelative:slc1-n\\selectmachine.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F7F71589-095A-45C2-975C-739BE2D1CE15}|SLC1-N\\SLC1-N.csproj|C:\\Users\\Administrator\\Desktop\\24072801\\slc1-n\\selectmachine.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{F7F71589-095A-45C2-975C-739BE2D1CE15}|SLC1-N\\SLC1-N.csproj|solutionrelative:slc1-n\\selectmachine.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F7F71589-095A-45C2-975C-739BE2D1CE15}|SLC1-N\\SLC1-N.csproj|C:\\Users\\Administrator\\Desktop\\24072801\\slc1-n\\config.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{F7F71589-095A-45C2-975C-739BE2D1CE15}|SLC1-N\\SLC1-N.csproj|solutionrelative:slc1-n\\config.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F7F71589-095A-45C2-975C-739BE2D1CE15}|SLC1-N\\SLC1-N.csproj|C:\\Users\\Administrator\\Desktop\\24072801\\slc1-n\\flowconfig.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{F7F71589-095A-45C2-975C-739BE2D1CE15}|SLC1-N\\SLC1-N.csproj|solutionrelative:slc1-n\\flowconfig.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{F7F71589-095A-45C2-975C-739BE2D1CE15}|SLC1-N\\SLC1-N.csproj|c:\\users\\administrator\\desktop\\24072801\\slc1-n\\electricity.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F7F71589-095A-45C2-975C-739BE2D1CE15}|SLC1-N\\SLC1-N.csproj|solutionrelative:slc1-n\\electricity.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{F7F71589-095A-45C2-975C-739BE2D1CE15}|SLC1-N\\SLC1-N.csproj|C:\\Users\\Administrator\\Desktop\\24072801\\slc1-n\\plcconfig.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F7F71589-095A-45C2-975C-739BE2D1CE15}|SLC1-N\\SLC1-N.csproj|solutionrelative:slc1-n\\plcconfig.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -30,44 +106,24 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 4,
+          "SelectedChildIndex": 3,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "Electricity.cs",
-              "DocumentMoniker": "C:\\Users\\Administrator\\Desktop\\24072801\\SLC1-N\\Electricity.cs",
-              "RelativeDocumentMoniker": "SLC1-N\\Electricity.cs",
-              "ToolTip": "C:\\Users\\Administrator\\Desktop\\24072801\\SLC1-N\\Electricity.cs",
-              "RelativeToolTip": "SLC1-N\\Electricity.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAADwvwgAAAABAAAA",
+              "DocumentIndex": 6,
+              "Title": "Model.cs",
+              "DocumentMoniker": "C:\\Users\\Administrator\\Desktop\\24072801\\SLC1-N\\Model.cs",
+              "RelativeDocumentMoniker": "SLC1-N\\Model.cs",
+              "ToolTip": "C:\\Users\\Administrator\\Desktop\\24072801\\SLC1-N\\Model.cs",
+              "RelativeToolTip": "SLC1-N\\Model.cs",
+              "ViewState": "AQIAACIAAAAAAAAAAAAvwC8AAAAnAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-30T07:18:59.377Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-07-30T19:43:21.58Z",
+              "IsPinned": true
             },
             {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "Electricity.cs [\u8BBE\u8BA1 - \u4E2D\u6587]",
-              "DocumentMoniker": "C:\\Users\\Administrator\\Desktop\\24072801\\SLC1-N\\Electricity.cs",
-              "RelativeDocumentMoniker": "SLC1-N\\Electricity.cs",
-              "ToolTip": "C:\\Users\\Administrator\\Desktop\\24072801\\SLC1-N\\Electricity.cs [\u8BBE\u8BA1 - \u4E2D\u6587]",
-              "RelativeToolTip": "SLC1-N\\Electricity.cs [\u8BBE\u8BA1 - \u4E2D\u6587]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-30T07:12:39.929Z",
-              "EditorCaption": " [\u8BBE\u8BA1 - \u4E2D\u6587]"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "FlowConfig.cs [\u8BBE\u8BA1 - \u82F1\u8BED]",
-              "DocumentMoniker": "C:\\Users\\Administrator\\Desktop\\24072801\\SLC1-N\\FlowConfig.cs",
-              "RelativeDocumentMoniker": "SLC1-N\\FlowConfig.cs",
-              "ToolTip": "C:\\Users\\Administrator\\Desktop\\24072801\\SLC1-N\\FlowConfig.cs [\u8BBE\u8BA1 - \u82F1\u8BED]",
-              "RelativeToolTip": "SLC1-N\\FlowConfig.cs [\u8BBE\u8BA1 - \u82F1\u8BED]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-30T07:12:32.616Z",
-              "EditorCaption": " [\u8BBE\u8BA1 - \u82F1\u8BED]"
+              "$type": "Bookmark",
+              "Name": "ST:128:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
             },
             {
               "$type": "Bookmark",
@@ -79,12 +135,36 @@
               "Title": "Form1.cs",
               "DocumentMoniker": "C:\\Users\\Administrator\\Desktop\\24072801\\SLC1-N\\Form1.cs",
               "RelativeDocumentMoniker": "SLC1-N\\Form1.cs",
-              "ToolTip": "C:\\Users\\Administrator\\Desktop\\24072801\\SLC1-N\\Form1.cs",
-              "RelativeToolTip": "SLC1-N\\Form1.cs",
-              "ViewState": "AQIAAEYCAAAAAAAAAAD4v1UCAAAWAAAA",
+              "ToolTip": "C:\\Users\\Administrator\\Desktop\\24072801\\SLC1-N\\Form1.cs*",
+              "RelativeToolTip": "SLC1-N\\Form1.cs*",
+              "ViewState": "AQIAAHgSAAAAAAAAAAAQwDYSAAA9AAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-07-29T15:34:04.989Z",
               "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Port.cs",
+              "DocumentMoniker": "C:\\Users\\Administrator\\Desktop\\24072801\\SLC1-N\\Port.cs",
+              "RelativeDocumentMoniker": "SLC1-N\\Port.cs",
+              "ToolTip": "C:\\Users\\Administrator\\Desktop\\24072801\\SLC1-N\\Port.cs",
+              "RelativeToolTip": "SLC1-N\\Port.cs",
+              "ViewState": "AQIAAEIAAAAAAAAAAAAIwEwAAAApAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-01T19:47:02.73Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Form1.Designer.cs",
+              "DocumentMoniker": "C:\\Users\\Administrator\\Desktop\\24072801\\SLC1-N\\Form1.Designer.cs",
+              "RelativeDocumentMoniker": "SLC1-N\\Form1.Designer.cs",
+              "ToolTip": "C:\\Users\\Administrator\\Desktop\\24072801\\SLC1-N\\Form1.Designer.cs",
+              "RelativeToolTip": "SLC1-N\\Form1.Designer.cs",
+              "ViewState": "AQIAAGMDAAAAAAAAAAAQwG4DAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-01T19:25:31.592Z"
             },
             {
               "$type": "Document",
@@ -95,8 +175,231 @@
               "ToolTip": "C:\\Users\\Administrator\\Desktop\\24072801\\SLC1-N\\Form1.cs [\u8BBE\u8BA1 - \u4E2D\u6587]",
               "RelativeToolTip": "SLC1-N\\Form1.cs [\u8BBE\u8BA1 - \u4E2D\u6587]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-29T15:31:26.871Z",
-              "EditorCaption": " [\u8BBE\u8BA1 - \u4E2D\u6587]"
+              "WhenOpened": "2024-07-29T15:31:26.871Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "PLCConfig.cs [\u8BBE\u8BA1 - \u4E2D\u6587]",
+              "DocumentMoniker": "C:\\Users\\Administrator\\Desktop\\24072801\\SLC1-N\\PLCConfig.cs",
+              "RelativeDocumentMoniker": "SLC1-N\\PLCConfig.cs",
+              "ToolTip": "C:\\Users\\Administrator\\Desktop\\24072801\\SLC1-N\\PLCConfig.cs [\u8BBE\u8BA1 - \u4E2D\u6587]",
+              "RelativeToolTip": "SLC1-N\\PLCConfig.cs [\u8BBE\u8BA1 - \u4E2D\u6587]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-01T15:03:34.619Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "ConfigINI.cs",
+              "DocumentMoniker": "C:\\Users\\Administrator\\Desktop\\24072801\\SLC1-N\\ConfigINI.cs",
+              "RelativeDocumentMoniker": "SLC1-N\\ConfigINI.cs",
+              "ToolTip": "C:\\Users\\Administrator\\Desktop\\24072801\\SLC1-N\\ConfigINI.cs",
+              "RelativeToolTip": "SLC1-N\\ConfigINI.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAADwvwAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-01T15:03:23.969Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Electricity.cs [\u8BBE\u8BA1 - \u4E2D\u6587]",
+              "DocumentMoniker": "C:\\Users\\Administrator\\Desktop\\24072801\\SLC1-N\\Electricity.cs",
+              "RelativeDocumentMoniker": "SLC1-N\\Electricity.cs",
+              "ToolTip": "C:\\Users\\Administrator\\Desktop\\24072801\\SLC1-N\\Electricity.cs [\u8BBE\u8BA1 - \u4E2D\u6587]",
+              "RelativeToolTip": "SLC1-N\\Electricity.cs [\u8BBE\u8BA1 - \u4E2D\u6587]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-31T17:26:22.353Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Electricity.cs",
+              "DocumentMoniker": "C:\\Users\\Administrator\\Desktop\\24072801\\SLC1-N\\Electricity.cs",
+              "RelativeDocumentMoniker": "SLC1-N\\Electricity.cs",
+              "ToolTip": "C:\\Users\\Administrator\\Desktop\\24072801\\SLC1-N\\Electricity.cs",
+              "RelativeToolTip": "SLC1-N\\Electricity.cs",
+              "ViewState": "AQIAAIgDAAAAAAAAAADgv5YDAAAzAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-30T07:18:59.377Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "ConfigTCP.cs [\u8BBE\u8BA1 - \u82F1\u8BED]",
+              "DocumentMoniker": "C:\\Users\\Administrator\\Desktop\\24072801\\SLC1-N\\ConfigTCP.cs",
+              "RelativeDocumentMoniker": "SLC1-N\\ConfigTCP.cs",
+              "ToolTip": "C:\\Users\\Administrator\\Desktop\\24072801\\SLC1-N\\ConfigTCP.cs [\u8BBE\u8BA1 - \u82F1\u8BED]",
+              "RelativeToolTip": "SLC1-N\\ConfigTCP.cs [\u8BBE\u8BA1 - \u82F1\u8BED]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-01T15:03:23.342Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "ConfigLogOn.cs [\u8BBE\u8BA1 - \u82F1\u8BED]",
+              "DocumentMoniker": "C:\\Users\\Administrator\\Desktop\\24072801\\SLC1-N\\ConfigLogOn.cs",
+              "RelativeDocumentMoniker": "SLC1-N\\ConfigLogOn.cs",
+              "ToolTip": "C:\\Users\\Administrator\\Desktop\\24072801\\SLC1-N\\ConfigLogOn.cs [\u8BBE\u8BA1 - \u82F1\u8BED]",
+              "RelativeToolTip": "SLC1-N\\ConfigLogOn.cs [\u8BBE\u8BA1 - \u82F1\u8BED]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-01T15:03:22.055Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "Electricity.Designer.cs",
+              "DocumentMoniker": "C:\\Users\\Administrator\\Desktop\\24072801\\SLC1-N\\Electricity.Designer.cs",
+              "RelativeDocumentMoniker": "SLC1-N\\Electricity.Designer.cs",
+              "ToolTip": "C:\\Users\\Administrator\\Desktop\\24072801\\SLC1-N\\Electricity.Designer.cs",
+              "RelativeToolTip": "SLC1-N\\Electricity.Designer.cs",
+              "ViewState": "AQIAANwXAAAAAAAAAABQwN8XAAAwAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-31T17:12:40.651Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "ITcpClient.cs",
+              "DocumentMoniker": "C:\\Users\\Administrator\\Desktop\\24072801\\tongxin\\NetWorkHelper\\TCP\\ITcpClient.cs",
+              "RelativeDocumentMoniker": "tongxin\\NetWorkHelper\\TCP\\ITcpClient.cs",
+              "ToolTip": "C:\\Users\\Administrator\\Desktop\\24072801\\tongxin\\NetWorkHelper\\TCP\\ITcpClient.cs",
+              "RelativeToolTip": "tongxin\\NetWorkHelper\\TCP\\ITcpClient.cs",
+              "ViewState": "AQIAAFIBAAAAAAAAAABQwFUBAAAdAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-31T17:28:26.077Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "Electricity.resx",
+              "DocumentMoniker": "C:\\Users\\Administrator\\Desktop\\24072801\\SLC1-N\\Electricity.resx",
+              "RelativeDocumentMoniker": "SLC1-N\\Electricity.resx",
+              "ToolTip": "C:\\Users\\Administrator\\Desktop\\24072801\\SLC1-N\\Electricity.resx",
+              "RelativeToolTip": "SLC1-N\\Electricity.resx",
+              "ViewState": "AQIAAEMAAAAAAAAAAABAwA4AAAAoAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001005|",
+              "WhenOpened": "2024-07-31T19:32:57.11Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "PLCConnect.cs",
+              "DocumentMoniker": "C:\\Users\\Administrator\\Desktop\\24072801\\SLC1-N\\PLCConnect.cs",
+              "RelativeDocumentMoniker": "SLC1-N\\PLCConnect.cs",
+              "ToolTip": "C:\\Users\\Administrator\\Desktop\\24072801\\SLC1-N\\PLCConnect.cs",
+              "RelativeToolTip": "SLC1-N\\PLCConnect.cs",
+              "ViewState": "AQIAAAIAAAAAAAAAAAAEwAYAAAAbAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-31T17:24:30.469Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "XmlHelper.cs",
+              "DocumentMoniker": "C:\\Users\\Administrator\\Desktop\\24072801\\tongxin\\NetWorkHelper\\Helper\\XmlHelper.cs",
+              "RelativeDocumentMoniker": "tongxin\\NetWorkHelper\\Helper\\XmlHelper.cs",
+              "ToolTip": "C:\\Users\\Administrator\\Desktop\\24072801\\tongxin\\NetWorkHelper\\Helper\\XmlHelper.cs",
+              "RelativeToolTip": "tongxin\\NetWorkHelper\\Helper\\XmlHelper.cs",
+              "ViewState": "AQIAACYAAAAAAAAAAABQwCkAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-31T17:24:01.734Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "ReadConfig.cs",
+              "DocumentMoniker": "C:\\Users\\Administrator\\Desktop\\24072801\\SLC1-N\\ReadConfig.cs",
+              "RelativeDocumentMoniker": "SLC1-N\\ReadConfig.cs",
+              "ToolTip": "C:\\Users\\Administrator\\Desktop\\24072801\\SLC1-N\\ReadConfig.cs",
+              "RelativeToolTip": "SLC1-N\\ReadConfig.cs",
+              "ViewState": "AQIAAPkHAAAAAAAAAAAEwPwHAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-30T19:52:07.714Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "CollectionHelper.cs",
+              "DocumentMoniker": "C:\\Users\\Administrator\\Desktop\\24072801\\tongxin\\NetWorkHelper\\Helper\\CollectionHelper.cs",
+              "RelativeDocumentMoniker": "tongxin\\NetWorkHelper\\Helper\\CollectionHelper.cs",
+              "ToolTip": "C:\\Users\\Administrator\\Desktop\\24072801\\tongxin\\NetWorkHelper\\Helper\\CollectionHelper.cs",
+              "RelativeToolTip": "tongxin\\NetWorkHelper\\Helper\\CollectionHelper.cs",
+              "ViewState": "AQIAAK8AAAAAAAAAAABQwLIAAAAkAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-31T16:46:56.853Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "FlowConfig.cs",
+              "DocumentMoniker": "C:\\Users\\Administrator\\Desktop\\24072801\\SLC1-N\\FlowConfig.cs",
+              "RelativeDocumentMoniker": "SLC1-N\\FlowConfig.cs",
+              "ToolTip": "C:\\Users\\Administrator\\Desktop\\24072801\\SLC1-N\\FlowConfig.cs",
+              "RelativeToolTip": "SLC1-N\\FlowConfig.cs",
+              "ViewState": "AQIAAHAAAAAAAAAAAAD4v3kAAAAVAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-31T15:24:45.157Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "SelectMachine.cs",
+              "DocumentMoniker": "C:\\Users\\Administrator\\Desktop\\24072801\\SLC1-N\\SelectMachine.cs",
+              "RelativeDocumentMoniker": "SLC1-N\\SelectMachine.cs",
+              "ToolTip": "C:\\Users\\Administrator\\Desktop\\24072801\\SLC1-N\\SelectMachine.cs",
+              "RelativeToolTip": "SLC1-N\\SelectMachine.cs",
+              "ViewState": "AQIAABAAAAAAAAAAAAArwBoAAAAgAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-31T15:22:40.372Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "SelectMachine.cs [\u8BBE\u8BA1]",
+              "DocumentMoniker": "C:\\Users\\Administrator\\Desktop\\24072801\\SLC1-N\\SelectMachine.cs",
+              "RelativeDocumentMoniker": "SLC1-N\\SelectMachine.cs",
+              "ToolTip": "C:\\Users\\Administrator\\Desktop\\24072801\\SLC1-N\\SelectMachine.cs [\u8BBE\u8BA1]",
+              "RelativeToolTip": "SLC1-N\\SelectMachine.cs [\u8BBE\u8BA1]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-31T15:22:38.079Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
+              "Title": "Config.cs [\u8BBE\u8BA1]",
+              "DocumentMoniker": "C:\\Users\\Administrator\\Desktop\\24072801\\SLC1-N\\Config.cs",
+              "RelativeDocumentMoniker": "SLC1-N\\Config.cs",
+              "ToolTip": "C:\\Users\\Administrator\\Desktop\\24072801\\SLC1-N\\Config.cs [\u8BBE\u8BA1]",
+              "RelativeToolTip": "SLC1-N\\Config.cs [\u8BBE\u8BA1]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-31T15:22:29.231Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 22,
+              "Title": "FlowConfig.cs [\u8BBE\u8BA1]",
+              "DocumentMoniker": "C:\\Users\\Administrator\\Desktop\\24072801\\SLC1-N\\FlowConfig.cs",
+              "RelativeDocumentMoniker": "SLC1-N\\FlowConfig.cs",
+              "ToolTip": "C:\\Users\\Administrator\\Desktop\\24072801\\SLC1-N\\FlowConfig.cs [\u8BBE\u8BA1]",
+              "RelativeToolTip": "SLC1-N\\FlowConfig.cs [\u8BBE\u8BA1]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-30T07:12:32.616Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 23,
+              "Title": "PLCConfig.cs",
+              "DocumentMoniker": "C:\\Users\\Administrator\\Desktop\\24072801\\SLC1-N\\PLCConfig.cs",
+              "RelativeDocumentMoniker": "SLC1-N\\PLCConfig.cs",
+              "ToolTip": "C:\\Users\\Administrator\\Desktop\\24072801\\SLC1-N\\PLCConfig.cs",
+              "RelativeToolTip": "SLC1-N\\PLCConfig.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAcAAAApAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-30T18:41:38.192Z"
             }
           ]
         }

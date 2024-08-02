@@ -2,7 +2,6 @@
 using System.Text;
 using System.Threading;
 using USB2XXX;
-using static SLC1_N.Setup;
 
 namespace SLC1_N
 {
@@ -132,7 +131,7 @@ namespace SLC1_N
                 return 0;
                 throw;
             }
-         
+
         }
         /// <summary>
         /// 上充LDF
@@ -200,9 +199,9 @@ namespace SLC1_N
         /// </summary> 
         public void LINFWD(string OSignalName, double PowerValue, string SignalName, string SchName)
         {
-            Int32  bbb;
+            Int32 bbb;
             string sky;
-            bbb=0 ;
+            bbb = 0;
             try
             {
                 if (LDFParser.LDF_SetSignalValue(LDFHandle, pFrameName, Encoding.ASCII.GetBytes(SignalName), 1) == 0)
@@ -287,7 +286,7 @@ namespace SLC1_N
         /// </summary>
         /// <param name="Str"></param>
         /// <returns></returns>
-            public string HexToString(byte[] Str)
+        public string HexToString(byte[] Str)
         {
             string String = Encoding.Default.GetString(Str);
             byte[] str = new byte[Str.Length / 2];
@@ -309,7 +308,7 @@ namespace SLC1_N
         /// </summary>
         /// <param name="hex"></param>
         /// <returns></returns>
-            public int HexStringToInt(string hex)
+        public int HexStringToInt(string hex)
         {
             int num1 = 0;
             int num2 = 0;

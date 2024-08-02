@@ -37,7 +37,7 @@ namespace SLC1_N
 
         private void SelectMachine_FormClosing(object sender, FormClosingEventArgs e)
         {
-            if(String.IsNullOrEmpty(Form1.f1.machine))
+            if (String.IsNullOrEmpty(Form1.f1.machine))
             {
                 System.Environment.Exit(0);
             }

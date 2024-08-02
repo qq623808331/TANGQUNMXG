@@ -66,7 +66,7 @@
             public bool CH2HighLevel { get; set; }
             public bool CH1UpDownChange { get; set; }
             public bool CH2UpDownChange { get; set; }
-            public bool  CH1IGN { get; set; }
+            public bool CH1IGN { get; set; }
             public bool CH2IGN { get; set; }
             public bool CH1UP { get; set; }
             public bool CH1DOWN { get; set; }
@@ -226,7 +226,7 @@
             public string CKCH1Vol { get; set; }
             public string CKCH2Vol { get; set; }
             public string CKCH1Current { get; set; }
-            public string CKCH2Current{ get; set; }
+            public string CKCH2Current { get; set; }
         }
     }
 }

@@ -40,6 +40,33 @@
         }
         public class Electricity
         {
+            /// <summary>
+            ///  //新增 同充流量变量
+            /// </summary>
+            public double CH1FWDFlowTime { get; set; }
+            public double CH2FWDFlowTime { get; set; }
+            public double CH1FwdpreTime { get; set; }
+            public double CH2FwdpreTime { get; set; }
+
+            public double CH1FwdPreMax { get; set; }
+            public double CH1FwdPreMin { get; set; }
+
+            public double CH2FwdPreMax { get; set; }
+            public double CH2FwdPreMin { get; set; }
+            /// <summary>
+            /// ///////////////////////////////////
+            /// </summary>
+
+            public double CH1FwdFlowMax { get; set; }
+            public double CH1FwdFlowMin { get; set; }
+
+            public double CH2FwdFlowMax { get; set; }
+            public double CH2FwdFlowMin { get; set; }
+
+
+            public double TotalFlowMax { get; set; }
+            public double TotalFlowMin { get; set; }
+            public double TotalPreMax { get; set; }
             public double CH1UPADCMax { get; set; }
             public double CH2UPADCMax { get; set; }
             public double CH1UPADCMin { get; set; }
@@ -95,29 +122,18 @@
             public double CH1ElecComp { get; set; }
             public double CH2ElecComp { get; set; }
 
-            //新增 同充流量变量
-            public double CH1FlowTime { get; set; }
-            public double CH2FlowTime { get; set; }
-            public double CH1FreFwdTime { get; set; }
-            public double CH2FreFwdTime { get; set; }
-
-            public double CH1_1PreFwdMax { get; set; }
-            public double CH1_2PreFwdMin { get; set; }
-
-            public double CH2_1PreFwdMax { get; set; }
-            public double CH2_2PreFwdMin { get; set; }
-
-
-            public double CH1_2FlowFwdMax { get; set; }
-            public double CH1_2FlowFwdMin { get; set; }
-
-            public double CH2_2FlowFwdMax { get; set; }
-            public double CH2_2FlowFwdMin { get; set; }
-
 
         }
         public class Flow
         {
+            //新增同充参数240731
+            public double FWDflowtime { get; set; }
+            public double FWDpretime { get; set; }
+            public double TotalFlowMax { get; set; }
+            public double TotalFlowMin { get; set; }
+            public double TotalPreMax { get; set; }
+
+
             public double CH1OverTime { get; set; }
             public double CH2OverTime { get; set; }
             public double CH3OverTime { get; set; }
