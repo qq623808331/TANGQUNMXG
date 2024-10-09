@@ -619,3 +619,13 @@ C:\Users\Administrator\Desktop\TANGQUNMXG\tongxin\NetWorkHelper\obj\Debug\NetWor
 C:\Users\Administrator\Desktop\TANGQUNMXG\tongxin\NetWorkHelper\obj\Debug\NetWorkHelper.csproj.CoreCompileInputs.cache
 C:\Users\Administrator\Desktop\TANGQUNMXG\tongxin\NetWorkHelper\obj\Debug\NetWorkHelper.dll
 C:\Users\Administrator\Desktop\TANGQUNMXG\tongxin\NetWorkHelper\obj\Debug\NetWorkHelper.pdb
+D:\上位机\huangwenjie\TANGQUNMXG\tongxin\NetWorkHelper\bin\Debug\TCP\ITcpClient.cs
+D:\上位机\huangwenjie\TANGQUNMXG\tongxin\NetWorkHelper\bin\Debug\TCP\ITcpClient.Designer.cs
+D:\上位机\huangwenjie\TANGQUNMXG\tongxin\NetWorkHelper\bin\Debug\NetWorkHelper.dll
+D:\上位机\huangwenjie\TANGQUNMXG\tongxin\NetWorkHelper\bin\Debug\NetWorkHelper.pdb
+D:\上位机\huangwenjie\TANGQUNMXG\tongxin\NetWorkHelper\obj\Debug\NetWorkHelper.csproj.AssemblyReference.cache
+D:\上位机\huangwenjie\TANGQUNMXG\tongxin\NetWorkHelper\obj\Debug\NetWorkHelper.AxUdpClient.resources
+D:\上位机\huangwenjie\TANGQUNMXG\tongxin\NetWorkHelper\obj\Debug\NetWorkHelper.csproj.GenerateResource.cache
+D:\上位机\huangwenjie\TANGQUNMXG\tongxin\NetWorkHelper\obj\Debug\NetWorkHelper.csproj.CoreCompileInputs.cache
+D:\上位机\huangwenjie\TANGQUNMXG\tongxin\NetWorkHelper\obj\Debug\NetWorkHelper.dll
+D:\上位机\huangwenjie\TANGQUNMXG\tongxin\NetWorkHelper\obj\Debug\NetWorkHelper.pdb

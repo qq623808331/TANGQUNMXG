@@ -7086,7 +7086,7 @@ namespace SLC1_N
                             dData = Convert.ToDecimal(Decimal.Parse(adc.ToString(), System.Globalization.NumberStyles.Float));
                             adc = dData.ToString();
                             Log log = new Log();
-                            log.PLC_Logmsg(DateTime.Now.ToString() + "CH1静态电流" + adc);
+                           // log.PLC_Logmsg(DateTime.Now.ToString() + "CH1静态电流" + adc);
                         }
                         {
                             if (adc.Length > 0)
@@ -9424,16 +9424,16 @@ namespace SLC1_N
 
                         var result1 = FlowSend(1);
                         if (result1.IsSuccess) CH1Flow_read = Math.Round(Convert.ToDouble(result1.Content), 2);
-                        Thread.Sleep(200);
+                        Thread.Sleep(400);
                         var result2 = FlowSend(2);
                         if (result2.IsSuccess) CH2Flow_read = Math.Round(Convert.ToDouble(result2.Content) / 1000, 2);
-                        Thread.Sleep(200);
+                        Thread.Sleep(400);
                         var result3 = FlowSend(3);
                         if (result3.IsSuccess) CH3Flow_read = Math.Round(Convert.ToDouble(result3.Content) / 1000, 2);
-                        Thread.Sleep(200);
+                        Thread.Sleep(400);
                         var result4 = FlowSend(4);
                         if (result4.IsSuccess) CH4Flow_read = Math.Round(Convert.ToDouble(result4.Content), 2);
-                        Thread.Sleep(200);
+                        Thread.Sleep(400);
                     }
                    
                     
