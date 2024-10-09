@@ -1,13 +1,17 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "H:\\H\u76D8\u65B0\u4EE3\u7801\u5F00\u53D1\\\u5510\u7FA4\u58A8\u897F\u54E5\\8.16\\\u4FEE\u6539\u5904\\ll-28-TanQunMXG\\",
+  "WorkspaceRootPath": "C:\\Users\\Administrator\\Desktop\\TANGQUNMXG\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{F7F71589-095A-45C2-975C-739BE2D1CE15}|SLC1-N\\SLC1-N.csproj|h:\\h\u76D8\u65B0\u4EE3\u7801\u5F00\u53D1\\\u5510\u7FA4\u58A8\u897F\u54E5\\8.16\\\u4FEE\u6539\u5904\\ll-28-tanqunmxg\\slc1-n\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{F7F71589-095A-45C2-975C-739BE2D1CE15}|SLC1-N\\SLC1-N.csproj|c:\\users\\administrator\\desktop\\tangqunmxg\\slc1-n\\protread.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F7F71589-095A-45C2-975C-739BE2D1CE15}|SLC1-N\\SLC1-N.csproj|solutionrelative:slc1-n\\protread.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F7F71589-095A-45C2-975C-739BE2D1CE15}|SLC1-N\\SLC1-N.csproj|c:\\users\\administrator\\desktop\\tangqunmxg\\slc1-n\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{F7F71589-095A-45C2-975C-739BE2D1CE15}|SLC1-N\\SLC1-N.csproj|solutionrelative:slc1-n\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{F7F71589-095A-45C2-975C-739BE2D1CE15}|SLC1-N\\SLC1-N.csproj|H:\\H\u76D8\u65B0\u4EE3\u7801\u5F00\u53D1\\\u5510\u7FA4\u58A8\u897F\u54E5\\8.16\\\u4FEE\u6539\u5904\\ll-28-TanQunMXG\\slc1-n\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "AbsoluteMoniker": "D:0:0:{F7F71589-095A-45C2-975C-739BE2D1CE15}|SLC1-N\\SLC1-N.csproj|C:\\Users\\Administrator\\Desktop\\TANGQUNMXG\\slc1-n\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{F7F71589-095A-45C2-975C-739BE2D1CE15}|SLC1-N\\SLC1-N.csproj|solutionrelative:slc1-n\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     }
   ],
@@ -18,29 +22,53 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 3,
           "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:129:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{cce594b6-0c39-4442-ba28-10c64ac7e89f}"
+            },
             {
               "$type": "Document",
               "DocumentIndex": 0,
+              "Title": "ProtRead.cs",
+              "DocumentMoniker": "C:\\Users\\Administrator\\Desktop\\TANGQUNMXG\\SLC1-N\\ProtRead.cs",
+              "RelativeDocumentMoniker": "SLC1-N\\ProtRead.cs",
+              "ToolTip": "C:\\Users\\Administrator\\Desktop\\TANGQUNMXG\\SLC1-N\\ProtRead.cs*",
+              "RelativeToolTip": "SLC1-N\\ProtRead.cs*",
+              "ViewState": "AQIAAE0AAAAAAAAAAAAcwGoAAAAQAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-09T18:17:14.45Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
               "Title": "Form1.cs",
-              "DocumentMoniker": "H:\\H\u76D8\u65B0\u4EE3\u7801\u5F00\u53D1\\\u5510\u7FA4\u58A8\u897F\u54E5\\8.16\\\u4FEE\u6539\u5904\\ll-28-TanQunMXG\\SLC1-N\\Form1.cs",
+              "DocumentMoniker": "C:\\Users\\Administrator\\Desktop\\TANGQUNMXG\\SLC1-N\\Form1.cs",
               "RelativeDocumentMoniker": "SLC1-N\\Form1.cs",
-              "ToolTip": "H:\\H\u76D8\u65B0\u4EE3\u7801\u5F00\u53D1\\\u5510\u7FA4\u58A8\u897F\u54E5\\8.16\\\u4FEE\u6539\u5904\\ll-28-TanQunMXG\\SLC1-N\\Form1.cs",
+              "ToolTip": "C:\\Users\\Administrator\\Desktop\\TANGQUNMXG\\SLC1-N\\Form1.cs",
               "RelativeToolTip": "SLC1-N\\Form1.cs",
-              "ViewState": "AQIAAJUCAAAAAAAAAAAuwKICAAAAAAAA",
+              "ViewState": "AQIAAJYCAAAAAAAAAAAcwK0CAAAmAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-08-27T05:53:00.398Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 2,
               "Title": "Form1.cs [\u8BBE\u8BA1]",
-              "DocumentMoniker": "H:\\H\u76D8\u65B0\u4EE3\u7801\u5F00\u53D1\\\u5510\u7FA4\u58A8\u897F\u54E5\\8.16\\\u4FEE\u6539\u5904\\ll-28-TanQunMXG\\SLC1-N\\Form1.cs",
+              "DocumentMoniker": "C:\\Users\\Administrator\\Desktop\\TANGQUNMXG\\SLC1-N\\Form1.cs",
               "RelativeDocumentMoniker": "SLC1-N\\Form1.cs",
               "ToolTip": "H:\\H\u76D8\u65B0\u4EE3\u7801\u5F00\u53D1\\\u5510\u7FA4\u58A8\u897F\u54E5\\8.16\\\u4FEE\u6539\u5904\\ll-28-TanQunMXG\\SLC1-N\\Form1.cs [\u8BBE\u8BA1]",
-              "RelativeToolTip": "SLC1-N\\Form1.cs [\u8BBE\u8BA1]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-08-27T05:52:49.493Z"
             }

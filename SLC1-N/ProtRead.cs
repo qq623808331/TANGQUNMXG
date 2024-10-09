@@ -18,6 +18,8 @@ namespace SLC1_N
             private StringBuilder _receivedData;
             private int _timeoutMilliseconds;
             private Timer _timer;
+            public string Serial_write;
+
 
             public event Action<string> DataReceived;
       
@@ -31,8 +33,10 @@ namespace SLC1_N
             }
         public void Write(string data)
         {
-            if(_serialPort.IsOpen)
-            _serialPort.WriteLine(data);
+
+            Serial_write= data;
+            //if(_serialPort.IsOpen)
+            //_serialPort.WriteLine(data);
         }
         public void Start()
             {
@@ -91,6 +95,19 @@ namespace SLC1_N
                     {
                         // Handle the timeout exception if needed
                     }
+
+                try
+                {
+                    if(_serialPort.IsOpen&& Serial_write!="")
+                   _serialPort.WriteLine(Serial_write);
+                    Serial_write = "";
+                }
+                catch 
+                { 
+                
+                }
+
+
                 }
             }
         }
