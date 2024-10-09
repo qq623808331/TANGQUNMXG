@@ -267,7 +267,6 @@
             this.OpenMachineINI = new System.Windows.Forms.OpenFileDialog();
             this.winforclose = new System.Windows.Forms.Timer(this.components);
             this.CodePort2 = new System.IO.Ports.SerialPort(this.components);
-            this.CKCH1Port = new System.IO.Ports.SerialPort(this.components);
             this.CKCH2Port = new System.IO.Ports.SerialPort(this.components);
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
             this.uiGroupBox7 = new Sunny.UI.UIGroupBox();
@@ -1362,6 +1361,7 @@
             resources.ApplyResources(this.label6, "label6");
             this.label6.BackColor = System.Drawing.Color.Transparent;
             this.label6.Name = "label6";
+            this.label6.Click += new System.EventHandler(this.label6_Click);
             // 
             // label5
             // 
@@ -1408,9 +1408,10 @@
             this.RightReset.RectSides = System.Windows.Forms.ToolStripStatusLabelBorderSides.None;
             this.RightReset.Style = Sunny.UI.UIStyle.Custom;
             this.RightReset.Symbol = 95;
+            this.RightReset.SymbolColor = System.Drawing.Color.DimGray;
             this.RightReset.SymbolOffset = new System.Drawing.Point(-1, 2);
             this.RightReset.SymbolSize = 70;
-            this.RightReset.TipsFont = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.RightReset.TipsFont = new System.Drawing.Font("Microsoft YaHei", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.RightReset.Click += new System.EventHandler(this.RightReset_Click);
             // 
             // LeftReset
@@ -1428,9 +1429,10 @@
             this.LeftReset.RectSides = System.Windows.Forms.ToolStripStatusLabelBorderSides.None;
             this.LeftReset.Style = Sunny.UI.UIStyle.Custom;
             this.LeftReset.Symbol = 95;
+            this.LeftReset.SymbolColor = System.Drawing.Color.DimGray;
             this.LeftReset.SymbolOffset = new System.Drawing.Point(-1, 2);
             this.LeftReset.SymbolSize = 70;
-            this.LeftReset.TipsFont = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.LeftReset.TipsFont = new System.Drawing.Font("Microsoft YaHei", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.LeftReset.Click += new System.EventHandler(this.LeftReset_Click);
             // 
             // uiHeaderButton1
@@ -1450,7 +1452,7 @@
             this.uiHeaderButton1.Style = Sunny.UI.UIStyle.Custom;
             this.uiHeaderButton1.Symbol = 61579;
             this.uiHeaderButton1.SymbolColor = System.Drawing.Color.FromArgb(((int)(((byte)(142)))), ((int)(((byte)(164)))), ((int)(((byte)(144)))));
-            this.uiHeaderButton1.TipsFont = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.uiHeaderButton1.TipsFont = new System.Drawing.Font("Microsoft YaHei", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.uiHeaderButton1.Click += new System.EventHandler(this.uiHeaderButton1_Click);
             // 
             // uiNavBar1
@@ -1487,7 +1489,7 @@
             this.uiNavBar1.Controls.Add(this.RightReset);
             this.uiNavBar1.Controls.Add(this.LeftReset);
             this.uiNavBar1.Controls.Add(this.uiHeaderButton1);
-            this.uiNavBar1.DropMenuFont = new System.Drawing.Font("宋体", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.uiNavBar1.DropMenuFont = new System.Drawing.Font("SimSun", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.uiNavBar1.ForeColor = System.Drawing.Color.Black;
             this.uiNavBar1.MenuHoverColor = System.Drawing.Color.FromArgb(((int)(((byte)(123)))), ((int)(((byte)(163)))), ((int)(((byte)(133)))));
             this.uiNavBar1.MenuSelectedColor = System.Drawing.Color.FromArgb(((int)(((byte)(123)))), ((int)(((byte)(163)))), ((int)(((byte)(133)))));
@@ -1501,6 +1503,7 @@
             ((System.Windows.Forms.TreeNode)(resources.GetObject("uiNavBar1.Nodes3"))),
             ((System.Windows.Forms.TreeNode)(resources.GetObject("uiNavBar1.Nodes4"))),
             ((System.Windows.Forms.TreeNode)(resources.GetObject("uiNavBar1.Nodes5")))});
+            this.uiNavBar1.NodeSize = new System.Drawing.Size(230, 45);
             this.uiNavBar1.SelectedForeColor = System.Drawing.Color.Black;
             this.uiNavBar1.SelectedHighColor = System.Drawing.Color.FromArgb(((int)(((byte)(142)))), ((int)(((byte)(164)))), ((int)(((byte)(144)))));
             this.uiNavBar1.Style = Sunny.UI.UIStyle.Custom;
@@ -1548,9 +1551,10 @@
             this.PLCControl.RectSides = System.Windows.Forms.ToolStripStatusLabelBorderSides.None;
             this.PLCControl.Style = Sunny.UI.UIStyle.Custom;
             this.PLCControl.Symbol = 61459;
+            this.PLCControl.SymbolColor = System.Drawing.Color.Gray;
             this.PLCControl.SymbolOffset = new System.Drawing.Point(-1, 2);
             this.PLCControl.SymbolSize = 70;
-            this.PLCControl.TipsFont = new System.Drawing.Font("宋体", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.PLCControl.TipsFont = new System.Drawing.Font("SimSun", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.PLCControl.Click += new System.EventHandler(this.PLCControl_Click);
             // 
             // CH3ReceiveText
@@ -1638,6 +1642,7 @@
             resources.ApplyResources(this.label35, "label35");
             this.label35.BackColor = System.Drawing.Color.Transparent;
             this.label35.Name = "label35";
+            this.label35.Click += new System.EventHandler(this.label35_Click);
             // 
             // label38
             // 
@@ -1667,7 +1672,7 @@
             this.DataGridView1.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.Single;
             dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
             dataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(80)))), ((int)(((byte)(160)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle2.Font = new System.Drawing.Font("微软雅黑", 12F);
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Microsoft YaHei UI", 12F);
             dataGridViewCellStyle2.ForeColor = System.Drawing.Color.White;
             dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
             dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
@@ -1688,7 +1693,7 @@
             this.DataGridView1.ReadOnly = true;
             dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
             dataGridViewCellStyle3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(243)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle3.Font = new System.Drawing.Font("微软雅黑", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            dataGridViewCellStyle3.Font = new System.Drawing.Font("Microsoft YaHei", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             dataGridViewCellStyle3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(48)))), ((int)(((byte)(48)))), ((int)(((byte)(48)))));
             dataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(80)))), ((int)(((byte)(160)))), ((int)(((byte)(255)))));
             dataGridViewCellStyle3.SelectionForeColor = System.Drawing.Color.White;
@@ -1811,6 +1816,7 @@
             resources.ApplyResources(this.label229, "label229");
             this.label229.BackColor = System.Drawing.Color.Transparent;
             this.label229.Name = "label229";
+            this.label229.Click += new System.EventHandler(this.label229_Click);
             // 
             // CH1CT
             // 
@@ -1874,7 +1880,7 @@
             this.DataGridView2.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.Single;
             dataGridViewCellStyle6.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
             dataGridViewCellStyle6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(80)))), ((int)(((byte)(160)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle6.Font = new System.Drawing.Font("微软雅黑", 12F);
+            dataGridViewCellStyle6.Font = new System.Drawing.Font("Microsoft YaHei UI", 12F);
             dataGridViewCellStyle6.ForeColor = System.Drawing.Color.White;
             dataGridViewCellStyle6.SelectionBackColor = System.Drawing.SystemColors.Highlight;
             dataGridViewCellStyle6.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
@@ -1895,7 +1901,7 @@
             this.DataGridView2.ReadOnly = true;
             dataGridViewCellStyle7.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
             dataGridViewCellStyle7.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(243)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle7.Font = new System.Drawing.Font("微软雅黑", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            dataGridViewCellStyle7.Font = new System.Drawing.Font("Microsoft YaHei", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             dataGridViewCellStyle7.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(48)))), ((int)(((byte)(48)))), ((int)(((byte)(48)))));
             dataGridViewCellStyle7.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(80)))), ((int)(((byte)(160)))), ((int)(((byte)(255)))));
             dataGridViewCellStyle7.SelectionForeColor = System.Drawing.Color.White;
@@ -2221,7 +2227,6 @@
         private System.Windows.Forms.Label CH3ParamIndex;
         private System.Windows.Forms.Label label95;
         private System.Windows.Forms.Label CH2RTVDC;
-        private System.Windows.Forms.Label CH2RTElec;
         private System.Windows.Forms.Label label98;
         private System.Windows.Forms.Label label99;
         private System.Windows.Forms.Label label100;
@@ -2280,7 +2285,6 @@
         private System.Windows.Forms.Label label30;
         private System.Windows.Forms.Label label39;
         private System.Windows.Forms.Label CH1RTVDC;
-        private System.Windows.Forms.Label CH1RTElec;
         private System.Windows.Forms.Label label42;
         private System.Windows.Forms.Label label35;
         private System.Windows.Forms.Label label38;
@@ -2333,7 +2337,7 @@
         public Sunny.UI.UITextBox CH1ProductNumber;
         private System.Windows.Forms.Timer winforclose;
         public System.IO.Ports.SerialPort CodePort2;
-        public System.IO.Ports.SerialPort CKCH1Port;
+       
         public System.IO.Ports.SerialPort CKCH2Port;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel1;
         private Sunny.UI.UIGroupBox uiGroupBox7;
@@ -2395,6 +2399,8 @@
         public Sunny.UI.UIGroupBox uiGroupBox6;
         private System.Windows.Forms.Timer timer1;
         private System.Windows.Forms.Button button1;
+        public System.Windows.Forms.Label CH2RTElec;
+        public System.Windows.Forms.Label CH1RTElec;
     }
 }
 

@@ -7,7 +7,7 @@
     <ProjectGuid>{F7F71589-095A-45C2-975C-739BE2D1CE15}</ProjectGuid>
     <OutputType>WinExe</OutputType>
     <RootNamespace>SLC1_N</RootNamespace>
-    <AssemblyName>LL28-N-V1.5</AssemblyName>
+    <AssemblyName>LL28-N-V2.0</AssemblyName>
     <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
@@ -192,6 +192,7 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ProtRead.cs" />
     <Compile Include="ReadConfig.cs" />
     <Compile Include="ResetPassword.cs">
       <SubType>Form</SubType>
@@ -305,6 +306,9 @@
       <DependentUpon>Form1.cs</DependentUpon>
       <SubType>Designer</SubType>
     </EmbeddedResource>
+    <EmbeddedResource Include="Form1.zh-Hans.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Form1.zh.resx">
       <DependentUpon>Form1.cs</DependentUpon>
     </EmbeddedResource>
@@ -316,6 +320,7 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Help.resx">
       <DependentUpon>Help.cs</DependentUpon>
+      <SubType>Designer</SubType>
     </EmbeddedResource>
     <EmbeddedResource Include="LinConfig.en.resx">
       <DependentUpon>LinConfig.cs</DependentUpon>
@@ -415,6 +420,9 @@
       <DependentUpon>TestParams.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="UserManagement.en.resx">
+      <DependentUpon>UserManagement.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserManagement.es.resx">
       <DependentUpon>UserManagement.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="UserManagement.resx">

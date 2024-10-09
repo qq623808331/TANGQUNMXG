@@ -197,24 +197,27 @@ a estación de trabajo derecha</value>
     <value>Longitud del Código de barras de la
  estación de trabajo derecha</value>
   </data>
+  <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="CHKCH1.AutoSize" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
   <data name="CHKCH1.Location" type="System.Drawing.Point, System.Drawing">
     <value>6, 206</value>
   </data>
   <data name="CHKCH1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>328, 44</value>
+    <value>668, 44</value>
   </data>
   <data name="CHKCH1.Text" xml:space="preserve">
-    <value>Note: If not set, the barcode 
-length defaults to 13</value>
+    <value>Nota.si no es asi el valor predeterminado del codigo es 13</value>
   </data>
   <data name="CHKCH2.Location" type="System.Drawing.Point, System.Drawing">
     <value>21, 282</value>
   </data>
   <data name="CHKCH2.Size" type="System.Drawing.Size, System.Drawing">
-    <value>198, 24</value>
+    <value>268, 24</value>
   </data>
   <data name="CHKCH2.Text" xml:space="preserve">
-    <value>Right station CH1</value>
+    <value>Estacion derecha canal 1</value>
   </data>
   <data name="RightCodeCount.Location" type="System.Drawing.Point, System.Drawing">
     <value>351, 556</value>
@@ -247,19 +250,19 @@ estación de trabajo izquierda</value>
     <value>414, 145</value>
   </data>
   <data name="CH2CodeSetting.Size" type="System.Drawing.Size, System.Drawing">
-    <value>104, 51</value>
+    <value>137, 51</value>
   </data>
   <data name="CH2CodeSetting.Text" xml:space="preserve">
-    <value>Barcode</value>
+    <value>Codigo de barras</value>
   </data>
   <data name="CodeSetting.Location" type="System.Drawing.Point, System.Drawing">
-    <value>33, 145</value>
+    <value>12, 149</value>
   </data>
   <data name="CodeSetting.Size" type="System.Drawing.Size, System.Drawing">
     <value>157, 51</value>
   </data>
   <data name="CodeSetting.Text" xml:space="preserve">
-    <value>Application setting</value>
+    <value>Configuracion de la aplicacion</value>
   </data>
   <data name="LeftCodeLife.Location" type="System.Drawing.Point, System.Drawing">
     <value>33, 109</value>
@@ -271,7 +274,7 @@ estación de trabajo izquierda</value>
     <value>680, 596</value>
   </data>
   <data name="groupBox1.Text" xml:space="preserve">
-    <value>Barcode</value>
+    <value>Canfsuracion de las.a</value>
   </data>
   <data name="CH2ProductCount.Location" type="System.Drawing.Point, System.Drawing">
     <value>232, 451</value>
@@ -343,10 +346,10 @@ estación de trabajo izquierda</value>
     <value>18, 210</value>
   </data>
   <data name="label11.Size" type="System.Drawing.Size, System.Drawing">
-    <value>183, 16</value>
+    <value>239, 16</value>
   </data>
   <data name="label11.Text" xml:space="preserve">
-    <value>Production part number</value>
+    <value>Número de pieza de producción</value>
   </data>
   <data name="WorkOrder.Location" type="System.Drawing.Point, System.Drawing">
     <value>29, 171</value>

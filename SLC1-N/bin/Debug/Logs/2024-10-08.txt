@@ -1,0 +1,100 @@
+全局异常捕捉
+****************************异常文本****************************
+【出现时间】：10/8/2024 10:30:37 AM
+【异常类型】：IOException
+【异常信息】：文件“D:\上位机\0828\288\11\ll-28-TanQunMXG\SLC1-N\bin\Debug\PLC_Log\2024-10-08.txt”正由另一进程使用，因此该进程无法访问此文件。
+【堆栈调用】：   在 System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   在 System.IO.FileStream.Init(String path, FileMode mode, FileAccess access, Int32 rights, Boolean useRights, FileShare share, Int32 bufferSize, FileOptions options, SECURITY_ATTRIBUTES secAttrs, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   在 System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access)
+   在 SLC1_N.Log.PLC_Logmsg(String Log1) 位置 D:\上位机\0828\288\11\ll-28-TanQunMXG\SLC1-N\Log.cs:行号 153
+   在 SLC1_N.Logger.Log(String content) 位置 D:\上位机\0828\288\11\ll-28-TanQunMXG\SLC1-N\Logger.cs:行号 126
+   在 SLC1_N.Form1.CH1ADC_PORT_DataReceived(String data) 位置 D:\上位机\0828\288\11\ll-28-TanQunMXG\SLC1-N\Form1.cs:行号 7131
+   在 SLC1_N.SerialPortReader.OnTimeout(Object state) 位置 D:\上位机\0828\288\11\ll-28-TanQunMXG\SLC1-N\ProtRead.cs:行号 63
+   在 System.Threading.TimerQueueTimer.CallCallbackInContext(Object state)
+   在 System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state, Boolean preserveSyncCtx)
+   在 System.Threading.ExecutionContext.Run(ExecutionContext executionContext, ContextCallback callback, Object state, Boolean preserveSyncCtx)
+   在 System.Threading.TimerQueueTimer.CallCallback()
+   在 System.Threading.TimerQueueTimer.Fire()
+   在 System.Threading.TimerQueue.FireQueuedTimerCompletion(Object state)
+   在 System.Threading.QueueUserWorkItemCallback.System.Threading.IThreadPoolWorkItem.ExecuteWorkItem()
+   在 System.Threading.ThreadPoolWorkQueue.Dispatch()
+   在 System.Threading._ThreadPoolWaitCallback.PerformWaitCallback()
+***************************************************************
+
+10/8/2024 10:30:37 AM
+=======================================================
+全局异常捕捉
+****************************异常文本****************************
+【出现时间】：10/8/2024 2:36:23 PM
+【异常类型】：IOException
+【异常信息】：文件“D:\上位机\0828\288\11\ll-28-TanQunMXG\SLC1-N\bin\Debug\PLC_Log\2024-10-08.txt”正由另一进程使用，因此该进程无法访问此文件。
+【堆栈调用】：   在 System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   在 System.IO.FileStream.Init(String path, FileMode mode, FileAccess access, Int32 rights, Boolean useRights, FileShare share, Int32 bufferSize, FileOptions options, SECURITY_ATTRIBUTES secAttrs, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   在 System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access)
+   在 SLC1_N.Log.PLC_Logmsg(String Log1) 位置 D:\上位机\0828\288\11\ll-28-TanQunMXG\SLC1-N\Log.cs:行号 153
+   在 SLC1_N.Logger.Log(String content) 位置 D:\上位机\0828\288\11\ll-28-TanQunMXG\SLC1-N\Logger.cs:行号 126
+   在 SLC1_N.Form1.CH1ADC_PORT_DataReceived(String data) 位置 D:\上位机\0828\288\11\ll-28-TanQunMXG\SLC1-N\Form1.cs:行号 7131
+   在 SLC1_N.SerialPortReader.OnTimeout(Object state) 位置 D:\上位机\0828\288\11\ll-28-TanQunMXG\SLC1-N\ProtRead.cs:行号 63
+   在 System.Threading.TimerQueueTimer.CallCallbackInContext(Object state)
+   在 System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state, Boolean preserveSyncCtx)
+   在 System.Threading.ExecutionContext.Run(ExecutionContext executionContext, ContextCallback callback, Object state, Boolean preserveSyncCtx)
+   在 System.Threading.TimerQueueTimer.CallCallback()
+   在 System.Threading.TimerQueueTimer.Fire()
+   在 System.Threading.TimerQueue.FireQueuedTimerCompletion(Object state)
+   在 System.Threading.QueueUserWorkItemCallback.System.Threading.IThreadPoolWorkItem.ExecuteWorkItem()
+   在 System.Threading.ThreadPoolWorkQueue.Dispatch()
+   在 System.Threading._ThreadPoolWaitCallback.PerformWaitCallback()
+***************************************************************
+
+10/8/2024 2:36:23 PM
+=======================================================
+全局异常捕捉
+****************************异常文本****************************
+【出现时间】：10/8/2024 3:42:57 PM
+【异常类型】：IOException
+【异常信息】：文件“D:\上位机\0828\288\11\ll-28-TanQunMXG\SLC1-N\bin\Debug\PLC_Log\2024-10-08.txt”正由另一进程使用，因此该进程无法访问此文件。
+【堆栈调用】：   在 System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   在 System.IO.FileStream.Init(String path, FileMode mode, FileAccess access, Int32 rights, Boolean useRights, FileShare share, Int32 bufferSize, FileOptions options, SECURITY_ATTRIBUTES secAttrs, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   在 System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access)
+   在 SLC1_N.Log.PLC_Logmsg(String Log1) 位置 D:\上位机\0828\288\11\ll-28-TanQunMXG\SLC1-N\Log.cs:行号 153
+   在 SLC1_N.Logger.Log(String content) 位置 D:\上位机\0828\288\11\ll-28-TanQunMXG\SLC1-N\Logger.cs:行号 126
+   在 SLC1_N.Form1.CH1ADC_PORT_DataReceived(String data) 位置 D:\上位机\0828\288\11\ll-28-TanQunMXG\SLC1-N\Form1.cs:行号 7131
+   在 SLC1_N.SerialPortReader.OnTimeout(Object state) 位置 D:\上位机\0828\288\11\ll-28-TanQunMXG\SLC1-N\ProtRead.cs:行号 63
+   在 System.Threading.TimerQueueTimer.CallCallbackInContext(Object state)
+   在 System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state, Boolean preserveSyncCtx)
+   在 System.Threading.ExecutionContext.Run(ExecutionContext executionContext, ContextCallback callback, Object state, Boolean preserveSyncCtx)
+   在 System.Threading.TimerQueueTimer.CallCallback()
+   在 System.Threading.TimerQueueTimer.Fire()
+   在 System.Threading.TimerQueue.FireQueuedTimerCompletion(Object state)
+   在 System.Threading.QueueUserWorkItemCallback.System.Threading.IThreadPoolWorkItem.ExecuteWorkItem()
+   在 System.Threading.ThreadPoolWorkQueue.Dispatch()
+   在 System.Threading._ThreadPoolWaitCallback.PerformWaitCallback()
+***************************************************************
+
+10/8/2024 3:42:57 PM
+=======================================================
+全局异常捕捉
+****************************异常文本****************************
+【出现时间】：10/8/2024 3:42:57 PM
+【异常类型】：IOException
+【异常信息】：文件“D:\上位机\0828\288\11\ll-28-TanQunMXG\SLC1-N\bin\Debug\PLC_Log\2024-10-08.txt”正由另一进程使用，因此该进程无法访问此文件。
+【堆栈调用】：   在 System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   在 System.IO.FileStream.Init(String path, FileMode mode, FileAccess access, Int32 rights, Boolean useRights, FileShare share, Int32 bufferSize, FileOptions options, SECURITY_ATTRIBUTES secAttrs, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   在 System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access)
+   在 SLC1_N.Log.PLC_Logmsg(String Log1) 位置 D:\上位机\0828\288\11\ll-28-TanQunMXG\SLC1-N\Log.cs:行号 153
+   在 SLC1_N.Logger.Log(String content) 位置 D:\上位机\0828\288\11\ll-28-TanQunMXG\SLC1-N\Logger.cs:行号 126
+   在 SLC1_N.Form1.CH1ADC_PORT_DataReceived(String data) 位置 D:\上位机\0828\288\11\ll-28-TanQunMXG\SLC1-N\Form1.cs:行号 7131
+   在 SLC1_N.SerialPortReader.OnTimeout(Object state) 位置 D:\上位机\0828\288\11\ll-28-TanQunMXG\SLC1-N\ProtRead.cs:行号 63
+   在 System.Threading.TimerQueueTimer.CallCallbackInContext(Object state)
+   在 System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state, Boolean preserveSyncCtx)
+   在 System.Threading.ExecutionContext.Run(ExecutionContext executionContext, ContextCallback callback, Object state, Boolean preserveSyncCtx)
+   在 System.Threading.TimerQueueTimer.CallCallback()
+   在 System.Threading.TimerQueueTimer.Fire()
+   在 System.Threading.TimerQueue.FireQueuedTimerCompletion(Object state)
+   在 System.Threading.QueueUserWorkItemCallback.System.Threading.IThreadPoolWorkItem.ExecuteWorkItem()
+   在 System.Threading.ThreadPoolWorkQueue.Dispatch()
+   在 System.Threading._ThreadPoolWaitCallback.PerformWaitCallback()
+***************************************************************
+
+10/8/2024 3:42:57 PM
+=======================================================

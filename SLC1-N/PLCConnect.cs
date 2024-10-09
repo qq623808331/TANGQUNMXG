@@ -1,6 +1,7 @@
 ﻿using HslCommunication.Profinet.Melsec;
 using System.Threading;
 using System.Threading.Tasks;
+using System.Windows.Forms;
 
 namespace SLC1_N
 {
@@ -1640,6 +1641,30 @@ namespace SLC1_N
             CH4FlowValve.IsBackground = true;
             CH4FlowValve.Start();
         }
+        public void WriteCH1QC(bool CON)
+        {
+           var reson= melsecFx.Write("M2027", CON);
+            if (reson.IsSuccess)
+            {
+
+            }
+            else
+            {
+                MessageBox.Show("PLC在静态电流切换失败，请重启上位机");
+            }
+        }
+        public void WriteCH2QC(bool CON)
+        {
+            var reson = melsecFx.Write("M2037", CON);
+            if (reson.IsSuccess)
+            {
+
+            }
+            else
+            {
+                MessageBox.Show("PLC在静态电流切换失败，请重启上位机");
+            }
+        }
         public void WriteCH4ValveTrue()
         {
             melsecFx.Write("M3008", true);
@@ -1659,6 +1684,7 @@ namespace SLC1_N
         {
             CH1uA = melsecFx.ReadInt16("D2001").Content;
         }
+
         Thread CH2_uAValue;
         public short CH2uA;
         /// <summary>
@@ -3275,7 +3301,7 @@ namespace SLC1_N
         public void WriteCH1Balance()
         {
             //melsecFx.Write("M3235", true);
-            Form1.f1.CKCH1Port.WriteLine("OUTP 0");
+            Form1.CH1POWER._serialPort.WriteLine("OUTP 0");
         }
         /// <summary>
         /// CH1-2平衡

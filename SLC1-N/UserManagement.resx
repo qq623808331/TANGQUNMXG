@@ -144,7 +144,7 @@
   </data>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
   <data name="Characters.Font" type="System.Drawing.Font, System.Drawing">
-    <value>SimSun, 15pt</value>
+    <value>SimSun-ExtB, 15pt</value>
   </data>
   <data name="&gt;&gt;label1.ZOrder" xml:space="preserve">
     <value>3</value>
@@ -602,10 +602,7 @@
     <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="label1.Font" type="System.Drawing.Font, System.Drawing">
-    <value>SimSun, 13pt</value>
-  </data>
-  <data name="label2.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
+    <value>SimSun-ExtB, 13pt</value>
   </data>
   <data name="Account.Location" type="System.Drawing.Point, System.Drawing">
     <value>60, 40</value>
@@ -671,7 +668,7 @@
     <value>63</value>
   </data>
   <data name="Update.Font" type="System.Drawing.Font, System.Drawing">
-    <value>SimSun, 12pt</value>
+    <value>SimSun-ExtB, 12pt</value>
   </data>
   <data name="&gt;&gt;Update.Parent" xml:space="preserve">
     <value>$this</value>
@@ -686,10 +683,10 @@
     <value>操作员</value>
   </data>
   <data name="Delete.Font" type="System.Drawing.Font, System.Drawing">
-    <value>SimSun, 12pt</value>
+    <value>SimSun-ExtB, 12pt</value>
   </data>
   <data name="label3.Font" type="System.Drawing.Font, System.Drawing">
-    <value>SimSun, 13pt</value>
+    <value>SimSun-ExtB, 13pt</value>
   </data>
   <data name="Characters.Size" type="System.Drawing.Size, System.Drawing">
     <value>196, 28</value>
@@ -728,7 +725,7 @@
     <value>权限</value>
   </data>
   <data name="UpdateReset.Font" type="System.Drawing.Font, System.Drawing">
-    <value>SimSun, 12pt</value>
+    <value>SimSun-ExtB, 12pt</value>
   </data>
   <data name="Update.Size" type="System.Drawing.Size, System.Drawing">
     <value>108, 49</value>
@@ -751,8 +748,8 @@
   <data name="UpdateReset.Text" xml:space="preserve">
     <value>修改密码</value>
   </data>
-  <data name="&gt;&gt;Update.ZOrder" xml:space="preserve">
-    <value>9</value>
+  <data name="label2.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
   </data>
   <data name="&gt;&gt;Characters.Type" xml:space="preserve">
     <value>System.Windows.Forms.ComboBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
@@ -772,6 +769,9 @@
   <data name="&gt;&gt;label3.ZOrder" xml:space="preserve">
     <value>1</value>
   </data>
+  <data name="&gt;&gt;Update.ZOrder" xml:space="preserve">
+    <value>9</value>
+  </data>
   <data name="&gt;&gt;Add.Parent" xml:space="preserve">
     <value>$this</value>
   </data>
@@ -788,16 +788,16 @@
     <value>Account</value>
   </data>
   <data name="Password.Font" type="System.Drawing.Font, System.Drawing">
-    <value>SimSun, 15pt</value>
+    <value>SimSun-ExtB, 15pt</value>
   </data>
   <data name="Add.TabIndex" type="System.Int32, mscorlib">
     <value>56</value>
   </data>
   <data name="label2.Font" type="System.Drawing.Font, System.Drawing">
-    <value>SimSun, 13pt</value>
+    <value>SimSun-ExtB, 13pt</value>
   </data>
   <data name="Add.Font" type="System.Drawing.Font, System.Drawing">
-    <value>SimSun, 12pt</value>
+    <value>SimSun-ExtB, 12pt</value>
   </data>
   <data name="Add.Size" type="System.Drawing.Size, System.Drawing">
     <value>108, 49</value>
@@ -833,12 +833,12 @@
     <value>0</value>
   </data>
   <data name="Account.Font" type="System.Drawing.Font, System.Drawing">
-    <value>SimSun, 15pt</value>
+    <value>SimSun-ExtB, 15pt</value>
   </data>
   <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
   </metadata>
   <metadata name="$this.Language" type="System.Globalization.CultureInfo, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>en</value>
+    <value>es</value>
   </metadata>
 </root>

@@ -1,0 +1,16 @@
+全局异常捕捉
+****************************异常文本****************************
+【出现时间】：10/7/2024 2:14:57 PM
+【异常类型】：NullReferenceException
+【异常信息】：未将对象引用设置到对象的实例。
+【堆栈调用】：   在 System.IO.Ports.SerialPort.ReadExisting()
+   在 SLC1_N.SerialPortReader.Read()
+   在 System.Threading.ThreadHelper.ThreadStart_Context(Object state)
+   在 System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state, Boolean preserveSyncCtx)
+   在 System.Threading.ExecutionContext.Run(ExecutionContext executionContext, ContextCallback callback, Object state, Boolean preserveSyncCtx)
+   在 System.Threading.ExecutionContext.Run(ExecutionContext executionContext, ContextCallback callback, Object state)
+   在 System.Threading.ThreadHelper.ThreadStart()
+***************************************************************
+
+10/7/2024 2:14:57 PM
+=======================================================

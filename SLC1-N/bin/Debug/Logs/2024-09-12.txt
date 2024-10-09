@@ -1,0 +1,22 @@
+全局异常捕捉
+****************************异常文本****************************
+【出现时间】：9/12/2024 10:58:38 AM
+【异常类型】：InvalidOperationException
+【异常信息】：Cross-thread operation not valid: Control 'CH1RTADC' accessed from a thread other than the thread it was created on.
+【堆栈调用】：   at System.Windows.Forms.Control.get_Handle()
+   at System.Windows.Forms.Control.set_WindowText(String value)
+   at System.Windows.Forms.Control.set_Text(String value)
+   at System.Windows.Forms.Label.set_Text(String value)
+   at SLC1_N.Form1.CH1POWER_DataReceived(String data) in D:\上位机\0828\288\ll-28-TanQunMXG\SLC1-N\Form1.cs:line 440
+   at SLC1_N.SerialPortReader.OnTimeout(Object state) in D:\上位机\0828\288\ll-28-TanQunMXG\SLC1-N\ProtRead.cs:line 63
+   at System.Threading.TimerQueueTimer.CallCallbackInContext(Object state)
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state, Boolean preserveSyncCtx)
+   at System.Threading.ExecutionContext.Run(ExecutionContext executionContext, ContextCallback callback, Object state, Boolean preserveSyncCtx)
+   at System.Threading.TimerQueueTimer.CallCallback()
+   at System.Threading.TimerQueueTimer.Fire()
+   at System.Threading.TimerQueue.FireNextTimers()
+   at System.Threading.TimerQueue.AppDomainTimerCallback(Int32 id)
+***************************************************************
+
+9/12/2024 10:58:38 AM
+=======================================================

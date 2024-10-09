@@ -127,8 +127,8 @@
   <data name="ProductionItem.Location" type="System.Drawing.Point, System.Drawing">
     <value>29, 214</value>
   </data>
-  <data name="&gt;&gt;groupBox2.Parent" xml:space="preserve">
-    <value>$this</value>
+  <data name="label9.Location" type="System.Drawing.Point, System.Drawing">
+    <value>18, 81</value>
   </data>
   <data name="CHKCH2.Text" xml:space="preserve">
     <value>右工位CH2</value>
@@ -138,6 +138,10 @@
   </data>
   <data name="&gt;&gt;WorkOrderStore.Type" xml:space="preserve">
     <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="CodeSetting.TabIndex" type="System.Int32, mscorlib">
+    <value>176</value>
   </data>
   <data name="&gt;&gt;label9.Name" xml:space="preserve">
     <value>label9</value>
@@ -151,7 +155,6 @@
   <data name="ProductName.Font" type="System.Drawing.Font, System.Drawing">
     <value>SimSun, 12pt</value>
   </data>
-  <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
   <data name="label10.TabIndex" type="System.Int32, mscorlib">
     <value>165</value>
   </data>
@@ -182,9 +185,6 @@
   <data name="groupBox2.TabIndex" type="System.Int32, mscorlib">
     <value>180</value>
   </data>
-  <data name="CodeSetting.Font" type="System.Drawing.Font, System.Drawing">
-    <value>SimSun, 12pt</value>
-  </data>
   <data name="CH2ProductCount.Font" type="System.Drawing.Font, System.Drawing">
     <value>SimSun, 12pt</value>
   </data>
@@ -197,9 +197,8 @@
   <data name="&gt;&gt;LeftCodeLength.Parent" xml:space="preserve">
     <value>groupBox1</value>
   </data>
-  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="LeftCodeLife.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>4, 4, 4, 4</value>
+  <data name="&gt;&gt;ProductNum.Name" xml:space="preserve">
+    <value>ProductNum</value>
   </data>
   <data name="RightCodeLife.Size" type="System.Drawing.Size, System.Drawing">
     <value>157, 26</value>
@@ -207,8 +206,8 @@
   <data name="label8.Size" type="System.Drawing.Size, System.Drawing">
     <value>72, 16</value>
   </data>
-  <data name="RightCodeLength.TabIndex" type="System.Int32, mscorlib">
-    <value>167</value>
+  <data name="&gt;&gt;label8.Name" xml:space="preserve">
+    <value>label8</value>
   </data>
   <data name="&gt;&gt;CH2ProductCount.Type" xml:space="preserve">
     <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
@@ -219,11 +218,12 @@
   <data name="LeftCodeLength.Font" type="System.Drawing.Font, System.Drawing">
     <value>SimSun, 12pt</value>
   </data>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="LeftCodeLife.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 4, 4, 4</value>
+  </data>
   <data name="WorkOrder.Size" type="System.Drawing.Size, System.Drawing">
     <value>294, 26</value>
-  </data>
-  <data name="label2.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
   </data>
   <data name="label1.TabIndex" type="System.Int32, mscorlib">
     <value>161</value>
@@ -255,8 +255,8 @@
   <data name="LeftCodeLife.Font" type="System.Drawing.Font, System.Drawing">
     <value>SimSun, 12pt</value>
   </data>
-  <data name="WorkOrderStore.Location" type="System.Drawing.Point, System.Drawing">
-    <value>56, 416</value>
+  <data name="&gt;&gt;CH1ProductCount.Parent" xml:space="preserve">
+    <value>groupBox2</value>
   </data>
   <data name="&gt;&gt;label14.Parent" xml:space="preserve">
     <value>groupBox2</value>
@@ -300,9 +300,6 @@
   <data name="&gt;&gt;label7.Name" xml:space="preserve">
     <value>label7</value>
   </data>
-  <data name="Use_Set.Size" type="System.Drawing.Size, System.Drawing">
-    <value>82, 47</value>
-  </data>
   <data name="label3.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>4, 0, 4, 0</value>
   </data>
@@ -321,8 +318,8 @@
   <data name="&gt;&gt;label8.Parent" xml:space="preserve">
     <value>groupBox2</value>
   </data>
-  <data name="LeftCodeLife.Location" type="System.Drawing.Point, System.Drawing">
-    <value>12, 53</value>
+  <data name="&gt;&gt;label2.Name" xml:space="preserve">
+    <value>label2</value>
   </data>
   <data name="label9.Size" type="System.Drawing.Size, System.Drawing">
     <value>72, 16</value>
@@ -341,6 +338,9 @@
   </data>
   <data name="ProductNum.Size" type="System.Drawing.Size, System.Drawing">
     <value>294, 26</value>
+  </data>
+  <data name="CH1ProductCount.Size" type="System.Drawing.Size, System.Drawing">
+    <value>82, 47</value>
   </data>
   <data name="&gt;&gt;label3.ZOrder" xml:space="preserve">
     <value>1</value>
@@ -375,8 +375,8 @@
   <data name="&gt;&gt;label19.Type" xml:space="preserve">
     <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;ProductNum.Parent" xml:space="preserve">
-    <value>groupBox2</value>
+  <data name="label9.Text" xml:space="preserve">
+    <value>产品型号</value>
   </data>
   <data name="label13.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -389,6 +389,9 @@
   </data>
   <data name="label7.Size" type="System.Drawing.Size, System.Drawing">
     <value>152, 16</value>
+  </data>
+  <data name="&gt;&gt;CH1ProductCount.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;ProductModel.Parent" xml:space="preserve">
     <value>groupBox2</value>
@@ -426,17 +429,14 @@
   <data name="RightCodeLength.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>4, 4, 4, 4</value>
   </data>
-  <data name="CodeSetting.Size" type="System.Drawing.Size, System.Drawing">
-    <value>82, 47</value>
-  </data>
   <data name="label1.Location" type="System.Drawing.Point, System.Drawing">
     <value>193, 254</value>
   </data>
   <data name="&gt;&gt;LeftCodeCount.ZOrder" xml:space="preserve">
     <value>8</value>
   </data>
-  <data name="label7.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
+  <data name="label13.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 0, 4, 0</value>
   </data>
   <data name="&gt;&gt;Use_Set.Parent" xml:space="preserve">
     <value>groupBox1</value>
@@ -444,11 +444,17 @@
   <data name="CHKCH2.Size" type="System.Drawing.Size, System.Drawing">
     <value>118, 24</value>
   </data>
+  <data name="label11.Text" xml:space="preserve">
+    <value>生产料号</value>
+  </data>
   <data name="CHKCH1.Size" type="System.Drawing.Size, System.Drawing">
     <value>118, 24</value>
   </data>
   <data name="&gt;&gt;label12.ZOrder" xml:space="preserve">
     <value>8</value>
+  </data>
+  <data name="&gt;&gt;label11.ZOrder" xml:space="preserve">
+    <value>10</value>
   </data>
   <data name="&gt;&gt;LeftCodeLength.ZOrder" xml:space="preserve">
     <value>5</value>
@@ -461,9 +467,6 @@
   </data>
   <data name="&gt;&gt;label7.Parent" xml:space="preserve">
     <value>groupBox1</value>
-  </data>
-  <data name="RightCodeLife.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>4, 4, 4, 4</value>
   </data>
   <data name="label13.TabIndex" type="System.Int32, mscorlib">
     <value>171</value>
@@ -507,8 +510,8 @@
   <data name="LeftCodeLife.TabIndex" type="System.Int32, mscorlib">
     <value>163</value>
   </data>
-  <data name="label9.Text" xml:space="preserve">
-    <value>产品型号</value>
+  <data name="&gt;&gt;groupBox2.Parent" xml:space="preserve">
+    <value>$this</value>
   </data>
   <data name="label11.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>4, 0, 4, 0</value>
@@ -627,6 +630,9 @@
   <data name="CH2ProductCount.Location" type="System.Drawing.Point, System.Drawing">
     <value>232, 416</value>
   </data>
+  <data name="CHKCH1.Font" type="System.Drawing.Font, System.Drawing">
+    <value>SimSun, 15pt</value>
+  </data>
   <data name="&gt;&gt;label5.Name" xml:space="preserve">
     <value>label5</value>
   </data>
@@ -651,6 +657,9 @@
   <data name="&gt;&gt;Use_Set.ZOrder" xml:space="preserve">
     <value>9</value>
   </data>
+  <data name="&gt;&gt;ProductionItem.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
   <data name="&gt;&gt;CH1ProductCount.ZOrder" xml:space="preserve">
     <value>2</value>
   </data>
@@ -665,9 +674,6 @@
   </data>
   <data name="label7.Location" type="System.Drawing.Point, System.Drawing">
     <value>9, 416</value>
-  </data>
-  <data name="&gt;&gt;label4.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="label3.Size" type="System.Drawing.Size, System.Drawing">
     <value>184, 16</value>
@@ -689,6 +695,9 @@
   </data>
   <data name="label14.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>4, 0, 4, 0</value>
+  </data>
+  <data name="RightCodeLength.Visible" type="System.Boolean, mscorlib">
+    <value>False</value>
   </data>
   <data name="&gt;&gt;label6.Type" xml:space="preserve">
     <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
@@ -762,9 +771,6 @@
   <data name="ProductionItem.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>4, 4, 4, 4</value>
   </data>
-  <data name="$this.Text" xml:space="preserve">
-    <value>基本设置</value>
-  </data>
   <data name="&gt;&gt;groupBox2.ZOrder" xml:space="preserve">
     <value>0</value>
   </data>
@@ -804,11 +810,14 @@
   <data name="label3.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
-  <data name="&gt;&gt;ProductNum.Name" xml:space="preserve">
-    <value>ProductNum</value>
-  </data>
   <data name="LeftCodeCount.Location" type="System.Drawing.Point, System.Drawing">
     <value>12, 436</value>
+  </data>
+  <data name="label2.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="RightCodeLife.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 4, 4, 4</value>
   </data>
   <data name="label11.TabIndex" type="System.Int32, mscorlib">
     <value>167</value>
@@ -818,9 +827,6 @@
   </data>
   <data name="ProductName.Size" type="System.Drawing.Size, System.Drawing">
     <value>294, 26</value>
-  </data>
-  <data name="CHKCH2.Location" type="System.Drawing.Point, System.Drawing">
-    <value>28, 206</value>
   </data>
   <data name="&gt;&gt;label13.Name" xml:space="preserve">
     <value>label13</value>
@@ -1340,8 +1346,8 @@
   <data name="&gt;&gt;LeftCodeLife.ZOrder" xml:space="preserve">
     <value>15</value>
   </data>
-  <data name="label9.Location" type="System.Drawing.Point, System.Drawing">
-    <value>18, 81</value>
+  <data name="CH2CodeSetting.Location" type="System.Drawing.Point, System.Drawing">
+    <value>247, 104</value>
   </data>
   <data name="CHKCH1.TabIndex" type="System.Int32, mscorlib">
     <value>169</value>
@@ -1430,14 +1436,14 @@
   <data name="&gt;&gt;label13.Type" xml:space="preserve">
     <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
+  <data name="&gt;&gt;label12.Parent" xml:space="preserve">
+    <value>groupBox2</value>
+  </data>
   <data name="&gt;&gt;ProductionItem.Parent" xml:space="preserve">
     <value>groupBox2</value>
   </data>
   <data name="&gt;&gt;TestStation.Parent" xml:space="preserve">
     <value>groupBox2</value>
-  </data>
-  <data name="CodeSetting.Location" type="System.Drawing.Point, System.Drawing">
-    <value>43, 104</value>
   </data>
   <data name="LeftCodeCount.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>4, 4, 4, 4</value>
@@ -1445,14 +1451,11 @@
   <data name="label10.Text" xml:space="preserve">
     <value>工单单号</value>
   </data>
+  <data name="ProductNum.TabIndex" type="System.Int32, mscorlib">
+    <value>180</value>
+  </data>
   <data name="label8.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
-  </data>
-  <data name="label2.TabIndex" type="System.Int32, mscorlib">
-    <value>164</value>
-  </data>
-  <data name="&gt;&gt;CH2CodeSetting.Name" xml:space="preserve">
-    <value>CH2CodeSetting</value>
   </data>
   <data name="label7.Text" xml:space="preserve">
     <value>左工位条码已用次数</value>
@@ -1484,8 +1487,8 @@
   <data name="label6.Text" xml:space="preserve">
     <value>右工位条码已用次数</value>
   </data>
-  <data name="ProductNum.TabIndex" type="System.Int32, mscorlib">
-    <value>180</value>
+  <data name="CodeSetting.Size" type="System.Drawing.Size, System.Drawing">
+    <value>82, 47</value>
   </data>
   <data name="label11.Font" type="System.Drawing.Font, System.Drawing">
     <value>SimSun, 12pt</value>
@@ -1502,8 +1505,8 @@
   <data name="ProductModel.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>4, 4, 4, 4</value>
   </data>
-  <data name="label11.Text" xml:space="preserve">
-    <value>生产料号</value>
+  <data name="&gt;&gt;label4.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="CH2CodeSetting.Size" type="System.Drawing.Size, System.Drawing">
     <value>82, 47</value>
@@ -1516,9 +1519,6 @@
   </data>
   <data name="CH1ProductCount.Font" type="System.Drawing.Font, System.Drawing">
     <value>SimSun, 12pt</value>
-  </data>
-  <data name="groupBox2.Size" type="System.Drawing.Size, System.Drawing">
-    <value>370, 469</value>
   </data>
   <data name="&gt;&gt;RightCodeLength.Type" xml:space="preserve">
     <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
@@ -1547,14 +1547,14 @@
   <data name="WorkOrder.TabIndex" type="System.Int32, mscorlib">
     <value>164</value>
   </data>
-  <data name="CodeSetting.TabIndex" type="System.Int32, mscorlib">
-    <value>176</value>
+  <data name="CodeSetting.Font" type="System.Drawing.Font, System.Drawing">
+    <value>SimSun, 12pt</value>
   </data>
-  <data name="RightCodeLength.Visible" type="System.Boolean, mscorlib">
-    <value>False</value>
+  <data name="label7.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
   </data>
-  <data name="&gt;&gt;label2.Name" xml:space="preserve">
-    <value>label2</value>
+  <data name="RightCodeLength.TabIndex" type="System.Int32, mscorlib">
+    <value>167</value>
   </data>
   <data name="label6.TabIndex" type="System.Int32, mscorlib">
     <value>174</value>
@@ -1562,8 +1562,8 @@
   <data name="label10.Font" type="System.Drawing.Font, System.Drawing">
     <value>SimSun, 12pt</value>
   </data>
-  <data name="CH2CodeSetting.Location" type="System.Drawing.Point, System.Drawing">
-    <value>247, 104</value>
+  <data name="Use_Set.Size" type="System.Drawing.Size, System.Drawing">
+    <value>82, 47</value>
   </data>
   <data name="label6.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -1580,8 +1580,8 @@
   <data name="label6.Size" type="System.Drawing.Size, System.Drawing">
     <value>152, 16</value>
   </data>
-  <data name="CH1ProductCount.Size" type="System.Drawing.Size, System.Drawing">
-    <value>82, 47</value>
+  <data name="label2.TabIndex" type="System.Int32, mscorlib">
+    <value>164</value>
   </data>
   <data name="label2.Font" type="System.Drawing.Font, System.Drawing">
     <value>SimSun, 12pt</value>
@@ -1604,8 +1604,8 @@
   <data name="&gt;&gt;$this.Type" xml:space="preserve">
     <value>System.Windows.Forms.Form, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="CHKCH1.Font" type="System.Drawing.Font, System.Drawing">
-    <value>SimSun, 15pt</value>
+  <data name="&gt;&gt;CH2CodeSetting.Name" xml:space="preserve">
+    <value>CH2CodeSetting</value>
   </data>
   <data name="LeftCodeLength.Size" type="System.Drawing.Size, System.Drawing">
     <value>157, 26</value>
@@ -1619,8 +1619,8 @@
   <data name="label1.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>4, 0, 4, 0</value>
   </data>
-  <data name="&gt;&gt;label12.Parent" xml:space="preserve">
-    <value>groupBox2</value>
+  <data name="CHKCH2.Location" type="System.Drawing.Point, System.Drawing">
+    <value>28, 206</value>
   </data>
   <data name="LeftCodeLength.Visible" type="System.Boolean, mscorlib">
     <value>False</value>
@@ -1637,8 +1637,8 @@
   <data name="label1.Visible" type="System.Boolean, mscorlib">
     <value>False</value>
   </data>
-  <data name="label13.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>4, 0, 4, 0</value>
+  <data name="CodeSetting.Location" type="System.Drawing.Point, System.Drawing">
+    <value>43, 104</value>
   </data>
   <data name="&gt;&gt;groupBox1.ZOrder" xml:space="preserve">
     <value>1</value>
@@ -1649,14 +1649,14 @@
   <data name="&gt;&gt;groupBox1.Type" xml:space="preserve">
     <value>System.Windows.Forms.GroupBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;label8.Name" xml:space="preserve">
-    <value>label8</value>
+  <data name="WorkOrderStore.Location" type="System.Drawing.Point, System.Drawing">
+    <value>56, 416</value>
   </data>
   <data name="&gt;&gt;RightCodeCount.Name" xml:space="preserve">
     <value>RightCodeCount</value>
   </data>
-  <data name="&gt;&gt;CH1ProductCount.Parent" xml:space="preserve">
-    <value>groupBox2</value>
+  <data name="$this.Text" xml:space="preserve">
+    <value>基本设置</value>
   </data>
   <data name="label14.Font" type="System.Drawing.Font, System.Drawing">
     <value>SimSun, 12pt</value>
@@ -1670,8 +1670,8 @@
   <data name="&gt;&gt;Use_Set.Name" xml:space="preserve">
     <value>Use_Set</value>
   </data>
-  <data name="&gt;&gt;label11.ZOrder" xml:space="preserve">
-    <value>10</value>
+  <data name="&gt;&gt;ProductNum.Parent" xml:space="preserve">
+    <value>groupBox2</value>
   </data>
   <data name="label5.Font" type="System.Drawing.Font, System.Drawing">
     <value>SimSun, 12pt</value>
@@ -1688,14 +1688,14 @@
   <data name="label6.Font" type="System.Drawing.Font, System.Drawing">
     <value>SimSun, 12pt</value>
   </data>
-  <data name="&gt;&gt;ProductionItem.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="LeftCodeLife.Location" type="System.Drawing.Point, System.Drawing">
+    <value>12, 53</value>
   </data>
   <data name="&gt;&gt;label1.Type" xml:space="preserve">
     <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;CH1ProductCount.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="groupBox2.Size" type="System.Drawing.Size, System.Drawing">
+    <value>370, 469</value>
   </data>
   <data name="&gt;&gt;label2.Type" xml:space="preserve">
     <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>

@@ -131,10 +131,10 @@
     <value>782, 79</value>
   </data>
   <data name="RightCH2Status.Size" type="System.Drawing.Size, System.Drawing">
-    <value>134, 34</value>
+    <value>117, 34</value>
   </data>
   <data name="RightCH2Status.Text" xml:space="preserve">
-    <value>Standby</value>
+    <value>Espera</value>
   </data>
   <data name="label78.Text" xml:space="preserve">
     <value>Progreso de las pruebas</value>
@@ -167,7 +167,7 @@
     <value>606, 16</value>
   </data>
   <data name="label87.Size" type="System.Drawing.Size, System.Drawing">
-    <value>335, 16</value>
+    <value>333, 16</value>
   </data>
   <data name="label87.Text" xml:space="preserve">
     <value>Presión de inflado de la bomba de válvula</value>
@@ -176,7 +176,7 @@
     <value>739, 43</value>
   </data>
   <data name="label88.Size" type="System.Drawing.Size, System.Drawing">
-    <value>207, 16</value>
+    <value>206, 16</value>
   </data>
   <data name="label88.Text" xml:space="preserve">
     <value>Estado de la comunicación</value>
@@ -185,7 +185,7 @@
     <value>5, 32</value>
   </data>
   <data name="CH2_2presstext.Size" type="System.Drawing.Size, System.Drawing">
-    <value>143, 16</value>
+    <value>142, 16</value>
   </data>
   <data name="CH2_2presstext.Text" xml:space="preserve">
     <value>Presión de ensayo</value>
@@ -203,7 +203,7 @@
     <value>152, 32</value>
   </data>
   <data name="label91.Size" type="System.Drawing.Size, System.Drawing">
-    <value>231, 16</value>
+    <value>230, 16</value>
   </data>
   <data name="label91.Text" xml:space="preserve">
     <value>Diferencia de presión actual</value>
@@ -218,7 +218,7 @@
     <value>Tasa de fuga</value>
   </data>
   <data name="uiGroupBox2.Text" xml:space="preserve">
-    <value>Right workstation CH2-2</value>
+    <value>Estacion de trabajo derecha canal2</value>
   </data>
   <data name="label16.Location" type="System.Drawing.Point, System.Drawing">
     <value>679, 43</value>
@@ -233,13 +233,16 @@
     <value>267, 59</value>
   </data>
   <data name="LeftCH2Status.Size" type="System.Drawing.Size, System.Drawing">
-    <value>134, 34</value>
+    <value>117, 34</value>
   </data>
   <data name="LeftCH2Status.Text" xml:space="preserve">
-    <value>Standby</value>
+    <value>Espera</value>
   </data>
   <data name="label45.Text" xml:space="preserve">
     <value>Progreso de las pruebas</value>
+  </data>
+  <data name="LeftCH2TCP.Location" type="System.Drawing.Point, System.Drawing">
+    <value>754, 79</value>
   </data>
   <data name="CH2ParamIndex.Location" type="System.Drawing.Point, System.Drawing">
     <value>896, 100</value>
@@ -290,7 +293,7 @@
     <value>629, 16</value>
   </data>
   <data name="label68.Size" type="System.Drawing.Size, System.Drawing">
-    <value>335, 16</value>
+    <value>333, 16</value>
   </data>
   <data name="label68.Text" xml:space="preserve">
     <value>Presión de inflado de la bomba de válvula</value>
@@ -299,7 +302,7 @@
     <value>733, 43</value>
   </data>
   <data name="label69.Size" type="System.Drawing.Size, System.Drawing">
-    <value>207, 16</value>
+    <value>206, 16</value>
   </data>
   <data name="label69.Text" xml:space="preserve">
     <value>Estado de la comunicación</value>
@@ -308,7 +311,7 @@
     <value>5, 32</value>
   </data>
   <data name="CH1_2presstext.Size" type="System.Drawing.Size, System.Drawing">
-    <value>143, 16</value>
+    <value>142, 16</value>
   </data>
   <data name="CH1_2presstext.Text" xml:space="preserve">
     <value>Presión de ensayo</value>
@@ -326,13 +329,13 @@
     <value>151, 32</value>
   </data>
   <data name="label74.Size" type="System.Drawing.Size, System.Drawing">
-    <value>231, 16</value>
+    <value>230, 16</value>
   </data>
   <data name="label74.Text" xml:space="preserve">
     <value>Diferencia de presión actual</value>
   </data>
   <data name="uiGroupBox3.Text" xml:space="preserve">
-    <value>Left workstation CH1-2</value>
+    <value>Estación de trabajo izquierda CH1 - 2</value>
   </data>
   <data name="label93.Location" type="System.Drawing.Point, System.Drawing">
     <value>884, 37</value>
@@ -398,10 +401,10 @@
     <value>598, 61</value>
   </data>
   <data name="RightCH1Status.Size" type="System.Drawing.Size, System.Drawing">
-    <value>134, 34</value>
+    <value>117, 34</value>
   </data>
   <data name="RightCH1Status.Text" xml:space="preserve">
-    <value>Standby</value>
+    <value>Espera</value>
   </data>
   <data name="CH2_1FullPress.Location" type="System.Drawing.Point, System.Drawing">
     <value>631, 43</value>
@@ -413,7 +416,7 @@
     <value>Código de barras derecho</value>
   </data>
   <data name="CH2Status.Font" type="System.Drawing.Font, System.Drawing">
-    <value>SimSun, 15.75pt</value>
+    <value>SimSun-ExtB, 15.75pt</value>
   </data>
   <data name="CH2Status.Location" type="System.Drawing.Point, System.Drawing">
     <value>254, 33</value>
@@ -440,7 +443,7 @@
     <value>612, 16</value>
   </data>
   <data name="label124.Size" type="System.Drawing.Size, System.Drawing">
-    <value>335, 16</value>
+    <value>333, 16</value>
   </data>
   <data name="label124.Text" xml:space="preserve">
     <value>Presión de inflado de la bomba de válvula</value>
@@ -449,7 +452,7 @@
     <value>747, 43</value>
   </data>
   <data name="label125.Size" type="System.Drawing.Size, System.Drawing">
-    <value>207, 16</value>
+    <value>206, 16</value>
   </data>
   <data name="label125.Text" xml:space="preserve">
     <value>Estado de la comunicación</value>
@@ -458,7 +461,7 @@
     <value>10, 32</value>
   </data>
   <data name="CH2_1presstext.Size" type="System.Drawing.Size, System.Drawing">
-    <value>143, 16</value>
+    <value>142, 16</value>
   </data>
   <data name="CH2_1presstext.Text" xml:space="preserve">
     <value>Presión de ensayo</value>
@@ -509,25 +512,25 @@
     <value>152, 32</value>
   </data>
   <data name="label128.Size" type="System.Drawing.Size, System.Drawing">
-    <value>231, 16</value>
+    <value>230, 16</value>
   </data>
   <data name="label128.Text" xml:space="preserve">
     <value>Diferencia de presión actual</value>
   </data>
   <data name="uiGroupBox6.Text" xml:space="preserve">
-    <value>Right workstation CH2-1</value>
+    <value>Estacion de trabajo derecha canal1</value>
   </data>
   <data name="uiGroupBox5.Text" xml:space="preserve">
-    <value>CH2 right station</value>
+    <value>Estación derecha CH2</value>
   </data>
   <data name="LeftCH1TCP.Location" type="System.Drawing.Point, System.Drawing">
-    <value>846, 59</value>
+    <value>761, 68</value>
   </data>
   <data name="TestStation.Location" type="System.Drawing.Point, System.Drawing">
-    <value>834, 97</value>
+    <value>1218, 34</value>
   </data>
   <data name="TestType.Location" type="System.Drawing.Point, System.Drawing">
-    <value>834, 69</value>
+    <value>1218, 5</value>
   </data>
   <data name="ProductionItem.Location" type="System.Drawing.Point, System.Drawing">
     <value>834, 38</value>
@@ -536,22 +539,22 @@
     <value>834, 11</value>
   </data>
   <data name="ProductModel.Location" type="System.Drawing.Point, System.Drawing">
-    <value>518, 98</value>
+    <value>503, 101</value>
   </data>
   <data name="ProductName.Location" type="System.Drawing.Point, System.Drawing">
-    <value>518, 65</value>
+    <value>503, 68</value>
   </data>
   <data name="ProductNum.Location" type="System.Drawing.Point, System.Drawing">
-    <value>518, 39</value>
+    <value>503, 42</value>
   </data>
   <data name="Admin.Location" type="System.Drawing.Point, System.Drawing">
-    <value>519, 12</value>
+    <value>504, 15</value>
   </data>
   <data name="label12.Location" type="System.Drawing.Point, System.Drawing">
-    <value>652, 102</value>
+    <value>1036, 38</value>
   </data>
   <data name="label12.Size" type="System.Drawing.Size, System.Drawing">
-    <value>159, 16</value>
+    <value>158, 16</value>
   </data>
   <data name="label12.Text" xml:space="preserve">
     <value>Estación de pruebas</value>
@@ -560,10 +563,10 @@
     <value>753, 86</value>
   </data>
   <data name="LeftCH1Status.Size" type="System.Drawing.Size, System.Drawing">
-    <value>134, 34</value>
+    <value>117, 34</value>
   </data>
   <data name="LeftCH1Status.Text" xml:space="preserve">
-    <value>Standby</value>
+    <value>Espera</value>
   </data>
   <data name="label50.Text" xml:space="preserve">
     <value>Progreso de las pruebas</value>
@@ -596,7 +599,7 @@
     <value>600, 16</value>
   </data>
   <data name="label59.Size" type="System.Drawing.Size, System.Drawing">
-    <value>335, 16</value>
+    <value>333, 16</value>
   </data>
   <data name="label59.Text" xml:space="preserve">
     <value>Presión de inflado de la bomba de válvula</value>
@@ -605,7 +608,7 @@
     <value>747, 43</value>
   </data>
   <data name="label49.Size" type="System.Drawing.Size, System.Drawing">
-    <value>207, 16</value>
+    <value>206, 16</value>
   </data>
   <data name="label49.Text" xml:space="preserve">
     <value>Estado de la comunicación</value>
@@ -614,7 +617,7 @@
     <value>7, 32</value>
   </data>
   <data name="CH1_1presstext.Size" type="System.Drawing.Size, System.Drawing">
-    <value>143, 16</value>
+    <value>142, 16</value>
   </data>
   <data name="CH1_1presstext.Text" xml:space="preserve">
     <value>Presión de ensayo</value>
@@ -632,7 +635,7 @@
     <value>151, 32</value>
   </data>
   <data name="label52.Size" type="System.Drawing.Size, System.Drawing">
-    <value>231, 16</value>
+    <value>230, 16</value>
   </data>
   <data name="label52.Text" xml:space="preserve">
     <value>Diferencia de presión actual</value>
@@ -647,10 +650,10 @@
     <value>Tasa de fuga</value>
   </data>
   <data name="uiGroupBox4.Text" xml:space="preserve">
-    <value>Left workstation CH1-1</value>
+    <value>Estación de trabajo izquierda CH1 - 1</value>
   </data>
   <data name="label11.Location" type="System.Drawing.Point, System.Drawing">
-    <value>652, 74</value>
+    <value>1036, 10</value>
   </data>
   <data name="label11.Size" type="System.Drawing.Size, System.Drawing">
     <value>119, 16</value>
@@ -659,10 +662,10 @@
     <value>Tipo de prueba</value>
   </data>
   <data name="label10.Location" type="System.Drawing.Point, System.Drawing">
-    <value>654, 45</value>
+    <value>654, 46</value>
   </data>
   <data name="label10.Size" type="System.Drawing.Size, System.Drawing">
-    <value>127, 16</value>
+    <value>126, 16</value>
   </data>
   <data name="label10.Text" xml:space="preserve">
     <value>Número de pieza</value>
@@ -683,7 +686,7 @@
     <value>Modelo de producto</value>
   </data>
   <data name="label2.Location" type="System.Drawing.Point, System.Drawing">
-    <value>382, 45</value>
+    <value>382, 46</value>
   </data>
   <data name="label2.Size" type="System.Drawing.Size, System.Drawing">
     <value>95, 16</value>
@@ -707,7 +710,7 @@
     <value>Nombre de usuario</value>
   </data>
   <data name="label22.Location" type="System.Drawing.Point, System.Drawing">
-    <value>1403, 53</value>
+    <value>1453, 61</value>
   </data>
   <data name="label6.Location" type="System.Drawing.Point, System.Drawing">
     <value>493, 34</value>
@@ -736,24 +739,88 @@
   <data name="label32.Text" xml:space="preserve">
     <value>Código de barras izquierdo</value>
   </data>
+  <data name="RightReset.Location" type="System.Drawing.Point, System.Drawing">
+    <value>9, 70</value>
+  </data>
+  <data name="RightReset.Size" type="System.Drawing.Size, System.Drawing">
+    <value>219, 63</value>
+  </data>
   <data name="RightReset.Text" xml:space="preserve">
-    <value>Right reset</value>
+    <value>Restablecer a la derecha</value>
+  </data>
+  <data name="LeftReset.Location" type="System.Drawing.Point, System.Drawing">
+    <value>-4, 0</value>
+  </data>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="LeftReset.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>1, 2, 2, 2</value>
+  </data>
+  <data name="LeftReset.Size" type="System.Drawing.Size, System.Drawing">
+    <value>237, 55</value>
   </data>
   <data name="LeftReset.Text" xml:space="preserve">
-    <value>Left reset</value>
+    <value>Restablecimiento izquierdo</value>
+  </data>
+  <data name="button1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>616, 71</value>
+  </data>
+  <data name="button1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>85, 27</value>
   </data>
   <data name="button1.Text" xml:space="preserve">
     <value>España
 </value>
   </data>
+  <data name="CH2ReceiveText.Location" type="System.Drawing.Point, System.Drawing">
+    <value>1653, 23</value>
+  </data>
+  <data name="CH2ReceiveText.Size" type="System.Drawing.Size, System.Drawing">
+    <value>10, 10</value>
+  </data>
+  <data name="CH1ReceiveText.Location" type="System.Drawing.Point, System.Drawing">
+    <value>1653, 53</value>
+  </data>
+  <data name="CH1ReceiveText.Size" type="System.Drawing.Size, System.Drawing">
+    <value>10, 10</value>
+  </data>
+  <data name="textBox2.Location" type="System.Drawing.Point, System.Drawing">
+    <value>1630, 53</value>
+  </data>
+  <data name="textBox2.Size" type="System.Drawing.Size, System.Drawing">
+    <value>10, 10</value>
+  </data>
+  <data name="textBox1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>1631, 26</value>
+  </data>
+  <data name="textBox1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>10, 10</value>
+  </data>
+  <data name="PLCControl.Location" type="System.Drawing.Point, System.Drawing">
+    <value>184, 50</value>
+  </data>
+  <data name="PLCControl.Size" type="System.Drawing.Size, System.Drawing">
+    <value>132, 55</value>
+  </data>
   <data name="PLCControl.Text" xml:space="preserve">
-    <value>PLC control</value>
+    <value>Control de PC</value>
+  </data>
+  <data name="CH3ReceiveText.Location" type="System.Drawing.Point, System.Drawing">
+    <value>1669, 50</value>
+  </data>
+  <data name="CH3ReceiveText.Size" type="System.Drawing.Size, System.Drawing">
+    <value>10, 10</value>
   </data>
   <data name="Now.Location" type="System.Drawing.Point, System.Drawing">
-    <value>1434, 0</value>
+    <value>1488, 21</value>
+  </data>
+  <data name="CH4ReceiveText.Location" type="System.Drawing.Point, System.Drawing">
+    <value>1669, 21</value>
+  </data>
+  <data name="CH4ReceiveText.Size" type="System.Drawing.Size, System.Drawing">
+    <value>10, 10</value>
   </data>
   <data name="PLCRun.Location" type="System.Drawing.Point, System.Drawing">
-    <value>1441, 38</value>
+    <value>1491, 46</value>
   </data>
   <data name="uiNavBar1.Nodes" mimetype="application/x-microsoft.net.object.binary.base64">
     <value>
@@ -891,13 +958,13 @@
 </value>
   </data>
   <data name="CH1Status.Font" type="System.Drawing.Font, System.Drawing">
-    <value>SimSun, 14.25pt</value>
+    <value>SimSun-ExtB, 14.25pt</value>
   </data>
   <data name="CH1Status.Location" type="System.Drawing.Point, System.Drawing">
     <value>266, 35</value>
   </data>
   <data name="CH1Status.Size" type="System.Drawing.Size, System.Drawing">
-    <value>219, 19</value>
+    <value>212, 19</value>
   </data>
   <data name="CH1Status.Text" xml:space="preserve">
     <value>Artículos de repuesto</value>
@@ -948,7 +1015,7 @@
     <value>Corriente de trabajo</value>
   </data>
   <data name="uiGroupBox1.Text" xml:space="preserve">
-    <value>CH1 left station</value>
+    <value>Estación izquierda CH1</value>
   </data>
   <data name="Column1.HeaderText" xml:space="preserve">
     <value>Tiempo</value>
@@ -974,14 +1041,17 @@
   <data name="CH1ProductNumber.Location" type="System.Drawing.Point, System.Drawing">
     <value>108, 40</value>
   </data>
+  <data name="label233.Location" type="System.Drawing.Point, System.Drawing">
+    <value>850, 53</value>
+  </data>
   <data name="label232.Location" type="System.Drawing.Point, System.Drawing">
     <value>604, 49</value>
   </data>
   <data name="label232.Size" type="System.Drawing.Size, System.Drawing">
-    <value>95, 16</value>
+    <value>151, 16</value>
   </data>
   <data name="label232.Text" xml:space="preserve">
-    <value>Rendimiento</value>
+    <value>Tasa derendimiento</value>
   </data>
   <data name="label231.Location" type="System.Drawing.Point, System.Drawing">
     <value>401, 49</value>
@@ -1004,8 +1074,11 @@
   <data name="label229.Text" xml:space="preserve">
     <value>Product qty</value>
   </data>
+  <data name="CH1CT.Location" type="System.Drawing.Point, System.Drawing">
+    <value>890, 43</value>
+  </data>
   <data name="CH1PassRate.Location" type="System.Drawing.Point, System.Drawing">
-    <value>704, 40</value>
+    <value>781, 40</value>
   </data>
   <data name="CH1FailNumber.Location" type="System.Drawing.Point, System.Drawing">
     <value>497, 40</value>
@@ -1014,7 +1087,7 @@
     <value>293, 40</value>
   </data>
   <data name="uiTitlePanel3.Text" xml:space="preserve">
-    <value>Left station statistics</value>
+    <value>Estadísticas de la estación izquierda</value>
   </data>
   <data name="dataGridViewTextBoxColumn1.HeaderText" xml:space="preserve">
     <value>Tiempo</value>
@@ -1038,16 +1111,16 @@
     <value>Consecuencias</value>
   </data>
   <data name="label130.Location" type="System.Drawing.Point, System.Drawing">
-    <value>796, 49</value>
+    <value>846, 53</value>
   </data>
   <data name="label131.Location" type="System.Drawing.Point, System.Drawing">
     <value>606, 49</value>
   </data>
   <data name="label131.Size" type="System.Drawing.Size, System.Drawing">
-    <value>87, 16</value>
+    <value>151, 16</value>
   </data>
   <data name="label131.Text" xml:space="preserve">
-    <value>Yield rate</value>
+    <value>Tasa derendimiento</value>
   </data>
   <data name="label132.Size" type="System.Drawing.Size, System.Drawing">
     <value>55, 16</value>
@@ -1067,8 +1140,11 @@
   <data name="label134.Text" xml:space="preserve">
     <value>Product qty</value>
   </data>
+  <data name="CH2CT.Location" type="System.Drawing.Point, System.Drawing">
+    <value>883, 40</value>
+  </data>
   <data name="CH2PassRate.Location" type="System.Drawing.Point, System.Drawing">
-    <value>707, 43</value>
+    <value>777, 43</value>
   </data>
   <data name="CH2PassNumber.Location" type="System.Drawing.Point, System.Drawing">
     <value>288, 43</value>
@@ -1077,11 +1153,10 @@
     <value>103, 43</value>
   </data>
   <data name="uiTitlePanel1.Text" xml:space="preserve">
-    <value>Right station statistics</value>
+    <value>Estadísticas de la estación derecha</value>
   </data>
-  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
   <data name="logDisplay1.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>280208352, 372428992, 280208352, 372428992</value>
+    <value>0, 0, 0, 0</value>
   </data>
   <data name="uiGroupBox7.Text" xml:space="preserve">
     <value>Running log</value>

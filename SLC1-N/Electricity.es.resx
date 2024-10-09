@@ -127,6 +127,12 @@
   <data name="label140.Text" xml:space="preserve">
     <value>Compensación de tensión de trabajo</value>
   </data>
+  <data name="uiGroupBox29.Size" type="System.Drawing.Size, System.Drawing">
+    <value>469, 271</value>
+  </data>
+  <data name="uiGroupBox29.Text" xml:space="preserve">
+    <value>Límites superior e inferior de tensión y corriente</value>
+  </data>
   <data name="label141.Location" type="System.Drawing.Point, System.Drawing">
     <value>101, 117</value>
   </data>
@@ -172,38 +178,59 @@
   <data name="label148.Text" xml:space="preserve">
     <value>Límite superior de la corriente de trabajo</value>
   </data>
-  <data name="uiGroupBox29.Size" type="System.Drawing.Size, System.Drawing">
-    <value>469, 271</value>
+  <data name="tabPage5.Size" type="System.Drawing.Size, System.Drawing">
+    <value>1126, 1131</value>
   </data>
-  <data name="uiGroupBox29.Text" xml:space="preserve">
-    <value>Límites superior e inferior de tensión y corriente</value>
+  <data name="tabPage5.Text" xml:space="preserve">
+    <value>Estanqueidad a la baja establecida</value>
+  </data>
+  <data name="tabPage5.ToolTipText" xml:space="preserve">
+    <value>Estanqueidad a la baja establecida</value>
   </data>
   <data name="RDOWNParamsCopy.Location" type="System.Drawing.Point, System.Drawing">
-    <value>787, 613</value>
+    <value>787, 664</value>
   </data>
   <data name="RDOWNParamsCopy.Size" type="System.Drawing.Size, System.Drawing">
-    <value>230, 37</value>
+    <value>230, 40</value>
   </data>
   <data name="RDOWNParamsCopy.Text" xml:space="preserve">
     <value>Copiar a la derecha</value>
   </data>
   <data name="DOWNParamsSave.Location" type="System.Drawing.Point, System.Drawing">
-    <value>367, 613</value>
+    <value>367, 664</value>
   </data>
   <data name="DOWNParamsSave.Size" type="System.Drawing.Size, System.Drawing">
-    <value>274, 37</value>
+    <value>274, 40</value>
   </data>
   <data name="DOWNParamsSave.Text" xml:space="preserve">
     <value>Guardar configuración</value>
   </data>
   <data name="LDOWNParamsCopy.Location" type="System.Drawing.Point, System.Drawing">
-    <value>44, 613</value>
+    <value>44, 664</value>
   </data>
   <data name="LDOWNParamsCopy.Size" type="System.Drawing.Size, System.Drawing">
-    <value>213, 37</value>
+    <value>213, 40</value>
   </data>
   <data name="LDOWNParamsCopy.Text" xml:space="preserve">
     <value>Copia izquierda</value>
+  </data>
+  <data name="uiGroupBox21.Location" type="System.Drawing.Point, System.Drawing">
+    <value>503, 5</value>
+  </data>
+  <data name="uiGroupBox21.Size" type="System.Drawing.Size, System.Drawing">
+    <value>588, 630</value>
+  </data>
+  <data name="uiGroupBox21.Text" xml:space="preserve">
+    <value>Configuración de los parámetros de prueba CH2</value>
+  </data>
+  <data name="uiGroupBox24.Location" type="System.Drawing.Point, System.Drawing">
+    <value>49, 318</value>
+  </data>
+  <data name="uiGroupBox24.Size" type="System.Drawing.Size, System.Drawing">
+    <value>509, 271</value>
+  </data>
+  <data name="uiGroupBox24.Text" xml:space="preserve">
+    <value>Límite superior e inferior de la presión de flujo</value>
   </data>
   <data name="label158.Size" type="System.Drawing.Size, System.Drawing">
     <value>257, 16</value>
@@ -250,14 +277,14 @@
   <data name="label163.Text" xml:space="preserve">
     <value>Horas extras de presión ch2 1</value>
   </data>
-  <data name="uiGroupBox24.Location" type="System.Drawing.Point, System.Drawing">
-    <value>49, 318</value>
+  <data name="uiGroupBox28.Location" type="System.Drawing.Point, System.Drawing">
+    <value>46, 36</value>
   </data>
-  <data name="uiGroupBox24.Size" type="System.Drawing.Size, System.Drawing">
-    <value>509, 271</value>
+  <data name="uiGroupBox28.Size" type="System.Drawing.Size, System.Drawing">
+    <value>521, 271</value>
   </data>
-  <data name="uiGroupBox24.Text" xml:space="preserve">
-    <value>Límite superior e inferior de la presión de flujo</value>
+  <data name="uiGroupBox28.Text" xml:space="preserve">
+    <value>Límites superior e inferior de tensión y corriente</value>
   </data>
   <data name="label188.Size" type="System.Drawing.Size, System.Drawing">
     <value>277, 16</value>
@@ -304,27 +331,21 @@
   <data name="label196.Text" xml:space="preserve">
     <value>Límite superior de la corriente de trabajo</value>
   </data>
-  <data name="uiGroupBox28.Location" type="System.Drawing.Point, System.Drawing">
-    <value>46, 36</value>
+  <data name="uiGroupBox17.Size" type="System.Drawing.Size, System.Drawing">
+    <value>471, 630</value>
   </data>
-  <data name="uiGroupBox28.Size" type="System.Drawing.Size, System.Drawing">
-    <value>521, 271</value>
+  <data name="uiGroupBox17.Text" xml:space="preserve">
+    <value>Configuración de los parámetros de prueba CH1</value>
   </data>
-  <data name="uiGroupBox28.Text" xml:space="preserve">
-    <value>Límites superior e inferior de tensión y corriente</value>
+  <data name="uiGroupBox11.Size" type="System.Drawing.Size, System.Drawing">
+    <value>466, 271</value>
   </data>
-  <data name="uiGroupBox21.Location" type="System.Drawing.Point, System.Drawing">
-    <value>503, 5</value>
+  <data name="uiGroupBox11.Text" xml:space="preserve">
+    <value>Límite superior e inferior de la presión de flujo</value>
   </data>
-  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="uiGroupBox21.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>0, 32, 0, 0</value>
-  </data>
-  <data name="uiGroupBox21.Size" type="System.Drawing.Size, System.Drawing">
-    <value>588, 582</value>
-  </data>
-  <data name="uiGroupBox21.Text" xml:space="preserve">
-    <value>Configuración de los parámetros de prueba ch2</value>
+  <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="label55.AutoSize" type="System.Boolean, mscorlib">
+    <value>False</value>
   </data>
   <data name="label55.Size" type="System.Drawing.Size, System.Drawing">
     <value>273, 16</value>
@@ -332,11 +353,17 @@
   <data name="label55.Text" xml:space="preserve">
     <value>CH1 1 1 límite superior de presión</value>
   </data>
+  <data name="label56.AutoSize" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
   <data name="label56.Size" type="System.Drawing.Size, System.Drawing">
     <value>273, 16</value>
   </data>
   <data name="label56.Text" xml:space="preserve">
     <value>Límite inferior de presión CH1 1 1</value>
+  </data>
+  <data name="label29.AutoSize" type="System.Boolean, mscorlib">
+    <value>False</value>
   </data>
   <data name="label29.Location" type="System.Drawing.Point, System.Drawing">
     <value>43, 172</value>
@@ -347,6 +374,9 @@
   <data name="label29.Text" xml:space="preserve">
     <value>Límite inferior del flujo CH1 1 1</value>
   </data>
+  <data name="label62.AutoSize" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
   <data name="label62.Location" type="System.Drawing.Point, System.Drawing">
     <value>41, 101</value>
   </data>
@@ -355,6 +385,9 @@
   </data>
   <data name="label62.Text" xml:space="preserve">
     <value>CH1 1 1 límite máximo de tráfico</value>
+  </data>
+  <data name="label66.AutoSize" type="System.Boolean, mscorlib">
+    <value>False</value>
   </data>
   <data name="label66.Location" type="System.Drawing.Point, System.Drawing">
     <value>32, 32</value>
@@ -365,17 +398,32 @@
   <data name="label66.Text" xml:space="preserve">
     <value>Compensación de tensión de trabajo</value>
   </data>
+  <data name="label30.AutoSize" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
   <data name="label30.Size" type="System.Drawing.Size, System.Drawing">
     <value>254, 16</value>
   </data>
   <data name="label30.Text" xml:space="preserve">
     <value>CH1 1 1 horas extras de presión</value>
   </data>
-  <data name="uiGroupBox11.Size" type="System.Drawing.Size, System.Drawing">
-    <value>466, 271</value>
+  <data name="uiGroupBox18.Size" type="System.Drawing.Size, System.Drawing">
+    <value>487, 271</value>
   </data>
-  <data name="uiGroupBox11.Text" xml:space="preserve">
-    <value>Límite superior e inferior de la presión de flujo</value>
+  <data name="uiGroupBox18.Text" xml:space="preserve">
+    <value>Límites superior e inferior de tensión y corriente</value>
+  </data>
+  <data name="label61.AutoSize" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="label63.AutoSize" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="label64.AutoSize" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="label65.AutoSize" type="System.Boolean, mscorlib">
+    <value>False</value>
   </data>
   <data name="label65.Location" type="System.Drawing.Point, System.Drawing">
     <value>166, 188</value>
@@ -386,6 +434,9 @@
   <data name="label65.Text" xml:space="preserve">
     <value>Compensación de tensión de trabajo</value>
   </data>
+  <data name="label67.AutoSize" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
   <data name="label67.Location" type="System.Drawing.Point, System.Drawing">
     <value>122, 117</value>
   </data>
@@ -394,6 +445,9 @@
   </data>
   <data name="label67.Text" xml:space="preserve">
     <value>Límite inferior de la tensión de trabajo</value>
+  </data>
+  <data name="label68.AutoSize" type="System.Boolean, mscorlib">
+    <value>False</value>
   </data>
   <data name="label68.Location" type="System.Drawing.Point, System.Drawing">
     <value>165, 47</value>
@@ -404,6 +458,15 @@
   <data name="label68.Text" xml:space="preserve">
     <value>Límite superior de tensión de trabajo</value>
   </data>
+  <data name="label127.AutoSize" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="label128.AutoSize" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="label129.AutoSize" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
   <data name="label129.Location" type="System.Drawing.Point, System.Drawing">
     <value>16, 172</value>
   </data>
@@ -412,6 +475,9 @@
   </data>
   <data name="label129.Text" xml:space="preserve">
     <value>Compensación de corriente de trabajo</value>
+  </data>
+  <data name="label130.AutoSize" type="System.Boolean, mscorlib">
+    <value>False</value>
   </data>
   <data name="label130.Location" type="System.Drawing.Point, System.Drawing">
     <value>6, 101</value>
@@ -422,6 +488,12 @@
   <data name="label130.Text" xml:space="preserve">
     <value>Límite inferior de la corriente de trabajo</value>
   </data>
+  <data name="label131.AutoSize" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="label132.AutoSize" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
   <data name="label132.Location" type="System.Drawing.Point, System.Drawing">
     <value>6, 31</value>
   </data>
@@ -431,26 +503,11 @@
   <data name="label132.Text" xml:space="preserve">
     <value>Límite superior de la corriente de trabajo</value>
   </data>
-  <data name="uiGroupBox18.Size" type="System.Drawing.Size, System.Drawing">
-    <value>487, 271</value>
+  <data name="uiGroupBox40.Size" type="System.Drawing.Size, System.Drawing">
+    <value>554, 271</value>
   </data>
-  <data name="uiGroupBox18.Text" xml:space="preserve">
+  <data name="uiGroupBox40.Text" xml:space="preserve">
     <value>Límites superior e inferior de tensión y corriente</value>
-  </data>
-  <data name="uiGroupBox17.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>0, 32, 0, 0</value>
-  </data>
-  <data name="uiGroupBox17.Size" type="System.Drawing.Size, System.Drawing">
-    <value>471, 582</value>
-  </data>
-  <data name="uiGroupBox17.Text" xml:space="preserve">
-    <value>Configuración de los parámetros de prueba CH1</value>
-  </data>
-  <data name="tabPage5.Size" type="System.Drawing.Size, System.Drawing">
-    <value>1126, 1044</value>
-  </data>
-  <data name="tabPage5.Text" xml:space="preserve">
-    <value>Estanqueidad a la baja establecida</value>
   </data>
   <data name="label230.Size" type="System.Drawing.Size, System.Drawing">
     <value>277, 16</value>
@@ -497,56 +554,59 @@
   <data name="label238.Text" xml:space="preserve">
     <value>Límite superior de la corriente de trabajo</value>
   </data>
-  <data name="uiGroupBox40.Size" type="System.Drawing.Size, System.Drawing">
-    <value>554, 271</value>
-  </data>
-  <data name="uiGroupBox40.Text" xml:space="preserve">
-    <value>Límites superior e inferior de tensión y corriente</value>
-  </data>
   <data name="label224.Size" type="System.Drawing.Size, System.Drawing">
     <value>241, 16</value>
   </data>
   <data name="label224.Text" xml:space="preserve">
-    <value>Límite superior de presión ch2</value>
+    <value>Límite superior de presión CH2</value>
   </data>
   <data name="label225.Size" type="System.Drawing.Size, System.Drawing">
     <value>241, 16</value>
   </data>
   <data name="label225.Text" xml:space="preserve">
-    <value>Límite inferior de presión ch2</value>
+    <value>Límite inferior de presión CH2</value>
   </data>
   <data name="label226.Size" type="System.Drawing.Size, System.Drawing">
     <value>222, 16</value>
   </data>
   <data name="label226.Text" xml:space="preserve">
-    <value>Horas extras de presión ch2</value>
+    <value>Horas extras de presión CH2</value>
   </data>
   <data name="uiGroupBox42.Size" type="System.Drawing.Size, System.Drawing">
     <value>538, 246</value>
   </data>
   <data name="uiGroupBox42.Text" xml:space="preserve">
-    <value>Límite superior e inferior de la presión ch2</value>
-  </data>
-  <data name="RWDParamsSave.Location" type="System.Drawing.Point, System.Drawing">
-    <value>339, 603</value>
+    <value>Límite superior e inferior de la presión CH2</value>
   </data>
   <data name="RWDParamsSave.Size" type="System.Drawing.Size, System.Drawing">
-    <value>159, 40</value>
+    <value>244, 43</value>
   </data>
   <data name="RWDParamsSave.Text" xml:space="preserve">
     <value>Guardar configuración</value>
   </data>
   <data name="uiGroupBox39.Location" type="System.Drawing.Point, System.Drawing">
-    <value>563, 14</value>
-  </data>
-  <data name="uiGroupBox39.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>0, 32, 0, 0</value>
+    <value>563, 15</value>
   </data>
   <data name="uiGroupBox39.Size" type="System.Drawing.Size, System.Drawing">
-    <value>562, 525</value>
+    <value>562, 569</value>
   </data>
   <data name="uiGroupBox39.Text" xml:space="preserve">
     <value>CH2 test parameter settings</value>
+  </data>
+  <data name="uiGroupBox26.Location" type="System.Drawing.Point, System.Drawing">
+    <value>485, 5</value>
+  </data>
+  <data name="uiGroupBox26.Size" type="System.Drawing.Size, System.Drawing">
+    <value>609, 321</value>
+  </data>
+  <data name="uiGroupBox26.Text" xml:space="preserve">
+    <value>Configuración de los parámetros de prueba CH2</value>
+  </data>
+  <data name="uiGroupBox34.Size" type="System.Drawing.Size, System.Drawing">
+    <value>580, 271</value>
+  </data>
+  <data name="uiGroupBox34.Text" xml:space="preserve">
+    <value>Límites superior e inferior de tensión y corriente</value>
   </data>
   <data name="label84.Size" type="System.Drawing.Size, System.Drawing">
     <value>277, 16</value>
@@ -593,38 +653,14 @@
   <data name="label126.Text" xml:space="preserve">
     <value>Límite superior de la corriente de trabajo</value>
   </data>
-  <data name="uiGroupBox34.Size" type="System.Drawing.Size, System.Drawing">
-    <value>580, 271</value>
-  </data>
-  <data name="uiGroupBox34.Text" xml:space="preserve">
-    <value>Límites superior e inferior de tensión y corriente</value>
-  </data>
-  <data name="uiGroupBox26.Location" type="System.Drawing.Point, System.Drawing">
-    <value>485, 5</value>
-  </data>
-  <data name="uiGroupBox26.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>0, 32, 0, 0</value>
-  </data>
-  <data name="uiGroupBox26.Size" type="System.Drawing.Size, System.Drawing">
-    <value>609, 279</value>
-  </data>
-  <data name="uiGroupBox26.Text" xml:space="preserve">
-    <value>Configuración de los parámetros de prueba ch2</value>
-  </data>
   <data name="FWDParamsSave.Location" type="System.Drawing.Point, System.Drawing">
-    <value>327, 631</value>
+    <value>401, 947</value>
   </data>
   <data name="FWDParamsSave.Size" type="System.Drawing.Size, System.Drawing">
-    <value>227, 37</value>
+    <value>227, 40</value>
   </data>
   <data name="FWDParamsSave.Text" xml:space="preserve">
     <value>Guardar configuración</value>
-  </data>
-  <data name="uiGroupBox22.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>0, 32, 0, 0</value>
-  </data>
-  <data name="uiGroupBox22.Size" type="System.Drawing.Size, System.Drawing">
-    <value>430, 302</value>
   </data>
   <data name="uiGroupBox22.Text" xml:space="preserve">
     <value>Configuración de los parámetros de prueba CH1</value>
@@ -752,6 +788,12 @@
   <data name="label120.Text" xml:space="preserve">
     <value>Compensación de presión</value>
   </data>
+  <data name="ParaName.Location" type="System.Drawing.Point, System.Drawing">
+    <value>7, 245</value>
+  </data>
+  <data name="ParaName.Size" type="System.Drawing.Size, System.Drawing">
+    <value>169, 39</value>
+  </data>
   <data name="ParaNum.Items" xml:space="preserve">
     <value>1 caudal</value>
   </data>
@@ -779,6 +821,15 @@
   <data name="ParaNum.Items8" xml:space="preserve">
     <value>9 C2 / f2 hermético</value>
   </data>
+  <data name="ParaNum.Location" type="System.Drawing.Point, System.Drawing">
+    <value>7, 145</value>
+  </data>
+  <data name="ParaNum.Size" type="System.Drawing.Size, System.Drawing">
+    <value>169, 63</value>
+  </data>
+  <data name="MachineNum.Font" type="System.Drawing.Font, System.Drawing">
+    <value>SimSun-ExtB, 9.75pt</value>
+  </data>
   <data name="MachineNum.Items" xml:space="preserve">
     <value>1 estación de trabajo izquierda CH1 - 1</value>
   </data>
@@ -786,19 +837,25 @@
     <value>2 estación de trabajo izquierda CH1 - 2</value>
   </data>
   <data name="MachineNum.Items2" xml:space="preserve">
-    <value>CH1 - 2</value>
+    <value>3 estación de trabajo derecha CH2 - 1</value>
   </data>
   <data name="MachineNum.Items3" xml:space="preserve">
-    <value>4 estación de trabajo derecha ch2 - 2</value>
+    <value>4 estación de trabajo derecha CH2 - 2</value>
+  </data>
+  <data name="MachineNum.Location" type="System.Drawing.Point, System.Drawing">
+    <value>3, 60</value>
+  </data>
+  <data name="MachineNum.Size" type="System.Drawing.Size, System.Drawing">
+    <value>169, 62</value>
   </data>
   <data name="BtnKeep.Location" type="System.Drawing.Point, System.Drawing">
     <value>732, 499</value>
   </data>
+  <data name="BtnKeep.Size" type="System.Drawing.Size, System.Drawing">
+    <value>275, 35</value>
+  </data>
   <data name="BtnKeep.Text" xml:space="preserve">
     <value>Guardar parámetros</value>
-  </data>
-  <data name="Compensation.Text" xml:space="preserve">
-    <value>Compensación de presión</value>
   </data>
   <data name="uiGroupBox16.Location" type="System.Drawing.Point, System.Drawing">
     <value>1116, 40</value>
@@ -808,6 +865,18 @@
   </data>
   <data name="uiGroupBox16.Text" xml:space="preserve">
     <value>Compensación de presión</value>
+  </data>
+  <data name="Compensation.Size" type="System.Drawing.Size, System.Drawing">
+    <value>234, 35</value>
+  </data>
+  <data name="Compensation.Text" xml:space="preserve">
+    <value>Compensación de presión</value>
+  </data>
+  <data name="uiGroupBox15.Size" type="System.Drawing.Size, System.Drawing">
+    <value>492, 399</value>
+  </data>
+  <data name="uiGroupBox15.Text" xml:space="preserve">
+    <value>Parámetros de presión</value>
   </data>
   <data name="label111.Location" type="System.Drawing.Point, System.Drawing">
     <value>20, 194</value>
@@ -836,12 +905,6 @@
   <data name="label113.Text" xml:space="preserve">
     <value>Límite inferior de la fuga</value>
   </data>
-  <data name="uiGroupBox15.Size" type="System.Drawing.Size, System.Drawing">
-    <value>492, 399</value>
-  </data>
-  <data name="uiGroupBox15.Text" xml:space="preserve">
-    <value>Parámetros de presión</value>
-  </data>
   <data name="BtnUpload.Location" type="System.Drawing.Point, System.Drawing">
     <value>340, 421</value>
   </data>
@@ -850,6 +913,12 @@
   </data>
   <data name="BtnUpload.Text" xml:space="preserve">
     <value>Modificar el zumbador</value>
+  </data>
+  <data name="label87.AutoSize" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="label87.Location" type="System.Drawing.Point, System.Drawing">
+    <value>3, 35</value>
   </data>
   <data name="label87.Size" type="System.Drawing.Size, System.Drawing">
     <value>227, 20</value>
@@ -914,11 +983,20 @@
   <data name="uiGroupBox14.Text" xml:space="preserve">
     <value>Parámetros de tiempo</value>
   </data>
+  <data name="label89.Location" type="System.Drawing.Point, System.Drawing">
+    <value>10, 220</value>
+  </data>
   <data name="label89.Size" type="System.Drawing.Size, System.Drawing">
     <value>207, 20</value>
   </data>
   <data name="label89.Text" xml:space="preserve">
     <value>Nombre del parámetro</value>
+  </data>
+  <data name="uiGroupBox38.Size" type="System.Drawing.Size, System.Drawing">
+    <value>494, 271</value>
+  </data>
+  <data name="uiGroupBox38.Text" xml:space="preserve">
+    <value>Límite superior e inferior de la presión CH1</value>
   </data>
   <data name="label218.Size" type="System.Drawing.Size, System.Drawing">
     <value>241, 16</value>
@@ -938,11 +1016,17 @@
   <data name="label220.Text" xml:space="preserve">
     <value>Horas extras de presión CH1</value>
   </data>
-  <data name="uiGroupBox38.Size" type="System.Drawing.Size, System.Drawing">
-    <value>494, 271</value>
+  <data name="uiGroupBox35.Size" type="System.Drawing.Size, System.Drawing">
+    <value>537, 569</value>
   </data>
-  <data name="uiGroupBox38.Text" xml:space="preserve">
-    <value>Límite superior e inferior de la presión CH1</value>
+  <data name="uiGroupBox35.Text" xml:space="preserve">
+    <value>Configuración de los parámetros de prueba CH1</value>
+  </data>
+  <data name="uiGroupBox36.Size" type="System.Drawing.Size, System.Drawing">
+    <value>529, 271</value>
+  </data>
+  <data name="uiGroupBox36.Text" xml:space="preserve">
+    <value>Límites superior e inferior de tensión y corriente</value>
   </data>
   <data name="label206.Size" type="System.Drawing.Size, System.Drawing">
     <value>277, 16</value>
@@ -992,23 +1076,8 @@
   <data name="label214.Text" xml:space="preserve">
     <value>Límite superior de la corriente de trabajo</value>
   </data>
-  <data name="uiGroupBox36.Size" type="System.Drawing.Size, System.Drawing">
-    <value>529, 271</value>
-  </data>
-  <data name="uiGroupBox36.Text" xml:space="preserve">
-    <value>Límites superior e inferior de tensión y corriente</value>
-  </data>
-  <data name="uiGroupBox35.Location" type="System.Drawing.Point, System.Drawing">
-    <value>4, 15</value>
-  </data>
-  <data name="uiGroupBox35.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>0, 32, 0, 0</value>
-  </data>
-  <data name="uiGroupBox35.Size" type="System.Drawing.Size, System.Drawing">
-    <value>537, 525</value>
-  </data>
-  <data name="uiGroupBox35.Text" xml:space="preserve">
-    <value>Configuración de los parámetros de prueba CH1</value>
+  <data name="ChkBee.Location" type="System.Drawing.Point, System.Drawing">
+    <value>32, 325</value>
   </data>
   <data name="ChkBee.Size" type="System.Drawing.Size, System.Drawing">
     <value>125, 28</value>
@@ -1016,71 +1085,92 @@
   <data name="ChkBee.Text" xml:space="preserve">
     <value>Zumbador</value>
   </data>
+  <data name="label88.AutoSize" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="label88.Location" type="System.Drawing.Point, System.Drawing">
+    <value>3, 124</value>
+  </data>
   <data name="label88.Size" type="System.Drawing.Size, System.Drawing">
     <value>205, 20</value>
   </data>
   <data name="label88.Text" xml:space="preserve">
     <value>Número de parámetros</value>
   </data>
-  <data name="uiGroupBox13.Location" type="System.Drawing.Point, System.Drawing">
-    <value>4, 14</value>
-  </data>
-  <data name="uiGroupBox13.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>0, 32, 0, 0</value>
-  </data>
   <data name="uiGroupBox13.Size" type="System.Drawing.Size, System.Drawing">
-    <value>1436, 531</value>
+    <value>1436, 575</value>
   </data>
   <data name="uiGroupBox13.Text" xml:space="preserve">
     <value>Configuración de los parámetros del instrumento</value>
   </data>
-  <data name="SendText.Location" type="System.Drawing.Point, System.Drawing">
-    <value>119, 498</value>
-  </data>
-  <data name="SendText.Size" type="System.Drawing.Size, System.Drawing">
-    <value>245, 78</value>
-  </data>
   <data name="tabPage3.Size" type="System.Drawing.Size, System.Drawing">
-    <value>1460, 1045</value>
+    <value>1460, 1132</value>
   </data>
   <data name="tabPage3.Text" xml:space="preserve">
     <value>Configuración de los parámetros del instrumento</value>
   </data>
-  <data name="RUPParamsCopy.Location" type="System.Drawing.Point, System.Drawing">
-    <value>694, 835</value>
+  <data name="tabPage3.ToolTipText" xml:space="preserve">
+    <value>Configuración de los parámetros del instrumento</value>
   </data>
-  <data name="RUPParamsCopy.Size" type="System.Drawing.Size, System.Drawing">
-    <value>122, 40</value>
+  <data name="tabPage4.Size" type="System.Drawing.Size, System.Drawing">
+    <value>1126, 1131</value>
+  </data>
+  <data name="tabPage4.Text" xml:space="preserve">
+    <value>Estanqueidad superior establecida</value>
+  </data>
+  <data name="tabPage4.ToolTipText" xml:space="preserve">
+    <value>Estanqueidad superior establecida</value>
+  </data>
+  <data name="RUPParamsCopy.Location" type="System.Drawing.Point, System.Drawing">
+    <value>694, 905</value>
   </data>
   <data name="RUPParamsCopy.Text" xml:space="preserve">
     <value>Right Copy</value>
   </data>
   <data name="UPParamsSave.Location" type="System.Drawing.Point, System.Drawing">
-    <value>424, 835</value>
+    <value>424, 905</value>
   </data>
   <data name="UPParamsSave.Size" type="System.Drawing.Size, System.Drawing">
-    <value>233, 37</value>
+    <value>233, 40</value>
   </data>
   <data name="UPParamsSave.Text" xml:space="preserve">
     <value>Guardar configuración</value>
   </data>
   <data name="LUPParamsCopy.Location" type="System.Drawing.Point, System.Drawing">
-    <value>226, 835</value>
+    <value>226, 905</value>
   </data>
-  <data name="LUPParamsCopy.Size" type="System.Drawing.Size, System.Drawing">
-    <value>122, 40</value>
+  <data name="uiGroupBox12.Size" type="System.Drawing.Size, System.Drawing">
+    <value>613, 881</value>
+  </data>
+  <data name="uiGroupBox12.Text" xml:space="preserve">
+    <value>Configuración de los parámetros de prueba CH2</value>
+  </data>
+  <data name="uiGroupBox27.Size" type="System.Drawing.Size, System.Drawing">
+    <value>576, 271</value>
+  </data>
+  <data name="uiGroupBox27.Text" xml:space="preserve">
+    <value>Límite superior e inferior de la presión de flujo</value>
+  </data>
+  <data name="label179.AutoSize" type="System.Boolean, mscorlib">
+    <value>False</value>
   </data>
   <data name="label179.Size" type="System.Drawing.Size, System.Drawing">
     <value>273, 16</value>
   </data>
   <data name="label179.Text" xml:space="preserve">
-    <value>Límite superior de presión ch2 2 2</value>
+    <value>Límite superior de presión CH2 2 2</value>
+  </data>
+  <data name="label180.AutoSize" type="System.Boolean, mscorlib">
+    <value>False</value>
   </data>
   <data name="label180.Size" type="System.Drawing.Size, System.Drawing">
     <value>273, 16</value>
   </data>
   <data name="label180.Text" xml:space="preserve">
-    <value>Límite inferior de presión ch2 2 2</value>
+    <value>Límite inferior de presión CH2 2 2</value>
+  </data>
+  <data name="label181.AutoSize" type="System.Boolean, mscorlib">
+    <value>False</value>
   </data>
   <data name="label181.Location" type="System.Drawing.Point, System.Drawing">
     <value>40, 172</value>
@@ -1089,7 +1179,10 @@
     <value>281, 16</value>
   </data>
   <data name="label181.Text" xml:space="preserve">
-    <value>Límite inferior del tráfico ch2 2 2</value>
+    <value>Límite inferior del tráfico CH2 2 2</value>
+  </data>
+  <data name="label182.AutoSize" type="System.Boolean, mscorlib">
+    <value>False</value>
   </data>
   <data name="label182.Location" type="System.Drawing.Point, System.Drawing">
     <value>46, 101</value>
@@ -1098,7 +1191,10 @@
     <value>240, 16</value>
   </data>
   <data name="label182.Text" xml:space="preserve">
-    <value>Ch2 2 límite máximo de tráfico</value>
+    <value>CH2 2 límite máximo de tráfico</value>
+  </data>
+  <data name="label183.AutoSize" type="System.Boolean, mscorlib">
+    <value>False</value>
   </data>
   <data name="label183.Location" type="System.Drawing.Point, System.Drawing">
     <value>49, 32</value>
@@ -1107,19 +1203,25 @@
     <value>294, 16</value>
   </data>
   <data name="label183.Text" xml:space="preserve">
-    <value>Tiempo de espera del tráfico ch2 2 2</value>
+    <value>Tiempo de espera del tráfico CH2 2 2</value>
+  </data>
+  <data name="label184.AutoSize" type="System.Boolean, mscorlib">
+    <value>False</value>
   </data>
   <data name="label184.Size" type="System.Drawing.Size, System.Drawing">
     <value>254, 16</value>
   </data>
   <data name="label184.Text" xml:space="preserve">
-    <value>Horas extras de presión ch2 2 2</value>
+    <value>Horas extras de presión CH2 2 2</value>
   </data>
-  <data name="uiGroupBox27.Size" type="System.Drawing.Size, System.Drawing">
-    <value>576, 271</value>
+  <data name="uiGroupBox23.Size" type="System.Drawing.Size, System.Drawing">
+    <value>635, 271</value>
   </data>
-  <data name="uiGroupBox27.Text" xml:space="preserve">
-    <value>Límite superior e inferior de la presión de flujo</value>
+  <data name="uiGroupBox23.Text" xml:space="preserve">
+    <value>Límite superior e inferior de la tasa</value>
+  </data>
+  <data name="label151.AutoSize" type="System.Boolean, mscorlib">
+    <value>False</value>
   </data>
   <data name="label151.Location" type="System.Drawing.Point, System.Drawing">
     <value>205, 192</value>
@@ -1128,7 +1230,10 @@
     <value>357, 16</value>
   </data>
   <data name="label151.Text" xml:space="preserve">
-    <value>Compensación de la relación de corriente ch2</value>
+    <value>Compensación de la relación de corriente CH2</value>
+  </data>
+  <data name="label152.AutoSize" type="System.Boolean, mscorlib">
+    <value>False</value>
   </data>
   <data name="label152.Location" type="System.Drawing.Point, System.Drawing">
     <value>24, 176</value>
@@ -1137,13 +1242,16 @@
     <value>340, 16</value>
   </data>
   <data name="label152.Text" xml:space="preserve">
-    <value>Compensación de la relación de presión ch2</value>
+    <value>Compensación de la relación de presión CH2</value>
   </data>
   <data name="CH2Cont_PressMin.Location" type="System.Drawing.Point, System.Drawing">
     <value>49, 138</value>
   </data>
   <data name="CH2Cont_PressMax.Location" type="System.Drawing.Point, System.Drawing">
     <value>46, 66</value>
+  </data>
+  <data name="label153.AutoSize" type="System.Boolean, mscorlib">
+    <value>False</value>
   </data>
   <data name="label153.Location" type="System.Drawing.Point, System.Drawing">
     <value>205, 117</value>
@@ -1152,7 +1260,10 @@
     <value>377, 16</value>
   </data>
   <data name="label153.Text" xml:space="preserve">
-    <value>Límite inferior de la relación de corriente ch2</value>
+    <value>Límite inferior de la relación de corriente CH2</value>
+  </data>
+  <data name="label155.AutoSize" type="System.Boolean, mscorlib">
+    <value>False</value>
   </data>
   <data name="label155.Location" type="System.Drawing.Point, System.Drawing">
     <value>205, 48</value>
@@ -1161,7 +1272,10 @@
     <value>377, 16</value>
   </data>
   <data name="label155.Text" xml:space="preserve">
-    <value>Límite superior de la relación de corriente ch2</value>
+    <value>Límite superior de la relación de corriente CH2</value>
+  </data>
+  <data name="label156.AutoSize" type="System.Boolean, mscorlib">
+    <value>False</value>
   </data>
   <data name="label156.Location" type="System.Drawing.Point, System.Drawing">
     <value>24, 31</value>
@@ -1170,7 +1284,10 @@
     <value>360, 16</value>
   </data>
   <data name="label156.Text" xml:space="preserve">
-    <value>Límite superior de la relación de presión ch2</value>
+    <value>Límite superior de la relación de presión CH2</value>
+  </data>
+  <data name="label157.AutoSize" type="System.Boolean, mscorlib">
+    <value>False</value>
   </data>
   <data name="label157.Location" type="System.Drawing.Point, System.Drawing">
     <value>24, 101</value>
@@ -1179,13 +1296,25 @@
     <value>360, 16</value>
   </data>
   <data name="label157.Text" xml:space="preserve">
-    <value>Límite inferior de la relación de presión ch2</value>
+    <value>Límite inferior de la relación de presión CH2</value>
   </data>
-  <data name="uiGroupBox23.Size" type="System.Drawing.Size, System.Drawing">
-    <value>635, 271</value>
+  <data name="uiGroupBox25.Size" type="System.Drawing.Size, System.Drawing">
+    <value>605, 271</value>
   </data>
-  <data name="uiGroupBox23.Text" xml:space="preserve">
-    <value>Límite superior e inferior de la tasa</value>
+  <data name="uiGroupBox25.Text" xml:space="preserve">
+    <value>Límites superior e inferior de tensión y corriente</value>
+  </data>
+  <data name="label164.AutoSize" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="label165.AutoSize" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="label166.AutoSize" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="label167.AutoSize" type="System.Boolean, mscorlib">
+    <value>False</value>
   </data>
   <data name="label167.Size" type="System.Drawing.Size, System.Drawing">
     <value>294, 16</value>
@@ -1193,17 +1322,32 @@
   <data name="label167.Text" xml:space="preserve">
     <value>Compensación de corriente de trabajo</value>
   </data>
+  <data name="label168.AutoSize" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
   <data name="label168.Size" type="System.Drawing.Size, System.Drawing">
     <value>321, 16</value>
   </data>
   <data name="label168.Text" xml:space="preserve">
     <value>Límite inferior de la tensión de trabajo</value>
   </data>
+  <data name="label169.AutoSize" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
   <data name="label169.Size" type="System.Drawing.Size, System.Drawing">
     <value>297, 16</value>
   </data>
   <data name="label169.Text" xml:space="preserve">
     <value>Límite superior de tensión de trabajo</value>
+  </data>
+  <data name="label170.AutoSize" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="label171.AutoSize" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="label172.AutoSize" type="System.Boolean, mscorlib">
+    <value>False</value>
   </data>
   <data name="label172.Location" type="System.Drawing.Point, System.Drawing">
     <value>49, 172</value>
@@ -1214,6 +1358,9 @@
   <data name="label172.Text" xml:space="preserve">
     <value>Compensación de corriente de trabajo</value>
   </data>
+  <data name="label173.AutoSize" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
   <data name="label173.Location" type="System.Drawing.Point, System.Drawing">
     <value>46, 101</value>
   </data>
@@ -1222,6 +1369,12 @@
   </data>
   <data name="label173.Text" xml:space="preserve">
     <value>Límite inferior de la corriente de trabajo</value>
+  </data>
+  <data name="label174.AutoSize" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="label175.AutoSize" type="System.Boolean, mscorlib">
+    <value>False</value>
   </data>
   <data name="label175.Location" type="System.Drawing.Point, System.Drawing">
     <value>46, 31</value>
@@ -1232,20 +1385,20 @@
   <data name="label175.Text" xml:space="preserve">
     <value>Límite superior de la corriente de trabajo</value>
   </data>
-  <data name="uiGroupBox25.Size" type="System.Drawing.Size, System.Drawing">
-    <value>605, 271</value>
+  <data name="uiGroupBox9.Size" type="System.Drawing.Size, System.Drawing">
+    <value>487, 870</value>
   </data>
-  <data name="uiGroupBox25.Text" xml:space="preserve">
-    <value>Límites superior e inferior de tensión y corriente</value>
+  <data name="uiGroupBox9.Text" xml:space="preserve">
+    <value>Configuración de los parámetros de prueba CH1</value>
   </data>
-  <data name="uiGroupBox12.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>0, 32, 0, 0</value>
+  <data name="uiGroupBox20.Size" type="System.Drawing.Size, System.Drawing">
+    <value>479, 271</value>
   </data>
-  <data name="uiGroupBox12.Size" type="System.Drawing.Size, System.Drawing">
-    <value>613, 813</value>
+  <data name="uiGroupBox20.Text" xml:space="preserve">
+    <value>Límite superior e inferior de la presión de flujo</value>
   </data>
-  <data name="uiGroupBox12.Text" xml:space="preserve">
-    <value>Configuración de los parámetros de prueba ch2</value>
+  <data name="label48.AutoSize" type="System.Boolean, mscorlib">
+    <value>False</value>
   </data>
   <data name="label48.Location" type="System.Drawing.Point, System.Drawing">
     <value>54, 101</value>
@@ -1256,6 +1409,9 @@
   <data name="label48.Text" xml:space="preserve">
     <value>CH1 2 límite máximo de tráfico</value>
   </data>
+  <data name="label59.AutoSize" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
   <data name="label59.Location" type="System.Drawing.Point, System.Drawing">
     <value>45, 32</value>
   </data>
@@ -1264,6 +1420,9 @@
   </data>
   <data name="label59.Text" xml:space="preserve">
     <value>CH1 2 tiempo de espera de tráfico</value>
+  </data>
+  <data name="label35.AutoSize" type="System.Boolean, mscorlib">
+    <value>False</value>
   </data>
   <data name="label35.Location" type="System.Drawing.Point, System.Drawing">
     <value>39, 172</value>
@@ -1274,11 +1433,17 @@
   <data name="label35.Text" xml:space="preserve">
     <value>CH1_ 2 Lower limit of flow</value>
   </data>
+  <data name="label31.AutoSize" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
   <data name="label31.Size" type="System.Drawing.Size, System.Drawing">
     <value>257, 16</value>
   </data>
   <data name="label31.Text" xml:space="preserve">
     <value>CH1 2 límite superior de presión</value>
+  </data>
+  <data name="label60.AutoSize" type="System.Boolean, mscorlib">
+    <value>False</value>
   </data>
   <data name="label60.Size" type="System.Drawing.Size, System.Drawing">
     <value>238, 16</value>
@@ -1286,17 +1451,23 @@
   <data name="label60.Text" xml:space="preserve">
     <value>CH1 2 horas extras de presión</value>
   </data>
+  <data name="label33.AutoSize" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
   <data name="label33.Size" type="System.Drawing.Size, System.Drawing">
     <value>257, 16</value>
   </data>
   <data name="label33.Text" xml:space="preserve">
     <value>Límite inferior de presión CH1 2</value>
   </data>
-  <data name="uiGroupBox20.Size" type="System.Drawing.Size, System.Drawing">
+  <data name="uiGroupBox19.Size" type="System.Drawing.Size, System.Drawing">
     <value>479, 271</value>
   </data>
-  <data name="uiGroupBox20.Text" xml:space="preserve">
-    <value>Límite superior e inferior de la presión de flujo</value>
+  <data name="uiGroupBox19.Text" xml:space="preserve">
+    <value>Límite superior e inferior de la tasa</value>
+  </data>
+  <data name="label57.AutoSize" type="System.Boolean, mscorlib">
+    <value>False</value>
   </data>
   <data name="label57.Location" type="System.Drawing.Point, System.Drawing">
     <value>74, 188</value>
@@ -1309,6 +1480,9 @@
   </data>
   <data name="CH1Cont_Pre_Compen.Location" type="System.Drawing.Point, System.Drawing">
     <value>25, 209</value>
+  </data>
+  <data name="label58.AutoSize" type="System.Boolean, mscorlib">
+    <value>False</value>
   </data>
   <data name="label58.Location" type="System.Drawing.Point, System.Drawing">
     <value>22, 172</value>
@@ -1325,6 +1499,9 @@
   <data name="CH1Cont_PressMax.Location" type="System.Drawing.Point, System.Drawing">
     <value>25, 66</value>
   </data>
+  <data name="label135.AutoSize" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
   <data name="label135.Location" type="System.Drawing.Point, System.Drawing">
     <value>65, 117</value>
   </data>
@@ -1333,6 +1510,9 @@
   </data>
   <data name="label135.Text" xml:space="preserve">
     <value>Límite inferior de la relación de corriente CH1</value>
+  </data>
+  <data name="label136.AutoSize" type="System.Boolean, mscorlib">
+    <value>False</value>
   </data>
   <data name="label136.Location" type="System.Drawing.Point, System.Drawing">
     <value>54, 48</value>
@@ -1343,6 +1523,9 @@
   <data name="label136.Text" xml:space="preserve">
     <value>Límite superior de la relación de corriente CH1</value>
   </data>
+  <data name="label137.AutoSize" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
   <data name="label137.Location" type="System.Drawing.Point, System.Drawing">
     <value>23, 32</value>
   </data>
@@ -1351,6 +1534,9 @@
   </data>
   <data name="label137.Text" xml:space="preserve">
     <value>Límite superior de la relación de presión CH1</value>
+  </data>
+  <data name="label138.AutoSize" type="System.Boolean, mscorlib">
+    <value>False</value>
   </data>
   <data name="label138.Location" type="System.Drawing.Point, System.Drawing">
     <value>22, 100</value>
@@ -1361,11 +1547,23 @@
   <data name="label138.Text" xml:space="preserve">
     <value>Límite inferior de la relación de presión CH1</value>
   </data>
-  <data name="uiGroupBox19.Size" type="System.Drawing.Size, System.Drawing">
-    <value>479, 271</value>
+  <data name="uiGroupBox10.Size" type="System.Drawing.Size, System.Drawing">
+    <value>469, 271</value>
   </data>
-  <data name="uiGroupBox19.Text" xml:space="preserve">
-    <value>Límite superior e inferior de la tasa</value>
+  <data name="uiGroupBox10.Text" xml:space="preserve">
+    <value>Límites superior e inferior de tensión y corriente</value>
+  </data>
+  <data name="label32.AutoSize" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="label34.AutoSize" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="label36.AutoSize" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="label52.AutoSize" type="System.Boolean, mscorlib">
+    <value>False</value>
   </data>
   <data name="label52.Location" type="System.Drawing.Point, System.Drawing">
     <value>154, 193</value>
@@ -1376,6 +1574,9 @@
   <data name="label52.Text" xml:space="preserve">
     <value>Compensación de tensión de trabajo</value>
   </data>
+  <data name="label38.AutoSize" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
   <data name="label38.Location" type="System.Drawing.Point, System.Drawing">
     <value>123, 118</value>
   </data>
@@ -1385,11 +1586,23 @@
   <data name="label38.Text" xml:space="preserve">
     <value>Límite inferior de la tensión de trabajo</value>
   </data>
+  <data name="label40.AutoSize" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
   <data name="label40.Size" type="System.Drawing.Size, System.Drawing">
     <value>247, 16</value>
   </data>
   <data name="label40.Text" xml:space="preserve">
     <value>Upper limit of working voltage</value>
+  </data>
+  <data name="label37.AutoSize" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="label39.AutoSize" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="label44.AutoSize" type="System.Boolean, mscorlib">
+    <value>False</value>
   </data>
   <data name="label44.Location" type="System.Drawing.Point, System.Drawing">
     <value>45, 176</value>
@@ -1400,6 +1613,9 @@
   <data name="label44.Text" xml:space="preserve">
     <value>Compensación de corriente de trabajo</value>
   </data>
+  <data name="label41.AutoSize" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
   <data name="label41.Location" type="System.Drawing.Point, System.Drawing">
     <value>45, 102</value>
   </data>
@@ -1408,6 +1624,12 @@
   </data>
   <data name="label41.Text" xml:space="preserve">
     <value>Límite inferior de la corriente de trabajo</value>
+  </data>
+  <data name="label53.AutoSize" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="label54.AutoSize" type="System.Boolean, mscorlib">
+    <value>False</value>
   </data>
   <data name="label54.Location" type="System.Drawing.Point, System.Drawing">
     <value>45, 32</value>
@@ -1418,113 +1640,252 @@
   <data name="label54.Text" xml:space="preserve">
     <value>Límite superior de la corriente de trabajo</value>
   </data>
-  <data name="uiGroupBox10.Size" type="System.Drawing.Size, System.Drawing">
-    <value>469, 271</value>
+  <data name="tabPage6.Size" type="System.Drawing.Size, System.Drawing">
+    <value>1126, 1131</value>
   </data>
-  <data name="uiGroupBox10.Text" xml:space="preserve">
-    <value>Límites superior e inferior de tensión y corriente</value>
+  <data name="tabPage6.Text" xml:space="preserve">
+    <value>Configuración de la misma prueba de carga</value>
   </data>
-  <data name="uiGroupBox9.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>0, 32, 0, 0</value>
+  <data name="tabPage6.ToolTipText" xml:space="preserve">
+    <value>Configuración de la misma prueba de carga</value>
   </data>
-  <data name="uiGroupBox9.Size" type="System.Drawing.Size, System.Drawing">
-    <value>487, 803</value>
+  <data name="uiGroupBox43.Location" type="System.Drawing.Point, System.Drawing">
+    <value>244, 709</value>
   </data>
-  <data name="uiGroupBox9.Text" xml:space="preserve">
-    <value>Configuración de los parámetros de prueba CH1</value>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="uiGroupBox43.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>0, 35, 0, 0</value>
   </data>
-  <data name="tabPage4.Size" type="System.Drawing.Size, System.Drawing">
-    <value>1126, 1044</value>
+  <data name="uiGroupBox43.Size" type="System.Drawing.Size, System.Drawing">
+    <value>545, 210</value>
   </data>
-  <data name="tabPage4.Text" xml:space="preserve">
-    <value>Estanqueidad superior establecida</value>
+  <data name="TotalPreMax.Location" type="System.Drawing.Point, System.Drawing">
+    <value>30, 160</value>
+  </data>
+  <data name="label51.Location" type="System.Drawing.Point, System.Drawing">
+    <value>26, 128</value>
+  </data>
+  <data name="label51.Size" type="System.Drawing.Size, System.Drawing">
+    <value>229, 16</value>
+  </data>
+  <data name="label51.Text" xml:space="preserve">
+    <value>Diferencia máxima de presión</value>
+  </data>
+  <data name="TotalFlowMin.Location" type="System.Drawing.Point, System.Drawing">
+    <value>286, 74</value>
+  </data>
+  <data name="TotalFlowMax.Location" type="System.Drawing.Point, System.Drawing">
+    <value>25, 74</value>
+  </data>
+  <data name="label78.Location" type="System.Drawing.Point, System.Drawing">
+    <value>282, 32</value>
+  </data>
+  <data name="label78.Size" type="System.Drawing.Size, System.Drawing">
+    <value>230, 23</value>
+  </data>
+  <data name="label78.Text" xml:space="preserve">
+    <value>Límite inferior del caudal total</value>
+  </data>
+  <data name="label79.Location" type="System.Drawing.Point, System.Drawing">
+    <value>21, 32</value>
+  </data>
+  <data name="label79.Size" type="System.Drawing.Size, System.Drawing">
+    <value>243, 23</value>
+  </data>
+  <data name="label79.Text" xml:space="preserve">
+    <value>Límite superior del flujo total</value>
   </data>
   <data name="uiGroupBox41.Location" type="System.Drawing.Point, System.Drawing">
-    <value>23, 332</value>
-  </data>
-  <data name="uiGroupBox41.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>0, 30, 0, 0</value>
+    <value>30, 384</value>
   </data>
   <data name="uiGroupBox41.Size" type="System.Drawing.Size, System.Drawing">
-    <value>344, 250</value>
+    <value>464, 271</value>
+  </data>
+  <data name="uiGroupBox41.Text" xml:space="preserve">
+    <value>Límite superior e inferior de la presión de flujo</value>
+  </data>
+  <data name="CH1FwdPreMin.Location" type="System.Drawing.Point, System.Drawing">
+    <value>254, 213</value>
+  </data>
+  <data name="label69.Location" type="System.Drawing.Point, System.Drawing">
+    <value>42, 100</value>
+  </data>
+  <data name="label69.Size" type="System.Drawing.Size, System.Drawing">
+    <value>257, 16</value>
+  </data>
+  <data name="label69.Text" xml:space="preserve">
+    <value>Límite superior de tráfico CH1 2</value>
+  </data>
+  <data name="CH1FwdPreMax.Location" type="System.Drawing.Point, System.Drawing">
+    <value>254, 138</value>
+  </data>
+  <data name="label70.Location" type="System.Drawing.Point, System.Drawing">
+    <value>39, 25</value>
+  </data>
+  <data name="label70.Size" type="System.Drawing.Size, System.Drawing">
+    <value>278, 16</value>
+  </data>
+  <data name="label70.Text" xml:space="preserve">
+    <value>Tiempo de espera del tráfico CH1 2</value>
+  </data>
+  <data name="label71.Location" type="System.Drawing.Point, System.Drawing">
+    <value>42, 172</value>
+  </data>
+  <data name="label71.Size" type="System.Drawing.Size, System.Drawing">
+    <value>265, 16</value>
+  </data>
+  <data name="label71.Text" xml:space="preserve">
+    <value>Límite inferior del tráfico CH1 2</value>
+  </data>
+  <data name="label72.Size" type="System.Drawing.Size, System.Drawing">
+    <value>257, 16</value>
+  </data>
+  <data name="label72.Text" xml:space="preserve">
+    <value>Límite superior de presión CH1 2</value>
+  </data>
+  <data name="label73.Size" type="System.Drawing.Size, System.Drawing">
+    <value>238, 16</value>
+  </data>
+  <data name="label73.Text" xml:space="preserve">
+    <value>Horas extras de presión CH1 2</value>
+  </data>
+  <data name="CH1FwdPreTime.Location" type="System.Drawing.Point, System.Drawing">
+    <value>250, 68</value>
+  </data>
+  <data name="label74.Size" type="System.Drawing.Size, System.Drawing">
+    <value>257, 16</value>
+  </data>
+  <data name="label74.Text" xml:space="preserve">
+    <value>Límite inferior de presión CH1 2</value>
   </data>
   <data name="uiGroupBox33.Location" type="System.Drawing.Point, System.Drawing">
-    <value>467, 332</value>
-  </data>
-  <data name="uiGroupBox33.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>0, 30, 0, 0</value>
+    <value>521, 384</value>
   </data>
   <data name="uiGroupBox33.Size" type="System.Drawing.Size, System.Drawing">
-    <value>344, 250</value>
+    <value>517, 271</value>
   </data>
-  <data name="uiGroupBox37.Location" type="System.Drawing.Point, System.Drawing">
-    <value>467, 333</value>
+  <data name="uiGroupBox33.Text" xml:space="preserve">
+    <value>Límite superior e inferior de la presión de flujo</value>
   </data>
-  <data name="uiGroupBox37.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>0, 30, 0, 0</value>
+  <data name="label11.Location" type="System.Drawing.Point, System.Drawing">
+    <value>10, 31</value>
   </data>
-  <data name="uiGroupBox37.Size" type="System.Drawing.Size, System.Drawing">
-    <value>344, 250</value>
+  <data name="label11.Size" type="System.Drawing.Size, System.Drawing">
+    <value>257, 16</value>
+  </data>
+  <data name="label11.Text" xml:space="preserve">
+    <value>Límite superior de tráfico CH1 2</value>
+  </data>
+  <data name="CH2FWDPreMin.Location" type="System.Drawing.Point, System.Drawing">
+    <value>222, 213</value>
+  </data>
+  <data name="CH2FWDPreMax.Location" type="System.Drawing.Point, System.Drawing">
+    <value>222, 138</value>
+  </data>
+  <data name="label5.Size" type="System.Drawing.Size, System.Drawing">
+    <value>257, 16</value>
+  </data>
+  <data name="label5.Text" xml:space="preserve">
+    <value>Límite superior de presión CH2 2</value>
+  </data>
+  <data name="label6.Size" type="System.Drawing.Size, System.Drawing">
+    <value>257, 16</value>
+  </data>
+  <data name="label6.Text" xml:space="preserve">
+    <value>Límite inferior de presión CH2 2</value>
+  </data>
+  <data name="CH2FwdpreTime.Location" type="System.Drawing.Point, System.Drawing">
+    <value>222, 66</value>
+  </data>
+  <data name="label7.Location" type="System.Drawing.Point, System.Drawing">
+    <value>46, 172</value>
+  </data>
+  <data name="label7.Size" type="System.Drawing.Size, System.Drawing">
+    <value>265, 16</value>
+  </data>
+  <data name="label7.Text" xml:space="preserve">
+    <value>Límite inferior del tráfico CH2 2</value>
+  </data>
+  <data name="label10.Size" type="System.Drawing.Size, System.Drawing">
+    <value>238, 16</value>
+  </data>
+  <data name="label10.Text" xml:space="preserve">
+    <value>Horas extras de presión CH2 2</value>
+  </data>
+  <data name="label8.Location" type="System.Drawing.Point, System.Drawing">
+    <value>46, 100</value>
+  </data>
+  <data name="label8.Size" type="System.Drawing.Size, System.Drawing">
+    <value>257, 16</value>
+  </data>
+  <data name="label8.Text" xml:space="preserve">
+    <value>Límite superior de tráfico CH2 2</value>
   </data>
   <data name="RFWDParamsCopy.Location" type="System.Drawing.Point, System.Drawing">
-    <value>667, 297</value>
-  </data>
-  <data name="RFWDParamsCopy.Size" type="System.Drawing.Size, System.Drawing">
-    <value>122, 40</value>
+    <value>667, 335</value>
   </data>
   <data name="RFWDParamsCopy.Text" xml:space="preserve">
     <value>Right Copy</value>
   </data>
   <data name="LFWDParamsCopy.Location" type="System.Drawing.Point, System.Drawing">
-    <value>141, 297</value>
+    <value>128, 335</value>
   </data>
   <data name="LFWDParamsCopy.Size" type="System.Drawing.Size, System.Drawing">
-    <value>201, 37</value>
+    <value>201, 40</value>
   </data>
   <data name="LFWDParamsCopy.Text" xml:space="preserve">
     <value>Copia izquierda</value>
   </data>
-  <data name="tabPage6.Size" type="System.Drawing.Size, System.Drawing">
-    <value>1126, 1044</value>
+  <data name="tabPage2.Size" type="System.Drawing.Size, System.Drawing">
+    <value>1460, 1132</value>
   </data>
-  <data name="tabPage6.Text" xml:space="preserve">
+  <data name="tabPage2.Text" xml:space="preserve">
+    <value>Configuración de los parámetros de prueba</value>
+  </data>
+  <data name="tabPage2.ToolTipText" xml:space="preserve">
+    <value>Configuración de los parámetros de prueba</value>
+  </data>
+  <data name="uiTabControlMenu2.Location" type="System.Drawing.Point, System.Drawing">
+    <value>3, 0</value>
+  </data>
+  <data name="uiTabControlMenu2.ShowToolTips" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="uiTabControlMenu2.Size" type="System.Drawing.Size, System.Drawing">
+    <value>1327, 1131</value>
+  </data>
+  <data name="tabPage7.Size" type="System.Drawing.Size, System.Drawing">
+    <value>1126, 1131</value>
+  </data>
+  <data name="tabPage7.Text" xml:space="preserve">
+    <value>Configuración de la prueba de Liberación de aire</value>
+  </data>
+  <data name="tabPage7.ToolTipText" xml:space="preserve">
     <value>Configuración de la misma prueba de carga</value>
   </data>
   <data name="PRWDParamsCopy.Location" type="System.Drawing.Point, System.Drawing">
-    <value>522, 603</value>
+    <value>610, 653</value>
   </data>
   <data name="PRWDParamsCopy.Size" type="System.Drawing.Size, System.Drawing">
-    <value>122, 40</value>
+    <value>219, 43</value>
   </data>
   <data name="PRWDParamsCopy.Text" xml:space="preserve">
     <value>Copiar a la derecha</value>
   </data>
   <data name="LRWDParamsCopy.Location" type="System.Drawing.Point, System.Drawing">
-    <value>189, 603</value>
+    <value>103, 653</value>
   </data>
   <data name="LRWDParamsCopy.Size" type="System.Drawing.Size, System.Drawing">
-    <value>122, 40</value>
+    <value>208, 43</value>
   </data>
   <data name="LRWDParamsCopy.Text" xml:space="preserve">
     <value>Copia izquierda</value>
   </data>
-  <data name="tabPage7.Size" type="System.Drawing.Size, System.Drawing">
-    <value>1126, 1044</value>
+  <data name="uiGroupBox5.Size" type="System.Drawing.Size, System.Drawing">
+    <value>529, 324</value>
   </data>
-  <data name="tabPage7.Text" xml:space="preserve">
-    <value>Configuración de la prueba de Liberación de aire</value>
-  </data>
-  <data name="uiTabControlMenu2.Location" type="System.Drawing.Point, System.Drawing">
-    <value>3, 0</value>
-  </data>
-  <data name="uiTabControlMenu2.Size" type="System.Drawing.Size, System.Drawing">
-    <value>1327, 1044</value>
-  </data>
-  <data name="tabPage2.Size" type="System.Drawing.Size, System.Drawing">
-    <value>1460, 1045</value>
-  </data>
-  <data name="tabPage2.Text" xml:space="preserve">
-    <value>Configuración de los parámetros de prueba</value>
+  <data name="uiGroupBox5.Text" xml:space="preserve">
+    <value>Corriente estática CH1</value>
   </data>
   <data name="CH1ElecSave.Size" type="System.Drawing.Size, System.Drawing">
     <value>289, 39</value>
@@ -1532,20 +1893,26 @@
   <data name="CH1ElecSave.Text" xml:space="preserve">
     <value>Guardar configuración</value>
   </data>
-  <data name="label17.Size" type="System.Drawing.Size, System.Drawing">
-    <value>27, 19</value>
+  <data name="label17.AutoSize" type="System.Boolean, mscorlib">
+    <value>False</value>
   </data>
-  <data name="label20.Size" type="System.Drawing.Size, System.Drawing">
-    <value>27, 19</value>
+  <data name="label20.AutoSize" type="System.Boolean, mscorlib">
+    <value>False</value>
   </data>
-  <data name="label18.Size" type="System.Drawing.Size, System.Drawing">
-    <value>27, 19</value>
+  <data name="label18.AutoSize" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="label19.AutoSize" type="System.Boolean, mscorlib">
+    <value>False</value>
   </data>
   <data name="label19.Size" type="System.Drawing.Size, System.Drawing">
     <value>309, 16</value>
   </data>
   <data name="label19.Text" xml:space="preserve">
     <value>Compensación de corriente estática CH1</value>
+  </data>
+  <data name="label25.AutoSize" type="System.Boolean, mscorlib">
+    <value>False</value>
   </data>
   <data name="label25.Location" type="System.Drawing.Point, System.Drawing">
     <value>88, 102</value>
@@ -1556,74 +1923,176 @@
   <data name="label25.Text" xml:space="preserve">
     <value>Límite inferior de la corriente estática CH1</value>
   </data>
+  <data name="label26.AutoSize" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
   <data name="label26.Size" type="System.Drawing.Size, System.Drawing">
     <value>329, 16</value>
   </data>
   <data name="label26.Text" xml:space="preserve">
     <value>Límite superior de corriente estática CH1</value>
   </data>
-  <data name="uiGroupBox5.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>0, 32, 0, 0</value>
-  </data>
-  <data name="uiGroupBox5.Size" type="System.Drawing.Size, System.Drawing">
-    <value>529, 270</value>
-  </data>
-  <data name="uiGroupBox5.Text" xml:space="preserve">
-    <value>Corriente estática CH1</value>
+  <data name="label24.AutoSize" type="System.Boolean, mscorlib">
+    <value>False</value>
   </data>
   <data name="label24.Size" type="System.Drawing.Size, System.Drawing">
     <value>309, 16</value>
   </data>
   <data name="label24.Text" xml:space="preserve">
-    <value>Compensación de corriente estática ch2</value>
+    <value>Compensación de corriente estática CH2</value>
+  </data>
+  <data name="label27.AutoSize" type="System.Boolean, mscorlib">
+    <value>False</value>
   </data>
   <data name="label27.Size" type="System.Drawing.Size, System.Drawing">
     <value>353, 16</value>
   </data>
   <data name="label27.Text" xml:space="preserve">
-    <value>Límite inferior de la corriente estática ch2</value>
+    <value>Límite inferior de la corriente estática CH2</value>
+  </data>
+  <data name="label28.AutoSize" type="System.Boolean, mscorlib">
+    <value>False</value>
   </data>
   <data name="label28.Size" type="System.Drawing.Size, System.Drawing">
     <value>329, 16</value>
   </data>
   <data name="label28.Text" xml:space="preserve">
-    <value>Límite superior de corriente estática ch2</value>
+    <value>Límite superior de corriente estática CH2</value>
+  </data>
+  <data name="tabPage0.Size" type="System.Drawing.Size, System.Drawing">
+    <value>1460, 1132</value>
+  </data>
+  <data name="tabPage0.Text" xml:space="preserve">
+    <value>Configuración del proceso</value>
+  </data>
+  <data name="tabPage0.ToolTipText" xml:space="preserve">
+    <value>Configuración del proceso</value>
+  </data>
+  <data name="tabPage1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>1460, 1132</value>
+  </data>
+  <data name="tabPage1.Text" xml:space="preserve">
+    <value>Configuración de corriente y tensión</value>
+  </data>
+  <data name="tabPage1.ToolTipText" xml:space="preserve">
+    <value>Configuración de corriente y tensión</value>
+  </data>
+  <data name="tabPage9.Size" type="System.Drawing.Size, System.Drawing">
+    <value>1460, 1132</value>
+  </data>
+  <data name="tabPage9.Text" xml:space="preserve">
+    <value>Programación de la configuración de los parámetros de la fuente de alimentación</value>
+  </data>
+  <data name="tabPage9.ToolTipText" xml:space="preserve">
+    <value>Programación de la configuración de los parámetros de la fuente de alimentación</value>
+  </data>
+  <data name="uiTabControlMenu1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>-9, -1</value>
+  </data>
+  <data name="uiTabControlMenu1.ShowToolTips" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="uiTabControlMenu1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>1661, 1132</value>
+  </data>
+  <data name="uiTabControlMenu1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="uiTabControlMenu1.ToolTip1" xml:space="preserve">
+    <value />
+  </data>
+  <data name="uiTabControlMenu1.ToolTip2" xml:space="preserve">
+    <value />
+  </data>
+  <data name="uiGroupBox32.Location" type="System.Drawing.Point, System.Drawing">
+    <value>7, 664</value>
+  </data>
+  <data name="uiGroupBox32.Size" type="System.Drawing.Size, System.Drawing">
+    <value>550, 308</value>
+  </data>
+  <data name="uiGroupBox32.Text" xml:space="preserve">
+    <value>Configuración del proceso del canal C / F</value>
+  </data>
+  <data name="CFQuiescentCurrntIndex.Location" type="System.Drawing.Point, System.Drawing">
+    <value>409, 48</value>
+  </data>
+  <data name="CFFWDLeakindex.Location" type="System.Drawing.Point, System.Drawing">
+    <value>409, 258</value>
+  </data>
+  <data name="CFDOWNLeakindex.Location" type="System.Drawing.Point, System.Drawing">
+    <value>409, 228</value>
+  </data>
+  <data name="CFUPLeakindex.Location" type="System.Drawing.Point, System.Drawing">
+    <value>409, 198</value>
+  </data>
+  <data name="CFRWDindex.Location" type="System.Drawing.Point, System.Drawing">
+    <value>409, 168</value>
+  </data>
+  <data name="CFFWDindex.Location" type="System.Drawing.Point, System.Drawing">
+    <value>409, 138</value>
+  </data>
+  <data name="CFDOWNindex.Location" type="System.Drawing.Point, System.Drawing">
+    <value>409, 108</value>
+  </data>
+  <data name="CFUPindex.Location" type="System.Drawing.Point, System.Drawing">
+    <value>409, 78</value>
+  </data>
+  <data name="CFQuiescentCurrnt.Size" type="System.Drawing.Size, System.Drawing">
+    <value>242, 29</value>
   </data>
   <data name="CFQuiescentCurrnt.Text" xml:space="preserve">
     <value>Tranquilo y tranquilo</value>
   </data>
+  <data name="CFFWDLeak.Size" type="System.Drawing.Size, System.Drawing">
+    <value>382, 29</value>
+  </data>
   <data name="CFFWDLeak.Text" xml:space="preserve">
     <value>Igual que las mallas inflables</value>
+  </data>
+  <data name="CFDOWNLeak.Size" type="System.Drawing.Size, System.Drawing">
+    <value>337, 29</value>
   </data>
   <data name="CFDOWNLeak.Text" xml:space="preserve">
     <value>La inflación más baja se endurece</value>
   </data>
+  <data name="CFUPLeak.Size" type="System.Drawing.Size, System.Drawing">
+    <value>284, 29</value>
+  </data>
   <data name="CFUPLeak.Text" xml:space="preserve">
     <value>Alta inflación</value>
+  </data>
+  <data name="CFRWD.Size" type="System.Drawing.Size, System.Drawing">
+    <value>267, 29</value>
   </data>
   <data name="CFRWD.Text" xml:space="preserve">
     <value>Rwd: desinflación</value>
   </data>
+  <data name="CFFWD.Size" type="System.Drawing.Size, System.Drawing">
+    <value>242, 29</value>
+  </data>
   <data name="CFFWD.Text" xml:space="preserve">
     <value>Fwd: inflación simultánea</value>
+  </data>
+  <data name="CFDOWN.Size" type="System.Drawing.Size, System.Drawing">
+    <value>242, 29</value>
   </data>
   <data name="CFDOWN.Text" xml:space="preserve">
     <value>A la baja: menor inflación</value>
   </data>
+  <data name="CFUP.Size" type="System.Drawing.Size, System.Drawing">
+    <value>227, 29</value>
+  </data>
   <data name="CFUP.Text" xml:space="preserve">
     <value>Up: inflable superior</value>
   </data>
-  <data name="uiGroupBox32.Location" type="System.Drawing.Point, System.Drawing">
-    <value>7, 570</value>
+  <data name="uiGroupBox3.Location" type="System.Drawing.Point, System.Drawing">
+    <value>588, 336</value>
   </data>
-  <data name="uiGroupBox32.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>0, 32, 0, 0</value>
+  <data name="uiGroupBox3.Size" type="System.Drawing.Size, System.Drawing">
+    <value>772, 322</value>
   </data>
-  <data name="uiGroupBox32.Size" type="System.Drawing.Size, System.Drawing">
-    <value>550, 268</value>
-  </data>
-  <data name="uiGroupBox32.Text" xml:space="preserve">
-    <value>Configuración del proceso del canal C / F</value>
+  <data name="uiGroupBox3.Text" xml:space="preserve">
+    <value>Configuración del proceso del canal B / e</value>
   </data>
   <data name="BEQuiescentCurrntIndex.Location" type="System.Drawing.Point, System.Drawing">
     <value>480, 28</value>
@@ -1697,17 +2166,14 @@
   <data name="BEUP.Text" xml:space="preserve">
     <value>Up: inflable superior</value>
   </data>
-  <data name="uiGroupBox3.Location" type="System.Drawing.Point, System.Drawing">
-    <value>575, 290</value>
+  <data name="uiGroupBox1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>17, 336</value>
   </data>
-  <data name="uiGroupBox3.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>0, 32, 0, 0</value>
+  <data name="uiGroupBox1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>550, 322</value>
   </data>
-  <data name="uiGroupBox3.Size" type="System.Drawing.Size, System.Drawing">
-    <value>772, 264</value>
-  </data>
-  <data name="uiGroupBox3.Text" xml:space="preserve">
-    <value>Configuración del proceso del canal B / e</value>
+  <data name="uiGroupBox1.Text" xml:space="preserve">
+    <value>Configuración del proceso del Canal a / D</value>
   </data>
   <data name="ADQuiescentCurrntIndex.Location" type="System.Drawing.Point, System.Drawing">
     <value>426, 25</value>
@@ -1805,35 +2271,32 @@
   <data name="ADUP.Text" xml:space="preserve">
     <value>Up: inflable superior</value>
   </data>
-  <data name="uiGroupBox1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>17, 279</value>
-  </data>
-  <data name="uiGroupBox1.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>0, 32, 0, 0</value>
-  </data>
-  <data name="uiGroupBox1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>550, 275</value>
-  </data>
-  <data name="uiGroupBox1.Text" xml:space="preserve">
-    <value>Configuración del proceso del Canal a / D</value>
-  </data>
   <data name="btnSave.Location" type="System.Drawing.Point, System.Drawing">
-    <value>687, 822</value>
+    <value>687, 891</value>
   </data>
   <data name="btnSave.Size" type="System.Drawing.Size, System.Drawing">
-    <value>352, 33</value>
+    <value>352, 36</value>
   </data>
   <data name="btnSave.Text" xml:space="preserve">
     <value>Guardar configuración</value>
+  </data>
+  <data name="uiGroupBox8.Location" type="System.Drawing.Point, System.Drawing">
+    <value>727, 5</value>
+  </data>
+  <data name="uiGroupBox8.Size" type="System.Drawing.Size, System.Drawing">
+    <value>722, 314</value>
+  </data>
+  <data name="uiGroupBox8.Text" xml:space="preserve">
+    <value>Configuración del proceso del canal principal CH2</value>
   </data>
   <data name="CH2QuiescentCurrntIndex.Location" type="System.Drawing.Point, System.Drawing">
     <value>281, 38</value>
   </data>
   <data name="CH2UpDownChange.Location" type="System.Drawing.Point, System.Drawing">
-    <value>351, 159</value>
+    <value>305, 155</value>
   </data>
   <data name="CH2UpDownChange.Size" type="System.Drawing.Size, System.Drawing">
-    <value>282, 57</value>
+    <value>403, 57</value>
   </data>
   <data name="CH2UpDownChange.Text" xml:space="preserve">
     <value>Intercambio de tarifas superiores e inferiores</value>
@@ -1845,7 +2308,7 @@
     <value>231, 29</value>
   </data>
   <data name="CH2QuiescentCurrnt.Text" xml:space="preserve">
-    <value>Corriente estática ch2</value>
+    <value>Corriente estática CH2</value>
   </data>
   <data name="CH2DOWNindex.Location" type="System.Drawing.Point, System.Drawing">
     <value>281, 97</value>
@@ -1854,7 +2317,10 @@
     <value>281, 163</value>
   </data>
   <data name="CH2HighLevel.Location" type="System.Drawing.Point, System.Drawing">
-    <value>351, 39</value>
+    <value>305, 40</value>
+  </data>
+  <data name="CH2HighLevel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>252, 29</value>
   </data>
   <data name="CH2HighLevel.Text" xml:space="preserve">
     <value>Alto nivel de ch2</value>
@@ -1938,7 +2404,7 @@
     <value>La inflación más baja se endurece</value>
   </data>
   <data name="CH2IGN.Location" type="System.Drawing.Point, System.Drawing">
-    <value>351, 69</value>
+    <value>305, 70</value>
   </data>
   <data name="CH2FWDLeak.Location" type="System.Drawing.Point, System.Drawing">
     <value>12, 258</value>
@@ -1950,25 +2416,22 @@
     <value>Igual que las mallas inflables</value>
   </data>
   <data name="CH2LIN.Location" type="System.Drawing.Point, System.Drawing">
-    <value>351, 129</value>
+    <value>305, 130</value>
   </data>
   <data name="CH2Pump.Location" type="System.Drawing.Point, System.Drawing">
-    <value>351, 99</value>
+    <value>305, 100</value>
+  </data>
+  <data name="CH2Pump.Size" type="System.Drawing.Size, System.Drawing">
+    <value>357, 29</value>
   </data>
   <data name="CH2Pump.Text" xml:space="preserve">
     <value>Suministro de gas de la bomba de válvula</value>
   </data>
-  <data name="uiGroupBox8.Location" type="System.Drawing.Point, System.Drawing">
-    <value>727, 5</value>
+  <data name="uiGroupBox7.Size" type="System.Drawing.Size, System.Drawing">
+    <value>715, 310</value>
   </data>
-  <data name="uiGroupBox8.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>0, 32, 0, 0</value>
-  </data>
-  <data name="uiGroupBox8.Size" type="System.Drawing.Size, System.Drawing">
-    <value>680, 275</value>
-  </data>
-  <data name="uiGroupBox8.Text" xml:space="preserve">
-    <value>Configuración del proceso del canal principal ch2</value>
+  <data name="uiGroupBox7.Text" xml:space="preserve">
+    <value>Configuración del proceso del canal principal CH1</value>
   </data>
   <data name="CH1QuiescentCurrntIndex.Location" type="System.Drawing.Point, System.Drawing">
     <value>272, 35</value>
@@ -2114,29 +2577,23 @@
   <data name="CH1UP.Text" xml:space="preserve">
     <value>Up: inflable superior</value>
   </data>
-  <data name="uiGroupBox7.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>0, 32, 0, 0</value>
-  </data>
-  <data name="uiGroupBox7.Size" type="System.Drawing.Size, System.Drawing">
-    <value>715, 264</value>
-  </data>
-  <data name="uiGroupBox7.Text" xml:space="preserve">
-    <value>Configuración del proceso del canal principal CH1</value>
-  </data>
-  <data name="tabPage0.Size" type="System.Drawing.Size, System.Drawing">
-    <value>1460, 1045</value>
-  </data>
-  <data name="tabPage0.Text" xml:space="preserve">
-    <value>Configuración del proceso</value>
-  </data>
   <data name="ChkPLCPress.Location" type="System.Drawing.Point, System.Drawing">
-    <value>1081, 304</value>
+    <value>1081, 329</value>
   </data>
   <data name="ChkPLCPress.Size" type="System.Drawing.Size, System.Drawing">
-    <value>232, 27</value>
+    <value>232, 29</value>
   </data>
   <data name="ChkPLCPress.Text" xml:space="preserve">
     <value>Unidad de presión de aire KGF / cm2</value>
+  </data>
+  <data name="uiGroupBox6.Location" type="System.Drawing.Point, System.Drawing">
+    <value>640, 15</value>
+  </data>
+  <data name="uiGroupBox6.Size" type="System.Drawing.Size, System.Drawing">
+    <value>538, 324</value>
+  </data>
+  <data name="uiGroupBox6.Text" xml:space="preserve">
+    <value>Corriente estática CH2</value>
   </data>
   <data name="CH2ElecSave.Size" type="System.Drawing.Size, System.Drawing">
     <value>328, 39</value>
@@ -2144,104 +2601,122 @@
   <data name="CH2ElecSave.Text" xml:space="preserve">
     <value>Guardar configuración</value>
   </data>
-  <data name="label21.Size" type="System.Drawing.Size, System.Drawing">
-    <value>27, 19</value>
+  <data name="label21.AutoSize" type="System.Boolean, mscorlib">
+    <value>False</value>
   </data>
-  <data name="label22.Size" type="System.Drawing.Size, System.Drawing">
-    <value>27, 19</value>
+  <data name="label22.AutoSize" type="System.Boolean, mscorlib">
+    <value>False</value>
   </data>
-  <data name="label23.Size" type="System.Drawing.Size, System.Drawing">
-    <value>27, 19</value>
+  <data name="label23.AutoSize" type="System.Boolean, mscorlib">
+    <value>False</value>
   </data>
-  <data name="uiGroupBox6.Location" type="System.Drawing.Point, System.Drawing">
-    <value>640, 14</value>
+  <data name="uiGroupBox4.Location" type="System.Drawing.Point, System.Drawing">
+    <value>599, 370</value>
   </data>
-  <data name="uiGroupBox6.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>0, 32, 0, 0</value>
+  <data name="uiGroupBox4.Size" type="System.Drawing.Size, System.Drawing">
+    <value>463, 311</value>
   </data>
-  <data name="uiGroupBox6.Size" type="System.Drawing.Size, System.Drawing">
-    <value>538, 270</value>
-  </data>
-  <data name="uiGroupBox6.Text" xml:space="preserve">
-    <value>Corriente estática ch2</value>
+  <data name="uiGroupBox4.Text" xml:space="preserve">
+    <value>Válvula reguladora de presión CH2</value>
   </data>
   <data name="CH4ValveWrite.Text" xml:space="preserve">
     <value>Escribir</value>
+  </data>
+  <data name="label13.AutoSize" type="System.Boolean, mscorlib">
+    <value>False</value>
   </data>
   <data name="label13.Location" type="System.Drawing.Point, System.Drawing">
     <value>31, 165</value>
   </data>
   <data name="label13.Size" type="System.Drawing.Size, System.Drawing">
-    <value>301, 16</value>
+    <value>384, 16</value>
   </data>
   <data name="label13.Text" xml:space="preserve">
-    <value>Válvula reguladora de presión ch2 - 2</value>
+    <value>Válvula reguladora de presión CH2 - 2</value>
+  </data>
+  <data name="PLCPreUnit4.AutoSize" type="System.Boolean, mscorlib">
+    <value>False</value>
   </data>
   <data name="CH3ValveWrite.Text" xml:space="preserve">
     <value>Escribir</value>
+  </data>
+  <data name="label15.AutoSize" type="System.Boolean, mscorlib">
+    <value>False</value>
   </data>
   <data name="label15.Location" type="System.Drawing.Point, System.Drawing">
     <value>13, 59</value>
   </data>
   <data name="label15.Size" type="System.Drawing.Size, System.Drawing">
-    <value>301, 16</value>
+    <value>385, 16</value>
   </data>
   <data name="label15.Text" xml:space="preserve">
-    <value>Válvula reguladora de presión ch2 - 1</value>
+    <value>Válvula reguladora de presión CH2 - 1</value>
   </data>
-  <data name="uiGroupBox4.Location" type="System.Drawing.Point, System.Drawing">
-    <value>579, 304</value>
+  <data name="PLCPreUnit3.AutoSize" type="System.Boolean, mscorlib">
+    <value>False</value>
   </data>
-  <data name="uiGroupBox4.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>0, 32, 0, 0</value>
+  <data name="uiGroupBox2.Size" type="System.Drawing.Size, System.Drawing">
+    <value>546, 313</value>
   </data>
-  <data name="uiGroupBox4.Size" type="System.Drawing.Size, System.Drawing">
-    <value>463, 265</value>
-  </data>
-  <data name="uiGroupBox4.Text" xml:space="preserve">
-    <value>Válvula reguladora de presión ch2</value>
+  <data name="uiGroupBox2.Text" xml:space="preserve">
+    <value>Válvula reguladora de presión CH1</value>
   </data>
   <data name="CH2ValveWrite.Text" xml:space="preserve">
     <value>Escribir</value>
   </data>
+  <data name="label3.AutoSize" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
   <data name="label3.Location" type="System.Drawing.Point, System.Drawing">
-    <value>22, 170</value>
+    <value>22, 165</value>
   </data>
   <data name="label3.Size" type="System.Drawing.Size, System.Drawing">
-    <value>301, 16</value>
+    <value>322, 21</value>
   </data>
   <data name="label3.Text" xml:space="preserve">
     <value>Válvula reguladora de presión CH1 - 2</value>
   </data>
+  <data name="PLCPreUnit2.AutoSize" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="PLCPreUnit2.Location" type="System.Drawing.Point, System.Drawing">
+    <value>273, 191</value>
+  </data>
+  <data name="PLCPreUnit2.Size" type="System.Drawing.Size, System.Drawing">
+    <value>60, 24</value>
+  </data>
+  <data name="CH2Pressure.Location" type="System.Drawing.Point, System.Drawing">
+    <value>115, 186</value>
+  </data>
+  <data name="CH2Pressure.Size" type="System.Drawing.Size, System.Drawing">
+    <value>128, 34</value>
+  </data>
   <data name="CH1ValveWrite.Text" xml:space="preserve">
     <value>Escribir</value>
+  </data>
+  <data name="label1.AutoSize" type="System.Boolean, mscorlib">
+    <value>False</value>
   </data>
   <data name="label1.Location" type="System.Drawing.Point, System.Drawing">
     <value>22, 59</value>
   </data>
   <data name="label1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>301, 16</value>
+    <value>322, 16</value>
   </data>
   <data name="label1.Text" xml:space="preserve">
     <value>Válvula reguladora de presión CH1 - 1</value>
   </data>
-  <data name="uiGroupBox2.Location" type="System.Drawing.Point, System.Drawing">
-    <value>4, 318</value>
+  <data name="PLCPreUnit1.AutoSize" type="System.Boolean, mscorlib">
+    <value>False</value>
   </data>
-  <data name="uiGroupBox2.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>0, 32, 0, 0</value>
+  <data name="uiGroupBox30.Location" type="System.Drawing.Point, System.Drawing">
+    <value>650, 15</value>
   </data>
-  <data name="uiGroupBox2.Size" type="System.Drawing.Size, System.Drawing">
-    <value>546, 265</value>
+  <data name="uiGroupBox30.Size" type="System.Drawing.Size, System.Drawing">
+    <value>629, 430</value>
   </data>
-  <data name="uiGroupBox2.Text" xml:space="preserve">
-    <value>Válvula reguladora de presión CH1</value>
-  </data>
-  <data name="tabPage1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>1460, 1045</value>
-  </data>
-  <data name="tabPage1.Text" xml:space="preserve">
-    <value>Configuración de corriente y tensión</value>
+  <data name="uiGroupBox30.Text" xml:space="preserve">
+    <value>Fuente de alimentación programable CH2</value>
   </data>
   <data name="btnCKCh2Off.Location" type="System.Drawing.Point, System.Drawing">
     <value>47, 336</value>
@@ -2250,7 +2725,7 @@
     <value>520, 39</value>
   </data>
   <data name="btnCKCh2Off.Text" xml:space="preserve">
-    <value>La fuente de alimentación programable ch2 está apagada</value>
+    <value>La fuente de alimentación programable CH2 está apagada</value>
   </data>
   <data name="btnCKCh2On.Location" type="System.Drawing.Point, System.Drawing">
     <value>124, 274</value>
@@ -2259,7 +2734,7 @@
     <value>373, 39</value>
   </data>
   <data name="btnCKCh2On.Text" xml:space="preserve">
-    <value>Encendido programable ch2</value>
+    <value>Encendido programable CH2</value>
   </data>
   <data name="btnCKCh2Save.Location" type="System.Drawing.Point, System.Drawing">
     <value>223, 211</value>
@@ -2280,7 +2755,7 @@
     <value>334, 16</value>
   </data>
   <data name="label4.Text" xml:space="preserve">
-    <value>Corriente de alimentación programable ch2</value>
+    <value>Corriente de alimentación programable CH2</value>
   </data>
   <data name="label14.Location" type="System.Drawing.Point, System.Drawing">
     <value>337, 76</value>
@@ -2295,19 +2770,13 @@
     <value>317, 16</value>
   </data>
   <data name="label16.Text" xml:space="preserve">
-    <value>Tensión de alimentación programable ch2</value>
+    <value>Tensión de alimentación programable CH2</value>
   </data>
-  <data name="uiGroupBox30.Location" type="System.Drawing.Point, System.Drawing">
-    <value>650, 14</value>
+  <data name="uiGroupBox31.Size" type="System.Drawing.Size, System.Drawing">
+    <value>585, 441</value>
   </data>
-  <data name="uiGroupBox30.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>0, 32, 0, 0</value>
-  </data>
-  <data name="uiGroupBox30.Size" type="System.Drawing.Size, System.Drawing">
-    <value>629, 397</value>
-  </data>
-  <data name="uiGroupBox30.Text" xml:space="preserve">
-    <value>Fuente de alimentación programable ch2</value>
+  <data name="uiGroupBox31.Text" xml:space="preserve">
+    <value>Fuente de alimentación programable CH1</value>
   </data>
   <data name="btnCKCh1Off.Location" type="System.Drawing.Point, System.Drawing">
     <value>17, 353</value>
@@ -2362,36 +2831,6 @@
   </data>
   <data name="label46.Text" xml:space="preserve">
     <value>Tensión de alimentación programable CH1</value>
-  </data>
-  <data name="uiGroupBox31.Location" type="System.Drawing.Point, System.Drawing">
-    <value>4, 14</value>
-  </data>
-  <data name="uiGroupBox31.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>0, 32, 0, 0</value>
-  </data>
-  <data name="uiGroupBox31.Size" type="System.Drawing.Size, System.Drawing">
-    <value>585, 407</value>
-  </data>
-  <data name="uiGroupBox31.Text" xml:space="preserve">
-    <value>Fuente de alimentación programable CH1</value>
-  </data>
-  <data name="tabPage9.Size" type="System.Drawing.Size, System.Drawing">
-    <value>1460, 1045</value>
-  </data>
-  <data name="tabPage9.Text" xml:space="preserve">
-    <value>Programación de la configuración de los parámetros de la fuente de alimentación</value>
-  </data>
-  <data name="uiTabControlMenu1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>-9, -1</value>
-  </data>
-  <data name="uiTabControlMenu1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>1661, 1045</value>
-  </data>
-  <data name="$this.AutoScaleDimensions" type="System.Drawing.SizeF, System.Drawing">
-    <value>6, 12</value>
-  </data>
-  <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
-    <value>1654, 979</value>
   </data>
   <data name="$this.Icon" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
@@ -2820,5 +3259,8 @@
   </data>
   <data name="$this.Text" xml:space="preserve">
     <value>Parámetros de prueba</value>
+  </data>
+  <data name="$this.ToolTip" xml:space="preserve">
+    <value />
   </data>
 </root>

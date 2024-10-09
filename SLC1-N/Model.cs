@@ -185,6 +185,7 @@
             public double FWD_ADCMAX { get; set; }
             public double RWD_ADCMAX { get; set; }
             public double UP_VDCMAX { get; set; }
+            public double UP_Pre1 { get; set; }
             public double DOWN_VDCMAX { get; set; }
             public double FWD_VDCMAX { get; set; }
             public double RWD_VDCMAX { get; set; }
@@ -194,13 +195,25 @@
             //public double RWD_Elec { get; set; }
             public double Elec { get; set; }
             public double UP_Flow { get; set; }
+            public double UP_Flow1 { get; set; }
+            public double UP_Flowzuo { get; set; }
             public double DOWN_Flow { get; set; }
+            public double DOWN_Flow1 { get; set; }
+            public double DOWN_Flowzuo { get; set; }
+
+            public double FWD_FlowSumzuo { get; set; }
+            public double FWD_PreSumzuo { get; set; }
+            public double FWD_FlowSum { get; set; }
+            public double FWD_PreSum{ get; set; }
             public double FWD_Flow1 { get; set; }
             public double FWD_Flow2 { get; set; }
             public double RWD_Flow1 { get; set; }
             public double RWD_Flow2 { get; set; }
             public double UP_Pre { get; set; }
+            public double UP_Prezuo { get; set; }
             public double DOWN_Pre { get; set; }
+            public double DOWN_Prezuo { get; set; }
+            public double DOWN_Pre1 { get; set; }
             public double FWD_Pre1 { get; set; }
             public double FWD_Pre2 { get; set; }
             public double RWD_Pre1 { get; set; }

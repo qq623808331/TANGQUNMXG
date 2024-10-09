@@ -24,6 +24,9 @@ using static SLC1_N.Model;
 using Excel = Microsoft.Office.Interop.Excel;
 using System.IO.Ports;
 using static SLC1_N.Setup;
+using System.Security.Policy;
+using Microsoft.Office.Interop.Excel;
+using Sunny.UI.Win32;
 namespace SLC1_N
 {
     public partial class Form1 : Form
@@ -189,6 +192,7 @@ namespace SLC1_N
         private bool CH2flowtest;
         private bool CH3flowtest;
         private bool CH4flowtest;
+        //卡控启动的判断
         private bool plcch1lastsignal = false;
         private bool plcch2lastsignal = false;
 
@@ -235,8 +239,8 @@ namespace SLC1_N
         private string CH2VDCresult;
         private string CH1Elecresult;
         private string CH2Elecresult;
-        private Model.TestResult CH1TestResult = new Model.TestResult();
-        private Model.TestResult CH2TestResult = new Model.TestResult();
+        public Model.TestResult CH1TestResult = new Model.TestResult();
+        public Model.TestResult CH2TestResult = new Model.TestResult();
         private string CH1timestamp;
         private string CH2timestamp;
 
@@ -258,7 +262,11 @@ namespace SLC1_N
         public int CH2csvworknum = 1;
         public int CH1mesworknum = 1;
         public int CH2mesworknum = 1;
+        public static      SerialPortReader CH1POWER=new SerialPortReader("COM17",9600,10);
+        public static       SerialPortReader CH2POWER= new SerialPortReader("COM20", 9600, 10);
 
+        public static SerialPortReader CH1ADC_PORT = new SerialPortReader("COM17", 9600, 10);
+        public static SerialPortReader CH2ADC_PORT = new SerialPortReader("COM20", 9600, 10);
         //警告
         private WarningInfo wa = new WarningInfo();
 
@@ -313,7 +321,7 @@ namespace SLC1_N
         private void InitTimer()
         {
             //设置定时间隔(毫秒为单位)
-            int interval = 100;
+            int interval = 300;
             timerCH1CT = new System.Timers.Timer(interval);
             //设置执行一次（false）还是一直执行(true)
             timerCH1CT.AutoReset = true;
@@ -405,6 +413,65 @@ namespace SLC1_N
             this.Shown += Form1_Shown;
             f1 = this;
         }
+        private static void CH1POWER_DataReceived(string data)
+        {
+                try
+                {
+                double data2;
+                 
+                //string[] strArray = data.ToString().Split(' ');
+                //double number1 = Convert.ToDouble(strArray[0].ToString());
+                //string numberFromStringFormat = string.Format("{0:F5}", number1);
+                if (double.TryParse(data, System.Globalization.NumberStyles.Float,System.Globalization.NumberFormatInfo.InvariantInfo, out data2))
+                {
+                     if(data2<1)
+                    {
+                        Form1.f1.CH1RTADC.Text = data2.ToString();
+                        Form1.f1.CH1ADCList.Add(new ValueClass { Value = data2 });
+                    }
+                   
+                 
+                }
+                ;
+                 }
+                catch (Exception ex)
+                {
+                    Logger.Log(ex.StackTrace);
+                    throw;
+                }
+      
+        
+        }
+        private static void CH2POWER_DataReceived(string data)
+        {
+            try
+            {
+                double data2;
+
+                //string[] strArray = data.ToString().Split(' ');
+                //double number1 = Convert.ToDouble(strArray[0].ToString());
+                //string numberFromStringFormat = string.Format("{0:F5}", number1);
+                if (double.TryParse(data, System.Globalization.NumberStyles.Float, System.Globalization.NumberFormatInfo.InvariantInfo, out data2))
+                {
+                    if (data2 < 1)
+                    {
+                        Form1.f1.CH2RTADC.Text = data2.ToString();
+                        Form1.f1.CH2ADCList.Add(new ValueClass { Value = data2 });
+                    }
+                }
+                    
+                
+            ;
+            }
+            catch (Exception ex)
+            {
+                Logger.Log(ex.StackTrace);
+                throw;
+            }
+
+
+        }
+
 
         private void Form1_Shown(object sender, EventArgs e)
         {
@@ -429,26 +496,46 @@ namespace SLC1_N
                 plc.WriteCH2TC(false);
                 plc.WriteCH2XQ(false);
 
+
+                plc.WriteCH1QC(false);
+                plc.WriteCH2QC(false);
             }
-
-
-
-      
-
-            //后台流量读取线程
-            Task.Run(() =>
-            {
-                while (true)
-                {
-                }
-
-
-            });
 
             ADCPort1 = new SerialPort { };
             VDCPort1 = new SerialPort { };
             CH2ADCPort = new SerialPort { };
             CH2VDCPort = new SerialPort { };
+            ReadMultimeterPort();
+            ReadFlowTask();
+            Task.Run(() =>
+            {
+                while (true)
+                {
+
+                    try
+                    {
+                        if (true && mSerialPort)
+                        {
+
+                            //   Logger.Log("PortName:" + CH1POWER._serialPort.PortName + "-BaudRate:" + CH1POWER._serialPort.BaudRate + CH1POWER._serialPort.IsOpen.ToString());
+                            //       Task.Delay(150);
+                            //if (CH1POWER._serialPort.IsOpen)
+                            //    CH1POWER._serialPort.WriteLine();
+               
+                            CH1POWER.Write("MEASure:CURRent?");
+                            Thread.Sleep(600);
+
+                               CH2POWER.Write("MEASure:CURRent?");
+                            Thread.Sleep(600);
+                        }
+                    }
+                    catch (Exception ex)
+                    {
+                        Logger.Log(ex.StackTrace);
+                        wa.InsertWarningData(DateTime.Now.ToString("yyyy-MM-dd HH:mm:ss"), "-", ex.StackTrace);
+                    }
+                }
+            });
             //后台电压电流读取线程
             Task.Run(() =>
             {
@@ -465,9 +552,9 @@ namespace SLC1_N
                                 ReadMultimeterPort();
                                 Thread.Sleep(100);
                                 PortSend(1);
-                                Thread.Sleep(100);
+                                Thread.Sleep(300);
                                 PortSend(3);
-                                Thread.Sleep(100);
+                                Thread.Sleep(300);
                             }
                             catch (Exception ex)
                             {
@@ -493,9 +580,9 @@ namespace SLC1_N
                     {
                         Thread.Sleep(100);
                         PortSend(2);
-                        Thread.Sleep(100);
+                        Thread.Sleep(500);
                         PortSend(4);
-                        Thread.Sleep(100);
+                        Thread.Sleep(500);
 
                     }
                     catch (Exception ex)
@@ -505,6 +592,7 @@ namespace SLC1_N
                     }
                 }
             });
+
         }
 
         private void ChangLang()
@@ -566,7 +654,7 @@ namespace SLC1_N
          
 
             ////
-            //Sunny.UI.UIMessageTip.ShowError("AAAAA", 1000);
+            //Sunny.UI.UIMessageTip.ShowError(                                                                                                                                                                                                                                                                                                                                                                                          "AAAAA", 1000);
             //this.TopMost = true;
             timer1.Interval = 100;
             timer1.Start();
@@ -636,6 +724,17 @@ namespace SLC1_N
             SelectMachine mac = new SelectMachine();
             mac.ShowDialog();
 
+
+            //Thread t1 = new Thread(CH1lock);
+            //Thread t2 = new Thread(CH2lock);
+            //Thread t3 = new Thread(CH3lock);
+            //Thread t4 = new Thread(CH4lock);
+            //t1.Start();
+            //t2.Start();
+            //t3.Start();
+            //t4.Start();
+
+
             ReadFlow();
             ReadLin();
             ReadAllConfig();
@@ -657,7 +756,8 @@ namespace SLC1_N
             CH1IsRun.Interval = 500;
         }
 
-        [DllImport("user32.dll", EntryPoint = "FindWindow", CharSet = CharSet.Auto)]
+
+                    [DllImport("user32.dll", EntryPoint = "FindWindow", CharSet = CharSet.Auto)]
         private static extern IntPtr FindWindow(string lpClassName, string lpWindowName);
 
         [DllImport("user32.dll", CharSet = CharSet.Auto)]
@@ -665,10 +765,12 @@ namespace SLC1_N
 
         public const int WM_CLOSE = 0x10;
 
-        /// <summary>
-        /// PLC连接
-        /// </summary>
-        public void PLC_Con()
+
+     
+                    /// <summary>
+                    /// PLC连接
+                    /// </summary>
+                    public void PLC_Con()
         {
             try
             {
@@ -706,9 +808,11 @@ namespace SLC1_N
         {
             try
             {
+
                 ///////
                 ///if
                 ///
+                plc.PLC_IsRun();
                 if (Fwdjg == 1 && Fwdjg2 == 1 && left_CH1Tlight.Text.Contains("OK") && left_CH2Tlight.Text.Contains("OK"))
                 {
                     Fwdjg = 0;
@@ -726,8 +830,8 @@ namespace SLC1_N
                 }
 
                 //PLCSignal.Stop();
-                plc.PLC_IsRun();
-                System.Threading.Thread.Sleep(400);
+          
+                System.Threading.Thread.Sleep(200);
                 if (plc.PLCIsRun)
                 {
                     ReadPLC();
@@ -858,8 +962,8 @@ namespace SLC1_N
                             {
                                 timerCH1CT.Stop();
                                 CH1IsStart = false;
-                                if (CKCH1Port.IsOpen)
-                                    Form1.f1.CKCH1Port.WriteLine("OUTP 0");
+                                if (CH1POWER._serialPort.IsOpen)
+                                    Form1.CH1POWER._serialPort.WriteLine("OUTP 0");
                                 this.Invoke(new System.Action(() => { CH1CT.Text = "0S"; }));
                             }
                             // MessageBox.Show("左复位按下！", "左复位");
@@ -881,7 +985,8 @@ namespace SLC1_N
                                 timerCH2CT.Stop();
                                 CH2IsStart = false;
 
-                                if (CKCH2Port.IsOpen) Form1.f1.CKCH2Port.WriteLine("OUTP 0");
+                             //   if (CKCH2Port.IsOpen) Form1.f1.CKCH2Port.WriteLine("OUTP 0");
+                                CH2POWER.Write("OUTP 0");
                                 this.Invoke(new System.Action(() => { CH2CT.Text = "0S"; }));
                             }
                             //MessageBox.Show("右复位按下！", "右复位");
@@ -962,9 +1067,9 @@ namespace SLC1_N
                         IntPtr ptr = FindWindow(null, "CH1侧推气缸");
                         if (ptr == IntPtr.Zero)
                         {
-                            //MessageBox.Show("CH1侧推气缸异常！", "CH1侧推气缸");
-                            Logger.Log(I18N.GetLangText(dicLang, "CH1侧推气缸异常，CH1侧推气缸"));
-                            wa.InsertWarningData(DateTime.Now.ToString("yyyy-MM-dd HH:mm:ss"), I18N.GetLangText(dicLang, "左"), I18N.GetLangText(dicLang, "CH1侧推气缸异常，CH1侧推气缸"));
+                           //MessageBox.Show("CH1侧推气缸异常！", "CH1侧推气缸");
+                       //     Logger.Log(I18N.GetLangText(dicLang, "CH1侧推气缸异常，CH1侧推气缸"));
+                        //    wa.InsertWarningData(DateTime.Now.ToString("yyyy-MM-dd HH:mm:ss"), I18N.GetLangText(dicLang, "左"), I18N.GetLangText(dicLang, "CH1侧推气缸异常，CH1侧推气缸"));
                         }
                     }
                     if (plc.CH2SPCylinderError)
@@ -1178,6 +1283,8 @@ namespace SLC1_N
 
                     if ((plc.CH1Run | plc.CH1ARun | plc.CH1BRun | plc.CH1CRun) & !CH1IsStart)
                     {
+                        
+
                         ch1Start = true;
                         this.logDisplay1.listBox1.Items.Clear();
                         mSerialPort = true;
@@ -1194,8 +1301,9 @@ namespace SLC1_N
                             {
                                 dtCT1 = DateTime.Now;
                                 timerCH1CT.Start();
-                                if (CKCH1Port.IsOpen)
-                                    Form1.f1.CKCH1Port.WriteLine("OUTP 1");
+                                if (Form1.CH1POWER._serialPort.IsOpen)
+                                    Form1.CH1POWER._serialPort.WriteLine("OUTP 1");
+                                plcch1lastsignal = (plc.CH1Run | plc.CH1ARun | plc.CH1BRun | plc.CH1CRun);
                             }
                             CH1Status.Text = I18N.GetLangText(dicLang, "测试");
                             CH1Status.ForeColor = Color.Green;
@@ -1251,6 +1359,7 @@ namespace SLC1_N
 
                     if ((plc.CH2Run | plc.CH2DRun | plc.CH2ERun | plc.CH2FRun) & !CH2IsStart)
                     {
+                       
                         ch2Start = true;
                         this.logDisplay1.listBox1.Items.Clear();
                         mSerialPort = true;
@@ -1270,6 +1379,7 @@ namespace SLC1_N
                                 // if (CKCH2Port.IsOpen)   if (CKCH2Port.IsOpen)   Form1.f1.CKCH2Port.WriteLine("OUTP 1");
                             }
                             CH2Status.Text = I18N.GetLangText(dicLang, "测试");
+                            plcch2lastsignal = (plc.CH2Run | plc.CH2DRun | plc.CH2ERun | plc.CH2FRun);
                             CH2Status.ForeColor = Color.Green;
                             CH2Tlight.Text = "";
                             ch2readresult = false;
@@ -1321,12 +1431,13 @@ namespace SLC1_N
 
                     if ((plc.CH1Run | plc.CH1ARun | plc.CH1BRun | plc.CH1CRun) & CH1IsStart && CH1OrderTemp.Count > 0)
                     {
-                        if ((plc.CH1Run | plc.CH1ARun | plc.CH1BRun | plc.CH1CRun) && !plcch1lastsignal)
+                        if ((plc.CH1Run | plc.CH1ARun | plc.CH1BRun | plc.CH1CRun) && plcch1lastsignal)
                         {
-                            plcch1lastsignal = (plc.CH1Run | plc.CH1ARun | plc.CH1BRun | plc.CH1CRun);
-                            //     Thread.Sleep(500);
-                            CH1Method(0);
-                            CH1Step = 0;
+                               CH1Method(0);
+                                            CH1Step = 0;
+                           //数据清零
+                            DateZero();
+                          
                             plc.CH1Rset();
                         }
                     }
@@ -1336,11 +1447,10 @@ namespace SLC1_N
                     }
                     if ((plc.CH2Run | plc.CH2DRun | plc.CH2ERun | plc.CH2FRun) & CH2IsStart && CH2OrderTemp.Count > 0)
                     {
-                        if ((plc.CH2Run | plc.CH2DRun | plc.CH2ERun | plc.CH2FRun) && !plcch2lastsignal)
+                        if ((plc.CH2Run | plc.CH2DRun | plc.CH2ERun | plc.CH2FRun) && plcch2lastsignal)
                         {
-                            plcch2lastsignal = (plc.CH2Run | plc.CH2DRun | plc.CH2ERun | plc.CH2FRun);
-                            //     Thread.Sleep(500);
                             CH2Method(0);
+                            DateZero2();
                             CH2Step = 0;
                             plc.CH2Rset();
                         }
@@ -1375,8 +1485,8 @@ namespace SLC1_N
                                 //CH1progressBar.BackColor = Color.Red;
                                 //CH2progressBar.BackColor = Color.Red;
                                 CH1IsStart = false;
-                                if (CKCH1Port.IsOpen)
-                                    Form1.f1.CKCH1Port.WriteLine("OUTP 0");
+                                if (CH1POWER._serialPort.IsOpen)
+                                    Form1.CH1POWER._serialPort.WriteLine("OUTP 0");
                             }
 
                             //产品计数
@@ -1426,8 +1536,8 @@ namespace SLC1_N
                                 CH1progressBar.Value = CH1progressBar.Maximum;
                                 CH2progressBar.Value = CH2progressBar.Maximum;
                                 CH1IsStart = false;
-                                if (CKCH1Port.IsOpen)
-                                    Form1.f1.CKCH1Port.WriteLine("OUTP 0");
+                                if (CH1POWER._serialPort.IsOpen)
+                                    Form1.CH1POWER._serialPort.WriteLine("OUTP 0");
                             }
                             //产品计数
                             CH1Product += 1;
@@ -1449,6 +1559,7 @@ namespace SLC1_N
                         CH1Tlight.Text = "";
                     }
 
+                 
                     if (plc.CH2NG)
                     {
                         if (CH2IsStart && ch2Start)
@@ -1947,6 +2058,42 @@ namespace SLC1_N
                 }
             }));
         }
+        private static readonly object lockObject = new object();
+        public static void CH1lock()
+        {
+            lock (lockObject)
+            {
+             Form1.f1.   CH1Stagenum();
+                Thread.Sleep(200);
+            }
+        }
+        public static void CH2lock()
+        {
+            lock (lockObject)
+            {
+           Form1. f1.    CH2Stagenum();
+                Thread.Sleep(200);
+            }
+        }
+
+        public static void CH3lock()
+        {
+            lock (lockObject)
+            {
+                Form1.f1.CH3Stagenum();
+                Thread.Sleep(200);
+            }
+        }
+
+
+        public static void CH4lock()
+        {
+            lock (lockObject)
+            {
+                Form1.f1.CH4Stagenum();
+                Thread.Sleep(200);
+            }
+        }
 
         /// <summary>
         /// TCP信息接收
@@ -1963,24 +2110,32 @@ namespace SLC1_N
                         CH1ReceiveText.Clear();
                         CH1ReceiveText.Text = text;
                         CH1Stagenum();
+                        //CH1lock();
+
+
+
                     }
                     if (CH == 2)
                     {
                         CH2ReceiveText.Clear();
                         CH2ReceiveText.Text = text;
+
                         CH2Stagenum();
+
                     }
                     if (CH == 3)
                     {
                         CH3ReceiveText.Clear();
                         CH3ReceiveText.Text = text;
                         CH3Stagenum();
+
                     }
                     if (CH == 4)
                     {
                         CH4ReceiveText.Clear();
                         CH4ReceiveText.Text = text;
                         CH4Stagenum();
+
                     }
                     //PortLog log = new PortLog();
                     //log.Logmsg("Receive:  " + CH1ReceiveText.Text);
@@ -2038,8 +2193,8 @@ namespace SLC1_N
 
                     case 2://此时为读取参数并数据转换
                         string str2;
-                        if (CKCH1Port.IsOpen)
-                            Form1.f1.CKCH1Port.WriteLine("OUTP 1");
+                        if (CH1POWER._serialPort.IsOpen)
+                            Form1.CH1POWER._serialPort.WriteLine("OUTP 1");
                         str2 = CH1ReceiveText.Text;
                         //ReadParams.Stop();
                         if (str2.Length == 126 && str2.Substring(2, 2) == "03")
@@ -2154,8 +2309,8 @@ namespace SLC1_N
                                 //充气阶段
                                 //fullpressure = LeakPressure.Text;
                                 LeftCH1Status.Text = I18N.GetLangText(dicLang, "准备");
-                                if (CKCH1Port.IsOpen)
-                                    Form1.f1.CKCH1Port.WriteLine("OUTP 1");
+                                if (CH1POWER._serialPort.IsOpen)
+                                    Form1.CH1POWER._serialPort.WriteLine("OUTP 1");
                             }
                             else if (str4.Substring(8, 2) == "02")
                             {
@@ -2169,8 +2324,8 @@ namespace SLC1_N
                                 {
                                     CH1TestResult.FWD_FullPre1 = LeftCH1LeakPress.Text;
                                 }
-                                if (CKCH1Port.IsOpen)
-                                    Form1.f1.CKCH1Port.WriteLine("OUTP 1");
+                                if (CH1POWER._serialPort.IsOpen)
+                                    Form1.CH1POWER._serialPort.WriteLine("OUTP 1");
                             }
                             else if (str4.Substring(8, 2) == "03")
                             {
@@ -2188,8 +2343,8 @@ namespace SLC1_N
                                     plc.CH1FWDLeakFalse();
                                     //把IO关了 M4010 FOSE
                                     plc.CH1LeakFalse();//5-27
-                                    if (CKCH1Port.IsOpen)
-                                        Form1.f1.CKCH1Port.WriteLine("OUTP 0");
+                                    if (CH1POWER._serialPort.IsOpen)
+                                        Form1.CH1POWER._serialPort.WriteLine("OUTP 0");
                                     if (CH1RTStep == "FWDLeak")
                                     {
                                         CH1TestResult.FWD_BalanPre1 = LeftCH1LeakPress.Text;
@@ -2205,8 +2360,8 @@ namespace SLC1_N
                                     }
                                 }
                                 else
-                                     if (CKCH1Port.IsOpen)
-                                    Form1.f1.CKCH1Port.WriteLine("OUTP 1");
+                                     if (CH1POWER._serialPort.IsOpen)
+                                    Form1.CH1POWER._serialPort.WriteLine("OUTP 1");
                             }
                         }
 
@@ -2419,7 +2574,7 @@ namespace SLC1_N
             {
                 wa.InsertWarningData(DateTime.Now.ToString("yyyy-MM-dd HH:mm:ss"), "-", I18N.GetLangText(dicLang, "CH1-1收发") + ":" + ex.Message);
                 //MessageBox.Show("CH1-1收发：" + ex.Message);
-                Logger.Log(I18N.GetLangText(dicLang, "CH1-1收发") + ":" + ex.Message);
+                Logger.Log(I18N.GetLangText(dicLang, "CH1-1收发") + ":" + ex.Message+DateTime.Now+ToString()+ex.StackTrace);
             }
         }
 
@@ -2466,8 +2621,8 @@ namespace SLC1_N
 
                     case 2://此时为读取参数并数据转换
                         string str2;
-                        if (CKCH1Port.IsOpen)
-                            Form1.f1.CKCH1Port.WriteLine("OUTP 1");
+                        if (CH1POWER._serialPort.IsOpen)
+                            Form1.CH1POWER._serialPort.WriteLine("OUTP 1");
                         str2 = CH2ReceiveText.Text;
                         //CH2ReadParams.Stop();
                         if (str2.Length == 126 && str2.Substring(2, 2) == "03")
@@ -2580,14 +2735,14 @@ namespace SLC1_N
 
                                 if (CH1RTStep == "UPLeak" || CH1RTStep == "DOWNLeak")
                                 {
-                                    if (CKCH1Port.IsOpen)
-                                        Form1.f1.CKCH1Port.WriteLine("OUTP 1");
+                                    if (CH1POWER._serialPort.IsOpen)
+                                        Form1.CH1POWER._serialPort.WriteLine("OUTP 1");
                                     CH1TestResult.FullPre2 = LeftCH2LeakPress.Text;
                                 }
                                 else if (CH1RTStep == "FWDLeak")
                                 {
-                                    if (CKCH1Port.IsOpen)
-                                        Form1.f1.CKCH1Port.WriteLine("OUTP 1");
+                                    if (CH1POWER._serialPort.IsOpen)
+                                        Form1.CH1POWER._serialPort.WriteLine("OUTP 1");
                                     CH1TestResult.FWD_FullPre2 = LeftCH2LeakPress.Text;
                                 }
                             }
@@ -2606,8 +2761,8 @@ namespace SLC1_N
                                 {
                                     plc.CH1FWDLeakFalse();
                                     plc.CH1DownLeakFalse();//5-27
-                                    if (CKCH1Port.IsOpen)
-                                        Form1.f1.CKCH1Port.WriteLine("OUTP 0");
+                                    if (CH1POWER._serialPort.IsOpen)
+                                        Form1.CH1POWER._serialPort.WriteLine("OUTP 0");
                                     if (CH1RTStep == "FWDLeak")
                                     {
                                         CH1TestResult.FWD_BalanPre2 = LeftCH2LeakPress.Text;
@@ -2624,8 +2779,8 @@ namespace SLC1_N
                                 }
                                 else
                                 {
-                                    if (CKCH1Port.IsOpen)
-                                        Form1.f1.CKCH1Port.WriteLine("OUTP 1");
+                                    if (CH1POWER._serialPort.IsOpen)
+                                        Form1.CH1POWER._serialPort.WriteLine("OUTP 1");
                                 }
                             }
                         }
@@ -2819,7 +2974,7 @@ namespace SLC1_N
             {
                 wa.InsertWarningData(DateTime.Now.ToString("yyyy-MM-dd HH:mm:ss"), "-", I18N.GetLangText(dicLang, "CH1-2收发") + "：" + ex.Message);
                 //MessageBox.Show("CH1-2收发：" + ex.Message);
-                Logger.Log(I18N.GetLangText(dicLang, "CH1-2收发") + "：" + ex.Message);
+                Logger.Log(I18N.GetLangText(dicLang, "CH1-2收发") + ":" + ex.Message + DateTime.Now + ToString() + ex.StackTrace);
             }
         }
 
@@ -2870,10 +3025,10 @@ namespace SLC1_N
                         string str2;
                         str2 = CH3ReceiveText.Text;
                         //CH3ReadParams.Stop();
-                        if (CKCH2Port.IsOpen) if (CKCH2Port.IsOpen) Form1.f1.CKCH2Port.WriteLine("OUTP 1");
+                        CH2POWER.Write("OUTP 1");
                         if (str2.Length == 126 && str2.Substring(2, 2) == "03")
                         {
-                            if (CKCH2Port.IsOpen) if (CKCH2Port.IsOpen) Form1.f1.CKCH2Port.WriteLine("OUTP 1");
+                            CH2POWER.Write("OUTP 1");
                             CH3IsRun.Stop();
                             ch2_1params = comm.ReadParams(str2, ch2_1params.CHKUnit);
                             if (CH2RTStep.Contains("Leak"))
@@ -2975,7 +3130,7 @@ namespace SLC1_N
                             else if (str4.Substring(8, 2) == "04")
                             {
                                 RightCH1Status.Text = I18N.GetLangText(dicLang, "检测");
-                                if (CKCH2Port.IsOpen) if (CKCH2Port.IsOpen) Form1.f1.CKCH2Port.WriteLine("OUTP 0");
+                                CH2POWER.Write("OUTP 0");
                             }
                             else if (str4.Substring(8, 2) == "01")
                             {
@@ -2989,7 +3144,7 @@ namespace SLC1_N
                                 //平衡阶段
                                 //balanpressure = LeakPressure.Text;
                                 RightCH1Status.Text = I18N.GetLangText(dicLang, "充气");
-                                if (CKCH2Port.IsOpen) if (CKCH2Port.IsOpen) Form1.f1.CKCH2Port.WriteLine("OUTP 1");
+                                CH2POWER.Write("OUTP 1");
                                 if (CH2RTStep == "UPLeak" || CH2RTStep == "DOWNLeak")
                                 {
                                     CH2TestResult.FullPre1 = RightCH1LeakPress.Text;
@@ -3001,8 +3156,7 @@ namespace SLC1_N
                             }
                             else if (str4.Substring(8, 2) == "03")
                             {
-                                // Form1.f1.CKCH1Port.WriteLine("OUTP 1");
-                                //平衡阶段
+    
                                 //balanpressure = LeakPressure.Text;
                                 RightCH1Status.Text = I18N.GetLangText(dicLang, "平衡");
 
@@ -3010,7 +3164,7 @@ namespace SLC1_N
                                 {
                                     plc.CH2FWDLeakFalse();
                                     plc.CH2UPLeakFalse();
-                                    if (CKCH2Port.IsOpen) if (CKCH2Port.IsOpen) Form1.f1.CKCH2Port.WriteLine("OUTP 0");
+                                    CH2POWER.Write("OUTP 0");
                                     if (CH2RTStep == "FWDLeak")
                                     {
                                         CH2TestResult.FWD_BalanPre1 = RightCH1LeakPress.Text;
@@ -3025,7 +3179,7 @@ namespace SLC1_N
                                         plc.CH3Balance();
                                     }
                                 }
-                                else if (CKCH2Port.IsOpen) if (CKCH2Port.IsOpen) Form1.f1.CKCH2Port.WriteLine("OUTP 1");
+                                else CH2POWER.Write("OUTP 1");
                             }
                         }
 
@@ -3202,7 +3356,7 @@ namespace SLC1_N
             {
                 wa.InsertWarningData(DateTime.Now.ToString("yyyy-MM-dd HH:mm:ss"), "-", I18N.GetLangText(dicLang, "CH2-1收发") + "：" + ex.Message);
                 //MessageBox.Show("CH2-1收发：" + ex.Message);
-                Logger.Log(I18N.GetLangText(dicLang, "CH2-1收发") + "：" + ex.Message);
+                Logger.Log(I18N.GetLangText(dicLang, "CH2-1收发") + ":" + ex.Message + DateTime.Now + ToString() + ex.StackTrace);
             }
         }
 
@@ -3227,7 +3381,7 @@ namespace SLC1_N
                     case 1://此时为状态位读取
                         string str1;
                         str1 = CH4ReceiveText.Text;
-                        //   if (CKCH2Port.IsOpen)   if (CKCH2Port.IsOpen)   Form1.f1.CKCH2Port.WriteLine("OUTP 1");
+                         
                         if (str1.Substring(6, 2) == "01")
                         {
                             //CH4IsRun.Stop();
@@ -3255,7 +3409,7 @@ namespace SLC1_N
 
                         str2 = CH4ReceiveText.Text;
                         //CH4ReadParams.Stop();
-                        if (CKCH2Port.IsOpen) if (CKCH2Port.IsOpen) Form1.f1.CKCH2Port.WriteLine("OUTP 1");
+                        CH2POWER.Write("OUTP 1");
                         if (str2.Length >= 126 && str2.Substring(2, 2) == "03")
                         {
                             //  CH4IsRun.Stop();
@@ -3363,7 +3517,7 @@ namespace SLC1_N
                             else if (str4.Substring(8, 2) == "04")
                             {
                                 RightCH2Status.Text = I18N.GetLangText(dicLang, "检测");
-                                if (CKCH2Port.IsOpen) Form1.f1.CKCH2Port.WriteLine("OUTP 0");
+                                CH2POWER.Write("OUTP 0");
                             }
                             else if (str4.Substring(8, 2) == "01")
                             {
@@ -3372,7 +3526,7 @@ namespace SLC1_N
                                 //fullpressure = LeakPressure.Text;
                                 RightCH2Status.Text = I18N.GetLangText(dicLang, "准备");
                                 if (Convert.ToDouble(CH2RTVDC.Text) < 3)
-                                    if (CKCH2Port.IsOpen) Form1.f1.CKCH2Port.WriteLine("OUTP 1");
+                                    CH2POWER.Write("OUTP 1");
                             }
                             else if (str4.Substring(8, 2) == "02")
                             {
@@ -3388,7 +3542,7 @@ namespace SLC1_N
                                     CH2TestResult.FWD_FullPre2 = RightCH2LeakPress.Text;
                                 }
                                 // else
-                                if (CKCH2Port.IsOpen) Form1.f1.CKCH2Port.WriteLine("OUTP 1");
+                                CH2POWER.Write("OUTP 1");
                             }
                             else if (str4.Substring(8, 2) == "03")
                             {
@@ -3400,8 +3554,8 @@ namespace SLC1_N
                                 {
                                     plc.CH2FWDLeakFalse();
                                     plc.CH2DownLeakFalse();//4014
-                                    //if (Convert.ToDouble(CH2RTVDC.Text) > 3)
-                                    if (CKCH2Port.IsOpen) Form1.f1.CKCH2Port.WriteLine("OUTP 0");
+                                                           //if (Convert.ToDouble(CH2RTVDC.Text) > 3)
+                                    CH2POWER.Write("OUTP 0");
                                     if (CH2RTStep == "FWDLeak")
                                     {
                                         CH2TestResult.FWD_BalanPre2 = RightCH2LeakPress.Text;
@@ -3419,7 +3573,7 @@ namespace SLC1_N
                                     }
                                 }
                                 else //if (Convert.ToDouble(CH2RTVDC.Text) < 3)
-                                    if (CKCH2Port.IsOpen) Form1.f1.CKCH2Port.WriteLine("OUTP 1");
+                                    CH2POWER.Write("OUTP 1");
 
                             }
                         }
@@ -3610,7 +3764,7 @@ namespace SLC1_N
             {
                 wa.InsertWarningData(DateTime.Now.ToString("yyyy-MM-dd HH:mm:ss"), "-", I18N.GetLangText(dicLang, "CH2-2收发") + "：" + ex.Message);
                 //MessageBox.Show("CH2-2收发：" + ex.Message);
-                Logger.Log(I18N.GetLangText(dicLang, "CH2-2收发") + "：" + ex.Message);
+                Logger.Log(I18N.GetLangText(dicLang, "CH2-2收发") + ":" + ex.Message + DateTime.Now + ToString() + ex.StackTrace);
             }
         }
 
@@ -3624,14 +3778,14 @@ namespace SLC1_N
                 {
                     case 1:
                         text = "01 01 00 02 00 01";
-                        //  Form1.f1.CKCH1Port.WriteLine("OUTP 1");
+                    
                         ch1client.btnSendData(text);
                         ch1stage = 1;
                         break;
 
                     case 2:
-                        if (CKCH1Port.IsOpen)
-                            Form1.f1.CKCH1Port.WriteLine("OUTP 1");
+                        if (CH1POWER._serialPort.IsOpen)
+                            Form1.CH1POWER._serialPort.WriteLine("OUTP 1");
                         text = "01 03 03 E8 00 1D";
                         ch1client.btnSendData(text);
                         ch1stage = 2;
@@ -3645,8 +3799,8 @@ namespace SLC1_N
 
                     case 4:
                         text = "01 01 00 02 00 01";
-                        if (CKCH1Port.IsOpen)
-                            Form1.f1.CKCH1Port.WriteLine("OUTP 0");
+                        if (CH1POWER._serialPort.IsOpen)
+                            Form1.CH1POWER._serialPort.WriteLine("OUTP 0");
                         ch1client.btnSendData(text);
                         ch1stage = 5;
                         break;
@@ -3717,15 +3871,15 @@ namespace SLC1_N
                 switch (ch1_2step)
                 {
                     case 1:
-                        // Form1.f1.CKCH1Port.WriteLine("OUTP 1");
+                     
                         text = "02 01 00 02 00 01";
                         ch2client.btnSendData(text);
                         ch2stage = 1;
                         break;
 
                     case 2:
-                        if (CKCH1Port.IsOpen)
-                            Form1.f1.CKCH1Port.WriteLine("OUTP 1");
+                        if (CH1POWER._serialPort.IsOpen)
+                            Form1.CH1POWER._serialPort.WriteLine("OUTP 1");
                         text = "02 03 03 E8 00 1D";
                         ch2client.btnSendData(text);
                         ch2stage = 2;
@@ -3738,7 +3892,7 @@ namespace SLC1_N
                         break;
 
                     case 4:
-                        // Form1.f1.CKCH1Port.WriteLine("OUTP 0");
+                  
                         text = "02 01 00 02 00 01";
                         ch2client.btnSendData(text);
                         ch2stage = 5;
@@ -3770,13 +3924,13 @@ namespace SLC1_N
                 {
                     case 1:
                         text = "03 01 00 02 00 01";
-                        //     if (CKCH2Port.IsOpen)   Form1.f1.CKCH2Port.WriteLine("OUTP 1");
+                       
                         ch3client.btnSendData(text);
                         ch3stage = 1;
                         break;
 
                     case 2:
-                        if (CKCH2Port.IsOpen) Form1.f1.CKCH2Port.WriteLine("OUTP 1");
+                        CH2POWER.Write("OUTP 1");
                         text = "03 03 03 E8 00 1D";
                         ch3client.btnSendData(text);
                         ch3stage = 2;
@@ -3790,13 +3944,13 @@ namespace SLC1_N
 
                     case 4:
                         text = "03 01 00 02 00 01";
-                        if (CKCH2Port.IsOpen) Form1.f1.CKCH2Port.WriteLine("OUTP 0");
+                        CH2POWER.Write("OUTP 0");
                         ch3client.btnSendData(text);
                         ch3stage = 5;
                         break;
 
                     case 5:
-                        //   if (CKCH2Port.IsOpen)   Form1.f1.CKCH2Port.WriteLine("OUTP 0");
+                         
                         text = "03 01 00 02 00 01";
                         ch3client.btnSendData(text);
                         ch3stage = 10;
@@ -3820,14 +3974,14 @@ namespace SLC1_N
                 {
                     case 1:
                         text = "04 01 00 02 00 01";
-                        //     if (CKCH2Port.IsOpen)   Form1.f1.CKCH2Port.WriteLine("OUTP 1");
+                         
                         ch4client.btnSendData(text);
                         ch4stage = 1;
                         break;
 
                     case 2:
                         text = "04 03 03 E8 00 1D";
-                        if (CKCH2Port.IsOpen) Form1.f1.CKCH2Port.WriteLine("OUTP 1");
+                        CH2POWER.Write("OUTP 1");
                         ch4client.btnSendData(text);
                         ch4stage = 2;
                         break;
@@ -3840,7 +3994,7 @@ namespace SLC1_N
 
                     case 4:
                         text = "04 01 00 02 00 01";
-                        if (CKCH2Port.IsOpen) Form1.f1.CKCH2Port.WriteLine("OUTP 0");
+                        CH2POWER.Write("OUTP 0");
                         ch4client.btnSendData(text);
                         ch4stage = 5;
                         break;
@@ -4433,28 +4587,28 @@ namespace SLC1_N
                         fileWriter1.Write(I18N.GetLangText(dicLang, "右输出压力(泄气上)") + "(" + Flow.CH2RWDPressMin + "-" + Flow.CH2RWDPressMax + CH3PressureUnit.Text + "),");
                         fileWriter1.Write(I18N.GetLangText(dicLang, "右输出压力(泄气下)") + "(" + Flow.CH2RWDPressMin + "-" + Flow.CH2RWDPressMax + CH4PressureUnit.Text + "),");
                         fileWriter1.Write(I18N.GetLangText(dicLang, "左1压力(充气)") + "(" + ch1_1leakparams.FPlowlimit + "-" + ch1_1leakparams.FPtoplimit + PressureUnit.Text + "),");
-                        fileWriter1.Write(I18N.GetLangText(dicLang, "左1压力(平衡)") + "(" + ch1_1leakparams.BalanPreMin + "-" + ch1_1leakparams.BalanPreMax + PressureUnit.Text + "),");
+                      //  fileWriter1.Write(I18N.GetLangText(dicLang, "左1压力(平衡)") + "(" + ch1_1leakparams.BalanPreMin + "-" + ch1_1leakparams.BalanPreMax + PressureUnit.Text + "),");
                         fileWriter1.Write(I18N.GetLangText(dicLang, "左1泄漏量") + "(" + ch1_1leakparams.Leaklowlimit + "-" + ch1_1leakparams.Leaktoplimit + LeakUnit.Text + "),");
                         fileWriter1.Write(I18N.GetLangText(dicLang, "左2压力(充气)") + "(" + ch1_2leakparams.FPlowlimit + "-" + ch1_2leakparams.FPtoplimit + CH2PressureUnit.Text + "),");
-                        fileWriter1.Write(I18N.GetLangText(dicLang, "左2压力(平衡)") + "(" + ch1_2leakparams.BalanPreMin + "-" + ch1_2leakparams.BalanPreMax + CH2PressureUnit.Text + "),");
+                       // fileWriter1.Write(I18N.GetLangText(dicLang, "左2压力(平衡)") + "(" + ch1_2leakparams.BalanPreMin + "-" + ch1_2leakparams.BalanPreMax + CH2PressureUnit.Text + "),");
                         fileWriter1.Write(I18N.GetLangText(dicLang, "左2泄漏量") + "(" + ch1_2leakparams.Leaklowlimit + "-" + ch1_2leakparams.Leaktoplimit + CH2LeakUnit.Text + "),");
                         fileWriter1.Write(I18N.GetLangText(dicLang, "左1同充压力(充气)") + "+(" + ch1_1leakparams.FPlowlimit + "-" + ch1_1leakparams.FPtoplimit + PressureUnit.Text + "),");
-                        fileWriter1.Write(I18N.GetLangText(dicLang, "左1同充压力(平衡)") + "(" + ch1_1leakparams.BalanPreMin + "-" + ch1_1leakparams.BalanPreMax + PressureUnit.Text + "),");
+                      //  fileWriter1.Write(I18N.GetLangText(dicLang, "左1同充压力(平衡)") + "(" + ch1_1leakparams.BalanPreMin + "-" + ch1_1leakparams.BalanPreMax + PressureUnit.Text + "),");
                         fileWriter1.Write(I18N.GetLangText(dicLang, "左1同充泄漏量") + "(" + ch1_1leakparams.Leaklowlimit + "-" + ch1_1leakparams.Leaktoplimit + LeakUnit.Text + "),");
                         fileWriter1.Write(I18N.GetLangText(dicLang, "左2同充压力(充气)") + "(" + ch1_2leakparams.FPlowlimit + "-" + ch1_2leakparams.FPtoplimit + CH2PressureUnit.Text + "),");
-                        fileWriter1.Write(I18N.GetLangText(dicLang, "左2同充压力(平衡)") + "(" + ch1_2leakparams.BalanPreMin + "-" + ch1_2leakparams.BalanPreMax + CH2PressureUnit.Text + "),");
+                     //   fileWriter1.Write(I18N.GetLangText(dicLang, "左2同充压力(平衡)") + "(" + ch1_2leakparams.BalanPreMin + "-" + ch1_2leakparams.BalanPreMax + CH2PressureUnit.Text + "),");
                         fileWriter1.Write(I18N.GetLangText(dicLang, "左2同充泄漏量") + "(" + ch1_2leakparams.Leaklowlimit + "-" + ch1_2leakparams.Leaktoplimit + CH2LeakUnit.Text + "),");
                         fileWriter1.Write(I18N.GetLangText(dicLang, "右1压力(充气)") + "(" + ch2_1leakparams.FPlowlimit + "-" + ch2_1leakparams.FPtoplimit + CH3PressureUnit.Text + "),");
-                        fileWriter1.Write(I18N.GetLangText(dicLang, "右1压力(平衡)") + "(" + ch2_1leakparams.BalanPreMin + "-" + ch2_1leakparams.BalanPreMax + CH3PressureUnit.Text + "),");
+                        //fileWriter1.Write(I18N.GetLangText(dicLang, "右1压力(平衡)") + "(" + ch2_1leakparams.BalanPreMin + "-" + ch2_1leakparams.BalanPreMax + CH3PressureUnit.Text + "),");
                         fileWriter1.Write(I18N.GetLangText(dicLang, "右1泄漏量") + "(" + ch2_1leakparams.Leaklowlimit + "-" + ch2_1leakparams.Leaktoplimit + CH3LeakUnit.Text + "),");
                         fileWriter1.Write(I18N.GetLangText(dicLang, "右2压力(充气)") + "(" + ch2_2leakparams.FPlowlimit + "-" + ch2_2leakparams.FPtoplimit + CH4PressureUnit.Text + "),");
-                        fileWriter1.Write(I18N.GetLangText(dicLang, "右2压力(平衡)") + "(" + ch2_2leakparams.BalanPreMin + "-" + ch2_2leakparams.BalanPreMax + CH4PressureUnit.Text + "),");
+                       // fileWriter1.Write(I18N.GetLangText(dicLang, "右2压力(平衡)") + "(" + ch2_2leakparams.BalanPreMin + "-" + ch2_2leakparams.BalanPreMax + CH4PressureUnit.Text + "),");
                         fileWriter1.Write(I18N.GetLangText(dicLang, "右2泄漏量") + "(" + ch2_2leakparams.Leaklowlimit + "-" + ch2_2leakparams.Leaktoplimit + CH4LeakUnit.Text + "),");
                         fileWriter1.Write(I18N.GetLangText(dicLang, "右1同充压力(充气)") + "(" + ch2_1leakparams.FPlowlimit + "-" + ch2_1leakparams.FPtoplimit + CH3PressureUnit.Text + "),");
-                        fileWriter1.Write(I18N.GetLangText(dicLang, "右1同充压力(平衡)") + "(" + ch2_1leakparams.BalanPreMin + "-" + ch2_1leakparams.BalanPreMax + CH3PressureUnit.Text + "),");
+                        //fileWriter1.Write(I18N.GetLangText(dicLang, "右1同充压力(平衡)") + "(" + ch2_1leakparams.BalanPreMin + "-" + ch2_1leakparams.BalanPreMax + CH3PressureUnit.Text + "),");
                         fileWriter1.Write(I18N.GetLangText(dicLang, "右1同充泄漏量") + "(" + ch2_1leakparams.Leaklowlimit + "-" + ch2_1leakparams.Leaktoplimit + CH3LeakUnit.Text + "),");
                         fileWriter1.Write(I18N.GetLangText(dicLang, "右2同充压力(充气)") + "(" + ch2_2leakparams.FPlowlimit + "-" + ch2_2leakparams.FPtoplimit + CH4PressureUnit.Text + "),");
-                        fileWriter1.Write(I18N.GetLangText(dicLang, "右2同充压力(平衡)") + "(" + ch2_2leakparams.BalanPreMin + "-" + ch2_2leakparams.BalanPreMax + CH4PressureUnit.Text + "),");
+                     //   fileWriter1.Write(I18N.GetLangText(dicLang, "右2同充压力(平衡)") + "(" + ch2_2leakparams.BalanPreMin + "-" + ch2_2leakparams.BalanPreMax + CH4PressureUnit.Text + "),");
                         fileWriter1.Write(I18N.GetLangText(dicLang, "右2同充泄漏量") + "(" + ch2_2leakparams.Leaklowlimit + "-" + ch2_2leakparams.Leaktoplimit + CH4LeakUnit.Text + "),\n");
                         fileWriter1.Flush();
                         fileWriter1.Close();
@@ -4827,6 +4981,1189 @@ namespace SLC1_N
             }
         }
 
+
+        private void AddCSV2(int CH)
+        {
+            try
+            {
+
+                string fileName;
+
+                string file = DateTime.Now.ToString("yyyyMMdd");
+                string productname = Form1.f1.machine.Replace(".ini", "");
+                if (String.IsNullOrEmpty(Form1.f1.save.Path))
+                {
+                    fileName = Environment.GetFolderPath(Environment.SpecialFolder.Desktop) + "\\" + productname + "\\" + Form1.f1.WorkOrder.Text + "\\";
+                }
+                else
+                {
+                    fileName = Form1.f1.save.Path + "\\" + productname + "\\" + Form1.f1.WorkOrder.Text + "\\";
+                }
+                if (!Directory.Exists(fileName))
+                {
+                    Directory.CreateDirectory(fileName);
+                }
+                List<FileSystemInfo> listFileSystemInfo = new List<FileSystemInfo>();
+                DirectoryInfo d = new DirectoryInfo(fileName);
+                FileSystemInfo[] fsinfos = d.GetFileSystemInfos();
+                foreach (FileSystemInfo fsinfo in fsinfos)
+                {
+                    if (Path.GetFileNameWithoutExtension(fsinfo.FullName).StartsWith(file))
+                        listFileSystemInfo.Add(fsinfo);
+                }
+                string maxFile = file;
+                if (listFileSystemInfo.Count > 0)
+                {
+                    maxFile = Path.GetFileNameWithoutExtension(listFileSystemInfo[listFileSystemInfo.Count - 1].FullName);
+                }
+
+                string name = maxFile + ".csv";
+                fileName += name;
+                if (File.Exists(fileName) == false)
+                {
+                    StreamWriter fileWriter1 = new StreamWriter(fileName, true, Encoding.UTF8);
+                    fileWriter1.Write(I18N.GetLangText(dicLang, " 测试记录报表") + "\n");
+                    fileWriter1.Write(I18N.GetLangText(dicLang, "工单单号") + "：," + WorkOrder.Text + "\n");
+                    fileWriter1.Write(I18N.GetLangText(dicLang, "生产料号") + "：," + ProductionItem.Text + "\n");
+                    fileWriter1.Write(I18N.GetLangText(dicLang, "产品名称") + "：," + ProductName.Text + "\n");
+                    fileWriter1.Write(I18N.GetLangText(dicLang, "测试类型") + "：," + TestType.Text + "\n");
+                    fileWriter1.Write(I18N.GetLangText(dicLang, "产品型号") + "：," + ProductModel.Text + "\n");
+                    fileWriter1.Write(I18N.GetLangText(dicLang, "生产数量") + "：," + ProductNum.Text + "\n");
+                    fileWriter1.Write(I18N.GetLangText(dicLang, "操作人员") + "：," + Admin.Text + "\n");
+                    fileWriter1.Write(I18N.GetLangText(dicLang, "测试程序文件") + "：," + machinepath + "\n");
+
+
+                    {
+
+
+
+                        Electricity electricity = new Electricity();
+                        Model.CH_PARAMS param = new Model.CH_PARAMS();
+                        param = electricity.readCHParam(1, 2);
+                        fileWriter1.Write(I18N.GetLangText(dicLang, "左CH1仪器,充气时间") + "：," + param.FullTime + "s,");
+                        fileWriter1.Write(I18N.GetLangText(dicLang, "平衡时间") + "：," + param.BalanTime + "s,");
+                        fileWriter1.Write(I18N.GetLangText(dicLang, "检测时间") + "：," + param.TestTime1 + "s,");
+                        fileWriter1.Write(I18N.GetLangText(dicLang, "排气时间") + "：," + param.ExhaustTime + "s\n");
+                        param = electricity.readCHParam(1, 3);
+                        fileWriter1.Write(I18N.GetLangText(dicLang, "左CH1阀泵,充气时间") + "：," + param.FullTime + "s,");
+                        fileWriter1.Write(I18N.GetLangText(dicLang, "平衡时间") + "：," + param.BalanTime + "s,");
+                        fileWriter1.Write(I18N.GetLangText(dicLang, "检测时间") + "：," + param.TestTime1 + "s,");
+                        fileWriter1.Write(I18N.GetLangText(dicLang, "排气时间") + "：," + param.ExhaustTime + "s\n");
+
+                        param = electricity.readCHParam(2, 2);
+                        fileWriter1.Write(I18N.GetLangText(dicLang, "左CH2仪器,充气时间") + "：," + param.FullTime + "s,");
+                        fileWriter1.Write(I18N.GetLangText(dicLang, "平衡时间") + "：," + param.BalanTime + "s,");
+                        fileWriter1.Write(I18N.GetLangText(dicLang, "检测时间") + "：," + param.TestTime1 + "s,");
+                        fileWriter1.Write(I18N.GetLangText(dicLang, "排气时间") + "：," + param.ExhaustTime + "s\n");
+                        param = electricity.readCHParam(2, 3);
+                        fileWriter1.Write(I18N.GetLangText(dicLang, "左CH2阀泵,充气时间") + "：," + param.FullTime + "s,");
+                        fileWriter1.Write(I18N.GetLangText(dicLang, "平衡时间") + "：," + param.BalanTime + "s,");
+                        fileWriter1.Write(I18N.GetLangText(dicLang, "检测时间") + "：," + param.TestTime1 + "s,");
+                        fileWriter1.Write(I18N.GetLangText(dicLang, "排气时间") + "：," + param.ExhaustTime + "s\n");
+
+                        param = electricity.readCHParam(3, 2);
+                        fileWriter1.Write(I18N.GetLangText(dicLang, "右CH1仪器,充气时间") + "：," + param.FullTime + "s,");
+                        fileWriter1.Write(I18N.GetLangText(dicLang, "平衡时间") + "：," + param.BalanTime + "s,");
+                        fileWriter1.Write(I18N.GetLangText(dicLang, "检测时间") + "：," + param.TestTime1 + "s,");
+                        fileWriter1.Write(I18N.GetLangText(dicLang, "排气时间") + "：," + param.ExhaustTime + "s\n");
+
+                        param = electricity.readCHParam(3, 3);
+                        fileWriter1.Write(I18N.GetLangText(dicLang, "右CH1阀泵,充气时间") + "：," + param.FullTime + "s,");
+                        fileWriter1.Write(I18N.GetLangText(dicLang, "平衡时间") + "：," + param.BalanTime + "s,");
+                        fileWriter1.Write(I18N.GetLangText(dicLang, "检测时间") + "：," + param.TestTime1 + "s,");
+                        fileWriter1.Write(I18N.GetLangText(dicLang, "排气时间") + "：," + param.ExhaustTime + "s\n");
+                        param = electricity.readCHParam(4, 2);
+                        fileWriter1.Write(I18N.GetLangText(dicLang, "右CH2仪器,充气时间") + "：," + param.FullTime + "s,");
+                        fileWriter1.Write(I18N.GetLangText(dicLang, "平衡时间") + "：," + param.BalanTime + "s,");
+                        fileWriter1.Write(I18N.GetLangText(dicLang, "检测时间") + "：," + param.TestTime1 + "s,");
+                        fileWriter1.Write(I18N.GetLangText(dicLang, "排气时间") + "：," + param.ExhaustTime + "s\n");
+
+                        param = electricity.readCHParam(4, 3);
+                        fileWriter1.Write(I18N.GetLangText(dicLang, "右CH2阀泵,充气时间") + "：," + param.FullTime + "s,");
+                        fileWriter1.Write(I18N.GetLangText(dicLang, "平衡时间") + "：," + param.BalanTime + "s,");
+                        fileWriter1.Write(I18N.GetLangText(dicLang, "检测时间") + "：," + param.TestTime1 + "s,");
+                        fileWriter1.Write(I18N.GetLangText(dicLang, "排气时间") + "：," + param.ExhaustTime + "s\n");
+                        fileWriter1.Write("\r\n");
+                        fileWriter1.Write("\r\n");
+                        fileWriter1.Write("\r\n");
+
+                        //fileWriter1.Write("作业序号,测试时间,条形码,判定结果 OK/NG,");
+                        fileWriter1.Write(I18N.GetLangText(dicLang, "作业序号") + "," + I18N.GetLangText(dicLang, "测试时间") + "," + I18N.GetLangText(dicLang, "条形码") + "," + I18N.GetLangText(dicLang, "判定结果") + "OK/NG,");
+                        fileWriter1.Write(I18N.GetLangText(dicLang, "左avg静态电流") + "(" + elec.CH1ElecMin + "-" + elec.CH1ElecMax + "uA),");
+                        //   if (!Electricity.ord.CH1UpDownChange)
+                        {
+                            fileWriter1.Write(I18N.GetLangText(dicLang, "左max电流(上充)") + "(" + elec.CH1UPADCMin + "-" + elec.CH1UPADCMax + "A),");
+                            fileWriter1.Write(I18N.GetLangText(dicLang, "左max电压(上充)") + "(" + elec.CH1UPVDCMin + "-" + elec.CH1UPVDCMax + "V),");
+                            fileWriter1.Write(I18N.GetLangText(dicLang, "左输出压力(上充)") + "(" + Flow.CH1_1PreMin + "-" + Flow.CH1_1PreMax + PressureUnit.Text + "),");
+                         //   fileWriter1.Write(I18N.GetLangText(dicLang, "左输出压力(上下充)") + "(" + Flow.CH1_2PreMax.ToString() + "-" + Flow.CH1_1PreMax + PressureUnit.Text + "),");
+                            fileWriter1.Write(I18N.GetLangText(dicLang, "左max流量(上充)(lpm)") + ",");
+                       //     fileWriter1.Write(I18N.GetLangText(dicLang, "左max流量(上下充)(lpm)") + "(" + Flow.CH1_2FlowMax.ToString() + "-" + Flow.CH1_2FlowMin + PressureUnit.Text + ")," + ",");
+                            fileWriter1.Write(I18N.GetLangText(dicLang, "左max电流(下充)") + "(" + elec.CH1DOWNADCMin + "-" + elec.CH1DOWNADCMax + "A),");
+                            fileWriter1.Write(I18N.GetLangText(dicLang, "左max电压(下充)") + "(" + elec.CH1DOWNVDCMin + "-" + elec.CH1DOWNVDCMax + "V),");
+                            fileWriter1.Write(I18N.GetLangText(dicLang, "左输出压力(下充)") + "(" + Flow.CH1_2PreMin + "-" + Flow.CH1_2PreMax + CH2PressureUnit.Text + "),");
+                      //      fileWriter1.Write(I18N.GetLangText(dicLang, "左输出压力(下上充)") + "(" + Flow.CH1_1PreMin + "-" + Flow.CH1_1PreMax + PressureUnit.Text + "),");
+                            fileWriter1.Write(I18N.GetLangText(dicLang, "左max流量(下充)(lpm)") + ",");
+
+                        }
+
+
+                        fileWriter1.Write(I18N.GetLangText(dicLang, "左电流对比值") + "(" + Flow.CH1Cont_ElecMin + "-" + Flow.CH1Cont_ElecMax + "),");
+                        fileWriter1.Write(I18N.GetLangText(dicLang, "左压力对比值") + "(" + Flow.CH1Cont_PressMin + "-" + Flow.CH1Cont_PressMax + "),");
+                        fileWriter1.Write(I18N.GetLangText(dicLang, "左max电流(同充)") + "(" + elec.CH1FWDADCMin + "-" + elec.CH1FWDADCMax + ")A,");
+                        fileWriter1.Write(I18N.GetLangText(dicLang, "左max电压(同充)") + "(" + elec.CH1FWDVDCMin + "-" + elec.CH1FWDVDCMax + ")A,");
+                        fileWriter1.Write(I18N.GetLangText(dicLang, "左输出压力(同充上)") + ",");
+                        fileWriter1.Write(I18N.GetLangText(dicLang, "左输出压力(同充下)") + ",");
+                        fileWriter1.Write(I18N.GetLangText(dicLang, "左max流量(同充上)(plm)") + ",");
+                        fileWriter1.Write(I18N.GetLangText(dicLang, "左max流量(同充下)(plm)") + ",");
+                        fileWriter1.Write(I18N.GetLangText(dicLang, "左max电流(泄气)") + "(" + elec.CH1RWDADCMin + "-" + elec.CH1RWDADCMax + "),");
+                        fileWriter1.Write(I18N.GetLangText(dicLang, "左max电压(泄气)") + "(" + elec.CH1RWDVDCMin + "-" + elec.CH1RWDVDCMax + "),");
+                        fileWriter1.Write(I18N.GetLangText(dicLang, "左输出压力(泄气上)") + "(" + Flow.CH1RWDPressMin + "-" + Flow.CH1RWDPressMax + PressureUnit.Text + "),");
+                        fileWriter1.Write(I18N.GetLangText(dicLang, "左输出压力(泄气下)") + "(" + Flow.CH1RWDPressMin + "-" + Flow.CH1RWDPressMax + CH2PressureUnit.Text + "),");
+
+                            fileWriter1.Write(I18N.GetLangText(dicLang, "右avg静态电流") + "(" + elec.CH2ElecMin + "-" + elec.CH2ElecMax + "uA),");
+                            fileWriter1.Write(I18N.GetLangText(dicLang, "右max电流(上充)") + "(" + elec.CH2UPADCMin + "-" + elec.CH2UPADCMax + "A),");
+                            fileWriter1.Write(I18N.GetLangText(dicLang, "右max电压(上充)") + "(" + elec.CH2UPVDCMin + "-" + elec.CH2UPVDCMax + "V),");
+                            fileWriter1.Write(I18N.GetLangText(dicLang, "右输出压力(上充)") + "(" + Flow.CH2_1PreMin + "-" + Flow.CH2_1PreMax + CH3PressureUnit.Text + "),");
+                     //       fileWriter1.Write(I18N.GetLangText(dicLang, "右输出压力(上下充)") + "(" + Flow.CH2_2PreMax.ToString() + "-" + Flow.CH2_1PreMax + PressureUnit.Text + "),");
+                            fileWriter1.Write(I18N.GetLangText(dicLang, "右max流量(上充)(plm)") + ",");
+                  //          fileWriter1.Write(I18N.GetLangText(dicLang, "右max流量(上下充)(lpm)") + "(" + Flow.CH2_2FlowMax.ToString() + "-" + Flow.CH2_2FlowMin + PressureUnit.Text + ")," + ",");
+                            fileWriter1.Write(I18N.GetLangText(dicLang, "右max电流(下充)") + "(" + elec.CH2DOWNADCMin + "-" + elec.CH2DOWNADCMax + "A),");
+                            fileWriter1.Write(I18N.GetLangText(dicLang, "右max电压(下充)") + "(" + elec.CH2DOWNVDCMin + "-" + elec.CH2DOWNVDCMax + "V),");
+                            fileWriter1.Write(I18N.GetLangText(dicLang, "右输出压力(下充)") + "(" + Flow.CH2_2PreMin + "-" + Flow.CH2_2PreMax + CH4PressureUnit.Text + "),");
+                    //       fileWriter1.Write(I18N.GetLangText(dicLang, "左输出压力(下上充)") + "(" + Flow.CH2_1PreMin + "-" + Flow.CH2_1PreMax + PressureUnit.Text + "),");
+                            fileWriter1.Write(I18N.GetLangText(dicLang, "右max流量(下充)(plm)") + ",");
+                   
+
+
+                        fileWriter1.Write(I18N.GetLangText(dicLang, "右电流对比值") + "(" + Flow.CH2Cont_ElecMin + "-" + Flow.CH2Cont_ElecMax + "),");
+                        fileWriter1.Write(I18N.GetLangText(dicLang, "右压力对比值") + "(" + Flow.CH2Cont_PressMin + "-" + Flow.CH2Cont_PressMax + "),");
+                        fileWriter1.Write(I18N.GetLangText(dicLang, "右max电流(同充)") + "(" + elec.CH2FWDADCMin + "-" + elec.CH2FWDADCMax + ")A,");
+                        fileWriter1.Write(I18N.GetLangText(dicLang, "右max电压(同充)") + "(" + elec.CH2FWDVDCMin + "-" + elec.CH2FWDVDCMax + ")A,");
+                        fileWriter1.Write(I18N.GetLangText(dicLang, "右输出压力(同充上)") + ",");
+                        fileWriter1.Write(I18N.GetLangText(dicLang, "右输出压力(同充下)") + ",");
+                        fileWriter1.Write(I18N.GetLangText(dicLang, "右max流量(同充上)(plm)") + ",");
+                        fileWriter1.Write(I18N.GetLangText(dicLang, "右max流量(同充下)(plm)") + ",");
+                        fileWriter1.Write(I18N.GetLangText(dicLang, "右max电流(泄气)") + "(" + elec.CH2RWDADCMin + "-" + elec.CH2RWDADCMax + "),");
+                        fileWriter1.Write(I18N.GetLangText(dicLang, "右max电压(泄气)") + "(" + elec.CH2RWDVDCMin + "-" + elec.CH2RWDVDCMax + "),");
+                        fileWriter1.Write(I18N.GetLangText(dicLang, "右输出压力(泄气上)") + "(" + Flow.CH2RWDPressMin + "-" + Flow.CH2RWDPressMax + CH3PressureUnit.Text + "),");
+                        fileWriter1.Write(I18N.GetLangText(dicLang, "右输出压力(泄气下)") + "(" + Flow.CH2RWDPressMin + "-" + Flow.CH2RWDPressMax + CH4PressureUnit.Text + "),");
+                        fileWriter1.Write(I18N.GetLangText(dicLang, "左1压力(充气)") + "(" + ch1_1leakparams.FPlowlimit + "-" + ch1_1leakparams.FPtoplimit + PressureUnit.Text + "),");
+                    //    fileWriter1.Write(I18N.GetLangText(dicLang, "左1压力(平衡)") + "(" + ch1_1leakparams.BalanPreMin + "-" + ch1_1leakparams.BalanPreMax + PressureUnit.Text + "),");
+                        fileWriter1.Write(I18N.GetLangText(dicLang, "左1泄漏量") + "(" + ch1_1leakparams.Leaklowlimit + "-" + ch1_1leakparams.Leaktoplimit + LeakUnit.Text + "),");
+                        fileWriter1.Write(I18N.GetLangText(dicLang, "左2压力(充气)") + "(" + ch1_2leakparams.FPlowlimit + "-" + ch1_2leakparams.FPtoplimit + CH2PressureUnit.Text + "),");
+                  //     fileWriter1.Write(I18N.GetLangText(dicLang, "左2压力(平衡)") + "(" + ch1_2leakparams.BalanPreMin + "-" + ch1_2leakparams.BalanPreMax + CH2PressureUnit.Text + "),");
+                        fileWriter1.Write(I18N.GetLangText(dicLang, "左2泄漏量") + "(" + ch1_2leakparams.Leaklowlimit + "-" + ch1_2leakparams.Leaktoplimit + CH2LeakUnit.Text + "),");
+                        fileWriter1.Write(I18N.GetLangText(dicLang, "左1同充压力(充气)") + "+(" + ch1_1leakparams.FPlowlimit + "-" + ch1_1leakparams.FPtoplimit + PressureUnit.Text + "),");
+                  //      fileWriter1.Write(I18N.GetLangText(dicLang, "左1同充压力(平衡)") + "(" + ch1_1leakparams.BalanPreMin + "-" + ch1_1leakparams.BalanPreMax + PressureUnit.Text + "),");
+                        fileWriter1.Write(I18N.GetLangText(dicLang, "左1同充泄漏量") + "(" + ch1_1leakparams.Leaklowlimit + "-" + ch1_1leakparams.Leaktoplimit + LeakUnit.Text + "),");
+                        fileWriter1.Write(I18N.GetLangText(dicLang, "左2同充压力(充气)") + "(" + ch1_2leakparams.FPlowlimit + "-" + ch1_2leakparams.FPtoplimit + CH2PressureUnit.Text + "),");
+                  //      fileWriter1.Write(I18N.GetLangText(dicLang, "左2同充压力(平衡)") + "(" + ch1_2leakparams.BalanPreMin + "-" + ch1_2leakparams.BalanPreMax + CH2PressureUnit.Text + "),");
+                        fileWriter1.Write(I18N.GetLangText(dicLang, "左2同充泄漏量") + "(" + ch1_2leakparams.Leaklowlimit + "-" + ch1_2leakparams.Leaktoplimit + CH2LeakUnit.Text + "),");
+                        fileWriter1.Write(I18N.GetLangText(dicLang, "右1压力(充气)") + "(" + ch2_1leakparams.FPlowlimit + "-" + ch2_1leakparams.FPtoplimit + CH3PressureUnit.Text + "),");
+                     //   fileWriter1.Write(I18N.GetLangText(dicLang, "右1压力(平衡)") + "(" + ch2_1leakparams.BalanPreMin + "-" + ch2_1leakparams.BalanPreMax + CH3PressureUnit.Text + "),");
+                        fileWriter1.Write(I18N.GetLangText(dicLang, "右1泄漏量") + "(" + ch2_1leakparams.Leaklowlimit + "-" + ch2_1leakparams.Leaktoplimit + CH3LeakUnit.Text + "),");
+                        fileWriter1.Write(I18N.GetLangText(dicLang, "右2压力(充气)") + "(" + ch2_2leakparams.FPlowlimit + "-" + ch2_2leakparams.FPtoplimit + CH4PressureUnit.Text + "),");
+                //       fileWriter1.Write(I18N.GetLangText(dicLang, "右2压力(平衡)") + "(" + ch2_2leakparams.BalanPreMin + "-" + ch2_2leakparams.BalanPreMax + CH4PressureUnit.Text + "),");
+                        fileWriter1.Write(I18N.GetLangText(dicLang, "右2泄漏量") + "(" + ch2_2leakparams.Leaklowlimit + "-" + ch2_2leakparams.Leaktoplimit + CH4LeakUnit.Text + "),");
+                        fileWriter1.Write(I18N.GetLangText(dicLang, "右1同充压力(充气)") + "(" + ch2_1leakparams.FPlowlimit + "-" + ch2_1leakparams.FPtoplimit + CH3PressureUnit.Text + "),");
+                   //     fileWriter1.Write(I18N.GetLangText(dicLang, "右1同充压力(平衡)") + "(" + ch2_1leakparams.BalanPreMin + "-" + ch2_1leakparams.BalanPreMax + CH3PressureUnit.Text + "),");
+                        fileWriter1.Write(I18N.GetLangText(dicLang, "右1同充泄漏量") + "(" + ch2_1leakparams.Leaklowlimit + "-" + ch2_1leakparams.Leaktoplimit + CH3LeakUnit.Text + "),");
+                        fileWriter1.Write(I18N.GetLangText(dicLang, "右2同充压力(充气)") + "(" + ch2_2leakparams.FPlowlimit + "-" + ch2_2leakparams.FPtoplimit + CH4PressureUnit.Text + "),");
+               //         fileWriter1.Write(I18N.GetLangText(dicLang, "右2同充压力(平衡)") + "(" + ch2_2leakparams.BalanPreMin + "-" + ch2_2leakparams.BalanPreMax + CH4PressureUnit.Text + "),");
+                        fileWriter1.Write(I18N.GetLangText(dicLang, "右2同充泄漏量") + "(" + ch2_2leakparams.Leaklowlimit + "-" + ch2_2leakparams.Leaktoplimit + CH4LeakUnit.Text + "),\n");
+                        fileWriter1.Flush();
+                        fileWriter1.Close();
+                    }
+                }
+
+                StreamWriter fileWriter = new StreamWriter(fileName, true, Encoding.UTF8);
+                switch (CH)
+                {
+                    case 1:
+                        fileWriter.Write(CH1csvworknum + I18N.GetLangText(dicLang, "左") + ",#");//作业序号
+                        fileWriter.Write(CH1timestamp + ",#");//测试时间
+                        fileWriter.Write(left_CH1Code
+.Text.Trim().Replace("\r\n", "").Replace("\r", "").Replace("\n", "") + ",");//条形码
+                        fileWriter.Write(CH1Tlight.Text + ",");//判定结果
+                        fileWriter.Write(CH1RTElec.Text + ",");//左avg静态电流
+
+                        fileWriter.Write(CH1TestResult.UP_ADCMAX + ",");//"左max电流(上充)”
+                        fileWriter.Write(CH1TestResult.UP_VDCMAX + ",");//左max电压(上充)
+                        fileWriter.Write(CH1TestResult.UP_Pre + ",");//左输出压力(上充)”
+                   //     fileWriter.Write("999" + ",");//左输出压力(上下充)”
+                        fileWriter.Write(CH1TestResult.UP_Flow + ",");//左max流量（上充）
+                    //    fileWriter.Write("999" + ",");//左max流量（上下充）
+                        fileWriter.Write(CH1TestResult.DOWN_ADCMAX + ",");//左max电流（下充）
+                        fileWriter.Write(CH1TestResult.DOWN_VDCMAX + ",");//左max电压（下充）
+                        fileWriter.Write(CH1TestResult.DOWN_Pre + ",");//左输出压力（下充）
+                   //     fileWriter.Write(999 + ",");//左输出压力（下上充）
+                        fileWriter.Write(CH1TestResult.DOWN_Flow + ",");//左max流量（下充）
+
+
+                        fileWriter.Write(CH1TestResult.ElecRatio + ",");//左电流对比值
+                        fileWriter.Write(CH1TestResult.PressRatio + ",");//左压力对比值
+                        fileWriter.Write(CH1TestResult.FWD_ADCMAX + ",");//左max电流（同充）
+                        fileWriter.Write(CH1TestResult.FWD_VDCMAX + ",");//左max电压（同充）
+                        fileWriter.Write(CH1TestResult.FWD_Pre1 + ",");//左输出压力（同充上）
+                        fileWriter.Write(CH1TestResult.FWD_Pre2 + ",");//左输出压力（同充下）
+                        fileWriter.Write(CH1TestResult.FWD_Flow1 + ",");//左max流量（同充上）
+                        fileWriter.Write(CH1TestResult.FWD_Flow2 + ",");//左max流量（同充下）
+                        fileWriter.Write(CH1TestResult.RWD_ADCMAX + ",");//左max电流（泄气）
+                        fileWriter.Write(CH1TestResult.RWD_VDCMAX + ",");//左max电压（泄气）
+                        fileWriter.Write(CH1TestResult.RWD_Pre1 + ",");//左输出压力（泄气上）
+                        fileWriter.Write(CH1TestResult.RWD_Pre2 + ",");//左输出压力（泄气下）
+
+                        fileWriter.Write(",,,,,,,,,,,,,,,,,,,,");
+
+
+                        fileWriter.Write(CH1TestResult.FullPre1 + ",");//左1压力（充气）
+                        fileWriter.Write(CH1TestResult.BalanPre1 + ",");//左1压力（平衡）
+                        fileWriter.Write(CH1TestResult.Leak1 + ",");//左1泄漏量
+                        fileWriter.Write(CH1TestResult.FullPre2 + ",");//左2压力（充气）
+                        fileWriter.Write(CH1TestResult.BalanPre2 + ",");//左2压力（平衡）
+                        fileWriter.Write(CH1TestResult.Leak2 + ",");//左2泄漏量
+                        fileWriter.Write(CH1TestResult.FWD_FullPre1 + ",");//左1同充压力（充气）
+                        fileWriter.Write(CH1TestResult.FWD_BalanPre1 + ",");//左1同充压力（平衡）
+                        fileWriter.Write(CH1TestResult.FWD_Leak1 + ",");//左1同充泄漏量
+                        fileWriter.Write(CH1TestResult.FWD_FullPre2 + ","); //左2同充压力（充气）
+                        fileWriter.Write(CH1TestResult.FWD_BalanPre2 + ",");// 左2同充压力（平衡）
+                        fileWriter.Write(CH1TestResult.FWD_Leak2 + ",\n");// 左2同充泄漏量
+
+
+                        CH1csvworknum += 1;
+                        break;
+
+                    case 2:
+
+
+                        fileWriter.Write(CH2csvworknum + I18N.GetLangText(dicLang, "右") + ",#");//作业序号
+                        fileWriter.Write(CH2timestamp + ",#");//测试时间
+
+                        fileWriter.Write(right_CH1Code.Text.Trim().Replace("\r\n", "").Replace("\r", "").Replace("\n", "") + ",");//条形码
+                        fileWriter.Write(CH2Tlight.Text + ",");//判定结果
+                        fileWriter.Write(",,,,,,,,,,,,,,,,,,,,,");
+
+                        fileWriter.Write(CH2RTElec.Text + ",");//右avg静态电流 1
+                        fileWriter.Write(CH2TestResult.UP_ADCMAX + ",");//"右max电流(上充)” 2
+                          //     fileWriter.Write(CH2TestResult.UP_Pre + ",");//右max电压(上充)”3
+                        fileWriter.Write(CH2TestResult.UP_VDCMAX + ",");//右max电压(上充)”3
+                        fileWriter.Write(CH2TestResult.UP_Pre + ",");//"右输出压力(上充)(40-45KPa)4
+                        fileWriter.Write(CH2TestResult.UP_Flow + ",");//右max流量(上充)(plm)5
+                        fileWriter.Write(CH2TestResult.DOWN_ADCMAX + ",");//右max电流(下充)(0.3-1.2A)”6
+                                                                   
+                        fileWriter.Write(CH2TestResult.DOWN_VDCMAX + ",");//右max电压(下充)(14.4-14.6V)7
+                                                                  
+                        fileWriter.Write(CH2TestResult.DOWN_Pre + ",");//右输出压力(下充)(40-45KPa)8
+                        fileWriter.Write(CH2TestResult.DOWN_Pre1 + ",");//右输出压力(下上充)(40-45KPa)8新增
+                        fileWriter.Write(CH2TestResult.DOWN_Flow + ",");//右max流量(下充)(plm)9
+                        fileWriter.Write(CH2TestResult.ElecRatio + ",");//右电流对比值(0.5-1.2)10
+
+                        fileWriter.Write(CH2TestResult.PressRatio + ",");//右压力对比值(0-1.35)11
+
+
+                        fileWriter.Write(CH2TestResult.FWD_ADCMAX + ",");//右max电流(同充)(0.3-1.2)A12
+                        fileWriter.Write(CH2TestResult.FWD_VDCMAX + ",");//右max电压(同充)(14.4-14.6)A13
+                        fileWriter.Write(CH2TestResult.FWD_Pre1 + ",");//右输出压力（同充上）14
+                        fileWriter.Write(CH2TestResult.FWD_Pre2 + ",");//右输出压力(同充下)15
+                        fileWriter.Write(CH2TestResult.FWD_Flow1 + ",");//右max流量(同充上)(plm)16
+
+                        fileWriter.Write(CH2TestResult.FWD_Flow2 + ",");//右max流量(同充下)(plm)17
+                        fileWriter.Write(CH2TestResult.RWD_ADCMAX + ",");//右max电流(泄气)(0.2-0.6)18
+                        fileWriter.Write(CH2TestResult.RWD_VDCMAX + ",");//右max电压(泄气)(14.4-14.6)19
+
+                        fileWriter.Write(CH2TestResult.RWD_Pre1 + ",");//右输出压力(泄气上)(0-5KPa)20
+                        fileWriter.Write(CH2TestResult.RWD_Pre2 + ",");// 右输出压力(泄气下)(0 - 5KPa)21
+
+                     
+
+                        fileWriter.Write(",,,,,,,,,,,,");
+
+
+                        fileWriter.Write(CH2TestResult.FullPre1 + ",");//右1压力（充气）
+                        fileWriter.Write(CH2TestResult.BalanPre1 + ",");//右1压力（平衡）
+                        fileWriter.Write(CH2TestResult.Leak1 + ",");//右1泄漏量
+                        fileWriter.Write(CH2TestResult.FullPre2 + ",");//右2压力（充气）
+                        fileWriter.Write(CH2TestResult.BalanPre2 + ",");//右2压力（平衡）
+                        fileWriter.Write(CH2TestResult.Leak2 + ",");//右2泄漏量
+                        fileWriter.Write(CH2TestResult.FWD_FullPre1 + ",");//右1同充压力（充气）
+                        fileWriter.Write(CH2TestResult.FWD_BalanPre1 + ",");//右1同充压力（平衡）
+                        fileWriter.Write(CH2TestResult.FWD_Leak1 + ",");//右1同充泄漏量
+                        fileWriter.Write(CH2TestResult.FWD_FullPre2 + ","); //右2同充压力（充气）
+                        fileWriter.Write(CH2TestResult.FWD_BalanPre2 + ",");// 右2同充压力（平衡）
+                        fileWriter.Write(CH2TestResult.FWD_Leak2 + ",\n");// 右2同充泄漏量
+
+
+                        CH2csvworknum += 1;
+                        break;
+                }
+                fileWriter.Flush();
+                fileWriter.Close();
+                switch (CH)
+                {
+                    case 1:
+
+                        if (plc.CH1CodeCount <= 0)
+                        {
+                            left_CH1Code.ResetText();
+                            left_CH1Code.ScrollToCaret();
+                            left_CH1Code.Focus();
+                            IntPtr ptr = FindWindow(null, "CH1条码启动");
+                            winforclose.Interval = 300;
+                            flagtime = ptr;
+                            winforclose.Start();
+                            if (ptr == IntPtr.Zero)
+                            {
+                                //   MessageBox.Show("左工位需要扫码启动!", "CH1条码启动", MessageBoxButtons.OK);
+                                // if(Reset == DialogResult.OK)
+                                Logger.Log(I18N.GetLangText(dicLang, "左工位需要扫码启动，CH1条码启动"));
+                            }
+                            else
+                            {
+                                PostMessage(ptr, WM_CLOSE, IntPtr.Zero, IntPtr.Zero);
+                            }
+                        }
+                        break;
+
+                    case 2:
+                        if (plc.CH2CodeCount <= 0)
+                        {
+                            right_CH1Code.ResetText();
+                            right_CH1Code.ScrollToCaret();
+                            right_CH1Code.Focus();
+                            IntPtr ptr = FindWindow(null, "CH2条码启动");
+                            if (ptr == IntPtr.Zero)
+                            {
+                                //      MessageBox.Show("右工位需要扫码启动!", "CH2条码启动", MessageBoxButtons.OK);
+                                //     if (Reset == DialogResult.OK)
+                                {
+                                }
+                                Logger.Log(I18N.GetLangText(dicLang, "右工位需要扫码启动，CH2条码启动"));
+                            }
+                            else
+                            {
+                                PostMessage(ptr, WM_CLOSE, IntPtr.Zero, IntPtr.Zero);
+                            }
+                        }
+                        break;
+                }
+            }
+            catch (Exception ex)
+            {
+                wa.InsertWarningData(DateTime.Now.ToString("yyyy-MM-dd HH:mm:ss"), "-", "CSV:" + ex.Message);
+                // MessageBox.Show("CSV:" + ex.Message);
+                Logger.Log(I18N.GetLangText(dicLang, "CSV:") + ex.Message);
+                Logger.Log(ex.StackTrace);
+            }
+        }
+
+        //新增参数
+        private void AddCSV3(int CH)
+        {
+            try
+            {
+
+                string fileName;
+
+                string file = DateTime.Now.ToString("yyyyMMdd");
+                string productname = Form1.f1.machine.Replace(".ini", "");
+                if (String.IsNullOrEmpty(Form1.f1.save.Path))
+                {
+                    fileName = Environment.GetFolderPath(Environment.SpecialFolder.Desktop) + "\\" + productname + "\\" + Form1.f1.WorkOrder.Text + "\\";
+                }
+                else
+                {
+                    fileName = Form1.f1.save.Path + "\\" + productname + "\\" + Form1.f1.WorkOrder.Text + "\\";
+                }
+                if (!Directory.Exists(fileName))
+                {
+                    Directory.CreateDirectory(fileName);
+                }
+                List<FileSystemInfo> listFileSystemInfo = new List<FileSystemInfo>();
+                DirectoryInfo d = new DirectoryInfo(fileName);
+                FileSystemInfo[] fsinfos = d.GetFileSystemInfos();
+                foreach (FileSystemInfo fsinfo in fsinfos)
+                {
+                    if (Path.GetFileNameWithoutExtension(fsinfo.FullName).StartsWith(file))
+                        listFileSystemInfo.Add(fsinfo);
+                }
+                string maxFile = file;
+                if (listFileSystemInfo.Count > 0)
+                {
+                    maxFile = Path.GetFileNameWithoutExtension(listFileSystemInfo[listFileSystemInfo.Count - 1].FullName);
+                }
+
+                string name = maxFile + ".csv";
+                fileName += name;
+                if (File.Exists(fileName) == false)
+                {
+                    StreamWriter fileWriter1 = new StreamWriter(fileName, true, Encoding.UTF8);
+                    fileWriter1.Write(I18N.GetLangText(dicLang, " 测试记录报表") + "\n");
+                    fileWriter1.Write(I18N.GetLangText(dicLang, "工单单号") + "：," + WorkOrder.Text + "\n");
+                    fileWriter1.Write(I18N.GetLangText(dicLang, "生产料号") + "：," + ProductionItem.Text + "\n");
+                    fileWriter1.Write(I18N.GetLangText(dicLang, "产品名称") + "：," + ProductName.Text + "\n");
+                    fileWriter1.Write(I18N.GetLangText(dicLang, "测试类型") + "：," + TestType.Text + "\n");
+                    fileWriter1.Write(I18N.GetLangText(dicLang, "产品型号") + "：," + ProductModel.Text + "\n");
+                    fileWriter1.Write(I18N.GetLangText(dicLang, "生产数量") + "：," + ProductNum.Text + "\n");
+                    fileWriter1.Write(I18N.GetLangText(dicLang, "操作人员") + "：," + Admin.Text + "\n");
+                    fileWriter1.Write(I18N.GetLangText(dicLang, "测试程序文件") + "：," + machinepath + "\n");
+
+
+                    {
+
+
+
+                        Electricity electricity = new Electricity();
+                        Model.CH_PARAMS param = new Model.CH_PARAMS();
+                        param = electricity.readCHParam(1, 2);
+                        fileWriter1.Write(I18N.GetLangText(dicLang, "左CH1仪器,充气时间") + "：," + param.FullTime + "s,");
+                        fileWriter1.Write(I18N.GetLangText(dicLang, "平衡时间") + "：," + param.BalanTime + "s,");
+                        fileWriter1.Write(I18N.GetLangText(dicLang, "检测时间") + "：," + param.TestTime1 + "s,");
+                        fileWriter1.Write(I18N.GetLangText(dicLang, "排气时间") + "：," + param.ExhaustTime + "s\n");
+                        param = electricity.readCHParam(1, 3);
+                        fileWriter1.Write(I18N.GetLangText(dicLang, "左CH1阀泵,充气时间") + "：," + param.FullTime + "s,");
+                        fileWriter1.Write(I18N.GetLangText(dicLang, "平衡时间") + "：," + param.BalanTime + "s,");
+                        fileWriter1.Write(I18N.GetLangText(dicLang, "检测时间") + "：," + param.TestTime1 + "s,");
+                        fileWriter1.Write(I18N.GetLangText(dicLang, "排气时间") + "：," + param.ExhaustTime + "s\n");
+
+                        param = electricity.readCHParam(2, 2);
+                        fileWriter1.Write(I18N.GetLangText(dicLang, "左CH2仪器,充气时间") + "：," + param.FullTime + "s,");
+                        fileWriter1.Write(I18N.GetLangText(dicLang, "平衡时间") + "：," + param.BalanTime + "s,");
+                        fileWriter1.Write(I18N.GetLangText(dicLang, "检测时间") + "：," + param.TestTime1 + "s,");
+                        fileWriter1.Write(I18N.GetLangText(dicLang, "排气时间") + "：," + param.ExhaustTime + "s\n");
+                        param = electricity.readCHParam(2, 3);
+                        fileWriter1.Write(I18N.GetLangText(dicLang, "左CH2阀泵,充气时间") + "：," + param.FullTime + "s,");
+                        fileWriter1.Write(I18N.GetLangText(dicLang, "平衡时间") + "：," + param.BalanTime + "s,");
+                        fileWriter1.Write(I18N.GetLangText(dicLang, "检测时间") + "：," + param.TestTime1 + "s,");
+                        fileWriter1.Write(I18N.GetLangText(dicLang, "排气时间") + "：," + param.ExhaustTime + "s\n");
+
+                        param = electricity.readCHParam(3, 2);
+                        fileWriter1.Write(I18N.GetLangText(dicLang, "右CH1仪器,充气时间") + "：," + param.FullTime + "s,");
+                        fileWriter1.Write(I18N.GetLangText(dicLang, "平衡时间") + "：," + param.BalanTime + "s,");
+                        fileWriter1.Write(I18N.GetLangText(dicLang, "检测时间") + "：," + param.TestTime1 + "s,");
+                        fileWriter1.Write(I18N.GetLangText(dicLang, "排气时间") + "：," + param.ExhaustTime + "s\n");
+
+                        param = electricity.readCHParam(3, 3);
+                        fileWriter1.Write(I18N.GetLangText(dicLang, "右CH1阀泵,充气时间") + "：," + param.FullTime + "s,");
+                        fileWriter1.Write(I18N.GetLangText(dicLang, "平衡时间") + "：," + param.BalanTime + "s,");
+                        fileWriter1.Write(I18N.GetLangText(dicLang, "检测时间") + "：," + param.TestTime1 + "s,");
+                        fileWriter1.Write(I18N.GetLangText(dicLang, "排气时间") + "：," + param.ExhaustTime + "s\n");
+                        param = electricity.readCHParam(4, 2);
+                        fileWriter1.Write(I18N.GetLangText(dicLang, "右CH2仪器,充气时间") + "：," + param.FullTime + "s,");
+                        fileWriter1.Write(I18N.GetLangText(dicLang, "平衡时间") + "：," + param.BalanTime + "s,");
+                        fileWriter1.Write(I18N.GetLangText(dicLang, "检测时间") + "：," + param.TestTime1 + "s,");
+                        fileWriter1.Write(I18N.GetLangText(dicLang, "排气时间") + "：," + param.ExhaustTime + "s\n");
+
+                        param = electricity.readCHParam(4, 3);
+                        fileWriter1.Write(I18N.GetLangText(dicLang, "右CH2阀泵,充气时间") + "：," + param.FullTime + "s,");
+                        fileWriter1.Write(I18N.GetLangText(dicLang, "平衡时间") + "：," + param.BalanTime + "s,");
+                        fileWriter1.Write(I18N.GetLangText(dicLang, "检测时间") + "：," + param.TestTime1 + "s,");
+                        fileWriter1.Write(I18N.GetLangText(dicLang, "排气时间") + "：," + param.ExhaustTime + "s\n");
+                        fileWriter1.Write("\r\n");
+                        fileWriter1.Write("\r\n");
+                        fileWriter1.Write("\r\n");
+
+        
+                        fileWriter1.Write(I18N.GetLangText(dicLang, "作业序号") + "," + I18N.GetLangText(dicLang, "测试时间") + "," + I18N.GetLangText(dicLang, "条形码") + "," + I18N.GetLangText(dicLang, "判定结果") + "OK/NG,");
+                        fileWriter1.Write(I18N.GetLangText(dicLang, "左avg静态电流") + "(" + elec.CH1ElecMin + "-" + elec.CH1ElecMax + "uA),");
+                     fileWriter1.Write(I18N.GetLangText(dicLang, "左max电流(上充)") + "(" + elec.CH1UPADCMin + "-" + elec.CH1UPADCMax + "A),");
+                            fileWriter1.Write(I18N.GetLangText(dicLang, "左max电压(上充)") + "(" + elec.CH1UPVDCMin + "-" + elec.CH1UPVDCMax + "V),");
+                            fileWriter1.Write(I18N.GetLangText(dicLang, "左输出压力(上充)") + "(" + Flow.CH1_1PreMin + "-" + Flow.CH1_1PreMax + PressureUnit.Text + "),");
+                             fileWriter1.Write(I18N.GetLangText(dicLang, "左输出压力(上下充)") + "(" + Flow.CH1_2PreMax.ToString() + "-" + Flow.CH1_1PreMax + PressureUnit.Text + "),");
+                            fileWriter1.Write(I18N.GetLangText(dicLang, "左max流量(上充)(lpm)") + ",");
+                             fileWriter1.Write(I18N.GetLangText(dicLang, "左max流量(上下充)(lpm)") + "(" + Flow.CH1_2FlowMax.ToString() + "-" + Flow.CH1_2FlowMin + PressureUnit.Text + ")," );
+                            fileWriter1.Write(I18N.GetLangText(dicLang, "左max电流(下充)") + "(" + elec.CH1DOWNADCMin + "-" + elec.CH1DOWNADCMax + "A),");
+                            fileWriter1.Write(I18N.GetLangText(dicLang, "左max电压(下充)") + "(" + elec.CH1DOWNVDCMin + "-" + elec.CH1DOWNVDCMax + "V),");
+                            fileWriter1.Write(I18N.GetLangText(dicLang, "左输出压力(下充)") + "(" + Flow.CH1_2PreMin + "-" + Flow.CH1_2PreMax + CH2PressureUnit.Text + "),");
+                        fileWriter1.Write(I18N.GetLangText(dicLang, "左输出压力(下上充)") + "(" + Flow.CH1_1PreMin + "-" + Flow.CH1_1PreMax + PressureUnit.Text + "),");
+                            fileWriter1.Write(I18N.GetLangText(dicLang, "左max流量(下充)(lpm)") + ",");
+                        fileWriter1.Write(I18N.GetLangText(dicLang, "左max流量(下上充)(lpm)") + ",");
+
+
+
+                        fileWriter1.Write(I18N.GetLangText(dicLang, "左电流对比值") + "(" + Flow.CH1Cont_ElecMin + "-" + Flow.CH1Cont_ElecMax + "),");
+                        fileWriter1.Write(I18N.GetLangText(dicLang, "左压力对比值") + "(" + Flow.CH1Cont_PressMin + "-" + Flow.CH1Cont_PressMax + "),");
+
+                        fileWriter1.Write(I18N.GetLangText(dicLang, "max流量(FWD总)") + "(" + elec.TotalFlowMin + "-" + elec.TotalFlowMax + "),");
+                        fileWriter1.Write(I18N.GetLangText(dicLang, "max压力差(FWD)") + "(" + "0" + "-" + elec.TotalPreMax + "),");
+
+                        fileWriter1.Write(I18N.GetLangText(dicLang, "左max电流(同充)") + "(" + elec.CH1FWDADCMin + "-" + elec.CH1FWDADCMax + ")A,");
+                        fileWriter1.Write(I18N.GetLangText(dicLang, "左max电压(同充)") + "(" + elec.CH1FWDVDCMin + "-" + elec.CH1FWDVDCMax + ")A,");
+                        fileWriter1.Write(I18N.GetLangText(dicLang, "左输出压力(同充上)") + ",");
+                        fileWriter1.Write(I18N.GetLangText(dicLang, "左输出压力(同充下)") + ",");
+                        fileWriter1.Write(I18N.GetLangText(dicLang, "左max流量(同充上)(plm)") + ",");
+                        fileWriter1.Write(I18N.GetLangText(dicLang, "左max流量(同充下)(plm)") + ",");
+                        fileWriter1.Write(I18N.GetLangText(dicLang, "左max电流(泄气)") + "(" + elec.CH1RWDADCMin + "-" + elec.CH1RWDADCMax + "),");
+                        fileWriter1.Write(I18N.GetLangText(dicLang, "左max电压(泄气)") + "(" + elec.CH1RWDVDCMin + "-" + elec.CH1RWDVDCMax + "),");
+                        fileWriter1.Write(I18N.GetLangText(dicLang, "左输出压力(泄气上)") + "(" + Flow.CH1RWDPressMin + "-" + Flow.CH1RWDPressMax + PressureUnit.Text + "),");
+                        fileWriter1.Write(I18N.GetLangText(dicLang, "左输出压力(泄气下)") + "(" + Flow.CH1RWDPressMin + "-" + Flow.CH1RWDPressMax + CH2PressureUnit.Text + "),");
+
+                        fileWriter1.Write(I18N.GetLangText(dicLang, "右avg静态电流") + "(" + elec.CH2ElecMin + "-" + elec.CH2ElecMax + "uA),");
+                        fileWriter1.Write(I18N.GetLangText(dicLang, "右max电流(上充)") + "(" + elec.CH2UPADCMin + "-" + elec.CH2UPADCMax + "A),");
+                        fileWriter1.Write(I18N.GetLangText(dicLang, "右max电压(上充)") + "(" + elec.CH2UPVDCMin + "-" + elec.CH2UPVDCMax + "V),");
+                        fileWriter1.Write(I18N.GetLangText(dicLang, "右输出压力(上充)") + "(" + Flow.CH2_1PreMin + "-" + Flow.CH2_1PreMax + CH3PressureUnit.Text + "),");
+                       fileWriter1.Write(I18N.GetLangText(dicLang, "右输出压力(上下充)") + "(" + Flow.CH2_2PreMax.ToString() + "-" + Flow.CH2_1PreMax + PressureUnit.Text + "),");
+                        fileWriter1.Write(I18N.GetLangText(dicLang, "右max流量(上充)(plm)") + ",");
+                          fileWriter1.Write(I18N.GetLangText(dicLang, "右max流量(上下充)(lpm)") + "(" + Flow.CH2_2FlowMax.ToString() + "-" + Flow.CH2_2FlowMin + PressureUnit.Text + ")," );
+                        fileWriter1.Write(I18N.GetLangText(dicLang, "右max电流(下充)") + "(" + elec.CH2DOWNADCMin + "-" + elec.CH2DOWNADCMax + "A),");
+                        fileWriter1.Write(I18N.GetLangText(dicLang, "右max电压(下充)") + "(" + elec.CH2DOWNVDCMin + "-" + elec.CH2DOWNVDCMax + "V),");
+                        fileWriter1.Write(I18N.GetLangText(dicLang, "右输出压力(下充)") + "(" + Flow.CH2_2PreMin + "-" + Flow.CH2_2PreMax + CH4PressureUnit.Text + "),");
+                        fileWriter1.Write(I18N.GetLangText(dicLang, "右输出压力(下上充)") + "(" + Flow.CH2_1PreMin + "-" + Flow.CH2_1PreMax + PressureUnit.Text + "),");
+                        fileWriter1.Write(I18N.GetLangText(dicLang, "右max流量(下充)(plm)") + ",");
+                        fileWriter1.Write(I18N.GetLangText(dicLang, "右max流量(下上充)(plm)") + ",");
+
+
+
+                        fileWriter1.Write(I18N.GetLangText(dicLang, "右电流对比值") + "(" + Flow.CH2Cont_ElecMin + "-" + Flow.CH2Cont_ElecMax + "),");
+                        fileWriter1.Write(I18N.GetLangText(dicLang, "右压力对比值") + "(" + Flow.CH2Cont_PressMin + "-" + Flow.CH2Cont_PressMax + "),");
+
+
+                //        CH3Display($"{CH2RunName}" + I18N.GetLangText(dicLang, "max流量(FWD总)"), "", "lpm", elec.TotalFlowMax.ToString(), elec.TotalFlowMin.ToString(), "");
+                  //      CH3Display($"{CH2RunName}" + I18N.GetLangText(dicLang, "max压力差(FWD)"), "", "Kpa", elec.TotalPreMax.ToString(), "0", "");
+                   //     CH3Display($"{CH2RunName}" + I18N.GetLangText(dicLang, "max流量(FWD总)"), (CH2TestResult.FWD_Flow1 + CH2TestResult.FWD_Flow2).ToString(), "lpm", elec.TotalFlowMax.ToString(), elec.TotalFlowMin.ToString(), "NG");
+                        fileWriter1.Write(I18N.GetLangText(dicLang, "max流量(FWD总)") + "(" + elec.TotalFlowMin + "-" + elec.TotalFlowMax + "),");
+                        fileWriter1.Write(I18N.GetLangText(dicLang, "max压力差(FWD)") + "(" +"0" + "-" + elec.TotalPreMax + "),");
+                      
+
+                        fileWriter1.Write(I18N.GetLangText(dicLang, "右max电流(同充)") + "(" + elec.CH2FWDADCMin + "-" + elec.CH2FWDADCMax + ")A,");
+                        fileWriter1.Write(I18N.GetLangText(dicLang, "右max电压(同充)") + "(" + elec.CH2FWDVDCMin + "-" + elec.CH2FWDVDCMax + ")A,");
+                        fileWriter1.Write(I18N.GetLangText(dicLang, "右输出压力(同充上)") + ",");
+                        fileWriter1.Write(I18N.GetLangText(dicLang, "右输出压力(同充下)") + ",");
+                        fileWriter1.Write(I18N.GetLangText(dicLang, "右max流量(同充上)(plm)") + ",");
+                        fileWriter1.Write(I18N.GetLangText(dicLang, "右max流量(同充下)(plm)") + ",");
+                        fileWriter1.Write(I18N.GetLangText(dicLang, "右max电流(泄气)") + "(" + elec.CH2RWDADCMin + "-" + elec.CH2RWDADCMax + "),");
+                        fileWriter1.Write(I18N.GetLangText(dicLang, "右max电压(泄气)") + "(" + elec.CH2RWDVDCMin + "-" + elec.CH2RWDVDCMax + "),");
+                        fileWriter1.Write(I18N.GetLangText(dicLang, "右输出压力(泄气上)") + "(" + Flow.CH2RWDPressMin + "-" + Flow.CH2RWDPressMax + CH3PressureUnit.Text + "),");
+                        fileWriter1.Write(I18N.GetLangText(dicLang, "右输出压力(泄气下)") + "(" + Flow.CH2RWDPressMin + "-" + Flow.CH2RWDPressMax + CH4PressureUnit.Text + "),");
+
+                        fileWriter1.Write(I18N.GetLangText(dicLang, "左1压力(充气)") + "(" + ch1_1leakparams.FPlowlimit + "-" + ch1_1leakparams.FPtoplimit + PressureUnit.Text + "),");
+                 //       fileWriter1.Write(I18N.GetLangText(dicLang, "左1压力(平衡)") + "(" + ch1_1leakparams.BalanPreMin + "-" + ch1_1leakparams.BalanPreMax + PressureUnit.Text + "),");
+                        fileWriter1.Write(I18N.GetLangText(dicLang, "左1泄漏量") + "(" + ch1_1leakparams.Leaklowlimit + "-" + ch1_1leakparams.Leaktoplimit + LeakUnit.Text + "),");
+                        fileWriter1.Write(I18N.GetLangText(dicLang, "左2压力(充气)") + "(" + ch1_2leakparams.FPlowlimit + "-" + ch1_2leakparams.FPtoplimit + CH2PressureUnit.Text + "),");
+                 //       fileWriter1.Write(I18N.GetLangText(dicLang, "左2压力(平衡)") + "(" + ch1_2leakparams.BalanPreMin + "-" + ch1_2leakparams.BalanPreMax + CH2PressureUnit.Text + "),");
+                        fileWriter1.Write(I18N.GetLangText(dicLang, "左2泄漏量") + "(" + ch1_2leakparams.Leaklowlimit + "-" + ch1_2leakparams.Leaktoplimit + CH2LeakUnit.Text + "),");
+                        fileWriter1.Write(I18N.GetLangText(dicLang, "左1同充压力(充气)") + "+(" + ch1_1leakparams.FPlowlimit + "-" + ch1_1leakparams.FPtoplimit + PressureUnit.Text + "),");
+                     //   fileWriter1.Write(I18N.GetLangText(dicLang, "左1同充压力(平衡)") + "(" + ch1_1leakparams.BalanPreMin + "-" + ch1_1leakparams.BalanPreMax + PressureUnit.Text + "),");
+                        fileWriter1.Write(I18N.GetLangText(dicLang, "左1同充泄漏量") + "(" + ch1_1leakparams.Leaklowlimit + "-" + ch1_1leakparams.Leaktoplimit + LeakUnit.Text + "),");
+                        fileWriter1.Write(I18N.GetLangText(dicLang, "左2同充压力(充气)") + "(" + ch1_2leakparams.FPlowlimit + "-" + ch1_2leakparams.FPtoplimit + CH2PressureUnit.Text + "),");
+                     //   fileWriter1.Write(I18N.GetLangText(dicLang, "左2同充压力(平衡)") + "(" + ch1_2leakparams.BalanPreMin + "-" + ch1_2leakparams.BalanPreMax + CH2PressureUnit.Text + "),");
+                        fileWriter1.Write(I18N.GetLangText(dicLang, "左2同充泄漏量") + "(" + ch1_2leakparams.Leaklowlimit + "-" + ch1_2leakparams.Leaktoplimit + CH2LeakUnit.Text + "),");
+                       fileWriter1.Write(I18N.GetLangText(dicLang, "右1压力(充气)") + "(" + ch2_1leakparams.FPlowlimit + "-" + ch2_1leakparams.FPtoplimit + CH3PressureUnit.Text + "),");
+                  //   fileWriter1.Write(I18N.GetLangText(dicLang, "右1压力(平衡)") + "(" + ch2_1leakparams.BalanPreMin + "-" + ch2_1leakparams.BalanPreMax + CH3PressureUnit.Text + "),");
+                        fileWriter1.Write(I18N.GetLangText(dicLang, "右1泄漏量") + "(" + ch2_1leakparams.Leaklowlimit + "-" + ch2_1leakparams.Leaktoplimit + CH3LeakUnit.Text + "),");
+                        fileWriter1.Write(I18N.GetLangText(dicLang, "右2压力(充气)") + "(" + ch2_2leakparams.FPlowlimit + "-" + ch2_2leakparams.FPtoplimit + CH4PressureUnit.Text + "),");
+                     //   fileWriter1.Write(I18N.GetLangText(dicLang, "右2压力(平衡)") + "(" + ch2_2leakparams.BalanPreMin + "-" + ch2_2leakparams.BalanPreMax + CH4PressureUnit.Text + "),");
+                        fileWriter1.Write(I18N.GetLangText(dicLang, "右2泄漏量") + "(" + ch2_2leakparams.Leaklowlimit + "-" + ch2_2leakparams.Leaktoplimit + CH4LeakUnit.Text + "),");
+                        fileWriter1.Write(I18N.GetLangText(dicLang, "右1同充压力(充气)") + "(" + ch2_1leakparams.FPlowlimit + "-" + ch2_1leakparams.FPtoplimit + CH3PressureUnit.Text + "),");
+               //   fileWriter1.Write(I18N.GetLangText(dicLang, "右1同充压力(平衡)") + "(" + ch2_1leakparams.BalanPreMin + "-" + ch2_1leakparams.BalanPreMax + CH3PressureUnit.Text + "),");
+                        fileWriter1.Write(I18N.GetLangText(dicLang, "右1同充泄漏量") + "(" + ch2_1leakparams.Leaklowlimit + "-" + ch2_1leakparams.Leaktoplimit + CH3LeakUnit.Text + "),");
+                        fileWriter1.Write(I18N.GetLangText(dicLang, "右2同充压力(充气)") + "(" + ch2_2leakparams.FPlowlimit + "-" + ch2_2leakparams.FPtoplimit + CH4PressureUnit.Text + "),");
+                   //     fileWriter1.Write(I18N.GetLangText(dicLang, "右2同充压力(平衡)") + "(" + ch2_2leakparams.BalanPreMin + "-" + ch2_2leakparams.BalanPreMax + CH4PressureUnit.Text + "),");
+                fileWriter1.Write(I18N.GetLangText(dicLang, "右2同充泄漏量") + "(" + ch2_2leakparams.Leaklowlimit + "-" + ch2_2leakparams.Leaktoplimit + CH4LeakUnit.Text + "),\n");
+
+                        fileWriter1.Flush();
+                        fileWriter1.Close();
+                    }
+                }
+
+                StreamWriter fileWriter = new StreamWriter(fileName, true, Encoding.UTF8);
+                switch (CH)
+                {
+                    case 1:
+                        fileWriter.Write(CH1csvworknum + I18N.GetLangText(dicLang, "左") + ",#");//作业序号
+                        fileWriter.Write(CH1timestamp + ",#");//测试时间
+                        fileWriter.Write(left_CH1Code
+.Text.Trim().Replace("\r\n", "").Replace("\r", "").Replace("\n", "") + ",");//条形码
+                        fileWriter.Write(CH1Tlight.Text + ",");//判定结果
+                        fileWriter.Write(CH1RTElec.Text + ",");//左avg静态电流
+
+                        fileWriter.Write(CH1TestResult.UP_ADCMAX + ",");//"左max电流(上充)”
+                        fileWriter.Write(CH1TestResult.UP_VDCMAX + ",");//左max电压(上充)
+                        fileWriter.Write(CH1TestResult.UP_Pre + ",");//左输出压力(上充)”
+                        fileWriter.Write(CH1TestResult.UP_Prezuo + ",");//左输出压力(上下充)”
+                        fileWriter.Write(CH1TestResult.UP_Flow + ",");//左max流量（上充）
+                      fileWriter.Write(CH1TestResult.UP_Flowzuo + ",");//左max流量（上下充）
+                        fileWriter.Write(CH1TestResult.DOWN_ADCMAX + ",");//左max电流（下充）
+                        fileWriter.Write(CH1TestResult.DOWN_VDCMAX + ",");//左max电压（下充）
+                        fileWriter.Write(CH1TestResult.DOWN_Pre + ",");//左输出压力（下充）
+                     fileWriter.Write(CH1TestResult.DOWN_Prezuo + ",");//左输出压力（下上充）
+                        fileWriter.Write(CH1TestResult.DOWN_Flow + ",");//左max流量（下充）
+                        fileWriter.Write(CH1TestResult.DOWN_Flowzuo + ",");//左max流量（下上充）
+
+
+
+
+                        fileWriter.Write(CH1TestResult.ElecRatio + ",");//左电流对比值
+                        fileWriter.Write(CH1TestResult.PressRatio + ",");//左压力对比值
+
+                        fileWriter.Write(CH1TestResult.FWD_FlowSumzuo + ",");//左流量总FWD新增
+                        fileWriter.Write(CH1TestResult.FWD_PreSumzuo + ",");//左压差总FWD新增
+
+                        fileWriter.Write(CH1TestResult.FWD_ADCMAX + ",");//左max电流（同充）
+                        fileWriter.Write(CH1TestResult.FWD_VDCMAX + ",");//左max电压（同充）
+                        fileWriter.Write(CH1TestResult.FWD_Pre1 + ",");//左输出压力（同充上）
+                        fileWriter.Write(CH1TestResult.FWD_Pre2 + ",");//左输出压力（同充下）
+                        fileWriter.Write(CH1TestResult.FWD_Flow1 + ",");//左max流量（同充上）
+                        fileWriter.Write(CH1TestResult.FWD_Flow2 + ",");//左max流量（同充下）
+                        fileWriter.Write(CH1TestResult.RWD_ADCMAX + ",");//左max电流（泄气）
+                        fileWriter.Write(CH1TestResult.RWD_VDCMAX + ",");//左max电压（泄气）
+                        fileWriter.Write(CH1TestResult.RWD_Pre1 + ",");//左输出压力（泄气上）
+                        fileWriter.Write(CH1TestResult.RWD_Pre2 + ",");//左输出压力（泄气下）
+
+                        fileWriter.Write(",,,,,,,,,,,,,,,,,,,,,,,,,,,");
+
+
+                        fileWriter.Write(CH1TestResult.FullPre1 + ",");//左1压力（充气）
+                  //      fileWriter.Write(CH1TestResult.BalanPre1 + ",");//左1压力（平衡）
+                        fileWriter.Write(CH1TestResult.Leak1 + ",");//左1泄漏量
+                        fileWriter.Write(CH1TestResult.FullPre2 + ",");//左2压力（充气）
+                  //      fileWriter.Write(CH1TestResult.BalanPre2 + ",");//左2压力（平衡）
+                        fileWriter.Write(CH1TestResult.Leak2 + ",");//左2泄漏量
+                        fileWriter.Write(CH1TestResult.FWD_FullPre1 + ",");//左1同充压力（充气）
+                  //      fileWriter.Write(CH1TestResult.FWD_BalanPre1 + ",");//左1同充压力（平衡）
+                        fileWriter.Write(CH1TestResult.FWD_Leak1 + ",");//左1同充泄漏量
+                        fileWriter.Write(CH1TestResult.FWD_FullPre2 + ","); //左2同充压力（充气）
+                //        fileWriter.Write(CH1TestResult.FWD_BalanPre2 + ",");// 左2同充压力（平衡）
+                        fileWriter.Write(CH1TestResult.FWD_Leak2 + ",\n");// 左2同充泄漏量
+
+
+                        CH1csvworknum += 1;
+                        break;
+
+                    case 2:
+
+
+                        fileWriter.Write(CH2csvworknum + I18N.GetLangText(dicLang, "右") + ",#");//作业序号
+                        fileWriter.Write(CH2timestamp + ",#");//测试时间
+
+                        fileWriter.Write(right_CH1Code.Text.Trim().Replace("\r\n", "").Replace("\r", "").Replace("\n", "") + ",");//条形码
+                        fileWriter.Write(CH2Tlight.Text + ",");//判定结果
+                        fileWriter.Write(",,,,,,,,,,,,,,,,,,,,,,,,,,,");
+
+                        fileWriter.Write(CH2RTElec.Text + ",");//右avg静态电流 1
+                        fileWriter.Write(CH2TestResult.UP_ADCMAX + ",");//"右max电流(上充)” 2
+                                                                        //     fileWriter.Write(CH2TestResult.UP_Pre + ",");//右max电压(上充)”3
+                        fileWriter.Write(CH2TestResult.UP_VDCMAX + ",");//右max电压(上充)”3
+                        fileWriter.Write(CH2TestResult.UP_Pre + ",");//"右输出压力(上充)(40-45KPa)4
+                        fileWriter.Write(CH2TestResult.UP_Pre1 + ",");//"右输出压力(上充)(40-45KPa)新增
+                        fileWriter.Write(CH2TestResult.UP_Flow + ",");//右max流量(上充)(plm)5
+                        fileWriter.Write(CH2TestResult.UP_Flow1 + ",");//右max流量(上下充)(plm)5新增
+                        fileWriter.Write(CH2TestResult.DOWN_ADCMAX + ",");//右max电流(下充)(0.3-1.2A)”6
+
+                        fileWriter.Write(CH2TestResult.DOWN_VDCMAX + ",");//右max电压(下充)(14.4-14.6V)7
+
+                        fileWriter.Write(CH2TestResult.DOWN_Pre + ",");//右输出压力(下充)(40-45KPa)8
+                        fileWriter.Write(CH2TestResult.DOWN_Pre1 + ",");//右输出压力(下上充)(40-45KPa)8新增
+                        fileWriter.Write(CH2TestResult.DOWN_Flow + ",");//右max流量(下充)(plm)9
+                        fileWriter.Write(CH2TestResult.DOWN_Flow1 + ",");//右max流量(下上充)(plm)9新增
+                        fileWriter.Write(CH2TestResult.ElecRatio + ",");//右电流对比值(0.5-1.2)10
+
+                        fileWriter.Write(CH2TestResult.PressRatio + ",");//右压力对比值(0-1.35)11
+
+                        fileWriter.Write(CH2TestResult.FWD_FlowSum + ",");//右流量总FWD新增
+                        fileWriter.Write(CH2TestResult.FWD_PreSum + ",");//右压差总FWD新增
+
+
+                        fileWriter.Write(CH2TestResult.FWD_ADCMAX + ",");//右max电流(同充)(0.3-1.2)A12
+                        fileWriter.Write(CH2TestResult.FWD_VDCMAX + ",");//右max电压(同充)(14.4-14.6)A13
+                        fileWriter.Write(CH2TestResult.FWD_Pre1 + ",");//右输出压力（同充上）14
+                        fileWriter.Write(CH2TestResult.FWD_Pre2 + ",");//右输出压力(同充下)15
+                        fileWriter.Write(CH2TestResult.FWD_Flow1 + ",");//右max流量(同充上)(plm)16
+
+                        fileWriter.Write(CH2TestResult.FWD_Flow2 + ",");//右max流量(同充下)(plm)17
+                        fileWriter.Write(CH2TestResult.RWD_ADCMAX + ",");//右max电流(泄气)(0.2-0.6)18
+                        fileWriter.Write(CH2TestResult.RWD_VDCMAX + ",");//右max电压(泄气)(14.4-14.6)19
+
+                        fileWriter.Write(CH2TestResult.RWD_Pre1 + ",");//右输出压力(泄气上)(0-5KPa)20
+                        fileWriter.Write(CH2TestResult.RWD_Pre2 + ",");// 右输出压力(泄气下)(0 - 5KPa)21
+
+
+
+                        fileWriter.Write(",,,,,,,,");
+
+
+                        fileWriter.Write(CH2TestResult.FullPre1 + ",");//右1压力（充气）
+                  
+                        
+                        //    fileWriter.Write(CH2TestResult.BalanPre1 + ",");//右1压力（平衡）
+                        fileWriter.Write(CH2TestResult.Leak1 + ",");//右1泄漏量
+                        fileWriter.Write(CH2TestResult.FullPre2 + ",");//右2压力（充气）
+                  //      fileWriter.Write(CH2TestResult.BalanPre2 + ",");//右2压力（平衡）
+                        fileWriter.Write(CH2TestResult.Leak2 + ",");//右2泄漏量
+                        fileWriter.Write(CH2TestResult.FWD_FullPre1 + ",");//右1同充压力（充气）
+              //          fileWriter.Write(CH2TestResult.FWD_BalanPre1 + ",");//右1同充压力（平衡）
+                        fileWriter.Write(CH2TestResult.FWD_Leak1 + ",");//右1同充泄漏量
+                        fileWriter.Write(CH2TestResult.FWD_FullPre2 + ","); //右2同充压力（充气）
+                      //  fileWriter.Write(CH2TestResult.FWD_BalanPre2 + ",");// 右2同充压力（平衡）
+                        fileWriter.Write(CH2TestResult.FWD_Leak2 + ",\n");// 右2同充泄漏量
+
+
+                        CH2csvworknum += 1;
+                        break;
+                }
+                fileWriter.Flush();
+                fileWriter.Close();
+                switch (CH)
+                {
+                    case 1:
+
+                        if (plc.CH1CodeCount <= 0)
+                        {
+                            left_CH1Code.ResetText();
+                            left_CH1Code.ScrollToCaret();
+                            left_CH1Code.Focus();
+                            IntPtr ptr = FindWindow(null, "CH1条码启动");
+                            winforclose.Interval = 300;
+                            flagtime = ptr;
+                            winforclose.Start();
+                            if (ptr == IntPtr.Zero)
+                            {
+                                //   MessageBox.Show("左工位需要扫码启动!", "CH1条码启动", MessageBoxButtons.OK);
+                                // if(Reset == DialogResult.OK)
+                                Logger.Log(I18N.GetLangText(dicLang, "左工位需要扫码启动，CH1条码启动"));
+                            }
+                            else
+                            {
+                                PostMessage(ptr, WM_CLOSE, IntPtr.Zero, IntPtr.Zero);
+                            }
+                        }
+                        break;
+
+                    case 2:
+                        if (plc.CH2CodeCount <= 0)
+                        {
+                            right_CH1Code.ResetText();
+                            right_CH1Code.ScrollToCaret();
+                            right_CH1Code.Focus();
+                            IntPtr ptr = FindWindow(null, "CH2条码启动");
+                            if (ptr == IntPtr.Zero)
+                            {
+                                //      MessageBox.Show("右工位需要扫码启动!", "CH2条码启动", MessageBoxButtons.OK);
+                                //     if (Reset == DialogResult.OK)
+                                {
+                                }
+                                Logger.Log(I18N.GetLangText(dicLang, "右工位需要扫码启动，CH2条码启动"));
+                            }
+                            else
+                            {
+                                PostMessage(ptr, WM_CLOSE, IntPtr.Zero, IntPtr.Zero);
+                            }
+                        }
+                        break;
+                }
+            }
+            catch (Exception ex)
+            {
+                wa.InsertWarningData(DateTime.Now.ToString("yyyy-MM-dd HH:mm:ss"), "-", "CSV:" + ex.Message);
+                // MessageBox.Show("CSV:" + ex.Message);
+                Logger.Log(I18N.GetLangText(dicLang, "CSV:") + ex.Message);
+                Logger.Log(ex.StackTrace);
+            }
+        }
+
+
+        private void AddCSV4(int CH)
+        {
+            try
+            {
+
+                string fileName;
+
+                string file = DateTime.Now.ToString("yyyyMMdd");
+                string productname = Form1.f1.machine.Replace(".ini", "");
+                if (String.IsNullOrEmpty(Form1.f1.save.Path))
+                {
+                    fileName = Environment.GetFolderPath(Environment.SpecialFolder.Desktop) + "\\" + productname + "\\" + Form1.f1.WorkOrder.Text + "\\";
+                }
+                else
+                {
+                    fileName = Form1.f1.save.Path + "\\" + productname + "\\" + Form1.f1.WorkOrder.Text + "\\";
+                }
+                if (!Directory.Exists(fileName))
+                {
+                    Directory.CreateDirectory(fileName);
+                }
+                List<FileSystemInfo> listFileSystemInfo = new List<FileSystemInfo>();
+                DirectoryInfo d = new DirectoryInfo(fileName);
+                FileSystemInfo[] fsinfos = d.GetFileSystemInfos();
+                foreach (FileSystemInfo fsinfo in fsinfos)
+                {
+                    if (Path.GetFileNameWithoutExtension(fsinfo.FullName).StartsWith(file))
+                        listFileSystemInfo.Add(fsinfo);
+                }
+                string maxFile = file;
+                if (listFileSystemInfo.Count > 0)
+                {
+                    maxFile = Path.GetFileNameWithoutExtension(listFileSystemInfo[listFileSystemInfo.Count - 1].FullName);
+                }
+
+                string name = maxFile + ".csv";
+                fileName += name;
+                if (File.Exists(fileName) == false)
+                {
+                    StreamWriter fileWriter1 = new StreamWriter(fileName, true, Encoding.UTF8);
+                    fileWriter1.Write(I18N.GetLangText(dicLang, " 测试记录报表") + "\n");
+                    fileWriter1.Write(I18N.GetLangText(dicLang, "工单单号") + "：," + WorkOrder.Text + "\n");
+                    fileWriter1.Write(I18N.GetLangText(dicLang, "生产料号") + "：," + ProductionItem.Text + "\n");
+                    fileWriter1.Write(I18N.GetLangText(dicLang, "产品名称") + "：," + ProductName.Text + "\n");
+                    fileWriter1.Write(I18N.GetLangText(dicLang, "测试类型") + "：," + TestType.Text + "\n");
+                    fileWriter1.Write(I18N.GetLangText(dicLang, "产品型号") + "：," + ProductModel.Text + "\n");
+                    fileWriter1.Write(I18N.GetLangText(dicLang, "生产数量") + "：," + ProductNum.Text + "\n");
+                    fileWriter1.Write(I18N.GetLangText(dicLang, "操作人员") + "：," + Admin.Text + "\n");
+                    fileWriter1.Write(I18N.GetLangText(dicLang, "测试程序文件") + "：," + machinepath + "\n");
+
+
+                    {
+
+
+
+                        Electricity electricity = new Electricity();
+                        Model.CH_PARAMS param = new Model.CH_PARAMS();
+                        param = electricity.readCHParam(1, 2);
+                        fileWriter1.Write(I18N.GetLangText(dicLang, "左CH1仪器,充气时间") + "：," + param.FullTime + "s,");
+                        fileWriter1.Write(I18N.GetLangText(dicLang, "平衡时间") + "：," + param.BalanTime + "s,");
+                        fileWriter1.Write(I18N.GetLangText(dicLang, "检测时间") + "：," + param.TestTime1 + "s,");
+                        fileWriter1.Write(I18N.GetLangText(dicLang, "排气时间") + "：," + param.ExhaustTime + "s\n");
+                        param = electricity.readCHParam(1, 3);
+                        fileWriter1.Write(I18N.GetLangText(dicLang, "左CH1阀泵,充气时间") + "：," + param.FullTime + "s,");
+                        fileWriter1.Write(I18N.GetLangText(dicLang, "平衡时间") + "：," + param.BalanTime + "s,");
+                        fileWriter1.Write(I18N.GetLangText(dicLang, "检测时间") + "：," + param.TestTime1 + "s,");
+                        fileWriter1.Write(I18N.GetLangText(dicLang, "排气时间") + "：," + param.ExhaustTime + "s\n");
+
+                        param = electricity.readCHParam(2, 2);
+                        fileWriter1.Write(I18N.GetLangText(dicLang, "左CH2仪器,充气时间") + "：," + param.FullTime + "s,");
+                        fileWriter1.Write(I18N.GetLangText(dicLang, "平衡时间") + "：," + param.BalanTime + "s,");
+                        fileWriter1.Write(I18N.GetLangText(dicLang, "检测时间") + "：," + param.TestTime1 + "s,");
+                        fileWriter1.Write(I18N.GetLangText(dicLang, "排气时间") + "：," + param.ExhaustTime + "s\n");
+                        param = electricity.readCHParam(2, 3);
+                        fileWriter1.Write(I18N.GetLangText(dicLang, "左CH2阀泵,充气时间") + "：," + param.FullTime + "s,");
+                        fileWriter1.Write(I18N.GetLangText(dicLang, "平衡时间") + "：," + param.BalanTime + "s,");
+                        fileWriter1.Write(I18N.GetLangText(dicLang, "检测时间") + "：," + param.TestTime1 + "s,");
+                        fileWriter1.Write(I18N.GetLangText(dicLang, "排气时间") + "：," + param.ExhaustTime + "s\n");
+
+                        param = electricity.readCHParam(3, 2);
+                        fileWriter1.Write(I18N.GetLangText(dicLang, "右CH1仪器,充气时间") + "：," + param.FullTime + "s,");
+                        fileWriter1.Write(I18N.GetLangText(dicLang, "平衡时间") + "：," + param.BalanTime + "s,");
+                        fileWriter1.Write(I18N.GetLangText(dicLang, "检测时间") + "：," + param.TestTime1 + "s,");
+                        fileWriter1.Write(I18N.GetLangText(dicLang, "排气时间") + "：," + param.ExhaustTime + "s\n");
+
+                        param = electricity.readCHParam(3, 3);
+                        fileWriter1.Write(I18N.GetLangText(dicLang, "右CH1阀泵,充气时间") + "：," + param.FullTime + "s,");
+                        fileWriter1.Write(I18N.GetLangText(dicLang, "平衡时间") + "：," + param.BalanTime + "s,");
+                        fileWriter1.Write(I18N.GetLangText(dicLang, "检测时间") + "：," + param.TestTime1 + "s,");
+                        fileWriter1.Write(I18N.GetLangText(dicLang, "排气时间") + "：," + param.ExhaustTime + "s\n");
+                        param = electricity.readCHParam(4, 2);
+                        fileWriter1.Write(I18N.GetLangText(dicLang, "右CH2仪器,充气时间") + "：," + param.FullTime + "s,");
+                        fileWriter1.Write(I18N.GetLangText(dicLang, "平衡时间") + "：," + param.BalanTime + "s,");
+                        fileWriter1.Write(I18N.GetLangText(dicLang, "检测时间") + "：," + param.TestTime1 + "s,");
+                        fileWriter1.Write(I18N.GetLangText(dicLang, "排气时间") + "：," + param.ExhaustTime + "s\n");
+
+                        param = electricity.readCHParam(4, 3);
+                        fileWriter1.Write(I18N.GetLangText(dicLang, "右CH2阀泵,充气时间") + "：," + param.FullTime + "s,");
+                        fileWriter1.Write(I18N.GetLangText(dicLang, "平衡时间") + "：," + param.BalanTime + "s,");
+                        fileWriter1.Write(I18N.GetLangText(dicLang, "检测时间") + "：," + param.TestTime1 + "s,");
+                        fileWriter1.Write(I18N.GetLangText(dicLang, "排气时间") + "：," + param.ExhaustTime + "s\n");
+                        fileWriter1.Write("\r\n");
+                        fileWriter1.Write("\r\n");
+                        fileWriter1.Write("\r\n");
+
+
+                        fileWriter1.Write(I18N.GetLangText(dicLang, "作业序号") + "," + I18N.GetLangText(dicLang, "测试时间") + "," + I18N.GetLangText(dicLang, "条形码") + "," + I18N.GetLangText(dicLang, "判定结果") + "OK/NG,");
+                        fileWriter1.Write(I18N.GetLangText(dicLang, "左avg静态电流") + "(" + elec.CH1ElecMin + "-" + elec.CH1ElecMax + "uA),");
+                        fileWriter1.Write(I18N.GetLangText(dicLang, "左max电流(上充)") + "(" + elec.CH1UPADCMin + "-" + elec.CH1UPADCMax + "A),");
+                        fileWriter1.Write(I18N.GetLangText(dicLang, "左max电压(上充)") + "(" + elec.CH1UPVDCMin + "-" + elec.CH1UPVDCMax + "V),");
+                        fileWriter1.Write(I18N.GetLangText(dicLang, "左输出压力(上充)") + "(" + Flow.CH1_1PreMin + "-" + Flow.CH1_1PreMax + PressureUnit.Text + "),");
+                        fileWriter1.Write(I18N.GetLangText(dicLang, "左输出压力(上下充)") + "(" + Flow.CH1_2PreMax.ToString() + "-" + Flow.CH1_1PreMax + PressureUnit.Text + "),");
+                        fileWriter1.Write(I18N.GetLangText(dicLang, "左max流量(上充)(lpm)") + ",");
+                        fileWriter1.Write(I18N.GetLangText(dicLang, "左max流量(上下充)(lpm)") + "(" + Flow.CH1_2FlowMax.ToString() + "-" + Flow.CH1_2FlowMin + PressureUnit.Text + "),");
+                        fileWriter1.Write(I18N.GetLangText(dicLang, "左max电流(下充)") + "(" + elec.CH1DOWNADCMin + "-" + elec.CH1DOWNADCMax + "A),");
+                        fileWriter1.Write(I18N.GetLangText(dicLang, "左max电压(下充)") + "(" + elec.CH1DOWNVDCMin + "-" + elec.CH1DOWNVDCMax + "V),");
+                        fileWriter1.Write(I18N.GetLangText(dicLang, "左输出压力(下充)") + "(" + Flow.CH1_2PreMin + "-" + Flow.CH1_2PreMax + CH2PressureUnit.Text + "),");
+                        fileWriter1.Write(I18N.GetLangText(dicLang, "左输出压力(下上充)") + "(" + Flow.CH1_1PreMin + "-" + Flow.CH1_1PreMax + PressureUnit.Text + "),");
+                        fileWriter1.Write(I18N.GetLangText(dicLang, "左max流量(下充)(lpm)") + ",");
+                        fileWriter1.Write(I18N.GetLangText(dicLang, "左max流量(下上充)(lpm)") + ",");
+
+
+
+                        fileWriter1.Write(I18N.GetLangText(dicLang, "左电流对比值") + "(" + Flow.CH1Cont_ElecMin + "-" + Flow.CH1Cont_ElecMax + "),");
+                        fileWriter1.Write(I18N.GetLangText(dicLang, "左压力对比值") + "(" + Flow.CH1Cont_PressMin + "-" + Flow.CH1Cont_PressMax + "),");
+
+                        fileWriter1.Write(I18N.GetLangText(dicLang, "max流量(FWD总)") + "(" + elec.TotalFlowMin + "-" + elec.TotalFlowMax + "),");
+                        fileWriter1.Write(I18N.GetLangText(dicLang, "max压力差(FWD)") + "(" + "0" + "-" + elec.TotalPreMax + "),");
+
+                        fileWriter1.Write(I18N.GetLangText(dicLang, "左max电流(同充)") + "(" + elec.CH1FWDADCMin + "-" + elec.CH1FWDADCMax + ")A,");
+                        fileWriter1.Write(I18N.GetLangText(dicLang, "左max电压(同充)") + "(" + elec.CH1FWDVDCMin + "-" + elec.CH1FWDVDCMax + ")A,");
+                        fileWriter1.Write(I18N.GetLangText(dicLang, "左输出压力(同充上)") + ",");
+                        fileWriter1.Write(I18N.GetLangText(dicLang, "左输出压力(同充下)") + ",");
+                        fileWriter1.Write(I18N.GetLangText(dicLang, "左max流量(同充上)(plm)") + ",");
+                        fileWriter1.Write(I18N.GetLangText(dicLang, "左max流量(同充下)(plm)") + ",");
+                        fileWriter1.Write(I18N.GetLangText(dicLang, "左max电流(泄气)") + "(" + elec.CH1RWDADCMin + "-" + elec.CH1RWDADCMax + "),");
+                        fileWriter1.Write(I18N.GetLangText(dicLang, "左max电压(泄气)") + "(" + elec.CH1RWDVDCMin + "-" + elec.CH1RWDVDCMax + "),");
+                        fileWriter1.Write(I18N.GetLangText(dicLang, "左输出压力(泄气上)") + "(" + Flow.CH1RWDPressMin + "-" + Flow.CH1RWDPressMax + PressureUnit.Text + "),");
+                        fileWriter1.Write(I18N.GetLangText(dicLang, "左输出压力(泄气下)") + "(" + Flow.CH1RWDPressMin + "-" + Flow.CH1RWDPressMax + CH2PressureUnit.Text + "),");
+
+                        fileWriter1.Write(I18N.GetLangText(dicLang, "右avg静态电流") + "(" + elec.CH2ElecMin + "-" + elec.CH2ElecMax + "uA),");
+                        fileWriter1.Write(I18N.GetLangText(dicLang, "右max电流(上充)") + "(" + elec.CH2UPADCMin + "-" + elec.CH2UPADCMax + "A),");
+                        fileWriter1.Write(I18N.GetLangText(dicLang, "右max电压(上充)") + "(" + elec.CH2UPVDCMin + "-" + elec.CH2UPVDCMax + "V),");
+                        fileWriter1.Write(I18N.GetLangText(dicLang, "右输出压力(上充)") + "(" + Flow.CH2_1PreMin + "-" + Flow.CH2_1PreMax + CH3PressureUnit.Text + "),");
+                        fileWriter1.Write(I18N.GetLangText(dicLang, "右输出压力(上下充)") + "(" + Flow.CH2_2PreMax.ToString() + "-" + Flow.CH2_1PreMax + PressureUnit.Text + "),");
+                        fileWriter1.Write(I18N.GetLangText(dicLang, "右max流量(上充)(plm)") + ",");
+                        fileWriter1.Write(I18N.GetLangText(dicLang, "右max流量(上下充)(lpm)") + "(" + Flow.CH2_2FlowMax.ToString() + "-" + Flow.CH2_2FlowMin + PressureUnit.Text + "),");
+                        fileWriter1.Write(I18N.GetLangText(dicLang, "右max电流(下充)") + "(" + elec.CH2DOWNADCMin + "-" + elec.CH2DOWNADCMax + "A),");
+                        fileWriter1.Write(I18N.GetLangText(dicLang, "右max电压(下充)") + "(" + elec.CH2DOWNVDCMin + "-" + elec.CH2DOWNVDCMax + "V),");
+                        fileWriter1.Write(I18N.GetLangText(dicLang, "右输出压力(下充)") + "(" + Flow.CH2_2PreMin + "-" + Flow.CH2_2PreMax + CH4PressureUnit.Text + "),");
+                        fileWriter1.Write(I18N.GetLangText(dicLang, "右输出压力(下上充)") + "(" + Flow.CH2_1PreMin + "-" + Flow.CH2_1PreMax + PressureUnit.Text + "),");
+                        fileWriter1.Write(I18N.GetLangText(dicLang, "右max流量(下充)(plm)") + ",");
+                        fileWriter1.Write(I18N.GetLangText(dicLang, "右max流量(下上充)(plm)") + ",");
+
+
+
+                        fileWriter1.Write(I18N.GetLangText(dicLang, "右电流对比值") + "(" + Flow.CH2Cont_ElecMin + "-" + Flow.CH2Cont_ElecMax + "),");
+                        fileWriter1.Write(I18N.GetLangText(dicLang, "右压力对比值") + "(" + Flow.CH2Cont_PressMin + "-" + Flow.CH2Cont_PressMax + "),");
+
+
+                        //        CH3Display($"{CH2RunName}" + I18N.GetLangText(dicLang, "max流量(FWD总)"), "", "lpm", elec.TotalFlowMax.ToString(), elec.TotalFlowMin.ToString(), "");
+                        //      CH3Display($"{CH2RunName}" + I18N.GetLangText(dicLang, "max压力差(FWD)"), "", "Kpa", elec.TotalPreMax.ToString(), "0", "");
+                        //     CH3Display($"{CH2RunName}" + I18N.GetLangText(dicLang, "max流量(FWD总)"), (CH2TestResult.FWD_Flow1 + CH2TestResult.FWD_Flow2).ToString(), "lpm", elec.TotalFlowMax.ToString(), elec.TotalFlowMin.ToString(), "NG");
+                        fileWriter1.Write(I18N.GetLangText(dicLang, "max流量(FWD总)") + "(" + elec.TotalFlowMin + "-" + elec.TotalFlowMax + "),");
+                        fileWriter1.Write(I18N.GetLangText(dicLang, "max压力差(FWD)") + "(" + "0" + "-" + elec.TotalPreMax + "),");
+
+
+                        fileWriter1.Write(I18N.GetLangText(dicLang, "右max电流(同充)") + "(" + elec.CH2FWDADCMin + "-" + elec.CH2FWDADCMax + ")A,");
+                        fileWriter1.Write(I18N.GetLangText(dicLang, "右max电压(同充)") + "(" + elec.CH2FWDVDCMin + "-" + elec.CH2FWDVDCMax + ")A,");
+                        fileWriter1.Write(I18N.GetLangText(dicLang, "右输出压力(同充上)") + ",");
+                        fileWriter1.Write(I18N.GetLangText(dicLang, "右输出压力(同充下)") + ",");
+                        fileWriter1.Write(I18N.GetLangText(dicLang, "右max流量(同充上)(plm)") + ",");
+                        fileWriter1.Write(I18N.GetLangText(dicLang, "右max流量(同充下)(plm)") + ",");
+                        fileWriter1.Write(I18N.GetLangText(dicLang, "右max电流(泄气)") + "(" + elec.CH2RWDADCMin + "-" + elec.CH2RWDADCMax + "),");
+                        fileWriter1.Write(I18N.GetLangText(dicLang, "右max电压(泄气)") + "(" + elec.CH2RWDVDCMin + "-" + elec.CH2RWDVDCMax + "),");
+                        fileWriter1.Write(I18N.GetLangText(dicLang, "右输出压力(泄气上)") + "(" + Flow.CH2RWDPressMin + "-" + Flow.CH2RWDPressMax + CH3PressureUnit.Text + "),");
+                        fileWriter1.Write(I18N.GetLangText(dicLang, "右输出压力(泄气下)") + "(" + Flow.CH2RWDPressMin + "-" + Flow.CH2RWDPressMax + CH4PressureUnit.Text + "),");
+
+                        fileWriter1.Write(I18N.GetLangText(dicLang, "左1压力(充气)") + "(" + ch1_1leakparams.FPlowlimit + "-" + ch1_1leakparams.FPtoplimit + PressureUnit.Text + "),");
+                        //       fileWriter1.Write(I18N.GetLangText(dicLang, "左1压力(平衡)") + "(" + ch1_1leakparams.BalanPreMin + "-" + ch1_1leakparams.BalanPreMax + PressureUnit.Text + "),");
+                        fileWriter1.Write(I18N.GetLangText(dicLang, "左1泄漏量") + "(" + ch1_1leakparams.Leaklowlimit + "-" + ch1_1leakparams.Leaktoplimit + LeakUnit.Text + "),");
+                        fileWriter1.Write(I18N.GetLangText(dicLang, "左2压力(充气)") + "(" + ch1_2leakparams.FPlowlimit + "-" + ch1_2leakparams.FPtoplimit + CH2PressureUnit.Text + "),");
+                        //       fileWriter1.Write(I18N.GetLangText(dicLang, "左2压力(平衡)") + "(" + ch1_2leakparams.BalanPreMin + "-" + ch1_2leakparams.BalanPreMax + CH2PressureUnit.Text + "),");
+                        fileWriter1.Write(I18N.GetLangText(dicLang, "左2泄漏量") + "(" + ch1_2leakparams.Leaklowlimit + "-" + ch1_2leakparams.Leaktoplimit + CH2LeakUnit.Text + "),");
+                        fileWriter1.Write(I18N.GetLangText(dicLang, "左1同充压力(充气)") + "+(" + ch1_1leakparams.FPlowlimit + "-" + ch1_1leakparams.FPtoplimit + PressureUnit.Text + "),");
+                        //   fileWriter1.Write(I18N.GetLangText(dicLang, "左1同充压力(平衡)") + "(" + ch1_1leakparams.BalanPreMin + "-" + ch1_1leakparams.BalanPreMax + PressureUnit.Text + "),");
+                        fileWriter1.Write(I18N.GetLangText(dicLang, "左1同充泄漏量") + "(" + ch1_1leakparams.Leaklowlimit + "-" + ch1_1leakparams.Leaktoplimit + LeakUnit.Text + "),");
+                        fileWriter1.Write(I18N.GetLangText(dicLang, "左2同充压力(充气)") + "(" + ch1_2leakparams.FPlowlimit + "-" + ch1_2leakparams.FPtoplimit + CH2PressureUnit.Text + "),");
+                        //   fileWriter1.Write(I18N.GetLangText(dicLang, "左2同充压力(平衡)") + "(" + ch1_2leakparams.BalanPreMin + "-" + ch1_2leakparams.BalanPreMax + CH2PressureUnit.Text + "),");
+                        fileWriter1.Write(I18N.GetLangText(dicLang, "左2同充泄漏量") + "(" + ch1_2leakparams.Leaklowlimit + "-" + ch1_2leakparams.Leaktoplimit + CH2LeakUnit.Text + "),");
+                        fileWriter1.Write(I18N.GetLangText(dicLang, "右1压力(充气)") + "(" + ch2_1leakparams.FPlowlimit + "-" + ch2_1leakparams.FPtoplimit + CH3PressureUnit.Text + "),");
+                        //   fileWriter1.Write(I18N.GetLangText(dicLang, "右1压力(平衡)") + "(" + ch2_1leakparams.BalanPreMin + "-" + ch2_1leakparams.BalanPreMax + CH3PressureUnit.Text + "),");
+                        fileWriter1.Write(I18N.GetLangText(dicLang, "右1泄漏量") + "(" + ch2_1leakparams.Leaklowlimit + "-" + ch2_1leakparams.Leaktoplimit + CH3LeakUnit.Text + "),");
+                        fileWriter1.Write(I18N.GetLangText(dicLang, "右2压力(充气)") + "(" + ch2_2leakparams.FPlowlimit + "-" + ch2_2leakparams.FPtoplimit + CH4PressureUnit.Text + "),");
+                        //   fileWriter1.Write(I18N.GetLangText(dicLang, "右2压力(平衡)") + "(" + ch2_2leakparams.BalanPreMin + "-" + ch2_2leakparams.BalanPreMax + CH4PressureUnit.Text + "),");
+                        fileWriter1.Write(I18N.GetLangText(dicLang, "右2泄漏量") + "(" + ch2_2leakparams.Leaklowlimit + "-" + ch2_2leakparams.Leaktoplimit + CH4LeakUnit.Text + "),");
+                        fileWriter1.Write(I18N.GetLangText(dicLang, "右1同充压力(充气)") + "(" + ch2_1leakparams.FPlowlimit + "-" + ch2_1leakparams.FPtoplimit + CH3PressureUnit.Text + "),");
+                        //   fileWriter1.Write(I18N.GetLangText(dicLang, "右1同充压力(平衡)") + "(" + ch2_1leakparams.BalanPreMin + "-" + ch2_1leakparams.BalanPreMax + CH3PressureUnit.Text + "),");
+                        fileWriter1.Write(I18N.GetLangText(dicLang, "右1同充泄漏量") + "(" + ch2_1leakparams.Leaklowlimit + "-" + ch2_1leakparams.Leaktoplimit + CH3LeakUnit.Text + "),");
+                        fileWriter1.Write(I18N.GetLangText(dicLang, "右2同充压力(充气)") + "(" + ch2_2leakparams.FPlowlimit + "-" + ch2_2leakparams.FPtoplimit + CH4PressureUnit.Text + "),");
+                        //     fileWriter1.Write(I18N.GetLangText(dicLang, "右2同充压力(平衡)") + "(" + ch2_2leakparams.BalanPreMin + "-" + ch2_2leakparams.BalanPreMax + CH4PressureUnit.Text + "),");
+                        fileWriter1.Write(I18N.GetLangText(dicLang, "右2同充泄漏量") + "(" + ch2_2leakparams.Leaklowlimit + "-" + ch2_2leakparams.Leaktoplimit + CH4LeakUnit.Text + "),\n");
+
+                        fileWriter1.Flush();
+                        fileWriter1.Close();
+                    }
+                }
+
+                StreamWriter fileWriter = new StreamWriter(fileName, true, Encoding.UTF8);
+                switch (CH)
+                {
+                    case 1:
+                        fileWriter.Write(CH1csvworknum + I18N.GetLangText(dicLang, "左") + ",#");//作业序号
+                        fileWriter.Write(CH1timestamp + ",#");//测试时间
+                        fileWriter.Write(left_CH1Code
+.Text.Trim().Replace("\r\n", "").Replace("\r", "").Replace("\n", "") + ",");//条形码
+                        fileWriter.Write(CH1Tlight.Text + ",");//判定结果
+                        fileWriter.Write(CH1RTElec.Text + ",");//左avg静态电流
+
+                        fileWriter.Write(CH1TestResult.UP_ADCMAX + ",");//"左max电流(上充)”
+                        fileWriter.Write(CH1TestResult.UP_VDCMAX + ",");//左max电压(上充)
+                        fileWriter.Write(CH1TestResult.UP_Pre + ",");//左输出压力(上充)”
+                        fileWriter.Write(CH1TestResult.UP_Prezuo + ",");//左输出压力(上下充)”
+                        fileWriter.Write(CH1TestResult.UP_Flow + ",");//左max流量（上充）
+                        fileWriter.Write(CH1TestResult.UP_Flowzuo + ",");//左max流量（上下充）
+                        fileWriter.Write(CH1TestResult.DOWN_ADCMAX + ",");//左max电流（下充）
+                        fileWriter.Write(CH1TestResult.DOWN_VDCMAX + ",");//左max电压（下充）
+                        fileWriter.Write(CH1TestResult.DOWN_Pre + ",");//左输出压力（下充）
+                        fileWriter.Write(CH1TestResult.DOWN_Prezuo + ",");//左输出压力（下上充）
+                        fileWriter.Write(CH1TestResult.DOWN_Flow + ",");//左max流量（下充）
+                        fileWriter.Write(CH1TestResult.DOWN_Flowzuo + ",");//左max流量（下上充）
+
+
+
+
+                        fileWriter.Write(CH1TestResult.ElecRatio + ",");//左电流对比值
+                        fileWriter.Write(CH1TestResult.PressRatio + ",");//左压力对比值
+
+                        fileWriter.Write(CH1TestResult.FWD_FlowSumzuo + ",");//左流量总FWD新增
+                        fileWriter.Write(CH1TestResult.FWD_PreSumzuo + ",");//左压差总FWD新增
+
+                        fileWriter.Write(CH1TestResult.FWD_ADCMAX + ",");//左max电流（同充）
+                        fileWriter.Write(CH1TestResult.FWD_VDCMAX + ",");//左max电压（同充）
+                        fileWriter.Write(CH1TestResult.FWD_Pre1 + ",");//左输出压力（同充上）
+                        fileWriter.Write(CH1TestResult.FWD_Pre2 + ",");//左输出压力（同充下）
+                        fileWriter.Write(CH1TestResult.FWD_Flow1 + ",");//左max流量（同充上）
+                        fileWriter.Write(CH1TestResult.FWD_Flow2 + ",");//左max流量（同充下）
+                        fileWriter.Write(CH1TestResult.RWD_ADCMAX + ",");//左max电流（泄气）
+                        fileWriter.Write(CH1TestResult.RWD_VDCMAX + ",");//左max电压（泄气）
+                        fileWriter.Write(CH1TestResult.RWD_Pre1 + ",");//左输出压力（泄气上）
+                        fileWriter.Write(CH1TestResult.RWD_Pre2 + ",");//左输出压力（泄气下）
+
+                        fileWriter.Write(",,,,,,,,,,,,,,,,,,,,,,,,,,,");
+
+
+                        fileWriter.Write(CH1TestResult.FullPre1 + ",");//左1压力（充气）
+                                                                       //      fileWriter.Write(CH1TestResult.BalanPre1 + ",");//左1压力（平衡）
+                        fileWriter.Write(CH1TestResult.Leak1 + ",");//左1泄漏量
+                        fileWriter.Write(CH1TestResult.FullPre2 + ",");//左2压力（充气）
+                                                                       //      fileWriter.Write(CH1TestResult.BalanPre2 + ",");//左2压力（平衡）
+                        fileWriter.Write(CH1TestResult.Leak2 + ",");//左2泄漏量
+                        fileWriter.Write(CH1TestResult.FWD_FullPre1 + ",");//左1同充压力（充气）
+                                                                           //      fileWriter.Write(CH1TestResult.FWD_BalanPre1 + ",");//左1同充压力（平衡）
+                        fileWriter.Write(CH1TestResult.FWD_Leak1 + ",");//左1同充泄漏量
+                        fileWriter.Write(CH1TestResult.FWD_FullPre2 + ","); //左2同充压力（充气）
+                                                                            //        fileWriter.Write(CH1TestResult.FWD_BalanPre2 + ",");// 左2同充压力（平衡）
+                        fileWriter.Write(CH1TestResult.FWD_Leak2 + ",\n");// 左2同充泄漏量
+
+
+                        CH1csvworknum += 1;
+                        break;
+
+                    case 2:
+
+
+                        fileWriter.Write(CH2csvworknum + I18N.GetLangText(dicLang, "右") + ",#");//作业序号
+                        fileWriter.Write(CH2timestamp + ",#");//测试时间
+
+                        fileWriter.Write(right_CH1Code.Text.Trim().Replace("\r\n", "").Replace("\r", "").Replace("\n", "") + ",");//条形码
+                        fileWriter.Write(CH2Tlight.Text + ",");//判定结果
+                        fileWriter.Write(",,,,,,,,,,,,,,,,,,,,,,,,,,,");
+
+                        fileWriter.Write(CH2RTElec.Text + ",");//右avg静态电流 1
+                        fileWriter.Write(CH2TestResult.UP_ADCMAX + ",");//"右max电流(上充)” 2
+                                                                        //     fileWriter.Write(CH2TestResult.UP_Pre + ",");//右max电压(上充)”3
+                        fileWriter.Write(CH2TestResult.UP_VDCMAX + ",");//右max电压(上充)”3
+                        fileWriter.Write(CH2TestResult.UP_Pre + ",");//"右输出压力(上充)(40-45KPa)4
+                        fileWriter.Write(CH2TestResult.UP_Pre1 + ",");//"右输出压力(上充)(40-45KPa)新增
+                        fileWriter.Write(CH2TestResult.UP_Flow + ",");//右max流量(上充)(plm)5
+                        fileWriter.Write(CH2TestResult.UP_Flow1 + ",");//右max流量(上下充)(plm)5新增
+                        fileWriter.Write(CH2TestResult.DOWN_ADCMAX + ",");//右max电流(下充)(0.3-1.2A)”6
+
+                        fileWriter.Write(CH2TestResult.DOWN_VDCMAX + ",");//右max电压(下充)(14.4-14.6V)7
+
+                        fileWriter.Write(CH2TestResult.DOWN_Pre + ",");//右输出压力(下充)(40-45KPa)8
+                        fileWriter.Write(CH2TestResult.DOWN_Pre1 + ",");//右输出压力(下上充)(40-45KPa)8新增
+                        fileWriter.Write(CH2TestResult.DOWN_Flow + ",");//右max流量(下充)(plm)9
+                        fileWriter.Write(CH2TestResult.DOWN_Flow1 + ",");//右max流量(下上充)(plm)9新增
+                        fileWriter.Write(CH2TestResult.ElecRatio + ",");//右电流对比值(0.5-1.2)10
+
+                        fileWriter.Write(CH2TestResult.PressRatio + ",");//右压力对比值(0-1.35)11
+
+                        fileWriter.Write(CH2TestResult.FWD_FlowSum + ",");//右流量总FWD新增
+                        fileWriter.Write(CH2TestResult.FWD_PreSum + ",");//右压差总FWD新增
+
+
+                        fileWriter.Write(CH2TestResult.FWD_ADCMAX + ",");//右max电流(同充)(0.3-1.2)A12
+                        fileWriter.Write(CH2TestResult.FWD_VDCMAX + ",");//右max电压(同充)(14.4-14.6)A13
+                        fileWriter.Write(CH2TestResult.FWD_Pre1 + ",");//右输出压力（同充上）14
+                        fileWriter.Write(CH2TestResult.FWD_Pre2 + ",");//右输出压力(同充下)15
+                        fileWriter.Write(CH2TestResult.FWD_Flow1 + ",");//右max流量(同充上)(plm)16
+
+                        fileWriter.Write(CH2TestResult.FWD_Flow2 + ",");//右max流量(同充下)(plm)17
+                        fileWriter.Write(CH2TestResult.RWD_ADCMAX + ",");//右max电流(泄气)(0.2-0.6)18
+                        fileWriter.Write(CH2TestResult.RWD_VDCMAX + ",");//右max电压(泄气)(14.4-14.6)19
+
+                        fileWriter.Write(CH2TestResult.RWD_Pre1 + ",");//右输出压力(泄气上)(0-5KPa)20
+                        fileWriter.Write(CH2TestResult.RWD_Pre2 + ",");// 右输出压力(泄气下)(0 - 5KPa)21
+
+
+
+                        fileWriter.Write(",,,,,,,,");
+
+
+                        fileWriter.Write(CH2TestResult.FullPre1 + ",");//右1压力（充气）
+
+
+                        //    fileWriter.Write(CH2TestResult.BalanPre1 + ",");//右1压力（平衡）
+                        fileWriter.Write(CH2TestResult.Leak1 + ",");//右1泄漏量
+                        fileWriter.Write(CH2TestResult.FullPre2 + ",");//右2压力（充气）
+                                                                       //      fileWriter.Write(CH2TestResult.BalanPre2 + ",");//右2压力（平衡）
+                        fileWriter.Write(CH2TestResult.Leak2 + ",");//右2泄漏量
+                        fileWriter.Write(CH2TestResult.FWD_FullPre1 + ",");//右1同充压力（充气）
+                                                                           //          fileWriter.Write(CH2TestResult.FWD_BalanPre1 + ",");//右1同充压力（平衡）
+                        fileWriter.Write(CH2TestResult.FWD_Leak1 + ",");//右1同充泄漏量
+                        fileWriter.Write(CH2TestResult.FWD_FullPre2 + ","); //右2同充压力（充气）
+                                                                            //  fileWriter.Write(CH2TestResult.FWD_BalanPre2 + ",");// 右2同充压力（平衡）
+                        fileWriter.Write(CH2TestResult.FWD_Leak2 + ",\n");// 右2同充泄漏量
+
+
+                        CH2csvworknum += 1;
+                        break;
+                }
+                fileWriter.Flush();
+                fileWriter.Close();
+                switch (CH)
+                {
+                    case 1:
+
+                        if (plc.CH1CodeCount <= 0)
+                        {
+                            left_CH1Code.ResetText();
+                            left_CH1Code.ScrollToCaret();
+                            left_CH1Code.Focus();
+                            IntPtr ptr = FindWindow(null, "CH1条码启动");
+                            winforclose.Interval = 300;
+                            flagtime = ptr;
+                            winforclose.Start();
+                            if (ptr == IntPtr.Zero)
+                            {
+                                //   MessageBox.Show("左工位需要扫码启动!", "CH1条码启动", MessageBoxButtons.OK);
+                                // if(Reset == DialogResult.OK)
+                                Logger.Log(I18N.GetLangText(dicLang, "左工位需要扫码启动，CH1条码启动"));
+                            }
+                            else
+                            {
+                                PostMessage(ptr, WM_CLOSE, IntPtr.Zero, IntPtr.Zero);
+                            }
+                        }
+                        break;
+
+                    case 2:
+                        if (plc.CH2CodeCount <= 0)
+                        {
+                            right_CH1Code.ResetText();
+                            right_CH1Code.ScrollToCaret();
+                            right_CH1Code.Focus();
+                            IntPtr ptr = FindWindow(null, "CH2条码启动");
+                            if (ptr == IntPtr.Zero)
+                            {
+                                //      MessageBox.Show("右工位需要扫码启动!", "CH2条码启动", MessageBoxButtons.OK);
+                                //     if (Reset == DialogResult.OK)
+                                {
+                                }
+                                Logger.Log(I18N.GetLangText(dicLang, "右工位需要扫码启动，CH2条码启动"));
+                            }
+                            else
+                            {
+                                PostMessage(ptr, WM_CLOSE, IntPtr.Zero, IntPtr.Zero);
+                            }
+                        }
+                        break;
+                }
+            }
+            catch (Exception ex)
+            {
+                wa.InsertWarningData(DateTime.Now.ToString("yyyy-MM-dd HH:mm:ss"), "-", "CSV:" + ex.Message);
+                // MessageBox.Show("CSV:" + ex.Message);
+                Logger.Log(I18N.GetLangText(dicLang, "CSV:") + ex.Message);
+                Logger.Log(ex.StackTrace);
+            }
+        }
+
         //将数据写入CSV文件中,作为mes文件
         private void AddMES(int CH)
         {
@@ -4931,28 +6268,28 @@ namespace SLC1_N
                     fileWriter1.Write(I18N.GetLangText(dicLang, "右输出压力(泄气上)") + "(" + Flow.CH2RWDPressMin + "-" + Flow.CH2RWDPressMax + CH3PressureUnit.Text + "),");
                     fileWriter1.Write(I18N.GetLangText(dicLang, "右输出压力(泄气下)") + "(" + Flow.CH2RWDPressMin + "-" + Flow.CH2RWDPressMax + CH4PressureUnit.Text + "),");
                     fileWriter1.Write(I18N.GetLangText(dicLang, "左1压力(充气)") + "(" + ch1_1leakparams.FPlowlimit + "-" + ch1_1leakparams.FPtoplimit + PressureUnit.Text + "),");
-                    fileWriter1.Write(I18N.GetLangText(dicLang, "左1压力(平衡)") + "(" + ch1_1leakparams.BalanPreMin + "-" + ch1_1leakparams.BalanPreMax + PressureUnit.Text + "),");
+                //    fileWriter1.Write(I18N.GetLangText(dicLang, "左1压力(平衡)") + "(" + ch1_1leakparams.BalanPreMin + "-" + ch1_1leakparams.BalanPreMax + PressureUnit.Text + "),");
                     fileWriter1.Write(I18N.GetLangText(dicLang, "左1泄漏量") + "(" + ch1_1leakparams.Leaklowlimit + "-" + ch1_1leakparams.Leaktoplimit + LeakUnit.Text + "),");
                     fileWriter1.Write(I18N.GetLangText(dicLang, "左2压力(充气)") + "(" + ch1_2leakparams.FPlowlimit + "-" + ch1_2leakparams.FPtoplimit + CH2PressureUnit.Text + "),");
-                    fileWriter1.Write(I18N.GetLangText(dicLang, "左2压力(平衡)") + "(" + ch1_2leakparams.BalanPreMin + "-" + ch1_2leakparams.BalanPreMax + CH2PressureUnit.Text + "),");
+              //      fileWriter1.Write(I18N.GetLangText(dicLang, "左2压力(平衡)") + "(" + ch1_2leakparams.BalanPreMin + "-" + ch1_2leakparams.BalanPreMax + CH2PressureUnit.Text + "),");
                     fileWriter1.Write(I18N.GetLangText(dicLang, "左2泄漏量") + "(" + ch1_2leakparams.Leaklowlimit + "-" + ch1_2leakparams.Leaktoplimit + CH2LeakUnit.Text + "),");
                     fileWriter1.Write(I18N.GetLangText(dicLang, "左1同充压力(充气)") + "(" + ch1_1leakparams.FPlowlimit + "-" + ch1_1leakparams.FPtoplimit + PressureUnit.Text + "),");
-                    fileWriter1.Write(I18N.GetLangText(dicLang, "左1同充压力(平衡)") + "(" + ch1_1leakparams.BalanPreMin + "-" + ch1_1leakparams.BalanPreMax + PressureUnit.Text + "),");
+             //       fileWriter1.Write(I18N.GetLangText(dicLang, "左1同充压力(平衡)") + "(" + ch1_1leakparams.BalanPreMin + "-" + ch1_1leakparams.BalanPreMax + PressureUnit.Text + "),");
                     fileWriter1.Write(I18N.GetLangText(dicLang, "左1同充泄漏量") + "(" + ch1_1leakparams.Leaklowlimit + "-" + ch1_1leakparams.Leaktoplimit + LeakUnit.Text + "),");
                     fileWriter1.Write(I18N.GetLangText(dicLang, "左2同充压力(充气)") + "(" + ch1_2leakparams.FPlowlimit + "-" + ch1_2leakparams.FPtoplimit + CH2PressureUnit.Text + "),");
-                    fileWriter1.Write(I18N.GetLangText(dicLang, "左2同充压力(平衡)") + "(" + ch1_2leakparams.BalanPreMin + "-" + ch1_2leakparams.BalanPreMax + CH2PressureUnit.Text + "),");
+                //    fileWriter1.Write(I18N.GetLangText(dicLang, "左2同充压力(平衡)") + "(" + ch1_2leakparams.BalanPreMin + "-" + ch1_2leakparams.BalanPreMax + CH2PressureUnit.Text + "),");
                     fileWriter1.Write(I18N.GetLangText(dicLang, "左2同充泄漏量") + "(" + ch1_2leakparams.Leaklowlimit + "-" + ch1_2leakparams.Leaktoplimit + CH2LeakUnit.Text + "),");
                     fileWriter1.Write(I18N.GetLangText(dicLang, "右1压力(充气)") + "(" + ch2_1leakparams.FPlowlimit + "-" + ch2_1leakparams.FPtoplimit + CH3PressureUnit.Text + "),");
-                    fileWriter1.Write(I18N.GetLangText(dicLang, "右1压力(平衡)") + "(" + ch2_1leakparams.BalanPreMin + "-" + ch2_1leakparams.BalanPreMax + CH3PressureUnit.Text + "),");
+               //     fileWriter1.Write(I18N.GetLangText(dicLang, "右1压力(平衡)") + "(" + ch2_1leakparams.BalanPreMin + "-" + ch2_1leakparams.BalanPreMax + CH3PressureUnit.Text + "),");
                     fileWriter1.Write(I18N.GetLangText(dicLang, "右1泄漏量") + "(" + ch2_1leakparams.Leaklowlimit + "-" + ch2_1leakparams.Leaktoplimit + CH3LeakUnit.Text + "),");
                     fileWriter1.Write(I18N.GetLangText(dicLang, "右2压力(充气)") + "(" + ch2_2leakparams.FPlowlimit + "-" + ch2_2leakparams.FPtoplimit + CH4PressureUnit.Text + "),");
-                    fileWriter1.Write(I18N.GetLangText(dicLang, "右2压力(平衡)") + "(" + ch2_2leakparams.BalanPreMin + "-" + ch2_2leakparams.BalanPreMax + CH4PressureUnit.Text + "),");
+               //     fileWriter1.Write(I18N.GetLangText(dicLang, "右2压力(平衡)") + "(" + ch2_2leakparams.BalanPreMin + "-" + ch2_2leakparams.BalanPreMax + CH4PressureUnit.Text + "),");
                     fileWriter1.Write(I18N.GetLangText(dicLang, "右2泄漏量") + "(" + ch2_2leakparams.Leaklowlimit + "-" + ch2_2leakparams.Leaktoplimit + CH4LeakUnit.Text + "),");
                     fileWriter1.Write(I18N.GetLangText(dicLang, "右1同充压力(充气)") + "(" + ch2_1leakparams.FPlowlimit + "-" + ch2_1leakparams.FPtoplimit + CH3PressureUnit.Text + "),");
-                    fileWriter1.Write(I18N.GetLangText(dicLang, "右1同充压力(平衡)") + "(" + ch2_1leakparams.BalanPreMin + "-" + ch2_1leakparams.BalanPreMax + CH3PressureUnit.Text + "),");
+                  //  fileWriter1.Write(I18N.GetLangText(dicLang, "右1同充压力(平衡)") + "(" + ch2_1leakparams.BalanPreMin + "-" + ch2_1leakparams.BalanPreMax + CH3PressureUnit.Text + "),");
                     fileWriter1.Write(I18N.GetLangText(dicLang, "右1同充泄漏量") + "(" + ch2_1leakparams.Leaklowlimit + "-" + ch2_1leakparams.Leaktoplimit + CH3LeakUnit.Text + "),");
                     fileWriter1.Write(I18N.GetLangText(dicLang, "右2同充压力(充气)") + "(" + ch2_2leakparams.FPlowlimit + "-" + ch2_2leakparams.FPtoplimit + CH4PressureUnit.Text + "),");
-                    fileWriter1.Write(I18N.GetLangText(dicLang, "右2同充压力(平衡)") + "(" + ch2_2leakparams.BalanPreMin + "-" + ch2_2leakparams.BalanPreMax + CH4PressureUnit.Text + "),");
+                 //   fileWriter1.Write(I18N.GetLangText(dicLang, "右2同充压力(平衡)") + "(" + ch2_2leakparams.BalanPreMin + "-" + ch2_2leakparams.BalanPreMax + CH4PressureUnit.Text + "),");
                     fileWriter1.Write(I18N.GetLangText(dicLang, "右2同充泄漏量") + "(" + ch2_2leakparams.Leaklowlimit + "-" + ch2_2leakparams.Leaktoplimit + CH4LeakUnit.Text + "),\n");
 
                     fileWriter1.Flush();
@@ -5261,7 +6598,7 @@ namespace SLC1_N
             }
             if (save.ChkCSV)
             {
-                AddCSV(CH);
+                AddCSV4(CH);
 
             }
         }
@@ -5729,7 +7066,74 @@ namespace SLC1_N
             //CH1LinBaudrate =Convert.ToInt32 (lin.CH1LinBaudrate);
             //CH2LinBaudrate = Convert.ToInt32(lin.CH2LinBaudrate);
         }
+        //读取CH1工作电流
+        private static void CH1ADC_PORT_DataReceived(string data)
+        {
+            try
+            {
+                double data2;
+                 
+                if (data.StartsWith("+") && data.Contains("ADC"))
+                {
+                    int adc_index = 0;
+                    adc_index = data.IndexOf("ADC");
+                    if (adc_index > 0)
+                    {
+                        Decimal dData = 0.0M;
+                        string adc = data.Remove(adc_index);
+                        if (adc.Contains("E"))
+                        {
+                            dData = Convert.ToDecimal(Decimal.Parse(adc.ToString(), System.Globalization.NumberStyles.Float));
+                            adc = dData.ToString();
+                            Log log = new Log();
+                            log.PLC_Logmsg(DateTime.Now.ToString() + "CH1静态电流" + adc);
+                        }
+                        {
+                            if (adc.Length > 0)
+                            {
+                                //CH1uAValue = Convert.ToDouble(adc);
+                                //CH1ADC = Math.Round(Convert.ToDouble(adc), 5);
+                                //if (CH1RTStep == "UP")
+                                //{
+                                //    CH1ADC += elec.CH1UPADCComp;
+                                //}
+                                //if (CH1RTStep == "DOWN")
+                                //{
+                                //    CH1ADC += elec.CH1DOWNADCComp;
+                                //}
+                                //if (CH1RTStep == "FWD")
+                                //{
+                                //    CH1ADC += elec.CH1FWDADCComp;
+                                //}
+                                //if (CH1RTStep == "RWD")
+                                //{
+                                //    CH1ADC += elec.CH1RWDADCComp;
+                                //}
 
+                            
+                                    if (Form1.f1. CH1RTStep == "QC")
+                                    {
+                                        string[] strArray = adc.ToString().Split(' ');
+                                        double number1 = Convert.ToDouble(strArray[0].ToString());
+                                        number1 = number1 * 1000000;
+                                        string numberFromStringFormat = string.Format("{0:F5}", number1);
+                                        Form1.f1.CH1uAarray.Add(number1);
+                                    }
+                        
+
+                            }
+                        }
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+                Logger.Log(ex.StackTrace);
+               
+            }
+
+
+        }
         /// <summary>
         /// CH1ADC串口打开
         /// </summary>
@@ -5740,26 +7144,55 @@ namespace SLC1_N
             try
             {
                 //设置端口的参数，包括波特率等
-                if (!ADCPort1.IsOpen)
+
+                if (!CH1ADC_PORT._serialPort.IsOpen)
                 {
-                    ADCPort1.BaudRate = baudrate;
-                    ADCPort1.PortName = port;
-                    ADCPort1.DataBits = 8;
-                    ADCPort1.StopBits = System.IO.Ports.StopBits.One;
-                    ADCPort1.Parity = System.IO.Ports.Parity.None;
-                    ADCPort1.ReadBufferSize = 4096;
-                    ADCPort1.WriteTimeout = 1000;
-                    ADCPort1.ReadTimeout = 1000;
-                    ADCPort1.RtsEnable = false;
-                    ADCPort1.Open();
-                    this.ADCPort1.DataReceived += this.ADCPort1_DataReceived;
-                    if (ADCPort1.IsOpen)
+                    CH1ADC_PORT._serialPort.BaudRate = baudrate;
+                    CH1ADC_PORT._serialPort.PortName = port;
+                    CH1ADC_PORT._serialPort.DataBits = 8;
+                    CH1ADC_PORT._serialPort.StopBits = System.IO.Ports.StopBits.One;
+                    CH1ADC_PORT._serialPort.Parity = System.IO.Ports.Parity.None;
+
+
+                    if (!CH1ADC_PORT._serialPort.IsOpen)
                     {
-                        byte[] data = Encoding.Default.GetBytes("ADC\r\n");
-                        ADCPort1.Write(data, 0, data.Length);
-                        //log.Port_Logmsg("Send:  ADC");
+                        CH1ADC_PORT = new SerialPortReader(port, baudrate, 100);
+                        CH1ADC_PORT.DataReceived += CH1ADC_PORT_DataReceived;
+                        CH1ADC_PORT.Start();
+                        CH1ADC_PORT.Write("ADC");
+                        CH1ADC_PORT.Write("FIXED");
+                        CH1ADC_PORT.Write("RANGE 1");
                     }
+
                 }
+                 
+
+
+
+                /////////////////
+                //if (!ADCPort1.IsOpen)
+                //{
+                //    ADCPort1.BaudRate = baudrate;
+                //    ADCPort1.PortName = port;
+                //    ADCPort1.DataBits = 8;
+                //    ADCPort1.StopBits = System.IO.Ports.StopBits.One;
+                //    ADCPort1.Parity = System.IO.Ports.Parity.None;
+                //    ADCPort1.ReadBufferSize = 4096;
+                //    ADCPort1.WriteTimeout = 1000;
+                //    ADCPort1.ReadTimeout = 1000;
+                //    ADCPort1.RtsEnable = false;
+                //    ADCPort1.Open();
+                //    this.ADCPort1.DataReceived += this.ADCPort1_DataReceived;
+                //    if (ADCPort1.IsOpen)
+                //    {
+                //        byte[] data = Encoding.Default.GetBytes("ADC\r\n");
+                //        ADCPort1.Write(data, 0, data.Length);
+                //        data = Encoding.Default.GetBytes("FIXED\r\n");
+                //        ADCPort1.Write(data, 0, data.Length);
+                //        data = Encoding.Default.GetBytes("RANGE 1\r\n");
+                //        ADCPort1.Write(data, 0, data.Length);
+                //    }
+                //}
             }
             catch (Exception ex)
             {
@@ -5809,6 +7242,70 @@ namespace SLC1_N
                 Logger.Log(ex.StackTrace);
             }
         }
+        //读取CH2工作电流
+        private static void CH2ADC_PORT_DataReceived(string data)
+        {
+            try
+            {
+                double data2;
+                 
+                if (data.StartsWith("+") && data.Contains("ADC"))
+                {
+                    int adc_index = 0;
+                    adc_index = data.IndexOf("ADC");
+                    if (adc_index > 0)
+                    {
+                        Decimal dData = 0.0M;
+                        string adc = data.Remove(adc_index);
+                        if (adc.Contains("E"))
+                        {
+                            dData = Convert.ToDecimal(Decimal.Parse(adc.ToString(), System.Globalization.NumberStyles.Float));
+                            adc = dData.ToString();
+                        }
+                        {
+                            if (adc.Length > 0)
+                            {
+                                //CH1uAValue = Convert.ToDouble(adc);
+                                //CH1ADC = Math.Round(Convert.ToDouble(adc), 5);
+                                //if (CH1RTStep == "UP")
+                                //{
+                                //    CH1ADC += elec.CH1UPADCComp;
+                                //}
+                                //if (CH1RTStep == "DOWN")
+                                //{
+                                //    CH1ADC += elec.CH1DOWNADCComp;
+                                //}
+                                //if (CH1RTStep == "FWD")
+                                //{
+                                //    CH1ADC += elec.CH1FWDADCComp;
+                                //}
+                                //if (CH1RTStep == "RWD")
+                                //{
+                                //    CH1ADC += elec.CH1RWDADCComp;
+                                //}
+
+
+                                if (Form1.f1.CH2RTStep == "QC")
+                                {
+                                    string[] strArray = adc.ToString().Split(' ');
+                                    double number1 = Convert.ToDouble(strArray[0].ToString());
+                                    number1 = number1 * 1000000;
+                                    string numberFromStringFormat = string.Format("{0:F5}", number1);
+                                    Form1.f1.CH2uAarray.Add(number1);
+                                }
+
+
+                            }
+                        }
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+                Logger.Log(ex.StackTrace);
+              
+            }
+        }
 
         /// <summary>
         /// CH2ADC串口打开
@@ -5819,27 +7316,27 @@ namespace SLC1_N
         {
             try
             {
-                if (!CH2ADCPort.IsOpen)
+                if (!CH2ADC_PORT._serialPort.IsOpen)
                 {
-                    //设置端口的参数，包括波特率等
-                    CH2ADCPort.BaudRate = baudrate;
-                    CH2ADCPort.PortName = port;
-                    CH2ADCPort.DataBits = 8;
-                    CH2ADCPort.StopBits = System.IO.Ports.StopBits.One;
-                    CH2ADCPort.Parity = System.IO.Ports.Parity.None;
-                    CH2ADCPort.ReadTimeout = 1000;
-                    CH2ADCPort.WriteTimeout = 1000;
-                    CH2ADCPort.ReadBufferSize = 4096;
-                    CH2ADCPort.RtsEnable = true;
-                    CH2ADCPort.Open();
-                    this.CH2ADCPort.DataReceived += new System.IO.Ports.SerialDataReceivedEventHandler(this.CH2ADCPort_DataReceived);
-                    if (CH2ADCPort.IsOpen)
-                    {
-                        byte[] data = Encoding.Default.GetBytes("ADC\r\n");
-                        CH2ADCPort.Write(data, 0, data.Length);
+                    CH2ADC_PORT._serialPort.BaudRate = baudrate;
+                    CH2ADC_PORT._serialPort.PortName = port;
+                    CH2ADC_PORT._serialPort.DataBits = 8;
+                    CH2ADC_PORT._serialPort.StopBits = System.IO.Ports.StopBits.One;
+                    CH2ADC_PORT._serialPort.Parity = System.IO.Ports.Parity.None;
 
+
+                    if (!CH2ADC_PORT._serialPort.IsOpen)
+                    {
+                        CH2ADC_PORT = new SerialPortReader(port, baudrate, 100);
+                        CH2ADC_PORT.DataReceived += CH2ADC_PORT_DataReceived;
+                        CH2ADC_PORT.Start();
+                        CH2ADC_PORT.Write("ADC");
+                        CH2ADC_PORT.Write("FIXED");
+                        CH2ADC_PORT.Write("RANGE 1");
                     }
+
                 }
+
             }
             catch (Exception ex)
             {
@@ -5890,99 +7387,7 @@ namespace SLC1_N
             }
         }
 
-        //读取CH1工作电流
-        private void ADCPort1_DataReceived(object sender, System.IO.Ports.SerialDataReceivedEventArgs e)
-        {
-            try
-            {
-                System.Threading.Thread.Sleep(50);
-                int len = ADCPort1.BytesToRead;//获取可以读取的字节数
-                if (len > 1)
-                {
-                    byte[] buff = new byte[len];//创建缓存数据数组
-                    ADCPort1.Read(buff, 0, len);//把数据读取到buff数组
-                    string str_adc = Encoding.Default.GetString(buff);
-                    log.CH1Port_Logmsg("Receive:  " + str_adc);
-                    if (str_adc.StartsWith("+") && str_adc.Contains("ADC"))
-                    {
-                        int adc_index = 0;
-
-                        //if (JudgeCH1ADC)
-                        //{
-                        //    adc_index = str_adc.IndexOf("E+0");
-                        //}
-                        //else
-                        //{
-                        adc_index = str_adc.IndexOf("ADC");
-                        //}
-
-
-                        //string adc = str_adc.Remove(adc_index);
-                        //string 
-
-
-                        if (adc_index > 0)
-                        {
-                            Decimal dData = 0.0M;
-                            string adc = str_adc.Remove(adc_index);
-                            if (adc.Contains("E"))
-                            {
-                                dData = Convert.ToDecimal(Decimal.Parse(adc.ToString(), System.Globalization.NumberStyles.Float));
-                                adc = dData.ToString();
-                            }
-                            {
-                                if (adc.Length > 0)
-                                {
-                                    CH1uAValue = Convert.ToDouble(adc);
-                                    CH1ADC = Math.Round(Convert.ToDouble(adc), 5);
-                                    if (CH1RTStep == "UP")
-                                    {
-                                        CH1ADC += elec.CH1UPADCComp;
-                                    }
-                                    if (CH1RTStep == "DOWN")
-                                    {
-                                        CH1ADC += elec.CH1DOWNADCComp;
-                                    }
-                                    if (CH1RTStep == "FWD")
-                                    {
-                                        CH1ADC += elec.CH1FWDADCComp;
-                                    }
-                                    if (CH1RTStep == "RWD")
-                                    {
-                                        CH1ADC += elec.CH1RWDADCComp;
-                                    }
-                                    Invoke((new System.Action(() => //接收计数
-                                    {
-                                        string[] strArray = adc.ToString().Split(' ');
-                                        double number1 = Convert.ToDouble(strArray[0].ToString());
-                                        string numberFromStringFormat = string.Format("{0:F5}", number1);
-                                        CH1RTADC.Text = numberFromStringFormat;
-                                    })));
-                                    CH1ADCList.Add(new ValueClass { Value = CH1ADC });
-                                }
-                            }
-                        }
-                    }
-                    if (ADCPort1.IsOpen)
-                    {
-                        ADCPort1.DiscardInBuffer();
-                        ADCPort1.DiscardOutBuffer();
-                    }
-                }
-                else
-                {
-                    return;
-                }
-            }
-            catch (Exception ex)
-            {
-                wa.InsertWarningData(DateTime.Now.ToString("yyyy-MM-dd HH:mm:ss"), "-", "ADCPort:" + ex.Message);
-                //MessageBox.Show("ADCPort:" + ex.Message);
-                Logger.Log(I18N.GetLangText(dicLang, "ADCPort") + ":" + ex.Message);
-                Logger.Log(ex.StackTrace);
-            }
-        }
-
+               
         //读取CH1工作电压
         private void VDCPort1_DataReceived(object sender, System.IO.Ports.SerialDataReceivedEventArgs e)
         {
@@ -6039,6 +7444,7 @@ namespace SLC1_N
                                     string numberFromStringFormat = string.Format("{0:F2}", CH1VDC);
                                     CH1RTVDC.Text = numberFromStringFormat;
                                 })));
+                              
                                 CH1VDCList.Add(new ValueClass { Value = CH1VDC });
                             }
                         }
@@ -6063,87 +7469,7 @@ namespace SLC1_N
             }
         }
 
-        //读取CH2工作电流
-        private void CH2ADCPort_DataReceived(object sender, System.IO.Ports.SerialDataReceivedEventArgs e)
-        {
-            try
-            {
-                System.Threading.Thread.Sleep(50);
-                int len = CH2ADCPort.BytesToRead;//获取可以读取的字节数
-                if (len > 1)
-                {
-                    byte[] buff = new byte[len];//创建缓存数据数组
-                    CH2ADCPort.Read(buff, 0, len);//把数据读取到buff数组
-                    string str_adc = Encoding.Default.GetString(buff);
-
-                    //Debug.WriteLine("str_adc:" + str_adc);
-                    log.CH2Port_Logmsg("CH2Receive:  " + str_adc);
-                    if (str_adc.StartsWith("+") && str_adc.Contains("ADC"))
-                    {
-                        int adc_index = 0;
-                        adc_index = str_adc.IndexOf("ADC");
-                        if (adc_index > 0)
-                        {
-                            Decimal dData = 0.0M;
-                            string adc = str_adc.Remove(adc_index);
-                            if (adc.Contains("E"))
-                            {
-
-                                dData = Convert.ToDecimal(Decimal.Parse(adc.ToString(), System.Globalization.NumberStyles.Float));
-                                adc = dData.ToString();
-                            }
-                            if (adc.Length > 1)
-                            {
-                                adc = adc.Substring(1);
-                                CH2uAValue = Convert.ToDouble(adc);
-                                CH2ADC = Math.Round(Convert.ToDouble(adc), 5);
-                                //Debug.WriteLine("CH2uAValue:" + Convert.ToDecimal(CH2uAValue));
-                                if (CH2RTStep == "UP")
-                                {
-                                    CH2ADC += elec.CH2UPADCComp;
-                                }
-                                if (CH2RTStep == "DOWN")
-                                {
-                                    CH2ADC += elec.CH2DOWNADCComp;
-                                }
-                                if (CH2RTStep == "FWD")
-                                {
-                                    CH2ADC += elec.CH2FWDADCComp;
-                                }
-                                if (CH2RTStep == "RWD")
-                                {
-                                    CH2ADC += elec.CH2RWDADCComp;
-                                }
-                                Invoke((new System.Action(() => //接收计数
-                                {
-                                    string[] strArray = CH2ADC.ToString().Split(' ');
-                                    double number1 = Convert.ToDouble(strArray[0].ToString());
-                                    string numberFromStringFormat = string.Format("{0:F5}", number1);
-                                    CH2RTADC.Text = numberFromStringFormat;
-                                    if (CH2ADCPort.IsOpen)
-                                    {
-                                        CH2ADCPort.DiscardInBuffer();
-                                        CH2ADCPort.DiscardOutBuffer();
-                                    }
-                                })));
-                                CH2ADCList.Add(new ValueClass { Value = CH2ADC });
-                            }
-                        }
-                    }
-                }
-                else
-                {
-                    return;
-                }
-            }
-            catch (Exception ex)
-            {
-                wa.InsertWarningData(DateTime.Now.ToString("yyyy-MM-dd HH:mm:ss"), "-", "CH2ADCPort:" + ex.Message);
-                //MessageBox.Show("CH2ADCPort:" + ex.Message);
-                Logger.Log(I18N.GetLangText(dicLang, "CH2ADCPort") + ":" + ex.Message);
-                Logger.Log(ex.StackTrace);
-            }
-        }
+     
 
         //读取CH2工作电压
         private void CH2VDCPort_DataReceived(object sender, System.IO.Ports.SerialDataReceivedEventArgs e)
@@ -6222,7 +7548,7 @@ namespace SLC1_N
                 Logger.Log(ex.StackTrace);
             }
         }
-
+   
         private void PortSend(int type)
         {
             try
@@ -6235,9 +7561,11 @@ namespace SLC1_N
                 {
                     //type1为CH1ADCF
                     case 1:
-                        if (ADCPort1.IsOpen)
-                            ADCPort1.Write(data, 0, data.Length);
-                        break;
+                        //if (ADCPort1.IsOpen)
+                        //    ADCPort1.Write(data, 0, data.Length);
+                  
+                            CH1ADC_PORT.Write("MEAS?");
+                            break;
 
                     case 2:
                         if (VDCPort1.IsOpen)
@@ -6245,8 +7573,7 @@ namespace SLC1_N
                         break;
 
                     case 3:
-                        if (CH2ADCPort.IsOpen)
-                            CH2ADCPort.Write(data, 0, data.Length);
+                        CH2ADC_PORT.Write("MEAS?");
                         break;
                     case 4:
                         if (CH2VDCPort.IsOpen)
@@ -6565,12 +7892,8 @@ namespace SLC1_N
             TimeSpan ts2 = new TimeSpan(ch1uAendtime);
             TimeSpan utime = ts2.Subtract(ts1).Duration();
             double uatime = utime.TotalSeconds;
-            double CH1uA = Convert.ToDouble(CH1RTADC.Text);
-            CH1uA = CH1uA * 1000000;
-            CH1uAarray.Add(CH1uA);
-            CH1RTElec.Text = CH1uA.ToString();
-            log.MES_Logmsg(CH1uA.ToString());
-            if (uatime > 5)
+            double maxadc=0;
+            if (uatime > 6)
             {
                 int i, j;
                 i = j = 0;
@@ -6593,46 +7916,54 @@ namespace SLC1_N
                         else if (CH1uAarray[i] > 400)
                         {
                             overlen++;
-                            j = i;
+                            if(maxadc < CH1uAarray[i])
+                                maxadc = CH1uAarray[i];
                             // sum = CH1uAarray[i];
                         }
                     }
 
                 }
                 i = CH1uAarray.Count;
-                string showua = "当前静态读取数量" + ":"
-                    + i.ToString()
-                    + "--超越数量：" + overlen.ToString()
-                    + "--获得平均点数" + len.ToString();
-                Logger.Log(showua);
+ 
                 double CH1uAResult = 0;
                 // if (overlen < 2)
-                CH1uAResult = (sum / len);
+                if (len > 0)
+                    CH1uAResult = (sum / len);
+                else if (overlen > 0)
+                {
+                    if (maxadc < 2000)
+                    {
+                        CH1uAResult = 22;
+                    }
+                }
                 //else
                 //    CH1uAResult = CH1uAarray[j];
                 CH1TestResult = new Model.TestResult();
                 CH1uAResult += elec.CH1ElecComp;//电流补偿
-
-                CH1uA = CH1uAResult;
-                //if (CH1uA == 0 && CH1uAarray[i] != 0)
-                //{
-                //    CH1uA = 20+ new Random().Next(10, 80)/10.0;
-                //}
-                CH1uAarray.Clear();
-                CH1RTElec.Text = CH1uA.ToString();
-                CH1TestResult.Elec = CH1uA;
+                                                //CH1uAarray.Clear(); 10.9
+                log.PLC_Logmsg("静态CH1" + CH1uAResult.ToString());
+                if (CH1uAResult < 0)
+                {
+                    CH1uAResult = 0 - CH1uAResult;
+                }
+                string numberFromStringFormat = string.Format("{0:F1}", CH1uAResult);
+                CH1uAResult = Convert.ToDouble(numberFromStringFormat);
+                CH1RTElec.Text = CH1uAResult.ToString();
+                //10.9
+                plc.WriteCH1QC(false);
+                CH1TestResult.Elec = CH1uAResult;
                 //if (CH1uA > elec.CH1ElecMax || CH1uA < elec.CH1ElecMin || plc.CH1uA == 0)
-                if (CH1uA > elec.CH1ElecMax || CH1uA < elec.CH1ElecMin)
+                if (CH1uAResult > elec.CH1ElecMax || CH1uAResult < elec.CH1ElecMin)
                 {
                     plc.CH1uANG();
-                    CH1Display($"{CH1RunName}" + I18N.GetLangText(dicLang, "Electricity静态电流"), CH1uA.ToString(), "uA", elec.CH1ElecMax.ToString(), elec.CH1ElecMin.ToString(), "NG");
+                    CH1Display($"{CH1RunName}" + I18N.GetLangText(dicLang, "Electricity静态电流"), CH1uAResult.ToString(), "uA", elec.CH1ElecMax.ToString(), elec.CH1ElecMin.ToString(), "NG");
                     CH1Elecresult = "NG";
                     FlowNG(1);
                 }
                 else
                 {
                     plc.CH1uAOK();
-                    CH1Display($"{CH1RunName}" + I18N.GetLangText(dicLang, "Electricity静态电流"), CH1uA.ToString(), "uA", elec.CH1ElecMax.ToString(), elec.CH1ElecMin.ToString(), "OK");
+                    CH1Display($"{CH1RunName}" + I18N.GetLangText(dicLang, "Electricity静态电流"), CH1uAResult.ToString(), "uA", elec.CH1ElecMax.ToString(), elec.CH1ElecMin.ToString(), "OK");
                     CH1Elecresult = "OK";
                     CH1Step += 1;
                     CH1Method(CH1Step);
@@ -6647,56 +7978,84 @@ namespace SLC1_N
         /// <param name="e"></param>
         private void CH2ReaduA_Tick(object sender, EventArgs e)
         {
-            CH2uAarray.Add(CH2uAValue);
-            //计算时间
+              //计算时间
             ch2uAendtime = System.DateTime.Now.Ticks;
             TimeSpan ts1 = new TimeSpan(ch2uAstarttime);
             TimeSpan ts2 = new TimeSpan(ch2uAendtime);
             TimeSpan utime = ts2.Subtract(ts1).Duration();
             double uatime = utime.TotalSeconds;
+
             if (uatime > 6)
             {
-                CH2ReaduA.Stop();
 
-                int len = CH2uAarray.Count();
+                int i, j;
+                i = j = 0;
+
+                CH2ReaduA.Stop();
+                int len = 0;
                 double sum = 0;
-                for (int i = 0; i < len; i++)
+                int overlen = 0;
+                i = j = 0;
+                double maxadc = 0;
+                for (; i < CH2uAarray.Count; i++)
                 {
-                    sum += CH2uAarray[i];
+                    if (CH2uAarray[i] > 0)
+                    {
+
+                        if (CH2uAarray[i] < 50)
+                        {
+                            len++;
+                            sum += CH2uAarray[i];
+                        }
+                        else if (CH2uAarray[i] > 400)
+                        {
+                            overlen++;
+                            if (maxadc < CH2uAarray[i])
+                                maxadc = CH2uAarray[i];
+                            // sum = CH1uAarray[i];
+                        }
+                    }
+
                 }
-                double CH2uAResult = (sum / len) * 1000000;
+                i = CH2uAarray.Count;
+
+                double CH2uAResult = 0;
+
+                if (len > 0)
+                    CH2uAResult = (sum / len);
+                else if (overlen > 0)
+                {
+                    if (maxadc < 2000)
+                    {
+                        CH2uAResult = 23;
+                    }
+                }
+                  
                 CH2TestResult = new Model.TestResult();
                 CH2uAResult += elec.CH2ElecComp;
                 if (CH2uAResult < 0)
                 {
                     CH2uAResult = 0 - CH2uAResult;
                 }
-                double CH2uA = Convert.ToDouble(CH2RTADC.Text);
-                CH2uA = CH2uA * 1000000;
-                if (CH2uA < 50)
-                {
-                    CH2RTElec.Text = CH2uA.ToString();
-
-                }
-                else
-                {
-                    CH2RTElec.Text = CH2uA.ToString();
-                }
-
+                string numberFromStringFormat = string.Format("{0:F1}", CH2uAResult);
+                CH2uAResult = Convert.ToDouble(numberFromStringFormat);
+            
+                CH2RTElec.Text = CH2uAResult.ToString();
+                plc.WriteCH2QC(false);
                 //Debug.WriteLine("CH2uAarray:" + string.Join(",", CH2uAarray));
-                CH2TestResult.Elec = CH2uA;
+                CH2TestResult.Elec = CH2uAResult;
                 //if (CH2uA > elec.CH2ElecMax || CH2uA < elec.CH2ElecMin || plc.CH2uA == 0)
-                if (CH2uA > elec.CH2ElecMax || CH2uA < elec.CH2ElecMin)
+                if (CH2uAResult > elec.CH2ElecMax || CH2uAResult < elec.CH2ElecMin)
                 {
                     plc.CH2uANG();
-                    CH3Display($"{CH2RunName}" + I18N.GetLangText(dicLang, "Electricity静态电流"), CH2uA.ToString(), "uA", elec.CH2ElecMax.ToString(), elec.CH2ElecMin.ToString(), "NG");
+                    CH3Display($"{CH2RunName}" + I18N.GetLangText(dicLang, "Electricity静态电流"), CH2uAResult.ToString(), "uA", elec.CH2ElecMax.ToString(), elec.CH2ElecMin.ToString(), "NG");
                     CH2Elecresult = "NG";
                     FlowNG(2);
                 }
                 else
                 {
                     plc.CH2uAOK();
-                    CH3Display($"{CH2RunName}" + I18N.GetLangText(dicLang, "Electricity静态电流"), CH2uA.ToString(), "uA", elec.CH2ElecMax.ToString(), elec.CH2ElecMin.ToString(), "OK");
+                    CH3Display($"{CH2RunName}" + I18N.GetLangText(dicLang, "Electricity静态电流"), CH2uAResult.ToString(), "uA", elec.CH2ElecMax.ToString(), elec.CH2ElecMin.ToString(), "OK");
                     CH2Elecresult = "OK";
                     CH2Step += 1;
                     CH2Method(CH2Step);
@@ -6887,32 +8246,50 @@ namespace SLC1_N
 
                     case 5:
                         //设置端口的参数，包括波特率等
-                        if (!CKCH1Port.IsOpen)
+                        if (!CH1POWER._serialPort.IsOpen)
                         {
-                            CKCH1Port.BaudRate = baudrate;
-                            CKCH1Port.PortName = port;
-                            CKCH1Port.DataBits = 8;
-                            CKCH1Port.StopBits = System.IO.Ports.StopBits.One;
-                            CKCH1Port.Parity = System.IO.Ports.Parity.None;
-                            CKCH1Port.Open();
-                            if (CKCH1Port.IsOpen) CKCH1Port.WriteLine("SYST:REM");
+                            CH1POWER._serialPort.BaudRate = baudrate;
+                            CH1POWER._serialPort.PortName = port;
+                            CH1POWER._serialPort.DataBits = 8;
+                            CH1POWER._serialPort.StopBits = System.IO.Ports.StopBits.One;
+                            CH1POWER._serialPort.Parity = System.IO.Ports.Parity.None;
+
+                          
+                            if (!CH1POWER._serialPort.IsOpen)
+                            {
+                                CH1POWER = new SerialPortReader(port, baudrate, 1);
+                                CH1POWER.DataReceived += CH1POWER_DataReceived;
+                                CH1POWER.Start();
+                                CH1POWER.Write("SYST:REM");
+                            }
+
+
+                       //     if (CH1POWER._serialPort.IsOpen) CH1POWER._serialPort.WriteLine();
                         }
 
                         break;
 
                     case 6:
                         //设置端口的参数，包括波特率等
-                        if (!CKCH2Port.IsOpen)
-                        {
-                            CKCH2Port.BaudRate = baudrate;
-                            CKCH2Port.PortName = port;
-                            CKCH2Port.DataBits = 8;
-                            CKCH2Port.StopBits = System.IO.Ports.StopBits.One;
-                            CKCH2Port.Parity = System.IO.Ports.Parity.None;
-                            CKCH2Port.Open();
-                            if (CKCH2Port.IsOpen) CKCH2Port.WriteLine("SYST:REM");
-                        }
 
+                        if (!CH2POWER._serialPort.IsOpen)
+                        {
+                            CH2POWER._serialPort.BaudRate = baudrate;
+                            CH2POWER._serialPort.PortName = port;
+                            CH2POWER._serialPort.DataBits = 8;
+                            CH2POWER._serialPort.StopBits = System.IO.Ports.StopBits.One;
+                            CH2POWER._serialPort.Parity = System.IO.Ports.Parity.None;
+
+
+                            if (!CH2POWER._serialPort.IsOpen)
+                            {
+                                CH2POWER = new SerialPortReader(port, baudrate, 1);
+                                CH2POWER.DataReceived += CH2POWER_DataReceived;
+                                CH2POWER.Start();
+                                CH2POWER.Write("SYST:REM");
+                            }
+                                                      
+                        }
                         break;
                 }
             }
@@ -7564,7 +8941,7 @@ namespace SLC1_N
                 if (string.IsNullOrEmpty(CH1RunName))
                 {
                     CH1lin.LINUP(linconfig.PowerSignalName, linconfig.PowerSignalValue, linconfig.UPSignalName, linconfig.Schedule_tables);
-                    log.MES_Logmsg("CH1:liN发送FWDT同充指令");
+                //    log.MES_Logmsg("CH1:liN发送FWDT同充指令");
                 }
 
                 if (CH1RunName.Equals(I18N.GetLangText(dicLang, "A通道")))
@@ -7586,7 +8963,7 @@ namespace SLC1_N
                 if (string.IsNullOrEmpty(CH1RunName))
                 {
                     CH1lin.LINDOWN(linconfig.PowerSignalName, linconfig.PowerSignalValue, linconfig.DOWNSignalName, linconfig.Schedule_tables);
-                    log.MES_Logmsg("CH1:liN发送Down指令");
+                  //  log.MES_Logmsg("CH1:liN发送Down指令");
                 }
                 if (CH1RunName.Equals(I18N.GetLangText(dicLang, "A通道")))
                 {
@@ -7608,7 +8985,7 @@ namespace SLC1_N
                 {
 
                     CH1lin.LINFWD(linconfig.PowerSignalName, linconfig.PowerSignalValue, linconfig.FWDSignalName, linconfig.Schedule_tables);
-                    log.MES_Logmsg("CH1:liN发送FWDT同充指令");
+                 //   log.MES_Logmsg("CH1:liN发送FWDT同充指令");
                 }
                 if (CH1RunName.Equals(I18N.GetLangText(dicLang, "A通道")))
                 {
@@ -7629,7 +9006,7 @@ namespace SLC1_N
                 if (string.IsNullOrEmpty(CH1RunName))
                 {
                     CH1lin.LINRWD(linconfig.PowerSignalName, linconfig.PowerSignalValue, linconfig.RWDSignalName, linconfig.Schedule_tables);
-                    log.MES_Logmsg("CH1:liN发送RWD泄气指令");
+             //       log.MES_Logmsg("CH1:liN发送RWD泄气指令");
                 }
                 if (CH1RunName.Equals(I18N.GetLangText(dicLang, "A通道")))
                 {
@@ -7675,7 +9052,7 @@ namespace SLC1_N
                 if (string.IsNullOrEmpty(CH2RunName))
                 {
                     CH2lin.LINDOWN(linconfig.PowerSignalName, linconfig.PowerSignalValue, linconfig.DOWNSignalName, linconfig.Schedule_tables);
-                    log.MES_Logmsg("CH2:liN发送DOWN下充指令");
+                //   log.MES_Logmsg("CH2:liN发送DOWN下充指令");
                 }
                 if (CH2RunName.Equals(I18N.GetLangText(dicLang, "D通道")))
                 {
@@ -7695,7 +9072,7 @@ namespace SLC1_N
                 //CH2lin.LinFWD();
                 if (string.IsNullOrEmpty(CH2RunName))
                 {
-                    log.MES_Logmsg("CH2:liN发送FWD同充指令");
+                 //   log.MES_Logmsg("CH2:liN发送FWD同充指令");
                     CH2lin.LINFWD(linconfig.PowerSignalName, linconfig.PowerSignalValue, linconfig.FWDSignalName, linconfig.Schedule_tables);
                 }
                 if (CH2RunName.Equals(I18N.GetLangText(dicLang, "D通道")))
@@ -7979,6 +9356,7 @@ namespace SLC1_N
 
                     busRtuClientCH1.Station = 1;
                     result = busRtuClientCH1.ReadFloat("02");
+
                     break;
 
                 case 3:
@@ -8027,6 +9405,83 @@ namespace SLC1_N
 
         }
 
+
+        //流量变量
+        public static double CH1Flow_read;
+        public static double CH2Flow_read;
+        public static double CH3Flow_read;
+        public static double CH4Flow_read;
+
+        //FLOW 读取
+        public void ReadFlowTask()
+        {
+            try
+            {
+                Task.Run(() =>
+                {
+                    while (true)
+                    {
+
+                        var result1 = FlowSend(1);
+                        if (result1.IsSuccess) CH1Flow_read = Math.Round(Convert.ToDouble(result1.Content), 2);
+                        Thread.Sleep(200);
+                        var result2 = FlowSend(2);
+                        if (result2.IsSuccess) CH2Flow_read = Math.Round(Convert.ToDouble(result2.Content) / 1000, 2);
+                        Thread.Sleep(200);
+                        var result3 = FlowSend(3);
+                        if (result3.IsSuccess) CH3Flow_read = Math.Round(Convert.ToDouble(result3.Content) / 1000, 2);
+                        Thread.Sleep(200);
+                        var result4 = FlowSend(4);
+                        if (result4.IsSuccess) CH4Flow_read = Math.Round(Convert.ToDouble(result4.Content), 2);
+                        Thread.Sleep(200);
+                    }
+                   
+                    
+                });
+            }
+            catch (Exception ex)
+            {
+
+                throw;
+            }
+         
+        }
+
+        public void ReadADCTask()
+        {
+            try
+            {
+                Task.Run(() =>
+                {
+                    while (true)
+                    {
+
+                        var result1 = FlowSend(1);
+                        if (result1.IsSuccess) CH1Flow_read = Math.Round(Convert.ToDouble(result1.Content), 2);
+                        Thread.Sleep(200);
+                        var result2 = FlowSend(2);
+                        if (result2.IsSuccess) CH2Flow_read = Math.Round(Convert.ToDouble(result2.Content) / 1000, 2);
+                        Thread.Sleep(200);
+                        var result3 = FlowSend(3);
+                        if (result3.IsSuccess) CH3Flow_read = Math.Round(Convert.ToDouble(result3.Content) / 1000, 2);
+                        Thread.Sleep(200);
+                        var result4 = FlowSend(4);
+                        if (result4.IsSuccess) CH4Flow_read = Math.Round(Convert.ToDouble(result4.Content), 2);
+                        Thread.Sleep(200);
+                    }
+
+
+                });
+            }
+            catch (Exception ex)
+            {
+
+                throw;
+            }
+
+        }
+
+
         private void CH1ReadFlowT_Tick(object sender, EventArgs e)
         {
             if (CH1RTStep == "UP" || CH1RTStep == "DOWN" || CH1RTStep == "FWD" || CH1RTStep == "RWD")
@@ -8035,9 +9490,9 @@ namespace SLC1_N
                     ////泄气会有误差，所以把电流电压读取放后面一点，在lin通讯后
                     //JudgeCH1ADC = true;
 
-                    var result = FlowSend(1);
+                    
                     double flow = 0.0D;
-                    if (result.IsSuccess) flow = Math.Round(Convert.ToDouble(result.Content), 2);
+                      flow = CH1Flow_read;
                     //计算时间
                     ch1fullend = System.DateTime.Now.Ticks;
                     TimeSpan ts1 = new TimeSpan(ch1fullstart);
@@ -8133,9 +9588,9 @@ namespace SLC1_N
                     //JudgeCH1ADC = true;
                     //CH2flowtest = true;
 
-                    var result = FlowSend(2);
                     double flow = 0.0D;
-                    if (result.IsSuccess) flow = Math.Round(Convert.ToDouble(result.Content / 1000.0), 2);
+                    flow = CH2Flow_read;
+;
                     //计算时间
                     ch2fullend = System.DateTime.Now.Ticks;
                     TimeSpan ts1 = new TimeSpan(ch2fullstart);
@@ -8217,9 +9672,9 @@ namespace SLC1_N
             {
                 ////泄气会有误差，所以把电流电压读取放后面一点，在lin通讯后
 
-                var result = FlowSend(3);
+                
                 double flow = 0.0D;
-                if (result.IsSuccess) flow = Math.Round(Convert.ToDouble(result.Content / 1000.0), 2);
+                flow = CH3Flow_read;
                 //计算时间
                 ch3fullend = System.DateTime.Now.Ticks;
                 TimeSpan ts1 = new TimeSpan(ch3fullstart);
@@ -8282,9 +9737,9 @@ namespace SLC1_N
                 //JudgeCH1ADC = true;
                 //CH2flowtest = true;
 
-                var result = FlowSend(4);
+              
                 double flow = 0.0D;
-                if (result.IsSuccess) flow = Math.Round(Convert.ToDouble(result.Content), 2);
+                flow = CH4Flow_read;
                 //计算时间
                 ch4fullend = System.DateTime.Now.Ticks;
                 TimeSpan ts1 = new TimeSpan(ch4fullstart);
@@ -8436,8 +9891,12 @@ namespace SLC1_N
                                     CH1TestResult.UP_VDCMAX = CH1VDCMax;
                                     CH1TestResult.UP_Flow = CH1Q;
                                     CH1TestResult.UP_Pre = CH1PressMax;
-                                    CH1Display($"{CH1RunName}" + I18N.GetLangText(dicLang, "输出压力(UP)"), CH1_1FullPress.Text.ToString(), PressureUnit.Text, "-", "-", "OK");
-                                    CH1Display($"{CH1RunName}" + I18N.GetLangText(dicLang, "输出压力(UP-DOWN)"), CH1_2FullPress.Text.ToString(), CH2PressureUnit.Text, Flow.CH1_2PreMax.ToString(), Flow.CH1_2PreMin.ToString(), "OK");
+                                    CH1TestResult.UP_Prezuo = CH2PressMax;
+
+                                    //CH1Display($"{CH1RunName}" + I18N.GetLangText(dicLang, "输出压力(UP)"), CH1_1FullPress.Text.ToString(), PressureUnit.Text, "-", "-", "OK");
+                                    //CH1Display($"{CH1RunName}" + I18N.GetLangText(dicLang, "输出压力(UP-DOWN)"), CH1_2FullPress.Text.ToString(), CH2PressureUnit.Text, Flow.CH1_2PreMax.ToString(), Flow.CH1_2PreMin.ToString(), "OK");
+                                    CH1Display($"{CH1RunName}" + I18N.GetLangText(dicLang, "输出压力(UP)"), CH1PressMax.ToString(), PressureUnit.Text, "-", "-", "OK");
+                                    CH1Display($"{CH1RunName}" + I18N.GetLangText(dicLang, "输出压力(UP-DOWN)"), CH2PressMax.ToString(), CH2PressureUnit.Text, Flow.CH1_2PreMax.ToString(), Flow.CH1_2PreMin.ToString(), "OK");
                                     CH1Display($"{CH1RunName}" + I18N.GetLangText(dicLang, "max电流(UP)"), CH1ADCMax.ToString(), "A", elec.CH1UPADCMax.ToString(), elec.CH1UPADCMin.ToString(), "OK");
                                     CH1Display($"{CH1RunName}" + I18N.GetLangText(dicLang, "max电压(UP)"), CH1VDCMax.ToString(), "V", elec.CH1UPVDCMax.ToString(), elec.CH1UPVDCMin.ToString(), "OK");
                                     CH1Display($"{CH1RunName}" + I18N.GetLangText(dicLang, "max流量(UP)"), CH1Q.ToString(), "lpm", "-", "-", "OK");
@@ -8503,27 +9962,37 @@ namespace SLC1_N
                                     CH1TestResult.FWD_Flow2 = Convert.ToDouble(CH1_2flow.Text);
                                     CH1TestResult.FWD_Pre1 = Convert.ToDouble(CH1_1FullPress.Text);
                                     CH1TestResult.FWD_Pre2 = Convert.ToDouble(CH1_2FullPress.Text);
+                                    CH1TestResult.FWD_FlowSumzuo = CH1TestResult.FWD_Flow1 + CH1TestResult.FWD_Flow2;
                                     /////新加240801
                                     ///
                                     if (CH1TestResult.FWD_Flow1 + CH1TestResult.FWD_Flow2 > elec.TotalFlowMax|| CH1TestResult.FWD_Flow1 + CH1TestResult.FWD_Flow2 < elec.TotalFlowMin)
                                     {
                                         CH1Display($"{CH1RunName}" + I18N.GetLangText(dicLang, "max流量(FWD总)"), (CH1TestResult.FWD_Flow1 + CH1TestResult.FWD_Flow2).ToString(), "lpm", elec.TotalFlowMax.ToString(), elec.TotalFlowMin.ToString(), "NG");
+
                                         FlowNG(1);
                                     }
                                     else
                                     {
                                         CH1Display($"{CH1RunName}" + I18N.GetLangText(dicLang, "max流量(FWD总)"), (CH1TestResult.FWD_Flow1 + CH1TestResult.FWD_Flow2).ToString(), "lpm", elec.TotalFlowMax.ToString(), elec.TotalFlowMin.ToString(), "OK");
-                                    }
+                           }
+
                                     double preEROR = Math.Abs(CH1TestResult.FWD_Pre1 - CH1TestResult.FWD_Pre2);
 
-
+                        
                                     if (preEROR > Convert.ToDouble(elec.TotalPreMax))
                                     {
-                                        CH1Display($"{CH1RunName}" + I18N.GetLangText(dicLang, "max压力差(FWD)"), preEROR.ToString(), "Kpa", elec.TotalPreMax.ToString(), "0", "NG");
+                                        CH1TestResult.FWD_PreSumzuo = preEROR;
+                                        //     CH1Display($"{CH1RunName}" + I18N.GetLangText(dicLang, "max压力差(FWD)"), preEROR.ToString(), "Kpa", elec.TotalPreMax.ToString(), "0", "NG");
+                                        CH1Display($"{CH1RunName}" + I18N.GetLangText(dicLang, "max压力差(FWD)"), CH1TestResult.FWD_PreSumzuo.ToString(), "Kpa", elec.TotalPreMax.ToString(), "0", "NG");
                                         FlowNG(1);
                                     }
                                     else
-                                        CH1Display($"{CH1RunName}" + I18N.GetLangText(dicLang, "max压力差(FWD)"), preEROR.ToString(), "Kpa", elec.TotalPreMax.ToString(), "0", "OK");
+                                    { 
+
+                                        CH1TestResult.FWD_PreSumzuo = preEROR;
+                                        //   CH1Display($"{CH1RunName}" + I18N.GetLangText(dicLang, "max压力差(FWD)"), preEROR.ToString(), "Kpa", elec.TotalPreMax.ToString(), "0", "OK");
+                                        CH1Display($"{CH1RunName}" + I18N.GetLangText(dicLang, "max压力差(FWD)"), CH1TestResult.FWD_PreSumzuo.ToString(), "Kpa", elec.TotalPreMax.ToString(), "0", "OK");
+                                    }
 
                                     /////////240801
                                     //1.444   ch_params.FPlowlimit, ch_params.FPtoplimit flow.CH1_1FlowMax.ToString(), flow.CH1_1FlowMin.ToString()
@@ -8638,6 +10107,9 @@ namespace SLC1_N
                                     CH1TestResult.DOWN_ADCMAX = CH1ADCMax;
                                     CH1TestResult.DOWN_VDCMAX = CH1VDCMax;
                                     CH1TestResult.DOWN_Flow = CH2Q;
+                                    CH1TestResult.DOWN_Flowzuo = CH1Q;
+
+
                                     plc.CH1DOWNADCOK();
                                     plc.CH1DOWNVDCOK();
                                     plc.CH1PLCValveBreak();
@@ -8816,8 +10288,13 @@ namespace SLC1_N
                                     CH1TestResult.UP_VDCMAX = CH1VDCMax;
                                     CH1TestResult.UP_Flow = CH1Q;
                                     CH1TestResult.UP_Pre = CH1PressMax;
-                                    CH1Display($"{CH1RunName}" + I18N.GetLangText(dicLang, "输出压力(UP)"), CH1_1FullPress.Text.ToString(), PressureUnit.Text, "-", "-", "OK");
-                                    CH1Display($"{CH1RunName}" + I18N.GetLangText(dicLang, "输出压力(UP-DOWN)"), CH1_2FullPress.Text.ToString(), CH2PressureUnit.Text, Flow.CH1_2PreMax.ToString(), Flow.CH1_2PreMin.ToString(), "OK");
+                                    CH1TestResult.UP_Prezuo = CH2PressMax;
+                                    CH1TestResult.UP_Prezuo =double.Parse( CH1_2FullPress.Text);
+                                    CH1TestResult.UP_Flowzuo = CH2Q;
+
+
+                                    CH1Display($"{CH1RunName}" + I18N.GetLangText(dicLang, "输出压力(UP)"), CH1PressMax.ToString(), PressureUnit.Text, "-", "-", "OK");
+                                    CH1Display($"{CH1RunName}" + I18N.GetLangText(dicLang, "输出压力(UP-DOWN)"), CH2PressMax.ToString(), CH2PressureUnit.Text, Flow.CH1_2PreMax.ToString(), Flow.CH1_2PreMin.ToString(), "OK");
                                     CH1Display($"{CH1RunName}" + I18N.GetLangText(dicLang, "max电流(UP)"), CH1ADCMax.ToString(), "A", elec.CH1UPADCMax.ToString(), elec.CH1UPADCMin.ToString(), "OK");
                                     CH1Display($"{CH1RunName}" + I18N.GetLangText(dicLang, "max电压(UP)"), CH1VDCMax.ToString(), "V", elec.CH1UPVDCMax.ToString(), elec.CH1UPVDCMin.ToString(), "OK");
                                     CH1Display($"{CH1RunName}" + I18N.GetLangText(dicLang, "max流量(UP)"), CH1Q.ToString(), "lpm", "-", "-", "OK");
@@ -8883,28 +10360,36 @@ namespace SLC1_N
                                     CH1TestResult.FWD_Flow2 = Convert.ToDouble(CH1_2flow.Text); ;
                                     CH1TestResult.FWD_Pre1 = Convert.ToDouble(CH1_1FullPress.Text);
                                     CH1TestResult.FWD_Pre2 = Convert.ToDouble(CH1_2FullPress.Text);
+                                    CH1TestResult.FWD_FlowSumzuo = CH1TestResult.FWD_Flow1 + CH1TestResult.FWD_Flow2;
                                     /////新加240801
                                     ///
-                                    if (CH1TestResult.FWD_Flow1+ CH1TestResult.FWD_Flow2 > elec.TotalFlowMax || CH1TestResult.FWD_Flow1 + CH1TestResult.FWD_Flow2 < elec.TotalFlowMin)
+                                    if (CH1TestResult.FWD_Flow1 + CH1TestResult.FWD_Flow2 > elec.TotalFlowMax || CH1TestResult.FWD_Flow1 + CH1TestResult.FWD_Flow2 < elec.TotalFlowMin)
                                     {
+                                     
                                         CH1Display($"{CH1RunName}" + I18N.GetLangText(dicLang, "max流量(FWD总)"), (CH1TestResult.FWD_Flow1 + CH1TestResult.FWD_Flow2).ToString(), "lpm", elec.TotalFlowMax.ToString(), elec.TotalFlowMin.ToString(), "NG");
+
                                         FlowNG(1);
                                     }
                                     else
                                     {
+
+                                        
                                         CH1Display($"{CH1RunName}" + I18N.GetLangText(dicLang, "max流量(FWD总)"), (CH1TestResult.FWD_Flow1 + CH1TestResult.FWD_Flow2).ToString(), "lpm", elec.TotalFlowMax.ToString(), elec.TotalFlowMin.ToString(), "OK");
+
                                     }
                                     double preEROR = Math.Abs(Convert.ToDouble(CH1_2FullPress.Text) - Convert.ToDouble(CH1_1FullPress.Text));
 
 
                                     if (preEROR > Convert.ToDouble(elec.TotalPreMax))
                                     {
-                                        CH1Display($"{CH1RunName}" + I18N.GetLangText(dicLang, "max压力差(FWD)"), preEROR.ToString(), "Kpa", elec.TotalPreMax.ToString(), "0", "NG");
+                                        CH1TestResult.FWD_PreSumzuo = preEROR;
+                                        CH1Display($"{CH1RunName}" + I18N.GetLangText(dicLang, "max压力差(FWD)"), CH1TestResult.FWD_PreSumzuo.ToString(), "Kpa", elec.TotalPreMax.ToString(), "0", "NG");
                                         FlowNG(1);
                                     }
-                                    else
-                                        CH1Display($"{CH1RunName}" + I18N.GetLangText(dicLang, "max压力差(FWD)"), preEROR.ToString(), "Kpa", elec.TotalPreMax.ToString(), "0", "OK");
-
+                                    else {
+                                        CH1TestResult.FWD_PreSumzuo = preEROR;
+                                    CH1Display($"{CH1RunName}" + I18N.GetLangText(dicLang, "max压力差(FWD)"), CH1TestResult.FWD_PreSumzuo.ToString(), "Kpa", elec.TotalPreMax.ToString(), "0", "OK");
+                                    }
                                     /////////240801
                                     //1.444   ch_params.FPlowlimit, ch_params.FPtoplimit flow.CH1_1FlowMax.ToString(), flow.CH1_1FlowMin.ToString()
                                     //6.18
@@ -9015,6 +10500,8 @@ namespace SLC1_N
                                     CH1_1FullPress.Text = CH1PressMax.ToString();
                                     CH1ReadPress.Stop();
                                     CH1TestResult.DOWN_Pre = CH2PressMax;
+                                    CH1TestResult.DOWN_Prezuo = double.Parse(CH1_1FullPress.Text);
+
                                     CH1TestResult.DOWN_ADCMAX = CH1ADCMax;
                                     CH1TestResult.DOWN_VDCMAX = CH1VDCMax;
                                     CH1TestResult.DOWN_Flow = CH2Q;
@@ -9579,10 +11066,15 @@ namespace SLC1_N
                                     plc.CH2UPVDCOK();//
                                     plc.CH2uAOK();//增加一个BUG
                                     CH2_2FullPress.Text = CH4PressMax.ToString();
+                                    //8.7
                                     CH2TestResult.UP_ADCMAX = CH2ADCMax;
                                     CH2TestResult.UP_VDCMAX = CH2VDCMax;
                                     CH2TestResult.UP_Flow = CH3Q;
+                                    CH2TestResult.UP_Flow1 = CH4Q;
+
                                     CH2TestResult.UP_Pre = CH3PressMax;
+                                     CH2TestResult.UP_Pre1 = CH4PressMax;
+
                                     CH3Display($"{CH2RunName}" + I18N.GetLangText(dicLang, "输出压力(UP)"), CH3PressMax.ToString(), CH3PressureUnit.Text, "-", "-", "OK");
                                     CH3Display($"{CH2RunName}" + I18N.GetLangText(dicLang, "输出压力(UP-DOWN)"), CH4PressMax.ToString(), CH4PressureUnit.Text, Flow.CH2_2PreMax.ToString(), Flow.CH2_2PreMin.ToString(), "OK");
                                     CH3Display($"{CH2RunName}" + I18N.GetLangText(dicLang, "max电流(UP)"), CH2ADCMax.ToString(), "A", elec.CH2UPADCMax.ToString(), elec.CH2UPADCMin.ToString(), "OK");
@@ -9656,25 +11148,34 @@ namespace SLC1_N
                                     CH2TestResult.FWD_Pre2 = Convert.ToDouble(CH2_2FullPress.Text);
                                     ////////////24080101添加////////////////
                                     
+
+
                                     if (CH2TestResult.FWD_Flow1 + CH2TestResult.FWD_Flow2 > elec.TotalFlowMax || CH2TestResult.FWD_Flow1 + CH2TestResult.FWD_Flow2 < elec.TotalFlowMin)
                                     {
+                                        CH2TestResult.FWD_FlowSum = CH2TestResult.FWD_Flow1 + CH2TestResult.FWD_Flow2;
                                         CH3Display($"{CH2RunName}" + I18N.GetLangText(dicLang, "max流量(FWD总)"), (CH2TestResult.FWD_Flow1 + CH2TestResult.FWD_Flow2).ToString(), "lpm", elec.TotalFlowMax.ToString(), elec.TotalFlowMin.ToString(), "NG");
+                                     
                                         FlowNG(2);
                                     }
                                     else
                                     {
+                                        CH2TestResult.FWD_FlowSum = CH2TestResult.FWD_Flow1 + CH2TestResult.FWD_Flow2;
                                         CH3Display($"{CH2RunName}" + I18N.GetLangText(dicLang, "max流量(FWD总)"), (CH2TestResult.FWD_Flow1 + CH2TestResult.FWD_Flow2).ToString(), "lpm", elec.TotalFlowMax.ToString(), elec.TotalFlowMin.ToString(), "OK");
                                     }
                                     double preEROR = Math.Abs(CH2TestResult.FWD_Pre1 - CH2TestResult.FWD_Pre2);
+
                                     if (preEROR > Convert.ToDouble(elec.TotalPreMax))
                                     {
-                                        CH3Display($"{CH2RunName}" + I18N.GetLangText(dicLang, "max压力差(FWD)"), preEROR.ToString(), "Kpa", elec.TotalPreMax.ToString(), "0", "NG");
+                                        CH2TestResult.FWD_PreSum = preEROR;
+                                        CH3Display($"{CH2RunName}" + I18N.GetLangText(dicLang, "max压力差(FWD)"), CH2TestResult.FWD_PreSum.ToString(), "Kpa", elec.TotalPreMax.ToString(), "0", "NG");
                                         FlowNG(2);
                                     }
                                     else
-                                        CH3Display($"{CH2RunName}" + I18N.GetLangText(dicLang, "max压力差(FWD)"), preEROR.ToString(), "Kpa", elec.TotalPreMax.ToString(), "0", "OK");
+                                    {
+                                        CH2TestResult.FWD_PreSum = preEROR;
+                                        CH3Display($"{CH2RunName}" + I18N.GetLangText(dicLang, "max压力差(FWD)"), CH2TestResult.FWD_PreSum.ToString(), "Kpa", elec.TotalPreMax.ToString(), "0", "OK");
 
-
+                                    }
 
                                     //////////
                                     //6.18c
@@ -9777,9 +11278,11 @@ namespace SLC1_N
                                     CH2_1FullPress.Text = CH2PressMax.ToString();
                                     //CH2ReadPress.Stop();
                                     CH2TestResult.DOWN_Pre = CH4PressMax;
+                                    CH2TestResult.DOWN_Pre1 = CH3PressMax;
                                     CH2TestResult.DOWN_ADCMAX = CH2ADCMax;
                                     CH2TestResult.DOWN_VDCMAX = CH2VDCMax;
                                     CH2TestResult.DOWN_Flow = CH4Q;
+                                    CH2TestResult.DOWN_Flow1 = CH3Q;
                                     plc.CH2DOWNADCOK();
                                     plc.CH2DOWNVDCOK();
                                     plc.CH2PLCValveBreak();
@@ -10051,6 +11554,9 @@ namespace SLC1_N
         /// <param name="i"></param>
         private void CH1Method(int i)
         {
+            //启动前清空参数 避免写入上传数据
+         
+
             ReadConfig con = new ReadConfig();
             Model.Flow flow;
             flow = con.ReadFlow();
@@ -10062,11 +11568,11 @@ namespace SLC1_N
             CH1ReadElecCount = 0;
             CH1ReadElec.Stop();
             //计算电压和电流是否超过上下限
-            if (CKCH1Port.IsOpen)
-                Form1.f1.CKCH1Port.WriteLine("OUTP 0");
+            if (CH1POWER._serialPort.IsOpen)
+                Form1.CH1POWER._serialPort.WriteLine("OUTP 0");
             System.Threading.Thread.Sleep(100);
-            if (CKCH1Port.IsOpen)
-                Form1.f1.CKCH1Port.WriteLine("OUTP 0");
+            if (CH1POWER._serialPort.IsOpen)
+                Form1.CH1POWER._serialPort.WriteLine("OUTP 0");
             System.Threading.Thread.Sleep(1000);
             //LeftCH1Status.Text = "待机";
             //LeftCH2Status.Text = "待机";
@@ -10075,6 +11581,8 @@ namespace SLC1_N
                 plc.WriteCH1XC(false);
                 plc.WriteCH1TC(false);
                 plc.WriteCH1XQ(false);
+                plc.WriteCH1QC(false);
+
                 // plc.CH1HLevelFlase(false);
                 //Thread.Sleep(50);
             }
@@ -10083,11 +11591,11 @@ namespace SLC1_N
             {
 
                 CHpreflag = 0;
-                if (CKCH1Port.IsOpen)
-                    Form1.f1.CKCH1Port.WriteLine("OUTP 1");
+                if (CH1POWER._serialPort.IsOpen)
+                    Form1.CH1POWER._serialPort.WriteLine("OUTP 1");
                 System.Threading.Thread.Sleep(100);
-                if (CKCH1Port.IsOpen)
-                    Form1.f1.CKCH1Port.WriteLine("OUTP 1");
+                if (CH1POWER._serialPort.IsOpen)
+                    Form1.CH1POWER._serialPort.WriteLine("OUTP 1");
                 CH1ADCMax = 0;
                 CH1VDCMax = 0;
                 //CH1ADC = 0;
@@ -10293,6 +11801,7 @@ namespace SLC1_N
                         break;
 
                     case "DOWNLeak":
+
                         plc.CH1valveclose();
                         plc.CH2valveclose();
                         plc.CH1DOWNStart();
@@ -10423,8 +11932,9 @@ namespace SLC1_N
                         CH1ReaduA.Interval = 200;
                         CH1ReaduA.Start();
                         ch1uAstarttime = System.DateTime.Now.Ticks;
-                        if (CKCH1Port.IsOpen)
-                            Form1.f1.CKCH1Port.WriteLine("OUTP 1");
+                        plc.WriteCH1QC(true);
+                        if (CH1POWER._serialPort.IsOpen)
+                            Form1.CH1POWER._serialPort.WriteLine("OUTP 1");
                         CH1uAarray.Clear();
                         plc.CH1uA = 0;
                         CH1Display($"{CH1RunName}" + I18N.GetLangText(dicLang, "Electricity静态电流"), "", "uA", elec.CH1ElecMax.ToString(), elec.CH1ElecMin.ToString(), "");
@@ -10448,8 +11958,8 @@ namespace SLC1_N
                 }
                 CH1ReadElec.Interval = 1000;
                 CH1ReadElec.Start();
-                if (CKCH1Port.IsOpen)
-                    Form1.f1.CKCH1Port.WriteLine("OUTP 1");
+                if (CH1POWER._serialPort.IsOpen)
+                    Form1.CH1POWER._serialPort.WriteLine("OUTP 1");
             }
             else
             {
@@ -10457,11 +11967,11 @@ namespace SLC1_N
                 {
                     timerCH1CT.Stop();
                     CH1IsStart = false;
-                    if (CKCH1Port.IsOpen)
-                        Form1.f1.CKCH1Port.WriteLine("OUTP 0");
+                    if (CH1POWER._serialPort.IsOpen)
+                        CH1POWER._serialPort.WriteLine("OUTP 0");
                     System.Threading.Thread.Sleep(100);
-                    if (CKCH1Port.IsOpen)
-                        Form1.f1.CKCH1Port.WriteLine("OUTP 0");
+                    if (CH1POWER._serialPort.IsOpen)
+                        CH1POWER._serialPort.WriteLine("OUTP 0");
                     plc.WriteCH1RatioOK();
                 }
                 plc.CH1FlowEnd();
@@ -10469,13 +11979,20 @@ namespace SLC1_N
             }
         }
 
+
+        
+
+
+
         /// <summary>
         /// CH2流量方法,i为集合索引
         /// </summary>
         /// <param name="i"></param>
         private void CH2Method(int i)
         {
-
+            //启动前清空参数 避免写入上传数据
+      
+            
             ReadConfig con = new ReadConfig();
             Model.Flow flow;
             flow = con.ReadFlow();
@@ -10487,23 +12004,24 @@ namespace SLC1_N
             CH2ReadElecCount = 0;
             //RightCH1Status.Text = "待机";
             //RightCH2Status.Text = "待机";
-            if (CKCH2Port.IsOpen) Form1.f1.CKCH2Port.WriteLine("OUTP 0");
-            if (CKCH2Port.IsOpen) Form1.f1.CKCH2Port.WriteLine("OUTP 0");
+            CH2POWER.Write("OUTP 0");
+            CH2POWER.Write("OUTP 0");
             System.Threading.Thread.Sleep(1000);
             {
                 plc.WriteCH2SC(false);
                 plc.WriteCH2XC(false);
                 plc.WriteCH2TC(false);
                 plc.WriteCH2XQ(false);
+                plc.WriteCH2QC(false);
                 //  Thread.Sleep(50);
             }
 
             if (i < CH2OrderTemp.Count)
             {
                 CHpreflag2 = 0;
-                if (CKCH2Port.IsOpen) Form1.f1.CKCH2Port.WriteLine("OUTP 1");
+                CH2POWER.Write("OUTP 1");
                 System.Threading.Thread.Sleep(100);
-                if (CKCH2Port.IsOpen) Form1.f1.CKCH2Port.WriteLine("OUTP 1");
+                CH2POWER.Write("OUTP 1");
                 CH2ADCMax = 0;
                 CH2VDCMax = 0;
                 //CH2ADC = 0;
@@ -10618,7 +12136,7 @@ namespace SLC1_N
                         plc.CH3valveclose();
                         plc.CH4valveclose();
                         plc.CH2RWDStart();
-                        if (CKCH2Port.IsOpen) Form1.f1.CKCH2Port.WriteLine("OUTP 1");
+                        CH2POWER.Write("OUTP 1");
                         ReadParameters(1, 3);
                         ReadParameters(1, 4);
 
@@ -10831,7 +12349,8 @@ namespace SLC1_N
                     case "QC":
                         // Electricity静态电流
                         CH2ReaduA.Interval = 200;
-                        if (CKCH2Port.IsOpen) Form1.f1.CKCH2Port.WriteLine("OUTP 1");
+                        CH2POWER.Write("OUTP 1");
+                        plc.WriteCH2QC(true);
                         CH2ReaduA.Start();
                         ch2uAstarttime = System.DateTime.Now.Ticks;
                         CH2uAarray.Clear();
@@ -10871,7 +12390,7 @@ namespace SLC1_N
                 {
                     timerCH2CT.Stop();
                     CH2IsStart = false;
-                    if (CKCH2Port.IsOpen) Form1.f1.CKCH2Port.WriteLine("OUTP 0");
+                    CH2POWER.Write("OUTP 0");
                     plc.WriteCH2RatioOK();
                 }
                 plc.CH2FlowEnd();
@@ -11100,54 +12619,52 @@ namespace SLC1_N
         {
             if (!String.IsNullOrEmpty(Characters) && Characters != I18N.GetLangText(dicLang, "操作员"))
             {
-                if (itemText == "基本设置" || itemText == "Basic Settings")
+                if (itemText == "基本设置" || itemText == "Basic Settings"|| itemText == "Configuración básica")
                 {
                     Config c1 = new Config();
                     OpenForm(c1);
                 }
-                if (itemText == "测试参数" || itemText == "Testing Parameters")
+                if (itemText == "测试参数" || itemText == "Testing Parameters"|| itemText == "Parámetros de prueba")
                 {
                     Electricity elec = new Electricity();
                     OpenForm(elec);
                 }
-                if (itemText == "LIN设置" || itemText == "LIN")
+                if (itemText == "LIN设置" || itemText == "LIN"|| itemText == "LIN")
                 {
                     LinConfig lin = new LinConfig();
                     OpenForm(lin);
                 }
-                if (itemText == "存储设置" || itemText == "Storage settings")
+                if (itemText == "存储设置" || itemText == "Storage settings" || itemText == "Configuración de almacenamiento")
                 {
                     Save save = new Save();
                     OpenForm(save);
                 }
-                if (itemText == "网口设置" || itemText == "Ethernet settings")
+                if (itemText == "网口设置" || itemText == "Ethernet settings"|| itemText == "Configuración Ethernet")
                 {
                     ConfigTCP tcp = new ConfigTCP();
                     OpenForm(tcp);
                 }
-                if (itemText == "串口设置" || itemText == "Serial port settings")
+                if (itemText == "串口设置" || itemText == "Serial port settings" || itemText == "Configuración del puerto serie")
                 {
                     Port port = new Port();
                     OpenForm(port);
                 }
-                if (itemText == "权限设置" || itemText == "Permission setting")
+                if (itemText == "权限设置" || itemText == "Permission setting" || itemText == "Configuración de permisos")
                 {
                     UserManagement user = new UserManagement();
                     OpenForm(user);
                 }
-                if (itemText == "报警记录" || itemText == "Alarm record")
+                if (itemText == "报警记录" || itemText == "Alarm record" || itemText == "Registro de alarma")
                 {
                     Warning warn = new Warning();
                     OpenForm(warn);
                 }
 
-                if (itemText == "打开文件" || itemText == "Open File")
+                if (itemText == "打开文件" || itemText == "Open File" || itemText == "Abrir archivo")
                 {
-
+                    //切换文件
                     DateZero();
                     DateZero2();
-
-
 
                     OpenMachineINI.CheckFileExists = true;
                     OpenMachineINI.Multiselect = false;
@@ -11304,28 +12821,28 @@ namespace SLC1_N
                         //ReadSetting();
                     }
                 }
-                if (itemText == "左工位1通道自检" || itemText == "Left station channel 1 self check")
+                if (itemText == "左工位1通道自检" || itemText == "Left station channel 1 self check" || itemText == "Autoexamen del canal 1 de la estación izquierda")
                 {
                     //ReadParameters(4, 1);
                     ReadParameters(14, 1);
                 }
-                if (itemText == "左工位2通道自检" || itemText == "Left station channel 2 self check")
+                if (itemText == "左工位2通道自检" || itemText == "Left station channel 2 self check" || itemText == "Autoexamen del canal 2 de la estación izquierda")
                 {
                     //ReadParameters(4, 2);
                     ReadParameters(14, 2);
                 }
-                if (itemText == "右工位1通道自检" || itemText == "Right station channel 1 self check")
+                if (itemText == "右工位1通道自检" || itemText == "Right station channel 1 self check" || itemText == "Autoexamen del canal 1 de la estación derecha")
                 {
                     //ReadParameters(4, 3);
                     ReadParameters(14, 3);
                 }
-                if (itemText == "右工位2通道自检" || itemText == "Right station channel 2 self check")
+                if (itemText == "右工位2通道自检" || itemText == "Right station channel 2 self check" || itemText == "Autoexamen del canal 2 de la estación derecha")
                 {
                     //ReadParameters(4, 4);
                     ReadParameters(14, 4);
                 }
             }
-            if (itemText == "简体中文" || itemText == "Simplified Chinese")
+            if (itemText == "简体中文" || itemText == "Simplified Chinese" || itemText == "Chino simplificado")
             {
                 I18N.Language = "zh-CN";
                 dicLang = I18N.LoadLanguage(this);
@@ -11337,7 +12854,7 @@ namespace SLC1_N
                 this.MaximizedBounds = Screen.PrimaryScreen.WorkingArea;
                 this.WindowState = FormWindowState.Maximized;
             }
-            if (itemText == "英语" || itemText == "English")
+            if (itemText == "英语" || itemText == "English" || itemText == "Inglés")
             {
                 I18N.Language = "en-Us";
                 dicLang = I18N.LoadLanguage(this);
@@ -11362,12 +12879,12 @@ namespace SLC1_N
                 this.MaximizedBounds = Screen.PrimaryScreen.WorkingArea;
                 this.WindowState = FormWindowState.Maximized;
             }
-            if (itemText == "登录" || itemText == "Sign in")
+            if (itemText == "登录" || itemText == "Sign in"|| itemText == "Iniciar sesión")
             {
                 LogOn l1 = new LogOn();
                 OpenForm(l1);
             }
-            if (itemText == "注销" || itemText == "Sign out")
+            if (itemText == "注销" || itemText == "Sign out" || itemText == "Salida")
             {
                 Characters = "";
                 Admin.Text = "";
@@ -11441,6 +12958,15 @@ namespace SLC1_N
             CH1TestResult.FWD_Pre2 = 0;
             CH1TestResult.FWD_Flow1 = 0;
             CH1TestResult.FWD_Flow2 = 0;
+
+            CH1TestResult.FWD_PreSumzuo = 0;
+            CH1TestResult.FWD_FlowSumzuo = 0;
+            CH1TestResult.DOWN_Flowzuo = 0;
+            CH1TestResult.UP_Flowzuo = 0;
+
+            CH1TestResult.RWD_ADCMAX = 0;
+            CH1TestResult.RWD_VDCMAX = 0;
+
             CH1TestResult.FWD_FullPre1 = "0";
             CH1TestResult.BalanPre1 = "0";
             CH1TestResult.Leak1 = "0";
@@ -11455,16 +12981,19 @@ namespace SLC1_N
             CH1TestResult.FWD_BalanPre2 = "0";
             CH1TestResult.FWD_Leak2 = "0";
 
+            CH1RTElec.Text = "";
 
+
+            log.PLC_Logmsg(DateTime.Now.ToString() + "CH1启动前清空测试数据");
         }
 
 
 
         //文件转换参数至0 避免重复写入
-        public void DateZero2()
+        public  void DateZero2()
         {
 
-            CH2TestResult.UP_ADCMAX = 0;
+     CH2TestResult.UP_ADCMAX = 0;
             CH2TestResult.UP_VDCMAX = 0;
             CH2TestResult.UP_Pre = 0;
             CH2TestResult.UP_Flow = 0;
@@ -11480,6 +13009,16 @@ namespace SLC1_N
             CH2TestResult.FWD_Pre2 = 0;
             CH2TestResult.FWD_Flow1 = 0;
             CH2TestResult.FWD_Flow2 = 0;
+
+            CH2TestResult.FWD_PreSum = 0;
+            CH2TestResult.FWD_FlowSum = 0;
+            CH2TestResult.DOWN_Flowzuo = 0;
+            CH2TestResult.UP_Flowzuo = 0;
+
+            CH2TestResult.RWD_ADCMAX = 0;
+            CH2TestResult.RWD_VDCMAX = 0;
+
+
             CH2TestResult.FWD_FullPre1 = "0";
             CH2TestResult.BalanPre1 = "0";
             CH2TestResult.Leak1 = "0";
@@ -11493,15 +13032,11 @@ namespace SLC1_N
             CH2TestResult.FWD_FullPre2 = "0";
             CH2TestResult.FWD_BalanPre2 = "0";
             CH2TestResult.FWD_Leak2 = "0";
+            CH2RTElec.Text = "";
 
-
-
+            log.PLC_Logmsg(DateTime.Now.ToString() + "CH2启动前清空测试数据");
 
         }
-
-
-
-
 
         private void LoadZHCNLang()
         {
@@ -11733,6 +13268,28 @@ namespace SLC1_N
                 System.Environment.Exit(0);
             }
             else return;
+        }
+
+        private void label229_Click(object sender, EventArgs e)
+        {
+            AddCSV2(1);
+        }
+
+        private void CH1RTElec_Click(object sender, EventArgs e)
+        {
+
+        }
+
+      
+
+        private void label6_Click(object sender, EventArgs e)
+        {
+             
+        }
+
+        private void label35_Click(object sender, EventArgs e)
+        {
+            plc.WriteCH1QC(false);
         }
 
         public static ComponentResourceManager GetCRMByLanguageName(Type formclass)

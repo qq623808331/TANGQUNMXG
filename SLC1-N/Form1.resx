@@ -133,6 +133,9 @@
   <data name="CH4ParamIndex.Size" type="System.Drawing.Size, System.Drawing">
     <value>16, 16</value>
   </data>
+  <data name="RightReset.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft YaHei UI, 12pt</value>
+  </data>
   <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
   <data name="CH1_1flow.TabIndex" type="System.Int32, mscorlib">
     <value>413</value>
@@ -622,9 +625,6 @@
   <data name="RightCH2BigLeak.Size" type="System.Drawing.Size, System.Drawing">
     <value>70, 16</value>
   </data>
-  <data name="&gt;&gt;VDCPort1.Name" xml:space="preserve">
-    <value>VDCPort1</value>
-  </data>
   <data name="&gt;&gt;label24.Type" xml:space="preserve">
     <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
@@ -658,9 +658,6 @@
   </data>
   <data name="&gt;&gt;label3.Type" xml:space="preserve">
     <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;ADCPort1.Name" xml:space="preserve">
-    <value>ADCPort1</value>
   </data>
   <data name="TestType.Location" type="System.Drawing.Point, System.Drawing">
     <value>657, 73</value>
@@ -743,9 +740,6 @@
   <data name="&gt;&gt;CH4LeakUnit.Parent" xml:space="preserve">
     <value>uiGroupBox2</value>
   </data>
-  <data name="&gt;&gt;CH1ParamIndex.Parent" xml:space="preserve">
-    <value>uiGroupBox4</value>
-  </data>
   <data name="&gt;&gt;RightCH1LeakPress.Name" xml:space="preserve">
     <value>RightCH1LeakPress</value>
   </data>
@@ -769,6 +763,9 @@
   </data>
   <data name="&gt;&gt;LeftCH1TCP.Parent" xml:space="preserve">
     <value>uiGroupBox4</value>
+  </data>
+  <data name="&gt;&gt;RightCH2LeakPress.Parent" xml:space="preserve">
+    <value>uiGroupBox2</value>
   </data>
   <data name="label39.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
@@ -797,8 +794,8 @@
   <data name="LeftCH2TCP.Size" type="System.Drawing.Size, System.Drawing">
     <value>25, 16</value>
   </data>
-  <data name="label8.TabIndex" type="System.Int32, mscorlib">
-    <value>425</value>
+  <data name="WorkOrder.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 5, 4, 5</value>
   </data>
   <data name="label104.Font" type="System.Drawing.Font, System.Drawing">
     <value>SimSun-ExtB, 12pt, style=Bold</value>
@@ -938,8 +935,8 @@
   <data name="CH3LeakUnit.Size" type="System.Drawing.Size, System.Drawing">
     <value>25, 16</value>
   </data>
-  <data name="CH1RTVDC.Text" xml:space="preserve">
-    <value>13.5</value>
+  <data name="CH1_2presstext.TabIndex" type="System.Int32, mscorlib">
+    <value>400</value>
   </data>
   <data name="label94.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
@@ -1068,7 +1065,7 @@
     <value>CH2ReadPress</value>
   </data>
   <data name="logDisplay1.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>10245, 7657, 10245, 7657</value>
+    <value>17075, 12369, 17075, 12369</value>
   </data>
   <data name="CH2_2presstext.Font" type="System.Drawing.Font, System.Drawing">
     <value>SimSun-ExtB, 12pt</value>
@@ -1076,8 +1073,8 @@
   <data name="&gt;&gt;label125.Name" xml:space="preserve">
     <value>label125</value>
   </data>
-  <data name="CH4LeakUnit.Font" type="System.Drawing.Font, System.Drawing">
-    <value>SimSun-ExtB, 12pt, style=Bold</value>
+  <data name="label67.Size" type="System.Drawing.Size, System.Drawing">
+    <value>111, 16</value>
   </data>
   <data name="DataGridView1.Location" type="System.Drawing.Point, System.Drawing">
     <value>1, 521</value>
@@ -1103,14 +1100,11 @@
   <data name="right_CH1Code.Location" type="System.Drawing.Point, System.Drawing">
     <value>108, 69</value>
   </data>
-  <data name="&gt;&gt;CH1ReceiveText.Name" xml:space="preserve">
-    <value>CH1ReceiveText</value>
-  </data>
   <data name="&gt;&gt;label12.Name" xml:space="preserve">
     <value>label12</value>
   </data>
-  <data name="&gt;&gt;DataGridView1.Parent" xml:space="preserve">
-    <value>tableLayoutPanel1</value>
+  <data name="CH1RTVDC.Text" xml:space="preserve">
+    <value>13.5</value>
   </data>
   <data name="label99.Location" type="System.Drawing.Point, System.Drawing">
     <value>740, 86</value>
@@ -1154,9 +1148,6 @@
   <data name="CH1FailNumber.Location" type="System.Drawing.Point, System.Drawing">
     <value>477, 43</value>
   </data>
-  <data name="&gt;&gt;CKCH1Port.Name" xml:space="preserve">
-    <value>CKCH1Port</value>
-  </data>
   <data name="left_CH2Tlight.Size" type="System.Drawing.Size, System.Drawing">
     <value>57, 40</value>
   </data>
@@ -1168,6 +1159,9 @@
   </data>
   <data name="CH4PressureUnit.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
+  </data>
+  <data name="label78.Location" type="System.Drawing.Point, System.Drawing">
+    <value>8, 86</value>
   </data>
   <data name="label127.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>4, 0, 4, 0</value>
@@ -1397,9 +1391,6 @@
   <data name="&gt;&gt;CH1progressBar.Parent" xml:space="preserve">
     <value>uiGroupBox4</value>
   </data>
-  <data name="&gt;&gt;label100.Name" xml:space="preserve">
-    <value>label100</value>
-  </data>
   <data name="&gt;&gt;dataGridViewTextBoxColumn3.Type" xml:space="preserve">
     <value>System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
@@ -1436,8 +1427,8 @@
   <data name="label59.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
-  <data name="&gt;&gt;CH3PressureUnit.ZOrder" xml:space="preserve">
-    <value>4</value>
+  <data name="&gt;&gt;CH2ReadPress.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Timer, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;label86.Parent" xml:space="preserve">
     <value>uiGroupBox2</value>
@@ -1712,6 +1703,9 @@
   <data name="&gt;&gt;label233.ZOrder" xml:space="preserve">
     <value>1</value>
   </data>
+  <data name="&gt;&gt;CH4ParamIndex.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
   <data name="&gt;&gt;CH2ReadFlowT.Name" xml:space="preserve">
     <value>CH2ReadFlowT</value>
   </data>
@@ -1781,8 +1775,8 @@
   <data name="&gt;&gt;ProductModel.Name" xml:space="preserve">
     <value>ProductModel</value>
   </data>
-  <data name="&gt;&gt;label73.Name" xml:space="preserve">
-    <value>label73</value>
+  <data name="label133.Font" type="System.Drawing.Font, System.Drawing">
+    <value>SimSun-ExtB, 12pt</value>
   </data>
   <data name="label86.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
@@ -1817,8 +1811,8 @@
   <data name="LeftCH2LeakPress.Location" type="System.Drawing.Point, System.Drawing">
     <value>21, 59</value>
   </data>
-  <data name="CH1FailNumber.Font" type="System.Drawing.Font, System.Drawing">
-    <value>SimSun-ExtB, 12pt</value>
+  <data name="CH4LeakUnit.Font" type="System.Drawing.Font, System.Drawing">
+    <value>SimSun-ExtB, 12pt, style=Bold</value>
   </data>
   <data name="label125.Size" type="System.Drawing.Size, System.Drawing">
     <value>71, 16</value>
@@ -2003,11 +1997,8 @@
   <data name="&gt;&gt;CH1RTADC.ZOrder" xml:space="preserve">
     <value>13</value>
   </data>
-  <data name="&gt;&gt;DayTime.Name" xml:space="preserve">
-    <value>DayTime</value>
-  </data>
   <data name="label95.Size" type="System.Drawing.Size, System.Drawing">
-    <value>33, 16</value>
+    <value>24, 16</value>
   </data>
   <data name="&gt;&gt;PLCSignal.Name" xml:space="preserve">
     <value>PLCSignal</value>
@@ -2123,6 +2114,9 @@
   <data name="label90.Location" type="System.Drawing.Point, System.Drawing">
     <value>478, 32</value>
   </data>
+  <data name="CH2_1FullPress.Font" type="System.Drawing.Font, System.Drawing">
+    <value>SimSun-ExtB, 12pt, style=Bold</value>
+  </data>
   <data name="CH2RTVDC.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
@@ -2131,6 +2125,9 @@
   </data>
   <data name="LeakUnit.TabIndex" type="System.Int32, mscorlib">
     <value>423</value>
+  </data>
+  <data name="&gt;&gt;label73.Name" xml:space="preserve">
+    <value>label73</value>
   </data>
   <data name="CH2RTADC.Text" xml:space="preserve">
     <value>0.34567</value>
@@ -2207,6 +2204,9 @@
   <data name="&gt;&gt;label24.ZOrder" xml:space="preserve">
     <value>3</value>
   </data>
+  <data name="&gt;&gt;textBox2.Parent" xml:space="preserve">
+    <value>uiNavBar1</value>
+  </data>
   <data name="CH2CT.Location" type="System.Drawing.Point, System.Drawing">
     <value>851, 43</value>
   </data>
@@ -2252,14 +2252,11 @@
   <data name="ProductModel.Size" type="System.Drawing.Size, System.Drawing">
     <value>96, 25</value>
   </data>
-  <data name="&gt;&gt;RightCH2TCP.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="&gt;&gt;label1.Parent" xml:space="preserve">
+    <value>uiNavBar1</value>
   </data>
   <data name="label230.Size" type="System.Drawing.Size, System.Drawing">
     <value>71, 16</value>
-  </data>
-  <data name="uiHeaderButton1.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>0, 9, 0, 3</value>
   </data>
   <data name="&gt;&gt;label50.Parent" xml:space="preserve">
     <value>uiGroupBox4</value>
@@ -2271,7 +2268,7 @@
     <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;logDisplay1.Type" xml:space="preserve">
-    <value>SLC1_N.LogDisplay, LL28-N-V1.5, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+    <value>SLC1_N.LogDisplay, LL28-N-V2.0, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="&gt;&gt;OpenMachineINI.Name" xml:space="preserve">
     <value>OpenMachineINI</value>
@@ -2327,8 +2324,8 @@
   <data name="CH2CT.Size" type="System.Drawing.Size, System.Drawing">
     <value>62, 29</value>
   </data>
-  <data name="CH2_1FullPress.Font" type="System.Drawing.Font, System.Drawing">
-    <value>SimSun-ExtB, 12pt, style=Bold</value>
+  <data name="CH1Tlight.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
   </data>
   <data name="LeftReset.Text" xml:space="preserve">
     <value>左工位复位</value>
@@ -2559,8 +2556,8 @@
   <data name="&gt;&gt;CH1FailNumber.Name" xml:space="preserve">
     <value>CH1FailNumber</value>
   </data>
-  <data name="&gt;&gt;Column2.Type" xml:space="preserve">
-    <value>System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="&gt;&gt;CH4progressBar.Parent" xml:space="preserve">
+    <value>uiGroupBox2</value>
   </data>
   <data name="&gt;&gt;CH2FlowPort.Type" xml:space="preserve">
     <value>System.IO.Ports.SerialPort, System, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
@@ -2673,8 +2670,11 @@
   <data name="&gt;&gt;CH2_2presstext.ZOrder" xml:space="preserve">
     <value>19</value>
   </data>
-  <data name="WorkOrder.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>4, 5, 4, 5</value>
+  <data name="uiGroupBox4.Location" type="System.Drawing.Point, System.Drawing">
+    <value>1, 236</value>
+  </data>
+  <data name="uiGroupBox6.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Fill</value>
   </data>
   <data name="&gt;&gt;CH4IsRun.Name" xml:space="preserve">
     <value>CH4IsRun</value>
@@ -2696,6 +2696,9 @@
   </data>
   <data name="label102.TabIndex" type="System.Int32, mscorlib">
     <value>28</value>
+  </data>
+  <data name="label107.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
   </data>
   <data name="&gt;&gt;label87.ZOrder" xml:space="preserve">
     <value>17</value>
@@ -2721,6 +2724,9 @@
   <data name="&gt;&gt;CH2_1presstext.ZOrder" xml:space="preserve">
     <value>19</value>
   </data>
+  <data name="&gt;&gt;CH2PressureUnit.Parent" xml:space="preserve">
+    <value>uiGroupBox3</value>
+  </data>
   <data name="PressureUnit.Location" type="System.Drawing.Point, System.Drawing">
     <value>69, 59</value>
   </data>
@@ -2741,6 +2747,9 @@
   </data>
   <data name="label47.Size" type="System.Drawing.Size, System.Drawing">
     <value>55, 16</value>
+  </data>
+  <data name="&gt;&gt;CH3PressureUnit.ZOrder" xml:space="preserve">
+    <value>4</value>
   </data>
   <data name="&gt;&gt;label107.Name" xml:space="preserve">
     <value>label107</value>
@@ -2771,9 +2780,6 @@
   </data>
   <data name="label29.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
-  </data>
-  <data name="label99.Size" type="System.Drawing.Size, System.Drawing">
-    <value>90, 21</value>
   </data>
   <data name="label91.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -2843,9 +2849,6 @@
   </data>
   <data name="&gt;&gt;right_CH1Tlight.Parent" xml:space="preserve">
     <value>uiGroupBox6</value>
-  </data>
-  <data name="label133.Font" type="System.Drawing.Font, System.Drawing">
-    <value>SimSun-ExtB, 12pt</value>
   </data>
   <data name="label69.Font" type="System.Drawing.Font, System.Drawing">
     <value>SimSun-ExtB, 12pt</value>
@@ -2963,9 +2966,6 @@
   </data>
   <data name="&gt;&gt;label104.ZOrder" xml:space="preserve">
     <value>0</value>
-  </data>
-  <data name="label22.Size" type="System.Drawing.Size, System.Drawing">
-    <value>31, 16</value>
   </data>
   <data name="&gt;&gt;PLCRun.Name" xml:space="preserve">
     <value>PLCRun</value>
@@ -3087,8 +3087,8 @@
   <data name="dataGridViewTextBoxColumn5.HeaderText" xml:space="preserve">
     <value>上限</value>
   </data>
-  <data name="&gt;&gt;label59.ZOrder" xml:space="preserve">
-    <value>17</value>
+  <data name="&gt;&gt;CH1ReceiveText.Name" xml:space="preserve">
+    <value>CH1ReceiveText</value>
   </data>
   <data name="CH1FailNumber.Size" type="System.Drawing.Size, System.Drawing">
     <value>99, 29</value>
@@ -3104,9 +3104,6 @@
   </data>
   <data name="label133.Size" type="System.Drawing.Size, System.Drawing">
     <value>71, 16</value>
-  </data>
-  <data name="CH3progressBar.TabIndex" type="System.Int32, mscorlib">
-    <value>28</value>
   </data>
   <data name="LeftCH2SmallLeak.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
@@ -3158,6 +3155,9 @@
   </data>
   <data name="uiGroupBox5.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>0, 35, 0, 0</value>
+  </data>
+  <data name="&gt;&gt;label49.Parent" xml:space="preserve">
+    <value>uiGroupBox4</value>
   </data>
   <data name="CH2_2FullPress.TabIndex" type="System.Int32, mscorlib">
     <value>414</value>
@@ -3303,9 +3303,6 @@
   <data name="CH1RTVDC.TabIndex" type="System.Int32, mscorlib">
     <value>417</value>
   </data>
-  <data name="&gt;&gt;CH2VDCPort.Type" xml:space="preserve">
-    <value>System.IO.Ports.SerialPort, System, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
   <data name="label107.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
@@ -3362,9 +3359,6 @@
   </data>
   <data name="&gt;&gt;label133.Parent" xml:space="preserve">
     <value>uiTitlePanel1</value>
-  </data>
-  <data name="&gt;&gt;CH4progressBar.Parent" xml:space="preserve">
-    <value>uiGroupBox2</value>
   </data>
   <data name="&gt;&gt;label22.Type" xml:space="preserve">
     <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
@@ -3491,9 +3485,6 @@
   </data>
   <data name="Column3.MinimumWidth" type="System.Int32, mscorlib">
     <value>8</value>
-  </data>
-  <data name="label75.Size" type="System.Drawing.Size, System.Drawing">
-    <value>87, 16</value>
   </data>
   <data name="uiHeaderButton1.Location" type="System.Drawing.Point, System.Drawing">
     <value>1814, 0</value>
@@ -3681,9 +3672,6 @@
   <data name="&gt;&gt;TestType.ZOrder" xml:space="preserve">
     <value>10</value>
   </data>
-  <data name="&gt;&gt;label1.Parent" xml:space="preserve">
-    <value>uiNavBar1</value>
-  </data>
   <data name="CH2RTADC.Size" type="System.Drawing.Size, System.Drawing">
     <value>70, 16</value>
   </data>
@@ -3810,14 +3798,17 @@
   <data name="label75.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>4, 0, 4, 0</value>
   </data>
+  <data name="CH1FailNumber.Font" type="System.Drawing.Font, System.Drawing">
+    <value>SimSun-ExtB, 12pt</value>
+  </data>
   <data name="LeftReset.Size" type="System.Drawing.Size, System.Drawing">
     <value>85, 89</value>
   </data>
   <data name="CH2_1presstext.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
-  <data name="&gt;&gt;label49.Parent" xml:space="preserve">
-    <value>uiGroupBox4</value>
+  <data name="&gt;&gt;label35.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="CH2LeakUnit.Font" type="System.Drawing.Font, System.Drawing">
     <value>SimSun-ExtB, 12pt, style=Bold</value>
@@ -3849,6 +3840,9 @@
   <data name="label8.Size" type="System.Drawing.Size, System.Drawing">
     <value>34, 16</value>
   </data>
+  <data name="CH1PassNumber.MinimumSize" type="System.Drawing.Size, System.Drawing">
+    <value>1, 16</value>
+  </data>
   <data name="label125.Text" xml:space="preserve">
     <value>通讯状态</value>
   </data>
@@ -3875,9 +3869,6 @@
   </data>
   <data name="label131.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
-  </data>
-  <data name="&gt;&gt;label35.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;PLCRun.Type" xml:space="preserve">
     <value>System.Windows.Forms.PictureBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
@@ -3942,6 +3933,9 @@
   <data name="CH2_2flow.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
+  <data name="LeftCH2TCP.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
   <data name="RightCH1LeakPress.Font" type="System.Drawing.Font, System.Drawing">
     <value>SimSun-ExtB, 12pt, style=Bold</value>
   </data>
@@ -3969,9 +3963,6 @@
   <data name="uiGroupBox6.Font" type="System.Drawing.Font, System.Drawing">
     <value>Microsoft YaHei UI, 12pt</value>
   </data>
-  <data name="label78.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
   <data name="&gt;&gt;ProductModel.Type" xml:space="preserve">
     <value>Sunny.UI.UITextBox, SunnyUI, Version=3.1.0.0, Culture=neutral, PublicKeyToken=null</value>
   </data>
@@ -3980,9 +3971,6 @@
   </data>
   <data name="&gt;&gt;CH2RTADC.Type" xml:space="preserve">
     <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="DataGridView2.ColumnHeadersHeight" type="System.Int32, mscorlib">
-    <value>32</value>
   </data>
   <data name="&gt;&gt;label35.ZOrder" xml:space="preserve">
     <value>7</value>
@@ -4014,8 +4002,8 @@
   <data name="CH1RTADC.Size" type="System.Drawing.Size, System.Drawing">
     <value>70, 16</value>
   </data>
-  <data name="RightReset.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Microsoft YaHei UI, 12pt</value>
+  <data name="&gt;&gt;Column2.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;UDPOverTime.Type" xml:space="preserve">
     <value>System.Windows.Forms.Timer, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
@@ -4143,9 +4131,6 @@
   <data name="CH1_2presstext.Text" xml:space="preserve">
     <value>测试压力</value>
   </data>
-  <data name="uiGroupBox7.TabIndex" type="System.Int32, mscorlib">
-    <value>446</value>
-  </data>
   <data name="&gt;&gt;RightCH2SmallLeak.Name" xml:space="preserve">
     <value>RightCH2SmallLeak</value>
   </data>
@@ -4154,9 +4139,6 @@
   </data>
   <data name="uiGroupBox7.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
     <value>Fill</value>
-  </data>
-  <data name="&gt;&gt;label127.ZOrder" xml:space="preserve">
-    <value>20</value>
   </data>
   <data name="&gt;&gt;label132.ZOrder" xml:space="preserve">
     <value>2</value>
@@ -4249,9 +4231,6 @@
         /////wkEAAAAAAAAAAs=
 </value>
   </data>
-  <data name="LeftCH1SmallLeak.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
   <data name="uiGroupBox3.Text" xml:space="preserve">
     <value>左工位CH1-2</value>
   </data>
@@ -4300,6 +4279,9 @@
   <data name="&gt;&gt;label88.ZOrder" xml:space="preserve">
     <value>18</value>
   </data>
+  <data name="&gt;&gt;label59.ZOrder" xml:space="preserve">
+    <value>17</value>
+  </data>
   <data name="CH2_2flow.TabIndex" type="System.Int32, mscorlib">
     <value>413</value>
   </data>
@@ -4324,8 +4306,8 @@
   <data name="RightCH1LeakPress.TabIndex" type="System.Int32, mscorlib">
     <value>28</value>
   </data>
-  <data name="CH1PassNumber.MinimumSize" type="System.Drawing.Size, System.Drawing">
-    <value>1, 16</value>
+  <data name="&gt;&gt;DayTime.Name" xml:space="preserve">
+    <value>DayTime</value>
   </data>
   <data name="LeftCH2LeakPress.Font" type="System.Drawing.Font, System.Drawing">
     <value>SimSun-ExtB, 12pt, style=Bold</value>
@@ -4347,6 +4329,9 @@
   </data>
   <data name="CH1_2flow.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
+  </data>
+  <data name="CH1RTVDC.Size" type="System.Drawing.Size, System.Drawing">
+    <value>43, 16</value>
   </data>
   <data name="label132.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -4405,9 +4390,6 @@
   <data name="&gt;&gt;label132.Parent" xml:space="preserve">
     <value>uiTitlePanel1</value>
   </data>
-  <data name="&gt;&gt;CH4PressureUnit.Parent" xml:space="preserve">
-    <value>uiGroupBox2</value>
-  </data>
   <data name="CH2_2flow.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
@@ -4452,6 +4434,9 @@
   </data>
   <data name="&gt;&gt;CH2_2flow.Parent" xml:space="preserve">
     <value>uiGroupBox2</value>
+  </data>
+  <data name="&gt;&gt;CH1CT.Name" xml:space="preserve">
+    <value>CH1CT</value>
   </data>
   <data name="RightCH1BigLeak.TabIndex" type="System.Int32, mscorlib">
     <value>411</value>
@@ -4519,14 +4504,14 @@
   <data name="&gt;&gt;label9.Parent" xml:space="preserve">
     <value>uiNavBar1</value>
   </data>
-  <data name="uiGroupBox4.Location" type="System.Drawing.Point, System.Drawing">
-    <value>1, 236</value>
+  <data name="&gt;&gt;label127.ZOrder" xml:space="preserve">
+    <value>20</value>
   </data>
   <data name="label9.TabIndex" type="System.Int32, mscorlib">
     <value>50</value>
   </data>
-  <data name="&gt;&gt;CH4ParamIndex.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="label22.Size" type="System.Drawing.Size, System.Drawing">
+    <value>31, 16</value>
   </data>
   <data name="&gt;&gt;label74.ZOrder" xml:space="preserve">
     <value>21</value>
@@ -4620,6 +4605,9 @@
   </data>
   <data name="label52.Size" type="System.Drawing.Size, System.Drawing">
     <value>87, 16</value>
+  </data>
+  <data name="label8.TabIndex" type="System.Int32, mscorlib">
+    <value>425</value>
   </data>
   <data name="&gt;&gt;uiGroupBox7.Type" xml:space="preserve">
     <value>Sunny.UI.UIGroupBox, SunnyUI, Version=3.1.0.0, Culture=neutral, PublicKeyToken=null</value>
@@ -4782,7 +4770,10 @@
     <value>西班牙</value>
   </data>
   <data name="label39.Size" type="System.Drawing.Size, System.Drawing">
-    <value>33, 16</value>
+    <value>24, 16</value>
+  </data>
+  <data name="&gt;&gt;UDPOverTime.Name" xml:space="preserve">
+    <value>UDPOverTime</value>
   </data>
   <data name="&gt;&gt;CH1Tlight.Name" xml:space="preserve">
     <value>CH1Tlight</value>
@@ -4799,8 +4790,8 @@
   <data name="&gt;&gt;CH4ReadFlowT.Name" xml:space="preserve">
     <value>CH4ReadFlowT</value>
   </data>
-  <data name="&gt;&gt;CH2ReadPress.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Timer, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="&gt;&gt;label100.Name" xml:space="preserve">
+    <value>label100</value>
   </data>
   <data name="CH1ProductNumber.Font" type="System.Drawing.Font, System.Drawing">
     <value>Microsoft YaHei UI, 12pt</value>
@@ -4982,9 +4973,6 @@
   <data name="&gt;&gt;label50.Type" xml:space="preserve">
     <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;VDCPort1.Type" xml:space="preserve">
-    <value>System.IO.Ports.SerialPort, System, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
   <data name="&gt;&gt;label130.Name" xml:space="preserve">
     <value>label130</value>
   </data>
@@ -5054,8 +5042,8 @@
   <data name="&gt;&gt;label127.Name" xml:space="preserve">
     <value>label127</value>
   </data>
-  <data name="&gt;&gt;UDPOverTime.Name" xml:space="preserve">
-    <value>UDPOverTime</value>
+  <data name="CH3LeakUnit.Text" xml:space="preserve">
+    <value>Pa</value>
   </data>
   <data name="&gt;&gt;CH1Status.Type" xml:space="preserve">
     <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
@@ -5189,8 +5177,8 @@
   <data name="&gt;&gt;CH4progressBar.Name" xml:space="preserve">
     <value>CH4progressBar</value>
   </data>
-  <data name="&gt;&gt;CH1CT.Name" xml:space="preserve">
-    <value>CH1CT</value>
+  <data name="label99.Size" type="System.Drawing.Size, System.Drawing">
+    <value>90, 21</value>
   </data>
   <data name="&gt;&gt;CH1ParamIndex.Name" xml:space="preserve">
     <value>CH1ParamIndex</value>
@@ -5234,9 +5222,6 @@
   <data name="&gt;&gt;CH2ParamIndex.Type" xml:space="preserve">
     <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="uiGroupBox6.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
-    <value>Fill</value>
-  </data>
   <data name="&gt;&gt;CH2_1presstext.Name" xml:space="preserve">
     <value>CH2_1presstext</value>
   </data>
@@ -5249,8 +5234,8 @@
   <data name="right_CH1Code.Size" type="System.Drawing.Size, System.Drawing">
     <value>454, 49</value>
   </data>
-  <data name="label78.Location" type="System.Drawing.Point, System.Drawing">
-    <value>8, 86</value>
+  <data name="&gt;&gt;CH2IsRun.Name" xml:space="preserve">
+    <value>CH2IsRun</value>
   </data>
   <data name="CH4ParamIndex.TabIndex" type="System.Int32, mscorlib">
     <value>29</value>
@@ -5333,9 +5318,6 @@
   <data name="&gt;&gt;label8.Parent" xml:space="preserve">
     <value>uiGroupBox2</value>
   </data>
-  <data name="&gt;&gt;CH2VDCPort.Name" xml:space="preserve">
-    <value>CH2VDCPort</value>
-  </data>
   <data name="&gt;&gt;label125.ZOrder" xml:space="preserve">
     <value>18</value>
   </data>
@@ -5351,8 +5333,8 @@
   <data name="&gt;&gt;OpenMachineINI.Type" xml:space="preserve">
     <value>System.Windows.Forms.OpenFileDialog, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;CH2IsRun.Name" xml:space="preserve">
-    <value>CH2IsRun</value>
+  <data name="uiGroupBox7.TabIndex" type="System.Int32, mscorlib">
+    <value>446</value>
   </data>
   <data name="&gt;&gt;CH1_1flow.Name" xml:space="preserve">
     <value>CH1_1flow</value>
@@ -5389,9 +5371,6 @@
   </data>
   <data name="&gt;&gt;label231.Name" xml:space="preserve">
     <value>label231</value>
-  </data>
-  <data name="&gt;&gt;CH1_1flow.Parent" xml:space="preserve">
-    <value>uiGroupBox4</value>
   </data>
   <data name="dataGridViewTextBoxColumn6.MinimumWidth" type="System.Int32, mscorlib">
     <value>8</value>
@@ -5450,8 +5429,8 @@
   <data name="uiGroupBox5.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>1, 1, 1, 1</value>
   </data>
-  <data name="&gt;&gt;CH2ADCPort.Type" xml:space="preserve">
-    <value>System.IO.Ports.SerialPort, System, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="label78.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
   </data>
   <data name="PLCControl.MinimumSize" type="System.Drawing.Size, System.Drawing">
     <value>1, 1</value>
@@ -5766,8 +5745,11 @@
   <data name="CH1RTElec.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
-  <data name="label107.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
+  <data name="&gt;&gt;CH4PressureUnit.Parent" xml:space="preserve">
+    <value>uiGroupBox2</value>
+  </data>
+  <data name="&gt;&gt;DataGridView1.Parent" xml:space="preserve">
+    <value>tableLayoutPanel1</value>
   </data>
   <data name="RightCH1SmallLeak.TabIndex" type="System.Int32, mscorlib">
     <value>412</value>
@@ -5789,9 +5771,6 @@
   </data>
   <data name="&gt;&gt;CH2RTElec.Name" xml:space="preserve">
     <value>CH2RTElec</value>
-  </data>
-  <data name="&gt;&gt;RightCH2LeakPress.ZOrder" xml:space="preserve">
-    <value>15</value>
   </data>
   <data name="label104.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
@@ -5840,9 +5819,6 @@
   </data>
   <data name="CH2PressureUnit.Location" type="System.Drawing.Point, System.Drawing">
     <value>69, 59</value>
-  </data>
-  <data name="&gt;&gt;CKCH1Port.Type" xml:space="preserve">
-    <value>System.IO.Ports.SerialPort, System, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="label10.Size" type="System.Drawing.Size, System.Drawing">
     <value>87, 16</value>
@@ -6012,8 +5988,8 @@
   <data name="RightCH2SmallLeak.Font" type="System.Drawing.Font, System.Drawing">
     <value>SimSun-ExtB, 12pt, style=Bold</value>
   </data>
-  <data name="&gt;&gt;CH1RTElec.Name" xml:space="preserve">
-    <value>CH1RTElec</value>
+  <data name="CH3progressBar.TabIndex" type="System.Int32, mscorlib">
+    <value>28</value>
   </data>
   <data name="CH1PassNumber.Font" type="System.Drawing.Font, System.Drawing">
     <value>SimSun-ExtB, 12pt</value>
@@ -6128,8 +6104,8 @@
   <data name="&gt;&gt;CH3IsRun.Type" xml:space="preserve">
     <value>System.Windows.Forms.Timer, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;CH2PressureUnit.Parent" xml:space="preserve">
-    <value>uiGroupBox3</value>
+  <data name="&gt;&gt;CH1ParamIndex.Parent" xml:space="preserve">
+    <value>uiGroupBox4</value>
   </data>
   <data name="label100.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
@@ -6452,8 +6428,8 @@
   <data name="label108.TabIndex" type="System.Int32, mscorlib">
     <value>427</value>
   </data>
-  <data name="&gt;&gt;textBox2.Parent" xml:space="preserve">
-    <value>uiNavBar1</value>
+  <data name="&gt;&gt;RightCH2TCP.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="LeftCH2BigLeak.Location" type="System.Drawing.Point, System.Drawing">
     <value>156, 59</value>
@@ -6617,8 +6593,8 @@
   <data name="LeftCH2BigLeak.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
-  <data name="&gt;&gt;CH2ADCPort.Name" xml:space="preserve">
-    <value>CH2ADCPort</value>
+  <data name="&gt;&gt;RightCH2LeakPress.ZOrder" xml:space="preserve">
+    <value>15</value>
   </data>
   <data name="&gt;&gt;LeftCH2SmallLeak.Name" xml:space="preserve">
     <value>LeftCH2SmallLeak</value>
@@ -6662,9 +6638,6 @@
   <data name="&gt;&gt;label2.Name" xml:space="preserve">
     <value>label2</value>
   </data>
-  <data name="&gt;&gt;label8.ZOrder" xml:space="preserve">
-    <value>1</value>
-  </data>
   <data name="Admin.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>4, 5, 4, 5</value>
   </data>
@@ -6689,14 +6662,14 @@
   <data name="label28.Size" type="System.Drawing.Size, System.Drawing">
     <value>34, 16</value>
   </data>
-  <data name="CH3LeakUnit.Text" xml:space="preserve">
-    <value>Pa</value>
+  <data name="&gt;&gt;CH1RTElec.Name" xml:space="preserve">
+    <value>CH1RTElec</value>
   </data>
   <data name="&gt;&gt;PLCControl.Type" xml:space="preserve">
     <value>Sunny.UI.UIHeaderButton, SunnyUI, Version=3.1.0.0, Culture=neutral, PublicKeyToken=null</value>
   </data>
-  <data name="label67.Size" type="System.Drawing.Size, System.Drawing">
-    <value>111, 16</value>
+  <data name="uiHeaderButton1.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>0, 9, 0, 3</value>
   </data>
   <data name="CH1ProductNumber.TabIndex" type="System.Int32, mscorlib">
     <value>347</value>
@@ -6713,8 +6686,8 @@
   <data name="label25.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
-  <data name="LeftCH2TCP.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
+  <data name="DataGridView2.ColumnHeadersHeight" type="System.Int32, mscorlib">
+    <value>32</value>
   </data>
   <data name="label130.TabIndex" type="System.Int32, mscorlib">
     <value>346</value>
@@ -6785,8 +6758,8 @@
   <data name="CH2_2FullPress.Size" type="System.Drawing.Size, System.Drawing">
     <value>43, 16</value>
   </data>
-  <data name="&gt;&gt;RightCH2LeakPress.Parent" xml:space="preserve">
-    <value>uiGroupBox2</value>
+  <data name="&gt;&gt;CH1_1flow.Parent" xml:space="preserve">
+    <value>uiGroupBox4</value>
   </data>
   <data name="label29.Size" type="System.Drawing.Size, System.Drawing">
     <value>25, 16</value>
@@ -6833,14 +6806,14 @@
   <data name="label24.Text" xml:space="preserve">
     <value>Pa</value>
   </data>
-  <data name="&gt;&gt;ADCPort1.Type" xml:space="preserve">
-    <value>System.IO.Ports.SerialPort, System, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="label75.Size" type="System.Drawing.Size, System.Drawing">
+    <value>87, 16</value>
   </data>
   <data name="&gt;&gt;RightCH1SmallLeak.Name" xml:space="preserve">
     <value>RightCH1SmallLeak</value>
   </data>
-  <data name="CH1_2presstext.TabIndex" type="System.Int32, mscorlib">
-    <value>400</value>
+  <data name="LeftCH1SmallLeak.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
   </data>
   <data name="&gt;&gt;label29.Name" xml:space="preserve">
     <value>label29</value>
@@ -6916,9 +6889,6 @@
   </data>
   <data name="&gt;&gt;label3.Name" xml:space="preserve">
     <value>label3</value>
-  </data>
-  <data name="CH1Tlight.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
   </data>
   <data name="&gt;&gt;label232.Type" xml:space="preserve">
     <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
@@ -7067,8 +7037,8 @@
   <data name="label102.Location" type="System.Drawing.Point, System.Drawing">
     <value>906, 62</value>
   </data>
-  <data name="CH1RTVDC.Size" type="System.Drawing.Size, System.Drawing">
-    <value>43, 16</value>
+  <data name="&gt;&gt;label8.ZOrder" xml:space="preserve">
+    <value>1</value>
   </data>
   <data name="uiGroupBox1.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>0, 35, 0, 0</value>
@@ -7202,8 +7172,8 @@
   <metadata name="CH3ReadFlowT.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>839, 56</value>
   </metadata>
-  <metadata name="VDCPort1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>989, 17</value>
+  <metadata name="CH2IsRun.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>231, 17</value>
   </metadata>
   <metadata name="CH1ReadFlowT.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>1094, 17</value>
@@ -7217,26 +7187,20 @@
   <metadata name="CH2ReadFlowT.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>147, 134</value>
   </metadata>
-  <metadata name="CH2ADCPort.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>17, 56</value>
-  </metadata>
   <metadata name="CH2LinUP.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>354, 95</value>
   </metadata>
-  <metadata name="ADCPort1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>884, 17</value>
+  <metadata name="dataGridViewTextBoxColumn1.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
   </metadata>
   <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
   </metadata>
-  <metadata name="CKCH1Port.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>664, 134</value>
-  </metadata>
   <metadata name="CH3FlowPort.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>704, 95</value>
   </metadata>
-  <metadata name="CH2VDCPort.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>139, 56</value>
+  <metadata name="Column5.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
   </metadata>
   <metadata name="dataGridViewTextBoxColumn7.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
@@ -7247,9 +7211,6 @@
   <metadata name="CH1LinUP.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>248, 95</value>
   </metadata>
-  <metadata name="Column1.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>True</value>
-  </metadata>
   <metadata name="dataGridViewTextBoxColumn4.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
   </metadata>
@@ -7259,19 +7220,16 @@
   <metadata name="CH4IsRun.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>565, 17</value>
   </metadata>
-  <metadata name="dataGridViewTextBoxColumn1.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>True</value>
+  <metadata name="CH3IsRun.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>460, 17</value>
   </metadata>
   <metadata name="CH4FlowPort.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>826, 95</value>
   </metadata>
-  <metadata name="CH2IsRun.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>231, 17</value>
-  </metadata>
   <metadata name="CH1ReadElec.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>260, 56</value>
   </metadata>
-  <metadata name="dataGridViewTextBoxColumn3.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+  <metadata name="Column2.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
   </metadata>
   <metadata name="DayTime.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
@@ -7298,9 +7256,6 @@
   <metadata name="CH2FlowPort.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>582, 95</value>
   </metadata>
-  <metadata name="CH3IsRun.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>460, 17</value>
-  </metadata>
   <metadata name="CH2ReadPress.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>948, 95</value>
   </metadata>
@@ -7319,7 +7274,7 @@
   <metadata name="CH2ReaduA.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>623, 56</value>
   </metadata>
-  <metadata name="Column2.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+  <metadata name="dataGridViewTextBoxColumn3.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
   </metadata>
   <metadata name="dataGridViewTextBoxColumn6.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
@@ -7329,7 +7284,7 @@
     <value>281, 134</value>
   </metadata>
   <metadata name="$this.TrayHeight" type="System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>85</value>
+    <value>294</value>
   </metadata>
   <metadata name="UDPOverTime.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>17, 95</value>
@@ -7349,7 +7304,7 @@
   <metadata name="Column7.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
   </metadata>
-  <metadata name="Column5.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+  <metadata name="Column1.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
   </metadata>
   <metadata name="CH4ReadFlowT.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">

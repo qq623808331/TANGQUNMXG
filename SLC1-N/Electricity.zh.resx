@@ -117,482 +117,824 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
-  <data name="tabPage5.Size" type="System.Drawing.Size, System.Drawing">
-    <value>1129, 1131</value>
-  </data>
-  <data name="RDOWNParamsCopy.Location" type="System.Drawing.Point, System.Drawing">
-    <value>501, 582</value>
-  </data>
-  <data name="RDOWNParamsCopy.Size" type="System.Drawing.Size, System.Drawing">
-    <value>122, 40</value>
-  </data>
-  <data name="DOWNParamsSave.Location" type="System.Drawing.Point, System.Drawing">
-    <value>315, 582</value>
-  </data>
-  <data name="DOWNParamsSave.Size" type="System.Drawing.Size, System.Drawing">
-    <value>159, 40</value>
-  </data>
-  <data name="LDOWNParamsCopy.Location" type="System.Drawing.Point, System.Drawing">
-    <value>168, 582</value>
-  </data>
-  <data name="LDOWNParamsCopy.Size" type="System.Drawing.Size, System.Drawing">
-    <value>122, 40</value>
-  </data>
-  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="uiGroupBox21.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>0, 32, 0, 0</value>
-  </data>
-  <data name="uiGroupBox21.Size" type="System.Drawing.Size, System.Drawing">
-    <value>373, 560</value>
-  </data>
-  <data name="uiGroupBox17.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>0, 32, 0, 0</value>
-  </data>
-  <data name="uiGroupBox17.Size" type="System.Drawing.Size, System.Drawing">
-    <value>373, 561</value>
-  </data>
-  <data name="RWDParamsSave.Location" type="System.Drawing.Point, System.Drawing">
-    <value>339, 603</value>
-  </data>
-  <data name="RWDParamsSave.Size" type="System.Drawing.Size, System.Drawing">
-    <value>159, 40</value>
-  </data>
-  <data name="uiGroupBox39.Location" type="System.Drawing.Point, System.Drawing">
-    <value>415, 15</value>
-  </data>
-  <data name="uiGroupBox39.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>0, 32, 0, 0</value>
-  </data>
-  <data name="uiGroupBox39.Size" type="System.Drawing.Size, System.Drawing">
-    <value>366, 569</value>
-  </data>
-  <data name="uiGroupBox26.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>0, 32, 0, 0</value>
-  </data>
-  <data name="uiGroupBox26.Size" type="System.Drawing.Size, System.Drawing">
-    <value>430, 302</value>
-  </data>
-  <data name="uiGroupBox37.Location" type="System.Drawing.Point, System.Drawing">
-    <value>313, 183</value>
-  </data>
-  <data name="uiGroupBox37.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>0, 30, 0, 0</value>
-  </data>
-  <data name="uiGroupBox37.Size" type="System.Drawing.Size, System.Drawing">
-    <value>344, 368</value>
-  </data>
-  <data name="uiTextBox1.Font" type="System.Drawing.Font, System.Drawing">
-    <value>SimSun-ExtB, 12pt</value>
-  </data>
-  <data name="uiTextBox1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>188, 213</value>
-  </data>
-  <data name="uiTextBox1.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>4, 5, 4, 5</value>
-  </data>
-  <data name="uiTextBox1.MinimumSize" type="System.Drawing.Size, System.Drawing">
-    <value>1, 16</value>
-  </data>
-  <data name="uiTextBox1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>108, 29</value>
-  </data>
-  <data name="uiTextBox2.Font" type="System.Drawing.Font, System.Drawing">
-    <value>SimSun-ExtB, 12pt</value>
-  </data>
-  <data name="uiTextBox2.Location" type="System.Drawing.Point, System.Drawing">
-    <value>188, 138</value>
-  </data>
-  <data name="uiTextBox2.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>4, 5, 4, 5</value>
-  </data>
-  <data name="uiTextBox2.MinimumSize" type="System.Drawing.Size, System.Drawing">
-    <value>1, 16</value>
-  </data>
-  <data name="uiTextBox2.Size" type="System.Drawing.Size, System.Drawing">
-    <value>108, 29</value>
-  </data>
   <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="uiTextBox2.TabIndex" type="System.Int32, mscorlib">
-    <value>462</value>
-  </data>
-  <data name="label12.Location" type="System.Drawing.Point, System.Drawing">
-    <value>188, 117</value>
-  </data>
-  <data name="label12.TabIndex" type="System.Int32, mscorlib">
-    <value>459</value>
-  </data>
-  <data name="label12.Text" xml:space="preserve">
-    <value>CHX_2压力上限</value>
-  </data>
-  <data name="label47.Location" type="System.Drawing.Point, System.Drawing">
-    <value>188, 192</value>
-  </data>
-  <data name="label47.TabIndex" type="System.Int32, mscorlib">
-    <value>460</value>
-  </data>
-  <data name="label47.Text" xml:space="preserve">
-    <value>CHX_2压力下限</value>
-  </data>
-  <data name="uiTextBox3.Font" type="System.Drawing.Font, System.Drawing">
-    <value>SimSun-ExtB, 12pt</value>
-  </data>
-  <data name="uiTextBox3.Location" type="System.Drawing.Point, System.Drawing">
-    <value>43, 213</value>
-  </data>
-  <data name="uiTextBox3.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>4, 5, 4, 5</value>
-  </data>
-  <data name="uiTextBox3.MinimumSize" type="System.Drawing.Size, System.Drawing">
-    <value>1, 16</value>
-  </data>
-  <data name="uiTextBox3.Size" type="System.Drawing.Size, System.Drawing">
-    <value>108, 29</value>
-  </data>
-  <data name="uiTextBox3.TabIndex" type="System.Int32, mscorlib">
-    <value>456</value>
-  </data>
-  <data name="label9.Location" type="System.Drawing.Point, System.Drawing">
-    <value>-26, 12</value>
-  </data>
-  <data name="label9.Text" xml:space="preserve">
-    <value>CHX_2流量超时</value>
-  </data>
-  <data name="label9.Visible" type="System.Boolean, mscorlib">
+  <data name="label133.AutoSize" type="System.Boolean, mscorlib">
     <value>False</value>
   </data>
-  <data name="uiTextBox4.Font" type="System.Drawing.Font, System.Drawing">
-    <value>SimSun-ExtB, 12pt</value>
+  <data name="label134.AutoSize" type="System.Boolean, mscorlib">
+    <value>False</value>
   </data>
-  <data name="uiTextBox4.Location" type="System.Drawing.Point, System.Drawing">
-    <value>43, 138</value>
+  <data name="label139.AutoSize" type="System.Boolean, mscorlib">
+    <value>False</value>
   </data>
-  <data name="uiTextBox4.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>4, 5, 4, 5</value>
+  <data name="label140.AutoSize" type="System.Boolean, mscorlib">
+    <value>False</value>
   </data>
-  <data name="uiTextBox4.MinimumSize" type="System.Drawing.Size, System.Drawing">
-    <value>1, 16</value>
+  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="label140.Size" type="System.Drawing.Size, System.Drawing">
+    <value>136, 16</value>
   </data>
-  <data name="uiTextBox4.Size" type="System.Drawing.Size, System.Drawing">
-    <value>108, 29</value>
+  <data name="label141.AutoSize" type="System.Boolean, mscorlib">
+    <value>False</value>
   </data>
-  <data name="uiTextBox4.TabIndex" type="System.Int32, mscorlib">
-    <value>457</value>
+  <data name="label141.Size" type="System.Drawing.Size, System.Drawing">
+    <value>118, 16</value>
   </data>
-  <data name="label49.Location" type="System.Drawing.Point, System.Drawing">
-    <value>43, 192</value>
+  <data name="label142.AutoSize" type="System.Boolean, mscorlib">
+    <value>False</value>
   </data>
-  <data name="label49.TabIndex" type="System.Int32, mscorlib">
-    <value>453</value>
+  <data name="label142.Size" type="System.Drawing.Size, System.Drawing">
+    <value>118, 16</value>
   </data>
-  <data name="label49.Text" xml:space="preserve">
-    <value>CHX_2流量下限</value>
+  <data name="label143.AutoSize" type="System.Boolean, mscorlib">
+    <value>False</value>
   </data>
-  <data name="label50.Location" type="System.Drawing.Point, System.Drawing">
-    <value>43, 117</value>
+  <data name="label144.AutoSize" type="System.Boolean, mscorlib">
+    <value>False</value>
   </data>
-  <data name="label50.TabIndex" type="System.Int32, mscorlib">
-    <value>452</value>
+  <data name="label145.AutoSize" type="System.Boolean, mscorlib">
+    <value>False</value>
   </data>
-  <data name="label50.Text" xml:space="preserve">
-    <value>CHX_2流量上限</value>
+  <data name="label145.Size" type="System.Drawing.Size, System.Drawing">
+    <value>136, 16</value>
+  </data>
+  <data name="label146.AutoSize" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="label146.Size" type="System.Drawing.Size, System.Drawing">
+    <value>125, 16</value>
+  </data>
+  <data name="label147.AutoSize" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="label148.AutoSize" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="label148.Size" type="System.Drawing.Size, System.Drawing">
+    <value>125, 16</value>
+  </data>
+  <data name="label158.AutoSize" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="label158.Size" type="System.Drawing.Size, System.Drawing">
+    <value>123, 16</value>
+  </data>
+  <data name="label159.AutoSize" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="label159.Size" type="System.Drawing.Size, System.Drawing">
+    <value>123, 16</value>
+  </data>
+  <data name="label160.AutoSize" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="label160.Size" type="System.Drawing.Size, System.Drawing">
+    <value>139, 16</value>
+  </data>
+  <data name="label161.AutoSize" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="label161.Size" type="System.Drawing.Size, System.Drawing">
+    <value>139, 16</value>
+  </data>
+  <data name="label162.AutoSize" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="label162.Size" type="System.Drawing.Size, System.Drawing">
+    <value>136, 16</value>
+  </data>
+  <data name="label163.AutoSize" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="label163.Size" type="System.Drawing.Size, System.Drawing">
+    <value>123, 16</value>
+  </data>
+  <data name="label185.AutoSize" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="label186.AutoSize" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="label187.AutoSize" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="label188.AutoSize" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="label188.Size" type="System.Drawing.Size, System.Drawing">
+    <value>121, 16</value>
+  </data>
+  <data name="label189.AutoSize" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="label189.Size" type="System.Drawing.Size, System.Drawing">
+    <value>121, 16</value>
+  </data>
+  <data name="label190.AutoSize" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="label190.Size" type="System.Drawing.Size, System.Drawing">
+    <value>121, 16</value>
+  </data>
+  <data name="label191.AutoSize" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="label192.AutoSize" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="label193.AutoSize" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="label193.Size" type="System.Drawing.Size, System.Drawing">
+    <value>120, 16</value>
+  </data>
+  <data name="label194.AutoSize" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="label194.Size" type="System.Drawing.Size, System.Drawing">
+    <value>120, 16</value>
+  </data>
+  <data name="label195.AutoSize" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="label196.AutoSize" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="label196.Size" type="System.Drawing.Size, System.Drawing">
+    <value>120, 16</value>
+  </data>
+  <data name="label55.AutoSize" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="label55.Size" type="System.Drawing.Size, System.Drawing">
+    <value>138, 16</value>
+  </data>
+  <data name="label56.AutoSize" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="label56.Size" type="System.Drawing.Size, System.Drawing">
+    <value>138, 16</value>
+  </data>
+  <data name="label29.AutoSize" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="label29.Size" type="System.Drawing.Size, System.Drawing">
+    <value>139, 16</value>
+  </data>
+  <data name="label62.AutoSize" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="label62.Size" type="System.Drawing.Size, System.Drawing">
+    <value>139, 16</value>
+  </data>
+  <data name="label66.AutoSize" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="label66.Size" type="System.Drawing.Size, System.Drawing">
+    <value>136, 16</value>
+  </data>
+  <data name="label30.AutoSize" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="label30.Size" type="System.Drawing.Size, System.Drawing">
+    <value>138, 16</value>
+  </data>
+  <data name="label61.AutoSize" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="label63.AutoSize" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="label64.AutoSize" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="label65.AutoSize" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="label65.Size" type="System.Drawing.Size, System.Drawing">
+    <value>119, 16</value>
+  </data>
+  <data name="label67.AutoSize" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="label67.Size" type="System.Drawing.Size, System.Drawing">
+    <value>119, 16</value>
+  </data>
+  <data name="label68.AutoSize" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="label68.Size" type="System.Drawing.Size, System.Drawing">
+    <value>119, 16</value>
+  </data>
+  <data name="label127.AutoSize" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="label128.AutoSize" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="label129.AutoSize" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="label129.Size" type="System.Drawing.Size, System.Drawing">
+    <value>121, 16</value>
+  </data>
+  <data name="label130.AutoSize" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="label130.Size" type="System.Drawing.Size, System.Drawing">
+    <value>121, 16</value>
+  </data>
+  <data name="label131.AutoSize" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="label132.AutoSize" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="label132.Size" type="System.Drawing.Size, System.Drawing">
+    <value>121, 16</value>
+  </data>
+  <data name="label228.AutoSize" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="label227.AutoSize" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="label229.AutoSize" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="label230.AutoSize" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="label230.Size" type="System.Drawing.Size, System.Drawing">
+    <value>125, 16</value>
+  </data>
+  <data name="label231.AutoSize" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="label231.Size" type="System.Drawing.Size, System.Drawing">
+    <value>125, 16</value>
+  </data>
+  <data name="label232.AutoSize" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="label232.Size" type="System.Drawing.Size, System.Drawing">
+    <value>125, 16</value>
+  </data>
+  <data name="label233.AutoSize" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="label234.AutoSize" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="label235.AutoSize" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="label235.Size" type="System.Drawing.Size, System.Drawing">
+    <value>128, 16</value>
+  </data>
+  <data name="label236.AutoSize" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="label236.Size" type="System.Drawing.Size, System.Drawing">
+    <value>128, 16</value>
+  </data>
+  <data name="label237.AutoSize" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="label238.AutoSize" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="label238.Size" type="System.Drawing.Size, System.Drawing">
+    <value>128, 16</value>
+  </data>
+  <data name="label224.AutoSize" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="label224.Size" type="System.Drawing.Size, System.Drawing">
+    <value>120, 16</value>
+  </data>
+  <data name="label225.AutoSize" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="label225.Size" type="System.Drawing.Size, System.Drawing">
+    <value>120, 16</value>
+  </data>
+  <data name="label226.AutoSize" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="label226.Size" type="System.Drawing.Size, System.Drawing">
+    <value>120, 16</value>
+  </data>
+  <data name="label81.AutoSize" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="label81.Location" type="System.Drawing.Point, System.Drawing">
+    <value>309, 218</value>
+  </data>
+  <data name="label81.Size" type="System.Drawing.Size, System.Drawing">
+    <value>31, 19</value>
+  </data>
+  <data name="label82.AutoSize" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="label82.Location" type="System.Drawing.Point, System.Drawing">
+    <value>309, 143</value>
+  </data>
+  <data name="label82.Size" type="System.Drawing.Size, System.Drawing">
+    <value>31, 19</value>
+  </data>
+  <data name="CH2FWDVDCComp.Size" type="System.Drawing.Size, System.Drawing">
+    <value>106, 29</value>
+  </data>
+  <data name="label83.AutoSize" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="label83.Location" type="System.Drawing.Point, System.Drawing">
+    <value>310, 71</value>
+  </data>
+  <data name="label83.Size" type="System.Drawing.Size, System.Drawing">
+    <value>31, 19</value>
+  </data>
+  <data name="CH2FWDVDCMin.Size" type="System.Drawing.Size, System.Drawing">
+    <value>106, 29</value>
+  </data>
+  <data name="label84.AutoSize" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="label84.Size" type="System.Drawing.Size, System.Drawing">
+    <value>121, 16</value>
+  </data>
+  <data name="CH2FWDVDCMax.Size" type="System.Drawing.Size, System.Drawing">
+    <value>106, 29</value>
+  </data>
+  <data name="label85.AutoSize" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="label85.Size" type="System.Drawing.Size, System.Drawing">
+    <value>121, 16</value>
+  </data>
+  <data name="label86.AutoSize" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="label86.Size" type="System.Drawing.Size, System.Drawing">
+    <value>121, 16</value>
+  </data>
+  <data name="CH2FWDADCComp.Size" type="System.Drawing.Size, System.Drawing">
+    <value>106, 29</value>
+  </data>
+  <data name="label121.AutoSize" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="label121.Location" type="System.Drawing.Point, System.Drawing">
+    <value>164, 143</value>
+  </data>
+  <data name="label121.Size" type="System.Drawing.Size, System.Drawing">
+    <value>31, 19</value>
+  </data>
+  <data name="CH2FWDADCMin.Size" type="System.Drawing.Size, System.Drawing">
+    <value>106, 29</value>
+  </data>
+  <data name="label122.AutoSize" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="label122.Location" type="System.Drawing.Point, System.Drawing">
+    <value>164, 71</value>
+  </data>
+  <data name="label122.Size" type="System.Drawing.Size, System.Drawing">
+    <value>31, 19</value>
+  </data>
+  <data name="CH2FWDADCMax.Size" type="System.Drawing.Size, System.Drawing">
+    <value>106, 29</value>
+  </data>
+  <data name="label123.AutoSize" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="label123.Size" type="System.Drawing.Size, System.Drawing">
+    <value>121, 16</value>
+  </data>
+  <data name="label124.AutoSize" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="label124.Size" type="System.Drawing.Size, System.Drawing">
+    <value>121, 16</value>
+  </data>
+  <data name="label125.AutoSize" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="label125.Location" type="System.Drawing.Point, System.Drawing">
+    <value>158, 218</value>
+  </data>
+  <data name="label125.Size" type="System.Drawing.Size, System.Drawing">
+    <value>32, 19</value>
+  </data>
+  <data name="label126.AutoSize" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="label126.Size" type="System.Drawing.Size, System.Drawing">
+    <value>121, 16</value>
   </data>
   <data name="FWDParamsSave.Location" type="System.Drawing.Point, System.Drawing">
-    <value>357, 865</value>
+    <value>357, 937</value>
   </data>
-  <data name="FWDParamsSave.Size" type="System.Drawing.Size, System.Drawing">
-    <value>159, 40</value>
+  <data name="label117.AutoSize" type="System.Boolean, mscorlib">
+    <value>False</value>
   </data>
-  <data name="uiGroupBox22.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>0, 32, 0, 0</value>
+  <data name="label116.AutoSize" type="System.Boolean, mscorlib">
+    <value>False</value>
   </data>
-  <data name="uiGroupBox22.Size" type="System.Drawing.Size, System.Drawing">
-    <value>430, 302</value>
+  <data name="label115.AutoSize" type="System.Boolean, mscorlib">
+    <value>False</value>
   </data>
-  <data name="label106.Size" type="System.Drawing.Size, System.Drawing">
-    <value>71, 15</value>
+  <data name="label114.AutoSize" type="System.Boolean, mscorlib">
+    <value>False</value>
   </data>
-  <data name="label107.Size" type="System.Drawing.Size, System.Drawing">
-    <value>87, 15</value>
+  <data name="label106.AutoSize" type="System.Boolean, mscorlib">
+    <value>False</value>
   </data>
-  <data name="label108.Size" type="System.Drawing.Size, System.Drawing">
-    <value>103, 15</value>
+  <data name="label107.AutoSize" type="System.Boolean, mscorlib">
+    <value>False</value>
   </data>
-  <data name="label109.Size" type="System.Drawing.Size, System.Drawing">
-    <value>103, 15</value>
+  <data name="label108.AutoSize" type="System.Boolean, mscorlib">
+    <value>False</value>
   </data>
-  <data name="label110.Size" type="System.Drawing.Size, System.Drawing">
-    <value>87, 15</value>
+  <data name="label109.AutoSize" type="System.Boolean, mscorlib">
+    <value>False</value>
   </data>
-  <data name="label120.Size" type="System.Drawing.Size, System.Drawing">
-    <value>71, 15</value>
+  <data name="label110.AutoSize" type="System.Boolean, mscorlib">
+    <value>False</value>
   </data>
-  <data name="label111.Size" type="System.Drawing.Size, System.Drawing">
-    <value>103, 15</value>
+  <data name="label111.AutoSize" type="System.Boolean, mscorlib">
+    <value>False</value>
   </data>
-  <data name="label112.Size" type="System.Drawing.Size, System.Drawing">
-    <value>103, 15</value>
+  <data name="label112.AutoSize" type="System.Boolean, mscorlib">
+    <value>False</value>
   </data>
-  <data name="label113.Size" type="System.Drawing.Size, System.Drawing">
-    <value>87, 15</value>
+  <data name="label113.AutoSize" type="System.Boolean, mscorlib">
+    <value>False</value>
   </data>
-  <data name="label90.Size" type="System.Drawing.Size, System.Drawing">
-    <value>79, 15</value>
+  <data name="label218.AutoSize" type="System.Boolean, mscorlib">
+    <value>False</value>
   </data>
-  <data name="label97.Size" type="System.Drawing.Size, System.Drawing">
-    <value>47, 15</value>
+  <data name="label218.Size" type="System.Drawing.Size, System.Drawing">
+    <value>130, 16</value>
   </data>
-  <data name="label91.Size" type="System.Drawing.Size, System.Drawing">
-    <value>71, 15</value>
+  <data name="label219.AutoSize" type="System.Boolean, mscorlib">
+    <value>False</value>
   </data>
-  <data name="label96.Size" type="System.Drawing.Size, System.Drawing">
-    <value>47, 15</value>
+  <data name="label219.Size" type="System.Drawing.Size, System.Drawing">
+    <value>130, 16</value>
   </data>
-  <data name="label92.Size" type="System.Drawing.Size, System.Drawing">
-    <value>71, 15</value>
+  <data name="label220.AutoSize" type="System.Boolean, mscorlib">
+    <value>False</value>
   </data>
-  <data name="label95.Size" type="System.Drawing.Size, System.Drawing">
-    <value>71, 15</value>
+  <data name="label220.Size" type="System.Drawing.Size, System.Drawing">
+    <value>130, 16</value>
   </data>
-  <data name="label93.Size" type="System.Drawing.Size, System.Drawing">
-    <value>79, 15</value>
+  <data name="label206.AutoSize" type="System.Boolean, mscorlib">
+    <value>False</value>
   </data>
-  <data name="label94.Size" type="System.Drawing.Size, System.Drawing">
-    <value>71, 15</value>
+  <data name="label206.Size" type="System.Drawing.Size, System.Drawing">
+    <value>125, 16</value>
   </data>
-  <data name="uiGroupBox35.Location" type="System.Drawing.Point, System.Drawing">
-    <value>4, 15</value>
+  <data name="label207.AutoSize" type="System.Boolean, mscorlib">
+    <value>False</value>
   </data>
-  <data name="uiGroupBox35.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>0, 32, 0, 0</value>
+  <data name="label207.Size" type="System.Drawing.Size, System.Drawing">
+    <value>125, 16</value>
   </data>
-  <data name="uiGroupBox35.Size" type="System.Drawing.Size, System.Drawing">
-    <value>366, 569</value>
+  <data name="label208.AutoSize" type="System.Boolean, mscorlib">
+    <value>False</value>
   </data>
-  <data name="uiGroupBox13.Location" type="System.Drawing.Point, System.Drawing">
-    <value>4, 14</value>
+  <data name="label208.Size" type="System.Drawing.Size, System.Drawing">
+    <value>125, 16</value>
   </data>
-  <data name="uiGroupBox13.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>0, 32, 0, 0</value>
+  <data name="label209.AutoSize" type="System.Boolean, mscorlib">
+    <value>False</value>
   </data>
-  <data name="uiGroupBox13.Size" type="System.Drawing.Size, System.Drawing">
-    <value>1436, 457</value>
+  <data name="label210.AutoSize" type="System.Boolean, mscorlib">
+    <value>False</value>
   </data>
-  <data name="tabPage3.Size" type="System.Drawing.Size, System.Drawing">
-    <value>1451, 1132</value>
+  <data name="label211.AutoSize" type="System.Boolean, mscorlib">
+    <value>False</value>
   </data>
-  <data name="SendText.Location" type="System.Drawing.Point, System.Drawing">
-    <value>119, 498</value>
+  <data name="label211.Size" type="System.Drawing.Size, System.Drawing">
+    <value>127, 16</value>
   </data>
-  <data name="SendText.Size" type="System.Drawing.Size, System.Drawing">
-    <value>245, 78</value>
+  <data name="label212.AutoSize" type="System.Boolean, mscorlib">
+    <value>False</value>
   </data>
-  <data name="tabPage4.Size" type="System.Drawing.Size, System.Drawing">
-    <value>1129, 1131</value>
+  <data name="label212.Size" type="System.Drawing.Size, System.Drawing">
+    <value>127, 16</value>
   </data>
-  <data name="RUPParamsCopy.Location" type="System.Drawing.Point, System.Drawing">
-    <value>597, 851</value>
+  <data name="label213.AutoSize" type="System.Boolean, mscorlib">
+    <value>False</value>
   </data>
-  <data name="RUPParamsCopy.Size" type="System.Drawing.Size, System.Drawing">
-    <value>122, 40</value>
+  <data name="label214.AutoSize" type="System.Boolean, mscorlib">
+    <value>False</value>
   </data>
-  <data name="UPParamsSave.Location" type="System.Drawing.Point, System.Drawing">
-    <value>412, 850</value>
+  <data name="label214.Size" type="System.Drawing.Size, System.Drawing">
+    <value>127, 16</value>
   </data>
-  <data name="UPParamsSave.Size" type="System.Drawing.Size, System.Drawing">
-    <value>159, 40</value>
+  <data name="label88.AutoSize" type="System.Boolean, mscorlib">
+    <value>False</value>
   </data>
-  <data name="LUPParamsCopy.Location" type="System.Drawing.Point, System.Drawing">
-    <value>264, 850</value>
+  <data name="label88.Size" type="System.Drawing.Size, System.Drawing">
+    <value>169, 20</value>
   </data>
-  <data name="LUPParamsCopy.Size" type="System.Drawing.Size, System.Drawing">
-    <value>122, 40</value>
+  <data name="label179.AutoSize" type="System.Boolean, mscorlib">
+    <value>False</value>
   </data>
-  <data name="uiGroupBox12.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>0, 32, 0, 0</value>
+  <data name="label179.Size" type="System.Drawing.Size, System.Drawing">
+    <value>132, 16</value>
+  </data>
+  <data name="label180.AutoSize" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="label180.Size" type="System.Drawing.Size, System.Drawing">
+    <value>132, 16</value>
+  </data>
+  <data name="label181.AutoSize" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="label181.Size" type="System.Drawing.Size, System.Drawing">
+    <value>129, 16</value>
+  </data>
+  <data name="label182.AutoSize" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="label182.Size" type="System.Drawing.Size, System.Drawing">
+    <value>139, 16</value>
+  </data>
+  <data name="label183.AutoSize" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="label183.Size" type="System.Drawing.Size, System.Drawing">
+    <value>136, 16</value>
+  </data>
+  <data name="label184.AutoSize" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="label184.Size" type="System.Drawing.Size, System.Drawing">
+    <value>132, 16</value>
+  </data>
+  <data name="label151.AutoSize" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="label151.Size" type="System.Drawing.Size, System.Drawing">
+    <value>149, 16</value>
+  </data>
+  <data name="label152.AutoSize" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="label152.Size" type="System.Drawing.Size, System.Drawing">
+    <value>161, 16</value>
+  </data>
+  <data name="label153.AutoSize" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="label153.Size" type="System.Drawing.Size, System.Drawing">
+    <value>149, 16</value>
+  </data>
+  <data name="label155.AutoSize" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="label155.Location" type="System.Drawing.Point, System.Drawing">
+    <value>257, 45</value>
+  </data>
+  <data name="label155.Size" type="System.Drawing.Size, System.Drawing">
+    <value>149, 16</value>
+  </data>
+  <data name="label156.AutoSize" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="label156.Size" type="System.Drawing.Size, System.Drawing">
+    <value>161, 16</value>
+  </data>
+  <data name="label157.AutoSize" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="label157.Size" type="System.Drawing.Size, System.Drawing">
+    <value>161, 16</value>
+  </data>
+  <data name="label167.AutoSize" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="label167.Size" type="System.Drawing.Size, System.Drawing">
+    <value>121, 16</value>
+  </data>
+  <data name="label168.AutoSize" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="label168.Size" type="System.Drawing.Size, System.Drawing">
+    <value>121, 16</value>
+  </data>
+  <data name="label169.AutoSize" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="label169.Size" type="System.Drawing.Size, System.Drawing">
+    <value>121, 16</value>
+  </data>
+  <data name="label170.AutoSize" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="label171.AutoSize" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="label172.AutoSize" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="label172.Size" type="System.Drawing.Size, System.Drawing">
+    <value>127, 16</value>
+  </data>
+  <data name="label173.AutoSize" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="label173.Size" type="System.Drawing.Size, System.Drawing">
+    <value>127, 16</value>
+  </data>
+  <data name="label174.AutoSize" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="label175.AutoSize" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="label175.Size" type="System.Drawing.Size, System.Drawing">
+    <value>127, 16</value>
   </data>
   <data name="uiGroupBox12.Size" type="System.Drawing.Size, System.Drawing">
-    <value>487, 822</value>
+    <value>487, 891</value>
   </data>
-  <data name="uiGroupBox9.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>0, 32, 0, 0</value>
+  <data name="label48.AutoSize" type="System.Boolean, mscorlib">
+    <value>False</value>
   </data>
-  <data name="uiGroupBox9.Size" type="System.Drawing.Size, System.Drawing">
-    <value>487, 822</value>
+  <data name="label48.Size" type="System.Drawing.Size, System.Drawing">
+    <value>139, 16</value>
   </data>
-  <data name="uiGroupBox43.Font" type="System.Drawing.Font, System.Drawing">
-    <value>SimSun-ExtB, 12pt</value>
+  <data name="label59.AutoSize" type="System.Boolean, mscorlib">
+    <value>False</value>
   </data>
-  <data name="uiGroupBox43.Location" type="System.Drawing.Point, System.Drawing">
-    <value>241, 602</value>
+  <data name="label59.Size" type="System.Drawing.Size, System.Drawing">
+    <value>136, 16</value>
   </data>
-  <data name="uiGroupBox43.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>4, 5, 4, 5</value>
+  <data name="label35.AutoSize" type="System.Boolean, mscorlib">
+    <value>False</value>
   </data>
-  <data name="uiGroupBox43.MinimumSize" type="System.Drawing.Size, System.Drawing">
-    <value>1, 1</value>
+  <data name="label35.Size" type="System.Drawing.Size, System.Drawing">
+    <value>139, 16</value>
   </data>
-  <data name="uiGroupBox43.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>0, 30, 0, 0</value>
+  <data name="label31.AutoSize" type="System.Boolean, mscorlib">
+    <value>False</value>
   </data>
-  <data name="uiGroupBox43.Size" type="System.Drawing.Size, System.Drawing">
-    <value>344, 264</value>
+  <data name="label31.Size" type="System.Drawing.Size, System.Drawing">
+    <value>127, 16</value>
   </data>
-  <data name="uiGroupBox43.TabIndex" type="System.Int32, mscorlib">
-    <value>485</value>
+  <data name="label60.AutoSize" type="System.Boolean, mscorlib">
+    <value>False</value>
   </data>
-  <data name="uiGroupBox43.Text" type="System.Resources.ResXNullRef, System.Windows.Forms">
-    <value />
+  <data name="label60.Size" type="System.Drawing.Size, System.Drawing">
+    <value>127, 16</value>
   </data>
-  <data name="uiGroupBox41.Location" type="System.Drawing.Point, System.Drawing">
-    <value>8, 328</value>
+  <data name="label33.AutoSize" type="System.Boolean, mscorlib">
+    <value>False</value>
   </data>
-  <data name="uiGroupBox41.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>0, 30, 0, 0</value>
+  <data name="label33.Size" type="System.Drawing.Size, System.Drawing">
+    <value>127, 16</value>
   </data>
-  <data name="uiGroupBox41.Size" type="System.Drawing.Size, System.Drawing">
-    <value>354, 260</value>
+  <data name="label57.AutoSize" type="System.Boolean, mscorlib">
+    <value>False</value>
   </data>
-  <data name="CH2FWDflowtime.Font" type="System.Drawing.Font, System.Drawing">
-    <value>SimSun-ExtB, 12pt</value>
+  <data name="label57.Size" type="System.Drawing.Size, System.Drawing">
+    <value>142, 16</value>
   </data>
-  <data name="CH2FWDflowtime.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>4, 5, 4, 5</value>
+  <data name="label58.AutoSize" type="System.Boolean, mscorlib">
+    <value>False</value>
   </data>
-  <data name="CH2FWDflowtime.MinimumSize" type="System.Drawing.Size, System.Drawing">
-    <value>1, 16</value>
+  <data name="label58.Size" type="System.Drawing.Size, System.Drawing">
+    <value>154, 16</value>
   </data>
-  <data name="CH2FWDflowtime.Size" type="System.Drawing.Size, System.Drawing">
-    <value>108, 29</value>
+  <data name="label135.AutoSize" type="System.Boolean, mscorlib">
+    <value>False</value>
   </data>
-  <data name="label11.Location" type="System.Drawing.Point, System.Drawing">
-    <value>45, 43</value>
+  <data name="label135.Size" type="System.Drawing.Size, System.Drawing">
+    <value>142, 16</value>
   </data>
-  <data name="label11.Size" type="System.Drawing.Size, System.Drawing">
-    <value>95, 16</value>
+  <data name="label136.AutoSize" type="System.Boolean, mscorlib">
+    <value>False</value>
   </data>
-  <data name="label11.TabIndex" type="System.Int32, mscorlib">
-    <value>463</value>
+  <data name="label136.Size" type="System.Drawing.Size, System.Drawing">
+    <value>142, 16</value>
   </data>
-  <data name="label11.Text" xml:space="preserve">
-    <value>CH2流量时间</value>
+  <data name="label137.AutoSize" type="System.Boolean, mscorlib">
+    <value>False</value>
   </data>
-  <data name="CH2FWDPreMin.Font" type="System.Drawing.Font, System.Drawing">
-    <value>SimSun-ExtB, 12pt</value>
+  <data name="label137.Size" type="System.Drawing.Size, System.Drawing">
+    <value>154, 16</value>
   </data>
-  <data name="CH2FWDPreMin.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>4, 5, 4, 5</value>
+  <data name="label138.AutoSize" type="System.Boolean, mscorlib">
+    <value>False</value>
   </data>
-  <data name="CH2FWDPreMin.MinimumSize" type="System.Drawing.Size, System.Drawing">
-    <value>1, 16</value>
+  <data name="label138.Location" type="System.Drawing.Point, System.Drawing">
+    <value>74, 117</value>
   </data>
-  <data name="CH2FWDPreMin.Size" type="System.Drawing.Size, System.Drawing">
-    <value>108, 29</value>
+  <data name="label138.Size" type="System.Drawing.Size, System.Drawing">
+    <value>157, 16</value>
   </data>
-  <data name="CH2FWDPreMax.Font" type="System.Drawing.Font, System.Drawing">
-    <value>SimSun-ExtB, 12pt</value>
+  <data name="label32.AutoSize" type="System.Boolean, mscorlib">
+    <value>False</value>
   </data>
-  <data name="CH2FWDPreMax.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>4, 5, 4, 5</value>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="label32.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
   </data>
-  <data name="CH2FWDPreMax.MinimumSize" type="System.Drawing.Size, System.Drawing">
-    <value>1, 16</value>
+  <data name="label34.AutoSize" type="System.Boolean, mscorlib">
+    <value>False</value>
   </data>
-  <data name="CH2FWDPreMax.Size" type="System.Drawing.Size, System.Drawing">
-    <value>108, 29</value>
+  <data name="label34.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
   </data>
-  <data name="label5.Size" type="System.Drawing.Size, System.Drawing">
-    <value>95, 16</value>
+  <data name="label36.AutoSize" type="System.Boolean, mscorlib">
+    <value>False</value>
   </data>
-  <data name="label5.Text" xml:space="preserve">
-    <value>CH2压力上限</value>
+  <data name="label36.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
   </data>
-  <data name="label6.Size" type="System.Drawing.Size, System.Drawing">
-    <value>95, 16</value>
+  <data name="label52.AutoSize" type="System.Boolean, mscorlib">
+    <value>False</value>
   </data>
-  <data name="label6.Text" xml:space="preserve">
-    <value>CH2压力下限</value>
+  <data name="label52.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
   </data>
-  <data name="CH2FWDFlowMin.Font" type="System.Drawing.Font, System.Drawing">
-    <value>SimSun-ExtB, 12pt</value>
+  <data name="label52.Size" type="System.Drawing.Size, System.Drawing">
+    <value>124, 16</value>
   </data>
-  <data name="CH2FWDFlowMin.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>4, 5, 4, 5</value>
+  <data name="label38.AutoSize" type="System.Boolean, mscorlib">
+    <value>False</value>
   </data>
-  <data name="CH2FWDFlowMin.MinimumSize" type="System.Drawing.Size, System.Drawing">
-    <value>1, 16</value>
+  <data name="label38.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
   </data>
-  <data name="CH2FWDFlowMin.Size" type="System.Drawing.Size, System.Drawing">
-    <value>108, 29</value>
+  <data name="label38.Size" type="System.Drawing.Size, System.Drawing">
+    <value>124, 16</value>
   </data>
-  <data name="CH2FWDFlowMax.Font" type="System.Drawing.Font, System.Drawing">
-    <value>SimSun-ExtB, 12pt</value>
+  <data name="label40.AutoSize" type="System.Boolean, mscorlib">
+    <value>False</value>
   </data>
-  <data name="CH2FWDFlowMax.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>4, 5, 4, 5</value>
+  <data name="label40.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
   </data>
-  <data name="CH2FWDFlowMax.MinimumSize" type="System.Drawing.Size, System.Drawing">
-    <value>1, 16</value>
+  <data name="label40.Size" type="System.Drawing.Size, System.Drawing">
+    <value>124, 16</value>
   </data>
-  <data name="CH2FWDFlowMax.Size" type="System.Drawing.Size, System.Drawing">
-    <value>108, 29</value>
+  <data name="label37.AutoSize" type="System.Boolean, mscorlib">
+    <value>False</value>
   </data>
-  <data name="CH2FwdpreTime.Font" type="System.Drawing.Font, System.Drawing">
-    <value>SimSun-ExtB, 12pt</value>
+  <data name="label37.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
   </data>
-  <data name="CH2FwdpreTime.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>4, 5, 4, 5</value>
+  <data name="label39.AutoSize" type="System.Boolean, mscorlib">
+    <value>False</value>
   </data>
-  <data name="CH2FwdpreTime.MinimumSize" type="System.Drawing.Size, System.Drawing">
-    <value>1, 16</value>
+  <data name="label39.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
   </data>
-  <data name="CH2FwdpreTime.Size" type="System.Drawing.Size, System.Drawing">
-    <value>108, 29</value>
+  <data name="label44.AutoSize" type="System.Boolean, mscorlib">
+    <value>False</value>
   </data>
-  <data name="label7.Size" type="System.Drawing.Size, System.Drawing">
-    <value>95, 16</value>
+  <data name="label44.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
   </data>
-  <data name="label7.Text" xml:space="preserve">
-    <value>CH2流量下限</value>
+  <data name="label44.Size" type="System.Drawing.Size, System.Drawing">
+    <value>120, 16</value>
   </data>
-  <data name="label10.Location" type="System.Drawing.Point, System.Drawing">
-    <value>193, 47</value>
+  <data name="label41.AutoSize" type="System.Boolean, mscorlib">
+    <value>False</value>
   </data>
-  <data name="label10.Size" type="System.Drawing.Size, System.Drawing">
-    <value>95, 16</value>
+  <data name="label41.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
   </data>
-  <data name="label10.Text" xml:space="preserve">
-    <value>CH2压力时间</value>
+  <data name="label41.Location" type="System.Drawing.Point, System.Drawing">
+    <value>29, 117</value>
   </data>
-  <data name="label8.Size" type="System.Drawing.Size, System.Drawing">
-    <value>95, 16</value>
+  <data name="label41.Size" type="System.Drawing.Size, System.Drawing">
+    <value>127, 16</value>
   </data>
-  <data name="label8.Text" xml:space="preserve">
-    <value>CH2流量上限</value>
+  <data name="label53.AutoSize" type="System.Boolean, mscorlib">
+    <value>False</value>
   </data>
-  <data name="uiGroupBox33.Location" type="System.Drawing.Point, System.Drawing">
-    <value>442, 324</value>
+  <data name="label53.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
   </data>
-  <data name="uiGroupBox33.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>0, 30, 0, 0</value>
+  <data name="label54.AutoSize" type="System.Boolean, mscorlib">
+    <value>False</value>
   </data>
-  <data name="uiGroupBox33.Size" type="System.Drawing.Size, System.Drawing">
-    <value>344, 264</value>
+  <data name="label54.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
   </data>
-  <data name="RFWDParamsCopy.Location" type="System.Drawing.Point, System.Drawing">
-    <value>609, 865</value>
+  <data name="label54.Location" type="System.Drawing.Point, System.Drawing">
+    <value>42, 45</value>
   </data>
-  <data name="RFWDParamsCopy.Size" type="System.Drawing.Size, System.Drawing">
-    <value>122, 40</value>
-  </data>
-  <data name="LFWDParamsCopy.Location" type="System.Drawing.Point, System.Drawing">
-    <value>166, 865</value>
-  </data>
-  <data name="LFWDParamsCopy.Size" type="System.Drawing.Size, System.Drawing">
-    <value>122, 40</value>
-  </data>
-  <data name="tabPage6.Size" type="System.Drawing.Size, System.Drawing">
-    <value>1129, 1131</value>
+  <data name="label54.Size" type="System.Drawing.Size, System.Drawing">
+    <value>114, 16</value>
   </data>
   <data name="TotalPreMax.Font" type="System.Drawing.Font, System.Drawing">
     <value>SimSun-ExtB, 12pt</value>
@@ -600,23 +942,20 @@
   <data name="TotalPreMax.Location" type="System.Drawing.Point, System.Drawing">
     <value>43, 142</value>
   </data>
-  <data name="TotalPreMax.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>4, 5, 4, 5</value>
-  </data>
-  <data name="TotalPreMax.MinimumSize" type="System.Drawing.Size, System.Drawing">
-    <value>1, 16</value>
-  </data>
   <data name="TotalPreMax.Size" type="System.Drawing.Size, System.Drawing">
     <value>108, 29</value>
   </data>
   <data name="TotalPreMax.TabIndex" type="System.Int32, mscorlib">
     <value>462</value>
   </data>
+  <data name="label51.AutoSize" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
   <data name="label51.Location" type="System.Drawing.Point, System.Drawing">
     <value>32, 117</value>
   </data>
   <data name="label51.Size" type="System.Drawing.Size, System.Drawing">
-    <value>119, 16</value>
+    <value>161, 16</value>
   </data>
   <data name="label51.TabIndex" type="System.Int32, mscorlib">
     <value>459</value>
@@ -630,12 +969,6 @@
   <data name="TotalFlowMin.Location" type="System.Drawing.Point, System.Drawing">
     <value>191, 57</value>
   </data>
-  <data name="TotalFlowMin.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>4, 5, 4, 5</value>
-  </data>
-  <data name="TotalFlowMin.MinimumSize" type="System.Drawing.Size, System.Drawing">
-    <value>1, 16</value>
-  </data>
   <data name="TotalFlowMin.Size" type="System.Drawing.Size, System.Drawing">
     <value>108, 29</value>
   </data>
@@ -645,17 +978,8 @@
   <data name="TotalFlowMax.Location" type="System.Drawing.Point, System.Drawing">
     <value>43, 57</value>
   </data>
-  <data name="TotalFlowMax.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>4, 5, 4, 5</value>
-  </data>
-  <data name="TotalFlowMax.MinimumSize" type="System.Drawing.Size, System.Drawing">
-    <value>1, 16</value>
-  </data>
   <data name="TotalFlowMax.Size" type="System.Drawing.Size, System.Drawing">
     <value>108, 29</value>
-  </data>
-  <data name="label78.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
   </data>
   <data name="label78.Font" type="System.Drawing.Font, System.Drawing">
     <value>SimSun-ExtB, 12pt</value>
@@ -667,16 +991,13 @@
     <value>43, 36</value>
   </data>
   <data name="label78.Size" type="System.Drawing.Size, System.Drawing">
-    <value>87, 16</value>
+    <value>108, 16</value>
   </data>
   <data name="label78.TabIndex" type="System.Int32, mscorlib">
     <value>453</value>
   </data>
   <data name="label78.Text" xml:space="preserve">
     <value>总流量上限</value>
-  </data>
-  <data name="label79.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
   </data>
   <data name="label79.Font" type="System.Drawing.Font, System.Drawing">
     <value>SimSun-ExtB, 12pt</value>
@@ -688,7 +1009,7 @@
     <value>191, 36</value>
   </data>
   <data name="label79.Size" type="System.Drawing.Size, System.Drawing">
-    <value>87, 16</value>
+    <value>108, 16</value>
   </data>
   <data name="label79.TabIndex" type="System.Int32, mscorlib">
     <value>452</value>
@@ -696,14 +1017,20 @@
   <data name="label79.Text" xml:space="preserve">
     <value>总流量下限</value>
   </data>
-  <data name="CH1FwdPreMin.Font" type="System.Drawing.Font, System.Drawing">
+  <data name="uiGroupBox43.Font" type="System.Drawing.Font, System.Drawing">
     <value>SimSun-ExtB, 12pt</value>
   </data>
-  <data name="CH1FwdPreMin.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>4, 5, 4, 5</value>
+  <data name="uiGroupBox43.Location" type="System.Drawing.Point, System.Drawing">
+    <value>241, 652</value>
   </data>
-  <data name="CH1FwdPreMin.MinimumSize" type="System.Drawing.Size, System.Drawing">
-    <value>1, 16</value>
+  <data name="uiGroupBox43.Size" type="System.Drawing.Size, System.Drawing">
+    <value>344, 286</value>
+  </data>
+  <data name="uiGroupBox43.TabIndex" type="System.Int32, mscorlib">
+    <value>485</value>
+  </data>
+  <data name="CH1FwdPreMin.Font" type="System.Drawing.Font, System.Drawing">
+    <value>SimSun-ExtB, 12pt</value>
   </data>
   <data name="CH1FwdPreMin.Size" type="System.Drawing.Size, System.Drawing">
     <value>108, 29</value>
@@ -711,17 +1038,14 @@
   <data name="CH1FWDFLOWTime.Font" type="System.Drawing.Font, System.Drawing">
     <value>SimSun-ExtB, 12pt</value>
   </data>
-  <data name="CH1FWDFLOWTime.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>4, 5, 4, 5</value>
-  </data>
-  <data name="CH1FWDFLOWTime.MinimumSize" type="System.Drawing.Size, System.Drawing">
-    <value>1, 16</value>
-  </data>
   <data name="CH1FWDFLOWTime.Size" type="System.Drawing.Size, System.Drawing">
     <value>108, 29</value>
   </data>
+  <data name="label69.AutoSize" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
   <data name="label69.Size" type="System.Drawing.Size, System.Drawing">
-    <value>95, 16</value>
+    <value>122, 16</value>
   </data>
   <data name="label69.Text" xml:space="preserve">
     <value>CH1流量上限</value>
@@ -729,38 +1053,47 @@
   <data name="CH1FwdPreMax.Font" type="System.Drawing.Font, System.Drawing">
     <value>SimSun-ExtB, 12pt</value>
   </data>
-  <data name="CH1FwdPreMax.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>4, 5, 4, 5</value>
-  </data>
-  <data name="CH1FwdPreMax.MinimumSize" type="System.Drawing.Size, System.Drawing">
-    <value>1, 16</value>
-  </data>
   <data name="CH1FwdPreMax.Size" type="System.Drawing.Size, System.Drawing">
     <value>108, 29</value>
+  </data>
+  <data name="label70.AutoSize" type="System.Boolean, mscorlib">
+    <value>False</value>
   </data>
   <data name="label70.Location" type="System.Drawing.Point, System.Drawing">
     <value>42, 43</value>
   </data>
   <data name="label70.Size" type="System.Drawing.Size, System.Drawing">
-    <value>95, 16</value>
+    <value>122, 16</value>
   </data>
   <data name="label70.Text" xml:space="preserve">
     <value>CH1流量时间</value>
   </data>
+  <data name="label71.AutoSize" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
   <data name="label71.Size" type="System.Drawing.Size, System.Drawing">
-    <value>95, 16</value>
+    <value>122, 16</value>
   </data>
   <data name="label71.Text" xml:space="preserve">
     <value>CH1流量下限</value>
   </data>
+  <data name="label72.AutoSize" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
   <data name="label72.Size" type="System.Drawing.Size, System.Drawing">
-    <value>95, 16</value>
+    <value>141, 16</value>
   </data>
   <data name="label72.Text" xml:space="preserve">
     <value>CH1压力上限</value>
   </data>
+  <data name="label73.AutoSize" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="label73.Location" type="System.Drawing.Point, System.Drawing">
+    <value>187, 43</value>
+  </data>
   <data name="label73.Size" type="System.Drawing.Size, System.Drawing">
-    <value>95, 16</value>
+    <value>123, 20</value>
   </data>
   <data name="label73.Text" xml:space="preserve">
     <value>CH1压力时间</value>
@@ -768,17 +1101,14 @@
   <data name="CH1FwdPreTime.Font" type="System.Drawing.Font, System.Drawing">
     <value>SimSun-ExtB, 12pt</value>
   </data>
-  <data name="CH1FwdPreTime.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>4, 5, 4, 5</value>
-  </data>
-  <data name="CH1FwdPreTime.MinimumSize" type="System.Drawing.Size, System.Drawing">
-    <value>1, 16</value>
-  </data>
   <data name="CH1FwdPreTime.Size" type="System.Drawing.Size, System.Drawing">
     <value>108, 29</value>
   </data>
+  <data name="label74.AutoSize" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
   <data name="label74.Size" type="System.Drawing.Size, System.Drawing">
-    <value>95, 16</value>
+    <value>123, 16</value>
   </data>
   <data name="label74.Text" xml:space="preserve">
     <value>CH1压力下限</value>
@@ -786,182 +1116,302 @@
   <data name="CH1FWDFlowMax.Font" type="System.Drawing.Font, System.Drawing">
     <value>SimSun-ExtB, 12pt</value>
   </data>
-  <data name="CH1FWDFlowMax.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>4, 5, 4, 5</value>
-  </data>
-  <data name="CH1FWDFlowMax.MinimumSize" type="System.Drawing.Size, System.Drawing">
-    <value>1, 16</value>
-  </data>
   <data name="CH1FWDFlowMax.Size" type="System.Drawing.Size, System.Drawing">
     <value>108, 29</value>
   </data>
   <data name="CH1FWDFlowMin.Font" type="System.Drawing.Font, System.Drawing">
     <value>SimSun-ExtB, 12pt</value>
   </data>
-  <data name="CH1FWDFlowMin.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>4, 5, 4, 5</value>
-  </data>
-  <data name="CH1FWDFlowMin.MinimumSize" type="System.Drawing.Size, System.Drawing">
-    <value>1, 16</value>
-  </data>
   <data name="CH1FWDFlowMin.Size" type="System.Drawing.Size, System.Drawing">
     <value>108, 29</value>
   </data>
-  <data name="tabPage7.Size" type="System.Drawing.Size, System.Drawing">
-    <value>1129, 1131</value>
+  <data name="uiGroupBox41.Location" type="System.Drawing.Point, System.Drawing">
+    <value>8, 355</value>
   </data>
-  <data name="uiTabControlMenu2.Size" type="System.Drawing.Size, System.Drawing">
-    <value>1330, 1131</value>
+  <data name="uiGroupBox41.Size" type="System.Drawing.Size, System.Drawing">
+    <value>354, 282</value>
   </data>
-  <data name="tabPage2.Size" type="System.Drawing.Size, System.Drawing">
-    <value>1451, 1132</value>
+  <data name="CH2FWDflowtime.Font" type="System.Drawing.Font, System.Drawing">
+    <value>SimSun-ExtB, 12pt</value>
   </data>
-  <data name="PRWDParamsCopy.Location" type="System.Drawing.Point, System.Drawing">
-    <value>522, 603</value>
+  <data name="CH2FWDflowtime.Size" type="System.Drawing.Size, System.Drawing">
+    <value>108, 29</value>
   </data>
-  <data name="PRWDParamsCopy.Size" type="System.Drawing.Size, System.Drawing">
-    <value>122, 40</value>
+  <data name="label11.AutoSize" type="System.Boolean, mscorlib">
+    <value>False</value>
   </data>
-  <data name="LRWDParamsCopy.Location" type="System.Drawing.Point, System.Drawing">
-    <value>189, 603</value>
+  <data name="label11.Location" type="System.Drawing.Point, System.Drawing">
+    <value>45, 32</value>
   </data>
-  <data name="LRWDParamsCopy.Size" type="System.Drawing.Size, System.Drawing">
-    <value>122, 40</value>
+  <data name="label11.Size" type="System.Drawing.Size, System.Drawing">
+    <value>106, 27</value>
   </data>
-  <data name="uiGroupBox5.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>0, 32, 0, 0</value>
+  <data name="label11.TabIndex" type="System.Int32, mscorlib">
+    <value>463</value>
   </data>
-  <data name="uiGroupBox5.Size" type="System.Drawing.Size, System.Drawing">
-    <value>307, 293</value>
+  <data name="label11.Text" xml:space="preserve">
+    <value>CH2流量时间</value>
   </data>
-  <data name="label17.Size" type="System.Drawing.Size, System.Drawing">
-    <value>27, 19</value>
+  <data name="CH2FWDPreMin.Font" type="System.Drawing.Font, System.Drawing">
+    <value>SimSun-ExtB, 12pt</value>
   </data>
-  <data name="label20.Size" type="System.Drawing.Size, System.Drawing">
-    <value>27, 19</value>
+  <data name="CH2FWDPreMin.Size" type="System.Drawing.Size, System.Drawing">
+    <value>108, 29</value>
   </data>
-  <data name="label18.Size" type="System.Drawing.Size, System.Drawing">
-    <value>27, 19</value>
+  <data name="CH2FWDPreMax.Font" type="System.Drawing.Font, System.Drawing">
+    <value>SimSun-ExtB, 12pt</value>
   </data>
-  <data name="tabPage0.Size" type="System.Drawing.Size, System.Drawing">
-    <value>1451, 1132</value>
+  <data name="CH2FWDPreMax.Size" type="System.Drawing.Size, System.Drawing">
+    <value>108, 29</value>
   </data>
-  <data name="tabPage1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>1451, 1132</value>
+  <data name="label5.AutoSize" type="System.Boolean, mscorlib">
+    <value>False</value>
   </data>
-  <data name="tabPage9.Size" type="System.Drawing.Size, System.Drawing">
-    <value>1451, 1132</value>
+  <data name="label5.Size" type="System.Drawing.Size, System.Drawing">
+    <value>119, 16</value>
   </data>
-  <data name="uiTabControlMenu1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>1652, 1132</value>
+  <data name="label5.Text" xml:space="preserve">
+    <value>CH2压力上限</value>
   </data>
-  <data name="uiGroupBox32.Location" type="System.Drawing.Point, System.Drawing">
-    <value>4, 566</value>
+  <data name="label6.AutoSize" type="System.Boolean, mscorlib">
+    <value>False</value>
   </data>
-  <data name="uiGroupBox32.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>0, 32, 0, 0</value>
+  <data name="label6.Size" type="System.Drawing.Size, System.Drawing">
+    <value>119, 16</value>
   </data>
-  <data name="uiGroupBox32.Size" type="System.Drawing.Size, System.Drawing">
-    <value>550, 269</value>
+  <data name="label6.Text" xml:space="preserve">
+    <value>CH2压力下限</value>
   </data>
-  <data name="uiGroupBox3.Location" type="System.Drawing.Point, System.Drawing">
-    <value>575, 286</value>
+  <data name="CH2FWDFlowMin.Font" type="System.Drawing.Font, System.Drawing">
+    <value>SimSun-ExtB, 12pt</value>
   </data>
-  <data name="uiGroupBox3.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>0, 32, 0, 0</value>
+  <data name="CH2FWDFlowMin.Size" type="System.Drawing.Size, System.Drawing">
+    <value>108, 29</value>
   </data>
-  <data name="uiGroupBox3.Size" type="System.Drawing.Size, System.Drawing">
-    <value>550, 276</value>
+  <data name="CH2FWDFlowMax.Font" type="System.Drawing.Font, System.Drawing">
+    <value>SimSun-ExtB, 12pt</value>
   </data>
-  <data name="uiGroupBox1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>4, 281</value>
+  <data name="CH2FWDFlowMax.Size" type="System.Drawing.Size, System.Drawing">
+    <value>108, 29</value>
   </data>
-  <data name="uiGroupBox1.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>0, 32, 0, 0</value>
+  <data name="CH2FwdpreTime.Font" type="System.Drawing.Font, System.Drawing">
+    <value>SimSun-ExtB, 12pt</value>
   </data>
-  <data name="uiGroupBox1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>550, 276</value>
+  <data name="CH2FwdpreTime.Size" type="System.Drawing.Size, System.Drawing">
+    <value>108, 29</value>
   </data>
-  <data name="btnSave.Location" type="System.Drawing.Point, System.Drawing">
-    <value>511, 853</value>
+  <data name="label7.AutoSize" type="System.Boolean, mscorlib">
+    <value>False</value>
   </data>
-  <data name="btnSave.Size" type="System.Drawing.Size, System.Drawing">
-    <value>159, 36</value>
+  <data name="label7.Size" type="System.Drawing.Size, System.Drawing">
+    <value>118, 16</value>
   </data>
-  <data name="uiGroupBox8.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>0, 32, 0, 0</value>
+  <data name="label7.Text" xml:space="preserve">
+    <value>CH2流量下限</value>
   </data>
-  <data name="uiGroupBox8.Size" type="System.Drawing.Size, System.Drawing">
-    <value>550, 271</value>
+  <data name="label10.AutoSize" type="System.Boolean, mscorlib">
+    <value>False</value>
   </data>
-  <data name="uiGroupBox7.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>0, 32, 0, 0</value>
+  <data name="label10.Location" type="System.Drawing.Point, System.Drawing">
+    <value>193, 47</value>
   </data>
-  <data name="uiGroupBox7.Size" type="System.Drawing.Size, System.Drawing">
-    <value>550, 266</value>
+  <data name="label10.Size" type="System.Drawing.Size, System.Drawing">
+    <value>114, 16</value>
+  </data>
+  <data name="label10.Text" xml:space="preserve">
+    <value>CH2压力时间</value>
+  </data>
+  <data name="label8.AutoSize" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="label8.Size" type="System.Drawing.Size, System.Drawing">
+    <value>118, 16</value>
+  </data>
+  <data name="label8.Text" xml:space="preserve">
+    <value>CH2流量上限</value>
+  </data>
+  <data name="uiGroupBox33.Location" type="System.Drawing.Point, System.Drawing">
+    <value>442, 351</value>
+  </data>
+  <data name="uiGroupBox33.Size" type="System.Drawing.Size, System.Drawing">
+    <value>344, 286</value>
+  </data>
+  <data name="RFWDParamsCopy.Location" type="System.Drawing.Point, System.Drawing">
+    <value>609, 937</value>
+  </data>
+  <data name="LFWDParamsCopy.Location" type="System.Drawing.Point, System.Drawing">
+    <value>166, 937</value>
+  </data>
+  <data name="label20.AutoSize" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="label18.AutoSize" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="label19.AutoSize" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="label19.Size" type="System.Drawing.Size, System.Drawing">
+    <value>168, 16</value>
+  </data>
+  <data name="label25.AutoSize" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="label25.Size" type="System.Drawing.Size, System.Drawing">
+    <value>168, 16</value>
+  </data>
+  <data name="label26.AutoSize" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="label26.Size" type="System.Drawing.Size, System.Drawing">
+    <value>168, 16</value>
+  </data>
+  <data name="label24.AutoSize" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="label24.Size" type="System.Drawing.Size, System.Drawing">
+    <value>172, 16</value>
+  </data>
+  <data name="label27.AutoSize" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="label27.Size" type="System.Drawing.Size, System.Drawing">
+    <value>172, 16</value>
+  </data>
+  <data name="label28.AutoSize" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="label28.Size" type="System.Drawing.Size, System.Drawing">
+    <value>152, 16</value>
   </data>
   <data name="ChkPLCPress.Location" type="System.Drawing.Point, System.Drawing">
-    <value>626, 330</value>
+    <value>626, 358</value>
   </data>
-  <data name="ChkPLCPress.Size" type="System.Drawing.Size, System.Drawing">
-    <value>150, 29</value>
+  <data name="label21.AutoSize" type="System.Boolean, mscorlib">
+    <value>False</value>
   </data>
-  <data name="uiGroupBox6.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>0, 32, 0, 0</value>
+  <data name="label22.AutoSize" type="System.Boolean, mscorlib">
+    <value>False</value>
   </data>
-  <data name="uiGroupBox6.Size" type="System.Drawing.Size, System.Drawing">
-    <value>307, 293</value>
+  <data name="label23.AutoSize" type="System.Boolean, mscorlib">
+    <value>False</value>
   </data>
-  <data name="label21.Size" type="System.Drawing.Size, System.Drawing">
-    <value>27, 19</value>
+  <data name="label13.AutoSize" type="System.Boolean, mscorlib">
+    <value>False</value>
   </data>
-  <data name="label22.Size" type="System.Drawing.Size, System.Drawing">
-    <value>27, 19</value>
+  <data name="label13.Size" type="System.Drawing.Size, System.Drawing">
+    <value>121, 16</value>
   </data>
-  <data name="label23.Size" type="System.Drawing.Size, System.Drawing">
-    <value>27, 19</value>
+  <data name="PLCPreUnit4.AutoSize" type="System.Boolean, mscorlib">
+    <value>False</value>
   </data>
-  <data name="uiGroupBox4.Location" type="System.Drawing.Point, System.Drawing">
-    <value>312, 318</value>
+  <data name="PLCPreUnit4.Location" type="System.Drawing.Point, System.Drawing">
+    <value>255, 190</value>
   </data>
-  <data name="uiGroupBox4.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>0, 32, 0, 0</value>
+  <data name="CH4Pressure.Location" type="System.Drawing.Point, System.Drawing">
+    <value>141, 184</value>
   </data>
-  <data name="uiGroupBox4.Size" type="System.Drawing.Size, System.Drawing">
-    <value>307, 287</value>
+  <data name="label15.AutoSize" type="System.Boolean, mscorlib">
+    <value>False</value>
   </data>
-  <data name="uiGroupBox2.Location" type="System.Drawing.Point, System.Drawing">
-    <value>4, 318</value>
+  <data name="label15.Size" type="System.Drawing.Size, System.Drawing">
+    <value>121, 16</value>
   </data>
-  <data name="uiGroupBox2.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>0, 32, 0, 0</value>
+  <data name="PLCPreUnit3.AutoSize" type="System.Boolean, mscorlib">
+    <value>False</value>
   </data>
-  <data name="uiGroupBox2.Size" type="System.Drawing.Size, System.Drawing">
-    <value>307, 287</value>
+  <data name="PLCPreUnit3.Location" type="System.Drawing.Point, System.Drawing">
+    <value>255, 82</value>
+  </data>
+  <data name="CH3Pressure.Location" type="System.Drawing.Point, System.Drawing">
+    <value>141, 76</value>
+  </data>
+  <data name="label3.AutoSize" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="label3.Size" type="System.Drawing.Size, System.Drawing">
+    <value>129, 16</value>
+  </data>
+  <data name="PLCPreUnit2.AutoSize" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="PLCPreUnit2.Location" type="System.Drawing.Point, System.Drawing">
+    <value>263, 190</value>
+  </data>
+  <data name="CH2Pressure.Location" type="System.Drawing.Point, System.Drawing">
+    <value>149, 184</value>
+  </data>
+  <data name="label1.AutoSize" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="label1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>117, 16</value>
+  </data>
+  <data name="PLCPreUnit1.AutoSize" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="PLCPreUnit1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>263, 82</value>
+  </data>
+  <data name="CH1Pressure.Location" type="System.Drawing.Point, System.Drawing">
+    <value>149, 76</value>
+  </data>
+  <data name="label2.Location" type="System.Drawing.Point, System.Drawing">
+    <value>328, 82</value>
+  </data>
+  <data name="CKCh2Current.Location" type="System.Drawing.Point, System.Drawing">
+    <value>171, 77</value>
+  </data>
+  <data name="label4.AutoSize" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="label4.Size" type="System.Drawing.Size, System.Drawing">
+    <value>149, 16</value>
+  </data>
+  <data name="label14.Location" type="System.Drawing.Point, System.Drawing">
+    <value>328, 41</value>
+  </data>
+  <data name="CKCh2Vol.Location" type="System.Drawing.Point, System.Drawing">
+    <value>171, 36</value>
+  </data>
+  <data name="label16.AutoSize" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="label16.Size" type="System.Drawing.Size, System.Drawing">
+    <value>149, 16</value>
   </data>
   <data name="uiGroupBox30.Location" type="System.Drawing.Point, System.Drawing">
-    <value>370, 14</value>
+    <value>474, 24</value>
   </data>
-  <data name="uiGroupBox30.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>0, 32, 0, 0</value>
+  <data name="label42.Location" type="System.Drawing.Point, System.Drawing">
+    <value>327, 79</value>
   </data>
-  <data name="uiGroupBox30.Size" type="System.Drawing.Size, System.Drawing">
-    <value>358, 318</value>
+  <data name="CKCh1Current.Location" type="System.Drawing.Point, System.Drawing">
+    <value>170, 74</value>
   </data>
-  <data name="uiGroupBox31.Location" type="System.Drawing.Point, System.Drawing">
-    <value>4, 14</value>
+  <data name="label43.AutoSize" type="System.Boolean, mscorlib">
+    <value>False</value>
   </data>
-  <data name="uiGroupBox31.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>0, 32, 0, 0</value>
+  <data name="label43.Location" type="System.Drawing.Point, System.Drawing">
+    <value>3, 93</value>
   </data>
-  <data name="uiGroupBox31.Size" type="System.Drawing.Size, System.Drawing">
-    <value>358, 318</value>
+  <data name="label43.Size" type="System.Drawing.Size, System.Drawing">
+    <value>151, 16</value>
   </data>
-  <data name="$this.AutoScaleDimensions" type="System.Drawing.SizeF, System.Drawing">
-    <value>6, 12</value>
+  <data name="label45.Location" type="System.Drawing.Point, System.Drawing">
+    <value>328, 37</value>
   </data>
-  <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
-    <value>1654, 979</value>
+  <data name="CKCh1Vol.Location" type="System.Drawing.Point, System.Drawing">
+    <value>171, 32</value>
+  </data>
+  <data name="label46.AutoSize" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="label46.Location" type="System.Drawing.Point, System.Drawing">
+    <value>3, 45</value>
+  </data>
+  <data name="label46.Size" type="System.Drawing.Size, System.Drawing">
+    <value>151, 16</value>
   </data>
   <data name="$this.Icon" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>

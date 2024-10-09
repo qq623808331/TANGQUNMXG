@@ -149,16 +149,6 @@
             this.uiGroupBox39 = new Sunny.UI.UIGroupBox();
             this.uiGroupBox26 = new Sunny.UI.UIGroupBox();
             this.uiGroupBox34 = new Sunny.UI.UIGroupBox();
-            this.uiGroupBox37 = new Sunny.UI.UIGroupBox();
-            this.uiTextBox1 = new Sunny.UI.UITextBox();
-            this.uiTextBox2 = new Sunny.UI.UITextBox();
-            this.label12 = new System.Windows.Forms.Label();
-            this.label47 = new System.Windows.Forms.Label();
-            this.uiTextBox3 = new Sunny.UI.UITextBox();
-            this.label9 = new System.Windows.Forms.Label();
-            this.uiTextBox4 = new Sunny.UI.UITextBox();
-            this.label49 = new System.Windows.Forms.Label();
-            this.label50 = new System.Windows.Forms.Label();
             this.label81 = new System.Windows.Forms.Label();
             this.label82 = new System.Windows.Forms.Label();
             this.CH2FWDVDCComp = new Sunny.UI.UITextBox();
@@ -585,6 +575,9 @@
             this.CH2Elect = new Sunny.UI.UITextBox();
             this.CH1Vol = new Sunny.UI.UITextBox();
             this.CH1Elect = new Sunny.UI.UITextBox();
+            this.toolTip1 = new System.Windows.Forms.ToolTip(this.components);
+            this.toolTip2 = new System.Windows.Forms.ToolTip(this.components);
+            this.toolTip3 = new System.Windows.Forms.ToolTip(this.components);
             this.uiGroupBox29.SuspendLayout();
             this.tabPage5.SuspendLayout();
             this.uiGroupBox21.SuspendLayout();
@@ -598,8 +591,6 @@
             this.uiGroupBox39.SuspendLayout();
             this.uiGroupBox26.SuspendLayout();
             this.uiGroupBox34.SuspendLayout();
-            this.uiGroupBox37.SuspendLayout();
-            this.uiTextBox3.SuspendLayout();
             this.uiGroupBox22.SuspendLayout();
             this.uiGroupBox16.SuspendLayout();
             this.uiGroupBox15.SuspendLayout();
@@ -646,11 +637,17 @@
             // 
             resources.ApplyResources(this.label133, "label133");
             this.label133.Name = "label133";
+            this.toolTip2.SetToolTip(this.label133, resources.GetString("label133.ToolTip"));
+            this.toolTip3.SetToolTip(this.label133, resources.GetString("label133.ToolTip1"));
+            this.toolTip1.SetToolTip(this.label133, resources.GetString("label133.ToolTip2"));
             // 
             // label134
             // 
             resources.ApplyResources(this.label134, "label134");
             this.label134.Name = "label134";
+            this.toolTip2.SetToolTip(this.label134, resources.GetString("label134.ToolTip"));
+            this.toolTip3.SetToolTip(this.label134, resources.GetString("label134.ToolTip1"));
+            this.toolTip1.SetToolTip(this.label134, resources.GetString("label134.ToolTip2"));
             // 
             // CH1FWDVDCComp
             // 
@@ -663,11 +660,17 @@
             this.CH1FWDVDCComp.Name = "CH1FWDVDCComp";
             this.CH1FWDVDCComp.Style = Sunny.UI.UIStyle.Custom;
             this.CH1FWDVDCComp.TextAlignment = System.Drawing.ContentAlignment.MiddleLeft;
+            this.toolTip2.SetToolTip(this.CH1FWDVDCComp, resources.GetString("CH1FWDVDCComp.ToolTip"));
+            this.toolTip3.SetToolTip(this.CH1FWDVDCComp, resources.GetString("CH1FWDVDCComp.ToolTip1"));
+            this.toolTip1.SetToolTip(this.CH1FWDVDCComp, resources.GetString("CH1FWDVDCComp.ToolTip2"));
             // 
             // label139
             // 
             resources.ApplyResources(this.label139, "label139");
             this.label139.Name = "label139";
+            this.toolTip2.SetToolTip(this.label139, resources.GetString("label139.ToolTip"));
+            this.toolTip3.SetToolTip(this.label139, resources.GetString("label139.ToolTip1"));
+            this.toolTip1.SetToolTip(this.label139, resources.GetString("label139.ToolTip2"));
             // 
             // CH1FWDVDCMin
             // 
@@ -680,11 +683,17 @@
             this.CH1FWDVDCMin.Name = "CH1FWDVDCMin";
             this.CH1FWDVDCMin.Style = Sunny.UI.UIStyle.Custom;
             this.CH1FWDVDCMin.TextAlignment = System.Drawing.ContentAlignment.MiddleLeft;
+            this.toolTip2.SetToolTip(this.CH1FWDVDCMin, resources.GetString("CH1FWDVDCMin.ToolTip"));
+            this.toolTip3.SetToolTip(this.CH1FWDVDCMin, resources.GetString("CH1FWDVDCMin.ToolTip1"));
+            this.toolTip1.SetToolTip(this.CH1FWDVDCMin, resources.GetString("CH1FWDVDCMin.ToolTip2"));
             // 
             // label140
             // 
             resources.ApplyResources(this.label140, "label140");
             this.label140.Name = "label140";
+            this.toolTip2.SetToolTip(this.label140, resources.GetString("label140.ToolTip"));
+            this.toolTip3.SetToolTip(this.label140, resources.GetString("label140.ToolTip1"));
+            this.toolTip1.SetToolTip(this.label140, resources.GetString("label140.ToolTip2"));
             // 
             // uiGroupBox29
             // 
@@ -711,6 +720,9 @@
             this.uiGroupBox29.Name = "uiGroupBox29";
             this.uiGroupBox29.Style = Sunny.UI.UIStyle.Custom;
             this.uiGroupBox29.TextAlignment = System.Drawing.ContentAlignment.MiddleCenter;
+            this.toolTip3.SetToolTip(this.uiGroupBox29, resources.GetString("uiGroupBox29.ToolTip"));
+            this.toolTip2.SetToolTip(this.uiGroupBox29, resources.GetString("uiGroupBox29.ToolTip1"));
+            this.toolTip1.SetToolTip(this.uiGroupBox29, resources.GetString("uiGroupBox29.ToolTip2"));
             // 
             // CH1FWDVDCMax
             // 
@@ -723,16 +735,25 @@
             this.CH1FWDVDCMax.Name = "CH1FWDVDCMax";
             this.CH1FWDVDCMax.Style = Sunny.UI.UIStyle.Custom;
             this.CH1FWDVDCMax.TextAlignment = System.Drawing.ContentAlignment.MiddleLeft;
+            this.toolTip2.SetToolTip(this.CH1FWDVDCMax, resources.GetString("CH1FWDVDCMax.ToolTip"));
+            this.toolTip3.SetToolTip(this.CH1FWDVDCMax, resources.GetString("CH1FWDVDCMax.ToolTip1"));
+            this.toolTip1.SetToolTip(this.CH1FWDVDCMax, resources.GetString("CH1FWDVDCMax.ToolTip2"));
             // 
             // label141
             // 
             resources.ApplyResources(this.label141, "label141");
             this.label141.Name = "label141";
+            this.toolTip2.SetToolTip(this.label141, resources.GetString("label141.ToolTip"));
+            this.toolTip3.SetToolTip(this.label141, resources.GetString("label141.ToolTip1"));
+            this.toolTip1.SetToolTip(this.label141, resources.GetString("label141.ToolTip2"));
             // 
             // label142
             // 
             resources.ApplyResources(this.label142, "label142");
             this.label142.Name = "label142";
+            this.toolTip2.SetToolTip(this.label142, resources.GetString("label142.ToolTip"));
+            this.toolTip3.SetToolTip(this.label142, resources.GetString("label142.ToolTip1"));
+            this.toolTip1.SetToolTip(this.label142, resources.GetString("label142.ToolTip2"));
             // 
             // CH1FWDADCComp
             // 
@@ -745,11 +766,17 @@
             this.CH1FWDADCComp.Name = "CH1FWDADCComp";
             this.CH1FWDADCComp.Style = Sunny.UI.UIStyle.Custom;
             this.CH1FWDADCComp.TextAlignment = System.Drawing.ContentAlignment.MiddleLeft;
+            this.toolTip2.SetToolTip(this.CH1FWDADCComp, resources.GetString("CH1FWDADCComp.ToolTip"));
+            this.toolTip3.SetToolTip(this.CH1FWDADCComp, resources.GetString("CH1FWDADCComp.ToolTip1"));
+            this.toolTip1.SetToolTip(this.CH1FWDADCComp, resources.GetString("CH1FWDADCComp.ToolTip2"));
             // 
             // label143
             // 
             resources.ApplyResources(this.label143, "label143");
             this.label143.Name = "label143";
+            this.toolTip2.SetToolTip(this.label143, resources.GetString("label143.ToolTip"));
+            this.toolTip3.SetToolTip(this.label143, resources.GetString("label143.ToolTip1"));
+            this.toolTip1.SetToolTip(this.label143, resources.GetString("label143.ToolTip2"));
             // 
             // CH1FWDADCMin
             // 
@@ -762,11 +789,17 @@
             this.CH1FWDADCMin.Name = "CH1FWDADCMin";
             this.CH1FWDADCMin.Style = Sunny.UI.UIStyle.Custom;
             this.CH1FWDADCMin.TextAlignment = System.Drawing.ContentAlignment.MiddleLeft;
+            this.toolTip2.SetToolTip(this.CH1FWDADCMin, resources.GetString("CH1FWDADCMin.ToolTip"));
+            this.toolTip3.SetToolTip(this.CH1FWDADCMin, resources.GetString("CH1FWDADCMin.ToolTip1"));
+            this.toolTip1.SetToolTip(this.CH1FWDADCMin, resources.GetString("CH1FWDADCMin.ToolTip2"));
             // 
             // label144
             // 
             resources.ApplyResources(this.label144, "label144");
             this.label144.Name = "label144";
+            this.toolTip2.SetToolTip(this.label144, resources.GetString("label144.ToolTip"));
+            this.toolTip3.SetToolTip(this.label144, resources.GetString("label144.ToolTip1"));
+            this.toolTip1.SetToolTip(this.label144, resources.GetString("label144.ToolTip2"));
             // 
             // CH1FWDADCMax
             // 
@@ -779,26 +812,41 @@
             this.CH1FWDADCMax.Name = "CH1FWDADCMax";
             this.CH1FWDADCMax.Style = Sunny.UI.UIStyle.Custom;
             this.CH1FWDADCMax.TextAlignment = System.Drawing.ContentAlignment.MiddleLeft;
+            this.toolTip2.SetToolTip(this.CH1FWDADCMax, resources.GetString("CH1FWDADCMax.ToolTip"));
+            this.toolTip3.SetToolTip(this.CH1FWDADCMax, resources.GetString("CH1FWDADCMax.ToolTip1"));
+            this.toolTip1.SetToolTip(this.CH1FWDADCMax, resources.GetString("CH1FWDADCMax.ToolTip2"));
             // 
             // label145
             // 
             resources.ApplyResources(this.label145, "label145");
             this.label145.Name = "label145";
+            this.toolTip2.SetToolTip(this.label145, resources.GetString("label145.ToolTip"));
+            this.toolTip3.SetToolTip(this.label145, resources.GetString("label145.ToolTip1"));
+            this.toolTip1.SetToolTip(this.label145, resources.GetString("label145.ToolTip2"));
             // 
             // label146
             // 
             resources.ApplyResources(this.label146, "label146");
             this.label146.Name = "label146";
+            this.toolTip2.SetToolTip(this.label146, resources.GetString("label146.ToolTip"));
+            this.toolTip3.SetToolTip(this.label146, resources.GetString("label146.ToolTip1"));
+            this.toolTip1.SetToolTip(this.label146, resources.GetString("label146.ToolTip2"));
             // 
             // label147
             // 
             resources.ApplyResources(this.label147, "label147");
             this.label147.Name = "label147";
+            this.toolTip2.SetToolTip(this.label147, resources.GetString("label147.ToolTip"));
+            this.toolTip3.SetToolTip(this.label147, resources.GetString("label147.ToolTip1"));
+            this.toolTip1.SetToolTip(this.label147, resources.GetString("label147.ToolTip2"));
             // 
             // label148
             // 
             resources.ApplyResources(this.label148, "label148");
             this.label148.Name = "label148";
+            this.toolTip2.SetToolTip(this.label148, resources.GetString("label148.ToolTip"));
+            this.toolTip3.SetToolTip(this.label148, resources.GetString("label148.ToolTip1"));
+            this.toolTip1.SetToolTip(this.label148, resources.GetString("label148.ToolTip2"));
             // 
             // tabPage5
             // 
@@ -810,6 +858,9 @@
             this.tabPage5.Controls.Add(this.uiGroupBox21);
             this.tabPage5.Controls.Add(this.uiGroupBox17);
             this.tabPage5.Name = "tabPage5";
+            this.toolTip1.SetToolTip(this.tabPage5, resources.GetString("tabPage5.ToolTip"));
+            this.toolTip2.SetToolTip(this.tabPage5, resources.GetString("tabPage5.ToolTip1"));
+            this.toolTip3.SetToolTip(this.tabPage5, resources.GetString("tabPage5.ToolTip2"));
             this.tabPage5.Click += new System.EventHandler(this.tabPage5_Click);
             // 
             // RDOWNParamsCopy
@@ -819,7 +870,10 @@
             this.RDOWNParamsCopy.Name = "RDOWNParamsCopy";
             this.RDOWNParamsCopy.Style = Sunny.UI.UIStyle.Custom;
             this.RDOWNParamsCopy.Symbol = 361697;
-            this.RDOWNParamsCopy.TipsFont = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.RDOWNParamsCopy.TipsFont = new System.Drawing.Font("Microsoft YaHei", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.toolTip3.SetToolTip(this.RDOWNParamsCopy, resources.GetString("RDOWNParamsCopy.ToolTip"));
+            this.toolTip2.SetToolTip(this.RDOWNParamsCopy, resources.GetString("RDOWNParamsCopy.ToolTip1"));
+            this.toolTip1.SetToolTip(this.RDOWNParamsCopy, resources.GetString("RDOWNParamsCopy.ToolTip2"));
             this.RDOWNParamsCopy.Click += new System.EventHandler(this.RDOWNParamsCopy_Click);
             // 
             // DOWNParamsSave
@@ -828,7 +882,10 @@
             this.DOWNParamsSave.Cursor = System.Windows.Forms.Cursors.Hand;
             this.DOWNParamsSave.Name = "DOWNParamsSave";
             this.DOWNParamsSave.Style = Sunny.UI.UIStyle.Custom;
-            this.DOWNParamsSave.TipsFont = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.DOWNParamsSave.TipsFont = new System.Drawing.Font("Microsoft YaHei", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.toolTip3.SetToolTip(this.DOWNParamsSave, resources.GetString("DOWNParamsSave.ToolTip"));
+            this.toolTip2.SetToolTip(this.DOWNParamsSave, resources.GetString("DOWNParamsSave.ToolTip1"));
+            this.toolTip1.SetToolTip(this.DOWNParamsSave, resources.GetString("DOWNParamsSave.ToolTip2"));
             this.DOWNParamsSave.Click += new System.EventHandler(this.DOWNParamsSave_Click);
             // 
             // LDOWNParamsCopy
@@ -838,7 +895,10 @@
             this.LDOWNParamsCopy.Name = "LDOWNParamsCopy";
             this.LDOWNParamsCopy.Style = Sunny.UI.UIStyle.Custom;
             this.LDOWNParamsCopy.Symbol = 361697;
-            this.LDOWNParamsCopy.TipsFont = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.LDOWNParamsCopy.TipsFont = new System.Drawing.Font("Microsoft YaHei", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.toolTip3.SetToolTip(this.LDOWNParamsCopy, resources.GetString("LDOWNParamsCopy.ToolTip"));
+            this.toolTip2.SetToolTip(this.LDOWNParamsCopy, resources.GetString("LDOWNParamsCopy.ToolTip1"));
+            this.toolTip1.SetToolTip(this.LDOWNParamsCopy, resources.GetString("LDOWNParamsCopy.ToolTip2"));
             this.LDOWNParamsCopy.Click += new System.EventHandler(this.LDOWNParamsCopy_Click);
             // 
             // uiGroupBox21
@@ -850,6 +910,9 @@
             this.uiGroupBox21.Name = "uiGroupBox21";
             this.uiGroupBox21.Style = Sunny.UI.UIStyle.Custom;
             this.uiGroupBox21.TextAlignment = System.Drawing.ContentAlignment.MiddleCenter;
+            this.toolTip3.SetToolTip(this.uiGroupBox21, resources.GetString("uiGroupBox21.ToolTip"));
+            this.toolTip2.SetToolTip(this.uiGroupBox21, resources.GetString("uiGroupBox21.ToolTip1"));
+            this.toolTip1.SetToolTip(this.uiGroupBox21, resources.GetString("uiGroupBox21.ToolTip2"));
             // 
             // uiGroupBox24
             // 
@@ -870,6 +933,9 @@
             this.uiGroupBox24.Name = "uiGroupBox24";
             this.uiGroupBox24.Style = Sunny.UI.UIStyle.Custom;
             this.uiGroupBox24.TextAlignment = System.Drawing.ContentAlignment.MiddleCenter;
+            this.toolTip3.SetToolTip(this.uiGroupBox24, resources.GetString("uiGroupBox24.ToolTip"));
+            this.toolTip2.SetToolTip(this.uiGroupBox24, resources.GetString("uiGroupBox24.ToolTip1"));
+            this.toolTip1.SetToolTip(this.uiGroupBox24, resources.GetString("uiGroupBox24.ToolTip2"));
             // 
             // CH2_1PreMin
             // 
@@ -882,6 +948,9 @@
             this.CH2_1PreMin.Name = "CH2_1PreMin";
             this.CH2_1PreMin.Style = Sunny.UI.UIStyle.Custom;
             this.CH2_1PreMin.TextAlignment = System.Drawing.ContentAlignment.MiddleLeft;
+            this.toolTip2.SetToolTip(this.CH2_1PreMin, resources.GetString("CH2_1PreMin.ToolTip"));
+            this.toolTip3.SetToolTip(this.CH2_1PreMin, resources.GetString("CH2_1PreMin.ToolTip1"));
+            this.toolTip1.SetToolTip(this.CH2_1PreMin, resources.GetString("CH2_1PreMin.ToolTip2"));
             // 
             // CH2_1PreMax
             // 
@@ -894,16 +963,25 @@
             this.CH2_1PreMax.Name = "CH2_1PreMax";
             this.CH2_1PreMax.Style = Sunny.UI.UIStyle.Custom;
             this.CH2_1PreMax.TextAlignment = System.Drawing.ContentAlignment.MiddleLeft;
+            this.toolTip2.SetToolTip(this.CH2_1PreMax, resources.GetString("CH2_1PreMax.ToolTip"));
+            this.toolTip3.SetToolTip(this.CH2_1PreMax, resources.GetString("CH2_1PreMax.ToolTip1"));
+            this.toolTip1.SetToolTip(this.CH2_1PreMax, resources.GetString("CH2_1PreMax.ToolTip2"));
             // 
             // label158
             // 
             resources.ApplyResources(this.label158, "label158");
             this.label158.Name = "label158";
+            this.toolTip2.SetToolTip(this.label158, resources.GetString("label158.ToolTip"));
+            this.toolTip3.SetToolTip(this.label158, resources.GetString("label158.ToolTip1"));
+            this.toolTip1.SetToolTip(this.label158, resources.GetString("label158.ToolTip2"));
             // 
             // label159
             // 
             resources.ApplyResources(this.label159, "label159");
             this.label159.Name = "label159";
+            this.toolTip2.SetToolTip(this.label159, resources.GetString("label159.ToolTip"));
+            this.toolTip3.SetToolTip(this.label159, resources.GetString("label159.ToolTip1"));
+            this.toolTip1.SetToolTip(this.label159, resources.GetString("label159.ToolTip2"));
             // 
             // CH2_1FlowMin
             // 
@@ -916,6 +994,9 @@
             this.CH2_1FlowMin.Name = "CH2_1FlowMin";
             this.CH2_1FlowMin.Style = Sunny.UI.UIStyle.Custom;
             this.CH2_1FlowMin.TextAlignment = System.Drawing.ContentAlignment.MiddleLeft;
+            this.toolTip2.SetToolTip(this.CH2_1FlowMin, resources.GetString("CH2_1FlowMin.ToolTip"));
+            this.toolTip3.SetToolTip(this.CH2_1FlowMin, resources.GetString("CH2_1FlowMin.ToolTip1"));
+            this.toolTip1.SetToolTip(this.CH2_1FlowMin, resources.GetString("CH2_1FlowMin.ToolTip2"));
             // 
             // CH2_1FlowMax
             // 
@@ -928,6 +1009,9 @@
             this.CH2_1FlowMax.Name = "CH2_1FlowMax";
             this.CH2_1FlowMax.Style = Sunny.UI.UIStyle.Custom;
             this.CH2_1FlowMax.TextAlignment = System.Drawing.ContentAlignment.MiddleLeft;
+            this.toolTip2.SetToolTip(this.CH2_1FlowMax, resources.GetString("CH2_1FlowMax.ToolTip"));
+            this.toolTip3.SetToolTip(this.CH2_1FlowMax, resources.GetString("CH2_1FlowMax.ToolTip1"));
+            this.toolTip1.SetToolTip(this.CH2_1FlowMax, resources.GetString("CH2_1FlowMax.ToolTip2"));
             // 
             // CH3Press_OverTime
             // 
@@ -940,16 +1024,25 @@
             this.CH3Press_OverTime.Name = "CH3Press_OverTime";
             this.CH3Press_OverTime.Style = Sunny.UI.UIStyle.Custom;
             this.CH3Press_OverTime.TextAlignment = System.Drawing.ContentAlignment.MiddleLeft;
+            this.toolTip2.SetToolTip(this.CH3Press_OverTime, resources.GetString("CH3Press_OverTime.ToolTip"));
+            this.toolTip3.SetToolTip(this.CH3Press_OverTime, resources.GetString("CH3Press_OverTime.ToolTip1"));
+            this.toolTip1.SetToolTip(this.CH3Press_OverTime, resources.GetString("CH3Press_OverTime.ToolTip2"));
             // 
             // label160
             // 
             resources.ApplyResources(this.label160, "label160");
             this.label160.Name = "label160";
+            this.toolTip2.SetToolTip(this.label160, resources.GetString("label160.ToolTip"));
+            this.toolTip3.SetToolTip(this.label160, resources.GetString("label160.ToolTip1"));
+            this.toolTip1.SetToolTip(this.label160, resources.GetString("label160.ToolTip2"));
             // 
             // label161
             // 
             resources.ApplyResources(this.label161, "label161");
             this.label161.Name = "label161";
+            this.toolTip2.SetToolTip(this.label161, resources.GetString("label161.ToolTip"));
+            this.toolTip3.SetToolTip(this.label161, resources.GetString("label161.ToolTip1"));
+            this.toolTip1.SetToolTip(this.label161, resources.GetString("label161.ToolTip2"));
             // 
             // CH3OverTime
             // 
@@ -962,16 +1055,25 @@
             this.CH3OverTime.Name = "CH3OverTime";
             this.CH3OverTime.Style = Sunny.UI.UIStyle.Custom;
             this.CH3OverTime.TextAlignment = System.Drawing.ContentAlignment.MiddleLeft;
+            this.toolTip2.SetToolTip(this.CH3OverTime, resources.GetString("CH3OverTime.ToolTip"));
+            this.toolTip3.SetToolTip(this.CH3OverTime, resources.GetString("CH3OverTime.ToolTip1"));
+            this.toolTip1.SetToolTip(this.CH3OverTime, resources.GetString("CH3OverTime.ToolTip2"));
             // 
             // label162
             // 
             resources.ApplyResources(this.label162, "label162");
             this.label162.Name = "label162";
+            this.toolTip2.SetToolTip(this.label162, resources.GetString("label162.ToolTip"));
+            this.toolTip3.SetToolTip(this.label162, resources.GetString("label162.ToolTip1"));
+            this.toolTip1.SetToolTip(this.label162, resources.GetString("label162.ToolTip2"));
             // 
             // label163
             // 
             resources.ApplyResources(this.label163, "label163");
             this.label163.Name = "label163";
+            this.toolTip2.SetToolTip(this.label163, resources.GetString("label163.ToolTip"));
+            this.toolTip3.SetToolTip(this.label163, resources.GetString("label163.ToolTip1"));
+            this.toolTip1.SetToolTip(this.label163, resources.GetString("label163.ToolTip2"));
             // 
             // uiGroupBox28
             // 
@@ -998,16 +1100,25 @@
             this.uiGroupBox28.Name = "uiGroupBox28";
             this.uiGroupBox28.Style = Sunny.UI.UIStyle.Custom;
             this.uiGroupBox28.TextAlignment = System.Drawing.ContentAlignment.MiddleCenter;
+            this.toolTip3.SetToolTip(this.uiGroupBox28, resources.GetString("uiGroupBox28.ToolTip"));
+            this.toolTip2.SetToolTip(this.uiGroupBox28, resources.GetString("uiGroupBox28.ToolTip1"));
+            this.toolTip1.SetToolTip(this.uiGroupBox28, resources.GetString("uiGroupBox28.ToolTip2"));
             // 
             // label185
             // 
             resources.ApplyResources(this.label185, "label185");
             this.label185.Name = "label185";
+            this.toolTip2.SetToolTip(this.label185, resources.GetString("label185.ToolTip"));
+            this.toolTip3.SetToolTip(this.label185, resources.GetString("label185.ToolTip1"));
+            this.toolTip1.SetToolTip(this.label185, resources.GetString("label185.ToolTip2"));
             // 
             // label186
             // 
             resources.ApplyResources(this.label186, "label186");
             this.label186.Name = "label186";
+            this.toolTip2.SetToolTip(this.label186, resources.GetString("label186.ToolTip"));
+            this.toolTip3.SetToolTip(this.label186, resources.GetString("label186.ToolTip1"));
+            this.toolTip1.SetToolTip(this.label186, resources.GetString("label186.ToolTip2"));
             // 
             // CH2DOWNVDCComp
             // 
@@ -1020,11 +1131,17 @@
             this.CH2DOWNVDCComp.Name = "CH2DOWNVDCComp";
             this.CH2DOWNVDCComp.Style = Sunny.UI.UIStyle.Custom;
             this.CH2DOWNVDCComp.TextAlignment = System.Drawing.ContentAlignment.MiddleLeft;
+            this.toolTip2.SetToolTip(this.CH2DOWNVDCComp, resources.GetString("CH2DOWNVDCComp.ToolTip"));
+            this.toolTip3.SetToolTip(this.CH2DOWNVDCComp, resources.GetString("CH2DOWNVDCComp.ToolTip1"));
+            this.toolTip1.SetToolTip(this.CH2DOWNVDCComp, resources.GetString("CH2DOWNVDCComp.ToolTip2"));
             // 
             // label187
             // 
             resources.ApplyResources(this.label187, "label187");
             this.label187.Name = "label187";
+            this.toolTip2.SetToolTip(this.label187, resources.GetString("label187.ToolTip"));
+            this.toolTip3.SetToolTip(this.label187, resources.GetString("label187.ToolTip1"));
+            this.toolTip1.SetToolTip(this.label187, resources.GetString("label187.ToolTip2"));
             // 
             // CH2DOWNVDCMin
             // 
@@ -1037,11 +1154,17 @@
             this.CH2DOWNVDCMin.Name = "CH2DOWNVDCMin";
             this.CH2DOWNVDCMin.Style = Sunny.UI.UIStyle.Custom;
             this.CH2DOWNVDCMin.TextAlignment = System.Drawing.ContentAlignment.MiddleLeft;
+            this.toolTip2.SetToolTip(this.CH2DOWNVDCMin, resources.GetString("CH2DOWNVDCMin.ToolTip"));
+            this.toolTip3.SetToolTip(this.CH2DOWNVDCMin, resources.GetString("CH2DOWNVDCMin.ToolTip1"));
+            this.toolTip1.SetToolTip(this.CH2DOWNVDCMin, resources.GetString("CH2DOWNVDCMin.ToolTip2"));
             // 
             // label188
             // 
             resources.ApplyResources(this.label188, "label188");
             this.label188.Name = "label188";
+            this.toolTip2.SetToolTip(this.label188, resources.GetString("label188.ToolTip"));
+            this.toolTip3.SetToolTip(this.label188, resources.GetString("label188.ToolTip1"));
+            this.toolTip1.SetToolTip(this.label188, resources.GetString("label188.ToolTip2"));
             // 
             // CH2DOWNVDCMax
             // 
@@ -1054,16 +1177,25 @@
             this.CH2DOWNVDCMax.Name = "CH2DOWNVDCMax";
             this.CH2DOWNVDCMax.Style = Sunny.UI.UIStyle.Custom;
             this.CH2DOWNVDCMax.TextAlignment = System.Drawing.ContentAlignment.MiddleLeft;
+            this.toolTip2.SetToolTip(this.CH2DOWNVDCMax, resources.GetString("CH2DOWNVDCMax.ToolTip"));
+            this.toolTip3.SetToolTip(this.CH2DOWNVDCMax, resources.GetString("CH2DOWNVDCMax.ToolTip1"));
+            this.toolTip1.SetToolTip(this.CH2DOWNVDCMax, resources.GetString("CH2DOWNVDCMax.ToolTip2"));
             // 
             // label189
             // 
             resources.ApplyResources(this.label189, "label189");
             this.label189.Name = "label189";
+            this.toolTip2.SetToolTip(this.label189, resources.GetString("label189.ToolTip"));
+            this.toolTip3.SetToolTip(this.label189, resources.GetString("label189.ToolTip1"));
+            this.toolTip1.SetToolTip(this.label189, resources.GetString("label189.ToolTip2"));
             // 
             // label190
             // 
             resources.ApplyResources(this.label190, "label190");
             this.label190.Name = "label190";
+            this.toolTip2.SetToolTip(this.label190, resources.GetString("label190.ToolTip"));
+            this.toolTip3.SetToolTip(this.label190, resources.GetString("label190.ToolTip1"));
+            this.toolTip1.SetToolTip(this.label190, resources.GetString("label190.ToolTip2"));
             // 
             // CH2DOWNADCComp
             // 
@@ -1076,11 +1208,17 @@
             this.CH2DOWNADCComp.Name = "CH2DOWNADCComp";
             this.CH2DOWNADCComp.Style = Sunny.UI.UIStyle.Custom;
             this.CH2DOWNADCComp.TextAlignment = System.Drawing.ContentAlignment.MiddleLeft;
+            this.toolTip2.SetToolTip(this.CH2DOWNADCComp, resources.GetString("CH2DOWNADCComp.ToolTip"));
+            this.toolTip3.SetToolTip(this.CH2DOWNADCComp, resources.GetString("CH2DOWNADCComp.ToolTip1"));
+            this.toolTip1.SetToolTip(this.CH2DOWNADCComp, resources.GetString("CH2DOWNADCComp.ToolTip2"));
             // 
             // label191
             // 
             resources.ApplyResources(this.label191, "label191");
             this.label191.Name = "label191";
+            this.toolTip2.SetToolTip(this.label191, resources.GetString("label191.ToolTip"));
+            this.toolTip3.SetToolTip(this.label191, resources.GetString("label191.ToolTip1"));
+            this.toolTip1.SetToolTip(this.label191, resources.GetString("label191.ToolTip2"));
             // 
             // CH2DOWNADCMin
             // 
@@ -1093,11 +1231,17 @@
             this.CH2DOWNADCMin.Name = "CH2DOWNADCMin";
             this.CH2DOWNADCMin.Style = Sunny.UI.UIStyle.Custom;
             this.CH2DOWNADCMin.TextAlignment = System.Drawing.ContentAlignment.MiddleLeft;
+            this.toolTip2.SetToolTip(this.CH2DOWNADCMin, resources.GetString("CH2DOWNADCMin.ToolTip"));
+            this.toolTip3.SetToolTip(this.CH2DOWNADCMin, resources.GetString("CH2DOWNADCMin.ToolTip1"));
+            this.toolTip1.SetToolTip(this.CH2DOWNADCMin, resources.GetString("CH2DOWNADCMin.ToolTip2"));
             // 
             // label192
             // 
             resources.ApplyResources(this.label192, "label192");
             this.label192.Name = "label192";
+            this.toolTip2.SetToolTip(this.label192, resources.GetString("label192.ToolTip"));
+            this.toolTip3.SetToolTip(this.label192, resources.GetString("label192.ToolTip1"));
+            this.toolTip1.SetToolTip(this.label192, resources.GetString("label192.ToolTip2"));
             // 
             // CH2DOWNADCMax
             // 
@@ -1110,26 +1254,41 @@
             this.CH2DOWNADCMax.Name = "CH2DOWNADCMax";
             this.CH2DOWNADCMax.Style = Sunny.UI.UIStyle.Custom;
             this.CH2DOWNADCMax.TextAlignment = System.Drawing.ContentAlignment.MiddleLeft;
+            this.toolTip2.SetToolTip(this.CH2DOWNADCMax, resources.GetString("CH2DOWNADCMax.ToolTip"));
+            this.toolTip3.SetToolTip(this.CH2DOWNADCMax, resources.GetString("CH2DOWNADCMax.ToolTip1"));
+            this.toolTip1.SetToolTip(this.CH2DOWNADCMax, resources.GetString("CH2DOWNADCMax.ToolTip2"));
             // 
             // label193
             // 
             resources.ApplyResources(this.label193, "label193");
             this.label193.Name = "label193";
+            this.toolTip2.SetToolTip(this.label193, resources.GetString("label193.ToolTip"));
+            this.toolTip3.SetToolTip(this.label193, resources.GetString("label193.ToolTip1"));
+            this.toolTip1.SetToolTip(this.label193, resources.GetString("label193.ToolTip2"));
             // 
             // label194
             // 
             resources.ApplyResources(this.label194, "label194");
             this.label194.Name = "label194";
+            this.toolTip2.SetToolTip(this.label194, resources.GetString("label194.ToolTip"));
+            this.toolTip3.SetToolTip(this.label194, resources.GetString("label194.ToolTip1"));
+            this.toolTip1.SetToolTip(this.label194, resources.GetString("label194.ToolTip2"));
             // 
             // label195
             // 
             resources.ApplyResources(this.label195, "label195");
             this.label195.Name = "label195";
+            this.toolTip2.SetToolTip(this.label195, resources.GetString("label195.ToolTip"));
+            this.toolTip3.SetToolTip(this.label195, resources.GetString("label195.ToolTip1"));
+            this.toolTip1.SetToolTip(this.label195, resources.GetString("label195.ToolTip2"));
             // 
             // label196
             // 
             resources.ApplyResources(this.label196, "label196");
             this.label196.Name = "label196";
+            this.toolTip2.SetToolTip(this.label196, resources.GetString("label196.ToolTip"));
+            this.toolTip3.SetToolTip(this.label196, resources.GetString("label196.ToolTip1"));
+            this.toolTip1.SetToolTip(this.label196, resources.GetString("label196.ToolTip2"));
             // 
             // uiGroupBox17
             // 
@@ -1140,6 +1299,9 @@
             this.uiGroupBox17.Name = "uiGroupBox17";
             this.uiGroupBox17.Style = Sunny.UI.UIStyle.Custom;
             this.uiGroupBox17.TextAlignment = System.Drawing.ContentAlignment.MiddleCenter;
+            this.toolTip3.SetToolTip(this.uiGroupBox17, resources.GetString("uiGroupBox17.ToolTip"));
+            this.toolTip2.SetToolTip(this.uiGroupBox17, resources.GetString("uiGroupBox17.ToolTip1"));
+            this.toolTip1.SetToolTip(this.uiGroupBox17, resources.GetString("uiGroupBox17.ToolTip2"));
             // 
             // uiGroupBox11
             // 
@@ -1160,6 +1322,9 @@
             this.uiGroupBox11.Name = "uiGroupBox11";
             this.uiGroupBox11.Style = Sunny.UI.UIStyle.Custom;
             this.uiGroupBox11.TextAlignment = System.Drawing.ContentAlignment.MiddleCenter;
+            this.toolTip3.SetToolTip(this.uiGroupBox11, resources.GetString("uiGroupBox11.ToolTip"));
+            this.toolTip2.SetToolTip(this.uiGroupBox11, resources.GetString("uiGroupBox11.ToolTip1"));
+            this.toolTip1.SetToolTip(this.uiGroupBox11, resources.GetString("uiGroupBox11.ToolTip2"));
             // 
             // CH1_1PreMin
             // 
@@ -1172,6 +1337,9 @@
             this.CH1_1PreMin.Name = "CH1_1PreMin";
             this.CH1_1PreMin.Style = Sunny.UI.UIStyle.Custom;
             this.CH1_1PreMin.TextAlignment = System.Drawing.ContentAlignment.MiddleLeft;
+            this.toolTip2.SetToolTip(this.CH1_1PreMin, resources.GetString("CH1_1PreMin.ToolTip"));
+            this.toolTip3.SetToolTip(this.CH1_1PreMin, resources.GetString("CH1_1PreMin.ToolTip1"));
+            this.toolTip1.SetToolTip(this.CH1_1PreMin, resources.GetString("CH1_1PreMin.ToolTip2"));
             // 
             // CH1_1PreMax
             // 
@@ -1184,16 +1352,25 @@
             this.CH1_1PreMax.Name = "CH1_1PreMax";
             this.CH1_1PreMax.Style = Sunny.UI.UIStyle.Custom;
             this.CH1_1PreMax.TextAlignment = System.Drawing.ContentAlignment.MiddleLeft;
+            this.toolTip2.SetToolTip(this.CH1_1PreMax, resources.GetString("CH1_1PreMax.ToolTip"));
+            this.toolTip3.SetToolTip(this.CH1_1PreMax, resources.GetString("CH1_1PreMax.ToolTip1"));
+            this.toolTip1.SetToolTip(this.CH1_1PreMax, resources.GetString("CH1_1PreMax.ToolTip2"));
             // 
             // label55
             // 
             resources.ApplyResources(this.label55, "label55");
             this.label55.Name = "label55";
+            this.toolTip2.SetToolTip(this.label55, resources.GetString("label55.ToolTip"));
+            this.toolTip3.SetToolTip(this.label55, resources.GetString("label55.ToolTip1"));
+            this.toolTip1.SetToolTip(this.label55, resources.GetString("label55.ToolTip2"));
             // 
             // label56
             // 
             resources.ApplyResources(this.label56, "label56");
             this.label56.Name = "label56";
+            this.toolTip2.SetToolTip(this.label56, resources.GetString("label56.ToolTip"));
+            this.toolTip3.SetToolTip(this.label56, resources.GetString("label56.ToolTip1"));
+            this.toolTip1.SetToolTip(this.label56, resources.GetString("label56.ToolTip2"));
             // 
             // CH1_1FlowMin
             // 
@@ -1206,6 +1383,9 @@
             this.CH1_1FlowMin.Name = "CH1_1FlowMin";
             this.CH1_1FlowMin.Style = Sunny.UI.UIStyle.Custom;
             this.CH1_1FlowMin.TextAlignment = System.Drawing.ContentAlignment.MiddleLeft;
+            this.toolTip2.SetToolTip(this.CH1_1FlowMin, resources.GetString("CH1_1FlowMin.ToolTip"));
+            this.toolTip3.SetToolTip(this.CH1_1FlowMin, resources.GetString("CH1_1FlowMin.ToolTip1"));
+            this.toolTip1.SetToolTip(this.CH1_1FlowMin, resources.GetString("CH1_1FlowMin.ToolTip2"));
             // 
             // CH1_1FlowMax
             // 
@@ -1218,6 +1398,9 @@
             this.CH1_1FlowMax.Name = "CH1_1FlowMax";
             this.CH1_1FlowMax.Style = Sunny.UI.UIStyle.Custom;
             this.CH1_1FlowMax.TextAlignment = System.Drawing.ContentAlignment.MiddleLeft;
+            this.toolTip2.SetToolTip(this.CH1_1FlowMax, resources.GetString("CH1_1FlowMax.ToolTip"));
+            this.toolTip3.SetToolTip(this.CH1_1FlowMax, resources.GetString("CH1_1FlowMax.ToolTip1"));
+            this.toolTip1.SetToolTip(this.CH1_1FlowMax, resources.GetString("CH1_1FlowMax.ToolTip2"));
             // 
             // CH1Press_OverTime
             // 
@@ -1230,16 +1413,25 @@
             this.CH1Press_OverTime.Name = "CH1Press_OverTime";
             this.CH1Press_OverTime.Style = Sunny.UI.UIStyle.Custom;
             this.CH1Press_OverTime.TextAlignment = System.Drawing.ContentAlignment.MiddleLeft;
+            this.toolTip2.SetToolTip(this.CH1Press_OverTime, resources.GetString("CH1Press_OverTime.ToolTip"));
+            this.toolTip3.SetToolTip(this.CH1Press_OverTime, resources.GetString("CH1Press_OverTime.ToolTip1"));
+            this.toolTip1.SetToolTip(this.CH1Press_OverTime, resources.GetString("CH1Press_OverTime.ToolTip2"));
             // 
             // label29
             // 
             resources.ApplyResources(this.label29, "label29");
             this.label29.Name = "label29";
+            this.toolTip2.SetToolTip(this.label29, resources.GetString("label29.ToolTip"));
+            this.toolTip3.SetToolTip(this.label29, resources.GetString("label29.ToolTip1"));
+            this.toolTip1.SetToolTip(this.label29, resources.GetString("label29.ToolTip2"));
             // 
             // label62
             // 
             resources.ApplyResources(this.label62, "label62");
             this.label62.Name = "label62";
+            this.toolTip2.SetToolTip(this.label62, resources.GetString("label62.ToolTip"));
+            this.toolTip3.SetToolTip(this.label62, resources.GetString("label62.ToolTip1"));
+            this.toolTip1.SetToolTip(this.label62, resources.GetString("label62.ToolTip2"));
             // 
             // CH1OverTime
             // 
@@ -1252,16 +1444,25 @@
             this.CH1OverTime.Name = "CH1OverTime";
             this.CH1OverTime.Style = Sunny.UI.UIStyle.Custom;
             this.CH1OverTime.TextAlignment = System.Drawing.ContentAlignment.MiddleLeft;
+            this.toolTip2.SetToolTip(this.CH1OverTime, resources.GetString("CH1OverTime.ToolTip"));
+            this.toolTip3.SetToolTip(this.CH1OverTime, resources.GetString("CH1OverTime.ToolTip1"));
+            this.toolTip1.SetToolTip(this.CH1OverTime, resources.GetString("CH1OverTime.ToolTip2"));
             // 
             // label66
             // 
             resources.ApplyResources(this.label66, "label66");
             this.label66.Name = "label66";
+            this.toolTip2.SetToolTip(this.label66, resources.GetString("label66.ToolTip"));
+            this.toolTip3.SetToolTip(this.label66, resources.GetString("label66.ToolTip1"));
+            this.toolTip1.SetToolTip(this.label66, resources.GetString("label66.ToolTip2"));
             // 
             // label30
             // 
             resources.ApplyResources(this.label30, "label30");
             this.label30.Name = "label30";
+            this.toolTip2.SetToolTip(this.label30, resources.GetString("label30.ToolTip"));
+            this.toolTip3.SetToolTip(this.label30, resources.GetString("label30.ToolTip1"));
+            this.toolTip1.SetToolTip(this.label30, resources.GetString("label30.ToolTip2"));
             // 
             // uiGroupBox18
             // 
@@ -1288,16 +1489,25 @@
             this.uiGroupBox18.Name = "uiGroupBox18";
             this.uiGroupBox18.Style = Sunny.UI.UIStyle.Custom;
             this.uiGroupBox18.TextAlignment = System.Drawing.ContentAlignment.MiddleCenter;
+            this.toolTip3.SetToolTip(this.uiGroupBox18, resources.GetString("uiGroupBox18.ToolTip"));
+            this.toolTip2.SetToolTip(this.uiGroupBox18, resources.GetString("uiGroupBox18.ToolTip1"));
+            this.toolTip1.SetToolTip(this.uiGroupBox18, resources.GetString("uiGroupBox18.ToolTip2"));
             // 
             // label61
             // 
             resources.ApplyResources(this.label61, "label61");
             this.label61.Name = "label61";
+            this.toolTip2.SetToolTip(this.label61, resources.GetString("label61.ToolTip"));
+            this.toolTip3.SetToolTip(this.label61, resources.GetString("label61.ToolTip1"));
+            this.toolTip1.SetToolTip(this.label61, resources.GetString("label61.ToolTip2"));
             // 
             // label63
             // 
             resources.ApplyResources(this.label63, "label63");
             this.label63.Name = "label63";
+            this.toolTip2.SetToolTip(this.label63, resources.GetString("label63.ToolTip"));
+            this.toolTip3.SetToolTip(this.label63, resources.GetString("label63.ToolTip1"));
+            this.toolTip1.SetToolTip(this.label63, resources.GetString("label63.ToolTip2"));
             // 
             // CH1DOWNVDCComp
             // 
@@ -1310,11 +1520,17 @@
             this.CH1DOWNVDCComp.Name = "CH1DOWNVDCComp";
             this.CH1DOWNVDCComp.Style = Sunny.UI.UIStyle.Custom;
             this.CH1DOWNVDCComp.TextAlignment = System.Drawing.ContentAlignment.MiddleLeft;
+            this.toolTip2.SetToolTip(this.CH1DOWNVDCComp, resources.GetString("CH1DOWNVDCComp.ToolTip"));
+            this.toolTip3.SetToolTip(this.CH1DOWNVDCComp, resources.GetString("CH1DOWNVDCComp.ToolTip1"));
+            this.toolTip1.SetToolTip(this.CH1DOWNVDCComp, resources.GetString("CH1DOWNVDCComp.ToolTip2"));
             // 
             // label64
             // 
             resources.ApplyResources(this.label64, "label64");
             this.label64.Name = "label64";
+            this.toolTip2.SetToolTip(this.label64, resources.GetString("label64.ToolTip"));
+            this.toolTip3.SetToolTip(this.label64, resources.GetString("label64.ToolTip1"));
+            this.toolTip1.SetToolTip(this.label64, resources.GetString("label64.ToolTip2"));
             // 
             // CH1DOWNVDCMin
             // 
@@ -1327,11 +1543,17 @@
             this.CH1DOWNVDCMin.Name = "CH1DOWNVDCMin";
             this.CH1DOWNVDCMin.Style = Sunny.UI.UIStyle.Custom;
             this.CH1DOWNVDCMin.TextAlignment = System.Drawing.ContentAlignment.MiddleLeft;
+            this.toolTip2.SetToolTip(this.CH1DOWNVDCMin, resources.GetString("CH1DOWNVDCMin.ToolTip"));
+            this.toolTip3.SetToolTip(this.CH1DOWNVDCMin, resources.GetString("CH1DOWNVDCMin.ToolTip1"));
+            this.toolTip1.SetToolTip(this.CH1DOWNVDCMin, resources.GetString("CH1DOWNVDCMin.ToolTip2"));
             // 
             // label65
             // 
             resources.ApplyResources(this.label65, "label65");
             this.label65.Name = "label65";
+            this.toolTip2.SetToolTip(this.label65, resources.GetString("label65.ToolTip"));
+            this.toolTip3.SetToolTip(this.label65, resources.GetString("label65.ToolTip1"));
+            this.toolTip1.SetToolTip(this.label65, resources.GetString("label65.ToolTip2"));
             // 
             // CH1DOWNVDCMax
             // 
@@ -1344,16 +1566,25 @@
             this.CH1DOWNVDCMax.Name = "CH1DOWNVDCMax";
             this.CH1DOWNVDCMax.Style = Sunny.UI.UIStyle.Custom;
             this.CH1DOWNVDCMax.TextAlignment = System.Drawing.ContentAlignment.MiddleLeft;
+            this.toolTip2.SetToolTip(this.CH1DOWNVDCMax, resources.GetString("CH1DOWNVDCMax.ToolTip"));
+            this.toolTip3.SetToolTip(this.CH1DOWNVDCMax, resources.GetString("CH1DOWNVDCMax.ToolTip1"));
+            this.toolTip1.SetToolTip(this.CH1DOWNVDCMax, resources.GetString("CH1DOWNVDCMax.ToolTip2"));
             // 
             // label67
             // 
             resources.ApplyResources(this.label67, "label67");
             this.label67.Name = "label67";
+            this.toolTip2.SetToolTip(this.label67, resources.GetString("label67.ToolTip"));
+            this.toolTip3.SetToolTip(this.label67, resources.GetString("label67.ToolTip1"));
+            this.toolTip1.SetToolTip(this.label67, resources.GetString("label67.ToolTip2"));
             // 
             // label68
             // 
             resources.ApplyResources(this.label68, "label68");
             this.label68.Name = "label68";
+            this.toolTip2.SetToolTip(this.label68, resources.GetString("label68.ToolTip"));
+            this.toolTip3.SetToolTip(this.label68, resources.GetString("label68.ToolTip1"));
+            this.toolTip1.SetToolTip(this.label68, resources.GetString("label68.ToolTip2"));
             // 
             // CH1DOWNADCComp
             // 
@@ -1366,11 +1597,17 @@
             this.CH1DOWNADCComp.Name = "CH1DOWNADCComp";
             this.CH1DOWNADCComp.Style = Sunny.UI.UIStyle.Custom;
             this.CH1DOWNADCComp.TextAlignment = System.Drawing.ContentAlignment.MiddleLeft;
+            this.toolTip2.SetToolTip(this.CH1DOWNADCComp, resources.GetString("CH1DOWNADCComp.ToolTip"));
+            this.toolTip3.SetToolTip(this.CH1DOWNADCComp, resources.GetString("CH1DOWNADCComp.ToolTip1"));
+            this.toolTip1.SetToolTip(this.CH1DOWNADCComp, resources.GetString("CH1DOWNADCComp.ToolTip2"));
             // 
             // label127
             // 
             resources.ApplyResources(this.label127, "label127");
             this.label127.Name = "label127";
+            this.toolTip2.SetToolTip(this.label127, resources.GetString("label127.ToolTip"));
+            this.toolTip3.SetToolTip(this.label127, resources.GetString("label127.ToolTip1"));
+            this.toolTip1.SetToolTip(this.label127, resources.GetString("label127.ToolTip2"));
             // 
             // CH1DOWNADCMin
             // 
@@ -1383,11 +1620,17 @@
             this.CH1DOWNADCMin.Name = "CH1DOWNADCMin";
             this.CH1DOWNADCMin.Style = Sunny.UI.UIStyle.Custom;
             this.CH1DOWNADCMin.TextAlignment = System.Drawing.ContentAlignment.MiddleLeft;
+            this.toolTip2.SetToolTip(this.CH1DOWNADCMin, resources.GetString("CH1DOWNADCMin.ToolTip"));
+            this.toolTip3.SetToolTip(this.CH1DOWNADCMin, resources.GetString("CH1DOWNADCMin.ToolTip1"));
+            this.toolTip1.SetToolTip(this.CH1DOWNADCMin, resources.GetString("CH1DOWNADCMin.ToolTip2"));
             // 
             // label128
             // 
             resources.ApplyResources(this.label128, "label128");
             this.label128.Name = "label128";
+            this.toolTip2.SetToolTip(this.label128, resources.GetString("label128.ToolTip"));
+            this.toolTip3.SetToolTip(this.label128, resources.GetString("label128.ToolTip1"));
+            this.toolTip1.SetToolTip(this.label128, resources.GetString("label128.ToolTip2"));
             // 
             // CH1DOWNADCMax
             // 
@@ -1400,31 +1643,49 @@
             this.CH1DOWNADCMax.Name = "CH1DOWNADCMax";
             this.CH1DOWNADCMax.Style = Sunny.UI.UIStyle.Custom;
             this.CH1DOWNADCMax.TextAlignment = System.Drawing.ContentAlignment.MiddleLeft;
+            this.toolTip2.SetToolTip(this.CH1DOWNADCMax, resources.GetString("CH1DOWNADCMax.ToolTip"));
+            this.toolTip3.SetToolTip(this.CH1DOWNADCMax, resources.GetString("CH1DOWNADCMax.ToolTip1"));
+            this.toolTip1.SetToolTip(this.CH1DOWNADCMax, resources.GetString("CH1DOWNADCMax.ToolTip2"));
             // 
             // label129
             // 
             resources.ApplyResources(this.label129, "label129");
             this.label129.Name = "label129";
+            this.toolTip2.SetToolTip(this.label129, resources.GetString("label129.ToolTip"));
+            this.toolTip3.SetToolTip(this.label129, resources.GetString("label129.ToolTip1"));
+            this.toolTip1.SetToolTip(this.label129, resources.GetString("label129.ToolTip2"));
             // 
             // label130
             // 
             resources.ApplyResources(this.label130, "label130");
             this.label130.Name = "label130";
+            this.toolTip2.SetToolTip(this.label130, resources.GetString("label130.ToolTip"));
+            this.toolTip3.SetToolTip(this.label130, resources.GetString("label130.ToolTip1"));
+            this.toolTip1.SetToolTip(this.label130, resources.GetString("label130.ToolTip2"));
             // 
             // label131
             // 
             resources.ApplyResources(this.label131, "label131");
             this.label131.Name = "label131";
+            this.toolTip2.SetToolTip(this.label131, resources.GetString("label131.ToolTip"));
+            this.toolTip3.SetToolTip(this.label131, resources.GetString("label131.ToolTip1"));
+            this.toolTip1.SetToolTip(this.label131, resources.GetString("label131.ToolTip2"));
             // 
             // label132
             // 
             resources.ApplyResources(this.label132, "label132");
             this.label132.Name = "label132";
+            this.toolTip2.SetToolTip(this.label132, resources.GetString("label132.ToolTip"));
+            this.toolTip3.SetToolTip(this.label132, resources.GetString("label132.ToolTip1"));
+            this.toolTip1.SetToolTip(this.label132, resources.GetString("label132.ToolTip2"));
             // 
             // label228
             // 
             resources.ApplyResources(this.label228, "label228");
             this.label228.Name = "label228";
+            this.toolTip2.SetToolTip(this.label228, resources.GetString("label228.ToolTip"));
+            this.toolTip3.SetToolTip(this.label228, resources.GetString("label228.ToolTip1"));
+            this.toolTip1.SetToolTip(this.label228, resources.GetString("label228.ToolTip2"));
             // 
             // uiGroupBox40
             // 
@@ -1451,11 +1712,17 @@
             this.uiGroupBox40.Name = "uiGroupBox40";
             this.uiGroupBox40.Style = Sunny.UI.UIStyle.Custom;
             this.uiGroupBox40.TextAlignment = System.Drawing.ContentAlignment.MiddleCenter;
+            this.toolTip3.SetToolTip(this.uiGroupBox40, resources.GetString("uiGroupBox40.ToolTip"));
+            this.toolTip2.SetToolTip(this.uiGroupBox40, resources.GetString("uiGroupBox40.ToolTip1"));
+            this.toolTip1.SetToolTip(this.uiGroupBox40, resources.GetString("uiGroupBox40.ToolTip2"));
             // 
             // label227
             // 
             resources.ApplyResources(this.label227, "label227");
             this.label227.Name = "label227";
+            this.toolTip2.SetToolTip(this.label227, resources.GetString("label227.ToolTip"));
+            this.toolTip3.SetToolTip(this.label227, resources.GetString("label227.ToolTip1"));
+            this.toolTip1.SetToolTip(this.label227, resources.GetString("label227.ToolTip2"));
             // 
             // CH2RWDVDCComp
             // 
@@ -1468,11 +1735,17 @@
             this.CH2RWDVDCComp.Name = "CH2RWDVDCComp";
             this.CH2RWDVDCComp.Style = Sunny.UI.UIStyle.Custom;
             this.CH2RWDVDCComp.TextAlignment = System.Drawing.ContentAlignment.MiddleLeft;
+            this.toolTip2.SetToolTip(this.CH2RWDVDCComp, resources.GetString("CH2RWDVDCComp.ToolTip"));
+            this.toolTip3.SetToolTip(this.CH2RWDVDCComp, resources.GetString("CH2RWDVDCComp.ToolTip1"));
+            this.toolTip1.SetToolTip(this.CH2RWDVDCComp, resources.GetString("CH2RWDVDCComp.ToolTip2"));
             // 
             // label229
             // 
             resources.ApplyResources(this.label229, "label229");
             this.label229.Name = "label229";
+            this.toolTip2.SetToolTip(this.label229, resources.GetString("label229.ToolTip"));
+            this.toolTip3.SetToolTip(this.label229, resources.GetString("label229.ToolTip1"));
+            this.toolTip1.SetToolTip(this.label229, resources.GetString("label229.ToolTip2"));
             // 
             // CH2RWDVDCMin
             // 
@@ -1485,11 +1758,17 @@
             this.CH2RWDVDCMin.Name = "CH2RWDVDCMin";
             this.CH2RWDVDCMin.Style = Sunny.UI.UIStyle.Custom;
             this.CH2RWDVDCMin.TextAlignment = System.Drawing.ContentAlignment.MiddleLeft;
+            this.toolTip2.SetToolTip(this.CH2RWDVDCMin, resources.GetString("CH2RWDVDCMin.ToolTip"));
+            this.toolTip3.SetToolTip(this.CH2RWDVDCMin, resources.GetString("CH2RWDVDCMin.ToolTip1"));
+            this.toolTip1.SetToolTip(this.CH2RWDVDCMin, resources.GetString("CH2RWDVDCMin.ToolTip2"));
             // 
             // label230
             // 
             resources.ApplyResources(this.label230, "label230");
             this.label230.Name = "label230";
+            this.toolTip2.SetToolTip(this.label230, resources.GetString("label230.ToolTip"));
+            this.toolTip3.SetToolTip(this.label230, resources.GetString("label230.ToolTip1"));
+            this.toolTip1.SetToolTip(this.label230, resources.GetString("label230.ToolTip2"));
             // 
             // CH2RWDVDCMax
             // 
@@ -1502,16 +1781,25 @@
             this.CH2RWDVDCMax.Name = "CH2RWDVDCMax";
             this.CH2RWDVDCMax.Style = Sunny.UI.UIStyle.Custom;
             this.CH2RWDVDCMax.TextAlignment = System.Drawing.ContentAlignment.MiddleLeft;
+            this.toolTip2.SetToolTip(this.CH2RWDVDCMax, resources.GetString("CH2RWDVDCMax.ToolTip"));
+            this.toolTip3.SetToolTip(this.CH2RWDVDCMax, resources.GetString("CH2RWDVDCMax.ToolTip1"));
+            this.toolTip1.SetToolTip(this.CH2RWDVDCMax, resources.GetString("CH2RWDVDCMax.ToolTip2"));
             // 
             // label231
             // 
             resources.ApplyResources(this.label231, "label231");
             this.label231.Name = "label231";
+            this.toolTip2.SetToolTip(this.label231, resources.GetString("label231.ToolTip"));
+            this.toolTip3.SetToolTip(this.label231, resources.GetString("label231.ToolTip1"));
+            this.toolTip1.SetToolTip(this.label231, resources.GetString("label231.ToolTip2"));
             // 
             // label232
             // 
             resources.ApplyResources(this.label232, "label232");
             this.label232.Name = "label232";
+            this.toolTip2.SetToolTip(this.label232, resources.GetString("label232.ToolTip"));
+            this.toolTip3.SetToolTip(this.label232, resources.GetString("label232.ToolTip1"));
+            this.toolTip1.SetToolTip(this.label232, resources.GetString("label232.ToolTip2"));
             // 
             // CH2RWDADCComp
             // 
@@ -1524,11 +1812,17 @@
             this.CH2RWDADCComp.Name = "CH2RWDADCComp";
             this.CH2RWDADCComp.Style = Sunny.UI.UIStyle.Custom;
             this.CH2RWDADCComp.TextAlignment = System.Drawing.ContentAlignment.MiddleLeft;
+            this.toolTip2.SetToolTip(this.CH2RWDADCComp, resources.GetString("CH2RWDADCComp.ToolTip"));
+            this.toolTip3.SetToolTip(this.CH2RWDADCComp, resources.GetString("CH2RWDADCComp.ToolTip1"));
+            this.toolTip1.SetToolTip(this.CH2RWDADCComp, resources.GetString("CH2RWDADCComp.ToolTip2"));
             // 
             // label233
             // 
             resources.ApplyResources(this.label233, "label233");
             this.label233.Name = "label233";
+            this.toolTip2.SetToolTip(this.label233, resources.GetString("label233.ToolTip"));
+            this.toolTip3.SetToolTip(this.label233, resources.GetString("label233.ToolTip1"));
+            this.toolTip1.SetToolTip(this.label233, resources.GetString("label233.ToolTip2"));
             // 
             // CH2RWDADCMin
             // 
@@ -1541,11 +1835,17 @@
             this.CH2RWDADCMin.Name = "CH2RWDADCMin";
             this.CH2RWDADCMin.Style = Sunny.UI.UIStyle.Custom;
             this.CH2RWDADCMin.TextAlignment = System.Drawing.ContentAlignment.MiddleLeft;
+            this.toolTip2.SetToolTip(this.CH2RWDADCMin, resources.GetString("CH2RWDADCMin.ToolTip"));
+            this.toolTip3.SetToolTip(this.CH2RWDADCMin, resources.GetString("CH2RWDADCMin.ToolTip1"));
+            this.toolTip1.SetToolTip(this.CH2RWDADCMin, resources.GetString("CH2RWDADCMin.ToolTip2"));
             // 
             // label234
             // 
             resources.ApplyResources(this.label234, "label234");
             this.label234.Name = "label234";
+            this.toolTip2.SetToolTip(this.label234, resources.GetString("label234.ToolTip"));
+            this.toolTip3.SetToolTip(this.label234, resources.GetString("label234.ToolTip1"));
+            this.toolTip1.SetToolTip(this.label234, resources.GetString("label234.ToolTip2"));
             // 
             // CH2RWDADCMax
             // 
@@ -1558,26 +1858,41 @@
             this.CH2RWDADCMax.Name = "CH2RWDADCMax";
             this.CH2RWDADCMax.Style = Sunny.UI.UIStyle.Custom;
             this.CH2RWDADCMax.TextAlignment = System.Drawing.ContentAlignment.MiddleLeft;
+            this.toolTip2.SetToolTip(this.CH2RWDADCMax, resources.GetString("CH2RWDADCMax.ToolTip"));
+            this.toolTip3.SetToolTip(this.CH2RWDADCMax, resources.GetString("CH2RWDADCMax.ToolTip1"));
+            this.toolTip1.SetToolTip(this.CH2RWDADCMax, resources.GetString("CH2RWDADCMax.ToolTip2"));
             // 
             // label235
             // 
             resources.ApplyResources(this.label235, "label235");
             this.label235.Name = "label235";
+            this.toolTip2.SetToolTip(this.label235, resources.GetString("label235.ToolTip"));
+            this.toolTip3.SetToolTip(this.label235, resources.GetString("label235.ToolTip1"));
+            this.toolTip1.SetToolTip(this.label235, resources.GetString("label235.ToolTip2"));
             // 
             // label236
             // 
             resources.ApplyResources(this.label236, "label236");
             this.label236.Name = "label236";
+            this.toolTip2.SetToolTip(this.label236, resources.GetString("label236.ToolTip"));
+            this.toolTip3.SetToolTip(this.label236, resources.GetString("label236.ToolTip1"));
+            this.toolTip1.SetToolTip(this.label236, resources.GetString("label236.ToolTip2"));
             // 
             // label237
             // 
             resources.ApplyResources(this.label237, "label237");
             this.label237.Name = "label237";
+            this.toolTip2.SetToolTip(this.label237, resources.GetString("label237.ToolTip"));
+            this.toolTip3.SetToolTip(this.label237, resources.GetString("label237.ToolTip1"));
+            this.toolTip1.SetToolTip(this.label237, resources.GetString("label237.ToolTip2"));
             // 
             // label238
             // 
             resources.ApplyResources(this.label238, "label238");
             this.label238.Name = "label238";
+            this.toolTip2.SetToolTip(this.label238, resources.GetString("label238.ToolTip"));
+            this.toolTip3.SetToolTip(this.label238, resources.GetString("label238.ToolTip1"));
+            this.toolTip1.SetToolTip(this.label238, resources.GetString("label238.ToolTip2"));
             // 
             // CH2RWDPressMin
             // 
@@ -1590,6 +1905,9 @@
             this.CH2RWDPressMin.Name = "CH2RWDPressMin";
             this.CH2RWDPressMin.Style = Sunny.UI.UIStyle.Custom;
             this.CH2RWDPressMin.TextAlignment = System.Drawing.ContentAlignment.MiddleLeft;
+            this.toolTip2.SetToolTip(this.CH2RWDPressMin, resources.GetString("CH2RWDPressMin.ToolTip"));
+            this.toolTip3.SetToolTip(this.CH2RWDPressMin, resources.GetString("CH2RWDPressMin.ToolTip1"));
+            this.toolTip1.SetToolTip(this.CH2RWDPressMin, resources.GetString("CH2RWDPressMin.ToolTip2"));
             // 
             // CH2RWDPressMax
             // 
@@ -1602,16 +1920,25 @@
             this.CH2RWDPressMax.Name = "CH2RWDPressMax";
             this.CH2RWDPressMax.Style = Sunny.UI.UIStyle.Custom;
             this.CH2RWDPressMax.TextAlignment = System.Drawing.ContentAlignment.MiddleLeft;
+            this.toolTip2.SetToolTip(this.CH2RWDPressMax, resources.GetString("CH2RWDPressMax.ToolTip"));
+            this.toolTip3.SetToolTip(this.CH2RWDPressMax, resources.GetString("CH2RWDPressMax.ToolTip1"));
+            this.toolTip1.SetToolTip(this.CH2RWDPressMax, resources.GetString("CH2RWDPressMax.ToolTip2"));
             // 
             // label224
             // 
             resources.ApplyResources(this.label224, "label224");
             this.label224.Name = "label224";
+            this.toolTip2.SetToolTip(this.label224, resources.GetString("label224.ToolTip"));
+            this.toolTip3.SetToolTip(this.label224, resources.GetString("label224.ToolTip1"));
+            this.toolTip1.SetToolTip(this.label224, resources.GetString("label224.ToolTip2"));
             // 
             // label225
             // 
             resources.ApplyResources(this.label225, "label225");
             this.label225.Name = "label225";
+            this.toolTip2.SetToolTip(this.label225, resources.GetString("label225.ToolTip"));
+            this.toolTip3.SetToolTip(this.label225, resources.GetString("label225.ToolTip1"));
+            this.toolTip1.SetToolTip(this.label225, resources.GetString("label225.ToolTip2"));
             // 
             // CH2RWDOverTime
             // 
@@ -1624,11 +1951,17 @@
             this.CH2RWDOverTime.Name = "CH2RWDOverTime";
             this.CH2RWDOverTime.Style = Sunny.UI.UIStyle.Custom;
             this.CH2RWDOverTime.TextAlignment = System.Drawing.ContentAlignment.MiddleLeft;
+            this.toolTip2.SetToolTip(this.CH2RWDOverTime, resources.GetString("CH2RWDOverTime.ToolTip"));
+            this.toolTip3.SetToolTip(this.CH2RWDOverTime, resources.GetString("CH2RWDOverTime.ToolTip1"));
+            this.toolTip1.SetToolTip(this.CH2RWDOverTime, resources.GetString("CH2RWDOverTime.ToolTip2"));
             // 
             // label226
             // 
             resources.ApplyResources(this.label226, "label226");
             this.label226.Name = "label226";
+            this.toolTip2.SetToolTip(this.label226, resources.GetString("label226.ToolTip"));
+            this.toolTip3.SetToolTip(this.label226, resources.GetString("label226.ToolTip1"));
+            this.toolTip1.SetToolTip(this.label226, resources.GetString("label226.ToolTip2"));
             // 
             // uiGroupBox42
             // 
@@ -1643,6 +1976,9 @@
             this.uiGroupBox42.Name = "uiGroupBox42";
             this.uiGroupBox42.Style = Sunny.UI.UIStyle.Custom;
             this.uiGroupBox42.TextAlignment = System.Drawing.ContentAlignment.MiddleCenter;
+            this.toolTip3.SetToolTip(this.uiGroupBox42, resources.GetString("uiGroupBox42.ToolTip"));
+            this.toolTip2.SetToolTip(this.uiGroupBox42, resources.GetString("uiGroupBox42.ToolTip1"));
+            this.toolTip1.SetToolTip(this.uiGroupBox42, resources.GetString("uiGroupBox42.ToolTip2"));
             // 
             // RWDParamsSave
             // 
@@ -1650,7 +1986,10 @@
             this.RWDParamsSave.Cursor = System.Windows.Forms.Cursors.Hand;
             this.RWDParamsSave.Name = "RWDParamsSave";
             this.RWDParamsSave.Style = Sunny.UI.UIStyle.Custom;
-            this.RWDParamsSave.TipsFont = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.RWDParamsSave.TipsFont = new System.Drawing.Font("Microsoft YaHei", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.toolTip3.SetToolTip(this.RWDParamsSave, resources.GetString("RWDParamsSave.ToolTip"));
+            this.toolTip2.SetToolTip(this.RWDParamsSave, resources.GetString("RWDParamsSave.ToolTip1"));
+            this.toolTip1.SetToolTip(this.RWDParamsSave, resources.GetString("RWDParamsSave.ToolTip2"));
             this.RWDParamsSave.Click += new System.EventHandler(this.RWDParamsSave_Click);
             // 
             // uiGroupBox39
@@ -1663,6 +2002,9 @@
             this.uiGroupBox39.Name = "uiGroupBox39";
             this.uiGroupBox39.Style = Sunny.UI.UIStyle.Custom;
             this.uiGroupBox39.TextAlignment = System.Drawing.ContentAlignment.MiddleCenter;
+            this.toolTip3.SetToolTip(this.uiGroupBox39, resources.GetString("uiGroupBox39.ToolTip"));
+            this.toolTip2.SetToolTip(this.uiGroupBox39, resources.GetString("uiGroupBox39.ToolTip1"));
+            this.toolTip1.SetToolTip(this.uiGroupBox39, resources.GetString("uiGroupBox39.ToolTip2"));
             // 
             // uiGroupBox26
             // 
@@ -1673,11 +2015,13 @@
             this.uiGroupBox26.Name = "uiGroupBox26";
             this.uiGroupBox26.Style = Sunny.UI.UIStyle.Custom;
             this.uiGroupBox26.TextAlignment = System.Drawing.ContentAlignment.MiddleCenter;
+            this.toolTip3.SetToolTip(this.uiGroupBox26, resources.GetString("uiGroupBox26.ToolTip"));
+            this.toolTip2.SetToolTip(this.uiGroupBox26, resources.GetString("uiGroupBox26.ToolTip1"));
+            this.toolTip1.SetToolTip(this.uiGroupBox26, resources.GetString("uiGroupBox26.ToolTip2"));
             // 
             // uiGroupBox34
             // 
             resources.ApplyResources(this.uiGroupBox34, "uiGroupBox34");
-            this.uiGroupBox34.Controls.Add(this.uiGroupBox37);
             this.uiGroupBox34.Controls.Add(this.label81);
             this.uiGroupBox34.Controls.Add(this.label82);
             this.uiGroupBox34.Controls.Add(this.CH2FWDVDCComp);
@@ -1700,106 +2044,25 @@
             this.uiGroupBox34.Name = "uiGroupBox34";
             this.uiGroupBox34.Style = Sunny.UI.UIStyle.Custom;
             this.uiGroupBox34.TextAlignment = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // uiGroupBox37
-            // 
-            resources.ApplyResources(this.uiGroupBox37, "uiGroupBox37");
-            this.uiGroupBox37.Controls.Add(this.uiTextBox1);
-            this.uiGroupBox37.Controls.Add(this.uiTextBox2);
-            this.uiGroupBox37.Controls.Add(this.label12);
-            this.uiGroupBox37.Controls.Add(this.label47);
-            this.uiGroupBox37.Controls.Add(this.uiTextBox3);
-            this.uiGroupBox37.Controls.Add(this.uiTextBox4);
-            this.uiGroupBox37.Controls.Add(this.label49);
-            this.uiGroupBox37.Controls.Add(this.label50);
-            this.uiGroupBox37.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(243)))), ((int)(((byte)(255)))));
-            this.uiGroupBox37.Name = "uiGroupBox37";
-            this.uiGroupBox37.Style = Sunny.UI.UIStyle.Custom;
-            this.uiGroupBox37.TextAlignment = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // uiTextBox1
-            // 
-            resources.ApplyResources(this.uiTextBox1, "uiTextBox1");
-            this.uiTextBox1.ButtonSymbol = 61761;
-            this.uiTextBox1.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.uiTextBox1.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(243)))), ((int)(((byte)(255)))));
-            this.uiTextBox1.Maximum = 2147483647D;
-            this.uiTextBox1.Minimum = -2147483648D;
-            this.uiTextBox1.Name = "uiTextBox1";
-            this.uiTextBox1.Style = Sunny.UI.UIStyle.Custom;
-            this.uiTextBox1.TextAlignment = System.Drawing.ContentAlignment.MiddleLeft;
-            // 
-            // uiTextBox2
-            // 
-            resources.ApplyResources(this.uiTextBox2, "uiTextBox2");
-            this.uiTextBox2.ButtonSymbol = 61761;
-            this.uiTextBox2.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.uiTextBox2.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(243)))), ((int)(((byte)(255)))));
-            this.uiTextBox2.Maximum = 2147483647D;
-            this.uiTextBox2.Minimum = -2147483648D;
-            this.uiTextBox2.Name = "uiTextBox2";
-            this.uiTextBox2.Style = Sunny.UI.UIStyle.Custom;
-            this.uiTextBox2.TextAlignment = System.Drawing.ContentAlignment.MiddleLeft;
-            // 
-            // label12
-            // 
-            resources.ApplyResources(this.label12, "label12");
-            this.label12.Name = "label12";
-            // 
-            // label47
-            // 
-            resources.ApplyResources(this.label47, "label47");
-            this.label47.Name = "label47";
-            // 
-            // uiTextBox3
-            // 
-            resources.ApplyResources(this.uiTextBox3, "uiTextBox3");
-            this.uiTextBox3.ButtonSymbol = 61761;
-            this.uiTextBox3.Controls.Add(this.label9);
-            this.uiTextBox3.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.uiTextBox3.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(243)))), ((int)(((byte)(255)))));
-            this.uiTextBox3.Maximum = 2147483647D;
-            this.uiTextBox3.Minimum = -2147483648D;
-            this.uiTextBox3.Name = "uiTextBox3";
-            this.uiTextBox3.Style = Sunny.UI.UIStyle.Custom;
-            this.uiTextBox3.TextAlignment = System.Drawing.ContentAlignment.MiddleLeft;
-            // 
-            // label9
-            // 
-            resources.ApplyResources(this.label9, "label9");
-            this.label9.Name = "label9";
-            // 
-            // uiTextBox4
-            // 
-            resources.ApplyResources(this.uiTextBox4, "uiTextBox4");
-            this.uiTextBox4.ButtonSymbol = 61761;
-            this.uiTextBox4.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.uiTextBox4.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(243)))), ((int)(((byte)(255)))));
-            this.uiTextBox4.Maximum = 2147483647D;
-            this.uiTextBox4.Minimum = -2147483648D;
-            this.uiTextBox4.Name = "uiTextBox4";
-            this.uiTextBox4.Style = Sunny.UI.UIStyle.Custom;
-            this.uiTextBox4.TextAlignment = System.Drawing.ContentAlignment.MiddleLeft;
-            // 
-            // label49
-            // 
-            resources.ApplyResources(this.label49, "label49");
-            this.label49.Name = "label49";
-            // 
-            // label50
-            // 
-            resources.ApplyResources(this.label50, "label50");
-            this.label50.Name = "label50";
+            this.toolTip3.SetToolTip(this.uiGroupBox34, resources.GetString("uiGroupBox34.ToolTip"));
+            this.toolTip2.SetToolTip(this.uiGroupBox34, resources.GetString("uiGroupBox34.ToolTip1"));
+            this.toolTip1.SetToolTip(this.uiGroupBox34, resources.GetString("uiGroupBox34.ToolTip2"));
             // 
             // label81
             // 
             resources.ApplyResources(this.label81, "label81");
             this.label81.Name = "label81";
+            this.toolTip2.SetToolTip(this.label81, resources.GetString("label81.ToolTip"));
+            this.toolTip3.SetToolTip(this.label81, resources.GetString("label81.ToolTip1"));
+            this.toolTip1.SetToolTip(this.label81, resources.GetString("label81.ToolTip2"));
             // 
             // label82
             // 
             resources.ApplyResources(this.label82, "label82");
             this.label82.Name = "label82";
+            this.toolTip2.SetToolTip(this.label82, resources.GetString("label82.ToolTip"));
+            this.toolTip3.SetToolTip(this.label82, resources.GetString("label82.ToolTip1"));
+            this.toolTip1.SetToolTip(this.label82, resources.GetString("label82.ToolTip2"));
             // 
             // CH2FWDVDCComp
             // 
@@ -1812,11 +2075,17 @@
             this.CH2FWDVDCComp.Name = "CH2FWDVDCComp";
             this.CH2FWDVDCComp.Style = Sunny.UI.UIStyle.Custom;
             this.CH2FWDVDCComp.TextAlignment = System.Drawing.ContentAlignment.MiddleLeft;
+            this.toolTip2.SetToolTip(this.CH2FWDVDCComp, resources.GetString("CH2FWDVDCComp.ToolTip"));
+            this.toolTip3.SetToolTip(this.CH2FWDVDCComp, resources.GetString("CH2FWDVDCComp.ToolTip1"));
+            this.toolTip1.SetToolTip(this.CH2FWDVDCComp, resources.GetString("CH2FWDVDCComp.ToolTip2"));
             // 
             // label83
             // 
             resources.ApplyResources(this.label83, "label83");
             this.label83.Name = "label83";
+            this.toolTip2.SetToolTip(this.label83, resources.GetString("label83.ToolTip"));
+            this.toolTip3.SetToolTip(this.label83, resources.GetString("label83.ToolTip1"));
+            this.toolTip1.SetToolTip(this.label83, resources.GetString("label83.ToolTip2"));
             // 
             // CH2FWDVDCMin
             // 
@@ -1829,11 +2098,17 @@
             this.CH2FWDVDCMin.Name = "CH2FWDVDCMin";
             this.CH2FWDVDCMin.Style = Sunny.UI.UIStyle.Custom;
             this.CH2FWDVDCMin.TextAlignment = System.Drawing.ContentAlignment.MiddleLeft;
+            this.toolTip2.SetToolTip(this.CH2FWDVDCMin, resources.GetString("CH2FWDVDCMin.ToolTip"));
+            this.toolTip3.SetToolTip(this.CH2FWDVDCMin, resources.GetString("CH2FWDVDCMin.ToolTip1"));
+            this.toolTip1.SetToolTip(this.CH2FWDVDCMin, resources.GetString("CH2FWDVDCMin.ToolTip2"));
             // 
             // label84
             // 
             resources.ApplyResources(this.label84, "label84");
             this.label84.Name = "label84";
+            this.toolTip2.SetToolTip(this.label84, resources.GetString("label84.ToolTip"));
+            this.toolTip3.SetToolTip(this.label84, resources.GetString("label84.ToolTip1"));
+            this.toolTip1.SetToolTip(this.label84, resources.GetString("label84.ToolTip2"));
             // 
             // CH2FWDVDCMax
             // 
@@ -1846,16 +2121,25 @@
             this.CH2FWDVDCMax.Name = "CH2FWDVDCMax";
             this.CH2FWDVDCMax.Style = Sunny.UI.UIStyle.Custom;
             this.CH2FWDVDCMax.TextAlignment = System.Drawing.ContentAlignment.MiddleLeft;
+            this.toolTip2.SetToolTip(this.CH2FWDVDCMax, resources.GetString("CH2FWDVDCMax.ToolTip"));
+            this.toolTip3.SetToolTip(this.CH2FWDVDCMax, resources.GetString("CH2FWDVDCMax.ToolTip1"));
+            this.toolTip1.SetToolTip(this.CH2FWDVDCMax, resources.GetString("CH2FWDVDCMax.ToolTip2"));
             // 
             // label85
             // 
             resources.ApplyResources(this.label85, "label85");
             this.label85.Name = "label85";
+            this.toolTip2.SetToolTip(this.label85, resources.GetString("label85.ToolTip"));
+            this.toolTip3.SetToolTip(this.label85, resources.GetString("label85.ToolTip1"));
+            this.toolTip1.SetToolTip(this.label85, resources.GetString("label85.ToolTip2"));
             // 
             // label86
             // 
             resources.ApplyResources(this.label86, "label86");
             this.label86.Name = "label86";
+            this.toolTip2.SetToolTip(this.label86, resources.GetString("label86.ToolTip"));
+            this.toolTip3.SetToolTip(this.label86, resources.GetString("label86.ToolTip1"));
+            this.toolTip1.SetToolTip(this.label86, resources.GetString("label86.ToolTip2"));
             // 
             // CH2FWDADCComp
             // 
@@ -1868,11 +2152,17 @@
             this.CH2FWDADCComp.Name = "CH2FWDADCComp";
             this.CH2FWDADCComp.Style = Sunny.UI.UIStyle.Custom;
             this.CH2FWDADCComp.TextAlignment = System.Drawing.ContentAlignment.MiddleLeft;
+            this.toolTip2.SetToolTip(this.CH2FWDADCComp, resources.GetString("CH2FWDADCComp.ToolTip"));
+            this.toolTip3.SetToolTip(this.CH2FWDADCComp, resources.GetString("CH2FWDADCComp.ToolTip1"));
+            this.toolTip1.SetToolTip(this.CH2FWDADCComp, resources.GetString("CH2FWDADCComp.ToolTip2"));
             // 
             // label121
             // 
             resources.ApplyResources(this.label121, "label121");
             this.label121.Name = "label121";
+            this.toolTip2.SetToolTip(this.label121, resources.GetString("label121.ToolTip"));
+            this.toolTip3.SetToolTip(this.label121, resources.GetString("label121.ToolTip1"));
+            this.toolTip1.SetToolTip(this.label121, resources.GetString("label121.ToolTip2"));
             // 
             // CH2FWDADCMin
             // 
@@ -1885,11 +2175,17 @@
             this.CH2FWDADCMin.Name = "CH2FWDADCMin";
             this.CH2FWDADCMin.Style = Sunny.UI.UIStyle.Custom;
             this.CH2FWDADCMin.TextAlignment = System.Drawing.ContentAlignment.MiddleLeft;
+            this.toolTip2.SetToolTip(this.CH2FWDADCMin, resources.GetString("CH2FWDADCMin.ToolTip"));
+            this.toolTip3.SetToolTip(this.CH2FWDADCMin, resources.GetString("CH2FWDADCMin.ToolTip1"));
+            this.toolTip1.SetToolTip(this.CH2FWDADCMin, resources.GetString("CH2FWDADCMin.ToolTip2"));
             // 
             // label122
             // 
             resources.ApplyResources(this.label122, "label122");
             this.label122.Name = "label122";
+            this.toolTip2.SetToolTip(this.label122, resources.GetString("label122.ToolTip"));
+            this.toolTip3.SetToolTip(this.label122, resources.GetString("label122.ToolTip1"));
+            this.toolTip1.SetToolTip(this.label122, resources.GetString("label122.ToolTip2"));
             // 
             // CH2FWDADCMax
             // 
@@ -1902,26 +2198,41 @@
             this.CH2FWDADCMax.Name = "CH2FWDADCMax";
             this.CH2FWDADCMax.Style = Sunny.UI.UIStyle.Custom;
             this.CH2FWDADCMax.TextAlignment = System.Drawing.ContentAlignment.MiddleLeft;
+            this.toolTip2.SetToolTip(this.CH2FWDADCMax, resources.GetString("CH2FWDADCMax.ToolTip"));
+            this.toolTip3.SetToolTip(this.CH2FWDADCMax, resources.GetString("CH2FWDADCMax.ToolTip1"));
+            this.toolTip1.SetToolTip(this.CH2FWDADCMax, resources.GetString("CH2FWDADCMax.ToolTip2"));
             // 
             // label123
             // 
             resources.ApplyResources(this.label123, "label123");
             this.label123.Name = "label123";
+            this.toolTip2.SetToolTip(this.label123, resources.GetString("label123.ToolTip"));
+            this.toolTip3.SetToolTip(this.label123, resources.GetString("label123.ToolTip1"));
+            this.toolTip1.SetToolTip(this.label123, resources.GetString("label123.ToolTip2"));
             // 
             // label124
             // 
             resources.ApplyResources(this.label124, "label124");
             this.label124.Name = "label124";
+            this.toolTip2.SetToolTip(this.label124, resources.GetString("label124.ToolTip"));
+            this.toolTip3.SetToolTip(this.label124, resources.GetString("label124.ToolTip1"));
+            this.toolTip1.SetToolTip(this.label124, resources.GetString("label124.ToolTip2"));
             // 
             // label125
             // 
             resources.ApplyResources(this.label125, "label125");
             this.label125.Name = "label125";
+            this.toolTip2.SetToolTip(this.label125, resources.GetString("label125.ToolTip"));
+            this.toolTip3.SetToolTip(this.label125, resources.GetString("label125.ToolTip1"));
+            this.toolTip1.SetToolTip(this.label125, resources.GetString("label125.ToolTip2"));
             // 
             // label126
             // 
             resources.ApplyResources(this.label126, "label126");
             this.label126.Name = "label126";
+            this.toolTip2.SetToolTip(this.label126, resources.GetString("label126.ToolTip"));
+            this.toolTip3.SetToolTip(this.label126, resources.GetString("label126.ToolTip1"));
+            this.toolTip1.SetToolTip(this.label126, resources.GetString("label126.ToolTip2"));
             // 
             // FWDParamsSave
             // 
@@ -1929,7 +2240,10 @@
             this.FWDParamsSave.Cursor = System.Windows.Forms.Cursors.Hand;
             this.FWDParamsSave.Name = "FWDParamsSave";
             this.FWDParamsSave.Style = Sunny.UI.UIStyle.Custom;
-            this.FWDParamsSave.TipsFont = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.FWDParamsSave.TipsFont = new System.Drawing.Font("Microsoft YaHei", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.toolTip3.SetToolTip(this.FWDParamsSave, resources.GetString("FWDParamsSave.ToolTip"));
+            this.toolTip2.SetToolTip(this.FWDParamsSave, resources.GetString("FWDParamsSave.ToolTip1"));
+            this.toolTip1.SetToolTip(this.FWDParamsSave, resources.GetString("FWDParamsSave.ToolTip2"));
             this.FWDParamsSave.Click += new System.EventHandler(this.FWDParamsSave_Click);
             // 
             // uiGroupBox22
@@ -1940,6 +2254,9 @@
             this.uiGroupBox22.Name = "uiGroupBox22";
             this.uiGroupBox22.Style = Sunny.UI.UIStyle.Custom;
             this.uiGroupBox22.TextAlignment = System.Drawing.ContentAlignment.MiddleCenter;
+            this.toolTip3.SetToolTip(this.uiGroupBox22, resources.GetString("uiGroupBox22.ToolTip"));
+            this.toolTip2.SetToolTip(this.uiGroupBox22, resources.GetString("uiGroupBox22.ToolTip1"));
+            this.toolTip1.SetToolTip(this.uiGroupBox22, resources.GetString("uiGroupBox22.ToolTip2"));
             // 
             // LUnit
             // 
@@ -1957,6 +2274,9 @@
             this.LUnit.Name = "LUnit";
             this.LUnit.Style = Sunny.UI.UIStyle.Custom;
             this.LUnit.TextAlignment = System.Drawing.ContentAlignment.MiddleLeft;
+            this.toolTip3.SetToolTip(this.LUnit, resources.GetString("LUnit.ToolTip"));
+            this.toolTip1.SetToolTip(this.LUnit, resources.GetString("LUnit.ToolTip1"));
+            this.toolTip2.SetToolTip(this.LUnit, resources.GetString("LUnit.ToolTip2"));
             // 
             // PUnit
             // 
@@ -1976,6 +2296,9 @@
             this.PUnit.Name = "PUnit";
             this.PUnit.Style = Sunny.UI.UIStyle.Custom;
             this.PUnit.TextAlignment = System.Drawing.ContentAlignment.MiddleLeft;
+            this.toolTip3.SetToolTip(this.PUnit, resources.GetString("PUnit.ToolTip"));
+            this.toolTip1.SetToolTip(this.PUnit, resources.GetString("PUnit.ToolTip1"));
+            this.toolTip2.SetToolTip(this.PUnit, resources.GetString("PUnit.ToolTip2"));
             // 
             // CHKUnit
             // 
@@ -1984,16 +2307,25 @@
             this.CHKUnit.Cursor = System.Windows.Forms.Cursors.Hand;
             this.CHKUnit.Name = "CHKUnit";
             this.CHKUnit.Style = Sunny.UI.UIStyle.Custom;
+            this.toolTip2.SetToolTip(this.CHKUnit, resources.GetString("CHKUnit.ToolTip"));
+            this.toolTip3.SetToolTip(this.CHKUnit, resources.GetString("CHKUnit.ToolTip1"));
+            this.toolTip1.SetToolTip(this.CHKUnit, resources.GetString("CHKUnit.ToolTip2"));
             // 
             // label119
             // 
             resources.ApplyResources(this.label119, "label119");
             this.label119.Name = "label119";
+            this.toolTip2.SetToolTip(this.label119, resources.GetString("label119.ToolTip"));
+            this.toolTip3.SetToolTip(this.label119, resources.GetString("label119.ToolTip1"));
+            this.toolTip1.SetToolTip(this.label119, resources.GetString("label119.ToolTip2"));
             // 
             // label118
             // 
             resources.ApplyResources(this.label118, "label118");
             this.label118.Name = "label118";
+            this.toolTip2.SetToolTip(this.label118, resources.GetString("label118.ToolTip"));
+            this.toolTip3.SetToolTip(this.label118, resources.GetString("label118.ToolTip1"));
+            this.toolTip1.SetToolTip(this.label118, resources.GetString("label118.ToolTip2"));
             // 
             // Leaklowlimit
             // 
@@ -2006,11 +2338,17 @@
             this.Leaklowlimit.Name = "Leaklowlimit";
             this.Leaklowlimit.Style = Sunny.UI.UIStyle.Custom;
             this.Leaklowlimit.TextAlignment = System.Drawing.ContentAlignment.MiddleLeft;
+            this.toolTip2.SetToolTip(this.Leaklowlimit, resources.GetString("Leaklowlimit.ToolTip"));
+            this.toolTip3.SetToolTip(this.Leaklowlimit, resources.GetString("Leaklowlimit.ToolTip1"));
+            this.toolTip1.SetToolTip(this.Leaklowlimit, resources.GetString("Leaklowlimit.ToolTip2"));
             // 
             // label117
             // 
             resources.ApplyResources(this.label117, "label117");
             this.label117.Name = "label117";
+            this.toolTip2.SetToolTip(this.label117, resources.GetString("label117.ToolTip"));
+            this.toolTip3.SetToolTip(this.label117, resources.GetString("label117.ToolTip1"));
+            this.toolTip1.SetToolTip(this.label117, resources.GetString("label117.ToolTip2"));
             // 
             // Leaktoplimit
             // 
@@ -2023,11 +2361,17 @@
             this.Leaktoplimit.Name = "Leaktoplimit";
             this.Leaktoplimit.Style = Sunny.UI.UIStyle.Custom;
             this.Leaktoplimit.TextAlignment = System.Drawing.ContentAlignment.MiddleLeft;
+            this.toolTip2.SetToolTip(this.Leaktoplimit, resources.GetString("Leaktoplimit.ToolTip"));
+            this.toolTip3.SetToolTip(this.Leaktoplimit, resources.GetString("Leaktoplimit.ToolTip1"));
+            this.toolTip1.SetToolTip(this.Leaktoplimit, resources.GetString("Leaktoplimit.ToolTip2"));
             // 
             // label116
             // 
             resources.ApplyResources(this.label116, "label116");
             this.label116.Name = "label116";
+            this.toolTip2.SetToolTip(this.label116, resources.GetString("label116.ToolTip"));
+            this.toolTip3.SetToolTip(this.label116, resources.GetString("label116.ToolTip1"));
+            this.toolTip1.SetToolTip(this.label116, resources.GetString("label116.ToolTip2"));
             // 
             // BalanPreMin
             // 
@@ -2040,11 +2384,17 @@
             this.BalanPreMin.Name = "BalanPreMin";
             this.BalanPreMin.Style = Sunny.UI.UIStyle.Custom;
             this.BalanPreMin.TextAlignment = System.Drawing.ContentAlignment.MiddleLeft;
+            this.toolTip2.SetToolTip(this.BalanPreMin, resources.GetString("BalanPreMin.ToolTip"));
+            this.toolTip3.SetToolTip(this.BalanPreMin, resources.GetString("BalanPreMin.ToolTip1"));
+            this.toolTip1.SetToolTip(this.BalanPreMin, resources.GetString("BalanPreMin.ToolTip2"));
             // 
             // label115
             // 
             resources.ApplyResources(this.label115, "label115");
             this.label115.Name = "label115";
+            this.toolTip2.SetToolTip(this.label115, resources.GetString("label115.ToolTip"));
+            this.toolTip3.SetToolTip(this.label115, resources.GetString("label115.ToolTip1"));
+            this.toolTip1.SetToolTip(this.label115, resources.GetString("label115.ToolTip2"));
             // 
             // BalanPreMax
             // 
@@ -2057,11 +2407,17 @@
             this.BalanPreMax.Name = "BalanPreMax";
             this.BalanPreMax.Style = Sunny.UI.UIStyle.Custom;
             this.BalanPreMax.TextAlignment = System.Drawing.ContentAlignment.MiddleLeft;
+            this.toolTip2.SetToolTip(this.BalanPreMax, resources.GetString("BalanPreMax.ToolTip"));
+            this.toolTip3.SetToolTip(this.BalanPreMax, resources.GetString("BalanPreMax.ToolTip1"));
+            this.toolTip1.SetToolTip(this.BalanPreMax, resources.GetString("BalanPreMax.ToolTip2"));
             // 
             // label114
             // 
             resources.ApplyResources(this.label114, "label114");
             this.label114.Name = "label114";
+            this.toolTip2.SetToolTip(this.label114, resources.GetString("label114.ToolTip"));
+            this.toolTip3.SetToolTip(this.label114, resources.GetString("label114.ToolTip1"));
+            this.toolTip1.SetToolTip(this.label114, resources.GetString("label114.ToolTip2"));
             // 
             // FPlowlimit
             // 
@@ -2074,6 +2430,9 @@
             this.FPlowlimit.Name = "FPlowlimit";
             this.FPlowlimit.Style = Sunny.UI.UIStyle.Custom;
             this.FPlowlimit.TextAlignment = System.Drawing.ContentAlignment.MiddleLeft;
+            this.toolTip2.SetToolTip(this.FPlowlimit, resources.GetString("FPlowlimit.ToolTip"));
+            this.toolTip3.SetToolTip(this.FPlowlimit, resources.GetString("FPlowlimit.ToolTip1"));
+            this.toolTip1.SetToolTip(this.FPlowlimit, resources.GetString("FPlowlimit.ToolTip2"));
             // 
             // FPtoplimit
             // 
@@ -2086,36 +2445,57 @@
             this.FPtoplimit.Name = "FPtoplimit";
             this.FPtoplimit.Style = Sunny.UI.UIStyle.Custom;
             this.FPtoplimit.TextAlignment = System.Drawing.ContentAlignment.MiddleLeft;
+            this.toolTip2.SetToolTip(this.FPtoplimit, resources.GetString("FPtoplimit.ToolTip"));
+            this.toolTip3.SetToolTip(this.FPtoplimit, resources.GetString("FPtoplimit.ToolTip1"));
+            this.toolTip1.SetToolTip(this.FPtoplimit, resources.GetString("FPtoplimit.ToolTip2"));
             // 
             // label106
             // 
             resources.ApplyResources(this.label106, "label106");
             this.label106.Name = "label106";
+            this.toolTip2.SetToolTip(this.label106, resources.GetString("label106.ToolTip"));
+            this.toolTip3.SetToolTip(this.label106, resources.GetString("label106.ToolTip1"));
+            this.toolTip1.SetToolTip(this.label106, resources.GetString("label106.ToolTip2"));
             // 
             // label107
             // 
             resources.ApplyResources(this.label107, "label107");
             this.label107.Name = "label107";
+            this.toolTip2.SetToolTip(this.label107, resources.GetString("label107.ToolTip"));
+            this.toolTip3.SetToolTip(this.label107, resources.GetString("label107.ToolTip1"));
+            this.toolTip1.SetToolTip(this.label107, resources.GetString("label107.ToolTip2"));
             // 
             // label108
             // 
             resources.ApplyResources(this.label108, "label108");
             this.label108.Name = "label108";
+            this.toolTip2.SetToolTip(this.label108, resources.GetString("label108.ToolTip"));
+            this.toolTip3.SetToolTip(this.label108, resources.GetString("label108.ToolTip1"));
+            this.toolTip1.SetToolTip(this.label108, resources.GetString("label108.ToolTip2"));
             // 
             // label109
             // 
             resources.ApplyResources(this.label109, "label109");
             this.label109.Name = "label109";
+            this.toolTip2.SetToolTip(this.label109, resources.GetString("label109.ToolTip"));
+            this.toolTip3.SetToolTip(this.label109, resources.GetString("label109.ToolTip1"));
+            this.toolTip1.SetToolTip(this.label109, resources.GetString("label109.ToolTip2"));
             // 
             // label110
             // 
             resources.ApplyResources(this.label110, "label110");
             this.label110.Name = "label110";
+            this.toolTip2.SetToolTip(this.label110, resources.GetString("label110.ToolTip"));
+            this.toolTip3.SetToolTip(this.label110, resources.GetString("label110.ToolTip1"));
+            this.toolTip1.SetToolTip(this.label110, resources.GetString("label110.ToolTip2"));
             // 
             // label120
             // 
             resources.ApplyResources(this.label120, "label120");
             this.label120.Name = "label120";
+            this.toolTip2.SetToolTip(this.label120, resources.GetString("label120.ToolTip"));
+            this.toolTip3.SetToolTip(this.label120, resources.GetString("label120.ToolTip1"));
+            this.toolTip1.SetToolTip(this.label120, resources.GetString("label120.ToolTip2"));
             // 
             // uiSymbolButton11
             // 
@@ -2124,7 +2504,10 @@
             this.uiSymbolButton11.Name = "uiSymbolButton11";
             this.uiSymbolButton11.Style = Sunny.UI.UIStyle.Custom;
             this.uiSymbolButton11.Symbol = 361697;
-            this.uiSymbolButton11.TipsFont = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.uiSymbolButton11.TipsFont = new System.Drawing.Font("Microsoft YaHei", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.toolTip3.SetToolTip(this.uiSymbolButton11, resources.GetString("uiSymbolButton11.ToolTip"));
+            this.toolTip2.SetToolTip(this.uiSymbolButton11, resources.GetString("uiSymbolButton11.ToolTip1"));
+            this.toolTip1.SetToolTip(this.uiSymbolButton11, resources.GetString("uiSymbolButton11.ToolTip2"));
             this.uiSymbolButton11.Click += new System.EventHandler(this.uiSymbolButton11_Click);
             // 
             // ParaName
@@ -2138,13 +2521,18 @@
             this.ParaName.Name = "ParaName";
             this.ParaName.Style = Sunny.UI.UIStyle.Custom;
             this.ParaName.TextAlignment = System.Drawing.ContentAlignment.MiddleLeft;
+            this.toolTip2.SetToolTip(this.ParaName, resources.GetString("ParaName.ToolTip"));
+            this.toolTip3.SetToolTip(this.ParaName, resources.GetString("ParaName.ToolTip1"));
+            this.toolTip1.SetToolTip(this.ParaName, resources.GetString("ParaName.ToolTip2"));
             // 
             // ParaNum
             // 
             resources.ApplyResources(this.ParaNum, "ParaNum");
             this.ParaNum.DataSource = null;
+            this.ParaNum.DropDownWidth = 200;
             this.ParaNum.FillColor = System.Drawing.Color.White;
             this.ParaNum.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(243)))), ((int)(((byte)(255)))));
+            this.ParaNum.ItemHeight = 40;
             this.ParaNum.Items.AddRange(new object[] {
             resources.GetString("ParaNum.Items"),
             resources.GetString("ParaNum.Items1"),
@@ -2158,14 +2546,19 @@
             this.ParaNum.Name = "ParaNum";
             this.ParaNum.Style = Sunny.UI.UIStyle.Custom;
             this.ParaNum.TextAlignment = System.Drawing.ContentAlignment.MiddleLeft;
+            this.toolTip3.SetToolTip(this.ParaNum, resources.GetString("ParaNum.ToolTip"));
+            this.toolTip1.SetToolTip(this.ParaNum, resources.GetString("ParaNum.ToolTip1"));
+            this.toolTip2.SetToolTip(this.ParaNum, resources.GetString("ParaNum.ToolTip2"));
             this.ParaNum.SelectedIndexChanged += new System.EventHandler(this.ParaNum_SelectedIndexChanged);
             // 
             // MachineNum
             // 
             resources.ApplyResources(this.MachineNum, "MachineNum");
             this.MachineNum.DataSource = null;
+            this.MachineNum.DropDownWidth = 200;
             this.MachineNum.FillColor = System.Drawing.Color.White;
             this.MachineNum.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(243)))), ((int)(((byte)(255)))));
+            this.MachineNum.ItemHeight = 40;
             this.MachineNum.Items.AddRange(new object[] {
             resources.GetString("MachineNum.Items"),
             resources.GetString("MachineNum.Items1"),
@@ -2174,6 +2567,9 @@
             this.MachineNum.Name = "MachineNum";
             this.MachineNum.Style = Sunny.UI.UIStyle.Custom;
             this.MachineNum.TextAlignment = System.Drawing.ContentAlignment.MiddleLeft;
+            this.toolTip3.SetToolTip(this.MachineNum, resources.GetString("MachineNum.ToolTip"));
+            this.toolTip1.SetToolTip(this.MachineNum, resources.GetString("MachineNum.ToolTip1"));
+            this.toolTip2.SetToolTip(this.MachineNum, resources.GetString("MachineNum.ToolTip2"));
             this.MachineNum.SelectedIndexChanged += new System.EventHandler(this.MachineNum_SelectedIndexChanged);
             // 
             // BtnKeep
@@ -2183,7 +2579,10 @@
             this.BtnKeep.Name = "BtnKeep";
             this.BtnKeep.Style = Sunny.UI.UIStyle.Custom;
             this.BtnKeep.Symbol = 61678;
-            this.BtnKeep.TipsFont = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.BtnKeep.TipsFont = new System.Drawing.Font("Microsoft YaHei", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.toolTip3.SetToolTip(this.BtnKeep, resources.GetString("BtnKeep.ToolTip"));
+            this.toolTip2.SetToolTip(this.BtnKeep, resources.GetString("BtnKeep.ToolTip1"));
+            this.toolTip1.SetToolTip(this.BtnKeep, resources.GetString("BtnKeep.ToolTip2"));
             this.BtnKeep.Click += new System.EventHandler(this.BtnKeep_Click);
             // 
             // PressCompensation
@@ -2197,6 +2596,9 @@
             this.PressCompensation.Name = "PressCompensation";
             this.PressCompensation.Style = Sunny.UI.UIStyle.Custom;
             this.PressCompensation.TextAlignment = System.Drawing.ContentAlignment.MiddleLeft;
+            this.toolTip2.SetToolTip(this.PressCompensation, resources.GetString("PressCompensation.ToolTip"));
+            this.toolTip3.SetToolTip(this.PressCompensation, resources.GetString("PressCompensation.ToolTip1"));
+            this.toolTip1.SetToolTip(this.PressCompensation, resources.GetString("PressCompensation.ToolTip2"));
             // 
             // uiGroupBox16
             // 
@@ -2208,6 +2610,9 @@
             this.uiGroupBox16.Name = "uiGroupBox16";
             this.uiGroupBox16.Style = Sunny.UI.UIStyle.Custom;
             this.uiGroupBox16.TextAlignment = System.Drawing.ContentAlignment.MiddleCenter;
+            this.toolTip3.SetToolTip(this.uiGroupBox16, resources.GetString("uiGroupBox16.ToolTip"));
+            this.toolTip2.SetToolTip(this.uiGroupBox16, resources.GetString("uiGroupBox16.ToolTip1"));
+            this.toolTip1.SetToolTip(this.uiGroupBox16, resources.GetString("uiGroupBox16.ToolTip2"));
             // 
             // Compensation
             // 
@@ -2215,7 +2620,10 @@
             this.Compensation.Cursor = System.Windows.Forms.Cursors.Hand;
             this.Compensation.Name = "Compensation";
             this.Compensation.Style = Sunny.UI.UIStyle.Custom;
-            this.Compensation.TipsFont = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.Compensation.TipsFont = new System.Drawing.Font("Microsoft YaHei", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.toolTip2.SetToolTip(this.Compensation, resources.GetString("Compensation.ToolTip"));
+            this.toolTip1.SetToolTip(this.Compensation, resources.GetString("Compensation.ToolTip1"));
+            this.toolTip3.SetToolTip(this.Compensation, resources.GetString("Compensation.ToolTip2"));
             this.Compensation.Click += new System.EventHandler(this.Compensation_Click);
             // 
             // uiGroupBox15
@@ -2248,21 +2656,33 @@
             this.uiGroupBox15.Name = "uiGroupBox15";
             this.uiGroupBox15.Style = Sunny.UI.UIStyle.Custom;
             this.uiGroupBox15.TextAlignment = System.Drawing.ContentAlignment.MiddleCenter;
+            this.toolTip3.SetToolTip(this.uiGroupBox15, resources.GetString("uiGroupBox15.ToolTip"));
+            this.toolTip2.SetToolTip(this.uiGroupBox15, resources.GetString("uiGroupBox15.ToolTip1"));
+            this.toolTip1.SetToolTip(this.uiGroupBox15, resources.GetString("uiGroupBox15.ToolTip2"));
             // 
             // label111
             // 
             resources.ApplyResources(this.label111, "label111");
             this.label111.Name = "label111";
+            this.toolTip2.SetToolTip(this.label111, resources.GetString("label111.ToolTip"));
+            this.toolTip3.SetToolTip(this.label111, resources.GetString("label111.ToolTip1"));
+            this.toolTip1.SetToolTip(this.label111, resources.GetString("label111.ToolTip2"));
             // 
             // label112
             // 
             resources.ApplyResources(this.label112, "label112");
             this.label112.Name = "label112";
+            this.toolTip2.SetToolTip(this.label112, resources.GetString("label112.ToolTip"));
+            this.toolTip3.SetToolTip(this.label112, resources.GetString("label112.ToolTip1"));
+            this.toolTip1.SetToolTip(this.label112, resources.GetString("label112.ToolTip2"));
             // 
             // label113
             // 
             resources.ApplyResources(this.label113, "label113");
             this.label113.Name = "label113";
+            this.toolTip2.SetToolTip(this.label113, resources.GetString("label113.ToolTip"));
+            this.toolTip3.SetToolTip(this.label113, resources.GetString("label113.ToolTip1"));
+            this.toolTip1.SetToolTip(this.label113, resources.GetString("label113.ToolTip2"));
             // 
             // BtnUpload
             // 
@@ -2271,23 +2691,35 @@
             this.BtnUpload.Name = "BtnUpload";
             this.BtnUpload.Style = Sunny.UI.UIStyle.Custom;
             this.BtnUpload.Symbol = 61480;
-            this.BtnUpload.TipsFont = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.BtnUpload.TipsFont = new System.Drawing.Font("Microsoft YaHei", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.toolTip3.SetToolTip(this.BtnUpload, resources.GetString("BtnUpload.ToolTip"));
+            this.toolTip2.SetToolTip(this.BtnUpload, resources.GetString("BtnUpload.ToolTip1"));
+            this.toolTip1.SetToolTip(this.BtnUpload, resources.GetString("BtnUpload.ToolTip2"));
             this.BtnUpload.Click += new System.EventHandler(this.BtnUpload_Click);
             // 
             // label87
             // 
             resources.ApplyResources(this.label87, "label87");
             this.label87.Name = "label87";
+            this.toolTip2.SetToolTip(this.label87, resources.GetString("label87.ToolTip"));
+            this.toolTip3.SetToolTip(this.label87, resources.GetString("label87.ToolTip1"));
+            this.toolTip1.SetToolTip(this.label87, resources.GetString("label87.ToolTip2"));
             // 
             // label105
             // 
             resources.ApplyResources(this.label105, "label105");
             this.label105.Name = "label105";
+            this.toolTip2.SetToolTip(this.label105, resources.GetString("label105.ToolTip"));
+            this.toolTip3.SetToolTip(this.label105, resources.GetString("label105.ToolTip1"));
+            this.toolTip1.SetToolTip(this.label105, resources.GetString("label105.ToolTip2"));
             // 
             // label104
             // 
             resources.ApplyResources(this.label104, "label104");
             this.label104.Name = "label104";
+            this.toolTip2.SetToolTip(this.label104, resources.GetString("label104.ToolTip"));
+            this.toolTip3.SetToolTip(this.label104, resources.GetString("label104.ToolTip1"));
+            this.toolTip1.SetToolTip(this.label104, resources.GetString("label104.ToolTip2"));
             // 
             // Evolume
             // 
@@ -2300,11 +2732,17 @@
             this.Evolume.Name = "Evolume";
             this.Evolume.Style = Sunny.UI.UIStyle.Custom;
             this.Evolume.TextAlignment = System.Drawing.ContentAlignment.MiddleLeft;
+            this.toolTip2.SetToolTip(this.Evolume, resources.GetString("Evolume.ToolTip"));
+            this.toolTip3.SetToolTip(this.Evolume, resources.GetString("Evolume.ToolTip1"));
+            this.toolTip1.SetToolTip(this.Evolume, resources.GetString("Evolume.ToolTip2"));
             // 
             // label103
             // 
             resources.ApplyResources(this.label103, "label103");
             this.label103.Name = "label103";
+            this.toolTip2.SetToolTip(this.label103, resources.GetString("label103.ToolTip"));
+            this.toolTip3.SetToolTip(this.label103, resources.GetString("label103.ToolTip1"));
+            this.toolTip1.SetToolTip(this.label103, resources.GetString("label103.ToolTip2"));
             // 
             // RelieveDelay
             // 
@@ -2317,11 +2755,17 @@
             this.RelieveDelay.Name = "RelieveDelay";
             this.RelieveDelay.Style = Sunny.UI.UIStyle.Custom;
             this.RelieveDelay.TextAlignment = System.Drawing.ContentAlignment.MiddleLeft;
+            this.toolTip2.SetToolTip(this.RelieveDelay, resources.GetString("RelieveDelay.ToolTip"));
+            this.toolTip3.SetToolTip(this.RelieveDelay, resources.GetString("RelieveDelay.ToolTip1"));
+            this.toolTip1.SetToolTip(this.RelieveDelay, resources.GetString("RelieveDelay.ToolTip2"));
             // 
             // label102
             // 
             resources.ApplyResources(this.label102, "label102");
             this.label102.Name = "label102";
+            this.toolTip2.SetToolTip(this.label102, resources.GetString("label102.ToolTip"));
+            this.toolTip3.SetToolTip(this.label102, resources.GetString("label102.ToolTip1"));
+            this.toolTip1.SetToolTip(this.label102, resources.GetString("label102.ToolTip2"));
             // 
             // DelayTime2
             // 
@@ -2334,11 +2778,17 @@
             this.DelayTime2.Name = "DelayTime2";
             this.DelayTime2.Style = Sunny.UI.UIStyle.Custom;
             this.DelayTime2.TextAlignment = System.Drawing.ContentAlignment.MiddleLeft;
+            this.toolTip2.SetToolTip(this.DelayTime2, resources.GetString("DelayTime2.ToolTip"));
+            this.toolTip3.SetToolTip(this.DelayTime2, resources.GetString("DelayTime2.ToolTip1"));
+            this.toolTip1.SetToolTip(this.DelayTime2, resources.GetString("DelayTime2.ToolTip2"));
             // 
             // label101
             // 
             resources.ApplyResources(this.label101, "label101");
             this.label101.Name = "label101";
+            this.toolTip2.SetToolTip(this.label101, resources.GetString("label101.ToolTip"));
+            this.toolTip3.SetToolTip(this.label101, resources.GetString("label101.ToolTip1"));
+            this.toolTip1.SetToolTip(this.label101, resources.GetString("label101.ToolTip2"));
             // 
             // DelayTime1
             // 
@@ -2351,21 +2801,33 @@
             this.DelayTime1.Name = "DelayTime1";
             this.DelayTime1.Style = Sunny.UI.UIStyle.Custom;
             this.DelayTime1.TextAlignment = System.Drawing.ContentAlignment.MiddleLeft;
+            this.toolTip2.SetToolTip(this.DelayTime1, resources.GetString("DelayTime1.ToolTip"));
+            this.toolTip3.SetToolTip(this.DelayTime1, resources.GetString("DelayTime1.ToolTip1"));
+            this.toolTip1.SetToolTip(this.DelayTime1, resources.GetString("DelayTime1.ToolTip2"));
             // 
             // label100
             // 
             resources.ApplyResources(this.label100, "label100");
             this.label100.Name = "label100";
+            this.toolTip2.SetToolTip(this.label100, resources.GetString("label100.ToolTip"));
+            this.toolTip3.SetToolTip(this.label100, resources.GetString("label100.ToolTip1"));
+            this.toolTip1.SetToolTip(this.label100, resources.GetString("label100.ToolTip2"));
             // 
             // label99
             // 
             resources.ApplyResources(this.label99, "label99");
             this.label99.Name = "label99";
+            this.toolTip2.SetToolTip(this.label99, resources.GetString("label99.ToolTip"));
+            this.toolTip3.SetToolTip(this.label99, resources.GetString("label99.ToolTip1"));
+            this.toolTip1.SetToolTip(this.label99, resources.GetString("label99.ToolTip2"));
             // 
             // label98
             // 
             resources.ApplyResources(this.label98, "label98");
             this.label98.Name = "label98";
+            this.toolTip2.SetToolTip(this.label98, resources.GetString("label98.ToolTip"));
+            this.toolTip3.SetToolTip(this.label98, resources.GetString("label98.ToolTip1"));
+            this.toolTip1.SetToolTip(this.label98, resources.GetString("label98.ToolTip2"));
             // 
             // ExhaustTime
             // 
@@ -2378,6 +2840,9 @@
             this.ExhaustTime.Name = "ExhaustTime";
             this.ExhaustTime.Style = Sunny.UI.UIStyle.Custom;
             this.ExhaustTime.TextAlignment = System.Drawing.ContentAlignment.MiddleLeft;
+            this.toolTip2.SetToolTip(this.ExhaustTime, resources.GetString("ExhaustTime.ToolTip"));
+            this.toolTip3.SetToolTip(this.ExhaustTime, resources.GetString("ExhaustTime.ToolTip1"));
+            this.toolTip1.SetToolTip(this.ExhaustTime, resources.GetString("ExhaustTime.ToolTip2"));
             // 
             // TestTime1
             // 
@@ -2390,6 +2855,9 @@
             this.TestTime1.Name = "TestTime1";
             this.TestTime1.Style = Sunny.UI.UIStyle.Custom;
             this.TestTime1.TextAlignment = System.Drawing.ContentAlignment.MiddleLeft;
+            this.toolTip2.SetToolTip(this.TestTime1, resources.GetString("TestTime1.ToolTip"));
+            this.toolTip3.SetToolTip(this.TestTime1, resources.GetString("TestTime1.ToolTip1"));
+            this.toolTip1.SetToolTip(this.TestTime1, resources.GetString("TestTime1.ToolTip2"));
             // 
             // BalanTime
             // 
@@ -2402,6 +2870,9 @@
             this.BalanTime.Name = "BalanTime";
             this.BalanTime.Style = Sunny.UI.UIStyle.Custom;
             this.BalanTime.TextAlignment = System.Drawing.ContentAlignment.MiddleLeft;
+            this.toolTip2.SetToolTip(this.BalanTime, resources.GetString("BalanTime.ToolTip"));
+            this.toolTip3.SetToolTip(this.BalanTime, resources.GetString("BalanTime.ToolTip1"));
+            this.toolTip1.SetToolTip(this.BalanTime, resources.GetString("BalanTime.ToolTip2"));
             // 
             // FullTime
             // 
@@ -2414,46 +2885,73 @@
             this.FullTime.Name = "FullTime";
             this.FullTime.Style = Sunny.UI.UIStyle.Custom;
             this.FullTime.TextAlignment = System.Drawing.ContentAlignment.MiddleLeft;
+            this.toolTip2.SetToolTip(this.FullTime, resources.GetString("FullTime.ToolTip"));
+            this.toolTip3.SetToolTip(this.FullTime, resources.GetString("FullTime.ToolTip1"));
+            this.toolTip1.SetToolTip(this.FullTime, resources.GetString("FullTime.ToolTip2"));
             // 
             // label90
             // 
             resources.ApplyResources(this.label90, "label90");
             this.label90.Name = "label90";
+            this.toolTip2.SetToolTip(this.label90, resources.GetString("label90.ToolTip"));
+            this.toolTip3.SetToolTip(this.label90, resources.GetString("label90.ToolTip1"));
+            this.toolTip1.SetToolTip(this.label90, resources.GetString("label90.ToolTip2"));
             // 
             // label97
             // 
             resources.ApplyResources(this.label97, "label97");
             this.label97.Name = "label97";
+            this.toolTip2.SetToolTip(this.label97, resources.GetString("label97.ToolTip"));
+            this.toolTip3.SetToolTip(this.label97, resources.GetString("label97.ToolTip1"));
+            this.toolTip1.SetToolTip(this.label97, resources.GetString("label97.ToolTip2"));
             // 
             // label91
             // 
             resources.ApplyResources(this.label91, "label91");
             this.label91.Name = "label91";
+            this.toolTip2.SetToolTip(this.label91, resources.GetString("label91.ToolTip"));
+            this.toolTip3.SetToolTip(this.label91, resources.GetString("label91.ToolTip1"));
+            this.toolTip1.SetToolTip(this.label91, resources.GetString("label91.ToolTip2"));
             // 
             // label96
             // 
             resources.ApplyResources(this.label96, "label96");
             this.label96.Name = "label96";
+            this.toolTip2.SetToolTip(this.label96, resources.GetString("label96.ToolTip"));
+            this.toolTip3.SetToolTip(this.label96, resources.GetString("label96.ToolTip1"));
+            this.toolTip1.SetToolTip(this.label96, resources.GetString("label96.ToolTip2"));
             // 
             // label92
             // 
             resources.ApplyResources(this.label92, "label92");
             this.label92.Name = "label92";
+            this.toolTip2.SetToolTip(this.label92, resources.GetString("label92.ToolTip"));
+            this.toolTip3.SetToolTip(this.label92, resources.GetString("label92.ToolTip1"));
+            this.toolTip1.SetToolTip(this.label92, resources.GetString("label92.ToolTip2"));
             // 
             // label95
             // 
             resources.ApplyResources(this.label95, "label95");
             this.label95.Name = "label95";
+            this.toolTip2.SetToolTip(this.label95, resources.GetString("label95.ToolTip"));
+            this.toolTip3.SetToolTip(this.label95, resources.GetString("label95.ToolTip1"));
+            this.toolTip1.SetToolTip(this.label95, resources.GetString("label95.ToolTip2"));
             // 
             // label93
             // 
             resources.ApplyResources(this.label93, "label93");
             this.label93.Name = "label93";
+            this.toolTip2.SetToolTip(this.label93, resources.GetString("label93.ToolTip"));
+            this.toolTip3.SetToolTip(this.label93, resources.GetString("label93.ToolTip1"));
+            this.toolTip1.SetToolTip(this.label93, resources.GetString("label93.ToolTip2"));
             // 
             // label94
             // 
             resources.ApplyResources(this.label94, "label94");
             this.label94.Name = "label94";
+            this.toolTip2.SetToolTip(this.label94, resources.GetString("label94.ToolTip"));
+            this.toolTip3.SetToolTip(this.label94, resources.GetString("label94.ToolTip1"));
+            this.toolTip1.SetToolTip(this.label94, resources.GetString("label94.ToolTip2"));
             // 
             // uiGroupBox14
             // 
@@ -2486,11 +2984,17 @@
             this.uiGroupBox14.Name = "uiGroupBox14";
             this.uiGroupBox14.Style = Sunny.UI.UIStyle.Custom;
             this.uiGroupBox14.TextAlignment = System.Drawing.ContentAlignment.MiddleCenter;
+            this.toolTip3.SetToolTip(this.uiGroupBox14, resources.GetString("uiGroupBox14.ToolTip"));
+            this.toolTip2.SetToolTip(this.uiGroupBox14, resources.GetString("uiGroupBox14.ToolTip1"));
+            this.toolTip1.SetToolTip(this.uiGroupBox14, resources.GetString("uiGroupBox14.ToolTip2"));
             // 
             // label89
             // 
             resources.ApplyResources(this.label89, "label89");
             this.label89.Name = "label89";
+            this.toolTip2.SetToolTip(this.label89, resources.GetString("label89.ToolTip"));
+            this.toolTip3.SetToolTip(this.label89, resources.GetString("label89.ToolTip1"));
+            this.toolTip1.SetToolTip(this.label89, resources.GetString("label89.ToolTip2"));
             // 
             // CH1RWDPressMax
             // 
@@ -2503,6 +3007,9 @@
             this.CH1RWDPressMax.Name = "CH1RWDPressMax";
             this.CH1RWDPressMax.Style = Sunny.UI.UIStyle.Custom;
             this.CH1RWDPressMax.TextAlignment = System.Drawing.ContentAlignment.MiddleLeft;
+            this.toolTip2.SetToolTip(this.CH1RWDPressMax, resources.GetString("CH1RWDPressMax.ToolTip"));
+            this.toolTip3.SetToolTip(this.CH1RWDPressMax, resources.GetString("CH1RWDPressMax.ToolTip1"));
+            this.toolTip1.SetToolTip(this.CH1RWDPressMax, resources.GetString("CH1RWDPressMax.ToolTip2"));
             // 
             // uiGroupBox38
             // 
@@ -2517,6 +3024,9 @@
             this.uiGroupBox38.Name = "uiGroupBox38";
             this.uiGroupBox38.Style = Sunny.UI.UIStyle.Custom;
             this.uiGroupBox38.TextAlignment = System.Drawing.ContentAlignment.MiddleCenter;
+            this.toolTip3.SetToolTip(this.uiGroupBox38, resources.GetString("uiGroupBox38.ToolTip"));
+            this.toolTip2.SetToolTip(this.uiGroupBox38, resources.GetString("uiGroupBox38.ToolTip1"));
+            this.toolTip1.SetToolTip(this.uiGroupBox38, resources.GetString("uiGroupBox38.ToolTip2"));
             // 
             // CH1RWDPressMin
             // 
@@ -2529,16 +3039,25 @@
             this.CH1RWDPressMin.Name = "CH1RWDPressMin";
             this.CH1RWDPressMin.Style = Sunny.UI.UIStyle.Custom;
             this.CH1RWDPressMin.TextAlignment = System.Drawing.ContentAlignment.MiddleLeft;
+            this.toolTip2.SetToolTip(this.CH1RWDPressMin, resources.GetString("CH1RWDPressMin.ToolTip"));
+            this.toolTip3.SetToolTip(this.CH1RWDPressMin, resources.GetString("CH1RWDPressMin.ToolTip1"));
+            this.toolTip1.SetToolTip(this.CH1RWDPressMin, resources.GetString("CH1RWDPressMin.ToolTip2"));
             // 
             // label218
             // 
             resources.ApplyResources(this.label218, "label218");
             this.label218.Name = "label218";
+            this.toolTip2.SetToolTip(this.label218, resources.GetString("label218.ToolTip"));
+            this.toolTip3.SetToolTip(this.label218, resources.GetString("label218.ToolTip1"));
+            this.toolTip1.SetToolTip(this.label218, resources.GetString("label218.ToolTip2"));
             // 
             // label219
             // 
             resources.ApplyResources(this.label219, "label219");
             this.label219.Name = "label219";
+            this.toolTip2.SetToolTip(this.label219, resources.GetString("label219.ToolTip"));
+            this.toolTip3.SetToolTip(this.label219, resources.GetString("label219.ToolTip1"));
+            this.toolTip1.SetToolTip(this.label219, resources.GetString("label219.ToolTip2"));
             // 
             // CH1RWDOverTime
             // 
@@ -2551,11 +3070,17 @@
             this.CH1RWDOverTime.Name = "CH1RWDOverTime";
             this.CH1RWDOverTime.Style = Sunny.UI.UIStyle.Custom;
             this.CH1RWDOverTime.TextAlignment = System.Drawing.ContentAlignment.MiddleLeft;
+            this.toolTip2.SetToolTip(this.CH1RWDOverTime, resources.GetString("CH1RWDOverTime.ToolTip"));
+            this.toolTip3.SetToolTip(this.CH1RWDOverTime, resources.GetString("CH1RWDOverTime.ToolTip1"));
+            this.toolTip1.SetToolTip(this.CH1RWDOverTime, resources.GetString("CH1RWDOverTime.ToolTip2"));
             // 
             // label220
             // 
             resources.ApplyResources(this.label220, "label220");
             this.label220.Name = "label220";
+            this.toolTip2.SetToolTip(this.label220, resources.GetString("label220.ToolTip"));
+            this.toolTip3.SetToolTip(this.label220, resources.GetString("label220.ToolTip1"));
+            this.toolTip1.SetToolTip(this.label220, resources.GetString("label220.ToolTip2"));
             // 
             // uiGroupBox35
             // 
@@ -2566,6 +3091,9 @@
             this.uiGroupBox35.Name = "uiGroupBox35";
             this.uiGroupBox35.Style = Sunny.UI.UIStyle.Custom;
             this.uiGroupBox35.TextAlignment = System.Drawing.ContentAlignment.MiddleCenter;
+            this.toolTip3.SetToolTip(this.uiGroupBox35, resources.GetString("uiGroupBox35.ToolTip"));
+            this.toolTip2.SetToolTip(this.uiGroupBox35, resources.GetString("uiGroupBox35.ToolTip1"));
+            this.toolTip1.SetToolTip(this.uiGroupBox35, resources.GetString("uiGroupBox35.ToolTip2"));
             // 
             // uiGroupBox36
             // 
@@ -2592,16 +3120,25 @@
             this.uiGroupBox36.Name = "uiGroupBox36";
             this.uiGroupBox36.Style = Sunny.UI.UIStyle.Custom;
             this.uiGroupBox36.TextAlignment = System.Drawing.ContentAlignment.MiddleCenter;
+            this.toolTip3.SetToolTip(this.uiGroupBox36, resources.GetString("uiGroupBox36.ToolTip"));
+            this.toolTip2.SetToolTip(this.uiGroupBox36, resources.GetString("uiGroupBox36.ToolTip1"));
+            this.toolTip1.SetToolTip(this.uiGroupBox36, resources.GetString("uiGroupBox36.ToolTip2"));
             // 
             // label203
             // 
             resources.ApplyResources(this.label203, "label203");
             this.label203.Name = "label203";
+            this.toolTip2.SetToolTip(this.label203, resources.GetString("label203.ToolTip"));
+            this.toolTip3.SetToolTip(this.label203, resources.GetString("label203.ToolTip1"));
+            this.toolTip1.SetToolTip(this.label203, resources.GetString("label203.ToolTip2"));
             // 
             // label204
             // 
             resources.ApplyResources(this.label204, "label204");
             this.label204.Name = "label204";
+            this.toolTip2.SetToolTip(this.label204, resources.GetString("label204.ToolTip"));
+            this.toolTip3.SetToolTip(this.label204, resources.GetString("label204.ToolTip1"));
+            this.toolTip1.SetToolTip(this.label204, resources.GetString("label204.ToolTip2"));
             // 
             // CH1RWDVDCComp
             // 
@@ -2614,11 +3151,17 @@
             this.CH1RWDVDCComp.Name = "CH1RWDVDCComp";
             this.CH1RWDVDCComp.Style = Sunny.UI.UIStyle.Custom;
             this.CH1RWDVDCComp.TextAlignment = System.Drawing.ContentAlignment.MiddleLeft;
+            this.toolTip2.SetToolTip(this.CH1RWDVDCComp, resources.GetString("CH1RWDVDCComp.ToolTip"));
+            this.toolTip3.SetToolTip(this.CH1RWDVDCComp, resources.GetString("CH1RWDVDCComp.ToolTip1"));
+            this.toolTip1.SetToolTip(this.CH1RWDVDCComp, resources.GetString("CH1RWDVDCComp.ToolTip2"));
             // 
             // label205
             // 
             resources.ApplyResources(this.label205, "label205");
             this.label205.Name = "label205";
+            this.toolTip2.SetToolTip(this.label205, resources.GetString("label205.ToolTip"));
+            this.toolTip3.SetToolTip(this.label205, resources.GetString("label205.ToolTip1"));
+            this.toolTip1.SetToolTip(this.label205, resources.GetString("label205.ToolTip2"));
             // 
             // CH1RWDVDCMin
             // 
@@ -2631,11 +3174,17 @@
             this.CH1RWDVDCMin.Name = "CH1RWDVDCMin";
             this.CH1RWDVDCMin.Style = Sunny.UI.UIStyle.Custom;
             this.CH1RWDVDCMin.TextAlignment = System.Drawing.ContentAlignment.MiddleLeft;
+            this.toolTip2.SetToolTip(this.CH1RWDVDCMin, resources.GetString("CH1RWDVDCMin.ToolTip"));
+            this.toolTip3.SetToolTip(this.CH1RWDVDCMin, resources.GetString("CH1RWDVDCMin.ToolTip1"));
+            this.toolTip1.SetToolTip(this.CH1RWDVDCMin, resources.GetString("CH1RWDVDCMin.ToolTip2"));
             // 
             // label206
             // 
             resources.ApplyResources(this.label206, "label206");
             this.label206.Name = "label206";
+            this.toolTip2.SetToolTip(this.label206, resources.GetString("label206.ToolTip"));
+            this.toolTip3.SetToolTip(this.label206, resources.GetString("label206.ToolTip1"));
+            this.toolTip1.SetToolTip(this.label206, resources.GetString("label206.ToolTip2"));
             // 
             // CH1RWDVDCMax
             // 
@@ -2648,16 +3197,25 @@
             this.CH1RWDVDCMax.Name = "CH1RWDVDCMax";
             this.CH1RWDVDCMax.Style = Sunny.UI.UIStyle.Custom;
             this.CH1RWDVDCMax.TextAlignment = System.Drawing.ContentAlignment.MiddleLeft;
+            this.toolTip2.SetToolTip(this.CH1RWDVDCMax, resources.GetString("CH1RWDVDCMax.ToolTip"));
+            this.toolTip3.SetToolTip(this.CH1RWDVDCMax, resources.GetString("CH1RWDVDCMax.ToolTip1"));
+            this.toolTip1.SetToolTip(this.CH1RWDVDCMax, resources.GetString("CH1RWDVDCMax.ToolTip2"));
             // 
             // label207
             // 
             resources.ApplyResources(this.label207, "label207");
             this.label207.Name = "label207";
+            this.toolTip2.SetToolTip(this.label207, resources.GetString("label207.ToolTip"));
+            this.toolTip3.SetToolTip(this.label207, resources.GetString("label207.ToolTip1"));
+            this.toolTip1.SetToolTip(this.label207, resources.GetString("label207.ToolTip2"));
             // 
             // label208
             // 
             resources.ApplyResources(this.label208, "label208");
             this.label208.Name = "label208";
+            this.toolTip2.SetToolTip(this.label208, resources.GetString("label208.ToolTip"));
+            this.toolTip3.SetToolTip(this.label208, resources.GetString("label208.ToolTip1"));
+            this.toolTip1.SetToolTip(this.label208, resources.GetString("label208.ToolTip2"));
             // 
             // CH1RWDADCComp
             // 
@@ -2670,11 +3228,17 @@
             this.CH1RWDADCComp.Name = "CH1RWDADCComp";
             this.CH1RWDADCComp.Style = Sunny.UI.UIStyle.Custom;
             this.CH1RWDADCComp.TextAlignment = System.Drawing.ContentAlignment.MiddleLeft;
+            this.toolTip2.SetToolTip(this.CH1RWDADCComp, resources.GetString("CH1RWDADCComp.ToolTip"));
+            this.toolTip3.SetToolTip(this.CH1RWDADCComp, resources.GetString("CH1RWDADCComp.ToolTip1"));
+            this.toolTip1.SetToolTip(this.CH1RWDADCComp, resources.GetString("CH1RWDADCComp.ToolTip2"));
             // 
             // label209
             // 
             resources.ApplyResources(this.label209, "label209");
             this.label209.Name = "label209";
+            this.toolTip2.SetToolTip(this.label209, resources.GetString("label209.ToolTip"));
+            this.toolTip3.SetToolTip(this.label209, resources.GetString("label209.ToolTip1"));
+            this.toolTip1.SetToolTip(this.label209, resources.GetString("label209.ToolTip2"));
             // 
             // CH1RWDADCMin
             // 
@@ -2687,11 +3251,17 @@
             this.CH1RWDADCMin.Name = "CH1RWDADCMin";
             this.CH1RWDADCMin.Style = Sunny.UI.UIStyle.Custom;
             this.CH1RWDADCMin.TextAlignment = System.Drawing.ContentAlignment.MiddleLeft;
+            this.toolTip2.SetToolTip(this.CH1RWDADCMin, resources.GetString("CH1RWDADCMin.ToolTip"));
+            this.toolTip3.SetToolTip(this.CH1RWDADCMin, resources.GetString("CH1RWDADCMin.ToolTip1"));
+            this.toolTip1.SetToolTip(this.CH1RWDADCMin, resources.GetString("CH1RWDADCMin.ToolTip2"));
             // 
             // label210
             // 
             resources.ApplyResources(this.label210, "label210");
             this.label210.Name = "label210";
+            this.toolTip2.SetToolTip(this.label210, resources.GetString("label210.ToolTip"));
+            this.toolTip3.SetToolTip(this.label210, resources.GetString("label210.ToolTip1"));
+            this.toolTip1.SetToolTip(this.label210, resources.GetString("label210.ToolTip2"));
             // 
             // CH1RWDADCMax
             // 
@@ -2704,26 +3274,41 @@
             this.CH1RWDADCMax.Name = "CH1RWDADCMax";
             this.CH1RWDADCMax.Style = Sunny.UI.UIStyle.Custom;
             this.CH1RWDADCMax.TextAlignment = System.Drawing.ContentAlignment.MiddleLeft;
+            this.toolTip2.SetToolTip(this.CH1RWDADCMax, resources.GetString("CH1RWDADCMax.ToolTip"));
+            this.toolTip3.SetToolTip(this.CH1RWDADCMax, resources.GetString("CH1RWDADCMax.ToolTip1"));
+            this.toolTip1.SetToolTip(this.CH1RWDADCMax, resources.GetString("CH1RWDADCMax.ToolTip2"));
             // 
             // label211
             // 
             resources.ApplyResources(this.label211, "label211");
             this.label211.Name = "label211";
+            this.toolTip2.SetToolTip(this.label211, resources.GetString("label211.ToolTip"));
+            this.toolTip3.SetToolTip(this.label211, resources.GetString("label211.ToolTip1"));
+            this.toolTip1.SetToolTip(this.label211, resources.GetString("label211.ToolTip2"));
             // 
             // label212
             // 
             resources.ApplyResources(this.label212, "label212");
             this.label212.Name = "label212";
+            this.toolTip2.SetToolTip(this.label212, resources.GetString("label212.ToolTip"));
+            this.toolTip3.SetToolTip(this.label212, resources.GetString("label212.ToolTip1"));
+            this.toolTip1.SetToolTip(this.label212, resources.GetString("label212.ToolTip2"));
             // 
             // label213
             // 
             resources.ApplyResources(this.label213, "label213");
             this.label213.Name = "label213";
+            this.toolTip2.SetToolTip(this.label213, resources.GetString("label213.ToolTip"));
+            this.toolTip3.SetToolTip(this.label213, resources.GetString("label213.ToolTip1"));
+            this.toolTip1.SetToolTip(this.label213, resources.GetString("label213.ToolTip2"));
             // 
             // label214
             // 
             resources.ApplyResources(this.label214, "label214");
             this.label214.Name = "label214";
+            this.toolTip2.SetToolTip(this.label214, resources.GetString("label214.ToolTip"));
+            this.toolTip3.SetToolTip(this.label214, resources.GetString("label214.ToolTip1"));
+            this.toolTip1.SetToolTip(this.label214, resources.GetString("label214.ToolTip2"));
             // 
             // uiGroupBox13
             // 
@@ -2747,6 +3332,9 @@
             this.uiGroupBox13.Name = "uiGroupBox13";
             this.uiGroupBox13.Style = Sunny.UI.UIStyle.Custom;
             this.uiGroupBox13.TextAlignment = System.Drawing.ContentAlignment.MiddleCenter;
+            this.toolTip3.SetToolTip(this.uiGroupBox13, resources.GetString("uiGroupBox13.ToolTip"));
+            this.toolTip2.SetToolTip(this.uiGroupBox13, resources.GetString("uiGroupBox13.ToolTip1"));
+            this.toolTip1.SetToolTip(this.uiGroupBox13, resources.GetString("uiGroupBox13.ToolTip2"));
             this.uiGroupBox13.Click += new System.EventHandler(this.uiGroupBox13_Click);
             // 
             // RParametersCopy
@@ -2756,7 +3344,10 @@
             this.RParametersCopy.Name = "RParametersCopy";
             this.RParametersCopy.Style = Sunny.UI.UIStyle.Custom;
             this.RParametersCopy.Symbol = 361697;
-            this.RParametersCopy.TipsFont = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.RParametersCopy.TipsFont = new System.Drawing.Font("Microsoft YaHei", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.toolTip3.SetToolTip(this.RParametersCopy, resources.GetString("RParametersCopy.ToolTip"));
+            this.toolTip2.SetToolTip(this.RParametersCopy, resources.GetString("RParametersCopy.ToolTip1"));
+            this.toolTip1.SetToolTip(this.RParametersCopy, resources.GetString("RParametersCopy.ToolTip2"));
             this.RParametersCopy.Click += new System.EventHandler(this.RParametersCopy_Click);
             // 
             // LParametersCopy
@@ -2766,19 +3357,28 @@
             this.LParametersCopy.Name = "LParametersCopy";
             this.LParametersCopy.Style = Sunny.UI.UIStyle.Custom;
             this.LParametersCopy.Symbol = 361697;
-            this.LParametersCopy.TipsFont = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.LParametersCopy.TipsFont = new System.Drawing.Font("Microsoft YaHei", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.toolTip3.SetToolTip(this.LParametersCopy, resources.GetString("LParametersCopy.ToolTip"));
+            this.toolTip2.SetToolTip(this.LParametersCopy, resources.GetString("LParametersCopy.ToolTip1"));
+            this.toolTip1.SetToolTip(this.LParametersCopy, resources.GetString("LParametersCopy.ToolTip2"));
             this.LParametersCopy.Click += new System.EventHandler(this.LParametersCopy_Click);
             // 
             // ChkBee
             // 
             resources.ApplyResources(this.ChkBee, "ChkBee");
             this.ChkBee.Name = "ChkBee";
+            this.toolTip2.SetToolTip(this.ChkBee, resources.GetString("ChkBee.ToolTip"));
+            this.toolTip3.SetToolTip(this.ChkBee, resources.GetString("ChkBee.ToolTip1"));
+            this.toolTip1.SetToolTip(this.ChkBee, resources.GetString("ChkBee.ToolTip2"));
             this.ChkBee.UseVisualStyleBackColor = true;
             // 
             // label88
             // 
             resources.ApplyResources(this.label88, "label88");
             this.label88.Name = "label88";
+            this.toolTip2.SetToolTip(this.label88, resources.GetString("label88.ToolTip"));
+            this.toolTip3.SetToolTip(this.label88, resources.GetString("label88.ToolTip1"));
+            this.toolTip1.SetToolTip(this.label88, resources.GetString("label88.ToolTip2"));
             // 
             // tabPage3
             // 
@@ -2787,6 +3387,9 @@
             this.tabPage3.Controls.Add(this.uiGroupBox13);
             this.tabPage3.Controls.Add(this.SendText);
             this.tabPage3.Name = "tabPage3";
+            this.toolTip1.SetToolTip(this.tabPage3, resources.GetString("tabPage3.ToolTip"));
+            this.toolTip2.SetToolTip(this.tabPage3, resources.GetString("tabPage3.ToolTip1"));
+            this.toolTip3.SetToolTip(this.tabPage3, resources.GetString("tabPage3.ToolTip2"));
             // 
             // SendText
             // 
@@ -2794,6 +3397,9 @@
             this.SendText.BackColor = System.Drawing.Color.LightBlue;
             this.SendText.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.SendText.Name = "SendText";
+            this.toolTip1.SetToolTip(this.SendText, resources.GetString("SendText.ToolTip"));
+            this.toolTip2.SetToolTip(this.SendText, resources.GetString("SendText.ToolTip1"));
+            this.toolTip3.SetToolTip(this.SendText, resources.GetString("SendText.ToolTip2"));
             // 
             // tabPage4
             // 
@@ -2805,6 +3411,9 @@
             this.tabPage4.Controls.Add(this.uiGroupBox12);
             this.tabPage4.Controls.Add(this.uiGroupBox9);
             this.tabPage4.Name = "tabPage4";
+            this.toolTip1.SetToolTip(this.tabPage4, resources.GetString("tabPage4.ToolTip"));
+            this.toolTip2.SetToolTip(this.tabPage4, resources.GetString("tabPage4.ToolTip1"));
+            this.toolTip3.SetToolTip(this.tabPage4, resources.GetString("tabPage4.ToolTip2"));
             this.tabPage4.Click += new System.EventHandler(this.tabPage4_Click);
             // 
             // RUPParamsCopy
@@ -2814,7 +3423,10 @@
             this.RUPParamsCopy.Name = "RUPParamsCopy";
             this.RUPParamsCopy.Style = Sunny.UI.UIStyle.Custom;
             this.RUPParamsCopy.Symbol = 361697;
-            this.RUPParamsCopy.TipsFont = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.RUPParamsCopy.TipsFont = new System.Drawing.Font("Microsoft YaHei", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.toolTip3.SetToolTip(this.RUPParamsCopy, resources.GetString("RUPParamsCopy.ToolTip"));
+            this.toolTip2.SetToolTip(this.RUPParamsCopy, resources.GetString("RUPParamsCopy.ToolTip1"));
+            this.toolTip1.SetToolTip(this.RUPParamsCopy, resources.GetString("RUPParamsCopy.ToolTip2"));
             this.RUPParamsCopy.Click += new System.EventHandler(this.RUPParamsCopy_Click);
             // 
             // UPParamsSave
@@ -2823,7 +3435,10 @@
             this.UPParamsSave.Cursor = System.Windows.Forms.Cursors.Hand;
             this.UPParamsSave.Name = "UPParamsSave";
             this.UPParamsSave.Style = Sunny.UI.UIStyle.Custom;
-            this.UPParamsSave.TipsFont = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.UPParamsSave.TipsFont = new System.Drawing.Font("Microsoft YaHei", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.toolTip3.SetToolTip(this.UPParamsSave, resources.GetString("UPParamsSave.ToolTip"));
+            this.toolTip2.SetToolTip(this.UPParamsSave, resources.GetString("UPParamsSave.ToolTip1"));
+            this.toolTip1.SetToolTip(this.UPParamsSave, resources.GetString("UPParamsSave.ToolTip2"));
             this.UPParamsSave.Click += new System.EventHandler(this.UPParamsSave_Click);
             // 
             // LUPParamsCopy
@@ -2833,7 +3448,10 @@
             this.LUPParamsCopy.Name = "LUPParamsCopy";
             this.LUPParamsCopy.Style = Sunny.UI.UIStyle.Custom;
             this.LUPParamsCopy.Symbol = 361697;
-            this.LUPParamsCopy.TipsFont = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.LUPParamsCopy.TipsFont = new System.Drawing.Font("Microsoft YaHei", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.toolTip3.SetToolTip(this.LUPParamsCopy, resources.GetString("LUPParamsCopy.ToolTip"));
+            this.toolTip2.SetToolTip(this.LUPParamsCopy, resources.GetString("LUPParamsCopy.ToolTip1"));
+            this.toolTip1.SetToolTip(this.LUPParamsCopy, resources.GetString("LUPParamsCopy.ToolTip2"));
             this.LUPParamsCopy.Click += new System.EventHandler(this.UPParamsCopy_Click);
             // 
             // uiGroupBox12
@@ -2846,6 +3464,9 @@
             this.uiGroupBox12.Name = "uiGroupBox12";
             this.uiGroupBox12.Style = Sunny.UI.UIStyle.Custom;
             this.uiGroupBox12.TextAlignment = System.Drawing.ContentAlignment.MiddleCenter;
+            this.toolTip3.SetToolTip(this.uiGroupBox12, resources.GetString("uiGroupBox12.ToolTip"));
+            this.toolTip2.SetToolTip(this.uiGroupBox12, resources.GetString("uiGroupBox12.ToolTip1"));
+            this.toolTip1.SetToolTip(this.uiGroupBox12, resources.GetString("uiGroupBox12.ToolTip2"));
             // 
             // uiGroupBox27
             // 
@@ -2866,6 +3487,9 @@
             this.uiGroupBox27.Name = "uiGroupBox27";
             this.uiGroupBox27.Style = Sunny.UI.UIStyle.Custom;
             this.uiGroupBox27.TextAlignment = System.Drawing.ContentAlignment.MiddleCenter;
+            this.toolTip3.SetToolTip(this.uiGroupBox27, resources.GetString("uiGroupBox27.ToolTip"));
+            this.toolTip2.SetToolTip(this.uiGroupBox27, resources.GetString("uiGroupBox27.ToolTip1"));
+            this.toolTip1.SetToolTip(this.uiGroupBox27, resources.GetString("uiGroupBox27.ToolTip2"));
             // 
             // CH2_2PreMin
             // 
@@ -2878,6 +3502,9 @@
             this.CH2_2PreMin.Name = "CH2_2PreMin";
             this.CH2_2PreMin.Style = Sunny.UI.UIStyle.Custom;
             this.CH2_2PreMin.TextAlignment = System.Drawing.ContentAlignment.MiddleLeft;
+            this.toolTip2.SetToolTip(this.CH2_2PreMin, resources.GetString("CH2_2PreMin.ToolTip"));
+            this.toolTip3.SetToolTip(this.CH2_2PreMin, resources.GetString("CH2_2PreMin.ToolTip1"));
+            this.toolTip1.SetToolTip(this.CH2_2PreMin, resources.GetString("CH2_2PreMin.ToolTip2"));
             // 
             // CH2_2PreMax
             // 
@@ -2890,16 +3517,25 @@
             this.CH2_2PreMax.Name = "CH2_2PreMax";
             this.CH2_2PreMax.Style = Sunny.UI.UIStyle.Custom;
             this.CH2_2PreMax.TextAlignment = System.Drawing.ContentAlignment.MiddleLeft;
+            this.toolTip2.SetToolTip(this.CH2_2PreMax, resources.GetString("CH2_2PreMax.ToolTip"));
+            this.toolTip3.SetToolTip(this.CH2_2PreMax, resources.GetString("CH2_2PreMax.ToolTip1"));
+            this.toolTip1.SetToolTip(this.CH2_2PreMax, resources.GetString("CH2_2PreMax.ToolTip2"));
             // 
             // label179
             // 
             resources.ApplyResources(this.label179, "label179");
             this.label179.Name = "label179";
+            this.toolTip2.SetToolTip(this.label179, resources.GetString("label179.ToolTip"));
+            this.toolTip3.SetToolTip(this.label179, resources.GetString("label179.ToolTip1"));
+            this.toolTip1.SetToolTip(this.label179, resources.GetString("label179.ToolTip2"));
             // 
             // label180
             // 
             resources.ApplyResources(this.label180, "label180");
             this.label180.Name = "label180";
+            this.toolTip2.SetToolTip(this.label180, resources.GetString("label180.ToolTip"));
+            this.toolTip3.SetToolTip(this.label180, resources.GetString("label180.ToolTip1"));
+            this.toolTip1.SetToolTip(this.label180, resources.GetString("label180.ToolTip2"));
             // 
             // CH2_2FlowMin
             // 
@@ -2912,6 +3548,9 @@
             this.CH2_2FlowMin.Name = "CH2_2FlowMin";
             this.CH2_2FlowMin.Style = Sunny.UI.UIStyle.Custom;
             this.CH2_2FlowMin.TextAlignment = System.Drawing.ContentAlignment.MiddleLeft;
+            this.toolTip2.SetToolTip(this.CH2_2FlowMin, resources.GetString("CH2_2FlowMin.ToolTip"));
+            this.toolTip3.SetToolTip(this.CH2_2FlowMin, resources.GetString("CH2_2FlowMin.ToolTip1"));
+            this.toolTip1.SetToolTip(this.CH2_2FlowMin, resources.GetString("CH2_2FlowMin.ToolTip2"));
             // 
             // CH2_2FlowMax
             // 
@@ -2924,6 +3563,9 @@
             this.CH2_2FlowMax.Name = "CH2_2FlowMax";
             this.CH2_2FlowMax.Style = Sunny.UI.UIStyle.Custom;
             this.CH2_2FlowMax.TextAlignment = System.Drawing.ContentAlignment.MiddleLeft;
+            this.toolTip2.SetToolTip(this.CH2_2FlowMax, resources.GetString("CH2_2FlowMax.ToolTip"));
+            this.toolTip3.SetToolTip(this.CH2_2FlowMax, resources.GetString("CH2_2FlowMax.ToolTip1"));
+            this.toolTip1.SetToolTip(this.CH2_2FlowMax, resources.GetString("CH2_2FlowMax.ToolTip2"));
             // 
             // CH4Press_OverTime
             // 
@@ -2936,16 +3578,25 @@
             this.CH4Press_OverTime.Name = "CH4Press_OverTime";
             this.CH4Press_OverTime.Style = Sunny.UI.UIStyle.Custom;
             this.CH4Press_OverTime.TextAlignment = System.Drawing.ContentAlignment.MiddleLeft;
+            this.toolTip2.SetToolTip(this.CH4Press_OverTime, resources.GetString("CH4Press_OverTime.ToolTip"));
+            this.toolTip3.SetToolTip(this.CH4Press_OverTime, resources.GetString("CH4Press_OverTime.ToolTip1"));
+            this.toolTip1.SetToolTip(this.CH4Press_OverTime, resources.GetString("CH4Press_OverTime.ToolTip2"));
             // 
             // label181
             // 
             resources.ApplyResources(this.label181, "label181");
             this.label181.Name = "label181";
+            this.toolTip2.SetToolTip(this.label181, resources.GetString("label181.ToolTip"));
+            this.toolTip3.SetToolTip(this.label181, resources.GetString("label181.ToolTip1"));
+            this.toolTip1.SetToolTip(this.label181, resources.GetString("label181.ToolTip2"));
             // 
             // label182
             // 
             resources.ApplyResources(this.label182, "label182");
             this.label182.Name = "label182";
+            this.toolTip2.SetToolTip(this.label182, resources.GetString("label182.ToolTip"));
+            this.toolTip3.SetToolTip(this.label182, resources.GetString("label182.ToolTip1"));
+            this.toolTip1.SetToolTip(this.label182, resources.GetString("label182.ToolTip2"));
             // 
             // CH4OverTime
             // 
@@ -2958,16 +3609,25 @@
             this.CH4OverTime.Name = "CH4OverTime";
             this.CH4OverTime.Style = Sunny.UI.UIStyle.Custom;
             this.CH4OverTime.TextAlignment = System.Drawing.ContentAlignment.MiddleLeft;
+            this.toolTip2.SetToolTip(this.CH4OverTime, resources.GetString("CH4OverTime.ToolTip"));
+            this.toolTip3.SetToolTip(this.CH4OverTime, resources.GetString("CH4OverTime.ToolTip1"));
+            this.toolTip1.SetToolTip(this.CH4OverTime, resources.GetString("CH4OverTime.ToolTip2"));
             // 
             // label183
             // 
             resources.ApplyResources(this.label183, "label183");
             this.label183.Name = "label183";
+            this.toolTip2.SetToolTip(this.label183, resources.GetString("label183.ToolTip"));
+            this.toolTip3.SetToolTip(this.label183, resources.GetString("label183.ToolTip1"));
+            this.toolTip1.SetToolTip(this.label183, resources.GetString("label183.ToolTip2"));
             // 
             // label184
             // 
             resources.ApplyResources(this.label184, "label184");
             this.label184.Name = "label184";
+            this.toolTip2.SetToolTip(this.label184, resources.GetString("label184.ToolTip"));
+            this.toolTip3.SetToolTip(this.label184, resources.GetString("label184.ToolTip1"));
+            this.toolTip1.SetToolTip(this.label184, resources.GetString("label184.ToolTip2"));
             // 
             // uiGroupBox23
             // 
@@ -2988,6 +3648,9 @@
             this.uiGroupBox23.Name = "uiGroupBox23";
             this.uiGroupBox23.Style = Sunny.UI.UIStyle.Custom;
             this.uiGroupBox23.TextAlignment = System.Drawing.ContentAlignment.MiddleCenter;
+            this.toolTip3.SetToolTip(this.uiGroupBox23, resources.GetString("uiGroupBox23.ToolTip"));
+            this.toolTip2.SetToolTip(this.uiGroupBox23, resources.GetString("uiGroupBox23.ToolTip1"));
+            this.toolTip1.SetToolTip(this.uiGroupBox23, resources.GetString("uiGroupBox23.ToolTip2"));
             // 
             // CH2Cont_Elec_Compen
             // 
@@ -3000,6 +3663,9 @@
             this.CH2Cont_Elec_Compen.Name = "CH2Cont_Elec_Compen";
             this.CH2Cont_Elec_Compen.Style = Sunny.UI.UIStyle.Custom;
             this.CH2Cont_Elec_Compen.TextAlignment = System.Drawing.ContentAlignment.MiddleLeft;
+            this.toolTip2.SetToolTip(this.CH2Cont_Elec_Compen, resources.GetString("CH2Cont_Elec_Compen.ToolTip"));
+            this.toolTip3.SetToolTip(this.CH2Cont_Elec_Compen, resources.GetString("CH2Cont_Elec_Compen.ToolTip1"));
+            this.toolTip1.SetToolTip(this.CH2Cont_Elec_Compen, resources.GetString("CH2Cont_Elec_Compen.ToolTip2"));
             // 
             // CH2Cont_ElecMin
             // 
@@ -3012,11 +3678,17 @@
             this.CH2Cont_ElecMin.Name = "CH2Cont_ElecMin";
             this.CH2Cont_ElecMin.Style = Sunny.UI.UIStyle.Custom;
             this.CH2Cont_ElecMin.TextAlignment = System.Drawing.ContentAlignment.MiddleLeft;
+            this.toolTip2.SetToolTip(this.CH2Cont_ElecMin, resources.GetString("CH2Cont_ElecMin.ToolTip"));
+            this.toolTip3.SetToolTip(this.CH2Cont_ElecMin, resources.GetString("CH2Cont_ElecMin.ToolTip1"));
+            this.toolTip1.SetToolTip(this.CH2Cont_ElecMin, resources.GetString("CH2Cont_ElecMin.ToolTip2"));
             // 
             // label151
             // 
             resources.ApplyResources(this.label151, "label151");
             this.label151.Name = "label151";
+            this.toolTip2.SetToolTip(this.label151, resources.GetString("label151.ToolTip"));
+            this.toolTip3.SetToolTip(this.label151, resources.GetString("label151.ToolTip1"));
+            this.toolTip1.SetToolTip(this.label151, resources.GetString("label151.ToolTip2"));
             // 
             // CH2Cont_ElecMax
             // 
@@ -3029,6 +3701,9 @@
             this.CH2Cont_ElecMax.Name = "CH2Cont_ElecMax";
             this.CH2Cont_ElecMax.Style = Sunny.UI.UIStyle.Custom;
             this.CH2Cont_ElecMax.TextAlignment = System.Drawing.ContentAlignment.MiddleLeft;
+            this.toolTip2.SetToolTip(this.CH2Cont_ElecMax, resources.GetString("CH2Cont_ElecMax.ToolTip"));
+            this.toolTip3.SetToolTip(this.CH2Cont_ElecMax, resources.GetString("CH2Cont_ElecMax.ToolTip1"));
+            this.toolTip1.SetToolTip(this.CH2Cont_ElecMax, resources.GetString("CH2Cont_ElecMax.ToolTip2"));
             // 
             // CH2Cont_Pre_Compen
             // 
@@ -3041,11 +3716,17 @@
             this.CH2Cont_Pre_Compen.Name = "CH2Cont_Pre_Compen";
             this.CH2Cont_Pre_Compen.Style = Sunny.UI.UIStyle.Custom;
             this.CH2Cont_Pre_Compen.TextAlignment = System.Drawing.ContentAlignment.MiddleLeft;
+            this.toolTip2.SetToolTip(this.CH2Cont_Pre_Compen, resources.GetString("CH2Cont_Pre_Compen.ToolTip"));
+            this.toolTip3.SetToolTip(this.CH2Cont_Pre_Compen, resources.GetString("CH2Cont_Pre_Compen.ToolTip1"));
+            this.toolTip1.SetToolTip(this.CH2Cont_Pre_Compen, resources.GetString("CH2Cont_Pre_Compen.ToolTip2"));
             // 
             // label152
             // 
             resources.ApplyResources(this.label152, "label152");
             this.label152.Name = "label152";
+            this.toolTip2.SetToolTip(this.label152, resources.GetString("label152.ToolTip"));
+            this.toolTip3.SetToolTip(this.label152, resources.GetString("label152.ToolTip1"));
+            this.toolTip1.SetToolTip(this.label152, resources.GetString("label152.ToolTip2"));
             // 
             // CH2Cont_PressMin
             // 
@@ -3058,6 +3739,9 @@
             this.CH2Cont_PressMin.Name = "CH2Cont_PressMin";
             this.CH2Cont_PressMin.Style = Sunny.UI.UIStyle.Custom;
             this.CH2Cont_PressMin.TextAlignment = System.Drawing.ContentAlignment.MiddleLeft;
+            this.toolTip2.SetToolTip(this.CH2Cont_PressMin, resources.GetString("CH2Cont_PressMin.ToolTip"));
+            this.toolTip3.SetToolTip(this.CH2Cont_PressMin, resources.GetString("CH2Cont_PressMin.ToolTip1"));
+            this.toolTip1.SetToolTip(this.CH2Cont_PressMin, resources.GetString("CH2Cont_PressMin.ToolTip2"));
             // 
             // CH2Cont_PressMax
             // 
@@ -3070,26 +3754,41 @@
             this.CH2Cont_PressMax.Name = "CH2Cont_PressMax";
             this.CH2Cont_PressMax.Style = Sunny.UI.UIStyle.Custom;
             this.CH2Cont_PressMax.TextAlignment = System.Drawing.ContentAlignment.MiddleLeft;
+            this.toolTip2.SetToolTip(this.CH2Cont_PressMax, resources.GetString("CH2Cont_PressMax.ToolTip"));
+            this.toolTip3.SetToolTip(this.CH2Cont_PressMax, resources.GetString("CH2Cont_PressMax.ToolTip1"));
+            this.toolTip1.SetToolTip(this.CH2Cont_PressMax, resources.GetString("CH2Cont_PressMax.ToolTip2"));
             // 
             // label153
             // 
             resources.ApplyResources(this.label153, "label153");
             this.label153.Name = "label153";
+            this.toolTip2.SetToolTip(this.label153, resources.GetString("label153.ToolTip"));
+            this.toolTip3.SetToolTip(this.label153, resources.GetString("label153.ToolTip1"));
+            this.toolTip1.SetToolTip(this.label153, resources.GetString("label153.ToolTip2"));
             // 
             // label155
             // 
             resources.ApplyResources(this.label155, "label155");
             this.label155.Name = "label155";
+            this.toolTip2.SetToolTip(this.label155, resources.GetString("label155.ToolTip"));
+            this.toolTip3.SetToolTip(this.label155, resources.GetString("label155.ToolTip1"));
+            this.toolTip1.SetToolTip(this.label155, resources.GetString("label155.ToolTip2"));
             // 
             // label156
             // 
             resources.ApplyResources(this.label156, "label156");
             this.label156.Name = "label156";
+            this.toolTip2.SetToolTip(this.label156, resources.GetString("label156.ToolTip"));
+            this.toolTip3.SetToolTip(this.label156, resources.GetString("label156.ToolTip1"));
+            this.toolTip1.SetToolTip(this.label156, resources.GetString("label156.ToolTip2"));
             // 
             // label157
             // 
             resources.ApplyResources(this.label157, "label157");
             this.label157.Name = "label157";
+            this.toolTip2.SetToolTip(this.label157, resources.GetString("label157.ToolTip"));
+            this.toolTip3.SetToolTip(this.label157, resources.GetString("label157.ToolTip1"));
+            this.toolTip1.SetToolTip(this.label157, resources.GetString("label157.ToolTip2"));
             // 
             // uiGroupBox25
             // 
@@ -3116,16 +3815,25 @@
             this.uiGroupBox25.Name = "uiGroupBox25";
             this.uiGroupBox25.Style = Sunny.UI.UIStyle.Custom;
             this.uiGroupBox25.TextAlignment = System.Drawing.ContentAlignment.MiddleCenter;
+            this.toolTip3.SetToolTip(this.uiGroupBox25, resources.GetString("uiGroupBox25.ToolTip"));
+            this.toolTip2.SetToolTip(this.uiGroupBox25, resources.GetString("uiGroupBox25.ToolTip1"));
+            this.toolTip1.SetToolTip(this.uiGroupBox25, resources.GetString("uiGroupBox25.ToolTip2"));
             // 
             // label164
             // 
             resources.ApplyResources(this.label164, "label164");
             this.label164.Name = "label164";
+            this.toolTip2.SetToolTip(this.label164, resources.GetString("label164.ToolTip"));
+            this.toolTip3.SetToolTip(this.label164, resources.GetString("label164.ToolTip1"));
+            this.toolTip1.SetToolTip(this.label164, resources.GetString("label164.ToolTip2"));
             // 
             // label165
             // 
             resources.ApplyResources(this.label165, "label165");
             this.label165.Name = "label165";
+            this.toolTip2.SetToolTip(this.label165, resources.GetString("label165.ToolTip"));
+            this.toolTip3.SetToolTip(this.label165, resources.GetString("label165.ToolTip1"));
+            this.toolTip1.SetToolTip(this.label165, resources.GetString("label165.ToolTip2"));
             // 
             // CH2UPVDCComp
             // 
@@ -3138,11 +3846,17 @@
             this.CH2UPVDCComp.Name = "CH2UPVDCComp";
             this.CH2UPVDCComp.Style = Sunny.UI.UIStyle.Custom;
             this.CH2UPVDCComp.TextAlignment = System.Drawing.ContentAlignment.MiddleLeft;
+            this.toolTip2.SetToolTip(this.CH2UPVDCComp, resources.GetString("CH2UPVDCComp.ToolTip"));
+            this.toolTip3.SetToolTip(this.CH2UPVDCComp, resources.GetString("CH2UPVDCComp.ToolTip1"));
+            this.toolTip1.SetToolTip(this.CH2UPVDCComp, resources.GetString("CH2UPVDCComp.ToolTip2"));
             // 
             // label166
             // 
             resources.ApplyResources(this.label166, "label166");
             this.label166.Name = "label166";
+            this.toolTip2.SetToolTip(this.label166, resources.GetString("label166.ToolTip"));
+            this.toolTip3.SetToolTip(this.label166, resources.GetString("label166.ToolTip1"));
+            this.toolTip1.SetToolTip(this.label166, resources.GetString("label166.ToolTip2"));
             // 
             // CH2UPVDCMin
             // 
@@ -3155,11 +3869,17 @@
             this.CH2UPVDCMin.Name = "CH2UPVDCMin";
             this.CH2UPVDCMin.Style = Sunny.UI.UIStyle.Custom;
             this.CH2UPVDCMin.TextAlignment = System.Drawing.ContentAlignment.MiddleLeft;
+            this.toolTip2.SetToolTip(this.CH2UPVDCMin, resources.GetString("CH2UPVDCMin.ToolTip"));
+            this.toolTip3.SetToolTip(this.CH2UPVDCMin, resources.GetString("CH2UPVDCMin.ToolTip1"));
+            this.toolTip1.SetToolTip(this.CH2UPVDCMin, resources.GetString("CH2UPVDCMin.ToolTip2"));
             // 
             // label167
             // 
             resources.ApplyResources(this.label167, "label167");
             this.label167.Name = "label167";
+            this.toolTip2.SetToolTip(this.label167, resources.GetString("label167.ToolTip"));
+            this.toolTip3.SetToolTip(this.label167, resources.GetString("label167.ToolTip1"));
+            this.toolTip1.SetToolTip(this.label167, resources.GetString("label167.ToolTip2"));
             // 
             // CH2UPVDCMax
             // 
@@ -3172,16 +3892,25 @@
             this.CH2UPVDCMax.Name = "CH2UPVDCMax";
             this.CH2UPVDCMax.Style = Sunny.UI.UIStyle.Custom;
             this.CH2UPVDCMax.TextAlignment = System.Drawing.ContentAlignment.MiddleLeft;
+            this.toolTip2.SetToolTip(this.CH2UPVDCMax, resources.GetString("CH2UPVDCMax.ToolTip"));
+            this.toolTip3.SetToolTip(this.CH2UPVDCMax, resources.GetString("CH2UPVDCMax.ToolTip1"));
+            this.toolTip1.SetToolTip(this.CH2UPVDCMax, resources.GetString("CH2UPVDCMax.ToolTip2"));
             // 
             // label168
             // 
             resources.ApplyResources(this.label168, "label168");
             this.label168.Name = "label168";
+            this.toolTip2.SetToolTip(this.label168, resources.GetString("label168.ToolTip"));
+            this.toolTip3.SetToolTip(this.label168, resources.GetString("label168.ToolTip1"));
+            this.toolTip1.SetToolTip(this.label168, resources.GetString("label168.ToolTip2"));
             // 
             // label169
             // 
             resources.ApplyResources(this.label169, "label169");
             this.label169.Name = "label169";
+            this.toolTip2.SetToolTip(this.label169, resources.GetString("label169.ToolTip"));
+            this.toolTip3.SetToolTip(this.label169, resources.GetString("label169.ToolTip1"));
+            this.toolTip1.SetToolTip(this.label169, resources.GetString("label169.ToolTip2"));
             // 
             // CH2UPADCComp
             // 
@@ -3194,11 +3923,17 @@
             this.CH2UPADCComp.Name = "CH2UPADCComp";
             this.CH2UPADCComp.Style = Sunny.UI.UIStyle.Custom;
             this.CH2UPADCComp.TextAlignment = System.Drawing.ContentAlignment.MiddleLeft;
+            this.toolTip2.SetToolTip(this.CH2UPADCComp, resources.GetString("CH2UPADCComp.ToolTip"));
+            this.toolTip3.SetToolTip(this.CH2UPADCComp, resources.GetString("CH2UPADCComp.ToolTip1"));
+            this.toolTip1.SetToolTip(this.CH2UPADCComp, resources.GetString("CH2UPADCComp.ToolTip2"));
             // 
             // label170
             // 
             resources.ApplyResources(this.label170, "label170");
             this.label170.Name = "label170";
+            this.toolTip2.SetToolTip(this.label170, resources.GetString("label170.ToolTip"));
+            this.toolTip3.SetToolTip(this.label170, resources.GetString("label170.ToolTip1"));
+            this.toolTip1.SetToolTip(this.label170, resources.GetString("label170.ToolTip2"));
             // 
             // CH2UPADCMin
             // 
@@ -3211,11 +3946,17 @@
             this.CH2UPADCMin.Name = "CH2UPADCMin";
             this.CH2UPADCMin.Style = Sunny.UI.UIStyle.Custom;
             this.CH2UPADCMin.TextAlignment = System.Drawing.ContentAlignment.MiddleLeft;
+            this.toolTip2.SetToolTip(this.CH2UPADCMin, resources.GetString("CH2UPADCMin.ToolTip"));
+            this.toolTip3.SetToolTip(this.CH2UPADCMin, resources.GetString("CH2UPADCMin.ToolTip1"));
+            this.toolTip1.SetToolTip(this.CH2UPADCMin, resources.GetString("CH2UPADCMin.ToolTip2"));
             // 
             // label171
             // 
             resources.ApplyResources(this.label171, "label171");
             this.label171.Name = "label171";
+            this.toolTip2.SetToolTip(this.label171, resources.GetString("label171.ToolTip"));
+            this.toolTip3.SetToolTip(this.label171, resources.GetString("label171.ToolTip1"));
+            this.toolTip1.SetToolTip(this.label171, resources.GetString("label171.ToolTip2"));
             // 
             // CH2UPADCMax
             // 
@@ -3228,26 +3969,41 @@
             this.CH2UPADCMax.Name = "CH2UPADCMax";
             this.CH2UPADCMax.Style = Sunny.UI.UIStyle.Custom;
             this.CH2UPADCMax.TextAlignment = System.Drawing.ContentAlignment.MiddleLeft;
+            this.toolTip2.SetToolTip(this.CH2UPADCMax, resources.GetString("CH2UPADCMax.ToolTip"));
+            this.toolTip3.SetToolTip(this.CH2UPADCMax, resources.GetString("CH2UPADCMax.ToolTip1"));
+            this.toolTip1.SetToolTip(this.CH2UPADCMax, resources.GetString("CH2UPADCMax.ToolTip2"));
             // 
             // label172
             // 
             resources.ApplyResources(this.label172, "label172");
             this.label172.Name = "label172";
+            this.toolTip2.SetToolTip(this.label172, resources.GetString("label172.ToolTip"));
+            this.toolTip3.SetToolTip(this.label172, resources.GetString("label172.ToolTip1"));
+            this.toolTip1.SetToolTip(this.label172, resources.GetString("label172.ToolTip2"));
             // 
             // label173
             // 
             resources.ApplyResources(this.label173, "label173");
             this.label173.Name = "label173";
+            this.toolTip2.SetToolTip(this.label173, resources.GetString("label173.ToolTip"));
+            this.toolTip3.SetToolTip(this.label173, resources.GetString("label173.ToolTip1"));
+            this.toolTip1.SetToolTip(this.label173, resources.GetString("label173.ToolTip2"));
             // 
             // label174
             // 
             resources.ApplyResources(this.label174, "label174");
             this.label174.Name = "label174";
+            this.toolTip2.SetToolTip(this.label174, resources.GetString("label174.ToolTip"));
+            this.toolTip3.SetToolTip(this.label174, resources.GetString("label174.ToolTip1"));
+            this.toolTip1.SetToolTip(this.label174, resources.GetString("label174.ToolTip2"));
             // 
             // label175
             // 
             resources.ApplyResources(this.label175, "label175");
             this.label175.Name = "label175";
+            this.toolTip2.SetToolTip(this.label175, resources.GetString("label175.ToolTip"));
+            this.toolTip3.SetToolTip(this.label175, resources.GetString("label175.ToolTip1"));
+            this.toolTip1.SetToolTip(this.label175, resources.GetString("label175.ToolTip2"));
             // 
             // uiGroupBox9
             // 
@@ -3259,6 +4015,9 @@
             this.uiGroupBox9.Name = "uiGroupBox9";
             this.uiGroupBox9.Style = Sunny.UI.UIStyle.Custom;
             this.uiGroupBox9.TextAlignment = System.Drawing.ContentAlignment.MiddleCenter;
+            this.toolTip3.SetToolTip(this.uiGroupBox9, resources.GetString("uiGroupBox9.ToolTip"));
+            this.toolTip2.SetToolTip(this.uiGroupBox9, resources.GetString("uiGroupBox9.ToolTip1"));
+            this.toolTip1.SetToolTip(this.uiGroupBox9, resources.GetString("uiGroupBox9.ToolTip2"));
             this.uiGroupBox9.Click += new System.EventHandler(this.uiGroupBox9_Click);
             // 
             // uiGroupBox20
@@ -3280,6 +4039,9 @@
             this.uiGroupBox20.Name = "uiGroupBox20";
             this.uiGroupBox20.Style = Sunny.UI.UIStyle.Custom;
             this.uiGroupBox20.TextAlignment = System.Drawing.ContentAlignment.MiddleCenter;
+            this.toolTip3.SetToolTip(this.uiGroupBox20, resources.GetString("uiGroupBox20.ToolTip"));
+            this.toolTip2.SetToolTip(this.uiGroupBox20, resources.GetString("uiGroupBox20.ToolTip1"));
+            this.toolTip1.SetToolTip(this.uiGroupBox20, resources.GetString("uiGroupBox20.ToolTip2"));
             this.uiGroupBox20.Click += new System.EventHandler(this.uiGroupBox20_Click);
             // 
             // CH1_2PreMin
@@ -3293,6 +4055,9 @@
             this.CH1_2PreMin.Name = "CH1_2PreMin";
             this.CH1_2PreMin.Style = Sunny.UI.UIStyle.Custom;
             this.CH1_2PreMin.TextAlignment = System.Drawing.ContentAlignment.MiddleLeft;
+            this.toolTip2.SetToolTip(this.CH1_2PreMin, resources.GetString("CH1_2PreMin.ToolTip"));
+            this.toolTip3.SetToolTip(this.CH1_2PreMin, resources.GetString("CH1_2PreMin.ToolTip1"));
+            this.toolTip1.SetToolTip(this.CH1_2PreMin, resources.GetString("CH1_2PreMin.ToolTip2"));
             // 
             // CH2OverTime
             // 
@@ -3305,11 +4070,17 @@
             this.CH2OverTime.Name = "CH2OverTime";
             this.CH2OverTime.Style = Sunny.UI.UIStyle.Custom;
             this.CH2OverTime.TextAlignment = System.Drawing.ContentAlignment.MiddleLeft;
+            this.toolTip2.SetToolTip(this.CH2OverTime, resources.GetString("CH2OverTime.ToolTip"));
+            this.toolTip3.SetToolTip(this.CH2OverTime, resources.GetString("CH2OverTime.ToolTip1"));
+            this.toolTip1.SetToolTip(this.CH2OverTime, resources.GetString("CH2OverTime.ToolTip2"));
             // 
             // label48
             // 
             resources.ApplyResources(this.label48, "label48");
             this.label48.Name = "label48";
+            this.toolTip2.SetToolTip(this.label48, resources.GetString("label48.ToolTip"));
+            this.toolTip3.SetToolTip(this.label48, resources.GetString("label48.ToolTip1"));
+            this.toolTip1.SetToolTip(this.label48, resources.GetString("label48.ToolTip2"));
             // 
             // CH1_2PreMax
             // 
@@ -3322,26 +4093,41 @@
             this.CH1_2PreMax.Name = "CH1_2PreMax";
             this.CH1_2PreMax.Style = Sunny.UI.UIStyle.Custom;
             this.CH1_2PreMax.TextAlignment = System.Drawing.ContentAlignment.MiddleLeft;
+            this.toolTip2.SetToolTip(this.CH1_2PreMax, resources.GetString("CH1_2PreMax.ToolTip"));
+            this.toolTip3.SetToolTip(this.CH1_2PreMax, resources.GetString("CH1_2PreMax.ToolTip1"));
+            this.toolTip1.SetToolTip(this.CH1_2PreMax, resources.GetString("CH1_2PreMax.ToolTip2"));
             // 
             // label59
             // 
             resources.ApplyResources(this.label59, "label59");
             this.label59.Name = "label59";
+            this.toolTip2.SetToolTip(this.label59, resources.GetString("label59.ToolTip"));
+            this.toolTip3.SetToolTip(this.label59, resources.GetString("label59.ToolTip1"));
+            this.toolTip1.SetToolTip(this.label59, resources.GetString("label59.ToolTip2"));
             // 
             // label35
             // 
             resources.ApplyResources(this.label35, "label35");
             this.label35.Name = "label35";
+            this.toolTip2.SetToolTip(this.label35, resources.GetString("label35.ToolTip"));
+            this.toolTip3.SetToolTip(this.label35, resources.GetString("label35.ToolTip1"));
+            this.toolTip1.SetToolTip(this.label35, resources.GetString("label35.ToolTip2"));
             // 
             // label31
             // 
             resources.ApplyResources(this.label31, "label31");
             this.label31.Name = "label31";
+            this.toolTip2.SetToolTip(this.label31, resources.GetString("label31.ToolTip"));
+            this.toolTip3.SetToolTip(this.label31, resources.GetString("label31.ToolTip1"));
+            this.toolTip1.SetToolTip(this.label31, resources.GetString("label31.ToolTip2"));
             // 
             // label60
             // 
             resources.ApplyResources(this.label60, "label60");
             this.label60.Name = "label60";
+            this.toolTip2.SetToolTip(this.label60, resources.GetString("label60.ToolTip"));
+            this.toolTip3.SetToolTip(this.label60, resources.GetString("label60.ToolTip1"));
+            this.toolTip1.SetToolTip(this.label60, resources.GetString("label60.ToolTip2"));
             // 
             // CH2Press_OverTime
             // 
@@ -3354,11 +4140,17 @@
             this.CH2Press_OverTime.Name = "CH2Press_OverTime";
             this.CH2Press_OverTime.Style = Sunny.UI.UIStyle.Custom;
             this.CH2Press_OverTime.TextAlignment = System.Drawing.ContentAlignment.MiddleLeft;
+            this.toolTip2.SetToolTip(this.CH2Press_OverTime, resources.GetString("CH2Press_OverTime.ToolTip"));
+            this.toolTip3.SetToolTip(this.CH2Press_OverTime, resources.GetString("CH2Press_OverTime.ToolTip1"));
+            this.toolTip1.SetToolTip(this.CH2Press_OverTime, resources.GetString("CH2Press_OverTime.ToolTip2"));
             // 
             // label33
             // 
             resources.ApplyResources(this.label33, "label33");
             this.label33.Name = "label33";
+            this.toolTip2.SetToolTip(this.label33, resources.GetString("label33.ToolTip"));
+            this.toolTip3.SetToolTip(this.label33, resources.GetString("label33.ToolTip1"));
+            this.toolTip1.SetToolTip(this.label33, resources.GetString("label33.ToolTip2"));
             // 
             // CH1_2FlowMax
             // 
@@ -3371,6 +4163,9 @@
             this.CH1_2FlowMax.Name = "CH1_2FlowMax";
             this.CH1_2FlowMax.Style = Sunny.UI.UIStyle.Custom;
             this.CH1_2FlowMax.TextAlignment = System.Drawing.ContentAlignment.MiddleLeft;
+            this.toolTip2.SetToolTip(this.CH1_2FlowMax, resources.GetString("CH1_2FlowMax.ToolTip"));
+            this.toolTip3.SetToolTip(this.CH1_2FlowMax, resources.GetString("CH1_2FlowMax.ToolTip1"));
+            this.toolTip1.SetToolTip(this.CH1_2FlowMax, resources.GetString("CH1_2FlowMax.ToolTip2"));
             // 
             // CH1_2FlowMin
             // 
@@ -3383,6 +4178,9 @@
             this.CH1_2FlowMin.Name = "CH1_2FlowMin";
             this.CH1_2FlowMin.Style = Sunny.UI.UIStyle.Custom;
             this.CH1_2FlowMin.TextAlignment = System.Drawing.ContentAlignment.MiddleLeft;
+            this.toolTip2.SetToolTip(this.CH1_2FlowMin, resources.GetString("CH1_2FlowMin.ToolTip"));
+            this.toolTip3.SetToolTip(this.CH1_2FlowMin, resources.GetString("CH1_2FlowMin.ToolTip1"));
+            this.toolTip1.SetToolTip(this.CH1_2FlowMin, resources.GetString("CH1_2FlowMin.ToolTip2"));
             // 
             // uiGroupBox19
             // 
@@ -3403,6 +4201,9 @@
             this.uiGroupBox19.Name = "uiGroupBox19";
             this.uiGroupBox19.Style = Sunny.UI.UIStyle.Custom;
             this.uiGroupBox19.TextAlignment = System.Drawing.ContentAlignment.MiddleCenter;
+            this.toolTip3.SetToolTip(this.uiGroupBox19, resources.GetString("uiGroupBox19.ToolTip"));
+            this.toolTip2.SetToolTip(this.uiGroupBox19, resources.GetString("uiGroupBox19.ToolTip1"));
+            this.toolTip1.SetToolTip(this.uiGroupBox19, resources.GetString("uiGroupBox19.ToolTip2"));
             // 
             // CH1Cont_Elec_Compen
             // 
@@ -3415,6 +4216,9 @@
             this.CH1Cont_Elec_Compen.Name = "CH1Cont_Elec_Compen";
             this.CH1Cont_Elec_Compen.Style = Sunny.UI.UIStyle.Custom;
             this.CH1Cont_Elec_Compen.TextAlignment = System.Drawing.ContentAlignment.MiddleLeft;
+            this.toolTip2.SetToolTip(this.CH1Cont_Elec_Compen, resources.GetString("CH1Cont_Elec_Compen.ToolTip"));
+            this.toolTip3.SetToolTip(this.CH1Cont_Elec_Compen, resources.GetString("CH1Cont_Elec_Compen.ToolTip1"));
+            this.toolTip1.SetToolTip(this.CH1Cont_Elec_Compen, resources.GetString("CH1Cont_Elec_Compen.ToolTip2"));
             // 
             // CH1Cont_ElecMin
             // 
@@ -3427,11 +4231,17 @@
             this.CH1Cont_ElecMin.Name = "CH1Cont_ElecMin";
             this.CH1Cont_ElecMin.Style = Sunny.UI.UIStyle.Custom;
             this.CH1Cont_ElecMin.TextAlignment = System.Drawing.ContentAlignment.MiddleLeft;
+            this.toolTip2.SetToolTip(this.CH1Cont_ElecMin, resources.GetString("CH1Cont_ElecMin.ToolTip"));
+            this.toolTip3.SetToolTip(this.CH1Cont_ElecMin, resources.GetString("CH1Cont_ElecMin.ToolTip1"));
+            this.toolTip1.SetToolTip(this.CH1Cont_ElecMin, resources.GetString("CH1Cont_ElecMin.ToolTip2"));
             // 
             // label57
             // 
             resources.ApplyResources(this.label57, "label57");
             this.label57.Name = "label57";
+            this.toolTip2.SetToolTip(this.label57, resources.GetString("label57.ToolTip"));
+            this.toolTip3.SetToolTip(this.label57, resources.GetString("label57.ToolTip1"));
+            this.toolTip1.SetToolTip(this.label57, resources.GetString("label57.ToolTip2"));
             // 
             // CH1Cont_ElecMax
             // 
@@ -3444,6 +4254,9 @@
             this.CH1Cont_ElecMax.Name = "CH1Cont_ElecMax";
             this.CH1Cont_ElecMax.Style = Sunny.UI.UIStyle.Custom;
             this.CH1Cont_ElecMax.TextAlignment = System.Drawing.ContentAlignment.MiddleLeft;
+            this.toolTip2.SetToolTip(this.CH1Cont_ElecMax, resources.GetString("CH1Cont_ElecMax.ToolTip"));
+            this.toolTip3.SetToolTip(this.CH1Cont_ElecMax, resources.GetString("CH1Cont_ElecMax.ToolTip1"));
+            this.toolTip1.SetToolTip(this.CH1Cont_ElecMax, resources.GetString("CH1Cont_ElecMax.ToolTip2"));
             // 
             // CH1Cont_Pre_Compen
             // 
@@ -3456,11 +4269,17 @@
             this.CH1Cont_Pre_Compen.Name = "CH1Cont_Pre_Compen";
             this.CH1Cont_Pre_Compen.Style = Sunny.UI.UIStyle.Custom;
             this.CH1Cont_Pre_Compen.TextAlignment = System.Drawing.ContentAlignment.MiddleLeft;
+            this.toolTip2.SetToolTip(this.CH1Cont_Pre_Compen, resources.GetString("CH1Cont_Pre_Compen.ToolTip"));
+            this.toolTip3.SetToolTip(this.CH1Cont_Pre_Compen, resources.GetString("CH1Cont_Pre_Compen.ToolTip1"));
+            this.toolTip1.SetToolTip(this.CH1Cont_Pre_Compen, resources.GetString("CH1Cont_Pre_Compen.ToolTip2"));
             // 
             // label58
             // 
             resources.ApplyResources(this.label58, "label58");
             this.label58.Name = "label58";
+            this.toolTip2.SetToolTip(this.label58, resources.GetString("label58.ToolTip"));
+            this.toolTip3.SetToolTip(this.label58, resources.GetString("label58.ToolTip1"));
+            this.toolTip1.SetToolTip(this.label58, resources.GetString("label58.ToolTip2"));
             // 
             // CH1Cont_PressMin
             // 
@@ -3473,6 +4292,9 @@
             this.CH1Cont_PressMin.Name = "CH1Cont_PressMin";
             this.CH1Cont_PressMin.Style = Sunny.UI.UIStyle.Custom;
             this.CH1Cont_PressMin.TextAlignment = System.Drawing.ContentAlignment.MiddleLeft;
+            this.toolTip2.SetToolTip(this.CH1Cont_PressMin, resources.GetString("CH1Cont_PressMin.ToolTip"));
+            this.toolTip3.SetToolTip(this.CH1Cont_PressMin, resources.GetString("CH1Cont_PressMin.ToolTip1"));
+            this.toolTip1.SetToolTip(this.CH1Cont_PressMin, resources.GetString("CH1Cont_PressMin.ToolTip2"));
             // 
             // CH1Cont_PressMax
             // 
@@ -3485,26 +4307,41 @@
             this.CH1Cont_PressMax.Name = "CH1Cont_PressMax";
             this.CH1Cont_PressMax.Style = Sunny.UI.UIStyle.Custom;
             this.CH1Cont_PressMax.TextAlignment = System.Drawing.ContentAlignment.MiddleLeft;
+            this.toolTip2.SetToolTip(this.CH1Cont_PressMax, resources.GetString("CH1Cont_PressMax.ToolTip"));
+            this.toolTip3.SetToolTip(this.CH1Cont_PressMax, resources.GetString("CH1Cont_PressMax.ToolTip1"));
+            this.toolTip1.SetToolTip(this.CH1Cont_PressMax, resources.GetString("CH1Cont_PressMax.ToolTip2"));
             // 
             // label135
             // 
             resources.ApplyResources(this.label135, "label135");
             this.label135.Name = "label135";
+            this.toolTip2.SetToolTip(this.label135, resources.GetString("label135.ToolTip"));
+            this.toolTip3.SetToolTip(this.label135, resources.GetString("label135.ToolTip1"));
+            this.toolTip1.SetToolTip(this.label135, resources.GetString("label135.ToolTip2"));
             // 
             // label136
             // 
             resources.ApplyResources(this.label136, "label136");
             this.label136.Name = "label136";
+            this.toolTip2.SetToolTip(this.label136, resources.GetString("label136.ToolTip"));
+            this.toolTip3.SetToolTip(this.label136, resources.GetString("label136.ToolTip1"));
+            this.toolTip1.SetToolTip(this.label136, resources.GetString("label136.ToolTip2"));
             // 
             // label137
             // 
             resources.ApplyResources(this.label137, "label137");
             this.label137.Name = "label137";
+            this.toolTip2.SetToolTip(this.label137, resources.GetString("label137.ToolTip"));
+            this.toolTip3.SetToolTip(this.label137, resources.GetString("label137.ToolTip1"));
+            this.toolTip1.SetToolTip(this.label137, resources.GetString("label137.ToolTip2"));
             // 
             // label138
             // 
             resources.ApplyResources(this.label138, "label138");
             this.label138.Name = "label138";
+            this.toolTip2.SetToolTip(this.label138, resources.GetString("label138.ToolTip"));
+            this.toolTip3.SetToolTip(this.label138, resources.GetString("label138.ToolTip1"));
+            this.toolTip1.SetToolTip(this.label138, resources.GetString("label138.ToolTip2"));
             // 
             // uiGroupBox10
             // 
@@ -3531,16 +4368,25 @@
             this.uiGroupBox10.Name = "uiGroupBox10";
             this.uiGroupBox10.Style = Sunny.UI.UIStyle.Custom;
             this.uiGroupBox10.TextAlignment = System.Drawing.ContentAlignment.MiddleCenter;
+            this.toolTip3.SetToolTip(this.uiGroupBox10, resources.GetString("uiGroupBox10.ToolTip"));
+            this.toolTip2.SetToolTip(this.uiGroupBox10, resources.GetString("uiGroupBox10.ToolTip1"));
+            this.toolTip1.SetToolTip(this.uiGroupBox10, resources.GetString("uiGroupBox10.ToolTip2"));
             // 
             // label32
             // 
             resources.ApplyResources(this.label32, "label32");
             this.label32.Name = "label32";
+            this.toolTip2.SetToolTip(this.label32, resources.GetString("label32.ToolTip"));
+            this.toolTip3.SetToolTip(this.label32, resources.GetString("label32.ToolTip1"));
+            this.toolTip1.SetToolTip(this.label32, resources.GetString("label32.ToolTip2"));
             // 
             // label34
             // 
             resources.ApplyResources(this.label34, "label34");
             this.label34.Name = "label34";
+            this.toolTip2.SetToolTip(this.label34, resources.GetString("label34.ToolTip"));
+            this.toolTip3.SetToolTip(this.label34, resources.GetString("label34.ToolTip1"));
+            this.toolTip1.SetToolTip(this.label34, resources.GetString("label34.ToolTip2"));
             // 
             // CH1UPVDCComp
             // 
@@ -3553,11 +4399,17 @@
             this.CH1UPVDCComp.Name = "CH1UPVDCComp";
             this.CH1UPVDCComp.Style = Sunny.UI.UIStyle.Custom;
             this.CH1UPVDCComp.TextAlignment = System.Drawing.ContentAlignment.MiddleLeft;
+            this.toolTip2.SetToolTip(this.CH1UPVDCComp, resources.GetString("CH1UPVDCComp.ToolTip"));
+            this.toolTip3.SetToolTip(this.CH1UPVDCComp, resources.GetString("CH1UPVDCComp.ToolTip1"));
+            this.toolTip1.SetToolTip(this.CH1UPVDCComp, resources.GetString("CH1UPVDCComp.ToolTip2"));
             // 
             // label36
             // 
             resources.ApplyResources(this.label36, "label36");
             this.label36.Name = "label36";
+            this.toolTip2.SetToolTip(this.label36, resources.GetString("label36.ToolTip"));
+            this.toolTip3.SetToolTip(this.label36, resources.GetString("label36.ToolTip1"));
+            this.toolTip1.SetToolTip(this.label36, resources.GetString("label36.ToolTip2"));
             // 
             // CH1UPVDCMin
             // 
@@ -3570,11 +4422,17 @@
             this.CH1UPVDCMin.Name = "CH1UPVDCMin";
             this.CH1UPVDCMin.Style = Sunny.UI.UIStyle.Custom;
             this.CH1UPVDCMin.TextAlignment = System.Drawing.ContentAlignment.MiddleLeft;
+            this.toolTip2.SetToolTip(this.CH1UPVDCMin, resources.GetString("CH1UPVDCMin.ToolTip"));
+            this.toolTip3.SetToolTip(this.CH1UPVDCMin, resources.GetString("CH1UPVDCMin.ToolTip1"));
+            this.toolTip1.SetToolTip(this.CH1UPVDCMin, resources.GetString("CH1UPVDCMin.ToolTip2"));
             // 
             // label52
             // 
             resources.ApplyResources(this.label52, "label52");
             this.label52.Name = "label52";
+            this.toolTip2.SetToolTip(this.label52, resources.GetString("label52.ToolTip"));
+            this.toolTip3.SetToolTip(this.label52, resources.GetString("label52.ToolTip1"));
+            this.toolTip1.SetToolTip(this.label52, resources.GetString("label52.ToolTip2"));
             // 
             // CH1UPVDCMax
             // 
@@ -3587,16 +4445,25 @@
             this.CH1UPVDCMax.Name = "CH1UPVDCMax";
             this.CH1UPVDCMax.Style = Sunny.UI.UIStyle.Custom;
             this.CH1UPVDCMax.TextAlignment = System.Drawing.ContentAlignment.MiddleLeft;
+            this.toolTip2.SetToolTip(this.CH1UPVDCMax, resources.GetString("CH1UPVDCMax.ToolTip"));
+            this.toolTip3.SetToolTip(this.CH1UPVDCMax, resources.GetString("CH1UPVDCMax.ToolTip1"));
+            this.toolTip1.SetToolTip(this.CH1UPVDCMax, resources.GetString("CH1UPVDCMax.ToolTip2"));
             // 
             // label38
             // 
             resources.ApplyResources(this.label38, "label38");
             this.label38.Name = "label38";
+            this.toolTip2.SetToolTip(this.label38, resources.GetString("label38.ToolTip"));
+            this.toolTip3.SetToolTip(this.label38, resources.GetString("label38.ToolTip1"));
+            this.toolTip1.SetToolTip(this.label38, resources.GetString("label38.ToolTip2"));
             // 
             // label40
             // 
             resources.ApplyResources(this.label40, "label40");
             this.label40.Name = "label40";
+            this.toolTip2.SetToolTip(this.label40, resources.GetString("label40.ToolTip"));
+            this.toolTip3.SetToolTip(this.label40, resources.GetString("label40.ToolTip1"));
+            this.toolTip1.SetToolTip(this.label40, resources.GetString("label40.ToolTip2"));
             // 
             // CH1UPADCComp
             // 
@@ -3609,11 +4476,17 @@
             this.CH1UPADCComp.Name = "CH1UPADCComp";
             this.CH1UPADCComp.Style = Sunny.UI.UIStyle.Custom;
             this.CH1UPADCComp.TextAlignment = System.Drawing.ContentAlignment.MiddleLeft;
+            this.toolTip2.SetToolTip(this.CH1UPADCComp, resources.GetString("CH1UPADCComp.ToolTip"));
+            this.toolTip3.SetToolTip(this.CH1UPADCComp, resources.GetString("CH1UPADCComp.ToolTip1"));
+            this.toolTip1.SetToolTip(this.CH1UPADCComp, resources.GetString("CH1UPADCComp.ToolTip2"));
             // 
             // label37
             // 
             resources.ApplyResources(this.label37, "label37");
             this.label37.Name = "label37";
+            this.toolTip2.SetToolTip(this.label37, resources.GetString("label37.ToolTip"));
+            this.toolTip3.SetToolTip(this.label37, resources.GetString("label37.ToolTip1"));
+            this.toolTip1.SetToolTip(this.label37, resources.GetString("label37.ToolTip2"));
             // 
             // CH1UPADCMin
             // 
@@ -3626,11 +4499,17 @@
             this.CH1UPADCMin.Name = "CH1UPADCMin";
             this.CH1UPADCMin.Style = Sunny.UI.UIStyle.Custom;
             this.CH1UPADCMin.TextAlignment = System.Drawing.ContentAlignment.MiddleLeft;
+            this.toolTip2.SetToolTip(this.CH1UPADCMin, resources.GetString("CH1UPADCMin.ToolTip"));
+            this.toolTip3.SetToolTip(this.CH1UPADCMin, resources.GetString("CH1UPADCMin.ToolTip1"));
+            this.toolTip1.SetToolTip(this.CH1UPADCMin, resources.GetString("CH1UPADCMin.ToolTip2"));
             // 
             // label39
             // 
             resources.ApplyResources(this.label39, "label39");
             this.label39.Name = "label39";
+            this.toolTip2.SetToolTip(this.label39, resources.GetString("label39.ToolTip"));
+            this.toolTip3.SetToolTip(this.label39, resources.GetString("label39.ToolTip1"));
+            this.toolTip1.SetToolTip(this.label39, resources.GetString("label39.ToolTip2"));
             // 
             // CH1UPADCMax
             // 
@@ -3643,26 +4522,41 @@
             this.CH1UPADCMax.Name = "CH1UPADCMax";
             this.CH1UPADCMax.Style = Sunny.UI.UIStyle.Custom;
             this.CH1UPADCMax.TextAlignment = System.Drawing.ContentAlignment.MiddleLeft;
+            this.toolTip2.SetToolTip(this.CH1UPADCMax, resources.GetString("CH1UPADCMax.ToolTip"));
+            this.toolTip3.SetToolTip(this.CH1UPADCMax, resources.GetString("CH1UPADCMax.ToolTip1"));
+            this.toolTip1.SetToolTip(this.CH1UPADCMax, resources.GetString("CH1UPADCMax.ToolTip2"));
             // 
             // label44
             // 
             resources.ApplyResources(this.label44, "label44");
             this.label44.Name = "label44";
+            this.toolTip2.SetToolTip(this.label44, resources.GetString("label44.ToolTip"));
+            this.toolTip3.SetToolTip(this.label44, resources.GetString("label44.ToolTip1"));
+            this.toolTip1.SetToolTip(this.label44, resources.GetString("label44.ToolTip2"));
             // 
             // label41
             // 
             resources.ApplyResources(this.label41, "label41");
             this.label41.Name = "label41";
+            this.toolTip2.SetToolTip(this.label41, resources.GetString("label41.ToolTip"));
+            this.toolTip3.SetToolTip(this.label41, resources.GetString("label41.ToolTip1"));
+            this.toolTip1.SetToolTip(this.label41, resources.GetString("label41.ToolTip2"));
             // 
             // label53
             // 
             resources.ApplyResources(this.label53, "label53");
             this.label53.Name = "label53";
+            this.toolTip2.SetToolTip(this.label53, resources.GetString("label53.ToolTip"));
+            this.toolTip3.SetToolTip(this.label53, resources.GetString("label53.ToolTip1"));
+            this.toolTip1.SetToolTip(this.label53, resources.GetString("label53.ToolTip2"));
             // 
             // label54
             // 
             resources.ApplyResources(this.label54, "label54");
             this.label54.Name = "label54";
+            this.toolTip2.SetToolTip(this.label54, resources.GetString("label54.ToolTip"));
+            this.toolTip3.SetToolTip(this.label54, resources.GetString("label54.ToolTip1"));
+            this.toolTip1.SetToolTip(this.label54, resources.GetString("label54.ToolTip2"));
             // 
             // tabPage6
             // 
@@ -3677,6 +4571,9 @@
             this.tabPage6.Controls.Add(this.uiGroupBox26);
             this.tabPage6.Controls.Add(this.uiGroupBox22);
             this.tabPage6.Name = "tabPage6";
+            this.toolTip1.SetToolTip(this.tabPage6, resources.GetString("tabPage6.ToolTip"));
+            this.toolTip2.SetToolTip(this.tabPage6, resources.GetString("tabPage6.ToolTip1"));
+            this.toolTip3.SetToolTip(this.tabPage6, resources.GetString("tabPage6.ToolTip2"));
             this.tabPage6.Click += new System.EventHandler(this.tabPage6_Click);
             // 
             // uiGroupBox43
@@ -3692,6 +4589,9 @@
             this.uiGroupBox43.Name = "uiGroupBox43";
             this.uiGroupBox43.Style = Sunny.UI.UIStyle.Custom;
             this.uiGroupBox43.TextAlignment = System.Drawing.ContentAlignment.MiddleCenter;
+            this.toolTip3.SetToolTip(this.uiGroupBox43, resources.GetString("uiGroupBox43.ToolTip"));
+            this.toolTip2.SetToolTip(this.uiGroupBox43, resources.GetString("uiGroupBox43.ToolTip1"));
+            this.toolTip1.SetToolTip(this.uiGroupBox43, resources.GetString("uiGroupBox43.ToolTip2"));
             // 
             // TotalPreMax
             // 
@@ -3704,11 +4604,17 @@
             this.TotalPreMax.Name = "TotalPreMax";
             this.TotalPreMax.Style = Sunny.UI.UIStyle.Custom;
             this.TotalPreMax.TextAlignment = System.Drawing.ContentAlignment.MiddleLeft;
+            this.toolTip2.SetToolTip(this.TotalPreMax, resources.GetString("TotalPreMax.ToolTip"));
+            this.toolTip3.SetToolTip(this.TotalPreMax, resources.GetString("TotalPreMax.ToolTip1"));
+            this.toolTip1.SetToolTip(this.TotalPreMax, resources.GetString("TotalPreMax.ToolTip2"));
             // 
             // label51
             // 
             resources.ApplyResources(this.label51, "label51");
             this.label51.Name = "label51";
+            this.toolTip2.SetToolTip(this.label51, resources.GetString("label51.ToolTip"));
+            this.toolTip3.SetToolTip(this.label51, resources.GetString("label51.ToolTip1"));
+            this.toolTip1.SetToolTip(this.label51, resources.GetString("label51.ToolTip2"));
             // 
             // TotalFlowMin
             // 
@@ -3721,6 +4627,9 @@
             this.TotalFlowMin.Name = "TotalFlowMin";
             this.TotalFlowMin.Style = Sunny.UI.UIStyle.Custom;
             this.TotalFlowMin.TextAlignment = System.Drawing.ContentAlignment.MiddleLeft;
+            this.toolTip2.SetToolTip(this.TotalFlowMin, resources.GetString("TotalFlowMin.ToolTip"));
+            this.toolTip3.SetToolTip(this.TotalFlowMin, resources.GetString("TotalFlowMin.ToolTip1"));
+            this.toolTip1.SetToolTip(this.TotalFlowMin, resources.GetString("TotalFlowMin.ToolTip2"));
             // 
             // TotalFlowMax
             // 
@@ -3733,16 +4642,25 @@
             this.TotalFlowMax.Name = "TotalFlowMax";
             this.TotalFlowMax.Style = Sunny.UI.UIStyle.Custom;
             this.TotalFlowMax.TextAlignment = System.Drawing.ContentAlignment.MiddleLeft;
+            this.toolTip2.SetToolTip(this.TotalFlowMax, resources.GetString("TotalFlowMax.ToolTip"));
+            this.toolTip3.SetToolTip(this.TotalFlowMax, resources.GetString("TotalFlowMax.ToolTip1"));
+            this.toolTip1.SetToolTip(this.TotalFlowMax, resources.GetString("TotalFlowMax.ToolTip2"));
             // 
             // label78
             // 
             resources.ApplyResources(this.label78, "label78");
             this.label78.Name = "label78";
+            this.toolTip2.SetToolTip(this.label78, resources.GetString("label78.ToolTip"));
+            this.toolTip3.SetToolTip(this.label78, resources.GetString("label78.ToolTip1"));
+            this.toolTip1.SetToolTip(this.label78, resources.GetString("label78.ToolTip2"));
             // 
             // label79
             // 
             resources.ApplyResources(this.label79, "label79");
             this.label79.Name = "label79";
+            this.toolTip2.SetToolTip(this.label79, resources.GetString("label79.ToolTip"));
+            this.toolTip3.SetToolTip(this.label79, resources.GetString("label79.ToolTip1"));
+            this.toolTip1.SetToolTip(this.label79, resources.GetString("label79.ToolTip2"));
             // 
             // uiGroupBox41
             // 
@@ -3763,6 +4681,9 @@
             this.uiGroupBox41.Name = "uiGroupBox41";
             this.uiGroupBox41.Style = Sunny.UI.UIStyle.Custom;
             this.uiGroupBox41.TextAlignment = System.Drawing.ContentAlignment.MiddleCenter;
+            this.toolTip3.SetToolTip(this.uiGroupBox41, resources.GetString("uiGroupBox41.ToolTip"));
+            this.toolTip2.SetToolTip(this.uiGroupBox41, resources.GetString("uiGroupBox41.ToolTip1"));
+            this.toolTip1.SetToolTip(this.uiGroupBox41, resources.GetString("uiGroupBox41.ToolTip2"));
             // 
             // CH1FwdPreMin
             // 
@@ -3775,6 +4696,9 @@
             this.CH1FwdPreMin.Name = "CH1FwdPreMin";
             this.CH1FwdPreMin.Style = Sunny.UI.UIStyle.Custom;
             this.CH1FwdPreMin.TextAlignment = System.Drawing.ContentAlignment.MiddleLeft;
+            this.toolTip2.SetToolTip(this.CH1FwdPreMin, resources.GetString("CH1FwdPreMin.ToolTip"));
+            this.toolTip3.SetToolTip(this.CH1FwdPreMin, resources.GetString("CH1FwdPreMin.ToolTip1"));
+            this.toolTip1.SetToolTip(this.CH1FwdPreMin, resources.GetString("CH1FwdPreMin.ToolTip2"));
             // 
             // CH1FWDFLOWTime
             // 
@@ -3787,11 +4711,17 @@
             this.CH1FWDFLOWTime.Name = "CH1FWDFLOWTime";
             this.CH1FWDFLOWTime.Style = Sunny.UI.UIStyle.Custom;
             this.CH1FWDFLOWTime.TextAlignment = System.Drawing.ContentAlignment.MiddleLeft;
+            this.toolTip2.SetToolTip(this.CH1FWDFLOWTime, resources.GetString("CH1FWDFLOWTime.ToolTip"));
+            this.toolTip3.SetToolTip(this.CH1FWDFLOWTime, resources.GetString("CH1FWDFLOWTime.ToolTip1"));
+            this.toolTip1.SetToolTip(this.CH1FWDFLOWTime, resources.GetString("CH1FWDFLOWTime.ToolTip2"));
             // 
             // label69
             // 
             resources.ApplyResources(this.label69, "label69");
             this.label69.Name = "label69";
+            this.toolTip2.SetToolTip(this.label69, resources.GetString("label69.ToolTip"));
+            this.toolTip3.SetToolTip(this.label69, resources.GetString("label69.ToolTip1"));
+            this.toolTip1.SetToolTip(this.label69, resources.GetString("label69.ToolTip2"));
             // 
             // CH1FwdPreMax
             // 
@@ -3804,26 +4734,41 @@
             this.CH1FwdPreMax.Name = "CH1FwdPreMax";
             this.CH1FwdPreMax.Style = Sunny.UI.UIStyle.Custom;
             this.CH1FwdPreMax.TextAlignment = System.Drawing.ContentAlignment.MiddleLeft;
+            this.toolTip2.SetToolTip(this.CH1FwdPreMax, resources.GetString("CH1FwdPreMax.ToolTip"));
+            this.toolTip3.SetToolTip(this.CH1FwdPreMax, resources.GetString("CH1FwdPreMax.ToolTip1"));
+            this.toolTip1.SetToolTip(this.CH1FwdPreMax, resources.GetString("CH1FwdPreMax.ToolTip2"));
             // 
             // label70
             // 
             resources.ApplyResources(this.label70, "label70");
             this.label70.Name = "label70";
+            this.toolTip2.SetToolTip(this.label70, resources.GetString("label70.ToolTip"));
+            this.toolTip3.SetToolTip(this.label70, resources.GetString("label70.ToolTip1"));
+            this.toolTip1.SetToolTip(this.label70, resources.GetString("label70.ToolTip2"));
             // 
             // label71
             // 
             resources.ApplyResources(this.label71, "label71");
             this.label71.Name = "label71";
+            this.toolTip2.SetToolTip(this.label71, resources.GetString("label71.ToolTip"));
+            this.toolTip3.SetToolTip(this.label71, resources.GetString("label71.ToolTip1"));
+            this.toolTip1.SetToolTip(this.label71, resources.GetString("label71.ToolTip2"));
             // 
             // label72
             // 
             resources.ApplyResources(this.label72, "label72");
             this.label72.Name = "label72";
+            this.toolTip2.SetToolTip(this.label72, resources.GetString("label72.ToolTip"));
+            this.toolTip3.SetToolTip(this.label72, resources.GetString("label72.ToolTip1"));
+            this.toolTip1.SetToolTip(this.label72, resources.GetString("label72.ToolTip2"));
             // 
             // label73
             // 
             resources.ApplyResources(this.label73, "label73");
             this.label73.Name = "label73";
+            this.toolTip2.SetToolTip(this.label73, resources.GetString("label73.ToolTip"));
+            this.toolTip3.SetToolTip(this.label73, resources.GetString("label73.ToolTip1"));
+            this.toolTip1.SetToolTip(this.label73, resources.GetString("label73.ToolTip2"));
             // 
             // CH1FwdPreTime
             // 
@@ -3836,11 +4781,17 @@
             this.CH1FwdPreTime.Name = "CH1FwdPreTime";
             this.CH1FwdPreTime.Style = Sunny.UI.UIStyle.Custom;
             this.CH1FwdPreTime.TextAlignment = System.Drawing.ContentAlignment.MiddleLeft;
+            this.toolTip2.SetToolTip(this.CH1FwdPreTime, resources.GetString("CH1FwdPreTime.ToolTip"));
+            this.toolTip3.SetToolTip(this.CH1FwdPreTime, resources.GetString("CH1FwdPreTime.ToolTip1"));
+            this.toolTip1.SetToolTip(this.CH1FwdPreTime, resources.GetString("CH1FwdPreTime.ToolTip2"));
             // 
             // label74
             // 
             resources.ApplyResources(this.label74, "label74");
             this.label74.Name = "label74";
+            this.toolTip2.SetToolTip(this.label74, resources.GetString("label74.ToolTip"));
+            this.toolTip3.SetToolTip(this.label74, resources.GetString("label74.ToolTip1"));
+            this.toolTip1.SetToolTip(this.label74, resources.GetString("label74.ToolTip2"));
             // 
             // CH1FWDFlowMax
             // 
@@ -3853,6 +4804,9 @@
             this.CH1FWDFlowMax.Name = "CH1FWDFlowMax";
             this.CH1FWDFlowMax.Style = Sunny.UI.UIStyle.Custom;
             this.CH1FWDFlowMax.TextAlignment = System.Drawing.ContentAlignment.MiddleLeft;
+            this.toolTip2.SetToolTip(this.CH1FWDFlowMax, resources.GetString("CH1FWDFlowMax.ToolTip"));
+            this.toolTip3.SetToolTip(this.CH1FWDFlowMax, resources.GetString("CH1FWDFlowMax.ToolTip1"));
+            this.toolTip1.SetToolTip(this.CH1FWDFlowMax, resources.GetString("CH1FWDFlowMax.ToolTip2"));
             // 
             // CH1FWDFlowMin
             // 
@@ -3865,6 +4819,9 @@
             this.CH1FWDFlowMin.Name = "CH1FWDFlowMin";
             this.CH1FWDFlowMin.Style = Sunny.UI.UIStyle.Custom;
             this.CH1FWDFlowMin.TextAlignment = System.Drawing.ContentAlignment.MiddleLeft;
+            this.toolTip2.SetToolTip(this.CH1FWDFlowMin, resources.GetString("CH1FWDFlowMin.ToolTip"));
+            this.toolTip3.SetToolTip(this.CH1FWDFlowMin, resources.GetString("CH1FWDFlowMin.ToolTip1"));
+            this.toolTip1.SetToolTip(this.CH1FWDFlowMin, resources.GetString("CH1FWDFlowMin.ToolTip2"));
             // 
             // uiGroupBox33
             // 
@@ -3885,6 +4842,9 @@
             this.uiGroupBox33.Name = "uiGroupBox33";
             this.uiGroupBox33.Style = Sunny.UI.UIStyle.Custom;
             this.uiGroupBox33.TextAlignment = System.Drawing.ContentAlignment.MiddleCenter;
+            this.toolTip3.SetToolTip(this.uiGroupBox33, resources.GetString("uiGroupBox33.ToolTip"));
+            this.toolTip2.SetToolTip(this.uiGroupBox33, resources.GetString("uiGroupBox33.ToolTip1"));
+            this.toolTip1.SetToolTip(this.uiGroupBox33, resources.GetString("uiGroupBox33.ToolTip2"));
             this.uiGroupBox33.Click += new System.EventHandler(this.uiGroupBox33_Click);
             // 
             // CH2FWDflowtime
@@ -3898,11 +4858,17 @@
             this.CH2FWDflowtime.Name = "CH2FWDflowtime";
             this.CH2FWDflowtime.Style = Sunny.UI.UIStyle.Custom;
             this.CH2FWDflowtime.TextAlignment = System.Drawing.ContentAlignment.MiddleLeft;
+            this.toolTip2.SetToolTip(this.CH2FWDflowtime, resources.GetString("CH2FWDflowtime.ToolTip"));
+            this.toolTip3.SetToolTip(this.CH2FWDflowtime, resources.GetString("CH2FWDflowtime.ToolTip1"));
+            this.toolTip1.SetToolTip(this.CH2FWDflowtime, resources.GetString("CH2FWDflowtime.ToolTip2"));
             // 
             // label11
             // 
             resources.ApplyResources(this.label11, "label11");
             this.label11.Name = "label11";
+            this.toolTip2.SetToolTip(this.label11, resources.GetString("label11.ToolTip"));
+            this.toolTip3.SetToolTip(this.label11, resources.GetString("label11.ToolTip1"));
+            this.toolTip1.SetToolTip(this.label11, resources.GetString("label11.ToolTip2"));
             // 
             // CH2FWDPreMin
             // 
@@ -3915,6 +4881,9 @@
             this.CH2FWDPreMin.Name = "CH2FWDPreMin";
             this.CH2FWDPreMin.Style = Sunny.UI.UIStyle.Custom;
             this.CH2FWDPreMin.TextAlignment = System.Drawing.ContentAlignment.MiddleLeft;
+            this.toolTip2.SetToolTip(this.CH2FWDPreMin, resources.GetString("CH2FWDPreMin.ToolTip"));
+            this.toolTip3.SetToolTip(this.CH2FWDPreMin, resources.GetString("CH2FWDPreMin.ToolTip1"));
+            this.toolTip1.SetToolTip(this.CH2FWDPreMin, resources.GetString("CH2FWDPreMin.ToolTip2"));
             // 
             // CH2FWDPreMax
             // 
@@ -3927,16 +4896,25 @@
             this.CH2FWDPreMax.Name = "CH2FWDPreMax";
             this.CH2FWDPreMax.Style = Sunny.UI.UIStyle.Custom;
             this.CH2FWDPreMax.TextAlignment = System.Drawing.ContentAlignment.MiddleLeft;
+            this.toolTip2.SetToolTip(this.CH2FWDPreMax, resources.GetString("CH2FWDPreMax.ToolTip"));
+            this.toolTip3.SetToolTip(this.CH2FWDPreMax, resources.GetString("CH2FWDPreMax.ToolTip1"));
+            this.toolTip1.SetToolTip(this.CH2FWDPreMax, resources.GetString("CH2FWDPreMax.ToolTip2"));
             // 
             // label5
             // 
             resources.ApplyResources(this.label5, "label5");
             this.label5.Name = "label5";
+            this.toolTip2.SetToolTip(this.label5, resources.GetString("label5.ToolTip"));
+            this.toolTip3.SetToolTip(this.label5, resources.GetString("label5.ToolTip1"));
+            this.toolTip1.SetToolTip(this.label5, resources.GetString("label5.ToolTip2"));
             // 
             // label6
             // 
             resources.ApplyResources(this.label6, "label6");
             this.label6.Name = "label6";
+            this.toolTip2.SetToolTip(this.label6, resources.GetString("label6.ToolTip"));
+            this.toolTip3.SetToolTip(this.label6, resources.GetString("label6.ToolTip1"));
+            this.toolTip1.SetToolTip(this.label6, resources.GetString("label6.ToolTip2"));
             // 
             // CH2FWDFlowMin
             // 
@@ -3949,6 +4927,9 @@
             this.CH2FWDFlowMin.Name = "CH2FWDFlowMin";
             this.CH2FWDFlowMin.Style = Sunny.UI.UIStyle.Custom;
             this.CH2FWDFlowMin.TextAlignment = System.Drawing.ContentAlignment.MiddleLeft;
+            this.toolTip2.SetToolTip(this.CH2FWDFlowMin, resources.GetString("CH2FWDFlowMin.ToolTip"));
+            this.toolTip3.SetToolTip(this.CH2FWDFlowMin, resources.GetString("CH2FWDFlowMin.ToolTip1"));
+            this.toolTip1.SetToolTip(this.CH2FWDFlowMin, resources.GetString("CH2FWDFlowMin.ToolTip2"));
             // 
             // CH2FWDFlowMax
             // 
@@ -3961,6 +4942,9 @@
             this.CH2FWDFlowMax.Name = "CH2FWDFlowMax";
             this.CH2FWDFlowMax.Style = Sunny.UI.UIStyle.Custom;
             this.CH2FWDFlowMax.TextAlignment = System.Drawing.ContentAlignment.MiddleLeft;
+            this.toolTip2.SetToolTip(this.CH2FWDFlowMax, resources.GetString("CH2FWDFlowMax.ToolTip"));
+            this.toolTip3.SetToolTip(this.CH2FWDFlowMax, resources.GetString("CH2FWDFlowMax.ToolTip1"));
+            this.toolTip1.SetToolTip(this.CH2FWDFlowMax, resources.GetString("CH2FWDFlowMax.ToolTip2"));
             this.CH2FWDFlowMax.TextChanged += new System.EventHandler(this.CH2FWDFlowMax_TextChanged);
             // 
             // CH2FwdpreTime
@@ -3974,21 +4958,33 @@
             this.CH2FwdpreTime.Name = "CH2FwdpreTime";
             this.CH2FwdpreTime.Style = Sunny.UI.UIStyle.Custom;
             this.CH2FwdpreTime.TextAlignment = System.Drawing.ContentAlignment.MiddleLeft;
+            this.toolTip2.SetToolTip(this.CH2FwdpreTime, resources.GetString("CH2FwdpreTime.ToolTip"));
+            this.toolTip3.SetToolTip(this.CH2FwdpreTime, resources.GetString("CH2FwdpreTime.ToolTip1"));
+            this.toolTip1.SetToolTip(this.CH2FwdpreTime, resources.GetString("CH2FwdpreTime.ToolTip2"));
             // 
             // label7
             // 
             resources.ApplyResources(this.label7, "label7");
             this.label7.Name = "label7";
+            this.toolTip2.SetToolTip(this.label7, resources.GetString("label7.ToolTip"));
+            this.toolTip3.SetToolTip(this.label7, resources.GetString("label7.ToolTip1"));
+            this.toolTip1.SetToolTip(this.label7, resources.GetString("label7.ToolTip2"));
             // 
             // label10
             // 
             resources.ApplyResources(this.label10, "label10");
             this.label10.Name = "label10";
+            this.toolTip2.SetToolTip(this.label10, resources.GetString("label10.ToolTip"));
+            this.toolTip3.SetToolTip(this.label10, resources.GetString("label10.ToolTip1"));
+            this.toolTip1.SetToolTip(this.label10, resources.GetString("label10.ToolTip2"));
             // 
             // label8
             // 
             resources.ApplyResources(this.label8, "label8");
             this.label8.Name = "label8";
+            this.toolTip2.SetToolTip(this.label8, resources.GetString("label8.ToolTip"));
+            this.toolTip3.SetToolTip(this.label8, resources.GetString("label8.ToolTip1"));
+            this.toolTip1.SetToolTip(this.label8, resources.GetString("label8.ToolTip2"));
             // 
             // RFWDParamsCopy
             // 
@@ -3997,7 +4993,10 @@
             this.RFWDParamsCopy.Name = "RFWDParamsCopy";
             this.RFWDParamsCopy.Style = Sunny.UI.UIStyle.Custom;
             this.RFWDParamsCopy.Symbol = 361697;
-            this.RFWDParamsCopy.TipsFont = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.RFWDParamsCopy.TipsFont = new System.Drawing.Font("Microsoft YaHei", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.toolTip3.SetToolTip(this.RFWDParamsCopy, resources.GetString("RFWDParamsCopy.ToolTip"));
+            this.toolTip2.SetToolTip(this.RFWDParamsCopy, resources.GetString("RFWDParamsCopy.ToolTip1"));
+            this.toolTip1.SetToolTip(this.RFWDParamsCopy, resources.GetString("RFWDParamsCopy.ToolTip2"));
             this.RFWDParamsCopy.Click += new System.EventHandler(this.RFWDParamsCopy_Click);
             // 
             // LFWDParamsCopy
@@ -4007,7 +5006,10 @@
             this.LFWDParamsCopy.Name = "LFWDParamsCopy";
             this.LFWDParamsCopy.Style = Sunny.UI.UIStyle.Custom;
             this.LFWDParamsCopy.Symbol = 361697;
-            this.LFWDParamsCopy.TipsFont = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.LFWDParamsCopy.TipsFont = new System.Drawing.Font("Microsoft YaHei", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.toolTip3.SetToolTip(this.LFWDParamsCopy, resources.GetString("LFWDParamsCopy.ToolTip"));
+            this.toolTip2.SetToolTip(this.LFWDParamsCopy, resources.GetString("LFWDParamsCopy.ToolTip1"));
+            this.toolTip1.SetToolTip(this.LFWDParamsCopy, resources.GetString("LFWDParamsCopy.ToolTip2"));
             this.LFWDParamsCopy.Click += new System.EventHandler(this.LFWDParamsCopy_Click);
             // 
             // tabPage2
@@ -4016,6 +5018,9 @@
             this.tabPage2.BackColor = System.Drawing.Color.LightBlue;
             this.tabPage2.Controls.Add(this.uiTabControlMenu2);
             this.tabPage2.Name = "tabPage2";
+            this.toolTip1.SetToolTip(this.tabPage2, resources.GetString("tabPage2.ToolTip"));
+            this.toolTip2.SetToolTip(this.tabPage2, resources.GetString("tabPage2.ToolTip1"));
+            this.toolTip3.SetToolTip(this.tabPage2, resources.GetString("tabPage2.ToolTip2"));
             // 
             // uiTabControlMenu2
             // 
@@ -4038,6 +5043,10 @@
             this.uiTabControlMenu2.TabSelectedHighColor = System.Drawing.Color.Transparent;
             this.uiTabControlMenu2.TabUnSelectedForeColor = System.Drawing.Color.Black;
             this.uiTabControlMenu2.TextAlignment = System.Windows.Forms.HorizontalAlignment.Left;
+            this.toolTip3.SetToolTip(this.uiTabControlMenu2, resources.GetString("uiTabControlMenu2.ToolTip"));
+            this.toolTip2.SetToolTip(this.uiTabControlMenu2, resources.GetString("uiTabControlMenu2.ToolTip1"));
+            this.toolTip1.SetToolTip(this.uiTabControlMenu2, resources.GetString("uiTabControlMenu2.ToolTip2"));
+            this.uiTabControlMenu2.SelectedIndexChanged += new System.EventHandler(this.uiTabControlMenu2_SelectedIndexChanged);
             this.uiTabControlMenu2.Click += new System.EventHandler(this.uiTabControlMenu2_Click);
             // 
             // tabPage7
@@ -4050,6 +5059,9 @@
             this.tabPage7.Controls.Add(this.uiGroupBox39);
             this.tabPage7.Controls.Add(this.uiGroupBox35);
             this.tabPage7.Name = "tabPage7";
+            this.toolTip1.SetToolTip(this.tabPage7, resources.GetString("tabPage7.ToolTip"));
+            this.toolTip2.SetToolTip(this.tabPage7, resources.GetString("tabPage7.ToolTip1"));
+            this.toolTip3.SetToolTip(this.tabPage7, resources.GetString("tabPage7.ToolTip2"));
             // 
             // PRWDParamsCopy
             // 
@@ -4058,7 +5070,10 @@
             this.PRWDParamsCopy.Name = "PRWDParamsCopy";
             this.PRWDParamsCopy.Style = Sunny.UI.UIStyle.Custom;
             this.PRWDParamsCopy.Symbol = 361697;
-            this.PRWDParamsCopy.TipsFont = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.PRWDParamsCopy.TipsFont = new System.Drawing.Font("Microsoft YaHei", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.toolTip3.SetToolTip(this.PRWDParamsCopy, resources.GetString("PRWDParamsCopy.ToolTip"));
+            this.toolTip2.SetToolTip(this.PRWDParamsCopy, resources.GetString("PRWDParamsCopy.ToolTip1"));
+            this.toolTip1.SetToolTip(this.PRWDParamsCopy, resources.GetString("PRWDParamsCopy.ToolTip2"));
             this.PRWDParamsCopy.Click += new System.EventHandler(this.PRWDParamsCopy_Click);
             // 
             // LRWDParamsCopy
@@ -4068,7 +5083,10 @@
             this.LRWDParamsCopy.Name = "LRWDParamsCopy";
             this.LRWDParamsCopy.Style = Sunny.UI.UIStyle.Custom;
             this.LRWDParamsCopy.Symbol = 361697;
-            this.LRWDParamsCopy.TipsFont = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.LRWDParamsCopy.TipsFont = new System.Drawing.Font("Microsoft YaHei", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.toolTip3.SetToolTip(this.LRWDParamsCopy, resources.GetString("LRWDParamsCopy.ToolTip"));
+            this.toolTip2.SetToolTip(this.LRWDParamsCopy, resources.GetString("LRWDParamsCopy.ToolTip1"));
+            this.toolTip1.SetToolTip(this.LRWDParamsCopy, resources.GetString("LRWDParamsCopy.ToolTip2"));
             this.LRWDParamsCopy.Click += new System.EventHandler(this.LRWDParamsCopy_Click);
             // 
             // uiGroupBox5
@@ -4089,6 +5107,9 @@
             this.uiGroupBox5.Name = "uiGroupBox5";
             this.uiGroupBox5.Style = Sunny.UI.UIStyle.Custom;
             this.uiGroupBox5.TextAlignment = System.Drawing.ContentAlignment.MiddleCenter;
+            this.toolTip3.SetToolTip(this.uiGroupBox5, resources.GetString("uiGroupBox5.ToolTip"));
+            this.toolTip2.SetToolTip(this.uiGroupBox5, resources.GetString("uiGroupBox5.ToolTip1"));
+            this.toolTip1.SetToolTip(this.uiGroupBox5, resources.GetString("uiGroupBox5.ToolTip2"));
             // 
             // CH1ElecSave
             // 
@@ -4096,18 +5117,27 @@
             this.CH1ElecSave.Cursor = System.Windows.Forms.Cursors.Hand;
             this.CH1ElecSave.Name = "CH1ElecSave";
             this.CH1ElecSave.Style = Sunny.UI.UIStyle.Custom;
-            this.CH1ElecSave.TipsFont = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.CH1ElecSave.TipsFont = new System.Drawing.Font("Microsoft YaHei", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.toolTip3.SetToolTip(this.CH1ElecSave, resources.GetString("CH1ElecSave.ToolTip"));
+            this.toolTip2.SetToolTip(this.CH1ElecSave, resources.GetString("CH1ElecSave.ToolTip1"));
+            this.toolTip1.SetToolTip(this.CH1ElecSave, resources.GetString("CH1ElecSave.ToolTip2"));
             this.CH1ElecSave.Click += new System.EventHandler(this.CH1ElecSave_Click);
             // 
             // label17
             // 
             resources.ApplyResources(this.label17, "label17");
             this.label17.Name = "label17";
+            this.toolTip2.SetToolTip(this.label17, resources.GetString("label17.ToolTip"));
+            this.toolTip3.SetToolTip(this.label17, resources.GetString("label17.ToolTip1"));
+            this.toolTip1.SetToolTip(this.label17, resources.GetString("label17.ToolTip2"));
             // 
             // label20
             // 
             resources.ApplyResources(this.label20, "label20");
             this.label20.Name = "label20";
+            this.toolTip2.SetToolTip(this.label20, resources.GetString("label20.ToolTip"));
+            this.toolTip3.SetToolTip(this.label20, resources.GetString("label20.ToolTip1"));
+            this.toolTip1.SetToolTip(this.label20, resources.GetString("label20.ToolTip2"));
             // 
             // CH1ElecComp
             // 
@@ -4120,11 +5150,17 @@
             this.CH1ElecComp.Name = "CH1ElecComp";
             this.CH1ElecComp.Style = Sunny.UI.UIStyle.Custom;
             this.CH1ElecComp.TextAlignment = System.Drawing.ContentAlignment.MiddleLeft;
+            this.toolTip2.SetToolTip(this.CH1ElecComp, resources.GetString("CH1ElecComp.ToolTip"));
+            this.toolTip3.SetToolTip(this.CH1ElecComp, resources.GetString("CH1ElecComp.ToolTip1"));
+            this.toolTip1.SetToolTip(this.CH1ElecComp, resources.GetString("CH1ElecComp.ToolTip2"));
             // 
             // label18
             // 
             resources.ApplyResources(this.label18, "label18");
             this.label18.Name = "label18";
+            this.toolTip2.SetToolTip(this.label18, resources.GetString("label18.ToolTip"));
+            this.toolTip3.SetToolTip(this.label18, resources.GetString("label18.ToolTip1"));
+            this.toolTip1.SetToolTip(this.label18, resources.GetString("label18.ToolTip2"));
             // 
             // CH1ElecMin
             // 
@@ -4137,6 +5173,9 @@
             this.CH1ElecMin.Name = "CH1ElecMin";
             this.CH1ElecMin.Style = Sunny.UI.UIStyle.Custom;
             this.CH1ElecMin.TextAlignment = System.Drawing.ContentAlignment.MiddleLeft;
+            this.toolTip2.SetToolTip(this.CH1ElecMin, resources.GetString("CH1ElecMin.ToolTip"));
+            this.toolTip3.SetToolTip(this.CH1ElecMin, resources.GetString("CH1ElecMin.ToolTip1"));
+            this.toolTip1.SetToolTip(this.CH1ElecMin, resources.GetString("CH1ElecMin.ToolTip2"));
             // 
             // CH1ElecMax
             // 
@@ -4149,36 +5188,57 @@
             this.CH1ElecMax.Name = "CH1ElecMax";
             this.CH1ElecMax.Style = Sunny.UI.UIStyle.Custom;
             this.CH1ElecMax.TextAlignment = System.Drawing.ContentAlignment.MiddleLeft;
+            this.toolTip2.SetToolTip(this.CH1ElecMax, resources.GetString("CH1ElecMax.ToolTip"));
+            this.toolTip3.SetToolTip(this.CH1ElecMax, resources.GetString("CH1ElecMax.ToolTip1"));
+            this.toolTip1.SetToolTip(this.CH1ElecMax, resources.GetString("CH1ElecMax.ToolTip2"));
             // 
             // label19
             // 
             resources.ApplyResources(this.label19, "label19");
             this.label19.Name = "label19";
+            this.toolTip2.SetToolTip(this.label19, resources.GetString("label19.ToolTip"));
+            this.toolTip3.SetToolTip(this.label19, resources.GetString("label19.ToolTip1"));
+            this.toolTip1.SetToolTip(this.label19, resources.GetString("label19.ToolTip2"));
             // 
             // label25
             // 
             resources.ApplyResources(this.label25, "label25");
             this.label25.Name = "label25";
+            this.toolTip2.SetToolTip(this.label25, resources.GetString("label25.ToolTip"));
+            this.toolTip3.SetToolTip(this.label25, resources.GetString("label25.ToolTip1"));
+            this.toolTip1.SetToolTip(this.label25, resources.GetString("label25.ToolTip2"));
             // 
             // label26
             // 
             resources.ApplyResources(this.label26, "label26");
             this.label26.Name = "label26";
+            this.toolTip2.SetToolTip(this.label26, resources.GetString("label26.ToolTip"));
+            this.toolTip3.SetToolTip(this.label26, resources.GetString("label26.ToolTip1"));
+            this.toolTip1.SetToolTip(this.label26, resources.GetString("label26.ToolTip2"));
             // 
             // label24
             // 
             resources.ApplyResources(this.label24, "label24");
             this.label24.Name = "label24";
+            this.toolTip2.SetToolTip(this.label24, resources.GetString("label24.ToolTip"));
+            this.toolTip3.SetToolTip(this.label24, resources.GetString("label24.ToolTip1"));
+            this.toolTip1.SetToolTip(this.label24, resources.GetString("label24.ToolTip2"));
             // 
             // label27
             // 
             resources.ApplyResources(this.label27, "label27");
             this.label27.Name = "label27";
+            this.toolTip2.SetToolTip(this.label27, resources.GetString("label27.ToolTip"));
+            this.toolTip3.SetToolTip(this.label27, resources.GetString("label27.ToolTip1"));
+            this.toolTip1.SetToolTip(this.label27, resources.GetString("label27.ToolTip2"));
             // 
             // label28
             // 
             resources.ApplyResources(this.label28, "label28");
             this.label28.Name = "label28";
+            this.toolTip2.SetToolTip(this.label28, resources.GetString("label28.ToolTip"));
+            this.toolTip3.SetToolTip(this.label28, resources.GetString("label28.ToolTip1"));
+            this.toolTip1.SetToolTip(this.label28, resources.GetString("label28.ToolTip2"));
             // 
             // uiTabControlMenu1
             // 
@@ -4200,6 +5260,10 @@
             this.uiTabControlMenu1.TabSelectedForeColor = System.Drawing.Color.Black;
             this.uiTabControlMenu1.TabUnSelectedForeColor = System.Drawing.Color.Black;
             this.uiTabControlMenu1.TextAlignment = System.Windows.Forms.HorizontalAlignment.Left;
+            this.toolTip3.SetToolTip(this.uiTabControlMenu1, resources.GetString("uiTabControlMenu1.ToolTip"));
+            this.toolTip2.SetToolTip(this.uiTabControlMenu1, resources.GetString("uiTabControlMenu1.ToolTip1"));
+            this.toolTip1.SetToolTip(this.uiTabControlMenu1, resources.GetString("uiTabControlMenu1.ToolTip2"));
+            this.uiTabControlMenu1.Click += new System.EventHandler(this.uiTabControlMenu1_Click);
             // 
             // tabPage0
             // 
@@ -4212,6 +5276,9 @@
             this.tabPage0.Controls.Add(this.uiGroupBox8);
             this.tabPage0.Controls.Add(this.uiGroupBox7);
             this.tabPage0.Name = "tabPage0";
+            this.toolTip1.SetToolTip(this.tabPage0, resources.GetString("tabPage0.ToolTip"));
+            this.toolTip2.SetToolTip(this.tabPage0, resources.GetString("tabPage0.ToolTip1"));
+            this.toolTip3.SetToolTip(this.tabPage0, resources.GetString("tabPage0.ToolTip2"));
             // 
             // uiGroupBox32
             // 
@@ -4236,46 +5303,73 @@
             this.uiGroupBox32.Name = "uiGroupBox32";
             this.uiGroupBox32.Style = Sunny.UI.UIStyle.Custom;
             this.uiGroupBox32.TextAlignment = System.Drawing.ContentAlignment.MiddleCenter;
+            this.toolTip3.SetToolTip(this.uiGroupBox32, resources.GetString("uiGroupBox32.ToolTip"));
+            this.toolTip2.SetToolTip(this.uiGroupBox32, resources.GetString("uiGroupBox32.ToolTip1"));
+            this.toolTip1.SetToolTip(this.uiGroupBox32, resources.GetString("uiGroupBox32.ToolTip2"));
             // 
             // CFQuiescentCurrntIndex
             // 
             resources.ApplyResources(this.CFQuiescentCurrntIndex, "CFQuiescentCurrntIndex");
             this.CFQuiescentCurrntIndex.Name = "CFQuiescentCurrntIndex";
+            this.toolTip2.SetToolTip(this.CFQuiescentCurrntIndex, resources.GetString("CFQuiescentCurrntIndex.ToolTip"));
+            this.toolTip3.SetToolTip(this.CFQuiescentCurrntIndex, resources.GetString("CFQuiescentCurrntIndex.ToolTip1"));
+            this.toolTip1.SetToolTip(this.CFQuiescentCurrntIndex, resources.GetString("CFQuiescentCurrntIndex.ToolTip2"));
             // 
             // CFFWDLeakindex
             // 
             resources.ApplyResources(this.CFFWDLeakindex, "CFFWDLeakindex");
             this.CFFWDLeakindex.Name = "CFFWDLeakindex";
+            this.toolTip2.SetToolTip(this.CFFWDLeakindex, resources.GetString("CFFWDLeakindex.ToolTip"));
+            this.toolTip3.SetToolTip(this.CFFWDLeakindex, resources.GetString("CFFWDLeakindex.ToolTip1"));
+            this.toolTip1.SetToolTip(this.CFFWDLeakindex, resources.GetString("CFFWDLeakindex.ToolTip2"));
             // 
             // CFDOWNLeakindex
             // 
             resources.ApplyResources(this.CFDOWNLeakindex, "CFDOWNLeakindex");
             this.CFDOWNLeakindex.Name = "CFDOWNLeakindex";
+            this.toolTip2.SetToolTip(this.CFDOWNLeakindex, resources.GetString("CFDOWNLeakindex.ToolTip"));
+            this.toolTip3.SetToolTip(this.CFDOWNLeakindex, resources.GetString("CFDOWNLeakindex.ToolTip1"));
+            this.toolTip1.SetToolTip(this.CFDOWNLeakindex, resources.GetString("CFDOWNLeakindex.ToolTip2"));
             // 
             // CFUPLeakindex
             // 
             resources.ApplyResources(this.CFUPLeakindex, "CFUPLeakindex");
             this.CFUPLeakindex.Name = "CFUPLeakindex";
+            this.toolTip2.SetToolTip(this.CFUPLeakindex, resources.GetString("CFUPLeakindex.ToolTip"));
+            this.toolTip3.SetToolTip(this.CFUPLeakindex, resources.GetString("CFUPLeakindex.ToolTip1"));
+            this.toolTip1.SetToolTip(this.CFUPLeakindex, resources.GetString("CFUPLeakindex.ToolTip2"));
             // 
             // CFRWDindex
             // 
             resources.ApplyResources(this.CFRWDindex, "CFRWDindex");
             this.CFRWDindex.Name = "CFRWDindex";
+            this.toolTip2.SetToolTip(this.CFRWDindex, resources.GetString("CFRWDindex.ToolTip"));
+            this.toolTip3.SetToolTip(this.CFRWDindex, resources.GetString("CFRWDindex.ToolTip1"));
+            this.toolTip1.SetToolTip(this.CFRWDindex, resources.GetString("CFRWDindex.ToolTip2"));
             // 
             // CFFWDindex
             // 
             resources.ApplyResources(this.CFFWDindex, "CFFWDindex");
             this.CFFWDindex.Name = "CFFWDindex";
+            this.toolTip2.SetToolTip(this.CFFWDindex, resources.GetString("CFFWDindex.ToolTip"));
+            this.toolTip3.SetToolTip(this.CFFWDindex, resources.GetString("CFFWDindex.ToolTip1"));
+            this.toolTip1.SetToolTip(this.CFFWDindex, resources.GetString("CFFWDindex.ToolTip2"));
             // 
             // CFDOWNindex
             // 
             resources.ApplyResources(this.CFDOWNindex, "CFDOWNindex");
             this.CFDOWNindex.Name = "CFDOWNindex";
+            this.toolTip2.SetToolTip(this.CFDOWNindex, resources.GetString("CFDOWNindex.ToolTip"));
+            this.toolTip3.SetToolTip(this.CFDOWNindex, resources.GetString("CFDOWNindex.ToolTip1"));
+            this.toolTip1.SetToolTip(this.CFDOWNindex, resources.GetString("CFDOWNindex.ToolTip2"));
             // 
             // CFUPindex
             // 
             resources.ApplyResources(this.CFUPindex, "CFUPindex");
             this.CFUPindex.Name = "CFUPindex";
+            this.toolTip2.SetToolTip(this.CFUPindex, resources.GetString("CFUPindex.ToolTip"));
+            this.toolTip3.SetToolTip(this.CFUPindex, resources.GetString("CFUPindex.ToolTip1"));
+            this.toolTip1.SetToolTip(this.CFUPindex, resources.GetString("CFUPindex.ToolTip2"));
             // 
             // CFQuiescentCurrnt
             // 
@@ -4283,6 +5377,9 @@
             this.CFQuiescentCurrnt.Cursor = System.Windows.Forms.Cursors.Hand;
             this.CFQuiescentCurrnt.Name = "CFQuiescentCurrnt";
             this.CFQuiescentCurrnt.Style = Sunny.UI.UIStyle.Custom;
+            this.toolTip2.SetToolTip(this.CFQuiescentCurrnt, resources.GetString("CFQuiescentCurrnt.ToolTip"));
+            this.toolTip3.SetToolTip(this.CFQuiescentCurrnt, resources.GetString("CFQuiescentCurrnt.ToolTip1"));
+            this.toolTip1.SetToolTip(this.CFQuiescentCurrnt, resources.GetString("CFQuiescentCurrnt.ToolTip2"));
             this.CFQuiescentCurrnt.CheckedChanged += new System.EventHandler(this.CFQuiescentCurrnt_CheckedChanged);
             // 
             // CFFWDLeak
@@ -4291,6 +5388,9 @@
             this.CFFWDLeak.Cursor = System.Windows.Forms.Cursors.Hand;
             this.CFFWDLeak.Name = "CFFWDLeak";
             this.CFFWDLeak.Style = Sunny.UI.UIStyle.Custom;
+            this.toolTip2.SetToolTip(this.CFFWDLeak, resources.GetString("CFFWDLeak.ToolTip"));
+            this.toolTip3.SetToolTip(this.CFFWDLeak, resources.GetString("CFFWDLeak.ToolTip1"));
+            this.toolTip1.SetToolTip(this.CFFWDLeak, resources.GetString("CFFWDLeak.ToolTip2"));
             this.CFFWDLeak.CheckedChanged += new System.EventHandler(this.CFFWDLeak_CheckedChanged);
             // 
             // CFDOWNLeak
@@ -4299,6 +5399,9 @@
             this.CFDOWNLeak.Cursor = System.Windows.Forms.Cursors.Hand;
             this.CFDOWNLeak.Name = "CFDOWNLeak";
             this.CFDOWNLeak.Style = Sunny.UI.UIStyle.Custom;
+            this.toolTip2.SetToolTip(this.CFDOWNLeak, resources.GetString("CFDOWNLeak.ToolTip"));
+            this.toolTip3.SetToolTip(this.CFDOWNLeak, resources.GetString("CFDOWNLeak.ToolTip1"));
+            this.toolTip1.SetToolTip(this.CFDOWNLeak, resources.GetString("CFDOWNLeak.ToolTip2"));
             this.CFDOWNLeak.CheckedChanged += new System.EventHandler(this.CFDOWNLeak_CheckedChanged);
             // 
             // CFUPLeak
@@ -4307,6 +5410,9 @@
             this.CFUPLeak.Cursor = System.Windows.Forms.Cursors.Hand;
             this.CFUPLeak.Name = "CFUPLeak";
             this.CFUPLeak.Style = Sunny.UI.UIStyle.Custom;
+            this.toolTip2.SetToolTip(this.CFUPLeak, resources.GetString("CFUPLeak.ToolTip"));
+            this.toolTip3.SetToolTip(this.CFUPLeak, resources.GetString("CFUPLeak.ToolTip1"));
+            this.toolTip1.SetToolTip(this.CFUPLeak, resources.GetString("CFUPLeak.ToolTip2"));
             this.CFUPLeak.CheckedChanged += new System.EventHandler(this.CFUPLeak_CheckedChanged);
             // 
             // CFRWD
@@ -4315,6 +5421,9 @@
             this.CFRWD.Cursor = System.Windows.Forms.Cursors.Hand;
             this.CFRWD.Name = "CFRWD";
             this.CFRWD.Style = Sunny.UI.UIStyle.Custom;
+            this.toolTip2.SetToolTip(this.CFRWD, resources.GetString("CFRWD.ToolTip"));
+            this.toolTip3.SetToolTip(this.CFRWD, resources.GetString("CFRWD.ToolTip1"));
+            this.toolTip1.SetToolTip(this.CFRWD, resources.GetString("CFRWD.ToolTip2"));
             this.CFRWD.CheckedChanged += new System.EventHandler(this.CFRWD_CheckedChanged);
             // 
             // CFFWD
@@ -4323,6 +5432,9 @@
             this.CFFWD.Cursor = System.Windows.Forms.Cursors.Hand;
             this.CFFWD.Name = "CFFWD";
             this.CFFWD.Style = Sunny.UI.UIStyle.Custom;
+            this.toolTip2.SetToolTip(this.CFFWD, resources.GetString("CFFWD.ToolTip"));
+            this.toolTip3.SetToolTip(this.CFFWD, resources.GetString("CFFWD.ToolTip1"));
+            this.toolTip1.SetToolTip(this.CFFWD, resources.GetString("CFFWD.ToolTip2"));
             this.CFFWD.CheckedChanged += new System.EventHandler(this.CFFWD_CheckedChanged);
             // 
             // CFDOWN
@@ -4331,6 +5443,9 @@
             this.CFDOWN.Cursor = System.Windows.Forms.Cursors.Hand;
             this.CFDOWN.Name = "CFDOWN";
             this.CFDOWN.Style = Sunny.UI.UIStyle.Custom;
+            this.toolTip2.SetToolTip(this.CFDOWN, resources.GetString("CFDOWN.ToolTip"));
+            this.toolTip3.SetToolTip(this.CFDOWN, resources.GetString("CFDOWN.ToolTip1"));
+            this.toolTip1.SetToolTip(this.CFDOWN, resources.GetString("CFDOWN.ToolTip2"));
             this.CFDOWN.CheckedChanged += new System.EventHandler(this.CFDOWN_CheckedChanged);
             // 
             // CFUP
@@ -4339,6 +5454,9 @@
             this.CFUP.Cursor = System.Windows.Forms.Cursors.Hand;
             this.CFUP.Name = "CFUP";
             this.CFUP.Style = Sunny.UI.UIStyle.Custom;
+            this.toolTip2.SetToolTip(this.CFUP, resources.GetString("CFUP.ToolTip"));
+            this.toolTip3.SetToolTip(this.CFUP, resources.GetString("CFUP.ToolTip1"));
+            this.toolTip1.SetToolTip(this.CFUP, resources.GetString("CFUP.ToolTip2"));
             this.CFUP.CheckedChanged += new System.EventHandler(this.CFUP_CheckedChanged);
             // 
             // uiGroupBox3
@@ -4364,11 +5482,18 @@
             this.uiGroupBox3.Name = "uiGroupBox3";
             this.uiGroupBox3.Style = Sunny.UI.UIStyle.Custom;
             this.uiGroupBox3.TextAlignment = System.Drawing.ContentAlignment.MiddleCenter;
+            this.toolTip3.SetToolTip(this.uiGroupBox3, resources.GetString("uiGroupBox3.ToolTip"));
+            this.toolTip2.SetToolTip(this.uiGroupBox3, resources.GetString("uiGroupBox3.ToolTip1"));
+            this.toolTip1.SetToolTip(this.uiGroupBox3, resources.GetString("uiGroupBox3.ToolTip2"));
+            this.uiGroupBox3.Click += new System.EventHandler(this.uiGroupBox3_Click);
             // 
             // BEQuiescentCurrntIndex
             // 
             resources.ApplyResources(this.BEQuiescentCurrntIndex, "BEQuiescentCurrntIndex");
             this.BEQuiescentCurrntIndex.Name = "BEQuiescentCurrntIndex";
+            this.toolTip2.SetToolTip(this.BEQuiescentCurrntIndex, resources.GetString("BEQuiescentCurrntIndex.ToolTip"));
+            this.toolTip3.SetToolTip(this.BEQuiescentCurrntIndex, resources.GetString("BEQuiescentCurrntIndex.ToolTip1"));
+            this.toolTip1.SetToolTip(this.BEQuiescentCurrntIndex, resources.GetString("BEQuiescentCurrntIndex.ToolTip2"));
             // 
             // BEQuiescentCurrnt
             // 
@@ -4376,42 +5501,66 @@
             this.BEQuiescentCurrnt.Cursor = System.Windows.Forms.Cursors.Hand;
             this.BEQuiescentCurrnt.Name = "BEQuiescentCurrnt";
             this.BEQuiescentCurrnt.Style = Sunny.UI.UIStyle.Custom;
+            this.toolTip2.SetToolTip(this.BEQuiescentCurrnt, resources.GetString("BEQuiescentCurrnt.ToolTip"));
+            this.toolTip3.SetToolTip(this.BEQuiescentCurrnt, resources.GetString("BEQuiescentCurrnt.ToolTip1"));
+            this.toolTip1.SetToolTip(this.BEQuiescentCurrnt, resources.GetString("BEQuiescentCurrnt.ToolTip2"));
             this.BEQuiescentCurrnt.CheckedChanged += new System.EventHandler(this.BEQuiescentCurrnt_CheckedChanged);
             // 
             // BEFWDLeakindex
             // 
             resources.ApplyResources(this.BEFWDLeakindex, "BEFWDLeakindex");
             this.BEFWDLeakindex.Name = "BEFWDLeakindex";
+            this.toolTip2.SetToolTip(this.BEFWDLeakindex, resources.GetString("BEFWDLeakindex.ToolTip"));
+            this.toolTip3.SetToolTip(this.BEFWDLeakindex, resources.GetString("BEFWDLeakindex.ToolTip1"));
+            this.toolTip1.SetToolTip(this.BEFWDLeakindex, resources.GetString("BEFWDLeakindex.ToolTip2"));
             // 
             // BEDOWNLeakindex
             // 
             resources.ApplyResources(this.BEDOWNLeakindex, "BEDOWNLeakindex");
             this.BEDOWNLeakindex.Name = "BEDOWNLeakindex";
+            this.toolTip2.SetToolTip(this.BEDOWNLeakindex, resources.GetString("BEDOWNLeakindex.ToolTip"));
+            this.toolTip3.SetToolTip(this.BEDOWNLeakindex, resources.GetString("BEDOWNLeakindex.ToolTip1"));
+            this.toolTip1.SetToolTip(this.BEDOWNLeakindex, resources.GetString("BEDOWNLeakindex.ToolTip2"));
             // 
             // BEUPLeakindex
             // 
             resources.ApplyResources(this.BEUPLeakindex, "BEUPLeakindex");
             this.BEUPLeakindex.Name = "BEUPLeakindex";
+            this.toolTip2.SetToolTip(this.BEUPLeakindex, resources.GetString("BEUPLeakindex.ToolTip"));
+            this.toolTip3.SetToolTip(this.BEUPLeakindex, resources.GetString("BEUPLeakindex.ToolTip1"));
+            this.toolTip1.SetToolTip(this.BEUPLeakindex, resources.GetString("BEUPLeakindex.ToolTip2"));
             // 
             // BERWDindex
             // 
             resources.ApplyResources(this.BERWDindex, "BERWDindex");
             this.BERWDindex.Name = "BERWDindex";
+            this.toolTip2.SetToolTip(this.BERWDindex, resources.GetString("BERWDindex.ToolTip"));
+            this.toolTip3.SetToolTip(this.BERWDindex, resources.GetString("BERWDindex.ToolTip1"));
+            this.toolTip1.SetToolTip(this.BERWDindex, resources.GetString("BERWDindex.ToolTip2"));
             // 
             // BEFWDindex
             // 
             resources.ApplyResources(this.BEFWDindex, "BEFWDindex");
             this.BEFWDindex.Name = "BEFWDindex";
+            this.toolTip2.SetToolTip(this.BEFWDindex, resources.GetString("BEFWDindex.ToolTip"));
+            this.toolTip3.SetToolTip(this.BEFWDindex, resources.GetString("BEFWDindex.ToolTip1"));
+            this.toolTip1.SetToolTip(this.BEFWDindex, resources.GetString("BEFWDindex.ToolTip2"));
             // 
             // BEDOWNindex
             // 
             resources.ApplyResources(this.BEDOWNindex, "BEDOWNindex");
             this.BEDOWNindex.Name = "BEDOWNindex";
+            this.toolTip2.SetToolTip(this.BEDOWNindex, resources.GetString("BEDOWNindex.ToolTip"));
+            this.toolTip3.SetToolTip(this.BEDOWNindex, resources.GetString("BEDOWNindex.ToolTip1"));
+            this.toolTip1.SetToolTip(this.BEDOWNindex, resources.GetString("BEDOWNindex.ToolTip2"));
             // 
             // BEUPindex
             // 
             resources.ApplyResources(this.BEUPindex, "BEUPindex");
             this.BEUPindex.Name = "BEUPindex";
+            this.toolTip2.SetToolTip(this.BEUPindex, resources.GetString("BEUPindex.ToolTip"));
+            this.toolTip3.SetToolTip(this.BEUPindex, resources.GetString("BEUPindex.ToolTip1"));
+            this.toolTip1.SetToolTip(this.BEUPindex, resources.GetString("BEUPindex.ToolTip2"));
             // 
             // BEFWDLeak
             // 
@@ -4419,6 +5568,9 @@
             this.BEFWDLeak.Cursor = System.Windows.Forms.Cursors.Hand;
             this.BEFWDLeak.Name = "BEFWDLeak";
             this.BEFWDLeak.Style = Sunny.UI.UIStyle.Custom;
+            this.toolTip2.SetToolTip(this.BEFWDLeak, resources.GetString("BEFWDLeak.ToolTip"));
+            this.toolTip3.SetToolTip(this.BEFWDLeak, resources.GetString("BEFWDLeak.ToolTip1"));
+            this.toolTip1.SetToolTip(this.BEFWDLeak, resources.GetString("BEFWDLeak.ToolTip2"));
             this.BEFWDLeak.CheckedChanged += new System.EventHandler(this.BEFWDLeak_CheckedChanged);
             // 
             // BEDOWNLeak
@@ -4427,6 +5579,9 @@
             this.BEDOWNLeak.Cursor = System.Windows.Forms.Cursors.Hand;
             this.BEDOWNLeak.Name = "BEDOWNLeak";
             this.BEDOWNLeak.Style = Sunny.UI.UIStyle.Custom;
+            this.toolTip2.SetToolTip(this.BEDOWNLeak, resources.GetString("BEDOWNLeak.ToolTip"));
+            this.toolTip3.SetToolTip(this.BEDOWNLeak, resources.GetString("BEDOWNLeak.ToolTip1"));
+            this.toolTip1.SetToolTip(this.BEDOWNLeak, resources.GetString("BEDOWNLeak.ToolTip2"));
             this.BEDOWNLeak.CheckedChanged += new System.EventHandler(this.BEDOWNLeak_CheckedChanged);
             // 
             // BEUPLeak
@@ -4435,6 +5590,9 @@
             this.BEUPLeak.Cursor = System.Windows.Forms.Cursors.Hand;
             this.BEUPLeak.Name = "BEUPLeak";
             this.BEUPLeak.Style = Sunny.UI.UIStyle.Custom;
+            this.toolTip2.SetToolTip(this.BEUPLeak, resources.GetString("BEUPLeak.ToolTip"));
+            this.toolTip3.SetToolTip(this.BEUPLeak, resources.GetString("BEUPLeak.ToolTip1"));
+            this.toolTip1.SetToolTip(this.BEUPLeak, resources.GetString("BEUPLeak.ToolTip2"));
             this.BEUPLeak.CheckedChanged += new System.EventHandler(this.BEUPLeak_CheckedChanged);
             // 
             // BERWD
@@ -4443,6 +5601,9 @@
             this.BERWD.Cursor = System.Windows.Forms.Cursors.Hand;
             this.BERWD.Name = "BERWD";
             this.BERWD.Style = Sunny.UI.UIStyle.Custom;
+            this.toolTip2.SetToolTip(this.BERWD, resources.GetString("BERWD.ToolTip"));
+            this.toolTip3.SetToolTip(this.BERWD, resources.GetString("BERWD.ToolTip1"));
+            this.toolTip1.SetToolTip(this.BERWD, resources.GetString("BERWD.ToolTip2"));
             this.BERWD.CheckedChanged += new System.EventHandler(this.BERWD_CheckedChanged);
             // 
             // BEFWD
@@ -4451,6 +5612,9 @@
             this.BEFWD.Cursor = System.Windows.Forms.Cursors.Hand;
             this.BEFWD.Name = "BEFWD";
             this.BEFWD.Style = Sunny.UI.UIStyle.Custom;
+            this.toolTip2.SetToolTip(this.BEFWD, resources.GetString("BEFWD.ToolTip"));
+            this.toolTip3.SetToolTip(this.BEFWD, resources.GetString("BEFWD.ToolTip1"));
+            this.toolTip1.SetToolTip(this.BEFWD, resources.GetString("BEFWD.ToolTip2"));
             this.BEFWD.CheckedChanged += new System.EventHandler(this.BEFWD_CheckedChanged);
             // 
             // BEDOWN
@@ -4459,6 +5623,9 @@
             this.BEDOWN.Cursor = System.Windows.Forms.Cursors.Hand;
             this.BEDOWN.Name = "BEDOWN";
             this.BEDOWN.Style = Sunny.UI.UIStyle.Custom;
+            this.toolTip2.SetToolTip(this.BEDOWN, resources.GetString("BEDOWN.ToolTip"));
+            this.toolTip3.SetToolTip(this.BEDOWN, resources.GetString("BEDOWN.ToolTip1"));
+            this.toolTip1.SetToolTip(this.BEDOWN, resources.GetString("BEDOWN.ToolTip2"));
             this.BEDOWN.CheckedChanged += new System.EventHandler(this.BEDOWN_CheckedChanged);
             // 
             // BEUP
@@ -4467,6 +5634,9 @@
             this.BEUP.Cursor = System.Windows.Forms.Cursors.Hand;
             this.BEUP.Name = "BEUP";
             this.BEUP.Style = Sunny.UI.UIStyle.Custom;
+            this.toolTip2.SetToolTip(this.BEUP, resources.GetString("BEUP.ToolTip"));
+            this.toolTip3.SetToolTip(this.BEUP, resources.GetString("BEUP.ToolTip1"));
+            this.toolTip1.SetToolTip(this.BEUP, resources.GetString("BEUP.ToolTip2"));
             this.BEUP.CheckedChanged += new System.EventHandler(this.BEUP_CheckedChanged);
             // 
             // uiGroupBox1
@@ -4492,11 +5662,17 @@
             this.uiGroupBox1.Name = "uiGroupBox1";
             this.uiGroupBox1.Style = Sunny.UI.UIStyle.Custom;
             this.uiGroupBox1.TextAlignment = System.Drawing.ContentAlignment.MiddleCenter;
+            this.toolTip3.SetToolTip(this.uiGroupBox1, resources.GetString("uiGroupBox1.ToolTip"));
+            this.toolTip2.SetToolTip(this.uiGroupBox1, resources.GetString("uiGroupBox1.ToolTip1"));
+            this.toolTip1.SetToolTip(this.uiGroupBox1, resources.GetString("uiGroupBox1.ToolTip2"));
             // 
             // ADQuiescentCurrntIndex
             // 
             resources.ApplyResources(this.ADQuiescentCurrntIndex, "ADQuiescentCurrntIndex");
             this.ADQuiescentCurrntIndex.Name = "ADQuiescentCurrntIndex";
+            this.toolTip2.SetToolTip(this.ADQuiescentCurrntIndex, resources.GetString("ADQuiescentCurrntIndex.ToolTip"));
+            this.toolTip3.SetToolTip(this.ADQuiescentCurrntIndex, resources.GetString("ADQuiescentCurrntIndex.ToolTip1"));
+            this.toolTip1.SetToolTip(this.ADQuiescentCurrntIndex, resources.GetString("ADQuiescentCurrntIndex.ToolTip2"));
             // 
             // ADQuiescentCurrnt
             // 
@@ -4504,42 +5680,66 @@
             this.ADQuiescentCurrnt.Cursor = System.Windows.Forms.Cursors.Hand;
             this.ADQuiescentCurrnt.Name = "ADQuiescentCurrnt";
             this.ADQuiescentCurrnt.Style = Sunny.UI.UIStyle.Custom;
+            this.toolTip2.SetToolTip(this.ADQuiescentCurrnt, resources.GetString("ADQuiescentCurrnt.ToolTip"));
+            this.toolTip3.SetToolTip(this.ADQuiescentCurrnt, resources.GetString("ADQuiescentCurrnt.ToolTip1"));
+            this.toolTip1.SetToolTip(this.ADQuiescentCurrnt, resources.GetString("ADQuiescentCurrnt.ToolTip2"));
             this.ADQuiescentCurrnt.CheckedChanged += new System.EventHandler(this.ADQuiescentCurrnt_CheckedChanged);
             // 
             // ADFWDLeakindex
             // 
             resources.ApplyResources(this.ADFWDLeakindex, "ADFWDLeakindex");
             this.ADFWDLeakindex.Name = "ADFWDLeakindex";
+            this.toolTip2.SetToolTip(this.ADFWDLeakindex, resources.GetString("ADFWDLeakindex.ToolTip"));
+            this.toolTip3.SetToolTip(this.ADFWDLeakindex, resources.GetString("ADFWDLeakindex.ToolTip1"));
+            this.toolTip1.SetToolTip(this.ADFWDLeakindex, resources.GetString("ADFWDLeakindex.ToolTip2"));
             // 
             // ADDOWNLeakindex
             // 
             resources.ApplyResources(this.ADDOWNLeakindex, "ADDOWNLeakindex");
             this.ADDOWNLeakindex.Name = "ADDOWNLeakindex";
+            this.toolTip2.SetToolTip(this.ADDOWNLeakindex, resources.GetString("ADDOWNLeakindex.ToolTip"));
+            this.toolTip3.SetToolTip(this.ADDOWNLeakindex, resources.GetString("ADDOWNLeakindex.ToolTip1"));
+            this.toolTip1.SetToolTip(this.ADDOWNLeakindex, resources.GetString("ADDOWNLeakindex.ToolTip2"));
             // 
             // ADUPLeakindex
             // 
             resources.ApplyResources(this.ADUPLeakindex, "ADUPLeakindex");
             this.ADUPLeakindex.Name = "ADUPLeakindex";
+            this.toolTip2.SetToolTip(this.ADUPLeakindex, resources.GetString("ADUPLeakindex.ToolTip"));
+            this.toolTip3.SetToolTip(this.ADUPLeakindex, resources.GetString("ADUPLeakindex.ToolTip1"));
+            this.toolTip1.SetToolTip(this.ADUPLeakindex, resources.GetString("ADUPLeakindex.ToolTip2"));
             // 
             // ADRWDindex
             // 
             resources.ApplyResources(this.ADRWDindex, "ADRWDindex");
             this.ADRWDindex.Name = "ADRWDindex";
+            this.toolTip2.SetToolTip(this.ADRWDindex, resources.GetString("ADRWDindex.ToolTip"));
+            this.toolTip3.SetToolTip(this.ADRWDindex, resources.GetString("ADRWDindex.ToolTip1"));
+            this.toolTip1.SetToolTip(this.ADRWDindex, resources.GetString("ADRWDindex.ToolTip2"));
             // 
             // ADFWDindex
             // 
             resources.ApplyResources(this.ADFWDindex, "ADFWDindex");
             this.ADFWDindex.Name = "ADFWDindex";
+            this.toolTip2.SetToolTip(this.ADFWDindex, resources.GetString("ADFWDindex.ToolTip"));
+            this.toolTip3.SetToolTip(this.ADFWDindex, resources.GetString("ADFWDindex.ToolTip1"));
+            this.toolTip1.SetToolTip(this.ADFWDindex, resources.GetString("ADFWDindex.ToolTip2"));
             // 
             // ADDOWNindex
             // 
             resources.ApplyResources(this.ADDOWNindex, "ADDOWNindex");
             this.ADDOWNindex.Name = "ADDOWNindex";
+            this.toolTip2.SetToolTip(this.ADDOWNindex, resources.GetString("ADDOWNindex.ToolTip"));
+            this.toolTip3.SetToolTip(this.ADDOWNindex, resources.GetString("ADDOWNindex.ToolTip1"));
+            this.toolTip1.SetToolTip(this.ADDOWNindex, resources.GetString("ADDOWNindex.ToolTip2"));
             // 
             // ADUPindex
             // 
             resources.ApplyResources(this.ADUPindex, "ADUPindex");
             this.ADUPindex.Name = "ADUPindex";
+            this.toolTip2.SetToolTip(this.ADUPindex, resources.GetString("ADUPindex.ToolTip"));
+            this.toolTip3.SetToolTip(this.ADUPindex, resources.GetString("ADUPindex.ToolTip1"));
+            this.toolTip1.SetToolTip(this.ADUPindex, resources.GetString("ADUPindex.ToolTip2"));
             // 
             // ADFWDLeak
             // 
@@ -4547,6 +5747,9 @@
             this.ADFWDLeak.Cursor = System.Windows.Forms.Cursors.Hand;
             this.ADFWDLeak.Name = "ADFWDLeak";
             this.ADFWDLeak.Style = Sunny.UI.UIStyle.Custom;
+            this.toolTip2.SetToolTip(this.ADFWDLeak, resources.GetString("ADFWDLeak.ToolTip"));
+            this.toolTip3.SetToolTip(this.ADFWDLeak, resources.GetString("ADFWDLeak.ToolTip1"));
+            this.toolTip1.SetToolTip(this.ADFWDLeak, resources.GetString("ADFWDLeak.ToolTip2"));
             this.ADFWDLeak.CheckedChanged += new System.EventHandler(this.ADFWDLeak_CheckedChanged);
             // 
             // ADDOWNLeak
@@ -4555,6 +5758,9 @@
             this.ADDOWNLeak.Cursor = System.Windows.Forms.Cursors.Hand;
             this.ADDOWNLeak.Name = "ADDOWNLeak";
             this.ADDOWNLeak.Style = Sunny.UI.UIStyle.Custom;
+            this.toolTip2.SetToolTip(this.ADDOWNLeak, resources.GetString("ADDOWNLeak.ToolTip"));
+            this.toolTip3.SetToolTip(this.ADDOWNLeak, resources.GetString("ADDOWNLeak.ToolTip1"));
+            this.toolTip1.SetToolTip(this.ADDOWNLeak, resources.GetString("ADDOWNLeak.ToolTip2"));
             this.ADDOWNLeak.CheckedChanged += new System.EventHandler(this.ADDOWNLeak_CheckedChanged);
             // 
             // ADUPLeak
@@ -4563,6 +5769,9 @@
             this.ADUPLeak.Cursor = System.Windows.Forms.Cursors.Hand;
             this.ADUPLeak.Name = "ADUPLeak";
             this.ADUPLeak.Style = Sunny.UI.UIStyle.Custom;
+            this.toolTip2.SetToolTip(this.ADUPLeak, resources.GetString("ADUPLeak.ToolTip"));
+            this.toolTip3.SetToolTip(this.ADUPLeak, resources.GetString("ADUPLeak.ToolTip1"));
+            this.toolTip1.SetToolTip(this.ADUPLeak, resources.GetString("ADUPLeak.ToolTip2"));
             this.ADUPLeak.CheckedChanged += new System.EventHandler(this.ADUPLeak_CheckedChanged);
             // 
             // ADRWD
@@ -4571,6 +5780,9 @@
             this.ADRWD.Cursor = System.Windows.Forms.Cursors.Hand;
             this.ADRWD.Name = "ADRWD";
             this.ADRWD.Style = Sunny.UI.UIStyle.Custom;
+            this.toolTip2.SetToolTip(this.ADRWD, resources.GetString("ADRWD.ToolTip"));
+            this.toolTip3.SetToolTip(this.ADRWD, resources.GetString("ADRWD.ToolTip1"));
+            this.toolTip1.SetToolTip(this.ADRWD, resources.GetString("ADRWD.ToolTip2"));
             this.ADRWD.CheckedChanged += new System.EventHandler(this.ADRWD_CheckedChanged);
             // 
             // ADFWD
@@ -4579,6 +5791,9 @@
             this.ADFWD.Cursor = System.Windows.Forms.Cursors.Hand;
             this.ADFWD.Name = "ADFWD";
             this.ADFWD.Style = Sunny.UI.UIStyle.Custom;
+            this.toolTip2.SetToolTip(this.ADFWD, resources.GetString("ADFWD.ToolTip"));
+            this.toolTip3.SetToolTip(this.ADFWD, resources.GetString("ADFWD.ToolTip1"));
+            this.toolTip1.SetToolTip(this.ADFWD, resources.GetString("ADFWD.ToolTip2"));
             this.ADFWD.CheckedChanged += new System.EventHandler(this.ADFWD_CheckedChanged);
             // 
             // ADDOWN
@@ -4587,6 +5802,9 @@
             this.ADDOWN.Cursor = System.Windows.Forms.Cursors.Hand;
             this.ADDOWN.Name = "ADDOWN";
             this.ADDOWN.Style = Sunny.UI.UIStyle.Custom;
+            this.toolTip2.SetToolTip(this.ADDOWN, resources.GetString("ADDOWN.ToolTip"));
+            this.toolTip3.SetToolTip(this.ADDOWN, resources.GetString("ADDOWN.ToolTip1"));
+            this.toolTip1.SetToolTip(this.ADDOWN, resources.GetString("ADDOWN.ToolTip2"));
             this.ADDOWN.CheckedChanged += new System.EventHandler(this.ADDOWN_CheckedChanged);
             // 
             // ADUP
@@ -4595,6 +5813,9 @@
             this.ADUP.Cursor = System.Windows.Forms.Cursors.Hand;
             this.ADUP.Name = "ADUP";
             this.ADUP.Style = Sunny.UI.UIStyle.Custom;
+            this.toolTip2.SetToolTip(this.ADUP, resources.GetString("ADUP.ToolTip"));
+            this.toolTip3.SetToolTip(this.ADUP, resources.GetString("ADUP.ToolTip1"));
+            this.toolTip1.SetToolTip(this.ADUP, resources.GetString("ADUP.ToolTip2"));
             this.ADUP.CheckedChanged += new System.EventHandler(this.ADUP_CheckedChanged);
             // 
             // btnSave
@@ -4603,7 +5824,10 @@
             this.btnSave.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnSave.Name = "btnSave";
             this.btnSave.Style = Sunny.UI.UIStyle.Custom;
-            this.btnSave.TipsFont = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.btnSave.TipsFont = new System.Drawing.Font("Microsoft YaHei", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.toolTip3.SetToolTip(this.btnSave, resources.GetString("btnSave.ToolTip"));
+            this.toolTip2.SetToolTip(this.btnSave, resources.GetString("btnSave.ToolTip1"));
+            this.toolTip1.SetToolTip(this.btnSave, resources.GetString("btnSave.ToolTip2"));
             this.btnSave.Click += new System.EventHandler(this.btnSave_Click);
             // 
             // uiGroupBox8
@@ -4635,12 +5859,18 @@
             this.uiGroupBox8.Name = "uiGroupBox8";
             this.uiGroupBox8.Style = Sunny.UI.UIStyle.Custom;
             this.uiGroupBox8.TextAlignment = System.Drawing.ContentAlignment.MiddleCenter;
+            this.toolTip3.SetToolTip(this.uiGroupBox8, resources.GetString("uiGroupBox8.ToolTip"));
+            this.toolTip2.SetToolTip(this.uiGroupBox8, resources.GetString("uiGroupBox8.ToolTip1"));
+            this.toolTip1.SetToolTip(this.uiGroupBox8, resources.GetString("uiGroupBox8.ToolTip2"));
             this.uiGroupBox8.Click += new System.EventHandler(this.uiGroupBox8_Click);
             // 
             // CH2QuiescentCurrntIndex
             // 
             resources.ApplyResources(this.CH2QuiescentCurrntIndex, "CH2QuiescentCurrntIndex");
             this.CH2QuiescentCurrntIndex.Name = "CH2QuiescentCurrntIndex";
+            this.toolTip2.SetToolTip(this.CH2QuiescentCurrntIndex, resources.GetString("CH2QuiescentCurrntIndex.ToolTip"));
+            this.toolTip3.SetToolTip(this.CH2QuiescentCurrntIndex, resources.GetString("CH2QuiescentCurrntIndex.ToolTip1"));
+            this.toolTip1.SetToolTip(this.CH2QuiescentCurrntIndex, resources.GetString("CH2QuiescentCurrntIndex.ToolTip2"));
             // 
             // CH2UpDownChange
             // 
@@ -4648,6 +5878,9 @@
             this.CH2UpDownChange.Cursor = System.Windows.Forms.Cursors.Hand;
             this.CH2UpDownChange.Name = "CH2UpDownChange";
             this.CH2UpDownChange.Style = Sunny.UI.UIStyle.Custom;
+            this.toolTip2.SetToolTip(this.CH2UpDownChange, resources.GetString("CH2UpDownChange.ToolTip"));
+            this.toolTip3.SetToolTip(this.CH2UpDownChange, resources.GetString("CH2UpDownChange.ToolTip1"));
+            this.toolTip1.SetToolTip(this.CH2UpDownChange, resources.GetString("CH2UpDownChange.ToolTip2"));
             this.CH2UpDownChange.CheckedChanged += new System.EventHandler(this.CH2UpDownChange_CheckedChanged);
             // 
             // CH2QuiescentCurrnt
@@ -4656,17 +5889,26 @@
             this.CH2QuiescentCurrnt.Cursor = System.Windows.Forms.Cursors.Hand;
             this.CH2QuiescentCurrnt.Name = "CH2QuiescentCurrnt";
             this.CH2QuiescentCurrnt.Style = Sunny.UI.UIStyle.Custom;
+            this.toolTip2.SetToolTip(this.CH2QuiescentCurrnt, resources.GetString("CH2QuiescentCurrnt.ToolTip"));
+            this.toolTip3.SetToolTip(this.CH2QuiescentCurrnt, resources.GetString("CH2QuiescentCurrnt.ToolTip1"));
+            this.toolTip1.SetToolTip(this.CH2QuiescentCurrnt, resources.GetString("CH2QuiescentCurrnt.ToolTip2"));
             this.CH2QuiescentCurrnt.CheckedChanged += new System.EventHandler(this.CH2QuiescentCurrnt_CheckedChanged);
             // 
             // CH2DOWNindex
             // 
             resources.ApplyResources(this.CH2DOWNindex, "CH2DOWNindex");
             this.CH2DOWNindex.Name = "CH2DOWNindex";
+            this.toolTip2.SetToolTip(this.CH2DOWNindex, resources.GetString("CH2DOWNindex.ToolTip"));
+            this.toolTip3.SetToolTip(this.CH2DOWNindex, resources.GetString("CH2DOWNindex.ToolTip1"));
+            this.toolTip1.SetToolTip(this.CH2DOWNindex, resources.GetString("CH2DOWNindex.ToolTip2"));
             // 
             // CH2RWDindex
             // 
             resources.ApplyResources(this.CH2RWDindex, "CH2RWDindex");
             this.CH2RWDindex.Name = "CH2RWDindex";
+            this.toolTip2.SetToolTip(this.CH2RWDindex, resources.GetString("CH2RWDindex.ToolTip"));
+            this.toolTip3.SetToolTip(this.CH2RWDindex, resources.GetString("CH2RWDindex.ToolTip1"));
+            this.toolTip1.SetToolTip(this.CH2RWDindex, resources.GetString("CH2RWDindex.ToolTip2"));
             // 
             // CH2HighLevel
             // 
@@ -4674,17 +5916,26 @@
             this.CH2HighLevel.Cursor = System.Windows.Forms.Cursors.Hand;
             this.CH2HighLevel.Name = "CH2HighLevel";
             this.CH2HighLevel.Style = Sunny.UI.UIStyle.Custom;
+            this.toolTip2.SetToolTip(this.CH2HighLevel, resources.GetString("CH2HighLevel.ToolTip"));
+            this.toolTip3.SetToolTip(this.CH2HighLevel, resources.GetString("CH2HighLevel.ToolTip1"));
+            this.toolTip1.SetToolTip(this.CH2HighLevel, resources.GetString("CH2HighLevel.ToolTip2"));
             this.CH2HighLevel.CheckedChanged += new System.EventHandler(this.CH2HighLevel_CheckedChanged);
             // 
             // CH2FWDLeakindex
             // 
             resources.ApplyResources(this.CH2FWDLeakindex, "CH2FWDLeakindex");
             this.CH2FWDLeakindex.Name = "CH2FWDLeakindex";
+            this.toolTip2.SetToolTip(this.CH2FWDLeakindex, resources.GetString("CH2FWDLeakindex.ToolTip"));
+            this.toolTip3.SetToolTip(this.CH2FWDLeakindex, resources.GetString("CH2FWDLeakindex.ToolTip1"));
+            this.toolTip1.SetToolTip(this.CH2FWDLeakindex, resources.GetString("CH2FWDLeakindex.ToolTip2"));
             // 
             // CH2FWDindex
             // 
             resources.ApplyResources(this.CH2FWDindex, "CH2FWDindex");
             this.CH2FWDindex.Name = "CH2FWDindex";
+            this.toolTip2.SetToolTip(this.CH2FWDindex, resources.GetString("CH2FWDindex.ToolTip"));
+            this.toolTip3.SetToolTip(this.CH2FWDindex, resources.GetString("CH2FWDindex.ToolTip1"));
+            this.toolTip1.SetToolTip(this.CH2FWDindex, resources.GetString("CH2FWDindex.ToolTip2"));
             // 
             // OrderRightCopy
             // 
@@ -4693,18 +5944,27 @@
             this.OrderRightCopy.Name = "OrderRightCopy";
             this.OrderRightCopy.Style = Sunny.UI.UIStyle.Custom;
             this.OrderRightCopy.Symbol = 361697;
-            this.OrderRightCopy.TipsFont = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.OrderRightCopy.TipsFont = new System.Drawing.Font("Microsoft YaHei", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.toolTip3.SetToolTip(this.OrderRightCopy, resources.GetString("OrderRightCopy.ToolTip"));
+            this.toolTip2.SetToolTip(this.OrderRightCopy, resources.GetString("OrderRightCopy.ToolTip1"));
+            this.toolTip1.SetToolTip(this.OrderRightCopy, resources.GetString("OrderRightCopy.ToolTip2"));
             this.OrderRightCopy.Click += new System.EventHandler(this.OrderRightCopy_Click);
             // 
             // CH2DOWNLeakindex
             // 
             resources.ApplyResources(this.CH2DOWNLeakindex, "CH2DOWNLeakindex");
             this.CH2DOWNLeakindex.Name = "CH2DOWNLeakindex";
+            this.toolTip2.SetToolTip(this.CH2DOWNLeakindex, resources.GetString("CH2DOWNLeakindex.ToolTip"));
+            this.toolTip3.SetToolTip(this.CH2DOWNLeakindex, resources.GetString("CH2DOWNLeakindex.ToolTip1"));
+            this.toolTip1.SetToolTip(this.CH2DOWNLeakindex, resources.GetString("CH2DOWNLeakindex.ToolTip2"));
             // 
             // CH2UPindex
             // 
             resources.ApplyResources(this.CH2UPindex, "CH2UPindex");
             this.CH2UPindex.Name = "CH2UPindex";
+            this.toolTip2.SetToolTip(this.CH2UPindex, resources.GetString("CH2UPindex.ToolTip"));
+            this.toolTip3.SetToolTip(this.CH2UPindex, resources.GetString("CH2UPindex.ToolTip1"));
+            this.toolTip1.SetToolTip(this.CH2UPindex, resources.GetString("CH2UPindex.ToolTip2"));
             // 
             // CH2UP
             // 
@@ -4712,12 +5972,18 @@
             this.CH2UP.Cursor = System.Windows.Forms.Cursors.Hand;
             this.CH2UP.Name = "CH2UP";
             this.CH2UP.Style = Sunny.UI.UIStyle.Custom;
+            this.toolTip2.SetToolTip(this.CH2UP, resources.GetString("CH2UP.ToolTip"));
+            this.toolTip3.SetToolTip(this.CH2UP, resources.GetString("CH2UP.ToolTip1"));
+            this.toolTip1.SetToolTip(this.CH2UP, resources.GetString("CH2UP.ToolTip2"));
             this.CH2UP.CheckedChanged += new System.EventHandler(this.CH2UP_CheckedChanged);
             // 
             // CH2UPLeakindex
             // 
             resources.ApplyResources(this.CH2UPLeakindex, "CH2UPLeakindex");
             this.CH2UPLeakindex.Name = "CH2UPLeakindex";
+            this.toolTip2.SetToolTip(this.CH2UPLeakindex, resources.GetString("CH2UPLeakindex.ToolTip"));
+            this.toolTip3.SetToolTip(this.CH2UPLeakindex, resources.GetString("CH2UPLeakindex.ToolTip1"));
+            this.toolTip1.SetToolTip(this.CH2UPLeakindex, resources.GetString("CH2UPLeakindex.ToolTip2"));
             // 
             // CH2DOWN
             // 
@@ -4725,6 +5991,9 @@
             this.CH2DOWN.Cursor = System.Windows.Forms.Cursors.Hand;
             this.CH2DOWN.Name = "CH2DOWN";
             this.CH2DOWN.Style = Sunny.UI.UIStyle.Custom;
+            this.toolTip2.SetToolTip(this.CH2DOWN, resources.GetString("CH2DOWN.ToolTip"));
+            this.toolTip3.SetToolTip(this.CH2DOWN, resources.GetString("CH2DOWN.ToolTip1"));
+            this.toolTip1.SetToolTip(this.CH2DOWN, resources.GetString("CH2DOWN.ToolTip2"));
             this.CH2DOWN.CheckedChanged += new System.EventHandler(this.CH2DOWN_CheckedChanged);
             // 
             // CH2FWD
@@ -4733,6 +6002,9 @@
             this.CH2FWD.Cursor = System.Windows.Forms.Cursors.Hand;
             this.CH2FWD.Name = "CH2FWD";
             this.CH2FWD.Style = Sunny.UI.UIStyle.Custom;
+            this.toolTip2.SetToolTip(this.CH2FWD, resources.GetString("CH2FWD.ToolTip"));
+            this.toolTip3.SetToolTip(this.CH2FWD, resources.GetString("CH2FWD.ToolTip1"));
+            this.toolTip1.SetToolTip(this.CH2FWD, resources.GetString("CH2FWD.ToolTip2"));
             this.CH2FWD.CheckedChanged += new System.EventHandler(this.CH2FWD_CheckedChanged);
             // 
             // CH2RWD
@@ -4741,6 +6013,9 @@
             this.CH2RWD.Cursor = System.Windows.Forms.Cursors.Hand;
             this.CH2RWD.Name = "CH2RWD";
             this.CH2RWD.Style = Sunny.UI.UIStyle.Custom;
+            this.toolTip2.SetToolTip(this.CH2RWD, resources.GetString("CH2RWD.ToolTip"));
+            this.toolTip3.SetToolTip(this.CH2RWD, resources.GetString("CH2RWD.ToolTip1"));
+            this.toolTip1.SetToolTip(this.CH2RWD, resources.GetString("CH2RWD.ToolTip2"));
             this.CH2RWD.CheckedChanged += new System.EventHandler(this.CH2RWD_CheckedChanged);
             // 
             // CH2UPLeak
@@ -4749,6 +6024,9 @@
             this.CH2UPLeak.Cursor = System.Windows.Forms.Cursors.Hand;
             this.CH2UPLeak.Name = "CH2UPLeak";
             this.CH2UPLeak.Style = Sunny.UI.UIStyle.Custom;
+            this.toolTip2.SetToolTip(this.CH2UPLeak, resources.GetString("CH2UPLeak.ToolTip"));
+            this.toolTip3.SetToolTip(this.CH2UPLeak, resources.GetString("CH2UPLeak.ToolTip1"));
+            this.toolTip1.SetToolTip(this.CH2UPLeak, resources.GetString("CH2UPLeak.ToolTip2"));
             this.CH2UPLeak.CheckedChanged += new System.EventHandler(this.CH2UPLeak_CheckedChanged);
             // 
             // CH2DOWNLeak
@@ -4757,6 +6035,9 @@
             this.CH2DOWNLeak.Cursor = System.Windows.Forms.Cursors.Hand;
             this.CH2DOWNLeak.Name = "CH2DOWNLeak";
             this.CH2DOWNLeak.Style = Sunny.UI.UIStyle.Custom;
+            this.toolTip2.SetToolTip(this.CH2DOWNLeak, resources.GetString("CH2DOWNLeak.ToolTip"));
+            this.toolTip3.SetToolTip(this.CH2DOWNLeak, resources.GetString("CH2DOWNLeak.ToolTip1"));
+            this.toolTip1.SetToolTip(this.CH2DOWNLeak, resources.GetString("CH2DOWNLeak.ToolTip2"));
             this.CH2DOWNLeak.CheckedChanged += new System.EventHandler(this.CH2DOWNLeak_CheckedChanged);
             // 
             // CH2IGN
@@ -4765,6 +6046,9 @@
             this.CH2IGN.Cursor = System.Windows.Forms.Cursors.Hand;
             this.CH2IGN.Name = "CH2IGN";
             this.CH2IGN.Style = Sunny.UI.UIStyle.Custom;
+            this.toolTip2.SetToolTip(this.CH2IGN, resources.GetString("CH2IGN.ToolTip"));
+            this.toolTip3.SetToolTip(this.CH2IGN, resources.GetString("CH2IGN.ToolTip1"));
+            this.toolTip1.SetToolTip(this.CH2IGN, resources.GetString("CH2IGN.ToolTip2"));
             this.CH2IGN.CheckedChanged += new System.EventHandler(this.CH2IGN_CheckedChanged);
             // 
             // CH2FWDLeak
@@ -4773,6 +6057,9 @@
             this.CH2FWDLeak.Cursor = System.Windows.Forms.Cursors.Hand;
             this.CH2FWDLeak.Name = "CH2FWDLeak";
             this.CH2FWDLeak.Style = Sunny.UI.UIStyle.Custom;
+            this.toolTip2.SetToolTip(this.CH2FWDLeak, resources.GetString("CH2FWDLeak.ToolTip"));
+            this.toolTip3.SetToolTip(this.CH2FWDLeak, resources.GetString("CH2FWDLeak.ToolTip1"));
+            this.toolTip1.SetToolTip(this.CH2FWDLeak, resources.GetString("CH2FWDLeak.ToolTip2"));
             this.CH2FWDLeak.CheckedChanged += new System.EventHandler(this.CH2FWDLeak_CheckedChanged);
             // 
             // CH2LIN
@@ -4781,6 +6068,9 @@
             this.CH2LIN.Cursor = System.Windows.Forms.Cursors.Hand;
             this.CH2LIN.Name = "CH2LIN";
             this.CH2LIN.Style = Sunny.UI.UIStyle.Custom;
+            this.toolTip2.SetToolTip(this.CH2LIN, resources.GetString("CH2LIN.ToolTip"));
+            this.toolTip3.SetToolTip(this.CH2LIN, resources.GetString("CH2LIN.ToolTip1"));
+            this.toolTip1.SetToolTip(this.CH2LIN, resources.GetString("CH2LIN.ToolTip2"));
             this.CH2LIN.CheckedChanged += new System.EventHandler(this.CH2LIN_CheckedChanged);
             // 
             // CH2Pump
@@ -4789,6 +6079,9 @@
             this.CH2Pump.Cursor = System.Windows.Forms.Cursors.Hand;
             this.CH2Pump.Name = "CH2Pump";
             this.CH2Pump.Style = Sunny.UI.UIStyle.Custom;
+            this.toolTip2.SetToolTip(this.CH2Pump, resources.GetString("CH2Pump.ToolTip"));
+            this.toolTip3.SetToolTip(this.CH2Pump, resources.GetString("CH2Pump.ToolTip1"));
+            this.toolTip1.SetToolTip(this.CH2Pump, resources.GetString("CH2Pump.ToolTip2"));
             this.CH2Pump.CheckedChanged += new System.EventHandler(this.CH2Pump_CheckedChanged);
             // 
             // uiGroupBox7
@@ -4820,11 +6113,17 @@
             this.uiGroupBox7.Name = "uiGroupBox7";
             this.uiGroupBox7.Style = Sunny.UI.UIStyle.Custom;
             this.uiGroupBox7.TextAlignment = System.Drawing.ContentAlignment.MiddleCenter;
+            this.toolTip3.SetToolTip(this.uiGroupBox7, resources.GetString("uiGroupBox7.ToolTip"));
+            this.toolTip2.SetToolTip(this.uiGroupBox7, resources.GetString("uiGroupBox7.ToolTip1"));
+            this.toolTip1.SetToolTip(this.uiGroupBox7, resources.GetString("uiGroupBox7.ToolTip2"));
             // 
             // CH1QuiescentCurrntIndex
             // 
             resources.ApplyResources(this.CH1QuiescentCurrntIndex, "CH1QuiescentCurrntIndex");
             this.CH1QuiescentCurrntIndex.Name = "CH1QuiescentCurrntIndex";
+            this.toolTip2.SetToolTip(this.CH1QuiescentCurrntIndex, resources.GetString("CH1QuiescentCurrntIndex.ToolTip"));
+            this.toolTip3.SetToolTip(this.CH1QuiescentCurrntIndex, resources.GetString("CH1QuiescentCurrntIndex.ToolTip1"));
+            this.toolTip1.SetToolTip(this.CH1QuiescentCurrntIndex, resources.GetString("CH1QuiescentCurrntIndex.ToolTip2"));
             // 
             // CH1QuiescentCurrnt
             // 
@@ -4832,6 +6131,9 @@
             this.CH1QuiescentCurrnt.Cursor = System.Windows.Forms.Cursors.Hand;
             this.CH1QuiescentCurrnt.Name = "CH1QuiescentCurrnt";
             this.CH1QuiescentCurrnt.Style = Sunny.UI.UIStyle.Custom;
+            this.toolTip2.SetToolTip(this.CH1QuiescentCurrnt, resources.GetString("CH1QuiescentCurrnt.ToolTip"));
+            this.toolTip3.SetToolTip(this.CH1QuiescentCurrnt, resources.GetString("CH1QuiescentCurrnt.ToolTip1"));
+            this.toolTip1.SetToolTip(this.CH1QuiescentCurrnt, resources.GetString("CH1QuiescentCurrnt.ToolTip2"));
             this.CH1QuiescentCurrnt.CheckedChanged += new System.EventHandler(this.CH1QuiescentCurrnt_CheckedChanged);
             // 
             // CH1UpDownChange
@@ -4840,6 +6142,9 @@
             this.CH1UpDownChange.Cursor = System.Windows.Forms.Cursors.Hand;
             this.CH1UpDownChange.Name = "CH1UpDownChange";
             this.CH1UpDownChange.Style = Sunny.UI.UIStyle.Custom;
+            this.toolTip2.SetToolTip(this.CH1UpDownChange, resources.GetString("CH1UpDownChange.ToolTip"));
+            this.toolTip3.SetToolTip(this.CH1UpDownChange, resources.GetString("CH1UpDownChange.ToolTip1"));
+            this.toolTip1.SetToolTip(this.CH1UpDownChange, resources.GetString("CH1UpDownChange.ToolTip2"));
             this.CH1UpDownChange.CheckedChanged += new System.EventHandler(this.CH1UpDownChange_CheckedChanged);
             // 
             // CH1HighLevel
@@ -4848,6 +6153,9 @@
             this.CH1HighLevel.Cursor = System.Windows.Forms.Cursors.Hand;
             this.CH1HighLevel.Name = "CH1HighLevel";
             this.CH1HighLevel.Style = Sunny.UI.UIStyle.Custom;
+            this.toolTip2.SetToolTip(this.CH1HighLevel, resources.GetString("CH1HighLevel.ToolTip"));
+            this.toolTip3.SetToolTip(this.CH1HighLevel, resources.GetString("CH1HighLevel.ToolTip1"));
+            this.toolTip1.SetToolTip(this.CH1HighLevel, resources.GetString("CH1HighLevel.ToolTip2"));
             this.CH1HighLevel.CheckedChanged += new System.EventHandler(this.CH1HighLevel_CheckedChanged);
             // 
             // OrderLeftCopy
@@ -4857,43 +6165,67 @@
             this.OrderLeftCopy.Name = "OrderLeftCopy";
             this.OrderLeftCopy.Style = Sunny.UI.UIStyle.Custom;
             this.OrderLeftCopy.Symbol = 361697;
-            this.OrderLeftCopy.TipsFont = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.OrderLeftCopy.TipsFont = new System.Drawing.Font("Microsoft YaHei", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.toolTip3.SetToolTip(this.OrderLeftCopy, resources.GetString("OrderLeftCopy.ToolTip"));
+            this.toolTip2.SetToolTip(this.OrderLeftCopy, resources.GetString("OrderLeftCopy.ToolTip1"));
+            this.toolTip1.SetToolTip(this.OrderLeftCopy, resources.GetString("OrderLeftCopy.ToolTip2"));
             this.OrderLeftCopy.Click += new System.EventHandler(this.OrderLeftCopy_Click);
             // 
             // CH1FWDLeakindex
             // 
             resources.ApplyResources(this.CH1FWDLeakindex, "CH1FWDLeakindex");
             this.CH1FWDLeakindex.Name = "CH1FWDLeakindex";
+            this.toolTip2.SetToolTip(this.CH1FWDLeakindex, resources.GetString("CH1FWDLeakindex.ToolTip"));
+            this.toolTip3.SetToolTip(this.CH1FWDLeakindex, resources.GetString("CH1FWDLeakindex.ToolTip1"));
+            this.toolTip1.SetToolTip(this.CH1FWDLeakindex, resources.GetString("CH1FWDLeakindex.ToolTip2"));
             // 
             // CH1DOWNLeakindex
             // 
             resources.ApplyResources(this.CH1DOWNLeakindex, "CH1DOWNLeakindex");
             this.CH1DOWNLeakindex.Name = "CH1DOWNLeakindex";
+            this.toolTip2.SetToolTip(this.CH1DOWNLeakindex, resources.GetString("CH1DOWNLeakindex.ToolTip"));
+            this.toolTip3.SetToolTip(this.CH1DOWNLeakindex, resources.GetString("CH1DOWNLeakindex.ToolTip1"));
+            this.toolTip1.SetToolTip(this.CH1DOWNLeakindex, resources.GetString("CH1DOWNLeakindex.ToolTip2"));
             // 
             // CH1UPLeakindex
             // 
             resources.ApplyResources(this.CH1UPLeakindex, "CH1UPLeakindex");
             this.CH1UPLeakindex.Name = "CH1UPLeakindex";
+            this.toolTip2.SetToolTip(this.CH1UPLeakindex, resources.GetString("CH1UPLeakindex.ToolTip"));
+            this.toolTip3.SetToolTip(this.CH1UPLeakindex, resources.GetString("CH1UPLeakindex.ToolTip1"));
+            this.toolTip1.SetToolTip(this.CH1UPLeakindex, resources.GetString("CH1UPLeakindex.ToolTip2"));
             // 
             // CH1RWDindex
             // 
             resources.ApplyResources(this.CH1RWDindex, "CH1RWDindex");
             this.CH1RWDindex.Name = "CH1RWDindex";
+            this.toolTip2.SetToolTip(this.CH1RWDindex, resources.GetString("CH1RWDindex.ToolTip"));
+            this.toolTip3.SetToolTip(this.CH1RWDindex, resources.GetString("CH1RWDindex.ToolTip1"));
+            this.toolTip1.SetToolTip(this.CH1RWDindex, resources.GetString("CH1RWDindex.ToolTip2"));
             // 
             // CH1FWDindex
             // 
             resources.ApplyResources(this.CH1FWDindex, "CH1FWDindex");
             this.CH1FWDindex.Name = "CH1FWDindex";
+            this.toolTip2.SetToolTip(this.CH1FWDindex, resources.GetString("CH1FWDindex.ToolTip"));
+            this.toolTip3.SetToolTip(this.CH1FWDindex, resources.GetString("CH1FWDindex.ToolTip1"));
+            this.toolTip1.SetToolTip(this.CH1FWDindex, resources.GetString("CH1FWDindex.ToolTip2"));
             // 
             // CH1DOWNindex
             // 
             resources.ApplyResources(this.CH1DOWNindex, "CH1DOWNindex");
             this.CH1DOWNindex.Name = "CH1DOWNindex";
+            this.toolTip2.SetToolTip(this.CH1DOWNindex, resources.GetString("CH1DOWNindex.ToolTip"));
+            this.toolTip3.SetToolTip(this.CH1DOWNindex, resources.GetString("CH1DOWNindex.ToolTip1"));
+            this.toolTip1.SetToolTip(this.CH1DOWNindex, resources.GetString("CH1DOWNindex.ToolTip2"));
             // 
             // CH1UPindex
             // 
             resources.ApplyResources(this.CH1UPindex, "CH1UPindex");
             this.CH1UPindex.Name = "CH1UPindex";
+            this.toolTip2.SetToolTip(this.CH1UPindex, resources.GetString("CH1UPindex.ToolTip"));
+            this.toolTip3.SetToolTip(this.CH1UPindex, resources.GetString("CH1UPindex.ToolTip1"));
+            this.toolTip1.SetToolTip(this.CH1UPindex, resources.GetString("CH1UPindex.ToolTip2"));
             // 
             // CH1IGN
             // 
@@ -4901,6 +6233,9 @@
             this.CH1IGN.Cursor = System.Windows.Forms.Cursors.Hand;
             this.CH1IGN.Name = "CH1IGN";
             this.CH1IGN.Style = Sunny.UI.UIStyle.Custom;
+            this.toolTip2.SetToolTip(this.CH1IGN, resources.GetString("CH1IGN.ToolTip"));
+            this.toolTip3.SetToolTip(this.CH1IGN, resources.GetString("CH1IGN.ToolTip1"));
+            this.toolTip1.SetToolTip(this.CH1IGN, resources.GetString("CH1IGN.ToolTip2"));
             this.CH1IGN.CheckedChanged += new System.EventHandler(this.CH1IGN_CheckedChanged);
             // 
             // CH1LIN
@@ -4909,6 +6244,9 @@
             this.CH1LIN.Cursor = System.Windows.Forms.Cursors.Hand;
             this.CH1LIN.Name = "CH1LIN";
             this.CH1LIN.Style = Sunny.UI.UIStyle.Custom;
+            this.toolTip2.SetToolTip(this.CH1LIN, resources.GetString("CH1LIN.ToolTip"));
+            this.toolTip3.SetToolTip(this.CH1LIN, resources.GetString("CH1LIN.ToolTip1"));
+            this.toolTip1.SetToolTip(this.CH1LIN, resources.GetString("CH1LIN.ToolTip2"));
             this.CH1LIN.CheckedChanged += new System.EventHandler(this.CH1LIN_CheckedChanged);
             // 
             // CH1Pump
@@ -4917,6 +6255,9 @@
             this.CH1Pump.Cursor = System.Windows.Forms.Cursors.Hand;
             this.CH1Pump.Name = "CH1Pump";
             this.CH1Pump.Style = Sunny.UI.UIStyle.Custom;
+            this.toolTip2.SetToolTip(this.CH1Pump, resources.GetString("CH1Pump.ToolTip"));
+            this.toolTip3.SetToolTip(this.CH1Pump, resources.GetString("CH1Pump.ToolTip1"));
+            this.toolTip1.SetToolTip(this.CH1Pump, resources.GetString("CH1Pump.ToolTip2"));
             this.CH1Pump.CheckedChanged += new System.EventHandler(this.CH1Pump_CheckedChanged);
             // 
             // CH1FWDLeak
@@ -4925,6 +6266,9 @@
             this.CH1FWDLeak.Cursor = System.Windows.Forms.Cursors.Hand;
             this.CH1FWDLeak.Name = "CH1FWDLeak";
             this.CH1FWDLeak.Style = Sunny.UI.UIStyle.Custom;
+            this.toolTip2.SetToolTip(this.CH1FWDLeak, resources.GetString("CH1FWDLeak.ToolTip"));
+            this.toolTip3.SetToolTip(this.CH1FWDLeak, resources.GetString("CH1FWDLeak.ToolTip1"));
+            this.toolTip1.SetToolTip(this.CH1FWDLeak, resources.GetString("CH1FWDLeak.ToolTip2"));
             this.CH1FWDLeak.CheckedChanged += new System.EventHandler(this.CH1FWDLeak_CheckedChanged);
             // 
             // CH1DOWNLeak
@@ -4933,6 +6277,9 @@
             this.CH1DOWNLeak.Cursor = System.Windows.Forms.Cursors.Hand;
             this.CH1DOWNLeak.Name = "CH1DOWNLeak";
             this.CH1DOWNLeak.Style = Sunny.UI.UIStyle.Custom;
+            this.toolTip2.SetToolTip(this.CH1DOWNLeak, resources.GetString("CH1DOWNLeak.ToolTip"));
+            this.toolTip3.SetToolTip(this.CH1DOWNLeak, resources.GetString("CH1DOWNLeak.ToolTip1"));
+            this.toolTip1.SetToolTip(this.CH1DOWNLeak, resources.GetString("CH1DOWNLeak.ToolTip2"));
             this.CH1DOWNLeak.CheckedChanged += new System.EventHandler(this.CH1DOWNLeak_CheckedChanged);
             // 
             // CH1UPLeak
@@ -4941,6 +6288,9 @@
             this.CH1UPLeak.Cursor = System.Windows.Forms.Cursors.Hand;
             this.CH1UPLeak.Name = "CH1UPLeak";
             this.CH1UPLeak.Style = Sunny.UI.UIStyle.Custom;
+            this.toolTip2.SetToolTip(this.CH1UPLeak, resources.GetString("CH1UPLeak.ToolTip"));
+            this.toolTip3.SetToolTip(this.CH1UPLeak, resources.GetString("CH1UPLeak.ToolTip1"));
+            this.toolTip1.SetToolTip(this.CH1UPLeak, resources.GetString("CH1UPLeak.ToolTip2"));
             this.CH1UPLeak.CheckedChanged += new System.EventHandler(this.CH1UPLeak_CheckedChanged);
             // 
             // CH1RWD
@@ -4949,6 +6299,9 @@
             this.CH1RWD.Cursor = System.Windows.Forms.Cursors.Hand;
             this.CH1RWD.Name = "CH1RWD";
             this.CH1RWD.Style = Sunny.UI.UIStyle.Custom;
+            this.toolTip2.SetToolTip(this.CH1RWD, resources.GetString("CH1RWD.ToolTip"));
+            this.toolTip3.SetToolTip(this.CH1RWD, resources.GetString("CH1RWD.ToolTip1"));
+            this.toolTip1.SetToolTip(this.CH1RWD, resources.GetString("CH1RWD.ToolTip2"));
             this.CH1RWD.CheckedChanged += new System.EventHandler(this.CH1RWD_CheckedChanged);
             // 
             // CH1FWD
@@ -4957,6 +6310,9 @@
             this.CH1FWD.Cursor = System.Windows.Forms.Cursors.Hand;
             this.CH1FWD.Name = "CH1FWD";
             this.CH1FWD.Style = Sunny.UI.UIStyle.Custom;
+            this.toolTip2.SetToolTip(this.CH1FWD, resources.GetString("CH1FWD.ToolTip"));
+            this.toolTip3.SetToolTip(this.CH1FWD, resources.GetString("CH1FWD.ToolTip1"));
+            this.toolTip1.SetToolTip(this.CH1FWD, resources.GetString("CH1FWD.ToolTip2"));
             this.CH1FWD.CheckedChanged += new System.EventHandler(this.CH1FWD_CheckedChanged);
             // 
             // CH1DOWN
@@ -4965,6 +6321,9 @@
             this.CH1DOWN.Cursor = System.Windows.Forms.Cursors.Hand;
             this.CH1DOWN.Name = "CH1DOWN";
             this.CH1DOWN.Style = Sunny.UI.UIStyle.Custom;
+            this.toolTip2.SetToolTip(this.CH1DOWN, resources.GetString("CH1DOWN.ToolTip"));
+            this.toolTip3.SetToolTip(this.CH1DOWN, resources.GetString("CH1DOWN.ToolTip1"));
+            this.toolTip1.SetToolTip(this.CH1DOWN, resources.GetString("CH1DOWN.ToolTip2"));
             this.CH1DOWN.CheckedChanged += new System.EventHandler(this.CH1DOWN_CheckedChanged);
             // 
             // CH1UP
@@ -4973,6 +6332,9 @@
             this.CH1UP.Cursor = System.Windows.Forms.Cursors.Hand;
             this.CH1UP.Name = "CH1UP";
             this.CH1UP.Style = Sunny.UI.UIStyle.Custom;
+            this.toolTip2.SetToolTip(this.CH1UP, resources.GetString("CH1UP.ToolTip"));
+            this.toolTip3.SetToolTip(this.CH1UP, resources.GetString("CH1UP.ToolTip1"));
+            this.toolTip1.SetToolTip(this.CH1UP, resources.GetString("CH1UP.ToolTip2"));
             this.CH1UP.CheckedChanged += new System.EventHandler(this.CH1UP_CheckedChanged);
             // 
             // tabPage1
@@ -4985,6 +6347,9 @@
             this.tabPage1.Controls.Add(this.uiGroupBox4);
             this.tabPage1.Controls.Add(this.uiGroupBox2);
             this.tabPage1.Name = "tabPage1";
+            this.toolTip1.SetToolTip(this.tabPage1, resources.GetString("tabPage1.ToolTip"));
+            this.toolTip2.SetToolTip(this.tabPage1, resources.GetString("tabPage1.ToolTip1"));
+            this.toolTip3.SetToolTip(this.tabPage1, resources.GetString("tabPage1.ToolTip2"));
             // 
             // ChkPLCPress
             // 
@@ -4993,6 +6358,9 @@
             this.ChkPLCPress.Cursor = System.Windows.Forms.Cursors.Hand;
             this.ChkPLCPress.Name = "ChkPLCPress";
             this.ChkPLCPress.Style = Sunny.UI.UIStyle.Custom;
+            this.toolTip2.SetToolTip(this.ChkPLCPress, resources.GetString("ChkPLCPress.ToolTip"));
+            this.toolTip3.SetToolTip(this.ChkPLCPress, resources.GetString("ChkPLCPress.ToolTip1"));
+            this.toolTip1.SetToolTip(this.ChkPLCPress, resources.GetString("ChkPLCPress.ToolTip2"));
             this.ChkPLCPress.CheckedChanged += new System.EventHandler(this.ChkPLCPress_CheckedChanged);
             // 
             // uiGroupBox6
@@ -5013,6 +6381,9 @@
             this.uiGroupBox6.Name = "uiGroupBox6";
             this.uiGroupBox6.Style = Sunny.UI.UIStyle.Custom;
             this.uiGroupBox6.TextAlignment = System.Drawing.ContentAlignment.MiddleCenter;
+            this.toolTip3.SetToolTip(this.uiGroupBox6, resources.GetString("uiGroupBox6.ToolTip"));
+            this.toolTip2.SetToolTip(this.uiGroupBox6, resources.GetString("uiGroupBox6.ToolTip1"));
+            this.toolTip1.SetToolTip(this.uiGroupBox6, resources.GetString("uiGroupBox6.ToolTip2"));
             // 
             // CH2ElecSave
             // 
@@ -5020,18 +6391,27 @@
             this.CH2ElecSave.Cursor = System.Windows.Forms.Cursors.Hand;
             this.CH2ElecSave.Name = "CH2ElecSave";
             this.CH2ElecSave.Style = Sunny.UI.UIStyle.Custom;
-            this.CH2ElecSave.TipsFont = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.CH2ElecSave.TipsFont = new System.Drawing.Font("Microsoft YaHei", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.toolTip3.SetToolTip(this.CH2ElecSave, resources.GetString("CH2ElecSave.ToolTip"));
+            this.toolTip2.SetToolTip(this.CH2ElecSave, resources.GetString("CH2ElecSave.ToolTip1"));
+            this.toolTip1.SetToolTip(this.CH2ElecSave, resources.GetString("CH2ElecSave.ToolTip2"));
             this.CH2ElecSave.Click += new System.EventHandler(this.CH2ElecSave_Click);
             // 
             // label21
             // 
             resources.ApplyResources(this.label21, "label21");
             this.label21.Name = "label21";
+            this.toolTip2.SetToolTip(this.label21, resources.GetString("label21.ToolTip"));
+            this.toolTip3.SetToolTip(this.label21, resources.GetString("label21.ToolTip1"));
+            this.toolTip1.SetToolTip(this.label21, resources.GetString("label21.ToolTip2"));
             // 
             // label22
             // 
             resources.ApplyResources(this.label22, "label22");
             this.label22.Name = "label22";
+            this.toolTip2.SetToolTip(this.label22, resources.GetString("label22.ToolTip"));
+            this.toolTip3.SetToolTip(this.label22, resources.GetString("label22.ToolTip1"));
+            this.toolTip1.SetToolTip(this.label22, resources.GetString("label22.ToolTip2"));
             // 
             // CH2ElecComp
             // 
@@ -5044,11 +6424,17 @@
             this.CH2ElecComp.Name = "CH2ElecComp";
             this.CH2ElecComp.Style = Sunny.UI.UIStyle.Custom;
             this.CH2ElecComp.TextAlignment = System.Drawing.ContentAlignment.MiddleLeft;
+            this.toolTip2.SetToolTip(this.CH2ElecComp, resources.GetString("CH2ElecComp.ToolTip"));
+            this.toolTip3.SetToolTip(this.CH2ElecComp, resources.GetString("CH2ElecComp.ToolTip1"));
+            this.toolTip1.SetToolTip(this.CH2ElecComp, resources.GetString("CH2ElecComp.ToolTip2"));
             // 
             // label23
             // 
             resources.ApplyResources(this.label23, "label23");
             this.label23.Name = "label23";
+            this.toolTip2.SetToolTip(this.label23, resources.GetString("label23.ToolTip"));
+            this.toolTip3.SetToolTip(this.label23, resources.GetString("label23.ToolTip1"));
+            this.toolTip1.SetToolTip(this.label23, resources.GetString("label23.ToolTip2"));
             // 
             // CH2ElecMin
             // 
@@ -5061,6 +6447,9 @@
             this.CH2ElecMin.Name = "CH2ElecMin";
             this.CH2ElecMin.Style = Sunny.UI.UIStyle.Custom;
             this.CH2ElecMin.TextAlignment = System.Drawing.ContentAlignment.MiddleLeft;
+            this.toolTip2.SetToolTip(this.CH2ElecMin, resources.GetString("CH2ElecMin.ToolTip"));
+            this.toolTip3.SetToolTip(this.CH2ElecMin, resources.GetString("CH2ElecMin.ToolTip1"));
+            this.toolTip1.SetToolTip(this.CH2ElecMin, resources.GetString("CH2ElecMin.ToolTip2"));
             // 
             // CH2ElecMax
             // 
@@ -5073,6 +6462,9 @@
             this.CH2ElecMax.Name = "CH2ElecMax";
             this.CH2ElecMax.Style = Sunny.UI.UIStyle.Custom;
             this.CH2ElecMax.TextAlignment = System.Drawing.ContentAlignment.MiddleLeft;
+            this.toolTip2.SetToolTip(this.CH2ElecMax, resources.GetString("CH2ElecMax.ToolTip"));
+            this.toolTip3.SetToolTip(this.CH2ElecMax, resources.GetString("CH2ElecMax.ToolTip1"));
+            this.toolTip1.SetToolTip(this.CH2ElecMax, resources.GetString("CH2ElecMax.ToolTip2"));
             // 
             // uiGroupBox4
             // 
@@ -5090,6 +6482,9 @@
             this.uiGroupBox4.Name = "uiGroupBox4";
             this.uiGroupBox4.Style = Sunny.UI.UIStyle.Custom;
             this.uiGroupBox4.TextAlignment = System.Drawing.ContentAlignment.MiddleCenter;
+            this.toolTip3.SetToolTip(this.uiGroupBox4, resources.GetString("uiGroupBox4.ToolTip"));
+            this.toolTip2.SetToolTip(this.uiGroupBox4, resources.GetString("uiGroupBox4.ToolTip1"));
+            this.toolTip1.SetToolTip(this.uiGroupBox4, resources.GetString("uiGroupBox4.ToolTip2"));
             // 
             // CH4ValveWrite
             // 
@@ -5097,18 +6492,27 @@
             this.CH4ValveWrite.Cursor = System.Windows.Forms.Cursors.Hand;
             this.CH4ValveWrite.Name = "CH4ValveWrite";
             this.CH4ValveWrite.Style = Sunny.UI.UIStyle.Custom;
-            this.CH4ValveWrite.TipsFont = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.CH4ValveWrite.TipsFont = new System.Drawing.Font("Microsoft YaHei", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.toolTip2.SetToolTip(this.CH4ValveWrite, resources.GetString("CH4ValveWrite.ToolTip"));
+            this.toolTip1.SetToolTip(this.CH4ValveWrite, resources.GetString("CH4ValveWrite.ToolTip1"));
+            this.toolTip3.SetToolTip(this.CH4ValveWrite, resources.GetString("CH4ValveWrite.ToolTip2"));
             this.CH4ValveWrite.Click += new System.EventHandler(this.CH4ValveWrite_Click);
             // 
             // label13
             // 
             resources.ApplyResources(this.label13, "label13");
             this.label13.Name = "label13";
+            this.toolTip2.SetToolTip(this.label13, resources.GetString("label13.ToolTip"));
+            this.toolTip3.SetToolTip(this.label13, resources.GetString("label13.ToolTip1"));
+            this.toolTip1.SetToolTip(this.label13, resources.GetString("label13.ToolTip2"));
             // 
             // PLCPreUnit4
             // 
             resources.ApplyResources(this.PLCPreUnit4, "PLCPreUnit4");
             this.PLCPreUnit4.Name = "PLCPreUnit4";
+            this.toolTip2.SetToolTip(this.PLCPreUnit4, resources.GetString("PLCPreUnit4.ToolTip"));
+            this.toolTip3.SetToolTip(this.PLCPreUnit4, resources.GetString("PLCPreUnit4.ToolTip1"));
+            this.toolTip1.SetToolTip(this.PLCPreUnit4, resources.GetString("PLCPreUnit4.ToolTip2"));
             // 
             // CH4Pressure
             // 
@@ -5121,6 +6525,9 @@
             this.CH4Pressure.Name = "CH4Pressure";
             this.CH4Pressure.Style = Sunny.UI.UIStyle.Custom;
             this.CH4Pressure.TextAlignment = System.Drawing.ContentAlignment.MiddleLeft;
+            this.toolTip2.SetToolTip(this.CH4Pressure, resources.GetString("CH4Pressure.ToolTip"));
+            this.toolTip3.SetToolTip(this.CH4Pressure, resources.GetString("CH4Pressure.ToolTip1"));
+            this.toolTip1.SetToolTip(this.CH4Pressure, resources.GetString("CH4Pressure.ToolTip2"));
             // 
             // CH3ValveWrite
             // 
@@ -5128,18 +6535,27 @@
             this.CH3ValveWrite.Cursor = System.Windows.Forms.Cursors.Hand;
             this.CH3ValveWrite.Name = "CH3ValveWrite";
             this.CH3ValveWrite.Style = Sunny.UI.UIStyle.Custom;
-            this.CH3ValveWrite.TipsFont = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.CH3ValveWrite.TipsFont = new System.Drawing.Font("Microsoft YaHei", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.toolTip2.SetToolTip(this.CH3ValveWrite, resources.GetString("CH3ValveWrite.ToolTip"));
+            this.toolTip1.SetToolTip(this.CH3ValveWrite, resources.GetString("CH3ValveWrite.ToolTip1"));
+            this.toolTip3.SetToolTip(this.CH3ValveWrite, resources.GetString("CH3ValveWrite.ToolTip2"));
             this.CH3ValveWrite.Click += new System.EventHandler(this.CH3ValveWrite_Click);
             // 
             // label15
             // 
             resources.ApplyResources(this.label15, "label15");
             this.label15.Name = "label15";
+            this.toolTip2.SetToolTip(this.label15, resources.GetString("label15.ToolTip"));
+            this.toolTip3.SetToolTip(this.label15, resources.GetString("label15.ToolTip1"));
+            this.toolTip1.SetToolTip(this.label15, resources.GetString("label15.ToolTip2"));
             // 
             // PLCPreUnit3
             // 
             resources.ApplyResources(this.PLCPreUnit3, "PLCPreUnit3");
             this.PLCPreUnit3.Name = "PLCPreUnit3";
+            this.toolTip2.SetToolTip(this.PLCPreUnit3, resources.GetString("PLCPreUnit3.ToolTip"));
+            this.toolTip3.SetToolTip(this.PLCPreUnit3, resources.GetString("PLCPreUnit3.ToolTip1"));
+            this.toolTip1.SetToolTip(this.PLCPreUnit3, resources.GetString("PLCPreUnit3.ToolTip2"));
             // 
             // CH3Pressure
             // 
@@ -5152,6 +6568,9 @@
             this.CH3Pressure.Name = "CH3Pressure";
             this.CH3Pressure.Style = Sunny.UI.UIStyle.Custom;
             this.CH3Pressure.TextAlignment = System.Drawing.ContentAlignment.MiddleLeft;
+            this.toolTip2.SetToolTip(this.CH3Pressure, resources.GetString("CH3Pressure.ToolTip"));
+            this.toolTip3.SetToolTip(this.CH3Pressure, resources.GetString("CH3Pressure.ToolTip1"));
+            this.toolTip1.SetToolTip(this.CH3Pressure, resources.GetString("CH3Pressure.ToolTip2"));
             // 
             // uiGroupBox2
             // 
@@ -5169,6 +6588,9 @@
             this.uiGroupBox2.Name = "uiGroupBox2";
             this.uiGroupBox2.Style = Sunny.UI.UIStyle.Custom;
             this.uiGroupBox2.TextAlignment = System.Drawing.ContentAlignment.MiddleCenter;
+            this.toolTip3.SetToolTip(this.uiGroupBox2, resources.GetString("uiGroupBox2.ToolTip"));
+            this.toolTip2.SetToolTip(this.uiGroupBox2, resources.GetString("uiGroupBox2.ToolTip1"));
+            this.toolTip1.SetToolTip(this.uiGroupBox2, resources.GetString("uiGroupBox2.ToolTip2"));
             // 
             // CH2ValveWrite
             // 
@@ -5176,18 +6598,27 @@
             this.CH2ValveWrite.Cursor = System.Windows.Forms.Cursors.Hand;
             this.CH2ValveWrite.Name = "CH2ValveWrite";
             this.CH2ValveWrite.Style = Sunny.UI.UIStyle.Custom;
-            this.CH2ValveWrite.TipsFont = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.CH2ValveWrite.TipsFont = new System.Drawing.Font("Microsoft YaHei", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.toolTip2.SetToolTip(this.CH2ValveWrite, resources.GetString("CH2ValveWrite.ToolTip"));
+            this.toolTip1.SetToolTip(this.CH2ValveWrite, resources.GetString("CH2ValveWrite.ToolTip1"));
+            this.toolTip3.SetToolTip(this.CH2ValveWrite, resources.GetString("CH2ValveWrite.ToolTip2"));
             this.CH2ValveWrite.Click += new System.EventHandler(this.CH2ValveWrite_Click);
             // 
             // label3
             // 
             resources.ApplyResources(this.label3, "label3");
             this.label3.Name = "label3";
+            this.toolTip2.SetToolTip(this.label3, resources.GetString("label3.ToolTip"));
+            this.toolTip3.SetToolTip(this.label3, resources.GetString("label3.ToolTip1"));
+            this.toolTip1.SetToolTip(this.label3, resources.GetString("label3.ToolTip2"));
             // 
             // PLCPreUnit2
             // 
             resources.ApplyResources(this.PLCPreUnit2, "PLCPreUnit2");
             this.PLCPreUnit2.Name = "PLCPreUnit2";
+            this.toolTip2.SetToolTip(this.PLCPreUnit2, resources.GetString("PLCPreUnit2.ToolTip"));
+            this.toolTip3.SetToolTip(this.PLCPreUnit2, resources.GetString("PLCPreUnit2.ToolTip1"));
+            this.toolTip1.SetToolTip(this.PLCPreUnit2, resources.GetString("PLCPreUnit2.ToolTip2"));
             // 
             // CH2Pressure
             // 
@@ -5200,6 +6631,9 @@
             this.CH2Pressure.Name = "CH2Pressure";
             this.CH2Pressure.Style = Sunny.UI.UIStyle.Custom;
             this.CH2Pressure.TextAlignment = System.Drawing.ContentAlignment.MiddleLeft;
+            this.toolTip2.SetToolTip(this.CH2Pressure, resources.GetString("CH2Pressure.ToolTip"));
+            this.toolTip3.SetToolTip(this.CH2Pressure, resources.GetString("CH2Pressure.ToolTip1"));
+            this.toolTip1.SetToolTip(this.CH2Pressure, resources.GetString("CH2Pressure.ToolTip2"));
             // 
             // CH1ValveWrite
             // 
@@ -5207,18 +6641,27 @@
             this.CH1ValveWrite.Cursor = System.Windows.Forms.Cursors.Hand;
             this.CH1ValveWrite.Name = "CH1ValveWrite";
             this.CH1ValveWrite.Style = Sunny.UI.UIStyle.Custom;
-            this.CH1ValveWrite.TipsFont = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.CH1ValveWrite.TipsFont = new System.Drawing.Font("Microsoft YaHei", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.toolTip2.SetToolTip(this.CH1ValveWrite, resources.GetString("CH1ValveWrite.ToolTip"));
+            this.toolTip1.SetToolTip(this.CH1ValveWrite, resources.GetString("CH1ValveWrite.ToolTip1"));
+            this.toolTip3.SetToolTip(this.CH1ValveWrite, resources.GetString("CH1ValveWrite.ToolTip2"));
             this.CH1ValveWrite.Click += new System.EventHandler(this.CH1ValveWrite_Click);
             // 
             // label1
             // 
             resources.ApplyResources(this.label1, "label1");
             this.label1.Name = "label1";
+            this.toolTip2.SetToolTip(this.label1, resources.GetString("label1.ToolTip"));
+            this.toolTip3.SetToolTip(this.label1, resources.GetString("label1.ToolTip1"));
+            this.toolTip1.SetToolTip(this.label1, resources.GetString("label1.ToolTip2"));
             // 
             // PLCPreUnit1
             // 
             resources.ApplyResources(this.PLCPreUnit1, "PLCPreUnit1");
             this.PLCPreUnit1.Name = "PLCPreUnit1";
+            this.toolTip2.SetToolTip(this.PLCPreUnit1, resources.GetString("PLCPreUnit1.ToolTip"));
+            this.toolTip3.SetToolTip(this.PLCPreUnit1, resources.GetString("PLCPreUnit1.ToolTip1"));
+            this.toolTip1.SetToolTip(this.PLCPreUnit1, resources.GetString("PLCPreUnit1.ToolTip2"));
             // 
             // CH1Pressure
             // 
@@ -5231,6 +6674,9 @@
             this.CH1Pressure.Name = "CH1Pressure";
             this.CH1Pressure.Style = Sunny.UI.UIStyle.Custom;
             this.CH1Pressure.TextAlignment = System.Drawing.ContentAlignment.MiddleLeft;
+            this.toolTip2.SetToolTip(this.CH1Pressure, resources.GetString("CH1Pressure.ToolTip"));
+            this.toolTip3.SetToolTip(this.CH1Pressure, resources.GetString("CH1Pressure.ToolTip1"));
+            this.toolTip1.SetToolTip(this.CH1Pressure, resources.GetString("CH1Pressure.ToolTip2"));
             // 
             // tabPage9
             // 
@@ -5239,6 +6685,9 @@
             this.tabPage9.Controls.Add(this.uiGroupBox30);
             this.tabPage9.Controls.Add(this.uiGroupBox31);
             this.tabPage9.Name = "tabPage9";
+            this.toolTip1.SetToolTip(this.tabPage9, resources.GetString("tabPage9.ToolTip"));
+            this.toolTip2.SetToolTip(this.tabPage9, resources.GetString("tabPage9.ToolTip1"));
+            this.toolTip3.SetToolTip(this.tabPage9, resources.GetString("tabPage9.ToolTip2"));
             // 
             // uiGroupBox30
             // 
@@ -5257,6 +6706,9 @@
             this.uiGroupBox30.Name = "uiGroupBox30";
             this.uiGroupBox30.Style = Sunny.UI.UIStyle.Custom;
             this.uiGroupBox30.TextAlignment = System.Drawing.ContentAlignment.MiddleCenter;
+            this.toolTip3.SetToolTip(this.uiGroupBox30, resources.GetString("uiGroupBox30.ToolTip"));
+            this.toolTip2.SetToolTip(this.uiGroupBox30, resources.GetString("uiGroupBox30.ToolTip1"));
+            this.toolTip1.SetToolTip(this.uiGroupBox30, resources.GetString("uiGroupBox30.ToolTip2"));
             // 
             // btnCKCh2Off
             // 
@@ -5265,7 +6717,10 @@
             this.btnCKCh2Off.Name = "btnCKCh2Off";
             this.btnCKCh2Off.Style = Sunny.UI.UIStyle.Custom;
             this.btnCKCh2Off.Symbol = 61453;
-            this.btnCKCh2Off.TipsFont = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.btnCKCh2Off.TipsFont = new System.Drawing.Font("Microsoft YaHei", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.toolTip3.SetToolTip(this.btnCKCh2Off, resources.GetString("btnCKCh2Off.ToolTip"));
+            this.toolTip2.SetToolTip(this.btnCKCh2Off, resources.GetString("btnCKCh2Off.ToolTip1"));
+            this.toolTip1.SetToolTip(this.btnCKCh2Off, resources.GetString("btnCKCh2Off.ToolTip2"));
             this.btnCKCh2Off.Click += new System.EventHandler(this.btnCKCh2Off_Click);
             // 
             // btnCKCh2On
@@ -5274,7 +6729,10 @@
             this.btnCKCh2On.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnCKCh2On.Name = "btnCKCh2On";
             this.btnCKCh2On.Style = Sunny.UI.UIStyle.Custom;
-            this.btnCKCh2On.TipsFont = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.btnCKCh2On.TipsFont = new System.Drawing.Font("Microsoft YaHei", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.toolTip3.SetToolTip(this.btnCKCh2On, resources.GetString("btnCKCh2On.ToolTip"));
+            this.toolTip2.SetToolTip(this.btnCKCh2On, resources.GetString("btnCKCh2On.ToolTip1"));
+            this.toolTip1.SetToolTip(this.btnCKCh2On, resources.GetString("btnCKCh2On.ToolTip2"));
             this.btnCKCh2On.Click += new System.EventHandler(this.btnCKCh2On_Click);
             // 
             // btnCKCh2Save
@@ -5283,13 +6741,19 @@
             this.btnCKCh2Save.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnCKCh2Save.Name = "btnCKCh2Save";
             this.btnCKCh2Save.Style = Sunny.UI.UIStyle.Custom;
-            this.btnCKCh2Save.TipsFont = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.btnCKCh2Save.TipsFont = new System.Drawing.Font("Microsoft YaHei", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.toolTip2.SetToolTip(this.btnCKCh2Save, resources.GetString("btnCKCh2Save.ToolTip"));
+            this.toolTip1.SetToolTip(this.btnCKCh2Save, resources.GetString("btnCKCh2Save.ToolTip1"));
+            this.toolTip3.SetToolTip(this.btnCKCh2Save, resources.GetString("btnCKCh2Save.ToolTip2"));
             this.btnCKCh2Save.Click += new System.EventHandler(this.btnCKCh2Save_Click);
             // 
             // label2
             // 
             resources.ApplyResources(this.label2, "label2");
             this.label2.Name = "label2";
+            this.toolTip2.SetToolTip(this.label2, resources.GetString("label2.ToolTip"));
+            this.toolTip3.SetToolTip(this.label2, resources.GetString("label2.ToolTip1"));
+            this.toolTip1.SetToolTip(this.label2, resources.GetString("label2.ToolTip2"));
             // 
             // CKCh2Current
             // 
@@ -5302,16 +6766,25 @@
             this.CKCh2Current.Name = "CKCh2Current";
             this.CKCh2Current.Style = Sunny.UI.UIStyle.Custom;
             this.CKCh2Current.TextAlignment = System.Drawing.ContentAlignment.MiddleLeft;
+            this.toolTip2.SetToolTip(this.CKCh2Current, resources.GetString("CKCh2Current.ToolTip"));
+            this.toolTip3.SetToolTip(this.CKCh2Current, resources.GetString("CKCh2Current.ToolTip1"));
+            this.toolTip1.SetToolTip(this.CKCh2Current, resources.GetString("CKCh2Current.ToolTip2"));
             // 
             // label4
             // 
             resources.ApplyResources(this.label4, "label4");
             this.label4.Name = "label4";
+            this.toolTip2.SetToolTip(this.label4, resources.GetString("label4.ToolTip"));
+            this.toolTip3.SetToolTip(this.label4, resources.GetString("label4.ToolTip1"));
+            this.toolTip1.SetToolTip(this.label4, resources.GetString("label4.ToolTip2"));
             // 
             // label14
             // 
             resources.ApplyResources(this.label14, "label14");
             this.label14.Name = "label14";
+            this.toolTip2.SetToolTip(this.label14, resources.GetString("label14.ToolTip"));
+            this.toolTip3.SetToolTip(this.label14, resources.GetString("label14.ToolTip1"));
+            this.toolTip1.SetToolTip(this.label14, resources.GetString("label14.ToolTip2"));
             // 
             // CKCh2Vol
             // 
@@ -5324,11 +6797,17 @@
             this.CKCh2Vol.Name = "CKCh2Vol";
             this.CKCh2Vol.Style = Sunny.UI.UIStyle.Custom;
             this.CKCh2Vol.TextAlignment = System.Drawing.ContentAlignment.MiddleLeft;
+            this.toolTip2.SetToolTip(this.CKCh2Vol, resources.GetString("CKCh2Vol.ToolTip"));
+            this.toolTip3.SetToolTip(this.CKCh2Vol, resources.GetString("CKCh2Vol.ToolTip1"));
+            this.toolTip1.SetToolTip(this.CKCh2Vol, resources.GetString("CKCh2Vol.ToolTip2"));
             // 
             // label16
             // 
             resources.ApplyResources(this.label16, "label16");
             this.label16.Name = "label16";
+            this.toolTip2.SetToolTip(this.label16, resources.GetString("label16.ToolTip"));
+            this.toolTip3.SetToolTip(this.label16, resources.GetString("label16.ToolTip1"));
+            this.toolTip1.SetToolTip(this.label16, resources.GetString("label16.ToolTip2"));
             // 
             // uiGroupBox31
             // 
@@ -5347,6 +6826,9 @@
             this.uiGroupBox31.Name = "uiGroupBox31";
             this.uiGroupBox31.Style = Sunny.UI.UIStyle.Custom;
             this.uiGroupBox31.TextAlignment = System.Drawing.ContentAlignment.MiddleCenter;
+            this.toolTip3.SetToolTip(this.uiGroupBox31, resources.GetString("uiGroupBox31.ToolTip"));
+            this.toolTip2.SetToolTip(this.uiGroupBox31, resources.GetString("uiGroupBox31.ToolTip1"));
+            this.toolTip1.SetToolTip(this.uiGroupBox31, resources.GetString("uiGroupBox31.ToolTip2"));
             // 
             // btnCKCh1Off
             // 
@@ -5355,7 +6837,10 @@
             this.btnCKCh1Off.Name = "btnCKCh1Off";
             this.btnCKCh1Off.Style = Sunny.UI.UIStyle.Custom;
             this.btnCKCh1Off.Symbol = 61453;
-            this.btnCKCh1Off.TipsFont = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.btnCKCh1Off.TipsFont = new System.Drawing.Font("Microsoft YaHei", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.toolTip3.SetToolTip(this.btnCKCh1Off, resources.GetString("btnCKCh1Off.ToolTip"));
+            this.toolTip2.SetToolTip(this.btnCKCh1Off, resources.GetString("btnCKCh1Off.ToolTip1"));
+            this.toolTip1.SetToolTip(this.btnCKCh1Off, resources.GetString("btnCKCh1Off.ToolTip2"));
             this.btnCKCh1Off.Click += new System.EventHandler(this.btnCKCh1Off_Click);
             // 
             // btnCKCh1On
@@ -5364,7 +6849,10 @@
             this.btnCKCh1On.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnCKCh1On.Name = "btnCKCh1On";
             this.btnCKCh1On.Style = Sunny.UI.UIStyle.Custom;
-            this.btnCKCh1On.TipsFont = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.btnCKCh1On.TipsFont = new System.Drawing.Font("Microsoft YaHei", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.toolTip3.SetToolTip(this.btnCKCh1On, resources.GetString("btnCKCh1On.ToolTip"));
+            this.toolTip2.SetToolTip(this.btnCKCh1On, resources.GetString("btnCKCh1On.ToolTip1"));
+            this.toolTip1.SetToolTip(this.btnCKCh1On, resources.GetString("btnCKCh1On.ToolTip2"));
             this.btnCKCh1On.Click += new System.EventHandler(this.btnCKCh1On_Click);
             // 
             // btnCKCh1Save
@@ -5373,13 +6861,19 @@
             this.btnCKCh1Save.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnCKCh1Save.Name = "btnCKCh1Save";
             this.btnCKCh1Save.Style = Sunny.UI.UIStyle.Custom;
-            this.btnCKCh1Save.TipsFont = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.btnCKCh1Save.TipsFont = new System.Drawing.Font("Microsoft YaHei", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.toolTip2.SetToolTip(this.btnCKCh1Save, resources.GetString("btnCKCh1Save.ToolTip"));
+            this.toolTip1.SetToolTip(this.btnCKCh1Save, resources.GetString("btnCKCh1Save.ToolTip1"));
+            this.toolTip3.SetToolTip(this.btnCKCh1Save, resources.GetString("btnCKCh1Save.ToolTip2"));
             this.btnCKCh1Save.Click += new System.EventHandler(this.btnCKCh1Save_Click);
             // 
             // label42
             // 
             resources.ApplyResources(this.label42, "label42");
             this.label42.Name = "label42";
+            this.toolTip2.SetToolTip(this.label42, resources.GetString("label42.ToolTip"));
+            this.toolTip3.SetToolTip(this.label42, resources.GetString("label42.ToolTip1"));
+            this.toolTip1.SetToolTip(this.label42, resources.GetString("label42.ToolTip2"));
             // 
             // CKCh1Current
             // 
@@ -5392,16 +6886,25 @@
             this.CKCh1Current.Name = "CKCh1Current";
             this.CKCh1Current.Style = Sunny.UI.UIStyle.Custom;
             this.CKCh1Current.TextAlignment = System.Drawing.ContentAlignment.MiddleLeft;
+            this.toolTip2.SetToolTip(this.CKCh1Current, resources.GetString("CKCh1Current.ToolTip"));
+            this.toolTip3.SetToolTip(this.CKCh1Current, resources.GetString("CKCh1Current.ToolTip1"));
+            this.toolTip1.SetToolTip(this.CKCh1Current, resources.GetString("CKCh1Current.ToolTip2"));
             // 
             // label43
             // 
             resources.ApplyResources(this.label43, "label43");
             this.label43.Name = "label43";
+            this.toolTip2.SetToolTip(this.label43, resources.GetString("label43.ToolTip"));
+            this.toolTip3.SetToolTip(this.label43, resources.GetString("label43.ToolTip1"));
+            this.toolTip1.SetToolTip(this.label43, resources.GetString("label43.ToolTip2"));
             // 
             // label45
             // 
             resources.ApplyResources(this.label45, "label45");
             this.label45.Name = "label45";
+            this.toolTip2.SetToolTip(this.label45, resources.GetString("label45.ToolTip"));
+            this.toolTip3.SetToolTip(this.label45, resources.GetString("label45.ToolTip1"));
+            this.toolTip1.SetToolTip(this.label45, resources.GetString("label45.ToolTip2"));
             // 
             // CKCh1Vol
             // 
@@ -5414,11 +6917,17 @@
             this.CKCh1Vol.Name = "CKCh1Vol";
             this.CKCh1Vol.Style = Sunny.UI.UIStyle.Custom;
             this.CKCh1Vol.TextAlignment = System.Drawing.ContentAlignment.MiddleLeft;
+            this.toolTip2.SetToolTip(this.CKCh1Vol, resources.GetString("CKCh1Vol.ToolTip"));
+            this.toolTip3.SetToolTip(this.CKCh1Vol, resources.GetString("CKCh1Vol.ToolTip1"));
+            this.toolTip1.SetToolTip(this.CKCh1Vol, resources.GetString("CKCh1Vol.ToolTip2"));
             // 
             // label46
             // 
             resources.ApplyResources(this.label46, "label46");
             this.label46.Name = "label46";
+            this.toolTip2.SetToolTip(this.label46, resources.GetString("label46.ToolTip"));
+            this.toolTip3.SetToolTip(this.label46, resources.GetString("label46.ToolTip1"));
+            this.toolTip1.SetToolTip(this.label46, resources.GetString("label46.ToolTip2"));
             // 
             // EndUpload1
             // 
@@ -5451,6 +6960,9 @@
             this.CH2Vol.Name = "CH2Vol";
             this.CH2Vol.Style = Sunny.UI.UIStyle.Custom;
             this.CH2Vol.TextAlignment = System.Drawing.ContentAlignment.MiddleLeft;
+            this.toolTip2.SetToolTip(this.CH2Vol, resources.GetString("CH2Vol.ToolTip"));
+            this.toolTip3.SetToolTip(this.CH2Vol, resources.GetString("CH2Vol.ToolTip1"));
+            this.toolTip1.SetToolTip(this.CH2Vol, resources.GetString("CH2Vol.ToolTip2"));
             // 
             // CH2Elect
             // 
@@ -5463,6 +6975,9 @@
             this.CH2Elect.Name = "CH2Elect";
             this.CH2Elect.Style = Sunny.UI.UIStyle.Custom;
             this.CH2Elect.TextAlignment = System.Drawing.ContentAlignment.MiddleLeft;
+            this.toolTip2.SetToolTip(this.CH2Elect, resources.GetString("CH2Elect.ToolTip"));
+            this.toolTip3.SetToolTip(this.CH2Elect, resources.GetString("CH2Elect.ToolTip1"));
+            this.toolTip1.SetToolTip(this.CH2Elect, resources.GetString("CH2Elect.ToolTip2"));
             // 
             // CH1Vol
             // 
@@ -5475,6 +6990,9 @@
             this.CH1Vol.Name = "CH1Vol";
             this.CH1Vol.Style = Sunny.UI.UIStyle.Custom;
             this.CH1Vol.TextAlignment = System.Drawing.ContentAlignment.MiddleLeft;
+            this.toolTip2.SetToolTip(this.CH1Vol, resources.GetString("CH1Vol.ToolTip"));
+            this.toolTip3.SetToolTip(this.CH1Vol, resources.GetString("CH1Vol.ToolTip1"));
+            this.toolTip1.SetToolTip(this.CH1Vol, resources.GetString("CH1Vol.ToolTip2"));
             // 
             // CH1Elect
             // 
@@ -5487,6 +7005,9 @@
             this.CH1Elect.Name = "CH1Elect";
             this.CH1Elect.Style = Sunny.UI.UIStyle.Custom;
             this.CH1Elect.TextAlignment = System.Drawing.ContentAlignment.MiddleLeft;
+            this.toolTip2.SetToolTip(this.CH1Elect, resources.GetString("CH1Elect.ToolTip"));
+            this.toolTip3.SetToolTip(this.CH1Elect, resources.GetString("CH1Elect.ToolTip1"));
+            this.toolTip1.SetToolTip(this.CH1Elect, resources.GetString("CH1Elect.ToolTip2"));
             // 
             // Electricity
             // 
@@ -5494,6 +7015,9 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.Controls.Add(this.uiTabControlMenu1);
             this.Name = "Electricity";
+            this.toolTip3.SetToolTip(this, resources.GetString("$this.ToolTip"));
+            this.toolTip1.SetToolTip(this, resources.GetString("$this.ToolTip1"));
+            this.toolTip2.SetToolTip(this, resources.GetString("$this.ToolTip2"));
             this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.Electricity_FormClosed);
             this.Load += new System.EventHandler(this.Electricity_Load);
             this.uiGroupBox29.ResumeLayout(false);
@@ -5506,9 +7030,7 @@
             this.uiGroupBox28.PerformLayout();
             this.uiGroupBox17.ResumeLayout(false);
             this.uiGroupBox11.ResumeLayout(false);
-            this.uiGroupBox11.PerformLayout();
             this.uiGroupBox18.ResumeLayout(false);
-            this.uiGroupBox18.PerformLayout();
             this.uiGroupBox40.ResumeLayout(false);
             this.uiGroupBox40.PerformLayout();
             this.uiGroupBox42.ResumeLayout(false);
@@ -5517,10 +7039,6 @@
             this.uiGroupBox26.ResumeLayout(false);
             this.uiGroupBox34.ResumeLayout(false);
             this.uiGroupBox34.PerformLayout();
-            this.uiGroupBox37.ResumeLayout(false);
-            this.uiGroupBox37.PerformLayout();
-            this.uiTextBox3.ResumeLayout(false);
-            this.uiTextBox3.PerformLayout();
             this.uiGroupBox22.ResumeLayout(false);
             this.uiGroupBox16.ResumeLayout(false);
             this.uiGroupBox16.PerformLayout();
@@ -5540,18 +7058,12 @@
             this.tabPage4.ResumeLayout(false);
             this.uiGroupBox12.ResumeLayout(false);
             this.uiGroupBox27.ResumeLayout(false);
-            this.uiGroupBox27.PerformLayout();
             this.uiGroupBox23.ResumeLayout(false);
-            this.uiGroupBox23.PerformLayout();
             this.uiGroupBox25.ResumeLayout(false);
-            this.uiGroupBox25.PerformLayout();
             this.uiGroupBox9.ResumeLayout(false);
             this.uiGroupBox20.ResumeLayout(false);
-            this.uiGroupBox20.PerformLayout();
             this.uiGroupBox19.ResumeLayout(false);
-            this.uiGroupBox19.PerformLayout();
             this.uiGroupBox10.ResumeLayout(false);
-            this.uiGroupBox10.PerformLayout();
             this.tabPage6.ResumeLayout(false);
             this.uiGroupBox43.ResumeLayout(false);
             this.uiGroupBox43.PerformLayout();
@@ -5563,7 +7075,6 @@
             this.uiTabControlMenu2.ResumeLayout(false);
             this.tabPage7.ResumeLayout(false);
             this.uiGroupBox5.ResumeLayout(false);
-            this.uiGroupBox5.PerformLayout();
             this.uiTabControlMenu1.ResumeLayout(false);
             this.tabPage0.ResumeLayout(false);
             this.uiGroupBox32.ResumeLayout(false);
@@ -5578,11 +7089,8 @@
             this.uiGroupBox7.PerformLayout();
             this.tabPage1.ResumeLayout(false);
             this.uiGroupBox6.ResumeLayout(false);
-            this.uiGroupBox6.PerformLayout();
             this.uiGroupBox4.ResumeLayout(false);
-            this.uiGroupBox4.PerformLayout();
             this.uiGroupBox2.ResumeLayout(false);
-            this.uiGroupBox2.PerformLayout();
             this.tabPage9.ResumeLayout(false);
             this.uiGroupBox30.ResumeLayout(false);
             this.uiGroupBox30.PerformLayout();
@@ -6128,17 +7636,7 @@
         private Sunny.UI.UITextBox CH2FwdpreTime;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Label label8;
-        private System.Windows.Forms.Label label9;
         private System.Windows.Forms.Label label10;
-        private Sunny.UI.UIGroupBox uiGroupBox37;
-        private Sunny.UI.UITextBox uiTextBox1;
-        private Sunny.UI.UITextBox uiTextBox2;
-        private System.Windows.Forms.Label label12;
-        private System.Windows.Forms.Label label47;
-        private Sunny.UI.UITextBox uiTextBox3;
-        private Sunny.UI.UITextBox uiTextBox4;
-        private System.Windows.Forms.Label label49;
-        private System.Windows.Forms.Label label50;
         private Sunny.UI.UIGroupBox uiGroupBox43;
         private Sunny.UI.UITextBox TotalPreMax;
         private System.Windows.Forms.Label label51;
@@ -6148,5 +7646,8 @@
         private System.Windows.Forms.Label label79;
         private Sunny.UI.UITextBox CH2FWDflowtime;
         private System.Windows.Forms.Label label11;
+        private System.Windows.Forms.ToolTip toolTip1;
+        private System.Windows.Forms.ToolTip toolTip2;
+        private System.Windows.Forms.ToolTip toolTip3;
     }
 }

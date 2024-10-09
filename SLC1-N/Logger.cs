@@ -122,6 +122,8 @@ namespace SLC1_N
         {
             // WriteLog 方法只是向队列中添加任务，执行时间极短，所以使用Task.Run。
             Task.Run(() => GetInstance().WriteLog(content));
+            Log log = new Log();
+            log.PLC_Logmsg(DateTime.Now.ToString() + content);
         }
 
         public static void bind(ListBox listBox1)

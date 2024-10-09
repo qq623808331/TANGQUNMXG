@@ -118,234 +118,74 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
-  <data name="uiGroupBox2.Location" type="System.Drawing.Point, System.Drawing">
-    <value>960, 352</value>
-  </data>
-  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="uiGroupBox2.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>0, 32, 0, 0</value>
-  </data>
-  <data name="uiGroupBox2.Size" type="System.Drawing.Size, System.Drawing">
-    <value>958, 127</value>
-  </data>
-  <data name="uiGroupBox3.Location" type="System.Drawing.Point, System.Drawing">
-    <value>1, 352</value>
-  </data>
-  <data name="uiGroupBox3.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>0, 32, 0, 0</value>
-  </data>
-  <data name="uiGroupBox3.Size" type="System.Drawing.Size, System.Drawing">
-    <value>957, 127</value>
-  </data>
-  <data name="label95.Size" type="System.Drawing.Size, System.Drawing">
-    <value>24, 16</value>
-  </data>
   <data name="CH2RTElec.Size" type="System.Drawing.Size, System.Drawing">
     <value>16, 16</value>
   </data>
   <data name="CH2RTElec.Text" xml:space="preserve">
     <value>0</value>
   </data>
-  <data name="uiGroupBox6.Location" type="System.Drawing.Point, System.Drawing">
-    <value>960, 218</value>
-  </data>
-  <data name="uiGroupBox6.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>0, 32, 0, 0</value>
-  </data>
-  <data name="uiGroupBox6.Size" type="System.Drawing.Size, System.Drawing">
-    <value>958, 132</value>
-  </data>
-  <data name="uiGroupBox5.Location" type="System.Drawing.Point, System.Drawing">
-    <value>960, 87</value>
-  </data>
-  <data name="uiGroupBox5.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>0, 32, 0, 0</value>
-  </data>
-  <data name="uiGroupBox5.Size" type="System.Drawing.Size, System.Drawing">
-    <value>958, 129</value>
-  </data>
   <data name="TestStation.Location" type="System.Drawing.Point, System.Drawing">
-    <value>657, 95</value>
-  </data>
-  <data name="TestStation.MinimumSize" type="System.Drawing.Size, System.Drawing">
-    <value>1, 16</value>
-  </data>
-  <data name="TestStation.Size" type="System.Drawing.Size, System.Drawing">
-    <value>175, 23</value>
+    <value>968, 41</value>
   </data>
   <data name="TestType.Location" type="System.Drawing.Point, System.Drawing">
-    <value>657, 67</value>
-  </data>
-  <data name="TestType.MinimumSize" type="System.Drawing.Size, System.Drawing">
-    <value>1, 16</value>
-  </data>
-  <data name="TestType.Size" type="System.Drawing.Size, System.Drawing">
-    <value>175, 23</value>
-  </data>
-  <data name="ProductionItem.Location" type="System.Drawing.Point, System.Drawing">
-    <value>657, 39</value>
-  </data>
-  <data name="ProductionItem.MinimumSize" type="System.Drawing.Size, System.Drawing">
-    <value>1, 16</value>
-  </data>
-  <data name="ProductionItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>175, 23</value>
-  </data>
-  <data name="WorkOrder.Location" type="System.Drawing.Point, System.Drawing">
-    <value>657, 11</value>
-  </data>
-  <data name="WorkOrder.MinimumSize" type="System.Drawing.Size, System.Drawing">
-    <value>1, 16</value>
-  </data>
-  <data name="WorkOrder.Size" type="System.Drawing.Size, System.Drawing">
-    <value>175, 23</value>
-  </data>
-  <data name="ProductModel.Location" type="System.Drawing.Point, System.Drawing">
-    <value>432, 95</value>
-  </data>
-  <data name="ProductModel.MinimumSize" type="System.Drawing.Size, System.Drawing">
-    <value>1, 16</value>
-  </data>
-  <data name="ProductModel.Size" type="System.Drawing.Size, System.Drawing">
-    <value>96, 23</value>
-  </data>
-  <data name="ProductName.Location" type="System.Drawing.Point, System.Drawing">
-    <value>432, 67</value>
-  </data>
-  <data name="ProductName.MinimumSize" type="System.Drawing.Size, System.Drawing">
-    <value>1, 16</value>
-  </data>
-  <data name="ProductName.Size" type="System.Drawing.Size, System.Drawing">
-    <value>96, 23</value>
-  </data>
-  <data name="ProductNum.Location" type="System.Drawing.Point, System.Drawing">
-    <value>432, 39</value>
-  </data>
-  <data name="ProductNum.MinimumSize" type="System.Drawing.Size, System.Drawing">
-    <value>1, 16</value>
-  </data>
-  <data name="ProductNum.Size" type="System.Drawing.Size, System.Drawing">
-    <value>96, 23</value>
-  </data>
-  <data name="Admin.Location" type="System.Drawing.Point, System.Drawing">
-    <value>432, 11</value>
-  </data>
-  <data name="Admin.MinimumSize" type="System.Drawing.Size, System.Drawing">
-    <value>1, 16</value>
-  </data>
-  <data name="Admin.Size" type="System.Drawing.Size, System.Drawing">
-    <value>96, 23</value>
+    <value>968, 11</value>
   </data>
   <data name="label12.Location" type="System.Drawing.Point, System.Drawing">
-    <value>563, 98</value>
-  </data>
-  <data name="uiGroupBox4.Location" type="System.Drawing.Point, System.Drawing">
-    <value>1, 218</value>
-  </data>
-  <data name="uiGroupBox4.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>0, 32, 0, 0</value>
-  </data>
-  <data name="uiGroupBox4.Size" type="System.Drawing.Size, System.Drawing">
-    <value>957, 132</value>
+    <value>874, 44</value>
   </data>
   <data name="label11.Location" type="System.Drawing.Point, System.Drawing">
-    <value>563, 70</value>
-  </data>
-  <data name="label10.Location" type="System.Drawing.Point, System.Drawing">
-    <value>563, 42</value>
-  </data>
-  <data name="label9.Location" type="System.Drawing.Point, System.Drawing">
-    <value>563, 14</value>
-  </data>
-  <data name="label4.Location" type="System.Drawing.Point, System.Drawing">
-    <value>338, 98</value>
-  </data>
-  <data name="label2.Location" type="System.Drawing.Point, System.Drawing">
-    <value>338, 42</value>
-  </data>
-  <data name="label3.Location" type="System.Drawing.Point, System.Drawing">
-    <value>338, 70</value>
-  </data>
-  <data name="label1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>370, 14</value>
+    <value>874, 14</value>
   </data>
   <data name="label22.Location" type="System.Drawing.Point, System.Drawing">
-    <value>977, 94</value>
-  </data>
-  <data name="RightReset.Location" type="System.Drawing.Point, System.Drawing">
-    <value>114, 21</value>
-  </data>
-  <data name="RightReset.Size" type="System.Drawing.Size, System.Drawing">
-    <value>88, 82</value>
-  </data>
-  <data name="LeftReset.Location" type="System.Drawing.Point, System.Drawing">
-    <value>11, 21</value>
-  </data>
-  <data name="LeftReset.Size" type="System.Drawing.Size, System.Drawing">
-    <value>85, 82</value>
-  </data>
-  <data name="uiHeaderButton1.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>0, 8, 0, 3</value>
-  </data>
-  <data name="uiHeaderButton1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>100, 61</value>
+    <value>1684, 50</value>
   </data>
   <data name="button1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>1165, 55</value>
+    <value>610, 73</value>
   </data>
   <data name="button1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>85, 30</value>
+    <value>85, 25</value>
   </data>
   <data name="CH2ReceiveText.Location" type="System.Drawing.Point, System.Drawing">
-    <value>1210, 14</value>
+    <value>1600, 22</value>
   </data>
   <data name="CH2ReceiveText.Size" type="System.Drawing.Size, System.Drawing">
-    <value>62, 15</value>
+    <value>10, 10</value>
   </data>
   <data name="CH1ReceiveText.Location" type="System.Drawing.Point, System.Drawing">
-    <value>1210, 39</value>
+    <value>1600, 52</value>
   </data>
   <data name="CH1ReceiveText.Size" type="System.Drawing.Size, System.Drawing">
-    <value>62, 18</value>
+    <value>10, 10</value>
   </data>
   <data name="textBox2.Location" type="System.Drawing.Point, System.Drawing">
-    <value>1124, 38</value>
+    <value>1570, 52</value>
   </data>
   <data name="textBox2.Size" type="System.Drawing.Size, System.Drawing">
-    <value>76, 20</value>
+    <value>10, 10</value>
   </data>
   <data name="textBox1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>1123, 12</value>
+    <value>1571, 25</value>
   </data>
   <data name="textBox1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>78, 21</value>
-  </data>
-  <data name="PLCControl.Location" type="System.Drawing.Point, System.Drawing">
-    <value>225, 21</value>
-  </data>
-  <data name="PLCControl.Size" type="System.Drawing.Size, System.Drawing">
-    <value>88, 82</value>
+    <value>10, 10</value>
   </data>
   <data name="CH3ReceiveText.Location" type="System.Drawing.Point, System.Drawing">
-    <value>1294, 42</value>
+    <value>1619, 52</value>
   </data>
   <data name="CH3ReceiveText.Size" type="System.Drawing.Size, System.Drawing">
-    <value>63, 17</value>
+    <value>10, 10</value>
   </data>
   <data name="Now.Location" type="System.Drawing.Point, System.Drawing">
-    <value>977, 55</value>
+    <value>1684, 8</value>
   </data>
   <data name="CH4ReceiveText.Location" type="System.Drawing.Point, System.Drawing">
-    <value>1294, 14</value>
+    <value>1619, 23</value>
   </data>
   <data name="CH4ReceiveText.Size" type="System.Drawing.Size, System.Drawing">
-    <value>63, 18</value>
+    <value>10, 10</value>
   </data>
   <data name="PLCRun.Location" type="System.Drawing.Point, System.Drawing">
-    <value>1019, 87</value>
-  </data>
-  <data name="PLCRun.Size" type="System.Drawing.Size, System.Drawing">
-    <value>82, 31</value>
+    <value>1726, 42</value>
   </data>
   <data name="uiNavBar1.Nodes" mimetype="application/x-microsoft.net.object.binary.base64">
     <value>
@@ -482,80 +322,18 @@
         quajgAkEAAAABhkAAAAI6IqC54K5MTQA/////wkEAAAA/////wkEAAAAAAAAAAs=
 </value>
   </data>
-  <data name="uiNavBar1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>1919, 125</value>
-  </data>
-  <data name="label39.Size" type="System.Drawing.Size, System.Drawing">
-    <value>24, 16</value>
-  </data>
   <data name="CH1RTElec.Size" type="System.Drawing.Size, System.Drawing">
     <value>16, 16</value>
   </data>
   <data name="CH1RTElec.Text" xml:space="preserve">
     <value>0</value>
   </data>
-  <data name="uiGroupBox1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>1, 87</value>
+  <data name="uiTitlePanel1.Text" xml:space="preserve">
+    <value>右工位计数信息</value>
   </data>
-  <data name="uiGroupBox1.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>0, 32, 0, 0</value>
-  </data>
-  <data name="uiGroupBox1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>957, 129</value>
-  </data>
-  <data name="DataGridView1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>1, 481</value>
-  </data>
-  <data name="DataGridView1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>957, 265</value>
-  </data>
-  <data name="uiTitlePanel3.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>0, 35, 0, 0</value>
-  </data>
-  <data name="uiTitlePanel3.Size" type="System.Drawing.Size, System.Drawing">
-    <value>957, 84</value>
-  </data>
-  <data name="DataGridView2.Location" type="System.Drawing.Point, System.Drawing">
-    <value>960, 481</value>
-  </data>
-  <data name="DataGridView2.Size" type="System.Drawing.Size, System.Drawing">
-    <value>958, 265</value>
-  </data>
-  <data name="uiTitlePanel1.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>0, 35, 0, 0</value>
-  </data>
-  <data name="uiTitlePanel1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>958, 84</value>
-  </data>
-  <data name="logDisplay1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>0, 32</value>
-  </data>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
   <data name="logDisplay1.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>131750, 107086, 131750, 107086</value>
-  </data>
-  <data name="logDisplay1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>1917, 73</value>
-  </data>
-  <data name="uiGroupBox7.Location" type="System.Drawing.Point, System.Drawing">
-    <value>1, 748</value>
-  </data>
-  <data name="uiGroupBox7.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>0, 32, 0, 0</value>
-  </data>
-  <data name="uiGroupBox7.Size" type="System.Drawing.Size, System.Drawing">
-    <value>1917, 105</value>
-  </data>
-  <data name="tableLayoutPanel1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>0, 125</value>
-  </data>
-  <data name="tableLayoutPanel1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>1919, 854</value>
-  </data>
-  <data name="$this.AutoScaleDimensions" type="System.Drawing.SizeF, System.Drawing">
-    <value>6, 12</value>
-  </data>
-  <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
-    <value>1919, 979</value>
+    <value>4706425, 4233613, 4706425, 4233613</value>
   </data>
   <data name="$this.Icon" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>

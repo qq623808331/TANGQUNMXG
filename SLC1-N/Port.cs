@@ -586,7 +586,7 @@ namespace SLC1_N
                 //    CH4FlowCon.Enabled = true;
                 //    CH4FlowBaud.Enabled = true;
                 //}
-                if (Form1.f1.CKCH1Port.IsOpen)
+                if (Form1.CH1POWER._serialPort.IsOpen)  
                 {
                     labCKCH1.Text = I18N.GetLangText(dicLang, "已打开");
                     labCKCH1.ForeColor = Color.Green;
@@ -957,16 +957,20 @@ namespace SLC1_N
         {
             try
             {
+
+
+
                 //设置端口的参数，包括波特率等
-                Form1.f1.CKCH1Port.PortName = CKCH1Port.Text;
-                Form1.f1.CKCH1Port.BaudRate = int.Parse(CKCH1Baud.Text);
-                Form1.f1.CKCH1Port.DataBits = 8;
-                Form1.f1.CKCH1Port.StopBits = System.IO.Ports.StopBits.One;
-                Form1.f1.CKCH1Port.Parity = System.IO.Ports.Parity.None;
-                Form1.f1.CKCH1Port.Open();
-                if (Form1.f1.CKCH1Port.IsOpen)
+                Form1.CH1POWER._serialPort.PortName = CKCH1Port.Text;
+                Form1.CH1POWER._serialPort.BaudRate = int.Parse(CKCH1Baud.Text);
+                Form1.CH1POWER._serialPort.DataBits = 8;
+                Form1.CH1POWER._serialPort.StopBits = System.IO.Ports.StopBits.One;
+                Form1.CH1POWER._serialPort.Parity = System.IO.Ports.Parity.None;
+                //Form1.f1.CH1POWER._serialPort.Open();
+          Form1.     CH1POWER.Start();
+                if (Form1.CH1POWER._serialPort.IsOpen)
                 {
-                    Form1.f1.CKCH1Port.WriteLine("SYST:REM");
+                    Form1.CH1POWER._serialPort.WriteLine("SYST:REM");
                     labCKCH1.Text = I18N.GetLangText(dicLang, "已打开");
                     labCKCH1.ForeColor = Color.Green;
                     btnCKCh1Connect.Enabled = false;
@@ -995,8 +999,8 @@ namespace SLC1_N
 
         private void btnCKCh1Disconnect_Click(object sender, EventArgs e)
         {
-            Form1.f1.CKCH1Port.Close();
-            if (!Form1.f1.CKCH1Port.IsOpen)
+            Form1.CH1POWER._serialPort.Close();
+            if (!Form1.CH1POWER._serialPort.IsOpen)
             {
                 labCKCH1.Text = I18N.GetLangText(dicLang, "未打开");
                 labCKCH1.ForeColor = Color.Red;
