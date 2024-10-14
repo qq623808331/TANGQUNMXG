@@ -516,17 +516,11 @@ namespace SLC1_N
                     {
                         if (true && mSerialPort)
                         {
-
-                            //   Logger.Log("PortName:" + CH1POWER._serialPort.PortName + "-BaudRate:" + CH1POWER._serialPort.BaudRate + CH1POWER._serialPort.IsOpen.ToString());
-                            //       Task.Delay(150);
-                            //if (CH1POWER._serialPort.IsOpen)
-                            //    CH1POWER._serialPort.WriteLine();
-               
                             CH1POWER.Write("MEASure:CURRent?");
-                            Thread.Sleep(600);
+                            Thread.Sleep(400);
 
                                CH2POWER.Write("MEASure:CURRent?");
-                            Thread.Sleep(600);
+                            Thread.Sleep(400);
                         }
                     }
                     catch (Exception ex)
@@ -539,7 +533,7 @@ namespace SLC1_N
             //后台电压电流读取线程
             Task.Run(() =>
             {
-                Thread.Sleep(200);
+                
                 
                 while (true && mSerialPort)
                 {
@@ -554,6 +548,10 @@ namespace SLC1_N
                                 PortSend(1);
                                 Thread.Sleep(300);
                                 PortSend(3);
+                                Thread.Sleep(300);
+                                PortSend(2);
+                                Thread.Sleep(300);
+                                PortSend(4);
                                 Thread.Sleep(300);
                             }
                             catch (Exception ex)
@@ -570,28 +568,7 @@ namespace SLC1_N
                     }
                 }
             });
-            //后台电压电流读取线程
-            Task.Run(() =>
-            {
-                Thread.Sleep(200);
-                while (true && mSerialPort)
-                {
-                    try
-                    {
-                        Thread.Sleep(100);
-                        PortSend(2);
-                        Thread.Sleep(500);
-                        PortSend(4);
-                        Thread.Sleep(500);
-
-                    }
-                    catch (Exception ex)
-                    {
-                        Logger.Log(ex.StackTrace);
-                        wa.InsertWarningData(DateTime.Now.ToString("yyyy-MM-dd HH:mm:ss"), "-", ex.StackTrace);
-                    }
-                }
-            });
+         
 
         }
 
@@ -7159,9 +7136,14 @@ namespace SLC1_N
                         CH1ADC_PORT = new SerialPortReader(port, baudrate, 100);
                         CH1ADC_PORT.DataReceived += CH1ADC_PORT_DataReceived;
                         CH1ADC_PORT.Start();
+                        
                         CH1ADC_PORT.Write("ADC");
+                        Thread.Sleep(100);
                         CH1ADC_PORT.Write("FIXED");
+                        Thread.Sleep(100);
                         CH1ADC_PORT.Write("RANGE 1");
+                        Thread.Sleep(100);
+                        Logger.Log(I18N.GetLangText(dicLang, "CH1ADC打开串口为"+ port));
                     }
 
                 }
@@ -7331,8 +7313,11 @@ namespace SLC1_N
                         CH2ADC_PORT.DataReceived += CH2ADC_PORT_DataReceived;
                         CH2ADC_PORT.Start();
                         CH2ADC_PORT.Write("ADC");
+                        Thread.Sleep(100);
                         CH2ADC_PORT.Write("FIXED");
+                        Thread.Sleep(100);
                         CH2ADC_PORT.Write("RANGE 1");
+                        Thread.Sleep(100);
                     }
 
                 }
@@ -9424,16 +9409,16 @@ namespace SLC1_N
 
                         var result1 = FlowSend(1);
                         if (result1.IsSuccess) CH1Flow_read = Math.Round(Convert.ToDouble(result1.Content), 2);
-                        Thread.Sleep(400);
+                        Thread.Sleep(300);
                         var result2 = FlowSend(2);
                         if (result2.IsSuccess) CH2Flow_read = Math.Round(Convert.ToDouble(result2.Content) / 1000, 2);
-                        Thread.Sleep(400);
+                        Thread.Sleep(300);
                         var result3 = FlowSend(3);
                         if (result3.IsSuccess) CH3Flow_read = Math.Round(Convert.ToDouble(result3.Content) / 1000, 2);
-                        Thread.Sleep(400);
+                        Thread.Sleep(300);
                         var result4 = FlowSend(4);
                         if (result4.IsSuccess) CH4Flow_read = Math.Round(Convert.ToDouble(result4.Content), 2);
-                        Thread.Sleep(400);
+                        Thread.Sleep(300);
                     }
                    
                     
@@ -9447,39 +9432,39 @@ namespace SLC1_N
          
         }
 
-        public void ReadADCTask()
-        {
-            try
-            {
-                Task.Run(() =>
-                {
-                    while (true)
-                    {
+        //public void ReadADCTask()
+        //{
+        //    try
+        //    {
+        //        Task.Run(() =>
+        //        {
+        //            while (true)
+        //            {
 
-                        var result1 = FlowSend(1);
-                        if (result1.IsSuccess) CH1Flow_read = Math.Round(Convert.ToDouble(result1.Content), 2);
-                        Thread.Sleep(200);
-                        var result2 = FlowSend(2);
-                        if (result2.IsSuccess) CH2Flow_read = Math.Round(Convert.ToDouble(result2.Content) / 1000, 2);
-                        Thread.Sleep(200);
-                        var result3 = FlowSend(3);
-                        if (result3.IsSuccess) CH3Flow_read = Math.Round(Convert.ToDouble(result3.Content) / 1000, 2);
-                        Thread.Sleep(200);
-                        var result4 = FlowSend(4);
-                        if (result4.IsSuccess) CH4Flow_read = Math.Round(Convert.ToDouble(result4.Content), 2);
-                        Thread.Sleep(200);
-                    }
+        //                var result1 = FlowSend(1);
+        //                if (result1.IsSuccess) CH1Flow_read = Math.Round(Convert.ToDouble(result1.Content), 2);
+        //                Thread.Sleep(200);
+        //                var result2 = FlowSend(2);
+        //                if (result2.IsSuccess) CH2Flow_read = Math.Round(Convert.ToDouble(result2.Content) / 1000, 2);
+        //                Thread.Sleep(200);
+        //                var result3 = FlowSend(3);
+        //                if (result3.IsSuccess) CH3Flow_read = Math.Round(Convert.ToDouble(result3.Content) / 1000, 2);
+        //                Thread.Sleep(200);
+        //                var result4 = FlowSend(4);
+        //                if (result4.IsSuccess) CH4Flow_read = Math.Round(Convert.ToDouble(result4.Content), 2);
+        //                Thread.Sleep(200);
+        //            }
 
 
-                });
-            }
-            catch (Exception ex)
-            {
+        //        });
+        //    }
+        //    catch (Exception ex)
+        //    {
 
-                throw;
-            }
+        //        throw;
+        //    }
 
-        }
+        //}
 
 
         private void CH1ReadFlowT_Tick(object sender, EventArgs e)
