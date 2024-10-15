@@ -270,8 +270,9 @@
             this.CKCH2Port = new System.IO.Ports.SerialPort(this.components);
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
             this.uiGroupBox7 = new Sunny.UI.UIGroupBox();
-            this.logDisplay1 = new SLC1_N.LogDisplay();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
+            this.ONtime = new System.Windows.Forms.Label();
+            this.logDisplay1 = new SLC1_N.LogDisplay();
             this.uiGroupBox2.SuspendLayout();
             this.uiGroupBox3.SuspendLayout();
             this.uiGroupBox6.SuspendLayout();
@@ -1459,6 +1460,7 @@
             // 
             resources.ApplyResources(this.uiNavBar1, "uiNavBar1");
             this.uiNavBar1.BackColor = System.Drawing.Color.LightBlue;
+            this.uiNavBar1.Controls.Add(this.ONtime);
             this.uiNavBar1.Controls.Add(this.button1);
             this.uiNavBar1.Controls.Add(this.CH2ReceiveText);
             this.uiNavBar1.Controls.Add(this.CH1ReceiveText);
@@ -2119,14 +2121,19 @@
             this.uiGroupBox7.Style = Sunny.UI.UIStyle.Custom;
             this.uiGroupBox7.TextAlignment = System.Drawing.ContentAlignment.MiddleCenter;
             // 
+            // timer1
+            // 
+            this.timer1.Tick += new System.EventHandler(this.timer1_Tick_1);
+            // 
+            // ONtime
+            // 
+            resources.ApplyResources(this.ONtime, "ONtime");
+            this.ONtime.Name = "ONtime";
+            // 
             // logDisplay1
             // 
             resources.ApplyResources(this.logDisplay1, "logDisplay1");
             this.logDisplay1.Name = "logDisplay1";
-            // 
-            // timer1
-            // 
-            this.timer1.Tick += new System.EventHandler(this.timer1_Tick_1);
             // 
             // Form1
             // 
@@ -2401,6 +2408,7 @@
         private System.Windows.Forms.Button button1;
         public System.Windows.Forms.Label CH2RTElec;
         public System.Windows.Forms.Label CH1RTElec;
+        private System.Windows.Forms.Label ONtime;
     }
 }
 

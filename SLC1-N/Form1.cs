@@ -27,6 +27,7 @@ using static SLC1_N.Setup;
 using System.Security.Policy;
 using Microsoft.Office.Interop.Excel;
 using Sunny.UI.Win32;
+using System.Timers;
 namespace SLC1_N
 {
     public partial class Form1 : Form
@@ -380,6 +381,10 @@ namespace SLC1_N
         //定时器触发的处理事件
         private static void OnTimedEvent(Object source, ElapsedEventArgs e)
         {
+            
+            if(Form1.f1.ONtime.Text!= ((int)stopwatch.Elapsed.TotalMinutes).ToString())
+            Form1.f1.ONtime.Text=((int)stopwatch.Elapsed.TotalMinutes).ToString();
+
             //清理内存
             GC.Collect();
             GC.WaitForPendingFinalizers();
@@ -623,7 +628,8 @@ namespace SLC1_N
             setControls(newx, newy, this);
             //      this.Text = this.Width.ToString() + " " + this.Height.ToString();
         }
-
+        private static Stopwatch stopwatch;
+        private static System.Timers.Timer timer13;
         private void Form1_Load(object sender, EventArgs e)
         {
             ///////新加串口初始化
@@ -700,17 +706,15 @@ namespace SLC1_N
             //mac.ShowDialog();
             SelectMachine mac = new SelectMachine();
             mac.ShowDialog();
+             
+            stopwatch = new Stopwatch();
+            stopwatch.Start();
 
-
-            //Thread t1 = new Thread(CH1lock);
-            //Thread t2 = new Thread(CH2lock);
-            //Thread t3 = new Thread(CH3lock);
-            //Thread t4 = new Thread(CH4lock);
-            //t1.Start();
-            //t2.Start();
-            //t3.Start();
-            //t4.Start();
-
+            // 初始化 Timer
+            //timer13 = new System.Timers.Timer(1000); // 每1000毫秒（1秒）触发一次
+            //timer13.Elapsed += OnTimedEvent;
+            //timer13.AutoReset = true; // 设置为自动重置
+            //timer13.Enabled = true; // 启动计时器
 
             ReadFlow();
             ReadLin();
