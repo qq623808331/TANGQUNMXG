@@ -80,7 +80,20 @@ namespace SLC1_N
 
                 while (_keepReading)
                 {
-                    try
+                try
+                {
+                    if (_serialPort.IsOpen && Serial_write!= "")
+                    { _serialPort.WriteLine(Serial_write);
+                        Serial_write = "";
+                        System.Threading.Thread.Sleep(200);
+                    }
+                    
+                }
+                catch
+                {
+
+                }
+                try
                     {
                       
                         string data = _serialPort.ReadExisting();
@@ -97,16 +110,7 @@ namespace SLC1_N
 
                     }
 
-                try
-                {
-                    if(_serialPort.IsOpen&& Serial_write!="")
-                   _serialPort.WriteLine(Serial_write);
-                    Serial_write = "";
-                }
-                catch 
-                { 
-                
-                }
+               
 
 
                 }

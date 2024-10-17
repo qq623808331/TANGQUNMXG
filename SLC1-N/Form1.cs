@@ -145,10 +145,10 @@ namespace SLC1_N
         /// <summary>
         /// CH1当前执行的程序
         /// </summary>
-        public string CH1RTStep;
+        public string CH1RTStep="";
 
         public bool CH1Pump;
-        public string CH2RTStep;
+        public string CH2RTStep="";
         public bool CH2Pump;
 
         /// <summary>
@@ -2180,7 +2180,7 @@ namespace SLC1_N
                         //ReadParams.Stop();
                         if (str2.Length == 126 && str2.Substring(2, 2) == "03")
                         {
-                            CH1IsRun.Stop();
+                           // CH1IsRun.Stop();
                             ch1_1params = comm.ReadParams(str2, ch1_1params.CHKUnit);
                             if (CH1RTStep.Contains("Leak"))
                             {
@@ -2368,7 +2368,7 @@ namespace SLC1_N
                             ch_params = con.ReadParameters(1, 2);
                             string Leaklowlimit = ch_params.Leaklowlimit;
 
-                            CH1IsRun.Stop();
+                           // CH1IsRun.Stop();
                             ch1_1step = 5;
                             ch1stage = 10;
                             LeftCH1Status.ForeColor = Color.Black;
@@ -3796,7 +3796,7 @@ namespace SLC1_N
             }
             catch (Exception ex)
             {
-                CH1IsRun.Stop();
+               // CH1IsRun.Stop();
                 //MessageBox.Show("CH1_1通道：" + ex.Message);
                 Logger.Log(I18N.GetLangText(dicLang, "CH2-CH1_1通道") + "：" + ex.Message);
             }
@@ -7052,8 +7052,14 @@ namespace SLC1_N
         {
             try
             {
-                double data2;
-                 
+                
+                if (data.Contains("VDC"))
+                {
+                    Form1.CH1ADC_PORT.Write("ADC");
+                    Thread.Sleep(500);
+                    Logger.Log("ADC1SET");
+
+                }
                 if (data.StartsWith("+") && data.Contains("ADC"))
                 {
                     int adc_index = 0;
@@ -7140,13 +7146,13 @@ namespace SLC1_N
                         CH1ADC_PORT = new SerialPortReader(port, baudrate, 100);
                         CH1ADC_PORT.DataReceived += CH1ADC_PORT_DataReceived;
                         CH1ADC_PORT.Start();
-                        
-                        CH1ADC_PORT.Write("ADC");
-                        Thread.Sleep(100);
-                        CH1ADC_PORT.Write("FIXED");
-                        Thread.Sleep(100);
-                        CH1ADC_PORT.Write("RANGE 1");
-                        Thread.Sleep(100);
+                        Form1.CH1ADC_PORT._serialPort.WriteLine("ADC");
+                        Thread.Sleep(200);
+                        Form1.CH1ADC_PORT._serialPort.WriteLine("FIXED");
+                        Thread.Sleep(200);
+                        Form1.CH1ADC_PORT._serialPort.WriteLine("RANGE 1");
+                        Thread.Sleep(200);
+                     
                         Logger.Log(I18N.GetLangText(dicLang, "CH1ADC打开串口为"+ port));
                     }
 
@@ -7233,8 +7239,15 @@ namespace SLC1_N
         {
             try
             {
-                double data2;
-                 
+                if (data.Contains("VDC"))
+                {
+                    Form1.CH2ADC_PORT.Write("ADC");
+                    Thread.Sleep(500);
+                    Logger.Log("ADC2SET");
+                    
+                }
+
+
                 if (data.StartsWith("+") && data.Contains("ADC"))
                 {
                     int adc_index = 0;
@@ -7316,12 +7329,15 @@ namespace SLC1_N
                         CH2ADC_PORT = new SerialPortReader(port, baudrate, 100);
                         CH2ADC_PORT.DataReceived += CH2ADC_PORT_DataReceived;
                         CH2ADC_PORT.Start();
-                        CH2ADC_PORT.Write("ADC");
-                        Thread.Sleep(100);
+                        
+                        Form1.CH2ADC_PORT.Write("ADC");
+                        Thread.Sleep(500);
+                        Logger.Log("ADC2:"+ port+baudrate);
                         CH2ADC_PORT.Write("FIXED");
-                        Thread.Sleep(100);
+                        Thread.Sleep(200);
                         CH2ADC_PORT.Write("RANGE 1");
-                        Thread.Sleep(100);
+                        Thread.Sleep(200);
+                     
                     }
 
                 }
@@ -8249,7 +8265,13 @@ namespace SLC1_N
                                 CH1POWER = new SerialPortReader(port, baudrate, 1);
                                 CH1POWER.DataReceived += CH1POWER_DataReceived;
                                 CH1POWER.Start();
+                                
                                 CH1POWER.Write("SYST:REM");
+                                System.Threading.Thread.Sleep(200);
+                                CH1POWER.Write("SYST:REM");
+                                System.Threading.Thread.Sleep(200);
+                                CH1POWER.Write("SYST:REM");
+                                System.Threading.Thread.Sleep(200);
                             }
 
 
@@ -8276,6 +8298,11 @@ namespace SLC1_N
                                 CH2POWER.DataReceived += CH2POWER_DataReceived;
                                 CH2POWER.Start();
                                 CH2POWER.Write("SYST:REM");
+                                System.Threading.Thread.Sleep(200);
+                                CH2POWER.Write("SYST:REM");
+                                System.Threading.Thread.Sleep(200);
+                                CH2POWER.Write("SYST:REM");
+                                System.Threading.Thread.Sleep(200);
                             }
                                                       
                         }
@@ -8286,7 +8313,7 @@ namespace SLC1_N
             {
                 wa.InsertWarningData(DateTime.Now.ToString("yyyy-MM-dd HH:mm:ss"), "-", I18N.GetLangText(dicLang, "流量计端口打开") + ":" + ex.Message);
                 //MessageBox.Show("流量计端口打开" + ex.Message);
-                Logger.Log(I18N.GetLangText(dicLang, "流量计端口打开") + ":" + ex.Message);
+                Logger.Log(I18N.GetLangText(dicLang, "端口打开") + ":" + ex.Message);
                 Logger.Log(ex.StackTrace);
             }
         }
@@ -12397,7 +12424,7 @@ namespace SLC1_N
             {
                 if (ch1client.IsConnect)
                 {
-                    CH1IsRun.Stop();
+                 //   CH1IsRun.Stop();
                     CHXProBarFlag[1] = 0;
                     //ProBarRun.Stop();
                     CH1IsRun.Interval = 400;
@@ -12550,8 +12577,8 @@ namespace SLC1_N
                 LeftCH2Status.Text = I18N.GetLangText(dicLang, "待机");
                 LeftCH2Status.ForeColor = Color.Black;
                 plc.CH1TCNG();
-                CH1IsRun.Stop();
-                CH2IsRun.Stop();
+               // CH1IsRun.Stop();
+             //  CH2IsRun.Stop();
                 CHXProBarFlag[1] = 0;
                 CHXProBarFlag[2] = 0;
                 CH1ReadPress.Stop();
@@ -13077,6 +13104,7 @@ namespace SLC1_N
 
         private void PLCControl_Click(object sender, EventArgs e)
         {
+            //CH2ADC_PORT.Write(right_CH1Code.Text);
             PLCConfig plc = new PLCConfig();
             OpenForm(plc);
         }

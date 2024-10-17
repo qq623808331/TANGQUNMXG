@@ -3727,12 +3727,12 @@ namespace SLC1_N
 
         private void btnCKCh2On_Click(object sender, EventArgs e)
         {
-            if (Form1.f1.CKCH2Port.IsOpen) Form1.f1.CKCH2Port.WriteLine("OUTP 1");
+            Form1.CH2POWER._serialPort.WriteLine("OUTP 1");         //if (Form1.f1.CKCH2Port.IsOpen) Form1.f1.CKCH2Port.WriteLine("OUTP 1");
         }
 
         private void btnCKCh2Off_Click(object sender, EventArgs e)
         {
-            if (Form1.f1.CKCH2Port.IsOpen) Form1.f1.CKCH2Port.WriteLine("OUTP 0");
+            Form1.CH2POWER._serialPort.WriteLine("OUTP 0");
         }
 
         private void CH1UpDownChange_CheckedChanged(object sender, EventArgs e)

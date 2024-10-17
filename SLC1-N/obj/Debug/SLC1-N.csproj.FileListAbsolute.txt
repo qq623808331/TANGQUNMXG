@@ -2653,3 +2653,4 @@ D:\上位机\huangwenjie\ll-28-TanQunMXG\SLC1-N\obj\Debug\zh-Hans\LL28-N-V2.0.re
 D:\上位机\huangwenjie\ll-28-TanQunMXG\SLC1-N\obj\Debug\SLC1-N.csproj.CopyComplete
 D:\上位机\huangwenjie\ll-28-TanQunMXG\SLC1-N\obj\Debug\LL28-N-V2.0.exe
 D:\上位机\huangwenjie\ll-28-TanQunMXG\SLC1-N\obj\Debug\LL28-N-V2.0.pdb
+D:\上位机\huangwenjie\ll-28-TanQunMXG\SLC1-N\bin\Debug\SunnyUI.Common.dll
