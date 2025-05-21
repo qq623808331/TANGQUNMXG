@@ -665,6 +665,9 @@
   <data name="label88.Size" type="System.Drawing.Size, System.Drawing">
     <value>169, 20</value>
   </data>
+  <data name="uiGroupBox12.Size" type="System.Drawing.Size, System.Drawing">
+    <value>487, 891</value>
+  </data>
   <data name="label179.AutoSize" type="System.Boolean, mscorlib">
     <value>False</value>
   </data>
@@ -784,9 +787,6 @@
   </data>
   <data name="label175.Size" type="System.Drawing.Size, System.Drawing">
     <value>127, 16</value>
-  </data>
-  <data name="uiGroupBox12.Size" type="System.Drawing.Size, System.Drawing">
-    <value>487, 891</value>
   </data>
   <data name="label48.AutoSize" type="System.Boolean, mscorlib">
     <value>False</value>
@@ -960,6 +960,18 @@
   <data name="label54.Size" type="System.Drawing.Size, System.Drawing">
     <value>114, 16</value>
   </data>
+  <data name="uiGroupBox43.Font" type="System.Drawing.Font, System.Drawing">
+    <value>SimSun-ExtB, 12pt</value>
+  </data>
+  <data name="uiGroupBox43.Location" type="System.Drawing.Point, System.Drawing">
+    <value>241, 652</value>
+  </data>
+  <data name="uiGroupBox43.Size" type="System.Drawing.Size, System.Drawing">
+    <value>344, 286</value>
+  </data>
+  <data name="uiGroupBox43.TabIndex" type="System.Int32, mscorlib">
+    <value>485</value>
+  </data>
   <data name="TotalPreMax.Font" type="System.Drawing.Font, System.Drawing">
     <value>SimSun-ExtB, 12pt</value>
   </data>
@@ -1041,17 +1053,11 @@
   <data name="label79.Text" xml:space="preserve">
     <value>总流量下限</value>
   </data>
-  <data name="uiGroupBox43.Font" type="System.Drawing.Font, System.Drawing">
-    <value>SimSun-ExtB, 12pt</value>
+  <data name="uiGroupBox41.Location" type="System.Drawing.Point, System.Drawing">
+    <value>8, 355</value>
   </data>
-  <data name="uiGroupBox43.Location" type="System.Drawing.Point, System.Drawing">
-    <value>241, 652</value>
-  </data>
-  <data name="uiGroupBox43.Size" type="System.Drawing.Size, System.Drawing">
-    <value>344, 286</value>
-  </data>
-  <data name="uiGroupBox43.TabIndex" type="System.Int32, mscorlib">
-    <value>485</value>
+  <data name="uiGroupBox41.Size" type="System.Drawing.Size, System.Drawing">
+    <value>354, 282</value>
   </data>
   <data name="CH1FwdPreMin.Font" type="System.Drawing.Font, System.Drawing">
     <value>SimSun-ExtB, 12pt</value>
@@ -1149,11 +1155,11 @@
   <data name="CH1FWDFlowMin.Size" type="System.Drawing.Size, System.Drawing">
     <value>108, 29</value>
   </data>
-  <data name="uiGroupBox41.Location" type="System.Drawing.Point, System.Drawing">
-    <value>8, 355</value>
+  <data name="uiGroupBox33.Location" type="System.Drawing.Point, System.Drawing">
+    <value>442, 351</value>
   </data>
-  <data name="uiGroupBox41.Size" type="System.Drawing.Size, System.Drawing">
-    <value>354, 282</value>
+  <data name="uiGroupBox33.Size" type="System.Drawing.Size, System.Drawing">
+    <value>344, 286</value>
   </data>
   <data name="CH2FWDflowtime.Font" type="System.Drawing.Font, System.Drawing">
     <value>SimSun-ExtB, 12pt</value>
@@ -1253,12 +1259,6 @@
   </data>
   <data name="label8.Text" xml:space="preserve">
     <value>CH2流量上限</value>
-  </data>
-  <data name="uiGroupBox33.Location" type="System.Drawing.Point, System.Drawing">
-    <value>442, 351</value>
-  </data>
-  <data name="uiGroupBox33.Size" type="System.Drawing.Size, System.Drawing">
-    <value>344, 286</value>
   </data>
   <data name="RFWDParamsCopy.Location" type="System.Drawing.Point, System.Drawing">
     <value>597, 966</value>
@@ -1488,6 +1488,9 @@
   <data name="CH1Pressure.Location" type="System.Drawing.Point, System.Drawing">
     <value>149, 76</value>
   </data>
+  <data name="uiGroupBox30.Location" type="System.Drawing.Point, System.Drawing">
+    <value>474, 24</value>
+  </data>
   <data name="label2.Location" type="System.Drawing.Point, System.Drawing">
     <value>328, 82</value>
   </data>
@@ -1511,9 +1514,6 @@
   </data>
   <data name="label16.Size" type="System.Drawing.Size, System.Drawing">
     <value>149, 16</value>
-  </data>
-  <data name="uiGroupBox30.Location" type="System.Drawing.Point, System.Drawing">
-    <value>474, 24</value>
   </data>
   <data name="label42.Location" type="System.Drawing.Point, System.Drawing">
     <value>327, 79</value>

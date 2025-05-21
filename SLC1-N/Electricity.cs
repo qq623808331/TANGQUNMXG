@@ -5405,10 +5405,5 @@ namespace SLC1_N
         {
 
         }
-
-        private void CH2electricChange_CheckedChanged(object sender, EventArgs e)
-        {
-
-        }
     }
 }

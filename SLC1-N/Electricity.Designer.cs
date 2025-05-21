@@ -417,22 +417,6 @@
             this.label28 = new System.Windows.Forms.Label();
             this.uiTabControlMenu1 = new Sunny.UI.UITabControlMenu();
             this.tabPage0 = new System.Windows.Forms.TabPage();
-            this.uiGroupBox44 = new Sunny.UI.UIGroupBox();
-            this.CH2electricChange = new Sunny.UI.UICheckBox();
-            this.OrderRightCopy = new Sunny.UI.UISymbolButton();
-            this.CH2UpDownChange = new Sunny.UI.UICheckBox();
-            this.CH2Pump = new Sunny.UI.UICheckBox();
-            this.CH2LIN = new Sunny.UI.UICheckBox();
-            this.CH2IGN = new Sunny.UI.UICheckBox();
-            this.CH2HighLevel = new Sunny.UI.UICheckBox();
-            this.uiGroupBox37 = new Sunny.UI.UIGroupBox();
-            this.CH1electricChange = new Sunny.UI.UICheckBox();
-            this.OrderLeftCopy = new Sunny.UI.UISymbolButton();
-            this.CH1Pump = new Sunny.UI.UICheckBox();
-            this.CH1LIN = new Sunny.UI.UICheckBox();
-            this.CH1UpDownChange = new Sunny.UI.UICheckBox();
-            this.CH1IGN = new Sunny.UI.UICheckBox();
-            this.CH1HighLevel = new Sunny.UI.UICheckBox();
             this.uiGroupBox32 = new Sunny.UI.UIGroupBox();
             this.CFQuiescentCurrntIndex = new System.Windows.Forms.Label();
             this.CFFWDLeakindex = new System.Windows.Forms.Label();
@@ -487,11 +471,14 @@
             this.btnSave = new Sunny.UI.UISymbolButton();
             this.uiGroupBox8 = new Sunny.UI.UIGroupBox();
             this.CH2QuiescentCurrntIndex = new System.Windows.Forms.Label();
+            this.CH2UpDownChange = new Sunny.UI.UICheckBox();
             this.CH2QuiescentCurrnt = new Sunny.UI.UICheckBox();
             this.CH2DOWNindex = new System.Windows.Forms.Label();
             this.CH2RWDindex = new System.Windows.Forms.Label();
+            this.CH2HighLevel = new Sunny.UI.UICheckBox();
             this.CH2FWDLeakindex = new System.Windows.Forms.Label();
             this.CH2FWDindex = new System.Windows.Forms.Label();
+            this.OrderRightCopy = new Sunny.UI.UISymbolButton();
             this.CH2DOWNLeakindex = new System.Windows.Forms.Label();
             this.CH2UPindex = new System.Windows.Forms.Label();
             this.CH2UP = new Sunny.UI.UICheckBox();
@@ -501,10 +488,16 @@
             this.CH2RWD = new Sunny.UI.UICheckBox();
             this.CH2UPLeak = new Sunny.UI.UICheckBox();
             this.CH2DOWNLeak = new Sunny.UI.UICheckBox();
+            this.CH2IGN = new Sunny.UI.UICheckBox();
             this.CH2FWDLeak = new Sunny.UI.UICheckBox();
+            this.CH2LIN = new Sunny.UI.UICheckBox();
+            this.CH2Pump = new Sunny.UI.UICheckBox();
             this.uiGroupBox7 = new Sunny.UI.UIGroupBox();
             this.CH1QuiescentCurrntIndex = new System.Windows.Forms.Label();
             this.CH1QuiescentCurrnt = new Sunny.UI.UICheckBox();
+            this.CH1UpDownChange = new Sunny.UI.UICheckBox();
+            this.CH1HighLevel = new Sunny.UI.UICheckBox();
+            this.OrderLeftCopy = new Sunny.UI.UISymbolButton();
             this.CH1FWDLeakindex = new System.Windows.Forms.Label();
             this.CH1DOWNLeakindex = new System.Windows.Forms.Label();
             this.CH1UPLeakindex = new System.Windows.Forms.Label();
@@ -512,6 +505,9 @@
             this.CH1FWDindex = new System.Windows.Forms.Label();
             this.CH1DOWNindex = new System.Windows.Forms.Label();
             this.CH1UPindex = new System.Windows.Forms.Label();
+            this.CH1IGN = new Sunny.UI.UICheckBox();
+            this.CH1LIN = new Sunny.UI.UICheckBox();
+            this.CH1Pump = new Sunny.UI.UICheckBox();
             this.CH1FWDLeak = new Sunny.UI.UICheckBox();
             this.CH1DOWNLeak = new Sunny.UI.UICheckBox();
             this.CH1UPLeak = new Sunny.UI.UICheckBox();
@@ -582,6 +578,10 @@
             this.toolTip1 = new System.Windows.Forms.ToolTip(this.components);
             this.toolTip2 = new System.Windows.Forms.ToolTip(this.components);
             this.toolTip3 = new System.Windows.Forms.ToolTip(this.components);
+            this.CH1electricChange = new Sunny.UI.UICheckBox();
+            this.uiGroupBox37 = new Sunny.UI.UIGroupBox();
+            this.uiGroupBox44 = new Sunny.UI.UIGroupBox();
+            this.CH2electricChange = new Sunny.UI.UICheckBox();
             this.uiGroupBox29.SuspendLayout();
             this.tabPage5.SuspendLayout();
             this.uiGroupBox21.SuspendLayout();
@@ -623,8 +623,6 @@
             this.uiGroupBox5.SuspendLayout();
             this.uiTabControlMenu1.SuspendLayout();
             this.tabPage0.SuspendLayout();
-            this.uiGroupBox44.SuspendLayout();
-            this.uiGroupBox37.SuspendLayout();
             this.uiGroupBox32.SuspendLayout();
             this.uiGroupBox3.SuspendLayout();
             this.uiGroupBox1.SuspendLayout();
@@ -637,6 +635,8 @@
             this.tabPage9.SuspendLayout();
             this.uiGroupBox30.SuspendLayout();
             this.uiGroupBox31.SuspendLayout();
+            this.uiGroupBox37.SuspendLayout();
+            this.uiGroupBox44.SuspendLayout();
             this.SuspendLayout();
             // 
             // label133
@@ -5275,9 +5275,11 @@
             // 
             resources.ApplyResources(this.tabPage0, "tabPage0");
             this.tabPage0.BackColor = System.Drawing.Color.LightBlue;
+            this.tabPage0.Controls.Add(this.uiGroupBox44);
+            this.tabPage0.Controls.Add(this.uiGroupBox37);
             this.tabPage0.Controls.Add(this.uiGroupBox32);
-            this.tabPage0.Controls.Add(this.uiGroupBox1);
             this.tabPage0.Controls.Add(this.uiGroupBox3);
+            this.tabPage0.Controls.Add(this.uiGroupBox1);
             this.tabPage0.Controls.Add(this.btnSave);
             this.tabPage0.Controls.Add(this.uiGroupBox8);
             this.tabPage0.Controls.Add(this.uiGroupBox7);
@@ -5285,200 +5287,6 @@
             this.toolTip1.SetToolTip(this.tabPage0, resources.GetString("tabPage0.ToolTip"));
             this.toolTip2.SetToolTip(this.tabPage0, resources.GetString("tabPage0.ToolTip1"));
             this.toolTip3.SetToolTip(this.tabPage0, resources.GetString("tabPage0.ToolTip2"));
-            // 
-            // uiGroupBox44
-            // 
-            resources.ApplyResources(this.uiGroupBox44, "uiGroupBox44");
-            this.uiGroupBox44.Controls.Add(this.CH2electricChange);
-            this.uiGroupBox44.Controls.Add(this.OrderRightCopy);
-            this.uiGroupBox44.Controls.Add(this.CH2UpDownChange);
-            this.uiGroupBox44.Controls.Add(this.CH2Pump);
-            this.uiGroupBox44.Controls.Add(this.CH2LIN);
-            this.uiGroupBox44.Controls.Add(this.CH2IGN);
-            this.uiGroupBox44.Controls.Add(this.CH2HighLevel);
-            this.uiGroupBox44.FillColor = System.Drawing.Color.LightBlue;
-            this.uiGroupBox44.Name = "uiGroupBox44";
-            this.uiGroupBox44.Style = Sunny.UI.UIStyle.Custom;
-            this.uiGroupBox44.TextAlignment = System.Drawing.ContentAlignment.MiddleCenter;
-            this.toolTip3.SetToolTip(this.uiGroupBox44, resources.GetString("uiGroupBox44.ToolTip"));
-            this.toolTip2.SetToolTip(this.uiGroupBox44, resources.GetString("uiGroupBox44.ToolTip1"));
-            this.toolTip1.SetToolTip(this.uiGroupBox44, resources.GetString("uiGroupBox44.ToolTip2"));
-            // 
-            // CH2electricChange
-            // 
-            resources.ApplyResources(this.CH2electricChange, "CH2electricChange");
-            this.CH2electricChange.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.CH2electricChange.Name = "CH2electricChange";
-            this.CH2electricChange.Style = Sunny.UI.UIStyle.Custom;
-            this.toolTip2.SetToolTip(this.CH2electricChange, resources.GetString("CH2electricChange.ToolTip"));
-            this.toolTip3.SetToolTip(this.CH2electricChange, resources.GetString("CH2electricChange.ToolTip1"));
-            this.toolTip1.SetToolTip(this.CH2electricChange, resources.GetString("CH2electricChange.ToolTip2"));
-            this.CH2electricChange.CheckedChanged += new System.EventHandler(this.CH2electricChange_CheckedChanged);
-            // 
-            // OrderRightCopy
-            // 
-            resources.ApplyResources(this.OrderRightCopy, "OrderRightCopy");
-            this.OrderRightCopy.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.OrderRightCopy.Name = "OrderRightCopy";
-            this.OrderRightCopy.Style = Sunny.UI.UIStyle.Custom;
-            this.OrderRightCopy.Symbol = 361697;
-            this.OrderRightCopy.TipsFont = new System.Drawing.Font("Microsoft YaHei", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.toolTip3.SetToolTip(this.OrderRightCopy, resources.GetString("OrderRightCopy.ToolTip"));
-            this.toolTip2.SetToolTip(this.OrderRightCopy, resources.GetString("OrderRightCopy.ToolTip1"));
-            this.toolTip1.SetToolTip(this.OrderRightCopy, resources.GetString("OrderRightCopy.ToolTip2"));
-            this.OrderRightCopy.Click += new System.EventHandler(this.OrderRightCopy_Click);
-            // 
-            // CH2UpDownChange
-            // 
-            resources.ApplyResources(this.CH2UpDownChange, "CH2UpDownChange");
-            this.CH2UpDownChange.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.CH2UpDownChange.Name = "CH2UpDownChange";
-            this.CH2UpDownChange.Style = Sunny.UI.UIStyle.Custom;
-            this.toolTip2.SetToolTip(this.CH2UpDownChange, resources.GetString("CH2UpDownChange.ToolTip"));
-            this.toolTip3.SetToolTip(this.CH2UpDownChange, resources.GetString("CH2UpDownChange.ToolTip1"));
-            this.toolTip1.SetToolTip(this.CH2UpDownChange, resources.GetString("CH2UpDownChange.ToolTip2"));
-            this.CH2UpDownChange.CheckedChanged += new System.EventHandler(this.CH2UpDownChange_CheckedChanged);
-            // 
-            // CH2Pump
-            // 
-            resources.ApplyResources(this.CH2Pump, "CH2Pump");
-            this.CH2Pump.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.CH2Pump.Name = "CH2Pump";
-            this.CH2Pump.Style = Sunny.UI.UIStyle.Custom;
-            this.toolTip2.SetToolTip(this.CH2Pump, resources.GetString("CH2Pump.ToolTip"));
-            this.toolTip3.SetToolTip(this.CH2Pump, resources.GetString("CH2Pump.ToolTip1"));
-            this.toolTip1.SetToolTip(this.CH2Pump, resources.GetString("CH2Pump.ToolTip2"));
-            this.CH2Pump.CheckedChanged += new System.EventHandler(this.CH2Pump_CheckedChanged);
-            // 
-            // CH2LIN
-            // 
-            resources.ApplyResources(this.CH2LIN, "CH2LIN");
-            this.CH2LIN.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.CH2LIN.Name = "CH2LIN";
-            this.CH2LIN.Style = Sunny.UI.UIStyle.Custom;
-            this.toolTip2.SetToolTip(this.CH2LIN, resources.GetString("CH2LIN.ToolTip"));
-            this.toolTip3.SetToolTip(this.CH2LIN, resources.GetString("CH2LIN.ToolTip1"));
-            this.toolTip1.SetToolTip(this.CH2LIN, resources.GetString("CH2LIN.ToolTip2"));
-            this.CH2LIN.CheckedChanged += new System.EventHandler(this.CH2LIN_CheckedChanged);
-            // 
-            // CH2IGN
-            // 
-            resources.ApplyResources(this.CH2IGN, "CH2IGN");
-            this.CH2IGN.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.CH2IGN.Name = "CH2IGN";
-            this.CH2IGN.Style = Sunny.UI.UIStyle.Custom;
-            this.toolTip2.SetToolTip(this.CH2IGN, resources.GetString("CH2IGN.ToolTip"));
-            this.toolTip3.SetToolTip(this.CH2IGN, resources.GetString("CH2IGN.ToolTip1"));
-            this.toolTip1.SetToolTip(this.CH2IGN, resources.GetString("CH2IGN.ToolTip2"));
-            this.CH2IGN.CheckedChanged += new System.EventHandler(this.CH2IGN_CheckedChanged);
-            // 
-            // CH2HighLevel
-            // 
-            resources.ApplyResources(this.CH2HighLevel, "CH2HighLevel");
-            this.CH2HighLevel.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.CH2HighLevel.Name = "CH2HighLevel";
-            this.CH2HighLevel.Style = Sunny.UI.UIStyle.Custom;
-            this.toolTip2.SetToolTip(this.CH2HighLevel, resources.GetString("CH2HighLevel.ToolTip"));
-            this.toolTip3.SetToolTip(this.CH2HighLevel, resources.GetString("CH2HighLevel.ToolTip1"));
-            this.toolTip1.SetToolTip(this.CH2HighLevel, resources.GetString("CH2HighLevel.ToolTip2"));
-            this.CH2HighLevel.CheckedChanged += new System.EventHandler(this.CH2HighLevel_CheckedChanged);
-            // 
-            // uiGroupBox37
-            // 
-            resources.ApplyResources(this.uiGroupBox37, "uiGroupBox37");
-            this.uiGroupBox37.Controls.Add(this.CH1electricChange);
-            this.uiGroupBox37.Controls.Add(this.OrderLeftCopy);
-            this.uiGroupBox37.Controls.Add(this.CH1Pump);
-            this.uiGroupBox37.Controls.Add(this.CH1LIN);
-            this.uiGroupBox37.Controls.Add(this.CH1UpDownChange);
-            this.uiGroupBox37.Controls.Add(this.CH1IGN);
-            this.uiGroupBox37.Controls.Add(this.CH1HighLevel);
-            this.uiGroupBox37.FillColor = System.Drawing.Color.LightBlue;
-            this.uiGroupBox37.Name = "uiGroupBox37";
-            this.uiGroupBox37.Style = Sunny.UI.UIStyle.Custom;
-            this.uiGroupBox37.TextAlignment = System.Drawing.ContentAlignment.MiddleCenter;
-            this.toolTip3.SetToolTip(this.uiGroupBox37, resources.GetString("uiGroupBox37.ToolTip"));
-            this.toolTip2.SetToolTip(this.uiGroupBox37, resources.GetString("uiGroupBox37.ToolTip1"));
-            this.toolTip1.SetToolTip(this.uiGroupBox37, resources.GetString("uiGroupBox37.ToolTip2"));
-            // 
-            // CH1electricChange
-            // 
-            resources.ApplyResources(this.CH1electricChange, "CH1electricChange");
-            this.CH1electricChange.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.CH1electricChange.Name = "CH1electricChange";
-            this.CH1electricChange.Style = Sunny.UI.UIStyle.Custom;
-            this.toolTip2.SetToolTip(this.CH1electricChange, resources.GetString("CH1electricChange.ToolTip"));
-            this.toolTip3.SetToolTip(this.CH1electricChange, resources.GetString("CH1electricChange.ToolTip1"));
-            this.toolTip1.SetToolTip(this.CH1electricChange, resources.GetString("CH1electricChange.ToolTip2"));
-            this.CH1electricChange.CheckedChanged += new System.EventHandler(this.CH1electricChange_CheckedChanged);
-            // 
-            // OrderLeftCopy
-            // 
-            resources.ApplyResources(this.OrderLeftCopy, "OrderLeftCopy");
-            this.OrderLeftCopy.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.OrderLeftCopy.Name = "OrderLeftCopy";
-            this.OrderLeftCopy.Style = Sunny.UI.UIStyle.Custom;
-            this.OrderLeftCopy.Symbol = 361697;
-            this.OrderLeftCopy.TipsFont = new System.Drawing.Font("Microsoft YaHei", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.toolTip3.SetToolTip(this.OrderLeftCopy, resources.GetString("OrderLeftCopy.ToolTip"));
-            this.toolTip2.SetToolTip(this.OrderLeftCopy, resources.GetString("OrderLeftCopy.ToolTip1"));
-            this.toolTip1.SetToolTip(this.OrderLeftCopy, resources.GetString("OrderLeftCopy.ToolTip2"));
-            this.OrderLeftCopy.Click += new System.EventHandler(this.OrderLeftCopy_Click);
-            // 
-            // CH1Pump
-            // 
-            resources.ApplyResources(this.CH1Pump, "CH1Pump");
-            this.CH1Pump.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.CH1Pump.Name = "CH1Pump";
-            this.CH1Pump.Style = Sunny.UI.UIStyle.Custom;
-            this.toolTip2.SetToolTip(this.CH1Pump, resources.GetString("CH1Pump.ToolTip"));
-            this.toolTip3.SetToolTip(this.CH1Pump, resources.GetString("CH1Pump.ToolTip1"));
-            this.toolTip1.SetToolTip(this.CH1Pump, resources.GetString("CH1Pump.ToolTip2"));
-            this.CH1Pump.CheckedChanged += new System.EventHandler(this.CH1Pump_CheckedChanged);
-            // 
-            // CH1LIN
-            // 
-            resources.ApplyResources(this.CH1LIN, "CH1LIN");
-            this.CH1LIN.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.CH1LIN.Name = "CH1LIN";
-            this.CH1LIN.Style = Sunny.UI.UIStyle.Custom;
-            this.toolTip2.SetToolTip(this.CH1LIN, resources.GetString("CH1LIN.ToolTip"));
-            this.toolTip3.SetToolTip(this.CH1LIN, resources.GetString("CH1LIN.ToolTip1"));
-            this.toolTip1.SetToolTip(this.CH1LIN, resources.GetString("CH1LIN.ToolTip2"));
-            this.CH1LIN.CheckedChanged += new System.EventHandler(this.CH1LIN_CheckedChanged);
-            // 
-            // CH1UpDownChange
-            // 
-            resources.ApplyResources(this.CH1UpDownChange, "CH1UpDownChange");
-            this.CH1UpDownChange.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.CH1UpDownChange.Name = "CH1UpDownChange";
-            this.CH1UpDownChange.Style = Sunny.UI.UIStyle.Custom;
-            this.toolTip2.SetToolTip(this.CH1UpDownChange, resources.GetString("CH1UpDownChange.ToolTip"));
-            this.toolTip3.SetToolTip(this.CH1UpDownChange, resources.GetString("CH1UpDownChange.ToolTip1"));
-            this.toolTip1.SetToolTip(this.CH1UpDownChange, resources.GetString("CH1UpDownChange.ToolTip2"));
-            this.CH1UpDownChange.CheckedChanged += new System.EventHandler(this.CH1UpDownChange_CheckedChanged);
-            // 
-            // CH1IGN
-            // 
-            resources.ApplyResources(this.CH1IGN, "CH1IGN");
-            this.CH1IGN.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.CH1IGN.Name = "CH1IGN";
-            this.CH1IGN.Style = Sunny.UI.UIStyle.Custom;
-            this.toolTip2.SetToolTip(this.CH1IGN, resources.GetString("CH1IGN.ToolTip"));
-            this.toolTip3.SetToolTip(this.CH1IGN, resources.GetString("CH1IGN.ToolTip1"));
-            this.toolTip1.SetToolTip(this.CH1IGN, resources.GetString("CH1IGN.ToolTip2"));
-            this.CH1IGN.CheckedChanged += new System.EventHandler(this.CH1IGN_CheckedChanged);
-            // 
-            // CH1HighLevel
-            // 
-            resources.ApplyResources(this.CH1HighLevel, "CH1HighLevel");
-            this.CH1HighLevel.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.CH1HighLevel.Name = "CH1HighLevel";
-            this.CH1HighLevel.Style = Sunny.UI.UIStyle.Custom;
-            this.toolTip2.SetToolTip(this.CH1HighLevel, resources.GetString("CH1HighLevel.ToolTip"));
-            this.toolTip3.SetToolTip(this.CH1HighLevel, resources.GetString("CH1HighLevel.ToolTip1"));
-            this.toolTip1.SetToolTip(this.CH1HighLevel, resources.GetString("CH1HighLevel.ToolTip2"));
-            this.CH1HighLevel.CheckedChanged += new System.EventHandler(this.CH1HighLevel_CheckedChanged);
             // 
             // uiGroupBox32
             // 
@@ -6033,7 +5841,6 @@
             // uiGroupBox8
             // 
             resources.ApplyResources(this.uiGroupBox8, "uiGroupBox8");
-            this.uiGroupBox8.Controls.Add(this.uiGroupBox44);
             this.uiGroupBox8.Controls.Add(this.CH2QuiescentCurrntIndex);
             this.uiGroupBox8.Controls.Add(this.CH2QuiescentCurrnt);
             this.uiGroupBox8.Controls.Add(this.CH2DOWNindex);
@@ -6067,6 +5874,17 @@
             this.toolTip3.SetToolTip(this.CH2QuiescentCurrntIndex, resources.GetString("CH2QuiescentCurrntIndex.ToolTip1"));
             this.toolTip1.SetToolTip(this.CH2QuiescentCurrntIndex, resources.GetString("CH2QuiescentCurrntIndex.ToolTip2"));
             // 
+            // CH2UpDownChange
+            // 
+            resources.ApplyResources(this.CH2UpDownChange, "CH2UpDownChange");
+            this.CH2UpDownChange.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.CH2UpDownChange.Name = "CH2UpDownChange";
+            this.CH2UpDownChange.Style = Sunny.UI.UIStyle.Custom;
+            this.toolTip2.SetToolTip(this.CH2UpDownChange, resources.GetString("CH2UpDownChange.ToolTip"));
+            this.toolTip3.SetToolTip(this.CH2UpDownChange, resources.GetString("CH2UpDownChange.ToolTip1"));
+            this.toolTip1.SetToolTip(this.CH2UpDownChange, resources.GetString("CH2UpDownChange.ToolTip2"));
+            this.CH2UpDownChange.CheckedChanged += new System.EventHandler(this.CH2UpDownChange_CheckedChanged);
+            // 
             // CH2QuiescentCurrnt
             // 
             resources.ApplyResources(this.CH2QuiescentCurrnt, "CH2QuiescentCurrnt");
@@ -6094,6 +5912,17 @@
             this.toolTip3.SetToolTip(this.CH2RWDindex, resources.GetString("CH2RWDindex.ToolTip1"));
             this.toolTip1.SetToolTip(this.CH2RWDindex, resources.GetString("CH2RWDindex.ToolTip2"));
             // 
+            // CH2HighLevel
+            // 
+            resources.ApplyResources(this.CH2HighLevel, "CH2HighLevel");
+            this.CH2HighLevel.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.CH2HighLevel.Name = "CH2HighLevel";
+            this.CH2HighLevel.Style = Sunny.UI.UIStyle.Custom;
+            this.toolTip2.SetToolTip(this.CH2HighLevel, resources.GetString("CH2HighLevel.ToolTip"));
+            this.toolTip3.SetToolTip(this.CH2HighLevel, resources.GetString("CH2HighLevel.ToolTip1"));
+            this.toolTip1.SetToolTip(this.CH2HighLevel, resources.GetString("CH2HighLevel.ToolTip2"));
+            this.CH2HighLevel.CheckedChanged += new System.EventHandler(this.CH2HighLevel_CheckedChanged);
+            // 
             // CH2FWDLeakindex
             // 
             resources.ApplyResources(this.CH2FWDLeakindex, "CH2FWDLeakindex");
@@ -6109,6 +5938,19 @@
             this.toolTip2.SetToolTip(this.CH2FWDindex, resources.GetString("CH2FWDindex.ToolTip"));
             this.toolTip3.SetToolTip(this.CH2FWDindex, resources.GetString("CH2FWDindex.ToolTip1"));
             this.toolTip1.SetToolTip(this.CH2FWDindex, resources.GetString("CH2FWDindex.ToolTip2"));
+            // 
+            // OrderRightCopy
+            // 
+            resources.ApplyResources(this.OrderRightCopy, "OrderRightCopy");
+            this.OrderRightCopy.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.OrderRightCopy.Name = "OrderRightCopy";
+            this.OrderRightCopy.Style = Sunny.UI.UIStyle.Custom;
+            this.OrderRightCopy.Symbol = 361697;
+            this.OrderRightCopy.TipsFont = new System.Drawing.Font("Microsoft YaHei", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.toolTip3.SetToolTip(this.OrderRightCopy, resources.GetString("OrderRightCopy.ToolTip"));
+            this.toolTip2.SetToolTip(this.OrderRightCopy, resources.GetString("OrderRightCopy.ToolTip1"));
+            this.toolTip1.SetToolTip(this.OrderRightCopy, resources.GetString("OrderRightCopy.ToolTip2"));
+            this.OrderRightCopy.Click += new System.EventHandler(this.OrderRightCopy_Click);
             // 
             // CH2DOWNLeakindex
             // 
@@ -6200,6 +6042,17 @@
             this.toolTip1.SetToolTip(this.CH2DOWNLeak, resources.GetString("CH2DOWNLeak.ToolTip2"));
             this.CH2DOWNLeak.CheckedChanged += new System.EventHandler(this.CH2DOWNLeak_CheckedChanged);
             // 
+            // CH2IGN
+            // 
+            resources.ApplyResources(this.CH2IGN, "CH2IGN");
+            this.CH2IGN.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.CH2IGN.Name = "CH2IGN";
+            this.CH2IGN.Style = Sunny.UI.UIStyle.Custom;
+            this.toolTip2.SetToolTip(this.CH2IGN, resources.GetString("CH2IGN.ToolTip"));
+            this.toolTip3.SetToolTip(this.CH2IGN, resources.GetString("CH2IGN.ToolTip1"));
+            this.toolTip1.SetToolTip(this.CH2IGN, resources.GetString("CH2IGN.ToolTip2"));
+            this.CH2IGN.CheckedChanged += new System.EventHandler(this.CH2IGN_CheckedChanged);
+            // 
             // CH2FWDLeak
             // 
             resources.ApplyResources(this.CH2FWDLeak, "CH2FWDLeak");
@@ -6211,11 +6064,32 @@
             this.toolTip1.SetToolTip(this.CH2FWDLeak, resources.GetString("CH2FWDLeak.ToolTip2"));
             this.CH2FWDLeak.CheckedChanged += new System.EventHandler(this.CH2FWDLeak_CheckedChanged);
             // 
+            // CH2LIN
+            // 
+            resources.ApplyResources(this.CH2LIN, "CH2LIN");
+            this.CH2LIN.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.CH2LIN.Name = "CH2LIN";
+            this.CH2LIN.Style = Sunny.UI.UIStyle.Custom;
+            this.toolTip2.SetToolTip(this.CH2LIN, resources.GetString("CH2LIN.ToolTip"));
+            this.toolTip3.SetToolTip(this.CH2LIN, resources.GetString("CH2LIN.ToolTip1"));
+            this.toolTip1.SetToolTip(this.CH2LIN, resources.GetString("CH2LIN.ToolTip2"));
+            this.CH2LIN.CheckedChanged += new System.EventHandler(this.CH2LIN_CheckedChanged);
+            // 
+            // CH2Pump
+            // 
+            resources.ApplyResources(this.CH2Pump, "CH2Pump");
+            this.CH2Pump.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.CH2Pump.Name = "CH2Pump";
+            this.CH2Pump.Style = Sunny.UI.UIStyle.Custom;
+            this.toolTip2.SetToolTip(this.CH2Pump, resources.GetString("CH2Pump.ToolTip"));
+            this.toolTip3.SetToolTip(this.CH2Pump, resources.GetString("CH2Pump.ToolTip1"));
+            this.toolTip1.SetToolTip(this.CH2Pump, resources.GetString("CH2Pump.ToolTip2"));
+            this.CH2Pump.CheckedChanged += new System.EventHandler(this.CH2Pump_CheckedChanged);
+            // 
             // uiGroupBox7
             // 
             resources.ApplyResources(this.uiGroupBox7, "uiGroupBox7");
             this.uiGroupBox7.Controls.Add(this.CH1QuiescentCurrntIndex);
-            this.uiGroupBox7.Controls.Add(this.uiGroupBox37);
             this.uiGroupBox7.Controls.Add(this.CH1QuiescentCurrnt);
             this.uiGroupBox7.Controls.Add(this.CH1FWDLeakindex);
             this.uiGroupBox7.Controls.Add(this.CH1DOWNLeakindex);
@@ -6257,6 +6131,41 @@
             this.toolTip3.SetToolTip(this.CH1QuiescentCurrnt, resources.GetString("CH1QuiescentCurrnt.ToolTip1"));
             this.toolTip1.SetToolTip(this.CH1QuiescentCurrnt, resources.GetString("CH1QuiescentCurrnt.ToolTip2"));
             this.CH1QuiescentCurrnt.CheckedChanged += new System.EventHandler(this.CH1QuiescentCurrnt_CheckedChanged);
+            // 
+            // CH1UpDownChange
+            // 
+            resources.ApplyResources(this.CH1UpDownChange, "CH1UpDownChange");
+            this.CH1UpDownChange.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.CH1UpDownChange.Name = "CH1UpDownChange";
+            this.CH1UpDownChange.Style = Sunny.UI.UIStyle.Custom;
+            this.toolTip2.SetToolTip(this.CH1UpDownChange, resources.GetString("CH1UpDownChange.ToolTip"));
+            this.toolTip3.SetToolTip(this.CH1UpDownChange, resources.GetString("CH1UpDownChange.ToolTip1"));
+            this.toolTip1.SetToolTip(this.CH1UpDownChange, resources.GetString("CH1UpDownChange.ToolTip2"));
+            this.CH1UpDownChange.CheckedChanged += new System.EventHandler(this.CH1UpDownChange_CheckedChanged);
+            // 
+            // CH1HighLevel
+            // 
+            resources.ApplyResources(this.CH1HighLevel, "CH1HighLevel");
+            this.CH1HighLevel.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.CH1HighLevel.Name = "CH1HighLevel";
+            this.CH1HighLevel.Style = Sunny.UI.UIStyle.Custom;
+            this.toolTip2.SetToolTip(this.CH1HighLevel, resources.GetString("CH1HighLevel.ToolTip"));
+            this.toolTip3.SetToolTip(this.CH1HighLevel, resources.GetString("CH1HighLevel.ToolTip1"));
+            this.toolTip1.SetToolTip(this.CH1HighLevel, resources.GetString("CH1HighLevel.ToolTip2"));
+            this.CH1HighLevel.CheckedChanged += new System.EventHandler(this.CH1HighLevel_CheckedChanged);
+            // 
+            // OrderLeftCopy
+            // 
+            resources.ApplyResources(this.OrderLeftCopy, "OrderLeftCopy");
+            this.OrderLeftCopy.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.OrderLeftCopy.Name = "OrderLeftCopy";
+            this.OrderLeftCopy.Style = Sunny.UI.UIStyle.Custom;
+            this.OrderLeftCopy.Symbol = 361697;
+            this.OrderLeftCopy.TipsFont = new System.Drawing.Font("Microsoft YaHei", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.toolTip3.SetToolTip(this.OrderLeftCopy, resources.GetString("OrderLeftCopy.ToolTip"));
+            this.toolTip2.SetToolTip(this.OrderLeftCopy, resources.GetString("OrderLeftCopy.ToolTip1"));
+            this.toolTip1.SetToolTip(this.OrderLeftCopy, resources.GetString("OrderLeftCopy.ToolTip2"));
+            this.OrderLeftCopy.Click += new System.EventHandler(this.OrderLeftCopy_Click);
             // 
             // CH1FWDLeakindex
             // 
@@ -6313,6 +6222,39 @@
             this.toolTip2.SetToolTip(this.CH1UPindex, resources.GetString("CH1UPindex.ToolTip"));
             this.toolTip3.SetToolTip(this.CH1UPindex, resources.GetString("CH1UPindex.ToolTip1"));
             this.toolTip1.SetToolTip(this.CH1UPindex, resources.GetString("CH1UPindex.ToolTip2"));
+            // 
+            // CH1IGN
+            // 
+            resources.ApplyResources(this.CH1IGN, "CH1IGN");
+            this.CH1IGN.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.CH1IGN.Name = "CH1IGN";
+            this.CH1IGN.Style = Sunny.UI.UIStyle.Custom;
+            this.toolTip2.SetToolTip(this.CH1IGN, resources.GetString("CH1IGN.ToolTip"));
+            this.toolTip3.SetToolTip(this.CH1IGN, resources.GetString("CH1IGN.ToolTip1"));
+            this.toolTip1.SetToolTip(this.CH1IGN, resources.GetString("CH1IGN.ToolTip2"));
+            this.CH1IGN.CheckedChanged += new System.EventHandler(this.CH1IGN_CheckedChanged);
+            // 
+            // CH1LIN
+            // 
+            resources.ApplyResources(this.CH1LIN, "CH1LIN");
+            this.CH1LIN.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.CH1LIN.Name = "CH1LIN";
+            this.CH1LIN.Style = Sunny.UI.UIStyle.Custom;
+            this.toolTip2.SetToolTip(this.CH1LIN, resources.GetString("CH1LIN.ToolTip"));
+            this.toolTip3.SetToolTip(this.CH1LIN, resources.GetString("CH1LIN.ToolTip1"));
+            this.toolTip1.SetToolTip(this.CH1LIN, resources.GetString("CH1LIN.ToolTip2"));
+            this.CH1LIN.CheckedChanged += new System.EventHandler(this.CH1LIN_CheckedChanged);
+            // 
+            // CH1Pump
+            // 
+            resources.ApplyResources(this.CH1Pump, "CH1Pump");
+            this.CH1Pump.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.CH1Pump.Name = "CH1Pump";
+            this.CH1Pump.Style = Sunny.UI.UIStyle.Custom;
+            this.toolTip2.SetToolTip(this.CH1Pump, resources.GetString("CH1Pump.ToolTip"));
+            this.toolTip3.SetToolTip(this.CH1Pump, resources.GetString("CH1Pump.ToolTip1"));
+            this.toolTip1.SetToolTip(this.CH1Pump, resources.GetString("CH1Pump.ToolTip2"));
+            this.CH1Pump.CheckedChanged += new System.EventHandler(this.CH1Pump_CheckedChanged);
             // 
             // CH1FWDLeak
             // 
@@ -7063,6 +7005,63 @@
             this.toolTip3.SetToolTip(this.CH1Elect, resources.GetString("CH1Elect.ToolTip1"));
             this.toolTip1.SetToolTip(this.CH1Elect, resources.GetString("CH1Elect.ToolTip2"));
             // 
+            // CH1electricChange
+            // 
+            resources.ApplyResources(this.CH1electricChange, "CH1electricChange");
+            this.CH1electricChange.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.CH1electricChange.Name = "CH1electricChange";
+            this.CH1electricChange.Style = Sunny.UI.UIStyle.Custom;
+            this.toolTip2.SetToolTip(this.CH1electricChange, resources.GetString("CH1electricChange.ToolTip"));
+            this.toolTip3.SetToolTip(this.CH1electricChange, resources.GetString("CH1electricChange.ToolTip1"));
+            this.toolTip1.SetToolTip(this.CH1electricChange, resources.GetString("CH1electricChange.ToolTip2"));
+            this.CH1electricChange.CheckedChanged += new System.EventHandler(this.CH1electricChange_CheckedChanged);
+            // 
+            // uiGroupBox37
+            // 
+            resources.ApplyResources(this.uiGroupBox37, "uiGroupBox37");
+            this.uiGroupBox37.Controls.Add(this.CH1electricChange);
+            this.uiGroupBox37.Controls.Add(this.OrderLeftCopy);
+            this.uiGroupBox37.Controls.Add(this.CH1Pump);
+            this.uiGroupBox37.Controls.Add(this.CH1LIN);
+            this.uiGroupBox37.Controls.Add(this.CH1UpDownChange);
+            this.uiGroupBox37.Controls.Add(this.CH1IGN);
+            this.uiGroupBox37.Controls.Add(this.CH1HighLevel);
+            this.uiGroupBox37.FillColor = System.Drawing.Color.LightBlue;
+            this.uiGroupBox37.Name = "uiGroupBox37";
+            this.uiGroupBox37.Style = Sunny.UI.UIStyle.Custom;
+            this.uiGroupBox37.TextAlignment = System.Drawing.ContentAlignment.MiddleCenter;
+            this.toolTip3.SetToolTip(this.uiGroupBox37, resources.GetString("uiGroupBox37.ToolTip"));
+            this.toolTip2.SetToolTip(this.uiGroupBox37, resources.GetString("uiGroupBox37.ToolTip1"));
+            this.toolTip1.SetToolTip(this.uiGroupBox37, resources.GetString("uiGroupBox37.ToolTip2"));
+            // 
+            // uiGroupBox44
+            // 
+            resources.ApplyResources(this.uiGroupBox44, "uiGroupBox44");
+            this.uiGroupBox44.Controls.Add(this.CH2electricChange);
+            this.uiGroupBox44.Controls.Add(this.OrderRightCopy);
+            this.uiGroupBox44.Controls.Add(this.CH2UpDownChange);
+            this.uiGroupBox44.Controls.Add(this.CH2Pump);
+            this.uiGroupBox44.Controls.Add(this.CH2LIN);
+            this.uiGroupBox44.Controls.Add(this.CH2IGN);
+            this.uiGroupBox44.Controls.Add(this.CH2HighLevel);
+            this.uiGroupBox44.FillColor = System.Drawing.Color.LightBlue;
+            this.uiGroupBox44.Name = "uiGroupBox44";
+            this.uiGroupBox44.Style = Sunny.UI.UIStyle.Custom;
+            this.uiGroupBox44.TextAlignment = System.Drawing.ContentAlignment.MiddleCenter;
+            this.toolTip3.SetToolTip(this.uiGroupBox44, resources.GetString("uiGroupBox44.ToolTip"));
+            this.toolTip2.SetToolTip(this.uiGroupBox44, resources.GetString("uiGroupBox44.ToolTip1"));
+            this.toolTip1.SetToolTip(this.uiGroupBox44, resources.GetString("uiGroupBox44.ToolTip2"));
+            // 
+            // CH2electricChange
+            // 
+            resources.ApplyResources(this.CH2electricChange, "CH2electricChange");
+            this.CH2electricChange.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.CH2electricChange.Name = "CH2electricChange";
+            this.CH2electricChange.Style = Sunny.UI.UIStyle.Custom;
+            this.toolTip2.SetToolTip(this.CH2electricChange, resources.GetString("CH2electricChange.ToolTip"));
+            this.toolTip3.SetToolTip(this.CH2electricChange, resources.GetString("CH2electricChange.ToolTip1"));
+            this.toolTip1.SetToolTip(this.CH2electricChange, resources.GetString("CH2electricChange.ToolTip2"));
+            // 
             // Electricity
             // 
             resources.ApplyResources(this, "$this");
@@ -7075,33 +7074,25 @@
             this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.Electricity_FormClosed);
             this.Load += new System.EventHandler(this.Electricity_Load);
             this.uiGroupBox29.ResumeLayout(false);
-            this.uiGroupBox29.PerformLayout();
             this.tabPage5.ResumeLayout(false);
             this.uiGroupBox21.ResumeLayout(false);
             this.uiGroupBox24.ResumeLayout(false);
-            this.uiGroupBox24.PerformLayout();
             this.uiGroupBox28.ResumeLayout(false);
-            this.uiGroupBox28.PerformLayout();
             this.uiGroupBox17.ResumeLayout(false);
             this.uiGroupBox11.ResumeLayout(false);
             this.uiGroupBox18.ResumeLayout(false);
             this.uiGroupBox40.ResumeLayout(false);
-            this.uiGroupBox40.PerformLayout();
             this.uiGroupBox42.ResumeLayout(false);
-            this.uiGroupBox42.PerformLayout();
             this.uiGroupBox39.ResumeLayout(false);
             this.uiGroupBox26.ResumeLayout(false);
             this.uiGroupBox34.ResumeLayout(false);
-            this.uiGroupBox34.PerformLayout();
             this.uiGroupBox22.ResumeLayout(false);
             this.uiGroupBox16.ResumeLayout(false);
             this.uiGroupBox16.PerformLayout();
             this.uiGroupBox15.ResumeLayout(false);
-            this.uiGroupBox15.PerformLayout();
             this.uiGroupBox14.ResumeLayout(false);
             this.uiGroupBox14.PerformLayout();
             this.uiGroupBox38.ResumeLayout(false);
-            this.uiGroupBox38.PerformLayout();
             this.uiGroupBox35.ResumeLayout(false);
             this.uiGroupBox36.ResumeLayout(false);
             this.uiGroupBox36.PerformLayout();
@@ -7114,25 +7105,22 @@
             this.uiGroupBox27.ResumeLayout(false);
             this.uiGroupBox23.ResumeLayout(false);
             this.uiGroupBox25.ResumeLayout(false);
+            this.uiGroupBox25.PerformLayout();
             this.uiGroupBox9.ResumeLayout(false);
             this.uiGroupBox20.ResumeLayout(false);
             this.uiGroupBox19.ResumeLayout(false);
             this.uiGroupBox10.ResumeLayout(false);
             this.tabPage6.ResumeLayout(false);
             this.uiGroupBox43.ResumeLayout(false);
-            this.uiGroupBox43.PerformLayout();
             this.uiGroupBox41.ResumeLayout(false);
-            this.uiGroupBox41.PerformLayout();
             this.uiGroupBox33.ResumeLayout(false);
-            this.uiGroupBox33.PerformLayout();
             this.tabPage2.ResumeLayout(false);
             this.uiTabControlMenu2.ResumeLayout(false);
             this.tabPage7.ResumeLayout(false);
             this.uiGroupBox5.ResumeLayout(false);
+            this.uiGroupBox5.PerformLayout();
             this.uiTabControlMenu1.ResumeLayout(false);
             this.tabPage0.ResumeLayout(false);
-            this.uiGroupBox44.ResumeLayout(false);
-            this.uiGroupBox37.ResumeLayout(false);
             this.uiGroupBox32.ResumeLayout(false);
             this.uiGroupBox32.PerformLayout();
             this.uiGroupBox3.ResumeLayout(false);
@@ -7152,6 +7140,8 @@
             this.uiGroupBox30.PerformLayout();
             this.uiGroupBox31.ResumeLayout(false);
             this.uiGroupBox31.PerformLayout();
+            this.uiGroupBox37.ResumeLayout(false);
+            this.uiGroupBox44.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
