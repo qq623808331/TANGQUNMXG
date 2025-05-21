@@ -28,6 +28,13 @@ using System.Security.Policy;
 using Microsoft.Office.Interop.Excel;
 using Sunny.UI.Win32;
 using System.Timers;
+using Newtonsoft.Json;
+using static System.Windows.Forms.VisualStyles.VisualStyleElement.Button;
+using System.Reflection.Emit;
+using System.Security.Cryptography;
+using static System.Windows.Forms.VisualStyles.VisualStyleElement.TaskbarClock;
+using Microsoft.Win32;
+
 namespace SLC1_N
 {
     public partial class Form1 : Form
@@ -128,6 +135,47 @@ namespace SLC1_N
         private long ch4pressstart;
         private long ch4pressend;
 
+
+        public static string URL;
+        public static string inbordURL;
+        public static string yanzhengUrl;
+
+        public static string LineNum;
+
+        public static string DeviceCode;
+        public static string LineCode;
+        public static string CommandCard;
+        public static string ProcessCode;
+        public static string NGCode;
+        public static string CheckBy;
+        public static string CH1PreTop;
+        public static int IsOnlyRecord;
+
+        public static long randomNumber1;//一通道lineNUM
+        public static long randomNumber2;//二通道lineNUM
+
+        //传输mes参数实体类对象
+        static MesConfigs.Detail det = new MesConfigs.Detail();
+        static MesConfigs.Detail det2 = new MesConfigs.Detail();
+        static MesConfigs.Detail det3 = new MesConfigs.Detail();
+        static MesConfigs.Detail det4 = new MesConfigs.Detail();
+        static MesConfigs.Detail det5 = new MesConfigs.Detail();
+        static MesConfigs.Detail det6 = new MesConfigs.Detail();
+        static MesConfigs.Detail det7 = new MesConfigs.Detail();
+        static MesConfigs.Detail det8 = new MesConfigs.Detail();
+        static MesConfigs.Detail det9 = new MesConfigs.Detail();
+        static MesConfigs.Detail det10 = new MesConfigs.Detail();
+        static MesConfigs.Detail det11 = new MesConfigs.Detail();
+        static MesConfigs.Detail det12 = new MesConfigs.Detail();
+        static MesConfigs.Detail det13 = new MesConfigs.Detail();
+        static MesConfigs.Detail det14 = new MesConfigs.Detail();
+        static MesConfigs.Detail det15 = new MesConfigs.Detail();
+        static MesConfigs.Detail det16 = new MesConfigs.Detail();
+        static MesConfigs.Detail det17 = new MesConfigs.Detail();
+        static MesConfigs.Detail det18 = new MesConfigs.Detail();
+        static MesConfigs.Detail det19 = new MesConfigs.Detail();
+        static MesConfigs.Detail det20 = new MesConfigs.Detail();
+
         //电流电压上下限
         public Model.Electricity elec = new Model.Electricity();
 
@@ -179,8 +227,8 @@ namespace SLC1_N
         /// <summary>
         /// 右工位程序当前步数
         /// </summary>
-        private int CH2Step;
 
+        private int CH2Step;
         private double CH1Q;
         private double CH2Q;
         private double CH3Q;
@@ -383,8 +431,8 @@ namespace SLC1_N
         {
             
             if(Form1.f1.ONtime.Text!= ((int)stopwatch.Elapsed.TotalMinutes).ToString())
-            Form1.f1.ONtime.Text=((int)stopwatch.Elapsed.TotalMinutes).ToString();
-
+          
+            Form1.f1.Invoke(new System.Action(() => {  Form1.f1.ONtime.Text = ((int)stopwatch.Elapsed.TotalMinutes).ToString(); }));
             //清理内存
             GC.Collect();
             GC.WaitForPendingFinalizers();
@@ -420,32 +468,51 @@ namespace SLC1_N
         }
         private static void CH1POWER_DataReceived(string data)
         {
+            
+
+          
                 try
                 {
-                double data2;
-                 
-                //string[] strArray = data.ToString().Split(' ');
-                //double number1 = Convert.ToDouble(strArray[0].ToString());
-                //string numberFromStringFormat = string.Format("{0:F5}", number1);
-                if (double.TryParse(data, System.Globalization.NumberStyles.Float,System.Globalization.NumberFormatInfo.InvariantInfo, out data2))
+                Task.Run(() =>
+                {
+                    double data2;
+                    
+                    //string[] strArray = data.ToString().Split(' ');
+                    //double number1 = Convert.ToDouble(strArray[0].ToString());
+                    //string numberFromStringFormat = string.Format("{0:F5}", number1);
+                    if (double.TryParse(data, System.Globalization.NumberStyles.Float,System.Globalization.NumberFormatInfo.InvariantInfo, out data2))
                 {
                      if(data2<1)
                     {
-                        Form1.f1.CH1RTADC.Text = data2.ToString();
+
+                            Form1.f1.Invoke(new System.Action(() => { Form1.f1.CH1RTADC.Text = data2.ToString(); }));
+                            
+                           
+                           
                         Form1.f1.CH1ADCList.Add(new ValueClass { Value = data2 });
                     }
                    
                  
                 }
+                });
                 ;
-                 }
+           
+        }
+                 
                 catch (Exception ex)
                 {
                     Logger.Log(ex.StackTrace);
                     throw;
                 }
-      
-        
+
+
+        }
+        public void WritetoRTADC(string Send)
+        {
+            lock (lockObject2)
+            {
+                Form1.CH1POWER._serialPort.WriteLine(Send);
+            }
         }
         private static void CH2POWER_DataReceived(string data)
         {
@@ -460,7 +527,8 @@ namespace SLC1_N
                 {
                     if (data2 < 1)
                     {
-                        Form1.f1.CH2RTADC.Text = data2.ToString();
+                        Form1.f1.Invoke(new System.Action(() => { Form1.f1.CH2RTADC.Text = data2.ToString(); }));
+                       
                         Form1.f1.CH2ADCList.Add(new ValueClass { Value = data2 });
                     }
                 }
@@ -630,11 +698,15 @@ namespace SLC1_N
         }
         private static Stopwatch stopwatch;
         private static System.Timers.Timer timer13;
+        public static int TIME; //已经使用时间
+        public static int timeflag = 0;
+        public static int Stipulatetime;//规定时间
         private void Form1_Load(object sender, EventArgs e)
         {
             ///////新加串口初始化
             ///
-         
+             //if (TIME >= Stipulatetime)
+   
 
             ////
             //Sunny.UI.UIMessageTip.ShowError(                                                                                                                                                                                                                                                                                                                                                                                          "AAAAA", 1000);
@@ -720,7 +792,19 @@ namespace SLC1_N
             ReadLin();
             ReadAllConfig();
             UDPBroadcast();
+            MESread();
             PLC_Con();
+            ReadTIME();
+            TIME++;
+            //if (TIME >= Stipulatetime)
+            //{
+            //    timer2.Stop();
+            //    this.Hide();
+            //    Activationcode atc = new Activationcode();
+            //    atc.ShowDialog();
+            //}
+            timer2.Interval = 18000000;//半个小时跑一次  18000000
+            timer2.Start();
             log.DeleteFile("CH1Port_Logmsg");
             log.DeleteFile("CH2Port_Logmsg");
             log.DeleteFile("CH1FlowPort_Logmsg");
@@ -760,7 +844,7 @@ namespace SLC1_N
                 bool Isconnect = plc.PLC_IsCon();
                 if (Isconnect)
                 {
-                    PLCSignal.Interval = 200;
+                    PLCSignal.Interval = 300;
                     PLCSignal.Start();
                 }
                 else
@@ -779,13 +863,41 @@ namespace SLC1_N
                 Logger.Log(ex.StackTrace);
             }
         }
+        public void ReadTIME()
+        {
+            RegistryKey regName;
 
+            regName = Registry.CurrentUser.OpenSubKey("SOFTWARE\\Microsoft\\PMD\\1.0\\User-SLC2-F-Set", true);
+
+            if (regName is null)
+            {
+                regName = Registry.CurrentUser.CreateSubKey("SOFTWARE\\Microsoft\\PMD\\1.0\\User-SLC2-F-Set");
+            }
+
+            regName.OpenSubKey("User");
+
+            if (regName.GetValue("使用天数") is null)
+            {
+                Stipulatetime = 144;//三天的时间
+            }
+            else
+            {
+                Stipulatetime = Convert.ToInt32(regName.GetValue("使用天数"));
+            }
+
+            TIME = Convert.ToInt32(regName.GetValue("time"));
+            timeflag = Convert.ToInt32(regName.GetValue("timeflag"));
+            regName.Close();
+        }
+        bool bool_resetflag=true;
+        private static readonly object lockObject2 = new object();
         /// <summary>
         /// PLC循环发送数据
         /// </summary>
         /// <param name="sender"></param>
         /// <param name="e"></param>
-        private void PLCSignal_Tick_1(object sender, EventArgs e)
+
+        private async void PLCSignal_Tick_1(object sender, EventArgs e)
         {
             try
             {
@@ -811,11 +923,16 @@ namespace SLC1_N
                 }
 
                 //PLCSignal.Stop();
-          
-                System.Threading.Thread.Sleep(200);
-                if (plc.PLCIsRun)
+                if (plc.CH1Reset|| plc.CH2Reset)
+                {
+                    bool_resetflag = true;
+                }
+
+                    // System.Threading.Thread.Sleep(200);
+                    if (plc.PLCIsRun)
                 {
                     ReadPLC();
+                   
                     PLCRun.BackColor = Color.Green;
                     if (plc.Front_SafetyDoor)
                     {
@@ -828,6 +945,7 @@ namespace SLC1_N
                             wa.InsertWarningData(DateTime.Now.ToString("yyyy-MM-dd HH:mm:ss"), "-", I18N.GetLangText(dicLang, "前侧安全门打开，前侧安全门"));
                             //MessageBox.Show("前侧安全门打开！", "前侧安全门");
                             Logger.Log(I18N.GetLangText(dicLang, "前侧安全门打开，前侧安全门"));
+                            bool_resetflag = false;
                         }
                     }
 
@@ -841,6 +959,7 @@ namespace SLC1_N
                             wa.InsertWarningData(DateTime.Now.ToString("yyyy-MM-dd HH:mm:ss"), "-", I18N.GetLangText(dicLang, "后侧上方安全门打开，后侧上方安全门"));
                             //MessageBox.Show("后侧上方安全门打开！", "后侧上方安全门");
                             Logger.Log(I18N.GetLangText(dicLang, "后侧上方安全门打开，后侧上方安全门"));
+                            bool_resetflag = false;
                         }
                     }
                     if (plc.Back_SafetyDoorDown)
@@ -853,6 +972,7 @@ namespace SLC1_N
                             wa.InsertWarningData(DateTime.Now.ToString("yyyy-MM-dd HH:mm:ss"), "-", I18N.GetLangText(dicLang, "后侧下方安全门打开， 后侧下方安全门"));
                             //MessageBox.Show("后侧下方安全门打开！", "后侧下方安全门");
                             Logger.Log(I18N.GetLangText(dicLang, "后侧下方安全门打开， 后侧下方安全门"));
+                            bool_resetflag = false;
                         }
                     }
                     if (plc.Left_SafetyDoor)
@@ -867,6 +987,7 @@ namespace SLC1_N
                             //MessageBox.Show("左侧安全门打开！", "左侧安全门");
                             Logger.Log(I18N.GetLangText(dicLang, "左侧安全门打开，左侧安全门"));
                             //Logger.Log(I18N.GetLangText(dicLang, "左侧安全门打开，左侧安全门"));
+                            bool_resetflag = false;
                         }
                     }
                     if (plc.Right_SafetyDoor)
@@ -880,6 +1001,7 @@ namespace SLC1_N
                             // wa.InsertWarningData(DateTime.Now.ToString("yyyy-MM-dd HH:mm:ss"), "-", I18N.GetLangText(dicLang, "右侧安全门打开，右侧安全门"));
                             // MessageBox.Show("！", "右侧安全门");
                             Logger.Log(I18N.GetLangText(dicLang, "右侧安全门打开，右侧安全门"));
+                            bool_resetflag = false;
                         }
                     }
                     if (plc.CH1Stopping)
@@ -898,6 +1020,7 @@ namespace SLC1_N
                             //    plc.CH1StoppingFalse();
                             //}
                             wa.InsertWarningData(DateTime.Now.ToString("yyyy-MM-dd HH:mm:ss"), I18N.GetLangText(dicLang, "左"), I18N.GetLangText(dicLang, "左工位急停按下，CH1急停"));
+                            bool_resetflag = false;
                         }
                     }
                     if (plc.CH2Stopping)
@@ -915,6 +1038,7 @@ namespace SLC1_N
                             //    plc.CH2StoppingFalse();
                             //}
                             wa.InsertWarningData(DateTime.Now.ToString("yyyy-MM-dd HH:mm:ss"), I18N.GetLangText(dicLang, "右"), I18N.GetLangText(dicLang, "左工位急停按下，CH1急停"));
+                            bool_resetflag = false;
                         }
                     }
                     if (plc.Stopping)
@@ -927,6 +1051,7 @@ namespace SLC1_N
                             // MessageBox.Show("总急停按下！", "总急停");
                             wa.InsertWarningData(DateTime.Now.ToString("yyyy-MM-dd HH:mm:ss"), "-", I18N.GetLangText(dicLang, "总急停按下，总急停"));
                             Logger.Log(I18N.GetLangText(dicLang, "总急停按下，总急停"));
+                            bool_resetflag = false;
                         }
                     }
                     if (plc.CH1Reset)
@@ -944,10 +1069,12 @@ namespace SLC1_N
                                 timerCH1CT.Stop();
                                 CH1IsStart = false;
                                 if (CH1POWER._serialPort.IsOpen)
-                                    Form1.CH1POWER._serialPort.WriteLine("OUTP 0");
+                                    WritetoRTADC("OUTP 0");
+                                    //Form1.CH1POWER._serialPort.WriteLine("OUTP 0");
                                 this.Invoke(new System.Action(() => { CH1CT.Text = "0S"; }));
                             }
                             // MessageBox.Show("左复位按下！", "左复位");
+                            bool_resetflag = false;
                             Logger.Log(I18N.GetLangText(dicLang, "左复位按下，左复位"));
                             this.logDisplay1.listBox1.Items.Clear();
                             wa.InsertWarningData(DateTime.Now.ToString("yyyy-MM-dd HH:mm:ss"), I18N.GetLangText(dicLang, "左"), I18N.GetLangText(dicLang, "左复位按下，左复位"));
@@ -971,6 +1098,7 @@ namespace SLC1_N
                                 this.Invoke(new System.Action(() => { CH2CT.Text = "0S"; }));
                             }
                             //MessageBox.Show("右复位按下！", "右复位");
+                            bool_resetflag = false;
                             Logger.Log(I18N.GetLangText(dicLang, "右复位按下，右复位"));
                             this.logDisplay1.listBox1.Items.Clear();
                             wa.InsertWarningData(DateTime.Now.ToString("yyyy-MM-dd HH:mm:ss"), I18N.GetLangText(dicLang, "右"), I18N.GetLangText(dicLang, "右复位按下，右复位"));
@@ -1005,6 +1133,7 @@ namespace SLC1_N
                         //    }
                         //}
                         Logger.Log(I18N.GetLangText(dicLang, "左工位请复位，CH1请复位"));
+                        bool_resetflag = false;
                         plc.CH1NeedResetFALSE();
                     }
                     if (plc.CH2NeedReset)
@@ -1029,6 +1158,7 @@ namespace SLC1_N
                         if (ptr == IntPtr.Zero)
                         {
                             //MessageBox.Show("CH1滑轨气缸异常！", "CH1滑轨气缸");
+                            bool_resetflag = false;
                             Logger.Log(I18N.GetLangText(dicLang, "CH1滑轨气缸异常，CH1滑轨气缸"));
                             wa.InsertWarningData(DateTime.Now.ToString("yyyy-MM-dd HH:mm:ss"), I18N.GetLangText(dicLang, "左"), I18N.GetLangText(dicLang, "CH1滑轨气缸异常，CH1滑轨气缸"));
                         }
@@ -1039,6 +1169,7 @@ namespace SLC1_N
                         if (ptr == IntPtr.Zero)
                         {
                             //MessageBox.Show("CH2滑轨气缸异常！", "CH2滑轨气缸");
+                            bool_resetflag = false;
                             Logger.Log(I18N.GetLangText(dicLang, "CH2滑轨气缸异常，CH2滑轨气缸"));
                             wa.InsertWarningData(DateTime.Now.ToString("yyyy-MM-dd HH:mm:ss"), I18N.GetLangText(dicLang, "右"), I18N.GetLangText(dicLang, "CH2滑轨气缸异常，CH2滑轨气缸"));
                         }
@@ -1048,6 +1179,7 @@ namespace SLC1_N
                         IntPtr ptr = FindWindow(null, "CH1侧推气缸");
                         if (ptr == IntPtr.Zero)
                         {
+                             bool_resetflag = false;
                            //MessageBox.Show("CH1侧推气缸异常！", "CH1侧推气缸");
                        //     Logger.Log(I18N.GetLangText(dicLang, "CH1侧推气缸异常，CH1侧推气缸"));
                         //    wa.InsertWarningData(DateTime.Now.ToString("yyyy-MM-dd HH:mm:ss"), I18N.GetLangText(dicLang, "左"), I18N.GetLangText(dicLang, "CH1侧推气缸异常，CH1侧推气缸"));
@@ -1058,9 +1190,10 @@ namespace SLC1_N
                         IntPtr ptr = FindWindow(null, "CH2侧推气缸");
                         if (ptr == IntPtr.Zero)
                         {
+                            bool_resetflag = false;
                             //MessageBox.Show("CH2侧推气缸异常！", "CH2侧推气缸");
                             Logger.Log(I18N.GetLangText(dicLang, "CH2侧推气缸异常，CH2侧推气缸"));
-                            wa.InsertWarningData(DateTime.Now.ToString("yyyy-MM-dd HH:mm:ss"), I18N.GetLangText(dicLang, "右"), I18N.GetLangText(dicLang, "CH2侧推气缸异常，CH2侧推气缸"));
+                            //wa.InsertWarningData(DateTime.Now.ToString("yyyy-MM-dd HH:mm:ss"), I18N.GetLangText(dicLang, "右"), I18N.GetLangText(dicLang, "CH2侧推气缸异常，CH2侧推气缸"));
                         }
                     }
                     if (plc.CH1FNCylinderError)
@@ -1068,6 +1201,7 @@ namespace SLC1_N
                         IntPtr ptr = FindWindow(null, "CH1飞针气缸");
                         if (ptr == IntPtr.Zero)
                         {
+                            bool_resetflag = false;
                             //MessageBox.Show("CH1飞针气缸异常！", "CH1飞针气缸");
                             Logger.Log(I18N.GetLangText(dicLang, "CH1飞针气缸异常，CH1飞针气缸"));
                             wa.InsertWarningData(DateTime.Now.ToString("yyyy-MM-dd HH:mm:ss"), I18N.GetLangText(dicLang, "左"), I18N.GetLangText(dicLang, "CH1飞针气缸异常，CH1飞针气缸"));
@@ -1080,6 +1214,7 @@ namespace SLC1_N
                         {
                             //MessageBox.Show("CH2飞针气缸异常！", "CH2飞针气缸");
                             Logger.Log(I18N.GetLangText(dicLang, "CH2飞针气缸异常，CH2飞针气缸"));
+                            bool_resetflag = false;
                             wa.InsertWarningData(DateTime.Now.ToString("yyyy-MM-dd HH:mm:ss"), I18N.GetLangText(dicLang, "右"), I18N.GetLangText(dicLang, "CH2飞针气缸异常，CH2飞针气缸"));
                         }
                     }
@@ -1090,6 +1225,7 @@ namespace SLC1_N
                         {
                             //MessageBox.Show("CH1充气气缸异常！", "CH1充气气缸");
                             Logger.Log(I18N.GetLangText(dicLang, "CH1充气气缸异常，CH1充气气缸"));
+                            bool_resetflag = false;
                             wa.InsertWarningData(DateTime.Now.ToString("yyyy-MM-dd HH:mm:ss"), I18N.GetLangText(dicLang, "左"), I18N.GetLangText(dicLang, "CH1充气气缸异常，CH1充气气缸"));
                         }
                     }
@@ -1098,9 +1234,11 @@ namespace SLC1_N
                         IntPtr ptr = FindWindow(null, "CH2充气气缸");
                         if (ptr == IntPtr.Zero)
                         {
+                            bool_resetflag = false;
                             //MessageBox.Show("CH2充气气缸异常！", "CH2充气气缸");
                             Logger.Log(I18N.GetLangText(dicLang, "CH2充气气缸异常，CH2充气气缸"));
-                            wa.InsertWarningData(DateTime.Now.ToString("yyyy-MM-dd HH:mm:ss"), I18N.GetLangText(dicLang, "右"), I18N.GetLangText(dicLang, "CH2充气气缸异常，CH2充气气缸"));
+                            bool_resetflag = false;
+                            //          wa.InsertWarningData(DateTime.Now.ToString("yyyy-MM-dd HH:mm:ss"), I18N.GetLangText(dicLang, "右"), I18N.GetLangText(dicLang, "CH2充气气缸异常，CH2充气气缸"));
                         }
                     }
                     if (plc.CH1CodeStart)
@@ -1108,10 +1246,12 @@ namespace SLC1_N
                         IntPtr ptr = FindWindow(null, "CH1条码启动");
                         if (ptr == IntPtr.Zero)
                         {
+
                             Logger.Log(I18N.GetLangText(dicLang, "左工位需要扫码启动，CH1条码启动"));
                             //DialogResult Reset = MessageBox.Show(I18N.GetLangText(dicLang, "左工位需要扫码启动，CH1条码启动"), I18N.GetLangText(dicLang, "通知"), MessageBoxButtons.OK);
                             //     if (Reset == DialogResult.OK)
                             {
+                                bool_resetflag = false;
                                 plc.CH1codestartFalse();
                                 PostMessage(ptr, WM_CLOSE, IntPtr.Zero, IntPtr.Zero);
                             }
@@ -1131,6 +1271,7 @@ namespace SLC1_N
                             // DialogResult Reset = MessageBox.Show(I18N.GetLangText(dicLang, "右工位需要扫码启动，CH2条码启动"), I18N.GetLangText(dicLang, "通知"), MessageBoxButtons.OK);
                             //  if (Reset == DialogResult.OK)
                             {
+                                
                                 plc.CH2codestartFalse();
                             }
                         }
@@ -1151,6 +1292,7 @@ namespace SLC1_N
                             //{
                             //    plc.CH1ProductFalse();
                             //}
+                            bool_resetflag = false;
                         }
                         else
                         {
@@ -1170,6 +1312,7 @@ namespace SLC1_N
                             //{
                             //    plc.CH2ProductFalse();
                             //}
+                            bool_resetflag = false;
                         }
                         else
                         {
@@ -1188,6 +1331,7 @@ namespace SLC1_N
                             //{
                             //    plc.CH1SafetyGratingFlase();
                             //}
+                            bool_resetflag = false;
                             wa.InsertWarningData(DateTime.Now.ToString("yyyy-MM-dd HH:mm:ss"), I18N.GetLangText(dicLang, "左"), I18N.GetLangText(dicLang, "左工位安全光栅触发，CH1安全光栅"));
                         }
                         else
@@ -1207,6 +1351,7 @@ namespace SLC1_N
                             //{
                             //    plc.CH2SafetyGratingFlase();
                             //}
+                            bool_resetflag = false;
                             wa.InsertWarningData(DateTime.Now.ToString("yyyy-MM-dd HH:mm:ss"), I18N.GetLangText(dicLang, "右"), I18N.GetLangText(dicLang, "右工位安全光栅触发，CH2安全光栅"));
                         }
                         else
@@ -1226,6 +1371,7 @@ namespace SLC1_N
                             //{
                             //    plc.PressWarning();
                             //}
+                            bool_resetflag = false;
                             wa.InsertWarningData(DateTime.Now.ToString("yyyy-MM-dd HH:mm:ss"), "-", I18N.GetLangText(dicLang, "气压报警，气压报警"));
                         }
                     }
@@ -1241,6 +1387,7 @@ namespace SLC1_N
                             //{
                             //    plc.AutoModelFalse();
                             //}
+                            bool_resetflag = false;
                         }
                     }
                     if (CH1ResetCode)
@@ -1283,7 +1430,8 @@ namespace SLC1_N
                                 dtCT1 = DateTime.Now;
                                 timerCH1CT.Start();
                                 if (Form1.CH1POWER._serialPort.IsOpen)
-                                    Form1.CH1POWER._serialPort.WriteLine("OUTP 1");
+                                    WritetoRTADC("OUTP 1");
+                                //Form1.CH1POWER._serialPort.WriteLine("OUTP 1");
                                 plcch1lastsignal = (plc.CH1Run | plc.CH1ARun | plc.CH1BRun | plc.CH1CRun);
                             }
                             CH1Status.Text = I18N.GetLangText(dicLang, "测试");
@@ -1467,7 +1615,8 @@ namespace SLC1_N
                                 //CH2progressBar.BackColor = Color.Red;
                                 CH1IsStart = false;
                                 if (CH1POWER._serialPort.IsOpen)
-                                    Form1.CH1POWER._serialPort.WriteLine("OUTP 0");
+                                    WritetoRTADC("OUTP 0");
+                                //Form1.CH1POWER._serialPort.WriteLine("OUTP 0");
                             }
 
                             //产品计数
@@ -1478,6 +1627,31 @@ namespace SLC1_N
                             //CH1PassNumber.Text = CH1PassNum.ToString();
                             CH1FailNumber.Text = CH1FailNum.ToString();
                             CH1PassRate.Text = (Math.Round((decimal)CH1PassNum / CH1Product, 2) * 100).ToString() + "%";
+
+                            string checkTime = DateTime.Now.ToString("yyyy-MM-dd HH:mm:ss");
+                            int IsPass = 0;
+                            Task.Run(() =>
+                            {
+
+                                if (save.opmes)
+                                {
+
+                               
+                            string Errpmesg = UpMes2(1, Form1.URL, Form1.LineNum, codeout1, Form1.DeviceCode, Form1.LineCode, Form1.CommandCard, Form1.ProcessCode, NGCode, Form1.CheckBy, IsPass, checkTime, IsOnlyRecord);
+                            if (Errpmesg.Contains("200"))
+                            {
+                                CH1MESOUT.Text = "PASS";
+                                CH1MESOUT.ForeColor = Color.Green;
+
+                            }
+                            else
+                            {
+                                CH1MESOUT.Text = "FILE";
+                                CH1MESOUT.ForeColor = Color.Red;
+                                Logger.Log(DateTime.Now.ToString()+ "CH1 Retorno del mes"+Errpmesg);
+                                }
+                                }
+                            });
 
                             if (save.ChkMES)
                             {
@@ -1518,7 +1692,8 @@ namespace SLC1_N
                                 CH2progressBar.Value = CH2progressBar.Maximum;
                                 CH1IsStart = false;
                                 if (CH1POWER._serialPort.IsOpen)
-                                    Form1.CH1POWER._serialPort.WriteLine("OUTP 0");
+                                    WritetoRTADC("OUTP 0");
+                                //Form1.CH1POWER._serialPort.WriteLine("OUTP 0");
                             }
                             //产品计数
                             CH1Product += 1;
@@ -1528,12 +1703,34 @@ namespace SLC1_N
                             CH1PassNumber.Text = CH1PassNum.ToString();
                             CH1PassRate.Text = (Math.Round((decimal)CH1PassNum / CH1Product, 2) * 100).ToString() + "%";
 
+                            string checkTime = DateTime.Now.ToString("yyyy-MM-dd HH:mm:ss");
+                            int IsPass = 1;
+                            Task.Run(() =>
+                            {
+                                if (save.opmes)
+                                {
+                                string Errpmesg = UpMes2(1, Form1.URL, Form1.LineNum, codeout1, Form1.DeviceCode, Form1.LineCode, Form1.CommandCard, Form1.ProcessCode, NGCode, Form1.CheckBy, IsPass, checkTime, IsOnlyRecord);
+                                if (Errpmesg.Contains("200"))
+                                {
+                                    CH1MESOUT.Text = "PASS";
+                                    CH1MESOUT.ForeColor = Color.Green;
+
+                                }
+                                else
+                                {
+                                    CH1MESOUT.Text = "FILE";
+                                    CH1MESOUT.ForeColor = Color.Red;
+                                    Logger.Log(DateTime.Now.ToString() + "CH1 Retorno del mes" + Errpmesg);
+                                }
+                                }
+                            });
                             if (save.ChkMES)
                             {
                                 AddMES(1);
                             }
 
                         }
+                        CH1Tlight.Text = "";
                     }
                     else
                     {
@@ -1575,6 +1772,29 @@ namespace SLC1_N
                             //CH2CT.Text = (Math.Round((decimal)CH2FailNum / CH2Product, 2) * 100).ToString() + "%";
                             //CH2Status.Text = "待机";
                             //CH2Status.ForeColor = Color.Black;
+
+
+                            string checkTime = DateTime.Now.ToString("yyyy-MM-dd HH:mm:ss");
+                            int IsPass = 0;
+                            Task.Run(() =>
+                            {
+                                if (save.opmes)
+                                {
+                            string Errpmesg = UpMes2(2, Form1.URL, Form1.LineNum, codeout2, Form1.DeviceCode, Form1.LineCode, Form1.CommandCard, Form1.ProcessCode, NGCode, Form1.CheckBy, IsPass, checkTime, IsOnlyRecord);
+                            if (Errpmesg.Contains("200"))
+                            {
+                                CH2MESOUT.Text = "PASS";
+                                CH2MESOUT.ForeColor = Color.Green;
+
+                            }
+                            else
+                            {
+                                CH2MESOUT.Text = "FILE";
+                                CH2MESOUT.ForeColor = Color.Red;
+                                Logger.Log(DateTime.Now.ToString() + "CH2 Retorno del mes" + Errpmesg);
+                            }
+                                }
+                            });
                             if (save.ChkMES)
                             {
                                 AddMES(2);
@@ -1620,6 +1840,31 @@ namespace SLC1_N
                             CH2ProductNumber.Text = CH2Product.ToString();
                             CH2PassNumber.Text = CH2PassNum.ToString();
                             CH2PassRate.Text = (Math.Round((decimal)CH2PassNum / CH2Product, 2) * 100).ToString() + "%";
+
+                            string checkTime = DateTime.Now.ToString("yyyy-MM-dd HH:mm:ss");
+                            int IsPass = 1;
+                            Task.Run(() =>
+                            {
+
+                                if (save.opmes)
+                                {
+
+                              
+                            string Errpmesg = UpMes2(2, Form1.URL, Form1.LineNum, codeout2, Form1.DeviceCode, Form1.LineCode, Form1.CommandCard, Form1.ProcessCode, NGCode, Form1.CheckBy, IsPass, checkTime, IsOnlyRecord);
+                            if (Errpmesg.Contains("200"))
+                            {
+                                CH2MESOUT.Text = "PASS";
+                                CH2MESOUT.ForeColor = Color.Green;
+
+                            }
+                            else
+                            {
+                                CH2MESOUT.Text = "FILE";
+                                CH2MESOUT.ForeColor = Color.Red;
+                                Logger.Log(DateTime.Now.ToString() + "CH2 Retorno del mes" + Errpmesg);
+                            }
+                                }
+                            });
                             if (save.ChkMES)
                             {
                                 AddMES(2);
@@ -1632,7 +1877,7 @@ namespace SLC1_N
                         CH2Tlight.Text = "";
                     }
                 }
-                else
+                else 
                 {
                     Logger.Log(I18N.GetLangText(dicLang, "PLC运行信号读取失败"));
                     wa.InsertWarningData(DateTime.Now.ToString("yyyy-MM-dd HH:mm:ss"), "-", I18N.GetLangText(dicLang, "PLC运行信号读取失败"));
@@ -1640,7 +1885,8 @@ namespace SLC1_N
                     PLCRun.BackColor = Color.Red;
                     //MessageBox.Show("PLC运行信号读取失败！");
                 }
-            }
+           
+        }
             catch (Exception ex)
             {
                 wa.InsertWarningData(DateTime.Now.ToString("yyyy-MM-dd HH:mm:ss"), "-", I18N.GetLangText(dicLang, "PLC收发") + ":" + ex.Message);
@@ -1651,6 +1897,7 @@ namespace SLC1_N
                 Logger.Log(ex.Message);
                 Logger.Log(ex.StackTrace);
             }
+            
         }
 
         /// <summary>
@@ -2175,7 +2422,8 @@ namespace SLC1_N
                     case 2://此时为读取参数并数据转换
                         string str2;
                         if (CH1POWER._serialPort.IsOpen)
-                            Form1.CH1POWER._serialPort.WriteLine("OUTP 1");
+                            WritetoRTADC("OUTP 1");
+                        //Form1.CH1POWER._serialPort.WriteLine("OUTP 1");
                         str2 = CH1ReceiveText.Text;
                         //ReadParams.Stop();
                         if (str2.Length == 126 && str2.Substring(2, 2) == "03")
@@ -2291,7 +2539,8 @@ namespace SLC1_N
                                 //fullpressure = LeakPressure.Text;
                                 LeftCH1Status.Text = I18N.GetLangText(dicLang, "准备");
                                 if (CH1POWER._serialPort.IsOpen)
-                                    Form1.CH1POWER._serialPort.WriteLine("OUTP 1");
+                                    WritetoRTADC("OUTP 1");
+                                //Form1.CH1POWER._serialPort.WriteLine("OUTP 1");
                             }
                             else if (str4.Substring(8, 2) == "02")
                             {
@@ -2306,7 +2555,8 @@ namespace SLC1_N
                                     CH1TestResult.FWD_FullPre1 = LeftCH1LeakPress.Text;
                                 }
                                 if (CH1POWER._serialPort.IsOpen)
-                                    Form1.CH1POWER._serialPort.WriteLine("OUTP 1");
+                                    WritetoRTADC("OUTP 1");
+                                //Form1.CH1POWER._serialPort.WriteLine("OUTP 1");
                             }
                             else if (str4.Substring(8, 2) == "03")
                             {
@@ -2325,7 +2575,8 @@ namespace SLC1_N
                                     //把IO关了 M4010 FOSE
                                     plc.CH1LeakFalse();//5-27
                                     if (CH1POWER._serialPort.IsOpen)
-                                        Form1.CH1POWER._serialPort.WriteLine("OUTP 0");
+                                        WritetoRTADC("OUTP 0");
+                                    //Form1.CH1POWER._serialPort.WriteLine("OUTP 0");
                                     if (CH1RTStep == "FWDLeak")
                                     {
                                         CH1TestResult.FWD_BalanPre1 = LeftCH1LeakPress.Text;
@@ -2342,7 +2593,8 @@ namespace SLC1_N
                                 }
                                 else
                                      if (CH1POWER._serialPort.IsOpen)
-                                    Form1.CH1POWER._serialPort.WriteLine("OUTP 1");
+                                    WritetoRTADC("OUTP 1");
+                                //Form1.CH1POWER._serialPort.WriteLine("OUTP 1");
                             }
                         }
 
@@ -2603,7 +2855,8 @@ namespace SLC1_N
                     case 2://此时为读取参数并数据转换
                         string str2;
                         if (CH1POWER._serialPort.IsOpen)
-                            Form1.CH1POWER._serialPort.WriteLine("OUTP 1");
+                            WritetoRTADC("OUTP 1");
+                        //Form1.CH1POWER._serialPort.WriteLine("OUTP 1");
                         str2 = CH2ReceiveText.Text;
                         //CH2ReadParams.Stop();
                         if (str2.Length == 126 && str2.Substring(2, 2) == "03")
@@ -2717,14 +2970,16 @@ namespace SLC1_N
                                 if (CH1RTStep == "UPLeak" || CH1RTStep == "DOWNLeak")
                                 {
                                     if (CH1POWER._serialPort.IsOpen)
-                                        Form1.CH1POWER._serialPort.WriteLine("OUTP 1");
+                                        WritetoRTADC("OUTP 1");
+                                    //CH1POWER._serialPort.WriteLine("OUTP 1");
                                     CH1TestResult.FullPre2 = LeftCH2LeakPress.Text;
                                 }
                                 else if (CH1RTStep == "FWDLeak")
                                 {
                                     if (CH1POWER._serialPort.IsOpen)
                                         Form1.CH1POWER._serialPort.WriteLine("OUTP 1");
-                                    CH1TestResult.FWD_FullPre2 = LeftCH2LeakPress.Text;
+                                    WritetoRTADC("OUTP 1");
+                                    //CH1TestResult.FWD_FullPre2 = LeftCH2LeakPress.Text;
                                 }
                             }
                             else if (str4.Substring(8, 2) == "03")
@@ -2743,7 +2998,8 @@ namespace SLC1_N
                                     plc.CH1FWDLeakFalse();
                                     plc.CH1DownLeakFalse();//5-27
                                     if (CH1POWER._serialPort.IsOpen)
-                                        Form1.CH1POWER._serialPort.WriteLine("OUTP 0");
+                                        WritetoRTADC("OUTP 0");
+                                    //Form1.CH1POWER._serialPort.WriteLine("OUTP 0");
                                     if (CH1RTStep == "FWDLeak")
                                     {
                                         CH1TestResult.FWD_BalanPre2 = LeftCH2LeakPress.Text;
@@ -2761,7 +3017,8 @@ namespace SLC1_N
                                 else
                                 {
                                     if (CH1POWER._serialPort.IsOpen)
-                                        Form1.CH1POWER._serialPort.WriteLine("OUTP 1");
+                                        WritetoRTADC("OUTP 1");
+                                    //Form1.CH1POWER._serialPort.WriteLine("OUTP 1");
                                 }
                             }
                         }
@@ -3766,7 +4023,8 @@ namespace SLC1_N
 
                     case 2:
                         if (CH1POWER._serialPort.IsOpen)
-                            Form1.CH1POWER._serialPort.WriteLine("OUTP 1");
+                            WritetoRTADC("OUTP 1");
+                        //Form1.CH1POWER._serialPort.WriteLine("OUTP 1");
                         text = "01 03 03 E8 00 1D";
                         ch1client.btnSendData(text);
                         ch1stage = 2;
@@ -3781,7 +4039,8 @@ namespace SLC1_N
                     case 4:
                         text = "01 01 00 02 00 01";
                         if (CH1POWER._serialPort.IsOpen)
-                            Form1.CH1POWER._serialPort.WriteLine("OUTP 0");
+                            WritetoRTADC("OUTP 0");
+                        //Form1.CH1POWER._serialPort.WriteLine("OUTP 0");
                         ch1client.btnSendData(text);
                         ch1stage = 5;
                         break;
@@ -3860,7 +4119,8 @@ namespace SLC1_N
 
                     case 2:
                         if (CH1POWER._serialPort.IsOpen)
-                            Form1.CH1POWER._serialPort.WriteLine("OUTP 1");
+                            WritetoRTADC("OUTP 1");
+                        //Form1.CH1POWER._serialPort.WriteLine("OUTP 1");
                         text = "02 03 03 E8 00 1D";
                         ch2client.btnSendData(text);
                         ch2stage = 2;
@@ -6694,6 +6954,17 @@ namespace SLC1_N
 
         private void Form1_FormClosing(object sender, FormClosingEventArgs e)
         {
+            RegistryKey regName;
+
+            regName = Registry.CurrentUser.OpenSubKey("SOFTWARE\\Microsoft\\PMD\\1.0\\User-SLC2-F-Set", true);
+
+            if (regName is null)
+            {
+                regName = Registry.CurrentUser.CreateSubKey("SOFTWARE\\Microsoft\\PMD\\1.0\\User-SLC2-F-Set");
+            }
+            regName.SetValue("time", TIME);
+            regName.SetValue("timeflag", 1);
+            regName.Close();
             DialogResult DR = MessageBox.Show(I18N.GetLangText(dicLang, "确认退出系统吗"), I18N.GetLangText(dicLang, "提示"), MessageBoxButtons.OKCancel, MessageBoxIcon.Question);
             if (DR == DialogResult.OK)
             {
@@ -6788,12 +7059,15 @@ namespace SLC1_N
                 Logger.Log(ex.StackTrace);
             }
         }
-
+        public static string codeout1;
+        public static string codeout2;
         private void CodeJudge(string code, int CH)
         {
+            logDisplay1.ResetText();
             if (CH == 1 && String.IsNullOrEmpty(left_CH1Code.Text))
             {
                 left_CH1Code.Text = code.Replace("\r", "").Replace("\n", "").Replace("\r\n", "");
+                codeout1 = left_CH1Code.Text;
                 if (left_CH1Code.TextLength > 0)
                 {
                     if (left_CH1Code.Text == right_CH1Code.Text)
@@ -6807,12 +7081,39 @@ namespace SLC1_N
                     {
                         plc.CH1Code();
                         SetLeftCode();
+                        string checkTime = DateTime.Now.ToString("yyyy-MM-dd HH:mm:ss");
+
+                        Task.Run(() =>
+                        {
+
+                            if (save.opmes)
+                            {
+
+                                CH1MESOUT.Text = "";
+                            string jieguo = ruzhanMes(1, inbordURL, LineNum, code, DeviceCode, LineCode, CommandCard, ProcessCode, NGCode, CheckBy, 1, checkTime);
+                            string jieguo2 = chushihuames(yanzhengUrl, DeviceCode, LineCode, 10, checkTime);
+
+                            if (jieguo.Contains("200") && jieguo2.Contains("200"))
+                            {
+                                CH1MESIN.Text = "PASS";
+                                CH1MESIN.ForeColor = Color.Green;
+
+                            }
+                            else
+                            {
+                                Logger.Log(DateTime.Now.ToString() + "CH1MESIN:" + jieguo + jieguo2);
+                                CH1MESIN.Text = "FILE";
+                                CH1MESIN.ForeColor = Color.Red;
+                            }
+                            }
+                        });
                     }
                 }
             }
             else if (CH == 2 && String.IsNullOrEmpty(right_CH1Code.Text))
             {
                 right_CH1Code.Text = code.Replace("\r", "").Replace("\n", "").Replace("\r\n", "");
+                codeout2 = right_CH1Code.Text;
                 if (right_CH1Code.TextLength > 0)
                 {
                     if (right_CH1Code.Text == left_CH1Code.Text)
@@ -6826,6 +7127,30 @@ namespace SLC1_N
                     {
                         plc.CH2Code();
                         SetRightCode();
+                        Task.Run(() =>
+                        {
+                            if (save.opmes)
+                            {
+                                CH2MESOUT.Text = "";
+
+                                string checkTime = DateTime.Now.ToString("yyyy-MM-dd HH:mm:ss");
+                            string jieguo = ruzhanMes(2, inbordURL, LineNum, code, DeviceCode, LineCode, CommandCard, ProcessCode, NGCode, CheckBy, 1, checkTime);
+                            string jieguo2 = chushihuames(yanzhengUrl, DeviceCode, LineCode, 10, checkTime);
+
+                            if (jieguo.Contains("200") && jieguo2.Contains("200"))
+                            {
+                                CH2MESIN.Text = "PASS";
+                                CH2MESIN.ForeColor = Color.Green;
+
+                            }
+                            else
+                            {
+                                CH2MESIN.Text = "FILE";
+                                CH2MESIN.ForeColor = Color.Red;
+                                Logger.Log(DateTime.Now.ToString() + "CH2MESIN:" + jieguo + jieguo2);
+                            }
+                            }
+                        });
                     }
                 }
             }
@@ -7890,6 +8215,10 @@ namespace SLC1_N
         /// <param name="e"></param>
         private void CH1ReaduA_Tick(object sender, EventArgs e)
         {
+            try
+            {
+
+           
 
             //计算时间
             ch1uAendtime = System.DateTime.Now.Ticks;
@@ -7974,6 +8303,12 @@ namespace SLC1_N
                     CH1Method(CH1Step);
                 }
             }
+            }
+            catch (Exception ex)
+            {
+                log.Try_Logmsg(DateTime.Now.ToString() + "静态电流定时器异常" +ex.StackTrace+ex.Message);
+                throw;
+            }
         }
 
         /// <summary>
@@ -7983,6 +8318,11 @@ namespace SLC1_N
         /// <param name="e"></param>
         private void CH2ReaduA_Tick(object sender, EventArgs e)
         {
+
+            try
+            {
+
+            
               //计算时间
             ch2uAendtime = System.DateTime.Now.Ticks;
             TimeSpan ts1 = new TimeSpan(ch2uAstarttime);
@@ -8066,6 +8406,12 @@ namespace SLC1_N
                     CH2Method(CH2Step);
                 }
             }
+            }
+            catch (Exception ex)
+            {
+                log.Try_Logmsg(DateTime.Now.ToString() + "静态电流定时器异常" + ex.StackTrace + ex.Message);
+                throw;
+            }
         }
 
         /// <summary>
@@ -8073,6 +8419,10 @@ namespace SLC1_N
         /// </summary>
         private void ReadMultimeterPort()
         {
+            try
+            {
+
+           
             //string dialog;
             //dialog = "MultimeterPort.ini";
             //ConfigINI mesconfig = new ConfigINI("Port", dialog);
@@ -8135,6 +8485,15 @@ namespace SLC1_N
             {
                 FlowOpen(6, port.CKCH2Port, int.Parse(port.CKCH2Baud));
             }
+            }
+            catch (Exception ex)
+            {
+                log.Try_Logmsg(DateTime.Now.ToString() +"电压电流"+ ex.Message + ex.StackTrace);
+                throw;
+            }
+            
+           
+           
         }
 
         /// <summary>
@@ -8263,8 +8622,13 @@ namespace SLC1_N
                             if (!CH1POWER._serialPort.IsOpen)
                             {
                                 CH1POWER = new SerialPortReader(port, baudrate, 1);
-                                CH1POWER.DataReceived += CH1POWER_DataReceived;
-                                CH1POWER.Start();
+
+                                lock (lockObject2)
+                                {
+                                    CH1POWER.DataReceived += CH1POWER_DataReceived;
+                                    CH1POWER.Start();
+                                }
+                               
                                 
                                 CH1POWER.Write("SYST:REM");
                                 System.Threading.Thread.Sleep(200);
@@ -8390,6 +8754,8 @@ namespace SLC1_N
         public bool CH1change;
         public bool CH2change;
 
+        public bool CH1单测流量;
+        public bool CH2单测流量;
         /// <summary>
         /// 读取程序步骤
         /// </summary>
@@ -8400,6 +8766,18 @@ namespace SLC1_N
                 Setup.Order ord;
                 ReadConfig con = new ReadConfig();
                 ord = con.ReadLin();
+
+                if (ord.CH1electricChange)
+                    CH1单测流量 = true;
+                else
+                    CH1单测流量 = false;
+
+                if (ord.CH2electricChange)
+                    CH2单测流量 = true;
+                else
+                    CH2单测流量 = false;
+
+
                 if (ord.CH1IGN) { }//暂时不使用
                 if (ord.CH2IGN) { }//暂时不使用
                 if (ord.CH1UpDownChange)
@@ -8951,6 +9329,10 @@ namespace SLC1_N
 
         private void CH1LinUP_Tick(object sender, EventArgs e)
         {
+            try
+            {
+
+            
             if (CH1RTStep == "UP" || (CH1RTStep == "UPLeak" && CH1Pump))
             {
                 //CH1lin.LinUP();
@@ -9037,10 +9419,21 @@ namespace SLC1_N
                     CH1lin.LINRWD(linconfig.CFPowerSignalName, linconfig.CFPowerSignalValue, linconfig.CFRWDSignalName, linconfig.CFSchedule_tables);
                 }
             }
+            }
+            catch (Exception ex)
+            {
+                log.PLC_Logmsg(DateTime.Now.ToString() +ex.Message + ex.StackTrace);
+                throw;
+            }
         }
 
         private void CH2LinUP_Tick(object sender, EventArgs e)
         {
+
+            try
+            {
+
+           
             if (CH2RTStep == "UP" || (CH2RTStep == "UPLeak" && CH2Pump))
             {
                 //CH2lin.LinUP();
@@ -9134,7 +9527,13 @@ namespace SLC1_N
                     if (i > 5)
                         i++;
                 }
-
+            }
+            }
+            catch (Exception ex)
+            {
+                log.PLC_Logmsg(DateTime.Now.ToString() + ex.Message + ex.StackTrace);
+                throw;
+               
             }
         }
 
@@ -9847,7 +10246,7 @@ namespace SLC1_N
                         else
                         pressovertime = Flow.CH1Press_OverTime;
                     }
-                    if (presstime > pressovertime)
+                    if (presstime > pressovertime|| CH1单测流量)
                     {
                         CH1ReadPress.Stop();
                         CH1_1FullPress.Text = CH1PressMax.ToString();
@@ -9911,59 +10310,65 @@ namespace SLC1_N
 
                                     //CH1Display($"{CH1RunName}" + I18N.GetLangText(dicLang, "输出压力(UP)"), CH1_1FullPress.Text.ToString(), PressureUnit.Text, "-", "-", "OK");
                                     //CH1Display($"{CH1RunName}" + I18N.GetLangText(dicLang, "输出压力(UP-DOWN)"), CH1_2FullPress.Text.ToString(), CH2PressureUnit.Text, Flow.CH1_2PreMax.ToString(), Flow.CH1_2PreMin.ToString(), "OK");
-                                    CH1Display($"{CH1RunName}" + I18N.GetLangText(dicLang, "输出压力(UP)"), CH1PressMax.ToString(), PressureUnit.Text, "-", "-", "OK");
-                                    CH1Display($"{CH1RunName}" + I18N.GetLangText(dicLang, "输出压力(UP-DOWN)"), CH2PressMax.ToString(), CH2PressureUnit.Text, Flow.CH1_2PreMax.ToString(), Flow.CH1_2PreMin.ToString(), "OK");
-                                    CH1Display($"{CH1RunName}" + I18N.GetLangText(dicLang, "max电流(UP)"), CH1ADCMax.ToString(), "A", elec.CH1UPADCMax.ToString(), elec.CH1UPADCMin.ToString(), "OK");
-                                    CH1Display($"{CH1RunName}" + I18N.GetLangText(dicLang, "max电压(UP)"), CH1VDCMax.ToString(), "V", elec.CH1UPVDCMax.ToString(), elec.CH1UPVDCMin.ToString(), "OK");
+                                    if (!CH1单测流量)
+                                    {
+                                        CH1Display($"{CH1RunName}" + I18N.GetLangText(dicLang, "输出压力(UP)"), CH1PressMax.ToString(), PressureUnit.Text, "-", "-", "OK");
+                                        CH1Display($"{CH1RunName}" + I18N.GetLangText(dicLang, "输出压力(UP-DOWN)"), CH2PressMax.ToString(), CH2PressureUnit.Text, Flow.CH1_2PreMax.ToString(), Flow.CH1_2PreMin.ToString(), "OK");
+                                        CH1Display($"{CH1RunName}" + I18N.GetLangText(dicLang, "max电流(UP)"), CH1ADCMax.ToString(), "A", elec.CH1UPADCMax.ToString(), elec.CH1UPADCMin.ToString(), "OK");
+                                        CH1Display($"{CH1RunName}" + I18N.GetLangText(dicLang, "max电压(UP)"), CH1VDCMax.ToString(), "V", elec.CH1UPVDCMax.ToString(), elec.CH1UPVDCMin.ToString(), "OK");
+
+                                    }
+
                                     CH1Display($"{CH1RunName}" + I18N.GetLangText(dicLang, "max流量(UP)"), CH1Q.ToString(), "lpm", "-", "-", "OK");
                                     CH1Display($"{CH1RunName}" + I18N.GetLangText(dicLang, "max流量(UP-DOWN)"), CH2Q.ToString(), "lpm", Flow.CH1_2FlowMax.ToString(), Flow.CH1_2FlowMin.ToString(), "OK");
 
-
-                                    for (int i = 0; i < this.DataGridView1.Rows.Count - 1; i++)
+                                    if (!CH1单测流量)
                                     {
-                                        if (this.DataGridView1.Rows[i].Cells[1].Value.ToString() == $"{CH1RunName}" + I18N.GetLangText(dicLang, "max电流(DOWN)"))
+                                        for (int i = 0; i < this.DataGridView1.Rows.Count - 1; i++)
                                         {
-                                            CH1lastelec = Convert.ToDouble(this.DataGridView1.Rows[i].Cells[2].Value.ToString());
-                                            CH1cont_elec = CH1ADCMax / CH1lastelec;
-                                            CH1cont_elec += Flow.CH1Cont_Elec_Compen;
-                                            CH1cont_elec = Math.Round(CH1cont_elec, 2);
-                                            CH1TestResult.ElecRatio = CH1cont_elec;
-                                            if (CH1cont_elec < Flow.CH1Cont_ElecMin || CH1cont_elec > Flow.CH1Cont_ElecMax)
+                                            if (this.DataGridView1.Rows[i].Cells[1].Value.ToString() == $"{CH1RunName}" + I18N.GetLangText(dicLang, "max电流(DOWN)"))
                                             {
-                                                CH1Display($"{CH1RunName}" + I18N.GetLangText(dicLang, "电流比值"), CH1cont_elec.ToString(""), "-", Flow.CH1Cont_ElecMax.ToString(), Flow.CH1Cont_ElecMin.ToString(), "NG");
-                                                plc.CH1RatioNG();
-                                                return;
+                                                CH1lastelec = Convert.ToDouble(this.DataGridView1.Rows[i].Cells[2].Value.ToString());
+                                                CH1cont_elec = CH1ADCMax / CH1lastelec;
+                                                CH1cont_elec += Flow.CH1Cont_Elec_Compen;
+                                                CH1cont_elec = Math.Round(CH1cont_elec, 2);
+                                                CH1TestResult.ElecRatio = CH1cont_elec;
+                                                if (CH1cont_elec < Flow.CH1Cont_ElecMin || CH1cont_elec > Flow.CH1Cont_ElecMax)
+                                                {
+                                                    CH1Display($"{CH1RunName}" + I18N.GetLangText(dicLang, "电流比值"), CH1cont_elec.ToString(""), "-", Flow.CH1Cont_ElecMax.ToString(), Flow.CH1Cont_ElecMin.ToString(), "NG");
+                                                    plc.CH1RatioNG();
+                                                    return;
+                                                }
+                                                CH1Display($"{CH1RunName}" + I18N.GetLangText(dicLang, "电流比值"), CH1cont_elec.ToString(""), "-", Flow.CH1Cont_ElecMax.ToString(), Flow.CH1Cont_ElecMin.ToString(), "OK");
+                                                if (CH1lastpress == 0)
+                                                {
+                                                    CH1lastpress = 0.1;
+                                                }
+                                                break;
                                             }
-                                            CH1Display($"{CH1RunName}" + I18N.GetLangText(dicLang, "电流比值"), CH1cont_elec.ToString(""), "-", Flow.CH1Cont_ElecMax.ToString(), Flow.CH1Cont_ElecMin.ToString(), "OK");
-                                            if (CH1lastpress == 0)
+                                        }
+
+                                        for (int i = 0; i < this.DataGridView1.Rows.Count - 1; i++)
+                                        {
+                                            if (this.DataGridView1.Rows[i].Cells[1].Value.ToString() == $"{CH1RunName}" + I18N.GetLangText(dicLang, "输出压力(DOWN)"))
                                             {
-                                                CH1lastpress = 0.1;
+                                                CH1lastpress = Convert.ToDouble(this.DataGridView1.Rows[i].Cells[2].Value.ToString());
+                                                CH1cont_press = CH1PressMax / CH1lastpress;
+                                                CH1cont_press += Flow.CH1Cont_Pre_Compen;
+                                                CH1cont_press = Math.Round(CH1cont_press, 2);
+                                                CH1TestResult.PressRatio = CH1cont_press;
+                                                if (CH1cont_press < Flow.CH1Cont_PressMin || CH1cont_press > Flow.CH1Cont_PressMax)
+                                                {
+                                                    CH1Display($"{CH1RunName}" + I18N.GetLangText(dicLang, "压力比值"), CH1cont_press.ToString(), "-", Flow.CH1Cont_PressMax.ToString(), Flow.CH1Cont_PressMin.ToString(), "NG");
+                                                    plc.CH1RatioNG();
+                                                    return;
+                                                }
+                                                CH1Display($"{CH1RunName}" + I18N.GetLangText(dicLang, "压力比值"), CH1cont_press.ToString(), "-", Flow.CH1Cont_PressMax.ToString(), Flow.CH1Cont_PressMin.ToString(), "OK");
+                                                plc.CH1RatioOK();
+                                                break;
                                             }
-                                            break;
                                         }
                                     }
-
-                                    for (int i = 0; i < this.DataGridView1.Rows.Count - 1; i++)
-                                    {
-                                        if (this.DataGridView1.Rows[i].Cells[1].Value.ToString() == $"{CH1RunName}" + I18N.GetLangText(dicLang, "输出压力(DOWN)"))
-                                        {
-                                            CH1lastpress = Convert.ToDouble(this.DataGridView1.Rows[i].Cells[2].Value.ToString());
-                                            CH1cont_press = CH1PressMax / CH1lastpress;
-                                            CH1cont_press += Flow.CH1Cont_Pre_Compen;
-                                            CH1cont_press = Math.Round(CH1cont_press, 2);
-                                            CH1TestResult.PressRatio = CH1cont_press;
-                                            if (CH1cont_press < Flow.CH1Cont_PressMin || CH1cont_press > Flow.CH1Cont_PressMax)
-                                            {
-                                                CH1Display($"{CH1RunName}" + I18N.GetLangText(dicLang, "压力比值"), CH1cont_press.ToString(), "-", Flow.CH1Cont_PressMax.ToString(), Flow.CH1Cont_PressMin.ToString(), "NG");
-                                                plc.CH1RatioNG();
-                                                return;
-                                            }
-                                            CH1Display($"{CH1RunName}" + I18N.GetLangText(dicLang, "压力比值"), CH1cont_press.ToString(), "-", Flow.CH1Cont_PressMax.ToString(), Flow.CH1Cont_PressMin.ToString(), "OK");
-                                            plc.CH1RatioOK();
-                                            break;
-                                        }
-                                    }
-
                                     plc.CH1UPFlowEnd();
                                 }
                                 if (CH1RTStep == "FWD")
@@ -11422,7 +11827,7 @@ namespace SLC1_N
         {
             if (plc.IsConnect)
             {
-                PLCSignal.Stop();
+                //PLCSignal.Stop();
                 string dialog;
                 //dialog = "PLC.ini";
                 dialog = Form1.f1.machine;
@@ -11560,7 +11965,7 @@ namespace SLC1_N
                         plc.CH4Close();
                     }
                 }
-                PLCSignal.Start();
+                //PLCSignal.Start();
             }
         }
 
@@ -11570,9 +11975,12 @@ namespace SLC1_N
         /// <param name="i"></param>
         private void CH1Method(int i)
         {
+            try
+            {
+
+          
             //启动前清空参数 避免写入上传数据
          
-
             ReadConfig con = new ReadConfig();
             Model.Flow flow;
             flow = con.ReadFlow();
@@ -11585,10 +11993,12 @@ namespace SLC1_N
             CH1ReadElec.Stop();
             //计算电压和电流是否超过上下限
             if (CH1POWER._serialPort.IsOpen)
-                Form1.CH1POWER._serialPort.WriteLine("OUTP 0");
+                    WritetoRTADC("OUTP 0");
+                //Form1.CH1POWER._serialPort.WriteLine("OUTP 0");
             System.Threading.Thread.Sleep(100);
             if (CH1POWER._serialPort.IsOpen)
-                Form1.CH1POWER._serialPort.WriteLine("OUTP 0");
+                    WritetoRTADC("OUTP 0");
+                //Form1.CH1POWER._serialPort.WriteLine("OUTP 0");
             System.Threading.Thread.Sleep(1000);
             //LeftCH1Status.Text = "待机";
             //LeftCH2Status.Text = "待机";
@@ -11608,11 +12018,13 @@ namespace SLC1_N
 
                 CHpreflag = 0;
                 if (CH1POWER._serialPort.IsOpen)
-                    Form1.CH1POWER._serialPort.WriteLine("OUTP 1");
+                        WritetoRTADC("OUTP 1");
+                  //  Form1.CH1POWER._serialPort.WriteLine("OUTP 1");
                 System.Threading.Thread.Sleep(100);
                 if (CH1POWER._serialPort.IsOpen)
-                    Form1.CH1POWER._serialPort.WriteLine("OUTP 1");
-                CH1ADCMax = 0;
+                        WritetoRTADC("OUTP 1");
+                    // Form1.CH1POWER._serialPort.WriteLine("OUTP 1");
+                    CH1ADCMax = 0;
                 CH1VDCMax = 0;
                 //CH1ADC = 0;
                 //CH1VDC = 0;
@@ -11950,7 +12362,8 @@ namespace SLC1_N
                         ch1uAstarttime = System.DateTime.Now.Ticks;
                         plc.WriteCH1QC(true);
                         if (CH1POWER._serialPort.IsOpen)
-                            Form1.CH1POWER._serialPort.WriteLine("OUTP 1");
+                                WritetoRTADC("OUTP 1");
+                           // Form1.CH1POWER._serialPort.WriteLine("OUTP 1");
                         CH1uAarray.Clear();
                         plc.CH1uA = 0;
                         CH1Display($"{CH1RunName}" + I18N.GetLangText(dicLang, "Electricity静态电流"), "", "uA", elec.CH1ElecMax.ToString(), elec.CH1ElecMin.ToString(), "");
@@ -11975,7 +12388,8 @@ namespace SLC1_N
                 CH1ReadElec.Interval = 1000;
                 CH1ReadElec.Start();
                 if (CH1POWER._serialPort.IsOpen)
-                    Form1.CH1POWER._serialPort.WriteLine("OUTP 1");
+                        WritetoRTADC("OUTP 1");
+                   // Form1.CH1POWER._serialPort.WriteLine("OUTP 1");
             }
             else
             {
@@ -11984,14 +12398,31 @@ namespace SLC1_N
                     timerCH1CT.Stop();
                     CH1IsStart = false;
                     if (CH1POWER._serialPort.IsOpen)
-                        CH1POWER._serialPort.WriteLine("OUTP 0");
+                            WritetoRTADC("OUTP 0");
+                        //CH1POWER._serialPort.WriteLine("OUTP 0");
                     System.Threading.Thread.Sleep(100);
                     if (CH1POWER._serialPort.IsOpen)
-                        CH1POWER._serialPort.WriteLine("OUTP 0");
+                            WritetoRTADC("OUTP 0");
+                        //CH1POWER._serialPort.WriteLine("OUTP 0");
                     plc.WriteCH1RatioOK();
                 }
                 plc.CH1FlowEnd();
                 CH1RTStep = "";
+            }
+            }
+            catch (Exception ex)
+            {
+                log.CH1FlowPort_Logmsg(DateTime.Now.ToString() + ex.Message + ex.StackTrace);
+                throw;
+            }
+            finally
+            {
+                if (!CH1POWER._serialPort.IsOpen)
+                {
+                    CH1POWER._serialPort.Open();
+                }
+               
+
             }
         }
 
@@ -12006,8 +12437,14 @@ namespace SLC1_N
         /// <param name="i"></param>
         private void CH2Method(int i)
         {
+            
+
+        
             //启动前清空参数 避免写入上传数据
-      
+
+            try
+            {
+
             
             ReadConfig con = new ReadConfig();
             Model.Flow flow;
@@ -12413,7 +12850,22 @@ namespace SLC1_N
                 CH2RTStep = "";
             }
         }
-
+            catch (Exception ex)
+            {
+                log.CH1FlowPort_Logmsg(DateTime.Now.ToString() +ex.Message +ex.StackTrace);
+                throw;
+            }
+            finally
+            {
+                if (!CH2POWER._serialPort.IsOpen)
+                {
+                    CH2POWER._serialPort.Open();
+                }
+               
+               
+            }
+       
+        }
         /// <summary>
         /// 复位需要操作的步骤
         /// </summary>
@@ -12895,6 +13347,11 @@ namespace SLC1_N
                 this.MaximizedBounds = Screen.PrimaryScreen.WorkingArea;
                 this.WindowState = FormWindowState.Maximized;
             }
+            if (itemText == "MES配置" || itemText == "Sign in" || itemText == "Iniciar sesión")
+            {
+                Mes l1 = new Mes();
+                OpenForm(l1);
+            }
             if (itemText == "登录" || itemText == "Sign in"|| itemText == "Iniciar sesión")
             {
                 LogOn l1 = new LogOn();
@@ -13109,11 +13566,11 @@ namespace SLC1_N
             OpenForm(plc);
         }
 
-        private void LeftReset_Click(object sender, EventArgs e)
+        private  void LeftReset_ClickAsync(object sender, EventArgs e)
         {
             //ConfigLogOn config = new ConfigLogOn(1);
             //OpenForm(config);
-            Form1.f1.plc.CH1MachineReset();
+             Form1.f1.plc.CH1MachineReset();
         }
 
         private void RightReset_Click(object sender, EventArgs e)
@@ -13297,7 +13754,764 @@ namespace SLC1_N
 
         }
 
-      
+
+
+        public string UpMes2(int CH, string URL, string LineNum, string Code, string DeviceCode, string LineCode, string CommandCard, string ProcessCode, string NGCode, string CheckBy, int IsPass, string checkTime, int IsOnlyRecord)
+        {
+            try
+            {
+                ReadConfig con = new ReadConfig();
+                Model.CH_PARAMS ch1_1params;
+                ch1_1params = con.ReadParameters(1, 2);
+
+                ReadConfig con2 = new ReadConfig();
+                Model.CH_PARAMS ch1_2params;
+                ch1_2params = con2.ReadParameters(2, 2);
+
+                ReadConfig con3 = new ReadConfig();
+                Model.CH_PARAMS ch2_1params;
+                ch2_1params = con3.ReadParameters(3, 2);
+
+                ReadConfig con4 = new ReadConfig();
+                Model.CH_PARAMS ch2_2params;
+                ch2_2params = con4.ReadParameters(4, 2);
+
+                MesConfigs.Main mes = new MesConfigs.Main();
+                if (CH == 1)
+                {
+                    mes.LineNum = randomNumber1.ToString();
+                }
+                if (CH == 2)
+                {
+                    mes.LineNum = randomNumber2.ToString();
+                }
+
+                mes.BarCode = Code;
+                mes.TranBarCode = "";
+                mes.BindBarCode = "";
+                mes.DeviceCode = DeviceCode;
+                mes.LineCode = LineCode;
+                mes.CommandCard = CommandCard;
+                mes.ProcessCode = ProcessCode;
+                mes.NGCode = NGCode;
+                mes.IsOnlyRecord = IsOnlyRecord;
+
+                mes.IsPass = IsPass;
+                mes.CheckBy = CheckBy;
+                mes.CheckTime = checkTime;
+
+                bool flag = CH == 1;
+                if (flag)
+                {
+                    {
+
+                        det.ItemName = "CH1_1测试压力";
+                        det.UpperLimits = double.Parse(ch1_1params.FPtoplimit);
+                        det.LowerLimits = double.Parse(ch1_1params.FPlowlimit);
+
+
+
+
+                        det.ActualVal = double.Parse(Form1.f1.LeftCH1LeakPress.Text);
+                        det.StandardVal = double.Parse(Form1.f1.LeftCH1LeakPress.Text);
+                        det.SoftVer = "";
+                        det.CheckTime = checkTime;
+                        det2.ItemName = "CH1_1泄漏量";
+                        det2.UpperLimits = double.Parse("100");
+                        det2.LowerLimits = double.Parse("-100");
+                        //det2.UpperLimits = double.Parse(Form1.f1.ch1_1leakparams.Leaktoplimit /*+ LeakUnit.Text*/);
+                        //det2.LowerLimits = double.Parse(Form1.f1.ch1_1leakparams.Leaklowlimit /*+ LeakUnit.Text*/);
+                        int pop;
+                        string a = LeftCH1SmallLeak.Text /*+ LeakUnit.Text*/;
+                        double number = double.Parse(a);
+                        pop = (int)number;
+                        det2.ActualVal = pop;
+                        det2.StandardVal = pop;
+                        det2.SoftVer = "";
+                        det2.CheckTime = checkTime;
+
+                        det3.ItemName = "CH1_1流量值";
+                        det3.UpperLimits = Flow.CH1_1FlowMax;
+                        det3.LowerLimits = Flow.CH1_1FlowMin;
+                        if (CH1_1flow.Text.Length > 0)
+                        {
+                            det3.ActualVal = double.Parse(CH1_1flow.Text);
+                            det3.StandardVal = double.Parse(CH1_1flow.Text) /*+ label28.Text*/;
+                        }
+
+                        else
+                        {
+                            det3.ActualVal = Convert.ToDouble(0);
+                            det3.StandardVal = Convert.ToDouble(0); /*+ label28.Text*/;
+                        }
+
+                        det3.SoftVer = "";
+                        det3.CheckTime = checkTime;
+
+
+
+                    }
+
+                    {
+                        det4.ItemName = "CH1_2测试压力";
+                        det4.UpperLimits = double.Parse(ch1_2params.FPtoplimit);
+                        det4.LowerLimits = double.Parse(ch1_2params.FPlowlimit);
+
+
+
+
+                        det4.ActualVal = double.Parse(Form1.f1.LeftCH2LeakPress.Text /*+ PressureUnit.Text*/);
+                        det4.StandardVal = double.Parse(Form1.f1.LeftCH2LeakPress.Text /*+ PressureUnit.Text*/);
+                        det4.SoftVer = "";
+                        det4.CheckTime = checkTime;
+                        det5.ItemName = "CH1_2泄漏量";
+                        det5.UpperLimits = double.Parse("100"); ;
+                        det5.LowerLimits = double.Parse("-100"); ;
+                        int pop;
+                        string a = LeftCH2SmallLeak.Text /*+ LeakUnit.Text*/;
+                        double number = double.Parse(a);
+                        pop = (int)number;
+                        det5.ActualVal = pop;
+                        det5.StandardVal = pop;
+                        det5.SoftVer = "";
+                        det5.CheckTime = checkTime;
+
+
+
+                        det6.ItemName = "CH1_2流量值";
+                        det6.UpperLimits = Flow.CH1_2FlowMax;
+                        det6.LowerLimits = Flow.CH1_2FlowMin;
+                        if (CH1_2flow.Text.Length > 0)
+                        {
+                            det6.ActualVal = double.Parse(CH1_2flow.Text /*+ label28.Text*/);
+                            det6.StandardVal = double.Parse(CH1_2flow.Text) /*+ label28.Text*/;
+                        }
+                        else
+                        {
+                            det6.ActualVal = Convert.ToDouble(0); ;
+                            det6.StandardVal = Convert.ToDouble(0); /*+ label28.Text*/;
+                        }
+
+                        det6.SoftVer = "";
+                        det6.CheckTime = checkTime;
+                    }
+
+
+                }
+                else
+                {
+
+                    {
+                        det7.ItemName = "CH2_1测试压力";
+                        det7.UpperLimits = double.Parse(ch2_1params.FPtoplimit);
+                        det7.LowerLimits = double.Parse(ch2_1params.FPlowlimit);
+
+                        det7.ActualVal = double.Parse(Form1.f1.RightCH1LeakPress.Text /*+ PressureUnit.Text*/);
+                        det7.StandardVal = double.Parse(Form1.f1.RightCH1LeakPress.Text /*+ PressureUnit.Text*/);
+                        det7.SoftVer = "";
+                        det7.CheckTime = checkTime;
+                        det8.ItemName = "CH2_1泄漏量";
+                        det8.UpperLimits = double.Parse("100"); ;
+                        det8.LowerLimits = double.Parse("-100"); ;
+                        int pop;
+                        string a = RightCH1SmallLeak.Text /*+ LeakUnit.Text*/;
+                        double number = double.Parse(a);
+                        pop = (int)number;
+                        det8.ActualVal = pop;
+                        det8.StandardVal = pop;
+                        det8.SoftVer = "";
+                        det8.CheckTime = checkTime;
+
+                        det9.ItemName = "CH2_1流量值";
+                        det9.UpperLimits = Flow.CH2_1FlowMax;
+                        det9.LowerLimits = Flow.CH2_1FlowMin;
+                        if (CH2_1flow.Text.Length > 0)
+                        {
+                            det9.ActualVal = double.Parse(CH2_1flow.Text /*+ label28.Text*/);
+                            det9.StandardVal = double.Parse(CH2_1flow.Text) /*+ label28.Text*/;
+                        }
+                        else
+                        {
+                            det9.ActualVal = Convert.ToDouble(0); ;
+                            det9.StandardVal = Convert.ToDouble(0); /*+ label28.Text*/;
+                        }
+
+                        det9.SoftVer = "";
+                        det9.CheckTime = checkTime;
+                    }
+
+                    {
+                        det10.ItemName = "CH2_2测试压力";
+                        det10.UpperLimits = double.Parse(ch2_2params.FPtoplimit);
+                        det10.LowerLimits = double.Parse(ch2_2params.FPlowlimit);
+
+                        det10.ActualVal = double.Parse(Form1.f1.RightCH2LeakPress.Text /*+ PressureUnit.Text*/);
+                        det10.StandardVal = double.Parse(Form1.f1.RightCH2LeakPress.Text /*+ PressureUnit.Text*/);
+                        det10.SoftVer = "";
+                        det10.CheckTime = checkTime;
+                        det11.ItemName = "CH2_2泄漏量";
+                        det11.UpperLimits = double.Parse("100"); ;
+                        det11.LowerLimits = double.Parse("-100"); ;
+                        int pop;
+                        string a = RightCH2SmallLeak.Text /*+ LeakUnit.Text*/;
+                        double number = double.Parse(a);
+                        pop = (int)number;
+                        det11.ActualVal = pop;
+                        det11.StandardVal = pop;
+                        det11.SoftVer = "";
+                        det11.CheckTime = checkTime;
+
+                        det12.ItemName = "CH2_2流量值";
+                        det12.UpperLimits = Flow.CH2_2FlowMax;
+                        det12.LowerLimits = Flow.CH2_2FlowMin;
+
+                        if (CH2_2flow.Text.Length > 0)
+                        {
+                            det12.ActualVal = double.Parse(CH2_2flow.Text /*+ label28.Text*/);
+                            det12.StandardVal = double.Parse(CH2_2flow.Text) /*+ label28.Text*/;
+                        }
+                        else
+                        {
+                            det12.ActualVal = Convert.ToDouble(0); ;
+                            det12.StandardVal = Convert.ToDouble(0); /*+ label28.Text*/;
+                        }
+
+
+                        det12.SoftVer = "";
+                        det12.CheckTime = checkTime;
+                    }
+
+
+
+                }
+                MesConfigs.Root oot = new MesConfigs.Root();
+                oot.Main = mes;
+                oot.Detail = new List<MesConfigs.Detail>();
+                if (CH == 1)
+                {
+
+
+                    oot.Detail.Add(det);
+                    oot.Detail.Add(det2);
+                    oot.Detail.Add(det3);
+                    oot.Detail.Add(det4);
+                    oot.Detail.Add(det5);
+                    oot.Detail.Add(det6);
+                }
+
+
+                if (CH == 2)
+                {
+                    oot.Detail.Add(det7);
+                    oot.Detail.Add(det8);
+                    oot.Detail.Add(det9);
+                    oot.Detail.Add(det10);
+                    oot.Detail.Add(det11);
+                    oot.Detail.Add(det12);
+                }
+
+                Log log = new Log();
+                string updata = JsonConvert.SerializeObject(oot);
+                string updata2 = $"'{updata}'";
+                log.MES_Logmsg("出站上传" + URL + "    " + updata2);
+                string ss = httpPost(URL, updata2);
+                log.MES_Logmsg("出站上传结果    " + ss);
+                return ss;
+
+            }
+            catch (Exception ex)
+            {
+
+                MessageBox.Show(ex.Message);
+                MessageBox.Show(ex.StackTrace);
+                return ex.Message;
+            }
+
+        }
+
+        public string UpMes(int CH, string URL, string LineNum, string Code, string DeviceCode, string LineCode, string CommandCard, string ProcessCode, string NGCode, string CheckBy, int IsPass, string checkTime, int IsOnlyRecord)
+        {
+            try
+            {
+
+                MesConfigs.Main mes = new MesConfigs.Main();
+                if (CH == 1)
+                {
+                    mes.LineNum = randomNumber1.ToString();
+                }
+                if (CH == 2)
+                {
+                    mes.LineNum = randomNumber2.ToString();
+                }
+
+                mes.BarCode = Code;
+                mes.TranBarCode = "";
+                mes.BindBarCode = "";
+                mes.DeviceCode = DeviceCode;
+                mes.LineCode = LineCode;
+                mes.CommandCard = CommandCard;
+                mes.ProcessCode = ProcessCode;
+                mes.NGCode = NGCode;
+                mes.IsOnlyRecord = IsOnlyRecord;
+
+                mes.IsPass = IsPass;
+                mes.CheckBy = CheckBy;
+                mes.CheckTime = checkTime;
+
+                bool flag = CH == 1;
+                if (flag)
+                {
+                    {
+                        det.ItemName = "CH1_1测试压力";
+                        det.UpperLimits = double.Parse(Form1.f1.ch1_1params.FPtoplimit);
+                        det.LowerLimits = double.Parse(Form1.f1.ch1_1params.FPlowlimit);
+                        det.ActualVal = double.Parse(Form1.f1.LeftCH1LeakPress.Text);
+                        det.StandardVal = double.Parse(Form1.f1.LeftCH1LeakPress.Text);
+                        det.SoftVer = "";
+                        det.CheckTime = checkTime;
+                        det2.ItemName = "CH1_1泄漏量";
+                        det2.UpperLimits = double.Parse(Form1.f1.ch1_1leakparams.Leaktoplimit /*+ LeakUnit.Text*/);
+                        det2.LowerLimits = double.Parse(Form1.f1.ch1_1leakparams.Leaklowlimit /*+ LeakUnit.Text*/);
+                        int pop;
+                        string a = LeftCH1SmallLeak.Text /*+ LeakUnit.Text*/;
+                        double number = double.Parse(a);
+                        pop = (int)number;
+                        det2.ActualVal = pop;
+                        det2.StandardVal = pop;
+                        det2.SoftVer = "";
+                        det2.CheckTime = checkTime;
+
+                        det3.ItemName = "CH1_1流量值";
+                        det3.UpperLimits = Flow.CH1_1FlowMax;
+                        det3.LowerLimits = Flow.CH1_1FlowMin;
+                        if (CH1_1flow.Text.Length > 0)
+                        {
+                            det3.ActualVal = double.Parse(CH1_1flow.Text);
+                            det3.StandardVal = double.Parse(CH1_1flow.Text) /*+ label28.Text*/;
+                        }
+
+                        else
+                        {
+                            det3.ActualVal = Convert.ToDouble(0);
+                            det3.StandardVal = Convert.ToDouble(0); /*+ label28.Text*/;
+                        }
+
+                        det3.SoftVer = "";
+                        det3.CheckTime = checkTime;
+
+
+
+                    }
+
+                    {
+                        det4.ItemName = "CH1_2测试压力";
+                        det4.UpperLimits = double.Parse(Form1.f1.ch1_2params.FPtoplimit);
+                        det4.LowerLimits = double.Parse(Form1.f1.ch1_2params.FPlowlimit);
+                        det4.ActualVal = double.Parse(Form1.f1.LeftCH2LeakPress.Text /*+ PressureUnit.Text*/);
+                        det4.StandardVal = double.Parse(Form1.f1.LeftCH2LeakPress.Text /*+ PressureUnit.Text*/);
+                        det4.SoftVer = "";
+                        det4.CheckTime = checkTime;
+                        det5.ItemName = "CH1_2泄漏量";
+                        det5.UpperLimits = double.Parse(Form1.f1.ch1_2leakparams.Leaktoplimit /*+ LeakUnit.Text*/);
+                        det5.LowerLimits = double.Parse(Form1.f1.ch1_2leakparams.Leaklowlimit /*+ LeakUnit.Text*/);
+                        int pop;
+                        string a = LeftCH2SmallLeak.Text /*+ LeakUnit.Text*/;
+                        double number = double.Parse(a);
+                        pop = (int)number;
+                        det5.ActualVal = pop;
+                        det5.StandardVal = pop;
+                        det5.SoftVer = "";
+                        det5.CheckTime = checkTime;
+
+
+
+                        det6.ItemName = "CH1_2流量值";
+                        det6.UpperLimits = Flow.CH1_2FlowMax;
+                        det6.LowerLimits = Flow.CH1_2FlowMin;
+                        if (CH1_2flow.Text.Length > 0)
+                        {
+                            det6.ActualVal = double.Parse(CH1_2flow.Text /*+ label28.Text*/);
+                            det6.StandardVal = double.Parse(CH1_2flow.Text) /*+ label28.Text*/;
+                        }
+                        else
+                        {
+                            det6.ActualVal = Convert.ToDouble(0); ;
+                            det6.StandardVal = Convert.ToDouble(0); /*+ label28.Text*/;
+                        }
+
+                        det6.SoftVer = "";
+                        det6.CheckTime = checkTime;
+                    }
+
+
+                }
+                else
+                {
+
+                    {
+                        det7.ItemName = "CH2_1测试压力";
+                        det7.UpperLimits = double.Parse(Form1.f1.ch2_1params.FPtoplimit);
+                        det7.LowerLimits = double.Parse(Form1.f1.ch2_1params.FPlowlimit);
+                        det7.ActualVal = double.Parse(Form1.f1.RightCH1LeakPress.Text /*+ PressureUnit.Text*/);
+                        det7.StandardVal = double.Parse(Form1.f1.RightCH1LeakPress.Text /*+ PressureUnit.Text*/);
+                        det7.SoftVer = "";
+                        det7.CheckTime = checkTime;
+                        det8.ItemName = "CH2_1泄漏量";
+                        det8.UpperLimits = double.Parse(Form1.f1.ch2_1leakparams.Leaktoplimit /*+ LeakUnit.Text*/);
+                        det8.LowerLimits = double.Parse(Form1.f1.ch2_1leakparams.Leaklowlimit /*+ LeakUnit.Text*/);
+                        int pop;
+                        string a = RightCH1SmallLeak.Text /*+ LeakUnit.Text*/;
+                        double number = double.Parse(a);
+                        pop = (int)number;
+                        det8.ActualVal = pop;
+                        det8.StandardVal = pop;
+                        det8.SoftVer = "";
+                        det8.CheckTime = checkTime;
+
+                        det9.ItemName = "CH2_1流量值";
+                        det9.UpperLimits = Flow.CH2_1FlowMax;
+                        det9.LowerLimits = Flow.CH2_1FlowMin;
+                        if (CH2_1flow.Text.Length > 0)
+                        {
+                            det9.ActualVal = double.Parse(CH2_1flow.Text /*+ label28.Text*/);
+                            det9.StandardVal = double.Parse(CH2_1flow.Text) /*+ label28.Text*/;
+                        }
+                        else
+                        {
+                            det9.ActualVal = Convert.ToDouble(0); ;
+                            det9.StandardVal = Convert.ToDouble(0); /*+ label28.Text*/;
+                        }
+
+                        det9.SoftVer = "";
+                        det9.CheckTime = checkTime;
+                    }
+
+                    {
+                        det10.ItemName = "CH2_2测试压力";
+                        det10.UpperLimits = double.Parse(Form1.f1.ch2_2params.FPtoplimit);
+                        det10.LowerLimits = double.Parse(Form1.f1.ch2_2params.FPlowlimit);
+                        det10.ActualVal = double.Parse(Form1.f1.RightCH2LeakPress.Text /*+ PressureUnit.Text*/);
+                        det10.StandardVal = double.Parse(Form1.f1.RightCH2LeakPress.Text /*+ PressureUnit.Text*/);
+                        det10.SoftVer = "";
+                        det10.CheckTime = checkTime;
+                        det11.ItemName = "CH2_2泄漏量";
+                        det11.UpperLimits = double.Parse(Form1.f1.ch2_2leakparams.Leaktoplimit /*+ LeakUnit.Text*/);
+                        det11.LowerLimits = double.Parse(Form1.f1.ch2_2leakparams.Leaklowlimit /*+ LeakUnit.Text*/);
+                        int pop;
+                        string a = RightCH2SmallLeak.Text /*+ LeakUnit.Text*/;
+                        double number = double.Parse(a);
+                        pop = (int)number;
+                        det11.ActualVal = pop;
+                        det11.StandardVal = pop;
+                        det11.SoftVer = "";
+                        det11.CheckTime = checkTime;
+
+                        det12.ItemName = "CH2_2流量值";
+                        det12.UpperLimits = Flow.CH2_2FlowMax;
+                        det12.LowerLimits = Flow.CH2_2FlowMin;
+
+                        if (CH2_2flow.Text.Length > 0)
+                        {
+                            det12.ActualVal = double.Parse(CH2_2flow.Text /*+ label28.Text*/);
+                            det12.StandardVal = double.Parse(CH2_2flow.Text) /*+ label28.Text*/;
+                        }
+                        else
+                        {
+                            det12.ActualVal = Convert.ToDouble(0); ;
+                            det12.StandardVal = Convert.ToDouble(0); /*+ label28.Text*/;
+                        }
+
+
+                        det12.SoftVer = "";
+                        det12.CheckTime = checkTime;
+                    }
+
+
+
+                }
+                MesConfigs.Root oot = new MesConfigs.Root();
+                oot.Main = mes;
+                oot.Detail = new List<MesConfigs.Detail>();
+                if (CH == 1)
+                {
+
+
+                    oot.Detail.Add(det);
+                    oot.Detail.Add(det2);
+                    oot.Detail.Add(det3);
+                    oot.Detail.Add(det4);
+                    oot.Detail.Add(det5);
+                    oot.Detail.Add(det6);
+                }
+
+
+                if (CH == 2)
+                {
+                    oot.Detail.Add(det7);
+                    oot.Detail.Add(det8);
+                    oot.Detail.Add(det9);
+                    oot.Detail.Add(det10);
+                    oot.Detail.Add(det11);
+                    oot.Detail.Add(det12);
+                }
+
+                Log log = new Log();
+                string updata = JsonConvert.SerializeObject(oot);
+                string updata2 = $"'{updata}'";
+                log.MES_Logmsg("出站上传" + URL + "    " + updata2);
+                string ss = httpPost(URL, updata2);
+                log.MES_Logmsg("出站上传结果    " + ss);
+                return ss;
+
+            }
+            catch (Exception ex)
+            {
+
+                MessageBox.Show(ex.Message);
+                MessageBox.Show(ex.StackTrace);
+                return ex.Message;
+            }
+
+        }
+
+
+        public static string ruzhanMes(int CH, string URL, string LineNum, string Code, string DeviceCode, string LineCode, string CommandCard, string ProcessCode, string NGCode, string CheckBy, int IsPass, string checkTime)
+        {
+            try
+            {
+                Random random = new Random();
+
+                // 生成一个 13 位的随机数
+                long minValue = 1000000000000L; // 13 位的最小值
+                long maxValue = 9999999999999L; // 13 位的最大值
+
+                if (CH == 1)
+                {
+                    // 生成一个在[minValue, maxValue]之间的随机数
+                    randomNumber1 = (long)(random.NextDouble() * (maxValue - minValue + 1) + minValue);
+                    LineNum = randomNumber1.ToString();
+                }
+                if (CH == 2)
+                {
+                    // 生成一个在[minValue, maxValue]之间的随机数
+                    randomNumber2 = (long)(random.NextDouble() * (maxValue - minValue + 1) + minValue);
+                    LineNum = randomNumber2.ToString();
+                }
+
+                var mes = new MesConfigs.Main
+                {
+                    LineNum = LineNum,
+                    BarCode = Code,
+                    TranBarCode = "",
+                    BindBarCode = "",
+                    DeviceCode = DeviceCode,
+                    LineCode = LineCode,
+                    CommandCard = CommandCard,
+                    ProcessCode = ProcessCode,
+                    NGCode = "",
+                    IsOnlyRecord = 1,
+                    IsPass = IsPass,
+                    CheckBy = CheckBy,
+                    CheckTime = checkTime
+                };
+
+                var payload = new
+                {
+                    Main = mes
+                };
+
+                Log log = new Log();
+                string updata = JsonConvert.SerializeObject(payload);
+                string updata2 = $"'{updata}'";
+                log.MES_Logmsg("入站上传 " + URL + "    " + updata2);
+
+                string response = httpPost(URL, updata2);
+                log.MES_Logmsg("入站上传结果    " + response);
+
+                return response;
+            }
+            catch (Exception ex)
+            {
+                Log log = new Log();
+                log.MES_Logmsg("入站接口异常: " + ex.Message);
+                return $"Error: {ex.Message}";
+            }
+        }
+
+
+        public static string chushihuames(string URL, string DeviceCode, string LineCode, int StatusCode, string CheckTime)
+        {
+            try
+            {
+                MesConfigs.Detail3 mes = new MesConfigs.Detail3();
+                mes.DeviceCode = DeviceCode;
+                mes.LineCode = LineCode;
+                mes.StatusCode = 10;
+                mes.CheckTime = CheckTime;
+                Log log = new Log();
+                string updata = JsonConvert.SerializeObject(mes);
+                string updata2 = $"'{updata}'";
+                log.MES_Logmsg("校验上传" + URL + "    " + updata2);
+                string ss = httpPost(URL, updata2);
+                log.MES_Logmsg("校验上传结果    " + ss);
+                return ss;
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+                return ex.Message;
+            }
+        }
+
+        public string UpMestest(int CH, string URL, string LineNum, string Code, string DeviceCode, string LineCode, string CommandCard, string ProcessCode, string NGCode, string CheckBy, int IsPass, string checkTime, int IsOnlyRecord)
+        {
+            try
+            {
+
+                MesConfigs.Main mes = new MesConfigs.Main();
+                if (CH == 1)
+                {
+                    mes.LineNum = randomNumber1.ToString();
+                }
+                if (CH == 2)
+                {
+                    mes.LineNum = randomNumber2.ToString();
+                }
+
+                mes.BarCode = Code;
+                mes.TranBarCode = "";
+                mes.BindBarCode = "";
+                mes.DeviceCode = DeviceCode;
+                mes.LineCode = LineCode;
+                mes.CommandCard = CommandCard;
+                mes.ProcessCode = ProcessCode;
+                mes.NGCode = NGCode;
+                mes.IsOnlyRecord = IsOnlyRecord;
+
+                mes.IsPass = IsPass;
+                mes.CheckBy = CheckBy;
+                mes.CheckTime = checkTime;
+
+                bool flag = CH == 1;
+                if (flag)
+                {
+                    {
+                        det.ItemName = "CH1_1测试压力";
+                        det.UpperLimits = 100;
+                        det.LowerLimits = 0;
+                        det.ActualVal = 10;
+                        det.StandardVal = 10;
+                        det.SoftVer = "";
+                        det.CheckTime = checkTime;
+
+                    }
+
+
+
+                }
+                MesConfigs.Root oot = new MesConfigs.Root();
+                oot.Main = mes;
+                oot.Detail = new List<MesConfigs.Detail>();
+                if (CH == 1)
+                {
+
+
+                    oot.Detail.Add(det);
+                    //oot.Detail.Add(det2);
+                    //oot.Detail.Add(det3);
+                    //oot.Detail.Add(det4);
+                    //oot.Detail.Add(det5);
+                    //oot.Detail.Add(det6);
+                }
+
+
+                if (CH == 2)
+                {
+                    oot.Detail.Add(det7);
+                    oot.Detail.Add(det8);
+                    oot.Detail.Add(det9);
+                    oot.Detail.Add(det10);
+                    oot.Detail.Add(det11);
+                    oot.Detail.Add(det12);
+                }
+
+                Log log = new Log();
+                string updata = JsonConvert.SerializeObject(oot);
+                string updata2 = $"'{updata}'";
+                log.MES_Logmsg("出站上传" + URL + "    " + updata2);
+                string ss = httpPost(URL, updata2);
+                log.MES_Logmsg("出站上传结果    " + ss);
+                return ss;
+
+            }
+            catch (Exception ex)
+            {
+
+                MessageBox.Show(ex.Message);
+                return ex.Message;
+            }
+
+        }
+
+        public static string httpPost(string url, string data)
+        {
+            string retString = string.Empty;
+            HttpWebRequest request = (HttpWebRequest)WebRequest.Create(url);
+            request.Method = "POST";
+            byte[] bytes = Encoding.UTF8.GetBytes(data);
+            request.ContentType = "application/json";
+            request.ContentLength = (long)bytes.Length;
+            try
+            {
+                Stream myResponseStream = request.GetRequestStream();
+                myResponseStream.Write(bytes, 0, bytes.Length);
+                HttpWebResponse response = (HttpWebResponse)request.GetResponse();
+                StreamReader myStreamReader = new StreamReader(response.GetResponseStream(), Encoding.UTF8);
+                retString = myStreamReader.ReadToEnd();
+                int statusCode = (int)response.StatusCode;
+                bool flag = statusCode == 200;
+                if (flag)
+                {
+                    myStreamReader.Close();
+                    myResponseStream.Close();
+                    bool flag2 = response != null;
+                    if (flag2)
+                    {
+                        response.Close();
+                    }
+                    bool flag3 = request != null;
+                    if (flag3)
+                    {
+                        request.Abort();
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+                retString = ex.Message;
+            }
+            return retString;
+        }
+
+        public void MESread()
+        {
+            string dialog = "mesLog";
+            ConfigINI config = new ConfigINI("Model", dialog);
+            URL = config.IniReadValue("TQmes", "URL");
+            inbordURL = config.IniReadValue("TQmes", "inbordURL");
+            yanzhengUrl = config.IniReadValue("TQmes", "yanzhengUrl");
+            LineNum = config.IniReadValue("TQmes", "LineNum");
+            CommandCard = config.IniReadValue("TQmes", "CommandCard");
+            ZhiLing.Text = CommandCard;
+            DeviceCode = config.IniReadValue("TQmes", "DeviceCode");
+            ProcessCode = config.IniReadValue("TQmes", "ProcessCode");
+            LineCode = config.IniReadValue("TQmes", "LineCode");
+            CheckBy = config.IniReadValue("TQmes", "CheckBy");
+            NGCode = config.IniReadValue("TQmes", "NGCode");
+
+            Form1.IsOnlyRecord = Convert.ToInt32(config.IniReadValue("TQmes", "IsOnlyRecord"));
+
+        }
 
         private void label6_Click(object sender, EventArgs e)
         {
@@ -13307,6 +14521,77 @@ namespace SLC1_N
         private void label35_Click(object sender, EventArgs e)
         {
             plc.WriteCH1QC(false);
+        }
+
+        private void CH2MESOUT_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            Mes mes = new Mes();
+            OpenForm(mes);
+        }
+
+        private void PLCRun_Click(object sender, EventArgs e)
+        {
+            string checkTime = DateTime.Now.ToString("yyyy-MM-dd HH:mm:ss");
+            int IsPass = 0;
+            if (save.opmes)
+            {
+            string Errpmesg = UpMes2(1, Form1.URL, Form1.LineNum, left_CH1Code.Text, Form1.DeviceCode, Form1.LineCode, Form1.CommandCard, Form1.ProcessCode, NGCode, Form1.CheckBy, IsPass, checkTime, IsOnlyRecord);
+            if (Errpmesg.Contains("200"))
+            {
+                CH1MESOUT.Text = "PASS";
+                CH1MESOUT.ForeColor = Color.Green;
+
+            }
+            else
+            {
+                CH1MESOUT.Text = "FILE";
+                CH1MESOUT.ForeColor = Color.Red;
+                Logger.Log(DateTime.Now.ToString() + "CH1 Retorno del mes" + Errpmesg);
+            }
+            }
+        }
+
+        private void label3_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            I18N.Language = "es-ES";
+            dicLang = I18N.LoadLanguage(this);
+            this.ChangeLanguage(I18N.Language);
+            //LanguageHelper.SetLang("en-Us", this, typeof(Form1));
+            this.LoadENUSLang();
+            //setTag(this);
+            this.FormBorderStyle = FormBorderStyle.FixedSingle;
+            this.MaximizedBounds = Screen.PrimaryScreen.WorkingArea;
+            this.WindowState = FormWindowState.Maximized;
+        }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+            string dialog = "mesLog";
+            ConfigINI config = new ConfigINI("Model", dialog);
+            config.IniWriteValue("TQmes", "CommandCard", ZhiLing.Text);
+            Form1.CommandCard = ZhiLing.Text;
+        }
+
+        private void timer2_Tick(object sender, EventArgs e)
+        {
+            TIME++;
+            if (TIME >= Stipulatetime)
+            {
+                timer2.Stop();
+                this.Hide();
+                Activationcode atc = new Activationcode();
+                atc.ShowDialog();
+            }
         }
 
         public static ComponentResourceManager GetCRMByLanguageName(Type formclass)

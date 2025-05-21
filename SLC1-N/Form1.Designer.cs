@@ -160,6 +160,10 @@
             this.right_CH1Tlight = new System.Windows.Forms.Label();
             this.label128 = new System.Windows.Forms.Label();
             this.uiGroupBox5 = new Sunny.UI.UIGroupBox();
+            this.CH2MESOUT = new System.Windows.Forms.Label();
+            this.CH2MESIN = new System.Windows.Forms.Label();
+            this.label17 = new System.Windows.Forms.Label();
+            this.label18 = new System.Windows.Forms.Label();
             this.LeftCH1TCP = new System.Windows.Forms.Label();
             this.TestStation = new Sunny.UI.UITextBox();
             this.TestType = new Sunny.UI.UITextBox();
@@ -205,6 +209,15 @@
             this.LeftReset = new Sunny.UI.UIHeaderButton();
             this.uiHeaderButton1 = new Sunny.UI.UIHeaderButton();
             this.uiNavBar1 = new Sunny.UI.UINavBar();
+            this.label23 = new System.Windows.Forms.Label();
+            this.label21 = new System.Windows.Forms.Label();
+            this.label20 = new System.Windows.Forms.Label();
+            this.button4 = new System.Windows.Forms.Button();
+            this.label19 = new System.Windows.Forms.Label();
+            this.ZhiLing = new Sunny.UI.UITextBox();
+            this.button3 = new System.Windows.Forms.Button();
+            this.button2 = new System.Windows.Forms.Button();
+            this.ONtime = new System.Windows.Forms.Label();
             this.button1 = new System.Windows.Forms.Button();
             this.CH2ReceiveText = new System.Windows.Forms.TextBox();
             this.CH1ReceiveText = new System.Windows.Forms.TextBox();
@@ -217,6 +230,10 @@
             this.PLCRun = new System.Windows.Forms.PictureBox();
             this.CH1Status = new System.Windows.Forms.Label();
             this.uiGroupBox1 = new Sunny.UI.UIGroupBox();
+            this.CH1MESOUT = new System.Windows.Forms.Label();
+            this.CH1MESIN = new System.Windows.Forms.Label();
+            this.label15 = new System.Windows.Forms.Label();
+            this.label13 = new System.Windows.Forms.Label();
             this.label30 = new System.Windows.Forms.Label();
             this.label39 = new System.Windows.Forms.Label();
             this.CH1RTVDC = new System.Windows.Forms.Label();
@@ -270,9 +287,9 @@
             this.CKCH2Port = new System.IO.Ports.SerialPort(this.components);
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
             this.uiGroupBox7 = new Sunny.UI.UIGroupBox();
-            this.timer1 = new System.Windows.Forms.Timer(this.components);
-            this.ONtime = new System.Windows.Forms.Label();
             this.logDisplay1 = new SLC1_N.LogDisplay();
+            this.timer1 = new System.Windows.Forms.Timer(this.components);
+            this.timer2 = new System.Windows.Forms.Timer(this.components);
             this.uiGroupBox2.SuspendLayout();
             this.uiGroupBox3.SuspendLayout();
             this.uiGroupBox6.SuspendLayout();
@@ -1032,7 +1049,11 @@
             // uiGroupBox5
             // 
             resources.ApplyResources(this.uiGroupBox5, "uiGroupBox5");
+            this.uiGroupBox5.Controls.Add(this.CH2MESOUT);
+            this.uiGroupBox5.Controls.Add(this.CH2MESIN);
+            this.uiGroupBox5.Controls.Add(this.label17);
             this.uiGroupBox5.Controls.Add(this.label93);
+            this.uiGroupBox5.Controls.Add(this.label18);
             this.uiGroupBox5.Controls.Add(this.label94);
             this.uiGroupBox5.Controls.Add(this.label95);
             this.uiGroupBox5.Controls.Add(this.CH2RTVDC);
@@ -1051,6 +1072,31 @@
             this.uiGroupBox5.Name = "uiGroupBox5";
             this.uiGroupBox5.Style = Sunny.UI.UIStyle.Custom;
             this.uiGroupBox5.TextAlignment = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // CH2MESOUT
+            // 
+            resources.ApplyResources(this.CH2MESOUT, "CH2MESOUT");
+            this.CH2MESOUT.BackColor = System.Drawing.Color.Transparent;
+            this.CH2MESOUT.Name = "CH2MESOUT";
+            this.CH2MESOUT.Click += new System.EventHandler(this.CH2MESOUT_Click);
+            // 
+            // CH2MESIN
+            // 
+            resources.ApplyResources(this.CH2MESIN, "CH2MESIN");
+            this.CH2MESIN.BackColor = System.Drawing.Color.Transparent;
+            this.CH2MESIN.Name = "CH2MESIN";
+            // 
+            // label17
+            // 
+            resources.ApplyResources(this.label17, "label17");
+            this.label17.BackColor = System.Drawing.Color.Transparent;
+            this.label17.Name = "label17";
+            // 
+            // label18
+            // 
+            resources.ApplyResources(this.label18, "label18");
+            this.label18.BackColor = System.Drawing.Color.Transparent;
+            this.label18.Name = "label18";
             // 
             // LeftCH1TCP
             // 
@@ -1346,6 +1392,7 @@
             // 
             resources.ApplyResources(this.label3, "label3");
             this.label3.Name = "label3";
+            this.label3.Click += new System.EventHandler(this.label3_Click);
             // 
             // label1
             // 
@@ -1434,7 +1481,7 @@
             this.LeftReset.SymbolOffset = new System.Drawing.Point(-1, 2);
             this.LeftReset.SymbolSize = 70;
             this.LeftReset.TipsFont = new System.Drawing.Font("Microsoft YaHei", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.LeftReset.Click += new System.EventHandler(this.LeftReset_Click);
+            this.LeftReset.Click += new System.EventHandler(this.LeftReset_ClickAsync);
             // 
             // uiHeaderButton1
             // 
@@ -1460,6 +1507,14 @@
             // 
             resources.ApplyResources(this.uiNavBar1, "uiNavBar1");
             this.uiNavBar1.BackColor = System.Drawing.Color.LightBlue;
+            this.uiNavBar1.Controls.Add(this.label23);
+            this.uiNavBar1.Controls.Add(this.label21);
+            this.uiNavBar1.Controls.Add(this.label20);
+            this.uiNavBar1.Controls.Add(this.button4);
+            this.uiNavBar1.Controls.Add(this.label19);
+            this.uiNavBar1.Controls.Add(this.ZhiLing);
+            this.uiNavBar1.Controls.Add(this.button3);
+            this.uiNavBar1.Controls.Add(this.button2);
             this.uiNavBar1.Controls.Add(this.ONtime);
             this.uiNavBar1.Controls.Add(this.button1);
             this.uiNavBar1.Controls.Add(this.CH2ReceiveText);
@@ -1510,6 +1565,64 @@
             this.uiNavBar1.SelectedHighColor = System.Drawing.Color.FromArgb(((int)(((byte)(142)))), ((int)(((byte)(164)))), ((int)(((byte)(144)))));
             this.uiNavBar1.Style = Sunny.UI.UIStyle.Custom;
             this.uiNavBar1.MenuItemClick += new Sunny.UI.UINavBar.OnMenuItemClick(this.uiNavBar1_MenuItemClick);
+            // 
+            // label23
+            // 
+            resources.ApplyResources(this.label23, "label23");
+            this.label23.Name = "label23";
+            // 
+            // label21
+            // 
+            resources.ApplyResources(this.label21, "label21");
+            this.label21.Name = "label21";
+            // 
+            // label20
+            // 
+            resources.ApplyResources(this.label20, "label20");
+            this.label20.Name = "label20";
+            // 
+            // button4
+            // 
+            resources.ApplyResources(this.button4, "button4");
+            this.button4.Name = "button4";
+            this.button4.UseVisualStyleBackColor = true;
+            this.button4.Click += new System.EventHandler(this.button4_Click);
+            // 
+            // label19
+            // 
+            resources.ApplyResources(this.label19, "label19");
+            this.label19.Name = "label19";
+            // 
+            // ZhiLing
+            // 
+            resources.ApplyResources(this.ZhiLing, "ZhiLing");
+            this.ZhiLing.ButtonSymbol = 61761;
+            this.ZhiLing.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.ZhiLing.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(243)))), ((int)(((byte)(255)))));
+            this.ZhiLing.Maximum = 2147483647D;
+            this.ZhiLing.Minimum = -2147483648D;
+            this.ZhiLing.Name = "ZhiLing";
+            this.ZhiLing.Style = Sunny.UI.UIStyle.Custom;
+            this.ZhiLing.TextAlignment = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // button3
+            // 
+            resources.ApplyResources(this.button3, "button3");
+            this.button3.Name = "button3";
+            this.button3.UseVisualStyleBackColor = true;
+            this.button3.Click += new System.EventHandler(this.button3_Click);
+            // 
+            // button2
+            // 
+            resources.ApplyResources(this.button2, "button2");
+            this.button2.Name = "button2";
+            this.button2.UseVisualStyleBackColor = true;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
+            // 
+            // ONtime
+            // 
+            resources.ApplyResources(this.ONtime, "ONtime");
+            this.ONtime.Name = "ONtime";
             // 
             // button1
             // 
@@ -1579,6 +1692,7 @@
             resources.ApplyResources(this.PLCRun, "PLCRun");
             this.PLCRun.Name = "PLCRun";
             this.PLCRun.TabStop = false;
+            this.PLCRun.Click += new System.EventHandler(this.PLCRun_Click);
             // 
             // CH1Status
             // 
@@ -1589,6 +1703,10 @@
             // uiGroupBox1
             // 
             resources.ApplyResources(this.uiGroupBox1, "uiGroupBox1");
+            this.uiGroupBox1.Controls.Add(this.CH1MESOUT);
+            this.uiGroupBox1.Controls.Add(this.CH1MESIN);
+            this.uiGroupBox1.Controls.Add(this.label15);
+            this.uiGroupBox1.Controls.Add(this.label13);
             this.uiGroupBox1.Controls.Add(this.label30);
             this.uiGroupBox1.Controls.Add(this.label6);
             this.uiGroupBox1.Controls.Add(this.label39);
@@ -1607,6 +1725,30 @@
             this.uiGroupBox1.Name = "uiGroupBox1";
             this.uiGroupBox1.TextAlignment = System.Drawing.ContentAlignment.MiddleCenter;
             this.uiGroupBox1.Click += new System.EventHandler(this.uiGroupBox1_Click);
+            // 
+            // CH1MESOUT
+            // 
+            resources.ApplyResources(this.CH1MESOUT, "CH1MESOUT");
+            this.CH1MESOUT.BackColor = System.Drawing.Color.Transparent;
+            this.CH1MESOUT.Name = "CH1MESOUT";
+            // 
+            // CH1MESIN
+            // 
+            resources.ApplyResources(this.CH1MESIN, "CH1MESIN");
+            this.CH1MESIN.BackColor = System.Drawing.Color.Transparent;
+            this.CH1MESIN.Name = "CH1MESIN";
+            // 
+            // label15
+            // 
+            resources.ApplyResources(this.label15, "label15");
+            this.label15.BackColor = System.Drawing.Color.Transparent;
+            this.label15.Name = "label15";
+            // 
+            // label13
+            // 
+            resources.ApplyResources(this.label13, "label13");
+            this.label13.BackColor = System.Drawing.Color.Transparent;
+            this.label13.Name = "label13";
             // 
             // label30
             // 
@@ -2121,19 +2263,18 @@
             this.uiGroupBox7.Style = Sunny.UI.UIStyle.Custom;
             this.uiGroupBox7.TextAlignment = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // timer1
-            // 
-            this.timer1.Tick += new System.EventHandler(this.timer1_Tick_1);
-            // 
-            // ONtime
-            // 
-            resources.ApplyResources(this.ONtime, "ONtime");
-            this.ONtime.Name = "ONtime";
-            // 
             // logDisplay1
             // 
             resources.ApplyResources(this.logDisplay1, "logDisplay1");
             this.logDisplay1.Name = "logDisplay1";
+            // 
+            // timer1
+            // 
+            this.timer1.Tick += new System.EventHandler(this.timer1_Tick_1);
+            // 
+            // timer2
+            // 
+            this.timer2.Tick += new System.EventHandler(this.timer2_Tick);
             // 
             // Form1
             // 
@@ -2409,6 +2550,23 @@
         public System.Windows.Forms.Label CH2RTElec;
         public System.Windows.Forms.Label CH1RTElec;
         private System.Windows.Forms.Label ONtime;
+        private System.Windows.Forms.Label label15;
+        private System.Windows.Forms.Label label13;
+        private System.Windows.Forms.Label label17;
+        private System.Windows.Forms.Label label18;
+        private System.Windows.Forms.Label CH1MESIN;
+        private System.Windows.Forms.Label CH1MESOUT;
+        private System.Windows.Forms.Label CH2MESOUT;
+        private System.Windows.Forms.Label CH2MESIN;
+        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Button button3;
+        private System.Windows.Forms.Button button4;
+        private System.Windows.Forms.Label label19;
+        private System.Windows.Forms.Label label20;
+        private System.Windows.Forms.Label label21;
+        public Sunny.UI.UITextBox ZhiLing;
+        private System.Windows.Forms.Label label23;
+        public System.Windows.Forms.Timer timer2;
     }
 }
 

@@ -2317,6 +2317,15 @@ namespace SLC1_N
             CH2FWDVDCMax.Text = CH1FWDVDCMax.Text;
             CH2FWDVDCMin.Text = CH1FWDVDCMin.Text;
             CH2FWDVDCComp.Text = CH1FWDVDCComp.Text;
+
+            CH2FWDflowtime.Text = CH1FWDFLOWTime.Text;
+            CH2FwdpreTime.Text=CH1FwdPreTime.Text;
+            CH2FWDFlowMax.Text = CH1FWDFlowMax.Text;
+            CH2FWDPreMax.Text= CH1FwdPreMax.Text;
+            CH2FWDFlowMin.Text = CH1FWDFlowMin.Text;
+            CH2FWDPreMin.Text=CH1FwdPreMin.Text;
+
+
         }
 
         private void RFWDParamsCopy_Click(object sender, EventArgs e)
@@ -2328,6 +2337,17 @@ namespace SLC1_N
             CH1FWDVDCMax.Text = CH2FWDVDCMax.Text;
             CH1FWDVDCMin.Text = CH2FWDVDCMin.Text;
             CH1FWDVDCComp.Text = CH2FWDVDCComp.Text;
+
+
+        
+
+
+            CH1FWDFLOWTime.Text = CH2FWDflowtime.Text;
+            CH1FwdPreTime.Text = CH2FwdpreTime.Text;
+            CH1FWDFlowMax.Text = CH2FWDFlowMax.Text;
+            CH1FwdPreMax.Text = CH2FWDPreMax.Text;
+            CH1FwdPreMin.Text = CH2FWDPreMin.Text;
+            CH1FWDFlowMin.Text = CH2FWDFlowMin.Text;
         }
 
         //泄气参数校验
@@ -3007,6 +3027,10 @@ namespace SLC1_N
             string dialog = Form1.f1.machine;
 
             ConfigINI config = new ConfigINI("Model", dialog);
+
+            config.IniWriteValue("Lin", "CH1electricChange", CH1electricChange.Checked.ToString());
+            config.IniWriteValue("Lin", "CH2electricChange", CH2electricChange.Checked.ToString());
+
             config.IniWriteValue("Lin", "CH1HighLevel", CH1HighLevel.Checked.ToString());
             config.IniWriteValue("Lin", "CH2HighLevel", CH2HighLevel.Checked.ToString());
             config.IniWriteValue("Lin", "CH2LIN", CH2LIN.Checked.ToString());
@@ -3375,7 +3399,8 @@ namespace SLC1_N
             CH1Pump.Checked = ord.CH1Pump;
             CH2LIN.Checked = ord.CH2LIN;
             CH1HighLevel.Checked = ord.CH1HighLevel;
-
+            CH1electricChange.Checked = ord.CH1electricChange;
+            CH2electricChange.Checked = ord.CH2electricChange;
             CH1UpDownChange.Checked = ord.CH1UpDownChange;
             //CH1QuiescentCurrnt.Checked = ord.CH1QuiescentCurrnt;
 
@@ -5374,6 +5399,16 @@ namespace SLC1_N
         private void uiTabControlMenu1_Click(object sender, EventArgs e)
         {
             
+        }
+
+        private void CH1electricChange_CheckedChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void CH2electricChange_CheckedChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }

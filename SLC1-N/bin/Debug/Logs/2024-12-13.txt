@@ -1,0 +1,56 @@
+全局异常捕捉
+****************************异常文本****************************
+【出现时间】：13/12/2024 07:58:01 a. m.
+【异常类型】：IOException
+【异常信息】：La operación de E/S se anuló por una salida de subproceso o por una solicitud de aplicación.
+
+【堆栈调用】：   在 System.IO.Ports.InternalResources.WinIOError(Int32 errorCode, String str)
+   在 System.IO.Ports.SerialStream.EndWrite(IAsyncResult asyncResult)
+   在 System.IO.Ports.SerialStream.Write(Byte[] array, Int32 offset, Int32 count, Int32 timeout)
+   在 System.IO.Ports.SerialPort.Write(String text)
+   在 System.IO.Ports.SerialPort.WriteLine(String text)
+   在 SLC1_N.Form1.CH1Method(Int32 i) 位置 C:\Users\Administrator\Desktop\messsssss\New folder\TANGQUNMXG\SLC1-N\Form1.cs:行号 11875
+   在 SLC1_N.Form1.CH1ReaduA_Tick(Object sender, EventArgs e) 位置 C:\Users\Administrator\Desktop\messsssss\New folder\TANGQUNMXG\SLC1-N\Form1.cs:行号 8235
+   在 System.Windows.Forms.Timer.OnTick(EventArgs e)
+   在 System.Windows.Forms.Timer.TimerNativeWindow.WndProc(Message& m)
+   在 System.Windows.Forms.NativeWindow.Callback(IntPtr hWnd, Int32 msg, IntPtr wparam, IntPtr lparam)
+***************************************************************
+
+13/12/2024 07:58:01 a. m.
+=======================================================
+全局异常捕捉
+****************************异常文本****************************
+【出现时间】：13/12/2024 10:28:16 a. m.
+【异常类型】：UnauthorizedAccessException
+【异常信息】：Acceso denegado al puerto.
+【堆栈调用】：   en System.IO.Ports.InternalResources.WinIOError(Int32 errorCode, String str)
+   en System.IO.Ports.InternalResources.WinIOError()
+   en System.IO.Ports.SerialStream.get_BytesToRead()
+   en System.IO.Ports.SerialPort.get_BytesToRead()
+   en System.IO.Ports.SerialPort.ReadExisting()
+   en SLC1_N.SerialPortReader.Read() en C:\Users\Administrator\Desktop\messsssss\New folder\TANGQUNMXG\SLC1-N\ProtRead.cs:línea 99
+   en System.Threading.ThreadHelper.ThreadStart_Context(Object state)
+   en System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state, Boolean preserveSyncCtx)
+   en System.Threading.ExecutionContext.Run(ExecutionContext executionContext, ContextCallback callback, Object state, Boolean preserveSyncCtx)
+   en System.Threading.ExecutionContext.Run(ExecutionContext executionContext, ContextCallback callback, Object state)
+   en System.Threading.ThreadHelper.ThreadStart()
+***************************************************************
+
+13/12/2024 10:28:16 a. m.
+=======================================================
+全局异常捕捉
+****************************异常文本****************************
+【出现时间】：13/12/2024 10:28:16 a. m.
+【异常类型】：InvalidOperationException
+【异常信息】：El puerto está cerrado.
+【堆栈调用】：   en System.IO.Ports.SerialPort.ReadExisting()
+   en SLC1_N.SerialPortReader.Read() en C:\Users\Administrator\Desktop\messsssss\New folder\TANGQUNMXG\SLC1-N\ProtRead.cs:línea 99
+   en System.Threading.ThreadHelper.ThreadStart_Context(Object state)
+   en System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state, Boolean preserveSyncCtx)
+   en System.Threading.ExecutionContext.Run(ExecutionContext executionContext, ContextCallback callback, Object state, Boolean preserveSyncCtx)
+   en System.Threading.ExecutionContext.Run(ExecutionContext executionContext, ContextCallback callback, Object state)
+   en System.Threading.ThreadHelper.ThreadStart()
+***************************************************************
+
+13/12/2024 10:28:16 a. m.
+=======================================================

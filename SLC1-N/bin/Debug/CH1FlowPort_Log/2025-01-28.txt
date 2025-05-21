@@ -1,0 +1,40 @@
+20250128 13:06:28  28/01/2025 01:06:28 p. m.La operación de E/S se anuló por una salida de subproceso o por una solicitud de aplicación.
+   在 System.IO.Ports.InternalResources.WinIOError(Int32 errorCode, String str)
+   在 System.IO.Ports.SerialStream.EndWrite(IAsyncResult asyncResult)
+   在 System.IO.Ports.SerialStream.Write(Byte[] array, Int32 offset, Int32 count, Int32 timeout)
+   在 System.IO.Ports.SerialPort.Write(String text)
+   在 System.IO.Ports.SerialPort.WriteLine(String text)
+   在 SLC1_N.Form1.CH1Method(Int32 i) 位置 C:\Users\Administrator\Desktop\messsssss\New folder\1.22\TANGQUNMXG\SLC1-N\Form1.cs:行号 11910
+
+20250128 13:08:33  28/01/2025 01:08:33 p. m.La operación de E/S se anuló por una salida de subproceso o por una solicitud de aplicación.
+   在 System.IO.Ports.InternalResources.WinIOError(Int32 errorCode, String str)
+   在 System.IO.Ports.SerialStream.EndWrite(IAsyncResult asyncResult)
+   在 System.IO.Ports.SerialStream.Write(Byte[] array, Int32 offset, Int32 count, Int32 timeout)
+   在 System.IO.Ports.SerialPort.Write(String text)
+   在 System.IO.Ports.SerialPort.WriteLine(String text)
+   在 SLC1_N.Form1.CH1Method(Int32 i) 位置 C:\Users\Administrator\Desktop\messsssss\New folder\1.22\TANGQUNMXG\SLC1-N\Form1.cs:行号 11910
+
+20250128 13:17:37  28/01/2025 01:17:37 p. m.La operación de E/S se anuló por una salida de subproceso o por una solicitud de aplicación.
+   在 System.IO.Ports.InternalResources.WinIOError(Int32 errorCode, String str)
+   在 System.IO.Ports.SerialStream.EndWrite(IAsyncResult asyncResult)
+   在 System.IO.Ports.SerialStream.Write(Byte[] array, Int32 offset, Int32 count, Int32 timeout)
+   在 System.IO.Ports.SerialPort.Write(String text)
+   在 System.IO.Ports.SerialPort.WriteLine(String text)
+   在 SLC1_N.Form1.CH1Method(Int32 i) 位置 C:\Users\Administrator\Desktop\messsssss\New folder\1.22\TANGQUNMXG\SLC1-N\Form1.cs:行号 12297
+
+20250128 13:23:58  28/01/2025 01:23:58 p. m.La operación de E/S se anuló por una salida de subproceso o por una solicitud de aplicación.
+   在 System.IO.Ports.InternalResources.WinIOError(Int32 errorCode, String str)
+   在 System.IO.Ports.SerialStream.EndWrite(IAsyncResult asyncResult)
+   在 System.IO.Ports.SerialStream.Write(Byte[] array, Int32 offset, Int32 count, Int32 timeout)
+   在 System.IO.Ports.SerialPort.Write(String text)
+   在 System.IO.Ports.SerialPort.WriteLine(String text)
+   在 SLC1_N.Form1.CH1Method(Int32 i) 位置 C:\Users\Administrator\Desktop\messsssss\New folder\1.22\TANGQUNMXG\SLC1-N\Form1.cs:行号 12297
+
+20250128 14:08:56  28/01/2025 02:08:56 p. m.La operación de E/S se anuló por una salida de subproceso o por una solicitud de aplicación.
+   在 System.IO.Ports.InternalResources.WinIOError(Int32 errorCode, String str)
+   在 System.IO.Ports.SerialStream.EndWrite(IAsyncResult asyncResult)
+   在 System.IO.Ports.SerialStream.Write(Byte[] array, Int32 offset, Int32 count, Int32 timeout)
+   在 System.IO.Ports.SerialPort.Write(String text)
+   在 System.IO.Ports.SerialPort.WriteLine(String text)
+   在 SLC1_N.Form1.CH1Method(Int32 i) 位置 C:\Users\Administrator\Desktop\messsssss\New folder\1.22\TANGQUNMXG\SLC1-N\Form1.cs:行号 11910
+

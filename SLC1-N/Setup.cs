@@ -53,6 +53,7 @@
         }
         public class Save
         {
+            public bool opmes { get; set; }
             public bool ChkExcel { get; set; }
             public bool ChkMES { get; set; }
             public bool ChkCSV { get; set; }
@@ -62,6 +63,10 @@
         }
         public class Order
         {
+            public bool CH1electricChange { get; set; }
+            public bool CH2electricChange { get; set; }
+
+
             public bool CH1HighLevel { get; set; }
             public bool CH2HighLevel { get; set; }
             public bool CH1UpDownChange { get; set; }

@@ -1,0 +1,708 @@
+入站上传 http://192.168.2.53/api/Device/DeviceInspectData_check    '{"Main":{"LineNum":"2070105738970","BarCode":"21240522C3504","TranBarCode":"","BindBarCode":"","DeviceCode":"TSTMX-001-01","LineCode":"WAVE4","CommandCard":"CM2410260001","ProcessCode":"A2-100","NGCode":"","IsOnlyRecord":1,"IsPass":1,"CheckBy":"TSTMX-001-01","CheckTime":"2024-10-28 13:46:11"}}'
+
+入站上传结果    {"StatusCode":300,"Message":"条码【21240522C3504】已做变更，变更后的条码为【′=:06Y4002011500000XP1356357712V951715589T0124299V2120049】。，扫描条码为：21240522C3504"}
+
+校验上传http://192.168.2.53/api/Device/DeviceStatusData    '{"DeviceCode":"TSTMX-001-01","LineCode":"WAVE4","StatusCode":10,"CheckTime":"2024-10-28 13:46:11"}'
+
+校验上传结果    {"StatusCode":200,"Message":""}
+
+入站上传 http://192.168.2.53/api/Device/DeviceInspectData_check    '{"Main":{"LineNum":"3846727238896","BarCode":"21240522C3504","TranBarCode":"","BindBarCode":"","DeviceCode":"TSTMX-001-01","LineCode":"WAVE4","CommandCard":"CM2410260001","ProcessCode":"A2-100","NGCode":"","IsOnlyRecord":1,"IsPass":1,"CheckBy":"TSTMX-001-01","CheckTime":"2024-10-28 14:42:07"}}'
+
+入站上传结果    {"StatusCode":300,"Message":"条码【21240522C3504】已做变更，变更后的条码为【′=:06Y4002011500000XP1356357712V951715589T0124299V2120049】。，扫描条码为：21240522C3504"}
+
+校验上传http://192.168.2.53/api/Device/DeviceStatusData    '{"DeviceCode":"TSTMX-001-01","LineCode":"WAVE4","StatusCode":10,"CheckTime":"2024-10-28 14:42:07"}'
+
+校验上传结果    {"StatusCode":200,"Message":""}
+
+jinru
+
+出站上传http://192.168.2.53/api/Device/DeviceInspectData    '{"Main":{"LineNum":"3846727238896","BarCode":"21240522C3504","TranBarCode":"","BindBarCode":"","DeviceCode":"TSTMX-001-01","LineCode":"WAVE4","CommandCard":"CM2410260001","ProcessCode":"A2-100","NGCode":"A03-4","IsOnlyRecord":1,"IsPass":0,"CheckBy":"TSTMX-001-01","CheckTime":"2024-10-28 14:43:08"},"Detail":[{"ItemName":"CH1_1测试压力","UpperLimits":45.0,"LowerLimits":40.0,"StandardVal":39.59,"ActualVal":39.59,"SoftVer":"","CheckTime":"2024-10-28 14:43:08"},{"ItemName":"CH1_1泄漏量","UpperLimits":100.0,"LowerLimits":-100.0,"StandardVal":2000.0,"ActualVal":2000.0,"SoftVer":"","CheckTime":"2024-10-28 14:43:08"},{"ItemName":"CH1_1流量值","UpperLimits":8.0,"LowerLimits":0.0,"StandardVal":3.52,"ActualVal":3.52,"SoftVer":"","CheckTime":"2024-10-28 14:43:08"},{"ItemName":"CH1_2测试压力","UpperLimits":45.0,"LowerLimits":40.0,"StandardVal":40.82,"ActualVal":40.82,"SoftVer":"","CheckTime":"2024-10-28 14:43:08"},{"ItemName":"CH1_2泄漏量","UpperLimits":100.0,"LowerLimits":-100.0,"StandardVal":0.0,"ActualVal":0.0,"SoftVer":"","CheckTime":"2024-10-28 14:43:08"},{"ItemName":"CH1_2流量值","UpperLimits":8.0,"LowerLimits":0.0,"StandardVal":3.0,"ActualVal":3.0,"SoftVer":"","CheckTime":"2024-10-28 14:43:08"}]}'
+
+出站上传结果    {"StatusCode":300,"Message":"条码【21240522C3504】已做变更，变更后的条码为【′=:06Y4002011500000XP1356357712V951715589T0124299V2120049】。，扫描条码为：21240522C3504"}
+
+入站上传 http://192.168.2.53/api/Device/DeviceInspectData_check    '{"Main":{"LineNum":"3293920742019","BarCode":"21240525C5107\r","TranBarCode":"","BindBarCode":"","DeviceCode":"TSTMX-001-01","LineCode":"WAVE4","CommandCard":"CM2410260001","ProcessCode":"A2-100","NGCode":"","IsOnlyRecord":1,"IsPass":1,"CheckBy":"TSTMX-001-01","CheckTime":"2024-10-28 14:51:49"}}'
+
+入站上传结果    {"StatusCode":200,"Message":"扫描条码为：21240525C5107\r"}
+
+校验上传http://192.168.2.53/api/Device/DeviceStatusData    '{"DeviceCode":"TSTMX-001-01","LineCode":"WAVE4","StatusCode":10,"CheckTime":"2024-10-28 14:51:49"}'
+
+校验上传结果    {"StatusCode":200,"Message":""}
+
+入站上传 http://192.168.2.53/api/Device/DeviceInspectData_check    '{"Main":{"LineNum":"5268471447410","BarCode":"21240525C5149","TranBarCode":"","BindBarCode":"","DeviceCode":"TSTMX-001-01","LineCode":"WAVE4","CommandCard":"CM2410260001","ProcessCode":"A2-100","NGCode":"","IsOnlyRecord":1,"IsPass":1,"CheckBy":"TSTMX-001-01","CheckTime":"2024-10-28 14:52:04"}}'
+
+入站上传结果    {"StatusCode":200,"Message":"扫描条码为：21240525C5149"}
+
+校验上传http://192.168.2.53/api/Device/DeviceStatusData    '{"DeviceCode":"TSTMX-001-01","LineCode":"WAVE4","StatusCode":10,"CheckTime":"2024-10-28 14:52:04"}'
+
+校验上传结果    {"StatusCode":200,"Message":""}
+
+出站上传http://192.168.2.53/api/Device/DeviceInspectData    '{"Main":{"LineNum":"3293920742019","BarCode":"21240525C5107","TranBarCode":"","BindBarCode":"","DeviceCode":"TSTMX-001-01","LineCode":"WAVE4","CommandCard":"CM2410260001","ProcessCode":"A2-100","NGCode":"A03-4","IsOnlyRecord":1,"IsPass":0,"CheckBy":"TSTMX-001-01","CheckTime":"2024-10-28 14:52:21"},"Detail":[{"ItemName":"CH2_1测试压力","UpperLimits":45.0,"LowerLimits":40.0,"StandardVal":0.0,"ActualVal":0.0,"SoftVer":"","CheckTime":"2024-10-28 14:52:21"},{"ItemName":"CH2_1泄漏量","UpperLimits":100.0,"LowerLimits":-100.0,"StandardVal":0.0,"ActualVal":0.0,"SoftVer":"","CheckTime":"2024-10-28 14:52:21"},{"ItemName":"CH2_1流量值","UpperLimits":8.0,"LowerLimits":0.0,"StandardVal":2.98,"ActualVal":2.98,"SoftVer":"","CheckTime":"2024-10-28 14:52:21"},{"ItemName":"CH2_2测试压力","UpperLimits":45.0,"LowerLimits":40.0,"StandardVal":0.0,"ActualVal":0.0,"SoftVer":"","CheckTime":"2024-10-28 14:52:21"},{"ItemName":"CH2_2泄漏量","UpperLimits":100.0,"LowerLimits":-100.0,"StandardVal":0.0,"ActualVal":0.0,"SoftVer":"","CheckTime":"2024-10-28 14:52:21"},{"ItemName":"CH2_2流量值","UpperLimits":8.0,"LowerLimits":0.0,"StandardVal":3.23,"ActualVal":3.23,"SoftVer":"","CheckTime":"2024-10-28 14:52:21"}]}'
+
+出站上传结果    {"StatusCode":200,"Message":"扫描条码为：21240525C5107"}
+
+入站上传 http://192.168.2.53/api/Device/DeviceInspectData_check    '{"Main":{"LineNum":"2828589400196","BarCode":"21240525C5149","TranBarCode":"","BindBarCode":"","DeviceCode":"TSTMX-001-01","LineCode":"WAVE4","CommandCard":"CM2410260001","ProcessCode":"A2-100","NGCode":"","IsOnlyRecord":1,"IsPass":1,"CheckBy":"TSTMX-001-01","CheckTime":"2024-10-28 14:52:37"}}'
+
+入站上传结果    {"StatusCode":200,"Message":"扫描条码为：21240525C5149"}
+
+校验上传http://192.168.2.53/api/Device/DeviceStatusData    '{"DeviceCode":"TSTMX-001-01","LineCode":"WAVE4","StatusCode":10,"CheckTime":"2024-10-28 14:52:37"}'
+
+校验上传结果    {"StatusCode":200,"Message":""}
+
+入站上传 http://192.168.2.53/api/Device/DeviceInspectData_check    '{"Main":{"LineNum":"8778147485469","BarCode":"22240527C0261\r","TranBarCode":"","BindBarCode":"","DeviceCode":"TSTMX-001-01","LineCode":"WAVE4","CommandCard":"CM2410260001","ProcessCode":"A2-100","NGCode":"","IsOnlyRecord":1,"IsPass":1,"CheckBy":"TSTMX-001-01","CheckTime":"2024-10-28 14:52:49"}}'
+
+入站上传结果    {"StatusCode":200,"Message":"扫描条码为：22240527C0261\r"}
+
+校验上传http://192.168.2.53/api/Device/DeviceStatusData    '{"DeviceCode":"TSTMX-001-01","LineCode":"WAVE4","StatusCode":10,"CheckTime":"2024-10-28 14:52:49"}'
+
+校验上传结果    {"StatusCode":200,"Message":""}
+
+jinru
+
+出站上传http://192.168.2.53/api/Device/DeviceInspectData    '{"Main":{"LineNum":"2828589400196","BarCode":"21240525C5149","TranBarCode":"","BindBarCode":"","DeviceCode":"TSTMX-001-01","LineCode":"WAVE4","CommandCard":"CM2410260001","ProcessCode":"A2-100","NGCode":"A03-4","IsOnlyRecord":1,"IsPass":0,"CheckBy":"TSTMX-001-01","CheckTime":"2024-10-28 14:53:12"},"Detail":[{"ItemName":"CH1_1测试压力","UpperLimits":45.0,"LowerLimits":40.0,"StandardVal":39.66,"ActualVal":39.66,"SoftVer":"","CheckTime":"2024-10-28 14:53:12"},{"ItemName":"CH1_1泄漏量","UpperLimits":100.0,"LowerLimits":-100.0,"StandardVal":2000.0,"ActualVal":2000.0,"SoftVer":"","CheckTime":"2024-10-28 14:53:12"},{"ItemName":"CH1_1流量值","UpperLimits":8.0,"LowerLimits":0.0,"StandardVal":3.14,"ActualVal":3.14,"SoftVer":"","CheckTime":"2024-10-28 14:53:12"},{"ItemName":"CH1_2测试压力","UpperLimits":45.0,"LowerLimits":40.0,"StandardVal":40.95,"ActualVal":40.95,"SoftVer":"","CheckTime":"2024-10-28 14:53:12"},{"ItemName":"CH1_2泄漏量","UpperLimits":100.0,"LowerLimits":-100.0,"StandardVal":0.0,"ActualVal":0.0,"SoftVer":"","CheckTime":"2024-10-28 14:53:12"},{"ItemName":"CH1_2流量值","UpperLimits":8.0,"LowerLimits":0.0,"StandardVal":3.37,"ActualVal":3.37,"SoftVer":"","CheckTime":"2024-10-28 14:53:12"}]}'
+
+出站上传结果    {"StatusCode":200,"Message":"扫描条码为：21240525C5149"}
+
+出站上传http://192.168.2.53/api/Device/DeviceInspectData    '{"Main":{"LineNum":"8778147485469","BarCode":"22240527C0261","TranBarCode":"","BindBarCode":"","DeviceCode":"TSTMX-001-01","LineCode":"WAVE4","CommandCard":"CM2410260001","ProcessCode":"A2-100","NGCode":"A03-4","IsOnlyRecord":1,"IsPass":1,"CheckBy":"TSTMX-001-01","CheckTime":"2024-10-28 14:53:42"},"Detail":[{"ItemName":"CH2_1测试压力","UpperLimits":45.0,"LowerLimits":40.0,"StandardVal":40.28,"ActualVal":40.28,"SoftVer":"","CheckTime":"2024-10-28 14:53:42"},{"ItemName":"CH2_1泄漏量","UpperLimits":100.0,"LowerLimits":-100.0,"StandardVal":306.0,"ActualVal":306.0,"SoftVer":"","CheckTime":"2024-10-28 14:53:42"},{"ItemName":"CH2_1流量值","UpperLimits":8.0,"LowerLimits":0.0,"StandardVal":3.15,"ActualVal":3.15,"SoftVer":"","CheckTime":"2024-10-28 14:53:42"},{"ItemName":"CH2_2测试压力","UpperLimits":45.0,"LowerLimits":40.0,"StandardVal":40.43,"ActualVal":40.43,"SoftVer":"","CheckTime":"2024-10-28 14:53:42"},{"ItemName":"CH2_2泄漏量","UpperLimits":100.0,"LowerLimits":-100.0,"StandardVal":299.0,"ActualVal":299.0,"SoftVer":"","CheckTime":"2024-10-28 14:53:42"},{"ItemName":"CH2_2流量值","UpperLimits":8.0,"LowerLimits":0.0,"StandardVal":3.2,"ActualVal":3.2,"SoftVer":"","CheckTime":"2024-10-28 14:53:42"}]}'
+
+出站上传结果    {"StatusCode":200,"Message":"扫描条码为：22240527C0261"}
+
+入站上传 http://192.168.2.53/api/Device/DeviceInspectData_check    '{"Main":{"LineNum":"5389907664335","BarCode":"21240525C5149\r","TranBarCode":"","BindBarCode":"","DeviceCode":"TSTMX-001-01","LineCode":"WAVE4","CommandCard":"CM2410260001","ProcessCode":"A2-100","NGCode":"","IsOnlyRecord":1,"IsPass":1,"CheckBy":"TSTMX-001-01","CheckTime":"2024-10-28 14:53:49"}}'
+
+入站上传结果    {"StatusCode":200,"Message":"扫描条码为：21240525C5149\r"}
+
+校验上传http://192.168.2.53/api/Device/DeviceStatusData    '{"DeviceCode":"TSTMX-001-01","LineCode":"WAVE4","StatusCode":10,"CheckTime":"2024-10-28 14:53:49"}'
+
+校验上传结果    {"StatusCode":200,"Message":""}
+
+出站上传http://192.168.2.53/api/Device/DeviceInspectData    '{"Main":{"LineNum":"5389907664335","BarCode":"21240525C5149","TranBarCode":"","BindBarCode":"","DeviceCode":"TSTMX-001-01","LineCode":"WAVE4","CommandCard":"CM2410260001","ProcessCode":"A2-100","NGCode":"A03-4","IsOnlyRecord":1,"IsPass":1,"CheckBy":"TSTMX-001-01","CheckTime":"2024-10-28 14:54:41"},"Detail":[{"ItemName":"CH2_1测试压力","UpperLimits":45.0,"LowerLimits":40.0,"StandardVal":39.99,"ActualVal":39.99,"SoftVer":"","CheckTime":"2024-10-28 14:54:41"},{"ItemName":"CH2_1泄漏量","UpperLimits":100.0,"LowerLimits":-100.0,"StandardVal":164.0,"ActualVal":164.0,"SoftVer":"","CheckTime":"2024-10-28 14:54:41"},{"ItemName":"CH2_1流量值","UpperLimits":8.0,"LowerLimits":0.0,"StandardVal":2.97,"ActualVal":2.97,"SoftVer":"","CheckTime":"2024-10-28 14:54:41"},{"ItemName":"CH2_2测试压力","UpperLimits":45.0,"LowerLimits":40.0,"StandardVal":40.08,"ActualVal":40.08,"SoftVer":"","CheckTime":"2024-10-28 14:54:41"},{"ItemName":"CH2_2泄漏量","UpperLimits":100.0,"LowerLimits":-100.0,"StandardVal":38.0,"ActualVal":38.0,"SoftVer":"","CheckTime":"2024-10-28 14:54:41"},{"ItemName":"CH2_2流量值","UpperLimits":8.0,"LowerLimits":0.0,"StandardVal":3.32,"ActualVal":3.32,"SoftVer":"","CheckTime":"2024-10-28 14:54:41"}]}'
+
+出站上传结果    {"StatusCode":200,"Message":"扫描条码为：21240525C5149"}
+
+入站上传 http://192.168.2.53/api/Device/DeviceInspectData_check    '{"Main":{"LineNum":"7592742947671","BarCode":"21240525C5149","TranBarCode":"","BindBarCode":"","DeviceCode":"TSTMX-001-01","LineCode":"WAVE4","CommandCard":"CM2410260001","ProcessCode":"A2-100","NGCode":"","IsOnlyRecord":1,"IsPass":1,"CheckBy":"TSTMX-001-01","CheckTime":"2024-10-28 14:56:57"}}'
+
+入站上传结果    {"StatusCode":300,"Message":"条码【21240525C5149】重复过站。，扫描条码为：21240525C5149"}
+
+校验上传http://192.168.2.53/api/Device/DeviceStatusData    '{"DeviceCode":"TSTMX-001-01","LineCode":"WAVE4","StatusCode":10,"CheckTime":"2024-10-28 14:56:57"}'
+
+校验上传结果    {"StatusCode":200,"Message":""}
+
+入站上传 http://192.168.2.53/api/Device/DeviceInspectData_check    '{"Main":{"LineNum":"2087831129826","BarCode":"21240525C5107\r","TranBarCode":"","BindBarCode":"","DeviceCode":"TSTMX-001-01","LineCode":"WAVE4","CommandCard":"CM2410260001","ProcessCode":"A2-100","NGCode":"","IsOnlyRecord":1,"IsPass":1,"CheckBy":"TSTMX-001-01","CheckTime":"2024-10-28 14:57:04"}}'
+
+入站上传结果    {"StatusCode":200,"Message":"扫描条码为：21240525C5107\r"}
+
+校验上传http://192.168.2.53/api/Device/DeviceStatusData    '{"DeviceCode":"TSTMX-001-01","LineCode":"WAVE4","StatusCode":10,"CheckTime":"2024-10-28 14:57:04"}'
+
+校验上传结果    {"StatusCode":200,"Message":""}
+
+jinru
+
+出站上传http://192.168.2.53/api/Device/DeviceInspectData    '{"Main":{"LineNum":"7592742947671","BarCode":"21240525C5149","TranBarCode":"","BindBarCode":"","DeviceCode":"TSTMX-001-01","LineCode":"WAVE4","CommandCard":"CM2410260001","ProcessCode":"A2-100","NGCode":"A03-4","IsOnlyRecord":1,"IsPass":0,"CheckBy":"TSTMX-001-01","CheckTime":"2024-10-28 14:57:40"},"Detail":[{"ItemName":"CH1_1测试压力","UpperLimits":45.0,"LowerLimits":40.0,"StandardVal":39.26,"ActualVal":39.26,"SoftVer":"","CheckTime":"2024-10-28 14:57:40"},{"ItemName":"CH1_1泄漏量","UpperLimits":100.0,"LowerLimits":-100.0,"StandardVal":2000.0,"ActualVal":2000.0,"SoftVer":"","CheckTime":"2024-10-28 14:57:40"},{"ItemName":"CH1_1流量值","UpperLimits":8.0,"LowerLimits":0.0,"StandardVal":3.07,"ActualVal":3.07,"SoftVer":"","CheckTime":"2024-10-28 14:57:40"},{"ItemName":"CH1_2测试压力","UpperLimits":45.0,"LowerLimits":40.0,"StandardVal":40.65,"ActualVal":40.65,"SoftVer":"","CheckTime":"2024-10-28 14:57:40"},{"ItemName":"CH1_2泄漏量","UpperLimits":100.0,"LowerLimits":-100.0,"StandardVal":0.0,"ActualVal":0.0,"SoftVer":"","CheckTime":"2024-10-28 14:57:40"},{"ItemName":"CH1_2流量值","UpperLimits":8.0,"LowerLimits":0.0,"StandardVal":3.41,"ActualVal":3.41,"SoftVer":"","CheckTime":"2024-10-28 14:57:40"}]}'
+
+出站上传结果    {"StatusCode":300,"Message":"条码【21240525C5149】重复过站。，扫描条码为：21240525C5149"}
+
+入站上传 http://192.168.2.53/api/Device/DeviceInspectData_check    '{"Main":{"LineNum":"4803790138943","BarCode":"22240527C0261","TranBarCode":"","BindBarCode":"","DeviceCode":"TSTMX-001-01","LineCode":"WAVE4","CommandCard":"CM2410260001","ProcessCode":"A2-100","NGCode":"","IsOnlyRecord":1,"IsPass":1,"CheckBy":"TSTMX-001-01","CheckTime":"2024-10-28 14:58:00"}}'
+
+入站上传结果    {"StatusCode":300,"Message":"条码【22240527C0261】重复过站。，扫描条码为：22240527C0261"}
+
+校验上传http://192.168.2.53/api/Device/DeviceStatusData    '{"DeviceCode":"TSTMX-001-01","LineCode":"WAVE4","StatusCode":10,"CheckTime":"2024-10-28 14:58:00"}'
+
+校验上传结果    {"StatusCode":200,"Message":""}
+
+出站上传http://192.168.2.53/api/Device/DeviceInspectData    '{"Main":{"LineNum":"2087831129826","BarCode":"21240525C5107","TranBarCode":"","BindBarCode":"","DeviceCode":"TSTMX-001-01","LineCode":"WAVE4","CommandCard":"CM2410260001","ProcessCode":"A2-100","NGCode":"A03-4","IsOnlyRecord":1,"IsPass":1,"CheckBy":"TSTMX-001-01","CheckTime":"2024-10-28 14:58:01"},"Detail":[{"ItemName":"CH2_1测试压力","UpperLimits":45.0,"LowerLimits":40.0,"StandardVal":40.17,"ActualVal":40.17,"SoftVer":"","CheckTime":"2024-10-28 14:58:01"},{"ItemName":"CH2_1泄漏量","UpperLimits":100.0,"LowerLimits":-100.0,"StandardVal":171.0,"ActualVal":171.0,"SoftVer":"","CheckTime":"2024-10-28 14:58:01"},{"ItemName":"CH2_1流量值","UpperLimits":8.0,"LowerLimits":0.0,"StandardVal":2.87,"ActualVal":2.87,"SoftVer":"","CheckTime":"2024-10-28 14:58:01"},{"ItemName":"CH2_2测试压力","UpperLimits":45.0,"LowerLimits":40.0,"StandardVal":39.92,"ActualVal":39.92,"SoftVer":"","CheckTime":"2024-10-28 14:58:01"},{"ItemName":"CH2_2泄漏量","UpperLimits":100.0,"LowerLimits":-100.0,"StandardVal":149.0,"ActualVal":149.0,"SoftVer":"","CheckTime":"2024-10-28 14:58:01"},{"ItemName":"CH2_2流量值","UpperLimits":8.0,"LowerLimits":0.0,"StandardVal":3.24,"ActualVal":3.24,"SoftVer":"","CheckTime":"2024-10-28 14:58:01"}]}'
+
+出站上传结果    {"StatusCode":200,"Message":"扫描条码为：21240525C5107"}
+
+入站上传 http://192.168.2.53/api/Device/DeviceInspectData_check    '{"Main":{"LineNum":"8539519844362","BarCode":"21240522C3504\r","TranBarCode":"","BindBarCode":"","DeviceCode":"TSTMX-001-01","LineCode":"WAVE4","CommandCard":"CM2410260001","ProcessCode":"A2-100","NGCode":"","IsOnlyRecord":1,"IsPass":1,"CheckBy":"TSTMX-001-01","CheckTime":"2024-10-28 14:58:47"}}'
+
+入站上传结果    {"StatusCode":200,"Message":"扫描条码为：21240522C3504\r"}
+
+校验上传http://192.168.2.53/api/Device/DeviceStatusData    '{"DeviceCode":"TSTMX-001-01","LineCode":"WAVE4","StatusCode":10,"CheckTime":"2024-10-28 14:58:47"}'
+
+校验上传结果    {"StatusCode":200,"Message":""}
+
+jinru
+
+出站上传http://192.168.2.53/api/Device/DeviceInspectData    '{"Main":{"LineNum":"4803790138943","BarCode":"22240527C0261","TranBarCode":"","BindBarCode":"","DeviceCode":"TSTMX-001-01","LineCode":"WAVE4","CommandCard":"CM2410260001","ProcessCode":"A2-100","NGCode":"A03-4","IsOnlyRecord":1,"IsPass":0,"CheckBy":"TSTMX-001-01","CheckTime":"2024-10-28 14:59:10"},"Detail":[{"ItemName":"CH1_1测试压力","UpperLimits":45.0,"LowerLimits":40.0,"StandardVal":39.09,"ActualVal":39.09,"SoftVer":"","CheckTime":"2024-10-28 14:59:10"},{"ItemName":"CH1_1泄漏量","UpperLimits":100.0,"LowerLimits":-100.0,"StandardVal":2000.0,"ActualVal":2000.0,"SoftVer":"","CheckTime":"2024-10-28 14:59:10"},{"ItemName":"CH1_1流量值","UpperLimits":8.0,"LowerLimits":0.0,"StandardVal":3.14,"ActualVal":3.14,"SoftVer":"","CheckTime":"2024-10-28 14:59:10"},{"ItemName":"CH1_2测试压力","UpperLimits":45.0,"LowerLimits":40.0,"StandardVal":40.18,"ActualVal":40.18,"SoftVer":"","CheckTime":"2024-10-28 14:59:10"},{"ItemName":"CH1_2泄漏量","UpperLimits":100.0,"LowerLimits":-100.0,"StandardVal":0.0,"ActualVal":0.0,"SoftVer":"","CheckTime":"2024-10-28 14:59:10"},{"ItemName":"CH1_2流量值","UpperLimits":8.0,"LowerLimits":0.0,"StandardVal":3.23,"ActualVal":3.23,"SoftVer":"","CheckTime":"2024-10-28 14:59:10"}]}'
+
+出站上传结果    {"StatusCode":300,"Message":"条码【22240527C0261】重复过站。，扫描条码为：22240527C0261"}
+
+入站上传 http://192.168.2.53/api/Device/DeviceInspectData_check    '{"Main":{"LineNum":"8358973130285","BarCode":"22240527C4376","TranBarCode":"","BindBarCode":"","DeviceCode":"TSTMX-001-01","LineCode":"WAVE4","CommandCard":"CM2410260001","ProcessCode":"A2-100","NGCode":"","IsOnlyRecord":1,"IsPass":1,"CheckBy":"TSTMX-001-01","CheckTime":"2024-10-28 14:59:37"}}'
+
+入站上传结果    {"StatusCode":200,"Message":"扫描条码为：22240527C4376"}
+
+校验上传http://192.168.2.53/api/Device/DeviceStatusData    '{"DeviceCode":"TSTMX-001-01","LineCode":"WAVE4","StatusCode":10,"CheckTime":"2024-10-28 14:59:37"}'
+
+校验上传结果    {"StatusCode":200,"Message":""}
+
+出站上传http://192.168.2.53/api/Device/DeviceInspectData    '{"Main":{"LineNum":"8539519844362","BarCode":"21240522C3504","TranBarCode":"","BindBarCode":"","DeviceCode":"TSTMX-001-01","LineCode":"WAVE4","CommandCard":"CM2410260001","ProcessCode":"A2-100","NGCode":"A03-4","IsOnlyRecord":1,"IsPass":1,"CheckBy":"TSTMX-001-01","CheckTime":"2024-10-28 14:59:47"},"Detail":[{"ItemName":"CH2_1测试压力","UpperLimits":45.0,"LowerLimits":40.0,"StandardVal":40.19,"ActualVal":40.19,"SoftVer":"","CheckTime":"2024-10-28 14:59:47"},{"ItemName":"CH2_1泄漏量","UpperLimits":100.0,"LowerLimits":-100.0,"StandardVal":82.0,"ActualVal":82.0,"SoftVer":"","CheckTime":"2024-10-28 14:59:47"},{"ItemName":"CH2_1流量值","UpperLimits":8.0,"LowerLimits":0.0,"StandardVal":3.2,"ActualVal":3.2,"SoftVer":"","CheckTime":"2024-10-28 14:59:47"},{"ItemName":"CH2_2测试压力","UpperLimits":45.0,"LowerLimits":40.0,"StandardVal":40.14,"ActualVal":40.14,"SoftVer":"","CheckTime":"2024-10-28 14:59:47"},{"ItemName":"CH2_2泄漏量","UpperLimits":100.0,"LowerLimits":-100.0,"StandardVal":225.0,"ActualVal":225.0,"SoftVer":"","CheckTime":"2024-10-28 14:59:47"},{"ItemName":"CH2_2流量值","UpperLimits":8.0,"LowerLimits":0.0,"StandardVal":3.18,"ActualVal":3.18,"SoftVer":"","CheckTime":"2024-10-28 14:59:47"}]}'
+
+出站上传结果    {"StatusCode":300,"Message":"条码【21240522C3504】已做变更，变更后的条码为【′=:06Y4002011500000XP1356357712V951715589T0124299V2120049】。，扫描条码为：21240522C3504"}
+
+jinru
+
+出站上传http://192.168.2.53/api/Device/DeviceInspectData    '{"Main":{"LineNum":"8358973130285","BarCode":"22240527C4376","TranBarCode":"","BindBarCode":"","DeviceCode":"TSTMX-001-01","LineCode":"WAVE4","CommandCard":"CM2410260001","ProcessCode":"A2-100","NGCode":"A03-4","IsOnlyRecord":1,"IsPass":0,"CheckBy":"TSTMX-001-01","CheckTime":"2024-10-28 15:00:14"},"Detail":[{"ItemName":"CH1_1测试压力","UpperLimits":45.0,"LowerLimits":40.0,"StandardVal":39.39,"ActualVal":39.39,"SoftVer":"","CheckTime":"2024-10-28 15:00:14"},{"ItemName":"CH1_1泄漏量","UpperLimits":100.0,"LowerLimits":-100.0,"StandardVal":2000.0,"ActualVal":2000.0,"SoftVer":"","CheckTime":"2024-10-28 15:00:14"},{"ItemName":"CH1_1流量值","UpperLimits":8.0,"LowerLimits":0.0,"StandardVal":3.3,"ActualVal":3.3,"SoftVer":"","CheckTime":"2024-10-28 15:00:14"},{"ItemName":"CH1_2测试压力","UpperLimits":45.0,"LowerLimits":40.0,"StandardVal":40.72,"ActualVal":40.72,"SoftVer":"","CheckTime":"2024-10-28 15:00:14"},{"ItemName":"CH1_2泄漏量","UpperLimits":100.0,"LowerLimits":-100.0,"StandardVal":0.0,"ActualVal":0.0,"SoftVer":"","CheckTime":"2024-10-28 15:00:14"},{"ItemName":"CH1_2流量值","UpperLimits":8.0,"LowerLimits":0.0,"StandardVal":3.31,"ActualVal":3.31,"SoftVer":"","CheckTime":"2024-10-28 15:00:14"}]}'
+
+出站上传结果    {"StatusCode":200,"Message":"扫描条码为：22240527C4376"}
+
+入站上传 http://192.168.2.53/api/Device/DeviceInspectData_check    '{"Main":{"LineNum":"2104649896316","BarCode":"22240527C4376\r","TranBarCode":"","BindBarCode":"","DeviceCode":"TSTMX-001-01","LineCode":"WAVE4","CommandCard":"CM2410260001","ProcessCode":"A2-100","NGCode":"","IsOnlyRecord":1,"IsPass":1,"CheckBy":"TSTMX-001-01","CheckTime":"2024-10-28 15:00:32"}}'
+
+入站上传结果    {"StatusCode":200,"Message":"扫描条码为：22240527C4376\r"}
+
+校验上传http://192.168.2.53/api/Device/DeviceStatusData    '{"DeviceCode":"TSTMX-001-01","LineCode":"WAVE4","StatusCode":10,"CheckTime":"2024-10-28 15:00:32"}'
+
+校验上传结果    {"StatusCode":200,"Message":""}
+
+出站上传http://192.168.2.53/api/Device/DeviceInspectData    '{"Main":{"LineNum":"2104649896316","BarCode":"22240527C4376","TranBarCode":"","BindBarCode":"","DeviceCode":"TSTMX-001-01","LineCode":"WAVE4","CommandCard":"CM2410260001","ProcessCode":"A2-100","NGCode":"A03-4","IsOnlyRecord":1,"IsPass":0,"CheckBy":"TSTMX-001-01","CheckTime":"2024-10-28 15:00:56"},"Detail":[{"ItemName":"CH2_1测试压力","UpperLimits":45.0,"LowerLimits":40.0,"StandardVal":0.0,"ActualVal":0.0,"SoftVer":"","CheckTime":"2024-10-28 15:00:56"},{"ItemName":"CH2_1泄漏量","UpperLimits":100.0,"LowerLimits":-100.0,"StandardVal":0.0,"ActualVal":0.0,"SoftVer":"","CheckTime":"2024-10-28 15:00:56"},{"ItemName":"CH2_1流量值","UpperLimits":8.0,"LowerLimits":0.0,"StandardVal":3.17,"ActualVal":3.17,"SoftVer":"","CheckTime":"2024-10-28 15:00:56"},{"ItemName":"CH2_2测试压力","UpperLimits":45.0,"LowerLimits":40.0,"StandardVal":0.0,"ActualVal":0.0,"SoftVer":"","CheckTime":"2024-10-28 15:00:56"},{"ItemName":"CH2_2泄漏量","UpperLimits":100.0,"LowerLimits":-100.0,"StandardVal":0.0,"ActualVal":0.0,"SoftVer":"","CheckTime":"2024-10-28 15:00:56"},{"ItemName":"CH2_2流量值","UpperLimits":8.0,"LowerLimits":0.0,"StandardVal":3.22,"ActualVal":3.22,"SoftVer":"","CheckTime":"2024-10-28 15:00:56"}]}'
+
+出站上传结果    {"StatusCode":200,"Message":"扫描条码为：22240527C4376"}
+
+入站上传 http://192.168.2.53/api/Device/DeviceInspectData_check    '{"Main":{"LineNum":"8696391499925","BarCode":"21240525C5210","TranBarCode":"","BindBarCode":"","DeviceCode":"TSTMX-001-01","LineCode":"WAVE4","CommandCard":"CM2410260001","ProcessCode":"A2-100","NGCode":"","IsOnlyRecord":1,"IsPass":1,"CheckBy":"TSTMX-001-01","CheckTime":"2024-10-28 15:01:21"}}'
+
+入站上传结果    {"StatusCode":200,"Message":"扫描条码为：21240525C5210"}
+
+校验上传http://192.168.2.53/api/Device/DeviceStatusData    '{"DeviceCode":"TSTMX-001-01","LineCode":"WAVE4","StatusCode":10,"CheckTime":"2024-10-28 15:01:21"}'
+
+校验上传结果    {"StatusCode":200,"Message":""}
+
+jinru
+
+出站上传http://192.168.2.53/api/Device/DeviceInspectData    '{"Main":{"LineNum":"8696391499925","BarCode":"21240525C5210","TranBarCode":"","BindBarCode":"","DeviceCode":"TSTMX-001-01","LineCode":"WAVE4","CommandCard":"CM2410260001","ProcessCode":"A2-100","NGCode":"A03-4","IsOnlyRecord":1,"IsPass":0,"CheckBy":"TSTMX-001-01","CheckTime":"2024-10-28 15:01:59"},"Detail":[{"ItemName":"CH1_1测试压力","UpperLimits":45.0,"LowerLimits":40.0,"StandardVal":39.44,"ActualVal":39.44,"SoftVer":"","CheckTime":"2024-10-28 15:01:59"},{"ItemName":"CH1_1泄漏量","UpperLimits":100.0,"LowerLimits":-100.0,"StandardVal":2000.0,"ActualVal":2000.0,"SoftVer":"","CheckTime":"2024-10-28 15:01:59"},{"ItemName":"CH1_1流量值","UpperLimits":8.0,"LowerLimits":0.0,"StandardVal":3.12,"ActualVal":3.12,"SoftVer":"","CheckTime":"2024-10-28 15:01:59"},{"ItemName":"CH1_2测试压力","UpperLimits":45.0,"LowerLimits":40.0,"StandardVal":40.46,"ActualVal":40.46,"SoftVer":"","CheckTime":"2024-10-28 15:01:59"},{"ItemName":"CH1_2泄漏量","UpperLimits":100.0,"LowerLimits":-100.0,"StandardVal":0.0,"ActualVal":0.0,"SoftVer":"","CheckTime":"2024-10-28 15:01:59"},{"ItemName":"CH1_2流量值","UpperLimits":8.0,"LowerLimits":0.0,"StandardVal":3.45,"ActualVal":3.45,"SoftVer":"","CheckTime":"2024-10-28 15:01:59"}]}'
+
+出站上传结果    {"StatusCode":200,"Message":"扫描条码为：21240525C5210"}
+
+入站上传 http://192.168.2.53/api/Device/DeviceInspectData_check    '{"Main":{"LineNum":"1893346593199","BarCode":"1724042730735","TranBarCode":"","BindBarCode":"","DeviceCode":"TSTMX-001-01","LineCode":"WAVE4","CommandCard":"CM2410260001","ProcessCode":"A2-100","NGCode":"","IsOnlyRecord":1,"IsPass":1,"CheckBy":"TSTMX-001-01","CheckTime":"2024-10-28 15:02:23"}}'
+
+入站上传结果    {"StatusCode":200,"Message":"扫描条码为：1724042730735"}
+
+校验上传http://192.168.2.53/api/Device/DeviceStatusData    '{"DeviceCode":"TSTMX-001-01","LineCode":"WAVE4","StatusCode":10,"CheckTime":"2024-10-28 15:02:23"}'
+
+校验上传结果    {"StatusCode":200,"Message":""}
+
+jinru
+
+出站上传http://192.168.2.53/api/Device/DeviceInspectData    '{"Main":{"LineNum":"1893346593199","BarCode":"1724042730735","TranBarCode":"","BindBarCode":"","DeviceCode":"TSTMX-001-01","LineCode":"WAVE4","CommandCard":"CM2410260001","ProcessCode":"A2-100","NGCode":"A03-4","IsOnlyRecord":1,"IsPass":0,"CheckBy":"TSTMX-001-01","CheckTime":"2024-10-28 15:02:55"},"Detail":[{"ItemName":"CH1_1测试压力","UpperLimits":45.0,"LowerLimits":40.0,"StandardVal":0.0,"ActualVal":0.0,"SoftVer":"","CheckTime":"2024-10-28 15:02:55"},{"ItemName":"CH1_1泄漏量","UpperLimits":100.0,"LowerLimits":-100.0,"StandardVal":0.0,"ActualVal":0.0,"SoftVer":"","CheckTime":"2024-10-28 15:02:55"},{"ItemName":"CH1_1流量值","UpperLimits":8.0,"LowerLimits":0.0,"StandardVal":0.0,"ActualVal":0.0,"SoftVer":"","CheckTime":"2024-10-28 15:02:55"},{"ItemName":"CH1_2测试压力","UpperLimits":45.0,"LowerLimits":40.0,"StandardVal":0.0,"ActualVal":0.0,"SoftVer":"","CheckTime":"2024-10-28 15:02:55"},{"ItemName":"CH1_2泄漏量","UpperLimits":100.0,"LowerLimits":-100.0,"StandardVal":0.0,"ActualVal":0.0,"SoftVer":"","CheckTime":"2024-10-28 15:02:55"},{"ItemName":"CH1_2流量值","UpperLimits":8.0,"LowerLimits":0.0,"StandardVal":0.0,"ActualVal":0.0,"SoftVer":"","CheckTime":"2024-10-28 15:02:55"}]}'
+
+出站上传结果    {"StatusCode":200,"Message":"扫描条码为：1724042730735"}
+
+入站上传 http://192.168.2.53/api/Device/DeviceInspectData_check    '{"Main":{"LineNum":"5522390445937","BarCode":"1724042730735","TranBarCode":"","BindBarCode":"","DeviceCode":"TSTMX-001-01","LineCode":"WAVE4","CommandCard":"CM2410260001","ProcessCode":"A2-100","NGCode":"","IsOnlyRecord":1,"IsPass":1,"CheckBy":"TSTMX-001-01","CheckTime":"2024-10-28 15:03:21"}}'
+
+入站上传结果    {"StatusCode":200,"Message":"扫描条码为：1724042730735"}
+
+校验上传http://192.168.2.53/api/Device/DeviceStatusData    '{"DeviceCode":"TSTMX-001-01","LineCode":"WAVE4","StatusCode":10,"CheckTime":"2024-10-28 15:03:21"}'
+
+校验上传结果    {"StatusCode":200,"Message":""}
+
+jinru
+
+出站上传http://192.168.2.53/api/Device/DeviceInspectData    '{"Main":{"LineNum":"5522390445937","BarCode":"1724042730735","TranBarCode":"","BindBarCode":"","DeviceCode":"TSTMX-001-01","LineCode":"WAVE4","CommandCard":"CM2410260001","ProcessCode":"A2-100","NGCode":"A03-4","IsOnlyRecord":1,"IsPass":0,"CheckBy":"TSTMX-001-01","CheckTime":"2024-10-28 15:03:44"},"Detail":[{"ItemName":"CH1_1测试压力","UpperLimits":45.0,"LowerLimits":40.0,"StandardVal":0.0,"ActualVal":0.0,"SoftVer":"","CheckTime":"2024-10-28 15:03:44"},{"ItemName":"CH1_1泄漏量","UpperLimits":100.0,"LowerLimits":-100.0,"StandardVal":0.0,"ActualVal":0.0,"SoftVer":"","CheckTime":"2024-10-28 15:03:44"},{"ItemName":"CH1_1流量值","UpperLimits":8.0,"LowerLimits":0.0,"StandardVal":0.0,"ActualVal":0.0,"SoftVer":"","CheckTime":"2024-10-28 15:03:44"},{"ItemName":"CH1_2测试压力","UpperLimits":45.0,"LowerLimits":40.0,"StandardVal":0.0,"ActualVal":0.0,"SoftVer":"","CheckTime":"2024-10-28 15:03:44"},{"ItemName":"CH1_2泄漏量","UpperLimits":100.0,"LowerLimits":-100.0,"StandardVal":0.0,"ActualVal":0.0,"SoftVer":"","CheckTime":"2024-10-28 15:03:44"},{"ItemName":"CH1_2流量值","UpperLimits":8.0,"LowerLimits":0.0,"StandardVal":0.0,"ActualVal":0.0,"SoftVer":"","CheckTime":"2024-10-28 15:03:44"}]}'
+
+出站上传结果    {"StatusCode":200,"Message":"扫描条码为：1724042730735"}
+
+入站上传 http://192.168.2.53/api/Device/DeviceInspectData_check    '{"Main":{"LineNum":"2153092313629","BarCode":"1724042730735","TranBarCode":"","BindBarCode":"","DeviceCode":"TSTMX-001-01","LineCode":"WAVE4","CommandCard":"CM2410260001","ProcessCode":"A2-100","NGCode":"","IsOnlyRecord":1,"IsPass":1,"CheckBy":"TSTMX-001-01","CheckTime":"2024-10-28 15:04:15"}}'
+
+入站上传结果    {"StatusCode":200,"Message":"扫描条码为：1724042730735"}
+
+校验上传http://192.168.2.53/api/Device/DeviceStatusData    '{"DeviceCode":"TSTMX-001-01","LineCode":"WAVE4","StatusCode":10,"CheckTime":"2024-10-28 15:04:15"}'
+
+校验上传结果    {"StatusCode":200,"Message":""}
+
+jinru
+
+出站上传http://192.168.2.53/api/Device/DeviceInspectData    '{"Main":{"LineNum":"2153092313629","BarCode":"1724042730735","TranBarCode":"","BindBarCode":"","DeviceCode":"TSTMX-001-01","LineCode":"WAVE4","CommandCard":"CM2410260001","ProcessCode":"A2-100","NGCode":"A03-4","IsOnlyRecord":1,"IsPass":0,"CheckBy":"TSTMX-001-01","CheckTime":"2024-10-28 15:04:37"},"Detail":[{"ItemName":"CH1_1测试压力","UpperLimits":45.0,"LowerLimits":40.0,"StandardVal":0.0,"ActualVal":0.0,"SoftVer":"","CheckTime":"2024-10-28 15:04:37"},{"ItemName":"CH1_1泄漏量","UpperLimits":100.0,"LowerLimits":-100.0,"StandardVal":0.0,"ActualVal":0.0,"SoftVer":"","CheckTime":"2024-10-28 15:04:37"},{"ItemName":"CH1_1流量值","UpperLimits":8.0,"LowerLimits":0.0,"StandardVal":0.0,"ActualVal":0.0,"SoftVer":"","CheckTime":"2024-10-28 15:04:37"},{"ItemName":"CH1_2测试压力","UpperLimits":45.0,"LowerLimits":40.0,"StandardVal":0.0,"ActualVal":0.0,"SoftVer":"","CheckTime":"2024-10-28 15:04:37"},{"ItemName":"CH1_2泄漏量","UpperLimits":100.0,"LowerLimits":-100.0,"StandardVal":0.0,"ActualVal":0.0,"SoftVer":"","CheckTime":"2024-10-28 15:04:37"},{"ItemName":"CH1_2流量值","UpperLimits":8.0,"LowerLimits":0.0,"StandardVal":0.0,"ActualVal":0.0,"SoftVer":"","CheckTime":"2024-10-28 15:04:37"}]}'
+
+出站上传结果    {"StatusCode":200,"Message":"扫描条码为：1724042730735"}
+
+入站上传 http://192.168.2.53/api/Device/DeviceInspectData_check    '{"Main":{"LineNum":"9411017510765","BarCode":"18240430C4952","TranBarCode":"","BindBarCode":"","DeviceCode":"TSTMX-001-01","LineCode":"WAVE4","CommandCard":"CM2410260001","ProcessCode":"A2-100","NGCode":"","IsOnlyRecord":1,"IsPass":1,"CheckBy":"TSTMX-001-01","CheckTime":"2024-10-28 15:04:53"}}'
+
+入站上传结果    {"StatusCode":200,"Message":"扫描条码为：18240430C4952"}
+
+校验上传http://192.168.2.53/api/Device/DeviceStatusData    '{"DeviceCode":"TSTMX-001-01","LineCode":"WAVE4","StatusCode":10,"CheckTime":"2024-10-28 15:04:53"}'
+
+校验上传结果    {"StatusCode":200,"Message":""}
+
+jinru
+
+出站上传http://192.168.2.53/api/Device/DeviceInspectData    '{"Main":{"LineNum":"9411017510765","BarCode":"18240430C4952","TranBarCode":"","BindBarCode":"","DeviceCode":"TSTMX-001-01","LineCode":"WAVE4","CommandCard":"CM2410260001","ProcessCode":"A2-100","NGCode":"A03-4","IsOnlyRecord":1,"IsPass":0,"CheckBy":"TSTMX-001-01","CheckTime":"2024-10-28 15:05:33"},"Detail":[{"ItemName":"CH1_1测试压力","UpperLimits":45.0,"LowerLimits":40.0,"StandardVal":39.92,"ActualVal":39.92,"SoftVer":"","CheckTime":"2024-10-28 15:05:33"},{"ItemName":"CH1_1泄漏量","UpperLimits":100.0,"LowerLimits":-100.0,"StandardVal":2000.0,"ActualVal":2000.0,"SoftVer":"","CheckTime":"2024-10-28 15:05:33"},{"ItemName":"CH1_1流量值","UpperLimits":8.0,"LowerLimits":0.0,"StandardVal":3.18,"ActualVal":3.18,"SoftVer":"","CheckTime":"2024-10-28 15:05:33"},{"ItemName":"CH1_2测试压力","UpperLimits":45.0,"LowerLimits":40.0,"StandardVal":40.95,"ActualVal":40.95,"SoftVer":"","CheckTime":"2024-10-28 15:05:33"},{"ItemName":"CH1_2泄漏量","UpperLimits":100.0,"LowerLimits":-100.0,"StandardVal":0.0,"ActualVal":0.0,"SoftVer":"","CheckTime":"2024-10-28 15:05:33"},{"ItemName":"CH1_2流量值","UpperLimits":8.0,"LowerLimits":0.0,"StandardVal":3.57,"ActualVal":3.57,"SoftVer":"","CheckTime":"2024-10-28 15:05:33"}]}'
+
+出站上传结果    {"StatusCode":200,"Message":"扫描条码为：18240430C4952"}
+
+入站上传 http://192.168.2.53/api/Device/DeviceInspectData_check    '{"Main":{"LineNum":"6033877722469","BarCode":"21240525C0109\r","TranBarCode":"","BindBarCode":"","DeviceCode":"TSTMX-001-01","LineCode":"WAVE4","CommandCard":"CM2410260001","ProcessCode":"A2-100","NGCode":"","IsOnlyRecord":1,"IsPass":1,"CheckBy":"TSTMX-001-01","CheckTime":"2024-10-28 15:25:09"}}'
+
+入站上传结果    {"StatusCode":200,"Message":"扫描条码为：21240525C0109\r"}
+
+校验上传http://192.168.2.53/api/Device/DeviceStatusData    '{"DeviceCode":"TSTMX-001-01","LineCode":"WAVE4","StatusCode":10,"CheckTime":"2024-10-28 15:25:09"}'
+
+校验上传结果    {"StatusCode":200,"Message":""}
+
+入站上传 http://192.168.2.53/api/Device/DeviceInspectData_check    '{"Main":{"LineNum":"6184869187970","BarCode":"21240525C0109\r","TranBarCode":"","BindBarCode":"","DeviceCode":"TSTMX-001-01","LineCode":"WAVE4","CommandCard":"CM2410260001","ProcessCode":"A2-100","NGCode":"","IsOnlyRecord":1,"IsPass":1,"CheckBy":"TSTMX-001-01","CheckTime":"2024-10-28 15:25:37"}}'
+
+入站上传结果    {"StatusCode":200,"Message":"扫描条码为：21240525C0109\r"}
+
+校验上传http://192.168.2.53/api/Device/DeviceStatusData    '{"DeviceCode":"TSTMX-001-01","LineCode":"WAVE4","StatusCode":10,"CheckTime":"2024-10-28 15:25:37"}'
+
+校验上传结果    {"StatusCode":200,"Message":""}
+
+入站上传 http://192.168.2.53/api/Device/DeviceInspectData_check    '{"Main":{"LineNum":"2053315169202","BarCode":"21240525C0109\r","TranBarCode":"","BindBarCode":"","DeviceCode":"TSTMX-001-01","LineCode":"WAVE4","CommandCard":"CM2410260001","ProcessCode":"A2-100","NGCode":"","IsOnlyRecord":1,"IsPass":1,"CheckBy":"TSTMX-001-01","CheckTime":"2024-10-28 15:25:41"}}'
+
+入站上传结果    {"StatusCode":200,"Message":"扫描条码为：21240525C0109\r"}
+
+校验上传http://192.168.2.53/api/Device/DeviceStatusData    '{"DeviceCode":"TSTMX-001-01","LineCode":"WAVE4","StatusCode":10,"CheckTime":"2024-10-28 15:25:41"}'
+
+校验上传结果    {"StatusCode":200,"Message":""}
+
+入站上传 http://192.168.2.53/api/Device/DeviceInspectData_check    '{"Main":{"LineNum":"6052981919633","BarCode":"21240525C0109\r","TranBarCode":"","BindBarCode":"","DeviceCode":"TSTMX-001-01","LineCode":"WAVE4","CommandCard":"CM2410260001","ProcessCode":"A2-100","NGCode":"","IsOnlyRecord":1,"IsPass":1,"CheckBy":"TSTMX-001-01","CheckTime":"2024-10-28 15:26:20"}}'
+
+入站上传结果    {"StatusCode":200,"Message":"扫描条码为：21240525C0109\r"}
+
+校验上传http://192.168.2.53/api/Device/DeviceStatusData    '{"DeviceCode":"TSTMX-001-01","LineCode":"WAVE4","StatusCode":10,"CheckTime":"2024-10-28 15:26:20"}'
+
+校验上传结果    {"StatusCode":200,"Message":""}
+
+入站上传 http://192.168.2.53/api/Device/DeviceInspectData_check    '{"Main":{"LineNum":"2294661245911","BarCode":"21240525C0109\r","TranBarCode":"","BindBarCode":"","DeviceCode":"TSTMX-001-01","LineCode":"WAVE4","CommandCard":"CM2410260001","ProcessCode":"A2-100","NGCode":"","IsOnlyRecord":1,"IsPass":1,"CheckBy":"TSTMX-001-01","CheckTime":"2024-10-28 15:26:23"}}'
+
+入站上传结果    {"StatusCode":200,"Message":"扫描条码为：21240525C0109\r"}
+
+校验上传http://192.168.2.53/api/Device/DeviceStatusData    '{"DeviceCode":"TSTMX-001-01","LineCode":"WAVE4","StatusCode":10,"CheckTime":"2024-10-28 15:26:23"}'
+
+校验上传结果    {"StatusCode":200,"Message":""}
+
+入站上传 http://192.168.2.53/api/Device/DeviceInspectData_check    '{"Main":{"LineNum":"2170560061545","BarCode":"21240525C0109\r","TranBarCode":"","BindBarCode":"","DeviceCode":"TSTMX-001-01","LineCode":"WAVE4","CommandCard":"CM2410260001","ProcessCode":"A2-100","NGCode":"","IsOnlyRecord":1,"IsPass":1,"CheckBy":"TSTMX-001-01","CheckTime":"2024-10-28 15:29:27"}}'
+
+入站上传结果    {"StatusCode":200,"Message":"扫描条码为：21240525C0109\r"}
+
+校验上传http://192.168.2.53/api/Device/DeviceStatusData    '{"DeviceCode":"TSTMX-001-01","LineCode":"WAVE4","StatusCode":10,"CheckTime":"2024-10-28 15:29:27"}'
+
+校验上传结果    {"StatusCode":200,"Message":""}
+
+出站上传http://192.168.2.53/api/Device/DeviceInspectData    '{"Main":{"LineNum":"2170560061545","BarCode":"21240525C0109","TranBarCode":"","BindBarCode":"","DeviceCode":"TSTMX-001-01","LineCode":"WAVE4","CommandCard":"CM2410260001","ProcessCode":"A2-100","NGCode":"A03-4","IsOnlyRecord":1,"IsPass":1,"CheckBy":"TSTMX-001-01","CheckTime":"2024-10-28 15:30:20"},"Detail":[{"ItemName":"CH2_1测试压力","UpperLimits":45.0,"LowerLimits":40.0,"StandardVal":41.17,"ActualVal":41.17,"SoftVer":"","CheckTime":"2024-10-28 15:30:20"},{"ItemName":"CH2_1泄漏量","UpperLimits":100.0,"LowerLimits":-100.0,"StandardVal":67.0,"ActualVal":67.0,"SoftVer":"","CheckTime":"2024-10-28 15:30:20"},{"ItemName":"CH2_1流量值","UpperLimits":8.0,"LowerLimits":0.0,"StandardVal":3.27,"ActualVal":3.27,"SoftVer":"","CheckTime":"2024-10-28 15:30:20"},{"ItemName":"CH2_2测试压力","UpperLimits":45.0,"LowerLimits":40.0,"StandardVal":41.18,"ActualVal":41.18,"SoftVer":"","CheckTime":"2024-10-28 15:30:20"},{"ItemName":"CH2_2泄漏量","UpperLimits":100.0,"LowerLimits":-100.0,"StandardVal":48.0,"ActualVal":48.0,"SoftVer":"","CheckTime":"2024-10-28 15:30:20"},{"ItemName":"CH2_2流量值","UpperLimits":8.0,"LowerLimits":0.0,"StandardVal":3.17,"ActualVal":3.17,"SoftVer":"","CheckTime":"2024-10-28 15:30:20"}]}'
+
+出站上传结果    {"StatusCode":200,"Message":"扫描条码为：21240525C0109"}
+
+入站上传 http://192.168.2.53/api/Device/DeviceInspectData_check    '{"Main":{"LineNum":"3734861106022","BarCode":"21240525C4784\r","TranBarCode":"","BindBarCode":"","DeviceCode":"TSTMX-001-01","LineCode":"WAVE4","CommandCard":"CM2410260001","ProcessCode":"A2-100","NGCode":"","IsOnlyRecord":1,"IsPass":1,"CheckBy":"TSTMX-001-01","CheckTime":"2024-10-28 15:31:12"}}'
+
+入站上传结果    {"StatusCode":200,"Message":"扫描条码为：21240525C4784\r"}
+
+校验上传http://192.168.2.53/api/Device/DeviceStatusData    '{"DeviceCode":"TSTMX-001-01","LineCode":"WAVE4","StatusCode":10,"CheckTime":"2024-10-28 15:31:12"}'
+
+校验上传结果    {"StatusCode":200,"Message":""}
+
+出站上传http://192.168.2.53/api/Device/DeviceInspectData    '{"Main":{"LineNum":"3734861106022","BarCode":"21240525C4784","TranBarCode":"","BindBarCode":"","DeviceCode":"TSTMX-001-01","LineCode":"WAVE4","CommandCard":"CM2410260001","ProcessCode":"A2-100","NGCode":"A03-4","IsOnlyRecord":1,"IsPass":1,"CheckBy":"TSTMX-001-01","CheckTime":"2024-10-28 15:32:05"},"Detail":[{"ItemName":"CH2_1测试压力","UpperLimits":45.0,"LowerLimits":40.0,"StandardVal":41.59,"ActualVal":41.59,"SoftVer":"","CheckTime":"2024-10-28 15:32:05"},{"ItemName":"CH2_1泄漏量","UpperLimits":100.0,"LowerLimits":-100.0,"StandardVal":93.0,"ActualVal":93.0,"SoftVer":"","CheckTime":"2024-10-28 15:32:05"},{"ItemName":"CH2_1流量值","UpperLimits":8.0,"LowerLimits":0.0,"StandardVal":3.35,"ActualVal":3.35,"SoftVer":"","CheckTime":"2024-10-28 15:32:05"},{"ItemName":"CH2_2测试压力","UpperLimits":45.0,"LowerLimits":40.0,"StandardVal":41.75,"ActualVal":41.75,"SoftVer":"","CheckTime":"2024-10-28 15:32:05"},{"ItemName":"CH2_2泄漏量","UpperLimits":100.0,"LowerLimits":-100.0,"StandardVal":26.0,"ActualVal":26.0,"SoftVer":"","CheckTime":"2024-10-28 15:32:05"},{"ItemName":"CH2_2流量值","UpperLimits":8.0,"LowerLimits":0.0,"StandardVal":3.03,"ActualVal":3.03,"SoftVer":"","CheckTime":"2024-10-28 15:32:05"}]}'
+
+出站上传结果    {"StatusCode":200,"Message":"扫描条码为：21240525C4784"}
+
+入站上传 http://192.168.2.53/api/Device/DeviceInspectData_check    '{"Main":{"LineNum":"5470838690395","BarCode":"21240525C4781\r","TranBarCode":"","BindBarCode":"","DeviceCode":"TSTMX-001-01","LineCode":"WAVE4","CommandCard":"CM2410260001","ProcessCode":"A2-100","NGCode":"","IsOnlyRecord":1,"IsPass":1,"CheckBy":"TSTMX-001-01","CheckTime":"2024-10-28 15:32:19"}}'
+
+入站上传结果    {"StatusCode":200,"Message":"扫描条码为：21240525C4781\r"}
+
+校验上传http://192.168.2.53/api/Device/DeviceStatusData    '{"DeviceCode":"TSTMX-001-01","LineCode":"WAVE4","StatusCode":10,"CheckTime":"2024-10-28 15:32:19"}'
+
+校验上传结果    {"StatusCode":200,"Message":""}
+
+出站上传http://192.168.2.53/api/Device/DeviceInspectData    '{"Main":{"LineNum":"5470838690395","BarCode":"21240525C4781","TranBarCode":"","BindBarCode":"","DeviceCode":"TSTMX-001-01","LineCode":"WAVE4","CommandCard":"CM2410260001","ProcessCode":"A2-100","NGCode":"A03-4","IsOnlyRecord":1,"IsPass":1,"CheckBy":"TSTMX-001-01","CheckTime":"2024-10-28 15:33:11"},"Detail":[{"ItemName":"CH2_1测试压力","UpperLimits":45.0,"LowerLimits":40.0,"StandardVal":40.16,"ActualVal":40.16,"SoftVer":"","CheckTime":"2024-10-28 15:33:11"},{"ItemName":"CH2_1泄漏量","UpperLimits":100.0,"LowerLimits":-100.0,"StandardVal":344.0,"ActualVal":344.0,"SoftVer":"","CheckTime":"2024-10-28 15:33:11"},{"ItemName":"CH2_1流量值","UpperLimits":8.0,"LowerLimits":0.0,"StandardVal":3.37,"ActualVal":3.37,"SoftVer":"","CheckTime":"2024-10-28 15:33:11"},{"ItemName":"CH2_2测试压力","UpperLimits":45.0,"LowerLimits":40.0,"StandardVal":40.21,"ActualVal":40.21,"SoftVer":"","CheckTime":"2024-10-28 15:33:11"},{"ItemName":"CH2_2泄漏量","UpperLimits":100.0,"LowerLimits":-100.0,"StandardVal":111.0,"ActualVal":111.0,"SoftVer":"","CheckTime":"2024-10-28 15:33:11"},{"ItemName":"CH2_2流量值","UpperLimits":8.0,"LowerLimits":0.0,"StandardVal":2.78,"ActualVal":2.78,"SoftVer":"","CheckTime":"2024-10-28 15:33:11"}]}'
+
+出站上传结果    {"StatusCode":200,"Message":"扫描条码为：21240525C4781"}
+
+入站上传 http://192.168.2.53/api/Device/DeviceInspectData_check    '{"Main":{"LineNum":"8415461814224","BarCode":"21240525C0108\r","TranBarCode":"","BindBarCode":"","DeviceCode":"TSTMX-001-01","LineCode":"WAVE4","CommandCard":"CM2410260001","ProcessCode":"A2-100","NGCode":"","IsOnlyRecord":1,"IsPass":1,"CheckBy":"TSTMX-001-01","CheckTime":"2024-10-28 15:33:35"}}'
+
+入站上传结果    {"StatusCode":200,"Message":"扫描条码为：21240525C0108\r"}
+
+校验上传http://192.168.2.53/api/Device/DeviceStatusData    '{"DeviceCode":"TSTMX-001-01","LineCode":"WAVE4","StatusCode":10,"CheckTime":"2024-10-28 15:33:35"}'
+
+校验上传结果    {"StatusCode":200,"Message":""}
+
+出站上传http://192.168.2.53/api/Device/DeviceInspectData    '{"Main":{"LineNum":"8415461814224","BarCode":"21240525C0108","TranBarCode":"","BindBarCode":"","DeviceCode":"TSTMX-001-01","LineCode":"WAVE4","CommandCard":"CM2410260001","ProcessCode":"A2-100","NGCode":"A03-4","IsOnlyRecord":1,"IsPass":1,"CheckBy":"TSTMX-001-01","CheckTime":"2024-10-28 15:34:27"},"Detail":[{"ItemName":"CH2_1测试压力","UpperLimits":45.0,"LowerLimits":40.0,"StandardVal":42.0,"ActualVal":42.0,"SoftVer":"","CheckTime":"2024-10-28 15:34:27"},{"ItemName":"CH2_1泄漏量","UpperLimits":100.0,"LowerLimits":-100.0,"StandardVal":56.0,"ActualVal":56.0,"SoftVer":"","CheckTime":"2024-10-28 15:34:27"},{"ItemName":"CH2_1流量值","UpperLimits":8.0,"LowerLimits":0.0,"StandardVal":3.17,"ActualVal":3.17,"SoftVer":"","CheckTime":"2024-10-28 15:34:27"},{"ItemName":"CH2_2测试压力","UpperLimits":45.0,"LowerLimits":40.0,"StandardVal":41.77,"ActualVal":41.77,"SoftVer":"","CheckTime":"2024-10-28 15:34:27"},{"ItemName":"CH2_2泄漏量","UpperLimits":100.0,"LowerLimits":-100.0,"StandardVal":73.0,"ActualVal":73.0,"SoftVer":"","CheckTime":"2024-10-28 15:34:27"},{"ItemName":"CH2_2流量值","UpperLimits":8.0,"LowerLimits":0.0,"StandardVal":3.13,"ActualVal":3.13,"SoftVer":"","CheckTime":"2024-10-28 15:34:27"}]}'
+
+出站上传结果    {"StatusCode":200,"Message":"扫描条码为：21240525C0108"}
+
+入站上传 http://192.168.2.53/api/Device/DeviceInspectData_check    '{"Main":{"LineNum":"4763284948078","BarCode":"21240525C0107\r","TranBarCode":"","BindBarCode":"","DeviceCode":"TSTMX-001-01","LineCode":"WAVE4","CommandCard":"CM2410260001","ProcessCode":"A2-100","NGCode":"","IsOnlyRecord":1,"IsPass":1,"CheckBy":"TSTMX-001-01","CheckTime":"2024-10-28 15:34:44"}}'
+
+入站上传结果    {"StatusCode":200,"Message":"扫描条码为：21240525C0107\r"}
+
+校验上传http://192.168.2.53/api/Device/DeviceStatusData    '{"DeviceCode":"TSTMX-001-01","LineCode":"WAVE4","StatusCode":10,"CheckTime":"2024-10-28 15:34:44"}'
+
+校验上传结果    {"StatusCode":200,"Message":""}
+
+出站上传http://192.168.2.53/api/Device/DeviceInspectData    '{"Main":{"LineNum":"4763284948078","BarCode":"21240525C0107","TranBarCode":"","BindBarCode":"","DeviceCode":"TSTMX-001-01","LineCode":"WAVE4","CommandCard":"CM2410260001","ProcessCode":"A2-100","NGCode":"A03-4","IsOnlyRecord":1,"IsPass":1,"CheckBy":"TSTMX-001-01","CheckTime":"2024-10-28 15:35:37"},"Detail":[{"ItemName":"CH2_1测试压力","UpperLimits":45.0,"LowerLimits":40.0,"StandardVal":40.22,"ActualVal":40.22,"SoftVer":"","CheckTime":"2024-10-28 15:35:37"},{"ItemName":"CH2_1泄漏量","UpperLimits":100.0,"LowerLimits":-100.0,"StandardVal":136.0,"ActualVal":136.0,"SoftVer":"","CheckTime":"2024-10-28 15:35:37"},{"ItemName":"CH2_1流量值","UpperLimits":8.0,"LowerLimits":0.0,"StandardVal":3.26,"ActualVal":3.26,"SoftVer":"","CheckTime":"2024-10-28 15:35:37"},{"ItemName":"CH2_2测试压力","UpperLimits":45.0,"LowerLimits":40.0,"StandardVal":40.42,"ActualVal":40.42,"SoftVer":"","CheckTime":"2024-10-28 15:35:37"},{"ItemName":"CH2_2泄漏量","UpperLimits":100.0,"LowerLimits":-100.0,"StandardVal":76.0,"ActualVal":76.0,"SoftVer":"","CheckTime":"2024-10-28 15:35:37"},{"ItemName":"CH2_2流量值","UpperLimits":8.0,"LowerLimits":0.0,"StandardVal":3.1,"ActualVal":3.1,"SoftVer":"","CheckTime":"2024-10-28 15:35:37"}]}'
+
+出站上传结果    {"StatusCode":200,"Message":"扫描条码为：21240525C0107"}
+
+入站上传 http://192.168.2.53/api/Device/DeviceInspectData_check    '{"Main":{"LineNum":"9733024116946","BarCode":"21240525C3608\r","TranBarCode":"","BindBarCode":"","DeviceCode":"TSTMX-001-01","LineCode":"WAVE4","CommandCard":"CM2410260001","ProcessCode":"A2-100","NGCode":"","IsOnlyRecord":1,"IsPass":1,"CheckBy":"TSTMX-001-01","CheckTime":"2024-10-28 15:36:24"}}'
+
+入站上传结果    {"StatusCode":200,"Message":"扫描条码为：21240525C3608\r"}
+
+校验上传http://192.168.2.53/api/Device/DeviceStatusData    '{"DeviceCode":"TSTMX-001-01","LineCode":"WAVE4","StatusCode":10,"CheckTime":"2024-10-28 15:36:24"}'
+
+校验上传结果    {"StatusCode":200,"Message":""}
+
+出站上传http://192.168.2.53/api/Device/DeviceInspectData    '{"Main":{"LineNum":"9733024116946","BarCode":"21240525C3608","TranBarCode":"","BindBarCode":"","DeviceCode":"TSTMX-001-01","LineCode":"WAVE4","CommandCard":"CM2410260001","ProcessCode":"A2-100","NGCode":"A03-4","IsOnlyRecord":1,"IsPass":1,"CheckBy":"TSTMX-001-01","CheckTime":"2024-10-28 15:37:16"},"Detail":[{"ItemName":"CH2_1测试压力","UpperLimits":45.0,"LowerLimits":40.0,"StandardVal":41.08,"ActualVal":41.08,"SoftVer":"","CheckTime":"2024-10-28 15:37:16"},{"ItemName":"CH2_1泄漏量","UpperLimits":100.0,"LowerLimits":-100.0,"StandardVal":348.0,"ActualVal":348.0,"SoftVer":"","CheckTime":"2024-10-28 15:37:16"},{"ItemName":"CH2_1流量值","UpperLimits":8.0,"LowerLimits":0.0,"StandardVal":2.95,"ActualVal":2.95,"SoftVer":"","CheckTime":"2024-10-28 15:37:16"},{"ItemName":"CH2_2测试压力","UpperLimits":45.0,"LowerLimits":40.0,"StandardVal":40.76,"ActualVal":40.76,"SoftVer":"","CheckTime":"2024-10-28 15:37:16"},{"ItemName":"CH2_2泄漏量","UpperLimits":100.0,"LowerLimits":-100.0,"StandardVal":202.0,"ActualVal":202.0,"SoftVer":"","CheckTime":"2024-10-28 15:37:16"},{"ItemName":"CH2_2流量值","UpperLimits":8.0,"LowerLimits":0.0,"StandardVal":3.24,"ActualVal":3.24,"SoftVer":"","CheckTime":"2024-10-28 15:37:16"}]}'
+
+出站上传结果    {"StatusCode":200,"Message":"扫描条码为：21240525C3608"}
+
+入站上传 http://192.168.2.53/api/Device/DeviceInspectData_check    '{"Main":{"LineNum":"5796062623055","BarCode":"21240525C3226\r","TranBarCode":"","BindBarCode":"","DeviceCode":"TSTMX-001-01","LineCode":"WAVE4","CommandCard":"CM2410260001","ProcessCode":"A2-100","NGCode":"","IsOnlyRecord":1,"IsPass":1,"CheckBy":"TSTMX-001-01","CheckTime":"2024-10-28 15:37:32"}}'
+
+入站上传结果    {"StatusCode":200,"Message":"扫描条码为：21240525C3226\r"}
+
+校验上传http://192.168.2.53/api/Device/DeviceStatusData    '{"DeviceCode":"TSTMX-001-01","LineCode":"WAVE4","StatusCode":10,"CheckTime":"2024-10-28 15:37:32"}'
+
+校验上传结果    {"StatusCode":200,"Message":""}
+
+出站上传http://192.168.2.53/api/Device/DeviceInspectData    '{"Main":{"LineNum":"5796062623055","BarCode":"21240525C3226","TranBarCode":"","BindBarCode":"","DeviceCode":"TSTMX-001-01","LineCode":"WAVE4","CommandCard":"CM2410260001","ProcessCode":"A2-100","NGCode":"A03-4","IsOnlyRecord":1,"IsPass":1,"CheckBy":"TSTMX-001-01","CheckTime":"2024-10-28 15:38:25"},"Detail":[{"ItemName":"CH2_1测试压力","UpperLimits":45.0,"LowerLimits":40.0,"StandardVal":41.08,"ActualVal":41.08,"SoftVer":"","CheckTime":"2024-10-28 15:38:25"},{"ItemName":"CH2_1泄漏量","UpperLimits":100.0,"LowerLimits":-100.0,"StandardVal":39.0,"ActualVal":39.0,"SoftVer":"","CheckTime":"2024-10-28 15:38:25"},{"ItemName":"CH2_1流量值","UpperLimits":8.0,"LowerLimits":0.0,"StandardVal":3.35,"ActualVal":3.35,"SoftVer":"","CheckTime":"2024-10-28 15:38:25"},{"ItemName":"CH2_2测试压力","UpperLimits":45.0,"LowerLimits":40.0,"StandardVal":40.63,"ActualVal":40.63,"SoftVer":"","CheckTime":"2024-10-28 15:38:25"},{"ItemName":"CH2_2泄漏量","UpperLimits":100.0,"LowerLimits":-100.0,"StandardVal":23.0,"ActualVal":23.0,"SoftVer":"","CheckTime":"2024-10-28 15:38:25"},{"ItemName":"CH2_2流量值","UpperLimits":8.0,"LowerLimits":0.0,"StandardVal":2.97,"ActualVal":2.97,"SoftVer":"","CheckTime":"2024-10-28 15:38:25"}]}'
+
+出站上传结果    {"StatusCode":200,"Message":"扫描条码为：21240525C3226"}
+
+入站上传 http://192.168.2.53/api/Device/DeviceInspectData_check    '{"Main":{"LineNum":"6516243807280","BarCode":"22240527C4447","TranBarCode":"","BindBarCode":"","DeviceCode":"TSTMX-001-01","LineCode":"WAVE4","CommandCard":"CM2410260001","ProcessCode":"A2-100","NGCode":"","IsOnlyRecord":1,"IsPass":1,"CheckBy":"TSTMX-001-01","CheckTime":"2024-10-28 15:40:35"}}'
+
+入站上传结果    {"StatusCode":200,"Message":"扫描条码为：22240527C4447"}
+
+校验上传http://192.168.2.53/api/Device/DeviceStatusData    '{"DeviceCode":"TSTMX-001-01","LineCode":"WAVE4","StatusCode":10,"CheckTime":"2024-10-28 15:40:35"}'
+
+校验上传结果    {"StatusCode":200,"Message":""}
+
+10/28/2024 3:41:31 PMjinruliucheng
+
+出站上传http://192.168.2.53/api/Device/DeviceInspectData    '{"Main":{"LineNum":"6516243807280","BarCode":"22240527C4447","TranBarCode":"","BindBarCode":"","DeviceCode":"TSTMX-001-01","LineCode":"WAVE4","CommandCard":"CM2410260001","ProcessCode":"A2-100","NGCode":"A03-4","IsOnlyRecord":1,"IsPass":1,"CheckBy":"TSTMX-001-01","CheckTime":"2024-10-28 15:41:31"},"Detail":[{"ItemName":"CH1_1测试压力","UpperLimits":45.0,"LowerLimits":40.0,"StandardVal":40.73,"ActualVal":40.73,"SoftVer":"","CheckTime":"2024-10-28 15:41:31"},{"ItemName":"CH1_1泄漏量","UpperLimits":100.0,"LowerLimits":-100.0,"StandardVal":186.0,"ActualVal":186.0,"SoftVer":"","CheckTime":"2024-10-28 15:41:31"},{"ItemName":"CH1_1流量值","UpperLimits":8.0,"LowerLimits":0.0,"StandardVal":3.4,"ActualVal":3.4,"SoftVer":"","CheckTime":"2024-10-28 15:41:31"},{"ItemName":"CH1_2测试压力","UpperLimits":45.0,"LowerLimits":40.0,"StandardVal":41.44,"ActualVal":41.44,"SoftVer":"","CheckTime":"2024-10-28 15:41:31"},{"ItemName":"CH1_2泄漏量","UpperLimits":100.0,"LowerLimits":-100.0,"StandardVal":40.0,"ActualVal":40.0,"SoftVer":"","CheckTime":"2024-10-28 15:41:31"},{"ItemName":"CH1_2流量值","UpperLimits":8.0,"LowerLimits":0.0,"StandardVal":3.25,"ActualVal":3.25,"SoftVer":"","CheckTime":"2024-10-28 15:41:31"}]}'
+
+出站上传结果    {"StatusCode":200,"Message":"扫描条码为：22240527C4447"}
+
+入站上传 http://192.168.2.53/api/Device/DeviceInspectData_check    '{"Main":{"LineNum":"2668651560632","BarCode":"21240525C5210","TranBarCode":"","BindBarCode":"","DeviceCode":"TSTMX-001-01","LineCode":"WAVE4","CommandCard":"CM2410260001","ProcessCode":"A2-100","NGCode":"","IsOnlyRecord":1,"IsPass":1,"CheckBy":"TSTMX-001-01","CheckTime":"2024-10-28 15:54:29"}}'
+
+入站上传结果    {"StatusCode":200,"Message":"扫描条码为：21240525C5210"}
+
+校验上传http://192.168.2.53/api/Device/DeviceStatusData    '{"DeviceCode":"TSTMX-001-01","LineCode":"WAVE4","StatusCode":10,"CheckTime":"2024-10-28 15:54:29"}'
+
+校验上传结果    {"StatusCode":200,"Message":""}
+
+jinru
+
+出站上传http://192.168.2.53/api/Device/DeviceInspectData    '{"Main":{"LineNum":"2668651560632","BarCode":"21240525C5210","TranBarCode":"","BindBarCode":"","DeviceCode":"TSTMX-001-01","LineCode":"WAVE4","CommandCard":"CM2410260001","ProcessCode":"A2-100","NGCode":"A03-4","IsOnlyRecord":1,"IsPass":0,"CheckBy":"TSTMX-001-01","CheckTime":"2024-10-28 15:55:04"},"Detail":[{"ItemName":"CH1_1测试压力","UpperLimits":45.0,"LowerLimits":40.0,"StandardVal":39.17,"ActualVal":39.17,"SoftVer":"","CheckTime":"2024-10-28 15:55:04"},{"ItemName":"CH1_1泄漏量","UpperLimits":100.0,"LowerLimits":-100.0,"StandardVal":2000.0,"ActualVal":2000.0,"SoftVer":"","CheckTime":"2024-10-28 15:55:04"},{"ItemName":"CH1_1流量值","UpperLimits":8.0,"LowerLimits":0.0,"StandardVal":3.1,"ActualVal":3.1,"SoftVer":"","CheckTime":"2024-10-28 15:55:04"},{"ItemName":"CH1_2测试压力","UpperLimits":45.0,"LowerLimits":40.0,"StandardVal":40.21,"ActualVal":40.21,"SoftVer":"","CheckTime":"2024-10-28 15:55:04"},{"ItemName":"CH1_2泄漏量","UpperLimits":100.0,"LowerLimits":-100.0,"StandardVal":0.0,"ActualVal":0.0,"SoftVer":"","CheckTime":"2024-10-28 15:55:04"},{"ItemName":"CH1_2流量值","UpperLimits":8.0,"LowerLimits":0.0,"StandardVal":3.27,"ActualVal":3.27,"SoftVer":"","CheckTime":"2024-10-28 15:55:04"}]}'
+
+出站上传结果    {"StatusCode":300,"Message":"SN已经登记维修,请维修完成，判定完成之后再投入，扫描条码为：21240525C5210"}
+
+入站上传 http://192.168.2.53/api/Device/DeviceInspectData_check    '{"Main":{"LineNum":"5972579468960","BarCode":"21240525C5210","TranBarCode":"","BindBarCode":"","DeviceCode":"TSTMX-001-01","LineCode":"WAVE4","CommandCard":"CM2410260001","ProcessCode":"A2-100","NGCode":"","IsOnlyRecord":1,"IsPass":1,"CheckBy":"TSTMX-001-01","CheckTime":"2024-10-28 15:56:37"}}'
+
+入站上传结果    {"StatusCode":200,"Message":"扫描条码为：21240525C5210"}
+
+校验上传http://192.168.2.53/api/Device/DeviceStatusData    '{"DeviceCode":"TSTMX-001-01","LineCode":"WAVE4","StatusCode":10,"CheckTime":"2024-10-28 15:56:37"}'
+
+校验上传结果    {"StatusCode":200,"Message":""}
+
+jinru
+
+出站上传http://192.168.2.53/api/Device/DeviceInspectData    '{"Main":{"LineNum":"5972579468960","BarCode":"21240525C5210","TranBarCode":"","BindBarCode":"","DeviceCode":"TSTMX-001-01","LineCode":"WAVE4","CommandCard":"CM2410260001","ProcessCode":"A2-100","NGCode":"A03-4","IsOnlyRecord":1,"IsPass":0,"CheckBy":"TSTMX-001-01","CheckTime":"2024-10-28 15:57:12"},"Detail":[{"ItemName":"CH1_1测试压力","UpperLimits":45.0,"LowerLimits":40.0,"StandardVal":39.0,"ActualVal":39.0,"SoftVer":"","CheckTime":"2024-10-28 15:57:12"},{"ItemName":"CH1_1泄漏量","UpperLimits":100.0,"LowerLimits":-100.0,"StandardVal":2000.0,"ActualVal":2000.0,"SoftVer":"","CheckTime":"2024-10-28 15:57:12"},{"ItemName":"CH1_1流量值","UpperLimits":8.0,"LowerLimits":0.0,"StandardVal":3.19,"ActualVal":3.19,"SoftVer":"","CheckTime":"2024-10-28 15:57:12"},{"ItemName":"CH1_2测试压力","UpperLimits":45.0,"LowerLimits":40.0,"StandardVal":39.97,"ActualVal":39.97,"SoftVer":"","CheckTime":"2024-10-28 15:57:12"},{"ItemName":"CH1_2泄漏量","UpperLimits":100.0,"LowerLimits":-100.0,"StandardVal":2000.0,"ActualVal":2000.0,"SoftVer":"","CheckTime":"2024-10-28 15:57:12"},{"ItemName":"CH1_2流量值","UpperLimits":8.0,"LowerLimits":0.0,"StandardVal":3.21,"ActualVal":3.21,"SoftVer":"","CheckTime":"2024-10-28 15:57:12"}]}'
+
+出站上传结果    {"StatusCode":300,"Message":"SN已经登记维修,请维修完成，判定完成之后再投入，扫描条码为：21240525C5210"}
+
+出站上传http://192.168.2.53/api/Device/DeviceInspectData    '{"Main":{"LineNum":"5796062623055","BarCode":"21240525C3226","TranBarCode":"","BindBarCode":"","DeviceCode":"TSTMX-001-01","LineCode":"WAVE4","CommandCard":"CM2410260001","ProcessCode":"A2-100","NGCode":"A03-4","IsOnlyRecord":1,"IsPass":0,"CheckBy":"TSTMX-001-01","CheckTime":"2024-10-28 15:57:42"},"Detail":[{"ItemName":"CH2_1测试压力","UpperLimits":45.0,"LowerLimits":40.0,"StandardVal":0.0,"ActualVal":0.0,"SoftVer":"","CheckTime":"2024-10-28 15:57:42"},{"ItemName":"CH2_1泄漏量","UpperLimits":100.0,"LowerLimits":-100.0,"StandardVal":0.0,"ActualVal":0.0,"SoftVer":"","CheckTime":"2024-10-28 15:57:42"},{"ItemName":"CH2_1流量值","UpperLimits":8.0,"LowerLimits":0.0,"StandardVal":0.0,"ActualVal":0.0,"SoftVer":"","CheckTime":"2024-10-28 15:57:42"},{"ItemName":"CH2_2测试压力","UpperLimits":45.0,"LowerLimits":40.0,"StandardVal":0.0,"ActualVal":0.0,"SoftVer":"","CheckTime":"2024-10-28 15:57:42"},{"ItemName":"CH2_2泄漏量","UpperLimits":100.0,"LowerLimits":-100.0,"StandardVal":0.0,"ActualVal":0.0,"SoftVer":"","CheckTime":"2024-10-28 15:57:42"},{"ItemName":"CH2_2流量值","UpperLimits":8.0,"LowerLimits":0.0,"StandardVal":0.0,"ActualVal":0.0,"SoftVer":"","CheckTime":"2024-10-28 15:57:42"}]}'
+
+出站上传结果    {"StatusCode":300,"Message":"数据重复提交，扫描条码为：21240525C3226"}
+
+入站上传 http://192.168.2.53/api/Device/DeviceInspectData_check    '{"Main":{"LineNum":"1910857495344","BarCode":"21240525C5210","TranBarCode":"","BindBarCode":"","DeviceCode":"TSTMX-001-01","LineCode":"WAVE4","CommandCard":"CM2410260001","ProcessCode":"A2-100","NGCode":"","IsOnlyRecord":1,"IsPass":1,"CheckBy":"TSTMX-001-01","CheckTime":"2024-10-28 15:59:18"}}'
+
+入站上传结果    {"StatusCode":200,"Message":"扫描条码为：21240525C5210"}
+
+校验上传http://192.168.2.53/api/Device/DeviceStatusData    '{"DeviceCode":"TSTMX-001-01","LineCode":"WAVE4","StatusCode":10,"CheckTime":"2024-10-28 15:59:18"}'
+
+校验上传结果    {"StatusCode":200,"Message":""}
+
+jinru
+
+出站上传http://192.168.2.53/api/Device/DeviceInspectData    '{"Main":{"LineNum":"1910857495344","BarCode":"21240525C5210","TranBarCode":"","BindBarCode":"","DeviceCode":"TSTMX-001-01","LineCode":"WAVE4","CommandCard":"CM2410260001","ProcessCode":"A2-100","NGCode":"A03-4","IsOnlyRecord":1,"IsPass":0,"CheckBy":"TSTMX-001-01","CheckTime":"2024-10-28 15:59:54"},"Detail":[{"ItemName":"CH1_1测试压力","UpperLimits":45.0,"LowerLimits":40.0,"StandardVal":38.72,"ActualVal":38.72,"SoftVer":"","CheckTime":"2024-10-28 15:59:54"},{"ItemName":"CH1_1泄漏量","UpperLimits":100.0,"LowerLimits":-100.0,"StandardVal":2000.0,"ActualVal":2000.0,"SoftVer":"","CheckTime":"2024-10-28 15:59:54"},{"ItemName":"CH1_1流量值","UpperLimits":8.0,"LowerLimits":0.0,"StandardVal":3.09,"ActualVal":3.09,"SoftVer":"","CheckTime":"2024-10-28 15:59:54"},{"ItemName":"CH1_2测试压力","UpperLimits":45.0,"LowerLimits":40.0,"StandardVal":39.74,"ActualVal":39.74,"SoftVer":"","CheckTime":"2024-10-28 15:59:54"},{"ItemName":"CH1_2泄漏量","UpperLimits":100.0,"LowerLimits":-100.0,"StandardVal":2000.0,"ActualVal":2000.0,"SoftVer":"","CheckTime":"2024-10-28 15:59:54"},{"ItemName":"CH1_2流量值","UpperLimits":8.0,"LowerLimits":0.0,"StandardVal":3.24,"ActualVal":3.24,"SoftVer":"","CheckTime":"2024-10-28 15:59:54"}]}'
+
+出站上传结果    {"StatusCode":300,"Message":"SN已经登记维修,请维修完成，判定完成之后再投入，扫描条码为：21240525C5210"}
+
+出站上传http://192.168.2.53/api/Device/DeviceInspectData    '{"Main":{"LineNum":"5796062623055","BarCode":"21240525C3226","TranBarCode":"","BindBarCode":"","DeviceCode":"TSTMX-001-01","LineCode":"WAVE4","CommandCard":"CM2410260001","ProcessCode":"A2-100","NGCode":"A03-4","IsOnlyRecord":1,"IsPass":0,"CheckBy":"TSTMX-001-01","CheckTime":"2024-10-28 16:00:03"},"Detail":[{"ItemName":"CH2_1测试压力","UpperLimits":45.0,"LowerLimits":40.0,"StandardVal":0.0,"ActualVal":0.0,"SoftVer":"","CheckTime":"2024-10-28 16:00:03"},{"ItemName":"CH2_1泄漏量","UpperLimits":100.0,"LowerLimits":-100.0,"StandardVal":2000.0,"ActualVal":2000.0,"SoftVer":"","CheckTime":"2024-10-28 16:00:03"},{"ItemName":"CH2_1流量值","UpperLimits":8.0,"LowerLimits":0.0,"StandardVal":0.0,"ActualVal":0.0,"SoftVer":"","CheckTime":"2024-10-28 16:00:03"},{"ItemName":"CH2_2测试压力","UpperLimits":45.0,"LowerLimits":40.0,"StandardVal":0.0,"ActualVal":0.0,"SoftVer":"","CheckTime":"2024-10-28 16:00:03"},{"ItemName":"CH2_2泄漏量","UpperLimits":100.0,"LowerLimits":-100.0,"StandardVal":2000.0,"ActualVal":2000.0,"SoftVer":"","CheckTime":"2024-10-28 16:00:03"},{"ItemName":"CH2_2流量值","UpperLimits":8.0,"LowerLimits":0.0,"StandardVal":0.0,"ActualVal":0.0,"SoftVer":"","CheckTime":"2024-10-28 16:00:03"}]}'
+
+出站上传结果    {"StatusCode":300,"Message":"数据重复提交，扫描条码为：21240525C3226"}
+
+入站上传 http://192.168.2.53/api/Device/DeviceInspectData_check    '{"Main":{"LineNum":"6316582582107","BarCode":"21240525C2239","TranBarCode":"","BindBarCode":"","DeviceCode":"TSTMX-001-01","LineCode":"WAVE4","CommandCard":"CM2410260001","ProcessCode":"A2-100","NGCode":"","IsOnlyRecord":1,"IsPass":1,"CheckBy":"TSTMX-001-01","CheckTime":"2024-10-28 16:00:27"}}'
+
+入站上传结果    {"StatusCode":200,"Message":"扫描条码为：21240525C2239"}
+
+校验上传http://192.168.2.53/api/Device/DeviceStatusData    '{"DeviceCode":"TSTMX-001-01","LineCode":"WAVE4","StatusCode":10,"CheckTime":"2024-10-28 16:00:27"}'
+
+校验上传结果    {"StatusCode":200,"Message":""}
+
+jinru
+
+出站上传http://192.168.2.53/api/Device/DeviceInspectData    '{"Main":{"LineNum":"6316582582107","BarCode":"21240525C2239","TranBarCode":"","BindBarCode":"","DeviceCode":"TSTMX-001-01","LineCode":"WAVE4","CommandCard":"CM2410260001","ProcessCode":"A2-100","NGCode":"A03-4","IsOnlyRecord":1,"IsPass":0,"CheckBy":"TSTMX-001-01","CheckTime":"2024-10-28 16:01:01"},"Detail":[{"ItemName":"CH1_1测试压力","UpperLimits":45.0,"LowerLimits":40.0,"StandardVal":39.98,"ActualVal":39.98,"SoftVer":"","CheckTime":"2024-10-28 16:01:01"},{"ItemName":"CH1_1泄漏量","UpperLimits":100.0,"LowerLimits":-100.0,"StandardVal":2000.0,"ActualVal":2000.0,"SoftVer":"","CheckTime":"2024-10-28 16:01:01"},{"ItemName":"CH1_1流量值","UpperLimits":8.0,"LowerLimits":0.0,"StandardVal":3.02,"ActualVal":3.02,"SoftVer":"","CheckTime":"2024-10-28 16:01:01"},{"ItemName":"CH1_2测试压力","UpperLimits":45.0,"LowerLimits":40.0,"StandardVal":41.23,"ActualVal":41.23,"SoftVer":"","CheckTime":"2024-10-28 16:01:01"},{"ItemName":"CH1_2泄漏量","UpperLimits":100.0,"LowerLimits":-100.0,"StandardVal":0.0,"ActualVal":0.0,"SoftVer":"","CheckTime":"2024-10-28 16:01:01"},{"ItemName":"CH1_2流量值","UpperLimits":8.0,"LowerLimits":0.0,"StandardVal":3.46,"ActualVal":3.46,"SoftVer":"","CheckTime":"2024-10-28 16:01:01"}]}'
+
+出站上传结果    {"StatusCode":200,"Message":"扫描条码为：21240525C2239"}
+
+入站上传 http://192.168.2.53/api/Device/DeviceInspectData_check    '{"Main":{"LineNum":"1288437469531","BarCode":"0424012130537","TranBarCode":"","BindBarCode":"","DeviceCode":"TSTMX-001-01","LineCode":"WAVE4","CommandCard":"CM2410260001","ProcessCode":"A2-100","NGCode":"","IsOnlyRecord":1,"IsPass":1,"CheckBy":"TSTMX-001-01","CheckTime":"2024-10-28 16:01:23"}}'
+
+入站上传结果    {"StatusCode":200,"Message":"扫描条码为：0424012130537"}
+
+校验上传http://192.168.2.53/api/Device/DeviceStatusData    '{"DeviceCode":"TSTMX-001-01","LineCode":"WAVE4","StatusCode":10,"CheckTime":"2024-10-28 16:01:23"}'
+
+校验上传结果    {"StatusCode":200,"Message":""}
+
+入站上传 http://192.168.2.53/api/Device/DeviceInspectData_check    '{"Main":{"LineNum":"2463715972594","BarCode":"0424012130537","TranBarCode":"","BindBarCode":"","DeviceCode":"TSTMX-001-01","LineCode":"WAVE4","CommandCard":"CM2410260001","ProcessCode":"A2-100","NGCode":"","IsOnlyRecord":1,"IsPass":1,"CheckBy":"TSTMX-001-01","CheckTime":"2024-10-28 16:02:17"}}'
+
+入站上传结果    {"StatusCode":200,"Message":"扫描条码为：0424012130537"}
+
+校验上传http://192.168.2.53/api/Device/DeviceStatusData    '{"DeviceCode":"TSTMX-001-01","LineCode":"WAVE4","StatusCode":10,"CheckTime":"2024-10-28 16:02:17"}'
+
+校验上传结果    {"StatusCode":200,"Message":""}
+
+jinru
+
+出站上传http://192.168.2.53/api/Device/DeviceInspectData    '{"Main":{"LineNum":"2463715972594","BarCode":"0424012130537","TranBarCode":"","BindBarCode":"","DeviceCode":"TSTMX-001-01","LineCode":"WAVE4","CommandCard":"CM2410260001","ProcessCode":"A2-100","NGCode":"A03-4","IsOnlyRecord":1,"IsPass":0,"CheckBy":"TSTMX-001-01","CheckTime":"2024-10-28 16:02:43"},"Detail":[{"ItemName":"CH1_1测试压力","UpperLimits":45.0,"LowerLimits":40.0,"StandardVal":0.0,"ActualVal":0.0,"SoftVer":"","CheckTime":"2024-10-28 16:02:43"},{"ItemName":"CH1_1泄漏量","UpperLimits":100.0,"LowerLimits":-100.0,"StandardVal":0.0,"ActualVal":0.0,"SoftVer":"","CheckTime":"2024-10-28 16:02:43"},{"ItemName":"CH1_1流量值","UpperLimits":8.0,"LowerLimits":0.0,"StandardVal":3.23,"ActualVal":3.23,"SoftVer":"","CheckTime":"2024-10-28 16:02:43"},{"ItemName":"CH1_2测试压力","UpperLimits":45.0,"LowerLimits":40.0,"StandardVal":0.0,"ActualVal":0.0,"SoftVer":"","CheckTime":"2024-10-28 16:02:43"},{"ItemName":"CH1_2泄漏量","UpperLimits":100.0,"LowerLimits":-100.0,"StandardVal":0.0,"ActualVal":0.0,"SoftVer":"","CheckTime":"2024-10-28 16:02:43"},{"ItemName":"CH1_2流量值","UpperLimits":8.0,"LowerLimits":0.0,"StandardVal":3.41,"ActualVal":3.41,"SoftVer":"","CheckTime":"2024-10-28 16:02:43"}]}'
+
+出站上传结果    {"StatusCode":200,"Message":"扫描条码为：0424012130537"}
+
+入站上传 http://192.168.2.53/api/Device/DeviceInspectData_check    '{"Main":{"LineNum":"9311229000478","BarCode":"21240525C3226","TranBarCode":"","BindBarCode":"","DeviceCode":"TSTMX-001-01","LineCode":"WAVE4","CommandCard":"CM2410260001","ProcessCode":"A2-100","NGCode":"","IsOnlyRecord":1,"IsPass":1,"CheckBy":"TSTMX-001-01","CheckTime":"2024-10-28 16:03:08"}}'
+
+入站上传结果    {"StatusCode":300,"Message":"条码【21240525C3226】重复过站。，扫描条码为：21240525C3226"}
+
+校验上传http://192.168.2.53/api/Device/DeviceStatusData    '{"DeviceCode":"TSTMX-001-01","LineCode":"WAVE4","StatusCode":10,"CheckTime":"2024-10-28 16:03:08"}'
+
+校验上传结果    {"StatusCode":200,"Message":""}
+
+10/28/2024 4:04:01 PMjinruliucheng
+
+出站上传http://192.168.2.53/api/Device/DeviceInspectData    '{"Main":{"LineNum":"9311229000478","BarCode":"21240525C3226","TranBarCode":"","BindBarCode":"","DeviceCode":"TSTMX-001-01","LineCode":"WAVE4","CommandCard":"CM2410260001","ProcessCode":"A2-100","NGCode":"A03-4","IsOnlyRecord":1,"IsPass":1,"CheckBy":"TSTMX-001-01","CheckTime":"2024-10-28 16:04:01"},"Detail":[{"ItemName":"CH1_1测试压力","UpperLimits":45.0,"LowerLimits":40.0,"StandardVal":40.61,"ActualVal":40.61,"SoftVer":"","CheckTime":"2024-10-28 16:04:01"},{"ItemName":"CH1_1泄漏量","UpperLimits":100.0,"LowerLimits":-100.0,"StandardVal":22.0,"ActualVal":22.0,"SoftVer":"","CheckTime":"2024-10-28 16:04:01"},{"ItemName":"CH1_1流量值","UpperLimits":8.0,"LowerLimits":0.0,"StandardVal":3.49,"ActualVal":3.49,"SoftVer":"","CheckTime":"2024-10-28 16:04:01"},{"ItemName":"CH1_2测试压力","UpperLimits":45.0,"LowerLimits":40.0,"StandardVal":40.8,"ActualVal":40.8,"SoftVer":"","CheckTime":"2024-10-28 16:04:01"},{"ItemName":"CH1_2泄漏量","UpperLimits":100.0,"LowerLimits":-100.0,"StandardVal":22.0,"ActualVal":22.0,"SoftVer":"","CheckTime":"2024-10-28 16:04:01"},{"ItemName":"CH1_2流量值","UpperLimits":8.0,"LowerLimits":0.0,"StandardVal":3.02,"ActualVal":3.02,"SoftVer":"","CheckTime":"2024-10-28 16:04:01"}]}'
+
+出站上传结果    {"StatusCode":300,"Message":"条码【21240525C3226】重复过站。，扫描条码为：21240525C3226"}
+
+入站上传 http://192.168.2.53/api/Device/DeviceInspectData_check    '{"Main":{"LineNum":"1918968595992","BarCode":"21240525C3226","TranBarCode":"","BindBarCode":"","DeviceCode":"TSTMX-001-01","LineCode":"WAVE4","CommandCard":"CM2410260001","ProcessCode":"A2-100","NGCode":"","IsOnlyRecord":1,"IsPass":1,"CheckBy":"TSTMX-001-01","CheckTime":"2024-10-28 16:04:13"}}'
+
+入站上传结果    {"StatusCode":300,"Message":"条码【21240525C3226】重复过站。，扫描条码为：21240525C3226"}
+
+校验上传http://192.168.2.53/api/Device/DeviceStatusData    '{"DeviceCode":"TSTMX-001-01","LineCode":"WAVE4","StatusCode":10,"CheckTime":"2024-10-28 16:04:13"}'
+
+校验上传结果    {"StatusCode":200,"Message":""}
+
+jinru
+
+出站上传http://192.168.2.53/api/Device/DeviceInspectData    '{"Main":{"LineNum":"1918968595992","BarCode":"21240525C3226","TranBarCode":"","BindBarCode":"","DeviceCode":"TSTMX-001-01","LineCode":"WAVE4","CommandCard":"CM2410260001","ProcessCode":"A2-100","NGCode":"A03-4","IsOnlyRecord":1,"IsPass":0,"CheckBy":"TSTMX-001-01","CheckTime":"2024-10-28 16:04:48"},"Detail":[{"ItemName":"CH1_1测试压力","UpperLimits":45.0,"LowerLimits":40.0,"StandardVal":39.92,"ActualVal":39.92,"SoftVer":"","CheckTime":"2024-10-28 16:04:48"},{"ItemName":"CH1_1泄漏量","UpperLimits":100.0,"LowerLimits":-100.0,"StandardVal":2000.0,"ActualVal":2000.0,"SoftVer":"","CheckTime":"2024-10-28 16:04:48"},{"ItemName":"CH1_1流量值","UpperLimits":8.0,"LowerLimits":0.0,"StandardVal":3.48,"ActualVal":3.48,"SoftVer":"","CheckTime":"2024-10-28 16:04:48"},{"ItemName":"CH1_2测试压力","UpperLimits":45.0,"LowerLimits":40.0,"StandardVal":40.47,"ActualVal":40.47,"SoftVer":"","CheckTime":"2024-10-28 16:04:48"},{"ItemName":"CH1_2泄漏量","UpperLimits":100.0,"LowerLimits":-100.0,"StandardVal":0.0,"ActualVal":0.0,"SoftVer":"","CheckTime":"2024-10-28 16:04:48"},{"ItemName":"CH1_2流量值","UpperLimits":8.0,"LowerLimits":0.0,"StandardVal":2.97,"ActualVal":2.97,"SoftVer":"","CheckTime":"2024-10-28 16:04:48"}]}'
+
+出站上传结果    {"StatusCode":300,"Message":"条码【21240525C3226】重复过站。，扫描条码为：21240525C3226"}
+
+入站上传 http://192.168.2.53/api/Device/DeviceInspectData_check    '{"Main":{"LineNum":"7658966763717","BarCode":"1724042730735","TranBarCode":"","BindBarCode":"","DeviceCode":"TSTMX-001-01","LineCode":"WAVE4","CommandCard":"CM2410260001","ProcessCode":"A2-100","NGCode":"","IsOnlyRecord":1,"IsPass":1,"CheckBy":"TSTMX-001-01","CheckTime":"2024-10-28 16:05:16"}}'
+
+入站上传结果    {"StatusCode":200,"Message":"扫描条码为：1724042730735"}
+
+校验上传http://192.168.2.53/api/Device/DeviceStatusData    '{"DeviceCode":"TSTMX-001-01","LineCode":"WAVE4","StatusCode":10,"CheckTime":"2024-10-28 16:05:16"}'
+
+校验上传结果    {"StatusCode":200,"Message":""}
+
+jinru
+
+出站上传http://192.168.2.53/api/Device/DeviceInspectData    '{"Main":{"LineNum":"7658966763717","BarCode":"1724042730735","TranBarCode":"","BindBarCode":"","DeviceCode":"TSTMX-001-01","LineCode":"WAVE4","CommandCard":"CM2410260001","ProcessCode":"A2-100","NGCode":"A03-4","IsOnlyRecord":1,"IsPass":0,"CheckBy":"TSTMX-001-01","CheckTime":"2024-10-28 16:05:42"},"Detail":[{"ItemName":"CH1_1测试压力","UpperLimits":45.0,"LowerLimits":40.0,"StandardVal":0.0,"ActualVal":0.0,"SoftVer":"","CheckTime":"2024-10-28 16:05:42"},{"ItemName":"CH1_1泄漏量","UpperLimits":100.0,"LowerLimits":-100.0,"StandardVal":0.0,"ActualVal":0.0,"SoftVer":"","CheckTime":"2024-10-28 16:05:42"},{"ItemName":"CH1_1流量值","UpperLimits":8.0,"LowerLimits":0.0,"StandardVal":0.0,"ActualVal":0.0,"SoftVer":"","CheckTime":"2024-10-28 16:05:42"},{"ItemName":"CH1_2测试压力","UpperLimits":45.0,"LowerLimits":40.0,"StandardVal":0.0,"ActualVal":0.0,"SoftVer":"","CheckTime":"2024-10-28 16:05:42"},{"ItemName":"CH1_2泄漏量","UpperLimits":100.0,"LowerLimits":-100.0,"StandardVal":0.0,"ActualVal":0.0,"SoftVer":"","CheckTime":"2024-10-28 16:05:42"},{"ItemName":"CH1_2流量值","UpperLimits":8.0,"LowerLimits":0.0,"StandardVal":0.0,"ActualVal":0.0,"SoftVer":"","CheckTime":"2024-10-28 16:05:42"}]}'
+
+出站上传结果    {"StatusCode":300,"Message":"SN已经登记维修,请维修完成，判定完成之后再投入，扫描条码为：1724042730735"}
+
+入站上传 http://192.168.2.53/api/Device/DeviceInspectData_check    '{"Main":{"LineNum":"1364149704745","BarCode":"1724042730735","TranBarCode":"","BindBarCode":"","DeviceCode":"TSTMX-001-01","LineCode":"WAVE4","CommandCard":"CM2410260001","ProcessCode":"A2-100","NGCode":"","IsOnlyRecord":1,"IsPass":1,"CheckBy":"TSTMX-001-01","CheckTime":"2024-10-28 16:06:05"}}'
+
+入站上传结果    {"StatusCode":200,"Message":"扫描条码为：1724042730735"}
+
+校验上传http://192.168.2.53/api/Device/DeviceStatusData    '{"DeviceCode":"TSTMX-001-01","LineCode":"WAVE4","StatusCode":10,"CheckTime":"2024-10-28 16:06:05"}'
+
+校验上传结果    {"StatusCode":200,"Message":""}
+
+jinru
+
+出站上传http://192.168.2.53/api/Device/DeviceInspectData    '{"Main":{"LineNum":"1364149704745","BarCode":"1724042730735","TranBarCode":"","BindBarCode":"","DeviceCode":"TSTMX-001-01","LineCode":"WAVE4","CommandCard":"CM2410260001","ProcessCode":"A2-100","NGCode":"A03-4","IsOnlyRecord":1,"IsPass":0,"CheckBy":"TSTMX-001-01","CheckTime":"2024-10-28 16:06:28"},"Detail":[{"ItemName":"CH1_1测试压力","UpperLimits":45.0,"LowerLimits":40.0,"StandardVal":0.0,"ActualVal":0.0,"SoftVer":"","CheckTime":"2024-10-28 16:06:28"},{"ItemName":"CH1_1泄漏量","UpperLimits":100.0,"LowerLimits":-100.0,"StandardVal":0.0,"ActualVal":0.0,"SoftVer":"","CheckTime":"2024-10-28 16:06:28"},{"ItemName":"CH1_1流量值","UpperLimits":8.0,"LowerLimits":0.0,"StandardVal":0.0,"ActualVal":0.0,"SoftVer":"","CheckTime":"2024-10-28 16:06:28"},{"ItemName":"CH1_2测试压力","UpperLimits":45.0,"LowerLimits":40.0,"StandardVal":0.0,"ActualVal":0.0,"SoftVer":"","CheckTime":"2024-10-28 16:06:28"},{"ItemName":"CH1_2泄漏量","UpperLimits":100.0,"LowerLimits":-100.0,"StandardVal":0.0,"ActualVal":0.0,"SoftVer":"","CheckTime":"2024-10-28 16:06:28"},{"ItemName":"CH1_2流量值","UpperLimits":8.0,"LowerLimits":0.0,"StandardVal":0.0,"ActualVal":0.0,"SoftVer":"","CheckTime":"2024-10-28 16:06:28"}]}'
+
+出站上传结果    {"StatusCode":300,"Message":"SN已经登记维修,请维修完成，判定完成之后再投入，扫描条码为：1724042730735"}
+
+入站上传 http://192.168.2.53/api/Device/DeviceInspectData_check    '{"Main":{"LineNum":"8752218784649","BarCode":"0424012130537","TranBarCode":"","BindBarCode":"","DeviceCode":"TSTMX-001-01","LineCode":"WAVE4","CommandCard":"CM2410260001","ProcessCode":"A2-100","NGCode":"","IsOnlyRecord":1,"IsPass":1,"CheckBy":"TSTMX-001-01","CheckTime":"2024-10-28 16:07:01"}}'
+
+入站上传结果    {"StatusCode":200,"Message":"扫描条码为：0424012130537"}
+
+校验上传http://192.168.2.53/api/Device/DeviceStatusData    '{"DeviceCode":"TSTMX-001-01","LineCode":"WAVE4","StatusCode":10,"CheckTime":"2024-10-28 16:07:01"}'
+
+校验上传结果    {"StatusCode":200,"Message":""}
+
+jinru
+
+出站上传http://192.168.2.53/api/Device/DeviceInspectData    '{"Main":{"LineNum":"8752218784649","BarCode":"0424012130537","TranBarCode":"","BindBarCode":"","DeviceCode":"TSTMX-001-01","LineCode":"WAVE4","CommandCard":"CM2410260001","ProcessCode":"A2-100","NGCode":"A03-4","IsOnlyRecord":1,"IsPass":0,"CheckBy":"TSTMX-001-01","CheckTime":"2024-10-28 16:08:08"},"Detail":[{"ItemName":"CH1_1测试压力","UpperLimits":45.0,"LowerLimits":40.0,"StandardVal":0.0,"ActualVal":0.0,"SoftVer":"","CheckTime":"2024-10-28 16:08:08"},{"ItemName":"CH1_1泄漏量","UpperLimits":100.0,"LowerLimits":-100.0,"StandardVal":0.0,"ActualVal":0.0,"SoftVer":"","CheckTime":"2024-10-28 16:08:08"},{"ItemName":"CH1_1流量值","UpperLimits":8.0,"LowerLimits":0.0,"StandardVal":3.25,"ActualVal":3.25,"SoftVer":"","CheckTime":"2024-10-28 16:08:08"},{"ItemName":"CH1_2测试压力","UpperLimits":45.0,"LowerLimits":40.0,"StandardVal":0.0,"ActualVal":0.0,"SoftVer":"","CheckTime":"2024-10-28 16:08:08"},{"ItemName":"CH1_2泄漏量","UpperLimits":100.0,"LowerLimits":-100.0,"StandardVal":0.0,"ActualVal":0.0,"SoftVer":"","CheckTime":"2024-10-28 16:08:08"},{"ItemName":"CH1_2流量值","UpperLimits":8.0,"LowerLimits":0.0,"StandardVal":3.39,"ActualVal":3.39,"SoftVer":"","CheckTime":"2024-10-28 16:08:08"}]}'
+
+出站上传结果    {"StatusCode":200,"Message":"扫描条码为：0424012130537"}
+
+入站上传 http://192.168.2.53/api/Device/DeviceInspectData_check    '{"Main":{"LineNum":"2903249333567","BarCode":"21240525C3226","TranBarCode":"","BindBarCode":"","DeviceCode":"TSTMX-001-01","LineCode":"WAVE4","CommandCard":"CM2410260001","ProcessCode":"A2-100","NGCode":"","IsOnlyRecord":1,"IsPass":1,"CheckBy":"TSTMX-001-01","CheckTime":"2024-10-28 16:08:24"}}'
+
+入站上传结果    {"StatusCode":300,"Message":"条码【21240525C3226】重复过站。，扫描条码为：21240525C3226"}
+
+校验上传http://192.168.2.53/api/Device/DeviceStatusData    '{"DeviceCode":"TSTMX-001-01","LineCode":"WAVE4","StatusCode":10,"CheckTime":"2024-10-28 16:08:24"}'
+
+校验上传结果    {"StatusCode":200,"Message":""}
+
+jinru
+
+出站上传http://192.168.2.53/api/Device/DeviceInspectData    '{"Main":{"LineNum":"2903249333567","BarCode":"21240525C3226","TranBarCode":"","BindBarCode":"","DeviceCode":"TSTMX-001-01","LineCode":"WAVE4","CommandCard":"CM2410260001","ProcessCode":"A2-100","NGCode":"A03-4","IsOnlyRecord":1,"IsPass":0,"CheckBy":"TSTMX-001-01","CheckTime":"2024-10-28 16:09:01"},"Detail":[{"ItemName":"CH1_1测试压力","UpperLimits":45.0,"LowerLimits":40.0,"StandardVal":39.93,"ActualVal":39.93,"SoftVer":"","CheckTime":"2024-10-28 16:09:01"},{"ItemName":"CH1_1泄漏量","UpperLimits":100.0,"LowerLimits":-100.0,"StandardVal":2000.0,"ActualVal":2000.0,"SoftVer":"","CheckTime":"2024-10-28 16:09:01"},{"ItemName":"CH1_1流量值","UpperLimits":8.0,"LowerLimits":0.0,"StandardVal":3.44,"ActualVal":3.44,"SoftVer":"","CheckTime":"2024-10-28 16:09:01"},{"ItemName":"CH1_2测试压力","UpperLimits":45.0,"LowerLimits":40.0,"StandardVal":40.51,"ActualVal":40.51,"SoftVer":"","CheckTime":"2024-10-28 16:09:01"},{"ItemName":"CH1_2泄漏量","UpperLimits":100.0,"LowerLimits":-100.0,"StandardVal":0.0,"ActualVal":0.0,"SoftVer":"","CheckTime":"2024-10-28 16:09:01"},{"ItemName":"CH1_2流量值","UpperLimits":8.0,"LowerLimits":0.0,"StandardVal":3.03,"ActualVal":3.03,"SoftVer":"","CheckTime":"2024-10-28 16:09:01"}]}'
+
+出站上传结果    {"StatusCode":300,"Message":"条码【21240525C3226】重复过站。，扫描条码为：21240525C3226"}
+
+入站上传 http://192.168.2.53/api/Device/DeviceInspectData_check    '{"Main":{"LineNum":"6856867085609","BarCode":"21240525C3226\r","TranBarCode":"","BindBarCode":"","DeviceCode":"TSTMX-001-01","LineCode":"WAVE4","CommandCard":"CM2410260001","ProcessCode":"A2-100","NGCode":"","IsOnlyRecord":1,"IsPass":1,"CheckBy":"TSTMX-001-01","CheckTime":"2024-10-28 16:09:27"}}'
+
+入站上传结果    {"StatusCode":200,"Message":"扫描条码为：21240525C3226\r"}
+
+校验上传http://192.168.2.53/api/Device/DeviceStatusData    '{"DeviceCode":"TSTMX-001-01","LineCode":"WAVE4","StatusCode":10,"CheckTime":"2024-10-28 16:09:27"}'
+
+校验上传结果    {"StatusCode":200,"Message":""}
+
+入站上传 http://192.168.2.53/api/Device/DeviceInspectData_check    '{"Main":{"LineNum":"3638397910463","BarCode":"21240525C3608","TranBarCode":"","BindBarCode":"","DeviceCode":"TSTMX-001-01","LineCode":"WAVE4","CommandCard":"CM2410260001","ProcessCode":"A2-100","NGCode":"","IsOnlyRecord":1,"IsPass":1,"CheckBy":"TSTMX-001-01","CheckTime":"2024-10-28 16:09:33"}}'
+
+入站上传结果    {"StatusCode":300,"Message":"条码【21240525C3608】重复过站。，扫描条码为：21240525C3608"}
+
+校验上传http://192.168.2.53/api/Device/DeviceStatusData    '{"DeviceCode":"TSTMX-001-01","LineCode":"WAVE4","StatusCode":10,"CheckTime":"2024-10-28 16:09:33"}'
+
+校验上传结果    {"StatusCode":200,"Message":""}
+
+出站上传http://192.168.2.53/api/Device/DeviceInspectData    '{"Main":{"LineNum":"6856867085609","BarCode":"21240525C3226","TranBarCode":"","BindBarCode":"","DeviceCode":"TSTMX-001-01","LineCode":"WAVE4","CommandCard":"CM2410260001","ProcessCode":"A2-100","NGCode":"A03-4","IsOnlyRecord":1,"IsPass":0,"CheckBy":"TSTMX-001-01","CheckTime":"2024-10-28 16:09:51"},"Detail":[{"ItemName":"CH2_1测试压力","UpperLimits":45.0,"LowerLimits":40.0,"StandardVal":0.0,"ActualVal":0.0,"SoftVer":"","CheckTime":"2024-10-28 16:09:51"},{"ItemName":"CH2_1泄漏量","UpperLimits":100.0,"LowerLimits":-100.0,"StandardVal":0.0,"ActualVal":0.0,"SoftVer":"","CheckTime":"2024-10-28 16:09:51"},{"ItemName":"CH2_1流量值","UpperLimits":8.0,"LowerLimits":0.0,"StandardVal":3.39,"ActualVal":3.39,"SoftVer":"","CheckTime":"2024-10-28 16:09:51"},{"ItemName":"CH2_2测试压力","UpperLimits":45.0,"LowerLimits":40.0,"StandardVal":0.0,"ActualVal":0.0,"SoftVer":"","CheckTime":"2024-10-28 16:09:51"},{"ItemName":"CH2_2泄漏量","UpperLimits":100.0,"LowerLimits":-100.0,"StandardVal":0.0,"ActualVal":0.0,"SoftVer":"","CheckTime":"2024-10-28 16:09:51"},{"ItemName":"CH2_2流量值","UpperLimits":8.0,"LowerLimits":0.0,"StandardVal":2.89,"ActualVal":2.89,"SoftVer":"","CheckTime":"2024-10-28 16:09:51"}]}'
+
+出站上传结果    {"StatusCode":300,"Message":"条码【21240525C3226】重复过站。，扫描条码为：21240525C3226"}
+
+10/28/2024 4:10:24 PMjinruliucheng
+
+出站上传http://192.168.2.53/api/Device/DeviceInspectData    '{"Main":{"LineNum":"3638397910463","BarCode":"21240525C3608","TranBarCode":"","BindBarCode":"","DeviceCode":"TSTMX-001-01","LineCode":"WAVE4","CommandCard":"CM2410260001","ProcessCode":"A2-100","NGCode":"A03-4","IsOnlyRecord":1,"IsPass":1,"CheckBy":"TSTMX-001-01","CheckTime":"2024-10-28 16:10:24"},"Detail":[{"ItemName":"CH1_1测试压力","UpperLimits":45.0,"LowerLimits":40.0,"StandardVal":40.84,"ActualVal":40.84,"SoftVer":"","CheckTime":"2024-10-28 16:10:24"},{"ItemName":"CH1_1泄漏量","UpperLimits":100.0,"LowerLimits":-100.0,"StandardVal":263.0,"ActualVal":263.0,"SoftVer":"","CheckTime":"2024-10-28 16:10:24"},{"ItemName":"CH1_1流量值","UpperLimits":8.0,"LowerLimits":0.0,"StandardVal":3.02,"ActualVal":3.02,"SoftVer":"","CheckTime":"2024-10-28 16:10:24"},{"ItemName":"CH1_2测试压力","UpperLimits":45.0,"LowerLimits":40.0,"StandardVal":40.85,"ActualVal":40.85,"SoftVer":"","CheckTime":"2024-10-28 16:10:24"},{"ItemName":"CH1_2泄漏量","UpperLimits":100.0,"LowerLimits":-100.0,"StandardVal":167.0,"ActualVal":167.0,"SoftVer":"","CheckTime":"2024-10-28 16:10:24"},{"ItemName":"CH1_2流量值","UpperLimits":8.0,"LowerLimits":0.0,"StandardVal":3.25,"ActualVal":3.25,"SoftVer":"","CheckTime":"2024-10-28 16:10:24"}]}'
+
+出站上传结果    {"StatusCode":300,"Message":"条码【21240525C3608】重复过站。，扫描条码为：21240525C3608"}
+
+入站上传 http://192.168.2.53/api/Device/DeviceInspectData_check    '{"Main":{"LineNum":"4421501379656","BarCode":"21240525C3608","TranBarCode":"","BindBarCode":"","DeviceCode":"TSTMX-001-01","LineCode":"WAVE4","CommandCard":"CM2410260001","ProcessCode":"A2-100","NGCode":"","IsOnlyRecord":1,"IsPass":1,"CheckBy":"TSTMX-001-01","CheckTime":"2024-10-28 16:10:34"}}'
+
+入站上传结果    {"StatusCode":300,"Message":"条码【21240525C3608】重复过站。，扫描条码为：21240525C3608"}
+
+校验上传http://192.168.2.53/api/Device/DeviceStatusData    '{"DeviceCode":"TSTMX-001-01","LineCode":"WAVE4","StatusCode":10,"CheckTime":"2024-10-28 16:10:34"}'
+
+校验上传结果    {"StatusCode":200,"Message":""}
+
+入站上传 http://192.168.2.53/api/Device/DeviceInspectData_check    '{"Main":{"LineNum":"9870292684468","BarCode":"21240525C3608","TranBarCode":"","BindBarCode":"","DeviceCode":"TSTMX-001-01","LineCode":"WAVE4","CommandCard":"CM2410260001","ProcessCode":"A2-100","NGCode":"","IsOnlyRecord":1,"IsPass":1,"CheckBy":"TSTMX-001-01","CheckTime":"2024-10-28 16:10:45"}}'
+
+入站上传结果    {"StatusCode":300,"Message":"条码【21240525C3608】重复过站。，扫描条码为：21240525C3608"}
+
+校验上传http://192.168.2.53/api/Device/DeviceStatusData    '{"DeviceCode":"TSTMX-001-01","LineCode":"WAVE4","StatusCode":10,"CheckTime":"2024-10-28 16:10:45"}'
+
+校验上传结果    {"StatusCode":200,"Message":""}
+
+jinru
+
+出站上传http://192.168.2.53/api/Device/DeviceInspectData    '{"Main":{"LineNum":"9870292684468","BarCode":"21240525C3608","TranBarCode":"","BindBarCode":"","DeviceCode":"TSTMX-001-01","LineCode":"WAVE4","CommandCard":"CM2410260001","ProcessCode":"A2-100","NGCode":"A03-4","IsOnlyRecord":1,"IsPass":0,"CheckBy":"TSTMX-001-01","CheckTime":"2024-10-28 16:11:35"},"Detail":[{"ItemName":"CH1_1测试压力","UpperLimits":45.0,"LowerLimits":40.0,"StandardVal":39.93,"ActualVal":39.93,"SoftVer":"","CheckTime":"2024-10-28 16:11:35"},{"ItemName":"CH1_1泄漏量","UpperLimits":100.0,"LowerLimits":-100.0,"StandardVal":2000.0,"ActualVal":2000.0,"SoftVer":"","CheckTime":"2024-10-28 16:11:35"},{"ItemName":"CH1_1流量值","UpperLimits":8.0,"LowerLimits":0.0,"StandardVal":3.01,"ActualVal":3.01,"SoftVer":"","CheckTime":"2024-10-28 16:11:35"},{"ItemName":"CH1_2测试压力","UpperLimits":45.0,"LowerLimits":40.0,"StandardVal":40.76,"ActualVal":40.76,"SoftVer":"","CheckTime":"2024-10-28 16:11:35"},{"ItemName":"CH1_2泄漏量","UpperLimits":100.0,"LowerLimits":-100.0,"StandardVal":0.0,"ActualVal":0.0,"SoftVer":"","CheckTime":"2024-10-28 16:11:35"},{"ItemName":"CH1_2流量值","UpperLimits":8.0,"LowerLimits":0.0,"StandardVal":3.24,"ActualVal":3.24,"SoftVer":"","CheckTime":"2024-10-28 16:11:35"}]}'
+
+出站上传结果    {"StatusCode":300,"Message":"条码【21240525C3608】重复过站。，扫描条码为：21240525C3608"}
+
+入站上传 http://192.168.2.53/api/Device/DeviceInspectData_check    '{"Main":{"LineNum":"6807331316083","BarCode":"21240525C3608\r","TranBarCode":"","BindBarCode":"","DeviceCode":"TSTMX-001-01","LineCode":"WAVE4","CommandCard":"CM2410260001","ProcessCode":"A2-100","NGCode":"","IsOnlyRecord":1,"IsPass":1,"CheckBy":"TSTMX-001-01","CheckTime":"2024-10-28 16:11:52"}}'
+
+入站上传结果    {"StatusCode":200,"Message":"扫描条码为：21240525C3608\r"}
+
+校验上传http://192.168.2.53/api/Device/DeviceStatusData    '{"DeviceCode":"TSTMX-001-01","LineCode":"WAVE4","StatusCode":10,"CheckTime":"2024-10-28 16:11:52"}'
+
+校验上传结果    {"StatusCode":200,"Message":""}
+
+出站上传http://192.168.2.53/api/Device/DeviceInspectData    '{"Main":{"LineNum":"6807331316083","BarCode":"21240525C3608","TranBarCode":"","BindBarCode":"","DeviceCode":"TSTMX-001-01","LineCode":"WAVE4","CommandCard":"CM2410260001","ProcessCode":"A2-100","NGCode":"A03-4","IsOnlyRecord":1,"IsPass":1,"CheckBy":"TSTMX-001-01","CheckTime":"2024-10-28 16:12:44"},"Detail":[{"ItemName":"CH2_1测试压力","UpperLimits":45.0,"LowerLimits":40.0,"StandardVal":40.87,"ActualVal":40.87,"SoftVer":"","CheckTime":"2024-10-28 16:12:44"},{"ItemName":"CH2_1泄漏量","UpperLimits":100.0,"LowerLimits":-100.0,"StandardVal":231.0,"ActualVal":231.0,"SoftVer":"","CheckTime":"2024-10-28 16:12:44"},{"ItemName":"CH2_1流量值","UpperLimits":8.0,"LowerLimits":0.0,"StandardVal":2.79,"ActualVal":2.79,"SoftVer":"","CheckTime":"2024-10-28 16:12:44"},{"ItemName":"CH2_2测试压力","UpperLimits":45.0,"LowerLimits":40.0,"StandardVal":40.48,"ActualVal":40.48,"SoftVer":"","CheckTime":"2024-10-28 16:12:44"},{"ItemName":"CH2_2泄漏量","UpperLimits":100.0,"LowerLimits":-100.0,"StandardVal":117.0,"ActualVal":117.0,"SoftVer":"","CheckTime":"2024-10-28 16:12:44"},{"ItemName":"CH2_2流量值","UpperLimits":8.0,"LowerLimits":0.0,"StandardVal":3.24,"ActualVal":3.24,"SoftVer":"","CheckTime":"2024-10-28 16:12:44"}]}'
+
+出站上传结果    {"StatusCode":300,"Message":"条码【21240525C3608】重复过站。，扫描条码为：21240525C3608"}
+
+入站上传 http://192.168.2.53/api/Device/DeviceInspectData_check    '{"Main":{"LineNum":"4419920502426","BarCode":"21240525C3608","TranBarCode":"","BindBarCode":"","DeviceCode":"TSTMX-001-01","LineCode":"WAVE4","CommandCard":"CM2410260001","ProcessCode":"A2-100","NGCode":"","IsOnlyRecord":1,"IsPass":1,"CheckBy":"TSTMX-001-01","CheckTime":"2024-10-28 16:12:51"}}'
+
+入站上传结果    {"StatusCode":300,"Message":"条码【21240525C3608】重复过站。，扫描条码为：21240525C3608"}
+
+校验上传http://192.168.2.53/api/Device/DeviceStatusData    '{"DeviceCode":"TSTMX-001-01","LineCode":"WAVE4","StatusCode":10,"CheckTime":"2024-10-28 16:12:51"}'
+
+校验上传结果    {"StatusCode":200,"Message":""}
+
+jinru
+
+出站上传http://192.168.2.53/api/Device/DeviceInspectData    '{"Main":{"LineNum":"4419920502426","BarCode":"21240525C3608","TranBarCode":"","BindBarCode":"","DeviceCode":"TSTMX-001-01","LineCode":"WAVE4","CommandCard":"CM2410260001","ProcessCode":"A2-100","NGCode":"A03-4","IsOnlyRecord":1,"IsPass":0,"CheckBy":"TSTMX-001-01","CheckTime":"2024-10-28 16:13:25"},"Detail":[{"ItemName":"CH1_1测试压力","UpperLimits":45.0,"LowerLimits":40.0,"StandardVal":39.75,"ActualVal":39.75,"SoftVer":"","CheckTime":"2024-10-28 16:13:25"},{"ItemName":"CH1_1泄漏量","UpperLimits":100.0,"LowerLimits":-100.0,"StandardVal":2000.0,"ActualVal":2000.0,"SoftVer":"","CheckTime":"2024-10-28 16:13:25"},{"ItemName":"CH1_1流量值","UpperLimits":8.0,"LowerLimits":0.0,"StandardVal":2.9,"ActualVal":2.9,"SoftVer":"","CheckTime":"2024-10-28 16:13:25"},{"ItemName":"CH1_2测试压力","UpperLimits":45.0,"LowerLimits":40.0,"StandardVal":40.56,"ActualVal":40.56,"SoftVer":"","CheckTime":"2024-10-28 16:13:25"},{"ItemName":"CH1_2泄漏量","UpperLimits":100.0,"LowerLimits":-100.0,"StandardVal":0.0,"ActualVal":0.0,"SoftVer":"","CheckTime":"2024-10-28 16:13:25"},{"ItemName":"CH1_2流量值","UpperLimits":8.0,"LowerLimits":0.0,"StandardVal":3.23,"ActualVal":3.23,"SoftVer":"","CheckTime":"2024-10-28 16:13:25"}]}'
+
+出站上传结果    {"StatusCode":300,"Message":"条码【21240525C3608】重复过站。，扫描条码为：21240525C3608"}
+
+入站上传 http://192.168.2.53/api/Device/DeviceInspectData_check    '{"Main":{"LineNum":"4525403962715","BarCode":"21240525C3226","TranBarCode":"","BindBarCode":"","DeviceCode":"TSTMX-001-01","LineCode":"WAVE4","CommandCard":"CM2410260001","ProcessCode":"A2-100","NGCode":"","IsOnlyRecord":1,"IsPass":1,"CheckBy":"TSTMX-001-01","CheckTime":"2024-10-28 16:29:03"}}'
+
+入站上传结果    {"StatusCode":300,"Message":"条码【21240525C3226】重复过站。，扫描条码为：21240525C3226"}
+
+校验上传http://192.168.2.53/api/Device/DeviceStatusData    '{"DeviceCode":"TSTMX-001-01","LineCode":"WAVE4","StatusCode":10,"CheckTime":"2024-10-28 16:29:03"}'
+
+校验上传结果    {"StatusCode":200,"Message":""}
+
+jinru
+
+出站上传http://192.168.2.53/api/Device/DeviceInspectData    '{"Main":{"LineNum":"4525403962715","BarCode":"21240525C3226","TranBarCode":"","BindBarCode":"","DeviceCode":"TSTMX-001-01","LineCode":"WAVE4","CommandCard":"CM2410260001","ProcessCode":"A2-100","NGCode":"A03-4","IsOnlyRecord":1,"IsPass":0,"CheckBy":"TSTMX-001-01","CheckTime":"2024-10-28 16:29:27"},"Detail":[{"ItemName":"CH1_1测试压力","UpperLimits":45.0,"LowerLimits":40.0,"StandardVal":0.0,"ActualVal":0.0,"SoftVer":"","CheckTime":"2024-10-28 16:29:27"},{"ItemName":"CH1_1泄漏量","UpperLimits":100.0,"LowerLimits":-100.0,"StandardVal":0.0,"ActualVal":0.0,"SoftVer":"","CheckTime":"2024-10-28 16:29:27"},{"ItemName":"CH1_1流量值","UpperLimits":8.0,"LowerLimits":0.0,"StandardVal":0.0,"ActualVal":0.0,"SoftVer":"","CheckTime":"2024-10-28 16:29:27"},{"ItemName":"CH1_2测试压力","UpperLimits":45.0,"LowerLimits":40.0,"StandardVal":0.0,"ActualVal":0.0,"SoftVer":"","CheckTime":"2024-10-28 16:29:27"},{"ItemName":"CH1_2泄漏量","UpperLimits":100.0,"LowerLimits":-100.0,"StandardVal":0.0,"ActualVal":0.0,"SoftVer":"","CheckTime":"2024-10-28 16:29:27"},{"ItemName":"CH1_2流量值","UpperLimits":8.0,"LowerLimits":0.0,"StandardVal":0.0,"ActualVal":0.0,"SoftVer":"","CheckTime":"2024-10-28 16:29:27"}]}'
+
+出站上传结果    {"StatusCode":300,"Message":"条码【21240525C3226】重复过站。，扫描条码为：21240525C3226"}
+
+入站上传 http://192.168.2.53/api/Device/DeviceInspectData_check    '{"Main":{"LineNum":"8525070713146","BarCode":"21240525C5210","TranBarCode":"","BindBarCode":"","DeviceCode":"TSTMX-001-01","LineCode":"WAVE4","CommandCard":"CM2410260001","ProcessCode":"A2-100","NGCode":"","IsOnlyRecord":1,"IsPass":1,"CheckBy":"TSTMX-001-01","CheckTime":"2024-10-28 16:29:43"}}'
+
+入站上传结果    {"StatusCode":200,"Message":"扫描条码为：21240525C5210"}
+
+校验上传http://192.168.2.53/api/Device/DeviceStatusData    '{"DeviceCode":"TSTMX-001-01","LineCode":"WAVE4","StatusCode":10,"CheckTime":"2024-10-28 16:29:43"}'
+
+校验上传结果    {"StatusCode":200,"Message":""}
+
+jinru
+
+出站上传http://192.168.2.53/api/Device/DeviceInspectData    '{"Main":{"LineNum":"8525070713146","BarCode":"21240525C5210","TranBarCode":"","BindBarCode":"","DeviceCode":"TSTMX-001-01","LineCode":"WAVE4","CommandCard":"CM2410260001","ProcessCode":"A2-100","NGCode":"A03-4","IsOnlyRecord":1,"IsPass":0,"CheckBy":"TSTMX-001-01","CheckTime":"2024-10-28 16:30:17"},"Detail":[{"ItemName":"CH1_1测试压力","UpperLimits":45.0,"LowerLimits":40.0,"StandardVal":39.15,"ActualVal":39.15,"SoftVer":"","CheckTime":"2024-10-28 16:30:17"},{"ItemName":"CH1_1泄漏量","UpperLimits":100.0,"LowerLimits":-100.0,"StandardVal":2000.0,"ActualVal":2000.0,"SoftVer":"","CheckTime":"2024-10-28 16:30:17"},{"ItemName":"CH1_1流量值","UpperLimits":8.0,"LowerLimits":0.0,"StandardVal":3.4,"ActualVal":3.4,"SoftVer":"","CheckTime":"2024-10-28 16:30:17"},{"ItemName":"CH1_2测试压力","UpperLimits":45.0,"LowerLimits":40.0,"StandardVal":40.15,"ActualVal":40.15,"SoftVer":"","CheckTime":"2024-10-28 16:30:17"},{"ItemName":"CH1_2泄漏量","UpperLimits":100.0,"LowerLimits":-100.0,"StandardVal":0.0,"ActualVal":0.0,"SoftVer":"","CheckTime":"2024-10-28 16:30:17"},{"ItemName":"CH1_2流量值","UpperLimits":8.0,"LowerLimits":0.0,"StandardVal":3.14,"ActualVal":3.14,"SoftVer":"","CheckTime":"2024-10-28 16:30:17"}]}'
+
+出站上传结果    {"StatusCode":300,"Message":"SN已经登记维修,请维修完成，判定完成之后再投入，扫描条码为：21240525C5210"}
+
+入站上传 http://192.168.2.53/api/Device/DeviceInspectData_check    '{"Main":{"LineNum":"5806826273355","BarCode":"21240525C5210","TranBarCode":"","BindBarCode":"","DeviceCode":"TSTMX-001-01","LineCode":"WAVE4","CommandCard":"CM2410260001","ProcessCode":"A2-100","NGCode":"","IsOnlyRecord":1,"IsPass":1,"CheckBy":"TSTMX-001-01","CheckTime":"2024-10-28 16:31:04"}}'
+
+入站上传结果    {"StatusCode":200,"Message":"扫描条码为：21240525C5210"}
+
+校验上传http://192.168.2.53/api/Device/DeviceStatusData    '{"DeviceCode":"TSTMX-001-01","LineCode":"WAVE4","StatusCode":10,"CheckTime":"2024-10-28 16:31:04"}'
+
+校验上传结果    {"StatusCode":200,"Message":""}
+
+jinru
+
+出站上传http://192.168.2.53/api/Device/DeviceInspectData    '{"Main":{"LineNum":"5806826273355","BarCode":"21240525C5210","TranBarCode":"","BindBarCode":"","DeviceCode":"TSTMX-001-01","LineCode":"WAVE4","CommandCard":"CM2410260001","ProcessCode":"A2-100","NGCode":"A03-4","IsOnlyRecord":1,"IsPass":0,"CheckBy":"TSTMX-001-01","CheckTime":"2024-10-28 16:31:38"},"Detail":[{"ItemName":"CH1_1测试压力","UpperLimits":45.0,"LowerLimits":40.0,"StandardVal":39.03,"ActualVal":39.03,"SoftVer":"","CheckTime":"2024-10-28 16:31:38"},{"ItemName":"CH1_1泄漏量","UpperLimits":100.0,"LowerLimits":-100.0,"StandardVal":2000.0,"ActualVal":2000.0,"SoftVer":"","CheckTime":"2024-10-28 16:31:38"},{"ItemName":"CH1_1流量值","UpperLimits":8.0,"LowerLimits":0.0,"StandardVal":3.4,"ActualVal":3.4,"SoftVer":"","CheckTime":"2024-10-28 16:31:38"},{"ItemName":"CH1_2测试压力","UpperLimits":45.0,"LowerLimits":40.0,"StandardVal":39.97,"ActualVal":39.97,"SoftVer":"","CheckTime":"2024-10-28 16:31:38"},{"ItemName":"CH1_2泄漏量","UpperLimits":100.0,"LowerLimits":-100.0,"StandardVal":2000.0,"ActualVal":2000.0,"SoftVer":"","CheckTime":"2024-10-28 16:31:38"},{"ItemName":"CH1_2流量值","UpperLimits":8.0,"LowerLimits":0.0,"StandardVal":3.06,"ActualVal":3.06,"SoftVer":"","CheckTime":"2024-10-28 16:31:38"}]}'
+
+出站上传结果    {"StatusCode":300,"Message":"SN已经登记维修,请维修完成，判定完成之后再投入，扫描条码为：21240525C5210"}
+
+入站上传 http://192.168.2.53/api/Device/DeviceInspectData_check    '{"Main":{"LineNum":"5352975553065","BarCode":"21240525C5210","TranBarCode":"","BindBarCode":"","DeviceCode":"TSTMX-001-01","LineCode":"WAVE4","CommandCard":"CM2410260001","ProcessCode":"A2-100","NGCode":"","IsOnlyRecord":1,"IsPass":1,"CheckBy":"TSTMX-001-01","CheckTime":"2024-10-28 16:31:59"}}'
+
+入站上传结果    {"StatusCode":200,"Message":"扫描条码为：21240525C5210"}
+
+校验上传http://192.168.2.53/api/Device/DeviceStatusData    '{"DeviceCode":"TSTMX-001-01","LineCode":"WAVE4","StatusCode":10,"CheckTime":"2024-10-28 16:31:59"}'
+
+校验上传结果    {"StatusCode":200,"Message":""}
+
+jinru
+
+出站上传http://192.168.2.53/api/Device/DeviceInspectData    '{"Main":{"LineNum":"5352975553065","BarCode":"21240525C5210","TranBarCode":"","BindBarCode":"","DeviceCode":"TSTMX-001-01","LineCode":"WAVE4","CommandCard":"CM2410260001","ProcessCode":"A2-100","NGCode":"A03-4","IsOnlyRecord":1,"IsPass":0,"CheckBy":"TSTMX-001-01","CheckTime":"2024-10-28 16:32:33"},"Detail":[{"ItemName":"CH1_1测试压力","UpperLimits":45.0,"LowerLimits":40.0,"StandardVal":38.69,"ActualVal":38.69,"SoftVer":"","CheckTime":"2024-10-28 16:32:33"},{"ItemName":"CH1_1泄漏量","UpperLimits":100.0,"LowerLimits":-100.0,"StandardVal":2000.0,"ActualVal":2000.0,"SoftVer":"","CheckTime":"2024-10-28 16:32:33"},{"ItemName":"CH1_1流量值","UpperLimits":8.0,"LowerLimits":0.0,"StandardVal":3.09,"ActualVal":3.09,"SoftVer":"","CheckTime":"2024-10-28 16:32:33"},{"ItemName":"CH1_2测试压力","UpperLimits":45.0,"LowerLimits":40.0,"StandardVal":39.66,"ActualVal":39.66,"SoftVer":"","CheckTime":"2024-10-28 16:32:33"},{"ItemName":"CH1_2泄漏量","UpperLimits":100.0,"LowerLimits":-100.0,"StandardVal":2000.0,"ActualVal":2000.0,"SoftVer":"","CheckTime":"2024-10-28 16:32:33"},{"ItemName":"CH1_2流量值","UpperLimits":8.0,"LowerLimits":0.0,"StandardVal":3.2,"ActualVal":3.2,"SoftVer":"","CheckTime":"2024-10-28 16:32:33"}]}'
+
+出站上传结果    {"StatusCode":300,"Message":"SN已经登记维修,请维修完成，判定完成之后再投入，扫描条码为：21240525C5210"}
+
+入站上传 http://192.168.2.53/api/Device/DeviceInspectData_check    '{"Main":{"LineNum":"2472032735809","BarCode":"21240525C3226","TranBarCode":"","BindBarCode":"","DeviceCode":"TSTMX-001-01","LineCode":"WAVE4","CommandCard":"CM2410260001","ProcessCode":"A2-100","NGCode":"","IsOnlyRecord":1,"IsPass":1,"CheckBy":"TSTMX-001-01","CheckTime":"2024-10-28 16:40:12"}}'
+
+入站上传结果    {"StatusCode":300,"Message":"条码【21240525C3226】重复过站。，扫描条码为：21240525C3226"}
+
+校验上传http://192.168.2.53/api/Device/DeviceStatusData    '{"DeviceCode":"TSTMX-001-01","LineCode":"WAVE4","StatusCode":10,"CheckTime":"2024-10-28 16:40:12"}'
+
+校验上传结果    {"StatusCode":200,"Message":""}
+
+jinru
+
+出站上传http://192.168.2.53/api/Device/DeviceInspectData    '{"Main":{"LineNum":"2472032735809","BarCode":"21240525C3226","TranBarCode":"","BindBarCode":"","DeviceCode":"TSTMX-001-01","LineCode":"WAVE4","CommandCard":"CM2410260001","ProcessCode":"A2-100","NGCode":"A03-4","IsOnlyRecord":1,"IsPass":0,"CheckBy":"TSTMX-001-01","CheckTime":"2024-10-28 16:40:36"},"Detail":[{"ItemName":"CH1_1测试压力","UpperLimits":45.0,"LowerLimits":40.0,"StandardVal":0.0,"ActualVal":0.0,"SoftVer":"","CheckTime":"2024-10-28 16:40:36"},{"ItemName":"CH1_1泄漏量","UpperLimits":100.0,"LowerLimits":-100.0,"StandardVal":0.0,"ActualVal":0.0,"SoftVer":"","CheckTime":"2024-10-28 16:40:36"},{"ItemName":"CH1_1流量值","UpperLimits":8.0,"LowerLimits":0.0,"StandardVal":2.66,"ActualVal":2.66,"SoftVer":"","CheckTime":"2024-10-28 16:40:36"},{"ItemName":"CH1_2测试压力","UpperLimits":45.0,"LowerLimits":40.0,"StandardVal":0.0,"ActualVal":0.0,"SoftVer":"","CheckTime":"2024-10-28 16:40:36"},{"ItemName":"CH1_2泄漏量","UpperLimits":100.0,"LowerLimits":-100.0,"StandardVal":0.0,"ActualVal":0.0,"SoftVer":"","CheckTime":"2024-10-28 16:40:36"},{"ItemName":"CH1_2流量值","UpperLimits":8.0,"LowerLimits":0.0,"StandardVal":0.55,"ActualVal":0.55,"SoftVer":"","CheckTime":"2024-10-28 16:40:36"}]}'
+
+出站上传结果    {"StatusCode":300,"Message":"条码【21240525C3226】重复过站。，扫描条码为：21240525C3226"}
+
+入站上传 http://192.168.2.53/api/Device/DeviceInspectData_check    '{"Main":{"LineNum":"8550488105300","BarCode":"21240525C3226","TranBarCode":"","BindBarCode":"","DeviceCode":"TSTMX-001-01","LineCode":"WAVE4","CommandCard":"CM2410260001","ProcessCode":"A2-100","NGCode":"","IsOnlyRecord":1,"IsPass":1,"CheckBy":"TSTMX-001-01","CheckTime":"2024-10-28 16:41:56"}}'
+
+入站上传结果    {"StatusCode":300,"Message":"条码【21240525C3226】重复过站。，扫描条码为：21240525C3226"}
+
+校验上传http://192.168.2.53/api/Device/DeviceStatusData    '{"DeviceCode":"TSTMX-001-01","LineCode":"WAVE4","StatusCode":10,"CheckTime":"2024-10-28 16:41:56"}'
+
+校验上传结果    {"StatusCode":200,"Message":""}
+
+jinru
+
+出站上传http://192.168.2.53/api/Device/DeviceInspectData    '{"Main":{"LineNum":"8550488105300","BarCode":"21240525C3226","TranBarCode":"","BindBarCode":"","DeviceCode":"TSTMX-001-01","LineCode":"WAVE4","CommandCard":"CM2410260001","ProcessCode":"A2-100","NGCode":"A03-4","IsOnlyRecord":1,"IsPass":0,"CheckBy":"TSTMX-001-01","CheckTime":"2024-10-28 16:47:11"},"Detail":[{"ItemName":"CH1_1测试压力","UpperLimits":45.0,"LowerLimits":40.0,"StandardVal":0.0,"ActualVal":0.0,"SoftVer":"","CheckTime":"2024-10-28 16:47:11"},{"ItemName":"CH1_1泄漏量","UpperLimits":100.0,"LowerLimits":-100.0,"StandardVal":0.0,"ActualVal":0.0,"SoftVer":"","CheckTime":"2024-10-28 16:47:11"},{"ItemName":"CH1_1流量值","UpperLimits":8.0,"LowerLimits":0.0,"StandardVal":0.0,"ActualVal":0.0,"SoftVer":"","CheckTime":"2024-10-28 16:47:11"},{"ItemName":"CH1_2测试压力","UpperLimits":45.0,"LowerLimits":40.0,"StandardVal":0.0,"ActualVal":0.0,"SoftVer":"","CheckTime":"2024-10-28 16:47:11"},{"ItemName":"CH1_2泄漏量","UpperLimits":100.0,"LowerLimits":-100.0,"StandardVal":0.0,"ActualVal":0.0,"SoftVer":"","CheckTime":"2024-10-28 16:47:11"},{"ItemName":"CH1_2流量值","UpperLimits":8.0,"LowerLimits":0.0,"StandardVal":0.0,"ActualVal":0.0,"SoftVer":"","CheckTime":"2024-10-28 16:47:11"}]}'
+
+出站上传结果    {"StatusCode":300,"Message":"条码【21240525C3226】重复过站。，扫描条码为：21240525C3226"}
+
+入站上传 http://192.168.2.53/api/Device/DeviceInspectData_check    '{"Main":{"LineNum":"8712201118800","BarCode":"21240525C3226","TranBarCode":"","BindBarCode":"","DeviceCode":"TSTMX-001-01","LineCode":"WAVE4","CommandCard":"CM2410260001","ProcessCode":"A2-100","NGCode":"","IsOnlyRecord":1,"IsPass":1,"CheckBy":"TSTMX-001-01","CheckTime":"2024-10-28 16:47:36"}}'
+
+入站上传结果    {"StatusCode":300,"Message":"条码【21240525C3226】重复过站。，扫描条码为：21240525C3226"}
+
+校验上传http://192.168.2.53/api/Device/DeviceStatusData    '{"DeviceCode":"TSTMX-001-01","LineCode":"WAVE4","StatusCode":10,"CheckTime":"2024-10-28 16:47:36"}'
+
+校验上传结果    {"StatusCode":200,"Message":""}
+
+10/28/2024 4:48:26 PMjinruliucheng
+
+出站上传http://192.168.2.53/api/Device/DeviceInspectData    '{"Main":{"LineNum":"8712201118800","BarCode":"21240525C3226","TranBarCode":"","BindBarCode":"","DeviceCode":"TSTMX-001-01","LineCode":"WAVE4","CommandCard":"CM2410260001","ProcessCode":"A2-100","NGCode":"A03-4","IsOnlyRecord":1,"IsPass":1,"CheckBy":"TSTMX-001-01","CheckTime":"2024-10-28 16:48:26"},"Detail":[{"ItemName":"CH1_1测试压力","UpperLimits":45.0,"LowerLimits":40.0,"StandardVal":40.88,"ActualVal":40.88,"SoftVer":"","CheckTime":"2024-10-28 16:48:26"},{"ItemName":"CH1_1泄漏量","UpperLimits":100.0,"LowerLimits":-100.0,"StandardVal":18.0,"ActualVal":18.0,"SoftVer":"","CheckTime":"2024-10-28 16:48:26"},{"ItemName":"CH1_1流量值","UpperLimits":8.0,"LowerLimits":0.0,"StandardVal":3.55,"ActualVal":3.55,"SoftVer":"","CheckTime":"2024-10-28 16:48:26"},{"ItemName":"CH1_2测试压力","UpperLimits":45.0,"LowerLimits":40.0,"StandardVal":40.99,"ActualVal":40.99,"SoftVer":"","CheckTime":"2024-10-28 16:48:26"},{"ItemName":"CH1_2泄漏量","UpperLimits":100.0,"LowerLimits":-100.0,"StandardVal":1.0,"ActualVal":1.0,"SoftVer":"","CheckTime":"2024-10-28 16:48:26"},{"ItemName":"CH1_2流量值","UpperLimits":8.0,"LowerLimits":0.0,"StandardVal":3.0,"ActualVal":3.0,"SoftVer":"","CheckTime":"2024-10-28 16:48:26"}]}'
+
+出站上传结果    {"StatusCode":300,"Message":"条码【21240525C3226】重复过站。，扫描条码为：21240525C3226"}
+

@@ -127,15 +127,22 @@ namespace SLC1_N
         public bool ch1rwdend;
         public bool ch2rwdend;
 
+
+        public bool isrunning = true;
         /// <summary>
         /// 循环查看各个信号的实时状态 
         /// </summary>
         public void PLC_IsRun()
         {
-            //plc_signal = new Thread(ReadSignal);
-            //plc_signal.IsBackground = true;
-            //plc_signal.Start();
-            Task.Run(() => { ReadSignal(); });
+            if (isrunning)
+            {
+                isrunning = false;
+                Task.Run(() => { 
+                    ReadSignal(); 
+                });
+                
+            }
+            
         }
 
         public void ReadSignal()
@@ -239,6 +246,7 @@ namespace SLC1_N
                     CH2Bee = melsecFx.ReadBool("M3111").Content;
                     AutoModel = melsecFx.ReadBool("M3124").Content;
                 }
+                isrunning = true;
             }
         }
         Thread ch1stopping;

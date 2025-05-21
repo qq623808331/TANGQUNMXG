@@ -39,7 +39,7 @@
             resources.ApplyResources(this.Log, "Log");
             this.Log.Name = "Log";
             this.Log.UseVisualStyleBackColor = true;
-            this.Log.Click += new System.EventHandler(this.Log_Click);
+            this.Log.Click += new System.EventHandler(this.Log_ClickAsync);
             // 
             // label1
             // 

@@ -137,7 +137,7 @@
     <value>233, 140</value>
   </data>
   <data name="ChkMES.Size" type="System.Drawing.Size, System.Drawing">
-    <value>147, 20</value>
+    <value>146, 20</value>
   </data>
   <data name="ChkMES.Text" xml:space="preserve">
     <value>Exportar al mes</value>
@@ -146,7 +146,7 @@
     <value>Seleccionar carpetas</value>
   </data>
   <data name="label35.Size" type="System.Drawing.Size, System.Drawing">
-    <value>152, 16</value>
+    <value>151, 16</value>
   </data>
   <data name="label35.Text" xml:space="preserve">
     <value>Ruta de la carpeta</value>
@@ -155,16 +155,19 @@
     <value>14, 140</value>
   </data>
   <data name="ChkExcel.Size" type="System.Drawing.Size, System.Drawing">
-    <value>187, 20</value>
+    <value>186, 20</value>
   </data>
   <data name="ChkExcel.Text" xml:space="preserve">
     <value>Exportar a Microsoft</value>
   </data>
-  <data name="path.Size" type="System.Drawing.Size, System.Drawing">
-    <value>384, 23</value>
-  </data>
   <data name="Warning.Text" xml:space="preserve">
     <value>Ver registro de alarma</value>
+  </data>
+  <data name="opMES.Location" type="System.Drawing.Point, System.Drawing">
+    <value>233, 178</value>
+  </data>
+  <data name="opMES.Text" xml:space="preserve">
+    <value>Abrir mes</value>
   </data>
   <data name="$this.Icon" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>

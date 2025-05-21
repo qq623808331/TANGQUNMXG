@@ -117,15 +117,14 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <data name="&gt;&gt;Warning.ZOrder" xml:space="preserve">
-    <value>0</value>
+  <data name="&gt;&gt;ChkExcel.Parent" xml:space="preserve">
+    <value>$this</value>
   </data>
-  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
-  <data name="Use_Set.Location" type="System.Drawing.Point, System.Drawing">
-    <value>137, 279</value>
+  <data name="&gt;&gt;ChkExcel.Type" xml:space="preserve">
+    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;BtnPath.ZOrder" xml:space="preserve">
-    <value>5</value>
+    <value>6</value>
   </data>
   <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
   <data name="Warning.TabIndex" type="System.Int32, mscorlib">
@@ -133,6 +132,10 @@
   </data>
   <data name="&gt;&gt;ChkCSV.Name" xml:space="preserve">
     <value>ChkCSV</value>
+  </data>
+  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="Use_Set.Location" type="System.Drawing.Point, System.Drawing">
+    <value>137, 279</value>
   </data>
   <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
   <data name="ChkMES.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
@@ -144,9 +147,6 @@
   <data name="&gt;&gt;$this.Type" xml:space="preserve">
     <value>System.Windows.Forms.Form, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;ChkExcel.Type" xml:space="preserve">
-    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
   <data name="&gt;&gt;FolderBrowserDialog1.Type" xml:space="preserve">
     <value>System.Windows.Forms.FolderBrowserDialog, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
@@ -157,7 +157,7 @@
     <value>95, 19</value>
   </data>
   <data name="&gt;&gt;Use_Set.ZOrder" xml:space="preserve">
-    <value>3</value>
+    <value>4</value>
   </data>
   <data name="ChkExcel.Text" xml:space="preserve">
     <value>导出到Excel</value>
@@ -165,8 +165,11 @@
   <data name="&gt;&gt;BtnConMES.Type" xml:space="preserve">
     <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;label35.Name" xml:space="preserve">
-    <value>label35</value>
+  <data name="&gt;&gt;opMES.Type" xml:space="preserve">
+    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="BtnConMES.TabIndex" type="System.Int32, mscorlib">
+    <value>119</value>
   </data>
   <data name="ChkMES.Text" xml:space="preserve">
     <value>导出到Mes</value>
@@ -611,8 +614,8 @@
   <data name="path.TabIndex" type="System.Int32, mscorlib">
     <value>110</value>
   </data>
-  <data name="BtnConMES.Size" type="System.Drawing.Size, System.Drawing">
-    <value>151, 53</value>
+  <data name="opMES.TabIndex" type="System.Int32, mscorlib">
+    <value>122</value>
   </data>
   <data name="label35.TabIndex" type="System.Int32, mscorlib">
     <value>116</value>
@@ -620,23 +623,23 @@
   <data name="&gt;&gt;BtnConMES.Name" xml:space="preserve">
     <value>BtnConMES</value>
   </data>
-  <data name="ChkMES.Size" type="System.Drawing.Size, System.Drawing">
-    <value>99, 20</value>
-  </data>
-  <data name="ChkMES.Font" type="System.Drawing.Font, System.Drawing">
-    <value>SimSun, 12pt</value>
-  </data>
-  <data name="$this.Text" xml:space="preserve">
-    <value>存储</value>
-  </data>
-  <data name="$this.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>4, 4, 4, 4</value>
+  <data name="BtnConMES.Size" type="System.Drawing.Size, System.Drawing">
+    <value>151, 53</value>
   </data>
   <data name="&gt;&gt;Use_Set.Parent" xml:space="preserve">
     <value>$this</value>
   </data>
-  <data name="ChkExcel.TabIndex" type="System.Int32, mscorlib">
-    <value>113</value>
+  <data name="$this.Text" xml:space="preserve">
+    <value>存储</value>
+  </data>
+  <data name="opMES.Location" type="System.Drawing.Point, System.Drawing">
+    <value>246, 177</value>
+  </data>
+  <data name="$this.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 4, 4, 4</value>
+  </data>
+  <data name="path.Size" type="System.Drawing.Size, System.Drawing">
+    <value>384, 26</value>
   </data>
   <data name="ChkExcel.Location" type="System.Drawing.Point, System.Drawing">
     <value>67, 140</value>
@@ -644,17 +647,20 @@
   <data name="ChkCSV.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
+  <data name="&gt;&gt;opMES.Name" xml:space="preserve">
+    <value>opMES</value>
+  </data>
+  <data name="ChkMES.Size" type="System.Drawing.Size, System.Drawing">
+    <value>99, 20</value>
+  </data>
   <data name="&gt;&gt;BtnConMES.Parent" xml:space="preserve">
     <value>$this</value>
   </data>
   <data name="&gt;&gt;ChkMES.ZOrder" xml:space="preserve">
-    <value>4</value>
+    <value>5</value>
   </data>
   <data name="&gt;&gt;BtnPath.Type" xml:space="preserve">
     <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="Use_Set.Text" xml:space="preserve">
-    <value>应用设置</value>
   </data>
   <data name="label35.Size" type="System.Drawing.Size, System.Drawing">
     <value>88, 16</value>
@@ -663,18 +669,18 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;label35.ZOrder" xml:space="preserve">
-    <value>6</value>
+    <value>7</value>
+  </data>
+  <data name="ChkMES.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
   </data>
   <data name="&gt;&gt;ChkCSV.ZOrder" xml:space="preserve">
-    <value>1</value>
+    <value>2</value>
   </data>
   <data name="Use_Set.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>5, 5, 5, 5</value>
   </data>
-  <data name="BtnPath.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>5, 5, 5, 5</value>
-  </data>
-  <data name="&gt;&gt;ChkExcel.Parent" xml:space="preserve">
+  <data name="&gt;&gt;opMES.Parent" xml:space="preserve">
     <value>$this</value>
   </data>
   <data name="&gt;&gt;ChkMES.Parent" xml:space="preserve">
@@ -684,10 +690,10 @@
     <value>117</value>
   </data>
   <data name="&gt;&gt;ChkExcel.ZOrder" xml:space="preserve">
-    <value>7</value>
+    <value>8</value>
   </data>
-  <data name="BtnConMES.TabIndex" type="System.Int32, mscorlib">
-    <value>119</value>
+  <data name="&gt;&gt;opMES.ZOrder" xml:space="preserve">
+    <value>0</value>
   </data>
   <data name="&gt;&gt;Use_Set.Type" xml:space="preserve">
     <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
@@ -722,8 +728,8 @@
   <data name="BtnConMES.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>5, 5, 5, 5</value>
   </data>
-  <data name="label35.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>5, 0, 5, 0</value>
+  <data name="Use_Set.Text" xml:space="preserve">
+    <value>应用设置</value>
   </data>
   <data name="$this.AutoScaleDimensions" type="System.Drawing.SizeF, System.Drawing">
     <value>8, 16</value>
@@ -734,8 +740,17 @@
   <data name="ChkExcel.Size" type="System.Drawing.Size, System.Drawing">
     <value>115, 20</value>
   </data>
-  <data name="&gt;&gt;path.ZOrder" xml:space="preserve">
-    <value>8</value>
+  <data name="label35.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>5, 0, 5, 0</value>
+  </data>
+  <data name="&gt;&gt;Warning.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;label35.Name" xml:space="preserve">
+    <value>label35</value>
+  </data>
+  <data name="ChkMES.Font" type="System.Drawing.Font, System.Drawing">
+    <value>SimSun, 12pt</value>
   </data>
   <data name="&gt;&gt;Warning.Parent" xml:space="preserve">
     <value>$this</value>
@@ -743,11 +758,8 @@
   <data name="path.Location" type="System.Drawing.Point, System.Drawing">
     <value>20, 29</value>
   </data>
-  <data name="&gt;&gt;label35.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="ChkMES.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
+  <data name="BtnPath.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>5, 5, 5, 5</value>
   </data>
   <data name="&gt;&gt;Warning.Name" xml:space="preserve">
     <value>Warning</value>
@@ -776,6 +788,9 @@
   <data name="BtnPath.Location" type="System.Drawing.Point, System.Drawing">
     <value>137, 65</value>
   </data>
+  <data name="opMES.Size" type="System.Drawing.Size, System.Drawing">
+    <value>104, 24</value>
+  </data>
   <data name="ChkCSV.TabIndex" type="System.Int32, mscorlib">
     <value>120</value>
   </data>
@@ -783,10 +798,13 @@
     <value>137, 342</value>
   </data>
   <data name="&gt;&gt;BtnConMES.ZOrder" xml:space="preserve">
-    <value>2</value>
+    <value>3</value>
   </data>
   <data name="ChkExcel.Font" type="System.Drawing.Font, System.Drawing">
     <value>SimSun, 12pt</value>
+  </data>
+  <data name="&gt;&gt;path.ZOrder" xml:space="preserve">
+    <value>9</value>
   </data>
   <data name="BtnPath.Size" type="System.Drawing.Size, System.Drawing">
     <value>151, 53</value>
@@ -812,8 +830,8 @@
   <data name="&gt;&gt;BtnPath.Name" xml:space="preserve">
     <value>BtnPath</value>
   </data>
-  <data name="path.Size" type="System.Drawing.Size, System.Drawing">
-    <value>384, 26</value>
+  <data name="&gt;&gt;label35.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;label35.Parent" xml:space="preserve">
     <value>$this</value>
@@ -821,8 +839,8 @@
   <data name="&gt;&gt;ChkMES.Type" xml:space="preserve">
     <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="ChkCSV.Location" type="System.Drawing.Point, System.Drawing">
-    <value>67, 171</value>
+  <data name="ChkExcel.TabIndex" type="System.Int32, mscorlib">
+    <value>113</value>
   </data>
   <data name="label35.Location" type="System.Drawing.Point, System.Drawing">
     <value>17, 8</value>
@@ -833,6 +851,9 @@
   <data name="&gt;&gt;FolderBrowserDialog1.Name" xml:space="preserve">
     <value>FolderBrowserDialog1</value>
   </data>
+  <data name="ChkCSV.Location" type="System.Drawing.Point, System.Drawing">
+    <value>67, 171</value>
+  </data>
   <metadata name="FolderBrowserDialog1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>17, 17</value>
   </metadata>
@@ -840,6 +861,6 @@
     <value>True</value>
   </metadata>
   <metadata name="$this.Language" type="System.Globalization.CultureInfo, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>en</value>
+    <value>es</value>
   </metadata>
 </root>

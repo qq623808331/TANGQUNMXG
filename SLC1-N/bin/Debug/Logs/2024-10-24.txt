@@ -1,0 +1,84 @@
+全局异常捕捉
+****************************异常文本****************************
+【出现时间】：10/24/2024 9:10:13 AM
+【异常类型】：InvalidOperationException
+【异常信息】：线程间操作无效: 从不是创建控件“CH1RTADC”的线程访问它。
+【堆栈调用】：   在 System.Windows.Forms.Control.get_Handle()
+   在 System.Windows.Forms.Control.set_WindowText(String value)
+   在 System.Windows.Forms.Control.set_Text(String value)
+   在 System.Windows.Forms.Label.set_Text(String value)
+   在 SLC1_N.Form1.CH1POWER_DataReceived(String data) 位置 C:\Users\Administrator\Desktop\messsssss\TANGQUNMXG\SLC1-N\Form1.cs:行号 490
+   在 SLC1_N.SerialPortReader.OnTimeout(Object state) 位置 C:\Users\Administrator\Desktop\messsssss\TANGQUNMXG\SLC1-N\ProtRead.cs:行号 67
+   在 System.Threading.TimerQueueTimer.CallCallbackInContext(Object state)
+   在 System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state, Boolean preserveSyncCtx)
+   在 System.Threading.ExecutionContext.Run(ExecutionContext executionContext, ContextCallback callback, Object state, Boolean preserveSyncCtx)
+   在 System.Threading.TimerQueueTimer.CallCallback()
+   在 System.Threading.TimerQueueTimer.Fire()
+   在 System.Threading.TimerQueue.FireNextTimers()
+   在 System.Threading.TimerQueue.AppDomainTimerCallback(Int32 id)
+***************************************************************
+
+10/24/2024 9:10:13 AM
+=======================================================
+全局异常捕捉
+****************************异常文本****************************
+【出现时间】：10/24/2024 10:34:56 AM
+【异常类型】：InvalidOperationException
+【异常信息】：线程间操作无效: 从不是创建控件“CH1RTADC”的线程访问它。
+【堆栈调用】：   在 System.Windows.Forms.Control.get_Handle()
+   在 System.Windows.Forms.Control.set_WindowText(String value)
+   在 System.Windows.Forms.Control.set_Text(String value)
+   在 System.Windows.Forms.Label.set_Text(String value)
+   在 SLC1_N.Form1.CH1POWER_DataReceived(String data) 位置 C:\Users\Administrator\Desktop\messsssss\TANGQUNMXG\SLC1-N\Form1.cs:行号 490
+   在 SLC1_N.SerialPortReader.OnTimeout(Object state) 位置 C:\Users\Administrator\Desktop\messsssss\TANGQUNMXG\SLC1-N\ProtRead.cs:行号 67
+   在 System.Threading.TimerQueueTimer.CallCallbackInContext(Object state)
+   在 System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state, Boolean preserveSyncCtx)
+   在 System.Threading.ExecutionContext.Run(ExecutionContext executionContext, ContextCallback callback, Object state, Boolean preserveSyncCtx)
+   在 System.Threading.TimerQueueTimer.CallCallback()
+   在 System.Threading.TimerQueueTimer.Fire()
+   在 System.Threading.TimerQueue.FireNextTimers()
+   在 System.Threading.TimerQueue.AppDomainTimerCallback(Int32 id)
+***************************************************************
+
+10/24/2024 10:34:56 AM
+=======================================================
+全局异常捕捉
+****************************异常文本****************************
+【出现时间】：10/24/2024 11:02:38 AM
+【异常类型】：UnauthorizedAccessException
+【异常信息】：对端口的访问被拒绝。
+【堆栈调用】：   在 System.IO.Ports.InternalResources.WinIOError(Int32 errorCode, String str)
+   在 System.IO.Ports.InternalResources.WinIOError()
+   在 System.IO.Ports.SerialStream.get_BytesToRead()
+   在 System.IO.Ports.SerialPort.get_BytesToRead()
+   在 System.IO.Ports.SerialPort.ReadExisting()
+   在 SLC1_N.SerialPortReader.Read() 位置 C:\Users\Administrator\Desktop\messsssss\TANGQUNMXG\SLC1-N\ProtRead.cs:行号 99
+   在 System.Threading.ThreadHelper.ThreadStart_Context(Object state)
+   在 System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state, Boolean preserveSyncCtx)
+   在 System.Threading.ExecutionContext.Run(ExecutionContext executionContext, ContextCallback callback, Object state, Boolean preserveSyncCtx)
+   在 System.Threading.ExecutionContext.Run(ExecutionContext executionContext, ContextCallback callback, Object state)
+   在 System.Threading.ThreadHelper.ThreadStart()
+***************************************************************
+
+10/24/2024 11:02:38 AM
+=======================================================
+全局异常捕捉
+****************************异常文本****************************
+【出现时间】：10/24/2024 11:02:38 AM
+【异常类型】：UnauthorizedAccessException
+【异常信息】：对端口的访问被拒绝。
+【堆栈调用】：   在 System.IO.Ports.InternalResources.WinIOError(Int32 errorCode, String str)
+   在 System.IO.Ports.InternalResources.WinIOError()
+   在 System.IO.Ports.SerialStream.get_BytesToRead()
+   在 System.IO.Ports.SerialPort.get_BytesToRead()
+   在 System.IO.Ports.SerialPort.ReadExisting()
+   在 SLC1_N.SerialPortReader.Read() 位置 C:\Users\Administrator\Desktop\messsssss\TANGQUNMXG\SLC1-N\ProtRead.cs:行号 99
+   在 System.Threading.ThreadHelper.ThreadStart_Context(Object state)
+   在 System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state, Boolean preserveSyncCtx)
+   在 System.Threading.ExecutionContext.Run(ExecutionContext executionContext, ContextCallback callback, Object state, Boolean preserveSyncCtx)
+   在 System.Threading.ExecutionContext.Run(ExecutionContext executionContext, ContextCallback callback, Object state)
+   在 System.Threading.ThreadHelper.ThreadStart()
+***************************************************************
+
+10/24/2024 11:02:38 AM
+=======================================================

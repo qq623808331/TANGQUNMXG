@@ -1,0 +1,6 @@
+20250121 21:46:51  21/01/2025 09:46:50 p. m.线程正在运行或被终止；它无法重新启动。   在 System.Threading.Thread.StartInternal(IPrincipal principal, StackCrawlMark& stackMark)
+   在 System.Threading.Thread.Start(StackCrawlMark& stackMark)
+   在 System.Threading.Thread.Start()
+   在 SLC1_N.PLCConnect.CH2FWDStart() 位置 C:\Users\Administrator\Desktop\messsssss\New folder\1.22\TANGQUNMXG\SLC1-N\PLCConnect.cs:行号 3009
+   在 SLC1_N.Form1.<>c__DisplayClass356_0.<CH2Method>b__0() 位置 C:\Users\Administrator\Desktop\messsssss\New folder\1.22\TANGQUNMXG\SLC1-N\Form1.cs:行号 12641
+

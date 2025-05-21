@@ -189,6 +189,11 @@ namespace SLC1_N
             {
                 save.ChkMES = Convert.ToBoolean(chkmes);
             }
+            string opmes = config.IniReadValue("Save", "opmes");
+            if (!String.IsNullOrEmpty(opmes))
+            {
+                save.opmes = Convert.ToBoolean(opmes);
+            }
             string chkcsv = config.IniReadValue("Save", "csv");
             if (!String.IsNullOrEmpty(chkcsv))
             {
@@ -260,7 +265,7 @@ namespace SLC1_N
             }
             string presscompensation = config.IniReadValue("Parameters", CH + "presscompensation");
             Log log = new Log();
-            log.CH1Port_Logmsg("补偿值" + presscompensation);
+            //log.CH1Port_Logmsg("补偿值" + presscompensation);
             if (!String.IsNullOrEmpty(presscompensation))
             {
                 ch_params.PressCompensation = "0";
@@ -294,6 +299,20 @@ namespace SLC1_N
             string dialog = Form1.f1.machine;
             ConfigINI config = new ConfigINI("Model", dialog);
             string ch1up = config.IniReadValue("Lin", "CH1UP");
+
+          
+
+            if (String.IsNullOrEmpty(config.IniReadValue("Lin", "CH1electricChange")))
+                ord.CH1electricChange = false;
+            else
+                ord.CH1electricChange = Convert.ToBoolean(config.IniReadValue("Lin", "CH1electricChange"));
+
+            if (String.IsNullOrEmpty(config.IniReadValue("Lin", "CH2electricChange")))
+                ord.CH2electricChange = false;
+            else
+                ord.CH2electricChange = Convert.ToBoolean(config.IniReadValue("Lin", "CH2electricChange"));
+
+
 
             if (String.IsNullOrEmpty(config.IniReadValue("Lin", "CH1UpDownChange")))
                 ord.CH1UpDownChange = false;

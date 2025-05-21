@@ -1,0 +1,12 @@
+[TQmes]
+URL=http://192.168.2.53/api/Device/DeviceInspectData
+inbordURL=http://192.168.2.53/api/Device/DeviceInspectData_check
+yanzhengUrl=http://192.168.2.53/api/Device/DeviceStatusData 
+LineNum=
+CommandCard=CM2501280003
+DeviceCode=TSTMX-001-01
+ProcessCode=A2-100
+LineCode=WAVE4
+NGCode=A03-4
+CheckBy=TSTMX-001-01
+IsOnlyRecord=0

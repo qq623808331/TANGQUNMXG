@@ -23,7 +23,7 @@ namespace SLC1_N
 
         private void BtnConMES_Click(object sender, EventArgs e)
         {
-            MESConfig mes = new MESConfig();
+            Mes mes = new Mes();
             OpenForm(mes);
         }
 
@@ -33,6 +33,7 @@ namespace SLC1_N
             Form1.f1.save.ChkExcel = ChkExcel.Checked;
             Form1.f1.save.ChkMES = ChkMES.Checked;
             Form1.f1.save.ChkCSV = ChkCSV.Checked;
+            Form1.f1.save.opmes = opMES.Checked;
             Set();
             this.Close();
             //}
@@ -47,6 +48,7 @@ namespace SLC1_N
             mesconfig.IniWriteValue("Save", "mes", ChkMES.Checked.ToString());
             mesconfig.IniWriteValue("Save", "csv", ChkCSV.Checked.ToString());
             mesconfig.IniWriteValue("Save", "path", path.Text);
+            mesconfig.IniWriteValue("Save", "opmes", opMES.Checked.ToString());
         }
 
         /// <summary>
@@ -60,6 +62,7 @@ namespace SLC1_N
             ChkMES.Checked = save.ChkMES;
             ChkCSV.Checked = save.ChkCSV;
             path.Text = save.Path;
+            opMES.Checked = save.opmes;
         }
 
         public void OpenForm(System.Windows.Forms.Form frm)

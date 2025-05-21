@@ -39,6 +39,7 @@
             this.path = new System.Windows.Forms.TextBox();
             this.FolderBrowserDialog1 = new System.Windows.Forms.FolderBrowserDialog();
             this.Warning = new System.Windows.Forms.Button();
+            this.opMES = new System.Windows.Forms.CheckBox();
             this.SuspendLayout();
             // 
             // ChkCSV
@@ -101,10 +102,17 @@
             this.Warning.UseVisualStyleBackColor = true;
             this.Warning.Click += new System.EventHandler(this.Warning_Click);
             // 
+            // opMES
+            // 
+            resources.ApplyResources(this.opMES, "opMES");
+            this.opMES.Name = "opMES";
+            this.opMES.UseVisualStyleBackColor = true;
+            // 
             // Save
             // 
             resources.ApplyResources(this, "$this");
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.Controls.Add(this.opMES);
             this.Controls.Add(this.Warning);
             this.Controls.Add(this.ChkCSV);
             this.Controls.Add(this.BtnConMES);
@@ -133,5 +141,6 @@
         private System.Windows.Forms.TextBox path;
         private System.Windows.Forms.FolderBrowserDialog FolderBrowserDialog1;
         private System.Windows.Forms.Button Warning;
+        private System.Windows.Forms.CheckBox opMES;
     }
 }

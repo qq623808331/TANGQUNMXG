@@ -1,0 +1,44 @@
+全局异常捕捉
+****************************异常文本****************************
+【出现时间】：14/01/2025 08:36:51 a. m.
+【异常类型】：UnauthorizedAccessException
+【异常信息】：对端口的访问被拒绝。
+【堆栈调用】：   在 System.IO.Ports.InternalResources.WinIOError(Int32 errorCode, String str)
+   在 System.IO.Ports.InternalResources.WinIOError()
+   在 System.IO.Ports.SerialStream.get_BytesToRead()
+   在 System.IO.Ports.SerialPort.get_BytesToRead()
+   在 System.IO.Ports.SerialPort.ReadExisting()
+   在 SLC1_N.SerialPortReader.Read() 位置 C:\Users\Administrator\Desktop\messsssss\New folder\TANGQUNMXG\SLC1-N\ProtRead.cs:行号 99
+   在 System.Threading.ThreadHelper.ThreadStart_Context(Object state)
+   在 System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state, Boolean preserveSyncCtx)
+   在 System.Threading.ExecutionContext.Run(ExecutionContext executionContext, ContextCallback callback, Object state, Boolean preserveSyncCtx)
+   在 System.Threading.ExecutionContext.Run(ExecutionContext executionContext, ContextCallback callback, Object state)
+   在 System.Threading.ThreadHelper.ThreadStart()
+***************************************************************
+
+14/01/2025 08:36:51 a. m.
+=======================================================
+全局异常捕捉
+文件“C:\Users\Administrator\Desktop\messsssss\New folder\TANGQUNMXG\SLC1-N\bin\Debug\Logs\2025-01-14.txt”正由另一进程使用，因此该进程无法访问此文件。
+14/01/2025 08:36:51 a. m.
+=======================================================
+全局异常捕捉
+****************************异常文本****************************
+【出现时间】：14/01/2025 01:39:12 p. m.
+【异常类型】：IOException
+【异常信息】：La operación de E/S se anuló por una salida de subproceso o por una solicitud de aplicación.
+
+【堆栈调用】：   在 System.IO.Ports.InternalResources.WinIOError(Int32 errorCode, String str)
+   在 System.IO.Ports.SerialStream.EndWrite(IAsyncResult asyncResult)
+   在 System.IO.Ports.SerialStream.Write(Byte[] array, Int32 offset, Int32 count, Int32 timeout)
+   在 System.IO.Ports.SerialPort.Write(String text)
+   在 System.IO.Ports.SerialPort.WriteLine(String text)
+   在 SLC1_N.Form1.CH1Method(Int32 i) 位置 C:\Users\Administrator\Desktop\messsssss\New folder\TANGQUNMXG\SLC1-N\Form1.cs:行号 11852
+   在 SLC1_N.Form1.CH1ReaduA_Tick(Object sender, EventArgs e) 位置 C:\Users\Administrator\Desktop\messsssss\New folder\TANGQUNMXG\SLC1-N\Form1.cs:行号 8235
+   在 System.Windows.Forms.Timer.OnTick(EventArgs e)
+   在 System.Windows.Forms.Timer.TimerNativeWindow.WndProc(Message& m)
+   在 System.Windows.Forms.NativeWindow.Callback(IntPtr hWnd, Int32 msg, IntPtr wparam, IntPtr lparam)
+***************************************************************
+
+14/01/2025 01:39:12 p. m.
+=======================================================

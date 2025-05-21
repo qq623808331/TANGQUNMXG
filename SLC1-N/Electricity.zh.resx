@@ -534,19 +534,43 @@
     <value>121, 16</value>
   </data>
   <data name="FWDParamsSave.Location" type="System.Drawing.Point, System.Drawing">
-    <value>357, 937</value>
+    <value>345, 966</value>
+  </data>
+  <data name="label119.AutoSize" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="label119.Size" type="System.Drawing.Size, System.Drawing">
+    <value>49, 16</value>
+  </data>
+  <data name="label118.AutoSize" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="label118.Size" type="System.Drawing.Size, System.Drawing">
+    <value>49, 16</value>
   </data>
   <data name="label117.AutoSize" type="System.Boolean, mscorlib">
     <value>False</value>
   </data>
+  <data name="label117.Size" type="System.Drawing.Size, System.Drawing">
+    <value>33, 16</value>
+  </data>
   <data name="label116.AutoSize" type="System.Boolean, mscorlib">
     <value>False</value>
+  </data>
+  <data name="label116.Size" type="System.Drawing.Size, System.Drawing">
+    <value>33, 16</value>
   </data>
   <data name="label115.AutoSize" type="System.Boolean, mscorlib">
     <value>False</value>
   </data>
+  <data name="label115.Size" type="System.Drawing.Size, System.Drawing">
+    <value>49, 16</value>
+  </data>
   <data name="label114.AutoSize" type="System.Boolean, mscorlib">
     <value>False</value>
+  </data>
+  <data name="label114.Size" type="System.Drawing.Size, System.Drawing">
+    <value>49, 16</value>
   </data>
   <data name="label106.AutoSize" type="System.Boolean, mscorlib">
     <value>False</value>
@@ -1237,10 +1261,10 @@
     <value>344, 286</value>
   </data>
   <data name="RFWDParamsCopy.Location" type="System.Drawing.Point, System.Drawing">
-    <value>609, 937</value>
+    <value>597, 966</value>
   </data>
   <data name="LFWDParamsCopy.Location" type="System.Drawing.Point, System.Drawing">
-    <value>166, 937</value>
+    <value>154, 966</value>
   </data>
   <data name="label20.AutoSize" type="System.Boolean, mscorlib">
     <value>False</value>
@@ -1283,6 +1307,114 @@
   </data>
   <data name="label28.Size" type="System.Drawing.Size, System.Drawing">
     <value>152, 16</value>
+  </data>
+  <data name="CH2electricChange.Font" type="System.Drawing.Font, System.Drawing">
+    <value>SimSun-ExtB, 12pt</value>
+  </data>
+  <data name="CH2electricChange.MinimumSize" type="System.Drawing.Size, System.Drawing">
+    <value>1, 1</value>
+  </data>
+  <data name="CH2electricChange.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>22, 0, 0, 0</value>
+  </data>
+  <data name="CH2electricChange.Size" type="System.Drawing.Size, System.Drawing">
+    <value>109, 29</value>
+  </data>
+  <data name="CH2electricChange.Text" xml:space="preserve">
+    <value>单测流量</value>
+  </data>
+  <data name="OrderRightCopy.Location" type="System.Drawing.Point, System.Drawing">
+    <value>29, 229</value>
+  </data>
+  <data name="CH2UpDownChange.Location" type="System.Drawing.Point, System.Drawing">
+    <value>29, 153</value>
+  </data>
+  <data name="CH2Pump.Location" type="System.Drawing.Point, System.Drawing">
+    <value>29, 88</value>
+  </data>
+  <data name="CH2LIN.Location" type="System.Drawing.Point, System.Drawing">
+    <value>29, 118</value>
+  </data>
+  <data name="CH2IGN.Location" type="System.Drawing.Point, System.Drawing">
+    <value>29, 58</value>
+  </data>
+  <data name="CH2HighLevel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>29, 28</value>
+  </data>
+  <data name="uiGroupBox44.Font" type="System.Drawing.Font, System.Drawing">
+    <value>SimSun-ExtB, 12pt</value>
+  </data>
+  <data name="uiGroupBox44.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 5, 4, 5</value>
+  </data>
+  <data name="uiGroupBox44.MinimumSize" type="System.Drawing.Size, System.Drawing">
+    <value>1, 1</value>
+  </data>
+  <data name="uiGroupBox44.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>0, 35, 0, 0</value>
+  </data>
+  <data name="uiGroupBox44.Size" type="System.Drawing.Size, System.Drawing">
+    <value>260, 294</value>
+  </data>
+  <data name="uiGroupBox44.Text" xml:space="preserve">
+    <value>CH2主通道功能设置</value>
+  </data>
+  <data name="CH1electricChange.Font" type="System.Drawing.Font, System.Drawing">
+    <value>SimSun-ExtB, 12pt</value>
+  </data>
+  <data name="CH1electricChange.MinimumSize" type="System.Drawing.Size, System.Drawing">
+    <value>1, 1</value>
+  </data>
+  <data name="CH1electricChange.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>22, 0, 0, 0</value>
+  </data>
+  <data name="CH1electricChange.Size" type="System.Drawing.Size, System.Drawing">
+    <value>109, 29</value>
+  </data>
+  <data name="CH1electricChange.Text" xml:space="preserve">
+    <value>单测流量</value>
+  </data>
+  <data name="OrderLeftCopy.Location" type="System.Drawing.Point, System.Drawing">
+    <value>25, 232</value>
+  </data>
+  <data name="CH1Pump.Location" type="System.Drawing.Point, System.Drawing">
+    <value>34, 96</value>
+  </data>
+  <data name="CH1LIN.Location" type="System.Drawing.Point, System.Drawing">
+    <value>34, 128</value>
+  </data>
+  <data name="CH1UpDownChange.Location" type="System.Drawing.Point, System.Drawing">
+    <value>34, 160</value>
+  </data>
+  <data name="CH1IGN.Location" type="System.Drawing.Point, System.Drawing">
+    <value>34, 64</value>
+  </data>
+  <data name="CH1HighLevel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>34, 32</value>
+  </data>
+  <data name="uiGroupBox37.Font" type="System.Drawing.Font, System.Drawing">
+    <value>SimSun-ExtB, 12pt</value>
+  </data>
+  <data name="uiGroupBox37.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 5, 4, 5</value>
+  </data>
+  <data name="uiGroupBox37.MinimumSize" type="System.Drawing.Size, System.Drawing">
+    <value>1, 1</value>
+  </data>
+  <data name="uiGroupBox37.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>0, 35, 0, 0</value>
+  </data>
+  <data name="uiGroupBox37.Size" type="System.Drawing.Size, System.Drawing">
+    <value>268, 288</value>
+  </data>
+  <data name="uiGroupBox37.Text" xml:space="preserve">
+    <value>CH1主通道功能设置</value>
+  </data>
+  <data name="uiGroupBox8.Size" type="System.Drawing.Size, System.Drawing">
+    <value>282, 294</value>
+  </data>
+  <data name="uiGroupBox7.Size" type="System.Drawing.Size, System.Drawing">
+    <value>274, 288</value>
   </data>
   <data name="ChkPLCPress.Location" type="System.Drawing.Point, System.Drawing">
     <value>626, 358</value>

@@ -1,0 +1,272 @@
+jinru
+
+jinru
+
+jinru
+
+jinru
+
+jinru
+
+jinru
+
+14/11/2024 08:45:12 a. m.jinruliucheng
+
+jinru
+
+jinru
+
+jinru
+
+jinru
+
+jinru
+
+jinru
+
+jinru
+
+jinru
+
+jinru
+
+jinru
+
+jinru
+
+jinru
+
+jinru
+
+jinru
+
+jinru
+
+jinru
+
+jinru
+
+jinru
+
+jinru
+
+jinru
+
+jinru
+
+jinru
+
+jinru
+
+jinru
+
+jinru
+
+jinru
+
+jinru
+
+jinru
+
+jinru
+
+jinru
+
+jinru
+
+jinru
+
+14/11/2024 09:48:33 a. m.jinruliucheng
+
+jinru
+
+jinru
+
+jinru
+
+jinru
+
+jinru
+
+jinru
+
+jinru
+
+jinru
+
+jinru
+
+jinru
+
+jinru
+
+14/11/2024 10:33:38 a. m.jinruliucheng
+
+jinru
+
+jinru
+
+jinru
+
+14/11/2024 10:41:07 a. m.jinruliucheng
+
+jinru
+
+jinru
+
+jinru
+
+jinru
+
+jinru
+
+jinru
+
+14/11/2024 10:57:34 a. m.jinruliucheng
+
+jinru
+
+14/11/2024 11:00:13 a. m.jinruliucheng
+
+jinru
+
+jinru
+
+jinru
+
+jinru
+
+jinru
+
+jinru
+
+jinru
+
+jinru
+
+14/11/2024 11:50:47 a. m.jinruliucheng
+
+jinru
+
+14/11/2024 11:54:55 a. m.jinruliucheng
+
+jinru
+
+14/11/2024 11:57:13 a. m.jinruliucheng
+
+jinru
+
+14/11/2024 11:59:46 a. m.jinruliucheng
+
+jinru
+
+jinru
+
+jinru
+
+jinru
+
+14/11/2024 01:06:31 p. m.jinruliucheng
+
+jinru
+
+jinru
+
+14/11/2024 01:13:39 p. m.jinruliucheng
+
+jinru
+
+jinru
+
+jinru
+
+jinru
+
+14/11/2024 01:19:37 p. m.jinruliucheng
+
+jinru
+
+jinru
+
+jinru
+
+jinru
+
+jinru
+
+入站上传 http://192.168.2.53/api/Device/DeviceInspectData_check    '{"Main":{"LineNum":"1692682121271","BarCode":"1724042633159\r","TranBarCode":"","BindBarCode":"","DeviceCode":"TSTMX-001-01","LineCode":"WAVE4","CommandCard":"CM2410260001","ProcessCode":"A2-100","NGCode":"","IsOnlyRecord":1,"IsPass":1,"CheckBy":"TSTMX-001-01","CheckTime":"2024-11-14 14:00:06"}}'
+
+入站上传结果    {"StatusCode":300,"Message":"Operation error. The current scanning operation does not exist in the current product process.，扫描条码为：1724042633159\r"}
+
+校验上传http://192.168.2.53/api/Device/DeviceStatusData    '{"DeviceCode":"TSTMX-001-01","LineCode":"WAVE4","StatusCode":10,"CheckTime":"2024-11-14 14:00:06"}'
+
+校验上传结果    {"StatusCode":200,"Message":""}
+
+入站上传 http://192.168.2.53/api/Device/DeviceInspectData_check    '{"Main":{"LineNum":"1017508999452","BarCode":"1724042633159\r","TranBarCode":"","BindBarCode":"","DeviceCode":"TSTMX-001-01","LineCode":"WAVE4","CommandCard":"CM24111130004","ProcessCode":"A2-100","NGCode":"","IsOnlyRecord":1,"IsPass":1,"CheckBy":"TSTMX-001-01","CheckTime":"2024-11-14 14:30:54"}}'
+
+入站上传结果    {"StatusCode":300,"Message":"Failed to obtain the work order number. Please check whether the submitted order card is bound to the work order number，扫描条码为：1724042633159\r"}
+
+校验上传http://192.168.2.53/api/Device/DeviceStatusData    '{"DeviceCode":"TSTMX-001-01","LineCode":"WAVE4","StatusCode":10,"CheckTime":"2024-11-14 14:30:54"}'
+
+校验上传结果    {"StatusCode":200,"Message":""}
+
+14/11/2024 02:50:17 p. m.jinruliucheng
+
+jinru
+
+jinru
+
+14/11/2024 02:53:14 p. m.jinruliucheng
+
+jinru
+
+jinru
+
+jinru
+
+jinru
+
+14/11/2024 02:58:51 p. m.jinruliucheng
+
+14/11/2024 02:59:59 p. m.jinruliucheng
+
+jinru
+
+jinru
+
+jinru
+
+14/11/2024 03:25:31 p. m.jinruliucheng
+
+14/11/2024 03:26:39 p. m.jinruliucheng
+
+jinru
+
+jinru
+
+14/11/2024 03:30:27 p. m.jinruliucheng
+
+jinru
+
+jinru
+
+jinru
+
+jinru
+
+jinru
+
+14/11/2024 03:47:15 p. m.jinruliucheng
+
+14/11/2024 03:48:20 p. m.jinruliucheng
+
+14/11/2024 03:49:33 p. m.jinruliucheng
+
+jinru
+
+jinru
+
+jinru
+
+jinru
+

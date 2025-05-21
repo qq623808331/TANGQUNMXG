@@ -1,0 +1,229 @@
+全局异常捕捉
+****************************异常文本****************************
+【出现时间】：09/12/2024 06:50:32 a. m.
+【异常类型】：FormatException
+【异常信息】：La cadena de entrada no tiene el formato correcto.
+【堆栈调用】：   en System.Number.StringToNumber(String str, NumberStyles options, NumberBuffer& number, NumberFormatInfo info, Boolean parseDecimal)
+   en System.Number.ParseInt32(String s, NumberStyles style, NumberFormatInfo info)
+   en System.Convert.ToInt32(String value)
+   en SLC1_N.Form1.MESread() en C:\Users\Administrator\Desktop\messsssss\New folder\TANGQUNMXG\SLC1-N\Form1.cs:línea 14321
+   en SLC1_N.Form1.Form1_Load(Object sender, EventArgs e) en C:\Users\Administrator\Desktop\messsssss\New folder\TANGQUNMXG\SLC1-N\Form1.cs:línea 782
+   en System.Windows.Forms.Form.OnLoad(EventArgs e)
+   en System.Windows.Forms.Form.OnCreateControl()
+   en System.Windows.Forms.Control.CreateControl(Boolean fIgnoreVisible)
+   en System.Windows.Forms.Control.CreateControl()
+   en System.Windows.Forms.Control.WmShowWindow(Message& m)
+   en System.Windows.Forms.Control.WndProc(Message& m)
+   en System.Windows.Forms.ScrollableControl.WndProc(Message& m)
+   en System.Windows.Forms.ContainerControl.WndProc(Message& m)
+   en System.Windows.Forms.Form.WmShowWindow(Message& m)
+   en System.Windows.Forms.Form.WndProc(Message& m)
+   en System.Windows.Forms.Control.ControlNativeWindow.OnMessage(Message& m)
+   en System.Windows.Forms.Control.ControlNativeWindow.WndProc(Message& m)
+   en System.Windows.Forms.NativeWindow.Callback(IntPtr hWnd, Int32 msg, IntPtr wparam, IntPtr lparam)
+***************************************************************
+
+09/12/2024 06:50:32 a. m.
+=======================================================
+全局异常捕捉
+****************************异常文本****************************
+【出现时间】：09/12/2024 07:25:29 a. m.
+【异常类型】：FormatException
+【异常信息】：La cadena de entrada no tiene el formato correcto.
+【堆栈调用】：   en System.Number.StringToNumber(String str, NumberStyles options, NumberBuffer& number, NumberFormatInfo info, Boolean parseDecimal)
+   en System.Number.ParseInt32(String s, NumberStyles style, NumberFormatInfo info)
+   en System.Convert.ToInt32(String value)
+   en SLC1_N.Form1.MESread() en C:\Users\Administrator\Desktop\messsssss\New folder\TANGQUNMXG\SLC1-N\Form1.cs:línea 14321
+   en SLC1_N.Form1.Form1_Load(Object sender, EventArgs e) en C:\Users\Administrator\Desktop\messsssss\New folder\TANGQUNMXG\SLC1-N\Form1.cs:línea 782
+   en System.Windows.Forms.Form.OnLoad(EventArgs e)
+   en System.Windows.Forms.Form.OnCreateControl()
+   en System.Windows.Forms.Control.CreateControl(Boolean fIgnoreVisible)
+   en System.Windows.Forms.Control.CreateControl()
+   en System.Windows.Forms.Control.WmShowWindow(Message& m)
+   en System.Windows.Forms.Control.WndProc(Message& m)
+   en System.Windows.Forms.ScrollableControl.WndProc(Message& m)
+   en System.Windows.Forms.ContainerControl.WndProc(Message& m)
+   en System.Windows.Forms.Form.WmShowWindow(Message& m)
+   en System.Windows.Forms.Form.WndProc(Message& m)
+   en System.Windows.Forms.Control.ControlNativeWindow.OnMessage(Message& m)
+   en System.Windows.Forms.Control.ControlNativeWindow.WndProc(Message& m)
+   en System.Windows.Forms.NativeWindow.Callback(IntPtr hWnd, Int32 msg, IntPtr wparam, IntPtr lparam)
+***************************************************************
+
+09/12/2024 07:25:29 a. m.
+=======================================================
+全局异常捕捉
+****************************异常文本****************************
+【出现时间】：09/12/2024 07:28:00 a. m.
+【异常类型】：FormatException
+【异常信息】：La cadena de entrada no tiene el formato correcto.
+【堆栈调用】：   en System.Number.StringToNumber(String str, NumberStyles options, NumberBuffer& number, NumberFormatInfo info, Boolean parseDecimal)
+   en System.Number.ParseInt32(String s, NumberStyles style, NumberFormatInfo info)
+   en System.Convert.ToInt32(String value)
+   en SLC1_N.Form1.MESread() en C:\Users\Administrator\Desktop\messsssss\New folder\TANGQUNMXG\SLC1-N\Form1.cs:línea 14321
+   en SLC1_N.Form1.Form1_Load(Object sender, EventArgs e) en C:\Users\Administrator\Desktop\messsssss\New folder\TANGQUNMXG\SLC1-N\Form1.cs:línea 782
+   en System.Windows.Forms.Form.OnLoad(EventArgs e)
+   en System.Windows.Forms.Form.OnCreateControl()
+   en System.Windows.Forms.Control.CreateControl(Boolean fIgnoreVisible)
+   en System.Windows.Forms.Control.CreateControl()
+   en System.Windows.Forms.Control.WmShowWindow(Message& m)
+   en System.Windows.Forms.Control.WndProc(Message& m)
+   en System.Windows.Forms.ScrollableControl.WndProc(Message& m)
+   en System.Windows.Forms.ContainerControl.WndProc(Message& m)
+   en System.Windows.Forms.Form.WmShowWindow(Message& m)
+   en System.Windows.Forms.Form.WndProc(Message& m)
+   en System.Windows.Forms.Control.ControlNativeWindow.OnMessage(Message& m)
+   en System.Windows.Forms.Control.ControlNativeWindow.WndProc(Message& m)
+   en System.Windows.Forms.NativeWindow.Callback(IntPtr hWnd, Int32 msg, IntPtr wparam, IntPtr lparam)
+***************************************************************
+
+09/12/2024 07:28:00 a. m.
+=======================================================
+全局异常捕捉
+****************************异常文本****************************
+【出现时间】：09/12/2024 07:30:44 a. m.
+【异常类型】：FormatException
+【异常信息】：La cadena de entrada no tiene el formato correcto.
+【堆栈调用】：   en System.Number.StringToNumber(String str, NumberStyles options, NumberBuffer& number, NumberFormatInfo info, Boolean parseDecimal)
+   en System.Number.ParseInt32(String s, NumberStyles style, NumberFormatInfo info)
+   en System.Convert.ToInt32(String value)
+   en SLC1_N.Form1.MESread() en C:\Users\Administrator\Desktop\messsssss\New folder\TANGQUNMXG\SLC1-N\Form1.cs:línea 14321
+   en SLC1_N.Form1.Form1_Load(Object sender, EventArgs e) en C:\Users\Administrator\Desktop\messsssss\New folder\TANGQUNMXG\SLC1-N\Form1.cs:línea 782
+   en System.Windows.Forms.Form.OnLoad(EventArgs e)
+   en System.Windows.Forms.Form.OnCreateControl()
+   en System.Windows.Forms.Control.CreateControl(Boolean fIgnoreVisible)
+   en System.Windows.Forms.Control.CreateControl()
+   en System.Windows.Forms.Control.WmShowWindow(Message& m)
+   en System.Windows.Forms.Control.WndProc(Message& m)
+   en System.Windows.Forms.ScrollableControl.WndProc(Message& m)
+   en System.Windows.Forms.ContainerControl.WndProc(Message& m)
+   en System.Windows.Forms.Form.WmShowWindow(Message& m)
+   en System.Windows.Forms.Form.WndProc(Message& m)
+   en System.Windows.Forms.Control.ControlNativeWindow.OnMessage(Message& m)
+   en System.Windows.Forms.Control.ControlNativeWindow.WndProc(Message& m)
+   en System.Windows.Forms.NativeWindow.Callback(IntPtr hWnd, Int32 msg, IntPtr wparam, IntPtr lparam)
+***************************************************************
+
+09/12/2024 07:30:44 a. m.
+=======================================================
+全局异常捕捉
+****************************异常文本****************************
+【出现时间】：09/12/2024 07:34:56 a. m.
+【异常类型】：FormatException
+【异常信息】：La cadena de entrada no tiene el formato correcto.
+【堆栈调用】：   en System.Number.StringToNumber(String str, NumberStyles options, NumberBuffer& number, NumberFormatInfo info, Boolean parseDecimal)
+   en System.Number.ParseInt32(String s, NumberStyles style, NumberFormatInfo info)
+   en System.Convert.ToInt32(String value)
+   en SLC1_N.Form1.MESread() en C:\Users\Administrator\Desktop\messsssss\New folder\TANGQUNMXG\SLC1-N\Form1.cs:línea 14321
+   en SLC1_N.Form1.Form1_Load(Object sender, EventArgs e) en C:\Users\Administrator\Desktop\messsssss\New folder\TANGQUNMXG\SLC1-N\Form1.cs:línea 782
+   en System.Windows.Forms.Form.OnLoad(EventArgs e)
+   en System.Windows.Forms.Form.OnCreateControl()
+   en System.Windows.Forms.Control.CreateControl(Boolean fIgnoreVisible)
+   en System.Windows.Forms.Control.CreateControl()
+   en System.Windows.Forms.Control.WmShowWindow(Message& m)
+   en System.Windows.Forms.Control.WndProc(Message& m)
+   en System.Windows.Forms.ScrollableControl.WndProc(Message& m)
+   en System.Windows.Forms.ContainerControl.WndProc(Message& m)
+   en System.Windows.Forms.Form.WmShowWindow(Message& m)
+   en System.Windows.Forms.Form.WndProc(Message& m)
+   en System.Windows.Forms.Control.ControlNativeWindow.OnMessage(Message& m)
+   en System.Windows.Forms.Control.ControlNativeWindow.WndProc(Message& m)
+   en System.Windows.Forms.NativeWindow.Callback(IntPtr hWnd, Int32 msg, IntPtr wparam, IntPtr lparam)
+***************************************************************
+
+09/12/2024 07:34:56 a. m.
+=======================================================
+全局异常捕捉
+****************************异常文本****************************
+【出现时间】：09/12/2024 07:38:13 a. m.
+【异常类型】：FormatException
+【异常信息】：La cadena de entrada no tiene el formato correcto.
+【堆栈调用】：   en System.Number.StringToNumber(String str, NumberStyles options, NumberBuffer& number, NumberFormatInfo info, Boolean parseDecimal)
+   en System.Number.ParseInt32(String s, NumberStyles style, NumberFormatInfo info)
+   en System.Convert.ToInt32(String value)
+   en SLC1_N.Form1.MESread() en C:\Users\Administrator\Desktop\messsssss\New folder\TANGQUNMXG\SLC1-N\Form1.cs:línea 14321
+   en SLC1_N.Form1.Form1_Load(Object sender, EventArgs e) en C:\Users\Administrator\Desktop\messsssss\New folder\TANGQUNMXG\SLC1-N\Form1.cs:línea 782
+   en System.Windows.Forms.Form.OnLoad(EventArgs e)
+   en System.Windows.Forms.Form.OnCreateControl()
+   en System.Windows.Forms.Control.CreateControl(Boolean fIgnoreVisible)
+   en System.Windows.Forms.Control.CreateControl()
+   en System.Windows.Forms.Control.WmShowWindow(Message& m)
+   en System.Windows.Forms.Control.WndProc(Message& m)
+   en System.Windows.Forms.ScrollableControl.WndProc(Message& m)
+   en System.Windows.Forms.ContainerControl.WndProc(Message& m)
+   en System.Windows.Forms.Form.WmShowWindow(Message& m)
+   en System.Windows.Forms.Form.WndProc(Message& m)
+   en System.Windows.Forms.Control.ControlNativeWindow.OnMessage(Message& m)
+   en System.Windows.Forms.Control.ControlNativeWindow.WndProc(Message& m)
+   en System.Windows.Forms.NativeWindow.Callback(IntPtr hWnd, Int32 msg, IntPtr wparam, IntPtr lparam)
+***************************************************************
+
+09/12/2024 07:38:13 a. m.
+=======================================================
+全局异常捕捉
+****************************异常文本****************************
+【出现时间】：09/12/2024 07:41:46 a. m.
+【异常类型】：FormatException
+【异常信息】：La cadena de entrada no tiene el formato correcto.
+【堆栈调用】：   en System.Number.StringToNumber(String str, NumberStyles options, NumberBuffer& number, NumberFormatInfo info, Boolean parseDecimal)
+   en System.Number.ParseInt32(String s, NumberStyles style, NumberFormatInfo info)
+   en System.Convert.ToInt32(String value)
+   en SLC1_N.Form1.MESread() en C:\Users\Administrator\Desktop\messsssss\New folder\TANGQUNMXG\SLC1-N\Form1.cs:línea 14321
+   en SLC1_N.Form1.Form1_Load(Object sender, EventArgs e) en C:\Users\Administrator\Desktop\messsssss\New folder\TANGQUNMXG\SLC1-N\Form1.cs:línea 782
+   en System.Windows.Forms.Form.OnLoad(EventArgs e)
+   en System.Windows.Forms.Form.OnCreateControl()
+   en System.Windows.Forms.Control.CreateControl(Boolean fIgnoreVisible)
+   en System.Windows.Forms.Control.CreateControl()
+   en System.Windows.Forms.Control.WmShowWindow(Message& m)
+   en System.Windows.Forms.Control.WndProc(Message& m)
+   en System.Windows.Forms.ScrollableControl.WndProc(Message& m)
+   en System.Windows.Forms.ContainerControl.WndProc(Message& m)
+   en System.Windows.Forms.Form.WmShowWindow(Message& m)
+   en System.Windows.Forms.Form.WndProc(Message& m)
+   en System.Windows.Forms.Control.ControlNativeWindow.OnMessage(Message& m)
+   en System.Windows.Forms.Control.ControlNativeWindow.WndProc(Message& m)
+   en System.Windows.Forms.NativeWindow.Callback(IntPtr hWnd, Int32 msg, IntPtr wparam, IntPtr lparam)
+***************************************************************
+
+09/12/2024 07:41:47 a. m.
+=======================================================
+全局异常捕捉
+****************************异常文本****************************
+【出现时间】：09/12/2024 10:11:56 a. m.
+【异常类型】：IOException
+【异常信息】：La operación de E/S se anuló por una salida de subproceso o por una solicitud de aplicación.
+
+【堆栈调用】：   en System.IO.Ports.InternalResources.WinIOError(Int32 errorCode, String str)
+   en System.IO.Ports.SerialStream.EndWrite(IAsyncResult asyncResult)
+   en System.IO.Ports.SerialStream.Write(Byte[] array, Int32 offset, Int32 count, Int32 timeout)
+   en System.IO.Ports.SerialPort.Write(String text)
+   en System.IO.Ports.SerialPort.WriteLine(String text)
+   en SLC1_N.Form1.CH1Method(Int32 i) en C:\Users\Administrator\Desktop\messsssss\New folder\TANGQUNMXG\SLC1-N\Form1.cs:línea 11875
+   en SLC1_N.Form1.CH1ReaduA_Tick(Object sender, EventArgs e) en C:\Users\Administrator\Desktop\messsssss\New folder\TANGQUNMXG\SLC1-N\Form1.cs:línea 8235
+   en System.Windows.Forms.Timer.OnTick(EventArgs e)
+   en System.Windows.Forms.Timer.TimerNativeWindow.WndProc(Message& m)
+   en System.Windows.Forms.NativeWindow.Callback(IntPtr hWnd, Int32 msg, IntPtr wparam, IntPtr lparam)
+***************************************************************
+
+09/12/2024 10:11:56 a. m.
+=======================================================
+全局异常捕捉
+****************************异常文本****************************
+【出现时间】：09/12/2024 11:01:54 a. m.
+【异常类型】：IOException
+【异常信息】：La operación de E/S se anuló por una salida de subproceso o por una solicitud de aplicación.
+
+【堆栈调用】：   en System.IO.Ports.InternalResources.WinIOError(Int32 errorCode, String str)
+   en System.IO.Ports.SerialStream.EndWrite(IAsyncResult asyncResult)
+   en System.IO.Ports.SerialStream.Write(Byte[] array, Int32 offset, Int32 count, Int32 timeout)
+   en System.IO.Ports.SerialPort.Write(String text)
+   en System.IO.Ports.SerialPort.WriteLine(String text)
+   en SLC1_N.Form1.CH1Method(Int32 i) en C:\Users\Administrator\Desktop\messsssss\New folder\TANGQUNMXG\SLC1-N\Form1.cs:línea 11875
+   en SLC1_N.Form1.CH1ReaduA_Tick(Object sender, EventArgs e) en C:\Users\Administrator\Desktop\messsssss\New folder\TANGQUNMXG\SLC1-N\Form1.cs:línea 8235
+   en System.Windows.Forms.Timer.OnTick(EventArgs e)
+   en System.Windows.Forms.Timer.TimerNativeWindow.WndProc(Message& m)
+   en System.Windows.Forms.NativeWindow.Callback(IntPtr hWnd, Int32 msg, IntPtr wparam, IntPtr lparam)
+***************************************************************
+
+09/12/2024 11:01:54 a. m.
+=======================================================

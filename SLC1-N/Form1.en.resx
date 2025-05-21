@@ -339,13 +339,10 @@
     <value> Leakage rate</value>
   </data>
   <data name="uiGroupBox2.Location" type="System.Drawing.Point, System.Drawing">
-    <value>963, 355</value>
-  </data>
-  <data name="uiGroupBox2.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>0, 32, 0, 0</value>
+    <value>963, 386</value>
   </data>
   <data name="uiGroupBox2.Size" type="System.Drawing.Size, System.Drawing">
-    <value>960, 129</value>
+    <value>960, 140</value>
   </data>
   <data name="uiGroupBox2.Text" xml:space="preserve">
     <value>Right workstation CH2-2</value>
@@ -599,6 +596,15 @@
   <data name="label75.Text" xml:space="preserve">
     <value> Leakage rate</value>
   </data>
+  <data name="uiGroupBox3.Location" type="System.Drawing.Point, System.Drawing">
+    <value>1, 386</value>
+  </data>
+  <data name="uiGroupBox3.Size" type="System.Drawing.Size, System.Drawing">
+    <value>960, 140</value>
+  </data>
+  <data name="uiGroupBox3.Text" xml:space="preserve">
+    <value>Left workstation CH1-2</value>
+  </data>
   <data name="label74.Font" type="System.Drawing.Font, System.Drawing">
     <value>SimSun-ExtB, 10pt</value>
   </data>
@@ -611,18 +617,6 @@
   <data name="label74.Text" xml:space="preserve">
     <value>Current pressure difference</value>
   </data>
-  <data name="uiGroupBox3.Location" type="System.Drawing.Point, System.Drawing">
-    <value>1, 355</value>
-  </data>
-  <data name="uiGroupBox3.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>0, 32, 0, 0</value>
-  </data>
-  <data name="uiGroupBox3.Size" type="System.Drawing.Size, System.Drawing">
-    <value>960, 129</value>
-  </data>
-  <data name="uiGroupBox3.Text" xml:space="preserve">
-    <value>Left workstation CH1-2</value>
-  </data>
   <data name="RightCH1BigLeak.Font" type="System.Drawing.Font, System.Drawing">
     <value>SimSun-ExtB, 9.75pt, style=Bold</value>
   </data>
@@ -633,10 +627,7 @@
     <value>63, 13</value>
   </data>
   <data name="label93.Location" type="System.Drawing.Point, System.Drawing">
-    <value>905, 36</value>
-  </data>
-  <data name="label93.Size" type="System.Drawing.Size, System.Drawing">
-    <value>17, 16</value>
+    <value>805, 34</value>
   </data>
   <data name="CH2_1flow.Font" type="System.Drawing.Font, System.Drawing">
     <value>SimSun-ExtB, 9.75pt, style=Bold</value>
@@ -657,7 +648,7 @@
     <value>63, 13</value>
   </data>
   <data name="label94.Location" type="System.Drawing.Point, System.Drawing">
-    <value>448, 43</value>
+    <value>345, 46</value>
   </data>
   <data name="label94.Size" type="System.Drawing.Size, System.Drawing">
     <value>121, 21</value>
@@ -693,22 +684,13 @@
     <value>15, 13</value>
   </data>
   <data name="label95.Location" type="System.Drawing.Point, System.Drawing">
-    <value>888, 107</value>
-  </data>
-  <data name="label95.Size" type="System.Drawing.Size, System.Drawing">
-    <value>25, 16</value>
+    <value>797, 103</value>
   </data>
   <data name="CH2RTVDC.Location" type="System.Drawing.Point, System.Drawing">
-    <value>821, 40</value>
-  </data>
-  <data name="CH2RTVDC.Size" type="System.Drawing.Size, System.Drawing">
-    <value>44, 16</value>
+    <value>741, 36</value>
   </data>
   <data name="CH2RTElec.Location" type="System.Drawing.Point, System.Drawing">
-    <value>821, 109</value>
-  </data>
-  <data name="CH2RTElec.Size" type="System.Drawing.Size, System.Drawing">
-    <value>44, 16</value>
+    <value>741, 105</value>
   </data>
   <data name="label98.Location" type="System.Drawing.Point, System.Drawing">
     <value>3, 43</value>
@@ -720,7 +702,7 @@
     <value>Running state</value>
   </data>
   <data name="label99.Location" type="System.Drawing.Point, System.Drawing">
-    <value>656, 104</value>
+    <value>597, 100</value>
   </data>
   <data name="label99.Size" type="System.Drawing.Size, System.Drawing">
     <value>115, 21</value>
@@ -729,7 +711,7 @@
     <value>Static Current</value>
   </data>
   <data name="label100.Location" type="System.Drawing.Point, System.Drawing">
-    <value>656, 36</value>
+    <value>597, 32</value>
   </data>
   <data name="label100.Size" type="System.Drawing.Size, System.Drawing">
     <value>136, 21</value>
@@ -738,7 +720,7 @@
     <value>Working voltage</value>
   </data>
   <data name="CH2Tlight.Location" type="System.Drawing.Point, System.Drawing">
-    <value>580, 25</value>
+    <value>488, 18</value>
   </data>
   <data name="RightCH1Status.Location" type="System.Drawing.Point, System.Drawing">
     <value>555, 86</value>
@@ -762,7 +744,7 @@
     <value>175, 84</value>
   </data>
   <data name="right_CH1Code.Size" type="System.Drawing.Size, System.Drawing">
-    <value>454, 34</value>
+    <value>374, 34</value>
   </data>
   <data name="label103.Location" type="System.Drawing.Point, System.Drawing">
     <value>3, 80</value>
@@ -783,10 +765,7 @@
     <value>Standby</value>
   </data>
   <data name="CH2RTADC.Location" type="System.Drawing.Point, System.Drawing">
-    <value>821, 74</value>
-  </data>
-  <data name="CH2RTADC.Size" type="System.Drawing.Size, System.Drawing">
-    <value>71, 16</value>
+    <value>741, 70</value>
   </data>
   <data name="CH3progressBar.Location" type="System.Drawing.Point, System.Drawing">
     <value>152, 91</value>
@@ -861,10 +840,7 @@
     <value>Flow value</value>
   </data>
   <data name="label102.Location" type="System.Drawing.Point, System.Drawing">
-    <value>905, 69</value>
-  </data>
-  <data name="label102.Size" type="System.Drawing.Size, System.Drawing">
-    <value>17, 16</value>
+    <value>825, 65</value>
   </data>
   <data name="label129.Font" type="System.Drawing.Font, System.Drawing">
     <value>SimSun-ExtB, 10pt</value>
@@ -879,7 +855,7 @@
     <value> Leakage rate</value>
   </data>
   <data name="label107.Location" type="System.Drawing.Point, System.Drawing">
-    <value>656, 69</value>
+    <value>597, 65</value>
   </data>
   <data name="label107.Size" type="System.Drawing.Size, System.Drawing">
     <value>135, 21</value>
@@ -932,6 +908,15 @@
   <data name="CH3PressureUnit.Size" type="System.Drawing.Size, System.Drawing">
     <value>31, 13</value>
   </data>
+  <data name="uiGroupBox6.Location" type="System.Drawing.Point, System.Drawing">
+    <value>963, 239</value>
+  </data>
+  <data name="uiGroupBox6.Size" type="System.Drawing.Size, System.Drawing">
+    <value>960, 145</value>
+  </data>
+  <data name="uiGroupBox6.Text" xml:space="preserve">
+    <value>Right workstation CH2-1</value>
+  </data>
   <data name="right_CH1Tlight.Location" type="System.Drawing.Point, System.Drawing">
     <value>775, 80</value>
   </data>
@@ -947,29 +932,48 @@
   <data name="label128.Text" xml:space="preserve">
     <value>Current pressure difference</value>
   </data>
-  <data name="uiGroupBox6.Location" type="System.Drawing.Point, System.Drawing">
-    <value>963, 220</value>
-  </data>
-  <data name="uiGroupBox6.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>0, 32, 0, 0</value>
-  </data>
-  <data name="uiGroupBox6.Size" type="System.Drawing.Size, System.Drawing">
-    <value>960, 133</value>
-  </data>
-  <data name="uiGroupBox6.Text" xml:space="preserve">
-    <value>Right workstation CH2-1</value>
-  </data>
   <data name="uiGroupBox5.Location" type="System.Drawing.Point, System.Drawing">
-    <value>963, 88</value>
-  </data>
-  <data name="uiGroupBox5.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>0, 32, 0, 0</value>
+    <value>963, 95</value>
   </data>
   <data name="uiGroupBox5.Size" type="System.Drawing.Size, System.Drawing">
-    <value>960, 130</value>
+    <value>960, 142</value>
   </data>
   <data name="uiGroupBox5.Text" xml:space="preserve">
     <value>CH2 right station</value>
+  </data>
+  <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="CH2MESOUT.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="CH2MESOUT.Font" type="System.Drawing.Font, System.Drawing">
+    <value>SimSun-ExtB, 12pt, style=Bold</value>
+  </data>
+  <data name="CH2MESOUT.Size" type="System.Drawing.Size, System.Drawing">
+    <value>34, 16</value>
+  </data>
+  <data name="CH2MESOUT.Text" xml:space="preserve">
+    <value>XXX</value>
+  </data>
+  <data name="CH2MESIN.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="CH2MESIN.Font" type="System.Drawing.Font, System.Drawing">
+    <value>SimSun-ExtB, 12pt, style=Bold</value>
+  </data>
+  <data name="CH2MESIN.Size" type="System.Drawing.Size, System.Drawing">
+    <value>34, 16</value>
+  </data>
+  <data name="CH2MESIN.Text" xml:space="preserve">
+    <value>XXX</value>
+  </data>
+  <data name="label17.Text" xml:space="preserve">
+    <value>CH2MesIN</value>
+  </data>
+  <data name="label18.Size" type="System.Drawing.Size, System.Drawing">
+    <value>111, 23</value>
+  </data>
+  <data name="label18.Text" xml:space="preserve">
+    <value>CH2mesOut</value>
   </data>
   <data name="LeftCH1TCP.Font" type="System.Drawing.Font, System.Drawing">
     <value>SimSun-ExtB, 9.75pt, style=Bold</value>
@@ -981,82 +985,34 @@
     <value>23, 13</value>
   </data>
   <data name="TestStation.Location" type="System.Drawing.Point, System.Drawing">
-    <value>690, 86</value>
-  </data>
-  <data name="TestStation.MinimumSize" type="System.Drawing.Size, System.Drawing">
-    <value>1, 16</value>
-  </data>
-  <data name="TestStation.Size" type="System.Drawing.Size, System.Drawing">
-    <value>175, 23</value>
+    <value>1010, 30</value>
   </data>
   <data name="TestType.Location" type="System.Drawing.Point, System.Drawing">
-    <value>690, 59</value>
-  </data>
-  <data name="TestType.MinimumSize" type="System.Drawing.Size, System.Drawing">
-    <value>1, 16</value>
-  </data>
-  <data name="TestType.Size" type="System.Drawing.Size, System.Drawing">
-    <value>175, 23</value>
+    <value>1010, 1</value>
   </data>
   <data name="ProductionItem.Location" type="System.Drawing.Point, System.Drawing">
-    <value>690, 32</value>
-  </data>
-  <data name="ProductionItem.MinimumSize" type="System.Drawing.Size, System.Drawing">
-    <value>1, 16</value>
-  </data>
-  <data name="ProductionItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>175, 23</value>
+    <value>690, 35</value>
   </data>
   <data name="WorkOrder.Location" type="System.Drawing.Point, System.Drawing">
     <value>690, 6</value>
   </data>
-  <data name="WorkOrder.MinimumSize" type="System.Drawing.Size, System.Drawing">
-    <value>1, 16</value>
-  </data>
-  <data name="WorkOrder.Size" type="System.Drawing.Size, System.Drawing">
-    <value>175, 23</value>
-  </data>
   <data name="ProductModel.Location" type="System.Drawing.Point, System.Drawing">
-    <value>463, 89</value>
-  </data>
-  <data name="ProductModel.MinimumSize" type="System.Drawing.Size, System.Drawing">
-    <value>1, 16</value>
-  </data>
-  <data name="ProductModel.Size" type="System.Drawing.Size, System.Drawing">
-    <value>96, 23</value>
+    <value>463, 96</value>
   </data>
   <data name="ProductName.Location" type="System.Drawing.Point, System.Drawing">
-    <value>463, 61</value>
-  </data>
-  <data name="ProductName.MinimumSize" type="System.Drawing.Size, System.Drawing">
-    <value>1, 16</value>
-  </data>
-  <data name="ProductName.Size" type="System.Drawing.Size, System.Drawing">
-    <value>96, 23</value>
+    <value>463, 66</value>
   </data>
   <data name="ProductNum.Location" type="System.Drawing.Point, System.Drawing">
-    <value>463, 32</value>
-  </data>
-  <data name="ProductNum.MinimumSize" type="System.Drawing.Size, System.Drawing">
-    <value>1, 16</value>
-  </data>
-  <data name="ProductNum.Size" type="System.Drawing.Size, System.Drawing">
-    <value>96, 23</value>
+    <value>463, 35</value>
   </data>
   <data name="Admin.Location" type="System.Drawing.Point, System.Drawing">
     <value>463, 5</value>
   </data>
-  <data name="Admin.MinimumSize" type="System.Drawing.Size, System.Drawing">
-    <value>1, 16</value>
-  </data>
-  <data name="Admin.Size" type="System.Drawing.Size, System.Drawing">
-    <value>96, 23</value>
-  </data>
   <data name="label12.Location" type="System.Drawing.Point, System.Drawing">
-    <value>582, 89</value>
+    <value>902, 33</value>
   </data>
   <data name="label12.Size" type="System.Drawing.Size, System.Drawing">
-    <value>104, 16</value>
+    <value>103, 16</value>
   </data>
   <data name="label12.Text" xml:space="preserve">
     <value>Test station</value>
@@ -1072,6 +1028,15 @@
   </data>
   <data name="LeftCH1Status.Text" xml:space="preserve">
     <value>Standby</value>
+  </data>
+  <data name="uiGroupBox4.Location" type="System.Drawing.Point, System.Drawing">
+    <value>1, 239</value>
+  </data>
+  <data name="uiGroupBox4.Size" type="System.Drawing.Size, System.Drawing">
+    <value>960, 145</value>
+  </data>
+  <data name="uiGroupBox4.Text" xml:space="preserve">
+    <value>Left workstation CH1-1</value>
   </data>
   <data name="CH1progressBar.Location" type="System.Drawing.Point, System.Drawing">
     <value>151, 91</value>
@@ -1223,89 +1188,71 @@
   <data name="label51.Text" xml:space="preserve">
     <value> Leakage rate</value>
   </data>
-  <data name="uiGroupBox4.Location" type="System.Drawing.Point, System.Drawing">
-    <value>1, 220</value>
-  </data>
-  <data name="uiGroupBox4.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>0, 32, 0, 0</value>
-  </data>
-  <data name="uiGroupBox4.Size" type="System.Drawing.Size, System.Drawing">
-    <value>960, 133</value>
-  </data>
-  <data name="uiGroupBox4.Text" xml:space="preserve">
-    <value>Left workstation CH1-1</value>
-  </data>
   <data name="label11.Location" type="System.Drawing.Point, System.Drawing">
-    <value>582, 60</value>
+    <value>902, 2</value>
   </data>
   <data name="label11.Size" type="System.Drawing.Size, System.Drawing">
-    <value>80, 16</value>
+    <value>79, 16</value>
   </data>
   <data name="label11.Text" xml:space="preserve">
     <value>Test type</value>
   </data>
   <data name="label10.Location" type="System.Drawing.Point, System.Drawing">
-    <value>582, 34</value>
+    <value>582, 37</value>
   </data>
   <data name="label10.Size" type="System.Drawing.Size, System.Drawing">
-    <value>96, 16</value>
+    <value>95, 16</value>
   </data>
   <data name="label10.Text" xml:space="preserve">
     <value>Part number</value>
   </data>
   <data name="label9.Location" type="System.Drawing.Point, System.Drawing">
-    <value>582, 9</value>
-  </data>
-  <data name="label9.Size" type="System.Drawing.Size, System.Drawing">
-    <value>88, 16</value>
+    <value>582, 10</value>
   </data>
   <data name="label9.Text" xml:space="preserve">
     <value>Work order</value>
   </data>
   <data name="label4.Location" type="System.Drawing.Point, System.Drawing">
-    <value>348, 90</value>
+    <value>348, 98</value>
   </data>
   <data name="label4.Size" type="System.Drawing.Size, System.Drawing">
-    <value>112, 16</value>
+    <value>111, 16</value>
   </data>
   <data name="label4.Text" xml:space="preserve">
     <value>Product model</value>
   </data>
   <data name="label2.Location" type="System.Drawing.Point, System.Drawing">
-    <value>348, 36</value>
+    <value>348, 39</value>
   </data>
   <data name="label2.Size" type="System.Drawing.Size, System.Drawing">
-    <value>96, 16</value>
+    <value>95, 16</value>
   </data>
   <data name="label2.Text" xml:space="preserve">
     <value>Product qty</value>
   </data>
   <data name="label3.Location" type="System.Drawing.Point, System.Drawing">
-    <value>348, 64</value>
+    <value>348, 69</value>
   </data>
   <data name="label3.Size" type="System.Drawing.Size, System.Drawing">
-    <value>104, 16</value>
+    <value>103, 16</value>
   </data>
   <data name="label3.Text" xml:space="preserve">
     <value>Product name</value>
   </data>
   <data name="label1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>348, 8</value>
+    <value>348, 9</value>
   </data>
   <data name="label1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>80, 16</value>
+    <value>79, 16</value>
   </data>
   <data name="label1.Text" xml:space="preserve">
     <value>User name</value>
   </data>
   <data name="label22.Location" type="System.Drawing.Point, System.Drawing">
-    <value>974, 86</value>
-  </data>
-  <data name="label22.Size" type="System.Drawing.Size, System.Drawing">
-    <value>32, 16</value>
+    <value>1668, 32</value>
   </data>
   <data name="label6.Location" type="System.Drawing.Point, System.Drawing">
-    <value>441, 43</value>
+    <value>344, 35</value>
   </data>
   <data name="label6.Size" type="System.Drawing.Size, System.Drawing">
     <value>121, 21</value>
@@ -1323,13 +1270,13 @@
     <value>Running state</value>
   </data>
   <data name="CH1Tlight.Location" type="System.Drawing.Point, System.Drawing">
-    <value>558, 25</value>
+    <value>469, 17</value>
   </data>
   <data name="left_CH1Code.Location" type="System.Drawing.Point, System.Drawing">
     <value>145, 87</value>
   </data>
   <data name="left_CH1Code.Size" type="System.Drawing.Size, System.Drawing">
-    <value>454, 34</value>
+    <value>401, 34</value>
   </data>
   <data name="label32.Location" type="System.Drawing.Point, System.Drawing">
     <value>0, 80</value>
@@ -1340,95 +1287,14 @@
   <data name="label32.Text" xml:space="preserve">
     <value>Left barcode</value>
   </data>
-  <data name="RightReset.Location" type="System.Drawing.Point, System.Drawing">
-    <value>114, 21</value>
-  </data>
-  <data name="RightReset.Size" type="System.Drawing.Size, System.Drawing">
-    <value>88, 82</value>
-  </data>
   <data name="RightReset.Text" xml:space="preserve">
     <value>Right reset</value>
-  </data>
-  <data name="LeftReset.Location" type="System.Drawing.Point, System.Drawing">
-    <value>11, 21</value>
-  </data>
-  <data name="LeftReset.Size" type="System.Drawing.Size, System.Drawing">
-    <value>85, 82</value>
   </data>
   <data name="LeftReset.Text" xml:space="preserve">
     <value>Left reset</value>
   </data>
   <data name="uiHeaderButton1.Location" type="System.Drawing.Point, System.Drawing">
     <value>1819, 0</value>
-  </data>
-  <data name="uiHeaderButton1.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>0, 8, 0, 3</value>
-  </data>
-  <data name="uiHeaderButton1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>100, 61</value>
-  </data>
-  <data name="button1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>1165, 55</value>
-  </data>
-  <data name="button1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>85, 30</value>
-  </data>
-  <data name="button1.Text" xml:space="preserve">
-    <value>Spain</value>
-  </data>
-  <data name="CH2ReceiveText.Location" type="System.Drawing.Point, System.Drawing">
-    <value>1185, 10</value>
-  </data>
-  <data name="CH2ReceiveText.Size" type="System.Drawing.Size, System.Drawing">
-    <value>98, 17</value>
-  </data>
-  <data name="CH1ReceiveText.Location" type="System.Drawing.Point, System.Drawing">
-    <value>1284, 9</value>
-  </data>
-  <data name="CH1ReceiveText.Size" type="System.Drawing.Size, System.Drawing">
-    <value>122, 18</value>
-  </data>
-  <data name="textBox2.Location" type="System.Drawing.Point, System.Drawing">
-    <value>940, 9</value>
-  </data>
-  <data name="textBox2.Size" type="System.Drawing.Size, System.Drawing">
-    <value>122, 18</value>
-  </data>
-  <data name="textBox1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>1063, 9</value>
-  </data>
-  <data name="textBox1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>122, 18</value>
-  </data>
-  <data name="PLCControl.Location" type="System.Drawing.Point, System.Drawing">
-    <value>225, 21</value>
-  </data>
-  <data name="PLCControl.Size" type="System.Drawing.Size, System.Drawing">
-    <value>88, 82</value>
-  </data>
-  <data name="PLCControl.Text" xml:space="preserve">
-    <value>PLC control</value>
-  </data>
-  <data name="CH3ReceiveText.Location" type="System.Drawing.Point, System.Drawing">
-    <value>1396, 9</value>
-  </data>
-  <data name="CH3ReceiveText.Size" type="System.Drawing.Size, System.Drawing">
-    <value>122, 18</value>
-  </data>
-  <data name="Now.Location" type="System.Drawing.Point, System.Drawing">
-    <value>974, 55</value>
-  </data>
-  <data name="CH4ReceiveText.Location" type="System.Drawing.Point, System.Drawing">
-    <value>1518, 9</value>
-  </data>
-  <data name="CH4ReceiveText.Size" type="System.Drawing.Size, System.Drawing">
-    <value>122, 18</value>
-  </data>
-  <data name="PLCRun.Location" type="System.Drawing.Point, System.Drawing">
-    <value>1016, 81</value>
-  </data>
-  <data name="PLCRun.Size" type="System.Drawing.Size, System.Drawing">
-    <value>69, 24</value>
   </data>
   <data name="uiNavBar1.Nodes" mimetype="application/x-microsoft.net.object.binary.base64">
     <value>
@@ -1568,7 +1434,133 @@
 </value>
   </data>
   <data name="uiNavBar1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>1924, 115</value>
+    <value>1924, 125</value>
+  </data>
+  <data name="label23.Location" type="System.Drawing.Point, System.Drawing">
+    <value>1206, 8</value>
+  </data>
+  <data name="label23.Size" type="System.Drawing.Size, System.Drawing">
+    <value>103, 16</value>
+  </data>
+  <data name="label23.Text" xml:space="preserve">
+    <value>Command card</value>
+  </data>
+  <data name="label21.Location" type="System.Drawing.Point, System.Drawing">
+    <value>1583, 10</value>
+  </data>
+  <data name="label21.Visible" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="label20.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="label20.Location" type="System.Drawing.Point, System.Drawing">
+    <value>1788, 61</value>
+  </data>
+  <data name="label20.Size" type="System.Drawing.Size, System.Drawing">
+    <value>103, 16</value>
+  </data>
+  <data name="label20.Text" xml:space="preserve">
+    <value>Command card</value>
+  </data>
+  <data name="label20.Visible" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="button4.Location" type="System.Drawing.Point, System.Drawing">
+    <value>1354, 33</value>
+  </data>
+  <data name="button4.Text" xml:space="preserve">
+    <value>save</value>
+  </data>
+  <data name="label19.Location" type="System.Drawing.Point, System.Drawing">
+    <value>1650, 71</value>
+  </data>
+  <data name="label19.Size" type="System.Drawing.Size, System.Drawing">
+    <value>51, 23</value>
+  </data>
+  <data name="ZhiLing.Location" type="System.Drawing.Point, System.Drawing">
+    <value>1324, 2</value>
+  </data>
+  <data name="button3.Location" type="System.Drawing.Point, System.Drawing">
+    <value>628, 66</value>
+  </data>
+  <data name="button3.Text" xml:space="preserve">
+    <value>Spain</value>
+  </data>
+  <data name="button2.Location" type="System.Drawing.Point, System.Drawing">
+    <value>1441, 48</value>
+  </data>
+  <data name="button2.Size" type="System.Drawing.Size, System.Drawing">
+    <value>172, 32</value>
+  </data>
+  <data name="button2.Text" xml:space="preserve">
+    <value>MES configuration</value>
+  </data>
+  <data name="ONtime.Location" type="System.Drawing.Point, System.Drawing">
+    <value>1561, 0</value>
+  </data>
+  <data name="ONtime.Size" type="System.Drawing.Size, System.Drawing">
+    <value>100, 25</value>
+  </data>
+  <data name="button1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>1132, 57</value>
+  </data>
+  <data name="button1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>85, 24</value>
+  </data>
+  <data name="button1.Text" xml:space="preserve">
+    <value>Spain</value>
+  </data>
+  <data name="button1.Visible" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="CH2ReceiveText.Location" type="System.Drawing.Point, System.Drawing">
+    <value>1756, 71</value>
+  </data>
+  <data name="CH2ReceiveText.Size" type="System.Drawing.Size, System.Drawing">
+    <value>10, 10</value>
+  </data>
+  <data name="CH1ReceiveText.Location" type="System.Drawing.Point, System.Drawing">
+    <value>1739, 71</value>
+  </data>
+  <data name="CH1ReceiveText.Size" type="System.Drawing.Size, System.Drawing">
+    <value>10, 10</value>
+  </data>
+  <data name="textBox2.Location" type="System.Drawing.Point, System.Drawing">
+    <value>1763, 62</value>
+  </data>
+  <data name="textBox2.Size" type="System.Drawing.Size, System.Drawing">
+    <value>10, 10</value>
+  </data>
+  <data name="textBox1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>1707, 70</value>
+  </data>
+  <data name="textBox1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>10, 10</value>
+  </data>
+  <data name="PLCControl.Text" xml:space="preserve">
+    <value>PLC control</value>
+  </data>
+  <data name="CH3ReceiveText.Location" type="System.Drawing.Point, System.Drawing">
+    <value>1723, 69</value>
+  </data>
+  <data name="CH3ReceiveText.Size" type="System.Drawing.Size, System.Drawing">
+    <value>10, 10</value>
+  </data>
+  <data name="Now.Location" type="System.Drawing.Point, System.Drawing">
+    <value>1687, 4</value>
+  </data>
+  <data name="CH4ReceiveText.Location" type="System.Drawing.Point, System.Drawing">
+    <value>1957, 115</value>
+  </data>
+  <data name="CH4ReceiveText.Size" type="System.Drawing.Size, System.Drawing">
+    <value>10, 10</value>
+  </data>
+  <data name="PLCRun.Location" type="System.Drawing.Point, System.Drawing">
+    <value>1710, 27</value>
+  </data>
+  <data name="PLCRun.Size" type="System.Drawing.Size, System.Drawing">
+    <value>69, 26</value>
   </data>
   <data name="CH1Status.Location" type="System.Drawing.Point, System.Drawing">
     <value>138, 32</value>
@@ -1579,32 +1571,68 @@
   <data name="CH1Status.Text" xml:space="preserve">
     <value>Standby</value>
   </data>
-  <data name="label30.Location" type="System.Drawing.Point, System.Drawing">
-    <value>911, 41</value>
+  <data name="uiGroupBox1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>1, 95</value>
   </data>
-  <data name="label30.Size" type="System.Drawing.Size, System.Drawing">
-    <value>17, 16</value>
+  <data name="uiGroupBox1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>960, 142</value>
+  </data>
+  <data name="uiGroupBox1.Text" xml:space="preserve">
+    <value>CH1 left station</value>
+  </data>
+  <data name="CH1MESOUT.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="CH1MESOUT.Font" type="System.Drawing.Font, System.Drawing">
+    <value>SimSun-ExtB, 12pt, style=Bold</value>
+  </data>
+  <data name="CH1MESOUT.Size" type="System.Drawing.Size, System.Drawing">
+    <value>34, 16</value>
+  </data>
+  <data name="CH1MESOUT.Text" xml:space="preserve">
+    <value>XXX</value>
+  </data>
+  <data name="CH1MESIN.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="CH1MESIN.Font" type="System.Drawing.Font, System.Drawing">
+    <value>SimSun-ExtB, 12pt, style=Bold</value>
+  </data>
+  <data name="CH1MESIN.Size" type="System.Drawing.Size, System.Drawing">
+    <value>34, 16</value>
+  </data>
+  <data name="CH1MESIN.Text" xml:space="preserve">
+    <value>XXX</value>
+  </data>
+  <data name="label15.Location" type="System.Drawing.Point, System.Drawing">
+    <value>834, 18</value>
+  </data>
+  <data name="label15.Text" xml:space="preserve">
+    <value>CH1MesIN</value>
+  </data>
+  <data name="label13.Location" type="System.Drawing.Point, System.Drawing">
+    <value>834, 71</value>
+  </data>
+  <data name="label13.Size" type="System.Drawing.Size, System.Drawing">
+    <value>111, 23</value>
+  </data>
+  <data name="label13.Text" xml:space="preserve">
+    <value>CH1mesOut</value>
+  </data>
+  <data name="label30.Location" type="System.Drawing.Point, System.Drawing">
+    <value>800, 36</value>
   </data>
   <data name="label39.Location" type="System.Drawing.Point, System.Drawing">
-    <value>894, 102</value>
-  </data>
-  <data name="label39.Size" type="System.Drawing.Size, System.Drawing">
-    <value>25, 16</value>
+    <value>800, 101</value>
   </data>
   <data name="CH1RTVDC.Location" type="System.Drawing.Point, System.Drawing">
-    <value>821, 41</value>
-  </data>
-  <data name="CH1RTVDC.Size" type="System.Drawing.Size, System.Drawing">
-    <value>44, 16</value>
+    <value>734, 36</value>
   </data>
   <data name="CH1RTElec.Location" type="System.Drawing.Point, System.Drawing">
-    <value>821, 105</value>
-  </data>
-  <data name="CH1RTElec.Size" type="System.Drawing.Size, System.Drawing">
-    <value>44, 16</value>
+    <value>743, 100</value>
   </data>
   <data name="label42.Location" type="System.Drawing.Point, System.Drawing">
-    <value>649, 102</value>
+    <value>583, 98</value>
   </data>
   <data name="label42.Size" type="System.Drawing.Size, System.Drawing">
     <value>115, 21</value>
@@ -1613,7 +1641,7 @@
     <value>Static Current</value>
   </data>
   <data name="label35.Location" type="System.Drawing.Point, System.Drawing">
-    <value>649, 37</value>
+    <value>583, 33</value>
   </data>
   <data name="label35.Size" type="System.Drawing.Size, System.Drawing">
     <value>136, 21</value>
@@ -1622,37 +1650,19 @@
     <value>Working voltage</value>
   </data>
   <data name="label38.Location" type="System.Drawing.Point, System.Drawing">
-    <value>911, 73</value>
-  </data>
-  <data name="label38.Size" type="System.Drawing.Size, System.Drawing">
-    <value>17, 16</value>
+    <value>800, 69</value>
   </data>
   <data name="CH1RTADC.Location" type="System.Drawing.Point, System.Drawing">
-    <value>821, 73</value>
-  </data>
-  <data name="CH1RTADC.Size" type="System.Drawing.Size, System.Drawing">
-    <value>71, 16</value>
+    <value>724, 66</value>
   </data>
   <data name="label43.Location" type="System.Drawing.Point, System.Drawing">
-    <value>649, 70</value>
+    <value>583, 66</value>
   </data>
   <data name="label43.Size" type="System.Drawing.Size, System.Drawing">
     <value>135, 21</value>
   </data>
   <data name="label43.Text" xml:space="preserve">
     <value>Working current</value>
-  </data>
-  <data name="uiGroupBox1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>1, 88</value>
-  </data>
-  <data name="uiGroupBox1.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>0, 32, 0, 0</value>
-  </data>
-  <data name="uiGroupBox1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>960, 130</value>
-  </data>
-  <data name="uiGroupBox1.Text" xml:space="preserve">
-    <value>CH1 left station</value>
   </data>
   <data name="Column1.HeaderText" xml:space="preserve">
     <value>Time</value>
@@ -1676,10 +1686,16 @@
     <value>Result</value>
   </data>
   <data name="DataGridView1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>1, 486</value>
+    <value>1, 528</value>
   </data>
   <data name="DataGridView1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>960, 268</value>
+    <value>960, 290</value>
+  </data>
+  <data name="uiTitlePanel3.Size" type="System.Drawing.Size, System.Drawing">
+    <value>960, 92</value>
+  </data>
+  <data name="uiTitlePanel3.Text" xml:space="preserve">
+    <value>Left station statistics</value>
   </data>
   <data name="CH1ProductNumber.Location" type="System.Drawing.Point, System.Drawing">
     <value>110, 46</value>
@@ -1687,14 +1703,11 @@
   <data name="label233.Location" type="System.Drawing.Point, System.Drawing">
     <value>822, 50</value>
   </data>
-  <data name="label233.Size" type="System.Drawing.Size, System.Drawing">
-    <value>24, 16</value>
-  </data>
   <data name="label232.Location" type="System.Drawing.Point, System.Drawing">
     <value>620, 52</value>
   </data>
   <data name="label232.Size" type="System.Drawing.Size, System.Drawing">
-    <value>88, 16</value>
+    <value>87, 16</value>
   </data>
   <data name="label232.Text" xml:space="preserve">
     <value>Yield rate</value>
@@ -1703,16 +1716,13 @@
     <value>452, 51</value>
   </data>
   <data name="label231.Size" type="System.Drawing.Size, System.Drawing">
-    <value>56, 16</value>
+    <value>55, 16</value>
   </data>
   <data name="label231.Text" xml:space="preserve">
     <value>NG qty</value>
   </data>
   <data name="label230.Location" type="System.Drawing.Point, System.Drawing">
     <value>237, 52</value>
-  </data>
-  <data name="label230.Size" type="System.Drawing.Size, System.Drawing">
-    <value>72, 16</value>
   </data>
   <data name="label230.Text" xml:space="preserve">
     <value>Pass qty</value>
@@ -1721,7 +1731,7 @@
     <value>10, 51</value>
   </data>
   <data name="label229.Size" type="System.Drawing.Size, System.Drawing">
-    <value>96, 16</value>
+    <value>95, 16</value>
   </data>
   <data name="label229.Text" xml:space="preserve">
     <value>Product qty</value>
@@ -1743,15 +1753,6 @@
   </data>
   <data name="CH1PassNumber.Location" type="System.Drawing.Point, System.Drawing">
     <value>316, 48</value>
-  </data>
-  <data name="uiTitlePanel3.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>0, 35, 0, 0</value>
-  </data>
-  <data name="uiTitlePanel3.Size" type="System.Drawing.Size, System.Drawing">
-    <value>960, 85</value>
-  </data>
-  <data name="uiTitlePanel3.Text" xml:space="preserve">
-    <value>Left station statistics</value>
   </data>
   <data name="dataGridViewTextBoxColumn1.HeaderText" xml:space="preserve">
     <value>Time</value>
@@ -1775,22 +1776,28 @@
     <value>Result</value>
   </data>
   <data name="DataGridView2.Location" type="System.Drawing.Point, System.Drawing">
-    <value>963, 486</value>
+    <value>963, 528</value>
   </data>
   <data name="DataGridView2.Size" type="System.Drawing.Size, System.Drawing">
-    <value>960, 268</value>
+    <value>960, 290</value>
+  </data>
+  <data name="uiTitlePanel1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>963, 1</value>
+  </data>
+  <data name="uiTitlePanel1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>960, 92</value>
+  </data>
+  <data name="uiTitlePanel1.Text" xml:space="preserve">
+    <value>Right station statistics</value>
   </data>
   <data name="label130.Location" type="System.Drawing.Point, System.Drawing">
     <value>831, 51</value>
-  </data>
-  <data name="label130.Size" type="System.Drawing.Size, System.Drawing">
-    <value>24, 16</value>
   </data>
   <data name="label131.Location" type="System.Drawing.Point, System.Drawing">
     <value>629, 52</value>
   </data>
   <data name="label131.Size" type="System.Drawing.Size, System.Drawing">
-    <value>88, 16</value>
+    <value>87, 16</value>
   </data>
   <data name="label131.Text" xml:space="preserve">
     <value>Yield rate</value>
@@ -1799,16 +1806,13 @@
     <value>452, 52</value>
   </data>
   <data name="label132.Size" type="System.Drawing.Size, System.Drawing">
-    <value>56, 16</value>
+    <value>55, 16</value>
   </data>
   <data name="label132.Text" xml:space="preserve">
     <value>NG qty</value>
   </data>
   <data name="label133.Location" type="System.Drawing.Point, System.Drawing">
     <value>250, 51</value>
-  </data>
-  <data name="label133.Size" type="System.Drawing.Size, System.Drawing">
-    <value>72, 16</value>
   </data>
   <data name="label133.Text" xml:space="preserve">
     <value>Pass qty</value>
@@ -1817,7 +1821,7 @@
     <value>20, 51</value>
   </data>
   <data name="label134.Size" type="System.Drawing.Size, System.Drawing">
-    <value>96, 16</value>
+    <value>95, 16</value>
   </data>
   <data name="label134.Text" xml:space="preserve">
     <value>Product qty</value>
@@ -1843,53 +1847,32 @@
   <data name="CH2ProductNumber.Location" type="System.Drawing.Point, System.Drawing">
     <value>123, 44</value>
   </data>
-  <data name="uiTitlePanel1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>963, 1</value>
-  </data>
-  <data name="uiTitlePanel1.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>0, 35, 0, 0</value>
-  </data>
-  <data name="uiTitlePanel1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>960, 85</value>
-  </data>
-  <data name="uiTitlePanel1.Text" xml:space="preserve">
-    <value>Right station statistics</value>
-  </data>
-  <data name="logDisplay1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>0, 32</value>
-  </data>
-  <data name="logDisplay1.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>13073403, 12788982, 13073403, 12788982</value>
-  </data>
-  <data name="logDisplay1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>1922, 75</value>
-  </data>
-  <data name="uiGroupBox7.Location" type="System.Drawing.Point, System.Drawing">
-    <value>1, 756</value>
-  </data>
-  <data name="uiGroupBox7.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>0, 32, 0, 0</value>
-  </data>
-  <data name="uiGroupBox7.Size" type="System.Drawing.Size, System.Drawing">
-    <value>1922, 107</value>
-  </data>
-  <data name="uiGroupBox7.Text" xml:space="preserve">
-    <value>Running log</value>
-  </data>
   <data name="tableLayoutPanel1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>0, 115</value>
+    <value>0, 125</value>
   </data>
   <data name="tableLayoutPanel1.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>1, 1, 1, 1</value>
   </data>
   <data name="tableLayoutPanel1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>1924, 864</value>
+    <value>1924, 936</value>
   </data>
-  <data name="$this.AutoScaleDimensions" type="System.Drawing.SizeF, System.Drawing">
-    <value>6, 12</value>
+  <data name="uiGroupBox7.Location" type="System.Drawing.Point, System.Drawing">
+    <value>1, 820</value>
+  </data>
+  <data name="uiGroupBox7.Size" type="System.Drawing.Size, System.Drawing">
+    <value>1922, 115</value>
+  </data>
+  <data name="uiGroupBox7.Text" xml:space="preserve">
+    <value>Running log</value>
+  </data>
+  <data name="logDisplay1.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>1297260928, 1124199936, 1297260928, 1124199936</value>
+  </data>
+  <data name="logDisplay1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>1922, 80</value>
   </data>
   <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
-    <value>1924, 979</value>
+    <value>1924, 1061</value>
   </data>
   <data name="$this.Icon" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
@@ -2315,5 +2298,8 @@
         AAAAAAAAAAAAAP//AAD//wAA/B8AAPAHAADAAQAAwAEAAJAEAACYPAAAnBwAAJwcAADOCQAAwgMAAPAH
         AAD//wAA//8AAP//AAA=
 </value>
+  </data>
+  <data name="$this.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>Inherit</value>
   </data>
 </root>

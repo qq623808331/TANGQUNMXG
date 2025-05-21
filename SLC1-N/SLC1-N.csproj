@@ -90,6 +90,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Activationcode.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Activationcode.Designer.cs">
+      <DependentUpon>Activationcode.cs</DependentUpon>
+    </Compile>
     <Compile Include="CH2LINLDF.cs" />
     <Compile Include="Communication.cs" />
     <Compile Include="Config.cs">
@@ -169,12 +175,19 @@
     <Compile Include="Machine.Designer.cs">
       <DependentUpon>Machine.cs</DependentUpon>
     </Compile>
+    <Compile Include="Mes.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Mes.Designer.cs">
+      <DependentUpon>Mes.cs</DependentUpon>
+    </Compile>
     <Compile Include="MESConfig.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="MESConfig.Designer.cs">
       <DependentUpon>MESConfig.cs</DependentUpon>
     </Compile>
+    <Compile Include="MesConfigs.cs" />
     <Compile Include="Model.cs" />
     <Compile Include="NModbusConvert.cs" />
     <Compile Include="PLCConfig.cs">
@@ -247,6 +260,9 @@
       <DependentUpon>Warning.cs</DependentUpon>
     </Compile>
     <Compile Include="WarningInfo.cs" />
+    <EmbeddedResource Include="Activationcode.resx">
+      <DependentUpon>Activationcode.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Config.en.resx">
       <DependentUpon>Config.cs</DependentUpon>
     </EmbeddedResource>
@@ -277,12 +293,27 @@
     <EmbeddedResource Include="Electricity.en.resx">
       <DependentUpon>Electricity.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Electricity.eo-001.resx">
+      <DependentUpon>Electricity.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Electricity.eo.resx">
+      <DependentUpon>Electricity.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Electricity.es-BR.resx">
+      <DependentUpon>Electricity.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Electricity.es-BZ.resx">
+      <DependentUpon>Electricity.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Electricity.es.resx">
       <DependentUpon>Electricity.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Electricity.resx">
       <DependentUpon>Electricity.cs</DependentUpon>
       <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Electricity.tzm-Latn-MA.resx">
+      <DependentUpon>Electricity.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Electricity.zh.resx">
       <DependentUpon>Electricity.cs</DependentUpon>
@@ -298,6 +329,7 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Form1.en.resx">
       <DependentUpon>Form1.cs</DependentUpon>
+      <SubType>Designer</SubType>
     </EmbeddedResource>
     <EmbeddedResource Include="Form1.es.resx">
       <DependentUpon>Form1.cs</DependentUpon>
@@ -349,6 +381,12 @@
     <EmbeddedResource Include="Machine.resx">
       <DependentUpon>Machine.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Mes.es.resx">
+      <DependentUpon>Mes.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Mes.resx">
+      <DependentUpon>Mes.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="MESConfig.en.resx">
       <DependentUpon>MESConfig.cs</DependentUpon>
     </EmbeddedResource>
@@ -399,6 +437,9 @@
       <DependentUpon>Save.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Save.resx">
+      <DependentUpon>Save.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Save.zh.resx">
       <DependentUpon>Save.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="SelectMachine.en.resx">

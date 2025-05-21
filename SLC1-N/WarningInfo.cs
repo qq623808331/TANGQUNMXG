@@ -3,6 +3,7 @@ using System;
 using System.Collections.Generic;
 using System.Data.OleDb;
 using System.IO;
+using System.Threading.Tasks;
 
 namespace SLC1_N
 {
@@ -18,9 +19,12 @@ namespace SLC1_N
         }
 
         //将报警和解锁结果数据存储本地mdb数据库
-        public void InsertWarningData(string warningtime, string channel, string warning)
+        public async void InsertWarningData(string warningtime, string channel, string warning)
         {
+            if(false)
             try
+            {
+                var record = Task.Run(() =>
             {
                 string filepath = System.Environment.CurrentDirectory + "\\Config\\WarningRecord\\Warning.mdb";
                 string constr = "Provider=Microsoft.Jet.OLEDB.4.0;" + "Data Source=" + System.Environment.CurrentDirectory + "\\Config\\WarningRecord\\Warning.mdb;";
@@ -35,7 +39,7 @@ namespace SLC1_N
                     con.Open();
                     string sql = "CREATE TABLE Warning([id] int identity(1,1),[Warningtime] VarChar(100),[Channel] VarChar(50),[Warning] VarChar(100))";
                     OleDbCommand cmd = new OleDbCommand(sql, con);
-                    cmd.ExecuteNonQuery();
+                    cmd.ExecuteNonQueryAsync();
                     con.Close();
                 }
                 con.Open();
@@ -46,11 +50,14 @@ namespace SLC1_N
                 paramCollection.Add(new OleDbParameter("Warningtime", warningtime));
                 paramCollection.Add(new OleDbParameter("Channel", channel));
                 paramCollection.Add(new OleDbParameter("Warning", warning));
-                command.ExecuteNonQuery();
+                command.ExecuteNonQueryAsync();
                 string sql2 = "DELETE FROM Warning WHERE ID NOT IN(SELECT TOP 50 ID FROM Warning ORDER BY ID DESC)";
                 OleDbCommand cmd3 = new OleDbCommand(sql2, con);
-                cmd3.ExecuteNonQuery();
+                cmd3.ExecuteNonQueryAsync();
                 con.Close();
+            });
+                await record;
+
 
                 //    return "OK";
             }

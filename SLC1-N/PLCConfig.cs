@@ -29,7 +29,7 @@ namespace SLC1_N
             if (Form1.f1.plc.PLCIsRun)
             {
                 PLCReConnect.Enabled = false;
-                ReadSignal.Interval = 200;
+                ReadSignal.Interval = 1000;
                 ReadSignal.Start();
             }
             else

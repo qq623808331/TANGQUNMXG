@@ -1,0 +1,45 @@
+28/03/2025 09:15:06 a. m.静态电流定时器异常   en System.IO.Ports.InternalResources.WinIOError(Int32 errorCode, String str)
+   en System.IO.Ports.SerialStream.EndWrite(IAsyncResult asyncResult)
+   en System.IO.Ports.SerialStream.Write(Byte[] array, Int32 offset, Int32 count, Int32 timeout)
+   en System.IO.Ports.SerialPort.Write(String text)
+   en System.IO.Ports.SerialPort.WriteLine(String text)
+   en SLC1_N.Form1.CH1Method(Int32 i) en C:\Users\Administrator\Desktop\messsssss\New folder\1.22\TANGQUNMXG\SLC1-N\Form1.cs:línea 12319
+   en SLC1_N.Form1.CH1ReaduA_Tick(Object sender, EventArgs e) en C:\Users\Administrator\Desktop\messsssss\New folder\1.22\TANGQUNMXG\SLC1-N\Form1.cs:línea 8239La operación de E/S se anuló por una salida de subproceso o por una solicitud de aplicación.
+
+
+28/03/2025 09:17:19 a. m.静态电流定时器异常   en System.IO.Ports.InternalResources.WinIOError(Int32 errorCode, String str)
+   en System.IO.Ports.SerialStream.EndWrite(IAsyncResult asyncResult)
+   en System.IO.Ports.SerialStream.Write(Byte[] array, Int32 offset, Int32 count, Int32 timeout)
+   en System.IO.Ports.SerialPort.Write(String text)
+   en System.IO.Ports.SerialPort.WriteLine(String text)
+   en SLC1_N.Form1.CH1Method(Int32 i) en C:\Users\Administrator\Desktop\messsssss\New folder\1.22\TANGQUNMXG\SLC1-N\Form1.cs:línea 12319
+   en SLC1_N.Form1.CH1ReaduA_Tick(Object sender, EventArgs e) en C:\Users\Administrator\Desktop\messsssss\New folder\1.22\TANGQUNMXG\SLC1-N\Form1.cs:línea 8239La operación de E/S se anuló por una salida de subproceso o por una solicitud de aplicación.
+
+
+28/03/2025 09:45:40 a. m.静态电流定时器异常   en System.IO.Ports.InternalResources.WinIOError(Int32 errorCode, String str)
+   en System.IO.Ports.SerialStream.EndWrite(IAsyncResult asyncResult)
+   en System.IO.Ports.SerialStream.Write(Byte[] array, Int32 offset, Int32 count, Int32 timeout)
+   en System.IO.Ports.SerialPort.Write(String text)
+   en System.IO.Ports.SerialPort.WriteLine(String text)
+   en SLC1_N.Form1.CH1Method(Int32 i) en C:\Users\Administrator\Desktop\messsssss\New folder\1.22\TANGQUNMXG\SLC1-N\Form1.cs:línea 12319
+   en SLC1_N.Form1.CH1ReaduA_Tick(Object sender, EventArgs e) en C:\Users\Administrator\Desktop\messsssss\New folder\1.22\TANGQUNMXG\SLC1-N\Form1.cs:línea 8239La operación de E/S se anuló por una salida de subproceso o por una solicitud de aplicación.
+
+
+28/03/2025 10:31:30 a. m.静态电流定时器异常   en System.IO.Ports.InternalResources.WinIOError(Int32 errorCode, String str)
+   en System.IO.Ports.SerialStream.EndWrite(IAsyncResult asyncResult)
+   en System.IO.Ports.SerialStream.Write(Byte[] array, Int32 offset, Int32 count, Int32 timeout)
+   en System.IO.Ports.SerialPort.Write(String text)
+   en System.IO.Ports.SerialPort.WriteLine(String text)
+   en SLC1_N.Form1.CH1Method(Int32 i) en C:\Users\Administrator\Desktop\messsssss\New folder\1.22\TANGQUNMXG\SLC1-N\Form1.cs:línea 12319
+   en SLC1_N.Form1.CH1ReaduA_Tick(Object sender, EventArgs e) en C:\Users\Administrator\Desktop\messsssss\New folder\1.22\TANGQUNMXG\SLC1-N\Form1.cs:línea 8239La operación de E/S se anuló por una salida de subproceso o por una solicitud de aplicación.
+
+
+28/03/2025 02:50:32 p. m.静态电流定时器异常   en System.IO.Ports.InternalResources.WinIOError(Int32 errorCode, String str)
+   en System.IO.Ports.SerialStream.EndWrite(IAsyncResult asyncResult)
+   en System.IO.Ports.SerialStream.Write(Byte[] array, Int32 offset, Int32 count, Int32 timeout)
+   en System.IO.Ports.SerialPort.Write(String text)
+   en System.IO.Ports.SerialPort.WriteLine(String text)
+   en SLC1_N.Form1.CH1Method(Int32 i) en C:\Users\Administrator\Desktop\messsssss\New folder\1.22\TANGQUNMXG\SLC1-N\Form1.cs:línea 12319
+   en SLC1_N.Form1.CH1ReaduA_Tick(Object sender, EventArgs e) en C:\Users\Administrator\Desktop\messsssss\New folder\1.22\TANGQUNMXG\SLC1-N\Form1.cs:línea 8239La operación de E/S se anuló por una salida de subproceso o por una solicitud de aplicación.
+
+

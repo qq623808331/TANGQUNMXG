@@ -1,6 +1,7 @@
 ﻿using Microsoft.Win32;
 using System;
 using System.Collections.Generic;
+using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace SLC1_N
@@ -33,7 +34,7 @@ namespace SLC1_N
             }
         }
 
-        private void Log_Click(object sender, EventArgs e)
+        private  void Log_ClickAsync(object sender, EventArgs e)
         {
             if (Password.Text == "linglong29529959" || Password.Text == user_pwd)
             {

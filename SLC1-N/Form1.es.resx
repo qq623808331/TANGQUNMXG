@@ -232,6 +232,9 @@
   <data name="label29.Location" type="System.Drawing.Point, System.Drawing">
     <value>267, 59</value>
   </data>
+  <data name="left_CH2Tlight.Location" type="System.Drawing.Point, System.Drawing">
+    <value>753, 96</value>
+  </data>
   <data name="LeftCH2Status.Size" type="System.Drawing.Size, System.Drawing">
     <value>117, 34</value>
   </data>
@@ -242,7 +245,7 @@
     <value>Progreso de las pruebas</value>
   </data>
   <data name="LeftCH2TCP.Location" type="System.Drawing.Point, System.Drawing">
-    <value>754, 79</value>
+    <value>761, 66</value>
   </data>
   <data name="CH2ParamIndex.Location" type="System.Drawing.Point, System.Drawing">
     <value>896, 100</value>
@@ -338,7 +341,7 @@
     <value>Estación de trabajo izquierda CH1 - 2</value>
   </data>
   <data name="label93.Location" type="System.Drawing.Point, System.Drawing">
-    <value>884, 37</value>
+    <value>783, 35</value>
   </data>
   <data name="CH2_1flow.Location" type="System.Drawing.Point, System.Drawing">
     <value>493, 59</value>
@@ -362,13 +365,13 @@
     <value>896, 97</value>
   </data>
   <data name="label95.Location" type="System.Drawing.Point, System.Drawing">
-    <value>880, 111</value>
+    <value>783, 112</value>
   </data>
   <data name="CH2RTVDC.Location" type="System.Drawing.Point, System.Drawing">
-    <value>786, 39</value>
+    <value>714, 35</value>
   </data>
   <data name="CH2RTElec.Location" type="System.Drawing.Point, System.Drawing">
-    <value>786, 111</value>
+    <value>714, 112</value>
   </data>
   <data name="label98.Location" type="System.Drawing.Point, System.Drawing">
     <value>15, 43</value>
@@ -380,7 +383,7 @@
     <value>Estado de funcionamiento</value>
   </data>
   <data name="label99.Location" type="System.Drawing.Point, System.Drawing">
-    <value>730, 90</value>
+    <value>655, 90</value>
   </data>
   <data name="label99.Size" type="System.Drawing.Size, System.Drawing">
     <value>144, 21</value>
@@ -389,7 +392,7 @@
     <value>Corriente estática</value>
   </data>
   <data name="label100.Location" type="System.Drawing.Point, System.Drawing">
-    <value>703, 15</value>
+    <value>640, 15</value>
   </data>
   <data name="label100.Size" type="System.Drawing.Size, System.Drawing">
     <value>219, 21</value>
@@ -398,7 +401,7 @@
     <value>Tensión de funcionamiento</value>
   </data>
   <data name="CH2Tlight.Location" type="System.Drawing.Point, System.Drawing">
-    <value>598, 61</value>
+    <value>572, 61</value>
   </data>
   <data name="RightCH1Status.Size" type="System.Drawing.Size, System.Drawing">
     <value>117, 34</value>
@@ -428,7 +431,7 @@
     <value>Estado ch2. Texto</value>
   </data>
   <data name="CH2RTADC.Location" type="System.Drawing.Point, System.Drawing">
-    <value>768, 74</value>
+    <value>706, 76</value>
   </data>
   <data name="label123.Location" type="System.Drawing.Point, System.Drawing">
     <value>852, 68</value>
@@ -476,7 +479,7 @@
     <value>Valor de flujo</value>
   </data>
   <data name="label102.Location" type="System.Drawing.Point, System.Drawing">
-    <value>884, 72</value>
+    <value>786, 74</value>
   </data>
   <data name="label129.Location" type="System.Drawing.Point, System.Drawing">
     <value>381, 16</value>
@@ -488,7 +491,7 @@
     <value>Tasa de fuga</value>
   </data>
   <data name="label107.Location" type="System.Drawing.Point, System.Drawing">
-    <value>714, 53</value>
+    <value>655, 53</value>
   </data>
   <data name="label107.Size" type="System.Drawing.Size, System.Drawing">
     <value>164, 21</value>
@@ -519,6 +522,36 @@
   </data>
   <data name="uiGroupBox6.Text" xml:space="preserve">
     <value>Estacion de trabajo derecha canal1</value>
+  </data>
+  <data name="CH2MESOUT.Location" type="System.Drawing.Point, System.Drawing">
+    <value>845, 100</value>
+  </data>
+  <data name="CH2MESOUT.Text" xml:space="preserve">
+    <value>xxx</value>
+  </data>
+  <data name="CH2MESIN.Location" type="System.Drawing.Point, System.Drawing">
+    <value>863, 43</value>
+  </data>
+  <data name="CH2MESIN.Size" type="System.Drawing.Size, System.Drawing">
+    <value>76, 23</value>
+  </data>
+  <data name="CH2MESIN.Text" xml:space="preserve">
+    <value>xxx</value>
+  </data>
+  <data name="label17.Location" type="System.Drawing.Point, System.Drawing">
+    <value>855, 15</value>
+  </data>
+  <data name="label17.Text" xml:space="preserve">
+    <value>CH1MESIN</value>
+  </data>
+  <data name="label18.Location" type="System.Drawing.Point, System.Drawing">
+    <value>831, 69</value>
+  </data>
+  <data name="label18.Size" type="System.Drawing.Size, System.Drawing">
+    <value>114, 23</value>
+  </data>
+  <data name="label18.Text" xml:space="preserve">
+    <value>CH2MESOUT</value>
   </data>
   <data name="uiGroupBox5.Text" xml:space="preserve">
     <value>Estación derecha CH2</value>
@@ -710,10 +743,10 @@
     <value>Nombre de usuario</value>
   </data>
   <data name="label22.Location" type="System.Drawing.Point, System.Drawing">
-    <value>1453, 61</value>
+    <value>1719, 49</value>
   </data>
   <data name="label6.Location" type="System.Drawing.Point, System.Drawing">
-    <value>493, 34</value>
+    <value>457, 37</value>
   </data>
   <data name="label6.Size" type="System.Drawing.Size, System.Drawing">
     <value>215, 21</value>
@@ -722,7 +755,7 @@
     <value>Resultados de la operación</value>
   </data>
   <data name="label5.Location" type="System.Drawing.Point, System.Drawing">
-    <value>47, 34</value>
+    <value>12, 34</value>
   </data>
   <data name="label5.Size" type="System.Drawing.Size, System.Drawing">
     <value>211, 21</value>
@@ -731,7 +764,7 @@
     <value>Estado de funcionamiento</value>
   </data>
   <data name="CH1Tlight.Location" type="System.Drawing.Point, System.Drawing">
-    <value>623, 62</value>
+    <value>566, 64</value>
   </data>
   <data name="label32.Size" type="System.Drawing.Size, System.Drawing">
     <value>217, 21</value>
@@ -761,8 +794,82 @@
   <data name="LeftReset.Text" xml:space="preserve">
     <value>Restablecimiento izquierdo</value>
   </data>
+  <data name="uiHeaderButton1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>1827, 3</value>
+  </data>
+  <data name="label23.Location" type="System.Drawing.Point, System.Drawing">
+    <value>1421, 8</value>
+  </data>
+  <data name="label23.Size" type="System.Drawing.Size, System.Drawing">
+    <value>135, 16</value>
+  </data>
+  <data name="label23.Text" xml:space="preserve">
+    <value>Tarjeta de mando</value>
+  </data>
+  <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="label21.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="label21.Location" type="System.Drawing.Point, System.Drawing">
+    <value>1772, 76</value>
+  </data>
+  <data name="label21.Size" type="System.Drawing.Size, System.Drawing">
+    <value>135, 16</value>
+  </data>
+  <data name="label21.Text" xml:space="preserve">
+    <value>Tarjeta de mando</value>
+  </data>
+  <data name="label21.Visible" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="label20.Location" type="System.Drawing.Point, System.Drawing">
+    <value>1669, 56</value>
+  </data>
+  <data name="label20.Size" type="System.Drawing.Size, System.Drawing">
+    <value>10, 10</value>
+  </data>
+  <data name="label20.Visible" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="button4.Location" type="System.Drawing.Point, System.Drawing">
+    <value>1497, 39</value>
+  </data>
+  <data name="button4.Size" type="System.Drawing.Size, System.Drawing">
+    <value>112, 30</value>
+  </data>
+  <data name="button4.Text" xml:space="preserve">
+    <value>Guardar</value>
+  </data>
+  <data name="label19.Location" type="System.Drawing.Point, System.Drawing">
+    <value>1621, 83</value>
+  </data>
+  <data name="label19.Size" type="System.Drawing.Size, System.Drawing">
+    <value>35, 10</value>
+  </data>
+  <data name="ZhiLing.Location" type="System.Drawing.Point, System.Drawing">
+    <value>1569, 0</value>
+  </data>
+  <data name="button3.Location" type="System.Drawing.Point, System.Drawing">
+    <value>622, 76</value>
+  </data>
+  <data name="button3.Text" xml:space="preserve">
+    <value>España</value>
+  </data>
+  <data name="button2.Location" type="System.Drawing.Point, System.Drawing">
+    <value>1218, 64</value>
+  </data>
+  <data name="button2.Size" type="System.Drawing.Size, System.Drawing">
+    <value>175, 35</value>
+  </data>
+  <data name="button2.Text" xml:space="preserve">
+    <value>Configuración MES
+</value>
+  </data>
+  <data name="ONtime.Location" type="System.Drawing.Point, System.Drawing">
+    <value>1754, 76</value>
+  </data>
   <data name="button1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>616, 71</value>
+    <value>1063, 65</value>
   </data>
   <data name="button1.Size" type="System.Drawing.Size, System.Drawing">
     <value>85, 27</value>
@@ -770,6 +877,9 @@
   <data name="button1.Text" xml:space="preserve">
     <value>España
 </value>
+  </data>
+  <data name="button1.Visible" type="System.Boolean, mscorlib">
+    <value>False</value>
   </data>
   <data name="CH2ReceiveText.Location" type="System.Drawing.Point, System.Drawing">
     <value>1653, 23</value>
@@ -805,13 +915,13 @@
     <value>Control de PC</value>
   </data>
   <data name="CH3ReceiveText.Location" type="System.Drawing.Point, System.Drawing">
-    <value>1669, 50</value>
+    <value>1707, 73</value>
   </data>
   <data name="CH3ReceiveText.Size" type="System.Drawing.Size, System.Drawing">
     <value>10, 10</value>
   </data>
   <data name="Now.Location" type="System.Drawing.Point, System.Drawing">
-    <value>1488, 21</value>
+    <value>1730, 8</value>
   </data>
   <data name="CH4ReceiveText.Location" type="System.Drawing.Point, System.Drawing">
     <value>1669, 21</value>
@@ -820,7 +930,7 @@
     <value>10, 10</value>
   </data>
   <data name="PLCRun.Location" type="System.Drawing.Point, System.Drawing">
-    <value>1491, 46</value>
+    <value>1757, 34</value>
   </data>
   <data name="uiNavBar1.Nodes" mimetype="application/x-microsoft.net.object.binary.base64">
     <value>
@@ -961,7 +1071,7 @@
     <value>SimSun-ExtB, 14.25pt</value>
   </data>
   <data name="CH1Status.Location" type="System.Drawing.Point, System.Drawing">
-    <value>266, 35</value>
+    <value>231, 35</value>
   </data>
   <data name="CH1Status.Size" type="System.Drawing.Size, System.Drawing">
     <value>212, 19</value>
@@ -969,20 +1079,56 @@
   <data name="CH1Status.Text" xml:space="preserve">
     <value>Artículos de repuesto</value>
   </data>
+  <data name="CH1MESOUT.Location" type="System.Drawing.Point, System.Drawing">
+    <value>840, 105</value>
+  </data>
+  <data name="CH1MESOUT.Size" type="System.Drawing.Size, System.Drawing">
+    <value>100, 18</value>
+  </data>
+  <data name="CH1MESOUT.Text" xml:space="preserve">
+    <value>xxx</value>
+  </data>
+  <data name="CH1MESIN.Location" type="System.Drawing.Point, System.Drawing">
+    <value>840, 43</value>
+  </data>
+  <data name="CH1MESIN.Text" xml:space="preserve">
+    <value>xxx</value>
+  </data>
+  <data name="label15.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft YaHei UI, 10.5pt</value>
+  </data>
+  <data name="label15.Location" type="System.Drawing.Point, System.Drawing">
+    <value>839, 75</value>
+  </data>
+  <data name="label15.Size" type="System.Drawing.Size, System.Drawing">
+    <value>116, 30</value>
+  </data>
+  <data name="label15.Text" xml:space="preserve">
+    <value>CH1MESOUT</value>
+  </data>
+  <data name="label13.Location" type="System.Drawing.Point, System.Drawing">
+    <value>840, 15</value>
+  </data>
+  <data name="label13.Size" type="System.Drawing.Size, System.Drawing">
+    <value>109, 23</value>
+  </data>
+  <data name="label13.Text" xml:space="preserve">
+    <value>CH1MESIN</value>
+  </data>
   <data name="label30.Location" type="System.Drawing.Point, System.Drawing">
-    <value>877, 39</value>
+    <value>794, 38</value>
   </data>
   <data name="label39.Location" type="System.Drawing.Point, System.Drawing">
-    <value>872, 112</value>
+    <value>786, 105</value>
   </data>
   <data name="CH1RTVDC.Location" type="System.Drawing.Point, System.Drawing">
-    <value>796, 39</value>
+    <value>699, 38</value>
   </data>
   <data name="CH1RTElec.Location" type="System.Drawing.Point, System.Drawing">
-    <value>796, 113</value>
+    <value>699, 112</value>
   </data>
   <data name="label42.Location" type="System.Drawing.Point, System.Drawing">
-    <value>730, 91</value>
+    <value>640, 90</value>
   </data>
   <data name="label42.Size" type="System.Drawing.Size, System.Drawing">
     <value>144, 21</value>
@@ -991,7 +1137,7 @@
     <value>Corriente estática</value>
   </data>
   <data name="label35.Location" type="System.Drawing.Point, System.Drawing">
-    <value>721, 15</value>
+    <value>624, 15</value>
   </data>
   <data name="label35.Size" type="System.Drawing.Size, System.Drawing">
     <value>219, 21</value>
@@ -1000,13 +1146,13 @@
     <value>Tensión de funcionamiento</value>
   </data>
   <data name="label38.Location" type="System.Drawing.Point, System.Drawing">
-    <value>877, 75</value>
+    <value>794, 74</value>
   </data>
   <data name="CH1RTADC.Location" type="System.Drawing.Point, System.Drawing">
-    <value>786, 75</value>
+    <value>679, 74</value>
   </data>
   <data name="label43.Location" type="System.Drawing.Point, System.Drawing">
-    <value>733, 53</value>
+    <value>640, 53</value>
   </data>
   <data name="label43.Size" type="System.Drawing.Size, System.Drawing">
     <value>164, 21</value>

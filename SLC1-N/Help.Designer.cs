@@ -173,10 +173,10 @@
             // 
             // PictureBox1
             // 
-            resources.ApplyResources(this.PictureBox1, "PictureBox1");
-            this.PictureBox1.Image = global::SLC1_N.Properties.Resources.微信图片_20200407085137;
-            this.PictureBox1.Name = "PictureBox1";
-            this.PictureBox1.TabStop = false;
+            //resources.ApplyResources(this.PictureBox1, "PictureBox1");
+            //this.PictureBox1.Image = global::SLC1_N.Properties.Resources.微信图片_20200407085137;
+            //this.PictureBox1.Name = "PictureBox1";
+            //this.PictureBox1.TabStop = false;
             // 
             // Help
             // 
