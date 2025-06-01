@@ -331,7 +331,9 @@ namespace SLC1_N
 
         //判断是不是刚打开软件，是的话不对结果做文件存储
         private bool CH1IsStart = false;
-
+        //判断是否复位
+        private int CH1Is_RST = 0;
+        private int CH2Is_RST = 0;
         private bool CH2IsStart = false;
         private bool CH1ResetCode = true;
         private bool CH2ResetCode = true;
@@ -891,6 +893,39 @@ namespace SLC1_N
         }
         bool bool_resetflag=true;
         private static readonly object lockObject2 = new object();
+        
+        void RST_work()
+        {
+            if(CH1Status.Text!="待机")
+              {
+                CH1Is_RST = 1;
+                }
+            if (CH1Status.Text == "待机" && CH1Is_RST == 1)
+            {
+                CH1Is_RST = 2;
+            }
+            if (CH1Is_RST >= 2)
+            {
+                left_CH1Code.ResetText();
+                left_CH1Code.Focus();
+                CH1Is_RST = 0;
+            }
+
+            if (CH2Status.Text != "待机")
+            {
+                CH2Is_RST = 1;
+            }
+            if (CH2Status.Text == "待机" && CH2Is_RST == 1)
+            {
+                CH2Is_RST = 2;
+            }
+            if (CH2Is_RST ==2)
+            {
+                right_CH1Code.ResetText();
+                right_CH1Code.Focus();
+                CH2Is_RST = 0;
+            }
+        }
         /// <summary>
         /// PLC循环发送数据
         /// </summary>
@@ -906,6 +941,7 @@ namespace SLC1_N
                 ///if
                 ///
                 plc.PLC_IsRun();
+
                 if (Fwdjg == 1 && Fwdjg2 == 1 && left_CH1Tlight.Text.Contains("OK") && left_CH2Tlight.Text.Contains("OK"))
                 {
                     Fwdjg = 0;
@@ -1056,15 +1092,13 @@ namespace SLC1_N
                     }
                     if (plc.CH1Reset)
                     {
+                      
                         Reset(1);
-
-
                         //Reset(2);
                         IntPtr ptr = FindWindow(null, "左复位");
                         if (ptr == IntPtr.Zero)
                         {
-                            left_CH1Code.ResetText();
-                            left_CH1Code.Focus();
+                           
                             {
                                 timerCH1CT.Stop();
                                 CH1IsStart = false;
@@ -1104,6 +1138,7 @@ namespace SLC1_N
                             wa.InsertWarningData(DateTime.Now.ToString("yyyy-MM-dd HH:mm:ss"), I18N.GetLangText(dicLang, "右"), I18N.GetLangText(dicLang, "右复位按下，右复位"));
                         }
                     }
+                    
                     if (plc.CH1ResetFinish)
                     {
                         IntPtr ptr = FindWindow(null, "左复位");
@@ -1326,11 +1361,7 @@ namespace SLC1_N
                         {
                             Logger.Log(I18N.GetLangText(dicLang, "左工位安全光栅触发，CH1安全光栅"));
                             plc.CH1SafetyGratingFlase();
-                            //DialogResult Reset = MessageBox.Show(I18N.GetLangText(dicLang, "左工位安全光栅触发，CH1安全光栅"), I18N.GetLangText(dicLang, "通知"), MessageBoxButtons.OK);
-                            //if (Reset == DialogResult.OK)
-                            //{
-                            //    plc.CH1SafetyGratingFlase();
-                            //}
+          
                             bool_resetflag = false;
                             wa.InsertWarningData(DateTime.Now.ToString("yyyy-MM-dd HH:mm:ss"), I18N.GetLangText(dicLang, "左"), I18N.GetLangText(dicLang, "左工位安全光栅触发，CH1安全光栅"));
                         }
@@ -1408,6 +1439,7 @@ namespace SLC1_N
                             right_CH1Code.Focus();
                         }
                     }
+                    
 
                     if ((plc.CH1Run | plc.CH1ARun | plc.CH1BRun | plc.CH1CRun) & !CH1IsStart)
                     {
@@ -1418,7 +1450,8 @@ namespace SLC1_N
                         mSerialPort = true;
                         CH1ADC = 0;
                         CH1VDC = 0;
-                        if (CH1IsStart == false)
+
+                        if (CH1IsStart == false)//启动逻辑
                         {
                             DataGridView1.ClearRows();
                             CH1progressBar.Value = 0;
