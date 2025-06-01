@@ -936,7 +936,7 @@ namespace SLC1_N
         {
             try
             {
-
+                RST_work();
                 ///////
                 ///if
                 ///
@@ -1763,7 +1763,7 @@ namespace SLC1_N
                             }
 
                         }
-                        CH1Tlight.Text = "";
+                        
                     }
                     else
                     {
@@ -14617,14 +14617,14 @@ namespace SLC1_N
 
         private void timer2_Tick(object sender, EventArgs e)
         {
-            TIME++;
-            if (TIME >= Stipulatetime)
-            {
-                timer2.Stop();
-                this.Hide();
-                Activationcode atc = new Activationcode();
-                atc.ShowDialog();
-            }
+            //TIME++;
+            //if (TIME >= Stipulatetime)
+            //{
+            //    timer2.Stop();
+            //    this.Hide();
+            //    Activationcode atc = new Activationcode();
+            //    atc.ShowDialog();
+            //}
         }
 
         public static ComponentResourceManager GetCRMByLanguageName(Type formclass)
