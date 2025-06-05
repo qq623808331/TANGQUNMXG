@@ -1663,8 +1663,7 @@ namespace SLC1_N
 
                             string checkTime = DateTime.Now.ToString("yyyy-MM-dd HH:mm:ss");
                             int IsPass = 0;
-                            Task.Run(() =>
-                            {
+                      
 
                                 if (save.opmes)
                                 {
@@ -1684,7 +1683,7 @@ namespace SLC1_N
                                 Logger.Log(DateTime.Now.ToString()+ "CH1 Retorno del mes"+Errpmesg);
                                 }
                                 }
-                            });
+                           
 
                             if (save.ChkMES)
                             {
@@ -1738,8 +1737,7 @@ namespace SLC1_N
 
                             string checkTime = DateTime.Now.ToString("yyyy-MM-dd HH:mm:ss");
                             int IsPass = 1;
-                            Task.Run(() =>
-                            {
+                            
                                 if (save.opmes)
                                 {
                                 string Errpmesg = UpMes2(1, Form1.URL, Form1.LineNum, codeout1, Form1.DeviceCode, Form1.LineCode, Form1.CommandCard, Form1.ProcessCode, NGCode, Form1.CheckBy, IsPass, checkTime, IsOnlyRecord);
@@ -1756,7 +1754,7 @@ namespace SLC1_N
                                     Logger.Log(DateTime.Now.ToString() + "CH1 Retorno del mes" + Errpmesg);
                                 }
                                 }
-                            });
+                           
                             if (save.ChkMES)
                             {
                                 AddMES(1);
@@ -1809,8 +1807,7 @@ namespace SLC1_N
 
                             string checkTime = DateTime.Now.ToString("yyyy-MM-dd HH:mm:ss");
                             int IsPass = 0;
-                            Task.Run(() =>
-                            {
+                         
                                 if (save.opmes)
                                 {
                             string Errpmesg = UpMes2(2, Form1.URL, Form1.LineNum, codeout2, Form1.DeviceCode, Form1.LineCode, Form1.CommandCard, Form1.ProcessCode, NGCode, Form1.CheckBy, IsPass, checkTime, IsOnlyRecord);
@@ -1827,7 +1824,7 @@ namespace SLC1_N
                                 Logger.Log(DateTime.Now.ToString() + "CH2 Retorno del mes" + Errpmesg);
                             }
                                 }
-                            });
+                           
                             if (save.ChkMES)
                             {
                                 AddMES(2);
@@ -1876,8 +1873,7 @@ namespace SLC1_N
 
                             string checkTime = DateTime.Now.ToString("yyyy-MM-dd HH:mm:ss");
                             int IsPass = 1;
-                            Task.Run(() =>
-                            {
+                           
 
                                 if (save.opmes)
                                 {
@@ -1897,7 +1893,7 @@ namespace SLC1_N
                                 Logger.Log(DateTime.Now.ToString() + "CH2 Retorno del mes" + Errpmesg);
                             }
                                 }
-                            });
+                          
                             if (save.ChkMES)
                             {
                                 AddMES(2);
@@ -7116,9 +7112,7 @@ namespace SLC1_N
                         SetLeftCode();
                         string checkTime = DateTime.Now.ToString("yyyy-MM-dd HH:mm:ss");
 
-                        Task.Run(() =>
-                        {
-
+                     
                             if (save.opmes)
                             {
 
@@ -7139,7 +7133,7 @@ namespace SLC1_N
                                 CH1MESIN.ForeColor = Color.Red;
                             }
                             }
-                        });
+                        
                     }
                 }
             }
@@ -7160,8 +7154,7 @@ namespace SLC1_N
                     {
                         plc.CH2Code();
                         SetRightCode();
-                        Task.Run(() =>
-                        {
+                        
                             if (save.opmes)
                             {
                                 CH2MESOUT.Text = "";
@@ -7183,7 +7176,7 @@ namespace SLC1_N
                                 Logger.Log(DateTime.Now.ToString() + "CH2MESIN:" + jieguo + jieguo2);
                             }
                             }
-                        });
+                        
                     }
                 }
             }
@@ -9671,6 +9664,10 @@ namespace SLC1_N
                         //Thread.Sleep(200);
                         string ch1sendstr = "01 " + sendtext;
                         ch1client.btnSendData(ch1sendstr);
+                        Thread.Sleep(100);
+
+                        ch1client.btnSendData(ch1sendstr);
+                        
 
                         ch1stage = 10;
                         chXstartflag[1] = 1;
@@ -9698,6 +9695,8 @@ namespace SLC1_N
                         string ch2sendstr = "02 " + sendtext;
                         //Form1.f1.left_ch2tcp.ClientSendMsgAsync(ch2sendstr);
                         ch2client.btnSendData(ch2sendstr);
+                        Thread.Sleep(100);
+                        ch2client.btnSendData(ch2sendstr);
                         ch2stage = 10;
                         chXstartflag[2] = 1;
                         CH2IsRun.Stop();
@@ -9721,6 +9720,8 @@ namespace SLC1_N
                         string ch3sendstr = "03 " + sendtext;
                         //Form1.f1.left_ch2tcp.ClientSendMsgAsync(ch2sendstr);
                         ch3client.btnSendData(ch3sendstr);
+                        Thread.Sleep(100);
+                        ch3client.btnSendData(ch3sendstr);
                         ch3stage = 10;
                         chXstartflag[3] = 1;
                         CH3IsRun.Stop();
@@ -9743,6 +9744,8 @@ namespace SLC1_N
                     case 4:
                         string ch4sendstr = "04 " + sendtext;
                         //Form1.f1.left_ch2tcp.ClientSendMsgAsync(ch2sendstr);
+                        ch4client.btnSendData(ch4sendstr);
+                        Thread.Sleep(100);
                         ch4client.btnSendData(ch4sendstr);
                         ch4stage = 10;
                         chXstartflag[4] = 1;
@@ -13019,6 +13022,7 @@ namespace SLC1_N
                 chXstartflag[1] = 0;
                 ch1client.btnSendData("01 05 00 00 FF 00");
                 CH1IsRun.Interval = 1000;
+                ch1client.btnSendData("01 05 00 00 FF 00");
                 CH1IsRun.Start();
                 ch1_1step = 1;
             }
@@ -13027,6 +13031,7 @@ namespace SLC1_N
                 chXstartflag[2] = 0;
                 ch2client.btnSendData("02 05 00 00 FF 00");
                 CH2IsRun.Interval = 1000;
+                ch2client.btnSendData("02 05 00 00 FF 00");
                 CH2IsRun.Start();
                 ch1_2step = 1;
             }
@@ -13035,6 +13040,7 @@ namespace SLC1_N
                 chXstartflag[3] = 0;
                 ch3client.btnSendData("03 05 00 00 FF 00");
                 CH3IsRun.Interval = 1000;
+                ch3client.btnSendData("03 05 00 00 FF 00");
                 CH3IsRun.Start();
                 ch2_1step = 1;
             }
@@ -13043,6 +13049,7 @@ namespace SLC1_N
                 chXstartflag[4] = 0;
                 ch4client.btnSendData("04 05 00 00 FF 00");
                 CH4IsRun.Interval = 1000;
+                ch4client.btnSendData("04 05 00 00 FF 00");
                 CH4IsRun.Start();
                 ch2_2step = 1;
             }
@@ -13839,14 +13846,22 @@ namespace SLC1_N
                     {
 
                         det.ItemName = "CH1_1测试压力";
+
                         det.UpperLimits = double.Parse(ch1_1params.FPtoplimit);
                         det.LowerLimits = double.Parse(ch1_1params.FPlowlimit);
 
+                        double value;
+                        if (double.TryParse(Form1.f1.LeftCH1LeakPress.Text, out value))
+                        {
+                            det.ActualVal = value;
+                            det.StandardVal = value;
+                        }
+                        else
+                        {
+                            det.ActualVal = 0;
+                            det.StandardVal = 0;
+                        }
 
-
-
-                        det.ActualVal = double.Parse(Form1.f1.LeftCH1LeakPress.Text);
-                        det.StandardVal = double.Parse(Form1.f1.LeftCH1LeakPress.Text);
                         det.SoftVer = "";
                         det.CheckTime = checkTime;
                         det2.ItemName = "CH1_1泄漏量";
@@ -13856,7 +13871,11 @@ namespace SLC1_N
                         //det2.LowerLimits = double.Parse(Form1.f1.ch1_1leakparams.Leaklowlimit /*+ LeakUnit.Text*/);
                         int pop;
                         string a = LeftCH1SmallLeak.Text /*+ LeakUnit.Text*/;
-                        double number = double.Parse(a);
+                        double number;
+                        if (a!="")
+                         number = double.Parse(a);
+                        else
+                             number = 0;
                         pop = (int)number;
                         det2.ActualVal = pop;
                         det2.StandardVal = pop;
@@ -13893,7 +13912,7 @@ namespace SLC1_N
 
 
 
-                        det4.ActualVal = double.Parse(Form1.f1.LeftCH2LeakPress.Text /*+ PressureUnit.Text*/);
+                        det4.ActualVal = double.Parse(Form1.f1.LeftCH2LeakPress.Text /*+ PressureUnit.Text*/);//报错
                         det4.StandardVal = double.Parse(Form1.f1.LeftCH2LeakPress.Text /*+ PressureUnit.Text*/);
                         det4.SoftVer = "";
                         det4.CheckTime = checkTime;
@@ -13902,7 +13921,11 @@ namespace SLC1_N
                         det5.LowerLimits = double.Parse("-100"); ;
                         int pop;
                         string a = LeftCH2SmallLeak.Text /*+ LeakUnit.Text*/;
-                        double number = double.Parse(a);
+                        double number;
+                        if (a != "")
+                            number = double.Parse(a);
+                        else
+                            number = 0;
                         pop = (int)number;
                         det5.ActualVal = pop;
                         det5.StandardVal = pop;
@@ -13939,8 +13962,20 @@ namespace SLC1_N
                         det7.UpperLimits = double.Parse(ch2_1params.FPtoplimit);
                         det7.LowerLimits = double.Parse(ch2_1params.FPlowlimit);
 
-                        det7.ActualVal = double.Parse(Form1.f1.RightCH1LeakPress.Text /*+ PressureUnit.Text*/);
-                        det7.StandardVal = double.Parse(Form1.f1.RightCH1LeakPress.Text /*+ PressureUnit.Text*/);
+
+                        double value;
+                        if (double.TryParse(Form1.f1.LeftCH1LeakPress.Text, out value))
+                        {
+                            det7.ActualVal = value;
+                            det7.StandardVal = value;
+                        }
+                        else
+                        {
+                            det7.ActualVal = 0;
+                            det7.StandardVal = 0;
+                        }
+                       // det7.ActualVal = Convert.ToDouble(Form1.f1.RightCH1LeakPress.Text);//   double.Parse(Form1.f1.RightCH1LeakPress.Text /*+ PressureUnit.Text*/);//baocuo
+                       // det7.StandardVal = Convert.ToDouble(Form1.f1.RightCH1LeakPress.Text);// double.Parse(Form1.f1.RightCH1LeakPress.Text /*+ PressureUnit.Text*/);
                         det7.SoftVer = "";
                         det7.CheckTime = checkTime;
                         det8.ItemName = "CH2_1泄漏量";
@@ -13948,7 +13983,11 @@ namespace SLC1_N
                         det8.LowerLimits = double.Parse("-100"); ;
                         int pop;
                         string a = RightCH1SmallLeak.Text /*+ LeakUnit.Text*/;
-                        double number = double.Parse(a);
+                        double number;
+                        if (a == "")
+                        { number = 0; }
+                        else
+                         number = double.Parse(a);
                         pop = (int)number;
                         det8.ActualVal = pop;
                         det8.StandardVal = pop;
@@ -13977,9 +14016,19 @@ namespace SLC1_N
                         det10.ItemName = "CH2_2测试压力";
                         det10.UpperLimits = double.Parse(ch2_2params.FPtoplimit);
                         det10.LowerLimits = double.Parse(ch2_2params.FPlowlimit);
-
-                        det10.ActualVal = double.Parse(Form1.f1.RightCH2LeakPress.Text /*+ PressureUnit.Text*/);
-                        det10.StandardVal = double.Parse(Form1.f1.RightCH2LeakPress.Text /*+ PressureUnit.Text*/);
+                        double vac1;
+                        if (double.TryParse(Form1.f1.RightCH2LeakPress.Text, out vac1))
+                        {
+                            det10.ActualVal = vac1;
+                            det10.StandardVal = vac1;
+                        }
+                        else
+                        {
+                            det10.ActualVal = 0;
+                            det10.StandardVal = 0;
+                        }
+                        //det10.ActualVal = double.Parse(Form1.f1.RightCH2LeakPress.Text /*+ PressureUnit.Text*/);
+                        //det10.StandardVal = double.Parse(Form1.f1.RightCH2LeakPress.Text /*+ PressureUnit.Text*/);
                         det10.SoftVer = "";
                         det10.CheckTime = checkTime;
                         det11.ItemName = "CH2_2泄漏量";

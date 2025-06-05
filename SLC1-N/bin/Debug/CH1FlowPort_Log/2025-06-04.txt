@@ -1,0 +1,147 @@
+20250604 07:10:16  2025/6/4 7:10:16由于线程退出或应用程序请求，已中止 I/O 操作。
+   在 System.IO.Ports.InternalResources.WinIOError(Int32 errorCode, String str)
+   在 System.IO.Ports.SerialStream.EndWrite(IAsyncResult asyncResult)
+   在 System.IO.Ports.SerialStream.Write(Byte[] array, Int32 offset, Int32 count, Int32 timeout)
+   在 System.IO.Ports.SerialPort.Write(String text)
+   在 System.IO.Ports.SerialPort.WriteLine(String text)
+   在 SLC1_N.Form1.WritetoRTADC(String Send) 位置 C:\Users\Administrator\Desktop\linglong\25040101\TANGQUNMXG\SLC1-N\Form1.cs:行号 516
+   在 SLC1_N.Form1.CH1Method(Int32 i) 位置 C:\Users\Administrator\Desktop\linglong\25040101\TANGQUNMXG\SLC1-N\Form1.cs:行号 12033
+
+20250604 07:18:31  2025/6/4 7:18:31由于线程退出或应用程序请求，已中止 I/O 操作。
+   在 System.IO.Ports.InternalResources.WinIOError(Int32 errorCode, String str)
+   在 System.IO.Ports.SerialStream.EndWrite(IAsyncResult asyncResult)
+   在 System.IO.Ports.SerialStream.Write(Byte[] array, Int32 offset, Int32 count, Int32 timeout)
+   在 System.IO.Ports.SerialPort.Write(String text)
+   在 System.IO.Ports.SerialPort.WriteLine(String text)
+   在 SLC1_N.Form1.WritetoRTADC(String Send) 位置 C:\Users\Administrator\Desktop\linglong\25040101\TANGQUNMXG\SLC1-N\Form1.cs:行号 516
+   在 SLC1_N.Form1.CH1Method(Int32 i) 位置 C:\Users\Administrator\Desktop\linglong\25040101\TANGQUNMXG\SLC1-N\Form1.cs:行号 12033
+
+20250604 07:27:38  2025/6/4 7:27:38由于线程退出或应用程序请求，已中止 I/O 操作。
+   在 System.IO.Ports.InternalResources.WinIOError(Int32 errorCode, String str)
+   在 System.IO.Ports.SerialStream.EndWrite(IAsyncResult asyncResult)
+   在 System.IO.Ports.SerialStream.Write(Byte[] array, Int32 offset, Int32 count, Int32 timeout)
+   在 System.IO.Ports.SerialPort.Write(String text)
+   在 System.IO.Ports.SerialPort.WriteLine(String text)
+   在 SLC1_N.Form1.WritetoRTADC(String Send) 位置 C:\Users\Administrator\Desktop\linglong\25040101\TANGQUNMXG\SLC1-N\Form1.cs:行号 516
+   在 SLC1_N.Form1.CH1Method(Int32 i) 位置 C:\Users\Administrator\Desktop\linglong\25040101\TANGQUNMXG\SLC1-N\Form1.cs:行号 12033
+
+20250604 07:50:21  2025/6/4 7:50:21由于线程退出或应用程序请求，已中止 I/O 操作。
+   在 System.IO.Ports.InternalResources.WinIOError(Int32 errorCode, String str)
+   在 System.IO.Ports.SerialStream.EndWrite(IAsyncResult asyncResult)
+   在 System.IO.Ports.SerialStream.Write(Byte[] array, Int32 offset, Int32 count, Int32 timeout)
+   在 System.IO.Ports.SerialPort.Write(String text)
+   在 System.IO.Ports.SerialPort.WriteLine(String text)
+   在 SLC1_N.Form1.WritetoRTADC(String Send) 位置 C:\Users\Administrator\Desktop\linglong\25040101\TANGQUNMXG\SLC1-N\Form1.cs:行号 516
+   在 SLC1_N.Form1.CH1Method(Int32 i) 位置 C:\Users\Administrator\Desktop\linglong\25040101\TANGQUNMXG\SLC1-N\Form1.cs:行号 12033
+
+20250604 08:08:15  2025/6/4 8:08:15由于线程退出或应用程序请求，已中止 I/O 操作。
+   在 System.IO.Ports.InternalResources.WinIOError(Int32 errorCode, String str)
+   在 System.IO.Ports.SerialStream.EndWrite(IAsyncResult asyncResult)
+   在 System.IO.Ports.SerialStream.Write(Byte[] array, Int32 offset, Int32 count, Int32 timeout)
+   在 System.IO.Ports.SerialPort.Write(String text)
+   在 System.IO.Ports.SerialPort.WriteLine(String text)
+   在 SLC1_N.Form1.WritetoRTADC(String Send) 位置 C:\Users\Administrator\Desktop\linglong\25040101\TANGQUNMXG\SLC1-N\Form1.cs:行号 516
+   在 SLC1_N.Form1.CH1Method(Int32 i) 位置 C:\Users\Administrator\Desktop\linglong\25040101\TANGQUNMXG\SLC1-N\Form1.cs:行号 12029
+
+20250604 08:52:44  2025/6/4 8:52:44由于线程退出或应用程序请求，已中止 I/O 操作。
+   在 System.IO.Ports.InternalResources.WinIOError(Int32 errorCode, String str)
+   在 System.IO.Ports.SerialStream.EndWrite(IAsyncResult asyncResult)
+   在 System.IO.Ports.SerialStream.Write(Byte[] array, Int32 offset, Int32 count, Int32 timeout)
+   在 System.IO.Ports.SerialPort.Write(String text)
+   在 System.IO.Ports.SerialPort.WriteLine(String text)
+   在 SLC1_N.Form1.WritetoRTADC(String Send) 位置 C:\Users\Administrator\Desktop\linglong\25040101\TANGQUNMXG\SLC1-N\Form1.cs:行号 516
+   在 SLC1_N.Form1.CH1Method(Int32 i) 位置 C:\Users\Administrator\Desktop\linglong\25040101\TANGQUNMXG\SLC1-N\Form1.cs:行号 12438
+
+20250604 09:11:22  2025/6/4 9:11:22由于线程退出或应用程序请求，已中止 I/O 操作。
+   在 System.IO.Ports.InternalResources.WinIOError(Int32 errorCode, String str)
+   在 System.IO.Ports.SerialStream.EndWrite(IAsyncResult asyncResult)
+   在 System.IO.Ports.SerialStream.Write(Byte[] array, Int32 offset, Int32 count, Int32 timeout)
+   在 System.IO.Ports.SerialPort.Write(String text)
+   在 System.IO.Ports.SerialPort.WriteLine(String text)
+   在 SLC1_N.Form1.WritetoRTADC(String Send) 位置 C:\Users\Administrator\Desktop\linglong\25040101\TANGQUNMXG\SLC1-N\Form1.cs:行号 516
+   在 SLC1_N.Form1.CH1Method(Int32 i) 位置 C:\Users\Administrator\Desktop\linglong\25040101\TANGQUNMXG\SLC1-N\Form1.cs:行号 12058
+
+20250604 09:58:33  2025/6/4 9:58:33由于线程退出或应用程序请求，已中止 I/O 操作。
+   在 System.IO.Ports.InternalResources.WinIOError(Int32 errorCode, String str)
+   在 System.IO.Ports.SerialStream.EndWrite(IAsyncResult asyncResult)
+   在 System.IO.Ports.SerialStream.Write(Byte[] array, Int32 offset, Int32 count, Int32 timeout)
+   在 System.IO.Ports.SerialPort.Write(String text)
+   在 System.IO.Ports.SerialPort.WriteLine(String text)
+   在 SLC1_N.Form1.WritetoRTADC(String Send) 位置 C:\Users\Administrator\Desktop\linglong\25040101\TANGQUNMXG\SLC1-N\Form1.cs:行号 516
+   在 SLC1_N.Form1.CH1Method(Int32 i) 位置 C:\Users\Administrator\Desktop\linglong\25040101\TANGQUNMXG\SLC1-N\Form1.cs:行号 12058
+
+20250604 10:25:16  2025/6/4 10:25:16由于线程退出或应用程序请求，已中止 I/O 操作。
+   在 System.IO.Ports.InternalResources.WinIOError(Int32 errorCode, String str)
+   在 System.IO.Ports.SerialStream.EndWrite(IAsyncResult asyncResult)
+   在 System.IO.Ports.SerialStream.Write(Byte[] array, Int32 offset, Int32 count, Int32 timeout)
+   在 System.IO.Ports.SerialPort.Write(String text)
+   在 System.IO.Ports.SerialPort.WriteLine(String text)
+   在 SLC1_N.Form1.WritetoRTADC(String Send) 位置 C:\Users\Administrator\Desktop\linglong\25040101\TANGQUNMXG\SLC1-N\Form1.cs:行号 516
+   在 SLC1_N.Form1.CH1Method(Int32 i) 位置 C:\Users\Administrator\Desktop\linglong\25040101\TANGQUNMXG\SLC1-N\Form1.cs:行号 12033
+
+20250604 10:31:33  2025/6/4 10:31:33引发类型为“System.OutOfMemoryException”的异常。   在 System.Threading.Thread.StartInternal(IPrincipal principal, StackCrawlMark& stackMark)
+   在 System.Threading.Thread.Start(StackCrawlMark& stackMark)
+   在 System.Threading.Thread.Start()
+   在 SLC1_N.PLCConnect.CH1FWDStart() 位置 C:\Users\Administrator\Desktop\linglong\25040101\TANGQUNMXG\SLC1-N\PLCConnect.cs:行号 2555
+   在 SLC1_N.Form1.CH1Method(Int32 i) 位置 C:\Users\Administrator\Desktop\linglong\25040101\TANGQUNMXG\SLC1-N\Form1.cs:行号 12150
+
+20250604 10:31:36  2025/6/4 10:31:36引发类型为“System.OutOfMemoryException”的异常。   在 System.Threading.Thread.StartInternal(IPrincipal principal, StackCrawlMark& stackMark)
+   在 System.Threading.Thread.Start(StackCrawlMark& stackMark)
+   在 System.Threading.Thread.Start()
+   在 SLC1_N.PLCConnect.CH2valveopen() 位置 C:\Users\Administrator\Desktop\linglong\25040101\TANGQUNMXG\SLC1-N\PLCConnect.cs:行号 1592
+   在 SLC1_N.Form1.CH1Method(Int32 i) 位置 C:\Users\Administrator\Desktop\linglong\25040101\TANGQUNMXG\SLC1-N\Form1.cs:行号 12149
+
+20250604 10:43:10  2025/6/4 10:43:10由于线程退出或应用程序请求，已中止 I/O 操作。
+   en System.IO.Ports.InternalResources.WinIOError(Int32 errorCode, String str)
+   en System.IO.Ports.SerialStream.EndWrite(IAsyncResult asyncResult)
+   en System.IO.Ports.SerialStream.Write(Byte[] array, Int32 offset, Int32 count, Int32 timeout)
+   en System.IO.Ports.SerialPort.Write(String text)
+   en System.IO.Ports.SerialPort.WriteLine(String text)
+   en SLC1_N.Form1.WritetoRTADC(String Send) en C:\Users\Administrator\Desktop\linglong\25040101\TANGQUNMXG\SLC1-N\Form1.cs:línea 516
+   en SLC1_N.Form1.CH1Method(Int32 i) en C:\Users\Administrator\Desktop\linglong\25040101\TANGQUNMXG\SLC1-N\Form1.cs:línea 12033
+
+20250604 11:08:35  2025/6/4 11:08:35由于线程退出或应用程序请求，已中止 I/O 操作。
+   en System.IO.Ports.InternalResources.WinIOError(Int32 errorCode, String str)
+   en System.IO.Ports.SerialStream.EndWrite(IAsyncResult asyncResult)
+   en System.IO.Ports.SerialStream.Write(Byte[] array, Int32 offset, Int32 count, Int32 timeout)
+   en System.IO.Ports.SerialPort.Write(String text)
+   en System.IO.Ports.SerialPort.WriteLine(String text)
+   en SLC1_N.Form1.WritetoRTADC(String Send) en C:\Users\Administrator\Desktop\linglong\25040101\TANGQUNMXG\SLC1-N\Form1.cs:línea 516
+   en SLC1_N.Form1.CH1Method(Int32 i) en C:\Users\Administrator\Desktop\linglong\25040101\TANGQUNMXG\SLC1-N\Form1.cs:línea 12029
+
+20250604 11:24:18  2025/6/4 11:24:18由于线程退出或应用程序请求，已中止 I/O 操作。
+   en System.IO.Ports.InternalResources.WinIOError(Int32 errorCode, String str)
+   en System.IO.Ports.SerialStream.EndWrite(IAsyncResult asyncResult)
+   en System.IO.Ports.SerialStream.Write(Byte[] array, Int32 offset, Int32 count, Int32 timeout)
+   en System.IO.Ports.SerialPort.Write(String text)
+   en System.IO.Ports.SerialPort.WriteLine(String text)
+   en SLC1_N.Form1.WritetoRTADC(String Send) en C:\Users\Administrator\Desktop\linglong\25040101\TANGQUNMXG\SLC1-N\Form1.cs:línea 516
+   en SLC1_N.Form1.CH1Method(Int32 i) en C:\Users\Administrator\Desktop\linglong\25040101\TANGQUNMXG\SLC1-N\Form1.cs:línea 12033
+
+20250604 11:41:41  2025/6/4 11:41:41由于线程退出或应用程序请求，已中止 I/O 操作。
+   en System.IO.Ports.InternalResources.WinIOError(Int32 errorCode, String str)
+   en System.IO.Ports.SerialStream.EndWrite(IAsyncResult asyncResult)
+   en System.IO.Ports.SerialStream.Write(Byte[] array, Int32 offset, Int32 count, Int32 timeout)
+   en System.IO.Ports.SerialPort.Write(String text)
+   en System.IO.Ports.SerialPort.WriteLine(String text)
+   en SLC1_N.Form1.WritetoRTADC(String Send) en C:\Users\Administrator\Desktop\linglong\25040101\TANGQUNMXG\SLC1-N\Form1.cs:línea 516
+   en SLC1_N.Form1.CH1Method(Int32 i) en C:\Users\Administrator\Desktop\linglong\25040101\TANGQUNMXG\SLC1-N\Form1.cs:línea 12424
+
+20250604 11:58:06  2025/6/4 11:58:06由于线程退出或应用程序请求，已中止 I/O 操作。
+   en System.IO.Ports.InternalResources.WinIOError(Int32 errorCode, String str)
+   en System.IO.Ports.SerialStream.EndWrite(IAsyncResult asyncResult)
+   en System.IO.Ports.SerialStream.Write(Byte[] array, Int32 offset, Int32 count, Int32 timeout)
+   en System.IO.Ports.SerialPort.Write(String text)
+   en System.IO.Ports.SerialPort.WriteLine(String text)
+   en SLC1_N.Form1.WritetoRTADC(String Send) en C:\Users\Administrator\Desktop\linglong\25040101\TANGQUNMXG\SLC1-N\Form1.cs:línea 516
+   en SLC1_N.Form1.CH1Method(Int32 i) en C:\Users\Administrator\Desktop\linglong\25040101\TANGQUNMXG\SLC1-N\Form1.cs:línea 12058
+
+20250604 16:05:21  2025/6/4 16:05:21由于线程退出或应用程序请求，已中止 I/O 操作。
+   en System.IO.Ports.InternalResources.WinIOError(Int32 errorCode, String str)
+   en System.IO.Ports.SerialStream.EndWrite(IAsyncResult asyncResult)
+   en System.IO.Ports.SerialStream.Write(Byte[] array, Int32 offset, Int32 count, Int32 timeout)
+   en System.IO.Ports.SerialPort.Write(String text)
+   en System.IO.Ports.SerialPort.WriteLine(String text)
+   en SLC1_N.Form1.WritetoRTADC(String Send) en C:\Users\Administrator\Desktop\linglong\25040101\TANGQUNMXG\SLC1-N\Form1.cs:línea 516
+   en SLC1_N.Form1.CH1Method(Int32 i) en C:\Users\Administrator\Desktop\linglong\25040101\TANGQUNMXG\SLC1-N\Form1.cs:línea 12033
+

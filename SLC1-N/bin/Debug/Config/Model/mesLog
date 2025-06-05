@@ -9,4 +9,4 @@ ProcessCode=A2-100
 LineCode=WAVE4
 NGCode=A03-4
 CheckBy=TSTMX-001-01
-IsOnlyRecord=0
+IsOnlyRecord=1

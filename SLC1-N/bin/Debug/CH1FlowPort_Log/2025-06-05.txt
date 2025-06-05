@@ -1,0 +1,54 @@
+20250605 09:01:22  2025/6/5 9:01:22由于线程退出或应用程序请求，已中止 I/O 操作。
+   en System.IO.Ports.InternalResources.WinIOError(Int32 errorCode, String str)
+   en System.IO.Ports.SerialStream.EndWrite(IAsyncResult asyncResult)
+   en System.IO.Ports.SerialStream.Write(Byte[] array, Int32 offset, Int32 count, Int32 timeout)
+   en System.IO.Ports.SerialPort.Write(String text)
+   en System.IO.Ports.SerialPort.WriteLine(String text)
+   en SLC1_N.Form1.WritetoRTADC(String Send) en C:\Users\Administrator\Desktop\linglong\25040101\TANGQUNMXG\SLC1-N\Form1.cs:línea 516
+   en SLC1_N.Form1.CH1Method(Int32 i) en C:\Users\Administrator\Desktop\linglong\25040101\TANGQUNMXG\SLC1-N\Form1.cs:línea 12033
+
+20250605 09:15:11  2025/6/5 9:15:11由于线程退出或应用程序请求，已中止 I/O 操作。
+   en System.IO.Ports.InternalResources.WinIOError(Int32 errorCode, String str)
+   en System.IO.Ports.SerialStream.EndWrite(IAsyncResult asyncResult)
+   en System.IO.Ports.SerialStream.Write(Byte[] array, Int32 offset, Int32 count, Int32 timeout)
+   en System.IO.Ports.SerialPort.Write(String text)
+   en System.IO.Ports.SerialPort.WriteLine(String text)
+   en SLC1_N.Form1.WritetoRTADC(String Send) en C:\Users\Administrator\Desktop\linglong\25040101\TANGQUNMXG\SLC1-N\Form1.cs:línea 516
+   en SLC1_N.Form1.CH1Method(Int32 i) en C:\Users\Administrator\Desktop\linglong\25040101\TANGQUNMXG\SLC1-N\Form1.cs:línea 12033
+
+20250605 09:25:06  2025/6/5 9:25:06由于线程退出或应用程序请求，已中止 I/O 操作。
+   en System.IO.Ports.InternalResources.WinIOError(Int32 errorCode, String str)
+   en System.IO.Ports.SerialStream.EndWrite(IAsyncResult asyncResult)
+   en System.IO.Ports.SerialStream.Write(Byte[] array, Int32 offset, Int32 count, Int32 timeout)
+   en System.IO.Ports.SerialPort.Write(String text)
+   en System.IO.Ports.SerialPort.WriteLine(String text)
+   en SLC1_N.Form1.WritetoRTADC(String Send) en C:\Users\Administrator\Desktop\linglong\25040101\TANGQUNMXG\SLC1-N\Form1.cs:línea 516
+   en SLC1_N.Form1.CH1Method(Int32 i) en C:\Users\Administrator\Desktop\linglong\25040101\TANGQUNMXG\SLC1-N\Form1.cs:línea 12033
+
+20250605 09:47:45  2025/6/5 9:47:43由于线程退出或应用程序请求，已中止 I/O 操作。
+   en System.IO.Ports.InternalResources.WinIOError(Int32 errorCode, String str)
+   en System.IO.Ports.SerialStream.EndWrite(IAsyncResult asyncResult)
+   en System.IO.Ports.SerialStream.Write(Byte[] array, Int32 offset, Int32 count, Int32 timeout)
+   en System.IO.Ports.SerialPort.Write(String text)
+   en System.IO.Ports.SerialPort.WriteLine(String text)
+   en SLC1_N.Form1.WritetoRTADC(String Send) en C:\Users\Administrator\Desktop\linglong\25040101\TANGQUNMXG\SLC1-N\Form1.cs:línea 516
+   en SLC1_N.Form1.CH1Method(Int32 i) en C:\Users\Administrator\Desktop\linglong\25040101\TANGQUNMXG\SLC1-N\Form1.cs:línea 12033
+
+20250605 10:15:04  2025/6/5 10:15:04由于线程退出或应用程序请求，已中止 I/O 操作。
+   en System.IO.Ports.InternalResources.WinIOError(Int32 errorCode, String str)
+   en System.IO.Ports.SerialStream.EndWrite(IAsyncResult asyncResult)
+   en System.IO.Ports.SerialStream.Write(Byte[] array, Int32 offset, Int32 count, Int32 timeout)
+   en System.IO.Ports.SerialPort.Write(String text)
+   en System.IO.Ports.SerialPort.WriteLine(String text)
+   en SLC1_N.Form1.WritetoRTADC(String Send) en C:\Users\Administrator\Desktop\linglong\25040101\TANGQUNMXG\SLC1-N\Form1.cs:línea 516
+   en SLC1_N.Form1.CH1Method(Int32 i) en C:\Users\Administrator\Desktop\linglong\25040101\TANGQUNMXG\SLC1-N\Form1.cs:línea 12033
+
+20250605 10:32:07  2025/6/5 10:32:07由于线程退出或应用程序请求，已中止 I/O 操作。
+   en System.IO.Ports.InternalResources.WinIOError(Int32 errorCode, String str)
+   en System.IO.Ports.SerialStream.EndWrite(IAsyncResult asyncResult)
+   en System.IO.Ports.SerialStream.Write(Byte[] array, Int32 offset, Int32 count, Int32 timeout)
+   en System.IO.Ports.SerialPort.Write(String text)
+   en System.IO.Ports.SerialPort.WriteLine(String text)
+   en SLC1_N.Form1.WritetoRTADC(String Send) en C:\Users\Administrator\Desktop\linglong\25040101\TANGQUNMXG\SLC1-N\Form1.cs:línea 516
+   en SLC1_N.Form1.CH1Method(Int32 i) en C:\Users\Administrator\Desktop\linglong\25040101\TANGQUNMXG\SLC1-N\Form1.cs:línea 12033
+
