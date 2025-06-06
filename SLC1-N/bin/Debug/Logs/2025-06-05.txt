@@ -51,3 +51,55 @@
 
 2025/6/5 10:12:25
 =======================================================
+全局异常捕捉
+****************************异常文本****************************
+【出现时间】：2025/6/5 14:03:38
+【异常类型】：InvalidOperationException
+【异常信息】：端口被关闭。
+【堆栈调用】：   在 System.IO.Ports.SerialPort.ReadExisting()
+   在 SLC1_N.SerialPortReader.Read() 位置 C:\Users\Administrator\Desktop\linglong\25040101\TANGQUNMXG\SLC1-N\ProtRead.cs:行号 99
+   在 System.Threading.ThreadHelper.ThreadStart_Context(Object state)
+   在 System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state, Boolean preserveSyncCtx)
+   在 System.Threading.ExecutionContext.Run(ExecutionContext executionContext, ContextCallback callback, Object state, Boolean preserveSyncCtx)
+   在 System.Threading.ExecutionContext.Run(ExecutionContext executionContext, ContextCallback callback, Object state)
+   在 System.Threading.ThreadHelper.ThreadStart()
+***************************************************************
+
+2025/6/5 14:03:38
+=======================================================
+全局异常捕捉
+****************************异常文本****************************
+【出现时间】：2025/6/5 14:03:38
+【异常类型】：InvalidOperationException
+【异常信息】：端口被关闭。
+【堆栈调用】：   在 System.IO.Ports.SerialPort.ReadExisting()
+   在 SLC1_N.SerialPortReader.Read() 位置 C:\Users\Administrator\Desktop\linglong\25040101\TANGQUNMXG\SLC1-N\ProtRead.cs:行号 99
+   在 System.Threading.ThreadHelper.ThreadStart_Context(Object state)
+   在 System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state, Boolean preserveSyncCtx)
+   在 System.Threading.ExecutionContext.Run(ExecutionContext executionContext, ContextCallback callback, Object state, Boolean preserveSyncCtx)
+   在 System.Threading.ExecutionContext.Run(ExecutionContext executionContext, ContextCallback callback, Object state)
+   在 System.Threading.ThreadHelper.ThreadStart()
+***************************************************************
+
+2025/6/5 14:03:38
+=======================================================
+全局异常捕捉
+****************************异常文本****************************
+【出现时间】：2025/6/5 16:05:25
+【异常类型】：InvalidOperationException
+【异常信息】：端口被关闭。
+【堆栈调用】：   在 System.IO.Ports.SerialPort.ReadExisting()
+   在 SLC1_N.SerialPortReader.Read() 位置 C:\Users\Administrator\Desktop\linglong\25040101\TANGQUNMXG\SLC1-N\ProtRead.cs:行号 99
+   在 System.Threading.ThreadHelper.ThreadStart_Context(Object state)
+   在 System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state, Boolean preserveSyncCtx)
+   在 System.Threading.ExecutionContext.Run(ExecutionContext executionContext, ContextCallback callback, Object state, Boolean preserveSyncCtx)
+   在 System.Threading.ExecutionContext.Run(ExecutionContext executionContext, ContextCallback callback, Object state)
+   在 System.Threading.ThreadHelper.ThreadStart()
+***************************************************************
+
+2025/6/5 16:05:25
+=======================================================
+全局异常捕捉
+文件“C:\Users\Administrator\Desktop\linglong\25040101\TANGQUNMXG\SLC1-N\bin\Debug\Logs\2025-06-05.txt”正由另一进程使用，因此该进程无法访问此文件。
+2025/6/5 16:05:25
+=======================================================

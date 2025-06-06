@@ -509,12 +509,22 @@ namespace SLC1_N
 
 
         }
+        bool RTADCLUCK=true;
         public void WritetoRTADC(string Send)
         {
+            while (!RTADCLUCK)
+            { 
+            
+            }
+            RTADCLUCK = false;
+
             lock (lockObject2)
             {
+                Form1.CH1POWER._serialPort.WriteTimeout = 2000;
                 Form1.CH1POWER._serialPort.WriteLine(Send);
             }
+            RTADCLUCK = true;
+
         }
         private static void CH2POWER_DataReceived(string data)
         {
@@ -9672,7 +9682,7 @@ namespace SLC1_N
                         ch1stage = 10;
                         chXstartflag[1] = 1;
                         CH1IsRun.Stop();
-                        MachineStart.Interval = 400;
+                        MachineStart.Interval = 200;
                         MachineStart.Start();
                         CH1ParamIndex.Text = i.ToString();
                         ch1_1params.CHKUnit = ch_params.CHKUnit;
@@ -9700,7 +9710,7 @@ namespace SLC1_N
                         ch2stage = 10;
                         chXstartflag[2] = 1;
                         CH2IsRun.Stop();
-                        MachineStart.Interval = 400;
+                        MachineStart.Interval = 200;
                         MachineStart.Start();
                         CH2ParamIndex.Text = i.ToString();
                         ch1_2params.CHKUnit = ch_params.CHKUnit;
@@ -9872,19 +9882,30 @@ namespace SLC1_N
                 {
                     while (true)
                     {
-
-                        var result1 = FlowSend(1);
-                        if (result1.IsSuccess) CH1Flow_read = Math.Round(Convert.ToDouble(result1.Content), 2);
-                        Thread.Sleep(300);
-                        var result2 = FlowSend(2);
-                        if (result2.IsSuccess) CH2Flow_read = Math.Round(Convert.ToDouble(result2.Content) / 1000, 2);
-                        Thread.Sleep(300);
-                        var result3 = FlowSend(3);
-                        if (result3.IsSuccess) CH3Flow_read = Math.Round(Convert.ToDouble(result3.Content) / 1000, 2);
-                        Thread.Sleep(300);
-                        var result4 = FlowSend(4);
-                        if (result4.IsSuccess) CH4Flow_read = Math.Round(Convert.ToDouble(result4.Content), 2);
-                        Thread.Sleep(300);
+                        if (flowflag[1] == 1)
+                        {
+                            var result1 = FlowSend(1);
+                            if (result1.IsSuccess) CH1Flow_read = Math.Round(Convert.ToDouble(result1.Content), 2);
+                            Thread.Sleep(300);
+                        }
+                        if (flowflag[2] == 1)
+                        {
+                            var result2 = FlowSend(2);
+                            if (result2.IsSuccess) CH2Flow_read = Math.Round(Convert.ToDouble(result2.Content) / 1000, 2);
+                            Thread.Sleep(300);
+                        }
+                        if (flowflag[3] == 1)
+                        {
+                            var result3 = FlowSend(3);
+                            if (result3.IsSuccess) CH3Flow_read = Math.Round(Convert.ToDouble(result3.Content) / 1000, 2);
+                            Thread.Sleep(300);
+                        }
+                        if (flowflag[4] == 1)
+                        {
+                            var result4 = FlowSend(4);
+                            if (result4.IsSuccess) CH4Flow_read = Math.Round(Convert.ToDouble(result4.Content), 2);
+                            Thread.Sleep(300);
+                        }
                     }
                    
                     
@@ -9960,7 +9981,9 @@ namespace SLC1_N
                     //如果此时步骤是下充，则由下充流量定时器控制停止
                     if ((fulltime > Flow.CH1OverTime) && CH1RTStep == "DOWN")
                     {
-                        CH1ReadFlowT.Stop();
+                        flowflag[1] = 0;
+                       
+                            CH1ReadFlowT.Stop();
                         //将作为保持连接的定时器给停止
                         CH1IsRun.Stop();
                         plc.CH1valveclose();
@@ -9984,6 +10007,7 @@ namespace SLC1_N
                     }
                     if ((fulltime > Flow.CH1OverTime) && ((CH1RTStep == "UP")|| (CH1RTStep == "RWD")))
                     {
+                        flowflag[1] = 0;
                         CH1ReadFlowT.Stop();
                         //将作为保持连接的定时器给停止
                         CH1IsRun.Stop();
@@ -9997,6 +10021,7 @@ namespace SLC1_N
                     }
                     if ((fulltime > elec.CH1FWDFlowTime) && (CH1RTStep == "FWD"))
                     {
+                        flowflag[1] = 0;
                         CH1ReadFlowT.Stop();
                         //将作为保持连接的定时器给停止
                         CH1IsRun.Stop();
@@ -10055,25 +10080,27 @@ namespace SLC1_N
                     }
                     if ((fulltime > Flow.CH2OverTime) && (CH1RTStep == "DOWN"|| CH1RTStep == "RWD"))
                     {
+                        flowflag[2] = 0;
                         CH2ReadFlowT.Stop();
                         CH2IsRun.Stop();
                         plc.CH2valveclose();
                         plc.CH1valveclose();
                         CH1_2flow.Text = CH2Q.ToString();
                         //流量测试完之后，需要读取压力
-                        CH2ReadPress.Interval = 1000;
+                        CH2ReadPress.Interval = 300;
                         CH2ReadPress.Start();
                         ch2pressstart = System.DateTime.Now.Ticks;
                     }
                     if ((fulltime > Flow.CH2OverTime) && CH1RTStep == "UP")
                     {
+                        flowflag[2] = 0;
                         CH2ReadFlowT.Stop();
                         CH2IsRun.Stop();
                         plc.CH2valveclose();
                         plc.CH1valveclose();
                         CH1_2flow.Text = CH2Q.ToString();
                         //流量测试完之后，需要读取压力
-                        CH2ReadPress.Interval = 1000;
+                        CH2ReadPress.Interval = 300;
                         CH2ReadPress.Start();
                         ch2pressstart = System.DateTime.Now.Ticks;
                         Invoke((new System.Action(() =>
@@ -10090,6 +10117,7 @@ namespace SLC1_N
                     }
                     if ((fulltime > elec.CH1FWDFlowTime) && CH1RTStep == "FWD")
                     {
+                        flowflag[2] = 0;
                         CH2ReadFlowT.Stop();
                         //CH2IsRun.Stop();
                         plc.CH2valveclose();
@@ -10156,6 +10184,7 @@ namespace SLC1_N
                 }
                 if (fulltime> CH3flowtime) 
                 {
+                    flowflag[3] = 0;
                     CH3ReadFlowT.Stop();
                     //将作为保持连接的定时器给停止
                     CH3IsRun.Stop();//ERIC
@@ -10163,7 +10192,7 @@ namespace SLC1_N
                     plc.CH4valveclose();
                     CH2_1flow.Text = CH3Q.ToString();
                     //流量测试完之后，需要读取压力
-                    CH3ReadPress.Interval = 1000;
+                    CH3ReadPress.Interval = 300;
                     CH3ReadPress.Start();
                     ch3pressstart = System.DateTime.Now.Ticks;
                     CH2_1flow.Text = flow.ToString();
@@ -10220,13 +10249,14 @@ namespace SLC1_N
                 }
                 if (fulltime > CH4flowtime)
                 {
+                    flowflag[4] = 0;
                     CH4ReadFlowT.Stop();
                     CH4IsRun.Stop();
                     plc.CH4valveclose();
                     plc.CH3valveclose();
                     CH2_2flow.Text = CH4Q.ToString();
                     //流量测试完之后，需要读取压力
-                    CH4ReadPress.Interval = 1000;
+                    CH4ReadPress.Interval = 300;
                     CH4ReadPress.Start();
                     ch4pressstart = System.DateTime.Now.Ticks;
                 }
@@ -12004,7 +12034,7 @@ namespace SLC1_N
                 //PLCSignal.Start();
             }
         }
-
+        int[] flowflag = {0,0,0,0 ,0};
         /// <summary>
         /// CH1流量方法,i为集合索引
         /// </summary>
@@ -12420,7 +12450,9 @@ namespace SLC1_N
                     CH2ReadFlowT.Interval = 300;
                     CH2ReadFlowT.Start();
                     ch2fullstart = DateTime.Now.Ticks;
-                }
+                        flowflag[1] = 1;
+                        flowflag[2] = 1;
+                    }
                 CH1ReadElec.Interval = 1000;
                 CH1ReadElec.Start();
                 if (CH1POWER._serialPort.IsOpen)
@@ -12866,7 +12898,9 @@ namespace SLC1_N
                     ch3fullstart = DateTime.Now.Ticks;
                     CH4ReadFlowT.Interval = 300;
                     CH4ReadFlowT.Start();
-                    ch4fullstart = DateTime.Now.Ticks;
+                        flowflag[3] = 1;
+                        flowflag[4] = 1;
+                        ch4fullstart = DateTime.Now.Ticks;
                 }
 
 
@@ -13021,7 +13055,7 @@ namespace SLC1_N
             {
                 chXstartflag[1] = 0;
                 ch1client.btnSendData("01 05 00 00 FF 00");
-                CH1IsRun.Interval = 1000;
+                CH1IsRun.Interval = 500;
                 ch1client.btnSendData("01 05 00 00 FF 00");
                 CH1IsRun.Start();
                 ch1_1step = 1;
@@ -13030,7 +13064,7 @@ namespace SLC1_N
             {
                 chXstartflag[2] = 0;
                 ch2client.btnSendData("02 05 00 00 FF 00");
-                CH2IsRun.Interval = 1000;
+                CH2IsRun.Interval = 500;
                 ch2client.btnSendData("02 05 00 00 FF 00");
                 CH2IsRun.Start();
                 ch1_2step = 1;
@@ -13039,7 +13073,7 @@ namespace SLC1_N
             {
                 chXstartflag[3] = 0;
                 ch3client.btnSendData("03 05 00 00 FF 00");
-                CH3IsRun.Interval = 1000;
+                CH3IsRun.Interval = 500;
                 ch3client.btnSendData("03 05 00 00 FF 00");
                 CH3IsRun.Start();
                 ch2_1step = 1;
@@ -13048,7 +13082,7 @@ namespace SLC1_N
             {
                 chXstartflag[4] = 0;
                 ch4client.btnSendData("04 05 00 00 FF 00");
-                CH4IsRun.Interval = 1000;
+                CH4IsRun.Interval = 500;
                 ch4client.btnSendData("04 05 00 00 FF 00");
                 CH4IsRun.Start();
                 ch2_2step = 1;
@@ -13910,10 +13944,17 @@ namespace SLC1_N
                         det4.LowerLimits = double.Parse(ch1_2params.FPlowlimit);
 
 
-
-
-                        det4.ActualVal = double.Parse(Form1.f1.LeftCH2LeakPress.Text /*+ PressureUnit.Text*/);//报错
-                        det4.StandardVal = double.Parse(Form1.f1.LeftCH2LeakPress.Text /*+ PressureUnit.Text*/);
+                        double aaaa=0;
+                        if (double.TryParse(Form1.f1.LeftCH2LeakPress.Text,out aaaa))
+                        {
+                            det4.ActualVal = double.Parse(Form1.f1.LeftCH2LeakPress.Text /*+ PressureUnit.Text*/);//报错
+                            det4.StandardVal = double.Parse(Form1.f1.LeftCH2LeakPress.Text /*+ PressureUnit.Text*/);
+                        }
+                        else
+                        {
+                            det4.ActualVal = 0;
+                            det4.StandardVal = 0;
+                        }
                         det4.SoftVer = "";
                         det4.CheckTime = checkTime;
                         det5.ItemName = "CH1_2泄漏量";
@@ -14036,7 +14077,11 @@ namespace SLC1_N
                         det11.LowerLimits = double.Parse("-100"); ;
                         int pop;
                         string a = RightCH2SmallLeak.Text /*+ LeakUnit.Text*/;
-                        double number = double.Parse(a);
+                        double number;
+                        if (a != "")
+                            number = double.Parse(a);
+                        else
+                            number = 0;
                         pop = (int)number;
                         det11.ActualVal = pop;
                         det11.StandardVal = pop;
@@ -14156,7 +14201,11 @@ namespace SLC1_N
                         det2.LowerLimits = double.Parse(Form1.f1.ch1_1leakparams.Leaklowlimit /*+ LeakUnit.Text*/);
                         int pop;
                         string a = LeftCH1SmallLeak.Text /*+ LeakUnit.Text*/;
-                        double number = double.Parse(a);
+                        double number;
+                        if (a != "")
+                            number = double.Parse(a);
+                        else
+                            number = 0;
                         pop = (int)number;
                         det2.ActualVal = pop;
                         det2.StandardVal = pop;
@@ -14189,8 +14238,18 @@ namespace SLC1_N
                         det4.ItemName = "CH1_2测试压力";
                         det4.UpperLimits = double.Parse(Form1.f1.ch1_2params.FPtoplimit);
                         det4.LowerLimits = double.Parse(Form1.f1.ch1_2params.FPlowlimit);
-                        det4.ActualVal = double.Parse(Form1.f1.LeftCH2LeakPress.Text /*+ PressureUnit.Text*/);
-                        det4.StandardVal = double.Parse(Form1.f1.LeftCH2LeakPress.Text /*+ PressureUnit.Text*/);
+                        double aaa4=0;
+                        if (double.TryParse(Form1.f1.LeftCH2LeakPress.Text,out aaa4))
+                        {
+                            det4.ActualVal = double.Parse(Form1.f1.LeftCH2LeakPress.Text /*+ PressureUnit.Text*/);
+                            det4.StandardVal = double.Parse(Form1.f1.LeftCH2LeakPress.Text /*+ PressureUnit.Text*/);
+                        }
+                        else
+                        {
+                            det4.ActualVal =0;
+                            det4.StandardVal =0;
+                        }
+
                         det4.SoftVer = "";
                         det4.CheckTime = checkTime;
                         det5.ItemName = "CH1_2泄漏量";
@@ -14198,7 +14257,11 @@ namespace SLC1_N
                         det5.LowerLimits = double.Parse(Form1.f1.ch1_2leakparams.Leaklowlimit /*+ LeakUnit.Text*/);
                         int pop;
                         string a = LeftCH2SmallLeak.Text /*+ LeakUnit.Text*/;
-                        double number = double.Parse(a);
+                        double number;
+                        if (a != "")
+                            number = double.Parse(a);
+                        else
+                            number = 0;
                         pop = (int)number;
                         det5.ActualVal = pop;
                         det5.StandardVal = pop;
@@ -14243,7 +14306,13 @@ namespace SLC1_N
                         det8.LowerLimits = double.Parse(Form1.f1.ch2_1leakparams.Leaklowlimit /*+ LeakUnit.Text*/);
                         int pop;
                         string a = RightCH1SmallLeak.Text /*+ LeakUnit.Text*/;
-                        double number = double.Parse(a);
+
+                        double number;
+                        if (a != "")
+
+                            number = double.Parse(a);
+                        else
+                            number = 0;
                         pop = (int)number;
                         det8.ActualVal = pop;
                         det8.StandardVal = pop;
@@ -14281,7 +14350,11 @@ namespace SLC1_N
                         det11.LowerLimits = double.Parse(Form1.f1.ch2_2leakparams.Leaklowlimit /*+ LeakUnit.Text*/);
                         int pop;
                         string a = RightCH2SmallLeak.Text /*+ LeakUnit.Text*/;
-                        double number = double.Parse(a);
+                        double number;
+                        if (a!="")
+                         number = double.Parse(a);
+                        else
+                             number = 0;
                         pop = (int)number;
                         det11.ActualVal = pop;
                         det11.StandardVal = pop;

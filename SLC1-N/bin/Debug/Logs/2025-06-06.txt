@@ -1,0 +1,72 @@
+全局异常捕捉
+****************************异常文本****************************
+【出现时间】：2025/6/6 8:19:57
+【异常类型】：OutOfMemoryException
+【异常信息】：Se produjo una excepción de tipo 'System.OutOfMemoryException'.
+【堆栈调用】：   en System.Threading.Thread.StartInternal(IPrincipal principal, StackCrawlMark& stackMark)
+   en System.Threading.Thread.Start(StackCrawlMark& stackMark)
+   en System.Threading.Thread.Start()
+   en NetWorkHelper.TCP.ITcpClient.StartConnect() en C:\Users\Administrator\Desktop\linglong\25040101\TANGQUNMXG\tongxin\NetWorkHelper\TCP\ITcpClient.cs:línea 180
+   en NetWorkHelper.TCP.ITcpClient.Reconnect() en C:\Users\Administrator\Desktop\linglong\25040101\TANGQUNMXG\tongxin\NetWorkHelper\TCP\ITcpClient.cs:línea 380
+   en NetWorkHelper.TCP.ITcpClient.ReadCallback(IAsyncResult ar) en C:\Users\Administrator\Desktop\linglong\25040101\TANGQUNMXG\tongxin\NetWorkHelper\TCP\ITcpClient.cs:línea 476
+   en System.Net.LazyAsyncResult.Complete(IntPtr userToken)
+   en System.Net.ContextAwareResult.CompleteCallback(Object state)
+   en System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state, Boolean preserveSyncCtx)
+   en System.Threading.ExecutionContext.Run(ExecutionContext executionContext, ContextCallback callback, Object state, Boolean preserveSyncCtx)
+   en System.Threading.ExecutionContext.Run(ExecutionContext executionContext, ContextCallback callback, Object state)
+   en System.Net.ContextAwareResult.Complete(IntPtr userToken)
+   en System.Net.LazyAsyncResult.ProtectedInvokeCallback(Object result, IntPtr userToken)
+   en System.Net.Sockets.BaseOverlappedAsyncResult.CompletionPortCallback(UInt32 errorCode, UInt32 numBytes, NativeOverlapped* nativeOverlapped)
+   en System.Threading._IOCompletionCallback.PerformIOCompletionCallback(UInt32 errorCode, UInt32 numBytes, NativeOverlapped* pOVERLAP)
+***************************************************************
+
+2025/6/6 8:19:57
+=======================================================
+全局异常捕捉
+****************************异常文本****************************
+【出现时间】：2025/6/6 8:19:57
+【异常类型】：OutOfMemoryException
+【异常信息】：Se produjo una excepción de tipo 'System.OutOfMemoryException'.
+【堆栈调用】：   en System.Threading.Thread.StartInternal(IPrincipal principal, StackCrawlMark& stackMark)
+   en System.Threading.Thread.Start(StackCrawlMark& stackMark)
+   en System.Threading.Thread.Start()
+   en NetWorkHelper.TCP.ITcpClient.StartConnect() en C:\Users\Administrator\Desktop\linglong\25040101\TANGQUNMXG\tongxin\NetWorkHelper\TCP\ITcpClient.cs:línea 180
+   en NetWorkHelper.TCP.ITcpClient.Reconnect() en C:\Users\Administrator\Desktop\linglong\25040101\TANGQUNMXG\tongxin\NetWorkHelper\TCP\ITcpClient.cs:línea 380
+   en NetWorkHelper.TCP.ITcpClient.ReadCallback(IAsyncResult ar) en C:\Users\Administrator\Desktop\linglong\25040101\TANGQUNMXG\tongxin\NetWorkHelper\TCP\ITcpClient.cs:línea 476
+   en System.Net.LazyAsyncResult.Complete(IntPtr userToken)
+   en System.Net.ContextAwareResult.CompleteCallback(Object state)
+   en System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state, Boolean preserveSyncCtx)
+   en System.Threading.ExecutionContext.Run(ExecutionContext executionContext, ContextCallback callback, Object state, Boolean preserveSyncCtx)
+   en System.Threading.ExecutionContext.Run(ExecutionContext executionContext, ContextCallback callback, Object state)
+   en System.Net.ContextAwareResult.Complete(IntPtr userToken)
+   en System.Net.LazyAsyncResult.ProtectedInvokeCallback(Object result, IntPtr userToken)
+   en System.Net.Sockets.BaseOverlappedAsyncResult.CompletionPortCallback(UInt32 errorCode, UInt32 numBytes, NativeOverlapped* nativeOverlapped)
+   en System.Threading._IOCompletionCallback.PerformIOCompletionCallback(UInt32 errorCode, UInt32 numBytes, NativeOverlapped* pOVERLAP)
+***************************************************************
+
+2025/6/6 8:19:57
+=======================================================
+全局异常捕捉
+****************************异常文本****************************
+【出现时间】：2025/6/6 8:19:57
+【异常类型】：OutOfMemoryException
+【异常信息】：Se produjo una excepción de tipo 'System.OutOfMemoryException'.
+【堆栈调用】：   en System.Threading.Thread.StartInternal(IPrincipal principal, StackCrawlMark& stackMark)
+   en System.Threading.Thread.Start(StackCrawlMark& stackMark)
+   en System.Threading.Thread.Start()
+   en NetWorkHelper.TCP.ITcpClient.StartConnect() en C:\Users\Administrator\Desktop\linglong\25040101\TANGQUNMXG\tongxin\NetWorkHelper\TCP\ITcpClient.cs:línea 180
+   en NetWorkHelper.TCP.ITcpClient.Reconnect() en C:\Users\Administrator\Desktop\linglong\25040101\TANGQUNMXG\tongxin\NetWorkHelper\TCP\ITcpClient.cs:línea 380
+   en NetWorkHelper.TCP.ITcpClient.ReadCallback(IAsyncResult ar) en C:\Users\Administrator\Desktop\linglong\25040101\TANGQUNMXG\tongxin\NetWorkHelper\TCP\ITcpClient.cs:línea 476
+   en System.Net.LazyAsyncResult.Complete(IntPtr userToken)
+   en System.Net.ContextAwareResult.CompleteCallback(Object state)
+   en System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state, Boolean preserveSyncCtx)
+   en System.Threading.ExecutionContext.Run(ExecutionContext executionContext, ContextCallback callback, Object state, Boolean preserveSyncCtx)
+   en System.Threading.ExecutionContext.Run(ExecutionContext executionContext, ContextCallback callback, Object state)
+   en System.Net.ContextAwareResult.Complete(IntPtr userToken)
+   en System.Net.LazyAsyncResult.ProtectedInvokeCallback(Object result, IntPtr userToken)
+   en System.Net.Sockets.BaseOverlappedAsyncResult.CompletionPortCallback(UInt32 errorCode, UInt32 numBytes, NativeOverlapped* nativeOverlapped)
+   en System.Threading._IOCompletionCallback.PerformIOCompletionCallback(UInt32 errorCode, UInt32 numBytes, NativeOverlapped* pOVERLAP)
+***************************************************************
+
+2025/6/6 8:19:57
+=======================================================
