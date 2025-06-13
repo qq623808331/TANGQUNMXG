@@ -1,0 +1,1787 @@
+2025/6/13 0:00:10CH1启动前清空测试数据
+
+2025/6/13 0:00:15CH1启动前清空测试数据
+
+2025/6/13 0:00:20CH2启动前清空测试数据
+
+2025/6/13 0:00:25CH2启动前清空测试数据
+
+2025/6/13 0:00:50左工位需要扫码启动，CH1条码启动
+
+2025/6/13 0:01:03右工位需要扫码启动，CH2条码启动
+
+2025/6/13 0:04:15CH1启动前清空测试数据
+
+2025/6/13 0:04:20CH1启动前清空测试数据
+
+2025/6/13 0:04:25CH2启动前清空测试数据
+
+2025/6/13 0:04:29CH2启动前清空测试数据
+
+2025/6/13 0:04:53左工位需要扫码启动，CH1条码启动
+
+2025/6/13 0:05:06右工位需要扫码启动，CH2条码启动
+
+2025/6/13 0:05:54CH1启动前清空测试数据
+
+2025/6/13 0:05:58CH1启动前清空测试数据
+
+2025/6/13 0:06:03CH2启动前清空测试数据
+
+2025/6/13 0:06:08CH2启动前清空测试数据
+
+2025/6/13 0:06:31左工位需要扫码启动，CH1条码启动
+
+2025/6/13 0:06:43右工位需要扫码启动，CH2条码启动
+
+2025/6/13 0:07:22CH1启动前清空测试数据
+
+2025/6/13 0:07:27CH1启动前清空测试数据
+
+2025/6/13 0:07:32CH2启动前清空测试数据
+
+2025/6/13 0:07:36CH2启动前清空测试数据
+
+2025/6/13 0:08:00左工位需要扫码启动，CH1条码启动
+
+2025/6/13 0:08:14右工位需要扫码启动，CH2条码启动
+
+2025/6/13 0:10:16CH1启动前清空测试数据
+
+2025/6/13 0:10:21CH1启动前清空测试数据
+
+2025/6/13 0:10:26CH2启动前清空测试数据
+
+2025/6/13 0:10:31CH2启动前清空测试数据
+
+2025/6/13 0:10:53左工位需要扫码启动，CH1条码启动
+
+2025/6/13 0:11:03右工位需要扫码启动，CH2条码启动
+
+2025/6/13 0:12:43CH1启动前清空测试数据
+
+2025/6/13 0:12:47CH1启动前清空测试数据
+
+2025/6/13 0:12:52CH1启动前清空测试数据
+
+2025/6/13 0:12:56CH2启动前清空测试数据
+
+2025/6/13 0:13:05左工位需要扫码启动，CH1条码启动
+
+2025/6/13 0:13:30右工位需要扫码启动，CH2条码启动
+
+2025/6/13 7:06:54CH1ADC打开串口为COM20
+
+2025/6/13 7:06:54ADC2:COM229600
+
+2025/6/13 7:07:13Reset derecho presione, reset derecho
+
+2025/6/13 7:07:14Reset derecho presione, reset derecho
+
+2025/6/13 7:07:14Reset derecho presione, reset derecho
+
+2025/6/13 7:07:14Reset derecho presione, reset derecho
+
+2025/6/13 7:07:15Reset derecho presione, reset derecho
+
+2025/6/13 7:07:26CH2启动前清空测试数据
+
+2025/6/13 7:07:31CH2启动前清空测试数据
+
+2025/6/13 7:08:08Reset derecho presione, reset derecho
+
+2025/6/13 7:08:08Reset derecho presione, reset derecho
+
+2025/6/13 7:08:09Reset derecho presione, reset derecho
+
+2025/6/13 7:08:09Reset derecho presione, reset derecho
+
+2025/6/13 7:08:09Reset derecho presione, reset derecho
+
+2025/6/13 7:08:10Reset derecho presione, reset derecho
+
+2025/6/13 7:08:10Reset derecho presione, reset derecho
+
+2025/6/13 7:08:10Reset derecho presione, reset derecho
+
+2025/6/13 7:08:10Reset derecho presione, reset derecho
+
+2025/6/13 7:08:11Reset derecho presione, reset derecho
+
+2025/6/13 7:08:11Reset derecho presione, reset derecho
+
+2025/6/13 7:08:11Reset derecho presione, reset derecho
+
+2025/6/13 7:08:12Reset derecho presione, reset derecho
+
+2025/6/13 7:08:14CH1启动前清空测试数据
+
+2025/6/13 7:08:14CH2启动前清空测试数据
+
+2025/6/13 7:08:32Reset derecho presione, reset derecho
+
+2025/6/13 7:08:32Reset derecho presione, reset derecho
+
+2025/6/13 7:08:32Reset derecho presione, reset derecho
+
+2025/6/13 7:08:33Reset derecho presione, reset derecho
+
+2025/6/13 7:08:47CH2启动前清空测试数据
+
+2025/6/13 7:08:49CH2启动前清空测试数据
+
+2025/6/13 7:09:20La estación derecha necesita el inicio del código de barrido, CH2 inicio del código de barras
+
+2025/6/13 7:09:25CH1启动前清空测试数据
+
+2025/6/13 7:09:25CH2启动前清空测试数据
+
+2025/6/13 7:09:46Reset derecho presione, reset derecho
+
+2025/6/13 7:09:47Reset derecho presione, reset derecho
+
+2025/6/13 7:09:47Reset derecho presione, reset derecho
+
+2025/6/13 7:09:47Reset derecho presione, reset derecho
+
+2025/6/13 7:09:48Reset derecho presione, reset derecho
+
+2025/6/13 7:09:58CH2启动前清空测试数据
+
+2025/6/13 7:10:03CH2启动前清空测试数据
+
+2025/6/13 7:10:07CH2启动前清空测试数据
+
+2025/6/13 7:10:33La estación derecha necesita el inicio del código de barrido, CH2 inicio del código de barras
+
+2025/6/13 7:10:52CH2启动前清空测试数据
+
+2025/6/13 7:10:57CH2启动前清空测试数据
+
+2025/6/13 7:11:25La estación derecha necesita el inicio del código de barrido, CH2 inicio del código de barras
+
+2025/6/13 7:11:37CH2启动前清空测试数据
+
+2025/6/13 7:11:42CH2启动前清空测试数据
+
+2025/6/13 7:11:51La estación derecha necesita el inicio del código de barrido, CH2 inicio del código de barras
+
+2025/6/13 7:11:55Reset derecho presione, reset derecho
+
+2025/6/13 7:11:56Reset derecho presione, reset derecho
+
+2025/6/13 7:11:56Reset derecho presione, reset derecho
+
+2025/6/13 7:11:56Reset derecho presione, reset derecho
+
+2025/6/13 7:11:57Reset derecho presione, reset derecho
+
+2025/6/13 7:11:57Reset derecho presione, reset derecho
+
+2025/6/13 7:11:57Reset derecho presione, reset derecho
+
+2025/6/13 7:11:58Reset derecho presione, reset derecho
+
+2025/6/13 7:11:58Reset derecho presione, reset derecho
+
+2025/6/13 7:11:58Reset derecho presione, reset derecho
+
+2025/6/13 7:11:59Reset derecho presione, reset derecho
+
+2025/6/13 7:11:59Reset derecho presione, reset derecho
+
+2025/6/13 7:12:12CH2启动前清空测试数据
+
+2025/6/13 7:12:16CH2启动前清空测试数据
+
+2025/6/13 7:12:45La estación derecha necesita el inicio del código de barrido, CH2 inicio del código de barras
+
+2025/6/13 7:14:25CH2启动前清空测试数据
+
+2025/6/13 7:14:30CH2启动前清空测试数据
+
+2025/6/13 7:14:34CH2启动前清空测试数据
+
+2025/6/13 7:14:58La estación derecha necesita el inicio del código de barrido, CH2 inicio del código de barras
+
+2025/6/13 7:15:09CH2启动前清空测试数据
+
+2025/6/13 7:15:14CH2启动前清空测试数据
+
+2025/6/13 7:15:42La estación derecha necesita el inicio del código de barrido, CH2 inicio del código de barras
+
+2025/6/13 7:16:03CH2启动前清空测试数据
+
+2025/6/13 7:16:08CH2启动前清空测试数据
+
+2025/6/13 7:16:12CH2启动前清空测试数据
+
+2025/6/13 7:16:17CH2启动前清空测试数据
+
+2025/6/13 7:16:18La estación derecha necesita el inicio del código de barrido, CH2 inicio del código de barras
+
+2025/6/13 7:16:21Reset derecho presione, reset derecho
+
+2025/6/13 7:16:22Reset derecho presione, reset derecho
+
+2025/6/13 7:16:22Reset derecho presione, reset derecho
+
+2025/6/13 7:16:22Reset derecho presione, reset derecho
+
+2025/6/13 7:16:23Reset derecho presione, reset derecho
+
+2025/6/13 7:16:23Reset derecho presione, reset derecho
+
+2025/6/13 7:16:23Reset derecho presione, reset derecho
+
+2025/6/13 7:16:23Reset derecho presione, reset derecho
+
+2025/6/13 7:16:24Reset derecho presione, reset derecho
+
+2025/6/13 7:16:24Reset derecho presione, reset derecho
+
+2025/6/13 7:16:24Reset derecho presione, reset derecho
+
+2025/6/13 7:16:25Reset derecho presione, reset derecho
+
+2025/6/13 7:16:25Reset derecho presione, reset derecho
+
+2025/6/13 7:16:42CH2启动前清空测试数据
+
+2025/6/13 7:16:46CH2启动前清空测试数据
+
+2025/6/13 7:17:15La estación derecha necesita el inicio del código de barrido, CH2 inicio del código de barras
+
+2025/6/13 7:17:26CH2启动前清空测试数据
+
+2025/6/13 7:17:31CH2启动前清空测试数据
+
+2025/6/13 7:17:36CH2启动前清空测试数据
+
+2025/6/13 7:17:59La estación derecha necesita el inicio del código de barrido, CH2 inicio del código de barras
+
+2025/6/13 7:18:10CH2启动前清空测试数据
+
+2025/6/13 7:18:15CH2启动前清空测试数据
+
+2025/6/13 7:18:43La estación derecha necesita el inicio del código de barrido, CH2 inicio del código de barras
+
+2025/6/13 7:18:55CH2启动前清空测试数据
+
+2025/6/13 7:19:23La estación derecha necesita el inicio del código de barrido, CH2 inicio del código de barras
+
+2025/6/13 7:19:37CH2启动前清空测试数据
+
+2025/6/13 7:19:42CH2启动前清空测试数据
+
+2025/6/13 7:20:10La estación derecha necesita el inicio del código de barrido, CH2 inicio del código de barras
+
+2025/6/13 7:20:24CH2启动前清空测试数据
+
+2025/6/13 7:20:28CH2启动前清空测试数据
+
+2025/6/13 7:20:33CH2启动前清空测试数据
+
+2025/6/13 7:20:33   在 System.Number.StringToNumber(String str, NumberStyles options, NumberBuffer& number, NumberFormatInfo info, Boolean parseDecimal)
+   在 System.Number.ParseDecimal(String value, NumberStyles options, NumberFormatInfo numfmt)
+   在 System.Decimal.Parse(String s, NumberStyles style)
+   在 SLC1_N.Form1.CH2ADC_PORT_DataReceived(String data) 位置 D:\zuomian\linglong\25040101\TANGQUNMXG\SLC1-N\Form1.cs:行号 7630
+
+2025/6/13 7:21:01La estación derecha necesita el inicio del código de barrido, CH2 inicio del código de barras
+
+2025/6/13 7:21:16CH2启动前清空测试数据
+
+2025/6/13 7:21:20CH2启动前清空测试数据
+
+2025/6/13 7:21:29La estación derecha necesita el inicio del código de barrido, CH2 inicio del código de barras
+
+2025/6/13 7:21:32Reset derecho presione, reset derecho
+
+2025/6/13 7:21:32Reset derecho presione, reset derecho
+
+2025/6/13 7:21:33Reset derecho presione, reset derecho
+
+2025/6/13 7:21:33Reset derecho presione, reset derecho
+
+2025/6/13 7:21:34Reset derecho presione, reset derecho
+
+2025/6/13 7:21:34Reset derecho presione, reset derecho
+
+2025/6/13 7:21:34Reset derecho presione, reset derecho
+
+2025/6/13 7:21:34Reset derecho presione, reset derecho
+
+2025/6/13 7:21:35Reset derecho presione, reset derecho
+
+2025/6/13 7:21:35Reset derecho presione, reset derecho
+
+2025/6/13 7:21:35Reset derecho presione, reset derecho
+
+2025/6/13 7:21:36Reset derecho presione, reset derecho
+
+2025/6/13 7:21:48CH2启动前清空测试数据
+
+2025/6/13 7:21:53CH2启动前清空测试数据
+
+2025/6/13 7:22:02La estación derecha necesita el inicio del código de barrido, CH2 inicio del código de barras
+
+2025/6/13 7:22:03Reset derecho presione, reset derecho
+
+2025/6/13 7:22:03Reset derecho presione, reset derecho
+
+2025/6/13 7:22:04Reset derecho presione, reset derecho
+
+2025/6/13 7:22:04Reset derecho presione, reset derecho
+
+2025/6/13 7:22:04Reset derecho presione, reset derecho
+
+2025/6/13 7:22:05Reset derecho presione, reset derecho
+
+2025/6/13 7:22:05Reset derecho presione, reset derecho
+
+2025/6/13 7:22:05Reset derecho presione, reset derecho
+
+2025/6/13 7:22:06Reset derecho presione, reset derecho
+
+2025/6/13 7:22:06Reset derecho presione, reset derecho
+
+2025/6/13 7:22:06Reset derecho presione, reset derecho
+
+2025/6/13 7:22:07Reset derecho presione, reset derecho
+
+2025/6/13 7:22:07Reset derecho presione, reset derecho
+
+2025/6/13 7:22:21CH2启动前清空测试数据
+
+2025/6/13 7:22:25CH2启动前清空测试数据
+
+2025/6/13 7:22:54La estación derecha necesita el inicio del código de barrido, CH2 inicio del código de barras
+
+2025/6/13 7:23:05CH2启动前清空测试数据
+
+2025/6/13 7:23:10CH2启动前清空测试数据
+
+2025/6/13 7:23:19La estación derecha necesita el inicio del código de barrido, CH2 inicio del código de barras
+
+2025/6/13 7:23:21Reset derecho presione, reset derecho
+
+2025/6/13 7:23:21Reset derecho presione, reset derecho
+
+2025/6/13 7:23:21Reset derecho presione, reset derecho
+
+2025/6/13 7:23:22Reset derecho presione, reset derecho
+
+2025/6/13 7:23:22Reset derecho presione, reset derecho
+
+2025/6/13 7:23:23Reset derecho presione, reset derecho
+
+2025/6/13 7:23:23Reset derecho presione, reset derecho
+
+2025/6/13 7:23:23Reset derecho presione, reset derecho
+
+2025/6/13 7:23:23Reset derecho presione, reset derecho
+
+2025/6/13 7:23:24Reset derecho presione, reset derecho
+
+2025/6/13 7:23:24Reset derecho presione, reset derecho
+
+2025/6/13 7:23:24Reset derecho presione, reset derecho
+
+2025/6/13 7:23:25Reset derecho presione, reset derecho
+
+2025/6/13 7:23:35CH2启动前清空测试数据
+
+2025/6/13 7:23:39CH2启动前清空测试数据
+
+2025/6/13 7:23:49La estación derecha necesita el inicio del código de barrido, CH2 inicio del código de barras
+
+2025/6/13 7:23:51Reset derecho presione, reset derecho
+
+2025/6/13 7:23:51Reset derecho presione, reset derecho
+
+2025/6/13 7:23:51Reset derecho presione, reset derecho
+
+2025/6/13 7:23:52Reset derecho presione, reset derecho
+
+2025/6/13 7:23:52Reset derecho presione, reset derecho
+
+2025/6/13 7:23:52Reset derecho presione, reset derecho
+
+2025/6/13 7:23:52Reset derecho presione, reset derecho
+
+2025/6/13 7:23:53Reset derecho presione, reset derecho
+
+2025/6/13 7:23:53Reset derecho presione, reset derecho
+
+2025/6/13 7:23:53Reset derecho presione, reset derecho
+
+2025/6/13 7:23:54Reset derecho presione, reset derecho
+
+2025/6/13 7:23:54Reset derecho presione, reset derecho
+
+2025/6/13 7:24:05CH2启动前清空测试数据
+
+2025/6/13 7:24:09CH2启动前清空测试数据
+
+2025/6/13 7:24:38La estación derecha necesita el inicio del código de barrido, CH2 inicio del código de barras
+
+2025/6/13 7:24:49CH2启动前清空测试数据
+
+2025/6/13 7:24:54CH2启动前清空测试数据
+
+2025/6/13 7:24:59CH2启动前清空测试数据
+
+2025/6/13 7:25:03La estación derecha necesita el inicio del código de barrido, CH2 inicio del código de barras
+
+2025/6/13 7:25:05Reset derecho presione, reset derecho
+
+2025/6/13 7:25:05Reset derecho presione, reset derecho
+
+2025/6/13 7:25:06Reset derecho presione, reset derecho
+
+2025/6/13 7:25:06Reset derecho presione, reset derecho
+
+2025/6/13 7:25:06Reset derecho presione, reset derecho
+
+2025/6/13 7:25:06Reset derecho presione, reset derecho
+
+2025/6/13 7:25:07Reset derecho presione, reset derecho
+
+2025/6/13 7:25:07Reset derecho presione, reset derecho
+
+2025/6/13 7:25:07Reset derecho presione, reset derecho
+
+2025/6/13 7:25:08Reset derecho presione, reset derecho
+
+2025/6/13 7:25:08Reset derecho presione, reset derecho
+
+2025/6/13 7:25:08Reset derecho presione, reset derecho
+
+2025/6/13 7:25:09Reset derecho presione, reset derecho
+
+2025/6/13 7:25:18CH2启动前清空测试数据
+
+2025/6/13 7:25:23CH2启动前清空测试数据
+
+2025/6/13 7:25:28CH2启动前清空测试数据
+
+2025/6/13 7:25:52La estación derecha necesita el inicio del código de barrido, CH2 inicio del código de barras
+
+2025/6/13 7:26:05CH2启动前清空测试数据
+
+2025/6/13 7:26:09CH2启动前清空测试数据
+
+2025/6/13 7:26:14CH2启动前清空测试数据
+
+2025/6/13 7:26:18CH2启动前清空测试数据
+
+2025/6/13 7:26:19La estación derecha necesita el inicio del código de barrido, CH2 inicio del código de barras
+
+2025/6/13 7:26:20Reset derecho presione, reset derecho
+
+2025/6/13 7:26:21Reset derecho presione, reset derecho
+
+2025/6/13 7:26:21Reset derecho presione, reset derecho
+
+2025/6/13 7:26:21Reset derecho presione, reset derecho
+
+2025/6/13 7:26:22Reset derecho presione, reset derecho
+
+2025/6/13 7:26:22Reset derecho presione, reset derecho
+
+2025/6/13 7:26:22Reset derecho presione, reset derecho
+
+2025/6/13 7:26:22Reset derecho presione, reset derecho
+
+2025/6/13 7:26:23Reset derecho presione, reset derecho
+
+2025/6/13 7:26:23Reset derecho presione, reset derecho
+
+2025/6/13 7:26:23Reset derecho presione, reset derecho
+
+2025/6/13 7:26:24Reset derecho presione, reset derecho
+
+2025/6/13 7:26:24Reset derecho presione, reset derecho
+
+2025/6/13 7:26:33CH2启动前清空测试数据
+
+2025/6/13 7:26:38CH2启动前清空测试数据
+
+2025/6/13 7:27:07La estación derecha necesita el inicio del código de barrido, CH2 inicio del código de barras
+
+2025/6/13 7:27:19CH2启动前清空测试数据
+
+2025/6/13 7:27:23CH2启动前清空测试数据
+
+2025/6/13 7:27:51La estación derecha necesita el inicio del código de barrido, CH2 inicio del código de barras
+
+2025/6/13 7:28:03CH2启动前清空测试数据
+
+2025/6/13 7:28:08CH2启动前清空测试数据
+
+2025/6/13 7:28:36La estación derecha necesita el inicio del código de barrido, CH2 inicio del código de barras
+
+2025/6/13 7:28:47CH2启动前清空测试数据
+
+2025/6/13 7:29:15La estación derecha necesita el inicio del código de barrido, CH2 inicio del código de barras
+
+2025/6/13 7:29:26CH2启动前清空测试数据
+
+2025/6/13 7:29:31CH2启动前清空测试数据
+
+2025/6/13 7:29:36CH2启动前清空测试数据
+
+2025/6/13 7:30:00La estación derecha necesita el inicio del código de barrido, CH2 inicio del código de barras
+
+2025/6/13 7:30:13CH2启动前清空测试数据
+
+2025/6/13 7:30:18CH2启动前清空测试数据
+
+2025/6/13 7:30:46La estación derecha necesita el inicio del código de barrido, CH2 inicio del código de barras
+
+2025/6/13 7:30:58CH2启动前清空测试数据
+
+2025/6/13 7:31:02CH2启动前清空测试数据
+
+2025/6/13 7:31:30La estación derecha necesita el inicio del código de barrido, CH2 inicio del código de barras
+
+2025/6/13 7:31:42CH2启动前清空测试数据
+
+2025/6/13 7:31:48CH2启动前清空测试数据
+
+2025/6/13 7:31:52CH2启动前清空测试数据
+
+2025/6/13 7:31:57CH2启动前清空测试数据
+
+2025/6/13 7:32:28Reset derecho presione, reset derecho
+
+2025/6/13 7:32:28Reset derecho presione, reset derecho
+
+2025/6/13 7:32:29Reset derecho presione, reset derecho
+
+2025/6/13 7:32:29Reset derecho presione, reset derecho
+
+2025/6/13 7:32:29Reset derecho presione, reset derecho
+
+2025/6/13 7:32:30Reset derecho presione, reset derecho
+
+2025/6/13 7:32:30Reset derecho presione, reset derecho
+
+2025/6/13 7:32:30Reset derecho presione, reset derecho
+
+2025/6/13 7:32:31Reset derecho presione, reset derecho
+
+2025/6/13 7:32:31Reset derecho presione, reset derecho
+
+2025/6/13 7:32:31Reset derecho presione, reset derecho
+
+2025/6/13 7:32:31Reset derecho presione, reset derecho
+
+2025/6/13 7:32:32Reset derecho presione, reset derecho
+
+2025/6/13 7:32:42CH2启动前清空测试数据
+
+2025/6/13 7:32:46CH2启动前清空测试数据
+
+2025/6/13 7:33:15La estación derecha necesita el inicio del código de barrido, CH2 inicio del código de barras
+
+2025/6/13 7:33:27CH2启动前清空测试数据
+
+2025/6/13 7:33:32CH2启动前清空测试数据
+
+2025/6/13 7:34:00La estación derecha necesita el inicio del código de barrido, CH2 inicio del código de barras
+
+2025/6/13 7:34:12CH2启动前清空测试数据
+
+2025/6/13 7:34:41La estación derecha necesita el inicio del código de barrido, CH2 inicio del código de barras
+
+2025/6/13 7:34:53CH2启动前清空测试数据
+
+2025/6/13 7:35:02La estación derecha necesita el inicio del código de barrido, CH2 inicio del código de barras
+
+2025/6/13 7:35:26Reset derecho presione, reset derecho
+
+2025/6/13 7:35:27Reset derecho presione, reset derecho
+
+2025/6/13 7:35:27Reset derecho presione, reset derecho
+
+2025/6/13 7:35:27Reset derecho presione, reset derecho
+
+2025/6/13 7:35:27Reset derecho presione, reset derecho
+
+2025/6/13 7:35:28Reset derecho presione, reset derecho
+
+2025/6/13 7:35:28Reset derecho presione, reset derecho
+
+2025/6/13 7:35:28Reset derecho presione, reset derecho
+
+2025/6/13 7:35:29Reset derecho presione, reset derecho
+
+2025/6/13 7:35:29Reset derecho presione, reset derecho
+
+2025/6/13 7:35:29Reset derecho presione, reset derecho
+
+2025/6/13 7:35:30Reset derecho presione, reset derecho
+
+2025/6/13 7:35:30Reset derecho presione, reset derecho
+
+2025/6/13 7:35:42CH2启动前清空测试数据
+
+2025/6/13 7:35:47CH2启动前清空测试数据
+
+2025/6/13 7:36:15La estación derecha necesita el inicio del código de barrido, CH2 inicio del código de barras
+
+2025/6/13 7:36:26CH2启动前清空测试数据
+
+2025/6/13 7:36:31CH2启动前清空测试数据
+
+2025/6/13 7:36:36CH2启动前清空测试数据
+
+2025/6/13 7:37:00La estación derecha necesita el inicio del código de barrido, CH2 inicio del código de barras
+
+2025/6/13 7:37:12CH2启动前清空测试数据
+
+2025/6/13 7:37:17CH2启动前清空测试数据
+
+2025/6/13 7:37:45La estación derecha necesita el inicio del código de barrido, CH2 inicio del código de barras
+
+2025/6/13 7:37:59CH2启动前清空测试数据
+
+2025/6/13 7:38:03CH2启动前清空测试数据
+
+2025/6/13 7:38:32La estación derecha necesita el inicio del código de barrido, CH2 inicio del código de barras
+
+2025/6/13 7:38:44CH2启动前清空测试数据
+
+2025/6/13 7:38:49CH2启动前清空测试数据
+
+2025/6/13 7:38:53CH2启动前清空测试数据
+
+2025/6/13 7:38:58CH2启动前清空测试数据
+
+2025/6/13 7:38:59La estación derecha necesita el inicio del código de barrido, CH2 inicio del código de barras
+
+2025/6/13 7:38:59Reset derecho presione, reset derecho
+
+2025/6/13 7:38:59Reset derecho presione, reset derecho
+
+2025/6/13 7:39:00Reset derecho presione, reset derecho
+
+2025/6/13 7:39:00Reset derecho presione, reset derecho
+
+2025/6/13 7:39:00Reset derecho presione, reset derecho
+
+2025/6/13 7:39:01Reset derecho presione, reset derecho
+
+2025/6/13 7:39:01Reset derecho presione, reset derecho
+
+2025/6/13 7:39:01Reset derecho presione, reset derecho
+
+2025/6/13 7:39:01Reset derecho presione, reset derecho
+
+2025/6/13 7:39:02Reset derecho presione, reset derecho
+
+2025/6/13 7:39:02Reset derecho presione, reset derecho
+
+2025/6/13 7:39:02Reset derecho presione, reset derecho
+
+2025/6/13 7:39:03Reset derecho presione, reset derecho
+
+2025/6/13 7:45:53左复位按下，左复位
+
+2025/6/13 7:45:53左复位按下，左复位
+
+2025/6/13 7:45:54左复位按下，左复位
+
+2025/6/13 7:45:54右复位按下，右复位
+
+2025/6/13 7:45:54左复位按下，左复位
+
+2025/6/13 7:45:54右复位按下，右复位
+
+2025/6/13 7:45:54左复位按下，左复位
+
+2025/6/13 7:45:54右复位按下，右复位
+
+2025/6/13 7:45:55右复位按下，右复位
+
+2025/6/13 7:45:55右复位按下，右复位
+
+2025/6/13 7:46:08CH1启动前清空测试数据
+
+2025/6/13 7:46:08左工位安全光栅触发，CH1安全光栅
+
+2025/6/13 7:46:13CH2启动前清空测试数据
+
+2025/6/13 7:46:41右工位需要扫码启动，CH2条码启动
+
+2025/6/13 7:51:02左复位按下，左复位
+
+2025/6/13 7:51:02左复位按下，左复位
+
+2025/6/13 7:51:03左复位按下，左复位
+
+2025/6/13 7:51:03左复位按下，左复位
+
+2025/6/13 7:51:03左复位按下，左复位
+
+2025/6/13 7:51:03左复位按下，左复位
+
+2025/6/13 7:53:43CH1ADC打开串口为COM20
+
+2025/6/13 7:53:44ADC2:COM229600
+
+2025/6/13 7:54:20CH1启动前清空测试数据
+
+2025/6/13 7:54:25CH2启动前清空测试数据
+
+2025/6/13 7:54:31CH2启动前清空测试数据
+
+2025/6/13 7:54:36CH2启动前清空测试数据
+
+2025/6/13 7:54:462025/6/13 7:54:46CH2 Retorno del mes{"StatusCode":300,"Message":"EXECUTE 后的事务计数指示 BEGIN 和 COMMIT 语句的数目不匹配。上一计数 = 0，当前计数 = 1。，扫描条码为："}
+
+2025/6/13 7:54:49右工位需要扫码启动，CH2条码启动
+
+2025/6/13 7:57:43左复位按下，左复位
+
+2025/6/13 7:57:44左复位按下，左复位
+
+2025/6/13 7:57:44左复位按下，左复位
+
+2025/6/13 7:57:44左复位按下，左复位
+
+2025/6/13 7:57:45左复位按下，左复位
+
+2025/6/13 7:57:45左复位按下，左复位
+
+2025/6/13 7:57:46左复位按下，左复位
+
+2025/6/13 7:57:47左复位按下，左复位
+
+2025/6/13 7:57:47左复位按下，左复位
+
+2025/6/13 7:57:47左复位按下，左复位
+
+2025/6/13 8:04:37左复位按下，左复位
+
+2025/6/13 8:04:37右复位按下，右复位
+
+2025/6/13 8:04:37左复位按下，左复位
+
+2025/6/13 8:04:37右复位按下，右复位
+
+2025/6/13 8:04:37左复位按下，左复位
+
+2025/6/13 8:04:37右复位按下，右复位
+
+2025/6/13 8:04:38右复位按下，右复位
+
+2025/6/13 8:04:38右复位按下，右复位
+
+2025/6/13 8:04:46CH1启动前清空测试数据
+
+2025/6/13 8:04:51CH1启动前清空测试数据
+
+2025/6/13 8:04:56CH2启动前清空测试数据
+
+2025/6/13 8:05:26左工位需要扫码启动，CH1条码启动
+
+2025/6/13 8:05:292025/6/13 8:05:29CH1 Retorno del mes{"StatusCode":300,"Message":"EXECUTE 后的事务计数指示 BEGIN 和 COMMIT 语句的数目不匹配。上一计数 = 0，当前计数 = 1。，扫描条码为："}
+
+2025/6/13 8:05:362025/6/13 8:05:36CH2 Retorno del mes{"StatusCode":300,"Message":"EXECUTE 后的事务计数指示 BEGIN 和 COMMIT 语句的数目不匹配。上一计数 = 0，当前计数 = 1。，扫描条码为："}
+
+2025/6/13 8:05:42右工位需要扫码启动，CH2条码启动
+
+2025/6/13 8:09:56CH1启动前清空测试数据
+
+2025/6/13 8:10:00CH1启动前清空测试数据
+
+2025/6/13 8:10:05CH2启动前清空测试数据
+
+2025/6/13 8:10:31左工位需要扫码启动，CH1条码启动
+
+2025/6/13 8:10:342025/6/13 8:10:34CH1 Retorno del mes{"StatusCode":300,"Message":"EXECUTE 后的事务计数指示 BEGIN 和 COMMIT 语句的数目不匹配。上一计数 = 0，当前计数 = 1。，扫描条码为："}
+
+2025/6/13 8:10:372025/6/13 8:10:37CH2 Retorno del mes{"StatusCode":300,"Message":"EXECUTE 后的事务计数指示 BEGIN 和 COMMIT 语句的数目不匹配。上一计数 = 0，当前计数 = 1。，扫描条码为："}
+
+2025/6/13 8:10:40右工位需要扫码启动，CH2条码启动
+
+2025/6/13 8:14:00CH1保存参数清零
+
+2025/6/13 8:14:00CH2保存参数清零
+
+2025/6/13 8:14:15CH1保存参数清零
+
+2025/6/13 8:14:15CH2保存参数清零
+
+2025/6/13 8:14:24CH1启动前清空测试数据
+
+2025/6/13 8:14:29CH2启动前清空测试数据
+
+2025/6/13 8:14:33CH2启动前清空测试数据
+
+2025/6/13 8:15:12左工位需要扫码启动，CH1条码启动
+
+2025/6/13 8:15:142025/6/13 8:15:14CH1 Retorno del mes{"StatusCode":300,"Message":"EXECUTE 后的事务计数指示 BEGIN 和 COMMIT 语句的数目不匹配。上一计数 = 0，当前计数 = 1。，扫描条码为："}
+
+2025/6/13 8:15:212025/6/13 8:15:21CH2 Retorno del mes{"StatusCode":300,"Message":"EXECUTE 后的事务计数指示 BEGIN 和 COMMIT 语句的数目不匹配。上一计数 = 0，当前计数 = 1。，扫描条码为："}
+
+2025/6/13 8:15:24右工位需要扫码启动，CH2条码启动
+
+2025/6/13 8:15:36CH1启动前清空测试数据
+
+2025/6/13 8:15:41CH1启动前清空测试数据
+
+2025/6/13 8:16:24左工位需要扫码启动，CH1条码启动
+
+2025/6/13 8:16:252025/6/13 8:16:25CH1 Retorno del mes{"StatusCode":300,"Message":"EXECUTE 后的事务计数指示 BEGIN 和 COMMIT 语句的数目不匹配。上一计数 = 0，当前计数 = 1。，扫描条码为："}
+
+2025/6/13 8:36:13CH1ADC打开串口为COM20
+
+2025/6/13 8:36:14ADC2:COM229600
+
+2025/6/13 8:36:29CH1启动前清空测试数据
+
+2025/6/13 8:36:33CH1启动前清空测试数据
+
+2025/6/13 8:36:34CH1启动前清空测试数据
+
+2025/6/13 8:36:37CH1启动前清空测试数据
+
+2025/6/13 8:36:38CH1启动前清空测试数据
+
+2025/6/13 8:36:39CH1启动前清空测试数据
+
+2025/6/13 8:36:41CH1启动前清空测试数据
+
+2025/6/13 8:36:42CH1启动前清空测试数据
+
+2025/6/13 8:36:43CH1启动前清空测试数据
+
+2025/6/13 8:36:45CH1启动前清空测试数据
+
+2025/6/13 8:36:46CH1启动前清空测试数据
+
+2025/6/13 8:36:47CH1启动前清空测试数据
+
+2025/6/13 8:36:49CH1启动前清空测试数据
+
+2025/6/13 8:36:50CH1启动前清空测试数据
+
+2025/6/13 8:36:52CH1启动前清空测试数据
+
+2025/6/13 8:36:53CH1启动前清空测试数据
+
+2025/6/13 8:36:54CH1启动前清空测试数据
+
+2025/6/13 8:36:56CH1启动前清空测试数据
+
+2025/6/13 8:36:59CH2启动前清空测试数据
+
+2025/6/13 8:37:00CH2启动前清空测试数据
+
+2025/6/13 8:39:20CH1ADC打开串口为COM20
+
+2025/6/13 8:39:20ADC2:COM229600
+
+2025/6/13 8:39:40左复位按下，左复位
+
+2025/6/13 8:39:40左复位按下，左复位
+
+2025/6/13 8:39:41左复位按下，左复位
+
+2025/6/13 8:39:41左复位按下，左复位
+
+2025/6/13 8:39:41右复位按下，右复位
+
+2025/6/13 8:39:41左复位按下，左复位
+
+2025/6/13 8:39:41右复位按下，右复位
+
+2025/6/13 8:39:42左复位按下，左复位
+
+2025/6/13 8:39:42右复位按下，右复位
+
+2025/6/13 8:39:42左复位按下，左复位
+
+2025/6/13 8:39:42右复位按下，右复位
+
+2025/6/13 8:39:42左复位按下，左复位
+
+2025/6/13 8:39:42右复位按下，右复位
+
+2025/6/13 8:39:42左复位按下，左复位
+
+2025/6/13 8:39:43左复位按下，左复位
+
+2025/6/13 8:39:43左复位按下，左复位
+
+2025/6/13 8:39:54CH1启动前清空测试数据
+
+2025/6/13 8:39:58CH1启动前清空测试数据
+
+2025/6/13 8:39:59CH1启动前清空测试数据
+
+2025/6/13 8:40:02CH1启动前清空测试数据
+
+2025/6/13 8:40:03CH1启动前清空测试数据
+
+2025/6/13 8:40:05CH1启动前清空测试数据
+
+2025/6/13 8:40:06CH1启动前清空测试数据
+
+2025/6/13 8:40:07CH1启动前清空测试数据
+
+2025/6/13 8:40:09CH1启动前清空测试数据
+
+2025/6/13 8:40:10CH1启动前清空测试数据
+
+2025/6/13 8:40:11CH1启动前清空测试数据
+
+2025/6/13 8:40:13CH1启动前清空测试数据
+
+2025/6/13 8:40:14CH1启动前清空测试数据
+
+2025/6/13 8:40:15CH1启动前清空测试数据
+
+2025/6/13 8:40:17CH1启动前清空测试数据
+
+2025/6/13 8:40:18CH1启动前清空测试数据
+
+2025/6/13 8:40:19CH1启动前清空测试数据
+
+2025/6/13 8:40:21CH1启动前清空测试数据
+
+2025/6/13 8:40:22CH1启动前清空测试数据
+
+2025/6/13 8:40:23CH1启动前清空测试数据
+
+2025/6/13 8:40:25CH1启动前清空测试数据
+
+2025/6/13 8:40:26CH1启动前清空测试数据
+
+2025/6/13 8:40:27CH1启动前清空测试数据
+
+2025/6/13 8:40:29CH1启动前清空测试数据
+
+2025/6/13 8:40:30CH1启动前清空测试数据
+
+2025/6/13 8:40:33CH1启动前清空测试数据
+
+2025/6/13 8:40:34CH1启动前清空测试数据
+
+2025/6/13 8:40:35CH1启动前清空测试数据
+
+2025/6/13 8:40:36CH1启动前清空测试数据
+
+2025/6/13 8:40:38CH1启动前清空测试数据
+
+2025/6/13 8:40:39CH1启动前清空测试数据
+
+2025/6/13 8:40:41CH1启动前清空测试数据
+
+2025/6/13 8:40:42CH1启动前清空测试数据
+
+2025/6/13 8:40:44CH1启动前清空测试数据
+
+2025/6/13 8:40:45CH1启动前清空测试数据
+
+2025/6/13 8:40:47CH1启动前清空测试数据
+
+2025/6/13 8:40:49CH1启动前清空测试数据
+
+2025/6/13 8:40:50CH1启动前清空测试数据
+
+2025/6/13 8:40:51CH1启动前清空测试数据
+
+2025/6/13 8:40:53CH1启动前清空测试数据
+
+2025/6/13 8:40:55CH1启动前清空测试数据
+
+2025/6/13 8:40:57CH1启动前清空测试数据
+
+2025/6/13 8:40:57CH1启动前清空测试数据
+
+2025/6/13 8:48:52CH1ADC打开串口为COM20
+
+2025/6/13 8:48:53ADC2:COM229600
+
+2025/6/13 8:49:07CH2启动前清空测试数据
+
+2025/6/13 8:49:11CH2启动前清空测试数据
+
+2025/6/13 8:49:592025/6/13 8:49:59CH2 Retorno del mes{"StatusCode":300,"Message":"EXECUTE 后的事务计数指示 BEGIN 和 COMMIT 语句的数目不匹配。上一计数 = 0，当前计数 = 1。，扫描条码为："}
+
+2025/6/13 8:49:59右工位需要扫码启动，CH2条码启动
+
+2025/6/13 8:52:50CH1ADC打开串口为COM20
+
+2025/6/13 8:52:51ADC2:COM229600
+
+2025/6/13 8:53:09CH2启动前清空测试数据
+
+2025/6/13 8:53:13CH2启动前清空测试数据
+
+2025/6/13 8:54:12左复位按下，左复位
+
+2025/6/13 8:54:13左复位按下，左复位
+
+2025/6/13 8:54:13左复位按下，左复位
+
+2025/6/13 8:54:13左复位按下，左复位
+
+2025/6/13 8:54:14左复位按下，左复位
+
+2025/6/13 8:54:14左复位按下，左复位
+
+2025/6/13 8:54:14左复位按下，左复位
+
+2025/6/13 8:54:14左复位按下，左复位
+
+2025/6/13 8:54:15左复位按下，左复位
+
+2025/6/13 8:54:15左复位按下，左复位
+
+2025/6/13 8:54:23CH1启动前清空测试数据
+
+2025/6/13 8:54:27CH1启动前清空测试数据
+
+2025/6/13 8:54:36CH2启动前清空测试数据
+
+2025/6/13 8:54:40CH2启动前清空测试数据
+
+2025/6/13 8:55:17左工位需要扫码启动，CH1条码启动
+
+2025/6/13 8:55:192025/6/13 8:55:19CH1 Retorno del mes{"StatusCode":300,"Message":"EXECUTE 后的事务计数指示 BEGIN 和 COMMIT 语句的数目不匹配。上一计数 = 0，当前计数 = 1。，扫描条码为："}
+
+2025/6/13 8:55:242025/6/13 8:55:24CH2 Retorno del mes{"StatusCode":300,"Message":"EXECUTE 后的事务计数指示 BEGIN 和 COMMIT 语句的数目不匹配。上一计数 = 0，当前计数 = 1。，扫描条码为："}
+
+2025/6/13 8:55:30右工位需要扫码启动，CH2条码启动
+
+2025/6/13 8:55:38CH1启动前清空测试数据
+
+2025/6/13 8:55:42CH1启动前清空测试数据
+
+2025/6/13 8:55:47CH2启动前清空测试数据
+
+2025/6/13 8:55:51CH2启动前清空测试数据
+
+2025/6/13 8:56:26左工位需要扫码启动，CH1条码启动
+
+2025/6/13 8:56:282025/6/13 8:56:28CH1 Retorno del mes{"StatusCode":300,"Message":"EXECUTE 后的事务计数指示 BEGIN 和 COMMIT 语句的数目不匹配。上一计数 = 0，当前计数 = 1。，扫描条码为："}
+
+2025/6/13 8:56:37右工位需要扫码启动，CH2条码启动
+
+2025/6/13 8:56:382025/6/13 8:56:38CH2 Retorno del mes{"StatusCode":300,"Message":"EXECUTE 后的事务计数指示 BEGIN 和 COMMIT 语句的数目不匹配。上一计数 = 0，当前计数 = 1。，扫描条码为："}
+
+2025/6/13 8:56:45CH1启动前清空测试数据
+
+2025/6/13 8:56:53CH1启动前清空测试数据
+
+2025/6/13 8:56:53CH1启动前清空测试数据
+
+2025/6/13 8:56:54右复位按下，右复位
+
+2025/6/13 8:56:54右复位按下，右复位
+
+2025/6/13 8:56:55右复位按下，右复位
+
+2025/6/13 8:56:55右复位按下，右复位
+
+2025/6/13 8:56:55右复位按下，右复位
+
+2025/6/13 8:56:56右复位按下，右复位
+
+2025/6/13 8:56:56右复位按下，右复位
+
+2025/6/13 8:57:21左复位按下，左复位
+
+2025/6/13 8:57:21左复位按下，左复位
+
+2025/6/13 8:57:21左复位按下，左复位
+
+2025/6/13 8:57:22左复位按下，左复位
+
+2025/6/13 8:57:33CH1启动前清空测试数据
+
+2025/6/13 8:57:37CH1启动前清空测试数据
+
+2025/6/13 8:57:41CH2启动前清空测试数据
+
+2025/6/13 8:57:46CH2启动前清空测试数据
+
+2025/6/13 8:57:51左工位需要扫码启动，CH1条码启动
+
+2025/6/13 8:57:532025/6/13 8:57:53CH1 Retorno del mes{"StatusCode":300,"Message":"EXECUTE 后的事务计数指示 BEGIN 和 COMMIT 语句的数目不匹配。上一计数 = 0，当前计数 = 1。，扫描条码为："}
+
+2025/6/13 8:58:272025/6/13 8:58:27CH2 Retorno del mes{"StatusCode":300,"Message":"EXECUTE 后的事务计数指示 BEGIN 和 COMMIT 语句的数目不匹配。上一计数 = 0，当前计数 = 1。，扫描条码为："}
+
+2025/6/13 8:58:32右工位需要扫码启动，CH2条码启动
+
+2025/6/13 8:58:50右复位按下，右复位
+
+2025/6/13 8:58:51右复位按下，右复位
+
+2025/6/13 8:58:51右复位按下，右复位
+
+2025/6/13 8:58:51右复位按下，右复位
+
+2025/6/13 8:58:51右复位按下，右复位
+
+2025/6/13 8:58:52右复位按下，右复位
+
+2025/6/13 8:58:59CH2启动前清空测试数据
+
+2025/6/13 8:59:04CH2启动前清空测试数据
+
+2025/6/13 8:59:08CH2启动前清空测试数据
+
+2025/6/13 8:59:53右工位需要扫码启动，CH2条码启动
+
+2025/6/13 9:00:01CH2启动前清空测试数据
+
+2025/6/13 9:00:05CH2启动前清空测试数据
+
+2025/6/13 9:00:51右工位需要扫码启动，CH2条码启动
+
+2025/6/13 9:00:57CH2启动前清空测试数据
+
+2025/6/13 9:01:01CH2启动前清空测试数据
+
+2025/6/13 9:01:05CH2启动前清空测试数据
+
+2025/6/13 9:01:50右工位需要扫码启动，CH2条码启动
+
+2025/6/13 9:01:57CH2启动前清空测试数据
+
+2025/6/13 9:02:02CH2启动前清空测试数据
+
+2025/6/13 9:02:06CH2启动前清空测试数据
+
+2025/6/13 9:02:51右工位需要扫码启动，CH2条码启动
+
+2025/6/13 9:02:57CH2启动前清空测试数据
+
+2025/6/13 9:03:02CH2启动前清空测试数据
+
+2025/6/13 9:03:06CH2启动前清空测试数据
+
+2025/6/13 9:03:09CH2启动前清空测试数据
+
+2025/6/13 9:03:14CH2启动前清空测试数据
+
+2025/6/13 9:03:17CH2启动前清空测试数据
+
+2025/6/13 9:04:05右工位需要扫码启动，CH2条码启动
+
+2025/6/13 9:04:13CH2启动前清空测试数据
+
+2025/6/13 9:04:17CH2启动前清空测试数据
+
+2025/6/13 9:04:51右工位需要扫码启动，CH2条码启动
+
+2025/6/13 9:05:02CH2启动前清空测试数据
+
+2025/6/13 9:05:06CH2启动前清空测试数据
+
+2025/6/13 9:05:52右工位需要扫码启动，CH2条码启动
+
+2025/6/13 9:06:00CH2启动前清空测试数据
+
+2025/6/13 9:06:04CH2启动前清空测试数据
+
+2025/6/13 9:06:49右工位需要扫码启动，CH2条码启动
+
+2025/6/13 9:06:57CH2启动前清空测试数据
+
+2025/6/13 9:07:02CH2启动前清空测试数据
+
+2025/6/13 9:07:47右工位需要扫码启动，CH2条码启动
+
+2025/6/13 9:07:53CH2启动前清空测试数据
+
+2025/6/13 9:07:58CH2启动前清空测试数据
+
+2025/6/13 9:08:02CH2启动前清空测试数据
+
+2025/6/13 9:08:06CH2启动前清空测试数据
+
+2025/6/13 9:08:51右工位需要扫码启动，CH2条码启动
+
+2025/6/13 9:09:03CH1启动前清空测试数据
+
+2025/6/13 9:09:03CH1启动前清空测试数据
+
+2025/6/13 9:09:03CH1启动前清空测试数据
+
+2025/6/13 9:09:47CH1启动前清空测试数据
+
+2025/6/13 9:09:47CH1启动前清空测试数据
+
+2025/6/13 9:09:47CH1启动前清空测试数据
+
+2025/6/13 9:09:47CH1启动前清空测试数据
+
+2025/6/13 9:09:47CH1启动前清空测试数据
+
+2025/6/13 9:09:47CH1启动前清空测试数据
+
+2025/6/13 9:09:47CH1启动前清空测试数据
+
+2025/6/13 9:09:47CH1启动前清空测试数据
+
+2025/6/13 9:09:48CH1启动前清空测试数据
+
+2025/6/13 9:09:48CH1启动前清空测试数据
+
+2025/6/13 9:09:48CH1启动前清空测试数据
+
+2025/6/13 9:09:52右工位需要扫码启动，CH2条码启动
+
+2025/6/13 9:09:55右工位需要扫码启动，CH2条码启动
+
+2025/6/13 9:09:55右工位需要扫码启动，CH2条码启动
+
+2025/6/13 9:10:06左复位按下，左复位
+
+2025/6/13 9:10:06左复位按下，左复位
+
+2025/6/13 9:10:06左复位按下，左复位
+
+2025/6/13 9:10:07左复位按下，左复位
+
+2025/6/13 9:10:07左复位按下，左复位
+
+2025/6/13 9:10:07左复位按下，左复位
+
+2025/6/13 9:10:08左复位按下，左复位
+
+2025/6/13 9:10:08左复位按下，左复位
+
+2025/6/13 9:10:08左复位按下，左复位
+
+2025/6/13 9:10:09左复位按下，左复位
+
+2025/6/13 9:10:09左复位按下，左复位
+
+2025/6/13 9:10:09左复位按下，左复位
+
+2025/6/13 9:10:10右复位按下，右复位
+
+2025/6/13 9:10:10右复位按下，右复位
+
+2025/6/13 9:10:10右复位按下，右复位
+
+2025/6/13 9:10:11右复位按下，右复位
+
+2025/6/13 9:10:11右复位按下，右复位
+
+2025/6/13 9:10:21CH2启动前清空测试数据
+
+2025/6/13 9:10:25CH2启动前清空测试数据
+
+2025/6/13 9:11:11右工位需要扫码启动，CH2条码启动
+
+2025/6/13 9:11:17CH2启动前清空测试数据
+
+2025/6/13 9:11:21CH2启动前清空测试数据
+
+2025/6/13 9:11:25CH2启动前清空测试数据
+
+2025/6/13 9:11:29CH2启动前清空测试数据
+
+2025/6/13 9:12:14右工位需要扫码启动，CH2条码启动
+
+2025/6/13 9:12:20CH2启动前清空测试数据
+
+2025/6/13 9:12:24CH2启动前清空测试数据
+
+2025/6/13 9:13:08右工位需要扫码启动，CH2条码启动
+
+2025/6/13 9:13:16CH2启动前清空测试数据
+
+2025/6/13 9:13:20CH2启动前清空测试数据
+
+2025/6/13 9:13:24CH2启动前清空测试数据
+
+2025/6/13 9:14:12右工位需要扫码启动，CH2条码启动
+
+2025/6/13 9:14:20CH2启动前清空测试数据
+
+2025/6/13 9:14:24CH2启动前清空测试数据
+
+2025/6/13 9:15:10右工位需要扫码启动，CH2条码启动
+
+2025/6/13 9:15:20CH2启动前清空测试数据
+
+2025/6/13 9:15:24CH2启动前清空测试数据
+
+2025/6/13 9:16:09右工位需要扫码启动，CH2条码启动
+
+2025/6/13 9:16:18CH2启动前清空测试数据
+
+2025/6/13 9:16:22CH2启动前清空测试数据
+
+2025/6/13 9:17:08右工位需要扫码启动，CH2条码启动
+
+2025/6/13 9:17:14CH2启动前清空测试数据
+
+2025/6/13 9:17:18CH2启动前清空测试数据
+
+2025/6/13 9:17:22CH2启动前清空测试数据
+
+2025/6/13 9:17:26CH2启动前清空测试数据
+
+2025/6/13 9:17:30CH2启动前清空测试数据
+
+2025/6/13 9:17:34CH2启动前清空测试数据
+
+2025/6/13 9:17:38CH2启动前清空测试数据
+
+2025/6/13 9:17:42CH2启动前清空测试数据
+
+2025/6/13 9:17:46CH2启动前清空测试数据
+
+2025/6/13 9:17:50CH2启动前清空测试数据
+
+2025/6/13 9:17:54CH2启动前清空测试数据
+
+2025/6/13 9:18:39右工位需要扫码启动，CH2条码启动
+
+2025/6/13 9:18:46CH2启动前清空测试数据
+
+2025/6/13 9:18:50CH2启动前清空测试数据
+
+2025/6/13 9:19:34右工位需要扫码启动，CH2条码启动
+
+2025/6/13 9:19:41CH1启动前清空测试数据
+
+2025/6/13 9:19:45CH1启动前清空测试数据
+
+2025/6/13 9:19:49CH2启动前清空测试数据
+
+2025/6/13 9:19:54左工位需要扫码启动，CH1条码启动
+
+2025/6/13 9:19:59CH1启动前清空测试数据
+
+2025/6/13 9:20:04CH1启动前清空测试数据
+
+2025/6/13 9:20:222025/6/13 9:20:22CH1 Retorno del mes输入字符串的格式不正确。
+
+2025/6/13 9:20:42右工位需要扫码启动，CH2条码启动
+
+2025/6/13 9:20:55CH2启动前清空测试数据
+
+2025/6/13 9:20:59CH2启动前清空测试数据
+
+2025/6/13 9:21:16右工位需要扫码启动，CH2条码启动
+
+2025/6/13 9:21:17右复位按下，右复位
+
+2025/6/13 9:21:18右复位按下，右复位
+
+2025/6/13 9:21:18右工位安全光栅触发，CH2安全光栅
+
+2025/6/13 9:21:18右工位安全光栅触发，CH2安全光栅
+
+2025/6/13 9:21:18右工位安全光栅触发，CH2安全光栅
+
+2025/6/13 9:21:18右工位安全光栅触发，CH2安全光栅
+
+2025/6/13 9:21:18右工位安全光栅触发，CH2安全光栅
+
+2025/6/13 9:21:18右工位安全光栅触发，CH2安全光栅
+
+2025/6/13 9:21:18右工位安全光栅触发，CH2安全光栅
+
+2025/6/13 9:21:21右复位按下，右复位
+
+2025/6/13 9:21:21右复位按下，右复位
+
+2025/6/13 9:21:22右复位按下，右复位
+
+2025/6/13 9:21:22右复位按下，右复位
+
+2025/6/13 9:21:22右复位按下，右复位
+
+2025/6/13 9:21:29CH2启动前清空测试数据
+
+2025/6/13 9:21:33CH2启动前清空测试数据
+
+2025/6/13 9:22:17右工位需要扫码启动，CH2条码启动
+
+2025/6/13 9:22:30CH2启动前清空测试数据
+
+2025/6/13 9:22:34CH2启动前清空测试数据
+
+2025/6/13 9:23:20右工位需要扫码启动，CH2条码启动
+
+2025/6/13 9:23:20右工位安全光栅触发，CH2安全光栅
+
+2025/6/13 9:23:20右工位安全光栅触发，CH2安全光栅
+
+2025/6/13 9:23:20右工位安全光栅触发，CH2安全光栅
+
+2025/6/13 9:23:20右工位安全光栅触发，CH2安全光栅
+
+2025/6/13 9:23:21右工位安全光栅触发，CH2安全光栅
+
+2025/6/13 9:23:21右工位安全光栅触发，CH2安全光栅
+
+2025/6/13 9:23:21右工位安全光栅触发，CH2安全光栅
+
+2025/6/13 9:23:21右工位安全光栅触发，CH2安全光栅
+
+2025/6/13 9:23:31CH2启动前清空测试数据
+
+2025/6/13 9:23:35CH2启动前清空测试数据
+
+2025/6/13 9:23:53右工位需要扫码启动，CH2条码启动
+
+2025/6/13 9:23:53右复位按下，右复位
+
+2025/6/13 9:23:54右复位按下，右复位
+
+2025/6/13 9:23:54右复位按下，右复位
+
+2025/6/13 9:23:54右复位按下，右复位
+
+2025/6/13 9:23:54右复位按下，右复位
+
+2025/6/13 9:23:54右复位按下，右复位
+
+2025/6/13 9:23:54右复位按下，右复位
+
+2025/6/13 9:23:55右复位按下，右复位
+
+2025/6/13 9:23:55右复位按下，右复位
+
+2025/6/13 9:23:55右复位按下，右复位
+
+2025/6/13 9:23:55右复位按下，右复位
+
+2025/6/13 9:23:55右复位按下，右复位
+
+2025/6/13 9:24:17CH2启动前清空测试数据
+
+2025/6/13 9:24:21CH2启动前清空测试数据
+
+2025/6/13 9:24:35右复位按下，右复位
+
+2025/6/13 9:24:35右复位按下，右复位
+
+2025/6/13 9:24:35右复位按下，右复位
+
+2025/6/13 9:24:36右复位按下，右复位
+
+2025/6/13 9:24:36右复位按下，右复位
+
+2025/6/13 9:24:36右复位按下，右复位
+
+2025/6/13 9:24:37右复位按下，右复位
+
+2025/6/13 9:24:37右复位按下，右复位
+
+2025/6/13 9:24:37右复位按下，右复位
+
+2025/6/13 9:24:38右复位按下，右复位
+
+2025/6/13 9:24:50CH2启动前清空测试数据
+
+2025/6/13 9:24:54CH2启动前清空测试数据
+
+2025/6/13 9:24:58CH2启动前清空测试数据
+
+2025/6/13 9:25:14右复位按下，右复位
+
+2025/6/13 9:25:14右复位按下，右复位
+
+2025/6/13 9:25:15右复位按下，右复位
+
+2025/6/13 9:25:15右复位按下，右复位
+
+2025/6/13 9:25:15右复位按下，右复位
+
+2025/6/13 9:25:16右复位按下，右复位
+
+2025/6/13 9:25:16右复位按下，右复位
+
+2025/6/13 9:25:16右复位按下，右复位
+
+2025/6/13 9:25:16右复位按下，右复位
+
+2025/6/13 9:25:17右复位按下，右复位
+
+2025/6/13 9:25:17右复位按下，右复位
+
+2025/6/13 9:25:17右复位按下，右复位
+
+2025/6/13 9:25:18右复位按下，右复位
+
+2025/6/13 9:25:31CH2启动前清空测试数据
+
+2025/6/13 9:25:35CH2启动前清空测试数据
+
+2025/6/13 9:26:01右复位按下，右复位
+
+2025/6/13 9:26:01右复位按下，右复位
+
+2025/6/13 9:26:01右复位按下，右复位
+
+2025/6/13 9:26:02右复位按下，右复位
+
+2025/6/13 9:26:02右复位按下，右复位
+
+2025/6/13 9:26:02右复位按下，右复位
+
+2025/6/13 9:26:02右复位按下，右复位
+
+2025/6/13 9:26:03右复位按下，右复位
+
+2025/6/13 9:26:03右复位按下，右复位
+
+2025/6/13 9:26:03右复位按下，右复位
+
+2025/6/13 9:26:04右复位按下，右复位
+
+2025/6/13 9:26:04右复位按下，右复位
+
+2025/6/13 9:26:04右复位按下，右复位
+
+2025/6/13 9:26:18CH2启动前清空测试数据
+
+2025/6/13 9:26:36La estación derecha necesita el inicio del código de barrido, CH2 inicio del código de barras
+
+2025/6/13 9:26:56CH2启动前清空测试数据
+
+2025/6/13 9:27:00CH2启动前清空测试数据
+
+2025/6/13 9:27:45La estación derecha necesita el inicio del código de barrido, CH2 inicio del código de barras
+
+2025/6/13 9:27:45Reset derecho presione, reset derecho
+
+2025/6/13 9:27:45Reset derecho presione, reset derecho
+
+2025/6/13 9:27:55CH2启动前清空测试数据
+
+2025/6/13 9:27:59CH2启动前清空测试数据
+
+2025/6/13 9:28:24Reset derecho presione, reset derecho
+
+2025/6/13 9:28:24Reset derecho presione, reset derecho
+
+2025/6/13 9:28:25Reset derecho presione, reset derecho
+
+2025/6/13 9:28:25Reset derecho presione, reset derecho
+
+2025/6/13 9:28:26Reset derecho presione, reset derecho
+
+2025/6/13 9:28:26Reset derecho presione, reset derecho
+
+2025/6/13 9:28:26Reset derecho presione, reset derecho
+
+2025/6/13 9:28:26Reset derecho presione, reset derecho
+
+2025/6/13 9:28:27Reset derecho presione, reset derecho
+
+2025/6/13 9:28:27Reset derecho presione, reset derecho
+
+2025/6/13 9:28:27Reset derecho presione, reset derecho
+
+2025/6/13 9:28:27Reset derecho presione, reset derecho
+
+2025/6/13 9:28:28Reset derecho presione, reset derecho
+
+2025/6/13 9:28:39CH2启动前清空测试数据
+
+2025/6/13 9:28:43CH2启动前清空测试数据
+
+2025/6/13 9:29:27La estación derecha necesita el inicio del código de barrido, CH2 inicio del código de barras
+
+2025/6/13 9:29:35CH2启动前清空测试数据
+
+2025/6/13 9:29:39CH2启动前清空测试数据
+
+2025/6/13 9:30:24La estación derecha necesita el inicio del código de barrido, CH2 inicio del código de barras
+
+2025/6/13 9:30:32CH2启动前清空测试数据
+
+2025/6/13 9:30:36CH2启动前清空测试数据
+
+2025/6/13 9:31:22La estación derecha necesita el inicio del código de barrido, CH2 inicio del código de barras
+
+2025/6/13 9:31:29CH2启动前清空测试数据
+
+2025/6/13 9:31:33CH2启动前清空测试数据
+
+2025/6/13 9:32:18La estación derecha necesita el inicio del código de barrido, CH2 inicio del código de barras
+
+2025/6/13 9:32:29CH2启动前清空测试数据
+
+2025/6/13 9:32:33CH2启动前清空测试数据
+
+2025/6/13 9:33:18La estación derecha necesita el inicio del código de barrido, CH2 inicio del código de barras
+
+2025/6/13 9:33:27CH2启动前清空测试数据
+
+2025/6/13 9:33:31CH2启动前清空测试数据
+
+2025/6/13 9:34:16La estación derecha necesita el inicio del código de barrido, CH2 inicio del código de barras
+
+2025/6/13 9:34:26CH2启动前清空测试数据
+
+2025/6/13 9:34:30CH2启动前清空测试数据
+
+2025/6/13 9:35:15La estación derecha necesita el inicio del código de barrido, CH2 inicio del código de barras
+
+2025/6/13 9:35:16Gatillo de rejilla de seguridad en la estación derecha, rejilla de seguridad CH2
+
+2025/6/13 9:35:18Gatillo de rejilla de seguridad en la estación derecha, rejilla de seguridad CH2
+
+2025/6/13 9:35:19Gatillo de rejilla de seguridad en la estación derecha, rejilla de seguridad CH2
+
+2025/6/13 9:35:19Gatillo de rejilla de seguridad en la estación derecha, rejilla de seguridad CH2
+
+2025/6/13 9:35:19Gatillo de rejilla de seguridad en la estación derecha, rejilla de seguridad CH2
+
+2025/6/13 9:35:21Reset derecho presione, reset derecho
+
+2025/6/13 9:35:21Reset derecho presione, reset derecho
+
+2025/6/13 9:35:21Reset derecho presione, reset derecho
+
+2025/6/13 9:35:22Reset derecho presione, reset derecho
+
+2025/6/13 9:35:22Reset derecho presione, reset derecho
+
+2025/6/13 9:35:22Reset derecho presione, reset derecho
+
+2025/6/13 9:35:31CH2启动前清空测试数据
+
+2025/6/13 9:35:35CH2启动前清空测试数据
+
+2025/6/13 9:36:20La estación derecha necesita el inicio del código de barrido, CH2 inicio del código de barras
+
+2025/6/13 9:36:30CH2启动前清空测试数据
+
+2025/6/13 9:36:34CH2启动前清空测试数据
+
+2025/6/13 9:37:19La estación derecha necesita el inicio del código de barrido, CH2 inicio del código de barras
+
+2025/6/13 9:37:27CH2启动前清空测试数据
+
+2025/6/13 9:37:31CH2启动前清空测试数据
+
+2025/6/13 9:38:15La estación derecha necesita el inicio del código de barrido, CH2 inicio del código de barras
+
+2025/6/13 9:38:25CH2启动前清空测试数据
+
+2025/6/13 9:38:29CH2启动前清空测试数据
+
+2025/6/13 9:39:15La estación derecha necesita el inicio del código de barrido, CH2 inicio del código de barras
+
+2025/6/13 9:39:25CH2启动前清空测试数据
+
+2025/6/13 9:39:30CH2启动前清空测试数据
+
+2025/6/13 9:40:14La estación derecha necesita el inicio del código de barrido, CH2 inicio del código de barras
+
+2025/6/13 9:40:23CH2启动前清空测试数据
+
+2025/6/13 9:40:27CH2启动前清空测试数据
+
+2025/6/13 9:41:14La estación derecha necesita el inicio del código de barrido, CH2 inicio del código de barras
+
+2025/6/13 9:41:22CH2启动前清空测试数据
+
+2025/6/13 9:41:26CH2启动前清空测试数据
+
+2025/6/13 9:42:10La estación derecha necesita el inicio del código de barrido, CH2 inicio del código de barras
+
+2025/6/13 9:42:19CH2启动前清空测试数据
+
+2025/6/13 9:42:24CH2启动前清空测试数据
+
+2025/6/13 9:43:08La estación derecha necesita el inicio del código de barrido, CH2 inicio del código de barras
+
+2025/6/13 9:43:19CH2启动前清空测试数据
+
+2025/6/13 9:43:23CH2启动前清空测试数据
+
+2025/6/13 9:43:27CH2启动前清空测试数据
+
+2025/6/13 9:44:12La estación derecha necesita el inicio del código de barrido, CH2 inicio del código de barras
+
+2025/6/13 9:44:22CH2启动前清空测试数据
+
+2025/6/13 9:44:26CH2启动前清空测试数据
+
+2025/6/13 9:45:11La estación derecha necesita el inicio del código de barrido, CH2 inicio del código de barras
+
+2025/6/13 9:45:22CH2启动前清空测试数据
+
+2025/6/13 9:45:27CH2启动前清空测试数据
+
+2025/6/13 9:45:30CH2启动前清空测试数据
+
+2025/6/13 9:45:47La estación derecha necesita el inicio del código de barrido, CH2 inicio del código de barras
+
+2025/6/13 9:45:47Reset derecho presione, reset derecho
+
+2025/6/13 9:45:47Reset derecho presione, reset derecho
+
+2025/6/13 9:45:48Reset derecho presione, reset derecho
+
+2025/6/13 9:46:00CH2启动前清空测试数据
+
+2025/6/13 9:46:04CH2启动前清空测试数据
+
+2025/6/13 9:46:20La estación derecha necesita el inicio del código de barrido, CH2 inicio del código de barras
+
+2025/6/13 9:46:25Reset derecho presione, reset derecho
+
+2025/6/13 9:46:25Reset derecho presione, reset derecho
+
+2025/6/13 9:46:25Reset derecho presione, reset derecho
+
+2025/6/13 9:46:26Reset derecho presione, reset derecho
+
+2025/6/13 9:46:26Reset derecho presione, reset derecho
+
+2025/6/13 9:46:26Reset derecho presione, reset derecho
+
+2025/6/13 9:46:26Reset derecho presione, reset derecho
+
+2025/6/13 9:46:27Reset derecho presione, reset derecho
+
+2025/6/13 9:46:27Reset derecho presione, reset derecho
+
+2025/6/13 9:46:27Reset derecho presione, reset derecho
+
+2025/6/13 9:46:28Reset derecho presione, reset derecho
+
+2025/6/13 9:46:28Reset derecho presione, reset derecho
+
+2025/6/13 9:46:50Reset derecho presione, reset derecho
+
+2025/6/13 9:46:50Reset derecho presione, reset derecho
+
+2025/6/13 9:46:50Reset derecho presione, reset derecho
+
+2025/6/13 9:46:51Reset derecho presione, reset derecho
+
+2025/6/13 9:46:52Reset derecho presione, reset derecho
+
+2025/6/13 9:47:02CH2启动前清空测试数据
+
+2025/6/13 9:47:06CH2启动前清空测试数据
+
+2025/6/13 9:47:51La estación derecha necesita el inicio del código de barrido, CH2 inicio del código de barras
+
+2025/6/13 9:48:02CH2启动前清空测试数据
+
+2025/6/13 9:48:06CH2启动前清空测试数据
+
+2025/6/13 9:48:52La estación derecha necesita el inicio del código de barrido, CH2 inicio del código de barras
+
