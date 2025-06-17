@@ -709,3 +709,13 @@ C:\Users\Administrator\Desktop\linglong\25040101\TANGQUNMXG\tongxin\NetWorkHelpe
 C:\Users\Administrator\Desktop\linglong\25040101\TANGQUNMXG\tongxin\NetWorkHelper\obj\Debug\NetWorkHelper.csproj.CoreCompileInputs.cache
 C:\Users\Administrator\Desktop\linglong\25040101\TANGQUNMXG\tongxin\NetWorkHelper\obj\Debug\NetWorkHelper.dll
 C:\Users\Administrator\Desktop\linglong\25040101\TANGQUNMXG\tongxin\NetWorkHelper\obj\Debug\NetWorkHelper.pdb
+F:\原桌面\桌面整理\上位机\2025年\TANGQUNMXG\tongxin\NetWorkHelper\bin\Debug\TCP\ITcpClient.cs
+F:\原桌面\桌面整理\上位机\2025年\TANGQUNMXG\tongxin\NetWorkHelper\bin\Debug\TCP\ITcpClient.Designer.cs
+F:\原桌面\桌面整理\上位机\2025年\TANGQUNMXG\tongxin\NetWorkHelper\bin\Debug\NetWorkHelper.dll
+F:\原桌面\桌面整理\上位机\2025年\TANGQUNMXG\tongxin\NetWorkHelper\bin\Debug\NetWorkHelper.pdb
+F:\原桌面\桌面整理\上位机\2025年\TANGQUNMXG\tongxin\NetWorkHelper\obj\Debug\NetWorkHelper.csproj.AssemblyReference.cache
+F:\原桌面\桌面整理\上位机\2025年\TANGQUNMXG\tongxin\NetWorkHelper\obj\Debug\NetWorkHelper.AxUdpClient.resources
+F:\原桌面\桌面整理\上位机\2025年\TANGQUNMXG\tongxin\NetWorkHelper\obj\Debug\NetWorkHelper.csproj.GenerateResource.cache
+F:\原桌面\桌面整理\上位机\2025年\TANGQUNMXG\tongxin\NetWorkHelper\obj\Debug\NetWorkHelper.csproj.CoreCompileInputs.cache
+F:\原桌面\桌面整理\上位机\2025年\TANGQUNMXG\tongxin\NetWorkHelper\obj\Debug\NetWorkHelper.dll
+F:\原桌面\桌面整理\上位机\2025年\TANGQUNMXG\tongxin\NetWorkHelper\obj\Debug\NetWorkHelper.pdb

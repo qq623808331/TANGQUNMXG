@@ -389,6 +389,23 @@ namespace SLC1_N
             //绑定Elapsed事件
             timerCH2CT.Elapsed += new System.Timers.ElapsedEventHandler(TimerCT2);
         }
+        public enum yiqi
+        {
+            start,//启动
+            rst,//复位
+            prepare,//准备
+            test,//测试
+            finish,//完成（导出数据）
+            writedate,//写入数据
+            standby,//待机
+            writedata,
+
+        };
+        public int workstation;
+        public int workstation2;
+
+        public int workstation3;
+        public int workstation4;
 
         private DateTime dtCT1;
         private DateTime dtCT2;
@@ -2424,41 +2441,47 @@ namespace SLC1_N
         {
             try
             {
-                switch (ch1stage)
+                switch (workstation)
                 {
-                    case 0://利用定时器进入状态位读取
-                        CH1IsRun.Interval = 200;
-                        CH1IsRun.Start();
-                        ch1stage = 1;
+                    case (int)yiqi.start:
+                        ch1client.btnSendData("01 05 00 00 FF 00");
+                        LeftCH1Status.ForeColor = Color.Green;
+                        LeftCH1Status.Text = I18N.GetLangText(dicLang, "启动");
+                        ch1client.btnSendData("01 03 03 E8 00 1D");
+                        workstation = (int)yiqi.prepare;
+                        ch1write = 0;
+                        ch1_1step = 2;
+                        CHXProBarFlag[1] = 0;
+                        LeftCH1Status.ForeColor = Color.Green;
+                        LeftCH1Status.Text = I18N.GetLangText(dicLang, "启动");
+                        left_CH1Tlight.Text = "";
+                        LeftCH1BigLeak.Text = "";
+                        LeftCH1SmallLeak.Text = "";
+                        LeftCH1LeakPress.Text = "";
+                        ch1readpara = false;
+                        CH1progressBar.Value = 0;
+                        break;
+                    case (int)yiqi.rst:
+                        ch1client.btnSendData("01 05 00 01 FF 00");
                         break;
 
-                    case 1://此时为状态位读取
-                        string str1;
-                        str1 = CH1ReceiveText.Text;
+                    //case 1://此时为状态位读取
+                    //    string str1;
+                    //    str1 = CH1ReceiveText.Text;
 
-                        //if (str1.Length > 8 && str1.Substring(2, 6) == "010101")
-                        if (str1.Substring(6, 2) == "01")
-                        {
-                            //CH1IsRun.Stop();
-                            ch1write = 0;
-                            ch1_1step = 2;
-                            CHXProBarFlag[1] = 0;
-                            LeftCH1Status.ForeColor = Color.Green;
-                            LeftCH1Status.Text = I18N.GetLangText(dicLang, "启动");
-                            left_CH1Tlight.Text = "";
-                            LeftCH1BigLeak.Text = "";
-                            LeftCH1SmallLeak.Text = "";
-                            LeftCH1LeakPress.Text = "";
-                            ch1readpara = false;
-                            CH1progressBar.Value = 0;
-                            //测试参数ToolStripMenuItem.Enabled = false;
+                    //    //if (str1.Length > 8 && str1.Substring(2, 6) == "010101")
+                    //    if (str1.Substring(6, 2) == "01")
+                    //    {
+                    //        //CH1IsRun.Stop();
+                          
+                    //        //测试参数ToolStripMenuItem.Enabled = false;
 
-                            //ReadParams.Interval = 400;
-                            //ReadParams.Start();
-                        }
-                        break;
+                    //        //ReadParams.Interval = 400;
+                    //        //ReadParams.Start();
+                    //    }
+                    //    break;
 
-                    case 2://此时为读取参数并数据转换
+                    case (int)yiqi.prepare:
                         string str2;
                         if (CH1POWER._serialPort.IsOpen)
                             WritetoRTADC("OUTP 1");
@@ -2512,13 +2535,40 @@ namespace SLC1_N
                         //}
                         break;
 
-                    case 3://循环读取测试结果
+                    case (int)yiqi.test:
                         string str4;
                         str4 = CH1ReceiveText.Text;
                         //LeakResult.Stop();
                         if (str4.Length == 110 && str4.Substring(2, 2) == "03")
                         {
                             left_ch1result = comm.ReadLeak(str4);
+                            if(ch1stage ==7)
+                            {
+                                if(Convert.ToDouble(left_ch1result.LeakPressure)>Convert.ToDouble( CH1_1FullPress.Text))
+                                CH1_1FullPress.Text = left_ch1result.LeakPressure.ToString();
+                                if (CH1RTStep == "RWD")
+                                {
+                                    //textBox1.Text += realtimepress.ToString();
+                                    CH1PressMax = Convert.ToDouble(CH1_1FullPress.Text);
+                                }
+                                else
+                                {
+                                    if (Convert.ToDouble(CH1_1FullPress.Text) > CH1PressMax)
+                                    {
+                                        CH1PressMax = Convert.ToDouble(CH1_1FullPress.Text);
+                                    }
+                                    if (CH1RTStep == "DOWN")
+                                    {
+                                        if (CH1PressMax > Flow.CH1_1PreMax || CH1PressMax < Flow.CH1_1PreMin)
+                                        {
+                                            plc.CH1DOWNPreNG();
+                                            FlowNG(1);
+                                            CH1Display($"{CH1RunName}" + I18N.GetLangText(dicLang, "输出压力(DOWN-UP)"), CH1PressMax.ToString(), PressureUnit.Text, Flow.CH1_1PreMax.ToString(), Flow.CH1_1PreMin.ToString(), "NG");
+                                        }
+                                    }
+                                }
+                            }
+
                             //测流量时，输出压力归0，不显示
                             if (CH1RTStep == "UP" || CH1RTStep == "DOWN" || CH1RTStep == "FWD")
                             {
@@ -2541,11 +2591,13 @@ namespace SLC1_N
 
                             if (left_CH1Tlight.Text.Contains("NG") is true)
                             {
+                                workstation = (int)yiqi.finish;
                                 left_CH1Tlight.ForeColor = Color.Red;
                             }
                             else if (left_CH1Tlight.Text.Contains("OK") is true)
                             {
                                 left_CH1Tlight.ForeColor = Color.Green;
+                                workstation = (int)yiqi.finish;
                             }
 
                             if (str4.Substring(8, 2) == "05" || str4.Substring(8, 2) == "00")
@@ -2639,15 +2691,15 @@ namespace SLC1_N
 
                         break;
 
-                    case 4:
-                        //按下复位以后收到返回信息则判断状态位
-                        CH1IsRun.Interval = 300;
-                        CH1IsRun.Start();
-                        ch1stage = 5;
+                    //case 4:
+                    //    //按下复位以后收到返回信息则判断状态位
+                    //    CH1IsRun.Interval = 300;
+                    //    CH1IsRun.Start();
+                    //    ch1stage = 5;
 
-                        break;
+                    //    break;
 
-                    case 5://对仪器是否结束的判断
+                      case (int)yiqi.finish:
                         string str5;
                         str5 = CH1ReceiveText.Text;
                         if (str5.Length > 8 && str5.Substring(6, 2) == "00")
@@ -2664,6 +2716,7 @@ namespace SLC1_N
                             ch1stage = 10;
                             LeftCH1Status.ForeColor = Color.Black;
                             LeftCH1Status.Text = I18N.GetLangText(dicLang, "待机");
+                            workstation = (int)yiqi.standby;
                             //if (网络设置ToolStripMenuItem.Enabled)
                             //{
                             //    测试参数ToolStripMenuItem.Enabled = true;
@@ -2737,111 +2790,130 @@ namespace SLC1_N
                             }
                         }
                         break;
-
-                    case 6://对蜂鸣器的读取
-                        string str6 = CH1ReceiveText.Text;
-                        if (str6.Length > 8 && str6.Substring(6, 2) == "01")
+                    case (int)yiqi.standby:
+                        LeftCH1Status.ForeColor = Color.Black;
+                        LeftCH1Status.Text = I18N.GetLangText(dicLang, "待机");
+                        string text = "01 01 00 02 00 01";
+                        ch1readpara = false;
+                        ch1client.btnSendData(text);
+                        string str1;
+                        str1 = CH1ReceiveText.Text;
+                        if (str1.Length > 8 && str1.Substring(2, 6) == "010101")
                         {
-                            ch1_1params.ChkBee = true;
+                            workstation = (int)yiqi.prepare;
                         }
+                        break;
+                    case (int)yiqi.writedata:
+                        str1 = CH1ReceiveText.Text;
+                        if (str1.Length > 8 && str1.Substring(2, 6) == "010101")
+                            workstation = (int)yiqi.start;
                         else
-                        {
-                            ch1_1params.ChkBee = false;
-                        }
+                            workstation = (int)yiqi.start;
                         break;
-
-                    case 7:
-                        string str7 = CH1ReceiveText.Text;
-                        //if (str7.Length == 18 && str7.Substring(2, 2) == "03")
-                        //{
-                        //    string rtpress1 = str7.Substring(6, 4);
-                        //    string rtpress2 = str7.Substring(10, 4);
-                        //    string hex_rtpress = rtpress2 + rtpress1;
-                        //    string rtpress = BitConverter.ToSingle(BitConverter.GetBytes(Convert.ToUInt32(hex_rtpress, 16)), 0).ToString("F2");
-                        //    double realtimepress = Convert.ToDouble(rtpress);
-                        //textBox1.Text += realtimepress.ToString();
-                        //    if (realtimepress > CH1PressMax)
+                        //case 6://对蜂鸣器的读取
+                        //    string str6 = CH1ReceiveText.Text;
+                        //    if (str6.Length > 8 && str6.Substring(6, 2) == "01")
                         //    {
-                        //        CH1PressMax = realtimepress;
+                        //        ch1_1params.ChkBee = true;
                         //    }
-                        //}
-                        if (str7.Length == 102 && str7.Substring(2, 2) == "03")
-                        {
-                            string press_unit = str7.Substring(6, 4);
-                            int unit_index = Convert.ToInt32(press_unit, 16);
-                            switch (unit_index)
-                            {
-                                case 0:
-                                    PressureUnit.Text = "Pa";
-                                    //realtimepress = realtimepress * 0.001;
-                                    break;
+                        //    else
+                        //    {
+                        //        ch1_1params.ChkBee = false;
+                        //    }
+                        //    break;
 
-                                case 1:
-                                    PressureUnit.Text = "KPa";
-                                    break;
+                        //    case 7:
+                        //        string str7 = CH1ReceiveText.Text;
+                        //        //if (str7.Length == 18 && str7.Substring(2, 2) == "03")
+                        //        //{
+                        //        //    string rtpress1 = str7.Substring(6, 4);
+                        //        //    string rtpress2 = str7.Substring(10, 4);
+                        //        //    string hex_rtpress = rtpress2 + rtpress1;
+                        //        //    string rtpress = BitConverter.ToSingle(BitConverter.GetBytes(Convert.ToUInt32(hex_rtpress, 16)), 0).ToString("F2");
+                        //        //    double realtimepress = Convert.ToDouble(rtpress);
+                        //        //textBox1.Text += realtimepress.ToString();
+                        //        //    if (realtimepress > CH1PressMax)
+                        //        //    {
+                        //        //        CH1PressMax = realtimepress;
+                        //        //    }
+                        //        //}
+                        //        if (str7.Length == 102 && str7.Substring(2, 2) == "03")
+                        //        {
+                        //            PressureUnit.Text = "KPa";
+                        //            //string press_unit = str7.Substring(6, 4);
+                        //            //int unit_index = Convert.ToInt32(press_unit, 16);
+                        //            //switch (unit_index)
+                        //            //{
+                        //            //    case 0:
+                        //            //        PressureUnit.Text = "Pa";
+                        //            //        //realtimepress = realtimepress * 0.001;
+                        //            //        break;
+                        //            //    case 1:
+                        //            //        PressureUnit.Text = "KPa";
+                        //            //        break;
 
-                                case 2:
-                                    PressureUnit.Text = "MPa";
-                                    //realtimepress = realtimepress * 1000;
-                                    break;
+                        //            //    case 2:
+                        //            //        PressureUnit.Text = "MPa";
+                        //            //        //realtimepress = realtimepress * 1000;
+                        //            //        break;
 
-                                case 3:
-                                    PressureUnit.Text = "bar";
-                                    //realtimepress = realtimepress * 100;
-                                    break;
+                        //            //    case 3:
+                        //            //        PressureUnit.Text = "bar";
+                        //            //        //realtimepress = realtimepress * 100;
+                        //            //        break;
 
-                                case 4:
-                                    PressureUnit.Text = "Psi";
-                                    //realtimepress = realtimepress * 6.89476;
-                                    break;
+                        //            //    case 4:
+                        //            //        PressureUnit.Text = "Psi";
+                        //            //        //realtimepress = realtimepress * 6.89476;
+                        //            //        break;
 
-                                case 5:
-                                    PressureUnit.Text = "kg/cm^2";
-                                    //realtimepress = realtimepress * 98.0665;
-                                    break;
+                        //            //    case 5:
+                        //            //        PressureUnit.Text = "kg/cm^2";
+                        //            //        //realtimepress = realtimepress * 98.0665;
+                        //            //        break;
 
-                                case 6:
-                                    PressureUnit.Text = "atm";
-                                    //realtimepress = realtimepress * 101.325;
-                                    break;
+                        //            //    case 6:
+                        //            //        PressureUnit.Text = "atm";
+                        //            //        //realtimepress = realtimepress * 101.325;
+                        //            //        break;
 
-                                case 7:
-                                    PressureUnit.Text = "mmHg";
-                                    //realtimepress = realtimepress * 0.13332;
-                                    break;
-                            }
-                            string rtpress1 = str7.Substring(90, 4);
-                            string rtpress2 = str7.Substring(94, 4);
-                            string hex_rtpress = rtpress2 + rtpress1;
-                            string rtpress = BitConverter.ToSingle(BitConverter.GetBytes(Convert.ToUInt32(hex_rtpress, 16)), 0).ToString("F2");
-                            double realtimepress = Convert.ToDouble(rtpress);
-                            CH1_1FullPress.Text = realtimepress.ToString();
-                            if (CH1RTStep == "RWD")
-                            {
-                                //textBox1.Text += realtimepress.ToString();
-                                CH1PressMax = realtimepress;
-                            }
-                            else
-                            {
-                                if (realtimepress > CH1PressMax)
-                                {
-                                    CH1PressMax = realtimepress;
-                                }
-                                if (CH1RTStep == "DOWN")
-                                {
-                                    if (CH1PressMax > Flow.CH1_1PreMax || CH1PressMax < Flow.CH1_1PreMin)
-                                    {
-                                        plc.CH1DOWNPreNG();
-                                        FlowNG(1);
-                                        CH1Display($"{CH1RunName}" + I18N.GetLangText(dicLang, "输出压力(DOWN-UP)"), CH1PressMax.ToString(), PressureUnit.Text, Flow.CH1_1PreMax.ToString(), Flow.CH1_1PreMin.ToString(), "NG");
-                                    }
-                                }
-                            }
+                        //            //    case 7:
+                        //            //        PressureUnit.Text = "mmHg";
+                        //            //        //realtimepress = realtimepress * 0.13332;
+                        //            //        break;
+                        //            //}
+                        //            string rtpress1 = str7.Substring(90, 4);
+                        //            string rtpress2 = str7.Substring(94, 4);
+                        //            string hex_rtpress = rtpress2 + rtpress1;
+                        //            string rtpress = BitConverter.ToSingle(BitConverter.GetBytes(Convert.ToUInt32(hex_rtpress, 16)), 0).ToString("F2");
+                        //            double realtimepress = Convert.ToDouble(rtpress);
+                        //            CH1_1FullPress.Text = realtimepress.ToString();
+                        //            if (CH1RTStep == "RWD")
+                        //            {
+                        //                //textBox1.Text += realtimepress.ToString();
+                        //                CH1PressMax = realtimepress;
+                        //            }
+                        //            else
+                        //            {
+                        //                if (realtimepress > CH1PressMax)
+                        //                {
+                        //                    CH1PressMax = realtimepress;
+                        //                }
+                        //                if (CH1RTStep == "DOWN")
+                        //                {
+                        //                    if (CH1PressMax > Flow.CH1_1PreMax || CH1PressMax < Flow.CH1_1PreMin)
+                        //                    {
+                        //                        plc.CH1DOWNPreNG();
+                        //                        FlowNG(1);
+                        //                        CH1Display($"{CH1RunName}" + I18N.GetLangText(dicLang, "输出压力(DOWN-UP)"), CH1PressMax.ToString(), PressureUnit.Text, Flow.CH1_1PreMax.ToString(), Flow.CH1_1PreMin.ToString(), "NG");
+                        //                    }
+                        //                }
+                        //            }
+                        //        }
+
+                        //        break;
                         }
-
-                        break;
                 }
-            }
             catch (Exception ex)
             {
                 wa.InsertWarningData(DateTime.Now.ToString("yyyy-MM-dd HH:mm:ss"), "-", I18N.GetLangText(dicLang, "CH1-1收发") + ":" + ex.Message);
@@ -2862,40 +2934,55 @@ namespace SLC1_N
         {
             try
             {
-                switch (ch2stage)
+                switch (workstation2)
                 {
-                    case 0://利用定时器进入状态位读取
-                        CH2IsRun.Interval = 200;
-                        CH2IsRun.Start();
-                        ch2stage = 1;
+                    case (int)yiqi.start:
+                        ch2client.btnSendData("02 05 00 00 FF 00");
+                        LeftCH2Status.ForeColor = Color.Green;
+                        LeftCH2Status.Text = I18N.GetLangText(dicLang, "启动");
+                        ch2client.btnSendData("02 03 03 E8 00 1D");
+                        workstation2 = (int)yiqi.prepare;
+                        ch2write = 0;
+                        ch1_2step = 2;
+                        CHXProBarFlag[2] = 0;
+                        LeftCH2Status.ForeColor = Color.Green;
+                        LeftCH2Status.Text = I18N.GetLangText(dicLang, "启动");
+                        left_CH2Tlight.Text = "";
+                        LeftCH2BigLeak.Text = "";
+                        LeftCH2SmallLeak.Text = "";
+                        LeftCH2LeakPress.Text = "";
+                        ch2readpara = false;
+                        CH2progressBar.Value = 0;
+                        break;
+                    case (int)yiqi.rst:
+                        ch2client.btnSendData("02 05 00 01 FF 00");
                         break;
 
-                    case 1://此时为状态位读取
-                        string str1;
-                        str1 = CH2ReceiveText.Text;
-                        //if (str1.Length > 8 && str1.Substring(2, 6) == "010101")
-                        if (str1.Substring(6, 2) == "01")
-                        {
-                            ch2write = 0;
-                            CHXProBarFlag[2] = 0;
-                            LeftCH2Status.ForeColor = Color.Green;
-                            LeftCH2Status.Text = I18N.GetLangText(dicLang, "启动");
-                            left_CH2Tlight.Text = "";
-                            LeftCH2BigLeak.Text = "";
-                            LeftCH2SmallLeak.Text = "";
-                            LeftCH2LeakPress.Text = "";
-                            ch2readpara = false;
-                            CH2progressBar.Value = 0;
-                            //测试参数ToolStripMenuItem.Enabled = false;
-                            ch1_2step = 2;
-                        }
-                        break;
+                    //case 1://此时为状态位读取
+                    //    string str1;
+                    //    str1 = CH2ReceiveText.Text;
+                    //    //if (str1.Length > 8 && str1.Substring(2, 6) == "010101")
+                    //    if (str1.Substring(6, 2) == "01")
+                    //    {
+                    //        ch2write = 0;
+                    //        CHXProBarFlag[2] = 0;
+                    //        LeftCH2Status.ForeColor = Color.Green;
+                    //        LeftCH2Status.Text = I18N.GetLangText(dicLang, "启动");
+                    //        left_CH2Tlight.Text = "";
+                    //        LeftCH2BigLeak.Text = "";
+                    //        LeftCH2SmallLeak.Text = "";
+                    //        LeftCH2LeakPress.Text = "";
+                    //        ch2readpara = false;
+                    //        CH2progressBar.Value = 0;
+                    //        //测试参数ToolStripMenuItem.Enabled = false;
+                    //        ch1_2step = 2;
+                    //    }
+                    //    break;
 
-                    case 2://此时为读取参数并数据转换
+                    case (int)yiqi.prepare://此时为读取参数并数据转换
                         string str2;
                         if (CH1POWER._serialPort.IsOpen)
                             WritetoRTADC("OUTP 1");
-                        //Form1.CH1POWER._serialPort.WriteLine("OUTP 1");
                         str2 = CH2ReceiveText.Text;
                         //CH2ReadParams.Stop();
                         if (str2.Length == 126 && str2.Substring(2, 2) == "03")
@@ -2938,13 +3025,39 @@ namespace SLC1_N
                         }
                         break;
 
-                    case 3://循环读取测试结果
+                    case (int)yiqi.test:
                         string str4;
                         str4 = CH2ReceiveText.Text;
                         //LeakResult.Stop();
                         if (str4.Length == 110 && str4.Substring(2, 2) == "03")
                         {
                             left_ch2result = comm.ReadLeak(str4);
+                            if (ch2stage == 7)
+                            {
+                                if (Convert.ToDouble(left_ch2result.LeakPressure) > Convert.ToDouble(CH1_2FullPress.Text))
+                                    CH1_2FullPress.Text = left_ch2result.LeakPressure.ToString();
+                                if (CH1RTStep == "RWD")
+                                {
+                                    CH2PressMax = Convert.ToDouble(CH1_2FullPress.Text);
+                                }
+                                else
+                                {
+                                    if (Convert.ToDouble(CH1_2FullPress.Text) > CH2PressMax)
+                                    {
+                                        CH2PressMax = Convert.ToDouble(CH1_2FullPress.Text); 
+                                    }
+                                    if (CH1RTStep == "UP")
+                                    {
+                                        if (CH2PressMax > Flow.CH1_2PreMax || CH2PressMax < Flow.CH1_2PreMin)
+                                        {
+                                            plc.CH1UPPreNG();
+                                            FlowNG(1);
+                                            CH1Display($"{CH1RunName}" + I18N.GetLangText(dicLang, "输出压力(UP-DOWN)"), CH2PressMax.ToString(), CH2PressureUnit.Text, Flow.CH1_2PreMax.ToString(), Flow.CH1_2PreMin.ToString(), "NG");
+                                        }
+                                    }
+                                }
+                            }
+
                             //测流量时，输出压力归0，不显示
                             if (CH1RTStep == "UP" || CH1RTStep == "DOWN" || CH1RTStep == "FWD")
                             {
@@ -2965,10 +3078,12 @@ namespace SLC1_N
 
                             if (left_CH2Tlight.Text.Contains("NG") is true)
                             {
+                                workstation2 = (int)yiqi.finish;
                                 left_CH2Tlight.ForeColor = Color.Red;
                             }
                             else if (left_CH2Tlight.Text.Contains("OK") is true)
                             {
+                                workstation2 = (int)yiqi.finish;
                                 left_CH2Tlight.ForeColor = Color.Green;
                             }
 
@@ -3064,20 +3179,21 @@ namespace SLC1_N
 
                         break;
 
-                    case 4:
-                        //按下复位以后收到返回信息则判断状态位
-                        CH2IsRun.Interval = 300;
-                        CH2IsRun.Start();
-                        ch2stage = 5;
+                    //case 4:
+                    //    //按下复位以后收到返回信息则判断状态位
+                    //    CH2IsRun.Interval = 300;
+                    //    CH2IsRun.Start();
+                    //    ch2stage = 5;
 
-                        break;
+                    //    break;
 
-                    case 5://对仪器是否结束的判断
+                    case (int)yiqi.finish://对仪器是否结束的判断
                         string str5;
                         str5 = CH2ReceiveText.Text;
 
                         if (str5.Length > 8 && str5.Substring(6, 2) == "00")
                         {
+                            workstation2 = (int)yiqi.standby;
                             CH2IsRun.Stop();
                             ch1_2step = 5;
                             ch2stage = 10;
@@ -3155,96 +3271,79 @@ namespace SLC1_N
                         }
                         break;
 
-                    case 6://对蜂鸣器的读取
-                        string str6 = CH2ReceiveText.Text;
-                        if (str6.Length > 8 && str6.Substring(6, 2) == "01")
+                    case (int)yiqi.standby:
+                        LeftCH2Status.ForeColor = Color.Black;
+                        LeftCH2Status.Text = I18N.GetLangText(dicLang, "待机");
+                        string text = "02 01 00 02 00 01";
+                        ch2readpara = false;
+                        ch2client.btnSendData(text);
+                        string str1;
+                        str1 = CH2ReceiveText.Text;
+                        if (str1.Length > 8 && str1.Substring(2, 6) == "010101")
                         {
-                            ch1_2params.ChkBee = true;
+                            workstation2 = (int)yiqi.prepare;
                         }
+                        break;
+                    case (int)yiqi.writedata:
+                        str1 = CH2ReceiveText.Text;
+                        if (str1.Length > 8 && str1.Substring(2, 6) == "010101")
+                            workstation2 = (int)yiqi.start;
                         else
-                        {
-                            ch1_2params.ChkBee = false;
-                        }
+                            workstation2 = (int)yiqi.start;
                         break;
 
-                    case 7:
-                        string str7 = CH2ReceiveText.Text;
-                        if (str7.Length == 102 && str7.Substring(2, 2) == "03")
-                        //if ( str7.Substring(2, 2) == "03")
-                        {
-                            string press_unit = str7.Substring(6, 4);
-                            int unit_index = Convert.ToInt32(press_unit, 16);
-                            switch (unit_index)
-                            {
-                                case 0:
-                                    CH2PressureUnit.Text = "Pa";
-                                    //realtimepress = realtimepress * 0.001;
-                                    break;
 
-                                case 1:
-                                    CH2PressureUnit.Text = "KPa";
-                                    break;
+                    //case 6://对蜂鸣器的读取
+                    //    string str6 = CH2ReceiveText.Text;
+                    //    if (str6.Length > 8 && str6.Substring(6, 2) == "01")
+                    //    {
+                    //        ch1_2params.ChkBee = true;
+                    //    }
+                    //    else
+                    //    {
+                    //        ch1_2params.ChkBee = false;
+                    //    }
+                    //    break;
 
-                                case 2:
-                                    CH2PressureUnit.Text = "MPa";
-                                    //realtimepress = realtimepress * 1000;
-                                    break;
+                        //case 7:
+                        //    string str7 = CH2ReceiveText.Text;
+                        //    if (str7.Length == 102 && str7.Substring(2, 2) == "03")
+                        //    //if ( str7.Substring(2, 2) == "03")
+                        //    {
+                        //        CH2PressureUnit.Text = "KPa";
+                        //        string press_unit = str7.Substring(6, 4);
+                        //        int unit_index = Convert.ToInt32(press_unit, 16);
 
-                                case 3:
-                                    CH2PressureUnit.Text = "bar";
-                                    //realtimepress = realtimepress * 100;
-                                    break;
-
-                                case 4:
-                                    CH2PressureUnit.Text = "Psi";
-                                    //realtimepress = realtimepress * 6.89476;
-                                    break;
-
-                                case 5:
-                                    CH2PressureUnit.Text = "kg/cm^2";
-                                    //realtimepress = realtimepress * 98.0665;
-                                    break;
-
-                                case 6:
-                                    CH2PressureUnit.Text = "atm";
-                                    //realtimepress = realtimepress * 101.325;
-                                    break;
-
-                                case 7:
-                                    CH2PressureUnit.Text = "mmHg";
-                                    //realtimepress = realtimepress * 0.13332;
-                                    break;
-                            }
-                            string rtpress1 = str7.Substring(90, 4);
-                            string rtpress2 = str7.Substring(94, 4);
-                            //string rtpress1 = str7.Substring(6, 4);
-                            //string rtpress2 = str7.Substring(10, 4);
-                            string hex_rtpress = rtpress2 + rtpress1;
-                            string rtpress = BitConverter.ToSingle(BitConverter.GetBytes(Convert.ToUInt32(hex_rtpress, 16)), 0).ToString("F2");
-                            double realtimepress = Convert.ToDouble(rtpress);
-                            CH1_2FullPress.Text = realtimepress.ToString();
-                            if (CH1RTStep == "RWD")
-                            {
-                                CH2PressMax = realtimepress;
-                            }
-                            else
-                            {
-                                if (realtimepress > CH2PressMax)
-                                {
-                                    CH2PressMax = realtimepress;
-                                }
-                                if (CH1RTStep == "UP")
-                                {
-                                    if (CH2PressMax > Flow.CH1_2PreMax || CH2PressMax < Flow.CH1_2PreMin)
-                                    {
-                                        plc.CH1UPPreNG();
-                                        FlowNG(1);
-                                        CH1Display($"{CH1RunName}" + I18N.GetLangText(dicLang, "输出压力(UP-DOWN)"), CH2PressMax.ToString(), CH2PressureUnit.Text, Flow.CH1_2PreMax.ToString(), Flow.CH1_2PreMin.ToString(), "NG");
-                                    }
-                                }
-                            }
-                        }
-                        break;
+                        //        string rtpress1 = str7.Substring(90, 4);
+                        //        string rtpress2 = str7.Substring(94, 4);
+                        //        //string rtpress1 = str7.Substring(6, 4);
+                        //        //string rtpress2 = str7.Substring(10, 4);
+                        //        string hex_rtpress = rtpress2 + rtpress1;
+                        //        string rtpress = BitConverter.ToSingle(BitConverter.GetBytes(Convert.ToUInt32(hex_rtpress, 16)), 0).ToString("F2");
+                        //        double realtimepress = Convert.ToDouble(rtpress);
+                        //        CH1_2FullPress.Text = realtimepress.ToString();
+                        //        if (CH1RTStep == "RWD")
+                        //        {
+                        //            CH2PressMax = realtimepress;
+                        //        }
+                        //        else
+                        //        {
+                        //            if (realtimepress > CH2PressMax)
+                        //            {
+                        //                CH2PressMax = realtimepress;
+                        //            }
+                        //            if (CH1RTStep == "UP")
+                        //            {
+                        //                if (CH2PressMax > Flow.CH1_2PreMax || CH2PressMax < Flow.CH1_2PreMin)
+                        //                {
+                        //                    plc.CH1UPPreNG();
+                        //                    FlowNG(1);
+                        //                    CH1Display($"{CH1RunName}" + I18N.GetLangText(dicLang, "输出压力(UP-DOWN)"), CH2PressMax.ToString(), CH2PressureUnit.Text, Flow.CH1_2PreMax.ToString(), Flow.CH1_2PreMin.ToString(), "NG");
+                        //                }
+                        //            }
+                        //        }
+                        //    }
+                        //    break;
                 }
             }
             catch (Exception ex)
@@ -4050,47 +4149,47 @@ namespace SLC1_N
         {
             try
             {
-                string text;
-                switch (ch1_1step)
-                {
-                    case 1:
-                        text = "01 01 00 02 00 01";
+                //string text;
+                //switch (ch1_1step)
+                //{
+                //    case 1:
+                //        text = "01 01 00 02 00 01";
                     
-                        ch1client.btnSendData(text);
-                        ch1stage = 1;
-                        break;
+                //        ch1client.btnSendData(text);
+                //        ch1stage = 1;
+                //        break;
 
-                    case 2:
-                        if (CH1POWER._serialPort.IsOpen)
-                            WritetoRTADC("OUTP 1");
-                        //Form1.CH1POWER._serialPort.WriteLine("OUTP 1");
-                        text = "01 03 03 E8 00 1D";
-                        ch1client.btnSendData(text);
-                        ch1stage = 2;
-                        break;
+                //    case 2:
+                //        if (CH1POWER._serialPort.IsOpen)
+                //            WritetoRTADC("OUTP 1");
+                //        //Form1.CH1POWER._serialPort.WriteLine("OUTP 1");
+                //        text = "01 03 03 E8 00 1D";
+                //        ch1client.btnSendData(text);
+                //        ch1stage = 2;
+                //        break;
 
-                    case 3:
-                        text = "01 03 04 0A 00 19";
-                        ch1client.btnSendData(text);
-                        ch1stage = 3;
-                        break;
+                //    case 3:
+                //        text = "01 03 04 0A 00 19";
+                //        ch1client.btnSendData(text);
+                //        ch1stage = 3;
+                //        break;
 
-                    case 4:
-                        text = "01 01 00 02 00 01";
-                        if (CH1POWER._serialPort.IsOpen)
-                            WritetoRTADC("OUTP 0");
-                        //Form1.CH1POWER._serialPort.WriteLine("OUTP 0");
-                        ch1client.btnSendData(text);
-                        ch1stage = 5;
-                        break;
+                //    case 4:
+                //        text = "01 01 00 02 00 01";
+                //        if (CH1POWER._serialPort.IsOpen)
+                //            WritetoRTADC("OUTP 0");
+                //        //Form1.CH1POWER._serialPort.WriteLine("OUTP 0");
+                //        ch1client.btnSendData(text);
+                //        ch1stage = 5;
+                //        break;
 
-                    case 5:
-                        text = "01 01 00 02 00 01";
+                //    case 5:
+                //        text = "01 01 00 02 00 01";
 
-                        ch1client.btnSendData(text);
-                        ch1stage = 10;
-                        break;
-                }
+                //        ch1client.btnSendData(text);
+                //        ch1stage = 10;
+                //        break;
+                //}
             }
             catch (Exception ex)
             {
@@ -4146,45 +4245,45 @@ namespace SLC1_N
         {
             try
             {
-                string text;
-                switch (ch1_2step)
-                {
-                    case 1:
-                     
-                        text = "02 01 00 02 00 01";
-                        ch2client.btnSendData(text);
-                        ch2stage = 1;
-                        break;
+                //    string text;
+                //    switch (ch1_2step)
+                //    {
+                //        case 1:
 
-                    case 2:
-                        if (CH1POWER._serialPort.IsOpen)
-                            WritetoRTADC("OUTP 1");
-                        //Form1.CH1POWER._serialPort.WriteLine("OUTP 1");
-                        text = "02 03 03 E8 00 1D";
-                        ch2client.btnSendData(text);
-                        ch2stage = 2;
-                        break;
+                //            text = "02 01 00 02 00 01";
+                //            ch2client.btnSendData(text);
+                //            ch2stage = 1;
+                //            break;
 
-                    case 3:
-                        text = "02 03 04 0A 00 19";
-                        ch2client.btnSendData(text);
-                        ch2stage = 3;
-                        break;
+                //        case 2:
+                //            if (CH1POWER._serialPort.IsOpen)
+                //                WritetoRTADC("OUTP 1");
+                //            //Form1.CH1POWER._serialPort.WriteLine("OUTP 1");
+                //            text = "02 03 03 E8 00 1D";
+                //            ch2client.btnSendData(text);
+                //            ch2stage = 2;
+                //            break;
 
-                    case 4:
-                  
-                        text = "02 01 00 02 00 01";
-                        ch2client.btnSendData(text);
-                        ch2stage = 5;
-                        break;
+                //        case 3:
+                //            text = "02 03 04 0A 00 19";
+                //            ch2client.btnSendData(text);
+                //            ch2stage = 3;
+                //            break;
 
-                    case 5:
+                //        case 4:
 
-                        text = "02 01 00 02 00 01";
-                        ch2client.btnSendData(text);
-                        ch2stage = 10;
-                        break;
-                }
+                //            text = "02 01 00 02 00 01";
+                //            ch2client.btnSendData(text);
+                //            ch2stage = 5;
+                //            break;
+
+                //        case 5:
+
+                //            text = "02 01 00 02 00 01";
+                //            ch2client.btnSendData(text);
+                //            ch2stage = 10;
+                //            break;
+                //    }
             }
             catch (Exception ex)
             {
@@ -9582,6 +9681,8 @@ namespace SLC1_N
             try
             {
                 System.Threading.Thread.Sleep(50);
+                
+                
                 int step = i;
                 //if (i == 4)
                 if (i == 14)
@@ -9591,7 +9692,6 @@ namespace SLC1_N
                 Model.CH_PARAMS ch_params = new Model.CH_PARAMS();
                 ReadConfig con = new ReadConfig();
                 ch_params = con.ReadParameters(CH, step);
-
 
                 double full = Convert.ToDouble(ch_params.FullTime) * 10;
                 double balan = Convert.ToDouble(ch_params.BalanTime) * 10;
@@ -9669,61 +9769,20 @@ namespace SLC1_N
                 switch (CH)
                 {
                     case 1:
-                        //string seed1 = "01 05 0002 ff00";
-                        //ch1client.btnSendData(seed1);
-                        //Thread.Sleep(200);
+                        workstation = (int)yiqi.writedata;
                         string ch1sendstr = "01 " + sendtext;
                         ch1client.btnSendData(ch1sendstr);
                         Thread.Sleep(100);
-
-                        ch1client.btnSendData(ch1sendstr);
-                        
-
-                        ch1stage = 10;
-                        chXstartflag[1] = 1;
-                        CH1IsRun.Stop();
-                        MachineStart.Interval = 200;
-                        MachineStart.Start();
-                        CH1ParamIndex.Text = i.ToString();
-                        ch1_1params.CHKUnit = ch_params.CHKUnit;
-                        if (step == 1)
-                        {
-                            CH1_1presstext.Text = I18N.GetLangText(dicLang, "输出压力");
-                        }
-                        //if (i == 4)
-                        if (i == 14)
-                        {
-                            CH1RTStep = "";
-                            ch1write = 1;
-                        }
+                         ch1client.btnSendData(ch1sendstr);
                         break;
 
                     case 2:
-                        //string seed2 = "02 05 0002 ff00";
-                        //ch2client.btnSendData(seed2);
-                        //Thread.Sleep(200);
+                        workstation2= (int)yiqi.writedata;
                         string ch2sendstr = "02 " + sendtext;
-                        //Form1.f1.left_ch2tcp.ClientSendMsgAsync(ch2sendstr);
                         ch2client.btnSendData(ch2sendstr);
                         Thread.Sleep(100);
                         ch2client.btnSendData(ch2sendstr);
-                        ch2stage = 10;
-                        chXstartflag[2] = 1;
-                        CH2IsRun.Stop();
-                        MachineStart.Interval = 200;
-                        MachineStart.Start();
-                        CH2ParamIndex.Text = i.ToString();
-                        ch1_2params.CHKUnit = ch_params.CHKUnit;
-                        if (step == 1)
-                        {
-                            CH1_2presstext.Text = I18N.GetLangText(dicLang, "输出压力");
-                        }
-                        //if (i == 4)
-                        if (i == 14)
-                        {
-                            CH1RTStep = "";
-                            ch2write = 1;
-                        }
+                       
                         break;
 
                     case 3:
@@ -10288,8 +10347,6 @@ namespace SLC1_N
                     JudgeCH1ADC = true;
                     CH1IsRun.Stop();
                     CH1ReadPress.Interval = 200;
-                    ch1client.btnSendData("01 03 04 03 00 17 ");
-                    //leftclient.btnSendData("01 03 04 18 00 02 ");
                     ch1stage = 7;
                     //计算时间
                     ch1pressend = System.DateTime.Now.Ticks;
