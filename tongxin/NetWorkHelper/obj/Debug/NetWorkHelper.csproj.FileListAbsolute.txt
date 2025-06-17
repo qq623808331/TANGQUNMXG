@@ -709,13 +709,3 @@ C:\Users\Administrator\Desktop\linglong\25040101\TANGQUNMXG\tongxin\NetWorkHelpe
 C:\Users\Administrator\Desktop\linglong\25040101\TANGQUNMXG\tongxin\NetWorkHelper\obj\Debug\NetWorkHelper.csproj.CoreCompileInputs.cache
 C:\Users\Administrator\Desktop\linglong\25040101\TANGQUNMXG\tongxin\NetWorkHelper\obj\Debug\NetWorkHelper.dll
 C:\Users\Administrator\Desktop\linglong\25040101\TANGQUNMXG\tongxin\NetWorkHelper\obj\Debug\NetWorkHelper.pdb
-D:\zuomian\linglong\25040101\TANGQUNMXG\tongxin\NetWorkHelper\bin\Debug\TCP\ITcpClient.cs
-D:\zuomian\linglong\25040101\TANGQUNMXG\tongxin\NetWorkHelper\bin\Debug\TCP\ITcpClient.Designer.cs
-D:\zuomian\linglong\25040101\TANGQUNMXG\tongxin\NetWorkHelper\bin\Debug\NetWorkHelper.dll
-D:\zuomian\linglong\25040101\TANGQUNMXG\tongxin\NetWorkHelper\bin\Debug\NetWorkHelper.pdb
-D:\zuomian\linglong\25040101\TANGQUNMXG\tongxin\NetWorkHelper\obj\Debug\NetWorkHelper.csproj.AssemblyReference.cache
-D:\zuomian\linglong\25040101\TANGQUNMXG\tongxin\NetWorkHelper\obj\Debug\NetWorkHelper.AxUdpClient.resources
-D:\zuomian\linglong\25040101\TANGQUNMXG\tongxin\NetWorkHelper\obj\Debug\NetWorkHelper.csproj.GenerateResource.cache
-D:\zuomian\linglong\25040101\TANGQUNMXG\tongxin\NetWorkHelper\obj\Debug\NetWorkHelper.csproj.CoreCompileInputs.cache
-D:\zuomian\linglong\25040101\TANGQUNMXG\tongxin\NetWorkHelper\obj\Debug\NetWorkHelper.dll
-D:\zuomian\linglong\25040101\TANGQUNMXG\tongxin\NetWorkHelper\obj\Debug\NetWorkHelper.pdb

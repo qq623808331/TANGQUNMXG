@@ -104,9 +104,10 @@ namespace SLC1_N
                             _timer.Change(_timeoutMilliseconds, Timeout.Infinite); // Reset the timer
                         }
                     }
-                    catch (Exception )
+                    catch (TimeoutException)
                     {
-                    
+                    // Handle the timeout exception if needed
+                    throw;
                     }
 
                

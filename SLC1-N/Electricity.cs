@@ -1279,7 +1279,7 @@ namespace SLC1_N
                     //Form1.f1.left_ch1tcp.ClientSendMsgAsync(ch1sendstr);
                     Form1.f1.ch1client.btnSendData(ch1sendstr);
                     Form1.f1.ch1stage = 10;
-                    Form1.f1.CH1IsRun.Interval = 300;
+                    Form1.f1.CH1IsRun.Interval = 1000;
                     Form1.f1.CH1IsRun.Start();
                     Form1.f1.ch1stage = 1;
                     break;
@@ -1289,7 +1289,7 @@ namespace SLC1_N
                     //Form1.f1.left_ch2tcp.ClientSendMsgAsync(ch2sendstr);
                     Form1.f1.ch1client.btnSendData(ch2sendstr);
                     Form1.f1.ch2stage = 10;
-                    Form1.f1.CH2IsRun.Interval = 300;
+                    Form1.f1.CH2IsRun.Interval = 1000;
                     Form1.f1.CH2IsRun.Start();
                     Form1.f1.ch2stage = 1;
                     break;
@@ -1299,7 +1299,7 @@ namespace SLC1_N
                     //Form1.f1.right_ch1tcp.ClientSendMsgAsync(ch3sendstr);
                     Form1.f1.ch3client.btnSendData(ch3sendstr);
                     Form1.f1.ch3stage = 10;
-                    Form1.f1.CH3IsRun.Interval = 300;
+                    Form1.f1.CH3IsRun.Interval = 1000;
                     Form1.f1.CH3IsRun.Start();
                     Form1.f1.ch3stage = 1;
                     break;
@@ -1309,7 +1309,7 @@ namespace SLC1_N
                     //Form1.f1.right_ch2tcp.ClientSendMsgAsync(ch4sendstr);
                     Form1.f1.ch3client.btnSendData(ch4sendstr);
                     Form1.f1.ch4stage = 10;
-                    Form1.f1.CH4IsRun.Interval = 300;
+                    Form1.f1.CH4IsRun.Interval = 1000;
                     Form1.f1.CH4IsRun.Start();
                     Form1.f1.ch4stage = 1;
                     break;
@@ -1719,7 +1719,7 @@ namespace SLC1_N
                     //Form1.f1.left_ch1tcp.ClientSendMsgAsync(ch1sendstr);
                     Form1.f1.ch1client.btnSendData(ch1sendstr);
                     Form1.f1.ch1stage = 10;
-                    Form1.f1.CH1IsRun.Interval = 300;
+                    Form1.f1.CH1IsRun.Interval = 1000;
                     Form1.f1.CH1IsRun.Start();
                     Form1.f1.ch1stage = 1;
                     Form1.f1.ch1readpara = true;
@@ -1730,7 +1730,7 @@ namespace SLC1_N
                     //Form1.f1.left_ch2tcp.ClientSendMsgAsync(ch2sendstr);
                     Form1.f1.ch1client.btnSendData(ch2sendstr);
                     Form1.f1.ch2stage = 10;
-                    Form1.f1.CH2IsRun.Interval = 300;
+                    Form1.f1.CH2IsRun.Interval = 1000;
                     Form1.f1.CH2IsRun.Start();
                     Form1.f1.ch2stage = 1;
                     Form1.f1.ch2readpara = true;
@@ -1741,7 +1741,7 @@ namespace SLC1_N
                     //Form1.f1.right_ch1tcp.ClientSendMsgAsync(ch3sendstr);
                     Form1.f1.ch3client.btnSendData(ch3sendstr);
                     Form1.f1.ch3stage = 10;
-                    Form1.f1.CH3IsRun.Interval = 300;
+                    Form1.f1.CH3IsRun.Interval = 1000;
                     Form1.f1.CH3IsRun.Start();
                     Form1.f1.ch3stage = 1;
                     Form1.f1.ch3readpara = true;
@@ -1752,7 +1752,7 @@ namespace SLC1_N
                     //Form1.f1.right_ch2tcp.ClientSendMsgAsync(ch4sendstr);
                     Form1.f1.ch3client.btnSendData(ch4sendstr);
                     Form1.f1.ch4stage = 10;
-                    Form1.f1.CH4IsRun.Interval = 300;
+                    Form1.f1.CH4IsRun.Interval = 1000;
                     Form1.f1.CH4IsRun.Start();
                     Form1.f1.ch4stage = 1;
                     Form1.f1.ch4readpara = true;
@@ -1771,7 +1771,7 @@ namespace SLC1_N
                     //Form1.f1.left_ch1tcp.ClientSendMsgAsync(ch1sendstr);
                     Form1.f1.ch1client.btnSendData(ch1sendstr);
                     Form1.f1.ch1stage = 10;
-                    Form1.f1.CH1IsRun.Interval = 300;
+                    Form1.f1.CH1IsRun.Interval = 1000;
                     Form1.f1.CH1IsRun.Start();
                     Form1.f1.ch1stage = 1;
                     Form1.f1.ch1readpara = true;
@@ -1782,7 +1782,7 @@ namespace SLC1_N
                     //Form1.f1.left_ch2tcp.ClientSendMsgAsync(ch2sendstr);
                     Form1.f1.ch1client.btnSendData(ch2sendstr);
                     Form1.f1.ch2stage = 10;
-                    Form1.f1.CH2IsRun.Interval = 300;
+                    Form1.f1.CH2IsRun.Interval = 1000;
                     Form1.f1.CH2IsRun.Start();
                     Form1.f1.ch2stage = 1;
                     Form1.f1.ch2readpara = true;
@@ -1793,7 +1793,7 @@ namespace SLC1_N
                     //Form1.f1.right_ch1tcp.ClientSendMsgAsync(ch3sendstr);
                     Form1.f1.ch3client.btnSendData(ch3sendstr);
                     Form1.f1.ch3stage = 10;
-                    Form1.f1.CH3IsRun.Interval = 300;
+                    Form1.f1.CH3IsRun.Interval = 1000;
                     Form1.f1.CH3IsRun.Start();
                     Form1.f1.ch3stage = 1;
                     Form1.f1.ch3readpara = true;
@@ -1804,7 +1804,7 @@ namespace SLC1_N
                     //Form1.f1.right_ch2tcp.ClientSendMsgAsync(ch4sendstr);
                     Form1.f1.ch3client.btnSendData(ch4sendstr);
                     Form1.f1.ch4stage = 10;
-                    Form1.f1.CH4IsRun.Interval = 300;
+                    Form1.f1.CH4IsRun.Interval = 1000;
                     Form1.f1.CH4IsRun.Start();
                     Form1.f1.ch4stage = 1;
                     Form1.f1.ch4readpara = true;
