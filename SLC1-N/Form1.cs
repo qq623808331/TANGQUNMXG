@@ -848,6 +848,36 @@ namespace SLC1_N
             //统计CT
             InitTimer();
             CH1IsRun.Interval = 500;
+
+            Task.Run(() =>
+            {
+                workstation = (int)yiqi.standby;
+                while(true)
+                {
+
+                    Thread.Sleep(500);
+                    Invoke((new System.Action(() =>
+                    {
+
+                        CH1Stagenum();
+                    })));
+                }
+            });
+
+            Task.Run(() =>
+            {
+                workstation2 = (int)yiqi.standby;
+                while (true)
+                {
+                    Thread.Sleep(500);
+                    Invoke((new System.Action(() =>
+                    {
+
+                        CH2Stagenum();
+                    })));
+                }
+            });
+
         }
 
 
@@ -2393,7 +2423,7 @@ namespace SLC1_N
                     {
                         CH1ReceiveText.Clear();
                         CH1ReceiveText.Text = text;
-                        CH1Stagenum();
+                         
                         //CH1lock();
 
 
@@ -2404,7 +2434,7 @@ namespace SLC1_N
                         CH2ReceiveText.Clear();
                         CH2ReceiveText.Text = text;
 
-                        CH2Stagenum();
+                        
 
                     }
                     if (CH == 3)
@@ -2441,6 +2471,7 @@ namespace SLC1_N
         {
             try
             {
+                string text;
                 switch (workstation)
                 {
                     case (int)yiqi.start:
@@ -2463,6 +2494,7 @@ namespace SLC1_N
                         break;
                     case (int)yiqi.rst:
                         ch1client.btnSendData("01 05 00 01 FF 00");
+                        workstation = (int)yiqi.standby;
                         break;
 
                     //case 1://此时为状态位读取
@@ -2483,9 +2515,12 @@ namespace SLC1_N
 
                     case (int)yiqi.prepare:
                         string str2;
+
                         if (CH1POWER._serialPort.IsOpen)
                             WritetoRTADC("OUTP 1");
                         //Form1.CH1POWER._serialPort.WriteLine("OUTP 1");
+                                text = "01 03 03 E8 00 1D";
+                                ch1client.btnSendData(text);
                         str2 = CH1ReceiveText.Text;
                         //ReadParams.Stop();
                         if (str2.Length == 126 && str2.Substring(2, 2) == "03")
@@ -2517,6 +2552,7 @@ namespace SLC1_N
                                 LeakUnit.Text = ch1_1params.LUnit;
                             }
                             CH1progressBar.Maximum = ch1_1params.progressBar_value;
+                            workstation = (int)yiqi.test;
                             if (!ch1readpara)
                             {
                                 CHXProBarFlag[1] = 1;
@@ -2539,6 +2575,8 @@ namespace SLC1_N
                         string str4;
                         str4 = CH1ReceiveText.Text;
                         //LeakResult.Stop();
+                                text = "01 03 04 0A 00 19";
+                               ch1client.btnSendData(text);
                         if (str4.Length == 110 && str4.Substring(2, 2) == "03")
                         {
                             left_ch1result = comm.ReadLeak(str4);
@@ -2793,7 +2831,7 @@ namespace SLC1_N
                     case (int)yiqi.standby:
                         LeftCH1Status.ForeColor = Color.Black;
                         LeftCH1Status.Text = I18N.GetLangText(dicLang, "待机");
-                        string text = "01 01 00 02 00 01";
+                         text= "01 01 00 02 00 01";
                         ch1readpara = false;
                         ch1client.btnSendData(text);
                         string str1;
@@ -2934,6 +2972,7 @@ namespace SLC1_N
         {
             try
             {
+                string text;
                 switch (workstation2)
                 {
                     case (int)yiqi.start:
@@ -2983,6 +3022,8 @@ namespace SLC1_N
                         string str2;
                         if (CH1POWER._serialPort.IsOpen)
                             WritetoRTADC("OUTP 1");
+                        text = "02 03 03 E8 00 1D";
+                        ch2client.btnSendData(text);
                         str2 = CH2ReceiveText.Text;
                         //CH2ReadParams.Stop();
                         if (str2.Length == 126 && str2.Substring(2, 2) == "03")
@@ -3022,11 +3063,14 @@ namespace SLC1_N
                                 CH2IsRun.Start();
                                 ch1_2step = 3;
                             }
+                            workstation2 = (int)yiqi.test;
                         }
                         break;
 
                     case (int)yiqi.test:
                         string str4;
+                        text = "02 03 04 0a 00 19";
+                        ch2client.btnSendData(text);
                         str4 = CH2ReceiveText.Text;
                         //LeakResult.Stop();
                         if (str4.Length == 110 && str4.Substring(2, 2) == "03")
@@ -3034,6 +3078,8 @@ namespace SLC1_N
                             left_ch2result = comm.ReadLeak(str4);
                             if (ch2stage == 7)
                             {
+                                if (CH1_2FullPress.Text == "")
+                                    CH1_2FullPress.Text = "0";
                                 if (Convert.ToDouble(left_ch2result.LeakPressure) > Convert.ToDouble(CH1_2FullPress.Text))
                                     CH1_2FullPress.Text = left_ch2result.LeakPressure.ToString();
                                 if (CH1RTStep == "RWD")
@@ -3274,7 +3320,7 @@ namespace SLC1_N
                     case (int)yiqi.standby:
                         LeftCH2Status.ForeColor = Color.Black;
                         LeftCH2Status.Text = I18N.GetLangText(dicLang, "待机");
-                        string text = "02 01 00 02 00 01";
+                         text = "02 01 00 02 00 01";
                         ch2readpara = false;
                         ch2client.btnSendData(text);
                         string str1;

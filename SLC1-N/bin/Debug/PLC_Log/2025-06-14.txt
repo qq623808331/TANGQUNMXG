@@ -1,0 +1,1217 @@
+2025/6/14 10:15:22#CH1ADC打开串口为COM20
+
+2025/6/14 10:15:23ADC2:COM229600
+
+2025/6/14 10:15:26ADC1SET
+
+2025/6/14 10:15:26ADC1SET
+
+2025/6/14 10:15:26ADC2SET
+
+2025/6/14 10:15:28Reset izquierdo presione, reset izquierdo
+
+2025/6/14 10:15:28Reset izquierdo presione, reset izquierdo
+
+2025/6/14 10:15:28Reset derecho presione, reset derecho
+
+2025/6/14 10:15:28Reset izquierdo presione, reset izquierdo
+
+2025/6/14 10:15:28Reset derecho presione, reset derecho
+
+2025/6/14 10:15:29Reset izquierdo presione, reset izquierdo
+
+2025/6/14 10:15:29Reset derecho presione, reset derecho
+
+2025/6/14 10:15:29Reset izquierdo presione, reset izquierdo
+
+2025/6/14 10:15:29Reset derecho presione, reset derecho
+
+2025/6/14 10:15:29Reset izquierdo presione, reset izquierdo
+
+2025/6/14 10:15:29Reset derecho presione, reset derecho
+
+2025/6/14 10:15:29Reset derecho presione, reset derecho
+
+2025/6/14 10:15:45CH1启动前清空测试数据
+
+2025/6/14 10:15:48CH2启动前清空测试数据
+
+2025/6/14 10:16:26La estación izquierda necesita iniciar el código de barrido, CH1 código de barras
+
+2025/6/14 10:16:35La estación derecha necesita el inicio del código de barrido, CH2 inicio del código de barras
+
+2025/6/14 10:46:54#CH1ADC打开串口为COM20
+
+2025/6/14 10:46:55ADC2:COM229600
+
+2025/6/14 10:46:59La estación derecha necesita el inicio del código de barrido, CH2 inicio del código de barras
+
+2025/6/14 10:46:59La estación derecha necesita el inicio del código de barrido, CH2 inicio del código de barras
+
+2025/6/14 10:47:00La estación derecha necesita el inicio del código de barrido, CH2 inicio del código de barras
+
+2025/6/14 10:47:00La estación derecha necesita el inicio del código de barrido, CH2 inicio del código de barras
+
+2025/6/14 10:47:03Reset derecho presione, reset derecho
+
+2025/6/14 10:47:03Reset derecho presione, reset derecho
+
+2025/6/14 10:47:03Reset derecho presione, reset derecho
+
+2025/6/14 10:47:04Reset izquierdo presione, reset izquierdo
+
+2025/6/14 10:47:04Reset derecho presione, reset derecho
+
+2025/6/14 10:47:04Reset izquierdo presione, reset izquierdo
+
+2025/6/14 10:47:04Reset derecho presione, reset derecho
+
+2025/6/14 10:47:04Reset izquierdo presione, reset izquierdo
+
+2025/6/14 10:47:04Reset derecho presione, reset derecho
+
+2025/6/14 10:47:05Reset izquierdo presione, reset izquierdo
+
+2025/6/14 10:47:05Reset izquierdo presione, reset izquierdo
+
+2025/6/14 10:47:12CH2启动前清空测试数据
+
+2025/6/14 10:47:16CH2启动前清空测试数据
+
+2025/6/14 10:47:19CH2启动前清空测试数据
+
+2025/6/14 10:47:21Reset izquierdo presione, reset izquierdo
+
+2025/6/14 10:47:21Reset izquierdo presione, reset izquierdo
+
+2025/6/14 10:47:30CH1启动前清空测试数据
+
+2025/6/14 10:47:34CH1启动前清空测试数据
+
+2025/6/14 10:47:52La estación derecha necesita el inicio del código de barrido, CH2 inicio del código de barras
+
+2025/6/14 10:48:06La estación izquierda necesita iniciar el código de barrido, CH1 código de barras
+
+2025/6/14 10:49:31CH2启动前清空测试数据
+
+2025/6/14 10:49:36CH1启动前清空测试数据
+
+2025/6/14 10:49:57La estación izquierda necesita iniciar el código de barrido, CH1 código de barras
+
+2025/6/14 10:50:14La estación derecha necesita el inicio del código de barrido, CH2 inicio del código de barras
+
+2025/6/14 10:50:25CH2启动前清空测试数据
+
+2025/6/14 10:50:28CH2启动前清空测试数据
+
+2025/6/14 10:50:30Reset izquierdo presione, reset izquierdo
+
+2025/6/14 10:50:31Reset izquierdo presione, reset izquierdo
+
+2025/6/14 10:50:40CH1启动前清空测试数据
+
+2025/6/14 10:50:44CH1启动前清空测试数据
+
+2025/6/14 10:50:54La estación derecha necesita el inicio del código de barrido, CH2 inicio del código de barras
+
+2025/6/14 10:51:00La estación izquierda necesita iniciar el código de barrido, CH1 código de barras
+
+2025/6/14 10:51:12CH2启动前清空测试数据
+
+2025/6/14 10:51:15CH2启动前清空测试数据
+
+2025/6/14 10:51:19CH2启动前清空测试数据
+
+2025/6/14 10:51:21Reset izquierdo presione, reset izquierdo
+
+2025/6/14 10:51:21Reset izquierdo presione, reset izquierdo
+
+2025/6/14 10:51:22Reset izquierdo presione, reset izquierdo
+
+2025/6/14 10:51:22Reset izquierdo presione, reset izquierdo
+
+2025/6/14 10:51:23Reset izquierdo presione, reset izquierdo
+
+2025/6/14 10:51:23Reset izquierdo presione, reset izquierdo
+
+2025/6/14 10:51:23Reset izquierdo presione, reset izquierdo
+
+2025/6/14 10:51:24Reset izquierdo presione, reset izquierdo
+
+2025/6/14 10:51:24Reset izquierdo presione, reset izquierdo
+
+2025/6/14 10:51:24Reset izquierdo presione, reset izquierdo
+
+2025/6/14 10:51:25Reset izquierdo presione, reset izquierdo
+
+2025/6/14 10:51:37La estación derecha necesita el inicio del código de barrido, CH2 inicio del código de barras
+
+2025/6/14 10:51:40CH1启动前清空测试数据
+
+2025/6/14 10:51:44CH1启动前清空测试数据
+
+2025/6/14 10:51:50CH2启动前清空测试数据
+
+2025/6/14 10:51:53CH2启动前清空测试数据
+
+2025/6/14 10:51:59La estación izquierda necesita iniciar el código de barrido, CH1 código de barras
+
+2025/6/14 10:52:27La estación derecha necesita el inicio del código de barrido, CH2 inicio del código de barras
+
+2025/6/14 10:52:38CH2启动前清空测试数据
+
+2025/6/14 10:53:02Reset izquierdo presione, reset izquierdo
+
+2025/6/14 10:53:02Reset izquierdo presione, reset izquierdo
+
+2025/6/14 10:53:02Reset izquierdo presione, reset izquierdo
+
+2025/6/14 10:53:03Reset izquierdo presione, reset izquierdo
+
+2025/6/14 10:53:04Reset izquierdo presione, reset izquierdo
+
+2025/6/14 10:53:04Reset izquierdo presione, reset izquierdo
+
+2025/6/14 10:53:05Reset izquierdo presione, reset izquierdo
+
+2025/6/14 10:53:05Reset izquierdo presione, reset izquierdo
+
+2025/6/14 10:53:05Reset izquierdo presione, reset izquierdo
+
+2025/6/14 10:53:05Reset izquierdo presione, reset izquierdo
+
+2025/6/14 10:53:11La estación derecha necesita el inicio del código de barrido, CH2 inicio del código de barras
+
+2025/6/14 10:53:22CH2启动前清空测试数据
+
+2025/6/14 10:53:27CH2启动前清空测试数据
+
+2025/6/14 10:53:31CH1启动前清空测试数据
+
+2025/6/14 10:53:49La estación izquierda necesita iniciar el código de barrido, CH1 código de barras
+
+2025/6/14 10:54:04La estación derecha necesita el inicio del código de barrido, CH2 inicio del código de barras
+
+2025/6/14 10:54:09CH2启动前清空测试数据
+
+2025/6/14 10:54:12CH2启动前清空测试数据
+
+2025/6/14 10:54:28La estación derecha necesita el inicio del código de barrido, CH2 inicio del código de barras
+
+2025/6/14 10:54:39Reset derecho presione, reset derecho
+
+2025/6/14 10:54:40Reset derecho presione, reset derecho
+
+2025/6/14 10:54:40Reset derecho presione, reset derecho
+
+2025/6/14 10:54:40Reset derecho presione, reset derecho
+
+2025/6/14 10:54:41Reset derecho presione, reset derecho
+
+2025/6/14 10:54:41Reset derecho presione, reset derecho
+
+2025/6/14 10:54:41Reset derecho presione, reset derecho
+
+2025/6/14 10:54:41Reset derecho presione, reset derecho
+
+2025/6/14 10:54:42Reset derecho presione, reset derecho
+
+2025/6/14 10:54:42Reset derecho presione, reset derecho
+
+2025/6/14 10:54:42Reset derecho presione, reset derecho
+
+2025/6/14 10:54:43Reset derecho presione, reset derecho
+
+2025/6/14 10:54:52CH2启动前清空测试数据
+
+2025/6/14 10:54:55CH2启动前清空测试数据
+
+2025/6/14 10:55:00CH1启动前清空测试数据
+
+2025/6/14 10:55:16La estación derecha necesita el inicio del código de barrido, CH2 inicio del código de barras
+
+2025/6/14 10:55:17Reset derecho presione, reset derecho
+
+2025/6/14 10:55:17Reset derecho presione, reset derecho
+
+2025/6/14 10:55:18Reset derecho presione, reset derecho
+
+2025/6/14 10:55:18Reset derecho presione, reset derecho
+
+2025/6/14 10:55:19Reset derecho presione, reset derecho
+
+2025/6/14 10:55:19Reset derecho presione, reset derecho
+
+2025/6/14 10:55:19Reset derecho presione, reset derecho
+
+2025/6/14 10:55:32La estación izquierda necesita iniciar el código de barrido, CH1 código de barras
+
+2025/6/14 10:55:40CH1启动前清空测试数据
+
+2025/6/14 10:55:44CH1启动前清空测试数据
+
+2025/6/14 10:55:51CH2启动前清空测试数据
+
+2025/6/14 10:55:59La estación izquierda necesita iniciar el código de barrido, CH1 código de barras
+
+2025/6/14 10:56:09   en System.Number.StringToNumber(String str, NumberStyles options, NumberBuffer& number, NumberFormatInfo info, Boolean parseDecimal)
+   en System.Number.ParseDecimal(String value, NumberStyles options, NumberFormatInfo numfmt)
+   en System.Decimal.Parse(String s, NumberStyles style)
+   en SLC1_N.Form1.CH2ADC_PORT_DataReceived(String data) en D:\zuomian\linglong\25040101\TANGQUNMXG\SLC1-N\Form1.cs:línea 6565
+
+2025/6/14 10:56:09Reset izquierdo presione, reset izquierdo
+
+2025/6/14 10:56:10Reset izquierdo presione, reset izquierdo
+
+2025/6/14 10:56:11Reset izquierdo presione, reset izquierdo
+
+2025/6/14 10:56:25La estación derecha necesita el inicio del código de barrido, CH2 inicio del código de barras
+
+2025/6/14 10:58:20CH1启动前清空测试数据
+
+2025/6/14 10:58:33La estación izquierda necesita iniciar el código de barrido, CH1 código de barras
+
+2025/6/14 10:58:41Reset izquierdo presione, reset izquierdo
+
+2025/6/14 10:58:41Reset izquierdo presione, reset izquierdo
+
+2025/6/14 10:58:41Reset izquierdo presione, reset izquierdo
+
+2025/6/14 10:58:41Reset izquierdo presione, reset izquierdo
+
+2025/6/14 10:58:42Reset izquierdo presione, reset izquierdo
+
+2025/6/14 10:58:42Reset izquierdo presione, reset izquierdo
+
+2025/6/14 10:58:42Reset izquierdo presione, reset izquierdo
+
+2025/6/14 10:58:43Reset izquierdo presione, reset izquierdo
+
+2025/6/14 10:58:43Reset izquierdo presione, reset izquierdo
+
+2025/6/14 10:58:43Reset izquierdo presione, reset izquierdo
+
+2025/6/14 10:58:44Reset izquierdo presione, reset izquierdo
+
+2025/6/14 18:55:29#CH1ADC打开串口为COM20
+
+2025/6/14 18:55:29ADC2:COM229600
+
+2025/6/14 18:55:32ADC1SET
+
+2025/6/14 18:55:33ADC1SET
+
+2025/6/14 18:55:33Reset izquierdo presione, reset izquierdo
+
+2025/6/14 18:55:33Alarma de presión de aire, alarma de presión de aire
+
+2025/6/14 18:55:33Reset izquierdo presione, reset izquierdo
+
+2025/6/14 18:55:33Alarma de presión de aire, alarma de presión de aire
+
+2025/6/14 18:55:34Reset izquierdo presione, reset izquierdo
+
+2025/6/14 18:55:34Alarma de presión de aire, alarma de presión de aire
+
+2025/6/14 18:55:34Reset izquierdo presione, reset izquierdo
+
+2025/6/14 18:55:34Alarma de presión de aire, alarma de presión de aire
+
+2025/6/14 18:55:34Alarma de presión de aire, alarma de presión de aire
+
+2025/6/14 18:55:35Alarma de presión de aire, alarma de presión de aire
+
+2025/6/14 18:55:35Alarma de presión de aire, alarma de presión de aire
+
+2025/6/14 18:55:35Alarma de presión de aire, alarma de presión de aire
+
+2025/6/14 18:55:35Alarma de presión de aire, alarma de presión de aire
+
+2025/6/14 18:55:36Alarma de presión de aire, alarma de presión de aire
+
+2025/6/14 18:55:36Alarma de presión de aire, alarma de presión de aire
+
+2025/6/14 18:55:36Alarma de presión de aire, alarma de presión de aire
+
+2025/6/14 18:55:37Alarma de presión de aire, alarma de presión de aire
+
+2025/6/14 18:55:37Alarma de presión de aire, alarma de presión de aire
+
+2025/6/14 18:55:37Alarma de presión de aire, alarma de presión de aire
+
+2025/6/14 18:55:37Alarma de presión de aire, alarma de presión de aire
+
+2025/6/14 18:55:38Alarma de presión de aire, alarma de presión de aire
+
+2025/6/14 18:55:38Alarma de presión de aire, alarma de presión de aire
+
+2025/6/14 18:55:38Alarma de presión de aire, alarma de presión de aire
+
+2025/6/14 18:55:39Alarma de presión de aire, alarma de presión de aire
+
+2025/6/14 19:04:33CH1ADC打开串口为COM20
+
+2025/6/14 19:04:34ADC2:COM229600
+
+2025/6/14 19:04:46左工位安全光栅触发，CH1安全光栅
+
+2025/6/14 19:04:47左工位安全光栅触发，CH1安全光栅
+
+2025/6/14 19:04:47左工位请复位，CH1请复位
+
+2025/6/14 19:04:48左工位请复位，CH1请复位
+
+2025/6/14 19:04:49左工位安全光栅触发，CH1安全光栅
+
+2025/6/14 19:04:49左工位安全光栅触发，CH1安全光栅
+
+2025/6/14 19:04:52左工位请复位，CH1请复位
+
+2025/6/14 19:04:53左工位请复位，CH1请复位
+
+2025/6/14 19:04:54左工位安全光栅触发，CH1安全光栅
+
+2025/6/14 19:04:54左复位按下，左复位
+
+2025/6/14 19:04:55左复位按下，左复位
+
+2025/6/14 19:04:55左复位按下，左复位
+
+2025/6/14 19:04:55左复位按下，左复位
+
+2025/6/14 19:04:55左工位安全光栅触发，CH1安全光栅
+
+2025/6/14 19:04:56左工位安全光栅触发，CH1安全光栅
+
+2025/6/14 19:04:56左工位安全光栅触发，CH1安全光栅
+
+2025/6/14 19:05:05CH1启动前清空测试数据
+
+2025/6/14 19:05:08CH1启动前清空测试数据
+
+2025/6/14 19:05:13CH1滑轨气缸异常，CH1滑轨气缸
+
+2025/6/14 19:05:13CH1滑轨气缸异常，CH1滑轨气缸
+
+2025/6/14 19:05:13CH1滑轨气缸异常，CH1滑轨气缸
+
+2025/6/14 19:05:13CH1滑轨气缸异常，CH1滑轨气缸
+
+2025/6/14 19:05:17CH2启动前清空测试数据
+
+2025/6/14 19:05:17CH1滑轨气缸异常，CH1滑轨气缸
+
+2025/6/14 19:05:21CH2启动前清空测试数据
+
+2025/6/14 19:05:21CH1滑轨气缸异常，CH1滑轨气缸
+
+2025/6/14 19:05:24CH2启动前清空测试数据
+
+2025/6/14 19:05:25左复位按下，左复位
+
+2025/6/14 19:05:25左复位按下，左复位
+
+2025/6/14 19:05:26左复位按下，左复位
+
+2025/6/14 19:05:26左复位按下，左复位
+
+2025/6/14 19:05:26左复位按下，左复位
+
+2025/6/14 19:05:27左复位按下，左复位
+
+2025/6/14 19:05:27左复位按下，左复位
+
+2025/6/14 19:05:28左复位按下，左复位
+
+2025/6/14 19:05:28左复位按下，左复位
+
+2025/6/14 19:05:29左复位按下，左复位
+
+2025/6/14 19:05:29左复位按下，左复位
+
+2025/6/14 19:05:29左复位按下，左复位
+
+2025/6/14 19:05:29左复位按下，左复位
+
+2025/6/14 19:05:30左复位按下，左复位
+
+2025/6/14 19:05:30左复位按下，左复位
+
+2025/6/14 19:05:31左复位按下，左复位
+
+2025/6/14 19:05:32左复位按下，左复位
+
+2025/6/14 19:05:32左复位按下，左复位
+
+2025/6/14 19:05:33左复位按下，左复位
+
+2025/6/14 19:05:33左复位按下，左复位
+
+2025/6/14 19:05:33左复位按下，左复位
+
+2025/6/14 19:05:33左复位按下，左复位
+
+2025/6/14 19:05:34左复位按下，左复位
+
+2025/6/14 19:05:34左复位按下，左复位
+
+2025/6/14 19:05:38CH1启动前清空测试数据
+
+2025/6/14 19:05:38左复位按下，左复位
+
+2025/6/14 19:05:41CH1启动前清空测试数据
+
+2025/6/14 19:05:42左复位按下，左复位
+
+2025/6/14 19:05:42左复位按下，左复位
+
+2025/6/14 19:05:42左复位按下，左复位
+
+2025/6/14 19:05:42左复位按下，左复位
+
+2025/6/14 19:05:42左复位按下，左复位
+
+2025/6/14 19:05:43左复位按下，左复位
+
+2025/6/14 19:05:43左复位按下，左复位
+
+2025/6/14 19:05:44左复位按下，左复位
+
+2025/6/14 19:05:44左复位按下，左复位
+
+2025/6/14 19:05:44左复位按下，左复位
+
+2025/6/14 19:05:44左复位按下，左复位
+
+2025/6/14 19:05:45左复位按下，左复位
+
+2025/6/14 19:05:46左复位按下，左复位
+
+2025/6/14 19:05:46左复位按下，左复位
+
+2025/6/14 19:05:46CH1滑轨气缸异常，CH1滑轨气缸
+
+2025/6/14 19:05:47CH1滑轨气缸异常，CH1滑轨气缸
+
+2025/6/14 19:05:47CH1滑轨气缸异常，CH1滑轨气缸
+
+2025/6/14 19:05:47CH1滑轨气缸异常，CH1滑轨气缸
+
+2025/6/14 19:05:48CH1滑轨气缸异常，CH1滑轨气缸
+
+2025/6/14 19:05:482025/6/14 19:05:48CH2 Retorno del mes{"StatusCode":300,"Message":"Barcode [1724042730514] passes repeatedly. ，扫描条码为：1724042730514"}
+
+2025/6/14 19:05:55右工位需要扫码启动，CH2条码启动
+
+2025/6/14 19:05:56CH1滑轨气缸异常，CH1滑轨气缸
+
+2025/6/14 19:05:56左工位安全光栅触发，CH1安全光栅
+
+2025/6/14 19:05:56CH1滑轨气缸异常，CH1滑轨气缸
+
+2025/6/14 19:05:56左工位安全光栅触发，CH1安全光栅
+
+2025/6/14 19:05:56CH1滑轨气缸异常，CH1滑轨气缸
+
+2025/6/14 19:05:56左工位安全光栅触发，CH1安全光栅
+
+2025/6/14 19:05:56CH1滑轨气缸异常，CH1滑轨气缸
+
+2025/6/14 19:05:56左工位安全光栅触发，CH1安全光栅
+
+2025/6/14 19:05:56CH1滑轨气缸异常，CH1滑轨气缸
+
+2025/6/14 19:05:56左工位安全光栅触发，CH1安全光栅
+
+2025/6/14 19:05:56CH1滑轨气缸异常，CH1滑轨气缸
+
+2025/6/14 19:05:56左工位安全光栅触发，CH1安全光栅
+
+2025/6/14 19:05:56CH1滑轨气缸异常，CH1滑轨气缸
+
+2025/6/14 19:05:56左工位安全光栅触发，CH1安全光栅
+
+2025/6/14 19:05:56CH1滑轨气缸异常，CH1滑轨气缸
+
+2025/6/14 19:05:56左工位安全光栅触发，CH1安全光栅
+
+2025/6/14 19:05:56CH1滑轨气缸异常，CH1滑轨气缸
+
+2025/6/14 19:05:56左工位安全光栅触发，CH1安全光栅
+
+2025/6/14 19:05:56CH1滑轨气缸异常，CH1滑轨气缸
+
+2025/6/14 19:05:56左工位安全光栅触发，CH1安全光栅
+
+2025/6/14 19:05:56CH1滑轨气缸异常，CH1滑轨气缸
+
+2025/6/14 19:05:56左工位安全光栅触发，CH1安全光栅
+
+2025/6/14 19:05:57CH1滑轨气缸异常，CH1滑轨气缸
+
+2025/6/14 19:05:57左工位安全光栅触发，CH1安全光栅
+
+2025/6/14 19:05:57CH1滑轨气缸异常，CH1滑轨气缸
+
+2025/6/14 19:05:57左工位安全光栅触发，CH1安全光栅
+
+2025/6/14 19:05:57CH1滑轨气缸异常，CH1滑轨气缸
+
+2025/6/14 19:05:57左工位安全光栅触发，CH1安全光栅
+
+2025/6/14 19:05:57CH1滑轨气缸异常，CH1滑轨气缸
+
+2025/6/14 19:05:57左工位安全光栅触发，CH1安全光栅
+
+2025/6/14 19:05:57CH1滑轨气缸异常，CH1滑轨气缸
+
+2025/6/14 19:05:57左工位安全光栅触发，CH1安全光栅
+
+2025/6/14 19:05:57CH1滑轨气缸异常，CH1滑轨气缸
+
+2025/6/14 19:05:57左工位安全光栅触发，CH1安全光栅
+
+2025/6/14 19:05:57CH1滑轨气缸异常，CH1滑轨气缸
+
+2025/6/14 19:05:57左工位安全光栅触发，CH1安全光栅
+
+2025/6/14 19:05:58CH1滑轨气缸异常，CH1滑轨气缸
+
+2025/6/14 19:05:58左工位安全光栅触发，CH1安全光栅
+
+2025/6/14 19:05:58CH1滑轨气缸异常，CH1滑轨气缸
+
+2025/6/14 19:05:58左工位安全光栅触发，CH1安全光栅
+
+2025/6/14 19:05:58CH1滑轨气缸异常，CH1滑轨气缸
+
+2025/6/14 19:05:58CH1滑轨气缸异常，CH1滑轨气缸
+
+2025/6/14 19:05:59CH1滑轨气缸异常，CH1滑轨气缸
+
+2025/6/14 19:05:59CH1滑轨气缸异常，CH1滑轨气缸
+
+2025/6/14 19:05:59CH1滑轨气缸异常，CH1滑轨气缸
+
+2025/6/14 19:06:00CH1滑轨气缸异常，CH1滑轨气缸
+
+2025/6/14 19:06:00CH1滑轨气缸异常，CH1滑轨气缸
+
+2025/6/14 19:06:00CH1滑轨气缸异常，CH1滑轨气缸
+
+2025/6/14 19:06:01CH1滑轨气缸异常，CH1滑轨气缸
+
+2025/6/14 19:06:01CH1滑轨气缸异常，CH1滑轨气缸
+
+2025/6/14 19:06:01CH1滑轨气缸异常，CH1滑轨气缸
+
+2025/6/14 19:06:01CH1滑轨气缸异常，CH1滑轨气缸
+
+2025/6/14 19:06:02CH1滑轨气缸异常，CH1滑轨气缸
+
+2025/6/14 19:06:02CH1滑轨气缸异常，CH1滑轨气缸
+
+2025/6/14 19:06:02CH1滑轨气缸异常，CH1滑轨气缸
+
+2025/6/14 19:06:03CH1滑轨气缸异常，CH1滑轨气缸
+
+2025/6/14 19:06:03CH1滑轨气缸异常，CH1滑轨气缸
+
+2025/6/14 19:06:04CH1滑轨气缸异常，CH1滑轨气缸
+
+2025/6/14 19:06:04CH1滑轨气缸异常，CH1滑轨气缸
+
+2025/6/14 19:06:04CH1滑轨气缸异常，CH1滑轨气缸
+
+2025/6/14 19:06:04左复位按下，左复位
+
+2025/6/14 19:06:04CH1滑轨气缸异常，CH1滑轨气缸
+
+2025/6/14 19:06:05左复位按下，左复位
+
+2025/6/14 19:06:05左复位按下，左复位
+
+2025/6/14 19:06:05左复位按下，左复位
+
+2025/6/14 19:06:06左复位按下，左复位
+
+2025/6/14 19:06:06左复位按下，左复位
+
+2025/6/14 19:06:06左复位按下，左复位
+
+2025/6/14 19:06:07左复位按下，左复位
+
+2025/6/14 19:06:07左复位按下，左复位
+
+2025/6/14 19:06:07左复位按下，左复位
+
+2025/6/14 19:06:08左复位按下，左复位
+
+2025/6/14 19:06:08左复位按下，左复位
+
+2025/6/14 19:06:08左复位按下，左复位
+
+2025/6/14 19:06:08左复位按下，左复位
+
+2025/6/14 19:06:09左复位按下，左复位
+
+2025/6/14 19:06:09左复位按下，左复位
+
+2025/6/14 19:06:09左复位按下，左复位
+
+2025/6/14 19:06:10左复位按下，左复位
+
+2025/6/14 19:06:10左复位按下，左复位
+
+2025/6/14 19:06:10左复位按下，左复位
+
+2025/6/14 19:06:12左复位按下，左复位
+
+2025/6/14 19:06:12左复位按下，左复位
+
+2025/6/14 19:06:12左复位按下，左复位
+
+2025/6/14 19:06:12左复位按下，左复位
+
+2025/6/14 19:06:13左复位按下，左复位
+
+2025/6/14 19:06:13左复位按下，左复位
+
+2025/6/14 19:06:13左复位按下，左复位
+
+2025/6/14 19:06:13左复位按下，左复位
+
+2025/6/14 19:06:14左复位按下，左复位
+
+2025/6/14 19:06:17CH1启动前清空测试数据
+
+2025/6/14 19:06:17左复位按下，左复位
+
+2025/6/14 19:06:21CH1启动前清空测试数据
+
+2025/6/14 19:06:21左复位按下，左复位
+
+2025/6/14 19:06:21左复位按下，左复位
+
+2025/6/14 19:06:22左复位按下，左复位
+
+2025/6/14 19:06:22左复位按下，左复位
+
+2025/6/14 19:06:23左复位按下，左复位
+
+2025/6/14 19:06:23左复位按下，左复位
+
+2025/6/14 19:06:23左复位按下，左复位
+
+2025/6/14 19:06:23左复位按下，左复位
+
+2025/6/14 19:06:23左复位按下，左复位
+
+2025/6/14 19:06:24左复位按下，左复位
+
+2025/6/14 19:06:24左复位按下，左复位
+
+2025/6/14 19:06:24左复位按下，左复位
+
+2025/6/14 19:06:25左复位按下，左复位
+
+2025/6/14 19:06:25左复位按下，左复位
+
+2025/6/14 19:06:25CH1滑轨气缸异常，CH1滑轨气缸
+
+2025/6/14 19:06:25CH1滑轨气缸异常，CH1滑轨气缸
+
+2025/6/14 19:06:26CH1滑轨气缸异常，CH1滑轨气缸
+
+2025/6/14 19:06:26CH1滑轨气缸异常，CH1滑轨气缸
+
+2025/6/14 19:06:26CH1滑轨气缸异常，CH1滑轨气缸
+
+2025/6/14 19:06:27CH1滑轨气缸异常，CH1滑轨气缸
+
+2025/6/14 19:06:27CH1滑轨气缸异常，CH1滑轨气缸
+
+2025/6/14 19:06:27CH1滑轨气缸异常，CH1滑轨气缸
+
+2025/6/14 19:06:27CH1滑轨气缸异常，CH1滑轨气缸
+
+2025/6/14 19:06:28CH1滑轨气缸异常，CH1滑轨气缸
+
+2025/6/14 19:06:28CH1滑轨气缸异常，CH1滑轨气缸
+
+2025/6/14 19:06:29CH1滑轨气缸异常，CH1滑轨气缸
+
+2025/6/14 19:06:29CH1滑轨气缸异常，CH1滑轨气缸
+
+2025/6/14 19:06:29CH1滑轨气缸异常，CH1滑轨气缸
+
+2025/6/14 19:06:29CH1滑轨气缸异常，CH1滑轨气缸
+
+2025/6/14 19:06:30CH1滑轨气缸异常，CH1滑轨气缸
+
+2025/6/14 19:06:30CH1滑轨气缸异常，CH1滑轨气缸
+
+2025/6/14 19:06:30CH1滑轨气缸异常，CH1滑轨气缸
+
+2025/6/14 19:06:31CH1滑轨气缸异常，CH1滑轨气缸
+
+2025/6/14 19:06:31左复位按下，左复位
+
+2025/6/14 19:06:32左复位按下，左复位
+
+2025/6/14 19:06:32左复位按下，左复位
+
+2025/6/14 19:06:32左复位按下，左复位
+
+2025/6/14 19:06:33左复位按下，左复位
+
+2025/6/14 19:06:33左复位按下，左复位
+
+2025/6/14 19:06:33左复位按下，左复位
+
+2025/6/14 19:06:33左复位按下，左复位
+
+2025/6/14 19:06:34左复位按下，左复位
+
+2025/6/14 19:06:34左复位按下，左复位
+
+2025/6/14 19:06:35左复位按下，左复位
+
+2025/6/14 19:06:35左复位按下，左复位
+
+2025/6/14 19:06:35左复位按下，左复位
+
+2025/6/14 19:06:36左复位按下，左复位
+
+2025/6/14 19:06:37左复位按下，左复位
+
+2025/6/14 19:06:37左复位按下，左复位
+
+2025/6/14 19:06:37左复位按下，左复位
+
+2025/6/14 19:06:38左复位按下，左复位
+
+2025/6/14 19:06:38左复位按下，左复位
+
+2025/6/14 19:06:38左复位按下，左复位
+
+2025/6/14 19:06:39左复位按下，左复位
+
+2025/6/14 19:06:39左复位按下，左复位
+
+2025/6/14 19:06:39左复位按下，左复位
+
+2025/6/14 19:06:39左复位按下，左复位
+
+2025/6/14 19:06:40左复位按下，左复位
+
+2025/6/14 19:06:40左复位按下，左复位
+
+2025/6/14 19:06:40左复位按下，左复位
+
+2025/6/14 19:06:41左复位按下，左复位
+
+2025/6/14 19:06:41左复位按下，左复位
+
+2025/6/14 19:06:41左复位按下，左复位
+
+2025/6/14 19:06:42左复位按下，左复位
+
+2025/6/14 19:06:42左复位按下，左复位
+
+2025/6/14 19:06:42左复位按下，左复位
+
+2025/6/14 19:06:43左复位按下，左复位
+
+2025/6/14 19:06:43左复位按下，左复位
+
+2025/6/14 19:06:43左复位按下，左复位
+
+2025/6/14 19:06:44左复位按下，左复位
+
+2025/6/14 19:06:44左复位按下，左复位
+
+2025/6/14 19:06:44左复位按下，左复位
+
+2025/6/14 19:06:44左复位按下，左复位
+
+2025/6/14 19:06:45左复位按下，左复位
+
+2025/6/14 19:06:45左复位按下，左复位
+
+2025/6/14 19:06:45左复位按下，左复位
+
+2025/6/14 19:06:46左复位按下，左复位
+
+2025/6/14 19:06:46左复位按下，左复位
+
+2025/6/14 19:06:46左复位按下，左复位
+
+2025/6/14 19:06:47左复位按下，左复位
+
+2025/6/14 19:06:47左复位按下，左复位
+
+2025/6/14 19:06:47左复位按下，左复位
+
+2025/6/14 19:06:48左复位按下，左复位
+
+2025/6/14 19:06:48左复位按下，左复位
+
+2025/6/14 19:06:48左复位按下，左复位
+
+2025/6/14 19:06:49左复位按下，左复位
+
+2025/6/14 19:06:49左复位按下，左复位
+
+2025/6/14 19:06:49左复位按下，左复位
+
+2025/6/14 19:06:49左复位按下，左复位
+
+2025/6/14 19:06:50左复位按下，左复位
+
+2025/6/14 19:06:50左复位按下，左复位
+
+2025/6/14 19:06:50左复位按下，左复位
+
+2025/6/14 19:06:51左复位按下，左复位
+
+2025/6/14 19:06:51左复位按下，左复位
+
+2025/6/14 19:06:51左复位按下，左复位
+
+2025/6/14 19:06:52左复位按下，左复位
+
+2025/6/14 19:06:52左复位按下，左复位
+
+2025/6/14 19:06:52左复位按下，左复位
+
+2025/6/14 19:06:53左复位按下，左复位
+
+2025/6/14 19:06:53左复位按下，左复位
+
+2025/6/14 19:06:53左复位按下，左复位
+
+2025/6/14 19:06:53左复位按下，左复位
+
+2025/6/14 19:06:54左复位按下，左复位
+
+2025/6/14 19:06:54左复位按下，左复位
+
+2025/6/14 19:06:55左复位按下，左复位
+
+2025/6/14 19:06:55左复位按下，左复位
+
+2025/6/14 19:06:55左复位按下，左复位
+
+2025/6/14 19:06:55左复位按下，左复位
+
+2025/6/14 19:06:56左复位按下，左复位
+
+2025/6/14 19:06:56左复位按下，左复位
+
+2025/6/14 19:06:56左复位按下，左复位
+
+2025/6/14 19:06:57左复位按下，左复位
+
+2025/6/14 19:06:57左复位按下，左复位
+
+2025/6/14 19:06:57左复位按下，左复位
+
+2025/6/14 19:06:58左复位按下，左复位
+
+2025/6/14 19:06:58左复位按下，左复位
+
+2025/6/14 19:06:58左复位按下，左复位
+
+2025/6/14 19:06:59左复位按下，左复位
+
+2025/6/14 19:06:59左复位按下，左复位
+
+2025/6/14 19:06:59左复位按下，左复位
+
+2025/6/14 19:06:59左复位按下，左复位
+
+2025/6/14 19:07:00左复位按下，左复位
+
+2025/6/14 19:07:00左复位按下，左复位
+
+2025/6/14 19:07:00左复位按下，左复位
+
+2025/6/14 19:07:01左复位按下，左复位
+
+2025/6/14 19:07:01左复位按下，左复位
+
+2025/6/14 19:07:01左复位按下，左复位
+
+2025/6/14 19:07:02左复位按下，左复位
+
+2025/6/14 19:07:02左复位按下，左复位
+
+2025/6/14 19:07:02左复位按下，左复位
+
+2025/6/14 19:07:03左复位按下，左复位
+
+2025/6/14 19:07:03左复位按下，左复位
+
+2025/6/14 19:07:03左复位按下，左复位
+
+2025/6/14 19:07:04左复位按下，左复位
+
+2025/6/14 19:07:04左复位按下，左复位
+
+2025/6/14 19:07:04左复位按下，左复位
+
+2025/6/14 19:07:04左复位按下，左复位
+
+2025/6/14 19:07:05左复位按下，左复位
+
+2025/6/14 19:07:05左复位按下，左复位
+
+2025/6/14 19:07:05左复位按下，左复位
+
+2025/6/14 19:07:06左复位按下，左复位
+
+2025/6/14 19:07:06左复位按下，左复位
+
+2025/6/14 19:07:06左复位按下，左复位
+
+2025/6/14 19:07:07左复位按下，左复位
+
+2025/6/14 19:07:07左复位按下，左复位
+
+2025/6/14 19:07:07左复位按下，左复位
+
+2025/6/14 19:07:09Reset izquierdo presione, reset izquierdo
+
+2025/6/14 19:07:09Reset izquierdo presione, reset izquierdo
+
+2025/6/14 19:07:09Reset izquierdo presione, reset izquierdo
+
+2025/6/14 19:07:10Reset izquierdo presione, reset izquierdo
+
+2025/6/14 19:07:10Reset izquierdo presione, reset izquierdo
+
+2025/6/14 19:07:10Reset izquierdo presione, reset izquierdo
+
+2025/6/14 19:07:11Reset izquierdo presione, reset izquierdo
+
+2025/6/14 19:07:11Reset izquierdo presione, reset izquierdo
+
+2025/6/14 19:07:11Reset izquierdo presione, reset izquierdo
+
+2025/6/14 19:07:12Reset izquierdo presione, reset izquierdo
+
+2025/6/14 19:07:12Reset izquierdo presione, reset izquierdo
+
+2025/6/14 19:07:12Reset izquierdo presione, reset izquierdo
+
+2025/6/14 19:07:13Reset izquierdo presione, reset izquierdo
+
+2025/6/14 19:07:13Reset izquierdo presione, reset izquierdo
+
+2025/6/14 19:07:13Reset izquierdo presione, reset izquierdo
+
+2025/6/14 19:07:14Reset izquierdo presione, reset izquierdo
+
+2025/6/14 19:07:14Reset izquierdo presione, reset izquierdo
+
+2025/6/14 19:07:14Reset izquierdo presione, reset izquierdo
+
+2025/6/14 19:07:15Reset izquierdo presione, reset izquierdo
+
+2025/6/14 19:07:15Reset izquierdo presione, reset izquierdo
+
+2025/6/14 19:07:15Reset izquierdo presione, reset izquierdo
+
+2025/6/14 19:07:15Reset izquierdo presione, reset izquierdo
+
+2025/6/14 19:07:16Reset izquierdo presione, reset izquierdo
+
+2025/6/14 19:07:16Reset izquierdo presione, reset izquierdo
+
+2025/6/14 19:07:16Reset izquierdo presione, reset izquierdo
+
+2025/6/14 19:07:17Reset izquierdo presione, reset izquierdo
+
+2025/6/14 19:07:17Reset izquierdo presione, reset izquierdo
+
+2025/6/14 19:07:17Reset izquierdo presione, reset izquierdo
+
+2025/6/14 19:07:18Reset izquierdo presione, reset izquierdo
+
+2025/6/14 19:07:18Reset izquierdo presione, reset izquierdo
+
+2025/6/14 19:07:18Reset izquierdo presione, reset izquierdo
+
+2025/6/14 19:07:19Reset izquierdo presione, reset izquierdo
+
+2025/6/14 19:07:19Reset izquierdo presione, reset izquierdo
+
+2025/6/14 19:07:19Reset izquierdo presione, reset izquierdo
+
+2025/6/14 19:07:19Reset izquierdo presione, reset izquierdo
+
+2025/6/14 19:07:20Reset izquierdo presione, reset izquierdo
+
+2025/6/14 19:07:20Reset izquierdo presione, reset izquierdo
+
+2025/6/14 19:07:20Reset izquierdo presione, reset izquierdo
+
+2025/6/14 19:07:21Reset izquierdo presione, reset izquierdo
+
+2025/6/14 19:07:21Reset izquierdo presione, reset izquierdo
+
+2025/6/14 19:07:21Reset izquierdo presione, reset izquierdo
+
+2025/6/14 19:07:22Reset izquierdo presione, reset izquierdo
+
+2025/6/14 19:07:22Reset izquierdo presione, reset izquierdo
+
+2025/6/14 19:07:22Reset izquierdo presione, reset izquierdo
+
+2025/6/14 19:07:23Reset izquierdo presione, reset izquierdo
+
+2025/6/14 19:07:23Reset izquierdo presione, reset izquierdo
+
+2025/6/14 19:07:23Reset izquierdo presione, reset izquierdo
+
+2025/6/14 19:07:24Reset izquierdo presione, reset izquierdo
+
+2025/6/14 19:07:24Reset izquierdo presione, reset izquierdo
+
+2025/6/14 19:07:24Reset izquierdo presione, reset izquierdo
+
+2025/6/14 19:07:24Reset izquierdo presione, reset izquierdo
+
+2025/6/14 19:07:25Reset izquierdo presione, reset izquierdo
+
+2025/6/14 19:07:25Reset izquierdo presione, reset izquierdo
+
+2025/6/14 19:07:26Reset izquierdo presione, reset izquierdo
+
+2025/6/14 19:07:26Reset izquierdo presione, reset izquierdo
+
+2025/6/14 19:07:26Reset izquierdo presione, reset izquierdo
+
+2025/6/14 19:07:26Reset izquierdo presione, reset izquierdo
+
+2025/6/14 19:07:27Reset izquierdo presione, reset izquierdo
+
+2025/6/14 19:07:27Reset izquierdo presione, reset izquierdo
+
+2025/6/14 19:07:27Reset izquierdo presione, reset izquierdo
+
+2025/6/14 19:07:28Reset izquierdo presione, reset izquierdo
+
+2025/6/14 19:07:28Reset izquierdo presione, reset izquierdo
+
+2025/6/14 19:07:28Reset izquierdo presione, reset izquierdo
+
+2025/6/14 19:07:29Reset izquierdo presione, reset izquierdo
+
+2025/6/14 19:07:29Reset izquierdo presione, reset izquierdo
+
+2025/6/14 19:07:29Reset izquierdo presione, reset izquierdo
+
+2025/6/14 19:07:30Reset izquierdo presione, reset izquierdo
+
+2025/6/14 19:07:30Reset izquierdo presione, reset izquierdo
+
+2025/6/14 19:07:30Reset izquierdo presione, reset izquierdo
+
+2025/6/14 19:07:31Reset izquierdo presione, reset izquierdo
+
+2025/6/14 19:07:31Reset izquierdo presione, reset izquierdo
+
+2025/6/14 19:07:31Reset izquierdo presione, reset izquierdo
+
+2025/6/14 19:07:31Reset izquierdo presione, reset izquierdo
+
+2025/6/14 19:07:32Reset izquierdo presione, reset izquierdo
+
+2025/6/14 19:07:32Reset izquierdo presione, reset izquierdo
+
+2025/6/14 19:07:33Reset izquierdo presione, reset izquierdo
+
+2025/6/14 19:07:33Reset izquierdo presione, reset izquierdo
+
+2025/6/14 19:07:33Reset izquierdo presione, reset izquierdo
+
+2025/6/14 19:07:34Reset izquierdo presione, reset izquierdo
+
+2025/6/14 19:07:34Reset izquierdo presione, reset izquierdo
+
+2025/6/14 19:07:34Reset izquierdo presione, reset izquierdo
+
+2025/6/14 19:07:35Reset izquierdo presione, reset izquierdo
+
+2025/6/14 19:07:35Reset izquierdo presione, reset izquierdo
+
+2025/6/14 19:07:35Reset izquierdo presione, reset izquierdo
+
+2025/6/14 19:07:36Reset izquierdo presione, reset izquierdo
+
+2025/6/14 19:07:36Reset izquierdo presione, reset izquierdo
+
+2025/6/14 19:07:36Reset izquierdo presione, reset izquierdo
+
+2025/6/14 19:07:36Reset izquierdo presione, reset izquierdo
+
+2025/6/14 19:07:37Reset izquierdo presione, reset izquierdo
+
+2025/6/14 19:07:37Reset izquierdo presione, reset izquierdo
+
+2025/6/14 19:07:37Reset izquierdo presione, reset izquierdo
+
+2025/6/14 19:07:38Reset izquierdo presione, reset izquierdo
+
+2025/6/14 19:07:38Reset izquierdo presione, reset izquierdo
+
+2025/6/14 19:07:39Reset izquierdo presione, reset izquierdo
+
+2025/6/14 19:07:39Reset izquierdo presione, reset izquierdo
+
+2025/6/14 19:07:39Reset izquierdo presione, reset izquierdo
+
+2025/6/14 19:07:39Reset izquierdo presione, reset izquierdo
+
+2025/6/14 19:07:40Reset izquierdo presione, reset izquierdo
+
+2025/6/14 19:07:40Reset izquierdo presione, reset izquierdo
+
+2025/6/14 19:07:41Reset izquierdo presione, reset izquierdo
+
+2025/6/14 19:07:41Reset izquierdo presione, reset izquierdo
+
+2025/6/14 19:07:41Reset izquierdo presione, reset izquierdo
+
+2025/6/14 19:09:04#CH1ADC打开串口为COM20
+
+2025/6/14 19:09:04ADC2:COM229600
+
+2025/6/14 19:09:07ADC2SET
+
+2025/6/14 19:09:27Reset izquierdo presione, reset izquierdo
+
+2025/6/14 19:09:27Reset izquierdo presione, reset izquierdo
+
+2025/6/14 19:09:28Reset izquierdo presione, reset izquierdo
+
+2025/6/14 19:09:28Reset izquierdo presione, reset izquierdo
+
+2025/6/14 19:09:28Reset izquierdo presione, reset izquierdo
+
+2025/6/14 19:09:28Reset izquierdo presione, reset izquierdo
+
+2025/6/14 19:09:29Reset derecho presione, reset derecho
+
+2025/6/14 19:09:29Reset derecho presione, reset derecho
+
+2025/6/14 19:09:29Reset derecho presione, reset derecho
+
+2025/6/14 19:09:30Reset derecho presione, reset derecho
+
+2025/6/14 19:09:37CH1启动前清空测试数据
+
+2025/6/14 19:09:41CH1启动前清空测试数据
+

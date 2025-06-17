@@ -915,9 +915,11 @@ namespace SLC1_N
         /// </summary>
         public void CH4Writevalve()
         {
-            ch4valve = new Thread(CH4Write);
-            ch4valve.IsBackground = true;
-            ch4valve.Start();
+            melsecFx.Write("D1046", ch4pre);
+            melsecFx.Write("M1183", true);
+            //ch4valve = new Thread(CH4Write);
+            //ch4valve.IsBackground = true;
+            //ch4valve.Start();
         }
         public void CH4Write()
         {
@@ -931,9 +933,10 @@ namespace SLC1_N
         /// </summary>
         public void CH1ReadVol()
         {
-            thr_ch1vol = new Thread(CH1_ReadVol);
-            thr_ch1vol.IsBackground = true;
-            thr_ch1vol.Start();
+            ch1vol = melsecFx.ReadInt32("D455").Content;
+            //thr_ch1vol = new Thread(CH1_ReadVol);
+            //thr_ch1vol.IsBackground = true;
+            //thr_ch1vol.Start();
         }
         public void CH1_ReadVol()
         {
@@ -944,9 +947,11 @@ namespace SLC1_N
         /// </summary>
         public void CH1WriteVol()
         {
-            thr_ch1vol = new Thread(CH1_WriteVol);
-            thr_ch1vol.IsBackground = true;
-            thr_ch1vol.Start();
+            melsecFx.Write("D402", ch1vol);
+            melsecFx.Write("M1226", true);
+            //thr_ch1vol = new Thread(CH1_WriteVol);
+            //thr_ch1vol.IsBackground = true;
+            //thr_ch1vol.Start();
         }
         public void CH1_WriteVol()
         {
@@ -960,9 +965,10 @@ namespace SLC1_N
         /// </summary>
         public void CH2ReadVol()
         {
-            thr_ch2vol = new Thread(CH2_ReadVol);
-            thr_ch2vol.IsBackground = true;
-            thr_ch2vol.Start();
+            ch2vol = melsecFx.ReadInt32("D483").Content;
+            //thr_ch2vol = new Thread(CH2_ReadVol);
+            //thr_ch2vol.IsBackground = true;
+            //thr_ch2vol.Start();
         }
         public void CH2_ReadVol()
         {
@@ -973,9 +979,11 @@ namespace SLC1_N
         /// </summary>
         public void CH2WriteVol()
         {
-            thr_ch2vol = new Thread(CH2_WriteVol);
-            thr_ch2vol.IsBackground = true;
-            thr_ch2vol.Start();
+            melsecFx.Write("D412", ch2vol);
+            melsecFx.Write("M1246", true);
+            //thr_ch2vol = new Thread(CH2_WriteVol);
+            //thr_ch2vol.IsBackground = true;
+            //thr_ch2vol.Start();
         }
         public void CH2_WriteVol()
         {
@@ -989,9 +997,11 @@ namespace SLC1_N
         /// </summary>
         public void CH1ReadVolElec()
         {
-            thr_ch1elec = new Thread(CH1_ReadElec);
-            thr_ch1elec.IsBackground = true;
-            thr_ch1elec.Start();
+
+            ch1elec = melsecFx.ReadInt32("D407").Content;
+            //thr_ch1elec = new Thread(CH1_ReadElec);
+            //thr_ch1elec.IsBackground = true;
+            //thr_ch1elec.Start();
         }
         public void CH1_ReadElec()
         {
@@ -1002,9 +1012,11 @@ namespace SLC1_N
         /// </summary>
         public void CH1WriteElec()
         {
-            thr_ch1elec = new Thread(CH1_WriteElec);
-            thr_ch1elec.IsBackground = true;
-            thr_ch1elec.Start();
+            melsecFx.Write("D404", ch1elec);
+            melsecFx.Write("M1229", true);
+            //thr_ch1elec = new Thread(CH1_WriteElec);
+            //thr_ch1elec.IsBackground = true;
+            //thr_ch1elec.Start();
         }
         public void CH1_WriteElec()
         {
@@ -1018,9 +1030,10 @@ namespace SLC1_N
         /// </summary>
         public void CH2ReadVolElec()
         {
-            thr_ch2elec = new Thread(CH2_ReadElec);
-            thr_ch2elec.IsBackground = true;
-            thr_ch2elec.Start();
+            ch2elec = melsecFx.ReadInt32("D417").Content;
+            //thr_ch2elec = new Thread(CH2_ReadElec);
+            //thr_ch2elec.IsBackground = true;
+            //thr_ch2elec.Start();
         }
         public void CH2_ReadElec()
         {
@@ -1031,9 +1044,11 @@ namespace SLC1_N
         /// </summary>
         public void CH2WriteElec()
         {
-            thr_ch2elec = new Thread(CH2_WriteElec);
-            thr_ch2elec.IsBackground = true;
-            thr_ch2elec.Start();
+            melsecFx.Write("D414", ch2elec);
+            melsecFx.Write("M1249", true);
+            //thr_ch2elec = new Thread(CH2_WriteElec);
+            //thr_ch2elec.IsBackground = true;
+            //thr_ch2elec.Start();
         }
         public void CH2_WriteElec()
         {
@@ -1046,9 +1061,10 @@ namespace SLC1_N
         /// </summary>
         public void SafetyDoorClose()
         {
-            SafetyDoor = new Thread(WriteSafetyDoorClose);
-            SafetyDoor.IsBackground = true;
-            SafetyDoor.Start();
+            melsecFx.Write("M2002", true);
+            //SafetyDoor = new Thread(WriteSafetyDoorClose);
+            //SafetyDoor.IsBackground = true;
+            //SafetyDoor.Start();
         }
         public void WriteSafetyDoorClose()
         {
@@ -1056,9 +1072,10 @@ namespace SLC1_N
         }
         public void SafetyDoorOpen()
         {
-            SafetyDoor = new Thread(WriteSafetyDoorOpen);
-            SafetyDoor.IsBackground = true;
-            SafetyDoor.Start();
+            melsecFx.Write("M2002", false);
+            //SafetyDoor = new Thread(WriteSafetyDoorOpen);
+            //SafetyDoor.IsBackground = true;
+            //SafetyDoor.Start();
         }
         public void WriteSafetyDoorOpen()
         {
